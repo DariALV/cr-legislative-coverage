@@ -35,8 +35,11 @@ class FileManager:
   def get_path(self, folder_path: str, name: str, extension: str, encripted: bool = False) -> pathlib.Path:
     final_name = name
     if encripted:
-      final_name = hashlib.sha256(name.encode("utf-8")).hexdigest()
+      final_name = encrypt(name)
     final_name += extension
 
     path = pathlib.Path(folder_path) / final_name
     return path
+
+def encrypt(text: str) -> str:
+  return hashlib.sha256(text.encode("utf-8")).hexdigest()
