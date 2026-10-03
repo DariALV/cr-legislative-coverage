@@ -7,8 +7,8 @@ from tools.scraping_tools.news_article import NewsArticle
 
 class CRHoyParser:
   
-  def parse(self, html_response: HTMLResponse) -> NewsArticle:
-    soup = BeautifulSoup(html_response.html, "lxml")
+  def parse(self, html: str, url: str) -> NewsArticle:
+    soup = BeautifulSoup(html, "lxml")
     scripts = soup.find_all("script", type="application/ld+json")
 
     for script in scripts:
@@ -16,7 +16,6 @@ class CRHoyParser:
         if news_article_schema["@type"] == "NewsArticle":
 
           organization: str = "crhoy"
-          url: str = html_response.url
           title: str = news_article_schema["headline"]
           date_format = "%Y-%m-%dT%H:%M:%S"
           date_published: datetime = datetime.strptime(news_article_schema["datePublished"], date_format)

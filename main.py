@@ -16,21 +16,25 @@ file_manager: FileManager = FileManager()
 #         ]
 # crhoy_html_responses = fetcher.fetch_multiple(crhoy_urls)
 
-delfino_urls = [
-        "https://delfino.cr/asamblea/proyecto/25820",
-        # "https://delfino.cr/asamblea/proyecto/23500",
-        # "https://delfino.cr/asamblea/proyecto/21538",
-        # "https://delfino.cr/asamblea/proyecto/25000",
-        # "https://delfino.cr/asamblea/proyecto/24000",
-        # "https://delfino.cr/asamblea/proyecto/23000",
-        # "https://delfino.cr/asamblea/proyecto/22000",
-        ]
-delfino_html_responses = fetcher.fetch_multiple(delfino_urls)
+# delfino_urls = [
+#         "https://delfino.cr/asamblea/proyecto/25820",
+#         # "https://delfino.cr/asamblea/proyecto/23500",
+#         # "https://delfino.cr/asamblea/proyecto/21538",
+#         # "https://delfino.cr/asamblea/proyecto/25000",
+#         # "https://delfino.cr/asamblea/proyecto/24000",
+#         # "https://delfino.cr/asamblea/proyecto/23000",
+#         # "https://delfino.cr/asamblea/proyecto/22000",
+#         ]
+# delfino_html_responses = fetcher.fetch_multiple(delfino_urls)
 
-# delfino_parser = DelfinoParser()
+delfino_parser = DelfinoParser()
 
-for html_response in delfino_html_responses:
-  file_manager.save_html("raw/html/delfino/asamblea/expedientes", html_response.url, html_response.html, True)
+# for html_response in delfino_html_responses:
+#   file_manager.save_html("raw/html/delfino/asamblea/expedientes", html_response.url, html_response.html, True)
+
+html = file_manager.load_html("raw/html/delfino/asamblea/expedientes", "https://delfino.cr/asamblea/proyecto/25820")
+
+delfino_parser.parse(html)
 
 # parser: CRHoyParser = CRHoyParser()
 
