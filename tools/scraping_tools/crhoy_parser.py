@@ -22,8 +22,9 @@ class CRHoyParser:
           date_published: datetime = datetime.strptime(news_article_schema["datePublished"], date_format)
           author: str = news_article_schema["author"]["name"]
           content: str = get_all_text(soup)
+          date_extracted: datetime = datetime.now()
 
-          article = NewsArticle(organization, url, title, date_published, author, content)
+          article = NewsArticle(organization, url, title, date_published, author, content, date_extracted)
           print(article.as_dict())
           return article
         else:
