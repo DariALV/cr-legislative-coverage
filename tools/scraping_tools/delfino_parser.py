@@ -7,9 +7,10 @@ from tools.scraping_tools.expediente import Expediente
 
 class DelfinoParser:
   
-  def parse(self, html: str) -> Expediente:
+  def parse(self, html: str, url: str) -> Expediente:
     soup = BeautifulSoup(html, "lxml")
     print(self.get_title(soup))
+    print(url)
     self.get_metadata(soup)
 
   def get_title(self, soup: BeautifulSoup) -> str:

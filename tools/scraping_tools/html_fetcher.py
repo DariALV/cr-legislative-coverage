@@ -2,7 +2,9 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 import time
+
 from tools.scraping_tools.rate_limiter import RateLimiter
+from tools.file_tools.file_manager import FileManager
 
 class HTMLFetcher:
 
@@ -11,8 +13,9 @@ class HTMLFetcher:
     self.rate_limiter: RateLimiter = RateLimiter(rate_limit)
     self.retries = retries
     self.timeout = timeout
+    self.file_manager = FileManager()
 
-  def fetch_multiple(self, urls: list[str]) -> list[HTMLResponse]:
+  def fetch_multiple(self, save_path: str, urls: list[str]):
     retry = Retry(
     total = self.retries,
     backoff_factor = 1,
@@ -24,17 +27,23 @@ class HTMLFetcher:
     session.headers.update({"User-Agent": f"{self.user_agent}/1.0"})
     session.mount("https://", HTTPAdapter(max_retries=retry))
 
-    htmls: list[HTMLResponse] = []
+    for i in range(len(urls)):
+      url: str = urls[i]
+      print(f"{i + 1} out of {len(urls)} websites scraped. ({100.0 * (i + 1.0)/len(urls):.2f}% completed)")
+      if not self.file_manager.html_exists(save_path, url):
+        response = session.get(url, timeout = self.timeout)
+        html_response = HTMLResponse(response)
+        if html_response.status_code == 200:
+          self.file_manager.save_html(save_path, url, html_response.html)
+        else:
+          self.file_manager.save_html(save_path, url, f"Error {html_response.status_code}")
+        self.rate_limiter.wait()
+    
 
-    for url in urls:
-      response = session.get(url, timeout = self.timeout)
-      htmls.append(HTMLResponse(response))
-      self.rate_limiter.wait()
-    return htmls
   
-  def fetch(self, url: str) -> HTMLResponse:
-    response = requests.get(url, headers = {"User-Agent": f"{self.user_agent}/1.0"}, timeout = self.timeout)
-    return HTMLResponse(response)
+  # def fetch(self, url: str):
+  #   response = requests.get(url, headers = {"User-Agent": f"{self.user_agent}/1.0"}, timeout = self.timeout)
+
 
 class HTMLResponse:
   def __init__(self, response: requests.Response):
