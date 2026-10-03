@@ -219,3 +219,5 @@ __marimo__/
 
 # CR Legislative Coverage Specific Ignores
 raw/
+databases/private_corpus.db
+databases/public_corpus.db
