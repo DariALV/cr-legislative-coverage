@@ -1,8 +1,10 @@
 from tools.scraping_tools.html_fetcher import HTMLFetcher
+from tools.file_tools.file_manager import FileManager
 from tools.scraping_tools.crhoy_parser import CRHoyParser
 from tools.scraping_tools.delfino_parser import DelfinoParser
 
 fetcher: HTMLFetcher = HTMLFetcher("uni-project", 0.5, 5)
+file_manager: FileManager = FileManager()
 # crhoy_urls = [
 #         "https://crhoy.com/nacionales/vigilancia-policial-a-faroleadas-no-se-limito-a-cartago-alcanzo-a-otros-cantones/",
 #         "https://crhoy.com/nacionales/crisis-financiera-genera-cierre-de-dos-comites-de-cruz-roja/",
@@ -16,19 +18,19 @@ fetcher: HTMLFetcher = HTMLFetcher("uni-project", 0.5, 5)
 
 delfino_urls = [
         "https://delfino.cr/asamblea/proyecto/25820",
-        "https://delfino.cr/asamblea/proyecto/23500",
-        "https://delfino.cr/asamblea/proyecto/21538",
-        "https://delfino.cr/asamblea/proyecto/25000",
-        "https://delfino.cr/asamblea/proyecto/24000",
-        "https://delfino.cr/asamblea/proyecto/23000",
-        "https://delfino.cr/asamblea/proyecto/22000",
+        # "https://delfino.cr/asamblea/proyecto/23500",
+        # "https://delfino.cr/asamblea/proyecto/21538",
+        # "https://delfino.cr/asamblea/proyecto/25000",
+        # "https://delfino.cr/asamblea/proyecto/24000",
+        # "https://delfino.cr/asamblea/proyecto/23000",
+        # "https://delfino.cr/asamblea/proyecto/22000",
         ]
 delfino_html_responses = fetcher.fetch_multiple(delfino_urls)
 
-delfino_parser = DelfinoParser()
+# delfino_parser = DelfinoParser()
 
 for html_response in delfino_html_responses:
-  delfino_parser.parse(html_response)
+  file_manager.save_html("raw/html/delfino/asamblea/expedientes", html_response.url, html_response.html, True)
 
 # parser: CRHoyParser = CRHoyParser()
 
