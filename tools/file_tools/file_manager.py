@@ -22,3 +22,12 @@ class FileManager:
     path = pathlib.Path(folder_path) / final_name
     html = path.read_text(encoding = "utf-8")
     return html
+  
+  def html_exists(self, folder_path: str, name: str, encripted: bool = True) -> bool:
+    final_name = name
+    if encripted:
+      final_name = hashlib.sha256(name.encode("utf-8")).hexdigest()
+    final_name += ".html"
+
+    path = pathlib.Path(folder_path) / final_name
+    return path.exists()

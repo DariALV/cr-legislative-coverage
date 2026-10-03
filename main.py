@@ -36,6 +36,8 @@ html = file_manager.load_html("raw/html/delfino/asamblea/expedientes", "https://
 
 delfino_parser.parse(html)
 
+test = file_manager.html_exists("raw/html/delfino/asamblea/expedientes", "https://delfino.cr/asamblea/proyecto/2580")
+print(test)
 # parser: CRHoyParser = CRHoyParser()
 
 
