@@ -2,7 +2,7 @@ from tools.scraping_tools.html_fetcher import HTMLFetcher
 from tools.scraping_tools.crhoy_parser import CRHoyParser
 
 
-fetcher: HTMLFetcher = HTMLFetcher("uni-project", 0.2, 5)
+fetcher: HTMLFetcher = HTMLFetcher("uni-project", 0.5, 5)
 urls = ["https://crhoy.com/nacionales/vigilancia-policial-a-faroleadas-no-se-limito-a-cartago-alcanzo-a-otros-cantones/",
         "https://crhoy.com/nacionales/crisis-financiera-genera-cierre-de-dos-comites-de-cruz-roja/",
         "https://crhoy.com/nacionales/conare-respalda-excluir-gasto-en-educacion-publica-de-la-regla-fiscal/",
