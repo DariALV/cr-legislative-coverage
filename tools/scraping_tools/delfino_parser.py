@@ -15,7 +15,7 @@ class DelfinoParser:
     description = self.get_description(soup)
     file_type = self.get_metadata_file_type(metadata_list)
     status = self.get_metadata_status(metadata_list)
-    law_number = self.get_metadata_law_number(metadata_list)
+    law_number = self.get_metadata_law_number(metadata_list, number)
     date_proposed = self.get_metadata_date_proposed(metadata_list)
     commission = self.get_metadata_commission(metadata_list)
     categories = self.get_metadata_categories(metadata_list)
@@ -61,10 +61,14 @@ class DelfinoParser:
         return metadata.value
     return None
       
-  def get_metadata_law_number(self, metadata_list: list[Metadata]):
+  def get_metadata_law_number(self, metadata_list: list[Metadata], exp_num: int):
     for metadata in metadata_list:
       if metadata.name == "Número de Ley":
-        return int(metadata.value.replace(".", ""))
+        if "6933-22-23" in metadata.value:
+          return None
+        
+        number = int(metadata.value.replace(".", "").replace(" (VETADO)", ""))
+        return number
     return None
       
   def get_metadata_date_proposed(self, metadata_list: list[Metadata]):

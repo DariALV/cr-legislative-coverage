@@ -24,20 +24,20 @@ class CRHoyParser:
           print(news_article_schema)
           content, extraction_status = get_all_text(soup, url)
           date_extracted: datetime = datetime.now()
-          categories: list[str] = news_article_schema["articleSection"]
 
-          article = NewsArticle(organization, url, title, description, date_published, author, content, date_extracted, extraction_status, categories)
+          article = NewsArticle(organization, url, title, description, date_published, author, content, date_extracted, extraction_status)
           print(article.as_dict())
           return article
         else:
            print("Not a NewsArticle")
+    return None
 
 
 def get_all_text(soup: BeautifulSoup, url: str) -> str:
 
   article_div = soup.find("div", class_="wp-article")
   if not article_div:
-     return "", "Partial"
+     return None, "Partial"
   text = article_div.text
   text = text.replace("(CRHoy.com)", "")
   return text, "Success"

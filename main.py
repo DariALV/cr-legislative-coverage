@@ -8,7 +8,9 @@ fetcher: HTMLFetcher = HTMLFetcher("uni-project", 1, 5)
 pipeline: Pipeline = Pipeline()
 database: Database = Database("databases", "private_corpus")
 
-expedientes = pipeline.scrap_delfino(fetcher)
+news_articles = pipeline.scrap_crhoy(fetcher)
+
+# expedientes = pipeline.scrap_delfino(fetcher)
 
 # database.create_private_corpus_tables()
 # database.insert_expedientes(expedientes)
@@ -17,3 +19,5 @@ new_exp = database.get_expedientes()
 
 for exp in new_exp:
   print(exp)
+
+print(len(new_exp))

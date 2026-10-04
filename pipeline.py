@@ -38,7 +38,8 @@ class Pipeline:
           print(f"Url {url} found {html.lower()}")
         else:
           news_article: NewsArticle = parser.parse(html, url)
-          news_articles.append(news_article)
+          if news_article:
+            news_articles.append(news_article)
 
   def scrap_delfino(self, fetcher: HTMLFetcher, scrap_urls: bool = False) -> list[Expediente]:
     save_folder_path: str = "raw/html/delfino/asamblea/expedientes"
@@ -57,7 +58,7 @@ class Pipeline:
 
     expedientes: list[Expediente] = []
 
-    for url in delfino_urls[1000:1010]:
+    for url in delfino_urls:
       if file_manager.html_exists(save_folder_path, url):
         html = file_manager.load_html(save_folder_path, url)
         if re.fullmatch(r"Error (\d{3})", html):
