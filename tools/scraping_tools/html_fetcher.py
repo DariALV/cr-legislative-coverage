@@ -48,7 +48,6 @@ class HTMLFetcher:
 class HTMLResponse:
   def __init__(self, response: requests.Response):
     self.url = response.url
-    response.encoding = response.apparent_encoding
     self.html = response.text
     self.status_code = response.status_code
   

@@ -2,7 +2,7 @@ import re
 
 from tools.scraping_tools.html_fetcher import HTMLFetcher
 from tools.scraping_tools.crhoy_parser import CRHoyParser
-from tools.scraping_tools.delfino_parser import DelfinoParser
+from tools.scraping_tools.delfino_parser import DelfinoParser, Metadata
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.expediente import Expediente
 from tools.scraping_tools.url_collector import UrlCollector
@@ -57,7 +57,7 @@ class Pipeline:
 
     expedientes: list[Expediente] = []
 
-    for url in delfino_urls:
+    for url in delfino_urls[1000:1010]:
       if file_manager.html_exists(save_folder_path, url):
         html = file_manager.load_html(save_folder_path, url)
         if re.fullmatch(r"Error (\d{3})", html):

@@ -14,6 +14,10 @@ class FileManager:
     html = path.read_text(encoding = "utf-8")
     return html
   
+  def delete_html(self, folder_path: str, name: str, encripted: bool = True):
+    path = self.get_path(folder_path, name, ".html", encripted)
+    path.unlink(missing_ok=True)
+  
   def html_exists(self, folder_path: str, name: str, encripted: bool = True) -> bool:
     path = self.get_path(folder_path, name, ".html", encripted)
     return path.exists()

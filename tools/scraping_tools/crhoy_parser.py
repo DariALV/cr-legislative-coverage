@@ -41,5 +41,3 @@ def get_all_text(soup: BeautifulSoup, url: str) -> str:
   text = article_div.text
   text = text.replace("(CRHoy.com)", "")
   return text, "Success"
-
-  
