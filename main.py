@@ -12,12 +12,12 @@ news_articles = pipeline.scrap_crhoy(fetcher)
 
 # expedientes = pipeline.scrap_delfino(fetcher)
 
-# database.create_private_corpus_tables()
-# database.insert_expedientes(expedientes)
+database.create_private_corpus_tables()
+database.insert_news_articles(news_articles)
 
-new_exp = database.get_expedientes()
+articles_from_db = database.get_news_articles()
 
-for exp in new_exp:
-  print(exp)
+for art in articles_from_db:
+  print(art)
 
-print(len(new_exp))
+print(len(articles_from_db))

@@ -3,8 +3,9 @@ from datetime import datetime
 
 @dataclass
 class NewsArticle:
-    organization: str
+    id: str
     url: str
+    organization: str
     title: str
     description: str
     date_published: datetime

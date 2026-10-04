@@ -14,7 +14,7 @@ class Pipeline:
     self.scrap_crhoy(fetcher)
     self.scrap_delfino()
 
-  def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False) -> list[NewsArticle]:
+  def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False) -> list[NewsArticle]:
     save_folder_path: str = "raw/html/crhoy/news"
     url_collector: UrlCollector = UrlCollector()
     file_manager: FileManager = FileManager()
@@ -27,19 +27,27 @@ class Pipeline:
     else:
       crhoy_urls = file_manager.load_json_as_dict("raw/links/crhoy", "crhoy_links")["links"]
     
-    fetcher.fetch_multiple(save_folder_path, crhoy_urls)
+    if scrap_new_htmls:
+      fetcher.fetch_multiple(save_folder_path, crhoy_urls)
 
     news_articles: list[NewsArticle] = []
 
+    filtered_urls: list[str] = []
     for url in crhoy_urls:
       if not "/caricaturas/" in url and not "/gusto/" in url and file_manager.html_exists(save_folder_path, url):
-        html = file_manager.load_html(save_folder_path, url)
-        if re.fullmatch(r"Error (\d{3})", html):
-          print(f"Url {url} found {html.lower()}")
-        else:
-          news_article: NewsArticle = parser.parse(html, url)
-          if news_article:
-            news_articles.append(news_article)
+        filtered_urls.append(url)
+
+    for i in range(len(filtered_urls)):
+      url: str = filtered_urls[i]
+      news_processed_count(i + 1, len(filtered_urls))
+      html = file_manager.load_html(save_folder_path, url)
+      if re.fullmatch(r"Error (\d{3})", html):
+        print(f"Url {url} found {html.lower()}")
+      else:
+        news_article: NewsArticle = parser.parse(html, url)
+        if news_article:
+          news_articles.append(news_article)
+    return news_articles
 
   def scrap_delfino(self, fetcher: HTMLFetcher, scrap_urls: bool = False) -> list[Expediente]:
     save_folder_path: str = "raw/html/delfino/asamblea/expedientes"
@@ -71,3 +79,6 @@ class Pipeline:
 
   def apply_embeddings(self):
     pass
+
+def news_processed_count(current, max):
+   print(f"{current} out of {max} news processed. ({current * 100.0/max:.2f}% completed)")

@@ -4,6 +4,7 @@ from datetime import datetime
 
 from tools.scraping_tools.html_fetcher import HTMLResponse
 from tools.scraping_tools.news_article import NewsArticle
+from tools.file_tools.file_manager import hash
 
 class CRHoyParser:
   
@@ -15,23 +16,21 @@ class CRHoyParser:
         news_article_schema = json.loads(script.string)
         if news_article_schema["@type"] == "NewsArticle":
 
+          id: str = hash(url)
           organization: str = "crhoy"
           title: str = news_article_schema["headline"]
           description: str = news_article_schema["description"]
           date_format = "%Y-%m-%dT%H:%M:%S"
           date_published: datetime = datetime.strptime(news_article_schema["datePublished"], date_format)
           author: str = news_article_schema["author"]["name"]
-          print(news_article_schema)
           content, extraction_status = get_all_text(soup, url)
           date_extracted: datetime = datetime.now()
 
-          article = NewsArticle(organization, url, title, description, date_published, author, content, date_extracted, extraction_status)
-          print(article.as_dict())
+          article = NewsArticle(id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status)
           return article
         else:
            print("Not a NewsArticle")
     return None
-
 
 def get_all_text(soup: BeautifulSoup, url: str) -> str:
 

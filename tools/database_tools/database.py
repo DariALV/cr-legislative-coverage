@@ -2,6 +2,7 @@ import sqlite3
 from datetime import datetime
 
 from tools.scraping_tools.expediente import Expediente
+from tools.scraping_tools.news_article import NewsArticle
 
 
 class Database:
@@ -50,6 +51,47 @@ class Database:
     self.cursor.execute(exp_cat_table)
     self.connection.commit()
   
+  def insert_news_article(self, article: NewsArticle, should_commit: bool = False):
+    id = article.id
+    url = article.url
+    organization = article.organization
+    title = article.title
+    description = article.description
+    date_published = article.date_published.isoformat()
+    author = article.author
+    content = article.content
+    date_extracted = article.date_extracted.isoformat()
+    extraction_status = article.extraction_status
+    self.cursor.execute(f"INSERT INTO news_articles (id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING", [id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status])
+    if should_commit:
+      self.connection.commit()
+
+  def insert_news_articles(self, article_list: list[NewsArticle]):
+
+    max_steps_to_commit = 50
+    steps_to_commit = max_steps_to_commit
+
+    for article in article_list:
+      self.insert_news_article(article)
+      steps_to_commit -= 1
+      if steps_to_commit == 0:
+        steps_to_commit = max_steps_to_commit
+        self.connection.commit()
+    
+    self.connection.commit()
+
+  def get_news_articles(self) -> list[NewsArticle]:
+    self.cursor.execute("SELECT * FROM news_articles")
+    results = self.cursor.fetchall()
+
+    news_articles: list[NewsArticle] = []
+
+    for r in results:
+      article: NewsArticle = NewsArticle(r[0], r[1], r[2], r[3], r[4], datetime.fromisoformat(r[5]), r[6], r[7], datetime.fromisoformat(r[8]), r[9])
+      news_articles.append(article)
+    
+    return news_articles
+
   def insert_expediente(self, exp: Expediente, should_commit: bool = False):
     number = exp.number
     name = exp.name
@@ -64,7 +106,7 @@ class Database:
     self.insert_expediente_categories(exp, False)
     if should_commit:
       self.connection.commit()
-    
+
   def insert_expediente_categories(self, exp: Expediente, should_commit: bool = False):
     number = exp.number
     categories = exp.categories
