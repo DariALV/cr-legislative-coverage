@@ -17,9 +17,9 @@ class DelfinoParser:
     status = self.get_metadata_status(metadata_list)
     law_number = self.get_metadata_law_number(metadata_list)
     date_proposed = self.get_metadata_date_proposed(metadata_list)
-    comission = self.get_metadata_comission(metadata_list)
+    commission = self.get_metadata_commission(metadata_list)
     categories = self.get_metadata_categories(metadata_list)
-    expediente: Expediente = Expediente(number, title, description, datetime.now(), file_type, status, comission, date_proposed, law_number, categories)
+    expediente: Expediente = Expediente(number, title, description, datetime.now(), file_type, status, commission, date_proposed, law_number, categories)
     return expediente
 
 
@@ -74,7 +74,7 @@ class DelfinoParser:
         return datetime(int(date_parts[2]), MONTHS[date_parts[1]], int(date_parts[0]))
     return None
       
-  def get_metadata_comission(self, metadata_list: list[Metadata]):
+  def get_metadata_commission(self, metadata_list: list[Metadata]):
     for metadata in metadata_list:
       if metadata.name == "Comisión":
         return metadata.value
