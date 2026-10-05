@@ -12,7 +12,7 @@ class Pipeline:
   def scrap_websites(self):
     fetcher: HTMLFetcher = HTMLFetcher("uni-project", 1, 5)
     self.scrap_crhoy(fetcher)
-    self.scrap_delfino()
+    self.scrap_delfino(fetcher)
 
   def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False) -> list[NewsArticle]:
     save_folder_path: str = "raw/html/crhoy/news"
@@ -80,5 +80,5 @@ class Pipeline:
   def apply_embeddings(self):
     pass
 
-def news_processed_count(current, max):
+def news_processed_count(current: int, max: int):
    print(f"{current} out of {max} news processed. ({current * 100.0/max:.2f}% completed)")
