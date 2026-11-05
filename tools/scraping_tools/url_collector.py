@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+from tools.scraping_tools.section_filter import is_relevant_url
+
 class UrlCollector:
   def get_delfino_links(self, max_expediente) -> list[str]:
     urls: list[str] = []
@@ -34,12 +36,7 @@ class UrlCollector:
     # links += self.get_crhoy_sitemap_links("https://crhoy.com/sitemaps/sitemap-10.xml")
     # links += self.get_crhoy_sitemap_links("https://crhoy.com/sitemaps/sitemap-11.xml")
     # links += self.get_crhoy_sitemap_links("https://crhoy.com/sitemaps/sitemap-12.xml")
-    filtered_links: list[str] = []
-    for link in links:
-      if "/entretenimiento/" in link or "/deportes/" in link or "/mundo/" in link:
-        continue
-      filtered_links.append(link)
-    return filtered_links
+    return [link for link in links if is_relevant_url("crhoy", link)]
     
   
   def get_crhoy_sitemap_links(self, sitemap_url: str) -> list[str]:

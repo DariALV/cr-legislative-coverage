@@ -6,6 +6,7 @@ from tools.scraping_tools.delfino_parser import DelfinoParser, Metadata
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.expediente import Expediente
 from tools.scraping_tools.url_collector import UrlCollector
+from tools.scraping_tools.section_filter import is_relevant_url
 from tools.file_tools.file_manager import FileManager
 
 class Pipeline:
@@ -34,7 +35,7 @@ class Pipeline:
 
     filtered_urls: list[str] = []
     for url in crhoy_urls:
-      if not "/caricaturas/" in url and not "/gusto/" in url and file_manager.html_exists(save_folder_path, url):
+      if is_relevant_url("crhoy", url) and file_manager.html_exists(save_folder_path, url):
         filtered_urls.append(url)
 
     for i in range(len(filtered_urls)):
