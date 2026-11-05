@@ -1,66 +1,114 @@
 import re
 
+from config import Config, DataPeriod
 from tools.scraping_tools.html_fetcher import HTMLFetcher
 from tools.scraping_tools.crhoy_parser import CRHoyParser
-from tools.scraping_tools.delfino_parser import DelfinoParser, Metadata
+from tools.scraping_tools.delfino_parser import DelfinoParser
+from tools.scraping_tools.expediente_parser import ExpedienteParser
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.expediente import Expediente
 from tools.scraping_tools.url_collector import UrlCollector
-from tools.scraping_tools.section_filter import is_relevant_url
+from tools.scraping_tools.section_filter import is_relevant_url, is_relevant_delfino_section
 from tools.file_tools.file_manager import FileManager
 
 class Pipeline:
   def scrap_websites(self):
-    fetcher: HTMLFetcher = HTMLFetcher("uni-project", 1, 5)
+    fetcher: HTMLFetcher = HTMLFetcher(Config.USER_AGENT, Config.RATE_LIMIT, Config.RETRIES, Config.TIMEOUT)
     self.scrap_crhoy(fetcher)
+    self.scrap_delfino_news(fetcher)
     self.scrap_delfino(fetcher)
 
-  def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False) -> list[NewsArticle]:
-    save_folder_path: str = "raw/html/crhoy/news"
+  def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                  period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
+    save_folder_path: str = f"{Config.RAW_HTML_DIR}/crhoy/news"
+    links_folder_path: str = f"{Config.RAW_LINKS_DIR}/crhoy"
     url_collector: UrlCollector = UrlCollector()
     file_manager: FileManager = FileManager()
     parser: CRHoyParser = CRHoyParser()
 
     crhoy_urls: list[str] = []
     if scrap_urls:
-      crhoy_urls = url_collector.get_crhoy_links()
-      file_manager.save_dict_as_json("raw/links/crhoy", "crhoy_links", {"links": crhoy_urls})
+      crhoy_urls = url_collector.get_crhoy_links(period)
+      file_manager.save_dict_as_json(links_folder_path, "crhoy_links", {"links": crhoy_urls})
     else:
-      crhoy_urls = file_manager.load_json_as_dict("raw/links/crhoy", "crhoy_links")["links"]
-    
+      crhoy_urls = file_manager.load_json_as_dict(links_folder_path, "crhoy_links")["links"]
+
     if scrap_new_htmls:
       fetcher.fetch_multiple(save_folder_path, crhoy_urls)
-
-    news_articles: list[NewsArticle] = []
 
     filtered_urls: list[str] = []
     for url in crhoy_urls:
       if is_relevant_url("crhoy", url) and file_manager.html_exists(save_folder_path, url):
         filtered_urls.append(url)
 
+    news_articles: list[NewsArticle] = []
     for i in range(len(filtered_urls)):
       url: str = filtered_urls[i]
       news_processed_count(i + 1, len(filtered_urls))
       html = file_manager.load_html(save_folder_path, url)
-      if re.fullmatch(r"Error (\d{3})", html):
+      if is_error_html(html):
         print(f"Url {url} found {html.lower()}")
-      else:
-        news_article: NewsArticle = parser.parse(html, url)
-        if news_article:
-          news_articles.append(news_article)
+        continue
+      news_article: NewsArticle | None = parser.parse(html, url)
+      if news_article and period.contains(news_article.date_published):
+        news_articles.append(news_article)
+    print(f"CRHoy: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
     return news_articles
 
-  def scrap_delfino(self, fetcher: HTMLFetcher, first_expediente: int = 20000, max_expediente: int = 100000,
-                    max_consecutive_errors: int = 5) -> list[Expediente]:
+  def scrap_delfino_news(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                         period: DataPeriod = Config.DATA_PERIOD) -> tuple[list[NewsArticle], dict[str, list[int]]]:
+    """
+    Returns the news inside the period (excluded sections dropped) and, per news id, the expediente
+    numbers its body links to (store them with Database.insert_news_expediente_links, source "link").
+    """
+    save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/news"
+    links_folder_path: str = f"{Config.RAW_LINKS_DIR}/delfino"
+    url_collector: UrlCollector = UrlCollector()
+    file_manager: FileManager = FileManager()
+    parser: DelfinoParser = DelfinoParser()
+
+    delfino_urls: list[str] = []
+    if scrap_urls:
+      delfino_urls = url_collector.get_delfino_news_links(period)
+      file_manager.save_dict_as_json(links_folder_path, "delfino_news_links", {"links": delfino_urls})
+    else:
+      delfino_urls = file_manager.load_json_as_dict(links_folder_path, "delfino_news_links")["links"]
+
+    if scrap_new_htmls:
+      fetcher.fetch_multiple(save_folder_path, delfino_urls)
+
+    downloaded_urls: list[str] = [url for url in delfino_urls if file_manager.html_exists(save_folder_path, url)]
+
+    news_articles: list[NewsArticle] = []
+    expediente_links: dict[str, list[int]] = {}
+    for i in range(len(downloaded_urls)):
+      url: str = downloaded_urls[i]
+      news_processed_count(i + 1, len(downloaded_urls))
+      html = file_manager.load_html(save_folder_path, url)
+      if is_error_html(html):
+        print(f"Url {url} found {html.lower()}")
+        continue
+      news_article: NewsArticle | None = parser.parse(html, url)
+      # Delfino urls carry no section, so the section filter runs here, on the page's articleSection
+      if news_article and period.contains(news_article.date_published) and is_relevant_delfino_section(news_article.section):
+        news_articles.append(news_article)
+        links: list[int] = parser.parse_expediente_links(html)
+        if links:
+          expediente_links[news_article.id] = links
+    print(f"Delfino: {len(news_articles)} news inside the period out of {len(downloaded_urls)} downloaded")
+    return news_articles, expediente_links
+
+  def scrap_delfino(self, fetcher: HTMLFetcher, first_expediente: int = Config.FIRST_EXPEDIENTE, max_expediente: int = Config.MAX_EXPEDIENTE,
+                    max_consecutive_errors: int = Config.MAX_CONSECUTIVE_ERRORS) -> list[Expediente]:
     """
     Walks expedientes from first_expediente upwards. Errors only count once we are past the last
     successfully collected expediente; it stops after max_consecutive_errors errors in a row there
     (or at max_expediente).
     """
-    save_folder_path: str = "raw/html/delfino/asamblea/expedientes"
+    save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/asamblea/expedientes"
     url_collector: UrlCollector = UrlCollector()
     file_manager: FileManager = FileManager()
-    parser: DelfinoParser = DelfinoParser()
+    parser: ExpedienteParser = ExpedienteParser()
 
     last_success: int = self.last_cached_delfino_success(file_manager, url_collector, save_folder_path, first_expediente, max_expediente)
     print(f"Last expediente already collected: {last_success if last_success >= first_expediente else 'none'}")
@@ -95,7 +143,7 @@ class Pipeline:
       expediente: Expediente = parser.parse(html, url)
       expedientes.append(expediente)
 
-    file_manager.save_dict_as_json("raw/links/delfino", "delfino_links", {"links": collected_urls})
+    file_manager.save_dict_as_json(f"{Config.RAW_LINKS_DIR}/delfino", "delfino_links", {"links": collected_urls})
     return expedientes
 
   def last_cached_delfino_success(self, file_manager: FileManager, url_collector: UrlCollector, save_folder_path: str,

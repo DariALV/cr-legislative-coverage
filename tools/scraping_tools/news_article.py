@@ -13,3 +13,5 @@ class NewsArticle:
     content: str | None
     date_extracted: datetime
     extraction_status: str
+    outlet_type: str          # "general" or "specialized"
+    section: str | None       # section as the outlet names it (no common taxonomy)

@@ -2,8 +2,9 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 
-from tools.scraping_tools.html_fetcher import HTMLResponse
+from config import Config
 from tools.scraping_tools.news_article import NewsArticle
+from tools.scraping_tools.section_filter import url_section
 from tools.file_tools.file_manager import hash
 
 class CRHoyParser:
@@ -20,13 +21,16 @@ class CRHoyParser:
           organization: str = "crhoy"
           title: str = news_article_schema["headline"]
           description: str = news_article_schema["description"]
-          date_format = "%Y-%m-%dT%H:%M:%S"
-          date_published: datetime = datetime.strptime(news_article_schema["datePublished"], date_format)
+          # CRHoy timestamps are Costa Rica local time. The JSON-LD has no offset, but its meta tags and
+          # sitemaps label the same local time with "Z", so any suffix is ignored instead of converted.
+          date_published: datetime = datetime.fromisoformat(news_article_schema["datePublished"][:19])
           author: str = news_article_schema["author"]["name"]
           content, extraction_status = get_all_text(soup, url)
           date_extracted: datetime = datetime.now()
+          outlet_type: str = Config.GENERAL_OUTLET
+          section: str | None = url_section(url)
 
-          article = NewsArticle(id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status)
+          article = NewsArticle(id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status, outlet_type, section)
           return article
         else:
            print("Not a NewsArticle")

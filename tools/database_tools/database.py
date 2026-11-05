@@ -1,6 +1,8 @@
 import sqlite3
 from datetime import datetime
 
+from config import Config
+
 from tools.scraping_tools.expediente import Expediente
 from tools.scraping_tools.news_article import NewsArticle
 
@@ -23,7 +25,19 @@ class Database:
           author            TEXT,
           content           TEXT,
           date_extracted    TEXT NOT NULL,
-          extraction_status TEXT NOT NULL
+          extraction_status TEXT NOT NULL,
+          outlet_type       TEXT NOT NULL DEFAULT 'general',
+          section           TEXT
+      ) STRICT
+      """
+    # Expediente numbers a news article explicitly points to (e.g. Delfino links to /asamblea/proyecto/<number>).
+    # No foreign key to expedientes: a news can cite an expediente that is not collected yet.
+    news_exp_links_table = """
+      CREATE TABLE IF NOT EXISTS news_expediente_links(
+          news_id           TEXT NOT NULL REFERENCES news_articles(id),
+          expediente_number INTEGER NOT NULL,
+          source            TEXT NOT NULL,
+          PRIMARY KEY (news_id, expediente_number, source)
       ) STRICT
       """
     exp_table = """
@@ -47,9 +61,20 @@ class Database:
       ) STRICT
       """
     self.cursor.execute(news_table)
+    self.add_missing_news_columns()
+    self.cursor.execute(news_exp_links_table)
     self.cursor.execute(exp_table)
     self.cursor.execute(exp_cat_table)
     self.connection.commit()
+
+  def add_missing_news_columns(self):
+    """Adds outlet_type and section to a news_articles table created before they existed (appended at the end)."""
+    self.cursor.execute("PRAGMA table_info(news_articles)")
+    columns = [r[1] for r in self.cursor.fetchall()]
+    if "outlet_type" not in columns:
+      self.cursor.execute("ALTER TABLE news_articles ADD COLUMN outlet_type TEXT NOT NULL DEFAULT 'general'")
+    if "section" not in columns:
+      self.cursor.execute("ALTER TABLE news_articles ADD COLUMN section TEXT")
   
   def insert_news_article(self, article: NewsArticle, should_commit: bool = False):
     id = article.id
@@ -62,13 +87,28 @@ class Database:
     content = article.content
     date_extracted = article.date_extracted.isoformat()
     extraction_status = article.extraction_status
-    self.cursor.execute(f"INSERT INTO news_articles (id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING", [id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status])
+    outlet_type = article.outlet_type
+    section = article.section
+    self.cursor.execute(f"INSERT INTO news_articles (id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status, outlet_type, section) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING", [id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status, outlet_type, section])
     if should_commit:
       self.connection.commit()
 
+  def insert_news_expediente_links(self, news_id: str, expediente_numbers: list[int], source: str, should_commit: bool = False):
+    for number in expediente_numbers:
+      self.cursor.execute(f"INSERT INTO news_expediente_links (news_id, expediente_number, source) VALUES (?, ?, ?) ON CONFLICT(news_id, expediente_number, source) DO NOTHING", [news_id, number, source])
+    if should_commit:
+      self.connection.commit()
+
+  def get_news_expediente_links(self, source: str | None = None) -> list[tuple[str, int, str]]:
+    if source is None:
+      self.cursor.execute("SELECT news_id, expediente_number, source FROM news_expediente_links")
+    else:
+      self.cursor.execute("SELECT news_id, expediente_number, source FROM news_expediente_links WHERE source = ?", [source])
+    return self.cursor.fetchall()
+
   def insert_news_articles(self, article_list: list[NewsArticle]):
 
-    max_steps_to_commit = 50
+    max_steps_to_commit = Config.COMMIT_BATCH_SIZE
     steps_to_commit = max_steps_to_commit
 
     for article in article_list:
@@ -87,7 +127,7 @@ class Database:
     news_articles: list[NewsArticle] = []
 
     for r in results:
-      article: NewsArticle = NewsArticle(r[0], r[1], r[2], r[3], r[4], datetime.fromisoformat(r[5]), r[6], r[7], datetime.fromisoformat(r[8]), r[9])
+      article: NewsArticle = NewsArticle(r[0], r[1], r[2], r[3], r[4], datetime.fromisoformat(r[5]), r[6], r[7], datetime.fromisoformat(r[8]), r[9], r[10], r[11])
       news_articles.append(article)
     
     return news_articles
@@ -117,7 +157,7 @@ class Database:
 
   def insert_expedientes(self, exp_list: list[Expediente]):
 
-    max_steps_to_commit = 50
+    max_steps_to_commit = Config.COMMIT_BATCH_SIZE
     steps_to_commit = max_steps_to_commit
 
     for exp in exp_list:
