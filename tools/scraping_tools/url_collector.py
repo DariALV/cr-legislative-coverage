@@ -5,8 +5,11 @@ class UrlCollector:
   def get_delfino_links(self, max_expediente) -> list[str]:
     urls: list[str] = []
     for i in range(20000, max_expediente + 1):
-      urls.append(f"https://delfino.cr/asamblea/proyecto/{i}")
+      urls.append(self.get_delfino_link(i))
     return urls
+
+  def get_delfino_link(self, expediente_number: int) -> str:
+    return f"https://delfino.cr/asamblea/proyecto/{expediente_number}"
 
   def get_crhoy_links(self) -> list[str]:
     links: list[str] = []

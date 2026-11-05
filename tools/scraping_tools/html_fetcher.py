@@ -16,28 +16,37 @@ class HTMLFetcher:
     self.file_manager = FileManager()
 
   def fetch_multiple(self, save_path: str, urls: list[str]):
-    retry = Retry(
-    total = self.retries,
-    backoff_factor = 1,
-    status_forcelist = [429, 500, 502, 503, 504],
-    respect_retry_after_header = True,
-    allowed_methods = ["GET"],
-    )
-    session = requests.Session()
-    session.headers.update({"User-Agent": f"{self.user_agent}/1.0"})
-    session.mount("https://", HTTPAdapter(max_retries=retry))
-
     for i in range(len(urls)):
       url: str = urls[i]
       print(f"{i + 1} out of {len(urls)} websites scraped. ({100.0 * (i + 1.0)/len(urls):.2f}% completed)")
       if not self.file_manager.html_exists(save_path, url):
-        response = session.get(url, timeout = self.timeout)
-        html_response = HTMLResponse(response)
-        if html_response.status_code == 200:
-          self.file_manager.save_html(save_path, url, html_response.html)
-        else:
-          self.file_manager.save_html(save_path, url, f"Error {html_response.status_code}")
-        self.rate_limiter.wait()
+        self.fetch(save_path, url)
+
+  def fetch(self, save_path: str, url: str) -> str:
+    """Downloads a single url, saves it (or "Error <code>") and returns the saved text."""
+    response = self.get_session().get(url, timeout = self.timeout)
+    html_response = HTMLResponse(response)
+    if html_response.status_code == 200:
+      content = html_response.html
+    else:
+      content = f"Error {html_response.status_code}"
+    self.file_manager.save_html(save_path, url, content)
+    self.rate_limiter.wait()
+    return content
+
+  def get_session(self) -> requests.Session:
+    if getattr(self, "session", None) is None:
+      retry = Retry(
+      total = self.retries,
+      backoff_factor = 1,
+      status_forcelist = [429, 500, 502, 503, 504],
+      respect_retry_after_header = True,
+      allowed_methods = ["GET"],
+      )
+      self.session = requests.Session()
+      self.session.headers.update({"User-Agent": f"{self.user_agent}/1.0"})
+      self.session.mount("https://", HTTPAdapter(max_retries=retry))
+    return self.session
     
 
   
