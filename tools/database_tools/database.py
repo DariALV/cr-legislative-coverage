@@ -1,3 +1,4 @@
+import pathlib
 import sqlite3
 from datetime import datetime
 
@@ -10,6 +11,7 @@ from tools.scraping_tools.news_article import NewsArticle
 class Database:
 
   def __init__(self, save_path: str, name: str):
+    pathlib.Path(save_path).mkdir(parents = True, exist_ok = True)   # sqlite creates the file, not the folder
     self.connection = sqlite3.connect(f"{save_path}/{name}.db")
     self.cursor = self.connection.cursor()
   
@@ -99,6 +101,12 @@ class Database:
     if should_commit:
       self.connection.commit()
 
+  def insert_news_expediente_links_map(self, links: dict[str, list[int]], source: str):
+    """Inserts {news_id: [expediente numbers]} (as returned by Pipeline.scrap_delfino_news) and commits."""
+    for news_id, expediente_numbers in links.items():
+      self.insert_news_expediente_links(news_id, expediente_numbers, source)
+    self.connection.commit()
+
   def get_news_expediente_links(self, source: str | None = None) -> list[tuple[str, int, str]]:
     if source is None:
       self.cursor.execute("SELECT news_id, expediente_number, source FROM news_expediente_links")
@@ -140,7 +148,7 @@ class Database:
     file_type = exp.file_type
     status = exp.status
     commission = exp.commission
-    date_proposed = exp.date_proposed.isoformat()
+    date_proposed = exp.date_proposed.isoformat() if exp.date_proposed else None   # optional in Expediente
     law_number = exp.law_number
     self.cursor.execute(f"INSERT INTO expedientes (number, name, description, date_extracted, file_type, status, commission, date_proposed, law_number) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(number) DO NOTHING", [number, name, desc, date_extracted, file_type, status, commission, date_proposed, law_number])
     self.insert_expediente_categories(exp, False)
@@ -188,7 +196,8 @@ class Database:
     expedientes: list[Expediente] = []
 
     for r in results:
-      exp: Expediente = Expediente(r[0], r[1], r[2], datetime.fromisoformat(r[3]), r[4], r[5], r[6], datetime.fromisoformat(r[7]), r[8], exp_categories[r[0]])
+      date_proposed = datetime.fromisoformat(r[7]) if r[7] else None
+      exp: Expediente = Expediente(r[0], r[1], r[2], datetime.fromisoformat(r[3]), r[4], r[5], r[6], date_proposed, r[8], exp_categories.get(r[0], []))
       expedientes.append(exp)
     
     return expedientes

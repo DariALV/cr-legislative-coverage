@@ -13,8 +13,31 @@ from tools.scraping_tools.expediente import Expediente
 from tools.scraping_tools.url_collector import UrlCollector
 from tools.scraping_tools.section_filter import is_relevant_url, is_relevant_delfino_section
 from tools.file_tools.file_manager import FileManager
+from tools.database_tools.database import Database
 
 class Pipeline:
+  def scrap_and_save(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                     period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
+    """Scrapes every website in parallel and saves the results into the private corpus database."""
+    results: dict[str, Any] = self.scrap_websites(scrap_urls, scrap_new_htmls, period)
+    database: Database = Database(Config.DATABASE_DIR, Config.PRIVATE_DATABASE)
+    database.create_private_corpus_tables()
+    self.save_results(results, database)
+    return results
+
+  def save_results(self, results: dict[str, Any], database: Database):
+    """Inserts what scrap_websites returned. Runs in the calling thread (SQLite connections are per thread)."""
+    if "crhoy" in results:
+      database.insert_news_articles(results["crhoy"])
+      print(f"[crhoy] saved {len(results['crhoy'])} news")
+    if "delfino" in results:
+      delfino: dict[str, Any] = results["delfino"]
+      database.insert_news_articles(delfino["news"])
+      database.insert_news_expediente_links_map(delfino["expediente_links"], "link")
+      database.insert_expedientes(delfino["expedientes"])
+      linked: int = sum(len(numbers) for numbers in delfino["expediente_links"].values())
+      print(f"[delfino] saved {len(delfino['news'])} news, {linked} expediente links, {len(delfino['expedientes'])} expedientes")
+
   def scrap_websites(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                      period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
     """
