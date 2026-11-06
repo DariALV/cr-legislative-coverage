@@ -1,5 +1,18 @@
 # CLAUDE.md
 
+## Design before code
+
+Don't write project code for an issue until its design and its caveats have been agreed with the user. Claude doesn't decide them alone, even when asked to "do everything you can". Running code is always fine: scripts, tests and inspecting data or sources.
+
+- After reading the issue and the data, list the open decisions, each with the options and a recommendation, and wait for the user's answer. For example:
+  - table schemas and fields;
+  - inclusion, exclusion and flagging criteria;
+  - changes in behavior (error handling, what gets overwritten);
+  - what is stored or published;
+  - where docs go and in what language.
+- Also agree how each known caveat will be handled before implementing.
+- If a new decision comes up halfway through, stop and ask. Don't pick one and report it afterwards.
+
 ## Commits
 
 Follow the style of the existing commits (`git log`):
