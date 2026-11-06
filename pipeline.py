@@ -25,9 +25,12 @@ from tools.database_tools.database import Database
 class Pipeline:
   def scrap_and_save(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                      period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
-                     max_bill: int = Config.MAX_BILL) -> dict[str, Any]:
-    """Scrapes every website in parallel and saves the results into the private corpus database."""
-    results: dict[str, Any] = self.scrap_websites(scrap_urls, scrap_new_htmls, period, first_bill, max_bill)
+                     max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
+    """
+    Scrapes every website in parallel and saves the results into the private corpus database.
+    refresh_bills_before re-downloads the bill pages cached before that moment (see scrap_delfino).
+    """
+    results: dict[str, Any] = self.scrap_websites(scrap_urls, scrap_new_htmls, period, first_bill, max_bill, refresh_bills_before)
     database: Database = Database(Config.DATABASE_DIR, Config.PRIVATE_DATABASE)
     database.create_private_corpus_tables()
     self.save_results(results, database)
@@ -44,7 +47,8 @@ class Pipeline:
       database.insert_news_bill_links_map(delfino["bill_links"], "link")
       database.insert_bills(delfino["bills"])
       linked: int = sum(len(numbers) for numbers in delfino["bill_links"].values())
-      print(f"[delfino] saved {len(delfino['news'])} news, {linked} bill links, {len(delfino['bills'])} bills")
+      deputy_votes: int = sum(len(event.deputy_votes) for bill in delfino["bills"] for event in bill.events)
+      print(f"[delfino] saved {len(delfino['news'])} news, {linked} bill links, {len(delfino['bills'])} bills, {deputy_votes} deputy votes")
     if "elmundo" in results:
       database.insert_news_articles(results["elmundo"])
       print(f"[elmundo] saved {len(results['elmundo'])} news")
@@ -57,7 +61,7 @@ class Pipeline:
 
   def scrap_websites(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                      period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
-                     max_bill: int = Config.MAX_BILL) -> dict[str, Any]:
+                     max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
     """
     Scrapes every website in parallel, one thread per website, each with its own fetcher and rate limit.
     Delfino's news and bills share a thread because they are the same website.
@@ -68,7 +72,7 @@ class Pipeline:
     jobs: dict[str, Callable[[], Any]] = {
       "crhoy": lambda: self.scrap_crhoy(self.make_fetcher("crhoy"), scrap_urls, scrap_new_htmls, period),
       "delfino": lambda: self.scrap_delfino_website(self.make_fetcher("delfino"), scrap_urls, scrap_new_htmls, period,
-                                                    first_bill, max_bill),
+                                                    first_bill, max_bill, refresh_bills_before),
       "elmundo": lambda: self.scrap_elmundo(self.make_fetcher("elmundo"), scrap_urls, scrap_new_htmls, period),
       "nacion": lambda: self.scrap_nacion(self.make_fetcher("nacion"), scrap_urls, scrap_new_htmls, period),
       "semanario": lambda: self.scrap_semanario(self.make_fetcher("semanario"), scrap_urls, scrap_new_htmls, period),
@@ -80,9 +84,9 @@ class Pipeline:
 
   def scrap_delfino_website(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                             period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
-                            max_bill: int = Config.MAX_BILL) -> dict[str, Any]:
+                            max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
     news_articles, bill_links = self.scrap_delfino_news(fetcher, scrap_urls, scrap_new_htmls, period)
-    bills: list[Bill] = self.scrap_delfino(fetcher, first_bill, max_bill)
+    bills: list[Bill] = self.scrap_delfino(fetcher, first_bill, max_bill, refresh_before = refresh_bills_before)
     return {"news": news_articles, "bill_links": bill_links, "bills": bills}
 
   def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
@@ -303,11 +307,15 @@ class Pipeline:
     return news_articles, bill_links
 
   def scrap_delfino(self, fetcher: HTMLFetcher, first_bill: int = Config.FIRST_BILL, max_bill: int = Config.MAX_BILL,
-                    max_consecutive_errors: int = Config.MAX_CONSECUTIVE_ERRORS) -> list[Bill]:
+                    max_consecutive_errors: int = Config.MAX_CONSECUTIVE_ERRORS,
+                    refresh_before: datetime | None = None) -> list[Bill]:
     """
     Walks bills from first_bill upwards. Errors only count once we are past the last
     successfully collected bill; it stops after max_consecutive_errors errors in a row there
     (or at max_bill).
+    refresh_before (#23): cached pages saved before that moment are downloaded again, so status,
+    commission, law number, proponents and history are current. Pages already refreshed are kept, so an
+    interrupted refresh resumes where it stopped. Store the result with Database.insert_bills (upsert).
     """
     save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/asamblea/bills"
     url_collector: UrlCollector = UrlCollector()
@@ -325,7 +333,9 @@ class Pipeline:
       url: str = url_collector.get_delfino_link(number)
       html: str | None = None
       if file_manager.html_exists(save_folder_path, url):
-        html = file_manager.load_html(save_folder_path, url)
+        stale: bool = refresh_before is not None and saved_before(file_manager, save_folder_path, url, refresh_before)
+        if not stale:
+          html = file_manager.load_html(save_folder_path, url)
 
       # Past the last known bill, cached errors may be stale (new bills get published), so retry them.
       if html is None or (number > last_success and is_error_html(html)):
@@ -344,11 +354,46 @@ class Pipeline:
       consecutive_errors = 0
       last_success = max(last_success, number)
       collected_urls.append(url)
-      bill: Bill = parser.parse(html, url)
+      try:
+        bill: Bill = parser.parse(html, url)
+      except Exception as error:
+        # A page with an unexpected layout is reported and skipped; the walk goes on.
+        print(f"[{fetcher.name}] Could not parse bill {number}: {error!r}")
+        continue
+      self.add_deputy_votes(fetcher, file_manager, parser, bill)
       bills.append(bill)
 
     file_manager.save_dict_as_json(f"{Config.RAW_LINKS_DIR}/delfino", "delfino_links", {"links": collected_urls})
     return bills
+
+  def add_deputy_votes(self, fetcher: HTMLFetcher, file_manager: FileManager, parser: BillParser, bill: Bill):
+    """
+    Fills each vote event of the bill with how every deputy voted, from its Delfino vote page. A vote page doesn't
+    change once published, so a cached one is never downloaded again. A page that fails leaves that vote without
+    deputies (a cached error is retried on the next run).
+    """
+    save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/asamblea/votes"
+    for event in bill.events:
+      if event.event_type != "vote" or not event.url:
+        continue
+      html: str | None = None
+      if file_manager.html_exists(save_folder_path, event.url):
+        html = file_manager.load_html(save_folder_path, event.url)
+      if html is None or is_error_html(html):
+        try:
+          html = fetcher.fetch(save_folder_path, event.url)
+        except requests.RequestException as error:
+          print(f"[{fetcher.name}] Could not fetch vote {event.url}: {error}")
+          continue
+      if is_error_html(html):
+        print(f"[{fetcher.name}] Vote {event.url} found {html.lower()}")
+        continue
+      try:
+        event.deputy_votes = parser.parse_vote_page(html)
+      except Exception as error:
+        print(f"[{fetcher.name}] Could not parse vote {event.url} of bill {bill.number}: {error!r}")
+      if not event.deputy_votes:
+        print(f"[{fetcher.name}] Vote {event.url} of bill {bill.number} lists no deputies")
 
   def last_cached_delfino_success(self, file_manager: FileManager, url_collector: UrlCollector, save_folder_path: str,
                                   first_bill: int, max_bill: int) -> int:
