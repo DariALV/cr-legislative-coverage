@@ -18,7 +18,8 @@ How the legislative bills (expedientes) are collected from Delfino and cleaned. 
 | `bills` | bill | `number`, `name` (title), `description` (Propósito del Proyecto), `file_type` (Tipo), `status` (Estado), `commission` (Comisión), `date_proposed` (Presentado), `law_number` (Número de Ley), `flag`, `date_extracted` |
 | `bill_categories` | bill × category | Delfino's own categories. `-` means none. |
 | `bill_proponents` | bill × signer | `slug`, `name`, `role` (`main` = Firma Principal, `co` = Co-proponentes), `kind` (`deputy` or `special`), `party`, `position`, `province`, `seat` |
-| `bill_events` | bill × history entry | `event_type` (`text` = Histórico de Textos, `vote` = Histórico de Votaciones), `position` (page order per type), `date`, `name`, `description`, `result`, `url` |
+| `bill_events` | bill × history entry | `event_type` (`text` = Histórico de Textos, `vote` = Histórico de Votaciones), `position` (page order per type), `date`, `name`, `description`, `result`, `url`, `vote_id` |
+| `bill_votes` | vote × deputy | `vote_id`, `slug`, `name`, `party`, `seat`, `vote`. Joins `bill_events` on `(number, vote_id)` and `bill_proponents` on `slug`. |
 | `news_bill_links` | news × bill | Bills a Delfino news links to (`source = "link"`). Not a foreign key: a news item can cite a bill that isn't collected yet. |
 
 ### What each field holds
@@ -29,7 +30,15 @@ How the legislative bills (expedientes) are collected from Delfino and cleaned. 
   - "Contraloría General de la República".
   - Special signers have no party, province or seat.
 - **Text events:** the date and the kind of document, e.g. "Texto base", "Criterio Servicios Técnicos", "Informe de Mayoría", "Texto final". `url` points to the PDF.
-- **Vote events:** the kind of vote (e.g. "Primer debate", "Moción de fondo", "Dispensa de trámites (art. 177)"), what was voted (`description`), the date and the `result` ("Aprobado", "Rechazado", "Anulado"). `url` points to Delfino's vote page. Individual votes per deputy are not collected.
+- **Vote events:** the kind of vote (e.g. "Primer debate", "Moción de fondo", "Dispensa de trámites (art. 177)"), what was voted (`description`), the date and the `result` ("Aprobado", "Rechazado", "Anulado"). `url` points to Delfino's vote page, and `vote_id` is the last part of that url.
+- **Deputy votes (`bill_votes`):** every vote page is read and each deputy's vote is stored. Only Plenario votes: Delfino doesn't list committee votes.
+  - `vote` is `for`, `against` or `absent`. Any other label is kept as Delfino writes it.
+  - In the full run, 5,068 of 271,410 rows (1.9 %) have another label:
+    - candidate names in `Nombramiento` votes (elections, not yes/no votes);
+    - "En blanco", "Abstención", "Nulo", "Voto anulado";
+    - "Ausente (pierde dieta)", which counts as absent.
+  - Details and the suggested mapping are in #22.
+  - A few votes show no deputy list on Delfino and have no rows (3 of 5,013 in the full run).
 
 ## Refreshing (#23)
 
