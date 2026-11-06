@@ -41,9 +41,10 @@ class Config:
   # Data period (see #20). Extend start to 2025-11-01 to get 12 full months.
   DATA_PERIOD = DataPeriod(datetime(2026, 1, 1), datetime(2026, 10, 31, 23, 59, 59))
 
-  # Fetching
+  # Fetching. Each website runs in its own thread with its own rate limit, so sites don't slow each other down.
   USER_AGENT = "uni-project"
-  RATE_LIMIT = 1
+  RATE_LIMIT = 1                       # seconds between requests to the same website
+  RATE_LIMITS = {"semanario": 20}      # per-website overrides (Semanario's robots.txt asks for a 20 s crawl-delay)
   RETRIES = 5
   TIMEOUT = 10
   SITEMAP_TIMEOUT = 60   # some sitemaps list 30,000 urls
@@ -59,6 +60,10 @@ class Config:
   FIRST_EXPEDIENTE = 20000
   MAX_EXPEDIENTE = 100000
   MAX_CONSECUTIVE_ERRORS = 5
+
+  @staticmethod
+  def rate_limit_for(website: str) -> float:
+    return Config.RATE_LIMITS.get(website, Config.RATE_LIMIT)
 
   # Outlet types, used to group the analysis
   GENERAL_OUTLET = "general"

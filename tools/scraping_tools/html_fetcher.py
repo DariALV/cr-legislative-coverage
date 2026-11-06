@@ -7,20 +7,31 @@ from tools.scraping_tools.rate_limiter import RateLimiter
 from tools.file_tools.file_manager import FileManager
 
 class HTMLFetcher:
+  """
+  Not thread-safe (one requests.Session and one RateLimiter): create one fetcher per thread/website.
+  name prefixes the log lines so parallel websites can be told apart.
+  """
 
-  def __init__(self, user_agent: str, rate_limit: int = 1, retries: int = 5, timeout: int = 10):
+  def __init__(self, user_agent: str, rate_limit: float = 1, retries: int = 5, timeout: int = 10, name: str = ""):
     self.user_agent = user_agent
     self.rate_limiter: RateLimiter = RateLimiter(rate_limit)
     self.retries = retries
     self.timeout = timeout
+    self.name = name
     self.file_manager = FileManager()
 
   def fetch_multiple(self, save_path: str, urls: list[str]):
+    prefix: str = f"[{self.name}] " if self.name else ""
     for i in range(len(urls)):
       url: str = urls[i]
-      print(f"{i + 1} out of {len(urls)} websites scraped. ({100.0 * (i + 1.0)/len(urls):.2f}% completed)")
+      print(f"{prefix}{i + 1} out of {len(urls)} websites scraped. ({100.0 * (i + 1.0)/len(urls):.2f}% completed)")
       if not self.file_manager.html_exists(save_path, url):
-        self.fetch(save_path, url)
+        try:
+          self.fetch(save_path, url)
+        except requests.RequestException as error:
+          # Network failure after all retries: nothing is saved, so the url is retried on the next run.
+          print(f"{prefix}Could not fetch {url}: {error}")
+          self.rate_limiter.wait()
 
   def fetch(self, save_path: str, url: str) -> str:
     """Downloads a single url, saves it (or "Error <code>") and returns the saved text."""

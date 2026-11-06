@@ -1,4 +1,7 @@
 import re
+import traceback
+from concurrent.futures import ThreadPoolExecutor
+from typing import Any, Callable
 
 from config import Config, DataPeriod
 from tools.scraping_tools.html_fetcher import HTMLFetcher
@@ -12,11 +15,29 @@ from tools.scraping_tools.section_filter import is_relevant_url, is_relevant_del
 from tools.file_tools.file_manager import FileManager
 
 class Pipeline:
-  def scrap_websites(self):
-    fetcher: HTMLFetcher = HTMLFetcher(Config.USER_AGENT, Config.RATE_LIMIT, Config.RETRIES, Config.TIMEOUT)
-    self.scrap_crhoy(fetcher)
-    self.scrap_delfino_news(fetcher)
-    self.scrap_delfino(fetcher)
+  def scrap_websites(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                     period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
+    """
+    Scrapes every website in parallel, one thread per website, each with its own fetcher and rate limit.
+    Delfino's news and expedientes share a thread because they are the same website.
+    Results are returned (not inserted): SQLite connections can't be shared across threads, so insert
+    them from the calling thread. A website that fails is reported and left out; the others continue.
+    """
+    jobs: dict[str, Callable[[], Any]] = {
+      "crhoy": lambda: self.scrap_crhoy(self.make_fetcher("crhoy"), scrap_urls, scrap_new_htmls, period),
+      "delfino": lambda: self.scrap_delfino_website(self.make_fetcher("delfino"), scrap_urls, scrap_new_htmls, period),
+      # "elmundo": ..., "nacion": ..., "semanario": ... (one entry per new website)
+    }
+    return run_in_parallel(jobs)
+
+  def make_fetcher(self, website: str) -> HTMLFetcher:
+    return HTMLFetcher(Config.USER_AGENT, Config.rate_limit_for(website), Config.RETRIES, Config.TIMEOUT, website)
+
+  def scrap_delfino_website(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                            period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
+    news_articles, expediente_links = self.scrap_delfino_news(fetcher, scrap_urls, scrap_new_htmls, period)
+    expedientes: list[Expediente] = self.scrap_delfino(fetcher)
+    return {"news": news_articles, "expediente_links": expediente_links, "expedientes": expedientes}
 
   def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                   period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
@@ -44,15 +65,15 @@ class Pipeline:
     news_articles: list[NewsArticle] = []
     for i in range(len(filtered_urls)):
       url: str = filtered_urls[i]
-      news_processed_count(i + 1, len(filtered_urls))
+      news_processed_count(i + 1, len(filtered_urls), fetcher.name)
       html = file_manager.load_html(save_folder_path, url)
       if is_error_html(html):
-        print(f"Url {url} found {html.lower()}")
+        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
         continue
       news_article: NewsArticle | None = parser.parse(html, url)
       if news_article and period.contains(news_article.date_published):
         news_articles.append(news_article)
-    print(f"CRHoy: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
+    print(f"[{fetcher.name}] CRHoy: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
     return news_articles
 
   def scrap_delfino_news(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
@@ -83,10 +104,10 @@ class Pipeline:
     expediente_links: dict[str, list[int]] = {}
     for i in range(len(downloaded_urls)):
       url: str = downloaded_urls[i]
-      news_processed_count(i + 1, len(downloaded_urls))
+      news_processed_count(i + 1, len(downloaded_urls), fetcher.name)
       html = file_manager.load_html(save_folder_path, url)
       if is_error_html(html):
-        print(f"Url {url} found {html.lower()}")
+        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
         continue
       news_article: NewsArticle | None = parser.parse(html, url)
       # Delfino urls carry no section, so the section filter runs here, on the page's articleSection
@@ -95,7 +116,7 @@ class Pipeline:
         links: list[int] = parser.parse_expediente_links(html)
         if links:
           expediente_links[news_article.id] = links
-    print(f"Delfino: {len(news_articles)} news inside the period out of {len(downloaded_urls)} downloaded")
+    print(f"[{fetcher.name}] Delfino: {len(news_articles)} news inside the period out of {len(downloaded_urls)} downloaded")
     return news_articles, expediente_links
 
   def scrap_delfino(self, fetcher: HTMLFetcher, first_expediente: int = Config.FIRST_EXPEDIENTE, max_expediente: int = Config.MAX_EXPEDIENTE,
@@ -111,7 +132,7 @@ class Pipeline:
     parser: ExpedienteParser = ExpedienteParser()
 
     last_success: int = self.last_cached_delfino_success(file_manager, url_collector, save_folder_path, first_expediente, max_expediente)
-    print(f"Last expediente already collected: {last_success if last_success >= first_expediente else 'none'}")
+    print(f"[{fetcher.name}] Last expediente already collected: {last_success if last_success >= first_expediente else 'none'}")
 
     expedientes: list[Expediente] = []
     collected_urls: list[str] = []
@@ -125,15 +146,15 @@ class Pipeline:
 
       # Past the last known expediente, cached errors may be stale (new expedientes get published), so retry them.
       if html is None or (number > last_success and is_error_html(html)):
-        print(f"Scraping expediente {number}")
+        print(f"[{fetcher.name}] Scraping expediente {number}")
         html = fetcher.fetch(save_folder_path, url)
 
       if is_error_html(html):
-        print(f"Url {url} found {html.lower()}")
+        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
         if number > last_success:
           consecutive_errors += 1
           if consecutive_errors >= max_consecutive_errors:
-            print(f"{consecutive_errors} consecutive errors after expediente {last_success}, stopping.")
+            print(f"[{fetcher.name}] {consecutive_errors} consecutive errors after expediente {last_success}, stopping.")
             break
         continue
 
@@ -158,8 +179,24 @@ class Pipeline:
   def apply_embeddings(self):
     pass
 
+def run_in_parallel(jobs: dict[str, Callable[[], Any]]) -> dict[str, Any]:
+  """Runs each job in its own thread. Returns {name: result} for the jobs that finished without errors."""
+  results: dict[str, Any] = {}
+  if not jobs:
+    return results
+  with ThreadPoolExecutor(max_workers = len(jobs), thread_name_prefix = "scraper") as executor:
+    futures = {name: executor.submit(job) for name, job in jobs.items()}
+    for name, future in futures.items():
+      try:
+        results[name] = future.result()
+        print(f"[{name}] finished")
+      except Exception:
+        print(f"[{name}] failed, the other websites were not affected:\n{traceback.format_exc()}")
+  return results
+
 def is_error_html(html: str) -> bool:
   return re.fullmatch(r"Error (\d{3})", html) is not None
 
-def news_processed_count(current: int, max: int):
-   print(f"{current} out of {max} news processed. ({current * 100.0/max:.2f}% completed)")
+def news_processed_count(current: int, max: int, name: str = ""):
+   prefix: str = f"[{name}] " if name else ""
+   print(f"{prefix}{current} out of {max} news processed. ({current * 100.0/max:.2f}% completed)")
