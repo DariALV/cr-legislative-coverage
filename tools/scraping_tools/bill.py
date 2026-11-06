@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 
 @dataclass
-class Expediente:
+class Bill:
     number: int
     name: str
     description: str

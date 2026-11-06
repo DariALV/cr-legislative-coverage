@@ -18,14 +18,14 @@ class UrlCollector:
   filter runs after parsing, on date_published.
   """
 
-  def get_delfino_links(self, max_expediente) -> list[str]:
+  def get_delfino_links(self, max_bill) -> list[str]:
     urls: list[str] = []
-    for i in range(Config.FIRST_EXPEDIENTE, max_expediente + 1):
+    for i in range(Config.FIRST_BILL, max_bill + 1):
       urls.append(self.get_delfino_link(i))
     return urls
 
-  def get_delfino_link(self, expediente_number: int) -> str:
-    return f"https://delfino.cr/asamblea/proyecto/{expediente_number}"
+  def get_delfino_link(self, bill_number: int) -> str:
+    return f"https://delfino.cr/asamblea/proyecto/{bill_number}"
 
   def get_delfino_news_links(self, period: DataPeriod = Config.DATA_PERIOD) -> list[str]:
     """News from the yearly sitemaps whose /<year>/<month>/ falls in the period (month precision)."""

@@ -7,7 +7,7 @@ from config import Config, to_costa_rica_time
 from tools.scraping_tools.news_article import NewsArticle
 from tools.file_tools.file_manager import hash
 
-EXPEDIENTE_LINK_REGEX = re.compile(r"/asamblea/proyecto/(\d+)")
+BILL_LINK_REGEX = re.compile(r"/asamblea/proyecto/(\d+)")
 BLOCK_TAGS = ["p", "h2", "h3", "h4", "li", "blockquote"]
 
 def is_nested_block(block, body) -> bool:
@@ -20,7 +20,7 @@ def is_nested_block(block, body) -> bool:
   return False
 
 class DelfinoParser:
-  """Parses Delfino news articles (delfino.cr/<year>/<month>/<slug>). Expediente pages use ExpedienteParser."""
+  """Parses Delfino news articles (delfino.cr/<year>/<month>/<slug>). Bill pages use BillParser."""
 
   def parse(self, html: str, url: str) -> NewsArticle | None:
     soup = BeautifulSoup(html, "lxml")
@@ -44,15 +44,15 @@ class DelfinoParser:
     article = NewsArticle(id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status, outlet_type, section)
     return article
 
-  def parse_expediente_links(self, html: str) -> list[int]:
-    """Expediente numbers linked (/asamblea/proyecto/<number>) inside the article body."""
+  def parse_bill_links(self, html: str) -> list[int]:
+    """Bill numbers linked (/asamblea/proyecto/<number>) inside the article body."""
     soup = BeautifulSoup(html, "lxml")
     body = soup.find(attrs = {"itemprop": "articleBody"})
     if not body:
       return []
     numbers: set[int] = set()
     for link in body.find_all("a", href = True):
-      match = EXPEDIENTE_LINK_REGEX.search(link["href"])
+      match = BILL_LINK_REGEX.search(link["href"])
       if match:
         numbers.add(int(match.group(1)))
     return sorted(numbers)

@@ -4,7 +4,7 @@ from datetime import datetime
 
 from config import Config
 
-from tools.scraping_tools.expediente import Expediente
+from tools.scraping_tools.bill import Bill
 from tools.scraping_tools.news_article import NewsArticle
 
 
@@ -32,18 +32,18 @@ class Database:
           section           TEXT
       ) STRICT
       """
-    # Expediente numbers a news article explicitly points to (e.g. Delfino links to /asamblea/proyecto/<number>).
-    # No foreign key to expedientes: a news can cite an expediente that is not collected yet.
+    # Bill numbers a news article explicitly points to (e.g. Delfino links to /asamblea/proyecto/<number>).
+    # No foreign key to bills: a news can cite a bill that is not collected yet.
     news_exp_links_table = """
-      CREATE TABLE IF NOT EXISTS news_expediente_links(
+      CREATE TABLE IF NOT EXISTS news_bill_links(
           news_id           TEXT NOT NULL REFERENCES news_articles(id),
-          expediente_number INTEGER NOT NULL,
+          bill_number INTEGER NOT NULL,
           source            TEXT NOT NULL,
-          PRIMARY KEY (news_id, expediente_number, source)
+          PRIMARY KEY (news_id, bill_number, source)
       ) STRICT
       """
     exp_table = """
-      CREATE TABLE IF NOT EXISTS expedientes(
+      CREATE TABLE IF NOT EXISTS bills(
           number         INTEGER PRIMARY KEY,
           name           TEXT NOT NULL,
           description    TEXT,
@@ -56,8 +56,8 @@ class Database:
       ) STRICT
       """
     exp_cat_table = """
-      CREATE TABLE IF NOT EXISTS expediente_categories(
-          number   INTEGER NOT NULL REFERENCES expedientes(number),
+      CREATE TABLE IF NOT EXISTS bill_categories(
+          number   INTEGER NOT NULL REFERENCES bills(number),
           category TEXT NOT NULL,
           PRIMARY KEY (number, category)
       ) STRICT
@@ -95,23 +95,23 @@ class Database:
     if should_commit:
       self.connection.commit()
 
-  def insert_news_expediente_links(self, news_id: str, expediente_numbers: list[int], source: str, should_commit: bool = False):
-    for number in expediente_numbers:
-      self.cursor.execute(f"INSERT INTO news_expediente_links (news_id, expediente_number, source) VALUES (?, ?, ?) ON CONFLICT(news_id, expediente_number, source) DO NOTHING", [news_id, number, source])
+  def insert_news_bill_links(self, news_id: str, bill_numbers: list[int], source: str, should_commit: bool = False):
+    for number in bill_numbers:
+      self.cursor.execute(f"INSERT INTO news_bill_links (news_id, bill_number, source) VALUES (?, ?, ?) ON CONFLICT(news_id, bill_number, source) DO NOTHING", [news_id, number, source])
     if should_commit:
       self.connection.commit()
 
-  def insert_news_expediente_links_map(self, links: dict[str, list[int]], source: str):
-    """Inserts {news_id: [expediente numbers]} (as returned by Pipeline.scrap_delfino_news) and commits."""
-    for news_id, expediente_numbers in links.items():
-      self.insert_news_expediente_links(news_id, expediente_numbers, source)
+  def insert_news_bill_links_map(self, links: dict[str, list[int]], source: str):
+    """Inserts {news_id: [bill numbers]} (as returned by Pipeline.scrap_delfino_news) and commits."""
+    for news_id, bill_numbers in links.items():
+      self.insert_news_bill_links(news_id, bill_numbers, source)
     self.connection.commit()
 
-  def get_news_expediente_links(self, source: str | None = None) -> list[tuple[str, int, str]]:
+  def get_news_bill_links(self, source: str | None = None) -> list[tuple[str, int, str]]:
     if source is None:
-      self.cursor.execute("SELECT news_id, expediente_number, source FROM news_expediente_links")
+      self.cursor.execute("SELECT news_id, bill_number, source FROM news_bill_links")
     else:
-      self.cursor.execute("SELECT news_id, expediente_number, source FROM news_expediente_links WHERE source = ?", [source])
+      self.cursor.execute("SELECT news_id, bill_number, source FROM news_bill_links WHERE source = ?", [source])
     return self.cursor.fetchall()
 
   def insert_news_articles(self, article_list: list[NewsArticle]):
@@ -140,36 +140,36 @@ class Database:
     
     return news_articles
 
-  def insert_expediente(self, exp: Expediente, should_commit: bool = False):
-    number = exp.number
-    name = exp.name
-    desc = exp.description
-    date_extracted = exp.date_extracted.isoformat()
-    file_type = exp.file_type
-    status = exp.status
-    commission = exp.commission
-    date_proposed = exp.date_proposed.isoformat() if exp.date_proposed else None   # optional in Expediente
-    law_number = exp.law_number
-    self.cursor.execute(f"INSERT INTO expedientes (number, name, description, date_extracted, file_type, status, commission, date_proposed, law_number) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(number) DO NOTHING", [number, name, desc, date_extracted, file_type, status, commission, date_proposed, law_number])
-    self.insert_expediente_categories(exp, False)
+  def insert_bill(self, bill: Bill, should_commit: bool = False):
+    number = bill.number
+    name = bill.name
+    desc = bill.description
+    date_extracted = bill.date_extracted.isoformat()
+    file_type = bill.file_type
+    status = bill.status
+    commission = bill.commission
+    date_proposed = bill.date_proposed.isoformat() if bill.date_proposed else None   # optional in Bill
+    law_number = bill.law_number
+    self.cursor.execute(f"INSERT INTO bills (number, name, description, date_extracted, file_type, status, commission, date_proposed, law_number) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(number) DO NOTHING", [number, name, desc, date_extracted, file_type, status, commission, date_proposed, law_number])
+    self.insert_bill_categories(bill, False)
     if should_commit:
       self.connection.commit()
 
-  def insert_expediente_categories(self, exp: Expediente, should_commit: bool = False):
-    number = exp.number
-    categories = exp.categories
+  def insert_bill_categories(self, bill: Bill, should_commit: bool = False):
+    number = bill.number
+    categories = bill.categories
     for c in categories:
-      self.cursor.execute(f"INSERT INTO expediente_categories (number, category) VALUES (?, ?) ON CONFLICT(number, category) DO NOTHING", [number, c])
+      self.cursor.execute(f"INSERT INTO bill_categories (number, category) VALUES (?, ?) ON CONFLICT(number, category) DO NOTHING", [number, c])
     if should_commit:
       self.connection.commit()
 
-  def insert_expedientes(self, exp_list: list[Expediente]):
+  def insert_bills(self, bill_list: list[Bill]):
 
     max_steps_to_commit = Config.COMMIT_BATCH_SIZE
     steps_to_commit = max_steps_to_commit
 
-    for exp in exp_list:
-      self.insert_expediente(exp)
+    for bill in bill_list:
+      self.insert_bill(bill)
       steps_to_commit -= 1
       if steps_to_commit == 0:
         steps_to_commit = max_steps_to_commit
@@ -177,27 +177,27 @@ class Database:
     
     self.connection.commit()
 
-  def get_expedientes(self) -> list[Expediente]:
-    self.cursor.execute("SELECT * FROM expedientes")
+  def get_bills(self) -> list[Bill]:
+    self.cursor.execute("SELECT * FROM bills")
     results = self.cursor.fetchall()
 
-    exp_categories = {}
+    bill_categories = {}
 
-    self.cursor.execute("SELECT number, category FROM expediente_categories")
+    self.cursor.execute("SELECT number, category FROM bill_categories")
     exp_categories_result = self.cursor.fetchall()
     for r in exp_categories_result:
       number = r[0]
       category = r[1]
-      if number not in exp_categories.keys():
-        exp_categories[number] = [category]
+      if number not in bill_categories.keys():
+        bill_categories[number] = [category]
       else:
-        exp_categories[number].append(category)
+        bill_categories[number].append(category)
 
-    expedientes: list[Expediente] = []
+    bills: list[Bill] = []
 
     for r in results:
       date_proposed = datetime.fromisoformat(r[7]) if r[7] else None
-      exp: Expediente = Expediente(r[0], r[1], r[2], datetime.fromisoformat(r[3]), r[4], r[5], r[6], date_proposed, r[8], exp_categories.get(r[0], []))
-      expedientes.append(exp)
+      bill: Bill = Bill(r[0], r[1], r[2], datetime.fromisoformat(r[3]), r[4], r[5], r[6], date_proposed, r[8], bill_categories.get(r[0], []))
+      bills.append(bill)
     
-    return expedientes
+    return bills

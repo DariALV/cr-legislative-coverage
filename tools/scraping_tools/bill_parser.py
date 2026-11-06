@@ -2,11 +2,11 @@ from bs4 import BeautifulSoup
 import json
 from datetime import datetime
 
-from tools.scraping_tools.expediente import Expediente
+from tools.scraping_tools.bill import Bill
 
-class ExpedienteParser:
+class BillParser:
   
-  def parse(self, html: str, url: str) -> Expediente:
+  def parse(self, html: str, url: str) -> Bill:
     soup = BeautifulSoup(html, "lxml")
     # print(self.get_title(soup))
     metadata_list: list[Metadata] = self.get_metadata(soup)
@@ -19,8 +19,8 @@ class ExpedienteParser:
     date_proposed = self.get_metadata_date_proposed(metadata_list)
     commission = self.get_metadata_commission(metadata_list)
     categories = self.get_metadata_categories(metadata_list)
-    expediente: Expediente = Expediente(number, title, description, datetime.now(), file_type, status, commission, date_proposed, law_number, categories)
-    return expediente
+    bill: Bill = Bill(number, title, description, datetime.now(), file_type, status, commission, date_proposed, law_number, categories)
+    return bill
 
 
   def get_title(self, soup: BeautifulSoup) -> str:

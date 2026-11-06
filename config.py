@@ -56,9 +56,9 @@ class Config:
   PRIVATE_DATABASE = "private_corpus"
   COMMIT_BATCH_SIZE = 50
 
-  # Expedientes are collected by number, not by period: news in the period discuss older expedientes too.
-  FIRST_EXPEDIENTE = 20000
-  MAX_EXPEDIENTE = 100000
+  # Bills are collected by number, not by period: news in the period discuss older bills too.
+  FIRST_BILL = 20000
+  MAX_BILL = 100000
   MAX_CONSECUTIVE_ERRORS = 5
 
   @staticmethod
