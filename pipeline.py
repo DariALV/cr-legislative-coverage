@@ -7,6 +7,7 @@ from config import Config, DataPeriod
 from tools.scraping_tools.html_fetcher import HTMLFetcher
 from tools.scraping_tools.crhoy_parser import CRHoyParser
 from tools.scraping_tools.delfino_parser import DelfinoParser
+from tools.scraping_tools.nacion_parser import NacionParser
 from tools.scraping_tools.expediente_parser import ExpedienteParser
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.expediente import Expediente
@@ -37,6 +38,9 @@ class Pipeline:
       database.insert_expedientes(delfino["expedientes"])
       linked: int = sum(len(numbers) for numbers in delfino["expediente_links"].values())
       print(f"[delfino] saved {len(delfino['news'])} news, {linked} expediente links, {len(delfino['expedientes'])} expedientes")
+    if "nacion" in results:
+      database.insert_news_articles(results["nacion"])
+      print(f"[nacion] saved {len(results['nacion'])} news")
 
   def scrap_websites(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                      period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
@@ -49,7 +53,8 @@ class Pipeline:
     jobs: dict[str, Callable[[], Any]] = {
       "crhoy": lambda: self.scrap_crhoy(self.make_fetcher("crhoy"), scrap_urls, scrap_new_htmls, period),
       "delfino": lambda: self.scrap_delfino_website(self.make_fetcher("delfino"), scrap_urls, scrap_new_htmls, period),
-      # "elmundo": ..., "nacion": ..., "semanario": ... (one entry per new website)
+      "nacion": lambda: self.scrap_nacion(self.make_fetcher("nacion"), scrap_urls, scrap_new_htmls, period),
+      # "elmundo": ..., "semanario": ... (one entry per new website)
     }
     return run_in_parallel(jobs)
 
@@ -97,6 +102,43 @@ class Pipeline:
       if news_article and period.contains(news_article.date_published):
         news_articles.append(news_article)
     print(f"[{fetcher.name}] CRHoy: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
+    return news_articles
+
+  def scrap_nacion(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                   period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
+    save_folder_path: str = f"{Config.RAW_HTML_DIR}/nacion/news"
+    links_folder_path: str = f"{Config.RAW_LINKS_DIR}/nacion"
+    url_collector: UrlCollector = UrlCollector()
+    file_manager: FileManager = FileManager()
+    parser: NacionParser = NacionParser()
+
+    nacion_urls: list[str] = []
+    if scrap_urls:
+      nacion_urls = url_collector.get_nacion_links(period)
+      file_manager.save_dict_as_json(links_folder_path, "nacion_links", {"links": nacion_urls})
+    else:
+      nacion_urls = file_manager.load_json_as_dict(links_folder_path, "nacion_links")["links"]
+
+    if scrap_new_htmls:
+      fetcher.fetch_multiple(save_folder_path, nacion_urls)
+
+    filtered_urls: list[str] = []
+    for url in nacion_urls:
+      if is_relevant_url("nacion", url) and file_manager.html_exists(save_folder_path, url):
+        filtered_urls.append(url)
+
+    news_articles: list[NewsArticle] = []
+    for i in range(len(filtered_urls)):
+      url: str = filtered_urls[i]
+      news_processed_count(i + 1, len(filtered_urls), fetcher.name)
+      html = file_manager.load_html(save_folder_path, url)
+      if is_error_html(html):
+        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
+        continue
+      news_article: NewsArticle | None = parser.parse(html, url)
+      if news_article and period.contains(news_article.date_published):
+        news_articles.append(news_article)
+    print(f"[{fetcher.name}] La Nación: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
     return news_articles
 
   def scrap_delfino_news(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,

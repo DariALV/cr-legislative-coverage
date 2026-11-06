@@ -1,13 +1,16 @@
 import re
+import time
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 
 from config import Config, DataPeriod
 from tools.scraping_tools.section_filter import is_relevant_url
 
 # Delfino news urls: https://delfino.cr/<year>/<month>/<slug>
 DELFINO_NEWS_URL_REGEX = re.compile(r"^https://delfino\.cr/(\d{4})/(\d{2})/[^/]+$")
+# La Nación news urls: https://www.nacion.com/<section>/[<subsection>/]<slug>/<arc id>/story/
+NACION_NEWS_URL_REGEX = re.compile(r"^https://www\.nacion\.com/.+/[A-Z0-9]{26}/story/$")
 
 class UrlCollector:
   """
@@ -36,6 +39,25 @@ class UrlCollector:
         if match and (int(match.group(1)), int(match.group(2))) in months:
           links.append(url)
       print(f"Delfino sitemap {year}: {len(sitemap_links)} urls, {len(links)} kept so far")
+    return list(dict.fromkeys(links))
+
+  def get_nacion_links(self, period: DataPeriod = Config.DATA_PERIOD) -> list[str]:
+    """
+    La Nación (Arc Publishing) has one sitemap per day of publication, as a UTC day (lastmod is the
+    datePublished). A Costa Rica day ends at 06:00 UTC of the next day, so the day after the period
+    end is read too. The exact filter runs after parsing, on date_published.
+    """
+    links: list[str] = []
+    day: date = period.start_date()
+    last_day: date = period.end.date() + timedelta(days = 1)
+    while day <= last_day:
+      sitemap_url: str = f"https://www.nacion.com/arc/outboundfeeds/sitemap/{day.isoformat()}/?outputType=xml"
+      day_links = [url for url, _ in self.get_sitemap_entries(sitemap_url) if NACION_NEWS_URL_REGEX.match(url)]
+      kept = [url for url in day_links if is_relevant_url("nacion", url)]
+      links += kept
+      print(f"La Nación sitemap {day}: {len(day_links)} urls, {len(kept)} kept")
+      day += timedelta(days = 1)
+      time.sleep(Config.rate_limit_for("nacion"))
     return list(dict.fromkeys(links))
 
   def get_crhoy_links(self, period: DataPeriod = Config.DATA_PERIOD) -> list[str]:
