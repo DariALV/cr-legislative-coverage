@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import json
+import re
 from datetime import datetime
 
 from config import Config, to_costa_rica_time
@@ -9,6 +10,13 @@ from tools.file_tools.file_manager import hash
 
 # La Nación pads its paragraphs with zero-width non-joiners (U+200C), some blocks are nothing else.
 INVISIBLE_CHARACTERS: dict[int, None] = {ord("‌"): None, ord("​"): None, ord("﻿"): None}
+
+# La Nación's terms of use (#11) exclude content licensed from agencies and third parties, even for
+# academic use. Those pieces carry the agency as their byline ("AFP", "Europa Press"); Arc's
+# distributor field does not mark them. Only the byline is checked: staff articles may cite "(AP)".
+AGENCY_BYLINE_REGEX = re.compile(
+  r"\b(?:Agencia\s+)?(?:EFE|AFP|AP|Reuters|Associated Press|Agence France[- ]Presse|Europa Press|DPA|dpa|ANSA|"
+  r"Xinhua|Bloomberg|Sputnik|The New York Times|The Washington Post|El País|BBC(?: Mundo)?)\b")
 
 class NacionParser:
   """
@@ -24,13 +32,17 @@ class NacionParser:
       print(f"Not a NewsArticle: {url}")
       return None
 
+    author: str | None = self.get_author(news_article_schema)
+    if self.is_agency(author):
+      print(f"[nacion] Skipping agency news ({author}): {url}")
+      return None
+
     id: str = hash(url)
     organization: str = "nacion"
     title: str = news_article_schema["headline"]
     description: str | None = news_article_schema.get("description") or None
     # La Nación publishes datePublished in UTC ("2026-10-27T23:24:40.088Z")
     date_published: datetime = to_costa_rica_time(news_article_schema["datePublished"])
-    author: str | None = self.get_author(news_article_schema)
     content, extraction_status = self.get_all_text(soup)
     date_extracted: datetime = datetime.now()
     outlet_type: str = Config.GENERAL_OUTLET
@@ -58,6 +70,10 @@ class NacionParser:
     # Names sometimes carry double spaces ("Yucsiany  Salazar Serrano")
     names = [" ".join(author["name"].split()) for author in authors if isinstance(author, dict) and author.get("name")]
     return ", ".join(names) if names else None
+
+  def is_agency(self, author: str | None) -> bool:
+    """True if any byline is a news agency or a third-party outlet (co-signed pieces count too)."""
+    return author is not None and AGENCY_BYLINE_REGEX.search(author) is not None
 
   def get_section(self, news_article_schema: dict) -> str | None:
     """articleSection is a list, most specific first (["Cartas", "Opinión"])."""
