@@ -6,6 +6,7 @@ from datetime import date, datetime, timedelta
 
 from config import Config, DataPeriod
 from tools.scraping_tools.section_filter import is_relevant_url
+from tools.scraping_tools.html_fetcher import make_retry_session
 
 # Delfino news urls: https://delfino.cr/<year>/<month>/<slug>
 DELFINO_NEWS_URL_REGEX = re.compile(r"^https://delfino\.cr/(\d{4})/(\d{2})/[^/]+$")
@@ -16,7 +17,18 @@ class UrlCollector:
   """
   Collects urls with a coarse date filter that never drops a news inside the period. The exact
   filter runs after parsing, on date_published.
+  Not thread-safe (one requests.Session): create one collector per thread/website.
   """
+
+  def __init__(self):
+    self.session: requests.Session | None = None
+    self.failed_sitemaps: list[str] = []
+
+  def report_failed_sitemaps(self, name: str):
+    """Lists the sitemaps skipped after the retries. Their urls are missing: collect that website's urls again."""
+    if self.failed_sitemaps:
+      print(f"[{name}] {len(self.failed_sitemaps)} sitemaps could not be fetched, their urls are missing "
+            f"(run again with scrap_urls = True): {self.failed_sitemaps}")
 
   def get_delfino_links(self, max_bill) -> list[str]:
     urls: list[str] = []
@@ -101,8 +113,20 @@ class UrlCollector:
     return [link for link in links if is_relevant_url("crhoy", link)]
 
   def get_sitemap_entries(self, sitemap_url: str) -> list[tuple[str, str | None]]:
-    """(loc, lastmod) pairs of a sitemap or sitemap index; lastmod is None when missing."""
-    response = requests.get(sitemap_url, headers = {"User-Agent": f"{Config.USER_AGENT}/1.0"}, timeout = Config.SITEMAP_TIMEOUT)
+    """
+    (loc, lastmod) pairs of a sitemap or sitemap index; lastmod is None when missing.
+    A sitemap that still fails after the retries (network or HTTP error) is skipped: it returns no entries
+    and is added to failed_sitemaps, so the run goes on and report_failed_sitemaps lists it at the end.
+    """
+    if self.session is None:
+      self.session = make_retry_session(Config.USER_AGENT, Config.RETRIES)
+    try:
+      response = self.session.get(sitemap_url, timeout = Config.SITEMAP_TIMEOUT)
+      response.raise_for_status()
+    except requests.RequestException as error:
+      print(f"Could not fetch sitemap {sitemap_url}: {error}")
+      self.failed_sitemaps.append(sitemap_url)
+      return []
     soup = BeautifulSoup(response.content, "xml")
     entries: list[tuple[str, str | None]] = []
     for entry in soup.find_all(["url", "sitemap"]):

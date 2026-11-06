@@ -38,8 +38,8 @@ def to_costa_rica_time(moment_text: str) -> datetime:
   return moment.astimezone(COSTA_RICA_TZ).replace(tzinfo = None)
 
 class Config:
-  # Data period (see #20). Extend start to 2025-11-01 to get 12 full months.
-  DATA_PERIOD = DataPeriod(datetime(2026, 1, 1), datetime(2026, 10, 31, 23, 59, 59))
+  # Data period (see #20): six full months, May to October 2026.
+  DATA_PERIOD = DataPeriod(datetime(2026, 5, 1), datetime(2026, 10, 31, 23, 59, 59))
 
   # Fetching. Each website runs in its own thread with its own rate limit, so sites don't slow each other down.
   USER_AGENT = "uni-project"

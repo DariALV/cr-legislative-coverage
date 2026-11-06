@@ -1,10 +1,14 @@
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+import re
 import time
 
 from tools.scraping_tools.rate_limiter import RateLimiter
 from tools.file_tools.file_manager import FileManager
+
+# Cached answers worth retrying on the next run: rate limiting and server errors.
+TRANSIENT_ERROR_REGEX = re.compile(r"Error (429|5\d\d)")
 
 class HTMLFetcher:
   """
@@ -25,13 +29,25 @@ class HTMLFetcher:
     for i in range(len(urls)):
       url: str = urls[i]
       print(f"{prefix}{i + 1} out of {len(urls)} websites scraped. ({100.0 * (i + 1.0)/len(urls):.2f}% completed)")
-      if not self.file_manager.html_exists(save_path, url):
+      if self.needs_fetch(save_path, url):
         try:
           self.fetch(save_path, url)
         except requests.RequestException as error:
           # Network failure after all retries: nothing is saved, so the url is retried on the next run.
           print(f"{prefix}Could not fetch {url}: {error}")
           self.rate_limiter.wait()
+
+  def needs_fetch(self, save_path: str, url: str) -> bool:
+    """
+    True if the url is not cached, or was cached as a transient error ("Error 429" or "Error 5xx") that may work now.
+    Other cached errors (e.g. "Error 404") are kept. Only tiny files are read, so the check stays cheap.
+    """
+    if not self.file_manager.html_exists(save_path, url):
+      return True
+    path = self.file_manager.get_path(save_path, url, ".html", True)
+    if path.stat().st_size > len("Error 000"):
+      return False
+    return TRANSIENT_ERROR_REGEX.fullmatch(path.read_text(encoding = "utf-8")) is not None
 
   def fetch(self, save_path: str, url: str) -> str:
     """Downloads a single url, saves it (or "Error <code>") and returns the saved text."""
@@ -47,18 +63,23 @@ class HTMLFetcher:
 
   def get_session(self) -> requests.Session:
     if getattr(self, "session", None) is None:
-      retry = Retry(
-      total = self.retries,
-      backoff_factor = 1,
-      status_forcelist = [429, 500, 502, 503, 504],
-      respect_retry_after_header = True,
-      allowed_methods = ["GET"],
-      )
-      self.session = requests.Session()
-      self.session.headers.update({"User-Agent": f"{self.user_agent}/1.0"})
-      self.session.mount("https://", HTTPAdapter(max_retries=retry))
+      self.session = make_retry_session(self.user_agent, self.retries)
     return self.session
-    
+
+def make_retry_session(user_agent: str, retries: int) -> requests.Session:
+  """Session that retries connection errors and 429/5xx answers with exponential backoff (1, 2, 4... s)."""
+  retry = Retry(
+    total = retries,
+    backoff_factor = 1,
+    status_forcelist = [429, 500, 502, 503, 504],
+    respect_retry_after_header = True,
+    allowed_methods = ["GET"],
+  )
+  session = requests.Session()
+  session.headers.update({"User-Agent": f"{user_agent}/1.0"})
+  session.mount("https://", HTTPAdapter(max_retries = retry))
+  return session
+
 
   
   # def fetch(self, url: str):

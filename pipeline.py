@@ -100,6 +100,7 @@ class Pipeline:
     crhoy_urls: list[str] = []
     if scrap_urls:
       crhoy_urls = url_collector.get_crhoy_links(period)
+      url_collector.report_failed_sitemaps(fetcher.name)
       file_manager.save_dict_as_json(links_folder_path, "crhoy_links", {"links": crhoy_urls})
     else:
       crhoy_urls = file_manager.load_json_as_dict(links_folder_path, "crhoy_links")["links"]
@@ -137,6 +138,7 @@ class Pipeline:
     nacion_urls: list[str] = []
     if scrap_urls:
       nacion_urls = url_collector.get_nacion_links(period)
+      url_collector.report_failed_sitemaps(fetcher.name)
       file_manager.save_dict_as_json(links_folder_path, "nacion_links", {"links": nacion_urls})
     else:
       nacion_urls = file_manager.load_json_as_dict(links_folder_path, "nacion_links")["links"]
@@ -239,7 +241,8 @@ class Pipeline:
       url: str = page_link(page)
       raw: str | None = None
       if file_manager.html_exists(folder_path, url):
-        stale: bool = refresh or (refresh_before is not None and saved_before(file_manager, folder_path, url, refresh_before))
+        stale: bool = (refresh or (refresh_before is not None and saved_before(file_manager, folder_path, url, refresh_before))
+                       or fetcher.needs_fetch(folder_path, url))   # a cached 429/5xx is retried
         if not (fetch_missing and stale):
           raw = file_manager.load_html(folder_path, url)
       if raw is None:
@@ -278,6 +281,7 @@ class Pipeline:
     delfino_urls: list[str] = []
     if scrap_urls:
       delfino_urls = url_collector.get_delfino_news_links(period)
+      url_collector.report_failed_sitemaps(fetcher.name)
       file_manager.save_dict_as_json(links_folder_path, "delfino_news_links", {"links": delfino_urls})
     else:
       delfino_urls = file_manager.load_json_as_dict(links_folder_path, "delfino_news_links")["links"]
@@ -327,6 +331,7 @@ class Pipeline:
 
     bills: list[Bill] = []
     collected_urls: list[str] = []
+    unfetched_bills: list[int] = []
     consecutive_errors: int = 0
 
     for number in range(first_bill, max_bill + 1):
@@ -338,12 +343,21 @@ class Pipeline:
           html = file_manager.load_html(save_folder_path, url)
 
       # Past the last known bill, cached errors may be stale (new bills get published), so retry them.
+      fetch_failed: bool = False
       if html is None or (number > last_success and is_error_html(html)):
         print(f"[{fetcher.name}] Scraping bill {number}")
-        html = fetcher.fetch(save_folder_path, url)
+        try:
+          html = fetcher.fetch(save_folder_path, url)
+        except requests.RequestException as error:
+          # Network failure after all retries: nothing is saved, so the bill is fetched again on the next run.
+          print(f"[{fetcher.name}] Could not fetch bill {number}: {error}")
+          unfetched_bills.append(number)
+          fetch_failed = True
 
-      if is_error_html(html):
-        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
+      if fetch_failed or is_error_html(html):
+        if not fetch_failed:
+          print(f"[{fetcher.name}] Url {url} found {html.lower()}")
+        # Network failures count too, so a long outage past the last bill stops the walk instead of trying every number.
         if number > last_success:
           consecutive_errors += 1
           if consecutive_errors >= max_consecutive_errors:
@@ -364,6 +378,8 @@ class Pipeline:
       bills.append(bill)
 
     file_manager.save_dict_as_json(f"{Config.RAW_LINKS_DIR}/delfino", "delfino_links", {"links": collected_urls})
+    if unfetched_bills:
+      print(f"[{fetcher.name}] {len(unfetched_bills)} bills could not be fetched (run again to retry them): {unfetched_bills}")
     return bills
 
   def add_deputy_votes(self, fetcher: HTMLFetcher, file_manager: FileManager, parser: BillParser, bill: Bill):
