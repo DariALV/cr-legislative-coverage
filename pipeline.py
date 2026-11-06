@@ -18,9 +18,10 @@ from tools.database_tools.database import Database
 
 class Pipeline:
   def scrap_and_save(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
-                     period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
+                     period: DataPeriod = Config.DATA_PERIOD, first_expediente: int = Config.FIRST_EXPEDIENTE,
+                     max_expediente: int = Config.MAX_EXPEDIENTE) -> dict[str, Any]:
     """Scrapes every website in parallel and saves the results into the private corpus database."""
-    results: dict[str, Any] = self.scrap_websites(scrap_urls, scrap_new_htmls, period)
+    results: dict[str, Any] = self.scrap_websites(scrap_urls, scrap_new_htmls, period, first_expediente, max_expediente)
     database: Database = Database(Config.DATABASE_DIR, Config.PRIVATE_DATABASE)
     database.create_private_corpus_tables()
     self.save_results(results, database)
@@ -43,16 +44,19 @@ class Pipeline:
       print(f"[nacion] saved {len(results['nacion'])} news")
 
   def scrap_websites(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
-                     period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
+                     period: DataPeriod = Config.DATA_PERIOD, first_expediente: int = Config.FIRST_EXPEDIENTE,
+                     max_expediente: int = Config.MAX_EXPEDIENTE) -> dict[str, Any]:
     """
     Scrapes every website in parallel, one thread per website, each with its own fetcher and rate limit.
     Delfino's news and expedientes share a thread because they are the same website.
+    Expedientes are walked from first_expediente up to max_expediente (inclusive), independent of the period.
     Results are returned (not inserted): SQLite connections can't be shared across threads, so insert
     them from the calling thread. A website that fails is reported and left out; the others continue.
     """
     jobs: dict[str, Callable[[], Any]] = {
       "crhoy": lambda: self.scrap_crhoy(self.make_fetcher("crhoy"), scrap_urls, scrap_new_htmls, period),
-      "delfino": lambda: self.scrap_delfino_website(self.make_fetcher("delfino"), scrap_urls, scrap_new_htmls, period),
+      "delfino": lambda: self.scrap_delfino_website(self.make_fetcher("delfino"), scrap_urls, scrap_new_htmls, period,
+                                                    first_expediente, max_expediente),
       "nacion": lambda: self.scrap_nacion(self.make_fetcher("nacion"), scrap_urls, scrap_new_htmls, period),
       # "elmundo": ..., "semanario": ... (one entry per new website)
     }
@@ -62,9 +66,10 @@ class Pipeline:
     return HTMLFetcher(Config.USER_AGENT, Config.rate_limit_for(website), Config.RETRIES, Config.TIMEOUT, website)
 
   def scrap_delfino_website(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
-                            period: DataPeriod = Config.DATA_PERIOD) -> dict[str, Any]:
+                            period: DataPeriod = Config.DATA_PERIOD, first_expediente: int = Config.FIRST_EXPEDIENTE,
+                            max_expediente: int = Config.MAX_EXPEDIENTE) -> dict[str, Any]:
     news_articles, expediente_links = self.scrap_delfino_news(fetcher, scrap_urls, scrap_new_htmls, period)
-    expedientes: list[Expediente] = self.scrap_delfino(fetcher)
+    expedientes: list[Expediente] = self.scrap_delfino(fetcher, first_expediente, max_expediente)
     return {"news": news_articles, "expediente_links": expediente_links, "expedientes": expedientes}
 
   def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
