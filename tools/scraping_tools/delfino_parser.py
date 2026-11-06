@@ -1,3 +1,4 @@
+import logging
 from bs4 import BeautifulSoup
 import json
 import re
@@ -6,6 +7,8 @@ from datetime import datetime
 from config import Config, to_costa_rica_time
 from tools.scraping_tools.news_article import NewsArticle
 from tools.file_tools.file_manager import hash
+
+logger = logging.getLogger("cr")
 
 BILL_LINK_REGEX = re.compile(r"/asamblea/proyecto/(\d+)")
 BLOCK_TAGS = ["p", "h2", "h3", "h4", "li", "blockquote"]
@@ -26,7 +29,7 @@ class DelfinoParser:
     soup = BeautifulSoup(html, "lxml")
     news_article_schema = self.get_news_article_schema(soup)
     if news_article_schema is None:
-      print(f"Not a NewsArticle: {url}")
+      logger.info(f"Not a NewsArticle: {url}")
       return None
 
     id: str = hash(url)

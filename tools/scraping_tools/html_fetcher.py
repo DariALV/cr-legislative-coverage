@@ -6,6 +6,7 @@ import time
 
 from tools.scraping_tools.rate_limiter import RateLimiter
 from tools.file_tools.file_manager import FileManager
+from tools.display_tools.progress import ProgressTask, silent_task
 
 # Cached answers worth retrying on the next run: rate limiting and server errors.
 TRANSIENT_ERROR_REGEX = re.compile(r"Error (429|5\d\d)")
@@ -24,18 +25,20 @@ class HTMLFetcher:
     self.name = name
     self.file_manager = FileManager()
 
-  def fetch_multiple(self, save_path: str, urls: list[str]):
-    prefix: str = f"[{self.name}] " if self.name else ""
-    for i in range(len(urls)):
-      url: str = urls[i]
-      print(f"{prefix}{i + 1} out of {len(urls)} websites scraped. ({100.0 * (i + 1.0)/len(urls):.2f}% completed)")
+  def fetch_multiple(self, save_path: str, urls: list[str], task: ProgressTask | None = None):
+    """Downloads the urls that are not cached yet. task (optional) advances once per url, cached or not."""
+    task = task or silent_task()
+    task.set_total(len(urls))
+    for url in urls:
       if self.needs_fetch(save_path, url):
         try:
           self.fetch(save_path, url)
         except requests.RequestException as error:
           # Network failure after all retries: nothing is saved, so the url is retried on the next run.
-          print(f"{prefix}Could not fetch {url}: {error}")
+          task.warn(f"Could not fetch {url}: {error}")
           self.rate_limiter.wait()
+      task.advance()
+    task.finish()
 
   def needs_fetch(self, save_path: str, url: str) -> bool:
     """

@@ -221,3 +221,5 @@ __marimo__/
 raw/
 databases/private_corpus.db
 databases/public_corpus.db
+logs/
+private_visuals/output/

@@ -1,3 +1,4 @@
+import logging
 from bs4 import BeautifulSoup, Tag
 import json
 import re
@@ -5,6 +6,8 @@ from datetime import datetime
 
 from tools.scraping_tools.bill import Bill, BillEvent, BillProponent, DeputyVote
 from tools.scraping_tools.bill_flags import flag_bill
+
+logger = logging.getLogger("cr")
 
 DELFINO_URL = "https://delfino.cr"
 # Deputies link to /asamblea/congresistas/<slug>; the executive and other non-deputy signers ("Gobierno Chaves Robles")
@@ -83,7 +86,7 @@ class BillParser:
         if cards:
           break
       if len(cards) != expected:
-        print(f"[delfino] Vote group '{label}' shows {expected} deputies but has {len(cards)} cards")
+        logger.warning(f"[delfino] Vote group '{label}' shows {expected} deputies but has {len(cards)} cards")
       for card in cards:
         person: BillProponent = parse_person_card(card, "")
         votes.append(DeputyVote(person.slug, person.name, vote, person.party, person.seat))

@@ -1,6 +1,6 @@
+import logging
 import os
 import re
-import traceback
 import requests
 from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
@@ -21,8 +21,15 @@ from tools.scraping_tools.url_collector import UrlCollector
 from tools.scraping_tools.section_filter import is_relevant_url, is_relevant_categories, is_relevant_delfino_section
 from tools.file_tools.file_manager import FileManager
 from tools.database_tools.database import Database
+from tools.display_tools.progress import ProgressBoard, ProgressTask
+
+logger = logging.getLogger("cr")
 
 class Pipeline:
+  def __init__(self, board: ProgressBoard | None = None):
+    """board shows the progress of each website and phase; without one nothing is shown (logs still go to "cr")."""
+    self.board: ProgressBoard = board or ProgressBoard(enabled = False)
+
   def scrap_and_save(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                      period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
                      max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
@@ -40,7 +47,7 @@ class Pipeline:
     """Inserts what scrap_websites returned. Runs in the calling thread (SQLite connections are per thread)."""
     if "crhoy" in results:
       database.insert_news_articles(results["crhoy"])
-      print(f"[crhoy] saved {len(results['crhoy'])} news")
+      logger.info(f"[crhoy] saved {len(results['crhoy'])} news")
     if "delfino" in results:
       delfino: dict[str, Any] = results["delfino"]
       database.insert_news_articles(delfino["news"])
@@ -48,16 +55,16 @@ class Pipeline:
       database.insert_bills(delfino["bills"])
       linked: int = sum(len(numbers) for numbers in delfino["bill_links"].values())
       deputy_votes: int = sum(len(event.deputy_votes) for bill in delfino["bills"] for event in bill.events)
-      print(f"[delfino] saved {len(delfino['news'])} news, {linked} bill links, {len(delfino['bills'])} bills, {deputy_votes} deputy votes")
+      logger.info(f"[delfino] saved {len(delfino['news'])} news, {linked} bill links, {len(delfino['bills'])} bills, {deputy_votes} deputy votes")
     if "elmundo" in results:
       database.insert_news_articles(results["elmundo"])
-      print(f"[elmundo] saved {len(results['elmundo'])} news")
+      logger.info(f"[elmundo] saved {len(results['elmundo'])} news")
     if "semanario" in results:
       database.insert_news_articles(results["semanario"])
-      print(f"[semanario] saved {len(results['semanario'])} news")
+      logger.info(f"[semanario] saved {len(results['semanario'])} news")
     if "nacion" in results:
       database.insert_news_articles(results["nacion"])
-      print(f"[nacion] saved {len(results['nacion'])} news")
+      logger.info(f"[nacion] saved {len(results['nacion'])} news")
 
   def scrap_websites(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                      period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
@@ -82,18 +89,30 @@ class Pipeline:
   def make_fetcher(self, website: str) -> HTMLFetcher:
     return HTMLFetcher(Config.USER_AGENT, Config.rate_limit_for(website), Config.RETRIES, Config.TIMEOUT, website)
 
+  def news_tasks(self, site: str, scrap_urls: bool, scrap_new_htmls: bool) -> tuple[ProgressTask | None, ProgressTask | None, ProgressTask]:
+    """The site's rows for collecting urls (sitemaps), downloading and parsing news; a phase that won't run gets no row."""
+    sitemaps_task: ProgressTask | None = self.board.task(site, "sitemaps") if scrap_urls else None
+    download_task: ProgressTask | None = self.board.task(site, "download") if scrap_new_htmls else None
+    return sitemaps_task, download_task, self.board.task(site, "parse")
+
   def scrap_delfino_website(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                             period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
                             max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
-    news_articles, bill_links = self.scrap_delfino_news(fetcher, scrap_urls, scrap_new_htmls, period)
-    bills: list[Bill] = self.scrap_delfino(fetcher, first_bill, max_bill, refresh_before = refresh_bills_before)
+    news_tasks = self.news_tasks(fetcher.name, scrap_urls, scrap_new_htmls)
+    # Every row is created now, so the bills and votes show as waiting while the news run (same thread).
+    bills_task: ProgressTask = self.board.task(fetcher.name, "bills")
+    votes_task: ProgressTask = self.board.task(fetcher.name, "votes")
+    news_articles, bill_links = self.scrap_delfino_news(fetcher, scrap_urls, scrap_new_htmls, period, news_tasks)
+    bills: list[Bill] = self.scrap_delfino(fetcher, first_bill, max_bill, refresh_before = refresh_bills_before,
+                                           bills_task = bills_task, votes_task = votes_task)
     return {"news": news_articles, "bill_links": bill_links, "bills": bills}
 
   def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                   period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
     save_folder_path: str = f"{Config.RAW_HTML_DIR}/crhoy/news"
     links_folder_path: str = f"{Config.RAW_LINKS_DIR}/crhoy"
-    url_collector: UrlCollector = UrlCollector()
+    sitemaps_task, download_task, parse_task = self.news_tasks(fetcher.name, scrap_urls, scrap_new_htmls)
+    url_collector: UrlCollector = UrlCollector(sitemaps_task)
     file_manager: FileManager = FileManager()
     parser: CRHoyParser = CRHoyParser()
 
@@ -106,7 +125,7 @@ class Pipeline:
       crhoy_urls = file_manager.load_json_as_dict(links_folder_path, "crhoy_links")["links"]
 
     if scrap_new_htmls:
-      fetcher.fetch_multiple(save_folder_path, crhoy_urls)
+      fetcher.fetch_multiple(save_folder_path, crhoy_urls, download_task)
 
     filtered_urls: list[str] = []
     for url in crhoy_urls:
@@ -114,24 +133,26 @@ class Pipeline:
         filtered_urls.append(url)
 
     news_articles: list[NewsArticle] = []
-    for i in range(len(filtered_urls)):
-      url: str = filtered_urls[i]
-      news_processed_count(i + 1, len(filtered_urls), fetcher.name)
+    parse_task.set_total(len(filtered_urls))
+    for url in filtered_urls:
+      parse_task.advance()
       html = file_manager.load_html(save_folder_path, url)
       if is_error_html(html):
-        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
+        parse_task.warn(f"Url {url} found {html.lower()}")
         continue
       news_article: NewsArticle | None = parser.parse(html, url)
       if news_article and period.contains(news_article.date_published):
         news_articles.append(news_article)
-    print(f"[{fetcher.name}] CRHoy: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
+    parse_task.finish()
+    logger.info(f"[{fetcher.name}] CRHoy: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
     return news_articles
 
   def scrap_nacion(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                    period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
     save_folder_path: str = f"{Config.RAW_HTML_DIR}/nacion/news"
     links_folder_path: str = f"{Config.RAW_LINKS_DIR}/nacion"
-    url_collector: UrlCollector = UrlCollector()
+    sitemaps_task, download_task, parse_task = self.news_tasks(fetcher.name, scrap_urls, scrap_new_htmls)
+    url_collector: UrlCollector = UrlCollector(sitemaps_task)
     file_manager: FileManager = FileManager()
     parser: NacionParser = NacionParser()
 
@@ -144,7 +165,7 @@ class Pipeline:
       nacion_urls = file_manager.load_json_as_dict(links_folder_path, "nacion_links")["links"]
 
     if scrap_new_htmls:
-      fetcher.fetch_multiple(save_folder_path, nacion_urls)
+      fetcher.fetch_multiple(save_folder_path, nacion_urls, download_task)
 
     filtered_urls: list[str] = []
     for url in nacion_urls:
@@ -152,17 +173,18 @@ class Pipeline:
         filtered_urls.append(url)
 
     news_articles: list[NewsArticle] = []
-    for i in range(len(filtered_urls)):
-      url: str = filtered_urls[i]
-      news_processed_count(i + 1, len(filtered_urls), fetcher.name)
+    parse_task.set_total(len(filtered_urls))
+    for url in filtered_urls:
+      parse_task.advance()
       html = file_manager.load_html(save_folder_path, url)
       if is_error_html(html):
-        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
+        parse_task.warn(f"Url {url} found {html.lower()}")
         continue
       news_article: NewsArticle | None = parser.parse(html, url)
       if news_article and period.contains(news_article.date_published):
         news_articles.append(news_article)
-    print(f"[{fetcher.name}] La Nación: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
+    parse_task.finish()
+    logger.info(f"[{fetcher.name}] La Nación: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
     return news_articles
 
   def scrap_elmundo(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
@@ -189,6 +211,8 @@ class Pipeline:
     url_collector: UrlCollector = UrlCollector()
     file_manager: FileManager = FileManager()
     fetch_missing: bool = scrap_urls or scrap_new_htmls
+    api_task: ProgressTask = self.board.task(outlet, "api", total = len(period.months()))
+    parse_task: ProgressTask = self.board.task(outlet, "parse")
 
     # Categories and authors change rarely and are a handful of requests: refreshed on every fetching run.
     category_items: list[dict] = self.fetch_wordpress_pages(
@@ -210,21 +234,25 @@ class Pipeline:
       refresh_before: datetime = next_month + timedelta(days = 1)
       month_posts: list[dict] = self.fetch_wordpress_pages(fetcher, file_manager, parser, api_folder_path, page_link,
                                                            fetch_missing, False, refresh_before)
-      print(f"[{fetcher.name}] {year}-{month:02d}: {len(month_posts)} posts")
+      logger.info(f"[{fetcher.name}] {year}-{month:02d}: {len(month_posts)} posts")
       posts += month_posts
+      api_task.advance()
+    api_task.finish()
 
     news_articles: list[NewsArticle] = []
     links: list[str] = []
+    parse_task.set_total(len(posts))
     for i in range(len(posts)):
-      news_processed_count(i + 1, len(posts), fetcher.name)
+      parse_task.advance()
       news_article: NewsArticle | None = parser.parse(posts[i], categories, authors)
       if news_article and period.contains(news_article.date_published):
         links.append(news_article.url)
         slugs: list[str] = [category_slugs.get(category_id, "") for category_id in posts[i].get("categories", [])]
         if is_relevant_url(outlet, news_article.url) and is_relevant_categories(outlet, slugs):
           news_articles.append(news_article)
+    parse_task.finish()
     file_manager.save_dict_as_json(links_folder_path, f"{outlet}_links", {"links": list(dict.fromkeys(links))})
-    print(f"[{fetcher.name}] {len(news_articles)} relevant news inside the period out of {len(links)}")
+    logger.info(f"[{fetcher.name}] {len(news_articles)} relevant news inside the period out of {len(links)}")
     return news_articles
 
   def fetch_wordpress_pages(self, fetcher: HTMLFetcher, file_manager: FileManager, parser: WordPressParser, folder_path: str,
@@ -252,12 +280,12 @@ class Pipeline:
           raw = fetcher.fetch(folder_path, url)
         except requests.RequestException as error:
           # Nothing is saved, so the page is fetched again on the next run.
-          print(f"[{fetcher.name}] Could not fetch {url}: {error}")
+          logger.warning(f"[{fetcher.name}] Could not fetch {url}: {error}")
           break
 
       if is_error_html(raw):
         if not (page > 1 and raw == "Error 400"):
-          print(f"[{fetcher.name}] Url {url} found {raw.lower()}")
+          logger.warning(f"[{fetcher.name}] Url {url} found {raw.lower()}")
         break
       page_items: list[dict] = parser.parse_page(raw)
       items += page_items
@@ -267,14 +295,18 @@ class Pipeline:
     return items
 
   def scrap_delfino_news(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
-                         period: DataPeriod = Config.DATA_PERIOD) -> tuple[list[NewsArticle], dict[str, list[int]]]:
+                         period: DataPeriod = Config.DATA_PERIOD,
+                         tasks: tuple[ProgressTask | None, ProgressTask | None, ProgressTask] | None = None
+                         ) -> tuple[list[NewsArticle], dict[str, list[int]]]:
     """
     Returns the news inside the period (excluded sections dropped) and, per news id, the bill
     numbers its body links to (store them with Database.insert_news_bill_links, source "link").
+    tasks: the (sitemaps, download, parse) rows, see news_tasks; created here when not given.
     """
     save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/news"
     links_folder_path: str = f"{Config.RAW_LINKS_DIR}/delfino"
-    url_collector: UrlCollector = UrlCollector()
+    sitemaps_task, download_task, parse_task = tasks or self.news_tasks(fetcher.name, scrap_urls, scrap_new_htmls)
+    url_collector: UrlCollector = UrlCollector(sitemaps_task)
     file_manager: FileManager = FileManager()
     parser: DelfinoParser = DelfinoParser()
 
@@ -287,18 +319,18 @@ class Pipeline:
       delfino_urls = file_manager.load_json_as_dict(links_folder_path, "delfino_news_links")["links"]
 
     if scrap_new_htmls:
-      fetcher.fetch_multiple(save_folder_path, delfino_urls)
+      fetcher.fetch_multiple(save_folder_path, delfino_urls, download_task)
 
     downloaded_urls: list[str] = [url for url in delfino_urls if file_manager.html_exists(save_folder_path, url)]
 
     news_articles: list[NewsArticle] = []
     bill_links: dict[str, list[int]] = {}
-    for i in range(len(downloaded_urls)):
-      url: str = downloaded_urls[i]
-      news_processed_count(i + 1, len(downloaded_urls), fetcher.name)
+    parse_task.set_total(len(downloaded_urls))
+    for url in downloaded_urls:
+      parse_task.advance()
       html = file_manager.load_html(save_folder_path, url)
       if is_error_html(html):
-        print(f"[{fetcher.name}] Url {url} found {html.lower()}")
+        parse_task.warn(f"Url {url} found {html.lower()}")
         continue
       news_article: NewsArticle | None = parser.parse(html, url)
       # Delfino urls carry no section, so the section filter runs here, on the page's articleSection
@@ -307,12 +339,14 @@ class Pipeline:
         links: list[int] = parser.parse_bill_links(html)
         if links:
           bill_links[news_article.id] = links
-    print(f"[{fetcher.name}] Delfino: {len(news_articles)} news inside the period out of {len(downloaded_urls)} downloaded")
+    parse_task.finish()
+    logger.info(f"[{fetcher.name}] Delfino: {len(news_articles)} news inside the period out of {len(downloaded_urls)} downloaded")
     return news_articles, bill_links
 
   def scrap_delfino(self, fetcher: HTMLFetcher, first_bill: int = Config.FIRST_BILL, max_bill: int = Config.MAX_BILL,
                     max_consecutive_errors: int = Config.MAX_CONSECUTIVE_ERRORS,
-                    refresh_before: datetime | None = None) -> list[Bill]:
+                    refresh_before: datetime | None = None, bills_task: ProgressTask | None = None,
+                    votes_task: ProgressTask | None = None) -> list[Bill]:
     """
     Walks bills from first_bill upwards. Errors only count once we are past the last
     successfully collected bill; it stops after max_consecutive_errors errors in a row there
@@ -320,14 +354,20 @@ class Pipeline:
     refresh_before (#23): cached pages saved before that moment are downloaded again, so status,
     commission, law number, proponents and history are current. Pages already refreshed are kept, so an
     interrupted refresh resumes where it stopped. Store the result with Database.insert_bills (upsert).
+    bills_task advances once per bill number walked; votes_task once per vote page (created here when not given).
     """
+    bills_task = bills_task or self.board.task(fetcher.name, "bills")
+    votes_task = votes_task or self.board.task(fetcher.name, "votes")
     save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/asamblea/bills"
     url_collector: UrlCollector = UrlCollector()
     file_manager: FileManager = FileManager()
     parser: BillParser = BillParser()
 
     last_success: int = self.last_cached_delfino_success(file_manager, url_collector, save_folder_path, first_bill, max_bill)
-    print(f"[{fetcher.name}] Last bill already collected: {last_success if last_success >= first_bill else 'none'}")
+    logger.info(f"[{fetcher.name}] Last bill already collected: {last_success if last_success >= first_bill else 'none'}")
+    # Estimated total: up to the last cached bill; it grows as newer bills are found. Without a cache, a counter.
+    if last_success >= first_bill:
+      bills_task.set_total(last_success - first_bill + 1, estimated = True)
 
     bills: list[Bill] = []
     collected_urls: list[str] = []
@@ -335,6 +375,7 @@ class Pipeline:
     consecutive_errors: int = 0
 
     for number in range(first_bill, max_bill + 1):
+      bills_task.advance()
       url: str = url_collector.get_delfino_link(number)
       html: str | None = None
       if file_manager.html_exists(save_folder_path, url):
@@ -345,23 +386,23 @@ class Pipeline:
       # Past the last known bill, cached errors may be stale (new bills get published), so retry them.
       fetch_failed: bool = False
       if html is None or (number > last_success and is_error_html(html)):
-        print(f"[{fetcher.name}] Scraping bill {number}")
         try:
           html = fetcher.fetch(save_folder_path, url)
         except requests.RequestException as error:
           # Network failure after all retries: nothing is saved, so the bill is fetched again on the next run.
-          print(f"[{fetcher.name}] Could not fetch bill {number}: {error}")
+          bills_task.warn(f"Could not fetch bill {number}: {error}")
           unfetched_bills.append(number)
           fetch_failed = True
 
       if fetch_failed or is_error_html(html):
         if not fetch_failed:
-          print(f"[{fetcher.name}] Url {url} found {html.lower()}")
+          # Gaps in the numbering and the end of the bills are expected: logged, not warned.
+          logger.info(f"[{fetcher.name}] Url {url} found {html.lower()}")
         # Network failures count too, so a long outage past the last bill stops the walk instead of trying every number.
         if number > last_success:
           consecutive_errors += 1
           if consecutive_errors >= max_consecutive_errors:
-            print(f"[{fetcher.name}] {consecutive_errors} consecutive errors after bill {last_success}, stopping.")
+            logger.info(f"[{fetcher.name}] {consecutive_errors} consecutive errors after bill {last_success}, stopping.")
             break
         continue
 
@@ -372,26 +413,31 @@ class Pipeline:
         bill: Bill = parser.parse(html, url)
       except Exception as error:
         # A page with an unexpected layout is reported and skipped; the walk goes on.
-        print(f"[{fetcher.name}] Could not parse bill {number}: {error!r}")
+        bills_task.warn(f"Could not parse bill {number}: {error!r}")
         continue
-      self.add_deputy_votes(fetcher, file_manager, parser, bill)
+      self.add_deputy_votes(fetcher, file_manager, parser, bill, votes_task)
       bills.append(bill)
 
+    bills_task.finish()
+    votes_task.finish()
     file_manager.save_dict_as_json(f"{Config.RAW_LINKS_DIR}/delfino", "delfino_links", {"links": collected_urls})
     if unfetched_bills:
-      print(f"[{fetcher.name}] {len(unfetched_bills)} bills could not be fetched (run again to retry them): {unfetched_bills}")
+      logger.warning(f"[{fetcher.name}] {len(unfetched_bills)} bills could not be fetched (run again to retry them): {unfetched_bills}")
     return bills
 
-  def add_deputy_votes(self, fetcher: HTMLFetcher, file_manager: FileManager, parser: BillParser, bill: Bill):
+  def add_deputy_votes(self, fetcher: HTMLFetcher, file_manager: FileManager, parser: BillParser, bill: Bill,
+                       votes_task: ProgressTask | None = None):
     """
     Fills each vote event of the bill with how every deputy voted, from its Delfino vote page. A vote page doesn't
     change once published, so a cached one is never downloaded again. A page that fails leaves that vote without
-    deputies (a cached error is retried on the next run).
+    deputies (a cached error is retried on the next run). votes_task advances once per vote page.
     """
+    votes_task = votes_task or self.board.task(fetcher.name, "votes")
     save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/asamblea/votes"
     for event in bill.events:
       if event.event_type != "vote" or not event.url:
         continue
+      votes_task.advance()
       html: str | None = None
       if file_manager.html_exists(save_folder_path, event.url):
         html = file_manager.load_html(save_folder_path, event.url)
@@ -399,17 +445,17 @@ class Pipeline:
         try:
           html = fetcher.fetch(save_folder_path, event.url)
         except requests.RequestException as error:
-          print(f"[{fetcher.name}] Could not fetch vote {event.url}: {error}")
+          votes_task.warn(f"Could not fetch vote {event.url}: {error}")
           continue
       if is_error_html(html):
-        print(f"[{fetcher.name}] Vote {event.url} found {html.lower()}")
+        votes_task.warn(f"Vote {event.url} found {html.lower()}")
         continue
       try:
         event.deputy_votes = parser.parse_vote_page(html)
       except Exception as error:
-        print(f"[{fetcher.name}] Could not parse vote {event.url} of bill {bill.number}: {error!r}")
+        votes_task.warn(f"Could not parse vote {event.url} of bill {bill.number}: {error!r}")
       if not event.deputy_votes:
-        print(f"[{fetcher.name}] Vote {event.url} of bill {bill.number} lists no deputies")
+        votes_task.warn(f"Vote {event.url} of bill {bill.number} lists no deputies")
 
   def last_cached_delfino_success(self, file_manager: FileManager, url_collector: UrlCollector, save_folder_path: str,
                                   first_bill: int, max_bill: int) -> int:
@@ -433,9 +479,9 @@ def run_in_parallel(jobs: dict[str, Callable[[], Any]]) -> dict[str, Any]:
     for name, future in futures.items():
       try:
         results[name] = future.result()
-        print(f"[{name}] finished")
+        logger.info(f"[{name}] finished")
       except Exception:
-        print(f"[{name}] failed, the other websites were not affected:\n{traceback.format_exc()}")
+        logger.exception(f"[{name}] failed, the other websites were not affected")
   return results
 
 def saved_before(file_manager: FileManager, folder_path: str, name: str, moment: datetime) -> bool:
@@ -444,7 +490,3 @@ def saved_before(file_manager: FileManager, folder_path: str, name: str, moment:
 
 def is_error_html(html: str) -> bool:
   return re.fullmatch(r"Error (\d{3})", html) is not None
-
-def news_processed_count(current: int, max: int, name: str = ""):
-   prefix: str = f"[{name}] " if name else ""
-   print(f"{prefix}{current} out of {max} news processed. ({current * 100.0/max:.2f}% completed)")

@@ -1,3 +1,4 @@
+import logging
 from bs4 import BeautifulSoup
 import json
 from datetime import datetime
@@ -6,6 +7,8 @@ from config import Config
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.section_filter import url_section
 from tools.file_tools.file_manager import hash
+
+logger = logging.getLogger("cr")
 
 class CRHoyParser:
   
@@ -33,7 +36,7 @@ class CRHoyParser:
           article = NewsArticle(id, url, organization, title, description, date_published, author, content, date_extracted, extraction_status, outlet_type, section)
           return article
         else:
-           print("Not a NewsArticle")
+           logger.info("Not a NewsArticle")
     return None
 
 def get_all_text(soup: BeautifulSoup, url: str) -> str:

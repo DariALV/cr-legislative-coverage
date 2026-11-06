@@ -1,9 +1,12 @@
+import logging
 import re
 from urllib.parse import urlparse
 
 from config import Config
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.wordpress_parser import WordPressParser
+
+logger = logging.getLogger("cr")
 
 CARICATURA_SLUG_REGEX = re.compile(r"^el-chancletazo(-\d+)?$")
 
@@ -21,7 +24,7 @@ class SemanarioParser(WordPressParser):
 
   def parse(self, post: dict, categories: dict[int, str], authors: dict[int, str]) -> NewsArticle | None:
     if self.is_caricatura(post):
-      print(f"[{self.ORGANIZATION}] Skipping caricatura: {post.get('link')}")
+      logger.info(f"[{self.ORGANIZATION}] Skipping caricatura: {post.get('link')}")
       return None
     return super().parse(post, categories, authors)
 

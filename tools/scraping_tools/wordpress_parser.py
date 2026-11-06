@@ -1,3 +1,4 @@
+import logging
 from bs4 import BeautifulSoup
 import html as html_lib
 import json
@@ -7,6 +8,8 @@ from config import Config, to_costa_rica_time
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.delfino_parser import BLOCK_TAGS, is_nested_block
 from tools.file_tools.file_manager import hash
+
+logger = logging.getLogger("cr")
 
 # Posts dated before this are broken (Semanario has some at 1970-01-01), not old news.
 EARLIEST_VALID_DATE: datetime = datetime(2000, 1, 1)
@@ -42,7 +45,7 @@ class WordPressParser:
     url: str | None = post.get("link")
     date_published: datetime | None = self.get_date_published(post)
     if not url or date_published is None:
-      print(f"[{self.ORGANIZATION}] Not a valid post (no link or broken date): {post.get('id')} {url}")
+      logger.info(f"[{self.ORGANIZATION}] Not a valid post (no link or broken date): {post.get('id')} {url}")
       return None
 
     id: str = hash(url)

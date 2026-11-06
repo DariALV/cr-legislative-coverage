@@ -1,3 +1,4 @@
+import logging
 import re
 import time
 import requests
@@ -7,6 +8,9 @@ from datetime import date, datetime, timedelta
 from config import Config, DataPeriod
 from tools.scraping_tools.section_filter import is_relevant_url
 from tools.scraping_tools.html_fetcher import make_retry_session
+from tools.display_tools.progress import ProgressTask, silent_task
+
+logger = logging.getLogger("cr")
 
 # Delfino news urls: https://delfino.cr/<year>/<month>/<slug>
 DELFINO_NEWS_URL_REGEX = re.compile(r"^https://delfino\.cr/(\d{4})/(\d{2})/[^/]+$")
@@ -18,16 +22,18 @@ class UrlCollector:
   Collects urls with a coarse date filter that never drops a news inside the period. The exact
   filter runs after parsing, on date_published.
   Not thread-safe (one requests.Session): create one collector per thread/website.
+  task (optional) advances once per sitemap read by the get_*_links methods and counts the failed ones.
   """
 
-  def __init__(self):
+  def __init__(self, task: ProgressTask | None = None):
     self.session: requests.Session | None = None
     self.failed_sitemaps: list[str] = []
+    self.task: ProgressTask = task or silent_task()
 
   def report_failed_sitemaps(self, name: str):
     """Lists the sitemaps skipped after the retries. Their urls are missing: collect that website's urls again."""
     if self.failed_sitemaps:
-      print(f"[{name}] {len(self.failed_sitemaps)} sitemaps could not be fetched, their urls are missing "
+      logger.warning(f"[{name}] {len(self.failed_sitemaps)} sitemaps could not be fetched, their urls are missing "
             f"(run again with scrap_urls = True): {self.failed_sitemaps}")
 
   def get_delfino_links(self, max_bill) -> list[str]:
@@ -43,6 +49,7 @@ class UrlCollector:
     """News from the yearly sitemaps whose /<year>/<month>/ falls in the period (month precision)."""
     months: set[tuple[int, int]] = set(period.months())
     links: list[str] = []
+    self.task.set_total(len(period.years()))
     for year in period.years():
       sitemap_links = [url for url, _ in self.get_sitemap_entries(f"https://delfino.cr/sitemaps/posts/{year}.xml")]
       for url in sitemap_links:
@@ -50,7 +57,9 @@ class UrlCollector:
         # urls without /<year>/<month>/ (e.g. /audio/ podcasts) are not news articles
         if match and (int(match.group(1)), int(match.group(2))) in months:
           links.append(url)
-      print(f"Delfino sitemap {year}: {len(sitemap_links)} urls, {len(links)} kept so far")
+      logger.info(f"Delfino sitemap {year}: {len(sitemap_links)} urls, {len(links)} kept so far")
+      self.task.advance()
+    self.task.finish()
     return list(dict.fromkeys(links))
 
   def get_wordpress_posts_link(self, site_url: str, year: int, month: int, page: int) -> str:
@@ -81,14 +90,17 @@ class UrlCollector:
     links: list[str] = []
     day: date = period.start_date()
     last_day: date = period.end.date() + timedelta(days = 1)
+    self.task.set_total((last_day - day).days + 1)
     while day <= last_day:
       sitemap_url: str = f"https://www.nacion.com/arc/outboundfeeds/sitemap/{day.isoformat()}/?outputType=xml"
       day_links = [url for url, _ in self.get_sitemap_entries(sitemap_url) if NACION_NEWS_URL_REGEX.match(url)]
       kept = [url for url in day_links if is_relevant_url("nacion", url)]
       links += kept
-      print(f"La Nación sitemap {day}: {len(day_links)} urls, {len(kept)} kept")
+      logger.info(f"La Nación sitemap {day}: {len(day_links)} urls, {len(kept)} kept")
+      self.task.advance()
       day += timedelta(days = 1)
       time.sleep(Config.rate_limit_for("nacion"))
+    self.task.finish()
     return list(dict.fromkeys(links))
 
   def get_crhoy_links(self, period: DataPeriod = Config.DATA_PERIOD) -> list[str]:
@@ -103,12 +115,15 @@ class UrlCollector:
     earliest = period.start - timedelta(days = 1)   # small safety margin
 
     links: list[str] = []
+    self.task.set_total(len(sitemap_urls))
     for sitemap_url in sitemap_urls:
       entries = self.get_sitemap_entries(sitemap_url)
       kept = [url for url, lastmod in entries
               if url != "https://crhoy.com/" and (lastmod is None or datetime.fromisoformat(lastmod[:19]) >= earliest)]
       links += kept
-      print(f"{sitemap_url}: {len(entries)} urls, {len(kept)} kept")
+      logger.info(f"{sitemap_url}: {len(entries)} urls, {len(kept)} kept")
+      self.task.advance()
+    self.task.finish()
     links = list(dict.fromkeys(links))
     return [link for link in links if is_relevant_url("crhoy", link)]
 
@@ -124,7 +139,7 @@ class UrlCollector:
       response = self.session.get(sitemap_url, timeout = Config.SITEMAP_TIMEOUT)
       response.raise_for_status()
     except requests.RequestException as error:
-      print(f"Could not fetch sitemap {sitemap_url}: {error}")
+      self.task.warn(f"Could not fetch sitemap {sitemap_url}: {error}")
       self.failed_sitemaps.append(sitemap_url)
       return []
     soup = BeautifulSoup(response.content, "xml")

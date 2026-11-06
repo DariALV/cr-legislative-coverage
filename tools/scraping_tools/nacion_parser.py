@@ -1,3 +1,4 @@
+import logging
 from bs4 import BeautifulSoup
 import json
 import re
@@ -7,6 +8,8 @@ from config import Config, to_costa_rica_time
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.delfino_parser import BLOCK_TAGS, is_nested_block
 from tools.file_tools.file_manager import hash
+
+logger = logging.getLogger("cr")
 
 # La Nación pads its paragraphs with zero-width non-joiners (U+200C), some blocks are nothing else.
 INVISIBLE_CHARACTERS: dict[int, None] = {ord("‌"): None, ord("​"): None, ord("﻿"): None}
@@ -29,12 +32,12 @@ class NacionParser:
     soup = BeautifulSoup(html, "lxml")
     news_article_schema = self.get_news_article_schema(soup)
     if news_article_schema is None:
-      print(f"Not a NewsArticle: {url}")
+      logger.info(f"Not a NewsArticle: {url}")
       return None
 
     author: str | None = self.get_author(news_article_schema)
     if self.is_agency(author):
-      print(f"[nacion] Skipping agency news ({author}): {url}")
+      logger.info(f"[nacion] Skipping agency news ({author}): {url}")
       return None
 
     id: str = hash(url)
