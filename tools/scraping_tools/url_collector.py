@@ -41,6 +41,25 @@ class UrlCollector:
       print(f"Delfino sitemap {year}: {len(sitemap_links)} urls, {len(links)} kept so far")
     return list(dict.fromkeys(links))
 
+  def get_wordpress_posts_link(self, site_url: str, year: int, month: int, page: int) -> str:
+    """
+    One page (100 posts, oldest first) of a WordPress REST API (El Mundo, Semanario) for a whole month.
+    Months, not the exact period, keep the url (the cache key) stable when the period changes.
+    after/before are exclusive and in site time (Costa Rica). The exact filter runs after parsing, on date_published.
+    """
+    previous_day: datetime = datetime(year, month, 1) - timedelta(seconds = 1)
+    next_month: datetime = datetime(year + 1, 1, 1) if month == 12 else datetime(year, month + 1, 1)
+    return (f"{site_url}/wp-json/wp/v2/posts?per_page=100&orderby=date&order=asc"
+            f"&after={previous_day.isoformat()}&before={next_month.isoformat()}"
+            "&_fields=id,link,date,date_gmt,modified_gmt,title,excerpt,content,categories,author"
+            f"&page={page}")
+
+  def get_wordpress_categories_link(self, site_url: str, page: int) -> str:
+    return f"{site_url}/wp-json/wp/v2/categories?per_page=100&_fields=id,name,slug,parent&page={page}"
+
+  def get_wordpress_users_link(self, site_url: str, page: int) -> str:
+    return f"{site_url}/wp-json/wp/v2/users?per_page=100&_fields=id,name&page={page}"
+
   def get_nacion_links(self, period: DataPeriod = Config.DATA_PERIOD) -> list[str]:
     """
     La Nación (Arc Publishing) has one sitemap per day of publication, as a UTC day (lastmod is the

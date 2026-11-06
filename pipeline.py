@@ -1,5 +1,8 @@
+import os
 import re
 import traceback
+import requests
+from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any, Callable
 
@@ -7,12 +10,15 @@ from config import Config, DataPeriod
 from tools.scraping_tools.html_fetcher import HTMLFetcher
 from tools.scraping_tools.crhoy_parser import CRHoyParser
 from tools.scraping_tools.delfino_parser import DelfinoParser
+from tools.scraping_tools.elmundo_parser import ElMundoParser
+from tools.scraping_tools.semanario_parser import SemanarioParser
+from tools.scraping_tools.wordpress_parser import WordPressParser
 from tools.scraping_tools.nacion_parser import NacionParser
 from tools.scraping_tools.expediente_parser import ExpedienteParser
 from tools.scraping_tools.news_article import NewsArticle
 from tools.scraping_tools.expediente import Expediente
 from tools.scraping_tools.url_collector import UrlCollector
-from tools.scraping_tools.section_filter import is_relevant_url, is_relevant_delfino_section
+from tools.scraping_tools.section_filter import is_relevant_url, is_relevant_categories, is_relevant_delfino_section
 from tools.file_tools.file_manager import FileManager
 from tools.database_tools.database import Database
 
@@ -39,6 +45,12 @@ class Pipeline:
       database.insert_expedientes(delfino["expedientes"])
       linked: int = sum(len(numbers) for numbers in delfino["expediente_links"].values())
       print(f"[delfino] saved {len(delfino['news'])} news, {linked} expediente links, {len(delfino['expedientes'])} expedientes")
+    if "elmundo" in results:
+      database.insert_news_articles(results["elmundo"])
+      print(f"[elmundo] saved {len(results['elmundo'])} news")
+    if "semanario" in results:
+      database.insert_news_articles(results["semanario"])
+      print(f"[semanario] saved {len(results['semanario'])} news")
     if "nacion" in results:
       database.insert_news_articles(results["nacion"])
       print(f"[nacion] saved {len(results['nacion'])} news")
@@ -57,8 +69,9 @@ class Pipeline:
       "crhoy": lambda: self.scrap_crhoy(self.make_fetcher("crhoy"), scrap_urls, scrap_new_htmls, period),
       "delfino": lambda: self.scrap_delfino_website(self.make_fetcher("delfino"), scrap_urls, scrap_new_htmls, period,
                                                     first_expediente, max_expediente),
+      "elmundo": lambda: self.scrap_elmundo(self.make_fetcher("elmundo"), scrap_urls, scrap_new_htmls, period),
       "nacion": lambda: self.scrap_nacion(self.make_fetcher("nacion"), scrap_urls, scrap_new_htmls, period),
-      # "elmundo": ..., "semanario": ... (one entry per new website)
+      "semanario": lambda: self.scrap_semanario(self.make_fetcher("semanario"), scrap_urls, scrap_new_htmls, period),
     }
     return run_in_parallel(jobs)
 
@@ -145,6 +158,106 @@ class Pipeline:
         news_articles.append(news_article)
     print(f"[{fetcher.name}] La Nación: {len(news_articles)} news inside the period out of {len(filtered_urls)} downloaded")
     return news_articles
+
+  def scrap_elmundo(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                    period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
+    return self.scrap_wordpress(fetcher, ElMundoParser(), "https://elmundo.cr", True, scrap_urls, scrap_new_htmls, period)
+
+  def scrap_semanario(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                      period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
+    # Semanario's /users answers an HTML page and its bylines are not public in the API (see SemanarioParser).
+    return self.scrap_wordpress(fetcher, SemanarioParser(), "https://semanariouniversidad.com", False, scrap_urls, scrap_new_htmls, period)
+
+  def scrap_wordpress(self, fetcher: HTMLFetcher, parser: WordPressParser, site_url: str, with_users: bool,
+                      scrap_urls: bool = False, scrap_new_htmls: bool = False,
+                      period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
+    """
+    A WordPress outlet (El Mundo, Semanario) through its REST API: each response page (100 posts of one
+    month) is the raw file and already has the full body, so collecting urls and downloading news are the
+    same requests. Missing pages are fetched when scrap_urls or scrap_new_htmls is set; otherwise only
+    the cache is read. with_users maps the post's WordPress user to its name (only where it's the byline).
+    """
+    outlet: str = parser.ORGANIZATION
+    api_folder_path: str = f"{Config.RAW_HTML_DIR}/{outlet}/api"
+    links_folder_path: str = f"{Config.RAW_LINKS_DIR}/{outlet}"
+    url_collector: UrlCollector = UrlCollector()
+    file_manager: FileManager = FileManager()
+    fetch_missing: bool = scrap_urls or scrap_new_htmls
+
+    # Categories and authors change rarely and are a handful of requests: refreshed on every fetching run.
+    category_items: list[dict] = self.fetch_wordpress_pages(
+      fetcher, file_manager, parser, api_folder_path,
+      lambda page: url_collector.get_wordpress_categories_link(site_url, page), fetch_missing, fetch_missing)
+    categories: dict[int, str] = parser.parse_categories(category_items)
+    category_slugs: dict[int, str] = {category["id"]: category.get("slug", "") for category in category_items}
+    authors: dict[int, str] = {}
+    if with_users:
+      authors = parser.parse_authors(self.fetch_wordpress_pages(
+        fetcher, file_manager, parser, api_folder_path,
+        lambda page: url_collector.get_wordpress_users_link(site_url, page), fetch_missing, fetch_missing))
+
+    posts: list[dict] = []
+    for year, month in period.months():
+      next_month: datetime = datetime(year + 1, 1, 1) if month == 12 else datetime(year, month + 1, 1)
+      page_link = lambda page, year = year, month = month: url_collector.get_wordpress_posts_link(site_url, year, month, page)
+      # A month cached before it ended (plus a day for late edits) is incomplete: refresh its pages.
+      refresh_before: datetime = next_month + timedelta(days = 1)
+      month_posts: list[dict] = self.fetch_wordpress_pages(fetcher, file_manager, parser, api_folder_path, page_link,
+                                                           fetch_missing, False, refresh_before)
+      print(f"[{fetcher.name}] {year}-{month:02d}: {len(month_posts)} posts")
+      posts += month_posts
+
+    news_articles: list[NewsArticle] = []
+    links: list[str] = []
+    for i in range(len(posts)):
+      news_processed_count(i + 1, len(posts), fetcher.name)
+      news_article: NewsArticle | None = parser.parse(posts[i], categories, authors)
+      if news_article and period.contains(news_article.date_published):
+        links.append(news_article.url)
+        slugs: list[str] = [category_slugs.get(category_id, "") for category_id in posts[i].get("categories", [])]
+        if is_relevant_url(outlet, news_article.url) and is_relevant_categories(outlet, slugs):
+          news_articles.append(news_article)
+    file_manager.save_dict_as_json(links_folder_path, f"{outlet}_links", {"links": list(dict.fromkeys(links))})
+    print(f"[{fetcher.name}] {len(news_articles)} relevant news inside the period out of {len(links)}")
+    return news_articles
+
+  def fetch_wordpress_pages(self, fetcher: HTMLFetcher, file_manager: FileManager, parser: WordPressParser, folder_path: str,
+                            page_link: Callable[[int], str], fetch_missing: bool, refresh: bool = False,
+                            refresh_before: datetime | None = None) -> list[dict]:
+    """
+    Items of every page of a REST collection, page 1 upwards, until a page has fewer than 100 items or
+    an error (WordPress answers 400 past the last page). Cached pages are reused unless refresh is set
+    or they were saved before refresh_before. Without fetch_missing nothing is downloaded.
+    """
+    items: list[dict] = []
+    page: int = 1
+    while True:
+      url: str = page_link(page)
+      raw: str | None = None
+      if file_manager.html_exists(folder_path, url):
+        stale: bool = refresh or (refresh_before is not None and saved_before(file_manager, folder_path, url, refresh_before))
+        if not (fetch_missing and stale):
+          raw = file_manager.load_html(folder_path, url)
+      if raw is None:
+        if not fetch_missing:
+          break
+        try:
+          raw = fetcher.fetch(folder_path, url)
+        except requests.RequestException as error:
+          # Nothing is saved, so the page is fetched again on the next run.
+          print(f"[{fetcher.name}] Could not fetch {url}: {error}")
+          break
+
+      if is_error_html(raw):
+        if not (page > 1 and raw == "Error 400"):
+          print(f"[{fetcher.name}] Url {url} found {raw.lower()}")
+        break
+      page_items: list[dict] = parser.parse_page(raw)
+      items += page_items
+      if len(page_items) < 100:
+        break
+      page += 1
+    return items
 
   def scrap_delfino_news(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                          period: DataPeriod = Config.DATA_PERIOD) -> tuple[list[NewsArticle], dict[str, list[int]]]:
@@ -263,6 +376,10 @@ def run_in_parallel(jobs: dict[str, Callable[[], Any]]) -> dict[str, Any]:
       except Exception:
         print(f"[{name}] failed, the other websites were not affected:\n{traceback.format_exc()}")
   return results
+
+def saved_before(file_manager: FileManager, folder_path: str, name: str, moment: datetime) -> bool:
+  """True if the cached file was written before moment (local machine time)."""
+  return datetime.fromtimestamp(os.path.getmtime(file_manager.get_path(folder_path, name, ".html", True))) < moment
 
 def is_error_html(html: str) -> bool:
   return re.fullmatch(r"Error (\d{3})", html) is not None
