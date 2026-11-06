@@ -8,6 +8,9 @@ from typing import Any, Callable
 
 from config import Config, DataPeriod
 from tools.scraping_tools.html_fetcher import HTMLFetcher
+from tools.scraping_tools.asamblea import AsambleaData, Deputy, Organ
+from tools.scraping_tools.asamblea_fetcher import AsambleaError, AsambleaFetcher
+from tools.scraping_tools.asamblea_parser import AsambleaParser
 from tools.scraping_tools.crhoy_parser import CRHoyParser
 from tools.scraping_tools.delfino_parser import DelfinoParser
 from tools.scraping_tools.elmundo_parser import ElMundoParser
@@ -465,6 +468,84 @@ class Pipeline:
       if file_manager.html_exists(save_folder_path, url) and not is_error_html(file_manager.load_html(save_folder_path, url)):
         return number
     return first_bill - 1
+
+  def scrap_and_save_asamblea(self, refresh_before: datetime | None = None,
+                              deputies_since: datetime = Config.DEPUTIES_SINCE) -> dict[str, int]:
+    """
+    Deputies and legislative organs from the Asamblea's SIL into the private corpus database (#65).
+    Downloads what is not cached yet, then rebuilds the SIL tables from the cache. Ctrl+C (or a network failure)
+    stops the downloads but still builds the tables with what was cached, so nothing downloaded is lost and the next
+    run continues where this one stopped. refresh_before re-downloads the files cached before that moment.
+    Returns the number of rows per table.
+    """
+    fetcher: AsambleaFetcher = AsambleaFetcher(refresh_before = refresh_before)
+    parser: AsambleaParser = AsambleaParser()
+    try:
+      self.fetch_asamblea(fetcher, parser, deputies_since)
+    except KeyboardInterrupt:
+      logger.warning("[asamblea] Stopped (Ctrl+C): building the tables with what is cached. Run again to continue.")
+    except (requests.RequestException, AsambleaError) as error:
+      logger.error(f"[asamblea] Download stopped: {error!r}. Building the tables with what is cached.")
+    data: AsambleaData = self.build_asamblea_data(fetcher, parser, deputies_since)
+    database: Database = Database(Config.DATABASE_DIR, Config.PRIVATE_DATABASE)
+    database.create_private_corpus_tables()
+    counts: dict[str, int] = database.replace_asamblea_tables(data, datetime.now())
+    logger.info(f"[asamblea] saved {counts}")
+    return counts
+
+  def fetch_asamblea(self, fetcher: AsambleaFetcher, parser: AsambleaParser, deputies_since: datetime):
+    """
+    Block 1: every tab of each deputy term still running on or after deputies_since.
+    Block 2: the bills each active organ holds today. Cached deputies and organs are skipped.
+    A deputy or organ that fails is warned about and retried on the next run; the others go on.
+    """
+    deputies_task: ProgressTask = self.board.task("asamblea", "deputies")
+    organs_task: ProgressTask = self.board.task("asamblea", "organs")
+
+    deputies: list[Deputy] = parser.select_deputies(parser.parse_deputies_list(fetcher.fetch_deputies_list()), deputies_since)
+    deputies_task.set_total(len(deputies))
+    missing: list[Deputy] = [d for d in deputies if not fetcher.deputy_is_cached(d.deputy_id)]
+    contexts: dict[int, list[dict]] = fetcher.deputy_contexts() if missing else {}
+    missing_ids: set[int] = {d.deputy_id for d in missing}
+    for deputy in deputies:
+      if deputy.deputy_id in missing_ids:
+        context: list[dict] | None = contexts.get(deputy.deputy_id)
+        if context is None:
+          deputies_task.warn(f"Deputy {deputy.deputy_id} ({deputy.surnames}) is not in the SIL list anymore")
+        else:
+          try:
+            fetcher.fetch_deputy(deputy.deputy_id, context)
+          except (requests.RequestException, AsambleaError) as error:
+            deputies_task.warn(f"Could not fetch deputy {deputy.deputy_id} ({deputy.surnames}): {error!r}")
+      deputies_task.advance()
+    deputies_task.finish()
+
+    organs: list[Organ] = [o for o in parser.parse_organs_list(fetcher.fetch_organs_list()) if o.status == "ACTIVO"]
+    organs_task.set_total(len(organs))
+    for organ in organs:
+      if not fetcher.organ_is_cached(organ.organ_code):
+        try:
+          fetcher.fetch_organ(organ.organ_code)
+        except (requests.RequestException, AsambleaError) as error:
+          organs_task.warn(f"Could not fetch organ {organ.organ_code} ({organ.name}): {error!r}")
+      organs_task.advance()
+    organs_task.finish()
+
+  def build_asamblea_data(self, fetcher: AsambleaFetcher, parser: AsambleaParser, deputies_since: datetime) -> AsambleaData:
+    """Every SIL record from the cached CSVs only (no downloads). Deputies whose tabs aren't cached keep empty fields."""
+    data: AsambleaData = AsambleaData()
+    deputies_list: str | None = fetcher.load("deputies", "list")
+    if deputies_list:
+      for deputy in parser.select_deputies(parser.parse_deputies_list(deputies_list), deputies_since):
+        parser.parse_deputy(deputy, fetcher.load_deputy(deputy.deputy_id), data)
+        data.deputies.append(deputy)
+    organs_list: str | None = fetcher.load("organs", "list")
+    if organs_list:
+      data.organs = parser.parse_organs_list(organs_list)
+      for organ in data.organs:
+        if organ.status == "ACTIVO":
+          parser.parse_organ(organ, fetcher.load_organ(organ.organ_code), data)
+    return data
 
   def apply_embeddings(self):
     pass

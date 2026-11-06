@@ -49,8 +49,16 @@ class Config:
   TIMEOUT = 10
   SITEMAP_TIMEOUT = 60   # some sitemaps list 30,000 urls
 
+  # Asamblea Legislativa's SIL (#65): official source for deputies and legislative organs.
+  ASAMBLEA_URL = "https://produccion.asamblea.go.cr/SILConsulta/"
+  ASAMBLEA_TIMEOUT = 120               # the server builds whole CSV exports, the big ones take a while
+  # Deputies still in office on or after this date: the filing date of bill FIRST_BILL (20000), so every
+  # deputy who could sign or handle one of our bills is kept. Earlier terms can't touch them.
+  DEPUTIES_SINCE = datetime(2016, 6, 13)
+
   # Storage
   RAW_HTML_DIR = "raw/html"
+  RAW_CSV_DIR = "raw/csv"
   RAW_LINKS_DIR = "raw/links"
   DATABASE_DIR = "databases"
   PRIVATE_DATABASE = "private_corpus"

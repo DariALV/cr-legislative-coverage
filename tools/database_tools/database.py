@@ -1,9 +1,10 @@
 import pathlib
 import sqlite3
-from datetime import datetime
+from datetime import date, datetime
 
 from config import Config
 
+from tools.scraping_tools.asamblea import AsambleaData
 from tools.scraping_tools.bill import Bill, BillEvent, BillProponent, DeputyVote
 from tools.scraping_tools.news_article import NewsArticle
 
@@ -118,7 +119,138 @@ class Database:
     self.cursor.execute(events_table)
     self.add_missing_bill_event_columns()
     self.cursor.execute(votes_table)
+    self.create_asamblea_tables()
     self.connection.commit()
+
+  def create_asamblea_tables(self):
+    """
+    Deputies and legislative organs from the Asamblea's SIL (#65). Ids are the SIL's. No cédulas are stored:
+    person_id is the SIL's internal IdCEDULA. Bill numbers have no foreign key (bills from SIL come in #66).
+    """
+    tables = [
+      # One deputy in one term (IdDIPUTADO). Only terms still running on or after Config.DEPUTIES_SINCE.
+      """CREATE TABLE IF NOT EXISTS deputies(
+          deputy_id      INTEGER PRIMARY KEY,
+          person_id      INTEGER,
+          surnames       TEXT NOT NULL,
+          names          TEXT NOT NULL,
+          term           TEXT NOT NULL,
+          province       TEXT,
+          seat           INTEGER,
+          status         TEXT,
+          date_from      TEXT,
+          date_to        TEXT,
+          date_extracted TEXT NOT NULL
+      ) STRICT""",
+      # Faction stints of each person (all their terms): a deputy who became independent has two rows in a term.
+      # faction_id is the SIL's id of the faction (e.g. 43 = Liberación Nacional in every term), not of the stint.
+      """CREATE TABLE IF NOT EXISTS deputy_factions(
+          person_id  INTEGER,
+          faction_id INTEGER NOT NULL,
+          term       TEXT NOT NULL,
+          faction    TEXT NOT NULL,
+          province   TEXT,
+          date_from  TEXT,
+          date_to    TEXT,
+          UNIQUE (person_id, faction_id, date_from)
+      ) STRICT""",
+      # Every term each person served (Administraciones), including those before Config.DEPUTIES_SINCE.
+      """CREATE TABLE IF NOT EXISTS deputy_terms(
+          person_id INTEGER NOT NULL,
+          term      TEXT NOT NULL,
+          province  TEXT,
+          PRIMARY KEY (person_id, term)
+      ) STRICT""",
+      """CREATE TABLE IF NOT EXISTS deputy_replacements(
+          person_id INTEGER,
+          detail    TEXT,
+          name      TEXT,
+          date      TEXT,
+          UNIQUE (person_id, detail, name, date)
+      ) STRICT""",
+      # Bills each deputy term signed (Expedientes presentados), main signer or co-signer.
+      """CREATE TABLE IF NOT EXISTS deputy_bills(
+          deputy_id    INTEGER NOT NULL REFERENCES deputies(deputy_id),
+          bill_number  INTEGER NOT NULL,
+          proponent_id INTEGER NOT NULL,
+          term         TEXT,
+          PRIMARY KEY (deputy_id, bill_number)
+      ) STRICT""",
+      """CREATE TABLE IF NOT EXISTS organs(
+          organ_code       INTEGER PRIMARY KEY,
+          organ_id         INTEGER NOT NULL,
+          organ_type       TEXT,
+          name             TEXT NOT NULL,
+          date_constituted TEXT,
+          date_dissolved   TEXT,
+          status           TEXT,
+          date_extracted   TEXT NOT NULL
+      ) STRICT""",
+      # Positions of each deputy term in each organ, per one-year legislature (Puestos). organ_code joins organs.
+      """CREATE TABLE IF NOT EXISTS organ_memberships(
+          membership_id INTEGER PRIMARY KEY,
+          deputy_id     INTEGER NOT NULL REFERENCES deputies(deputy_id),
+          organ_code    INTEGER NOT NULL,
+          organ_name    TEXT,
+          position      TEXT,
+          legislature   TEXT,
+          date_joined   TEXT,
+          date_left     TEXT
+      ) STRICT""",
+      # Bills each active organ holds on date_extracted (Expedientes que atiende): a snapshot, not a history.
+      """CREATE TABLE IF NOT EXISTS organ_bills(
+          organ_code     INTEGER NOT NULL REFERENCES organs(organ_code),
+          bill_number    INTEGER NOT NULL,
+          date_start     TEXT,
+          date_end       TEXT,
+          last_step      TEXT,
+          date_extracted TEXT NOT NULL,
+          PRIMARY KEY (organ_code, bill_number)
+      ) STRICT""",
+    ]
+    for table in tables:
+      self.cursor.execute(table)
+
+  def replace_asamblea_tables(self, data: AsambleaData, date_extracted: datetime) -> dict[str, int]:
+    """
+    Replaces every SIL table with data (built from the cached CSVs), in one transaction: an error or Ctrl+C
+    leaves the previous tables untouched. Rows repeated across terms of the same person are kept once.
+    Returns the number of rows per table.
+    """
+    extracted = date_extracted.isoformat()
+    try:
+      for table in ["organ_bills", "organ_memberships", "deputy_bills", "deputy_replacements", "deputy_terms",
+                    "deputy_factions", "deputies", "organs"]:
+        self.cursor.execute(f"DELETE FROM {table}")
+      self.cursor.executemany("INSERT INTO deputies VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        [(d.deputy_id, d.person_id, d.surnames, d.names, d.term, d.province, d.seat, d.status,
+          iso(d.date_from), iso(d.date_to), extracted) for d in data.deputies])
+      self.cursor.executemany("INSERT INTO deputy_factions VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(f.person_id, f.faction_id, f.term, f.faction, f.province, iso(f.date_from), iso(f.date_to)) for f in data.deputy_factions])
+      self.cursor.executemany("INSERT INTO deputy_terms VALUES (?, ?, ?) ON CONFLICT DO NOTHING",
+        [(t.person_id, t.term, t.province) for t in data.deputy_terms])
+      self.cursor.executemany("INSERT INTO deputy_replacements VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(r.person_id, r.detail, r.name, iso(r.date)) for r in data.deputy_replacements])
+      self.cursor.executemany("INSERT INTO deputy_bills VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(b.deputy_id, b.bill_number, b.proponent_id, b.term) for b in data.deputy_bills])
+      self.cursor.executemany("INSERT INTO organs VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        [(o.organ_code, o.organ_id, o.organ_type, o.name, iso(o.date_constituted), iso(o.date_dissolved), o.status, extracted)
+         for o in data.organs])
+      self.cursor.executemany("INSERT INTO organ_memberships VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(m.membership_id, m.deputy_id, m.organ_code, m.organ_name, m.position, m.legislature, iso(m.date_joined), iso(m.date_left))
+         for m in data.organ_memberships])
+      self.cursor.executemany("INSERT INTO organ_bills VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(b.organ_code, b.bill_number, iso(b.date_start), iso(b.date_end), b.last_step, extracted) for b in data.organ_bills])
+      self.connection.commit()
+    except BaseException:
+      self.connection.rollback()
+      raise
+    counts: dict[str, int] = {}
+    for table in ["deputies", "deputy_factions", "deputy_terms", "deputy_replacements", "deputy_bills", "organs",
+                  "organ_memberships", "organ_bills"]:
+      self.cursor.execute(f"SELECT COUNT(*) FROM {table}")
+      counts[table] = self.cursor.fetchone()[0]
+    return counts
 
   def add_missing_bill_columns(self):
     """Adds flag to a bills table created before it existed (#21)."""
@@ -326,3 +458,6 @@ class Database:
       bills.append(bill)
     
     return bills
+
+def iso(value: date | None) -> str | None:
+  return value.isoformat() if value else None
