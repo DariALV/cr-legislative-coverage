@@ -48,3 +48,10 @@ Before committing, show the user the proposed message, plus any suggestion (anot
   - Differences from what the issue originally asked for, and why.
   - Source quirks that affect the data (time zones, missing fields, how the site groups or labels things).
 - Keep each caveat short and concrete, with numbers or examples when they exist.
+
+## Stay issue-aware and commit often (always)
+
+- Keep the issue list in mind all the time (`gh issue list --state all`), not only when committing. Whenever a topic comes up, check whether an issue already covers it or relates to it.
+- If an issue matches what is being discussed (e.g. the conversation is exactly what #60 asks for), say so, and add a comment to that issue with the relevant findings, decisions or caveats.
+- Right after implementing something, check which issue(s) it belongs to, so the work gets linked and, if it finishes the issue, closed.
+- Commit as often as it makes sense: as soon as a coherent piece of work is done, propose the commit (following "Commits" above) instead of letting uncommitted changes pile up. Prefer several small, well-linked commits over one large mixed one.
