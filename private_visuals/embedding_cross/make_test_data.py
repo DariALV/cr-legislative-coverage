@@ -2,7 +2,7 @@
 
 Reads private_corpus.db read-only and writes private_visuals/output/embedding_cross/data.js.
 Scores are NOT embeddings: explicit news_bill_links get 0.80-0.92 and the rest come from
-TF-IDF word overlap between the news (title + description) and the bill (name + description),
+TF-IDF word overlap between the news (title + description) and the bill (official title + subjects),
 rescaled to 0.30-0.80. Only meant to see how the page looks with plausible pairs.
 
 Usage: python private_visuals/embedding_cross/make_test_data.py [--news 400] [--top 50]
@@ -62,12 +62,18 @@ def main():
 
   con = sqlite3.connect(f"file:{DB_PATH.as_posix()}?mode=ro", uri=True)
 
+  # Bills come from the SIL (#66): the text is the official title plus its subjects (Materias); the SIL has no
+  # summary like Delfino's description. The commission is the organ holding the bill today (organ_bills).
+  subjects = defaultdict(list)
+  for number, subject in con.execute("SELECT number, subject FROM bill_subjects"):
+    subjects[number].append(subject)
+  organs = {number: name for number, name in con.execute("""
+      SELECT b.bill_number, o.name FROM organ_bills b JOIN organs o ON o.organ_code = b.organ_code""")}
   bills = {}
-  for number, name, desc, status, commission, proposed in con.execute("""
-      SELECT number, name, description, status, commission, date_proposed FROM bills"""):
+  for number, name, status, proposed in con.execute("SELECT number, name, status, date_proposed FROM bills"):
     bills[number] = {"name": "".join(ch if ord(ch) >= 32 else " " for ch in name).strip(), "status": status,
-                     "commission": commission, "date_proposed": (proposed or "")[:10] or None,
-                     "_text": f"{name} {desc or ''}"}
+                     "commission": organs.get(number), "date_proposed": (proposed or "")[:10] or None,
+                     "_text": f"{name} {' '.join(subjects[number])}"}
 
   links = defaultdict(set)
   for news_id, number in con.execute("SELECT news_id, bill_number FROM news_bill_links"):
