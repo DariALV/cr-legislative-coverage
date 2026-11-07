@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "db-explorer",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["private_visuals/db_explorer/server.py", "--port", "8765"],
+      "port": 8765
+    }
+  ]
+}

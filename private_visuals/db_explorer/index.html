@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Explorador del corpus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+    <symbol id="i-news" viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M8 9h5M8 13h5"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+    <symbol id="i-steps" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><path d="M6 8v8M11 6h9M11 18h9M11 12h6"/></symbol>
+    <symbol id="i-vote" viewBox="0 0 24 24"><path d="m9 12 2 2 4-4"/><rect x="4" y="4" width="16" height="16" rx="3"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.3"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M7 21h10M5 7h14"/><path d="m5 7-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></symbol>
+    <symbol id="i-empty" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8.5 11h5"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+  </svg>
+
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <span class="brand-mark"><svg><use href="#i-db"/></svg></span>
+        <div>
+          <h1>Explorador del corpus</h1>
+          <p class="sub">private_corpus.db · solo lectura</p>
+        </div>
+        <nav class="tabs-main" aria-label="Tablas">
+          <a class="active" href="#/">Expedientes</a>
+        </nav>
+      </div>
+      <dl class="stats" id="stats"></dl>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="wrap toolbar-inner">
+      <label class="search">
+        <svg><use href="#i-search"/></svg>
+        <input id="q" type="search" placeholder="Número, nombre, proponente o materia…" autocomplete="off">
+        <kbd>/</kbd>
+      </label>
+      <div class="chips" id="status-chips" role="group" aria-label="Estado"></div>
+      <div class="controls">
+        <label class="select"><span class="sr">Tipo</span><select id="f-type"></select><svg><use href="#i-chevron"/></svg></label>
+        <label class="select"><span class="sr">Bandera</span>
+          <select id="f-flag">
+            <option value="">Toda bandera</option>
+            <option value="none">Sin bandera</option>
+            <option value="administrative">Administrativos</option>
+            <option value="honorific">Honoríficos</option>
+          </select><svg><use href="#i-chevron"/></svg></label>
+        <label class="select"><span class="sr">Texto</span>
+          <select id="f-text">
+            <option value="">Todo texto</option>
+            <option value="ok">Con exposición</option>
+            <option value="no_exposition">Sin exposición</option>
+            <option value="no_text">Sin texto</option>
+          </select><svg><use href="#i-chevron"/></svg></label>
+        <label class="select"><span class="sr">Extras</span>
+          <select id="f-extra">
+            <option value="">Todos</option>
+            <option value="news">Con noticias</option>
+            <option value="votes">Con votaciones</option>
+            <option value="law">Con número de ley</option>
+          </select><svg><use href="#i-chevron"/></svg></label>
+        <label class="select"><span class="sr">Orden</span>
+          <select id="sort">
+            <option value="num">Número ↓</option>
+            <option value="num-asc">Número ↑</option>
+            <option value="date">Más recientes</option>
+            <option value="news">Más noticias</option>
+            <option value="steps">Más trámites</option>
+          </select><svg><use href="#i-chevron"/></svg></label>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap layout" id="layout">
+    <section class="pane-list">
+      <p class="result-line" id="result-line">Cargando…</p>
+      <div id="list" class="list" role="list"></div>
+      <div id="sentinel" class="sentinel"></div>
+      <div id="empty" class="empty" hidden>
+        <svg><use href="#i-empty"/></svg>
+        <p>Ningún expediente coincide con los filtros.</p>
+      </div>
+    </section>
+
+    <section class="pane-detail" id="detail">
+      <div class="placeholder">
+        <svg><use href="#i-doc"/></svg>
+        <p>Elegí un expediente para ver su información.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="error" class="empty" hidden>
+    <svg><use href="#i-db"/></svg>
+    <p>No se pudo conectar con el servidor.</p>
+    <p class="hint">Corré <code>python private_visuals/db_explorer/server.py</code> y abrí <code>http://localhost:8765</code></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
