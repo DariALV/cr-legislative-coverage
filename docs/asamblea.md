@@ -33,7 +33,8 @@ Pipeline().scrap_and_save_asamblea()   # optional: refresh_before = datetime(...
 
 1. **Deputies block:** the deputies list (1 request), then every tab of each selected deputy term (1 context + 6 tabs).
 2. **Organs block:** the organs list (1 request), then "Expedientes que atiende" for each active organ (1 context + 1 export).
-3. **Tables:** every SIL table is rebuilt from the cache, in one transaction.
+3. **Bills block (#66):** the laws and bills lists, then 4 tabs of each bill from 20000 on, with `Config.ASAMBLEA_SESSIONS` sessions in parallel. See `docs/bills.md`.
+4. **Tables:** every SIL table is rebuilt from the cache, in one transaction per group. Delfino votes are then linked to the deputies.
 
 - **Stopping and resuming:**
   - Ctrl+C or a network failure stops the downloads, and the tables are still rebuilt with what is cached.

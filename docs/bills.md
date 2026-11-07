@@ -1,102 +1,127 @@
 # Bills: collection and cleaning
 
-How the legislative bills (expedientes) are collected from Delfino and cleaned. Input for the report and the datasheet (#47). Issues: #5, #21, #22, #23, #24.
+How the legislative bills (expedientes) and their Plenario votes are collected and cleaned. Input for the report and the datasheet (#47). Issues: #66 (bills from SIL), #22 (votes), #21 (flags), #23 (refresh), #19 (sources and terms).
 
-## Source
+## Sources
 
-- **Pages:** `https://delfino.cr/asamblea/proyecto/<number>`, one per bill. Parsed by `BillParser`.
-- **Range:** collected by bill number, not by date, from `Config.FIRST_BILL` (20000) upwards. News in the period also discuss bills filed years earlier.
-  - The walk stops after `Config.MAX_CONSECUTIVE_ERRORS` (5) errors in a row past the last bill already collected, or at `max_bill`.
-- **Cache:** every page is saved under `raw/html/delfino/asamblea/bills/` (file name = SHA-256 of the url). Later runs read the cache and don't fetch again.
-- **Politeness:** 1 request per second, user agent `uni-project`. Delfino's robots.txt allows `/asamblea/` for `*` and sets no crawl-delay.
-- **Terms of use:** see #19. Delfino is a private compilation of public records, and its terms reserve all rights. The official source is the Asamblea's SIL (CC BY 4.0).
+- **Bills:** the Asamblea Legislativa's SIL (`https://produccion.asamblea.go.cr/SILConsulta/`). It is the official source, licensed CC BY 4.0. How the SIL serves data, the cache, HTTPS and politeness are described in `docs/asamblea.md`.
+- **Votes:** Delfino (`https://delfino.cr/asamblea/votaciones`). The SIL lists votes only as dated steps, with neither the result nor the deputies, so the per-deputy votes still come from Delfino.
+- **Why not Delfino for bills anymore** (#19, #66):
+  - Delfino is a private compilation whose terms reserve all rights, while the SIL is the official, licensed record.
+  - Delfino misses 624 bills in 20000–20999 and 236 laws of our range.
+  - It rewrites some titles (e.g. 20486: "Acuerdo entre Costa Rica y Turquía sobre cooperación cultural" for the official "APROBACIÓN DEL ACUERDO ENTRE EL GOBIERNO DE LA REPÚBLICA DE COSTA RICA Y EL GOBI…").
+  - Delfino is also one of the news outlets we measure, and it was recommended not to take the bills from an outlet whose coverage is being measured.
+
+## Range
+
+- **From bill 20000 (`Config.FIRST_BILL`) on**, by number, not by date: news in the period also discuss bills filed years earlier.
+  - 20000 was filed on 13/06/2016, ten years before the data period (May–October 2026).
+  - Bills expire after four years unless extended (art. 119). Of the 1,094 bills the active organs held in November 2026, only 3 were numbered below 20000 (two of them querellas, not bills).
+- **Master list:** the SIL's bills list (one CSV with all 21,977 numbers and titles, from 1960) gives exactly which numbers exist, with no gaps from 20000 on. It is downloaded again on every run, since new bills are filed daily.
+
+## Running
+
+```python
+from pipeline import Pipeline
+Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/asamblea.md)
+```
+
+- **Bills block:**
+  1. The laws list and the bills list are downloaded (2 requests).
+  2. Each bill gets 1 context + 4 tabs: General, Tramitación, Proponentes, Materias.
+  3. The bills are split round-robin between `Config.ASAMBLEA_SESSIONS` (3) SIL sessions in parallel, each at 1 request per second, so about 5,900 bills take ~3 h.
+- **Stopping:** Ctrl+C asks every session to finish its current bill, then builds the tables from the cache. The next run skips the cached bills.
+- **Votes** run with the news, in `main.py`: the Delfino thread reads the votes list, then the vote pages.
 
 ## Tables (private corpus)
 
 | Table | One row per | Fields |
 |---|---|---|
-| `bills` | bill | `number`, `name` (title), `description` (Propósito del Proyecto), `file_type` (Tipo), `status` (Estado), `commission` (Comisión), `date_proposed` (Presentado), `law_number` (Número de Ley), `flag`, `date_extracted` |
-| `bill_categories` | bill × category | Delfino's own categories. `-` means none. |
-| `bill_proponents` | bill × signer | `slug`, `name`, `role` (`main` = Firma Principal, `co` = Co-proponentes), `kind` (`deputy` or `special`), `party`, `position`, `province`, `seat` |
-| `bill_events` | bill × history entry | `event_type` (`text` = Histórico de Textos, `vote` = Histórico de Votaciones), `position` (page order per type), `date`, `name`, `description`, `result`, `url`, `vote_id` |
-| `bill_votes` | vote × deputy | `vote_id`, `slug`, `name`, `party`, `seat`, `vote`. Joins `bill_events` on `(number, vote_id)` and `bill_proponents` on `slug`. |
-| `news_bill_links` | news × bill | Bills a Delfino news links to (`source = "link"`). Not a foreign key: a news item can cite a bill that isn't collected yet. |
+| `bills` | bill | `number`, `name` (official title), `file_type`, `date_proposed`, `law_number`, `archive_number`, `date_expiry`, `date_expiry_four_year`, `status`, `flag`, `date_extracted` |
+| `bill_proponents` | signer | `proponent_id`, `number`, `name`, `term`, `signing_order` (1 = main signer), `deputy_id` |
+| `bill_steps` | step of the Tramitación | `step_id`, `number`, `organ`, `description`, `date_start`, `date_end` |
+| `bill_subjects` | bill × subject (Materias) | `number`, `subject_code`, `subject` |
+| `laws` | law | `law_id`, `law_number`, `bill_number`, `title` |
+| `votes` | Plenario vote | `vote_id`, `number`, `date`, `name`, `description`, `result`, `url` |
+| `vote_deputies` | vote × deputy | `vote_id`, `slug`, `name`, `party`, `seat`, `vote`, `deputy_id` |
+
+- **Joins:**
+  - `bill_proponents.deputy_id` and `vote_deputies.deputy_id` → `deputies` (`docs/asamblea.md`).
+  - `organ_bills.bill_number` → `bills.number`: the organ holding each bill today.
+  - `votes.number` → `bills.number`. There is no foreign key: Delfino may list votes of bills not stored yet.
+- **`news_bill_links`** is unchanged: the bills a Delfino news article links to.
+- **Dates** are ISO dates.
 
 ### What each field holds
 
-- **`kind = "special"`:** a signer that isn't a deputy and links to `/asamblea/perfiles-especiales/`. Examples:
-  - the executive ("Gobierno Chaves Robles", "Gobierno Fernández Delgado");
-  - "Poder Judicial";
-  - "Contraloría General de la República".
-  - Special signers have no party, province or seat.
-- **Text events:** the date and the kind of document, e.g. "Texto base", "Criterio Servicios Técnicos", "Informe de Mayoría", "Texto final". `url` points to the PDF.
-- **Vote events:** the kind of vote (e.g. "Primer debate", "Moción de fondo", "Dispensa de trámites (art. 177)"), what was voted (`description`), the date and the `result` ("Aprobado", "Rechazado", "Anulado"). `url` points to Delfino's vote page, and `vote_id` is the last part of that url.
-- **Deputy votes (`bill_votes`):** every vote page is read and each deputy's vote is stored. Only Plenario votes: Delfino doesn't list committee votes.
-  - `vote` is `for`, `against` or `absent`. Any other label is kept as Delfino writes it.
-  - In the full run, 5,068 of 271,410 rows (1.9 %) have another label:
-    - candidate names in `Nombramiento` votes (elections, not yes/no votes);
-    - "En blanco", "Abstención", "Nulo", "Voto anulado";
-    - "Ausente (pierde dieta)", which counts as absent.
-  - Details and the suggested mapping are in #22.
-  - A few votes show no deputy list on Delfino and have no rows (3 of 5,013 in the full run).
+- **`status`** is derived, since the SIL has no status field:
+  - `law` when the laws list ties a law to the bill;
+  - `archived` when it has an archive number;
+  - otherwise `in progress`.
+  - A bill whose General tab isn't downloaded yet has no status.
+- **`law_number`:** taken from the laws list. One bill produced two laws; it keeps the lowest number, and both are in `laws`.
+- **`laws`** has one row per law × bill: a few old laws merged several bills (e.g. law 4347 of 1969 came from 4), so the same law can appear more than once.
+- **`date_expiry` / `date_expiry_four_year`:** the ordinary deadline and the four-year deadline (art. 119), as the SIL computes them.
+- **Proponents:**
+  - Written as the SIL does (surnames, then names), with their term and signing order.
+  - `deputy_id` is matched by name and term against `deputies`, which hold the same names, so no cédula is needed.
+  - Signers that aren't deputies (e.g. the executive) and deputies from terms before 2016 stay unmatched.
+- **Steps:** the full Tramitación in every organ: presentation, commission assignment, reports (dictámenes), debates, votes as steps, archive and its reason.
+- **Subjects:** the SIL's official descriptors (e.g. `BECA`, `DECLARATORIA`, `DESAFECTACION`). They replace Delfino's categories. Recent bills may have none yet.
+- **Votes:**
+  - Each vote has its kind (e.g. "Primer debate", "Moción de fondo", "Dispensa de trámites (art. 177)"), what was voted, the date and the result ("Aprobado", "Rechazado", "Anulado").
+  - `vote_id` is the last part of the Delfino vote url (e.g. `20261105007`).
+  - Only Plenario votes: Delfino doesn't list committee votes.
+- **Deputy votes:**
+  - `vote` is `for`, `against` or `absent`. Other labels are kept as Delfino writes them (elections, "Abstención", "Ausente (pierde dieta)"…); the suggested mapping is in #22.
+  - `deputy_id` is matched to the deputy in office on the vote date, by name: exact name, then the same words in any order, then a single deputy whose name holds every word.
 
-## Refreshing (#23)
+## Collecting the votes
 
-- **Why:** status, commission, law number, proponents and history change over time. A cached page is a snapshot from the day it was downloaded.
-- **How:** run `Pipeline().scrap_and_save(..., refresh_bills_before = <datetime>)`.
-  - Every cached bill page saved before that moment is downloaded again.
-  - Pages already refreshed are kept, so an interrupted refresh resumes where it stopped.
-- **Database:** `insert_bill` is an upsert (`ON CONFLICT DO UPDATE`). Categories, proponents and events are deleted and inserted again for each bill, so the database always matches the latest page.
-- **Cost:** a full refresh of about 5,200 bills at 1 request per second takes roughly 1.5 h.
-
-## Cleaning criteria
-
-- **Title:** the part of `og:title` after `" - "`.
-- **Zero-width characters:** removed from proponent fields. Delfino puts them in positions such as "Jefe​ de fracción​".
-- **Dates:** parsed from Spanish text ("14 de abril de 2026"). Both "setiembre" and "septiembre" are accepted.
-- **Law number:**
-  - `law_number` is set only for bills that became law.
-  - Thousands separators and the "(VETADO)" suffix are removed.
-  - One malformed value ("6933-22-23") is stored as null.
-- **Unreadable pages:** a page whose layout can't be parsed is reported and skipped, and the walk goes on.
+- **Votes list:** `delfino.cr/asamblea/votaciones?pagina=N`, 10 votes per page, newest first, from 2019 (~1,100 pages).
+  - Each card gives the bill number, the kind of vote, what was voted, the date and the result, so Delfino's bill pages are no longer needed.
+  - What has been read is saved in `raw/links/delfino/votes_list.json`.
+  - Until the whole list has been read once, each run continues from the last page read; newer votes only push older ones to later pages, so none is missed.
+  - After that, each run reads from page 1 until a page brings no new vote.
+- **Vote pages:** `delfino.cr/asamblea/votaciones/proyecto/<vote_id>` list every deputy under "A favor", "En contra" and "Ausente".
+  - They are cached in `raw/html/delfino/asamblea/votes/`; the cache from the old bill-page walk is reused.
+  - A vote doesn't change once published, so a cached page isn't read again. The exception is a cached page with no deputies while the vote is less than 30 days old: Delfino may not have loaded them yet, so it is read again on the next run.
+  - A few votes never show a breakdown (e.g. "Convertir el Plenario en comisión (art. 205)"); they are kept without deputies and reported.
+  - Only votes of bills from 20000 on are kept.
+- **Politeness:** 1 request per second, user agent `uni-project`. Delfino's robots.txt allows `/asamblea/` for `*`.
 
 ## Administrative and honorific bills (#21)
 
-Some bills almost never make the news, so they would inflate the "no coverage" count. They are **flagged, not dropped** (`bills.flag`), so coverage can be reported with and without them. The rules are in `tools/scraping_tools/bill_flags.py`.
+Some bills almost never make the news, so they would inflate the "no coverage" count. They are **flagged, not dropped** (`bills.flag`), so coverage can be reported with and without them. The rules are in `tools/scraping_tools/bill_flags.py`. Since #66 they use the SIL's procedure type and official title instead of Delfino's categories.
 
 - **`honorific`** applies when either is true:
-  - the bill has the category "Declaratorias y Benemeritazgos";
-  - the bill has no category (`-`) and its title matches an honorific pattern: benemeritazgo, ciudadano distinguido, naming a building or place, national day or week, efeméride, national symbol, declaration of interest or of a "ciudad".
-- **`administrative`** applies when the title names a property operation or a permit, **and** the bill either:
-  - has the category "Autorizaciones, donaciones y segregaciones",
-  - has no category, or
-  - is an "Acuerdo Legislativo".
-  - Property operations: segregate, donate, desafectar, transfer, swap, change of use. Permits: foreign ships docking, sailing through or landing crews.
+  - the procedure is "PROCEDIMIENTO PROYECTOS DE COMISION DE HONORES";
+  - the title matches an honorific pattern: benemeritazgo, ciudadano distinguido, naming a building or place, national day or week (with the verb before or after it), efeméride, national symbol, folk city, or a declaration of interest or of a "ciudad".
+  - "Benemérito Cuerpo de Bomberos" and "Benemérita Cruz Roja" are institution names, so they are removed from the title before matching.
+- **`administrative`** applies when either is true:
+  - the procedure is "PROCEDIMIENTO SOLICITUDES DE ATRAQUE Y DESEMBARQUE";
+  - the title names a property operation or a permit. Property operations: segregate, donate, desafectar, transfer, swap, change of use. Permits: foreign ships docking, sailing through or landing crews.
+- **Honorific wins** when both apply (e.g. naming a donated building).
+- **Not used:** the SIL's subjects are broad descriptors. For example, "BENEMERIT,-O/-A" also tags a donation by the Bomberos, and requiring a matching subject lost true flags.
+- **Check against the old Delfino-based flags:** on a sample of 155 of the 500 test bills (25398–25897: all 55 flagged plus 100 unflagged), the new rules agree on 154.
+  - The one difference is 25481 "Declaratoria de interés público para la enseñanza del idioma portugués", now `honorific`. That is consistent with the rule for declarations of interest; Delfino had categorized it differently.
 - **Not flagged on purpose:**
-  - Debt condonations and housing programs share the "Autorizaciones" category but are policy.
-  - Appointments (`file_type` "Nombramiento por la Asamblea Legislativa") and investigative commissions ("Comisiones") get press coverage. They are left unflagged and can be filtered by `file_type` if needed.
-- **Result on the 500 test bills (25398–25897):** 26 honorific, 29 administrative, 445 unflagged.
-  - Titles alone are not enough. "Benemérito Cuerpo de Bomberos" and "Benemérita Cruz Roja" are institution names inside policy bills, which is why title patterns only apply to bills with no category.
+  - Debt condonations and housing programs are policy.
+  - Appointments and investigative commissions get press coverage. They can be filtered by `file_type` if needed.
+- **On the titles of every bill from 20000:** 318 `honorific` and 475 `administrative` out of 5,898 (13 %). The procedure type adds a few more once the bills are downloaded.
 
 ## Known quirks
 
-- **Only the last commission:** `commission` is the current one. Delfino shows no history of earlier commissions, and some bills show "Pendiente" or "Plenario".
-- **Purpose text:**
-  - "Propósito del Proyecto" is Delfino's own summary, not the official text.
-  - It doesn't always match the bill (known quirk listed in #24, not measured yet), so don't rely on it alone for matching.
-  - It must not be published (#19).
-- **Optional fields:** law number, commission and categories can be missing. Many bills only have the category `-` (53 of the 500 test bills).
-- **Bills without a main signer:** 12 of the 500 test bills have no Firma Principal. Most are investigative commissions, which are created by a motion.
-- **Party:**
-  - `party` is the logo Delfino shows today, not necessarily the party the deputy had when signing.
-  - Deputies who left their faction appear as "Independiente".
-- **Legislatures:** bills from the 2022–2026 legislature are signed by deputies of that legislature. The current one started on May 1, 2026. The slug identifies a person across bills.
-- **Vote history:** it lists plenary and procedural votes as Delfino records them. Bills with no votes show "No hay votaciones registradas".
+- **No summary:** the SIL has no equivalent of Delfino's "Propósito del Proyecto". For matching news to bills, the bill's text is its official title plus its subjects.
+- **Commission:** there is no "current commission" field.
+  - The organ holding a bill today is in `organ_bills` (a snapshot).
+  - Its history is in `bill_steps`.
+- **Official titles** are upper case and may carry stray spaces or line breaks; they are stripped.
+- **Proponent names** are the SIL's. Delfino's names (in `vote_deputies`) are written differently (names first, mixed case, sometimes without a second name), hence the matching rules above.
+- **Votes without a bill:** cards with no "Expediente" number are skipped and logged.
 
-## Test run (Nov 5, 2026)
+## Delfino data before #66
 
-- **Scope:** the 500 cached bills 25398–25897.
-- **Result:** all 500 parsed with no errors.
-  - 2,067 proponents: 62 of them special (the executive, the judiciary, the comptroller).
-  - 605 events: 543 text and 62 vote.
-  - 7 bills have no text history.
+- Until #66, bills came from Delfino's bill pages (`raw/html/delfino/asamblea/bills/`). Those pages and their link list were deleted after the switch to the SIL.
+- The old tables `bill_categories`, `bill_events` and `bill_votes`, and the Delfino columns of `bills`, are dropped the first time the new tables are created.
+- Delfino's per-deputy votes are rebuilt from its votes list and the cached vote pages.
