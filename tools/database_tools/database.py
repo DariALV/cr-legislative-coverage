@@ -106,6 +106,15 @@ class Database:
           subject      TEXT NOT NULL,
           PRIMARY KEY (number, subject_code)
       ) STRICT""",
+      # "Texto base" (#32): one row per bill whose text was downloaded. status is "ok", "no_exposition" (text without
+      # the markers, e.g. budget bills) or "no_text" (the SIL has none). The full text stays in raw/text/asamblea/bills.
+      """CREATE TABLE IF NOT EXISTS bill_texts(
+          number           INTEGER PRIMARY KEY REFERENCES bills(number),
+          status           TEXT NOT NULL,
+          exposition       TEXT,
+          total_words      INTEGER,
+          exposition_words INTEGER
+      ) STRICT""",
       # Every law in the SIL (not only those of bills from Config.FIRST_BILL on). One row per law × bill: a few old
       # laws merged several bills (e.g. law 4347 of 1969 came from 4).
       """CREATE TABLE IF NOT EXISTS laws(
@@ -344,10 +353,10 @@ class Database:
 
   def replace_bill_tables(self, bills: list[Bill], laws: list[Law]) -> dict[str, int]:
     """
-    Replaces the SIL bill tables (bills, proponents, steps, subjects, laws) in one transaction: an error or Ctrl+C
-    leaves the previous tables untouched. Returns the number of rows per table.
+    Replaces the SIL bill tables (bills, proponents, steps, subjects, texts, laws) in one transaction: an error or
+    Ctrl+C leaves the previous tables untouched. Returns the number of rows per table.
     """
-    tables = ["bill_subjects", "bill_steps", "bill_proponents", "bills", "laws"]
+    tables = ["bill_texts", "bill_subjects", "bill_steps", "bill_proponents", "bills", "laws"]
     try:
       for table in tables:
         self.cursor.execute(f"DELETE FROM {table}")
@@ -360,6 +369,8 @@ class Database:
         [(s.step_id, b.number, s.organ, s.description, iso(s.date_start), iso(s.date_end)) for b in bills for s in b.steps])
       self.cursor.executemany("INSERT INTO bill_subjects VALUES (?, ?, ?) ON CONFLICT DO NOTHING",
         [(b.number, s.subject_code, s.subject) for b in bills for s in b.subjects])
+      self.cursor.executemany("INSERT INTO bill_texts VALUES (?, ?, ?, ?, ?)",
+        [(b.number, b.text_status, b.exposition, b.total_words, b.exposition_words) for b in bills if b.text_status])
       self.cursor.executemany("INSERT INTO laws VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING",
         [(l.law_id, l.law_number, l.bill_number, l.title) for l in laws])
       self.connection.commit()

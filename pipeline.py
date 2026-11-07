@@ -3,6 +3,7 @@ import logging
 import os
 import re
 import threading
+import zipfile
 import requests
 from datetime import date, datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
@@ -486,11 +487,13 @@ class Pipeline:
     Block 1: every tab of each deputy term still running on or after deputies_since.
     Block 2: the bills each active organ holds today.
     Block 3: the tabs of every bill from first_bill on (several sessions in parallel), plus the laws list.
+    Block 4: the base text of every bill (#32), the same way. It needs the bill's General tab from block 3.
     Cached items are skipped. One that fails is warned about and retried on the next run; the others go on.
     """
     deputies_task: ProgressTask = self.board.task("asamblea", "deputies")
     organs_task: ProgressTask = self.board.task("asamblea", "organs")
     bills_task: ProgressTask = self.board.task("asamblea", "bills")
+    texts_task: ProgressTask = self.board.task("asamblea", "bill texts")
 
     deputies: list[Deputy] = parser.select_deputies(parser.parse_deputies_list(fetcher.fetch_deputies_list()), deputies_since)
     deputies_task.set_total(len(deputies))
@@ -524,18 +527,35 @@ class Pipeline:
     fetcher.fetch_laws_list()
     numbers: list[int] = sorted(parser.parse_bills_list(fetcher.fetch_bills_list(), first_bill))
     self.fetch_sil_bills(numbers, sessions, refresh_before, bills_task)
+    self.fetch_sil_bill_texts(numbers, sessions, texts_task)
 
   def fetch_sil_bills(self, numbers: list[int], sessions: int, refresh_before: datetime | None, task: ProgressTask):
+    """Downloads the tabs of the bills not cached yet (see fetch_in_sessions)."""
+    self.fetch_in_sessions(numbers, sessions, refresh_before, task, "bill",
+                           AsambleaFetcher.bill_is_cached, AsambleaFetcher.fetch_bill)
+
+  def fetch_sil_bill_texts(self, numbers: list[int], sessions: int, task: ProgressTask):
     """
-    Downloads the tabs of the bills not cached yet, with `sessions` SIL sessions in parallel (one thread and one
-    rate limit each; bills are dealt round-robin). Ctrl+C asks the threads to stop after their current bill, waits for
-    them and is raised again, so the caller still builds the tables from the cache.
+    Downloads the base text of the bills not cached yet (#32), after their tabs: it needs the General tab.
+    Texts are never refreshed (see AsambleaFetcher.fetch_bill_text).
+    """
+    self.fetch_in_sessions(numbers, sessions, None, task, "bill text",
+                           AsambleaFetcher.bill_text_is_cached, AsambleaFetcher.fetch_bill_text)
+
+  def fetch_in_sessions(self, numbers: list[int], sessions: int, refresh_before: datetime | None, task: ProgressTask,
+                        what: str, is_cached: Callable[[AsambleaFetcher, int], bool],
+                        fetch: Callable[[AsambleaFetcher, int], Any]):
+    """
+    Downloads what is not cached yet for each bill number, with `sessions` SIL sessions in parallel (one thread and
+    one rate limit each; bills are dealt round-robin). A bill that fails is warned about and retried on the next run.
+    Ctrl+C asks the threads to stop after their current bill, waits for them and is raised again, so the caller still
+    builds the tables from the cache.
     """
     task.set_total(len(numbers))
     probe: AsambleaFetcher = AsambleaFetcher(refresh_before = refresh_before)
     missing: list[int] = []
     for number in numbers:
-      if probe.bill_is_cached(number):
+      if is_cached(probe, number):
         task.advance()
       else:
         missing.append(number)
@@ -547,9 +567,9 @@ class Pipeline:
         if stop.is_set():
           return
         try:
-          fetcher.fetch_bill(number)
-        except (requests.RequestException, AsambleaError) as error:
-          task.warn(f"Could not fetch bill {number}: {error!r}")
+          fetch(fetcher, number)
+        except (requests.RequestException, AsambleaError, zipfile.BadZipFile, KeyError) as error:
+          task.warn(f"Could not fetch {what} {number}: {error!r}")
         task.advance()
 
     threads: list[threading.Thread] = [threading.Thread(target = work, args = (missing[i::sessions],), name = f"sil-{i}", daemon = True)
@@ -562,7 +582,7 @@ class Pipeline:
           thread.join(timeout = 0.5)
     except KeyboardInterrupt:
       stop.set()
-      logger.warning("[asamblea] Ctrl+C: waiting for the bill sessions to finish their current bill...")
+      logger.warning(f"[asamblea] Ctrl+C: waiting for the {what} sessions to finish their current bill...")
       for thread in threads:
         thread.join()
       raise
@@ -601,6 +621,7 @@ class Pipeline:
         bill: Bill = parser.parse_bill(number, title, fetcher.load_bill(number), law_numbers.get(number, []),
                                        deputy_index, extracted)
         bill.flag = flag_bill(bill)
+        parser.parse_bill_text(bill, fetcher.load_bill_text(number))
         data.bills.append(bill)
       matched: int = sum(1 for b in data.bills for p in b.proponents if p.deputy_id is not None)
       total: int = sum(len(b.proponents) for b in data.bills)

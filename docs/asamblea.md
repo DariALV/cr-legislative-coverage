@@ -16,9 +16,14 @@ How deputies and legislative organs (commissions, Plenario, Directorio…) are c
   - Form fields are sent as `base64|<base64>`, with headers `sistema: SIL`, `basedatos: SIL`, `diseno: DT`.
   - The export only accepts columns the query already returns.
   - Form tabs (queries named `C_ff_…`, e.g. a deputy's "Información general") can't be exported. Their rows are read from the data embedded in the tab's window and cached as a CSV with the same layout.
+  - **Bill base texts (#32):** `POST SIL_CNSPROYECTOS_PRINCIPAL/Procesar` with `accion = VerTextoBaseSQL`, `marco = consulta_ll_proyectos`, `adjuntos = []` and `datos = {"seleccion": [{IdPROYECTO_DE_LEY, Numero_Proyecto}], marco, accion}`. This is the "Texto base" button of the bills screen.
+    - It answers `{"accion": "archivoAbrir", "id": …}`, and `GET Utilidades/DescargarArchivo?id=…` returns the .docx. Bills without a text answer the message "[30016] No existe un texto asociado".
+    - `IdPROYECTO_DE_LEY` is the SIL's internal id, read from the bill's cached General tab. No context is needed.
+    - The .docx is read in memory and never saved; only its text is cached (see below).
 - **Cache:** every CSV goes under `raw/csv/asamblea/<deputies|organs>/` (file name = SHA-256 of the key, e.g. `1127/positions`).
   - Writes are atomic (temp file + rename).
   - Cached files are never downloaded again, unless `refresh_before` is given.
+  - Bill base texts go under `raw/text/asamblea/bills/<number>.txt`, one line per paragraph. An empty file means the SIL has no text for the bill. They are never refreshed, because the base text is the one the bill was filed with.
 - **Politeness:** 1 request per second, user agent `uni-project`, one session.
   - `produccion.asamblea.go.cr` has no `robots.txt` (404).
   - Its pages say `noindex, nofollow, noarchive`, which is aimed at search engines.
@@ -34,7 +39,8 @@ Pipeline().scrap_and_save_asamblea()   # optional: refresh_before = datetime(...
 1. **Deputies block:** the deputies list (1 request), then every tab of each selected deputy term (1 context + 6 tabs).
 2. **Organs block:** the organs list (1 request), then "Expedientes que atiende" for each active organ (1 context + 1 export).
 3. **Bills block (#66):** the laws and bills lists, then 4 tabs of each bill from 20000 on, with `Config.ASAMBLEA_SESSIONS` sessions in parallel. See `docs/bills.md`.
-4. **Tables:** every SIL table is rebuilt from the cache, in one transaction per group. Delfino votes are then linked to the deputies.
+4. **Bill texts block (#32):** the base text of each bill (2 requests), with the same parallel sessions. It needs the bill's General tab from block 3.
+5. **Tables:** every SIL table is rebuilt from the cache, in one transaction per group. Delfino votes are then linked to the deputies.
 
 - **Stopping and resuming:**
   - Ctrl+C or a network failure stops the downloads, and the tables are still rebuilt with what is cached.

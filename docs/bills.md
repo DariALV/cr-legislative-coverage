@@ -30,6 +30,7 @@ Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/
   1. The laws list and the bills list are downloaded (2 requests).
   2. Each bill gets 1 context + 4 tabs: General, Tramitación, Proponentes, Materias.
   3. The bills are split round-robin between `Config.ASAMBLEA_SESSIONS` (3) SIL sessions in parallel, each at 1 request per second, so about 5,900 bills take ~3 h.
+  4. Then each bill's base text ("Texto base", 2 requests), with the same sessions: ~65–80 min for every bill. See "Base texts" below.
 - **Stopping:** Ctrl+C asks every session to finish its current bill, then builds the tables from the cache. The next run skips the cached bills.
 - **Votes** run with the news, in `main.py`: the Delfino thread reads the votes list, then the vote pages.
 
@@ -41,6 +42,7 @@ Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/
 | `bill_proponents` | signer | `proponent_id`, `number`, `name`, `term`, `signing_order` (1 = main signer), `deputy_id` |
 | `bill_steps` | step of the Tramitación | `step_id`, `number`, `organ`, `description`, `date_start`, `date_end` |
 | `bill_subjects` | bill × subject (Materias) | `number`, `subject_code`, `subject` |
+| `bill_texts` | bill whose base text was downloaded | `number`, `status` (`ok`, `no_exposition`, `no_text`), `exposition`, `total_words`, `exposition_words` |
 | `laws` | law | `law_id`, `law_number`, `bill_number`, `title` |
 | `votes` | Plenario vote | `vote_id`, `number`, `date`, `name`, `description`, `result`, `url` |
 | `vote_deputies` | vote × deputy | `vote_id`, `slug`, `name`, `party`, `seat`, `vote`, `deputy_id` |
@@ -59,6 +61,7 @@ Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/
   - `archived` when it has an archive number;
   - otherwise `in progress`.
   - A bill whose General tab isn't downloaded yet has no status.
+- **`archive_number`:** as the SIL writes it. Two bills have it oddly written (`16605.1`, `16335.`); they keep only the integer part, with a warning in the run log.
 - **`law_number`:** taken from the laws list. One bill produced two laws; it keeps the lowest number, and both are in `laws`.
 - **`laws`** has one row per law × bill: a few old laws merged several bills (e.g. law 4347 of 1969 came from 4), so the same law can appear more than once.
 - **`date_expiry` / `date_expiry_four_year`:** the ordinary deadline and the four-year deadline (art. 119), as the SIL computes them.
@@ -75,6 +78,23 @@ Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/
 - **Deputy votes:**
   - `vote` is `for`, `against` or `absent`. Other labels are kept as Delfino writes them (elections, "Abstención", "Ausente (pierde dieta)"…); the suggested mapping is in #22.
   - `deputy_id` is matched to the deputy in office on the vote date, by name: exact name, then the same words in any order, then a single deputy whose name holds every word.
+
+## Base texts (#32)
+
+The SIL has no summary of a bill, so the text matched against news is the **exposición de motivos** of its "Texto base": the text the bill was filed with.
+
+- **Download:** the "Texto base" button of the bills screen gives a .docx (see `docs/asamblea.md`). It is read in memory and only its text is kept, one line per paragraph, in `raw/text/asamblea/bills/<number>.txt` (not in git). The .docx files would take about 1.2 GB (about 200 KB each, some 1–3 MB with images).
+- **Exposición de motivos:** from the line "ASAMBLEA LEGISLATIVA:" to the first "DECRETA" or "ACUERDA" after it. Lines are compared without spaces and in upper case.
+  - Proyectos de acuerdo (e.g. Reglamento reforms, ciudadano distinguido) end with "ACUERDA" instead of "DECRETA".
+  - The heading "LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA" right before it is left out.
+  - It usually ends with the formula that submits the bill ("Por las razones expuestas, sometemos…").
+- **Only the exposición is stored** in `bill_texts`. The full text (title page, proponents, articles) stays in the raw cache, so it can be rebuilt without downloading again.
+- **Status:**
+  - `ok`: the exposición was found.
+  - `no_exposition`: there is a text but without the markers, e.g. the budget bill ("its content is not included in the system") or special investigating commissions (only a note).
+  - `no_text`: the SIL has no text for the bill ("[30016] No existe un texto asociado").
+  - No row: not downloaded yet, e.g. because the bill's General tab is missing.
+- **Probe before the full run** (sample of 51 bills, half from `news_bill_links`): the exposición was found in 48 (94 %), 2 had no exposición and 1 had no text. It has a median of 1,412 words and a maximum of 4,199 (about 6,000 tokens), so it always fits a model's 8,192-token limit.
 
 ## Collecting the votes
 
@@ -112,7 +132,7 @@ Some bills almost never make the news, so they would inflate the "no coverage" c
 
 ## Known quirks
 
-- **No summary:** the SIL has no equivalent of Delfino's "Propósito del Proyecto". For matching news to bills, the bill's text is its official title plus its subjects.
+- **No summary:** the SIL has no equivalent of Delfino's "Propósito del Proyecto". For matching news to bills, the bill is represented by its official title, its subjects and the exposición de motivos of its base text (see "Base texts").
 - **Commission:** there is no "current commission" field.
   - The organ holding a bill today is in `organ_bills` (a snapshot).
   - Its history is in `bill_steps`.

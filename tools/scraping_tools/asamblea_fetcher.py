@@ -1,5 +1,6 @@
 import base64
 import csv
+import html
 import io
 import json
 import logging
@@ -7,6 +8,7 @@ import os
 import pathlib
 import re
 import ssl
+import zipfile
 from datetime import date, datetime
 
 import certifi
@@ -68,6 +70,10 @@ BILL_TABS: dict[str, tuple[str, list[str], str]] = {
 }
 LAWS_LIST = ("consulta_ll_leyes", ["Numero_Ley", "Numero_Proyecto", "Titulo_Ley", "IdLEY"], "Numero_Ley asc")
 
+# "Texto base" of a bill: the text it was filed with, as a .docx (action of the bills screen, see fetch_bill_text).
+BILL_TEXT_ACTION = "VerTextoBaseSQL"
+NO_TEXT_MESSAGE = "[30016]"   # "No existe un texto asociado para el registro seleccionado."
+
 SIL_INTERMEDIATE_CERT =pathlib.Path(__file__).parent / "certs" / "globalsign_gcc_r3_dv_tls_ca_2020.pem"
 
 # A frame built by a window's html: new <Frame>({"ventana": ..., "datos": {query: {"0": [rows]}}, ...});
@@ -100,14 +106,19 @@ class AsambleaFetcher:
 
   def __init__(self, user_agent: str = Config.USER_AGENT, rate_limit: float = Config.RATE_LIMIT,
                retries: int = Config.RETRIES, timeout: int = Config.ASAMBLEA_TIMEOUT, base_url: str = Config.ASAMBLEA_URL,
-               cache_dir: str = f"{Config.RAW_CSV_DIR}/asamblea", refresh_before: datetime | None = None):
-    """refresh_before: cached files written before that moment are downloaded again (e.g. after a new legislature)."""
+               cache_dir: str = f"{Config.RAW_CSV_DIR}/asamblea", text_dir: str = f"{Config.RAW_TEXT_DIR}/asamblea",
+               refresh_before: datetime | None = None):
+    """
+    refresh_before: cached files written before that moment are downloaded again (e.g. after a new legislature).
+    Bill texts (text_dir) are never refreshed: the base text is the one the bill was filed with and doesn't change.
+    """
     self.user_agent = user_agent
     self.rate_limiter = RateLimiter(rate_limit)
     self.retries = retries
     self.timeout = timeout
     self.base_url = base_url
     self.cache_dir = pathlib.Path(cache_dir)
+    self.text_dir = pathlib.Path(text_dir)
     self.refresh_before = refresh_before
     self.session: requests.Session | None = None
     self.open_windows: set[str] = set()
@@ -210,6 +221,76 @@ class AsambleaFetcher:
   def load_bill(self, number: int) -> dict[str, str]:
     """The cached tabs of a bill (missing ones left out). Never downloads."""
     return {tab: text for tab in ["general", *BILL_TABS] if (text := self.load("bills", f"{number}/{tab}")) is not None}
+
+  def bill_text_path(self, number: int) -> pathlib.Path:
+    return self.text_dir / "bills" / f"{number}.txt"
+
+  def bill_text_is_cached(self, number: int) -> bool:
+    return self.bill_text_path(number).exists()
+
+  def fetch_bill_text(self, number: int) -> str:
+    """
+    Plain text of the bill's "Texto base" (#32, #66): one line per paragraph of the .docx, read in memory (the .docx
+    is never saved). Cached as raw/text/asamblea/bills/<number>.txt. An empty text means the SIL has none for the
+    bill ("[30016] No existe un texto asociado"), cached too so it isn't asked again.
+    Needs the bill's cached General tab, which holds the SIL's internal id (IdPROYECTO_DE_LEY).
+    """
+    if self.bill_text_is_cached(number):
+      return self.load_bill_text(number) or ""
+    general = self.load("bills", f"{number}/general")
+    rows = read_csv_rows(general) if general else []
+    if not rows or not rows[0].get("IdPROYECTO_DE_LEY"):
+      raise AsambleaError(f"Bill {number} has no cached General tab, its internal id is unknown")
+    file_id = self.bill_text_file_id(number, rows[0]["IdPROYECTO_DE_LEY"])
+    text = ""
+    if file_id is not None:
+      response = self.get_session().get(self.base_url + "Utilidades/DescargarArchivo", params = {"id": file_id},
+                                        timeout = self.timeout)
+      self.rate_limiter.wait()
+      if response.status_code != 200 or not response.content.startswith(b"PK"):
+        raise AsambleaError(f"The text of bill {number} answered {response.status_code}, not a .docx: {response.content[:100]!r}")
+      text = docx_text(response.content)
+    self.save_bill_text(number, text)
+    return text
+
+  def bill_text_file_id(self, number: int, bill_id: str) -> str | None:
+    """
+    Asks the bills screen for the base text: the answer carries the id of a file to download, or the "[30016]"
+    message when the bill has none (None). An expired session is retried once on a fresh session.
+    """
+    datos = {"seleccion": [{"IdPROYECTO_DE_LEY": bill_id, "Numero_Proyecto": number}], "marco": BILLS_FRAME,
+             "accion": BILL_TEXT_ACTION}
+    fields = {"accion": BILL_TEXT_ACTION, "marco": BILLS_FRAME, "adjuntos": "[]", "datos": json.dumps(datos)}
+    for attempt in range(2):
+      self.open_window(BILLS_MODULE)
+      response = self.post(f"SIL_{BILLS_MODULE}_PRINCIPAL/Procesar",
+                           files = {name: (None, base64_field(value)) for name, value in fields.items()})
+      try:
+        answer = response.json()
+      except ValueError:
+        answer = {}
+      for result in answer.get("resultadosServiciosIU") or []:
+        if result.get("accion") == "archivoAbrir" and result.get("id"):
+          return result["id"]
+      if any(NO_TEXT_MESSAGE in (m.get("texto") or "") for m in answer.get("Mensajes") or []):
+        return None
+      if attempt == 0:
+        logger.info(f"[asamblea] Text of bill {number} answered {response.status_code} without a file, opening a new session")
+        self.reset_session(BILLS_MODULE)
+    raise AsambleaError(f"The text of bill {number} answered {response.status_code}: {response.text[:200]}")
+
+  def load_bill_text(self, number: int) -> str | None:
+    """The cached base text ("" if the SIL has none), or None if not downloaded yet. Never downloads."""
+    path = self.bill_text_path(number)
+    return path.read_text(encoding = "utf-8") if path.exists() else None
+
+  def save_bill_text(self, number: int, text: str):
+    """Atomic, like save."""
+    path = self.bill_text_path(number)
+    path.parent.mkdir(parents = True, exist_ok = True)
+    temp = path.with_suffix(".tmp")
+    temp.write_text(text, encoding = "utf-8")
+    os.replace(temp, path)
 
   # ---- Cache ----
 
@@ -367,6 +448,23 @@ def legislature_context(today: date | None = None) -> list[dict]:
 def base64_field(text: str) -> str:
   """The SIL's encoding of form fields: "base64|" + base64 of the UTF-8 text."""
   return "base64|" + base64.b64encode(text.encode("utf-8")).decode("ascii")
+
+DOCX_PARAGRAPH_REGEX = re.compile(r"<w:p[ >].*?</w:p>", re.S)
+DOCX_PIECE_REGEX = re.compile(r"<w:t(?: [^>]*)?>([^<]*)</w:t>|<w:(?:tab|br|cr)\b[^>]*/>")
+
+def docx_text(content: bytes) -> str:
+  """
+  Text of a .docx, one line per non-empty paragraph (tables included, cell by cell). Reads word/document.xml
+  directly: no extra dependency. Tabs and line breaks inside a paragraph become spaces.
+  """
+  xml = zipfile.ZipFile(io.BytesIO(content)).read("word/document.xml").decode("utf-8")
+  lines: list[str] = []
+  for paragraph in DOCX_PARAGRAPH_REGEX.findall(xml):
+    text = "".join(m.group(1) if m.group(1) is not None else " " for m in DOCX_PIECE_REGEX.finditer(paragraph))
+    text = " ".join(html.unescape(text).split())
+    if text:
+      lines.append(text)
+  return "\n".join(lines)
 
 def decode(content: bytes) -> str:
   """The exports come in Windows-1252 (Latin-1 for the bytes it doesn't define)."""

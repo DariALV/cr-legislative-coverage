@@ -67,6 +67,7 @@ class Config:
   RAW_HTML_DIR = "raw/html"
   RAW_CSV_DIR = "raw/csv"
   RAW_LINKS_DIR = "raw/links"
+  RAW_TEXT_DIR = "raw/text"
   DATABASE_DIR = "databases"
   PRIVATE_DATABASE = "private_corpus"
   COMMIT_BATCH_SIZE = 50

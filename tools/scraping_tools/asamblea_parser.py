@@ -1,3 +1,5 @@
+import logging
+import re
 import unicodedata
 from datetime import date, datetime
 
@@ -5,6 +7,14 @@ from tools.scraping_tools.asamblea import (AsambleaData, Deputy, DeputyBill, Dep
                                            Organ, OrganBill, OrganMembership)
 from tools.scraping_tools.asamblea_fetcher import read_csv_rows
 from tools.scraping_tools.bill import Bill, BillProponent, BillStep, BillSubject, Law
+
+logger = logging.getLogger("cr")
+
+# Markers of the exposición de motivos in a bill's base text, matched on a line without spaces and in upper case.
+EXPOSITION_START_REGEX = re.compile(r"^ASAMBLEALEGISLATIVA:?$")
+EXPOSITION_END_REGEX = re.compile(r"^(LAASAMBLEALEGISLATIVADELAREP[UÚ]BLICADECOSTARICA)?(DECRETA|ACUERDA):?$")
+EXPOSITION_END_HEADER_REGEX = re.compile(r"^LAASAMBLEALEGISLATIVADELAREP[UÚ]BLICADECOSTARICA:?$")
+CONTROL_CHARS_REGEX = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")   # e.g. \x1a in some SIL texts
 
 class AsambleaParser:
   """
@@ -117,7 +127,7 @@ class AsambleaParser:
     for r in read_csv_rows(tabs.get("general", "")):
       bill.file_type = clean(r["Descripcion_Tipo"])
       bill.date_proposed = parse_date(r["Fecha_Iniciacion"])
-      bill.archive_number = parse_int(r["Numero_Archivado"])
+      bill.archive_number = parse_archive_number(number, r["Numero_Archivado"])
       bill.date_expiry = parse_date(r["Fecha_Vencimiento"])
       bill.date_expiry_four_year = parse_date(r["Fecha_Cuatrienal"])
     bill.law_number = min(law_numbers) if law_numbers else None
@@ -139,6 +149,34 @@ class AsambleaParser:
       if code is not None and subject:
         bill.subjects.append(BillSubject(code, subject))
     return bill
+
+  def parse_bill_text(self, bill: Bill, text: str | None):
+    """
+    Fills the bill's text fields from its cached base text (one line per paragraph, see docx_text). None (not
+    downloaded) leaves them empty. The exposición de motivos goes from the line "ASAMBLEA LEGISLATIVA:" to the first
+    "DECRETA" or "ACUERDA" after it (proyectos de acuerdo, e.g. Reglamento reforms, end with ACUERDA).
+    """
+    if text is None:
+      return
+    text = CONTROL_CHARS_REGEX.sub(" ", text)
+    lines = [line for line in text.split("\n") if line.strip()]
+    bill.total_words = sum(len(line.split()) for line in lines)
+    if not lines:
+      bill.text_status = "no_text"
+      return
+    keys = [re.sub(r"\s+", "", line).upper() for line in lines]
+    start = next((i for i, key in enumerate(keys) if EXPOSITION_START_REGEX.match(key)), None)
+    end = next((i for i, key in enumerate(keys) if start is not None and i > start and EXPOSITION_END_REGEX.match(key)), None)
+    if start is not None and end is not None:
+      while end > start + 1 and EXPOSITION_END_HEADER_REGEX.match(keys[end - 1]):
+        end -= 1   # the line before DECRETA often is "LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA"
+    exposition = "\n".join(lines[start + 1:end]).strip() if start is not None and end is not None else ""
+    if not exposition:
+      bill.text_status = "no_exposition"
+      return
+    bill.text_status = "ok"
+    bill.exposition = exposition
+    bill.exposition_words = len(exposition.split())
 
 class DeputyMatcher:
   """
@@ -190,6 +228,20 @@ def clean(value: str | None) -> str | None:
 def parse_int(value: str | None) -> int | None:
   value = clean(value)
   return int(value) if value is not None else None
+
+def parse_archive_number(bill_number: int, value: str | None) -> int | None:
+  """
+  The archive number, keeping only its integer part when the SIL writes it oddly (seen: "16605.1", "16335."),
+  with a warning in the run log.
+  """
+  value = clean(value)
+  if value is None or value.isdigit():
+    return int(value) if value else None
+  digits = value.split(".")[0]
+  if not digits.isdigit():
+    raise ValueError(f"bill {bill_number}: unexpected archive number {value!r}")
+  logger.warning("bill %s: archive number %r kept as %s", bill_number, value, digits)
+  return int(digits)
 
 def parse_date(value: str | None) -> date | None:
   value = clean(value)

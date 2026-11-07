@@ -41,6 +41,12 @@ class Bill:
     proponents: list[BillProponent] = field(default_factory = list)
     steps: list[BillStep] = field(default_factory = list)
     subjects: list[BillSubject] = field(default_factory = list)
+    # "Texto base" (#32): the exposición de motivos is the text matched against news. text_status is "ok",
+    # "no_exposition" (text without the markers) or "no_text" (the SIL has none); None while not downloaded.
+    text_status: str | None = None
+    exposition: str | None = None
+    total_words: int | None = None
+    exposition_words: int | None = None
 
 @dataclass
 class Law:
