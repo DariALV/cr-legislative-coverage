@@ -124,7 +124,7 @@ class Database:
           title       TEXT,
           UNIQUE (law_id, bill_number)
       ) STRICT""",
-      # Plenario votes from Delfino's votes list.
+      # Plenario and comisión plena votes from Delfino's votes list. kind is "plenary" or "full_committee".
       """CREATE TABLE IF NOT EXISTS votes(
           vote_id     TEXT PRIMARY KEY,
           number      INTEGER NOT NULL,
@@ -132,7 +132,8 @@ class Database:
           name        TEXT NOT NULL,
           description TEXT,
           result      TEXT,
-          url         TEXT
+          url         TEXT,
+          kind        TEXT NOT NULL DEFAULT 'plenary'
       ) STRICT""",
       # How each deputy voted (one row per deputy): vote is "for", "against" or "absent" (other labels kept).
       # deputy_id is matched to deputies by name and the vote date.
@@ -149,6 +150,13 @@ class Database:
     ]
     for table in tables:
       self.cursor.execute(table)
+    self.add_missing_vote_columns()
+
+  def add_missing_vote_columns(self):
+    """Adds kind to a votes table created before it existed (appended at the end; earlier rows are Plenario votes)."""
+    self.cursor.execute("PRAGMA table_info(votes)")
+    if "kind" not in [r[1] for r in self.cursor.fetchall()]:
+      self.cursor.execute("ALTER TABLE votes ADD COLUMN kind TEXT NOT NULL DEFAULT 'plenary'")
 
   def create_asamblea_tables(self):
     """
@@ -384,8 +392,9 @@ class Database:
     try:
       self.cursor.execute("DELETE FROM vote_deputies")
       self.cursor.execute("DELETE FROM votes")
-      self.cursor.executemany("INSERT INTO votes VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
-        [(v.vote_id, v.number, iso(v.date), v.name, v.description, v.result, v.url) for v in votes])
+      self.cursor.executemany("""INSERT INTO votes (vote_id, number, date, name, description, result, url, kind)
+                                 VALUES (?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING""",
+        [(v.vote_id, v.number, iso(v.date), v.name, v.description, v.result, v.url, v.kind) for v in votes])
       self.cursor.executemany("INSERT INTO vote_deputies VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
         [(v.vote_id, d.slug, d.name, d.party, d.seat, d.vote, d.deputy_id) for v in votes for d in v.deputy_votes])
       self.connection.commit()

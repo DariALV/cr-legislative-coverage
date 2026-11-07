@@ -34,6 +34,8 @@ logger = logging.getLogger("cr")
 
 # Delfino vote pages cached without deputies are read again while the vote is this recent (see add_deputy_votes).
 RECENT_VOTE_DAYS = 30
+# Delfino vote kinds stored in votes; elections are voted by candidate, not for / against (#22).
+KEPT_VOTE_KINDS = {"plenary", "full_committee"}
 
 class Pipeline:
   def __init__(self, board: ProgressBoard | None = None):
@@ -352,9 +354,10 @@ class Pipeline:
   def scrap_delfino_votes(self, fetcher: HTMLFetcher, first_bill: int = Config.FIRST_BILL,
                           list_task: ProgressTask | None = None, votes_task: ProgressTask | None = None) -> list[Vote]:
     """
-    Plenario votes of bills from first_bill on, with how each deputy voted (the only bill data still taken from
-    Delfino, #22 #66). The votes come from Delfino's votes list (/asamblea/votaciones?pagina=N, 10 per page, newest
-    first), saved as it is read in raw/links/delfino/votes_list.json:
+    Plenario and comisión plena votes of bills from first_bill on, with how each deputy voted (the only bill data still
+    taken from Delfino, #22 #66). Elections (appointments, voted by candidate) are listed but not kept. The votes come
+    from Delfino's votes list (/asamblea/votaciones?pagina=N, 10 per page, newest first), saved as it is read in
+    raw/links/delfino/votes_list.json:
     - until the whole list has been read once, each run continues from the last page read (newer votes only push the
       older ones to later pages, so none is missed);
     - after that, each run reads from page 1 until a page brings no new vote.
@@ -383,8 +386,9 @@ class Pipeline:
       new_votes: int = sum(1 for v in page_votes if v.vote_id not in state["votes"])
       for vote in page_votes:
         state["votes"][vote.vote_id] = vote_to_json(vote)
-      if not re.search(r'href="/asamblea/votaciones/proyecto/\d+', response.text):
-        state["complete"] = True   # past the last page
+      # Past the last page no vote of any kind is linked (a page may hold only elections or comisión plena votes).
+      if not parser.has_vote_cards(response.text):
+        state["complete"] = True
         save_json(state_path, state)
         break
       if not was_complete:
@@ -397,10 +401,16 @@ class Pipeline:
     if not state["complete"]:
       logger.warning(f"[{fetcher.name}] The votes list was read up to page {state['last_page']}; run again to read the rest")
 
-    votes: list[Vote] = sorted((vote_from_json(v) for v in state["votes"].values() if v["number"] >= first_bill),
+    listed: list[Vote] = [vote_from_json(v) for v in state["votes"].values()]
+    votes: list[Vote] = sorted((v for v in listed if v.number >= first_bill and v.kind in KEPT_VOTE_KINDS),
                                key = lambda v: v.vote_id)
     self.add_deputy_votes(fetcher, parser, votes, votes_task)
-    logger.info(f"[{fetcher.name}] {len(votes)} votes of bills from {first_bill} on, out of {len(state['votes'])} listed")
+    kinds: dict[str, int] = {}
+    for vote in votes:
+      kinds[vote.kind] = kinds.get(vote.kind, 0) + 1
+    elections: int = sum(1 for v in listed if v.kind == "election")
+    logger.info(f"[{fetcher.name}] {len(votes)} votes of bills from {first_bill} on {kinds}, out of {len(listed)} listed "
+                f"({elections} elections left out)")
     return votes
 
   def add_deputy_votes(self, fetcher: HTMLFetcher, parser: DelfinoVotesParser, votes: list[Vote], votes_task: ProgressTask):
@@ -653,11 +663,12 @@ def saved_before(file_manager: FileManager, folder_path: str, name: str, moment:
 
 def vote_to_json(vote: Vote) -> dict[str, Any]:
   return {"vote_id": vote.vote_id, "number": vote.number, "date": vote.date.isoformat() if vote.date else None,
-          "name": vote.name, "description": vote.description, "result": vote.result, "url": vote.url}
+          "name": vote.name, "description": vote.description, "result": vote.result, "url": vote.url, "kind": vote.kind}
 
 def vote_from_json(data: dict[str, Any]) -> Vote:
+  # Entries saved before kind existed are Plenario votes (the list was read for /votaciones/proyecto/ links only).
   return Vote(data["vote_id"], data["number"], date.fromisoformat(data["date"]) if data["date"] else None,
-              data["name"], data["description"], data["result"], data["url"])
+              data["name"], data["description"], data["result"], data["url"], data.get("kind", "plenary"))
 
 def load_json(path: str) -> dict[str, Any] | None:
   return json.loads(open(path, encoding = "utf-8").read()) if os.path.exists(path) else None

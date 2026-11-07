@@ -73,4 +73,5 @@ class Vote:
     description: str | None = None   # what was voted
     result: str | None = None        # e.g. "Aprobado", "Rechazado"
     url: str | None = None
+    kind: str = "plenary"            # "plenary" (Plenario), "full_committee" (comisión plena) or "election"
     deputy_votes: list[DeputyVote] = field(default_factory = list)

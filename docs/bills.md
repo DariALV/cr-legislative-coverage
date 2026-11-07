@@ -44,7 +44,7 @@ Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/
 | `bill_subjects` | bill × subject (Materias) | `number`, `subject_code`, `subject` |
 | `bill_texts` | bill whose base text was downloaded | `number`, `status` (`ok`, `no_exposition`, `no_text`), `exposition`, `total_words`, `exposition_words` |
 | `laws` | law | `law_id`, `law_number`, `bill_number`, `title` |
-| `votes` | Plenario vote | `vote_id`, `number`, `date`, `name`, `description`, `result`, `url` |
+| `votes` | Plenario or comisión plena vote | `vote_id`, `number`, `date`, `name`, `description`, `result`, `url`, `kind` |
 | `vote_deputies` | vote × deputy | `vote_id`, `slug`, `name`, `party`, `seat`, `vote`, `deputy_id` |
 
 - **Joins:**
@@ -73,11 +73,20 @@ Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/
 - **Subjects:** the SIL's official descriptors (e.g. `BECA`, `DECLARATORIA`, `DESAFECTACION`). They replace Delfino's categories. Recent bills may have none yet.
 - **Votes:**
   - Each vote has its kind (e.g. "Primer debate", "Moción de fondo", "Dispensa de trámites (art. 177)"), what was voted, the date and the result ("Aprobado", "Rechazado", "Anulado").
-  - `vote_id` is the last part of the Delfino vote url (e.g. `20261105007`).
-  - Only Plenario votes: Delfino doesn't list committee votes.
+  - `vote_id` is the last part of the Delfino vote url (e.g. `20261105007`, or 9 digits in older ones such as `202203103`).
+  - `kind` (#22): `plenary` for Plenario votes (`/votaciones/proyecto/`) and `full_committee` for the comisiones plenas (`/votaciones/plena/`, e.g. "Segundo debate en comisión Plena III"). Delfino doesn't list the votes of other committees.
+  - Left out: elections (`/votaciones/eleccion/`, appointments voted by candidate, with "En blanco" instead of for / against) and motions without a bill (`/votaciones/mocion/`, e.g. "Moción de sesión extraordinaria (art. 32)").
 - **Deputy votes:**
   - `vote` is `for`, `against` or `absent`. Other labels are kept as Delfino writes them (elections, "Abstención", "Ausente (pierde dieta)"…); the suggested mapping is in #22.
-  - `deputy_id` is matched to the deputy in office on the vote date, by name: exact name, then the same words in any order, then a single deputy whose name holds every word.
+  - `deputy_id` is matched to the deputy in office on the vote date, by name (`DeputyMatcher`), with hyphens as spaces ("Flórez-Estrada" is FLOREZ ESTRADA). Each rule is tried only if the previous ones found nobody:
+    1. the exact name;
+    2. the same words in any order;
+    3. a single deputy whose name holds every word;
+    4. a single deputy with the same two surnames, for first names spelled differently ("Jonathan" for JOHNATAN JESÚS Acuña Soto, "Kathia" for KATTIA Calvo Cruz, "Gerarld" for GERALD Bogantes Rivera);
+    5. a single deputy whose name is at least 85 % similar ("Shirley Díaz Mejía" for DÍAZ MEJÍAS).
+  - Rules 4–5 and the hyphen were added after the full read: they matched 14,959 more deputy votes (5 names) and changed none of the earlier matches. Now 513,427 of 513,432 are matched.
+  - The 5 left are Cynthia Córdoba Serrano's on votes 202407151–155: Delfino dates them 15/04/2024, before she took office (02/05/2024), while their id says 15/07/2024.
+- **Dates that don't fit the id:** the id starts with the date (`YYYYMMDD` plus a 1–3 digit sequence), and 19 votes carry a different date on Delfino (e.g. 202309262–265 dated 26/06/2023, 202308221 dated 22/08/2022). The date is stored as Delfino gives it: in some cases (e.g. 202109081 dated 09/08/2021) it isn't clear which one is right.
 
 ## Base texts (#32)
 
@@ -110,11 +119,16 @@ The SIL has no summary of a bill, so the text matched against news is the **expo
 
 - **Votes list:** `delfino.cr/asamblea/votaciones?pagina=N`, 10 votes per page, newest first, from 2019 (~1,100 pages).
   - Each card gives the bill number, the kind of vote, what was voted, the date and the result, so Delfino's bill pages are no longer needed.
+  - Cards link to `/votaciones/<kind>/<vote_id>`, where the kind is `proyecto`, `plena`, `eleccion` or `mocion`. Every kind is read and saved (with its `kind`), and only `plenary` and `full_committee` go to `votes`.
+  - The list is over when a page links no vote of any kind. Before #22's fix only `proyecto` links counted, so page 203, which holds only elections of 10/06/2026, ended the first run early (1,955 votes, all from June 2026 on).
   - What has been read is saved in `raw/links/delfino/votes_list.json`.
+  - **Full read** (7/11/2026): 1,042 pages, 9,693 votes from 10/05/2018. Kept: 9,285 of bills from 20000 on (8,876 `plenary` from 17/05/2018, 409 `full_committee` from 18/09/2024 to 08/04/2026), on 1,990 bills, with 513,432 deputy votes. Left out: 248 elections and 725 motions without a bill. Results: 5,009 rejected, 4,243 approved, 20 annulled, 13 ties ("Empate").
+  - The old bill-page walk had seen only about half of them (4,540 Plenario votes); the list adds the rest, mostly from 2023, 2025 and 2026.
+  - Comisión plena cards don't say which one (I, II or III): only the vote page's heading does ("Segundo debate en comisión Plena III").
   - Until the whole list has been read once, each run continues from the last page read; newer votes only push older ones to later pages, so none is missed.
   - After that, each run reads from page 1 until a page brings no new vote.
-- **Vote pages:** `delfino.cr/asamblea/votaciones/proyecto/<vote_id>` list every deputy under "A favor", "En contra" and "Ausente".
-  - They are cached in `raw/html/delfino/asamblea/votes/`; the cache from the old bill-page walk is reused.
+- **Vote pages:** `delfino.cr/asamblea/votaciones/<kind>/<vote_id>` list every deputy under "A favor", "En contra" and "Ausente".
+  - They are cached in `raw/html/delfino/asamblea/votes/`, by their canonical url. The cache from the old bill-page walk (5,019 pages, 2018 to June 2026) uses the same urls, so it is reused.
   - A vote doesn't change once published, so a cached page isn't read again. The exception is a cached page with no deputies while the vote is less than 30 days old: Delfino may not have loaded them yet, so it is read again on the next run.
   - A few votes never show a breakdown (e.g. "Convertir el Plenario en comisión (art. 205)"); they are kept without deputies and reported.
   - Only votes of bills from 20000 on are kept.
@@ -153,5 +167,5 @@ Some bills almost never make the news, so they would inflate the "no coverage" c
 ## Delfino data before #66
 
 - Until #66, bills came from Delfino's bill pages (`raw/html/delfino/asamblea/bills/`). Those pages and their link list were deleted after the switch to the SIL.
-- The old tables `bill_categories`, `bill_events` and `bill_votes`, and the Delfino columns of `bills`, are dropped the first time the new tables are created.
+- The old tables `bill_categories`, `bill_events` and `bill_votes`, and the Delfino columns of `bills`, are dropped the first time the new tables are created. That emptied the votes until the votes list was read again (7/11/2026).
 - Delfino's per-deputy votes are rebuilt from its votes list and the cached vote pages.
