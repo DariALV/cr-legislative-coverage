@@ -17,6 +17,7 @@ Endpoints (all GET, JSON):
 """
 import argparse
 import json
+import socket
 import sqlite3
 import unicodedata
 from functools import lru_cache
@@ -458,6 +459,20 @@ class Handler(SimpleHTTPRequestHandler):
             return self.send_json({"error": str(e)}, 500)
 
 
+class Server(ThreadingHTTPServer):
+    """Refuses to start if the port is taken.
+
+    http.server sets SO_REUSEADDR, which on Windows lets a second process bind the same port while an
+    old server (with old code) keeps answering. Exclusive bind avoids that.
+    """
+    allow_reuse_address = False
+
+    def server_bind(self):
+        if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):  # Windows only
+            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+        super().server_bind()
+
+
 def main():
     global DB_PATH
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
@@ -467,7 +482,11 @@ def main():
     DB_PATH = args.db.resolve()
     if not DB_PATH.exists():
         raise SystemExit(f"No existe la base: {DB_PATH}")
-    srv = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
+    try:
+        srv = Server(("127.0.0.1", args.port), Handler)
+    except OSError:
+        raise SystemExit(f"El puerto {args.port} ya está en uso (¿otro explorador corriendo?). "
+                         f"Cerralo o usá --port <otro>.")
     print(f"Explorador en http://localhost:{args.port}  (base: {DB_PATH}, solo lectura)")
     try:
         srv.serve_forever()
