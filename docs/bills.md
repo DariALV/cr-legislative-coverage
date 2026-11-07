@@ -88,13 +88,23 @@ The SIL has no summary of a bill, so the text matched against news is the **expo
   - Proyectos de acuerdo (e.g. Reglamento reforms, ciudadano distinguido) end with "ACUERDA" instead of "DECRETA".
   - The heading "LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA" right before it is left out.
   - It usually ends with the formula that submits the bill ("Por las razones expuestas, sometemos…").
+- **Fallbacks**, used only when those markers fail, so the texts they already handled don't change (`exposition_bounds` in `tools/scraping_tools/asamblea_parser.py`):
+  - **Start:** the heading misspelled ("ASAMBLEA LEGISTATIVA:", "ASAMBLEA LEGISLATIVA.", "LA ASAMBLEA LEGISLATIVA:", "ASAMBELA LEGISLATIVA:"…, at least 85 % similar), else the line "EXPOSICIÓN DE MOTIVOS", else the line "Expediente N.º …"; the last one before DECRETA. The "Expediente" start sometimes brings 1–3 cover lines along (e.g. 23038, 24513).
+  - **End without DECRETA / ACUERDA** (a few bills go straight from the motives to the articles, e.g. 20693, Ley de Empleo Público): the heading "LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA" or the first "ARTÍCULO 1", "TÍTULO I" or "CAPÍTULO I".
+  - "DECRETAN" is not an end marker: it belongs to executive decrees quoted inside the exposición (e.g. 21137, 24468).
+  - A fallback result under 50 words is a note (withdrawn bills, Secretaría notes), so the bill stays `no_exposition`.
+- **Budgets** (procedure "PRESUPUESTOS"): their "ASAMBLEA LEGISLATIVA:" lines are institution names inside the tables, so the exposición goes from the first prose paragraph (25 words or more) after "EXPOSICIÓN DE MOTIVOS" or "PRESENTACIÓN" to "DECRETA" (which may share its line with the title) or to the end of the text.
+  - It opens with the motives in prose (macroeconomic context, aims, what each article does) and then runs into thousands of table lines: up to ~164,000 words. A model's 8,192-token limit keeps the prose part.
+  - The budgets of 2016–2019 have no text: "Por su naturaleza el contenido de este expediente no se incluye en el sistema" (it is only in the paper file).
 - **Only the exposición is stored** in `bill_texts`. The full text (title page, proponents, articles) stays in the raw cache, so it can be rebuilt without downloading again.
 - **Status:**
-  - `ok`: the exposición was found.
-  - `no_exposition`: there is a text but without the markers, e.g. the budget bill ("its content is not included in the system") or special investigating commissions (only a note).
+  - `ok`: the exposición was found, by the usual markers or a fallback (they aren't told apart).
+  - `no_exposition`: there is a text but without the markers, e.g. old budgets ("its content is not included in the system"), withdrawn bills or special investigating commissions (only a note).
   - `no_text`: the SIL has no text for the bill ("[30016] No existe un texto asociado").
   - No row: not downloaded yet, e.g. because the bill's General tab is missing.
-- **Probe before the full run** (sample of 51 bills, half from `news_bill_links`): the exposición was found in 48 (94 %), 2 had no exposición and 1 had no text. It has a median of 1,412 words and a maximum of 4,199 (about 6,000 tokens), so it always fits a model's 8,192-token limit.
+- **Probe before the full run** (sample of 51 bills, half from `news_bill_links`): the exposición was found in 48 (94 %), 2 had no exposición and 1 had no text. It has a median of 1,412 words and a maximum of 4,199 (about 6,000 tokens).
+- **Full run** (5,898 bills, 7/11/2026): 5,411 `ok` (134 of them by a fallback, 36 being budgets), 264 `no_exposition` (mostly investigating commissions, appointments, docking requests and old budgets) and 223 `no_text`. Of the 577 bills linked from news, 561 have an exposición.
+  - Unlike the probe, 216 exposiciones pass 5,500 words and won't fit 8,192 tokens: budgets and bills with technical annexes (e.g. 22583, 25591). The model truncates them.
 
 ## Collecting the votes
 

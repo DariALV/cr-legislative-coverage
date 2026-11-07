@@ -1,6 +1,7 @@
 import logging
 import re
 import unicodedata
+from difflib import SequenceMatcher
 from datetime import date, datetime
 
 from tools.scraping_tools.asamblea import (AsambleaData, Deputy, DeputyBill, DeputyFaction, DeputyReplacement, DeputyTerm,
@@ -14,6 +15,16 @@ logger = logging.getLogger("cr")
 EXPOSITION_START_REGEX = re.compile(r"^ASAMBLEALEGISLATIVA:?$")
 EXPOSITION_END_REGEX = re.compile(r"^(LAASAMBLEALEGISLATIVADELAREP[UÚ]BLICADECOSTARICA)?(DECRETA|ACUERDA):?$")
 EXPOSITION_END_HEADER_REGEX = re.compile(r"^LAASAMBLEALEGISLATIVADELAREP[UÚ]BLICADECOSTARICA:?$")
+# Fallbacks, used only when the markers above fail (see parse_bill_text).
+EXPOSITION_HEADING = "ASAMBLEALEGISLATIVA"   # the start heading, often misspelled ("ASAMBLEA LEGISTATIVA:")
+EXPOSITION_HEADING_SIMILARITY = 0.85
+EXPOSITION_MOTIVES_REGEX = re.compile(r"^EXPOSICI[OÓ]NDEMOTIVOS")
+EXPOSITION_FILE_NUMBER_REGEX = re.compile(r"^EXP(EDIENTE)?\.?N")   # "Expediente N.º 20.057", right before the text
+EXPOSITION_ARTICLES_REGEX = re.compile(r"^(ART[IÍ]CULO(1([^0-9]|$)|PRIMERO|[UÚ]NICO)|(T[IÍ]TULO|CAP[IÍ]TULO)(I|PRIMERO|[UÚ]NICO)[.:-]?$)")
+BUDGET_START_REGEX = re.compile(r"^(EXPOSICI[OÓ]NDEMOTIVOS|PRESENTACI[OÓ]N:?$)")
+BUDGET_END_REGEX = re.compile(r"^(LAASAMBLEALEGISLATIVADELAREP[UÚ]BLICADECOSTARICA)?(DECRETA|ACUERDA)(:|$)")
+BUDGET_PROSE_WORDS = 25        # a paragraph this long is prose, not a table cell or an index line
+MIN_EXPOSITION_WORDS = 50      # anything shorter found by a fallback is a note, not an exposición
 CONTROL_CHARS_REGEX = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")   # e.g. \x1a in some SIL texts
 
 class AsambleaParser:
@@ -154,7 +165,8 @@ class AsambleaParser:
     """
     Fills the bill's text fields from its cached base text (one line per paragraph, see docx_text). None (not
     downloaded) leaves them empty. The exposición de motivos goes from the line "ASAMBLEA LEGISLATIVA:" to the first
-    "DECRETA" or "ACUERDA" after it (proyectos de acuerdo, e.g. Reglamento reforms, end with ACUERDA).
+    "DECRETA" or "ACUERDA" after it (proyectos de acuerdo, e.g. Reglamento reforms, end with ACUERDA). Budgets and
+    texts without those markers go through the fallbacks of exposition_bounds.
     """
     if text is None:
       return
@@ -165,12 +177,8 @@ class AsambleaParser:
       bill.text_status = "no_text"
       return
     keys = [re.sub(r"\s+", "", line).upper() for line in lines]
-    start = next((i for i, key in enumerate(keys) if EXPOSITION_START_REGEX.match(key)), None)
-    end = next((i for i, key in enumerate(keys) if start is not None and i > start and EXPOSITION_END_REGEX.match(key)), None)
-    if start is not None and end is not None:
-      while end > start + 1 and EXPOSITION_END_HEADER_REGEX.match(keys[end - 1]):
-        end -= 1   # the line before DECRETA often is "LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA"
-    exposition = "\n".join(lines[start + 1:end]).strip() if start is not None and end is not None else ""
+    bounds = exposition_bounds(lines, keys, bill.file_type)
+    exposition = "\n".join(lines[bounds[0] + 1:bounds[1]]).strip() if bounds else ""
     if not exposition:
       bill.text_status = "no_exposition"
       return
@@ -248,3 +256,68 @@ def parse_date(value: str | None) -> date | None:
   if value is None:
     return None
   return datetime.strptime(value.split(" ")[0], "%d/%m/%Y").date()
+
+def exposition_bounds(lines: list[str], keys: list[str], file_type: str | None) -> tuple[int, int] | None:
+  """
+  (start, end) of the exposición de motivos, which is lines[start + 1:end], or None. keys are the lines without spaces
+  and in upper case. Fallbacks apply only when the usual markers fail, so texts that already worked keep their result:
+  - Budgets: from the first prose paragraph after "EXPOSICIÓN DE MOTIVOS" or "PRESENTACIÓN" (skipping the cover, title
+    and index) to "DECRETA", which may share its line with the title, or to the end of the text. Their
+    "ASAMBLEA LEGISLATIVA:" lines are institution names inside the tables, so the usual start is not used.
+  - Start: the heading "ASAMBLEA LEGISLATIVA:" misspelled ("LEGISTATIVA", "LA ASAMBLEA LEGISLATIVA.", ...), else
+    "EXPOSICIÓN DE MOTIVOS", else the "Expediente N.º" line; the last one before the end.
+  - End, when there is no DECRETA / ACUERDA: the heading "LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA" or the
+    first article, title or chapter ("ARTÍCULO 1", "TÍTULO I"), after a start found without the "Expediente" line.
+  A fallback result shorter than MIN_EXPOSITION_WORDS is a note (e.g. a withdrawn bill), so it gives None.
+  """
+  if file_type and "PRESUPUESTOS" in file_type:
+    return budget_exposition_bounds(lines, keys)
+  start = next((i for i, key in enumerate(keys) if EXPOSITION_START_REGEX.match(key)), None)
+  end = next((i for i, key in enumerate(keys) if start is not None and i > start and EXPOSITION_END_REGEX.match(key)), None)
+  if start is not None and end is not None:
+    return start, trim_end_header(keys, start, end)
+  end = next((i for i, key in enumerate(keys) if EXPOSITION_END_REGEX.match(key)), None)
+  if end is not None:
+    start = last_match(keys[:end], is_misspelled_heading, EXPOSITION_MOTIVES_REGEX.match, EXPOSITION_FILE_NUMBER_REGEX.match)
+  else:
+    start = last_match(keys, EXPOSITION_START_REGEX.match, is_misspelled_heading, EXPOSITION_MOTIVES_REGEX.match, first = True)
+    end = next((i for i, key in enumerate(keys) if start is not None and i > start + 1
+                and (EXPOSITION_END_HEADER_REGEX.match(key) or EXPOSITION_ARTICLES_REGEX.match(key))), None)
+  if start is None or end is None:
+    return None
+  end = trim_end_header(keys, start, end)
+  return (start, end) if words_between(lines, start, end) >= MIN_EXPOSITION_WORDS else None
+
+def budget_exposition_bounds(lines: list[str], keys: list[str]) -> tuple[int, int] | None:
+  starts = [i for i, key in enumerate(keys) if BUDGET_START_REGEX.match(key)]
+  if not starts:
+    return None
+  prose = next((i for i in range(starts[0] + 1, len(lines)) if len(lines[i].split()) >= BUDGET_PROSE_WORDS), None)
+  if prose is None:
+    return None
+  start = prose - 1   # the cover, title and index lines between the heading and the prose are left out
+  end = next((i for i in range(start + 1, len(keys)) if BUDGET_END_REGEX.match(keys[i])), len(keys))
+  end = trim_end_header(keys, start, end)
+  return (start, end) if words_between(lines, start, end) >= MIN_EXPOSITION_WORDS else None
+
+def is_misspelled_heading(key: str) -> bool:
+  """'ASAMBLEA LEGISTATIVA:', 'LA ASAMBLEA LEGISLATIVA.', 'ASAMBELA LEGISLATIVA:'... (not the cover's 'ASAMBLEA LEGISLATIVA DE LA')."""
+  key = re.sub(r"^LA", "", key).rstrip(":.;")
+  return (len(EXPOSITION_HEADING) - 2 <= len(key) <= len(EXPOSITION_HEADING) + 2
+          and SequenceMatcher(None, key, EXPOSITION_HEADING).ratio() >= EXPOSITION_HEADING_SIMILARITY)
+
+def last_match(keys: list[str], *tests, first: bool = False) -> int | None:
+  """Index of the last (or first) key passing the first test that any key passes; tests are tried in order."""
+  for test in tests:
+    found = [i for i, key in enumerate(keys) if test(key)]
+    if found:
+      return found[0] if first else found[-1]
+  return None
+
+def trim_end_header(keys: list[str], start: int, end: int) -> int:
+  while end > start + 1 and EXPOSITION_END_HEADER_REGEX.match(keys[end - 1]):
+    end -= 1   # the line before DECRETA often is "LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA"
+  return end
+
+def words_between(lines: list[str], start: int, end: int) -> int:
+  return sum(len(line.split()) for line in lines[start + 1:end])
