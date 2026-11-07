@@ -34,55 +34,14 @@
           <h1>Explorador del corpus</h1>
           <p class="sub">private_corpus.db · solo lectura</p>
         </div>
-        <nav class="tabs-main" aria-label="Tablas">
-          <a class="active" href="#/">Expedientes</a>
-        </nav>
+        <nav class="tabs-main" id="nav" aria-label="Secciones"></nav>
       </div>
       <dl class="stats" id="stats"></dl>
     </div>
   </header>
 
   <div class="toolbar">
-    <div class="wrap toolbar-inner">
-      <label class="search">
-        <svg><use href="#i-search"/></svg>
-        <input id="q" type="search" placeholder="Número, nombre, proponente o materia…" autocomplete="off">
-        <kbd>/</kbd>
-      </label>
-      <div class="chips" id="status-chips" role="group" aria-label="Estado"></div>
-      <div class="controls">
-        <label class="select"><span class="sr">Tipo</span><select id="f-type"></select><svg><use href="#i-chevron"/></svg></label>
-        <label class="select"><span class="sr">Bandera</span>
-          <select id="f-flag">
-            <option value="">Toda bandera</option>
-            <option value="none">Sin bandera</option>
-            <option value="administrative">Administrativos</option>
-            <option value="honorific">Honoríficos</option>
-          </select><svg><use href="#i-chevron"/></svg></label>
-        <label class="select"><span class="sr">Texto</span>
-          <select id="f-text">
-            <option value="">Todo texto</option>
-            <option value="ok">Con exposición</option>
-            <option value="no_exposition">Sin exposición</option>
-            <option value="no_text">Sin texto</option>
-          </select><svg><use href="#i-chevron"/></svg></label>
-        <label class="select"><span class="sr">Extras</span>
-          <select id="f-extra">
-            <option value="">Todos</option>
-            <option value="news">Con noticias</option>
-            <option value="votes">Con votaciones</option>
-            <option value="law">Con número de ley</option>
-          </select><svg><use href="#i-chevron"/></svg></label>
-        <label class="select"><span class="sr">Orden</span>
-          <select id="sort">
-            <option value="num">Número ↓</option>
-            <option value="num-asc">Número ↑</option>
-            <option value="date">Más recientes</option>
-            <option value="news">Más noticias</option>
-            <option value="steps">Más trámites</option>
-          </select><svg><use href="#i-chevron"/></svg></label>
-      </div>
-    </div>
+    <div class="wrap toolbar-inner" id="toolbar"></div>
   </div>
 
   <main class="wrap layout" id="layout">
@@ -92,14 +51,14 @@
       <div id="sentinel" class="sentinel"></div>
       <div id="empty" class="empty" hidden>
         <svg><use href="#i-empty"/></svg>
-        <p>Ningún expediente coincide con los filtros.</p>
+        <p>Ningún resultado coincide con los filtros.</p>
       </div>
     </section>
 
     <section class="pane-detail" id="detail">
       <div class="placeholder">
         <svg><use href="#i-doc"/></svg>
-        <p>Elegí un expediente para ver su información.</p>
+        <p>Elegí un elemento de la lista.</p>
       </div>
     </section>
   </main>
@@ -110,6 +69,6 @@
     <p class="hint">Corré <code>python private_visuals/db_explorer/server.py</code> y abrí <code>http://localhost:8765</code></p>
   </div>
 
-  <script src="app.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>

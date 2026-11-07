@@ -284,3 +284,49 @@ h1 { font-size: 22px; line-height: 1.2; margin: 0; letter-spacing: -.015em; font
   .tl { grid-template-columns: 66px 1fr; }
   .tl::before { left: 73px; }
 }
+
+/* ---------- Cross-entity links and new sections (deputies, organs, news) ---------- */
+.xref { color: var(--accent); text-decoration: none; border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+.xref:hover { border-bottom-color: var(--accent); }
+.xref-off { color: var(--ink-3); font: inherit; cursor: help; }
+.tl-org.xref { border-bottom-color: color-mix(in srgb, var(--c) 35%, transparent); color: var(--c); }
+.news-title .xref { color: inherit; border: 0; }
+.news-title .xref:hover { color: var(--accent); }
+.news-meta .ext { margin-left: auto; color: var(--ink-3); display: inline-flex; }
+.news-meta .ext:hover { color: var(--accent); }
+.news-meta .ext svg { width: 14px; height: 14px; }
+
+a.row { text-decoration: none; }
+.row-person { display: flex; gap: 12px; align-items: center; }
+.row-main { min-width: 0; flex: 1; }
+.row-title { font-size: 14px; font-weight: 600; color: var(--ink); }
+.row-person .row-foot { margin-top: 3px; }
+
+.people li { list-style: none; }
+.person.linked { color: inherit; transition: border-color .15s, box-shadow .15s; }
+.person.linked:hover { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.person.linked .nm { color: var(--accent); }
+
+.d-person { display: flex; gap: 14px; align-items: center; }
+.avatar.lg { width: 52px; height: 52px; font-size: 17px; }
+.d-person .d-title { margin-top: 4px; }
+
+.tbl tr.off td { color: var(--ink-3); }
+.tbl .sub-line { font-size: 12px; color: var(--ink-3); margin-top: 3px; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.clamp2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.note { margin: 0 0 12px; font-size: 12.5px; }
+.plain { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; font-size: 13.5px; }
+.plain .date { font: 12px var(--mono); color: var(--ink-3); margin-right: 6px; }
+.lede { font-size: 15px; color: var(--ink); font-weight: 500; margin: 0 0 14px; }
+.vote-who { margin-top: 10px; font-size: 13px; }
+.vote-who summary { cursor: pointer; color: var(--accent); }
+
+.date-in { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-3); }
+.date-in input { font: 500 12.5px var(--font); color: var(--ink); border: 1px solid var(--line-strong); border-radius: 9px; padding: 5px 8px; background: #fff; }
+.date-in input.on { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+a.d-back { text-decoration: none; }
+
+@media (max-width: 900px) {
+  .tabs-main { overflow-x: auto; max-width: 100%; }
+  .tbl { font-size: 12.5px; }
+}
