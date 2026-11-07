@@ -5,7 +5,7 @@ from datetime import date, datetime
 from config import Config
 
 from tools.scraping_tools.asamblea import AsambleaData
-from tools.scraping_tools.bill import Bill, BillEvent, BillProponent, DeputyVote
+from tools.scraping_tools.bill import Bill, Law, Vote
 from tools.scraping_tools.news_article import NewsArticle
 
 
@@ -43,84 +43,103 @@ class Database:
           PRIMARY KEY (news_id, bill_number, source)
       ) STRICT
       """
-    exp_table = """
-      CREATE TABLE IF NOT EXISTS bills(
-          number         INTEGER PRIMARY KEY,
-          name           TEXT NOT NULL,
-          description    TEXT,
-          date_extracted TEXT NOT NULL,
-          file_type      TEXT,
-          status         TEXT,
-          commission     TEXT,
-          date_proposed  TEXT,
-          law_number     INTEGER,
-          flag           TEXT
-      ) STRICT
-      """
-    exp_cat_table = """
-      CREATE TABLE IF NOT EXISTS bill_categories(
-          number   INTEGER NOT NULL REFERENCES bills(number),
-          category TEXT NOT NULL,
-          PRIMARY KEY (number, category)
-      ) STRICT
-      """
-    # Firma Principal (role "main") and Co-proponentes (role "co") of each bill, as Delfino shows them.
-    # kind is "deputy" or "special" (the executive, e.g. "Gobierno Chaves Robles"); special ones have no seat.
-    proponents_table = """
-      CREATE TABLE IF NOT EXISTS bill_proponents(
+    self.cursor.execute(news_table)
+    self.add_missing_news_columns()
+    self.cursor.execute(news_exp_links_table)
+    self.drop_delfino_bill_tables()
+    self.create_bill_tables()
+    self.create_asamblea_tables()
+    self.connection.commit()
+
+  def drop_delfino_bill_tables(self):
+    """
+    Bills used to come from Delfino (bills with a description column, bill_categories, bill_events, bill_votes).
+    They are replaced by the SIL tables and the Delfino vote tables (#66), so the old ones are dropped once.
+    """
+    self.cursor.execute("PRAGMA table_info(bills)")
+    if "description" in [r[1] for r in self.cursor.fetchall()]:
+      for table in ["bill_votes", "bill_events", "bill_categories", "bill_proponents", "bills"]:
+        self.cursor.execute(f"DROP TABLE IF EXISTS {table}")
+
+  def create_bill_tables(self):
+    """
+    Bills from the Asamblea's SIL (#66) and Plenario votes from Delfino (#22). Bill numbers in votes have no foreign
+    key: Delfino lists votes of bills the SIL tables may not hold yet.
+    """
+    tables = [
+      # status is derived: "law" (has a law number), "archived" (has an archive number) or "in progress".
+      """CREATE TABLE IF NOT EXISTS bills(
+          number                INTEGER PRIMARY KEY,
+          name                  TEXT NOT NULL,
+          file_type             TEXT,
+          date_proposed         TEXT,
+          law_number            INTEGER,
+          archive_number        INTEGER,
+          date_expiry           TEXT,
+          date_expiry_four_year TEXT,
+          status                TEXT,
+          flag                  TEXT,
+          date_extracted        TEXT NOT NULL
+      ) STRICT""",
+      # Signers in signing order (1 = main signer). deputy_id is matched by name and term; None for the executive.
+      """CREATE TABLE IF NOT EXISTS bill_proponents(
+          proponent_id  INTEGER PRIMARY KEY,
+          number        INTEGER NOT NULL REFERENCES bills(number),
+          name          TEXT NOT NULL,
+          term          TEXT,
+          signing_order INTEGER,
+          deputy_id     INTEGER
+      ) STRICT""",
+      # Tramitación: every step of the bill, in every organ.
+      """CREATE TABLE IF NOT EXISTS bill_steps(
+          step_id     INTEGER PRIMARY KEY,
           number      INTEGER NOT NULL REFERENCES bills(number),
-          slug        TEXT NOT NULL,
-          name        TEXT NOT NULL,
-          role        TEXT NOT NULL,
-          kind        TEXT NOT NULL,
-          party       TEXT,
-          position    TEXT,
-          province    TEXT,
-          seat        INTEGER,
-          PRIMARY KEY (number, slug)
-      ) STRICT
-      """
-    # Histórico de Textos (event_type "text") and Histórico de Votaciones (event_type "vote"), in page order.
-    events_table = """
-      CREATE TABLE IF NOT EXISTS bill_events(
-          number      INTEGER NOT NULL REFERENCES bills(number),
-          position    INTEGER NOT NULL,
-          event_type  TEXT NOT NULL,
+          organ       TEXT,
+          description TEXT NOT NULL,
+          date_start  TEXT,
+          date_end    TEXT
+      ) STRICT""",
+      # Materias: the SIL's official descriptors (replace Delfino's categories).
+      """CREATE TABLE IF NOT EXISTS bill_subjects(
+          number       INTEGER NOT NULL REFERENCES bills(number),
+          subject_code INTEGER NOT NULL,
+          subject      TEXT NOT NULL,
+          PRIMARY KEY (number, subject_code)
+      ) STRICT""",
+      # Every law in the SIL (not only those of bills from Config.FIRST_BILL on). One row per law × bill: a few old
+      # laws merged several bills (e.g. law 4347 of 1969 came from 4).
+      """CREATE TABLE IF NOT EXISTS laws(
+          law_id      INTEGER NOT NULL,
+          law_number  INTEGER NOT NULL,
+          bill_number INTEGER,
+          title       TEXT,
+          UNIQUE (law_id, bill_number)
+      ) STRICT""",
+      # Plenario votes from Delfino's votes list.
+      """CREATE TABLE IF NOT EXISTS votes(
+          vote_id     TEXT PRIMARY KEY,
+          number      INTEGER NOT NULL,
           date        TEXT,
           name        TEXT NOT NULL,
           description TEXT,
           result      TEXT,
-          url         TEXT,
-          vote_id     TEXT,
-          PRIMARY KEY (number, event_type, position)
-      ) STRICT
-      """
-    # How each deputy voted in a Plenario vote (one row per deputy), joined to bill_events by (number, vote_id).
-    # vote is "for", "against" or "absent".
-    votes_table = """
-      CREATE TABLE IF NOT EXISTS bill_votes(
-          number      INTEGER NOT NULL REFERENCES bills(number),
-          vote_id     TEXT NOT NULL,
-          slug        TEXT NOT NULL,
-          name        TEXT NOT NULL,
-          party       TEXT,
-          seat        INTEGER,
-          vote        TEXT NOT NULL,
-          PRIMARY KEY (number, vote_id, slug)
-      ) STRICT
-      """
-    self.cursor.execute(news_table)
-    self.add_missing_news_columns()
-    self.cursor.execute(news_exp_links_table)
-    self.cursor.execute(exp_table)
-    self.add_missing_bill_columns()
-    self.cursor.execute(exp_cat_table)
-    self.cursor.execute(proponents_table)
-    self.cursor.execute(events_table)
-    self.add_missing_bill_event_columns()
-    self.cursor.execute(votes_table)
-    self.create_asamblea_tables()
-    self.connection.commit()
+          url         TEXT
+      ) STRICT""",
+      # How each deputy voted (one row per deputy): vote is "for", "against" or "absent" (other labels kept).
+      # deputy_id is matched to deputies by name and the vote date.
+      """CREATE TABLE IF NOT EXISTS vote_deputies(
+          vote_id   TEXT NOT NULL REFERENCES votes(vote_id),
+          slug      TEXT NOT NULL,
+          name      TEXT NOT NULL,
+          party     TEXT,
+          seat      INTEGER,
+          vote      TEXT NOT NULL,
+          deputy_id INTEGER,
+          PRIMARY KEY (vote_id, slug)
+      ) STRICT""",
+    ]
+    for table in tables:
+      self.cursor.execute(table)
 
   def create_asamblea_tables(self):
     """
@@ -252,20 +271,6 @@ class Database:
       counts[table] = self.cursor.fetchone()[0]
     return counts
 
-  def add_missing_bill_columns(self):
-    """Adds flag to a bills table created before it existed (#21)."""
-    self.cursor.execute("PRAGMA table_info(bills)")
-    columns = [r[1] for r in self.cursor.fetchall()]
-    if "flag" not in columns:
-      self.cursor.execute("ALTER TABLE bills ADD COLUMN flag TEXT")
-
-  def add_missing_bill_event_columns(self):
-    """Adds vote_id to a bill_events table created before it existed."""
-    self.cursor.execute("PRAGMA table_info(bill_events)")
-    columns = [r[1] for r in self.cursor.fetchall()]
-    if "vote_id" not in columns:
-      self.cursor.execute("ALTER TABLE bill_events ADD COLUMN vote_id TEXT")
-
   def add_missing_news_columns(self):
     """Adds outlet_type and section to a news_articles table created before they existed (appended at the end)."""
     self.cursor.execute("PRAGMA table_info(news_articles)")
@@ -337,127 +342,68 @@ class Database:
     
     return news_articles
 
-  def insert_bill(self, bill: Bill, should_commit: bool = False):
-    number = bill.number
-    name = bill.name
-    desc = bill.description
-    date_extracted = bill.date_extracted.isoformat()
-    file_type = bill.file_type
-    status = bill.status
-    commission = bill.commission
-    date_proposed = bill.date_proposed.isoformat() if bill.date_proposed else None   # optional in Bill
-    law_number = bill.law_number
-    flag = bill.flag
-    # Upsert: a refreshed bill (#23) overwrites status, commission, law number... of the stored one.
-    self.cursor.execute(f"""INSERT INTO bills (number, name, description, date_extracted, file_type, status, commission, date_proposed, law_number, flag)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-      ON CONFLICT(number) DO UPDATE SET name = excluded.name, description = excluded.description,
-        date_extracted = excluded.date_extracted, file_type = excluded.file_type, status = excluded.status,
-        commission = excluded.commission, date_proposed = excluded.date_proposed, law_number = excluded.law_number,
-        flag = excluded.flag""",
-      [number, name, desc, date_extracted, file_type, status, commission, date_proposed, law_number, flag])
-    self.insert_bill_categories(bill, False)
-    self.insert_bill_proponents(bill, False)
-    self.insert_bill_events(bill, False)
-    if should_commit:
-      self.connection.commit()
-
-  def insert_bill_categories(self, bill: Bill, should_commit: bool = False):
-    """Replaces the bill's categories with the current ones (they can change on a refresh)."""
-    number = bill.number
-    categories = bill.categories
-    self.cursor.execute("DELETE FROM bill_categories WHERE number = ?", [number])
-    for c in categories:
-      self.cursor.execute(f"INSERT INTO bill_categories (number, category) VALUES (?, ?) ON CONFLICT(number, category) DO NOTHING", [number, c])
-    if should_commit:
-      self.connection.commit()
-
-  def insert_bill_proponents(self, bill: Bill, should_commit: bool = False):
-    """Replaces the bill's proponents with the current ones. A deputy listed twice keeps the first role (main)."""
-    self.cursor.execute("DELETE FROM bill_proponents WHERE number = ?", [bill.number])
-    for p in bill.proponents:
-      self.cursor.execute("INSERT INTO bill_proponents (number, slug, name, role, kind, party, position, province, seat) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?) ON CONFLICT(number, slug) DO NOTHING",
-                          [bill.number, p.slug, p.name, p.role, p.kind, p.party, p.position, p.province, p.seat])
-    if should_commit:
-      self.connection.commit()
-
-  def insert_bill_events(self, bill: Bill, should_commit: bool = False):
+  def replace_bill_tables(self, bills: list[Bill], laws: list[Law]) -> dict[str, int]:
     """
-    Replaces the bill's text and vote history with the current one; position keeps Delfino's order per type.
-    The deputies' votes are replaced too, except when the new events carry none (vote pages not read in this run).
+    Replaces the SIL bill tables (bills, proponents, steps, subjects, laws) in one transaction: an error or Ctrl+C
+    leaves the previous tables untouched. Returns the number of rows per table.
     """
-    self.cursor.execute("DELETE FROM bill_events WHERE number = ?", [bill.number])
-    has_deputy_votes: bool = any(e.deputy_votes for e in bill.events)
-    if has_deputy_votes:
-      self.cursor.execute("DELETE FROM bill_votes WHERE number = ?", [bill.number])
-    positions: dict[str, int] = {}
-    for e in bill.events:
-      position = positions.get(e.event_type, 0)
-      positions[e.event_type] = position + 1
-      date = e.date.date().isoformat() if e.date else None
-      self.cursor.execute("INSERT INTO bill_events (number, position, event_type, date, name, description, result, url, vote_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                          [bill.number, position, e.event_type, date, e.name, e.description, e.result, e.url, e.vote_id])
-      for v in e.deputy_votes:
-        self.cursor.execute("INSERT INTO bill_votes (number, vote_id, slug, name, party, seat, vote) VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT(number, vote_id, slug) DO NOTHING",
-                            [bill.number, e.vote_id, v.slug, v.name, v.party, v.seat, v.vote])
-    if should_commit:
+    tables = ["bill_subjects", "bill_steps", "bill_proponents", "bills", "laws"]
+    try:
+      for table in tables:
+        self.cursor.execute(f"DELETE FROM {table}")
+      self.cursor.executemany("INSERT INTO bills VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        [(b.number, b.name, b.file_type, iso(b.date_proposed), b.law_number, b.archive_number, iso(b.date_expiry),
+          iso(b.date_expiry_four_year), b.status, b.flag, b.date_extracted.isoformat()) for b in bills])
+      self.cursor.executemany("INSERT INTO bill_proponents VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(p.proponent_id, b.number, p.name, p.term, p.signing_order, p.deputy_id) for b in bills for p in b.proponents])
+      self.cursor.executemany("INSERT INTO bill_steps VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(s.step_id, b.number, s.organ, s.description, iso(s.date_start), iso(s.date_end)) for b in bills for s in b.steps])
+      self.cursor.executemany("INSERT INTO bill_subjects VALUES (?, ?, ?) ON CONFLICT DO NOTHING",
+        [(b.number, s.subject_code, s.subject) for b in bills for s in b.subjects])
+      self.cursor.executemany("INSERT INTO laws VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(l.law_id, l.law_number, l.bill_number, l.title) for l in laws])
       self.connection.commit()
+    except BaseException:
+      self.connection.rollback()
+      raise
+    return self.count_rows(tables)
 
-  def insert_bills(self, bill_list: list[Bill]):
+  def replace_vote_tables(self, votes: list[Vote]) -> dict[str, int]:
+    """Replaces votes and vote_deputies in one transaction. Returns the number of rows per table."""
+    try:
+      self.cursor.execute("DELETE FROM vote_deputies")
+      self.cursor.execute("DELETE FROM votes")
+      self.cursor.executemany("INSERT INTO votes VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(v.vote_id, v.number, iso(v.date), v.name, v.description, v.result, v.url) for v in votes])
+      self.cursor.executemany("INSERT INTO vote_deputies VALUES (?, ?, ?, ?, ?, ?, ?) ON CONFLICT DO NOTHING",
+        [(v.vote_id, d.slug, d.name, d.party, d.seat, d.vote, d.deputy_id) for v in votes for d in v.deputy_votes])
+      self.connection.commit()
+    except BaseException:
+      self.connection.rollback()
+      raise
+    return self.count_rows(["votes", "vote_deputies"])
 
-    max_steps_to_commit = Config.COMMIT_BATCH_SIZE
-    steps_to_commit = max_steps_to_commit
+  def get_deputies_for_matching(self) -> list[tuple[int, str, str, str | None, str | None]]:
+    """(deputy_id, surnames, names, date_from, date_to) of every stored deputy term (empty if not collected yet)."""
+    self.cursor.execute("SELECT deputy_id, surnames, names, date_from, date_to FROM deputies")
+    return self.cursor.fetchall()
 
-    for bill in bill_list:
-      self.insert_bill(bill)
-      steps_to_commit -= 1
-      if steps_to_commit == 0:
-        steps_to_commit = max_steps_to_commit
-        self.connection.commit()
-    
+  def get_vote_deputies_for_matching(self) -> list[tuple[str, str, str, str | None]]:
+    """(vote_id, slug, name, vote date) of every deputy vote."""
+    self.cursor.execute("SELECT d.vote_id, d.slug, d.name, v.date FROM vote_deputies d JOIN votes v ON v.vote_id = d.vote_id")
+    return self.cursor.fetchall()
+
+  def update_vote_deputy_ids(self, matches: list[tuple[int | None, str, str]]):
+    """matches: (deputy_id or None, vote_id, slug)."""
+    self.cursor.executemany("UPDATE vote_deputies SET deputy_id = ? WHERE vote_id = ? AND slug = ?", matches)
     self.connection.commit()
 
-  def get_bills(self) -> list[Bill]:
-    self.cursor.execute("SELECT number, name, description, date_extracted, file_type, status, commission, date_proposed, law_number, flag FROM bills")
-    results = self.cursor.fetchall()
-
-    proponents: dict[int, list[BillProponent]] = {}
-    self.cursor.execute("SELECT number, slug, name, role, kind, party, position, province, seat FROM bill_proponents ORDER BY number, rowid")   # insertion order = page order
-    for r in self.cursor.fetchall():
-      proponents.setdefault(r[0], []).append(BillProponent(r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8]))
-
-    deputy_votes: dict[tuple[int, str], list[DeputyVote]] = {}
-    self.cursor.execute("SELECT number, vote_id, slug, name, vote, party, seat FROM bill_votes ORDER BY number, vote_id, rowid")
-    for r in self.cursor.fetchall():
-      deputy_votes.setdefault((r[0], r[1]), []).append(DeputyVote(r[2], r[3], r[4], r[5], r[6]))
-
-    events: dict[int, list[BillEvent]] = {}
-    self.cursor.execute("SELECT number, event_type, date, name, description, result, url, vote_id FROM bill_events ORDER BY number, event_type, position")
-    for r in self.cursor.fetchall():
-      events.setdefault(r[0], []).append(BillEvent(r[1], datetime.fromisoformat(r[2]) if r[2] else None, r[3], r[4], r[5], r[6], r[7],
-                                                   deputy_votes.get((r[0], r[7]), [])))
-
-    bill_categories = {}
-
-    self.cursor.execute("SELECT number, category FROM bill_categories")
-    exp_categories_result = self.cursor.fetchall()
-    for r in exp_categories_result:
-      number = r[0]
-      category = r[1]
-      if number not in bill_categories.keys():
-        bill_categories[number] = [category]
-      else:
-        bill_categories[number].append(category)
-
-    bills: list[Bill] = []
-
-    for r in results:
-      date_proposed = datetime.fromisoformat(r[7]) if r[7] else None
-      bill: Bill = Bill(r[0], r[1], r[2], datetime.fromisoformat(r[3]), r[4], r[5], r[6], date_proposed, r[8], bill_categories.get(r[0], []),
-                        r[9], proponents.get(r[0], []), events.get(r[0], []))
-      bills.append(bill)
-    
-    return bills
+  def count_rows(self, tables: list[str]) -> dict[str, int]:
+    counts: dict[str, int] = {}
+    for table in tables:
+      self.cursor.execute(f"SELECT COUNT(*) FROM {table}")
+      counts[table] = self.cursor.fetchone()[0]
+    return counts
 
 def iso(value: date | None) -> str | None:
   return value.isoformat() if value else None

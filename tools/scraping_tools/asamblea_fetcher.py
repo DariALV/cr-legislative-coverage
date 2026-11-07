@@ -50,13 +50,34 @@ ORGAN_BILLS = ("C_ll_CNSORGANOS_Expedientes",
                ["IdPROYECTO_DE_LEY", "Numero_Proyecto", "Fecha_Inicio", "Fecha_Termino", "Descripcion_Tramite"],
                "Numero_Proyecto asc")
 
-SIL_INTERMEDIATE_CERT = pathlib.Path(__file__).parent / "certs" / "globalsign_gcc_r3_dv_tls_ca_2020.pem"
+# Bills (#66). General is a form like the deputies' (read from its window); the other tabs are exported.
+BILLS_LIST = ("consulta_ll_proyectos", ["Numero_Proyecto", "Asunto_Proyecto"], "Numero_Proyecto asc")
+BILL_GENERAL = ("SIL_CNSPROYECTOS_GENERAL", "consulta_ll_proyectosgeneral",
+                ["IdPROYECTO_DE_LEY", "Numero_Proyecto", "Fecha_Iniciacion", "Descripcion_Tipo", "Fecha_Vencimiento",
+                 "Prorrogable", "Numero_Archivado", "Fecha_Cuatrienal", "Fecha_Dispensa", "Descripcion_Dispensa",
+                 "Fecha_Publicacion", "Numero_Gaceta", "Numero_Alcance", "Numero_Ley", "Numero_Acuerdo", "Veto"])
+BILL_TABS: dict[str, tuple[str, list[str], str]] = {
+  "steps": ("consulta_ll_proyectos_vs_tramitacion",
+            ["IdTRAMITACION_DE_PROYECTO", "Numero_Proyecto", "Nombre_Corto", "Descripcion_Tramite", "Fecha_Inicio",
+             "Fecha_Termino"], "IdTRAMITACION_DE_PROYECTO asc"),
+  "proponents": ("consulta_ll_proyectos_vs_proponentes",
+                 ["IdPROPONENTE_DE_PROYECTO", "Numero_Proyecto", "Nombre", "Administracion", "Secuencia_Firma"],
+                 "Secuencia_Firma asc"),
+  "subjects": ("consulta_ll_proyectos_vs_materia",
+               ["IdMATERIA_PROYECTO", "Numero_Proyecto", "Codigo_Materia", "Descripcion_Materia"], "Descripcion_Materia asc"),
+}
+LAWS_LIST = ("consulta_ll_leyes", ["Numero_Ley", "Numero_Proyecto", "Titulo_Ley", "IdLEY"], "Numero_Ley asc")
+
+SIL_INTERMEDIATE_CERT =pathlib.Path(__file__).parent / "certs" / "globalsign_gcc_r3_dv_tls_ca_2020.pem"
 
 # A frame built by a window's html: new <Frame>({"ventana": ..., "datos": {query: {"0": [rows]}}, ...});
 WINDOW_FRAME_REGEX = re.compile(r'new \w+\((\{"ventana".*?\})\);\r?\n')
 
 DEPUTIES_MODULE = "CNSDIPUTADOS"
 DEPUTIES_FRAME = "ll_CNSDIPUTADOS_Diputados"
+BILLS_MODULE = "CNSPROYECTOS"
+BILLS_FRAME = "consulta_ll_proyectos"
+LAWS_MODULE = "CNSLEYES"
 ORGANS_MODULE = "CNSORGANOS"
 ORGANS_FRAME = "ll_CNSORGANOS_ListaOrganos"
 LEGISLATURE_FRAME = "ff_CNSORGANOS_FiltroLegislatura"
@@ -159,16 +180,57 @@ class AsambleaFetcher:
     text = self.load("organs", f"{organ_code}/bills")
     return {"bills": text} if text is not None else {}
 
+  # ---- Bills and laws (#66) ----
+
+  def fetch_bills_list(self) -> str:
+    """
+    CSV of every bill number and official title (21,977 bills from 1960 on). Downloaded again on every run, since
+    new bills are filed every day (the cached copy is used if the download fails).
+    """
+    return self.cached_export("bills", "list", BILLS_MODULE, None, *BILLS_LIST, refresh = True)
+
+  def fetch_laws_list(self) -> str:
+    """CSV of every law with the number of the bill it came from. Downloaded again on every run, like the bills list."""
+    return self.cached_export("laws", "list", LAWS_MODULE, None, *LAWS_LIST, refresh = True)
+
+  def bill_is_cached(self, number: int) -> bool:
+    return all(self.is_cached("bills", f"{number}/{tab}") for tab in ["general", *BILL_TABS])
+
+  def fetch_bill(self, number: int) -> dict[str, str]:
+    """
+    The bill's tabs: general (type, dates, expiry, archive number), steps (Tramitación), proponents and subjects
+    (Materias). Returns {tab: CSV}. The context is set once, and only if a tab is missing.
+    """
+    context = [{"nombre": "Numero_Proyecto", "valor": number, "marco": BILLS_FRAME}]
+    tabs: dict[str, str] = {"general": self.cached_window("bills", f"{number}/general", BILLS_MODULE, context, *BILL_GENERAL)}
+    for tab, (query, columns, order) in BILL_TABS.items():
+      tabs[tab] = self.cached_export("bills", f"{number}/{tab}", BILLS_MODULE, context, query, columns, order)
+    return tabs
+
+  def load_bill(self, number: int) -> dict[str, str]:
+    """The cached tabs of a bill (missing ones left out). Never downloads."""
+    return {tab: text for tab in ["general", *BILL_TABS] if (text := self.load("bills", f"{number}/{tab}")) is not None}
+
   # ---- Cache ----
 
   def cached_export(self, group: str, key: str, module: str, context: list[dict] | None,
-                    query: str, columns: list[str], order: str) -> str:
-    """The cached CSV, or exports it (setting the context first) and caches it."""
-    if self.is_cached(group, key):
+                    query: str, columns: list[str], order: str, refresh: bool = False) -> str:
+    """
+    The cached CSV, or exports it (setting the context first) and caches it. refresh downloads it even if cached,
+    falling back to the cached copy if the download fails.
+    """
+    if self.is_cached(group, key) and not refresh:
       return self.load(group, key) or ""
-    if context is not None:
-      self.set_context(module, context)
-    text = self.export(module, query, columns, order)
+    try:
+      if context is not None:
+        self.set_context(module, context)
+      text = self.export(module, query, columns, order)
+    except (requests.RequestException, AsambleaError) as error:
+      cached = self.load(group, key) if refresh else None
+      if cached is None:
+        raise
+      logger.warning(f"[asamblea] Could not refresh {group}/{key} ({error!r}), using the cached copy")
+      return cached
     self.save(group, key, text)
     return text
 

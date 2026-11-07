@@ -36,15 +36,6 @@ class UrlCollector:
       logger.warning(f"[{name}] {len(self.failed_sitemaps)} sitemaps could not be fetched, their urls are missing "
             f"(run again with scrap_urls = True): {self.failed_sitemaps}")
 
-  def get_delfino_links(self, max_bill) -> list[str]:
-    urls: list[str] = []
-    for i in range(Config.FIRST_BILL, max_bill + 1):
-      urls.append(self.get_delfino_link(i))
-    return urls
-
-  def get_delfino_link(self, bill_number: int) -> str:
-    return f"https://delfino.cr/asamblea/proyecto/{bill_number}"
-
   def get_delfino_news_links(self, period: DataPeriod = Config.DATA_PERIOD) -> list[str]:
     """News from the yearly sitemaps whose /<year>/<month>/ falls in the period (month precision)."""
     months: set[tuple[int, int]] = set(period.months())

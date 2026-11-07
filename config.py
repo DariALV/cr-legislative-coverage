@@ -55,6 +55,7 @@ class Config:
   # Deputies still in office on or after this date: the filing date of bill FIRST_BILL (20000), so every
   # deputy who could sign or handle one of our bills is kept. Earlier terms can't touch them.
   DEPUTIES_SINCE = datetime(2016, 6, 13)
+  ASAMBLEA_SESSIONS = 3                # bills (#66) are downloaded by this many SIL sessions in parallel, each at RATE_LIMIT
 
   # Storage
   RAW_HTML_DIR = "raw/html"
@@ -64,10 +65,9 @@ class Config:
   PRIVATE_DATABASE = "private_corpus"
   COMMIT_BATCH_SIZE = 50
 
-  # Bills are collected by number, not by period: news in the period discuss older bills too.
+  # Bills (SIL, #66) and their votes (Delfino) are collected by number, not by period: news in the period discuss
+  # older bills too. 20000 was filed on 13/06/2016, ten years before the data period (see docs/bills.md).
   FIRST_BILL = 20000
-  MAX_BILL = 100000
-  MAX_CONSECUTIVE_ERRORS = 5
 
   @staticmethod
   def rate_limit_for(website: str) -> float:

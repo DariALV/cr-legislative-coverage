@@ -1,8 +1,10 @@
+import json
 import logging
 import os
 import re
+import threading
 import requests
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 from typing import Any, Callable
 
@@ -10,16 +12,17 @@ from config import Config, DataPeriod
 from tools.scraping_tools.html_fetcher import HTMLFetcher
 from tools.scraping_tools.asamblea import AsambleaData, Deputy, Organ
 from tools.scraping_tools.asamblea_fetcher import AsambleaError, AsambleaFetcher
-from tools.scraping_tools.asamblea_parser import AsambleaParser
+from tools.scraping_tools.asamblea_parser import AsambleaParser, DeputyMatcher, make_deputy_index
 from tools.scraping_tools.crhoy_parser import CRHoyParser
 from tools.scraping_tools.delfino_parser import DelfinoParser
 from tools.scraping_tools.elmundo_parser import ElMundoParser
 from tools.scraping_tools.semanario_parser import SemanarioParser
 from tools.scraping_tools.wordpress_parser import WordPressParser
 from tools.scraping_tools.nacion_parser import NacionParser
-from tools.scraping_tools.bill_parser import BillParser
+from tools.scraping_tools.delfino_votes import DelfinoVotesParser, VOTES_LIST_URL
 from tools.scraping_tools.news_article import NewsArticle
-from tools.scraping_tools.bill import Bill
+from tools.scraping_tools.bill import Bill, DeputyVote, Law, Vote
+from tools.scraping_tools.bill_flags import flag_bill
 from tools.scraping_tools.url_collector import UrlCollector
 from tools.scraping_tools.section_filter import is_relevant_url, is_relevant_categories, is_relevant_delfino_section
 from tools.file_tools.file_manager import FileManager
@@ -28,19 +31,21 @@ from tools.display_tools.progress import ProgressBoard, ProgressTask
 
 logger = logging.getLogger("cr")
 
+# Delfino vote pages cached without deputies are read again while the vote is this recent (see add_deputy_votes).
+RECENT_VOTE_DAYS = 30
+
 class Pipeline:
   def __init__(self, board: ProgressBoard | None = None):
     """board shows the progress of each website and phase; without one nothing is shown (logs still go to "cr")."""
     self.board: ProgressBoard = board or ProgressBoard(enabled = False)
 
   def scrap_and_save(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
-                     period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
-                     max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
+                     period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL) -> dict[str, Any]:
     """
-    Scrapes every website in parallel and saves the results into the private corpus database.
-    refresh_bills_before re-downloads the bill pages cached before that moment (see scrap_delfino).
+    Scrapes every news website (and Delfino's Plenario votes of bills from first_bill on) in parallel and saves the
+    results into the private corpus database. Bills come from the SIL instead: see scrap_and_save_asamblea (#66).
     """
-    results: dict[str, Any] = self.scrap_websites(scrap_urls, scrap_new_htmls, period, first_bill, max_bill, refresh_bills_before)
+    results: dict[str, Any] = self.scrap_websites(scrap_urls, scrap_new_htmls, period, first_bill)
     database: Database = Database(Config.DATABASE_DIR, Config.PRIVATE_DATABASE)
     database.create_private_corpus_tables()
     self.save_results(results, database)
@@ -55,10 +60,10 @@ class Pipeline:
       delfino: dict[str, Any] = results["delfino"]
       database.insert_news_articles(delfino["news"])
       database.insert_news_bill_links_map(delfino["bill_links"], "link")
-      database.insert_bills(delfino["bills"])
+      counts: dict[str, int] = database.replace_vote_tables(delfino["votes"])
+      self.link_vote_deputies(database)
       linked: int = sum(len(numbers) for numbers in delfino["bill_links"].values())
-      deputy_votes: int = sum(len(event.deputy_votes) for bill in delfino["bills"] for event in bill.events)
-      logger.info(f"[delfino] saved {len(delfino['news'])} news, {linked} bill links, {len(delfino['bills'])} bills, {deputy_votes} deputy votes")
+      logger.info(f"[delfino] saved {len(delfino['news'])} news, {linked} bill links, {counts}")
     if "elmundo" in results:
       database.insert_news_articles(results["elmundo"])
       logger.info(f"[elmundo] saved {len(results['elmundo'])} news")
@@ -70,19 +75,18 @@ class Pipeline:
       logger.info(f"[nacion] saved {len(results['nacion'])} news")
 
   def scrap_websites(self, scrap_urls: bool = False, scrap_new_htmls: bool = False,
-                     period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
-                     max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
+                     period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL) -> dict[str, Any]:
     """
     Scrapes every website in parallel, one thread per website, each with its own fetcher and rate limit.
-    Delfino's news and bills share a thread because they are the same website.
-    Bills are walked from first_bill up to max_bill (inclusive), independent of the period.
+    Delfino's news and votes share a thread because they are the same website. Votes are kept for bills from
+    first_bill on, independent of the period.
     Results are returned (not inserted): SQLite connections can't be shared across threads, so insert
     them from the calling thread. A website that fails is reported and left out; the others continue.
     """
     jobs: dict[str, Callable[[], Any]] = {
       "crhoy": lambda: self.scrap_crhoy(self.make_fetcher("crhoy"), scrap_urls, scrap_new_htmls, period),
       "delfino": lambda: self.scrap_delfino_website(self.make_fetcher("delfino"), scrap_urls, scrap_new_htmls, period,
-                                                    first_bill, max_bill, refresh_bills_before),
+                                                    first_bill),
       "elmundo": lambda: self.scrap_elmundo(self.make_fetcher("elmundo"), scrap_urls, scrap_new_htmls, period),
       "nacion": lambda: self.scrap_nacion(self.make_fetcher("nacion"), scrap_urls, scrap_new_htmls, period),
       "semanario": lambda: self.scrap_semanario(self.make_fetcher("semanario"), scrap_urls, scrap_new_htmls, period),
@@ -99,16 +103,14 @@ class Pipeline:
     return sitemaps_task, download_task, self.board.task(site, "parse")
 
   def scrap_delfino_website(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
-                            period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL,
-                            max_bill: int = Config.MAX_BILL, refresh_bills_before: datetime | None = None) -> dict[str, Any]:
+                            period: DataPeriod = Config.DATA_PERIOD, first_bill: int = Config.FIRST_BILL) -> dict[str, Any]:
     news_tasks = self.news_tasks(fetcher.name, scrap_urls, scrap_new_htmls)
-    # Every row is created now, so the bills and votes show as waiting while the news run (same thread).
-    bills_task: ProgressTask = self.board.task(fetcher.name, "bills")
+    # Every row is created now, so the votes show as waiting while the news run (same thread).
+    list_task: ProgressTask = self.board.task(fetcher.name, "vote list")
     votes_task: ProgressTask = self.board.task(fetcher.name, "votes")
     news_articles, bill_links = self.scrap_delfino_news(fetcher, scrap_urls, scrap_new_htmls, period, news_tasks)
-    bills: list[Bill] = self.scrap_delfino(fetcher, first_bill, max_bill, refresh_before = refresh_bills_before,
-                                           bills_task = bills_task, votes_task = votes_task)
-    return {"news": news_articles, "bill_links": bill_links, "bills": bills}
+    votes: list[Vote] = self.scrap_delfino_votes(fetcher, first_bill, list_task, votes_task)
+    return {"news": news_articles, "bill_links": bill_links, "votes": votes}
 
   def scrap_crhoy(self, fetcher: HTMLFetcher, scrap_urls: bool = False, scrap_new_htmls: bool = False,
                   period: DataPeriod = Config.DATA_PERIOD) -> list[NewsArticle]:
@@ -346,161 +348,149 @@ class Pipeline:
     logger.info(f"[{fetcher.name}] Delfino: {len(news_articles)} news inside the period out of {len(downloaded_urls)} downloaded")
     return news_articles, bill_links
 
-  def scrap_delfino(self, fetcher: HTMLFetcher, first_bill: int = Config.FIRST_BILL, max_bill: int = Config.MAX_BILL,
-                    max_consecutive_errors: int = Config.MAX_CONSECUTIVE_ERRORS,
-                    refresh_before: datetime | None = None, bills_task: ProgressTask | None = None,
-                    votes_task: ProgressTask | None = None) -> list[Bill]:
+  def scrap_delfino_votes(self, fetcher: HTMLFetcher, first_bill: int = Config.FIRST_BILL,
+                          list_task: ProgressTask | None = None, votes_task: ProgressTask | None = None) -> list[Vote]:
     """
-    Walks bills from first_bill upwards. Errors only count once we are past the last
-    successfully collected bill; it stops after max_consecutive_errors errors in a row there
-    (or at max_bill).
-    refresh_before (#23): cached pages saved before that moment are downloaded again, so status,
-    commission, law number, proponents and history are current. Pages already refreshed are kept, so an
-    interrupted refresh resumes where it stopped. Store the result with Database.insert_bills (upsert).
-    bills_task advances once per bill number walked; votes_task once per vote page (created here when not given).
+    Plenario votes of bills from first_bill on, with how each deputy voted (the only bill data still taken from
+    Delfino, #22 #66). The votes come from Delfino's votes list (/asamblea/votaciones?pagina=N, 10 per page, newest
+    first), saved as it is read in raw/links/delfino/votes_list.json:
+    - until the whole list has been read once, each run continues from the last page read (newer votes only push the
+      older ones to later pages, so none is missed);
+    - after that, each run reads from page 1 until a page brings no new vote.
+    Then every vote page is read (cached: a vote doesn't change once published). A page that fails is retried next run.
     """
-    bills_task = bills_task or self.board.task(fetcher.name, "bills")
+    list_task = list_task or self.board.task(fetcher.name, "vote list")
     votes_task = votes_task or self.board.task(fetcher.name, "votes")
-    save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/asamblea/bills"
-    url_collector: UrlCollector = UrlCollector()
-    file_manager: FileManager = FileManager()
-    parser: BillParser = BillParser()
+    state_path: str = f"{Config.RAW_LINKS_DIR}/delfino/votes_list.json"
+    state: dict[str, Any] = load_json(state_path) or {"complete": False, "last_page": 0, "votes": {}}
+    parser: DelfinoVotesParser = DelfinoVotesParser()
 
-    last_success: int = self.last_cached_delfino_success(file_manager, url_collector, save_folder_path, first_bill, max_bill)
-    logger.info(f"[{fetcher.name}] Last bill already collected: {last_success if last_success >= first_bill else 'none'}")
-    # Estimated total: up to the last cached bill; it grows as newer bills are found. Without a cache, a counter.
-    if last_success >= first_bill:
-      bills_task.set_total(last_success - first_bill + 1, estimated = True)
-
-    bills: list[Bill] = []
-    collected_urls: list[str] = []
-    unfetched_bills: list[int] = []
-    consecutive_errors: int = 0
-
-    for number in range(first_bill, max_bill + 1):
-      bills_task.advance()
-      url: str = url_collector.get_delfino_link(number)
-      html: str | None = None
-      if file_manager.html_exists(save_folder_path, url):
-        stale: bool = refresh_before is not None and saved_before(file_manager, save_folder_path, url, refresh_before)
-        if not stale:
-          html = file_manager.load_html(save_folder_path, url)
-
-      # Past the last known bill, cached errors may be stale (new bills get published), so retry them.
-      fetch_failed: bool = False
-      if html is None or (number > last_success and is_error_html(html)):
-        try:
-          html = fetcher.fetch(save_folder_path, url)
-        except requests.RequestException as error:
-          # Network failure after all retries: nothing is saved, so the bill is fetched again on the next run.
-          bills_task.warn(f"Could not fetch bill {number}: {error}")
-          unfetched_bills.append(number)
-          fetch_failed = True
-
-      if fetch_failed or is_error_html(html):
-        if not fetch_failed:
-          # Gaps in the numbering and the end of the bills are expected: logged, not warned.
-          logger.info(f"[{fetcher.name}] Url {url} found {html.lower()}")
-        # Network failures count too, so a long outage past the last bill stops the walk instead of trying every number.
-        if number > last_success:
-          consecutive_errors += 1
-          if consecutive_errors >= max_consecutive_errors:
-            logger.info(f"[{fetcher.name}] {consecutive_errors} consecutive errors after bill {last_success}, stopping.")
-            break
-        continue
-
-      consecutive_errors = 0
-      last_success = max(last_success, number)
-      collected_urls.append(url)
+    was_complete: bool = state["complete"]
+    page: int = 1 if was_complete else max(1, state["last_page"])
+    while True:
       try:
-        bill: Bill = parser.parse(html, url)
-      except Exception as error:
-        # A page with an unexpected layout is reported and skipped; the walk goes on.
-        bills_task.warn(f"Could not parse bill {number}: {error!r}")
-        continue
-      self.add_deputy_votes(fetcher, file_manager, parser, bill, votes_task)
-      bills.append(bill)
+        response = fetcher.get_session().get(VOTES_LIST_URL.format(page = page), timeout = fetcher.timeout)
+        fetcher.rate_limiter.wait()
+      except requests.RequestException as error:
+        list_task.warn(f"Could not fetch the votes list page {page}: {error}")
+        break
+      if response.status_code != 200:
+        list_task.warn(f"Votes list page {page} answered {response.status_code}")
+        break
+      list_task.advance()
+      page_votes: list[Vote] = parser.parse_votes_list(response.text)
+      new_votes: int = sum(1 for v in page_votes if v.vote_id not in state["votes"])
+      for vote in page_votes:
+        state["votes"][vote.vote_id] = vote_to_json(vote)
+      if not re.search(r'href="/asamblea/votaciones/proyecto/\d+', response.text):
+        state["complete"] = True   # past the last page
+        save_json(state_path, state)
+        break
+      if not was_complete:
+        state["last_page"] = page
+      save_json(state_path, state)
+      if was_complete and new_votes == 0:
+        break   # reached votes already known
+      page += 1
+    list_task.finish()
+    if not state["complete"]:
+      logger.warning(f"[{fetcher.name}] The votes list was read up to page {state['last_page']}; run again to read the rest")
 
-    bills_task.finish()
-    votes_task.finish()
-    file_manager.save_dict_as_json(f"{Config.RAW_LINKS_DIR}/delfino", "delfino_links", {"links": collected_urls})
-    if unfetched_bills:
-      logger.warning(f"[{fetcher.name}] {len(unfetched_bills)} bills could not be fetched (run again to retry them): {unfetched_bills}")
-    return bills
+    votes: list[Vote] = sorted((vote_from_json(v) for v in state["votes"].values() if v["number"] >= first_bill),
+                               key = lambda v: v.vote_id)
+    self.add_deputy_votes(fetcher, parser, votes, votes_task)
+    logger.info(f"[{fetcher.name}] {len(votes)} votes of bills from {first_bill} on, out of {len(state['votes'])} listed")
+    return votes
 
-  def add_deputy_votes(self, fetcher: HTMLFetcher, file_manager: FileManager, parser: BillParser, bill: Bill,
-                       votes_task: ProgressTask | None = None):
+  def add_deputy_votes(self, fetcher: HTMLFetcher, parser: DelfinoVotesParser, votes: list[Vote], votes_task: ProgressTask):
     """
-    Fills each vote event of the bill with how every deputy voted, from its Delfino vote page. A vote page doesn't
-    change once published, so a cached one is never downloaded again. A page that fails leaves that vote without
-    deputies (a cached error is retried on the next run). votes_task advances once per vote page.
+    Fills each vote with how every deputy voted, from its Delfino vote page. A cached page is never downloaded again;
+    a page that fails leaves that vote without deputies (a cached error is retried on the next run).
     """
-    votes_task = votes_task or self.board.task(fetcher.name, "votes")
     save_folder_path: str = f"{Config.RAW_HTML_DIR}/delfino/asamblea/votes"
-    for event in bill.events:
-      if event.event_type != "vote" or not event.url:
-        continue
+    file_manager: FileManager = FileManager()
+    recent: date = date.today() - timedelta(days = RECENT_VOTE_DAYS)
+    votes_task.set_total(len(votes))
+    for vote in votes:
       votes_task.advance()
       html: str | None = None
-      if file_manager.html_exists(save_folder_path, event.url):
-        html = file_manager.load_html(save_folder_path, event.url)
+      if file_manager.html_exists(save_folder_path, vote.url):
+        html = file_manager.load_html(save_folder_path, vote.url)
+        # A recent vote cached without deputies may have been read before Delfino loaded them: read it again.
+        if not is_error_html(html) and vote.date and vote.date >= recent and not parser.parse_vote_page(html):
+          html = None
       if html is None or is_error_html(html):
         try:
-          html = fetcher.fetch(save_folder_path, event.url)
+          html = fetcher.fetch(save_folder_path, vote.url)
         except requests.RequestException as error:
-          votes_task.warn(f"Could not fetch vote {event.url}: {error}")
+          votes_task.warn(f"Could not fetch vote {vote.url}: {error}")
           continue
       if is_error_html(html):
-        votes_task.warn(f"Vote {event.url} found {html.lower()}")
+        votes_task.warn(f"Vote {vote.url} found {html.lower()}")
         continue
       try:
-        event.deputy_votes = parser.parse_vote_page(html)
+        vote.deputy_votes = parser.parse_vote_page(html)
       except Exception as error:
-        votes_task.warn(f"Could not parse vote {event.url} of bill {bill.number}: {error!r}")
-      if not event.deputy_votes:
-        votes_task.warn(f"Vote {event.url} of bill {bill.number} lists no deputies")
+        votes_task.warn(f"Could not parse vote {vote.url} of bill {vote.number}: {error!r}")
+      if not vote.deputy_votes:
+        votes_task.warn(f"Vote {vote.url} of bill {vote.number} lists no deputies")
+    votes_task.finish()
 
-  def last_cached_delfino_success(self, file_manager: FileManager, url_collector: UrlCollector, save_folder_path: str,
-                                  first_bill: int, max_bill: int) -> int:
-    """Highest bill number with a cached, non-error HTML (first_bill - 1 if none)."""
-    for number in range(max_bill, first_bill - 1, -1):
-      url: str = url_collector.get_delfino_link(number)
-      if file_manager.html_exists(save_folder_path, url) and not is_error_html(file_manager.load_html(save_folder_path, url)):
-        return number
-    return first_bill - 1
+  def link_vote_deputies(self, database: Database):
+    """
+    Sets vote_deputies.deputy_id from the stored deputies (SIL, #65), matching Delfino's name to a deputy in office
+    on the vote date. Runs after saving votes and after saving deputies, so either order works.
+    """
+    matcher: DeputyMatcher = DeputyMatcher(database.get_deputies_for_matching())
+    rows = database.get_vote_deputies_for_matching()
+    matches: list[tuple[int | None, str, str]] = [(matcher.match(name, date.fromisoformat(day) if day else None), vote_id, slug)
+                                                  for vote_id, slug, name, day in rows]
+    database.update_vote_deputy_ids(matches)
+    unmatched: set[str] = {f"{name}" for (deputy_id, _, _), (_, _, name, _) in zip(matches, rows) if deputy_id is None}
+    if rows:
+      logger.info(f"[delfino] {len(rows) - sum(1 for m in matches if m[0] is None)} of {len(rows)} deputy votes matched "
+                  f"to SIL deputies; {len(unmatched)} names unmatched: {sorted(unmatched)[:20]}")
 
   def scrap_and_save_asamblea(self, refresh_before: datetime | None = None,
-                              deputies_since: datetime = Config.DEPUTIES_SINCE) -> dict[str, int]:
+                              deputies_since: datetime = Config.DEPUTIES_SINCE, first_bill: int = Config.FIRST_BILL,
+                              sessions: int = Config.ASAMBLEA_SESSIONS) -> dict[str, int]:
     """
-    Deputies and legislative organs from the Asamblea's SIL into the private corpus database (#65).
+    Deputies, legislative organs (#65) and bills (#66) from the Asamblea's SIL into the private corpus database.
     Downloads what is not cached yet, then rebuilds the SIL tables from the cache. Ctrl+C (or a network failure)
     stops the downloads but still builds the tables with what was cached, so nothing downloaded is lost and the next
     run continues where this one stopped. refresh_before re-downloads the files cached before that moment.
+    Bills are downloaded by several sessions in parallel (sessions), each at Config.RATE_LIMIT.
     Returns the number of rows per table.
     """
     fetcher: AsambleaFetcher = AsambleaFetcher(refresh_before = refresh_before)
     parser: AsambleaParser = AsambleaParser()
     try:
-      self.fetch_asamblea(fetcher, parser, deputies_since)
+      self.fetch_asamblea(fetcher, parser, deputies_since, first_bill, sessions, refresh_before)
     except KeyboardInterrupt:
       logger.warning("[asamblea] Stopped (Ctrl+C): building the tables with what is cached. Run again to continue.")
     except (requests.RequestException, AsambleaError) as error:
       logger.error(f"[asamblea] Download stopped: {error!r}. Building the tables with what is cached.")
-    data: AsambleaData = self.build_asamblea_data(fetcher, parser, deputies_since)
+    data: AsambleaData = self.build_asamblea_data(fetcher, parser, deputies_since, first_bill)
     database: Database = Database(Config.DATABASE_DIR, Config.PRIVATE_DATABASE)
     database.create_private_corpus_tables()
     counts: dict[str, int] = database.replace_asamblea_tables(data, datetime.now())
+    counts.update(database.replace_bill_tables(data.bills, data.laws))
+    self.link_vote_deputies(database)
     logger.info(f"[asamblea] saved {counts}")
     return counts
 
-  def fetch_asamblea(self, fetcher: AsambleaFetcher, parser: AsambleaParser, deputies_since: datetime):
+  def fetch_asamblea(self, fetcher: AsambleaFetcher, parser: AsambleaParser, deputies_since: datetime,
+                     first_bill: int = Config.FIRST_BILL, sessions: int = Config.ASAMBLEA_SESSIONS,
+                     refresh_before: datetime | None = None):
     """
     Block 1: every tab of each deputy term still running on or after deputies_since.
-    Block 2: the bills each active organ holds today. Cached deputies and organs are skipped.
-    A deputy or organ that fails is warned about and retried on the next run; the others go on.
+    Block 2: the bills each active organ holds today.
+    Block 3: the tabs of every bill from first_bill on (several sessions in parallel), plus the laws list.
+    Cached items are skipped. One that fails is warned about and retried on the next run; the others go on.
     """
     deputies_task: ProgressTask = self.board.task("asamblea", "deputies")
     organs_task: ProgressTask = self.board.task("asamblea", "organs")
+    bills_task: ProgressTask = self.board.task("asamblea", "bills")
 
     deputies: list[Deputy] = parser.select_deputies(parser.parse_deputies_list(fetcher.fetch_deputies_list()), deputies_since)
     deputies_task.set_total(len(deputies))
@@ -531,8 +521,59 @@ class Pipeline:
       organs_task.advance()
     organs_task.finish()
 
-  def build_asamblea_data(self, fetcher: AsambleaFetcher, parser: AsambleaParser, deputies_since: datetime) -> AsambleaData:
-    """Every SIL record from the cached CSVs only (no downloads). Deputies whose tabs aren't cached keep empty fields."""
+    fetcher.fetch_laws_list()
+    numbers: list[int] = sorted(parser.parse_bills_list(fetcher.fetch_bills_list(), first_bill))
+    self.fetch_sil_bills(numbers, sessions, refresh_before, bills_task)
+
+  def fetch_sil_bills(self, numbers: list[int], sessions: int, refresh_before: datetime | None, task: ProgressTask):
+    """
+    Downloads the tabs of the bills not cached yet, with `sessions` SIL sessions in parallel (one thread and one
+    rate limit each; bills are dealt round-robin). Ctrl+C asks the threads to stop after their current bill, waits for
+    them and is raised again, so the caller still builds the tables from the cache.
+    """
+    task.set_total(len(numbers))
+    probe: AsambleaFetcher = AsambleaFetcher(refresh_before = refresh_before)
+    missing: list[int] = []
+    for number in numbers:
+      if probe.bill_is_cached(number):
+        task.advance()
+      else:
+        missing.append(number)
+    stop: threading.Event = threading.Event()
+
+    def work(chunk: list[int]):
+      fetcher: AsambleaFetcher = AsambleaFetcher(refresh_before = refresh_before)
+      for number in chunk:
+        if stop.is_set():
+          return
+        try:
+          fetcher.fetch_bill(number)
+        except (requests.RequestException, AsambleaError) as error:
+          task.warn(f"Could not fetch bill {number}: {error!r}")
+        task.advance()
+
+    threads: list[threading.Thread] = [threading.Thread(target = work, args = (missing[i::sessions],), name = f"sil-{i}", daemon = True)
+                                       for i in range(max(1, sessions))]
+    for thread in threads:
+      thread.start()
+    try:
+      while any(thread.is_alive() for thread in threads):
+        for thread in threads:
+          thread.join(timeout = 0.5)
+    except KeyboardInterrupt:
+      stop.set()
+      logger.warning("[asamblea] Ctrl+C: waiting for the bill sessions to finish their current bill...")
+      for thread in threads:
+        thread.join()
+      raise
+    task.finish()
+
+  def build_asamblea_data(self, fetcher: AsambleaFetcher, parser: AsambleaParser, deputies_since: datetime,
+                          first_bill: int = Config.FIRST_BILL) -> AsambleaData:
+    """
+    Every SIL record from the cached CSVs only (no downloads). Deputies and bills whose tabs aren't cached keep
+    empty fields (a bill without its tabs keeps only its number and title, and no status).
+    """
     data: AsambleaData = AsambleaData()
     deputies_list: str | None = fetcher.load("deputies", "list")
     if deputies_list:
@@ -545,6 +586,26 @@ class Pipeline:
       for organ in data.organs:
         if organ.status == "ACTIVO":
           parser.parse_organ(organ, fetcher.load_organ(organ.organ_code), data)
+
+    laws_list: str | None = fetcher.load("laws", "list")
+    data.laws = parser.parse_laws_list(laws_list) if laws_list else []
+    law_numbers: dict[int, list[int]] = {}
+    for law in data.laws:
+      if law.bill_number is not None:
+        law_numbers.setdefault(law.bill_number, []).append(law.law_number)
+    bills_list: str | None = fetcher.load("bills", "list")
+    if bills_list:
+      deputy_index: dict[tuple[str, str], int] = make_deputy_index(data.deputies)
+      extracted: datetime = datetime.now()
+      for number, title in sorted(parser.parse_bills_list(bills_list, first_bill).items()):
+        bill: Bill = parser.parse_bill(number, title, fetcher.load_bill(number), law_numbers.get(number, []),
+                                       deputy_index, extracted)
+        bill.flag = flag_bill(bill)
+        data.bills.append(bill)
+      matched: int = sum(1 for b in data.bills for p in b.proponents if p.deputy_id is not None)
+      total: int = sum(len(b.proponents) for b in data.bills)
+      logger.info(f"[asamblea] {matched} of {total} bill proponents matched to SIL deputies (the rest: the executive, "
+                  f"other signers, or terms before {deputies_since.date()})")
     return data
 
   def apply_embeddings(self):
@@ -568,6 +629,25 @@ def run_in_parallel(jobs: dict[str, Callable[[], Any]]) -> dict[str, Any]:
 def saved_before(file_manager: FileManager, folder_path: str, name: str, moment: datetime) -> bool:
   """True if the cached file was written before moment (local machine time)."""
   return datetime.fromtimestamp(os.path.getmtime(file_manager.get_path(folder_path, name, ".html", True))) < moment
+
+def vote_to_json(vote: Vote) -> dict[str, Any]:
+  return {"vote_id": vote.vote_id, "number": vote.number, "date": vote.date.isoformat() if vote.date else None,
+          "name": vote.name, "description": vote.description, "result": vote.result, "url": vote.url}
+
+def vote_from_json(data: dict[str, Any]) -> Vote:
+  return Vote(data["vote_id"], data["number"], date.fromisoformat(data["date"]) if data["date"] else None,
+              data["name"], data["description"], data["result"], data["url"])
+
+def load_json(path: str) -> dict[str, Any] | None:
+  return json.loads(open(path, encoding = "utf-8").read()) if os.path.exists(path) else None
+
+def save_json(path: str, data: dict[str, Any]):
+  """Atomic (temp file + rename), so a Ctrl+C while writing keeps the previous file."""
+  os.makedirs(os.path.dirname(path), exist_ok = True)
+  temp: str = path + ".tmp"
+  with open(temp, "w", encoding = "utf-8") as file:
+    json.dump(data, file, ensure_ascii = False)
+  os.replace(temp, path)
 
 def is_error_html(html: str) -> bool:
   return re.fullmatch(r"Error (\d{3})", html) is not None

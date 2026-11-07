@@ -1,6 +1,8 @@
 from dataclasses import dataclass, field
 from datetime import date
 
+from tools.scraping_tools.bill import Bill, Law
+
 # Records from the Asamblea Legislativa's SIL (#65). Ids are the SIL's own. No cédulas: people are linked
 # across terms by person_id (the SIL's internal IdCEDULA, which is not the cédula).
 
@@ -87,3 +89,5 @@ class AsambleaData:
     organ_memberships: list[OrganMembership] = field(default_factory = list)
     organs: list[Organ] = field(default_factory = list)
     organ_bills: list[OrganBill] = field(default_factory = list)
+    bills: list[Bill] = field(default_factory = list)      # #66
+    laws: list[Law] = field(default_factory = list)

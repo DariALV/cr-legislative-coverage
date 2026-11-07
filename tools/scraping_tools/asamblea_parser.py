@@ -1,8 +1,10 @@
+import unicodedata
 from datetime import date, datetime
 
 from tools.scraping_tools.asamblea import (AsambleaData, Deputy, DeputyBill, DeputyFaction, DeputyReplacement, DeputyTerm,
                                            Organ, OrganBill, OrganMembership)
 from tools.scraping_tools.asamblea_fetcher import read_csv_rows
+from tools.scraping_tools.bill import Bill, BillProponent, BillStep, BillSubject, Law
 
 class AsambleaParser:
   """
@@ -83,6 +85,100 @@ class AsambleaParser:
       if number is not None:
         data.organ_bills.append(OrganBill(organ.organ_code, number, parse_date(r["Fecha_Inicio"]),
                                           parse_date(r["Fecha_Termino"]), clean(r["Descripcion_Tramite"])))
+
+  # ---- Bills and laws (#66) ----
+
+  def parse_bills_list(self, text: str, first_bill: int) -> dict[int, str]:
+    """{number: official title} for every bill from first_bill on (the SIL list goes back to 1960)."""
+    bills: dict[int, str] = {}
+    for r in read_csv_rows(text):
+      number = parse_int(r["Numero_Proyecto"])
+      if number is not None and number >= first_bill:
+        bills[number] = clean(r["Asunto_Proyecto"]) or ""
+    return bills
+
+  def parse_laws_list(self, text: str) -> list[Law]:
+    """Every law with its bill. Rows without a law number (one blank row in the list) are skipped."""
+    laws: list[Law] = []
+    for r in read_csv_rows(text):
+      law_number = parse_int(r["Numero_Ley"])
+      if law_number:
+        laws.append(Law(law_number, parse_int(r["Numero_Proyecto"]), clean(r["Titulo_Ley"]), int(r["IdLEY"])))
+    return laws
+
+  def parse_bill(self, number: int, title: str, tabs: dict[str, str], law_numbers: list[int],
+                 deputy_index: dict[tuple[str, str], int], date_extracted: datetime) -> Bill:
+    """
+    One bill from its cached tabs (a missing tab leaves its fields empty). law_numbers come from the laws list.
+    Proponents are matched to deputies by name and term (deputy_index, see make_deputy_index): the SIL writes the
+    same name in both screens, so no cédula is needed. Signers that aren't deputies (the executive) stay unmatched.
+    """
+    bill = Bill(number, title, date_extracted)
+    for r in read_csv_rows(tabs.get("general", "")):
+      bill.file_type = clean(r["Descripcion_Tipo"])
+      bill.date_proposed = parse_date(r["Fecha_Iniciacion"])
+      bill.archive_number = parse_int(r["Numero_Archivado"])
+      bill.date_expiry = parse_date(r["Fecha_Vencimiento"])
+      bill.date_expiry_four_year = parse_date(r["Fecha_Cuatrienal"])
+    bill.law_number = min(law_numbers) if law_numbers else None
+    if bill.law_number:
+      bill.status = "law"
+    elif "general" in tabs:   # without the General tab the archive number is unknown, so the status is too
+      bill.status = "archived" if bill.archive_number else "in progress"
+
+    for r in read_csv_rows(tabs.get("steps", "")):
+      bill.steps.append(BillStep(int(r["IdTRAMITACION_DE_PROYECTO"]), clean(r["Nombre_Corto"]),
+                                 clean(r["Descripcion_Tramite"]) or "", parse_date(r["Fecha_Inicio"]), parse_date(r["Fecha_Termino"])))
+    for r in read_csv_rows(tabs.get("proponents", "")):
+      name, term = clean(r["Nombre"]) or "", clean(r["Administracion"])
+      bill.proponents.append(BillProponent(int(r["IdPROPONENTE_DE_PROYECTO"]), name, term, parse_int(r["Secuencia_Firma"]),
+                                           deputy_index.get((normalize_name(name), term or ""))))
+    for r in read_csv_rows(tabs.get("subjects", "")):
+      code = parse_int(r["Codigo_Materia"])
+      subject = clean(r["Descripcion_Materia"])
+      if code is not None and subject:
+        bill.subjects.append(BillSubject(code, subject))
+    return bill
+
+class DeputyMatcher:
+  """
+  Matches a name written as Delfino does ("Ivonne Acuña Cabrera": names first, mixed case, sometimes without a
+  second name) to the SIL deputy in office on a given date. Tries, among the deputies in office that day:
+  1. the same name ("NAMES SURNAMES", without accents);
+  2. the same words in any order;
+  3. a single deputy whose name holds every word of the given one.
+  Anything else (no candidate or several) is left unmatched.
+  """
+
+  def __init__(self, deputies: list[tuple[int, str, str, str | None, str | None]]):
+    """deputies: (deputy_id, surnames, names, date_from, date_to) as Database.get_deputies_for_matching returns them."""
+    self.deputies = [(deputy_id, normalize_name(f"{names} {surnames}"),
+                      date.fromisoformat(date_from) if date_from else None, date.fromisoformat(date_to) if date_to else None)
+                     for deputy_id, surnames, names, date_from, date_to in deputies]
+
+  def match(self, name: str, when: date | None) -> int | None:
+    if when is None:
+      return None
+    candidates = [(deputy_id, full) for deputy_id, full, start, end in self.deputies
+                  if (start is None or start <= when) and (end is None or when <= end)]
+    target = normalize_name(name)
+    words = set(target.split())
+    for rule in (lambda full: full == target, lambda full: set(full.split()) == words, lambda full: words <= set(full.split())):
+      found = [deputy_id for deputy_id, full in candidates if rule(full)]
+      if len(found) == 1:
+        return found[0]
+      if len(found) > 1:
+        return None
+    return None
+
+def make_deputy_index(deputies: list[Deputy]) -> dict[tuple[str, str], int]:
+  """{(normalized "SURNAMES NAMES", term): deputy_id}, to match bill proponents and Delfino voters to deputies."""
+  return {(normalize_name(f"{d.surnames} {d.names}"), d.term): d.deputy_id for d in deputies}
+
+def normalize_name(name: str) -> str:
+  """Upper case, no accents, single spaces: "Vásquez  Castro" and "VASQUEZ CASTRO" are the same name."""
+  text = unicodedata.normalize("NFD", name.upper())
+  return " ".join("".join(c for c in text if unicodedata.category(c) != "Mn").split())
 
 def clean(value: str | None) -> str | None:
   """Strips the value (the SIL pads many texts with spaces); empty becomes None."""
