@@ -11,6 +11,13 @@
 - Log as you go, not only at the end of the chat, so nothing is lost if the session is cut.
 - At the start of a chat, read the recent logs to pick up the context.
 
+## Code in English (always)
+
+Everything inside code files is in English, even though the chat is in Spanish:
+
+- Identifiers (variables, functions, classes, files, CLI flags), comments, docstrings, strings, log messages and CLI help.
+- When proposing a design in chat, name things in English too (e.g. `evaluate(genes) -> fitness`, not `matriz_de_genes`), with the explanation in Spanish.
+
 ## Design before code
 
 Don't write project code for an issue until its design and its caveats have been agreed with the user. Claude doesn't decide them alone, even when asked to "do everything you can". Running code is always fine: scripts, tests and inspecting data or sources.
