@@ -109,6 +109,10 @@ class EmbeddingRunner:
   def gold_news_ids(self) -> list[str]:
     return [row[0] for row in self.connection.execute("SELECT DISTINCT news_id FROM news_bill_links ORDER BY news_id")]
 
+  def all_news_ids(self) -> list[str]:
+    """Every news article, gold included; short or partially extracted ones too (the analysis can flag them)."""
+    return [row[0] for row in self.connection.execute("SELECT id FROM news_articles ORDER BY id")]
+
   def news_items(self, news_ids: list[str], size: int, overlap: int) -> list[EmbeddingItem]:
     """Title + content cut in chunks of at most size tokens, the title (and separator) counted in every chunk."""
     embedder = self.get_embedder()
