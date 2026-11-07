@@ -223,3 +223,6 @@ databases/private_corpus.db
 databases/public_corpus.db
 logs/
 private_visuals/output/
+
+# Embedding vectors (#32): too big for git, moved between machines by hand
+databases/embeddings/

@@ -21,13 +21,16 @@ class Embedder:
     self.tokenizer = self.model.tokenizer
     self.batch_size = batch_size
 
-  def embed(self, texts: list[str], prompt: str | None = None, show_progress: bool = False) -> np.ndarray:
+  def embed(self, texts: list[str], prompt: str | None = None, show_progress: bool = False,
+            batch_size: int | None = None) -> np.ndarray:
     """
     One normalized vector per text, shape (len(texts), dim). prompt is put before every text (e.g. the query
     instruction some models expect for the searching side); leave it None for models or sides that don't use one.
+    batch_size overrides self.batch_size for this call.
     """
-    embeddings = self.model.encode(texts, prompt = prompt, batch_size = self.batch_size, normalize_embeddings = True,
-                                   convert_to_numpy = True, show_progress_bar = show_progress)
+    embeddings = self.model.encode(texts, prompt = prompt, batch_size = batch_size or self.batch_size,
+                                   normalize_embeddings = True, convert_to_numpy = True,
+                                   show_progress_bar = show_progress)
     return embeddings.astype(np.float32)
 
   def count_tokens(self, text: str) -> int:
