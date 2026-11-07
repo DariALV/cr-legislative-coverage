@@ -1,0 +1,44 @@
+{
+  "generated": "2026-11-07T13:21:29",
+  "database_modified": "2026-11-07T02:15:30",
+  "models": [
+    "bge-m3",
+    "qwen3-0.6b"
+  ],
+  "n_configurations": 78,
+  "missing_files": [],
+  "ks": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    50,
+    100
+  ],
+  "bootstrap": 1000,
+  "seed": 7,
+  "rank_by": "recall@30",
+  "candidate_sets": [
+    "all",
+    "no_flagged",
+    "by_date"
+  ],
+  "aggregations": [
+    "mean",
+    "max",
+    "top3"
+  ],
+  "n_news": 532,
+  "n_links": 1423,
+  "dropped_links": 2,
+  "n_bills": 5898,
+  "links_name_cited": 624,
+  "links_to_flagged": 111,
+  "best": {
+    "config": "qwen3-0.6b/news_256/bills_exposition/max",
+    "metric": "recall@30",
+    "value": 0.7725797673400459,
+    "mrr": 0.6101663715952815
+  }
+}

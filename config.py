@@ -90,6 +90,13 @@ class Config:
   EMBEDDING_TOKENS_PER_BATCH = 8192   # texts per GPU batch = this / longest text in it (32 for 256, 1 for 8000)
   EMBEDDING_CHECKPOINT_SECONDS = 300  # a run saves what it has done this often, and a cut run resumes from there
 
+  # Embedding analysis (#38, #33): recall of the gold bills over the .npz files, see EmbeddingAnalyzer.
+  EMBEDDING_RESULTS_DIR = "results/embeddings"   # numbers only, kept in git
+  EMBEDDING_CROSS_DATA = "private_visuals/output/embedding_cross/data.js"   # top-K with titles, not in git
+  EMBEDDING_KS = [1, 5, 10, 20, 30, 50, 100]
+  EMBEDDING_BOOTSTRAP = 1000          # resamples over news for the 95 % intervals
+  EMBEDDING_RANK_BY = "recall@30"     # metric that picks the best configuration (K = 30 is the initial K of #33)
+
   # Embedding models to try (#6, #32). Adding one is adding an entry; Embedder takes these values as arguments.
   EMBEDDING_MODELS = {
     "bge-m3": EmbeddingModel("BAAI/bge-m3", max_tokens = 8192),
