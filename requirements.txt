@@ -1,7 +1,14 @@
+# PyTorch's CUDA builds live on their own index; without it pip installs the CPU-only torch on Windows.
+# Check on the GPU machine: python -c "import torch; print(torch.cuda.is_available())"
+--extra-index-url https://download.pytorch.org/whl/cu126
 beautifulsoup4>=4.12
 lxml>=5.0
+numpy>=1.26
 python-dotenv>=1.0
 requests>=2.32
 rich>=13.0
+sentence-transformers>=3.0
+torch>=2.6
+transformers>=4.51   # Qwen3-Embedding needs 4.51+
 typesafe-sdk>=0.7.5
 urllib3>=2.0

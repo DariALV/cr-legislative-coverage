@@ -27,6 +27,12 @@ class DataPeriod:
   def start_date(self) -> date:
     return self.start.date()
 
+@dataclass(frozen = True)
+class EmbeddingModel:
+  name: str                         # Hugging Face model id
+  max_tokens: int                   # longer texts are truncated by the model
+  query_prompt: str | None = None   # instruction put before the searching side (news); None if the model uses none
+
 def to_costa_rica_time(moment_text: str) -> datetime:
   """
   ISO timestamp (with 'Z' or an offset) converted to naive Costa Rica local time. Naive input is returned as is.
@@ -76,3 +82,11 @@ class Config:
   # Outlet types, used to group the analysis
   GENERAL_OUTLET = "general"
   SPECIALIZED_OUTLET = "specialized"
+
+  # Embedding models to try (#6, #32). Adding one is adding an entry; Embedder takes these values as arguments.
+  EMBEDDING_MODELS = {
+    "bge-m3": EmbeddingModel("BAAI/bge-m3", max_tokens = 8192),
+    "qwen3-0.6b": EmbeddingModel(
+      "Qwen/Qwen3-Embedding-0.6B", max_tokens = 8192,
+      query_prompt = "Instruct: Given a Costa Rican news article, retrieve the legislative bills it discusses\nQuery: "),
+  }
