@@ -78,8 +78,15 @@ Pipeline().scrap_and_save_asamblea()   # deputies, organs, then bills (see docs/
   - Left out: elections (`/votaciones/eleccion/`, appointments voted by candidate, with "En blanco" instead of for / against) and motions without a bill (`/votaciones/mocion/`, e.g. "Moción de sesión extraordinaria (art. 32)").
 - **Deputy votes:**
   - `vote` is `for`, `against` or `absent`. Other labels are kept as Delfino writes them (elections, "Abstención", "Ausente (pierde dieta)"…); the suggested mapping is in #22.
-  - `deputy_id` is matched to the deputy in office on the vote date, by name: exact name, then the same words in any order, then a single deputy whose name holds every word.
-  - On the full read, 498,468 of 513,432 deputy votes matched. The 14,964 left come from 6 names: "Gerarld Bogantes Rivera" (a typo on Delfino), Cynthia Córdoba Serrano, Jonathan Acuña Soto, José María Villalta Flórez-Estrada, Kathia Calvo Cruz and Shirley Díaz Mejía.
+  - `deputy_id` is matched to the deputy in office on the vote date, by name (`DeputyMatcher`), with hyphens as spaces ("Flórez-Estrada" is FLOREZ ESTRADA). Each rule is tried only if the previous ones found nobody:
+    1. the exact name;
+    2. the same words in any order;
+    3. a single deputy whose name holds every word;
+    4. a single deputy with the same two surnames, for first names spelled differently ("Jonathan" for JOHNATAN JESÚS Acuña Soto, "Kathia" for KATTIA Calvo Cruz, "Gerarld" for GERALD Bogantes Rivera);
+    5. a single deputy whose name is at least 85 % similar ("Shirley Díaz Mejía" for DÍAZ MEJÍAS).
+  - Rules 4–5 and the hyphen were added after the full read: they matched 14,959 more deputy votes (5 names) and changed none of the earlier matches. Now 513,427 of 513,432 are matched.
+  - The 5 left are Cynthia Córdoba Serrano's on votes 202407151–155: Delfino dates them 15/04/2024, before she took office (02/05/2024), while their id says 15/07/2024.
+- **Dates that don't fit the id:** the id starts with the date (`YYYYMMDD` plus a 1–3 digit sequence), and 19 votes carry a different date on Delfino (e.g. 202309262–265 dated 26/06/2023, 202308221 dated 22/08/2022). The date is stored as Delfino gives it: in some cases (e.g. 202109081 dated 09/08/2021) it isn't clear which one is right.
 
 ## Base texts (#32)
 

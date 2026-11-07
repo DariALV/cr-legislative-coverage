@@ -192,30 +192,45 @@ class DeputyMatcher:
   second name) to the SIL deputy in office on a given date. Tries, among the deputies in office that day:
   1. the same name ("NAMES SURNAMES", without accents);
   2. the same words in any order;
-  3. a single deputy whose name holds every word of the given one.
-  Anything else (no candidate or several) is left unmatched.
+  3. a single deputy whose name holds every word of the given one;
+  4. a single deputy with the same two surnames (the last two words of the given name), for first names spelled
+     differently ("Jonathan Acuña Soto" for JOHNATAN JESÚS ACUÑA SOTO, "Kathia" for KATTIA);
+  5. a single deputy whose name is at least MATCH_SIMILARITY similar ("Shirley Díaz Mejía" for DÍAZ MEJÍAS).
+  Hyphens count as spaces ("Flórez-Estrada" is FLOREZ ESTRADA). Each rule is tried only if the previous ones found
+  nobody; anything else (no candidate or several) is left unmatched.
   """
+  MATCH_SIMILARITY = 0.85
 
   def __init__(self, deputies: list[tuple[int, str, str, str | None, str | None]]):
     """deputies: (deputy_id, surnames, names, date_from, date_to) as Database.get_deputies_for_matching returns them."""
-    self.deputies = [(deputy_id, normalize_name(f"{names} {surnames}"),
+    self.deputies = [(deputy_id, matcher_name(f"{names} {surnames}"), matcher_name(surnames),
                       date.fromisoformat(date_from) if date_from else None, date.fromisoformat(date_to) if date_to else None)
                      for deputy_id, surnames, names, date_from, date_to in deputies]
 
   def match(self, name: str, when: date | None) -> int | None:
     if when is None:
       return None
-    candidates = [(deputy_id, full) for deputy_id, full, start, end in self.deputies
+    candidates = [(deputy_id, full, surnames) for deputy_id, full, surnames, start, end in self.deputies
                   if (start is None or start <= when) and (end is None or when <= end)]
-    target = normalize_name(name)
+    target = matcher_name(name)
     words = set(target.split())
-    for rule in (lambda full: full == target, lambda full: set(full.split()) == words, lambda full: words <= set(full.split())):
-      found = [deputy_id for deputy_id, full in candidates if rule(full)]
+    last_two = " ".join(target.split()[-2:])
+    rules = (lambda full, surnames: full == target,
+             lambda full, surnames: set(full.split()) == words,
+             lambda full, surnames: words <= set(full.split()),
+             lambda full, surnames: surnames == last_two,
+             lambda full, surnames: SequenceMatcher(None, full, target).ratio() >= self.MATCH_SIMILARITY)
+    for rule in rules:
+      found = [deputy_id for deputy_id, full, surnames in candidates if rule(full, surnames)]
       if len(found) == 1:
         return found[0]
       if len(found) > 1:
         return None
     return None
+
+def matcher_name(name: str) -> str:
+  """normalize_name with hyphens as spaces, for DeputyMatcher (Delfino writes "Flórez-Estrada", the SIL FLOREZ ESTRADA)."""
+  return normalize_name(name.replace("-", " "))
 
 def make_deputy_index(deputies: list[Deputy]) -> dict[tuple[str, str], int]:
   """{(normalized "SURNAMES NAMES", term): deputy_id}, to match bill proponents and Delfino voters to deputies."""
