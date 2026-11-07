@@ -1,3 +1,4 @@
+import hashlib
 import json
 import logging
 import os
@@ -37,7 +38,9 @@ class EmbeddingRunner:
   <Config.EMBEDDINGS_DIR>/<model key>/:
     news_<size>[_o<overlap>].npz   chunks of title + content (title repeated in every chunk), size in tokens
     bills_<variant>.npz            one vector per bill: name, name + subjects, or name + exposition
-  Runs whose file already exists are skipped, so an interrupted run resumes at the next file. Every file holds the
+  Runs whose file already exists are skipped, so an interrupted run resumes at the next file. Inside a run, what is
+  done is saved every checkpoint_seconds to <name>.checkpoint.npz, and a cut run resumes from it when the texts and
+  the model are the same (the checkpoint is deleted once the .npz is written). Every file holds the
   vectors, one row of ids per vector, and a JSON 'meta' with everything needed to reproduce it.
   The news side gets the model's query prompt (if any); bills are the documents and get none.
   Reads the database read-only.
@@ -45,13 +48,14 @@ class EmbeddingRunner:
 
   def __init__(self, model_key: str, board: ProgressBoard | None = None, database_path: str | None = None,
                output_dir: str = Config.EMBEDDINGS_DIR, tokens_per_batch: int = Config.EMBEDDING_TOKENS_PER_BATCH,
-               embedder: Embedder | None = None):
+               embedder: Embedder | None = None, checkpoint_seconds: float = Config.EMBEDDING_CHECKPOINT_SECONDS):
     self.model_key = model_key
     self.model: EmbeddingModel = Config.EMBEDDING_MODELS[model_key]
     self.board = board
     self.database_path = database_path or f"{Config.DATABASE_DIR}/{Config.PRIVATE_DATABASE}.db"
     self.output_dir = pathlib.Path(output_dir) / model_key
     self.tokens_per_batch = tokens_per_batch
+    self.checkpoint_seconds = checkpoint_seconds
     self.embedder = embedder   # loaded on the first run that needs it, so a run with nothing left loads no model
     self.connection = sqlite3.connect(f"file:{self.database_path}?mode=ro", uri = True)
 
@@ -171,36 +175,96 @@ class EmbeddingRunner:
     started_at = datetime.now().isoformat(timespec = "seconds")
     prompt_tokens = embedder.count_tokens(prompt) if prompt else 0
     limit = embedder.model.max_seq_length - 2   # room for the model's special tokens
-    vectors: np.ndarray | None = None
-    self.oom_splits = 0
-    for batch in self.batches(items, prompt_tokens, limit):
+    checkpoint_path = path.with_name(path.stem + ".checkpoint.npz")
+    fingerprint = self.fingerprint(items, prompt, limit)
+    vectors, done, previous = self.load_checkpoint(checkpoint_path, fingerprint, len(items))
+    self.oom_splits = previous.get("oom_batch_splits", 0)
+    elapsed_before = previous.get("elapsed_seconds", 0.0)
+    started_at = previous.get("started", started_at)
+    resumed = int(done.sum())
+    task.advance(resumed)
+    last_checkpoint = time.perf_counter()
+    pending = [i for i in range(len(items)) if not done[i]]
+    for batch in self.batches(items, prompt_tokens, limit, pending):
       batch_vectors = self.embed_batch(embedder, [items[i].text for i in batch], prompt)
       if vectors is None:
         vectors = np.zeros((len(items), batch_vectors.shape[1]), dtype = np.float32)
       vectors[batch] = batch_vectors
+      done[batch] = True
       task.advance(len(batch))
+      if time.perf_counter() - last_checkpoint >= self.checkpoint_seconds and not done.all():
+        self.save_checkpoint(checkpoint_path, vectors, done, fingerprint, {
+          "oom_batch_splits": self.oom_splits, "started": started_at,
+          "elapsed_seconds": elapsed_before + time.perf_counter() - started})
+        last_checkpoint = time.perf_counter()
     task.finish()
     tokens = np.array([i.tokens for i in items], dtype = np.int32)
     meta = {**self.base_meta(), **extra,
             "dim": int(vectors.shape[1]) if vectors is not None else None,
             "tokens_total": int(tokens.sum()), "tokens_max": int(tokens.max(initial = 0)),
             "n_truncated": int((tokens + prompt_tokens > limit).sum()), "truncation_limit": limit,
-            "oom_batch_splits": self.oom_splits, "elapsed_seconds": round(time.perf_counter() - started, 1),
+            "oom_batch_splits": self.oom_splits,
+            "elapsed_seconds": round(elapsed_before + time.perf_counter() - started, 1),
+            "resumed_from_checkpoint": resumed,
             "started": started_at, "finished": datetime.now().isoformat(timespec = "seconds")}
     path.parent.mkdir(parents = True, exist_ok = True)
     temporary = path.with_name(path.stem + ".partial.npz")
     np.savez(temporary, vectors = vectors if vectors is not None else np.zeros((0, 0), dtype = np.float32),
              tokens = tokens, meta = np.array(json.dumps(meta, ensure_ascii = False)), **arrays)
     os.replace(temporary, path)   # a cut run never leaves a file that looks finished
+    checkpoint_path.unlink(missing_ok = True)
     logger.info(f"[embeddings] {self.model_key}/{path.name}: {len(items):,} vectors, {meta['tokens_total']:,} tokens, "
-                f"{meta['n_truncated']} truncated, {meta['elapsed_seconds']} s")
+                f"{meta['n_truncated']} truncated, {meta['elapsed_seconds']} s"
+                + (f", {resumed:,} from a checkpoint" if resumed else ""))
 
-  def batches(self, items: list[EmbeddingItem], prompt_tokens: int, limit: int) -> list[list[int]]:
+  # ---- checkpoints ----
+
+  def fingerprint(self, items: list[EmbeddingItem], prompt: str | None, limit: int) -> str:
+    """Hash of the model and of every text in order: a checkpoint is only reused for exactly the same run."""
+    digest = hashlib.sha256(json.dumps([self.model.name, prompt, limit]).encode())
+    for item in items:
+      digest.update(json.dumps([item.key, item.chunk_index, item.text]).encode())
+    return digest.hexdigest()
+
+  def load_checkpoint(self, checkpoint_path: pathlib.Path, fingerprint: str,
+                      n_items: int) -> tuple[np.ndarray | None, np.ndarray, dict]:
+    """(vectors, done mask, saved state) from a checkpoint of this same run, or an empty start."""
+    empty = (None, np.zeros(n_items, dtype = bool), {})
+    if not checkpoint_path.exists():
+      return empty
+    try:
+      with np.load(checkpoint_path, allow_pickle = False) as saved:
+        state = json.loads(str(saved["state"]))
+        vectors, done = saved["vectors"], saved["done"]
+    except Exception as error:
+      logger.warning(f"[embeddings] {self.model_key}/{checkpoint_path.name} unreadable ({error!r}), starting over")
+      return empty
+    if state.get("fingerprint") != fingerprint or len(done) != n_items:
+      logger.warning(f"[embeddings] {self.model_key}/{checkpoint_path.name} is from different texts or another "
+                     f"model, starting over")
+      return empty
+    logger.info(f"[embeddings] {self.model_key}/{checkpoint_path.name}: resuming, {int(done.sum()):,} of "
+                f"{n_items:,} already embedded")
+    return vectors, done, state
+
+  def save_checkpoint(self, checkpoint_path: pathlib.Path, vectors: np.ndarray, done: np.ndarray, fingerprint: str,
+                      state: dict):
+    checkpoint_path.parent.mkdir(parents = True, exist_ok = True)
+    temporary = checkpoint_path.with_name(checkpoint_path.stem + ".tmp.npz")
+    np.savez(temporary, vectors = vectors, done = done,
+             state = np.array(json.dumps({**state, "fingerprint": fingerprint})))
+    os.replace(temporary, checkpoint_path)   # a cut while saving keeps the previous checkpoint
+
+  # ---- batching ----
+
+  def batches(self, items: list[EmbeddingItem], prompt_tokens: int, limit: int,
+              indices: list[int] | None = None) -> list[list[int]]:
     """
-    Indices grouped longest first so that (texts in batch) x (longest text) stays under tokens_per_batch. Lengths
-    are capped at the model's limit, since the model truncates anything longer.
+    Indices (all, or the given ones) grouped longest first so that (texts in batch) x (longest text) stays under
+    tokens_per_batch. Lengths are capped at the model's limit, since the model truncates anything longer.
     """
-    order = sorted(range(len(items)), key = lambda i: items[i].tokens, reverse = True)
+    indices = range(len(items)) if indices is None else indices
+    order = sorted(indices, key = lambda i: items[i].tokens, reverse = True)
     batches: list[list[int]] = []
     for index in order:
       if batches:

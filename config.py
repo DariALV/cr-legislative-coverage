@@ -88,6 +88,7 @@ class Config:
   EMBEDDINGS_DIR = "databases/embeddings"
   EMBEDDING_CHUNK_SIZES = [256, 512, 1024, 2048, 8000]   # tokens per news chunk, title included; 8000 ≈ whole news
   EMBEDDING_TOKENS_PER_BATCH = 8192   # texts per GPU batch = this / longest text in it (32 for 256, 1 for 8000)
+  EMBEDDING_CHECKPOINT_SECONDS = 300  # a run saves what it has done this often, and a cut run resumes from there
 
   # Embedding models to try (#6, #32). Adding one is adding an entry; Embedder takes these values as arguments.
   EMBEDDING_MODELS = {
