@@ -6,6 +6,7 @@
 
 - Always log. Anything worth remembering goes in: decisions taken with the user (and the options discarded), observations about sources and data (e.g. "SIL has no X column"), what was implemented and how, caveats, errors and their fixes, counts and results of runs.
 - One file per day: `claude_logs/YYYY-MM-DD.md`. Each entry starts with `## HH:MM — <short title>` (local time, Costa Rica) and says what happened and why, linking issues (`#<n>`) and files when relevant.
+- Never guess the time or the date. Right before writing each entry, read the clock with `date -u -d '-6 hours' "+%Y-%m-%d %H:%M"` (Git Bash; Costa Rica is UTC-6 with no daylight saving) and use that for both the `HH:MM` and the file name, even after midnight. Don't use `TZ=America/Costa_Rica`: Git Bash has no time zone data and silently gives UTC.
 - Append-only. Never edit or delete past entries; if something turns out wrong, add a new entry that corrects it.
 - Log as you go, not only at the end of the chat, so nothing is lost if the session is cut.
 - At the start of a chat, read the recent logs to pick up the context.
