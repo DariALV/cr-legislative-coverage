@@ -97,6 +97,13 @@ class Config:
   EMBEDDING_BOOTSTRAP = 1000          # resamples over news for the 95 % intervals
   EMBEDDING_RANK_BY = "recall@30"     # metric that picks the best configuration (K = 30 is the initial K of #33)
 
+  # Hand-labeled sample (#27, #28, #31): draw queue built by SampleBuilder, labeled from the top down.
+  SAMPLE_DIR = "results/sample"       # ids, urls, dates and labels only (no news text), kept in git
+  SAMPLE_SEED = 20261107
+  SAMPLE_POOL_A_SHARE = 0.8           # share of each outlet queue taken from the keyword filter, the rest from outside
+  SAMPLE_QUEUE_PER_OUTLET = 100       # queue length per general outlet; labeling stops when the quotas are met
+  SAMPLE_DELFINO = 15                 # Delfino news with gold links, to compare their links with the hand labels
+
   # Embedding models to try (#6, #32). Adding one is adding an entry; Embedder takes these values as arguments.
   EMBEDDING_MODELS = {
     "bge-m3": EmbeddingModel("BAAI/bge-m3", max_tokens = 8192),
