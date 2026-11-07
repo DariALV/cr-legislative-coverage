@@ -1,0 +1,227 @@
+{
+  "name": "2026-11-07_tournament",
+  "created": "2026-11-07T15:48:08",
+  "k": 100,
+  "folds": 5,
+  "seed": 7,
+  "settings": {
+    "population_size": 50,
+    "elites": 2,
+    "immigrant_rate": 0.1,
+    "selection": "tournament",
+    "tournament_size": 3,
+    "truncation_share": 0.5,
+    "crossover_rate": 0.9,
+    "crossover": "blend",
+    "blend_alpha": 0.5,
+    "mutation_rate": null,
+    "mutation_scale": 0.1,
+    "reset_rate": 0.02,
+    "max_generations": 300,
+    "patience": 30,
+    "min_improvement": 1e-09,
+    "seed": 7
+  },
+  "features": {
+    "model": "qwen3-0.6b",
+    "chunk_size": 256,
+    "static_features": [
+      "cos_exposition_max",
+      "cos_subjects_max",
+      "cos_name_max",
+      "cos_exposition_mean",
+      "z_exposition",
+      "z_subjects",
+      "bm25",
+      "event_distance",
+      "alive",
+      "filed_after_news"
+    ],
+    "max_window_before": 60,
+    "max_window_after": 14,
+    "n_news": 532,
+    "n_bills": 5898,
+    "n_links": 1423,
+    "dropped_links": 2,
+    "background_news": 2000,
+    "unknown_filing_dates": 0
+  },
+  "genes": [
+    {
+      "name": "w_cos_exposition_max",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_cos_subjects_max",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_cos_name_max",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_cos_exposition_mean",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_z_exposition",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_z_subjects",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_bm25",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_event_distance",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_alive",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_filed_after_news",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_active",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_event_count",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "w_age_decay",
+      "kind": "float",
+      "low": -5.0,
+      "high": 5.0
+    },
+    {
+      "name": "use_cos_exposition_max",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_cos_subjects_max",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_cos_name_max",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_cos_exposition_mean",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_z_exposition",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_z_subjects",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_bm25",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_event_distance",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_alive",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_filed_after_news",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_active",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_event_count",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "use_age_decay",
+      "kind": "bool",
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "name": "window_before_days",
+      "kind": "int",
+      "low": 0,
+      "high": 60
+    },
+    {
+      "name": "window_after_days",
+      "kind": "int",
+      "low": 0,
+      "high": 14
+    },
+    {
+      "name": "age_half_life_days",
+      "kind": "log",
+      "low": 7,
+      "high": 3650
+    }
+  ],
+  "device": "cuda",
+  "baseline": "cos_exposition_max only"
+}

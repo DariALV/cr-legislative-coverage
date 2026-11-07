@@ -226,3 +226,6 @@ private_visuals/output/
 
 # Embedding vectors (#32): too big for git, moved between machines by hand
 databases/embeddings/
+databases/retrieval/
+# Evolution runs (#68): per-individual history is big and regenerated from the seed; summaries stay in git
+results/evolution/**/population.csv

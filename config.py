@@ -97,6 +97,23 @@ class Config:
   EMBEDDING_BOOTSTRAP = 1000          # resamples over news for the 95 % intervals
   EMBEDDING_RANK_BY = "recall@30"     # metric that picks the best configuration (K = 30 is the initial K of #33)
 
+  # Candidate ranker features (#33, #68): one value per (gold news, bill), see FeatureBuilder.
+  RETRIEVAL_DIR = "databases/retrieval"          # cached feature matrices, not in git
+  RETRIEVAL_MODEL = "qwen3-0.6b"                 # embeddings the features use (best of the analysis, #38)
+  RETRIEVAL_CHUNK_SIZE = 256
+  RETRIEVAL_BACKGROUND_SIZE = 2000               # legislative news (not gold, not in the sample) for the bill z-scores
+  RETRIEVAL_BACKGROUND_SEED = 20261107
+  RETRIEVAL_MAX_WINDOW_BEFORE = 60               # widest activity window the evolution can choose, in days
+  RETRIEVAL_MAX_WINDOW_AFTER = 14
+
+  # Evolutionary tuning of the ranker (#68), see GeneticAlgorithm and RankingProblem.
+  EVOLUTION_RESULTS_DIR = "results/evolution"    # numbers only, kept in git
+  EVOLUTION_REPLAY_DATA = "private_visuals/output/evolution_replay/data.js"
+  EVOLUTION_K = 100                              # candidates per news; fitness = bill coverage at this K
+  EVOLUTION_REPORT_KS = [50, 100]
+  EVOLUTION_FOLDS = 5
+  EVOLUTION_SEED = 7
+
   # Hand-labeled sample (#27, #28, #31): draw queue built by SampleBuilder, labeled from the top down.
   SAMPLE_DIR = "results/sample"       # ids, urls, dates and labels only (no news text), kept in git
   SAMPLE_SEED = 20261107

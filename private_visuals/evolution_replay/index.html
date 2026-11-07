@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evolution replay</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="title">
+      <h1>Evolution replay</h1>
+      <p id="run-name" class="muted">No run loaded</p>
+    </div>
+    <div class="sources">
+      <label class="field">Part
+        <select id="part"></select>
+      </label>
+      <label class="button" title="Pick history.csv and population.csv (and run.json if you want the gene ranges) from any run folder">
+        Open run folder files
+        <input id="files" type="file" accept=".csv,.json" multiple hidden>
+      </label>
+    </div>
+  </header>
+
+  <section class="controls" aria-label="Playback">
+    <button id="first" title="First generation">⏮</button>
+    <button id="back" title="Previous generation">◀</button>
+    <button id="play" class="primary" title="Play / pause">▶</button>
+    <button id="forward" title="Next generation">▶︎|</button>
+    <button id="last" title="Last generation">⏭</button>
+    <input id="slider" type="range" min="0" max="0" value="0" aria-label="Generation">
+    <span id="generation-label" class="tabular">gen 0 / 0</span>
+    <label class="field">Speed
+      <select id="speed">
+        <option value="1000">1 gen/s</option>
+        <option value="250" selected>4 gen/s</option>
+        <option value="100">10 gen/s</option>
+        <option value="40">25 gen/s</option>
+      </select>
+    </label>
+  </section>
+
+  <main class="grid">
+    <section class="card wide">
+      <h2>Fitness</h2>
+      <p class="muted small">Best, mean and median fitness per generation. Fitness = bill coverage@K + a tiny tie-break.</p>
+      <div id="fitness-chart" class="chart"></div>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="card">
+      <h2>Population</h2>
+      <p class="muted small">Each dot is an individual, placed by its numeric genes (first two principal components over the whole run; on/off switches left out). Color = fitness, shape = origin.</p>
+      <div id="scatter" class="chart square"></div>
+      <div class="legend" id="scatter-legend"></div>
+    </section>
+
+    <section class="card">
+      <h2>Best recipe</h2>
+      <p class="muted small">The best individual of this generation. Grey weights are switched off.</p>
+      <div id="recipe"></div>
+    </section>
+
+    <section class="card wide">
+      <h2>Genes</h2>
+      <p class="muted small">Every gene of every individual in this generation, on the gene's own range. The best individual is the dark mark.</p>
+      <div id="genes" class="genes"></div>
+    </section>
+
+    <section class="card wide">
+      <h2>Line of descent</h2>
+      <p class="muted small">Ancestors of the current best, following the fitter parent back each generation.</p>
+      <div id="lineage" class="lineage"></div>
+    </section>
+  </main>
+
+  <script src="../output/evolution_replay/data.js" onerror="window.EVOLUTION_DATA = null"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -4,8 +4,26 @@
     {
       "name": "db-explorer",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["private_visuals/db_explorer/server.py", "--port", "8765"],
+      "runtimeArgs": [
+        "private_visuals/db_explorer/server.py",
+        "--port",
+        "8765"
+      ],
       "port": 8765
+    },
+    {
+      "name": "visuals",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8766",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "private_visuals"
+      ],
+      "port": 8766
     }
   ]
 }
