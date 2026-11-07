@@ -1,13 +1,17 @@
 // Bills (expedientes): index loaded once from /api/bills and filtered in the browser.
 import {
-  esc, icon, fmtN, fmtDate, titleCase, initials, shortType, toast, hl, getJSON, colorOf,
+  esc, icon, fmtN, fmtDate, titleCase, face, shortType, toast, hl, getJSON, colorOf,
   STATUS, statusOf, FLAG, TEXT, outletOf, link, href, fact, emptyTab, select, searchBox, chips, bindToolbar,
   renderDetail, backBtn, norm,
 } from "./util.js";
 
 const BATCH = 40;
 const DELFINO = "https://delfino.cr/asamblea/proyecto/";
-const VOTE_COLORS = { a_favor: "var(--law)", "a favor": "var(--law)", en_contra: "var(--bad)", "en contra": "var(--bad)" };
+// vote_deputies.vote holds "for" / "against" / "absent" (DelfinoVotesParser); other labels come as Delfino shows them.
+const VOTE_COLORS = { for: "var(--law)", against: "var(--bad)", absent: "var(--archived)" };
+const VOTE_LABELS = { for: "A favor", against: "En contra", absent: "Ausente" };
+const voteLabel = (k) => VOTE_LABELS[k] || k;
+const VOTE_KINDS = { plenary: "Plenario", full_committee: "Comisión plena" };
 
 let BILLS = null, TOTALS = null;
 const byNumber = new Map();
@@ -212,7 +216,7 @@ function proponentes(d) {
   if (!d.proponents.length) return emptyTab("users", "Sin proponentes registrados.");
   return `<ul class="people">${d.proponents.map((p) => {
     const sub = [p.faction && titleCase(p.faction), p.province && titleCase(p.province), p.term].filter(Boolean).join(" · ");
-    const inner = `<span class="avatar" style="--c:${colorOf(p.faction || p.name)}">${esc(initials(p.name))}</span>
+    const inner = `${face(p, colorOf(p.faction || p.name))}
       <div><div class="nm">${esc(titleCase(p.name))}</div><div class="sm">${esc(sub || (p.deputy_id ? "" : "No es diputado"))}</div></div>
       <span class="ord">${p.signing_order ?? ""}</span>`;
     // Proponents with a deputy are links to the deputy's page; the rest (no deputy_id) are plain.
@@ -264,16 +268,16 @@ function votaciones(d) {
     v.deputies.forEach((x) => (tally[x.vote] = (tally[x.vote] || 0) + 1));
     const total = v.deputies.length || 1;
     const entries = Object.entries(tally).sort((a, b) => b[1] - a[1]);
-    const col = (k, i) => VOTE_COLORS[norm(k)] || ["var(--progress)", "var(--archived)", "var(--delfino)"][i % 3];
+    const col = (k, i) => VOTE_COLORS[k] || ["var(--progress)", "var(--delfino)", "var(--semanario)"][i % 3];
     return `<div class="vote">
-      <div class="news-meta"><span>${fmtDate(v.date, true)}</span>${v.result ? `<span class="pill st-neutral">${esc(v.result)}</span>` : ""}
+      <div class="news-meta"><span>${fmtDate(v.date, true)}</span><span class="pill ${v.kind === "full_committee" ? "st-warn" : "st-progress"}">${esc(VOTE_KINDS[v.kind] || v.kind || "")}</span>${v.result ? `<span class="pill st-neutral">${esc(v.result)}</span>` : ""}
         ${v.url ? `<a href="${esc(v.url)}" target="_blank" rel="noopener" style="margin-left:auto;color:var(--accent)">Ver ${icon("external")}</a>` : ""}</div>
       <div class="news-title">${esc(v.name)}</div>
       ${v.description ? `<p class="news-snippet">${esc(v.description)}</p>` : ""}
       ${entries.length ? `<div class="vote-bar">${entries.map(([k, n], i) => `<i style="width:${(n / total) * 100}%;background:${col(k, i)}"></i>`).join("")}</div>
-      <div class="vote-legend">${entries.map(([k, n], i) => `<span><span class="sw" style="background:${col(k, i)}"></span>${esc(k)} <b>${n}</b></span>`).join("")}</div>` : ""}
+      <div class="vote-legend">${entries.map(([k, n], i) => `<span><span class="sw" style="background:${col(k, i)}"></span>${esc(voteLabel(k))} <b>${n}</b></span>`).join("")}</div>` : ""}
       ${v.deputies.length ? `<details class="vote-who"><summary>Ver diputados (${v.deputies.length})</summary>
-        <table class="tbl"><tbody>${v.deputies.map((x) => `<tr><td>${link.deputy(x.person_id, titleCase(x.name))}</td><td class="muted">${esc(x.party || "")}</td><td>${esc(x.vote)}</td></tr>`).join("")}</tbody></table>
+        <table class="tbl"><tbody>${v.deputies.map((x) => `<tr><td>${link.deputy(x.person_id, titleCase(x.name))}</td><td class="muted">${esc(x.party || "")}</td><td>${esc(voteLabel(x.vote))}</td></tr>`).join("")}</tbody></table>
       </details>` : ""}
     </div>`;
   }).join("");

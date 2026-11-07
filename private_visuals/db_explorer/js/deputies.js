@@ -1,6 +1,6 @@
 // Deputies: one entry per person (person_id) with all their terms. Index from /api/deputies.
 import {
-  esc, icon, fmtN, fmtDate, titleCase, initials, hl, getJSON, colorOf, link, href, fact, emptyTab,
+  esc, icon, fmtN, fmtDate, titleCase, face, hl, getJSON, colorOf, link, href, fact, emptyTab,
   select, searchBox, chips, bindToolbar, renderDetail, backBtn, billsTable,
 } from "./util.js";
 
@@ -70,7 +70,7 @@ export default {
     const c = colorOf(p.faction || p.name);
     const on = p.status === "VIGENTE";
     return `<a class="row row-person${active ? " active" : ""}" data-id="${p.id}" href="${href.deputy(p.id)}" role="listitem" style="--c:${c}">
-      <span class="avatar" style="--c:${c}">${esc(initials(p.name))}</span>
+      ${face(p, c)}
       <div class="row-main">
         <div class="row-top">
           <span class="row-title">${hl(titleCase(p.name), state.q)}</span>
@@ -98,7 +98,7 @@ export default {
     const organCount = new Set(d.memberships.filter((m) => m.organ_code).map((m) => m.organ_code)).size;
     const head = `${backBtn("deputies")}
       <div class="d-person">
-        <span class="avatar lg" style="--c:${c}">${esc(initials(d.name))}</span>
+        ${face(d, c, "lg")}
         <div>
           <div class="d-meta">
             <span class="pill dot ${last.status === "VIGENTE" ? "st-law" : "st-archived"}">${last.status === "VIGENTE" ? "En ejercicio" : "No vigente"}</span>

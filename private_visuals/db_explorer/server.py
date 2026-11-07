@@ -14,6 +14,10 @@ Endpoints (all GET, JSON):
     /api/news?q=&org=&from=&to=&linked=&sort=&offset=&limit=   news search (server side: ~30k rows)
     /api/news-facets                       counts for the news filters
     /api/news/<id>                         one article, full content and linked bills
+    /photos/<file>                         deputy photos from raw/images/delfino/deputies (fetch_photos.py)
+
+Every person in the JSON carries "photo" (its /photos/ URL, or null) and "ini" (initials of first name and first
+surname, shown when there is no photo).
 """
 import argparse
 import json
@@ -28,6 +32,9 @@ from urllib.parse import parse_qs, urlparse
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 DEFAULT_DB = ROOT / "databases" / "private_corpus.db"
+PHOTOS_DIR = ROOT / "raw" / "images" / "delfino" / "deputies"
+# Words skipped when taking initials ("DE LA CRUZ" -> "C").
+NAME_PARTICLES = {"DE", "DEL", "LA", "LAS", "LOS", "Y"}
 
 DB_PATH = DEFAULT_DB
 
@@ -51,6 +58,36 @@ def norm(s):
 def unique_organ_code_sql(col):
     """organ_code for a free-text organ name, only when exactly one organ has that name."""
     return f"(SELECT MIN(o.organ_code) FROM organs o WHERE o.name = {col} HAVING COUNT(*) = 1)"
+
+
+# ---------------------------------------------------------------- people
+
+@lru_cache(maxsize=1)
+def photos():
+    """{person_id: photo file} from fetch_photos.py's index (empty if it was not run)."""
+    try:
+        index = json.loads((PHOTOS_DIR / "index.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for e in index.get("deputies", []):
+        if e.get("person_id") is not None and e.get("file") and (PHOTOS_DIR / e["file"]).is_file():
+            out.setdefault(e["person_id"], e["file"])
+    return out
+
+
+def initials(names, surnames):
+    """First letter of the first name and of the first surname: "ANA LUCÍA" "DELGADO ORQUERA" -> "AD"."""
+    first = lambda s: next((w for w in (s or "").split() if w.upper() not in NAME_PARTICLES), "")[:1]
+    return (first(names) + first(surnames)).upper()
+
+
+def add_face(d, person_id, names, surnames):
+    """Adds "photo" and "ini" to a person dict (names/surnames None when the person is not a known deputy)."""
+    file = photos().get(person_id)
+    d["photo"] = f"/photos/{file}" if file else None
+    d["ini"] = initials(names, surnames) if names or surnames else None
+    return d
 
 
 # ---------------------------------------------------------------- bills
@@ -116,7 +153,7 @@ def bill_detail(number):
     # Faction: the deputy's faction in that term whose dates cover the filing date (fallback: any in the term).
     d["proponents"] = rows(conn, """
         SELECT p.proponent_id, p.name, p.term, p.signing_order, p.deputy_id,
-               dp.person_id, dp.province, dp.status AS deputy_status,
+               dp.person_id, dp.province, dp.status AS deputy_status, dp.names, dp.surnames,
                COALESCE(
                  (SELECT f.faction FROM deputy_factions f
                    WHERE f.person_id = dp.person_id AND f.term = p.term
@@ -130,6 +167,8 @@ def bill_detail(number):
         WHERE p.number = :n ORDER BY p.signing_order, p.proponent_id""",
         {"n": number, "d": bill["date_proposed"] or ""})
     # Steps name their organ in free text; it is linked only when it matches one organ name exactly.
+    for p in d["proponents"]:
+        add_face(p, p["person_id"], p.pop("names"), p.pop("surnames"))
     d["steps"] = rows(conn, f"""
         SELECT s.step_id, s.organ, s.description, s.date_start, s.date_end,
                {unique_organ_code_sql("s.organ")} AS organ_code
@@ -177,6 +216,7 @@ def deputies_index():
         p = people.setdefault(r["person_id"], {"id": r["person_id"], "terms": [], "provinces": [], "deputy_ids": []})
         p["name"] = full_name(r)          # latest term wins
         p["sort"] = f'{r["surnames"]} {r["names"]}'
+        add_face(p, r["person_id"], r["names"], r["surnames"])
         p["status"] = r["status"]
         p["terms"].append(r["term"])
         p["deputy_ids"].append(r["deputy_id"])
@@ -235,7 +275,8 @@ def deputy_detail(person_id):
         return None
     ids = [t["deputy_id"] for t in terms]
     q = ",".join("?" * len(ids))
-    d = {"person_id": person_id, "name": full_name(terms[-1]), "terms": terms}
+    d = add_face({"person_id": person_id, "name": full_name(terms[-1]), "terms": terms},
+                 person_id, terms[-1]["names"], terms[-1]["surnames"])
     d["factions"] = rows(conn, "SELECT * FROM deputy_factions WHERE person_id = ? ORDER BY date_from", (person_id,))
     reps = rows(conn, "SELECT * FROM deputy_replacements WHERE person_id = ? ORDER BY date", (person_id,))
     names = deputy_names()
@@ -304,10 +345,12 @@ def organ_detail(code):
         return None
     d = {"organ": dict(organ)}
     d["members"] = rows(conn, """
-        SELECT m.deputy_id, d.person_id, d.names || ' ' || d.surnames AS name, d.province, d.term,
+        SELECT m.deputy_id, d.person_id, d.names || ' ' || d.surnames AS name, d.names, d.surnames, d.province, d.term,
                m.position, m.legislature, m.date_joined, m.date_left
         FROM organ_memberships m LEFT JOIN deputies d ON d.deputy_id = m.deputy_id
         WHERE m.organ_code = ? ORDER BY m.legislature DESC, m.position = 'INTEGRANTE', m.position, name""", (code,))
+    for m in d["members"]:
+        add_face(m, m["person_id"], m.pop("names"), m.pop("surnames"))
     d["bills"] = rows(conn, """
         SELECT ob.bill_number, ob.date_start, ob.date_end, ob.last_step,
                b.name, b.status, b.date_proposed, (b.number IS NOT NULL) AS in_corpus
@@ -413,15 +456,30 @@ class Handler(SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
+    def send_photo(self, name):
+        # Only files listed in the index: nothing else under raw/ can be read through this route.
+        if name not in set(photos().values()):
+            return self.send_error(404)
+        body = (PHOTOS_DIR / name).read_bytes()
+        self.send_response(200)
+        self.send_header("Content-Type", "image/jpeg" if name.lower().endswith((".jpg", ".jpeg")) else "image/png")
+        self.send_header("Content-Length", str(len(body)))
+        self.end_headers()
+        self.wfile.write(body)
+
     def end_headers(self):
         # Static files too: no caching, so edits to the page show up on reload.
-        if not self.path.startswith("/api/"):
+        if self.path.startswith("/photos/"):
+            self.send_header("Cache-Control", "max-age=86400")
+        elif not self.path.startswith("/api/"):
             self.send_header("Cache-Control", "no-store")
         super().end_headers()
 
     def do_GET(self):
         url = urlparse(self.path)
         path = url.path
+        if path.startswith("/photos/"):
+            return self.send_photo(path.removeprefix("/photos/"))
         if not path.startswith("/api/"):
             if path.endswith(".py"):
                 return self.send_error(404)

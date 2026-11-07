@@ -1,6 +1,6 @@
 // Organs (committees, Plenario, Directorio...): index from /api/organs, filtered in the browser.
 import {
-  esc, icon, fmtN, fmtDate, titleCase, hl, getJSON, colorOf, link, href, fact, emptyTab,
+  esc, icon, fmtN, fmtDate, titleCase, face, hl, getJSON, colorOf, link, href, fact, emptyTab,
   select, searchBox, chips, bindToolbar, renderDetail, backBtn, billsTable,
 } from "./util.js";
 
@@ -126,7 +126,7 @@ function miembros(d) {
   d.members.forEach((m) => (groups[m.legislature || "—"] ||= []).push(m));
   return Object.entries(groups).map(([leg, ms]) => `<h3 class="section-title">${esc(leg)}</h3>
     <ul class="people">${ms.map((m) => {
-      const inner = `<span class="avatar" style="--c:${colorOf(m.position || "")}">${esc((m.name || "?").split(/\s+/).slice(0, 2).map((w) => w[0]).join(""))}</span>
+      const inner = `${face({ ...m, name: m.name || "?" }, colorOf(m.position || ""))}
         <div><div class="nm">${esc(titleCase(m.name || `Diputado ${m.deputy_id}`))}</div>
         <div class="sm">${esc(titleCase(m.position || ""))}${m.date_joined ? ` · ${m.date_joined}` : ""}${m.date_left ? ` → ${m.date_left}` : ""}</div></div>`;
       return m.person_id ? `<li><a class="person linked" href="${href.deputy(m.person_id)}">${inner}</a></li>` : `<li><div class="person">${inner}</div></li>`;

@@ -13,6 +13,14 @@ export const fmtDate = (iso, long) => {
 };
 export const titleCase = (s) => (s || "").toLowerCase().replace(/(^|[\s(-])(\p{L})/gu, (m, a, b) => a + b.toUpperCase());
 export const initials = (name) => (name || "").split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("");
+// A person's circle: their Delfino photo when the server has one (p.photo), else the initials of first name and
+// first surname (p.ini, from the server; plain name initials for people who are not known deputies).
+// If the photo fails to load, the initials come back.
+export const face = (p, c, cls = "") => {
+  const ini = esc(p.ini || initials(p.name));
+  const img = p.photo ? `<img src="${esc(p.photo)}" alt="" loading="lazy" onerror="this.parentNode.classList.remove('has-photo');this.replaceWith('${ini}')">` : ini;
+  return `<span class="avatar${p.photo ? " has-photo" : ""}${cls ? " " + cls : ""}" style="--c:${c}">${img}</span>`;
+};
 export const shortType = (t) => (t || "").replace(/^PROCEDIMIENTO\s+(DE\s+)?/i, "").replace(/^PROYECTOS?\s+(DE\s+)?/i, "").toLowerCase().replace(/^./, (c) => c.toUpperCase());
 export const toast = (msg) => {
   const t = document.createElement("div");
