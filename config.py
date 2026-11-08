@@ -113,6 +113,7 @@ class Config:
   EVOLUTION_REPORT_KS = [50, 100]
   EVOLUTION_FOLDS = 5
   EVOLUTION_SEED = 7
+  EVOLUTION_MAX_LINKS_PER_NEWS = 15              # news with this many gold links or more (agenda lists) are left out; 0 = keep all
 
   # Hand-labeled sample (#27, #28, #31): draw queue built by SampleBuilder, labeled from the top down.
   SAMPLE_DIR = "results/sample"       # ids, urls, dates and labels only (no news text), kept in git

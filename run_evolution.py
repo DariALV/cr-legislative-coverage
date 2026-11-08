@@ -61,6 +61,8 @@ if __name__ == "__main__":
   parser.add_argument("--immigrant-rate", type = float, default = defaults.immigrant_rate)
   parser.add_argument("--reset-rate", type = float, default = defaults.reset_rate)
   parser.add_argument("--seed", type = int, default = Config.EVOLUTION_SEED)
+  parser.add_argument("--max-links", type = int, default = Config.EVOLUTION_MAX_LINKS_PER_NEWS,
+                      help = "leave out news with this many gold links or more (agenda lists, reported apart); 0 = keep all")
   parser.add_argument("--device", help = "cuda or cpu (default: cuda when available)")
   parser.add_argument("--batch-size", type = int, default = 16,
                       help = "individuals scored at once on the GPU (~100 MB each); lower it if memory runs out")
@@ -87,12 +89,18 @@ if __name__ == "__main__":
                              tournament_size = args.tournament_size, immigrant_rate = args.immigrant_rate,
                              reset_rate = args.reset_rate, seed = seed)
 
-  folds = np.array_split(np.random.default_rng(args.seed).permutation(n_news), args.folds) if args.folds else []
+  links_per_news = np.bincount(features.links[:, 0], minlength = n_news)
+  excluded = np.flatnonzero(links_per_news >= args.max_links) if args.max_links else np.array([], dtype = int)
+  kept = np.setdiff1d(np.arange(n_news), excluded)
+  if len(excluded):
+    logger.info(f"[evolution] leaving out {len(excluded)} news with {args.max_links}+ links "
+                f"({int(links_per_news[excluded].sum())} of {len(features.links)} links); {len(kept)} news kept")
+  folds = np.array_split(np.random.default_rng(args.seed).permutation(kept), args.folds) if args.folds else []
   baseline = problem.baseline()
-  parts, fold_rows = [], []
+  parts, fold_rows, recipes = [], [], {}
   with ProgressBoard(f"evolution {name}", console = console) as board:
     for f, test in enumerate(folds, start = 1):
-      train = np.setdiff1d(np.arange(n_news), test)
+      train = np.setdiff1d(kept, test)
       problem.set_rows(train)
       settings = settings_for(args.seed + f)
       best, history, algorithm = evolve(problem, settings, output / f"fold_{f}", board, f"fold {f}")
@@ -103,17 +111,19 @@ if __name__ == "__main__":
              "baseline_test": problem.metrics(baseline, ks = Config.EVOLUTION_REPORT_KS), "recipe": recipe(best)}
       write_json(output / f"fold_{f}" / "best.json", row)
       fold_rows.append(row)
+      recipes[f"fold_{f}"] = best
       parts.append(replay_part(f"fold {f}", history, problem, algorithm.settings_json()))
       logger.info(f"[evolution] fold {f}: test bill_coverage@{args.k} {row['test'][f'bill_coverage@{args.k}']:.3f} "
                   f"vs baseline {row['baseline_test'][f'bill_coverage@{args.k}']:.3f}")
     final = None
     if not args.no_final:
-      problem.set_rows(np.arange(n_news))
+      problem.set_rows(kept)
       best, history, algorithm = evolve(problem, settings_for(args.seed), output / "final", board, "final")
       final = {"generations": history.generations[-1]["generation"], "recipe": recipe(best),
                "train": problem.metrics(best, ks = Config.EVOLUTION_REPORT_KS),
                "baseline": problem.metrics(baseline, ks = Config.EVOLUTION_REPORT_KS)}
       write_json(output / "final" / "best.json", final)
+      recipes["final"] = best
       parts.append(replay_part("final", history, problem, algorithm.settings_json()))
 
   keys = [k for k in fold_rows[0]["test"] if "@" in k] if fold_rows else []
@@ -123,9 +133,19 @@ if __name__ == "__main__":
   } if fold_rows else None
   write_json(output / "run.json", {
     "name": name, "created": datetime.now().isoformat(timespec = "seconds"), "k": args.k, "folds": args.folds,
-    "seed": args.seed, "settings": settings_for(args.seed).__dict__, "features": features.meta,
+    "seed": args.seed, "max_links_per_news": args.max_links, "settings": settings_for(args.seed).__dict__, "features": features.meta,
     "genes": problem.spec.to_json(), "device": str(problem.device), "baseline": "cos_exposition_max only"})
-  write_json(output / "summary.json", {"cross_validation": cross_validation, "folds": fold_rows, "final": final})
+  excluded_news = None
+  if len(excluded):
+    # No recipe saw these news while evolving, so every recipe's numbers on them are held out.
+    problem.set_rows(excluded)
+    excluded_news = {"max_links": args.max_links, "n_news": len(excluded),
+                     "news": [{"id": str(features.news_ids[r]), "links": int(links_per_news[r])} for r in excluded],
+                     "baseline": problem.metrics(baseline, ks = Config.EVOLUTION_REPORT_KS),
+                     "recipes": {label: problem.metrics(genes, ks = Config.EVOLUTION_REPORT_KS)
+                                 for label, genes in recipes.items()}}
+  write_json(output / "summary.json", {"cross_validation": cross_validation, "folds": fold_rows, "final": final,
+                                       "excluded_news": excluded_news})
 
   replay = pathlib.Path(Config.EVOLUTION_REPLAY_DATA)
   replay.parent.mkdir(parents = True, exist_ok = True)
@@ -139,4 +159,9 @@ if __name__ == "__main__":
     for k in keys:
       table.add_row(k, f"{cross_validation['evolved'][k]:.3f}", f"{cross_validation['baseline'][k]:.3f}")
     console.print(table)
+  if excluded_news:
+    final_row = excluded_news["recipes"].get("final") or next(iter(excluded_news["recipes"].values()))
+    key = f"bill_coverage@{args.k}"
+    console.print(f"Left out {excluded_news['n_news']} agenda news ({args.max_links}+ links): {key} "
+                  f"{final_row[key]:.3f} vs baseline {excluded_news['baseline'][key]:.3f}")
   console.print(f"Results: {output}  Replay: {replay}  Log: {log_path}", highlight = False)
