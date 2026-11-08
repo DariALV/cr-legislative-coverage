@@ -227,3 +227,5 @@ Pendiente de decisión del usuario (no se implementó nada): recuperar exposicio
 ## 2026-11-07 03:40 — Commit del matcher de diputados (#22)
 
 - Por pedido del usuario: commit con `asamblea_parser.py`, `docs/bills.md` y este log, ligado a #22.
+
+## 2026-11-08 00:49 — ver sample.md: la exposición de 25699 en bill_texts es la de otro expediente (#66)

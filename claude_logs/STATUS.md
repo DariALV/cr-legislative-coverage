@@ -2,7 +2,7 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-08.
+Última actualización: 2026-11-08 (revisión partes 1–3).
 
 ## Pendiente: decisiones abiertas
 
@@ -23,8 +23,9 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 ### muestra
 - **Expedientes que no son proyectos de ley** (comisiones investigadoras, nombramientos, reformas al Reglamento): ¿cuentan como positivas? Hoy se marcan en "Tipo de expediente". (sample 2026-11-07 13:35; #27 #29)
-- **Anuncio que después se vuelve expediente**: hoy es negativa "Anunciado sin expediente", con el expediente en "alternativos". Hay un caso (25859) que quedó como positivo de confianza media. (sample 2026-11-07 13:35, 14:37; #27 #28)
-- **Las 47 negativas de confianza alta**: ¿las revisa Claude en detalle? Costo ~1 M de tokens. (sample 2026-11-07 19:16)
+- **Anuncio que después se vuelve expediente**: hoy es negativa "Anunciado sin expediente", con el expediente en "alternativos". El caso 25859 (fila 101) ahora tiene propuesta de Claude: negativa con 25859 en alternativos. (sample 2026-11-07 13:35, 14:37; #27 #28)
+- **Trámite ya concluido de una ley vigente** («la Asamblea aprobó el préstamo en 2022», «la ley de la marina firmada el 2/7»): ¿cuenta como mención? Filas 23 (24259), 62 (24789), PAACUME (23003). Recomendación: contarlo en «Otros mencionados», De paso, sin hacerlo positivo si es lo único. (sample 2026-11-08 revisión partes 1–3)
+- **Acto del Ejecutivo con un proyecto del mismo tema no aludido**: ¿«Decreto o Ejecutivo» o «Mismo tema sin expediente»? Las filas 160, 172 y 185 (Junta Directiva de la CCSS; 24564, 25488) quedaron inconsistentes. Recomendación: «Decreto o Ejecutivo» con el proyecto en alternativos. (sample 2026-11-08 revisión partes 1–3)
 - **Usar los candidatos del ranker para revisar negativas**: ayuda, pero sesga la revisión. Sin respuesta. (sample 2026-11-07 16:51)
 - **Oro con número y nombre enmascarados** para medir el sesgo del oro de Delfino. Propuesto, nunca decidido. (embeddings 2026-11-07 12:52; #38)
 
@@ -37,7 +38,7 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 - **Corrida `--all-news`** en la RTX 2060: `python run_embeddings.py --model qwen3-0.6b --all-news` (~75 min, 128.748 chunks). No consta que se haya corrido. #32 sigue abierto hasta tener esa corrida y su análisis.
 - **Evaluar embeddings y ranker en la muestra manual** cuando cierre la revisión humana. Requiere `--all-news`. (#41 #68)
-- **Revisión humana de la muestra**: el usuario revisa las positivas y las "Sin relación", y confirma las propuestas "Corregir"/"Dudoso" de Claude. Después: las 15 de Delfino (cola aparte), el doble etiquetado a ciegas de 20 noticias (#30) y exportar a CSV.
+- **Revisión humana de la muestra**: el usuario revisa las "Sin relación" y confirma las propuestas "Corregir"/"Dudoso" de Claude (las 131 nuevas incluidas); después Claude aplica las correcciones confirmadas a las columnas de la etiqueta. Después: las 15 de Delfino (cola aparte), el doble etiquetado a ciegas de 20 noticias (#30) y exportar a CSV.
 - **Comentario en #68** con los resultados de las corridas con exclusión.
 - **Sin commitear**: `results/sample/negatives_review_pilot.csv`.
 - **Entre máquinas a mano** (no van en git): la base, `databases/embeddings/`, `databases/retrieval/`, `.env`, `raw/`.
@@ -59,6 +60,7 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 **muestra** (#27–#31 abiertos; #25 #26 cerrados)
 - 300 noticias (100 positivas / 200 negativas) de 316 sorteos, en Google Sheets (columna "En la muestra"). Solo se usa como test.
 - Claude revisó las 34 negativas de confianza baja/media: 19 Correcto, 10 Corregir, 5 Dudoso, escritas con el prefijo "Claude:".
+- Claude revisó además 131 en detalle (2026-11-08): 17 Dudoso con pregunta del usuario (comentario agregado debajo del suyo), 67 positivas pendientes (38 Correcto, 28 Corregir, 1 Dudoso) y las 47 negativas de confianza alta (41 Correcto, 4 Corregir, 2 Dudoso). Solo quedan en Pendiente las «Sin relación». (sample 2026-11-08)
 
 **ranker** (#33 #41 #68 abiertos)
 - GA en `tools/evolution_tools/`, 29 genes, fitness por lotes en la GPU (~0,12 s por generación con el cargador conectado; con batería es mucho más lenta).

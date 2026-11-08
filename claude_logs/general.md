@@ -57,3 +57,7 @@
 - Migración: las 144 entradas de los logs diarios se copiaron tal cual a los diarios por tema (agregando la fecha al encabezado; un subagente clasificó cada entrada por tema) y los originales quedaron en `claude_logs/archive/`. Ojo: las entradas de después de medianoche del archivo del 06 llevan fecha 2026-11-06 aunque son del 07.
 - STATUS inicial armado a partir de una revisión completa de los logs buscando decisiones que quedaron abiertas: 5 del ranker, 4 de datos, 5 de la muestra, 3 de embeddings (detalles elegidos por Claude sin confirmar), más 6 acciones en espera.
 - CLAUDE.md: la sección "Claude logs" se reemplazó por "Claude memory: STATUS and topic logs".
+
+## 2026-11-08 00:29 — Commit c9bf284: STATUS y diarios por tema
+
+Commit `feature: status file and per-topic claude logs` (sin issue: no hay ninguno de logs/memoria). `results/sample/negatives_review_pilot.csv` quedó fuera, va en un commit de la muestra (#27 #28).

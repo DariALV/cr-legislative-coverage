@@ -175,3 +175,32 @@
 - Resultado de las 34: 19 Correcto, 10 Corregir, 5 Dudoso. Pasan a positivas 24738 (Ovsicori), 25363 (eurobonos), 22817 (veto pensiones OIJ), 25699 (rector UTN en la comisión investigadora) y 25291 (tren, con 25183); la 24375 (cantón de Guanacaste) queda en Dudoso. Cambian alternativos 24, 263 (añadir 25754), 133 (paquete de mano dura) y 10 (quitar 25775); 272 pasa a «Anunciado sin expediente».
 - El usuario ya había dejado comentarios propios en otras filas (p. ej. «Mismo tema con qué expediente? No pusiste ninguno.»): no se tocaron.
 - Comentario con los caveats en #28. Faltan las 47 negativas de confianza alta que no son «Sin relación» (~1 M de tokens estimado).
+
+## 2026-11-08 00:37 — pendiente: revisión detallada de toda la muestra pendiente, por partes (#27, #28)
+
+- Pedido del usuario: que Claude revise con cuidado (no como el pre-etiquetado rápido) las noticias de la hoja que siguen sin revisar: contenido de la noticia, expedientes recomendados y otros posibles, centralidad.
+- Estado leído de la hoja: buena parte ya la revisó el usuario (Correcto); quedan Pendiente sobre todo positivas, negativas de confianza alta y «Sin relación», más ~15 Dudoso con comentarios del usuario dirigidos a Claude («Es de pago», 25800 vs 25839, secretos de Estado 18639/23437, centralidad con varios expedientes, Crucitas/Cutris).
+- Propuesto por partes: (1) los Dudoso con pregunta del usuario; (2) positivas pendientes; (3) negativas de alta que no son «Sin relación»; (4) opcional, «Sin relación» con pasada liviana. Mismo método que antes (subagentes de 6, «Claude:» + Propuesta/Evidencia, sin tocar las columnas de la etiqueta). ~23 mil tokens por noticia. El helper `search.py` y el BRIEF del scratchpad anterior ya no existen: hay que rehacerlos.
+- Esperando la respuesta del usuario sobre el alcance.
+
+## 2026-11-08 00:43 — decisión: revisión detallada de las partes 1 a 3 (131 noticias) (#27, #28)
+
+- El usuario eligió las partes 1 a 3; «Sin relación» queda fuera. Filas ubicadas leyendo la hoja (K y P a S): parte 1, 17 Dudoso/Correcto con pregunta del usuario (5, 7, 10, 79, 83, 97, 102, 107, 109, 115, 118, 126, 129, 133, 142, 154, 270); parte 2, 67 positivas Pendiente; parte 3, las 47 negativas de confianza alta que no son «Sin relación» (calza con el conteo de STATUS).
+- Rehechos en el scratchpad `review/search.py` (news, bill, find, deputy, steps, votes, similar) y `review/BRIEF.md`. Novedades del brief: centralidad y tipo de mención por cada expediente, revisar calcos (`similar`) y expedientes posteriores a la nota.
+- Criterio de escritura elegido por Claude: los subagentes escriben ellos mismos fila por fila, verificando el news_id justo antes. En la parte 1 (filas ya revisadas por el usuario) no se toca su «Revisión» y el comentario de Claude se agrega debajo del texto del usuario, sin borrarlo. Respaldo en `review/out/*.jsonl`.
+
+## 2026-11-08 00:49 — Parte 1 escrita en la hoja: 17 filas con pregunta del usuario (#27, #28)
+
+- 3 subagentes (138–161 mil tokens cada uno, ~25 mil por noticia). Los 17 news_id coincidieron; P sin tocar, comentario «Claude:» debajo del texto del usuario. Respaldo en `review/out/p1{a,b,c}.jsonl`.
+- Recomendaciones: Correcto 5, 10, 102, 109, 118 (más 23952 secundario), 133, 142. Corregir: 7 (otros 25803, 25754), 79 (sacar 25803 → Decreto o Ejecutivo, como dijo el usuario), 83 (no hay expediente → Sin relación o Anunciado), 97 (→ positiva 25258, trámite, de paso), 107 (→ positiva 24717, secundario; Crucitas está en Cutris), 115 (centralidades: 25506 central, 25864 y 25332 secundarios, 25808 y 23414 de paso), 126 (más 24290 y 24717 por apodo, de paso), 129 (25800/25839 no son calcos: dos comisiones investigadoras con el mismo nombre genérico; Anunciado, alternativo 25862), 154 (→ Anunciado, alternativo 25803), 270 (23437 secundario; 18639 y 25634 de paso; 25752 es posterior).
+- Hallazgo de datos: la exposición guardada para 25699 es el texto de otro expediente (CCSS, gastos médicos), un error de scraping. 18639 no está en la base (es anterior a 20000).
+- Partes 2 (11 tandas) y 3 (8 tandas) lanzadas en paralelo.
+
+## 2026-11-08 00:59 — Revisión detallada de las partes 2 y 3 escrita en la hoja; 131 de 131 verificadas (#27, #28)
+
+- 19 subagentes (11 de positivas, 8 de negativas), ~86–174 mil tokens cada uno. En total, unos 2,8 M de tokens con la parte 1 (~21 mil por noticia). Todas en Modo A, con el news_id verificado antes de escribir. Respaldo en `review/out/p2*.jsonl` y `p3*.jsonl`.
+- Verificación de Claude: 131 filas en los jsonl, todas con revisión en la hoja; los news_id de P2:R270 coinciden con el orden previo; todos los números 20000–25999 citados en los comentarios existen en `bills`.
+- Parte 2 (67 positivas): 38 Correcto, 28 Corregir, 1 Dudoso (91: no se sabe qué presupuesto). Las correcciones son sobre todo de otros mencionados que faltaban (17, 24, 41, 59, 60, 68, 71, 75, 81, 82, 93), centralidad (2, 19, 42, 45, 66, 90) y alternativos posteriores a la nota que sobraban (16, 48). 101 pasa a negativa «Anunciado sin expediente» (25859 se presentó después de la nota). Errores del medio: la 32 cita 24738 por 24878 y la 78 cita 24753 por 24793.
+- Parte 3 (47 negativas de alta): 41 Correcto, 4 Corregir, 2 Dudoso. Falso negativo real en la 195: cita «24.482» y «23.572» por número y el pre-etiquetado no los vio. 122 → «Mismo tema» (alternativos 25847 y 25803); 144 → alternativo 25736; 172 → «Mismo tema» (24564). Dudosos: 123 (FEES de un presupuesto ya aprobado, 24535 o 25177) y 127 («los proyectos de seguridad», 25672–25676).
+- Inconsistencias que quedan para decidir con el usuario: las filas 160, 172 y 185 tratan el mismo hecho de la CCSS con subtipos distintos, y no hay regla para el trámite ya concluido de una ley (23, 62). Las dos quedaron en STATUS.
+- Datos: la base no registra pasos de 25363 desde el 28/1/2026, aunque se tramitaba en Hacendarios en agosto (posible hueco del scraping).
