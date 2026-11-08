@@ -22,13 +22,16 @@ class RankingProblem:
     bill coverage@K (share of the gold bills of those news with at least one news that has it in its top K)
     + TIE_BREAK × mean over those bills of K / (K + best rank), so that recipes with the same coverage are ordered by
       how close their missing bills are.
-  Runs on the GPU when there is one; every individual is scored over all bills of all rows at once.
+  Runs on the GPU when there is one. Individuals are scored in batches of batch_size, each over all bills of all rows
+  at once, with no CPU-GPU synchronization until the fitness of the whole population is copied back. A batch takes
+  roughly 100 MB × batch_size of GPU memory with the full gold set (less with a fold).
   """
 
   def __init__(self, features: RankingFeatures, rows: np.ndarray | None = None, k: int = 100,
-               device: str | None = None):
+               device: str | None = None, batch_size: int = 16):
     self.features = features
     self.k = k
+    self.batch_size = batch_size
     self.device = torch.device(device or ("cuda" if torch.cuda.is_available() else "cpu"))
     self.static_names = features.static_names
     self.feature_names = self.static_names + DYNAMIC_FEATURES
@@ -53,7 +56,11 @@ class RankingProblem:
     self.link_rows = torch.tensor([position[r] for r in links[:, 0]], device = self.device)
     self.link_bills = torch.tensor(links[:, 1], device = self.device)
     self.row_index = torch.tensor(self.rows, device = self.device)
-    self.static_rows = self.static[:, self.row_index]   # copied once per fold, not once per individual
+    # Copied once per fold, not once per individual. Free the previous fold's copies first so two never coexist.
+    self.static_rows = self.events_before_rows = self.events_after_rows = None
+    self.static_rows = self.static[:, self.row_index]
+    self.events_before_rows = self.events_before[:, self.row_index]
+    self.events_after_rows = self.events_after[:, self.row_index]
     self.age_rows = self.age[self.row_index]
     bills, self.link_bill_index = np.unique(links[:, 1], return_inverse = True)
     self.link_bill_index = torch.tensor(self.link_bill_index, device = self.device)
@@ -63,43 +70,63 @@ class RankingProblem:
 
   # ---- scoring ----
 
-  def scores(self, genes: dict, i: int) -> torch.Tensor:
-    """Scores (rows × bills) of individual i of a decoded batch."""
-    weights = torch.tensor([genes[f"w_{n}"][i] * genes[f"use_{n}"][i] for n in self.feature_names],
-                           dtype = torch.float32, device = self.device)
-    score = torch.tensordot(weights[:len(self.static_names)], self.static_rows, dims = 1)
-    dynamic = weights[len(self.static_names):]
-    if dynamic[0] != 0 or dynamic[1] != 0:
-      count = (self.events_before[int(genes["window_before_days"][i])][self.row_index].float()
-               + self.events_after[int(genes["window_after_days"][i])][self.row_index].float())
-      score = score + dynamic[0] * (count > 0).float() + dynamic[1] * torch.log1p(count)
-    if dynamic[2] != 0:
-      score = score + dynamic[2] * torch.exp2(-self.age_rows / float(genes["age_half_life_days"][i]))
+  def batch_scores(self, genes: dict, start: int, stop: int) -> torch.Tensor:
+    """Scores (individuals × rows × bills) of individuals start..stop-1 of a decoded batch. Which terms are needed is
+    decided on the CPU from the numpy genes, so nothing waits for the GPU."""
+    weights = np.stack([genes[f"w_{n}"][start:stop] * genes[f"use_{n}"][start:stop] for n in self.feature_names],
+                       axis = 1).astype(np.float32)
+    n_static = len(self.static_names)
+    static = torch.from_numpy(weights[:, :n_static]).to(self.device)
+    score = torch.einsum("bs,snm->bnm", static, self.static_rows)
+    active, event_count, age_decay = weights[:, n_static:].T
+    if active.any() or event_count.any():
+      before = torch.from_numpy(genes["window_before_days"][start:stop].astype(np.int64)).to(self.device)
+      after = torch.from_numpy(genes["window_after_days"][start:stop].astype(np.int64)).to(self.device)
+      count = self.events_before_rows[before].float() + self.events_after_rows[after].float()
+      score += torch.from_numpy(active).to(self.device)[:, None, None] * (count > 0).float()
+      score += torch.from_numpy(event_count).to(self.device)[:, None, None] * torch.log1p(count)
+      del count
+    if age_decay.any():
+      half_life = torch.from_numpy(genes["age_half_life_days"][start:stop].astype(np.float32)).to(self.device)
+      score += (torch.from_numpy(age_decay).to(self.device)[:, None, None]
+                * torch.exp2(-self.age_rows[None] / half_life[:, None, None]))
     return score
 
+  def scores(self, genes: dict, i: int) -> torch.Tensor:
+    """Scores (rows × bills) of individual i of a decoded batch."""
+    return self.batch_scores(genes, i, i + 1)[0]
+
   def link_ranks(self, score: torch.Tensor) -> torch.Tensor:
-    """Rank of every gold link among the bills of its news. Ties count against the gold bill (it goes last among
-    the bills with its score): otherwise a recipe that switches everything off scores every bill 0 and puts every
-    gold bill first. The embedding analysis counts ties in favor, which is harmless there because cosines don't tie."""
-    gold = score[self.link_rows, self.link_bills]
-    return (score[self.link_rows] >= gold[:, None]).sum(dim = 1)
+    """Rank of every gold link among the bills of its news, for scores (rows × bills) → (links,) or (individuals ×
+    rows × bills) → (individuals × links). Ties count against the gold bill (it goes last among the bills with its
+    score): otherwise a recipe that switches everything off scores every bill 0 and puts every gold bill first. The
+    embedding analysis counts ties in favor, which is harmless there because cosines don't tie."""
+    if score.dim() == 2:
+      return self.link_ranks(score[None])[0]
+    gold = score[:, self.link_rows, self.link_bills]
+    return (score[:, self.link_rows] >= gold[:, :, None]).sum(dim = 2)
 
   def best_bill_ranks(self, ranks: torch.Tensor) -> torch.Tensor:
-    best = torch.full((self.n_bills,), torch.iinfo(torch.int64).max, device = self.device)
-    return best.scatter_reduce(0, self.link_bill_index, ranks, reduce = "amin")
+    """Best rank of every gold bill over its links, for ranks (links,) or (individuals × links)."""
+    if ranks.dim() == 1:
+      return self.best_bill_ranks(ranks[None])[0]
+    best = torch.full((len(ranks), self.n_bills), torch.iinfo(torch.int64).max, device = self.device)
+    index = self.link_bill_index[None].expand(len(ranks), -1)
+    return best.scatter_reduce(1, index, ranks, reduce = "amin")
 
   # ---- Problem interface ----
 
   def evaluate(self, genes: dict[str, np.ndarray]) -> np.ndarray:
     count = len(next(iter(genes.values())))
-    fitness = np.empty(count)
+    parts = []
     with torch.no_grad():
-      for i in range(count):
-        best = self.best_bill_ranks(self.link_ranks(self.scores(genes, i))).float()
-        coverage = (best <= self.k).float().mean()
-        smooth = (self.k / (self.k + best)).mean()
-        fitness[i] = float(coverage + TIE_BREAK * smooth)
-    return fitness
+      for start in range(0, count, self.batch_size):
+        stop = min(start + self.batch_size, count)
+        best = self.best_bill_ranks(self.link_ranks(self.batch_scores(genes, start, stop))).float()
+        coverage = (best <= self.k).float().mean(dim = 1)
+        smooth = (self.k / (self.k + best)).mean(dim = 1)
+        parts.append(coverage + TIE_BREAK * smooth)
+      return torch.cat(parts).double().cpu().numpy()   # the only wait for the GPU
 
   def metrics(self, genes: dict, i: int = 0, ks: list[int] | None = None) -> dict:
     """Full report of one individual over the current rows."""

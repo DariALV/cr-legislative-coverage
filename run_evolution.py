@@ -62,6 +62,8 @@ if __name__ == "__main__":
   parser.add_argument("--reset-rate", type = float, default = defaults.reset_rate)
   parser.add_argument("--seed", type = int, default = Config.EVOLUTION_SEED)
   parser.add_argument("--device", help = "cuda or cpu (default: cuda when available)")
+  parser.add_argument("--batch-size", type = int, default = 16,
+                      help = "individuals scored at once on the GPU (~100 MB each); lower it if memory runs out")
   parser.add_argument("--rebuild-features", action = "store_true", help = "recompute the cached feature matrices")
   args = parser.parse_args()
 
@@ -75,7 +77,7 @@ if __name__ == "__main__":
 
   features = FeatureBuilder().load_or_build(args.rebuild_features)
   n_news = features.static.shape[1]
-  problem = RankingProblem(features, k = args.k, device = args.device)
+  problem = RankingProblem(features, k = args.k, device = args.device, batch_size = args.batch_size)
   logger.info(f"[evolution] {name}: {n_news} news, {len(features.links)} links, {problem.spec.size} genes, "
               f"device {problem.device}")
 
