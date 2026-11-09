@@ -2,7 +2,7 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-08 (prueba de Jev).
+Última actualización: 2026-11-09 (tema jev creado).
 
 ## Decisiones vigentes
 
@@ -34,9 +34,9 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Usar los candidatos del ranker para revisar negativas**: ayuda, pero sesga la revisión. Sin respuesta. (sample 2026-11-07 16:51)
 - **Oro con número y nombre enmascarados** para medir el sesgo del oro de Delfino. Propuesto, nunca decidido. (embeddings 2026-11-07 12:52; #38)
 
-### jev (evaluador TypeSafe; sin diario propio aún, va en general.md)
-- **Prueba de Jev contra etiquetas: Choice de tipo 75 % de acuerdo en 187 Correcto, desacuerdos sobre todo por expedientes que no son proyectos de ley (general 2026-11-08 21:21). Prueba de Jev (2026-11-08)**: puerta de 3 Nouls funciona (19/20 oro, 0/21 al azar); falla en expedientes hermanos (3/84 falsos match). Un request por noticia con 50 candidatos y ficha corta (v2): igual de exacto, 25,5k tokens y $0,001 por noticia; todo el corpus ≈ $35 (≈ $10 con el filtro de palabras estrictas, que deja 8.081 noticias y pasa el 98 % del oro). La ficha con exposición no cabe (límite ~32k tokens por pregunta). Filtro de palabras: el estricto conserva 102/102 positivos de la muestra (el permisivo, 58 % del corpus, tampoco gana nada: ver general 2026-11-08 20:18). Filtro de Jev por noticia probado en 832 noticias (general 2026-11-08 20:52): pregunta ancha assembly pasa 102/102 positivos y 99 % del oro, mejor que el estricto (98 %) al mismo costo (~$8); pendiente elegir filtro y umbral. Faltan: desambiguación entre hermanos, más noticias (de paso, decreto, anunciado, ley vigente), medir el filtro de palabras con la muestra manual, elegir K, tope de largo de noticia, crear el tema jev.md. (general 2026-11-08 20:05)
-- **Diseño de las preguntas a Jev**: puerta con 3 `Noul` (explícito / implícito / mismo tema) y segunda ráfaga solo para los que pasan (centralidad, postura, voz, evento del trámite, guardas contra los negativos de la muestra). Faltan: si «mismo tema» abre la puerta, un request por par o por noticia, tablas para guardar probabilidades, permiso para probar la API, crear el tema `jev.md`. (general 2026-11-08 19:22; #34 #39)
+### jev (evaluador TypeSafe; diario `claude_logs/jev.md`, las pruebas del 2026-11-08 están indexadas allí y escritas en general.md)
+- **Prueba de Jev contra etiquetas: Choice de tipo 75 % de acuerdo en 187 Correcto, desacuerdos sobre todo por expedientes que no son proyectos de ley (general 2026-11-08 21:21). Prueba de Jev (2026-11-08)**: puerta de 3 Nouls funciona (19/20 oro, 0/21 al azar); falla en expedientes hermanos (3/84 falsos match). Un request por noticia con 50 candidatos y ficha corta (v2): igual de exacto, 25,5k tokens y $0,001 por noticia; todo el corpus ≈ $35 (≈ $10 con el filtro de palabras estrictas, que deja 8.081 noticias y pasa el 98 % del oro). La ficha con exposición no cabe (límite ~32k tokens por pregunta). Filtro de palabras: el estricto conserva 102/102 positivos de la muestra (el permisivo, 58 % del corpus, tampoco gana nada: ver general 2026-11-08 20:18). Filtro de Jev por noticia probado en 832 noticias (general 2026-11-08 20:52): pregunta ancha assembly pasa 102/102 positivos y 99 % del oro, mejor que el estricto (98 %) al mismo costo (~$8); pendiente elegir filtro y umbral. Faltan: desambiguación entre hermanos, más noticias (de paso, decreto, anunciado, ley vigente), medir el filtro de palabras con la muestra manual, elegir K, tope de largo de noticia,  (general 2026-11-08 20:05)
+- **Diseño de las preguntas a Jev**: puerta con 3 `Noul` (explícito / implícito / mismo tema) y segunda ráfaga solo para los que pasan (centralidad, postura, voz, evento del trámite, guardas contra los negativos de la muestra). Faltan: si «mismo tema» abre la puerta, un request por par o por noticia, tablas para guardar probabilidades, permiso para probar la API. (general 2026-11-08 19:22; #34 #39)
 
 ### embeddings (elegidos por Claude sin confirmar; reversibles, prioridad baja)
 - **`EmbeddingRunner`**: el tamaño de chunk incluye el título (cuerpo mínimo de 64 tokens); los 56 expedientes sin materias caen al nombre; se descartan los números sueltos en materias; batches de ~8.192 tokens. (embeddings 2026-11-07 03:10)
@@ -49,6 +49,7 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Revisión humana de la muestra**: el usuario revisa las "Sin relación" y confirma las propuestas "Corregir"/"Dudoso" de Claude (las 131 nuevas incluidas); después Claude aplica las correcciones confirmadas a las columnas de la etiqueta. Después: las 15 de Delfino (cola aparte), el doble etiquetado a ciegas de 20 noticias (#30) y exportar a CSV.
 - **Comentario en #68** con los resultados de las corridas con exclusión.
 - **Entre máquinas a mano** (no van en git): la base, `databases/embeddings/`, `databases/retrieval/`, `.env`, `raw/`.
+- **Datos crudos de Jev**: respuestas de la API y scripts en `results/jev/answers/` y `results/jev/scripts/` (jev 2026-11-09 10:00); los scripts leen `TYPESAFE_API_KEY` de `.env`.
 
 ## Estado por tema
 

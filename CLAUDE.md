@@ -33,6 +33,7 @@ Closed list of topics. Ask the user before creating a new one; anything that fit
 | `embeddings.md` | embedding runner and variants, embedding analyzer, full news corpus | #6 #32 #38 |
 | `sample.md` | manual labeled sample, pre-labeled batches, negatives review | #25–#31 |
 | `ranker.md` | learning-to-rank, evolutionary ranker, fitness on GPU, folds and runs | #33 #41 #68 |
+| `jev.md` | Jev (TypeSafe) evaluator: probes, filters, costs, question design | #34 #39 #43 |
 | `general.md` | repo rules (CLAUDE.md), issue housekeeping, machines, anything cross-cutting | — |
 
 - Always log. Anything worth remembering goes in: decisions taken with the user (and the options discarded), observations about sources and data (e.g. "SIL has no X column"), what was implemented and how, caveats, errors and their fixes, counts and results of runs.
