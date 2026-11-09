@@ -22,6 +22,7 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Semanario sin autor**: las 2.222 notas tienen `author` vacío. (data 2026-11-07 01:05; #16/#18)
 
 ### muestra
+- **Protocolo de adjudicación después de evaluar**: revisar los desacuerdos modelo–etiqueta (candidatos altos no etiquetados, etiquetados que el modelo pone muy abajo) con reglas fijadas antes, registrar cada corrección y reportar la métrica antes y después; más el doble etiquetado (#30) para estimar la tasa de error. Recomendación de Claude: sí, en lugar de buscar una muestra 100 % perfecta. (sample 2026-11-08 10:28)
 - **Expedientes que no son proyectos de ley** (comisiones investigadoras, nombramientos, reformas al Reglamento): ¿cuentan como positivas? Hoy se marcan en "Tipo de expediente". (sample 2026-11-07 13:35; #27 #29)
 - **Anuncio que después se vuelve expediente**: hoy es negativa "Anunciado sin expediente", con el expediente en "alternativos". El caso 25859 (fila 101) ahora tiene propuesta de Claude: negativa con 25859 en alternativos. (sample 2026-11-07 13:35, 14:37; #27 #28)
 - **Trámite ya concluido de una ley vigente** («la Asamblea aprobó el préstamo en 2022», «la ley de la marina firmada el 2/7»): ¿cuenta como mención? Filas 23 (24259), 62 (24789), PAACUME (23003). Recomendación: contarlo en «Otros mencionados», De paso, sin hacerlo positivo si es lo único. (sample 2026-11-08 revisión partes 1–3)

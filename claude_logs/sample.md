@@ -204,3 +204,11 @@
 - Parte 3 (47 negativas de alta): 41 Correcto, 4 Corregir, 2 Dudoso. Falso negativo real en la 195: cita «24.482» y «23.572» por número y el pre-etiquetado no los vio. 122 → «Mismo tema» (alternativos 25847 y 25803); 144 → alternativo 25736; 172 → «Mismo tema» (24564). Dudosos: 123 (FEES de un presupuesto ya aprobado, 24535 o 25177) y 127 («los proyectos de seguridad», 25672–25676).
 - Inconsistencias que quedan para decidir con el usuario: las filas 160, 172 y 185 tratan el mismo hecho de la CCSS con subtipos distintos, y no hay regla para el trámite ya concluido de una ley (23, 62). Las dos quedaron en STATUS.
 - Datos: la base no registra pasos de 25363 desde el 28/1/2026, aunque se tramitaba en Hacendarios en agosto (posible hueco del scraping).
+
+## 2026-11-08 10:28 — pendiente: qué pasa con los errores de etiqueta de la muestra y protocolo de adjudicación (#27 #28 #30)
+
+- Pregunta del usuario: si faltan expedientes en una noticia, o hay falsos positivos/negativos, ¿el modelo aprende mal? ¿hace falta un dataset 100 % correcto?
+- Respuesta: la muestra es solo test; no entrena nada (el GA aprende del oro de Delfino). Un error de etiqueta sesga la medición, no el modelo. Con ~100 positivas, cada etiqueta mala mueve el recall ~1 pp, menos que el ruido de muestreo (IC 95 % ≈ ±8 pp).
+- Efecto por tipo: expediente faltante → ese par no se evalúa (suelen ser los implícitos/de paso, así que el recall sale optimista); positivo falso (número mal citado, etc.) → recall pesimista; negativa que sí tenía expediente → se pierde una positiva, y para Jev cuenta un acierto como error.
+- Lo grave es el error sistemático, no el aleatorio: el pre-etiquetado fue léxico (números, nombres, TF-IDF), así que lo que se le escapó tiende a ser lo que también le cuesta al modelo.
+- Propuesto: doble etiquetado (#30) para estimar la tasa de error; después de evaluar, adjudicar los desacuerdos modelo–etiqueta con reglas fijadas antes, registrar cada cambio y reportar la métrica antes y después (corregir solo donde el modelo discrepa lo favorece). Los errores del oro de Delfino sí afectan el entrenamiento; las 15 de Delfino miden ese ruido.
