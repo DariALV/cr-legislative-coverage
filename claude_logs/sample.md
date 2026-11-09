@@ -229,3 +229,16 @@
 - En la pestaña Guía: el encabezado de los tipos de negativa (B23) ahora dice que son opcionales y que no se usan en el análisis. «Anunciado sin expediente» (B25) queda solo para los anuncios que nunca se presentaron; si el expediente se presentó después, la noticia es positiva. De «Alternativos» (B13) se quitó lo del expediente posterior a un anuncio.
 - Falta reclasificar las filas de la pestaña Etiquetas (la 101 y otras «Anunciado sin expediente» que tengan expediente). Queda para cuando se apliquen las correcciones de la revisión humana.
 - No hay ningún .md de Jev en el repo; solo `tools/llm_tools/jev.py` (un stub con la prueba de TypeSafe, commit f2f762c #10).
+
+## 2026-11-09 15:27 — decisión: protocolo de adjudicación en versión mínima (#27 #28 #30)
+
+- El usuario aprueba: (1) termina su revisión de la hoja; (2) se corre el ranker sobre la muestra una sola vez y se guarda el número (métrica "antes"); (3) se revisan solo los desacuerdos modelo–etiqueta con las reglas de la Guía, sin reglas nuevas; (4) cada cambio queda registrado y se reportan las métricas antes y después.
+- El doble etiquetado a ciegas de 20 noticias (#30) es opcional: sirve para estimar la tasa de error del reporte, pero no bloquea nada.
+- El usuario avisa cuando termine la revisión.
+
+## 2026-11-09 15:27 — pendiente: la propuesta para el trámite concluido choca con #25 (#27 #28 #25)
+
+- El usuario aprobó la propuesta de Claude para la 8: cuenta como positiva si la nota trata de la ley (qué hace, su trámite, sus efectos o su aplicación); no cuenta si solo la nombra como antecedente, y entonces va en «Otros mencionados».
+- Al anotarla, Claude vio que «efectos o aplicación» contradice la definición de cobertura de #25 y de la Guía: una ley vigente que se aplica no cuenta. Se vuelve a preguntar solo ese punto. Recomendación: mantener #25 y que cuente solo si la nota informa un paso del trámite (aprobación, firma o sanción, veto, publicación), aunque ya haya concluido.
+
+## 2026-11-09 15:40 — ver jev.md: no se amplía la muestra; la prioridad pasa a ser Jev

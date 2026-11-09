@@ -122,6 +122,23 @@ class Config:
   SAMPLE_QUEUE_PER_OUTLET = 100       # queue length per general outlet; labeling stops when the quotas are met
   SAMPLE_DELFINO = 15                 # Delfino news with gold links, to compare their links with the hand labels
 
+  # Candidates for Jev (#33, #41, #68): top-K of the evolved ranker recipe. Seed 7 has the better cross-validation on
+  # the gold set (bill coverage@50 0.960 vs 0.948 for seed 100); it was picked on the gold set, not on the sample.
+  RANKER_RECIPE = "results/evolution/2026-11-07_excl15_seed7/final/best.json"
+  CANDIDATES_K = 50
+
+  # Jev, TypeSafe's System One model (#10, #34, #39, #43). Two requests per news: the gate asks 3 yes/no questions
+  # for each of the K candidates (plus the genre of the news), the details request asks the rest only for the bills
+  # whose explicit or implicit answer reaches the threshold. The API only offers aliases (jev-latest, jev-preview),
+  # so every response stores the model name it reports.
+  JEV_MODEL = "jev-latest"
+  JEV_RESULTS_DIR = "results/jev"      # numbers only (no news text), kept in git
+  JEV_MATCH_THRESHOLD = 0.5            # fixed before looking at the sample; the evaluation reports the full curves
+  JEV_MAX_NEWS_CHARS = 15000           # news content is cut here (p99 is ~13,400) to stay under ~32k tokens per question
+  JEV_PRICE_PER_MILLION = 0.042        # USD per million input tokens (output is free), docs.typesafe.ai/go/models
+  JEV_COST_CAP_USD = 1.0               # a run stops once it has spent this much; raise it with --cap for the corpus
+  JEV_THREADS = 3
+
   # Embedding models to try (#6, #32). Adding one is adding an entry; Embedder takes these values as arguments.
   EMBEDDING_MODELS = {
     "bge-m3": EmbeddingModel("BAAI/bge-m3", max_tokens = 8192),

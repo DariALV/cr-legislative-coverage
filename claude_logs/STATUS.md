@@ -19,8 +19,7 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Boilerplate antes de embeber**: avisos de opinión de Delfino (~1.200), avisos de IA de Nación (788), data line de El Mundo (2.749/3.388). Los embeddings ya se corrieron sin limpiar. (data 2026-11-07 01:05; #16 #32)
 
 ### muestra
-- **Protocolo de adjudicación después de evaluar**: revisar los desacuerdos modelo–etiqueta (candidatos altos no etiquetados, etiquetados que el modelo pone muy abajo) con reglas fijadas antes, registrar cada corrección y reportar la métrica antes y después; más el doble etiquetado (#30) para estimar la tasa de error. Recomendación de Claude: sí, en lugar de buscar una muestra 100 % perfecta. (sample 2026-11-08 10:28)
-- **Trámite ya concluido de una ley vigente** («la Asamblea aprobó el préstamo en 2022», «la ley de la marina firmada el 2/7»): ¿cuenta como mención? Filas 23 (24259), 62 (24789), PAACUME (23003). Recomendación: contarlo en «Otros mencionados», De paso, sin hacerlo positivo si es lo único. (sample 2026-11-08 revisión partes 1–3)
+- **Trámite ya concluido de una ley vigente**: aprobado que no cuenta si la ley solo se nombra como antecedente (va en «Otros mencionados»). Falta decidir si cuenta una nota sobre los efectos o la aplicación de la ley, porque eso choca con #25 («una ley vigente que se aplica no cuenta»). Recomendación: mantener #25 y contarla solo si informa un paso del trámite (aprobación, firma, veto, publicación). Filas 23 (24259), 62 (24789), PAACUME (23003). (sample 2026-11-09, «pendiente: … choca con #25»)
 - **Usar los candidatos del ranker para revisar negativas**: ayuda, pero sesga la revisión. Sin respuesta. (sample 2026-11-07 16:51)
 - **Oro con número y nombre enmascarados** para medir el sesgo del oro de Delfino. Propuesto, nunca decidido. (embeddings 2026-11-07 12:52; #38)
 
@@ -32,14 +31,17 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 - **Expedientes que no son proyectos de ley** (comisiones investigadoras, nombramientos, reformas al Reglamento) **cuentan como positivos**; se marcan en «Tipo de expediente». (general 2026-11-08; #27 #29)
 - **Filtro de Jev por noticia en inglés** (pregunta ancha `assembly`); el español no mejora. (general 2026-11-08)
+- **No se amplía la muestra manual**: queda poco tiempo (trabajo universitario) y la prioridad pasa a ser probar Jev. (jev 2026-11-09)
 - **K = 50 candidatos por noticia para Jev**; el ranker solo propone candidatos y Jev decide positivo/negativo. Recall @50: 0,954 en el oro y 0,95–0,97 en las 62 positivas «Correcto» de la muestra. Las corridas del GA usaron 100, así que se reporta @50. (ranker 2026-11-08, «decisión: K = 50»; ranker 2026-11-09 13:50; #41)
 - **ranker**: la base de comparación es exposition sola y la generación 0 es al azar; el rango de pesos se queda en ±5. (ranker 2026-11-09 13:42, 13:50)
 - **embeddings**: se confirman las opciones de `EmbeddingRunner` y del analizador. El overlap es 0 y no se corre el control con overlap. (embeddings 2026-11-09 13:50)
 - **datos**: lo de Semanario sin autor no se toca, porque es un metadato irrelevante. (data 2026-11-09 13:50)
 - **muestra**: un anuncio que después se vuelve expediente cuenta como **positiva**, porque el medio ya está hablando del proyecto (la fila 101, 25859, pasa a positiva; falta reclasificar en Etiquetas las «Anunciado sin expediente» que tienen expediente, y la Guía ya está actualizada). Los subtipos de positiva se conservan; los de negativa dejan de usarse y no se corrigen (filas 160, 172, 185). (sample 2026-11-09 14:04)
+- **Adjudicación de la muestra**: se corre el ranker una vez y se guarda la métrica; se revisan solo los desacuerdos modelo–etiqueta con las reglas de la Guía; cada cambio queda registrado y se reportan las métricas antes y después. El doble etiquetado (#30) es opcional. Arranca cuando el usuario avise que terminó la revisión. (sample 2026-11-09, «decisión: protocolo de adjudicación»)
 
 ## En espera: acciones pendientes
 
+- **Prueba de punta a punta ranker → Jev en la muestra**: código listo y probado con 3 noticias (jev 2026-11-09, «Implementada la clase Jev»). Faltan: (1) descargar la pestaña Etiquetas como CSV; (2) en la máquina con embeddings, `python run_candidates.py --name sample --labels Etiquetas.csv` (sin probar todavía); (3) `python run_jev.py --name sample` (~$0,40); (4) `python run_jev_eval.py --name sample --labels Etiquetas.csv`. (#34 #39 #10)
 - **Evaluar embeddings y ranker en la muestra manual**: el ranker ya se evaluó en las 189 «Correcto» (cobertura @30 ≈ 0,95–0,97; ranker 2026-11-08, entrada «decisión: evaluar el ranker…»). Falta repetirlo cuando cierre la revisión humana y evaluar los embeddings solos. (#41 #68)
 - **Revisión humana de la muestra**: el usuario revisa las "Sin relación" y confirma las propuestas "Corregir"/"Dudoso" de Claude (las 131 nuevas incluidas); después Claude aplica las correcciones confirmadas a las columnas de la etiqueta. Después: las 15 de Delfino (cola aparte), el doble etiquetado a ciegas de 20 noticias (#30) y exportar a CSV.
 - **Comentario en #68** con los resultados de las corridas con exclusión.
