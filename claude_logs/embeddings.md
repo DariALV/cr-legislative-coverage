@@ -191,3 +191,7 @@
 
 - La parte de `run_embeddings.py` con `--all-news` ya entró en el commit de #68 (`ae60e78`), porque compartía bloque con `--background`. Solo quedaba `EmbeddingRunner.all_news_ids()`; se commitea con el mensaje acordado a las 15:57: `feature: full news corpus embedding flag #32`. #32 sigue abierto hasta tener la corrida real y su análisis.
 - El usuario se pasa de la compu con la RTX 2060 a la otra, después de que termine `--all-news`. Lo que no viaja por git (ignorado): `databases/private_corpus.db` (259 MB), `databases/embeddings/` (255 MB + el `news_256_all.npz` nuevo), `databases/retrieval/` (360 MB, regenerable con `FeatureBuilder` en ~35 s), `results/evolution/**/population.csv` (~15 MB, regenerable desde la semilla), `private_visuals/output/` (28 MB), `.env` y `raw/` (3,5 GB, solo si se va a re-extraer). Los modelos de Hugging Face se bajan solos en la otra compu.
+
+## 2026-11-08 19:40 — Cerrado #32: la corrida `--all-news` ya estaba hecha (#32)
+- El usuario avisó que `--all-news` se corrió hace rato y no se había reportado. Verificado: `databases/embeddings/qwen3-0.6b/news_256_all.npz` (561 MB, 2026-11-07 19:57) tiene 128.748 chunks × 1024, con `news_ids`, `chunk_index` y `tokens`; coincide con el conteo esperado.
+- #32 cerrado con comentario. El análisis de esas noticias de fondo queda dentro del ranker (#68) y de la evaluación en la muestra, no en #32.

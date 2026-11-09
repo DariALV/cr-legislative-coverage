@@ -371,3 +371,22 @@
 ## 2026-11-08 00:10 — Commit of pending evolution runs to switch computers
 
 Committed everything left untracked so the other computer has no differences: evolution runs `2026-11-07_long`, `2026-11-07_seed_100`, `2026-11-07_excl15_seed7`, `2026-11-07_excl15_seed100` (~85 MB in `results/evolution/`), `gpu_monitor.csv` and `run_ranking_profile.py`. Related to #68.
+
+## 2026-11-08 19:29 — Barrido de K con las recetas evolucionadas ya guardadas, sin reentrenar (#41 #68 #34)
+
+- Pedido del usuario: ver qué K balancea mejor el costo de Jev contra el recall. Se reusaron las recetas de cada fold de `2026-11-07_excl15_seed7` y `_seed100`, con las mismas particiones (misma semilla) y evaluadas solo en las noticias de test (518 noticias, 1.091 links, ~805 expedientes por semilla); promedio de las dos semillas. Script desechable en el scratchpad (no está en el repo); tabla en `results/evolution/k_sweep.csv`. Control: @50 y @100 coinciden con summary.json (0,954 y 0,970).
+- Cobertura de expedientes (evolved / base cos_exposition_max): @10 0,852/0,608; @20 0,911/0,681; @30 0,927/0,709; @40 0,943/0,731; @50 0,954/0,751; @75 0,966/0,785; @100 0,970/0,809; @150 0,979/0,837; @200 0,983/0,856; @300 0,988/0,873. Noticias-agenda excluidas (receta final): @50 0,658, @100 0,758, @200 0,839, @300 0,890 (link recall).
+- Costo marginal en pares de Jev por expediente extra cubierto (en el oro): 10→20 ≈ 110; 20→30 ≈ 430; 30→50 ≈ 500; 50→75 ≈ 1.100; 75→100 ≈ 3.700; 100→200 ≈ 5.000. Rango de pares: ~8.085 noticias del filtro de palabras × K (K = 50: 404 mil; K = 100: 809 mil).
+- Rango de rangos de los links: mediana 3, p75 7, p90 21–22, p95 52–57, p99 630–780 (cola larga: unos pocos links caen muy lejos y ningún K razonable los atrapa).
+- Caveats: el oro es de Delfino (links explícitos, más fáciles que las menciones implícitas); el recall del pipeline es el del ranker por el de Jev; no se midió en la muestra manual (falta `--all-news`); el costo en dinero de Jev no se midió, solo pares.
+
+## 2026-11-08 21:42 — decisión: evaluar el ranker evolutivo en la muestra manual (solo cobertura en positivas) (#41 #68 #27)
+- Decisiones del usuario: verdad = todas las filas con Revisión «Correcto» y «En la muestra» = Sí (189: 62 positivas, 127 negativas; incluye propuestas de Claude que el usuario dio por buenas); medir solo la cobertura del expediente correcto en las positivas (no el positivo/negativo); features solo para esas noticias, con script desechable en el scratchpad (no está en el repo: `eval_sample.py`).
+- Método: features de la muestra con los embeddings `news_256_all.npz` y los mismos métodos de FeatureBuilder; se estandariza con la media/desvío del oro; recetas `final` de las semillas 7 y 100. Control: las features recalculadas en 40 noticias del oro coinciden con el caché (dif. ≤ 0,001 en cosenos, 0,01 en z). Ninguna noticia de la muestra está en el oro.
+- Cobertura (principal u otros mencionados, n = 62), semilla 7 / semilla 100: @1 0,47/0,55; @10 0,81/0,89; @30 0,95/0,97; @50 0,95/0,97; @100 0,97/0,97. Solo el expediente principal: @30 0,935/0,952. Por tipo @30: Número 1,00, Nombre oficial 0,92, Descripción 0,90/0,95, Apodo y Proponente 1,00. Las recetas se evolucionaron sin ver estas noticias.
+- Extra (no pedido): puntaje del top-1 como señal positivo/negativo da AUC 0,64 (semilla 7) y 0,70 (semilla 100): el ranker no sirve para separar, solo para ordenar candidatos; eso le toca a Jev. Medianas del top-1: positivas 21–25; negativas 18–21 (Ley vigente 28).
+- Caveat: la verdad incluye propuestas de Claude no distinguibles de las marcas del usuario; las 47 «Pendiente» (casi todas «Sin relación»), 40 «Corregir» y 24 «Dudoso» quedan fuera.
+
+## 2026-11-08 21:44 — decisión: K = 50 para pasar los candidatos a Jev (TypeSafe); el ranker no clasifica positivo/negativo (#41 #68)
+- El usuario aclara que el objetivo de la evaluación en la muestra era solo ver si el recall con K = 50 queda alto; positivo/negativo lo decide Jev, no el GA. El AUC del top-1 (0,64–0,70) queda como dato, sin importancia para el diseño.
+- Con K = 50 en la muestra (62 positivas): principal 0,935 (sem. 7) / 0,952 (sem. 100); principal u otros mencionados 0,952 / 0,968. Concuerda con el 0,954 del oro. Cierra el pendiente del K final (ranker 2026-11-08 19:29).
