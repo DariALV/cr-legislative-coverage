@@ -212,3 +212,20 @@
 - Efecto por tipo: expediente faltante → ese par no se evalúa (suelen ser los implícitos/de paso, así que el recall sale optimista); positivo falso (número mal citado, etc.) → recall pesimista; negativa que sí tenía expediente → se pierde una positiva, y para Jev cuenta un acierto como error.
 - Lo grave es el error sistemático, no el aleatorio: el pre-etiquetado fue léxico (números, nombres, TF-IDF), así que lo que se le escapó tiende a ser lo que también le cuesta al modelo.
 - Propuesto: doble etiquetado (#30) para estimar la tasa de error; después de evaluar, adjudicar los desacuerdos modelo–etiqueta con reglas fijadas antes, registrar cada cambio y reportar la métrica antes y después (corregir solo donde el modelo discrepa lo favorece). Los errores del oro de Delfino sí afectan el entrenamiento; las 15 de Delfino miden ese ruido.
+
+## 2026-11-09 14:04 — decisión: un anuncio que después se vuelve expediente cuenta como positiva; los subtipos de negativa no importan (#27 #28)
+
+- Anuncio que después se vuelve expediente (sample 2026-11-07 13:35, 14:37): **es positiva**, con el expediente posterior como principal. Criterio del usuario: si el medio está hablando de hecho de ese proyecto, es cobertura, aunque el expediente todavía no exista. Esto revierte la propuesta de Claude para la fila 101 (25859): pasa a positiva. Las negativas «Anunciado sin expediente» que tienen expediente en "alternativos" hay que reclasificarlas.
+- No hay objeción técnica: `feature_builder.py` puntúa todos los expedientes, también los presentados después de la noticia (features `filed_after_news`, `events_after`, `age_days` negativo). Riesgo menor: si en el oro de Delfino casi no hay casos así, el GA podría aprender a castigar `filed_after_news`.
+- Subtipos de negativa (filas 160, 172, 185 de la CCSS): **no hace falta que sean consistentes**. Según el usuario, lo que importa es positiva o negativa, no el motivo. Las tres son negativas y se dejan como están.
+
+## 2026-11-09 15:19 — decisión: se conservan los subtipos de positiva y se dejan de usar los de negativa (#27 #28)
+
+- Los subtipos de positiva (número, nombre oficial, apodo, descripción…) se conservan porque sirven para medir el recall según cómo se nombra el proyecto.
+- Los subtipos de negativa se dejan de usar: el análisis los trata a todos como «Negativa». No se borran de la hoja (el texto queda en Evidencia/Nota) y no hace falta corregirlos. Falta actualizar la Guía de la hoja.
+
+## 2026-11-09 15:20 — Guía de la hoja actualizada con las decisiones de hoy (#27 #28)
+
+- En la pestaña Guía: el encabezado de los tipos de negativa (B23) ahora dice que son opcionales y que no se usan en el análisis. «Anunciado sin expediente» (B25) queda solo para los anuncios que nunca se presentaron; si el expediente se presentó después, la noticia es positiva. De «Alternativos» (B13) se quitó lo del expediente posterior a un anuncio.
+- Falta reclasificar las filas de la pestaña Etiquetas (la 101 y otras «Anunciado sin expediente» que tengan expediente). Queda para cuando se apliquen las correcciones de la revisión humana.
+- No hay ningún .md de Jev en el repo; solo `tools/llm_tools/jev.py` (un stub con la prueba de TypeSafe, commit f2f762c #10).

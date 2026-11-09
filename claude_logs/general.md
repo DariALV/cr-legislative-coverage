@@ -137,3 +137,11 @@ Commit `feature: status file and per-topic claude logs` (sin issue: no hay ningu
 
 - Decisión del usuario: comisiones investigadoras, nombramientos (p. ej. magistrados suplentes 25258), reformas al Reglamento y demás expedientes del SIL que no son proyectos de ley cuentan como positivos cuando la noticia los menciona; se mantiene la columna «Tipo de expediente» para poder filtrarlos o reportarlos aparte. Alternativa descartada: tratarlos como «Actividad legislativa sin expediente».
 - Consecuencia: las etiquetas actuales de la hoja ya estaban así (positivas con tipo de expediente), así que no hay que cambiar filas; sí hay que corregir la definición de las opciones de Jev: bill_discussed debe incluir cualquier expediente (nombramiento, comisión), y legislative_activity_no_bill significa actividad de la Asamblea sin ningún expediente (control político sin número). Con eso, ~14 de los 16 falsos negativos de la prueba de tipos pasarían a ser aciertos (por confirmar con una nueva corrida). El filtro de Jev por noticia (assembly) no cambia: ya los dejaba pasar.
+
+## 2026-11-09 15:22 — Pull con choque resuelto: los logs locales se mezclaron con los 3 commits de la otra máquina
+
+- Los diarios y STATUS sin commitear chocaban con 5bae38c, 9d2bfab y 42516ae (barrido de K, pruebas de Jev, diario jev.md). Se resolvió con stash, pull --ff-only y stash pop. En embeddings.md y ranker.md se conservaron las entradas de los dos lados. STATUS se mezcló a mano: los pendientes que la otra máquina ya había cerrado (no proyectos de ley = positivos, K = 50) salieron de Pendiente, y #32 ya estaba cerrado.
+
+## 2026-11-09 15:24 — decisión: no se registra qué máquina es cuál
+
+- El usuario pide quitar las menciones de máquinas, porque adivinar cuál es cuál enreda. En STATUS se quitó la línea «Esta máquina (MSI)…» (quedó solo la indicación del `.venv`) y «Entre máquinas a mano» pasó a «Fuera de git». También se borró la memoria de Claude `machines.md`.

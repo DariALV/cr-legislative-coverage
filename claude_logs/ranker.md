@@ -390,3 +390,39 @@ Committed everything left untracked so the other computer has no differences: ev
 ## 2026-11-08 21:44 — decisión: K = 50 para pasar los candidatos a Jev (TypeSafe); el ranker no clasifica positivo/negativo (#41 #68)
 - El usuario aclara que el objetivo de la evaluación en la muestra era solo ver si el recall con K = 50 queda alto; positivo/negativo lo decide Jev, no el GA. El AUC del top-1 (0,64–0,70) queda como dato, sin importancia para el diseño.
 - Con K = 50 en la muestra (62 positivas): principal 0,935 (sem. 7) / 0,952 (sem. 100); principal u otros mencionados 0,952 / 0,968. Concuerda con el 0,954 del oro. Cierra el pendiente del K final (ranker 2026-11-08 19:29).
+
+## 2026-11-09 12:41 — Revisión de qué entrena el GA y lectura de las recetas de excl15 (#68)
+- Genes (29): 13 pesos en [-5, 5], 13 switches on/off, `window_before_days` (0–60), `window_after_days` (0–14), `age_half_life_days` (7–3650, escala log). Los ajustes del GA (población 50, torneo 3, BLX-0.5, etc.) son fijos, no se evolucionan.
+- Score = Σ peso·feature (continuas estandarizadas sobre todos los pares; alive/filed_after_news quedan 0/1). Fitness = cobertura de expedientes@100 + 0,001·media de K/(K+mejor rango). Empates cuentan en contra del oro.
+- Estable en las 12 recetas (2 semillas × 5 folds + final): bm25 ≈ +5 (topa el rango), z_subjects +2/+3.5, cos_exposition_max +1/+4.8, event_distance −1/−3, filed_after_news ≈ −4/−5, age_decay −1/−5 con vida media 26–213 d (castiga expedientes muy recientes), cos_subjects_max negativo (se compensa con z_subjects: colineales).
+- Inestable: ventana de actividad (1–60 días antes, 0–14 después), `active` y `event_count` (cambian de signo o se apagan): señal débil o redundante con event_distance.
+
+## 2026-11-09 13:10 — Interpretación de lo que aprendió el GA (#68)
+- Lógica de dos capas: contenido (¿es el tema?) domina; tiempo (¿está vivo y moviéndose en el SIL?) desempata entre expedientes de tema parecido.
+- bm25 lo más fuerte (topa +5): las notas nombran términos raros del expediente (instituciones, nombres de leyes) que el embedding diluye entre muchos expedientes del mismo tema.
+- z_subjects + / cos_subjects − : vale la similitud inusual para ese expediente, no la absoluta; castiga los expedientes "hub" de materias genéricas.
+- event_distance −, alive +, age_decay − (vida media 1–3 meses), filed_after_news −5: la cobertura sigue al trámite y a expedientes ya en discusión, no a los recién presentados (muchos y casi nunca cubiertos).
+- Ojo: el peso de bm25 puede estar inflado si Delfino arma sus links buscando por nombre; liga con la idea pendiente del oro enmascarado (embeddings 2026-11-07 12:52). Sin ablación es solo interpretación.
+
+## 2026-11-09 13:23 — Ranker evolutivo en la muestra manual: ~0,95, parecido al CV en Delfino (#68 #41)
+- Dato del usuario: probado en la muestra manual, queda "muy parecido, en 0,95". No consta aquí qué métrica, qué receta ni el número de la base; el resultado no está en el repo (se corrió en la otra máquina; git fetch falló por red).
+- Lectura: generaliza fuera del oro de Delfino (CV 0,967–0,974). Con ~100 positivas el error estándar es ~±2 pp, así que la diferencia cabe en el ruido.
+- Ojo: el pre-etiquetado de la muestra usó TF-IDF sobre nombre + temas, números citados y diputados con actividad ±21 días (sample 2026-11-07 13:35): las mismas señales que más pesan en el ranker (bm25, actividad). Los positivos que no tenían coincidencia léxica pudieron quedar sin etiquetar, lo que inflaría la cobertura. La sospecha de sesgo léxico baja pero no desaparece.
+- La revisión humana de la muestra no ha cerrado: el número puede moverse.
+
+## 2026-11-09 13:37 — pendiente: ampliar el rango de pesos es un no-op si se amplía para todos (#68)
+- El ranking no cambia si se multiplican todos los pesos por c > 0, y el GA escala igual: población inicial uniforme, mutación = 10 % del rango, BLX, reinicios y clip son todos proporcionales al rango. Cambiar WEIGHT_RANGE de 5 a 20 da las mismas recetas (×4) y la misma fitness, salvo redondeo de float32.
+- Que bm25 tope +5 no limita nada: cualquier receta cabe en [-5, 5] reescalándola. El techo solo dice que bm25 es el peso mayor.
+- Opciones con efecto real: rango distinto por feature (p. ej. solo bm25 a ±20: cambia la búsqueda, no lo que se puede representar), fijar un peso (bm25 = 1) para quitar la dimensión redundante, o pesos en escala log para afinar los pesos chicos. Recomendación de Claude: no tocarlo.
+
+## 2026-11-09 13:42 — decisión: el rango de pesos se queda en ±5 (#68)
+- El usuario decide no ampliarlo, siguiendo la recomendación de Claude (ranker 2026-11-09 13:37): ampliarlo para todos es un no-op y el techo de bm25 no limita. Se quita de STATUS; siguen abiertos los otros ajustes al GA.
+
+## 2026-11-09 13:50 — decisión: la base es exposition sola, la generación 0 al azar, y K final = 50 (#68 #41)
+
+- El usuario confirma los dos detalles que estaban "a confirmar" (ranker 2026-11-07 15:26): la base de comparación es exposition sola (no la mezcla RRF) y la generación 0 del GA es al azar. Así se hicieron las corridas.
+- K final del pipeline = 50, no 100. Según el usuario, es un buen punto entre el costo de Jev y el recall (CV @50 ≈ 0,954 en el oro con las semillas 7 y 100). Las corridas usaron K = 100: hay que reportar @50 como la métrica principal.
+
+## 2026-11-09 15:22 — corrección: el resultado del ranker en la muestra sí estaba registrado (#68 #41)
+
+- La entrada 2026-11-09 13:23 decía que no constaba la métrica ni la receta. Estaban en la otra máquina y llegaron con el pull: ranker 2026-11-08 21:42 (cobertura en las 62 positivas «Correcto», semillas 7 y 100) y 21:44 (K = 50). STATUS se mezcló con esa versión.

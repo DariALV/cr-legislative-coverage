@@ -229,3 +229,7 @@ Pendiente de decisión del usuario (no se implementó nada): recuperar exposicio
 - Por pedido del usuario: commit con `asamblea_parser.py`, `docs/bills.md` y este log, ligado a #22.
 
 ## 2026-11-08 00:49 — ver sample.md: la exposición de 25699 en bill_texts es la de otro expediente (#66)
+
+## 2026-11-09 13:50 — decisión: Semanario sin autor no se toca (#16)
+
+- Las 2.222 notas de Semanario con `author` vacío se quedan así. El usuario dice que es un metadato irrelevante para el análisis. No hace falta caveat.

@@ -195,3 +195,9 @@
 ## 2026-11-08 19:40 — Cerrado #32: la corrida `--all-news` ya estaba hecha (#32)
 - El usuario avisó que `--all-news` se corrió hace rato y no se había reportado. Verificado: `databases/embeddings/qwen3-0.6b/news_256_all.npz` (561 MB, 2026-11-07 19:57) tiene 128.748 chunks × 1024, con `news_ids`, `chunk_index` y `tokens`; coincide con el conteo esperado.
 - #32 cerrado con comentario. El análisis de esas noticias de fondo queda dentro del ranker (#68) y de la evaluación en la muestra, no en #32.
+
+## 2026-11-09 13:50 — decisión: se confirman las opciones de EmbeddingRunner y del analizador; se descarta el control con overlap (#32 #38)
+
+- El usuario confirma lo que Claude eligió en EmbeddingRunner (embeddings 2026-11-07 03:10): el chunk incluye el título y tiene un cuerpo mínimo de 64 tokens, se cae al nombre si no hay materias, se descartan los números sueltos y los batches son de ~8.192 tokens.
+- También confirma los criterios del analizador (embeddings 2026-11-07 12:59): recall@30, los empates cuentan a favor, mean renormalizado, estratos micro.
+- Se descarta el control con ~12 % de overlap (embeddings 2026-11-06 22:45). Todos los embeddings se hicieron con overlap 0, y se queda así.
