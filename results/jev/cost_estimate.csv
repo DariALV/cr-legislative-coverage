@@ -1,0 +1,19 @@
+k,scenario,requests_kind,requests,input_mtokens,usd_at_0.042_per_mtok
+10,gate 3 Nouls,1 request per pair,296980,540,22.7
+10,all 7 questions,1 request per pair,296980,659,27.7
+10,gate + 7 questions on ~3 pairs/news,2 requests,386074,738,31.0
+20,gate 3 Nouls,1 request per pair,593960,1080,45.4
+20,all 7 questions,1 request per pair,593960,1319,55.4
+20,gate + 7 questions on ~3 pairs/news,2 requests,683054,1278,53.7
+30,gate 3 Nouls,1 request per pair,890940,1620,68.0
+30,all 7 questions,1 request per pair,890940,1978,83.1
+30,gate + 7 questions on ~3 pairs/news,2 requests,980034,1818,76.3
+50,gate 3 Nouls,1 request per pair,1484900,2700,113.4
+50,all 7 questions,1 request per pair,1484900,3297,138.5
+50,gate + 7 questions on ~3 pairs/news,2 requests,1573994,2897,121.7
+75,gate 3 Nouls,1 request per pair,2227350,4049,170.1
+75,all 7 questions,1 request per pair,2227350,4945,207.7
+75,gate + 7 questions on ~3 pairs/news,2 requests,2316444,4247,178.4
+100,gate 3 Nouls,1 request per pair,2969800,5399,226.8
+100,all 7 questions,1 request per pair,2969800,6593,276.9
+100,gate + 7 questions on ~3 pairs/news,2 requests,3058894,5597,235.1

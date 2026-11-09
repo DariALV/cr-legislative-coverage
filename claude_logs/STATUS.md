@@ -2,7 +2,13 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-08 (revisión partes 1–3).
+Última actualización: 2026-11-08 (prueba de Jev).
+
+## Decisiones vigentes
+
+- **Expedientes que no son proyectos de ley** (comisiones investigadoras, nombramientos, reformas al Reglamento) **cuentan como positivos**; se marcan en «Tipo de expediente». (general 2026-11-08; #27 #29)
+- **Filtro de Jev por noticia en inglés** (pregunta ancha `assembly`); el español no mejora. (general 2026-11-08)
+- **K = 50 candidatos por noticia para Jev**; el ranker solo propone candidatos, Jev decide positivo/negativo. Recall @50: 0,954 en el oro y 0,95–0,97 en las 62 positivas «Correcto» de la muestra. (ranker 2026-11-08, «decisión: K = 50»; #41)
 
 ## Pendiente: decisiones abiertas
 
@@ -12,7 +18,6 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Arquitectura por gradiente (A/B/C)**: (A) 1 neurona / 13 parámetros, (B) 12→16→1, (C) 12→32→16→1, misma CV. Recomendación: la más simple que no pierda. Es lo que falta para cerrar #68. (ranker 2026-11-07 14:14, 20:15)
 - **Ajustes al GA**: ampliar el rango de pesos (bm25 topa en +5), sembrar la generación 0 con la base, CMA-ES, selección por truncamiento. Ninguno decidido. (ranker 2026-11-07 20:15; #68)
 - **Detalles "a confirmar" nunca confirmados**: la base de comparación es exposition sola (no la mezcla RRF), y la generación 0 es al azar. (ranker 2026-11-07 15:26; #68)
-- **K final del pipeline**: recomendación de Claude: según el costo de Jev (100 si alcanza), decidido con la muestra manual y por medio. Las corridas usan K = 100. (ranker 2026-11-07 13:37; #41)
 - **Fuentes extra de candidatos**: diputado nombrado + actividad cercana; reglas para presupuesto y apodos; por chunk o con LLM para notas tipo lista (#35); pasada desde el expediente para los "sin cobertura"; reranker cross-encoder sobre el top-200; fine-tuning contrastivo (para después). (ranker 2026-11-07 13:37–13:50; #33 #36 #41)
 
 ### datos
@@ -23,12 +28,15 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 ### muestra
 - **Protocolo de adjudicación después de evaluar**: revisar los desacuerdos modelo–etiqueta (candidatos altos no etiquetados, etiquetados que el modelo pone muy abajo) con reglas fijadas antes, registrar cada corrección y reportar la métrica antes y después; más el doble etiquetado (#30) para estimar la tasa de error. Recomendación de Claude: sí, en lugar de buscar una muestra 100 % perfecta. (sample 2026-11-08 10:28)
-- **Expedientes que no son proyectos de ley** (comisiones investigadoras, nombramientos, reformas al Reglamento): ¿cuentan como positivas? Hoy se marcan en "Tipo de expediente". (sample 2026-11-07 13:35; #27 #29)
 - **Anuncio que después se vuelve expediente**: hoy es negativa "Anunciado sin expediente", con el expediente en "alternativos". El caso 25859 (fila 101) ahora tiene propuesta de Claude: negativa con 25859 en alternativos. (sample 2026-11-07 13:35, 14:37; #27 #28)
 - **Trámite ya concluido de una ley vigente** («la Asamblea aprobó el préstamo en 2022», «la ley de la marina firmada el 2/7»): ¿cuenta como mención? Filas 23 (24259), 62 (24789), PAACUME (23003). Recomendación: contarlo en «Otros mencionados», De paso, sin hacerlo positivo si es lo único. (sample 2026-11-08 revisión partes 1–3)
 - **Acto del Ejecutivo con un proyecto del mismo tema no aludido**: ¿«Decreto o Ejecutivo» o «Mismo tema sin expediente»? Las filas 160, 172 y 185 (Junta Directiva de la CCSS; 24564, 25488) quedaron inconsistentes. Recomendación: «Decreto o Ejecutivo» con el proyecto en alternativos. (sample 2026-11-08 revisión partes 1–3)
 - **Usar los candidatos del ranker para revisar negativas**: ayuda, pero sesga la revisión. Sin respuesta. (sample 2026-11-07 16:51)
 - **Oro con número y nombre enmascarados** para medir el sesgo del oro de Delfino. Propuesto, nunca decidido. (embeddings 2026-11-07 12:52; #38)
+
+### jev (evaluador TypeSafe; sin diario propio aún, va en general.md)
+- **Prueba de Jev contra etiquetas: Choice de tipo 75 % de acuerdo en 187 Correcto, desacuerdos sobre todo por expedientes que no son proyectos de ley (general 2026-11-08 21:21). Prueba de Jev (2026-11-08)**: puerta de 3 Nouls funciona (19/20 oro, 0/21 al azar); falla en expedientes hermanos (3/84 falsos match). Un request por noticia con 50 candidatos y ficha corta (v2): igual de exacto, 25,5k tokens y $0,001 por noticia; todo el corpus ≈ $35 (≈ $10 con el filtro de palabras estrictas, que deja 8.081 noticias y pasa el 98 % del oro). La ficha con exposición no cabe (límite ~32k tokens por pregunta). Filtro de palabras: el estricto conserva 102/102 positivos de la muestra (el permisivo, 58 % del corpus, tampoco gana nada: ver general 2026-11-08 20:18). Filtro de Jev por noticia probado en 832 noticias (general 2026-11-08 20:52): pregunta ancha assembly pasa 102/102 positivos y 99 % del oro, mejor que el estricto (98 %) al mismo costo (~$8); pendiente elegir filtro y umbral. Faltan: desambiguación entre hermanos, más noticias (de paso, decreto, anunciado, ley vigente), medir el filtro de palabras con la muestra manual, elegir K, tope de largo de noticia, crear el tema jev.md. (general 2026-11-08 20:05)
+- **Diseño de las preguntas a Jev**: puerta con 3 `Noul` (explícito / implícito / mismo tema) y segunda ráfaga solo para los que pasan (centralidad, postura, voz, evento del trámite, guardas contra los negativos de la muestra). Faltan: si «mismo tema» abre la puerta, un request por par o por noticia, tablas para guardar probabilidades, permiso para probar la API, crear el tema `jev.md`. (general 2026-11-08 19:22; #34 #39)
 
 ### embeddings (elegidos por Claude sin confirmar; reversibles, prioridad baja)
 - **`EmbeddingRunner`**: el tamaño de chunk incluye el título (cuerpo mínimo de 64 tokens); los 56 expedientes sin materias caen al nombre; se descartan los números sueltos en materias; batches de ~8.192 tokens. (embeddings 2026-11-07 03:10)
@@ -37,11 +45,9 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 ## En espera: acciones pendientes
 
-- **Corrida `--all-news`** en la RTX 2060: `python run_embeddings.py --model qwen3-0.6b --all-news` (~75 min, 128.748 chunks). No consta que se haya corrido. #32 sigue abierto hasta tener esa corrida y su análisis.
-- **Evaluar embeddings y ranker en la muestra manual** cuando cierre la revisión humana. Requiere `--all-news`. (#41 #68)
+- **Evaluar embeddings y ranker en la muestra manual**: el ranker ya se evaluó en las 189 «Correcto» (cobertura @30 ≈ 0,95–0,97; ranker 2026-11-08, entrada «decisión: evaluar el ranker…»). Falta repetirlo cuando cierre la revisión humana y evaluar los embeddings solos. (#41 #68)
 - **Revisión humana de la muestra**: el usuario revisa las "Sin relación" y confirma las propuestas "Corregir"/"Dudoso" de Claude (las 131 nuevas incluidas); después Claude aplica las correcciones confirmadas a las columnas de la etiqueta. Después: las 15 de Delfino (cola aparte), el doble etiquetado a ciegas de 20 noticias (#30) y exportar a CSV.
 - **Comentario en #68** con los resultados de las corridas con exclusión.
-- **Sin commitear**: `results/sample/negatives_review_pilot.csv`.
 - **Entre máquinas a mano** (no van en git): la base, `databases/embeddings/`, `databases/retrieval/`, `.env`, `raw/`.
 
 ## Estado por tema
@@ -53,10 +59,10 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 **explorador** (#67 cerrado): `private_visuals/db_explorer/server.py`, de solo lectura, en localhost:8765 (`db-explorer` en launch.json). Fotos de 168/230 diputados.
 
-**embeddings** (#32 abierto; #6 #38 cerrados)
+**embeddings** (#6 #32 #38 cerrados)
 - bge-m3 y qwen3-0.6b embebidos en el oro y en los 5.898 expedientes (3 variantes).
 - Mejor configuración: **qwen3-0.6b / 256 / exposition / max** (recall@30 0,773 y @50 0,805).
-- Hay 2.000 noticias de fondo embebidas. El flag `--all-news` está commiteado.
+- Corpus completo embebido: `news_256_all.npz`, 128.748 chunks (corrida del 2026-11-07 19:57, verificada 2026-11-08; embeddings 2026-11-08 19:40).
 
 **muestra** (#27–#31 abiertos; #25 #26 cerrados)
 - 300 noticias (100 positivas / 200 negativas) de 316 sorteos, en Google Sheets (columna "En la muestra"). Solo se usa como test.
@@ -69,5 +75,5 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - Semillas 7 y 100: CV @50 0,954 y @100 0,970, contra una base de ~0,81. Medido solo en el oro de Delfino.
 
 **general**
-- Esta máquina es la "mala": no tiene numpy ni torch, y el pip del `.venv` está roto (usar `python -m pip`). Embeddings y evolución corren en el portátil con la RTX 2060.
+- Esta máquina (MSI) tiene la RTX 2060 y el `.venv` con numpy y torch (2026-11-08): sirve para embeddings y evolución; el `python` suelto no tiene torch, usar `.venv/Scripts/python.exe`. El pip del `.venv` puede fallar (usar `python -m pip`).
 - Memoria de Claude: este STATUS más los diarios por tema (desde 2026-11-08). Los logs diarios viejos quedan en `claude_logs/archive/`.
