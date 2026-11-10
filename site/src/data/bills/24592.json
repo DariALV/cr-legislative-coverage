@@ -1,0 +1,379 @@
+{
+ "bill": {
+  "number": 24592,
+  "name": "Adición de un capítulo sobre la generación distribuida a la Ley N.° 7366",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-03-17",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Energía",
+   "Vivienda",
+   "Empleo"
+  ],
+  "proponents": [
+   "Ana Solano Borrador",
+   "Paula Solano Ejemplo",
+   "Carlos Salas Borrador",
+   "Tomás Brenes Muestra",
+   "Diego Salas Simulacro"
+  ],
+  "news_count": 34,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Ana Solano Borrador",
+   "faction": "Partido Ámbar",
+   "province": "Heredia",
+   "signing_order": 1
+  },
+  {
+   "name": "Paula Solano Ejemplo",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 2
+  },
+  {
+   "name": "Carlos Salas Borrador",
+   "faction": "Partido Granate",
+   "province": "Puntarenas",
+   "signing_order": 3
+  },
+  {
+   "name": "Tomás Brenes Muestra",
+   "faction": "Partido Ámbar",
+   "province": "Alajuela",
+   "signing_order": 4
+  },
+  {
+   "name": "Diego Salas Simulacro",
+   "faction": "Partido Granate",
+   "province": "San José",
+   "signing_order": 5
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2025-03-17",
+   "date_end": "2026-07-06"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Económicos",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-07-06",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "e30cec377b2ec64adcbdbfc1fd4a133eff799260dce4caad5bc4a391d0504766",
+   "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+   "organization": "crhoy",
+   "date_published": "2026-10-28T12:09:00",
+   "url": "https://example.com/crhoy/2026/10/28/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-580",
+   "link_source": "model",
+   "confidence": 0.91
+  },
+  {
+   "id": "793c39d3d0ee19dc27c4f0db6b1c533ea52f3737e0138ef09a06fd923deca609",
+   "title": "Consultas a instituciones retrasan proyecto sobre la generación distribuida",
+   "organization": "teletica",
+   "date_published": "2026-10-26T14:00:00",
+   "url": "https://example.com/teletica/2026/10/26/consultas-a-instituciones-retrasan-proyecto-sobre-la-generacion-distri-936",
+   "link_source": "model",
+   "confidence": 0.9
+  },
+  {
+   "id": "4cd54e895088a07a3347acae49e60863cc8a689e94868483841888e4a14fa3df",
+   "title": "Diputados discuten proyecto sobre los asentamientos informales",
+   "organization": "elmundo",
+   "date_published": "2026-08-26T20:02:00",
+   "url": "https://example.com/elmundo/2026/08/26/diputados-discuten-proyecto-sobre-los-asentamientos-informales-969",
+   "link_source": "model",
+   "confidence": 0.74
+  },
+  {
+   "id": "729e05a2d015e430dffa428242b15c3b1dadc180e8d0eec88476f3b3cc291a81",
+   "title": "¿Qué cambiaría con el proyecto sobre los asentamientos informales?",
+   "organization": "delfino",
+   "date_published": "2026-08-26T09:18:00",
+   "url": "https://example.com/delfino/2026/08/26/que-cambiaria-con-el-proyecto-sobre-los-asentamientos-informales-669",
+   "link_source": "model",
+   "confidence": 0.62
+  },
+  {
+   "id": "1a598afc8b5f4a7fe7aa2d058012fe25bc754ebc864a2a40aa8987de8e60836b",
+   "title": "Mociones de fondo frenan iniciativa sobre la generación distribuida",
+   "organization": "elmundo",
+   "date_published": "2026-08-21T21:39:00",
+   "url": "https://example.com/elmundo/2026/08/21/mociones-de-fondo-frenan-iniciativa-sobre-la-generacion-distribuida-531",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "bda60639ee7b6c5554b1298a9e3cd66bc48183c1ee36e0bb5f0673e9db5a2a43",
+   "title": "Así votaron las fracciones el primer debate del proyecto sobre los asentamientos informales",
+   "organization": "crhoy",
+   "date_published": "2026-08-19T20:49:00",
+   "url": "https://example.com/crhoy/2026/08/19/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-los-ase-680",
+   "link_source": "model",
+   "confidence": 0.63
+  },
+  {
+   "id": "6458cf7d01beaad040a43f2921b16eae7ecfccd8d6f0982e498564d5a585d5e7",
+   "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+   "organization": "teletica",
+   "date_published": "2026-08-19T10:03:00",
+   "url": "https://example.com/teletica/2026/08/19/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-921",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "321cc02f4ec71f83de0f372d97647775812545514fd12b114ec9e57bfb9c6695",
+   "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+   "organization": "crhoy",
+   "date_published": "2026-08-17T07:33:00",
+   "url": "https://example.com/crhoy/2026/08/17/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-449",
+   "link_source": "model",
+   "confidence": 0.48
+  },
+  {
+   "id": "262c058d4553e607d3f2d3b422c2fd245846243af8fca8589ee0f74dfdc3204b",
+   "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+   "organization": "teletica",
+   "date_published": "2026-08-13T12:06:00",
+   "url": "https://example.com/teletica/2026/08/13/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-799",
+   "link_source": "model",
+   "confidence": 0.33
+  },
+  {
+   "id": "61f3da1c990f0545553a1b788003f2e45718780c382bd14589eee851fab1cd72",
+   "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+   "organization": "crhoy",
+   "date_published": "2026-08-11T07:58:00",
+   "url": "https://example.com/crhoy/2026/08/11/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-416",
+   "link_source": "model",
+   "confidence": 0.59
+  },
+  {
+   "id": "1cf6d47802d1e53bb74aadef0fd21eb4af0457b2e1f8be60678275928df74261",
+   "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+   "organization": "elmundo",
+   "date_published": "2026-08-09T18:11:00",
+   "url": "https://example.com/elmundo/2026/08/09/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-176",
+   "link_source": "model",
+   "confidence": 0.73
+  },
+  {
+   "id": "d13f6a0febe73c67fef1011f1f42e011ac28d4117dd898123ecaccbc510f8e59",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+   "organization": "crhoy",
+   "date_published": "2026-08-05T11:52:00",
+   "url": "https://example.com/crhoy/2026/08/05/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-288",
+   "link_source": "model",
+   "confidence": 0.62
+  },
+  {
+   "id": "5856837e322ae2f6794d70f2fd923845b36ac41224d41f6900e6aebb06dad713",
+   "title": "Diputados discuten proyecto sobre los asentamientos informales",
+   "organization": "elmundo",
+   "date_published": "2026-07-27T19:27:00",
+   "url": "https://example.com/elmundo/2026/07/27/diputados-discuten-proyecto-sobre-los-asentamientos-informales-355",
+   "link_source": "model",
+   "confidence": 0.53
+  },
+  {
+   "id": "f33a537948a65ce4a48ddc6324ed05868cb12b01b6783e987a15076b5f609f74",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la generación distribuida",
+   "organization": "delfino",
+   "date_published": "2026-07-18T12:00:00",
+   "url": "https://example.com/delfino/2026/07/18/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-generacion-distribuida-150",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "d58b43df4f31e02a088150bf56c5ed4a9aa1da4f89d7689dfbd0c8c548db521f",
+   "title": "Mociones de fondo frenan iniciativa sobre la generación distribuida",
+   "organization": "elmundo",
+   "date_published": "2026-07-16T21:12:00",
+   "url": "https://example.com/elmundo/2026/07/16/mociones-de-fondo-frenan-iniciativa-sobre-la-generacion-distribuida-784",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "a7b10b2df7982a6a9dc75b19456fed37550ff64ace1f264935e97c88995e692d",
+   "title": "Diputados discuten proyecto sobre la generación distribuida",
+   "organization": "semanario",
+   "date_published": "2026-07-16T07:03:00",
+   "url": "https://example.com/semanario/2026/07/16/diputados-discuten-proyecto-sobre-la-generacion-distribuida-639",
+   "link_source": "model",
+   "confidence": 0.9
+  },
+  {
+   "id": "b9cb5f375d77c0e1906f9571ede03a8a5e1970583015209125d5246f9163df2b",
+   "title": "Diputados discuten proyecto sobre la generación distribuida",
+   "organization": "semanario",
+   "date_published": "2026-07-15T20:20:00",
+   "url": "https://example.com/semanario/2026/07/15/diputados-discuten-proyecto-sobre-la-generacion-distribuida-646",
+   "link_source": "model",
+   "confidence": 0.94
+  },
+  {
+   "id": "a322e5e917352e574b6f5cb628edaaa12bb114c2242bef1895bef3e611fd7c44",
+   "title": "Diputados discuten proyecto sobre la generación distribuida",
+   "organization": "elmundo",
+   "date_published": "2026-07-14T08:20:00",
+   "url": "https://example.com/elmundo/2026/07/14/diputados-discuten-proyecto-sobre-la-generacion-distribuida-546",
+   "link_source": "model",
+   "confidence": 0.69
+  },
+  {
+   "id": "24c38ee8e4ff1fe3739656951d0b1f37f21a21fd31eaf599673f412288b6456d",
+   "title": "¿Qué cambiaría con el proyecto sobre la generación distribuida?",
+   "organization": "elmundo",
+   "date_published": "2026-07-12T15:10:00",
+   "url": "https://example.com/elmundo/2026/07/12/que-cambiaria-con-el-proyecto-sobre-la-generacion-distribuida-949",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "e3369e556deb91b736fed7fc3ad719e7ba7fd1081ac3330a2c855509b113de02",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la generación distribuida",
+   "organization": "elmundo",
+   "date_published": "2026-07-11T07:41:00",
+   "url": "https://example.com/elmundo/2026/07/11/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-generacion-distribuida-751",
+   "link_source": "model",
+   "confidence": 0.58
+  },
+  {
+   "id": "d2ea5440e7c1aa666b394b45b6c95a4baf3929614cab27382ab22d2a4a91d5a8",
+   "title": "Sectores critican propuesta sobre la generación distribuida",
+   "organization": "delfino",
+   "date_published": "2026-07-10T20:11:00",
+   "url": "https://example.com/delfino/2026/07/10/sectores-critican-propuesta-sobre-la-generacion-distribuida-776",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "4752c6358be3c973af89f848c445b71bf4bf9d1f90130c8e0da9ad1a0230f9b0",
+   "title": "Mociones de fondo frenan iniciativa sobre la generación distribuida",
+   "organization": "teletica",
+   "date_published": "2026-07-10T13:53:00",
+   "url": "https://example.com/teletica/2026/07/10/mociones-de-fondo-frenan-iniciativa-sobre-la-generacion-distribuida-394",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "0d435f23b64ad56150619c2372126cffeaf32c169e5856d294227cf5b16bad9d",
+   "title": "Expediente 24.592: qué propone la reforma sobre la generación distribuida",
+   "organization": "delfino",
+   "date_published": "2026-07-09T09:53:00",
+   "url": "https://example.com/delfino/2026/07/09/expediente-24-592-que-propone-la-reforma-sobre-la-generacion-distribui-321",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "cc4d69ba41371a3043a2a53e2525d53fec0687e59413c26309705d51e0b3d10a",
+   "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+   "organization": "crhoy",
+   "date_published": "2026-07-08T12:13:00",
+   "url": "https://example.com/crhoy/2026/07/08/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-285",
+   "link_source": "model",
+   "confidence": 0.64
+  },
+  {
+   "id": "01e72fe47800d53d70b7983849b952701078690825cea21a88b9329c1e8ac4b2",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la generación distribuida",
+   "organization": "elobservador",
+   "date_published": "2026-07-08T07:29:00",
+   "url": "https://example.com/elobservador/2026/07/08/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-generacion-distribuida-632",
+   "link_source": "model",
+   "confidence": 0.72
+  },
+  {
+   "id": "b98483a08fd748f7c9cb8aba7be238e21fcdff32eb532025f89f711aaf3431c7",
+   "title": "Organizaciones piden cambios al proyecto sobre la generación distribuida",
+   "organization": "crhoy",
+   "date_published": "2026-07-06T20:35:00",
+   "url": "https://example.com/crhoy/2026/07/06/organizaciones-piden-cambios-al-proyecto-sobre-la-generacion-distribui-177",
+   "link_source": "model",
+   "confidence": 0.6
+  },
+  {
+   "id": "4eb180c5995c03251abb984732ba0a3f1bbd40de532ce46246c40b60602381f5",
+   "title": "Diputados discuten proyecto sobre la generación distribuida",
+   "organization": "elmundo",
+   "date_published": "2026-07-04T21:20:00",
+   "url": "https://example.com/elmundo/2026/07/04/diputados-discuten-proyecto-sobre-la-generacion-distribuida-114",
+   "link_source": "model",
+   "confidence": 0.75
+  },
+  {
+   "id": "42b433be920e48f68842d296b53db378b6b7d849884b715e39aa82c2b8db8303",
+   "title": "Consultas a instituciones retrasan proyecto sobre la generación distribuida",
+   "organization": "teletica",
+   "date_published": "2026-07-02T21:44:00",
+   "url": "https://example.com/teletica/2026/07/02/consultas-a-instituciones-retrasan-proyecto-sobre-la-generacion-distri-363",
+   "link_source": "model",
+   "confidence": 0.57
+  },
+  {
+   "id": "4ae76511bc622164ca239a248f71b4e0f172cebe07d988f85e33ad47abc4235c",
+   "title": "¿Qué cambiaría con el proyecto sobre la generación distribuida?",
+   "organization": "delfino",
+   "date_published": "2026-07-02T19:42:00",
+   "url": "https://example.com/delfino/2026/07/02/que-cambiaria-con-el-proyecto-sobre-la-generacion-distribuida-804",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "e685873e4b04a164f1fc293130043bd8feea4257a336831d5431c7efb708121f",
+   "title": "Consultas a instituciones retrasan proyecto sobre la generación distribuida",
+   "organization": "semanario",
+   "date_published": "2026-07-02T08:13:00",
+   "url": "https://example.com/semanario/2026/07/02/consultas-a-instituciones-retrasan-proyecto-sobre-la-generacion-distri-768",
+   "link_source": "model",
+   "confidence": 0.89
+  },
+  {
+   "id": "06218d9b60b0b2b832a060bebf6d55f7b95b759b42ec671ffa7f1cc7160b35c0",
+   "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+   "organization": "delfino",
+   "date_published": "2026-06-21T15:31:00",
+   "url": "https://example.com/delfino/2026/06/21/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-930",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "1db48aeb044a33364b4b398fa4b510e2253d35349f534261e76246a6bf0cdc32",
+   "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+   "organization": "crhoy",
+   "date_published": "2026-06-04T12:29:00",
+   "url": "https://example.com/crhoy/2026/06/04/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-694",
+   "link_source": "model",
+   "confidence": 0.97
+  },
+  {
+   "id": "d28142ee792fa11fd5b5aa10d966c34004698cb49154d65de6bfb0f24c3a35d6",
+   "title": "Expediente 24.592: qué propone la reforma sobre la generación distribuida",
+   "organization": "delfino",
+   "date_published": "2026-05-06T16:40:00",
+   "url": "https://example.com/delfino/2026/05/06/expediente-24-592-que-propone-la-reforma-sobre-la-generacion-distribui-394",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "ffbacfe11d4480d29df195ba5a264150d9d0932bd09c15fd6c335305d75877a8",
+   "title": "Organizaciones piden cambios al proyecto sobre la generación distribuida",
+   "organization": "semanario",
+   "date_published": "2026-05-01T07:57:00",
+   "url": "https://example.com/semanario/2026/05/01/organizaciones-piden-cambios-al-proyecto-sobre-la-generacion-distribui-116",
+   "link_source": "model",
+   "confidence": 0.86
+  }
+ ]
+}

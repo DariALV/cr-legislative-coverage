@@ -1,0 +1,24 @@
+---
+/** Initials avatar. Deputy photos are never published. */
+import { initials } from '../lib/format';
+interface Props { name: string; size?: number }
+const { name, size = 40 } = Astro.props;
+---
+<span class="avatar" style={`--size:${size}px`} aria-hidden="true">{initials(name)}</span>
+
+<style>
+  .avatar {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text-2);
+    font-size: calc(var(--size) * 0.36);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+</style>

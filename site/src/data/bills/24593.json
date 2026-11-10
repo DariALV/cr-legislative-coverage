@@ -1,0 +1,52 @@
+{
+ "bill": {
+  "number": 24593,
+  "name": "Ley de regulación de la inteligencia artificial en el sector público",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-03-21",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Tecnología"
+  ],
+  "proponents": [
+   "Pablo Jiménez Ejemplo"
+  ],
+  "news_count": 1,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Pablo Jiménez Ejemplo",
+   "faction": "Partido Granate",
+   "province": "San José",
+   "signing_order": 1
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2025-03-21",
+   "date_end": "2026-01-17"
+  },
+  {
+   "organ": "Comisión Permanente Especial de Ciencia, Tecnología y Educación",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-01-17",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "bbab2a1dbbb9e510523958b74e38d596cb8b7078cfd89fee2a3853d893b5eee5",
+   "title": "Mociones de fondo frenan iniciativa sobre el turismo rural comunitario",
+   "organization": "crhoy",
+   "date_published": "2026-08-06T15:33:00",
+   "url": "https://example.com/crhoy/2026/08/06/mociones-de-fondo-frenan-iniciativa-sobre-el-turismo-rural-comunitario-621",
+   "link_source": "model",
+   "confidence": 0.58
+  }
+ ]
+}

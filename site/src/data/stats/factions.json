@@ -1,0 +1,59 @@
+{
+ "generated_from_votes": 37,
+ "factions": [
+  {
+   "faction": "Partido Ámbar",
+   "deputies": 20,
+   "counts": {
+    "a_favor": 633,
+    "en_contra": 32,
+    "ausente": 75
+   }
+  },
+  {
+   "faction": "Partido Celeste",
+   "deputies": 14,
+   "counts": {
+    "a_favor": 336,
+    "en_contra": 157,
+    "ausente": 25
+   }
+  },
+  {
+   "faction": "Partido Granate",
+   "deputies": 9,
+   "counts": {
+    "a_favor": 197,
+    "en_contra": 100,
+    "ausente": 36
+   }
+  },
+  {
+   "faction": "Partido Índigo",
+   "deputies": 7,
+   "counts": {
+    "a_favor": 196,
+    "en_contra": 48,
+    "ausente": 15
+   }
+  },
+  {
+   "faction": "Partido Olivo",
+   "deputies": 5,
+   "counts": {
+    "a_favor": 82,
+    "en_contra": 85,
+    "ausente": 18
+   }
+  },
+  {
+   "faction": "Independiente",
+   "deputies": 2,
+   "counts": {
+    "a_favor": 44,
+    "en_contra": 23,
+    "ausente": 7
+   }
+  }
+ ]
+}

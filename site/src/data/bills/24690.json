@@ -1,0 +1,71 @@
+{
+ "bill": {
+  "number": 24690,
+  "name": "Ley de modernización del sistema penitenciario",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-06-09",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Seguridad",
+   "Educación"
+  ],
+  "proponents": [
+   "Adrián Solano Ficticio",
+   "Paula Solano Ejemplo",
+   "Diego Salas Simulacro",
+   "Laura Zúñiga Muestra",
+   "Tomás Calderón Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Adrián Solano Ficticio",
+   "faction": "Partido Ámbar",
+   "province": "Limón",
+   "signing_order": 1
+  },
+  {
+   "name": "Paula Solano Ejemplo",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 2
+  },
+  {
+   "name": "Diego Salas Simulacro",
+   "faction": "Partido Granate",
+   "province": "San José",
+   "signing_order": 3
+  },
+  {
+   "name": "Laura Zúñiga Muestra",
+   "faction": "Partido Granate",
+   "province": "Puntarenas",
+   "signing_order": 4
+  },
+  {
+   "name": "Tomás Calderón Ejemplo",
+   "faction": "Partido Ámbar",
+   "province": "Heredia",
+   "signing_order": 5
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2025-06-09",
+   "date_end": "2026-02-21"
+  },
+  {
+   "organ": "Comisión Permanente Especial de Seguridad y Narcotráfico",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-02-21",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": []
+}

@@ -1,0 +1,63 @@
+{
+ "bill": {
+  "number": 25093,
+  "name": "Adición de un capítulo sobre el tren eléctrico metropolitano a la Ley N.° 9277",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-04-04",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Transporte"
+  ],
+  "proponents": [
+   "Luis Brenes Ficticio",
+   "Paula Solano Ejemplo",
+   "Diego Umaña Ficticio",
+   "Paula Quesada Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Luis Brenes Ficticio",
+   "faction": "Partido Índigo",
+   "province": "Cartago",
+   "signing_order": 1
+  },
+  {
+   "name": "Paula Solano Ejemplo",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 2
+  },
+  {
+   "name": "Diego Umaña Ficticio",
+   "faction": "Partido Celeste",
+   "province": "Alajuela",
+   "signing_order": 3
+  },
+  {
+   "name": "Paula Quesada Ejemplo",
+   "faction": "Partido Índigo",
+   "province": "San José",
+   "signing_order": 4
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2026-04-04",
+   "date_end": "2026-08-11"
+  },
+  {
+   "organ": "Comisión Permanente de Gobierno y Administración",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-08-11",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": []
+}

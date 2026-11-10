@@ -1,0 +1,32 @@
+---
+/** A bill as listed from a news article (or elsewhere). */
+import StatusPill from './StatusPill.astro';
+import LinkBadge from './LinkBadge.astro';
+import { formatBillNumber, pluralize } from '../lib/format';
+import { billHref } from '../lib/paths';
+import type { BillSummary, NewsBillRef } from '../lib/types';
+
+interface Props { bill: BillSummary; link?: NewsBillRef; newsId?: string }
+const { bill, link, newsId } = Astro.props;
+---
+<li class="bill-card">
+  <div class="row head">
+    <span class="bill-num">Exp. {formatBillNumber(bill.number)}</span>
+    <StatusPill status={bill.status} lawNumber={bill.law_number} />
+  </div>
+  <div class="item-title"><a href={billHref(bill.number)}>{bill.name}</a></div>
+  <div class="item-meta">
+    {bill.subjects.map((s) => <span class="tag">{s}</span>)}
+    <span>{pluralize(bill.news_count, 'noticia', 'noticias')}</span>
+  </div>
+  {link && newsId && (
+    <div class="badge-row">
+      <LinkBadge source={link.link_source} confidence={link.confidence} billNumber={bill.number} newsId={newsId} />
+    </div>
+  )}
+</li>
+
+<style>
+  .head { gap: 0.5rem; margin-bottom: 0.2rem; }
+  .badge-row { margin-top: 0.45rem; }
+</style>

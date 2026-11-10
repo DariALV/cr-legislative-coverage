@@ -1,0 +1,32 @@
+[
+ {
+  "key": "crhoy",
+  "name": "CRHoy",
+  "type": "general"
+ },
+ {
+  "key": "delfino",
+  "name": "Delfino",
+  "type": "specialized"
+ },
+ {
+  "key": "elmundo",
+  "name": "El Mundo CR",
+  "type": "general"
+ },
+ {
+  "key": "semanario",
+  "name": "Semanario Universidad",
+  "type": "general"
+ },
+ {
+  "key": "elobservador",
+  "name": "El Observador",
+  "type": "general"
+ },
+ {
+  "key": "teletica",
+  "name": "Teletica",
+  "type": "general"
+ }
+]

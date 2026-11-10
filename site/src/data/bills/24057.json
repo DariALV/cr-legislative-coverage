@@ -1,0 +1,392 @@
+{
+ "bill": {
+  "number": 24057,
+  "name": "Ley de modernización del seguro de cosechas",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-03-06",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Agro"
+  ],
+  "proponents": [
+   "Carlos Umaña Borrador",
+   "Daniela Solano Prueba"
+  ],
+  "news_count": 4,
+  "votes_count": 1
+ },
+ "proponents": [
+  {
+   "name": "Carlos Umaña Borrador",
+   "faction": "Partido Índigo",
+   "province": "Puntarenas",
+   "signing_order": 1
+  },
+  {
+   "name": "Daniela Solano Prueba",
+   "faction": "Partido Ámbar",
+   "province": "Limón",
+   "signing_order": 2
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2024-03-06",
+   "date_end": "2024-09-05"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Agropecuarios",
+   "description": "Estudio en comisión, consultas y mociones; dictamen afirmativo de mayoría",
+   "date_start": "2024-09-05",
+   "date_end": "2024-09-14"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Discusión por el fondo en primer debate",
+   "date_start": "2024-09-14",
+   "date_end": "2024-12-01"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Segundo debate",
+   "date_start": "2024-12-01",
+   "date_end": null
+  }
+ ],
+ "votes": [
+  {
+   "vote_id": 21,
+   "date": "2024-12-01",
+   "name": "Primer debate",
+   "result": "Aprobado",
+   "deputies": [
+    {
+     "name": "Tomás Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Luis Calderón Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Solano Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "José Vargas Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Chaves Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Arias Muestra",
+     "party": "Partido Ámbar",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carmen Rojas Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Vargas Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Silvia Brenes Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Solano Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Daniela Quesada Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Solano Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Daniela Solano Prueba",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Alfaro Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Brenes Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Arias Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Umaña Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Calderón Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Marta Chaves Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Elena Quesada Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Rodrigo Umaña Prueba",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Rojas Muestra",
+     "party": "Partido Celeste",
+     "vote": "ausente"
+    },
+    {
+     "name": "Natalia Zúñiga Prueba",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Umaña Muestra",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Elena Chaves Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Mauricio Zúñiga Ensayo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Arias Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Solano Maqueta",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Alfaro Maqueta",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Umaña Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Lucía Alfaro Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Rojas Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Chaves Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Chaves Ensayo",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Diego Calderón Ficticio",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Chaves Ejemplo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Laura Zúñiga Muestra",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Jiménez Ejemplo",
+     "party": "Partido Granate",
+     "vote": "ausente"
+    },
+    {
+     "name": "Pablo Chaves Maqueta",
+     "party": "Partido Granate",
+     "vote": "ausente"
+    },
+    {
+     "name": "Paula Mora Borrador",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Salas Simulacro",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Salas Borrador",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Ricardo Solano Muestra",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Quesada Ejemplo",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Arias Muestra",
+     "party": "Partido Índigo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Fernando Jiménez Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Esteban Salas Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Umaña Borrador",
+     "party": "Partido Índigo",
+     "vote": "ausente"
+    },
+    {
+     "name": "Luis Brenes Ficticio",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Zúñiga Muestra",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "María Umaña Ficticio",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Pablo Quesada Ensayo",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "José Solano Ficticio",
+     "party": "Partido Olivo",
+     "vote": "ausente"
+    },
+    {
+     "name": "Carlos Zúñiga Maqueta",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Alfaro Prueba",
+     "party": "Independiente",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Vargas Maqueta",
+     "party": "Independiente",
+     "vote": "a_favor"
+    }
+   ]
+  }
+ ],
+ "news": [
+  {
+   "id": "2cf94c65542e47e48c2dc5fc56ac354dc961c71c35844eb627171d2f712d6e13",
+   "title": "Comisión avanza en iniciativa sobre el seguro de cosechas",
+   "organization": "elmundo",
+   "date_published": "2026-10-28T13:26:00",
+   "url": "https://example.com/elmundo/2026/10/28/comision-avanza-en-iniciativa-sobre-el-seguro-de-cosechas-439",
+   "link_source": "model",
+   "confidence": 0.55
+  },
+  {
+   "id": "3aca6869dc7cdffa1cca91c4a45b0bf93f888e857252ea1e1bfae30fc3f85d50",
+   "title": "Comisión avanza en iniciativa sobre el seguro de cosechas",
+   "organization": "semanario",
+   "date_published": "2026-08-13T12:42:00",
+   "url": "https://example.com/semanario/2026/08/13/comision-avanza-en-iniciativa-sobre-el-seguro-de-cosechas-999",
+   "link_source": "model",
+   "confidence": 0.64
+  },
+  {
+   "id": "fbb1054b78afe7d9332544a33bb157f23c26440129936e4aab12a2d65bcbeea9",
+   "title": "Expediente 24.057: qué propone la reforma sobre el seguro de cosechas",
+   "organization": "crhoy",
+   "date_published": "2026-05-30T14:32:00",
+   "url": "https://example.com/crhoy/2026/05/30/expediente-24-057-que-propone-la-reforma-sobre-el-seguro-de-cosechas-687",
+   "link_source": "model",
+   "confidence": 0.81
+  },
+  {
+   "id": "f884e1e1b6b8419cf13ee0ebc647f6dd301164599963641d3e58259d014e056b",
+   "title": "Diputados discuten proyecto sobre el seguro de cosechas",
+   "organization": "delfino",
+   "date_published": "2026-05-07T17:39:00",
+   "url": "https://example.com/delfino/2026/05/07/diputados-discuten-proyecto-sobre-el-seguro-de-cosechas-162",
+   "link_source": "manual",
+   "confidence": null
+  }
+ ]
+}

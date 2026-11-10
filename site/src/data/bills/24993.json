@@ -1,0 +1,55 @@
+{
+ "bill": {
+  "number": 24993,
+  "name": "Ley de modernización de la red vial cantonal",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-12-17",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Pablo Alfaro Borrador",
+   "Ricardo Arias Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Pablo Alfaro Borrador",
+   "faction": "Partido Ámbar",
+   "province": "Guanacaste",
+   "signing_order": 1
+  },
+  {
+   "name": "Ricardo Arias Ejemplo",
+   "faction": "Partido Celeste",
+   "province": "Guanacaste",
+   "signing_order": 2
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2025-12-17",
+   "date_end": "2026-06-26"
+  },
+  {
+   "organ": "Comisión Permanente de Gobierno y Administración",
+   "description": "Estudio en comisión, consultas y mociones; dictamen afirmativo de mayoría",
+   "date_start": "2026-06-26",
+   "date_end": "2026-08-25"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Discusión por el fondo en primer debate",
+   "date_start": "2026-08-25",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": []
+}

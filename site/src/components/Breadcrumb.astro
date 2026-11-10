@@ -1,0 +1,15 @@
+---
+/** Path back to the home page (the site has no top navigation bar). */
+import { href } from '../lib/paths';
+interface Props { items: { label: string; path?: string }[] }
+const { items } = Astro.props;
+---
+<nav class="breadcrumb" aria-label="Ruta">
+  <a href={href('')}>Inicio</a>
+  {items.map((it) => (
+    <>
+      <span aria-hidden="true"> / </span>
+      {it.path ? <a href={href(it.path)}>{it.label}</a> : <span aria-current="page">{it.label}</span>}
+    </>
+  ))}
+</nav>

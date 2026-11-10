@@ -1,0 +1,102 @@
+{
+ "bill": {
+  "number": 23682,
+  "name": "Reforma del artículo 40 de la Ley General sobre la generación distribuida",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-07-03",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Energía"
+  ],
+  "proponents": [
+   "Carlos Zúñiga Maqueta",
+   "Carmen Rojas Maqueta",
+   "Carmen Brenes Simulacro"
+  ],
+  "news_count": 5,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Carlos Zúñiga Maqueta",
+   "faction": "Partido Olivo",
+   "province": "Heredia",
+   "signing_order": 1
+  },
+  {
+   "name": "Carmen Rojas Maqueta",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 2
+  },
+  {
+   "name": "Carmen Brenes Simulacro",
+   "faction": "Partido Ámbar",
+   "province": "Alajuela",
+   "signing_order": 3
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2023-07-03",
+   "date_end": "2026-05-24"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Económicos",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-05-24",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "6af7546db277bf38907cb29a1e214cae079e389a346f920e4c10c1e0c71c3c48",
+   "title": "Diputados discuten proyecto sobre la generación distribuida",
+   "organization": "crhoy",
+   "date_published": "2026-09-28T06:31:00",
+   "url": "https://example.com/crhoy/2026/09/28/diputados-discuten-proyecto-sobre-la-generacion-distribuida-657",
+   "link_source": "model",
+   "confidence": 0.92
+  },
+  {
+   "id": "42b433be920e48f68842d296b53db378b6b7d849884b715e39aa82c2b8db8303",
+   "title": "Consultas a instituciones retrasan proyecto sobre la generación distribuida",
+   "organization": "teletica",
+   "date_published": "2026-07-02T21:44:00",
+   "url": "https://example.com/teletica/2026/07/02/consultas-a-instituciones-retrasan-proyecto-sobre-la-generacion-distri-363",
+   "link_source": "model",
+   "confidence": 0.64
+  },
+  {
+   "id": "35184c95b546bb05ddcd200227c4a543171e8c8bebd2f71daebba55afc8c5e5f",
+   "title": "Organizaciones piden cambios al proyecto sobre la generación distribuida",
+   "organization": "teletica",
+   "date_published": "2026-05-29T19:36:00",
+   "url": "https://example.com/teletica/2026/05/29/organizaciones-piden-cambios-al-proyecto-sobre-la-generacion-distribui-294",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "1dc18a6281fbffa16b66847730dac1b6828e2e326b1bcab8ea038b2ae635fa13",
+   "title": "Diputados discuten proyecto sobre la generación distribuida",
+   "organization": "elobservador",
+   "date_published": "2026-05-24T08:19:00",
+   "url": "https://example.com/elobservador/2026/05/24/diputados-discuten-proyecto-sobre-la-generacion-distribuida-172",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "f42a2c37f3a64fc981f52a1361d5b3dc7df3f7af6cd9be5aa3f3e527a4a29411",
+   "title": "Sectores critican propuesta sobre la generación distribuida",
+   "organization": "crhoy",
+   "date_published": "2026-05-20T11:54:00",
+   "url": "https://example.com/crhoy/2026/05/20/sectores-critican-propuesta-sobre-la-generacion-distribuida-598",
+   "link_source": "model",
+   "confidence": 0.65
+  }
+ ]
+}

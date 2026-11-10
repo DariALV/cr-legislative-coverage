@@ -1,0 +1,5277 @@
+[
+ {
+  "id": "a7d506a559ac2659d80e2708abaa8e7e0e7ffc83f1d3a44562eaa0bcd42d456f",
+  "title": "Diputados discuten proyecto sobre los pequeños productores de café",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-30T17:57:00",
+  "url": "https://example.com/teletica/2026/10/30/diputados-discuten-proyecto-sobre-los-pequenos-productores-de-cafe-295",
+  "bills": [
+   {
+    "number": 23292,
+    "link_source": "model",
+    "confidence": 0.88
+   },
+   {
+    "number": 23301,
+    "link_source": "model",
+    "confidence": 0.37
+   }
+  ]
+ },
+ {
+  "id": "9f149cef91d4a3d81d8d4c126e20d29a4e6d64e3c8d2dceca3c8895ac36b17f3",
+  "title": "Sectores critican propuesta sobre los pequeños productores de café",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-29T10:39:00",
+  "url": "https://example.com/crhoy/2026/10/29/sectores-critican-propuesta-sobre-los-pequenos-productores-de-cafe-683",
+  "bills": [
+   {
+    "number": 23292,
+    "link_source": "model",
+    "confidence": 0.64
+   },
+   {
+    "number": 23431,
+    "link_source": "model",
+    "confidence": 0.42
+   }
+  ]
+ },
+ {
+  "id": "2cf94c65542e47e48c2dc5fc56ac354dc961c71c35844eb627171d2f712d6e13",
+  "title": "Comisión avanza en iniciativa sobre el seguro de cosechas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-28T13:26:00",
+  "url": "https://example.com/elmundo/2026/10/28/comision-avanza-en-iniciativa-sobre-el-seguro-de-cosechas-439",
+  "bills": [
+   {
+    "number": 24057,
+    "link_source": "model",
+    "confidence": 0.55
+   },
+   {
+    "number": 23292,
+    "link_source": "model",
+    "confidence": 0.59
+   }
+  ]
+ },
+ {
+  "id": "e30cec377b2ec64adcbdbfc1fd4a133eff799260dce4caad5bc4a391d0504766",
+  "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-28T12:09:00",
+  "url": "https://example.com/crhoy/2026/10/28/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-580",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.91
+   }
+  ]
+ },
+ {
+  "id": "9e45b813bbc84ad4192c97d6b360308f8cddf58004842ad61efe906d2bdaaefc",
+  "title": "Mociones de fondo frenan iniciativa sobre el patrimonio arquitectónico",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-28T09:24:00",
+  "url": "https://example.com/crhoy/2026/10/28/mociones-de-fondo-frenan-iniciativa-sobre-el-patrimonio-arquitectonico-135",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.62
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.31
+   },
+   {
+    "number": 23304,
+    "link_source": "model",
+    "confidence": 0.36
+   }
+  ]
+ },
+ {
+  "id": "eb479de54a796e4cde5d1bdf0cadc75fe331524bd19cc225e01d462bccd1b74c",
+  "title": "Sectores critican propuesta sobre el tren eléctrico metropolitano",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-28T06:07:00",
+  "url": "https://example.com/crhoy/2026/10/28/sectores-critican-propuesta-sobre-el-tren-electrico-metropolitano-973",
+  "bills": [
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.62
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.67
+   },
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.45
+   }
+  ]
+ },
+ {
+  "id": "39a76deea5965c4c0e6810411756aa9460ea21744f35f1f7f364017b61894559",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el patrimonio arquitectónico",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-27T16:31:00",
+  "url": "https://example.com/elmundo/2026/10/27/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-patrimonio-arquitectonico-260",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23699,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23162,
+    "link_source": "model",
+    "confidence": 0.56
+   }
+  ]
+ },
+ {
+  "id": "8636d120898b795c269ccd60386cbeb321b5b43407eb044eed3c36696bfa744b",
+  "title": "Expediente 23.857: qué propone la reforma sobre el empleo de personas jóvenes",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-27T14:19:00",
+  "url": "https://example.com/elmundo/2026/10/27/expediente-23-857-que-propone-la-reforma-sobre-el-empleo-de-personas-j-559",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "model",
+    "confidence": 0.69
+   },
+   {
+    "number": 25235,
+    "link_source": "model",
+    "confidence": 0.56
+   }
+  ]
+ },
+ {
+  "id": "793c39d3d0ee19dc27c4f0db6b1c533ea52f3737e0138ef09a06fd923deca609",
+  "title": "Consultas a instituciones retrasan proyecto sobre la generación distribuida",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-26T14:00:00",
+  "url": "https://example.com/teletica/2026/10/26/consultas-a-instituciones-retrasan-proyecto-sobre-la-generacion-distri-936",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.9
+   }
+  ]
+ },
+ {
+  "id": "56780838ee27b116220d2e1581f418e9642139a81c2467622c782fd7b41cd99b",
+  "title": "Comisión avanza en iniciativa sobre el régimen de zonas francas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-26T12:45:00",
+  "url": "https://example.com/elmundo/2026/10/26/comision-avanza-en-iniciativa-sobre-el-regimen-de-zonas-francas-562",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.76
+   },
+   {
+    "number": 23251,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "2655ba495e3b8eb335f32b598f8d98221e8c982fd4b43bfac03ced653211689d",
+  "title": "Consultas a instituciones retrasan proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-10-26T09:16:00",
+  "url": "https://example.com/crhoy/2026/10/26/consultas-a-instituciones-retrasan-proyecto-sobre-los-asentamientos-in-175",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.96
+   }
+  ]
+ },
+ {
+  "id": "c6cd5a959269fa610abf39ff98aedf0f91a6ceb0e930c4817df2e42115548254",
+  "title": "Organizaciones piden cambios al proyecto sobre los pequeños productores de café",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-25T13:13:00",
+  "url": "https://example.com/crhoy/2026/10/25/organizaciones-piden-cambios-al-proyecto-sobre-los-pequenos-productore-333",
+  "bills": [
+   {
+    "number": 23292,
+    "link_source": "model",
+    "confidence": 0.65
+   },
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.33
+   }
+  ]
+ },
+ {
+  "id": "793ba1287df5bdd75564ab3fb0ae3e98409525f87d9073ede2529ce6f06d4937",
+  "title": "Mociones de fondo frenan iniciativa sobre el patrimonio arquitectónico",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-25T12:54:00",
+  "url": "https://example.com/delfino/2026/10/25/mociones-de-fondo-frenan-iniciativa-sobre-el-patrimonio-arquitectonico-282",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "a74ff365f3e12b78e787c1baab2bc968effad8a3cfe95149eada3474afbad1fc",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-25T09:38:00",
+  "url": "https://example.com/delfino/2026/10/25/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-897",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "8ca3b55ed08fba4f8b6866a1451f4f8cc76cf8f5fc76f8e279805d4b3bc29305",
+  "title": "Sectores critican propuesta sobre la deuda pública",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-24T16:05:00",
+  "url": "https://example.com/elobservador/2026/10/24/sectores-critican-propuesta-sobre-la-deuda-publica-116",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.56
+   },
+   {
+    "number": 23251,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "07f63dd9ef23136c2e1bfa3f9629ca0329e32eaa32f00ff9d609877090f2154c",
+  "title": "Municipalidad de Limón centro anuncia cierre de vía por obras",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-10-24T09:10:00",
+  "url": "https://example.com/delfino/2026/10/24/municipalidad-de-limon-centro-anuncia-cierre-de-via-por-obras-271",
+  "bills": []
+ },
+ {
+  "id": "cf4109d333b490cc31e5013622b1a0663a2c036d19a17eac753e63a301a21c0f",
+  "title": "Comerciantes de Upala reportan aumento de ventas",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-10-23T07:48:00",
+  "url": "https://example.com/semanario/2026/10/23/comerciantes-de-upala-reportan-aumento-de-ventas-830",
+  "bills": []
+ },
+ {
+  "id": "96186b071c7e28c40a7afd178f34b2f7435a76e2f48164ba53ecbafa8ba34ad2",
+  "title": "Sectores critican propuesta sobre la movilidad en bicicleta",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-21T20:08:00",
+  "url": "https://example.com/delfino/2026/10/21/sectores-critican-propuesta-sobre-la-movilidad-en-bicicleta-336",
+  "bills": [
+   {
+    "number": 25114,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "5e38e4899c5ff3cf7a44df92748e60f3ae0e6ce365592bc8b2f3a461da03e6a5",
+  "title": "Mociones de fondo frenan iniciativa sobre los pequeños productores de café",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-10-21T13:21:00",
+  "url": "https://example.com/semanario/2026/10/21/mociones-de-fondo-frenan-iniciativa-sobre-los-pequenos-productores-de--906",
+  "bills": [
+   {
+    "number": 23292,
+    "link_source": "model",
+    "confidence": 0.66
+   },
+   {
+    "number": 24568,
+    "link_source": "model",
+    "confidence": 0.51
+   }
+  ]
+ },
+ {
+  "id": "d799fba14affd55c17ea82dea8949c5e94b35d21c68dd14abe2eaa4d67a5c548",
+  "title": "Cruz Roja atiende emergencia en Talamanca",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-10-19T12:52:00",
+  "url": "https://example.com/crhoy/2026/10/19/cruz-roja-atiende-emergencia-en-talamanca-379",
+  "bills": []
+ },
+ {
+  "id": "a1a71a61ee2d9abe32f5d9383b76a44de26b02dfd1ce71a0515b56b49065e9c0",
+  "title": "Expediente 24.759: qué propone la reforma sobre el patrimonio arquitectónico",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-10-18T11:43:00",
+  "url": "https://example.com/elmundo/2026/10/18/expediente-24-759-que-propone-la-reforma-sobre-el-patrimonio-arquitect-882",
+  "bills": [
+   {
+    "number": 24759,
+    "link_source": "model",
+    "confidence": 0.79
+   }
+  ]
+ },
+ {
+  "id": "9469cc53d365889d8be1898690e04a82c0982ecd853bd32bfc38548901c46ebe",
+  "title": "Lluvias provocan inundaciones en Talamanca",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-17T16:56:00",
+  "url": "https://example.com/crhoy/2026/10/17/lluvias-provocan-inundaciones-en-talamanca-625",
+  "bills": []
+ },
+ {
+  "id": "c6d7e627c025589b097d4778417b004ec77ba4323fb3e32a4a87812703701d90",
+  "title": "Cruz Roja atiende emergencia en Heredia",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-10-16T18:16:00",
+  "url": "https://example.com/delfino/2026/10/16/cruz-roja-atiende-emergencia-en-heredia-835",
+  "bills": []
+ },
+ {
+  "id": "f3704f66d590ac012e16949f7f383b263626ecf69b41e2c7921d3543ab967cab",
+  "title": "¿Qué cambiaría con el proyecto sobre los asentamientos informales?",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-15T10:20:00",
+  "url": "https://example.com/elmundo/2026/10/15/que-cambiaria-con-el-proyecto-sobre-los-asentamientos-informales-666",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.76
+   }
+  ]
+ },
+ {
+  "id": "58a47caed2aecc4d4343e2cf8cd9c78d37c4cb7c3c6b63408ddc1e0d5f0f91e1",
+  "title": "Mociones de fondo frenan iniciativa sobre el patrimonio arquitectónico",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-10-14T19:05:00",
+  "url": "https://example.com/elobservador/2026/10/14/mociones-de-fondo-frenan-iniciativa-sobre-el-patrimonio-arquitectonico-616",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.57
+   },
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.45
+   }
+  ]
+ },
+ {
+  "id": "f62957c5901d44ae8b0c02b31e41110abddacc4f6c47dd563bbb36785b58d16b",
+  "title": "¿Qué cambiaría con el proyecto sobre el seguro de cosechas?",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-12T20:58:00",
+  "url": "https://example.com/delfino/2026/10/12/que-cambiaria-con-el-proyecto-sobre-el-seguro-de-cosechas-723",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "1b9d907218505468a44dcee4064845cadfb8e897b107c5b5464038f1cbc25849",
+  "title": "Diputados discuten proyecto sobre el seguro de cosechas",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-12T19:15:00",
+  "url": "https://example.com/teletica/2026/10/12/diputados-discuten-proyecto-sobre-el-seguro-de-cosechas-267",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.57
+   },
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.63
+   }
+  ]
+ },
+ {
+  "id": "728ce1e6ef72e10e3f8476ef697f16c2226e8fb0f535ea25634a0fb0ebe70347",
+  "title": "Sectores critican propuesta sobre el seguro de cosechas",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-12T15:45:00",
+  "url": "https://example.com/elobservador/2026/10/12/sectores-critican-propuesta-sobre-el-seguro-de-cosechas-509",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.67
+   }
+  ]
+ },
+ {
+  "id": "10efbd13b34b55a8e1b7e3294f26cef1b3f3d91e2dc886d59556a85ade5a3379",
+  "title": "Comisión avanza en iniciativa sobre el régimen de zonas francas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-10-08T17:00:00",
+  "url": "https://example.com/delfino/2026/10/08/comision-avanza-en-iniciativa-sobre-el-regimen-de-zonas-francas-136",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "58db6fdca65e9dd345f326e7a02cad7dcb9345f4a0fa0a05a996ff5dc4354bde",
+  "title": "Expediente 23.400: qué propone la reforma sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-08T14:42:00",
+  "url": "https://example.com/delfino/2026/10/08/expediente-23-400-que-propone-la-reforma-sobre-los-asentamientos-infor-655",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 23121,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "2f33e9f2f0cc9b36ed7970999f6cdc370b985314896ea89be0235a2c62463562",
+  "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-10-08T08:49:00",
+  "url": "https://example.com/crhoy/2026/10/08/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-201",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.66
+   }
+  ]
+ },
+ {
+  "id": "1a0f775401f807fd0f22261db92b7db26d2b4b522a2cb7654b54f8ba5cd4a5a2",
+  "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-10-08T07:15:00",
+  "url": "https://example.com/elmundo/2026/10/08/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-965",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25216,
+    "link_source": "model",
+    "confidence": 0.33
+   },
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.47
+   }
+  ]
+ },
+ {
+  "id": "cc1a91a337564c7ea2cdaddfa74f8d5f4ba78b766773f8a1e4ea2f2463218915",
+  "title": "Sectores critican propuesta sobre las concesiones de obra pública",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-07T20:07:00",
+  "url": "https://example.com/elobservador/2026/10/07/sectores-critican-propuesta-sobre-las-concesiones-de-obra-publica-754",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.72
+   }
+  ]
+ },
+ {
+  "id": "3caee78cd01b22c67587428c026e52a4bd0abfd65cffe11b80d9a294c343bb4a",
+  "title": "Consultas a instituciones retrasan proyecto sobre las concesiones de obra pública",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-07T17:21:00",
+  "url": "https://example.com/teletica/2026/10/07/consultas-a-instituciones-retrasan-proyecto-sobre-las-concesiones-de-o-644",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.68
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.48
+   },
+   {
+    "number": 25216,
+    "link_source": "model",
+    "confidence": 0.55
+   }
+  ]
+ },
+ {
+  "id": "ce3c37750f8b609c35f0ef65d774fca0ab1185462b6443755da9b186fde29f3f",
+  "title": "Sectores critican propuesta sobre las concesiones de obra pública",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-07T14:46:00",
+  "url": "https://example.com/crhoy/2026/10/07/sectores-critican-propuesta-sobre-las-concesiones-de-obra-publica-272",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.86
+   },
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "ca5206f35325f848c1ac4feb03505e446130a3795dbb45d18d74f03a4f9026cb",
+  "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-07T13:41:00",
+  "url": "https://example.com/delfino/2026/10/07/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-670",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 25216,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "0c276f9a40de02f76554be31140c2d2f17f13b576e4a8b47ebcb0de781150a97",
+  "title": "Consultas a instituciones retrasan proyecto sobre el seguro de cosechas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-10-06T21:39:00",
+  "url": "https://example.com/delfino/2026/10/06/consultas-a-instituciones-retrasan-proyecto-sobre-el-seguro-de-cosecha-357",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 23301,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 24568,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "bfbb93137fb7577a6a401d0a442f89790f6ded0cb04fe4ee351776e4976eb373",
+  "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-06T15:10:00",
+  "url": "https://example.com/crhoy/2026/10/06/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-783",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.58
+   }
+  ]
+ },
+ {
+  "id": "b9610d654a2d21aa43db3af2d6925bdd3db9ffd877554c5b32270f855c26aa21",
+  "title": "Organizaciones piden cambios al proyecto sobre las concesiones de obra pública",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-10-06T14:09:00",
+  "url": "https://example.com/teletica/2026/10/06/organizaciones-piden-cambios-al-proyecto-sobre-las-concesiones-de-obra-667",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "808a30628a1bb65a90e9e7441ade92c1170f83d08dd1670f62067dc587d439f7",
+  "title": "Lluvias provocan inundaciones en Desamparados",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-10-05T14:04:00",
+  "url": "https://example.com/elobservador/2026/10/05/lluvias-provocan-inundaciones-en-desamparados-705",
+  "bills": []
+ },
+ {
+  "id": "a312b5640e42f2502c54de8f358571ab73029a33d7e75b56bba516e86ea86c63",
+  "title": "Consultas a instituciones retrasan proyecto sobre el régimen de zonas francas",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-10-05T11:42:00",
+  "url": "https://example.com/semanario/2026/10/05/consultas-a-instituciones-retrasan-proyecto-sobre-el-regimen-de-zonas--588",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.68
+   }
+  ]
+ },
+ {
+  "id": "d136c410c0a926e72ae8b48b72a30c97300b820fc57a1d134a423ce5fd4236f5",
+  "title": "¿Qué cambiaría con el proyecto sobre los pequeños productores de café?",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-05T11:06:00",
+  "url": "https://example.com/teletica/2026/10/05/que-cambiaria-con-el-proyecto-sobre-los-pequenos-productores-de-cafe-756",
+  "bills": [
+   {
+    "number": 23292,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23301,
+    "link_source": "model",
+    "confidence": 0.62
+   }
+  ]
+ },
+ {
+  "id": "854f61773d96160dfc516d72fe03469630fd233b6949f5faaa1b337eea625ed3",
+  "title": "Sectores critican propuesta sobre el tren eléctrico metropolitano",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-10-04T12:37:00",
+  "url": "https://example.com/elobservador/2026/10/04/sectores-critican-propuesta-sobre-el-tren-electrico-metropolitano-899",
+  "bills": [
+   {
+    "number": 23301,
+    "link_source": "model",
+    "confidence": 0.8
+   },
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.58
+   }
+  ]
+ },
+ {
+  "id": "225026b6aa4a0f4b8802830e31018280472380e1ae2d89a166c34f5a3789f047",
+  "title": "Organizaciones piden cambios al proyecto sobre el régimen de zonas francas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-04T09:54:00",
+  "url": "https://example.com/delfino/2026/10/04/organizaciones-piden-cambios-al-proyecto-sobre-el-regimen-de-zonas-fra-311",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.82
+   }
+  ]
+ },
+ {
+  "id": "d4918c422fc30cdd780c448260903e820485ab1d769b522b3cfe7d7a158478e9",
+  "title": "Sectores critican propuesta sobre el seguro de cosechas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-01T20:37:00",
+  "url": "https://example.com/crhoy/2026/10/01/sectores-critican-propuesta-sobre-el-seguro-de-cosechas-431",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 24423,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "4d7ca322f38976ab33c4e27251aeab6884197a62c64a16437df416a4d3d89ba1",
+  "title": "Diputados discuten proyecto sobre las concesiones de obra pública",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-10-01T19:11:00",
+  "url": "https://example.com/elmundo/2026/10/01/diputados-discuten-proyecto-sobre-las-concesiones-de-obra-publica-289",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.68
+   }
+  ]
+ },
+ {
+  "id": "5c36816c93abb26effeefeba4df99f55c219b8b743b23b69c63e73be68acbce1",
+  "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-10-01T11:28:00",
+  "url": "https://example.com/delfino/2026/10/01/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-557",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.74
+   },
+   {
+    "number": 23251,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "5bc8f112e029ab1442a3895d8cf8fc14e5afdbdbcd1bb5a03db5e4ad40b787c4",
+  "title": "Consultas a instituciones retrasan proyecto sobre el agua potable en zonas rurales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-09-30T15:30:00",
+  "url": "https://example.com/elmundo/2026/09/30/consultas-a-instituciones-retrasan-proyecto-sobre-el-agua-potable-en-z-170",
+  "bills": [
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.88
+   },
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.34
+   },
+   {
+    "number": 24101,
+    "link_source": "model",
+    "confidence": 0.49
+   }
+  ]
+ },
+ {
+  "id": "cc4cab10091db84641c64318da384784bc39185de3eeccab9c4a2bbb5e828437",
+  "title": "Comisión avanza en iniciativa sobre las concesiones de obra pública",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-09-30T08:15:00",
+  "url": "https://example.com/teletica/2026/09/30/comision-avanza-en-iniciativa-sobre-las-concesiones-de-obra-publica-594",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.62
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.39
+   }
+  ]
+ },
+ {
+  "id": "5713745eab14e7c45b81a982ed4918f9846eac4ac37d890ba4116c3b4e876b20",
+  "title": "¿Qué cambiaría con el proyecto sobre el seguro de cosechas?",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-09-29T17:24:00",
+  "url": "https://example.com/elobservador/2026/09/29/que-cambiaria-con-el-proyecto-sobre-el-seguro-de-cosechas-850",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.67
+   }
+  ]
+ },
+ {
+  "id": "8ddb7b910e470091be37de3d948cd7225c173bda7dc814d5c20db40dc8554c5a",
+  "title": "Mociones de fondo frenan iniciativa sobre el régimen de zonas francas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-28T18:57:00",
+  "url": "https://example.com/elmundo/2026/09/28/mociones-de-fondo-frenan-iniciativa-sobre-el-regimen-de-zonas-francas-765",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.75
+   },
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.49
+   }
+  ]
+ },
+ {
+  "id": "fea084813ddc6c82df8b56a10eecbfcedfe8de17885b3ecaed574934da797860",
+  "title": "Mociones de fondo frenan iniciativa sobre las concesiones de obra pública",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-09-28T14:00:00",
+  "url": "https://example.com/delfino/2026/09/28/mociones-de-fondo-frenan-iniciativa-sobre-las-concesiones-de-obra-publ-740",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "6af7546db277bf38907cb29a1e214cae079e389a346f920e4c10c1e0c71c3c48",
+  "title": "Diputados discuten proyecto sobre la generación distribuida",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-09-28T06:31:00",
+  "url": "https://example.com/crhoy/2026/09/28/diputados-discuten-proyecto-sobre-la-generacion-distribuida-657",
+  "bills": [
+   {
+    "number": 23682,
+    "link_source": "model",
+    "confidence": 0.92
+   }
+  ]
+ },
+ {
+  "id": "6e48d4399723bea458cd8e1e725eeb793f920923ad664d0e8a928b4710e8c7de",
+  "title": "Diputados discuten proyecto sobre las concesiones de obra pública",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-09-27T09:29:00",
+  "url": "https://example.com/delfino/2026/09/27/diputados-discuten-proyecto-sobre-las-concesiones-de-obra-publica-774",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 24472,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "9222e0f0dd7bcf42135205fc8b50a2aea4a50d54085e5691de26d84d38265ba2",
+  "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-09-27T08:49:00",
+  "url": "https://example.com/delfino/2026/09/27/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-698",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.79
+   }
+  ]
+ },
+ {
+  "id": "5466d4c5f5dd8a14cdab533a1e5f17848abf3727778eb5ecf7f9e4c568dfeb14",
+  "title": "Mociones de fondo frenan iniciativa sobre el régimen de zonas francas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-09-26T15:46:00",
+  "url": "https://example.com/delfino/2026/09/26/mociones-de-fondo-frenan-iniciativa-sobre-el-regimen-de-zonas-francas-297",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23251,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25060,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "2bb43beb1f9447e3e717b2f0a3999c815902431f6fa336ea51c573612a6666aa",
+  "title": "Diputados discuten proyecto sobre las concesiones de obra pública",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-09-25T21:35:00",
+  "url": "https://example.com/elobservador/2026/09/25/diputados-discuten-proyecto-sobre-las-concesiones-de-obra-publica-182",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.53
+   }
+  ]
+ },
+ {
+  "id": "955d93aadb712f5885b1a9cd7caae75be0af3c9e254fcd87261b11371c926953",
+  "title": "Vecinos de Turrialba denuncian falta de agua",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-09-25T15:21:00",
+  "url": "https://example.com/elobservador/2026/09/25/vecinos-de-turrialba-denuncian-falta-de-agua-739",
+  "bills": []
+ },
+ {
+  "id": "5c859d0989b9b1ba20bd3c2739d77fa9d92bcddec1aaedeeb3753360a4bdd514",
+  "title": "Comisión avanza en iniciativa sobre las concesiones de obra pública",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-09-25T15:09:00",
+  "url": "https://example.com/crhoy/2026/09/25/comision-avanza-en-iniciativa-sobre-las-concesiones-de-obra-publica-747",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.7
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.64
+   },
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.54
+   }
+  ]
+ },
+ {
+  "id": "c54a5968bbaa43aeadd9019fb79bb5482c7e1b83cc5a8c25dc6b3fc0289e2422",
+  "title": "Mociones de fondo frenan iniciativa sobre las bibliotecas públicas",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-09-25T08:35:00",
+  "url": "https://example.com/teletica/2026/09/25/mociones-de-fondo-frenan-iniciativa-sobre-las-bibliotecas-publicas-813",
+  "bills": [
+   {
+    "number": 25007,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "f3d803eb58b6c4b50ef3259a493e416f9e620c7d8940116405e814c9a33728a4",
+  "title": "Diputados discuten proyecto sobre el patrimonio arquitectónico",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-09-24T16:11:00",
+  "url": "https://example.com/crhoy/2026/09/24/diputados-discuten-proyecto-sobre-el-patrimonio-arquitectonico-879",
+  "bills": [
+   {
+    "number": 24759,
+    "link_source": "model",
+    "confidence": 0.61
+   }
+  ]
+ },
+ {
+  "id": "2503f46d8ec42e0a87b61a8251d8d94a229c5c06b8d03f47473a7d96c4c7947f",
+  "title": "Comisión avanza en iniciativa sobre las concesiones de obra pública",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-09-24T14:29:00",
+  "url": "https://example.com/elobservador/2026/09/24/comision-avanza-en-iniciativa-sobre-las-concesiones-de-obra-publica-238",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.91
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.43
+   }
+  ]
+ },
+ {
+  "id": "689594c02a2ac1b9e45c94a6ecc502cf15c301b441fbc6f621dcf1a194641323",
+  "title": "¿Qué cambiaría con el proyecto sobre el patrimonio arquitectónico?",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-09-22T12:26:00",
+  "url": "https://example.com/semanario/2026/09/22/que-cambiaria-con-el-proyecto-sobre-el-patrimonio-arquitectonico-858",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.62
+   }
+  ]
+ },
+ {
+  "id": "569fb369c6bfab72886c0c7b5bac447865169ee89e850db1978ed821c2cc1429",
+  "title": "Organizaciones piden cambios al proyecto sobre las concesiones de obra pública",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-09-22T07:33:00",
+  "url": "https://example.com/semanario/2026/09/22/organizaciones-piden-cambios-al-proyecto-sobre-las-concesiones-de-obra-469",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.68
+   },
+   {
+    "number": 25216,
+    "link_source": "model",
+    "confidence": 0.49
+   }
+  ]
+ },
+ {
+  "id": "65b413080abe6e5d29bbd611744d9ea95b0c141756bda86fb8b6ebdbc9fd131b",
+  "title": "Diputados discuten proyecto sobre las concesiones de obra pública",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-22T07:26:00",
+  "url": "https://example.com/elmundo/2026/09/22/diputados-discuten-proyecto-sobre-las-concesiones-de-obra-publica-731",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.66
+   },
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "7bee2c20a938f83d8826e8b826dbaacff391cc2d1fdb52c57980d77fc87df3db",
+  "title": "Mociones de fondo frenan iniciativa sobre las concesiones de obra pública",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-21T18:04:00",
+  "url": "https://example.com/crhoy/2026/09/21/mociones-de-fondo-frenan-iniciativa-sobre-las-concesiones-de-obra-publ-335",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.76
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.58
+   }
+  ]
+ },
+ {
+  "id": "97a34d1e6249d0aa0afc41bf578dfe7cce8aef0a5d536abd0f80a9b330b6096f",
+  "title": "Organizaciones piden cambios al proyecto sobre el empleo de personas jóvenes",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-18T10:02:00",
+  "url": "https://example.com/crhoy/2026/09/18/organizaciones-piden-cambios-al-proyecto-sobre-el-empleo-de-personas-j-965",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "model",
+    "confidence": 0.86
+   }
+  ]
+ },
+ {
+  "id": "ec3664aa92bfdef27092ef79536f2d5062e30f819ac1a65e919d99eae1bf6947",
+  "title": "Lluvias provocan inundaciones en Grecia",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-09-17T15:36:00",
+  "url": "https://example.com/teletica/2026/09/17/lluvias-provocan-inundaciones-en-grecia-967",
+  "bills": []
+ },
+ {
+  "id": "6997c78a14854ba955934f038728ddabcad754a094a4a4972271d15d67d8bee7",
+  "title": "Mociones de fondo frenan iniciativa sobre el empleo de personas jóvenes",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-09-16T21:51:00",
+  "url": "https://example.com/semanario/2026/09/16/mociones-de-fondo-frenan-iniciativa-sobre-el-empleo-de-personas-jovene-379",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "model",
+    "confidence": 0.71
+   }
+  ]
+ },
+ {
+  "id": "8b93c7777192928e861af1404a12d10d229c7f42b81ce06a7cfbe27bb156cc3b",
+  "title": "Consultas a instituciones retrasan proyecto sobre el patrimonio arquitectónico",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-09-14T14:37:00",
+  "url": "https://example.com/delfino/2026/09/14/consultas-a-instituciones-retrasan-proyecto-sobre-el-patrimonio-arquit-327",
+  "bills": [
+   {
+    "number": 24759,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "03d982c2d2c07a76540eba140ed326ee8ecb6e06b1feb34b5400bf60064eac0a",
+  "title": "Consultas a instituciones retrasan proyecto sobre el patrimonio arquitectónico",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "cultura",
+  "date_published": "2026-09-12T20:21:00",
+  "url": "https://example.com/semanario/2026/09/12/consultas-a-instituciones-retrasan-proyecto-sobre-el-patrimonio-arquit-309",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.68
+   },
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.67
+   },
+   {
+    "number": 24423,
+    "link_source": "model",
+    "confidence": 0.44
+   }
+  ]
+ },
+ {
+  "id": "806cdd68a89c64428af99c98cf8c98496dd387e3349c9f65cc4ed6ff947cfba1",
+  "title": "Organizaciones piden cambios al proyecto sobre la deuda pública",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-09-12T14:04:00",
+  "url": "https://example.com/elobservador/2026/09/12/organizaciones-piden-cambios-al-proyecto-sobre-la-deuda-publica-415",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "da40ef4d153c7042fe161332937f2983d30d41388e83b139eb1efabe19a80cf6",
+  "title": "Comerciantes de Pérez Zeledón reportan aumento de ventas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-09-12T12:57:00",
+  "url": "https://example.com/delfino/2026/09/12/comerciantes-de-perez-zeledon-reportan-aumento-de-ventas-732",
+  "bills": []
+ },
+ {
+  "id": "ba32aaf8c5e33c352b50df7a5aefa2e704478bb29b0f877c119a4431d6a2a8fa",
+  "title": "Lluvias provocan inundaciones en Turrialba",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-09-12T09:09:00",
+  "url": "https://example.com/delfino/2026/09/12/lluvias-provocan-inundaciones-en-turrialba-557",
+  "bills": []
+ },
+ {
+  "id": "e277a47b0070774a486904168fdb73615be0f8ab69916f2a07c81ed0ebfe4a18",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el patrimonio arquitectónico",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-09-11T07:41:00",
+  "url": "https://example.com/semanario/2026/09/11/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-patrimonio-arquitectonico-918",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23301,
+    "link_source": "model",
+    "confidence": 0.59
+   }
+  ]
+ },
+ {
+  "id": "c28b5d357ea83afc68730c7aa5a1fb7e7d71319aa5e2ceff0e8b008749c73f9d",
+  "title": "Mociones de fondo frenan iniciativa sobre el empleo de personas jóvenes",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-09-11T06:14:00",
+  "url": "https://example.com/delfino/2026/09/11/mociones-de-fondo-frenan-iniciativa-sobre-el-empleo-de-personas-jovene-394",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 25235,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "a8d88a21506869a9f63a4fa819f036010b53ded9751bf7168a7bcf9938d232a4",
+  "title": "Sectores critican propuesta sobre el turismo rural comunitario",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-09-09T19:09:00",
+  "url": "https://example.com/delfino/2026/09/09/sectores-critican-propuesta-sobre-el-turismo-rural-comunitario-240",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23748,
+    "link_source": "model",
+    "confidence": 0.64
+   },
+   {
+    "number": 23699,
+    "link_source": "model",
+    "confidence": 0.54
+   }
+  ]
+ },
+ {
+  "id": "b4b660013d915ed46629cac9ac022058586c5af335aed79845d09659a659670a",
+  "title": "Comisión avanza en iniciativa sobre el patrimonio arquitectónico",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "cultura",
+  "date_published": "2026-09-09T16:24:00",
+  "url": "https://example.com/semanario/2026/09/09/comision-avanza-en-iniciativa-sobre-el-patrimonio-arquitectonico-717",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.96
+   }
+  ]
+ },
+ {
+  "id": "494d55226185111cf1b53818217a7c6a524c7499a04a88f58c04bdbbb7806b8e",
+  "title": "Consultas a instituciones retrasan proyecto sobre el empleo de personas jóvenes",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-07T13:09:00",
+  "url": "https://example.com/crhoy/2026/09/07/consultas-a-instituciones-retrasan-proyecto-sobre-el-empleo-de-persona-781",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "model",
+    "confidence": 0.73
+   }
+  ]
+ },
+ {
+  "id": "cf7ddb175349e8f752a96455d813bcb94bbb08db1dd8bb13a9405b2a8e274b0b",
+  "title": "Comerciantes de Liberia reportan aumento de ventas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-09-06T19:35:00",
+  "url": "https://example.com/elmundo/2026/09/06/comerciantes-de-liberia-reportan-aumento-de-ventas-738",
+  "bills": []
+ },
+ {
+  "id": "b65bd0b6ceaff47fd44419ebe0863816b7477f9e11bac813b88debc3b42fcb0d",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-09-05T12:11:00",
+  "url": "https://example.com/delfino/2026/09/05/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-562",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "50f861b69c7ab04be274d129e212d2ed773ca109836ea1518da5578ad16a3799",
+  "title": "Consultas a instituciones retrasan proyecto sobre el empleo de personas jóvenes",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-05T11:15:00",
+  "url": "https://example.com/elmundo/2026/09/05/consultas-a-instituciones-retrasan-proyecto-sobre-el-empleo-de-persona-488",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "0cf167e5d192a104f6ea295514cecfd30af87f5dac4b672098469f620237d29d",
+  "title": "Mociones de fondo frenan iniciativa sobre la generación distribuida",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-04T17:52:00",
+  "url": "https://example.com/crhoy/2026/09/04/mociones-de-fondo-frenan-iniciativa-sobre-la-generacion-distribuida-235",
+  "bills": [
+   {
+    "number": 25032,
+    "link_source": "model",
+    "confidence": 0.59
+   }
+  ]
+ },
+ {
+  "id": "417ff83cab8e6d1e7f84dc73a6a22b7cb5f2c4461d19046d2c55c4bf223decea",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el empleo de personas jóvenes",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-09-03T15:11:00",
+  "url": "https://example.com/delfino/2026/09/03/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-empleo-de-personas-jovene-915",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "85c822ca2870ea09e9d638d09cb2f61c17ab8993388a6223e011d59615d60f16",
+  "title": "Vecinos de Pérez Zeledón denuncian falta de agua",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-09-02T21:47:00",
+  "url": "https://example.com/crhoy/2026/09/02/vecinos-de-perez-zeledon-denuncian-falta-de-agua-227",
+  "bills": []
+ },
+ {
+  "id": "93ae863dd2e441d3234748786585a4af23032d060a7f9980cb88a1a9b395b835",
+  "title": "Expediente 23.431: qué propone la reforma sobre los pequeños productores de café",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-09-02T18:09:00",
+  "url": "https://example.com/elmundo/2026/09/02/expediente-23-431-que-propone-la-reforma-sobre-los-pequenos-productore-241",
+  "bills": [
+   {
+    "number": 23431,
+    "link_source": "model",
+    "confidence": 0.87
+   }
+  ]
+ },
+ {
+  "id": "048d68380207bd63d21d0746f42b30a4f2792806441bb99ac6864913f7e13af9",
+  "title": "¿Qué cambiaría con el proyecto sobre la llegada de cruceros?",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-09-02T07:59:00",
+  "url": "https://example.com/crhoy/2026/09/02/que-cambiaria-con-el-proyecto-sobre-la-llegada-de-cruceros-553",
+  "bills": [
+   {
+    "number": 24202,
+    "link_source": "model",
+    "confidence": 0.87
+   }
+  ]
+ },
+ {
+  "id": "647f3f9ea1f0ffec03a5217e8e2a27aa9862ed2d0d93c9ba9e775e42cb3f0c91",
+  "title": "Comerciantes de Puntarenas reportan aumento de ventas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-31T20:03:00",
+  "url": "https://example.com/crhoy/2026/08/31/comerciantes-de-puntarenas-reportan-aumento-de-ventas-116",
+  "bills": []
+ },
+ {
+  "id": "6ee6e92d2bcd70157cc567be5bc91a514d5b49c5eb623c8d83ddc69c5744638e",
+  "title": "Consultas a instituciones retrasan proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-31T12:06:00",
+  "url": "https://example.com/delfino/2026/08/31/consultas-a-instituciones-retrasan-proyecto-sobre-los-asentamientos-in-148",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23162,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "f1a2d12401e563df6f620e390aa9c567043ef8a92b8a777748a36f17e7e96cbc",
+  "title": "Cruz Roja atiende emergencia en Upala",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-30T17:36:00",
+  "url": "https://example.com/delfino/2026/08/30/cruz-roja-atiende-emergencia-en-upala-345",
+  "bills": []
+ },
+ {
+  "id": "d632b045ed11036c858f88708a95dfdbfe9b5a4139a44511959a8dab340765b6",
+  "title": "Comerciantes de Turrialba reportan aumento de ventas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-30T11:58:00",
+  "url": "https://example.com/crhoy/2026/08/30/comerciantes-de-turrialba-reportan-aumento-de-ventas-131",
+  "bills": []
+ },
+ {
+  "id": "586fb8dea535e295e9117030437f6b3b38e2e982aaeabdb9481fa7b7256366af",
+  "title": "Cruz Roja atiende emergencia en Pérez Zeledón",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-30T09:25:00",
+  "url": "https://example.com/elmundo/2026/08/30/cruz-roja-atiende-emergencia-en-perez-zeledon-781",
+  "bills": []
+ },
+ {
+  "id": "df2c85befd11ece79b2cb2033ee923dd86fc014d73e33a4ed8d26165ded3aa94",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los pequeños productores de café",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-28T20:42:00",
+  "url": "https://example.com/delfino/2026/08/28/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-pequenos-productores-de--780",
+  "bills": [
+   {
+    "number": 23431,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "c99e56ce4b986f14dea27c94ca5e98e6d7d548e0e8803a9a356fbae8a1279eb7",
+  "title": "Expediente 23.121: qué propone la reforma sobre los asentamientos informales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-08-28T14:53:00",
+  "url": "https://example.com/elobservador/2026/08/28/expediente-23-121-que-propone-la-reforma-sobre-los-asentamientos-infor-617",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.69
+   }
+  ]
+ },
+ {
+  "id": "585e4ede558795bd14bbe698e0f98460994db7e8103f2ec8ae49067eb07cf5f6",
+  "title": "Mociones de fondo frenan iniciativa sobre la red vial cantonal",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-28T13:08:00",
+  "url": "https://example.com/elobservador/2026/08/28/mociones-de-fondo-frenan-iniciativa-sobre-la-red-vial-cantonal-222",
+  "bills": [
+   {
+    "number": 25216,
+    "link_source": "model",
+    "confidence": 0.78
+   }
+  ]
+ },
+ {
+  "id": "b9c894ab7a7e15f849d6398dde2eb5748d40a7fe17a98f837548691f6382208b",
+  "title": "Organizaciones piden cambios al proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-27T19:58:00",
+  "url": "https://example.com/delfino/2026/08/27/organizaciones-piden-cambios-al-proyecto-sobre-los-asentamientos-infor-102",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "57efc9e3ac9e4216d8a1ecd4261c48fd07b257bb1cf9128d46ced84d61a0eeb5",
+  "title": "Organizaciones piden cambios al proyecto sobre los asentamientos informales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-08-27T19:50:00",
+  "url": "https://example.com/semanario/2026/08/27/organizaciones-piden-cambios-al-proyecto-sobre-los-asentamientos-infor-878",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.6
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "f1fdb6dd953b8f8280304bce098d4c132368db8989fbc51f1b9ad008a15d1ac8",
+  "title": "Organizaciones piden cambios al proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-27T09:10:00",
+  "url": "https://example.com/delfino/2026/08/27/organizaciones-piden-cambios-al-proyecto-sobre-los-asentamientos-infor-878",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "82421c86697460f0ebbb25467b0291d75edc2beb84a199c54368200700fb1fdb",
+  "title": "Consultas a instituciones retrasan proyecto sobre los asentamientos informales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-08-27T08:06:00",
+  "url": "https://example.com/semanario/2026/08/27/consultas-a-instituciones-retrasan-proyecto-sobre-los-asentamientos-in-679",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.63
+   }
+  ]
+ },
+ {
+  "id": "d025f609f5844dec133bf6a2708e199195e8ed6f50ede8ba0cd9ce9ef32d9e12",
+  "title": "Mociones de fondo frenan iniciativa sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-26T20:11:00",
+  "url": "https://example.com/teletica/2026/08/26/mociones-de-fondo-frenan-iniciativa-sobre-los-asentamientos-informales-342",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.38
+   }
+  ]
+ },
+ {
+  "id": "4cd54e895088a07a3347acae49e60863cc8a689e94868483841888e4a14fa3df",
+  "title": "Diputados discuten proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-26T20:02:00",
+  "url": "https://example.com/elmundo/2026/08/26/diputados-discuten-proyecto-sobre-los-asentamientos-informales-969",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.62
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "f46dd3782c8c5d771558ae5faa482de99c885698c7e49688f3e8cb9a1d32196b",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre la llegada de cruceros",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-26T19:07:00",
+  "url": "https://example.com/teletica/2026/08/26/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-la-lleg-767",
+  "bills": [
+   {
+    "number": 24202,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "729e05a2d015e430dffa428242b15c3b1dadc180e8d0eec88476f3b3cc291a81",
+  "title": "¿Qué cambiaría con el proyecto sobre los asentamientos informales?",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-26T09:18:00",
+  "url": "https://example.com/delfino/2026/08/26/que-cambiaria-con-el-proyecto-sobre-los-asentamientos-informales-669",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 24304,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.62
+   }
+  ]
+ },
+ {
+  "id": "dc3890c130e6f8ca1d92907fb8f0325d11a65a2e7c0d433498effea70452cb30",
+  "title": "Sectores critican propuesta sobre el turismo rural comunitario",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-25T11:15:00",
+  "url": "https://example.com/delfino/2026/08/25/sectores-critican-propuesta-sobre-el-turismo-rural-comunitario-441",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "998cc8f09794122c06505015621133467c15e9b9e1c975381c00384310b7b1b3",
+  "title": "Organizaciones piden cambios al proyecto sobre el turismo rural comunitario",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-24T21:13:00",
+  "url": "https://example.com/teletica/2026/08/24/organizaciones-piden-cambios-al-proyecto-sobre-el-turismo-rural-comuni-495",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.59
+   }
+  ]
+ },
+ {
+  "id": "d5257b50b3a18c8ebd59ade75b112a83d4f9b65b134c471b7cd901d0415c345f",
+  "title": "Comisión avanza en iniciativa sobre el agua potable en zonas rurales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-24T19:58:00",
+  "url": "https://example.com/crhoy/2026/08/24/comision-avanza-en-iniciativa-sobre-el-agua-potable-en-zonas-rurales-955",
+  "bills": [
+   {
+    "number": 24784,
+    "link_source": "model",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "af571f67c209a5c4aba671731c333303cad834f6d8f38e7108040f8fb3e080b0",
+  "title": "Mociones de fondo frenan iniciativa sobre los pequeños productores de café",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-24T14:50:00",
+  "url": "https://example.com/crhoy/2026/08/24/mociones-de-fondo-frenan-iniciativa-sobre-los-pequenos-productores-de--129",
+  "bills": [
+   {
+    "number": 23431,
+    "link_source": "model",
+    "confidence": 0.78
+   }
+  ]
+ },
+ {
+  "id": "4a239db4cb348086fea9beeedf9f9b93906c6202e0c33ed8f48acd19e81f903c",
+  "title": "Diputados discuten proyecto sobre los pequeños productores de café",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-08-24T11:49:00",
+  "url": "https://example.com/semanario/2026/08/24/diputados-discuten-proyecto-sobre-los-pequenos-productores-de-cafe-848",
+  "bills": [
+   {
+    "number": 23431,
+    "link_source": "model",
+    "confidence": 0.88
+   }
+  ]
+ },
+ {
+  "id": "80fe387e9577b0d76251f02df8311de184687d3390d49a8830a5e253408e95ef",
+  "title": "Festival cultural reúne a cientos de personas en Grecia",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-23T21:06:00",
+  "url": "https://example.com/elmundo/2026/08/23/festival-cultural-reune-a-cientos-de-personas-en-grecia-724",
+  "bills": []
+ },
+ {
+  "id": "ee2437b3ff8beab55fb4409dac291a750b82a4efdaa15de923f7b68903c6f10f",
+  "title": "Organizaciones piden cambios al proyecto sobre las concesiones de obra pública",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-23T19:45:00",
+  "url": "https://example.com/crhoy/2026/08/23/organizaciones-piden-cambios-al-proyecto-sobre-las-concesiones-de-obra-988",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.66
+   }
+  ]
+ },
+ {
+  "id": "a72ab7f97d657c25cf4f782e27d7ca5f637c615527f1f07b4b8536284d276ebb",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-23T13:24:00",
+  "url": "https://example.com/elmundo/2026/08/23/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-los-ase-882",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.71
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.67
+   }
+  ]
+ },
+ {
+  "id": "7884d666a694825832135b86db082a50635fe5a39fa87bed3777286cf63f953e",
+  "title": "Expediente 24.759: qué propone la reforma sobre el patrimonio arquitectónico",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-23T11:38:00",
+  "url": "https://example.com/teletica/2026/08/23/expediente-24-759-que-propone-la-reforma-sobre-el-patrimonio-arquitect-331",
+  "bills": [
+   {
+    "number": 24759,
+    "link_source": "model",
+    "confidence": 0.69
+   }
+  ]
+ },
+ {
+  "id": "0e369e7e851c8d3bcd6473e1d41a0257890fac9c8151d1fa2dbef2c0814069b4",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-23T08:09:00",
+  "url": "https://example.com/crhoy/2026/08/23/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-365",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.63
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.45
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.63
+   }
+  ]
+ },
+ {
+  "id": "f5a1c71707ff5a7eab3fac635125f444f8b538b5eab13d74c89c1073e04443f0",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-21T21:43:00",
+  "url": "https://example.com/delfino/2026/08/21/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-752",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 23121,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "1a598afc8b5f4a7fe7aa2d058012fe25bc754ebc864a2a40aa8987de8e60836b",
+  "title": "Mociones de fondo frenan iniciativa sobre la generación distribuida",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-21T21:39:00",
+  "url": "https://example.com/elmundo/2026/08/21/mociones-de-fondo-frenan-iniciativa-sobre-la-generacion-distribuida-531",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "e5ca449a4c6a72185f7ec5244675796a590ba1918b1b92c63a17121116ae1863",
+  "title": "Sectores critican propuesta sobre las concesiones de obra pública",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-21T19:06:00",
+  "url": "https://example.com/elobservador/2026/08/21/sectores-critican-propuesta-sobre-las-concesiones-de-obra-publica-136",
+  "bills": [
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.66
+   }
+  ]
+ },
+ {
+  "id": "55f58bffd2f5004da684f47ab9c1b797d0b664ebb9a81e52049ace954bf064ea",
+  "title": "Expediente 23.431: qué propone la reforma sobre los pequeños productores de café",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-20T20:30:00",
+  "url": "https://example.com/delfino/2026/08/20/expediente-23-431-que-propone-la-reforma-sobre-los-pequenos-productore-443",
+  "bills": [
+   {
+    "number": 23431,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "2310f9118c32f85e9190e7059545258b641234189cd6868392d17aac2acd189e",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-20T18:43:00",
+  "url": "https://example.com/elmundo/2026/08/20/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-359",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.71
+   },
+   {
+    "number": 24304,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "713cdcd10b6c76a542b4c866d5da43e912c77f6d1e45065135f4b8b80007382a",
+  "title": "Expediente 23.431: qué propone la reforma sobre los pequeños productores de café",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-20T14:51:00",
+  "url": "https://example.com/crhoy/2026/08/20/expediente-23-431-que-propone-la-reforma-sobre-los-pequenos-productore-548",
+  "bills": [
+   {
+    "number": 23431,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "023276a67ab5756e6f45d4a2fe79560d4ccaf7fd6724c8b5613668d58873d692",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-20T12:23:00",
+  "url": "https://example.com/teletica/2026/08/20/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-703",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.93
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.66
+   }
+  ]
+ },
+ {
+  "id": "bda60639ee7b6c5554b1298a9e3cd66bc48183c1ee36e0bb5f0673e9db5a2a43",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-19T20:49:00",
+  "url": "https://example.com/crhoy/2026/08/19/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-los-ase-680",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.7
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.63
+   }
+  ]
+ },
+ {
+  "id": "b9e49597e5959e94cd99ce6bb662b98ce04aa8c37f77c93fe8ecbc360f28a687",
+  "title": "Mociones de fondo frenan iniciativa sobre el régimen de zonas francas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-19T19:08:00",
+  "url": "https://example.com/elmundo/2026/08/19/mociones-de-fondo-frenan-iniciativa-sobre-el-regimen-de-zonas-francas-187",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.89
+   }
+  ]
+ },
+ {
+  "id": "2b0a0e8a1c6f1332ef6ff663790c7b49ae02504ebdc6f5d7cc4edef6c304be2f",
+  "title": "Diputados discuten proyecto sobre los asentamientos informales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-08-19T16:42:00",
+  "url": "https://example.com/semanario/2026/08/19/diputados-discuten-proyecto-sobre-los-asentamientos-informales-959",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "ab364236682c2f9599013ce6259b59c262ce3f8c73914b5445f5b7ccdaa74278",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-19T16:20:00",
+  "url": "https://example.com/elmundo/2026/08/19/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-los-ase-390",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.79
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.47
+   }
+  ]
+ },
+ {
+  "id": "34460a5f885e18f4fef029324b4a00598be75870dcc8955bebfae3f3b8e7b919",
+  "title": "Mociones de fondo frenan iniciativa sobre los pequeños productores de café",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-19T15:59:00",
+  "url": "https://example.com/crhoy/2026/08/19/mociones-de-fondo-frenan-iniciativa-sobre-los-pequenos-productores-de--195",
+  "bills": [
+   {
+    "number": 23431,
+    "link_source": "model",
+    "confidence": 0.63
+   }
+  ]
+ },
+ {
+  "id": "9259567f999884c8eacd48784b64510a98a01038aec98d733186f61d53d2bf2b",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la protección de humedales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-08-19T12:38:00",
+  "url": "https://example.com/semanario/2026/08/19/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-proteccion-de-humedales-276",
+  "bills": [
+   {
+    "number": 24101,
+    "link_source": "model",
+    "confidence": 0.72
+   }
+  ]
+ },
+ {
+  "id": "b85014a310b535361d07f752848e7227d9fcc7b3ef78b8b95b0c5eea0ed4f3e2",
+  "title": "Expediente 24.784: qué propone la reforma sobre el agua potable en zonas rurales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-19T10:54:00",
+  "url": "https://example.com/elmundo/2026/08/19/expediente-24-784-que-propone-la-reforma-sobre-el-agua-potable-en-zona-941",
+  "bills": [
+   {
+    "number": 24784,
+    "link_source": "model",
+    "confidence": 0.83
+   }
+  ]
+ },
+ {
+  "id": "6458cf7d01beaad040a43f2921b16eae7ecfccd8d6f0982e498564d5a585d5e7",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-19T10:03:00",
+  "url": "https://example.com/teletica/2026/08/19/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-921",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.91
+   },
+   {
+    "number": 24592,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "7375d2746ba5760486dde99c55ffc0e72166c9f39d4306a33141331ef13f6ec0",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre el turismo rural comunitario",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-19T06:06:00",
+  "url": "https://example.com/crhoy/2026/08/19/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-el-turi-975",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.92
+   },
+   {
+    "number": 24125,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23771,
+    "link_source": "model",
+    "confidence": 0.39
+   }
+  ]
+ },
+ {
+  "id": "42eb6ac50772e33ba05a15461b807bf19dce1e99f13a1704c6f07b6acffcacbb",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-18T20:10:00",
+  "url": "https://example.com/crhoy/2026/08/18/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-141",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.9
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.38
+   }
+  ]
+ },
+ {
+  "id": "4b013be576a4a948daa461c8f898b1985b7eb416e77e1559eba1b858bb7442c7",
+  "title": "¿Qué cambiaría con el proyecto sobre los asentamientos informales?",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-18T13:05:00",
+  "url": "https://example.com/crhoy/2026/08/18/que-cambiaria-con-el-proyecto-sobre-los-asentamientos-informales-465",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.72
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.68
+   }
+  ]
+ },
+ {
+  "id": "2cfdba237c4b62cd1bc6d831d72c4bafc962e626e7ccd516625738a60113db80",
+  "title": "Organizaciones piden cambios al proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-17T09:33:00",
+  "url": "https://example.com/delfino/2026/08/17/organizaciones-piden-cambios-al-proyecto-sobre-los-asentamientos-infor-327",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "321cc02f4ec71f83de0f372d97647775812545514fd12b114ec9e57bfb9c6695",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-17T07:33:00",
+  "url": "https://example.com/crhoy/2026/08/17/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-449",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.73
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.48
+   },
+   {
+    "number": 24304,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "69c730dc98a53e052b2faa4d62f65a9dfb4716bc69971d98ea6866f8cec94948",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-16T15:19:00",
+  "url": "https://example.com/teletica/2026/08/16/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-793",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.91
+   }
+  ]
+ },
+ {
+  "id": "7d37cc81b284da4baa43d86252b764d5dd1bec0cd0e7d13a1537789ded026816",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre el turismo rural comunitario",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-08-15T14:39:00",
+  "url": "https://example.com/semanario/2026/08/15/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-el-turi-389",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.79
+   },
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.33
+   },
+   {
+    "number": 23748,
+    "link_source": "model",
+    "confidence": 0.61
+   }
+  ]
+ },
+ {
+  "id": "f4385b617b6efb48d95dc8850efc85ad73f357de14012661bba1122f8d9bbdc7",
+  "title": "Escuela de Limón centro celebra 50 años",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-15T07:18:00",
+  "url": "https://example.com/teletica/2026/08/15/escuela-de-limon-centro-celebra-50-anos-834",
+  "bills": []
+ },
+ {
+  "id": "b50b5b343c34eb7e3e3c13ea76ab5058033016b9faa347ddaeb1db4202df8de4",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-08-14T19:37:00",
+  "url": "https://example.com/semanario/2026/08/14/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-825",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.79
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.31
+   }
+  ]
+ },
+ {
+  "id": "3705225f75c272327294655eb71a62daa0b6dc1f4b10c8212a9d38c9f1500999",
+  "title": "Expediente 23.400: qué propone la reforma sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-14T17:47:00",
+  "url": "https://example.com/teletica/2026/08/14/expediente-23-400-que-propone-la-reforma-sobre-los-asentamientos-infor-267",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.72
+   }
+  ]
+ },
+ {
+  "id": "4b5f64d2c45ff2b34b07dab09b6ba78801517243cfcee5307e59c341b12019b6",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-14T15:35:00",
+  "url": "https://example.com/elmundo/2026/08/14/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-174",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.92
+   }
+  ]
+ },
+ {
+  "id": "0c8734fd4cbeda50ba055f97bbe6f0f6dd666f72f995ac65fdb297958d67eb57",
+  "title": "Expediente 23.400: qué propone la reforma sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-13T16:43:00",
+  "url": "https://example.com/delfino/2026/08/13/expediente-23-400-que-propone-la-reforma-sobre-los-asentamientos-infor-172",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "2fd5a033b1e4308c91d3091bfc40e39627d7610cb32eb13bf04ac1519d96a497",
+  "title": "Sectores critican propuesta sobre el seguro de cosechas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-13T15:16:00",
+  "url": "https://example.com/delfino/2026/08/13/sectores-critican-propuesta-sobre-el-seguro-de-cosechas-352",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "3aca6869dc7cdffa1cca91c4a45b0bf93f888e857252ea1e1bfae30fc3f85d50",
+  "title": "Comisión avanza en iniciativa sobre el seguro de cosechas",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-08-13T12:42:00",
+  "url": "https://example.com/semanario/2026/08/13/comision-avanza-en-iniciativa-sobre-el-seguro-de-cosechas-999",
+  "bills": [
+   {
+    "number": 24057,
+    "link_source": "model",
+    "confidence": 0.64
+   }
+  ]
+ },
+ {
+  "id": "262c058d4553e607d3f2d3b422c2fd245846243af8fca8589ee0f74dfdc3204b",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-13T12:06:00",
+  "url": "https://example.com/teletica/2026/08/13/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-799",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.83
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.33
+   }
+  ]
+ },
+ {
+  "id": "ad1755ece4d2600924410470b792b77edf2a9768646145f11a9d4f2a39704ea6",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre los asentamientos informales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-13T10:08:00",
+  "url": "https://example.com/elobservador/2026/08/13/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-los-ase-821",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.77
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.36
+   }
+  ]
+ },
+ {
+  "id": "2ef6657f52bb72469cc298e1ce07be83ac2e26578e087d0ef7d441740cdd411c",
+  "title": "Mociones de fondo frenan iniciativa sobre los asentamientos informales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-08-13T07:43:00",
+  "url": "https://example.com/semanario/2026/08/13/mociones-de-fondo-frenan-iniciativa-sobre-los-asentamientos-informales-391",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.76
+   }
+  ]
+ },
+ {
+  "id": "7301e9962251560d006f2a15defd829434ff126cfae991de86ac4835a002051d",
+  "title": "Mociones de fondo frenan iniciativa sobre el turismo rural comunitario",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-12T20:09:00",
+  "url": "https://example.com/crhoy/2026/08/12/mociones-de-fondo-frenan-iniciativa-sobre-el-turismo-rural-comunitario-312",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.91
+   }
+  ]
+ },
+ {
+  "id": "fedcc4fc9a462789dfb9b26fd9617a787ad802eb85bcc32eccb4a15e6462f903",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-12T19:10:00",
+  "url": "https://example.com/delfino/2026/08/12/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-los-ase-225",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 24125,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "5a8d45b284f3a14d8f1f5105f45cc7b6cc76fed413c55247927d5aa80136596b",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-12T17:11:00",
+  "url": "https://example.com/elmundo/2026/08/12/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-126",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.96
+   }
+  ]
+ },
+ {
+  "id": "48b922f52e26d80c4794c6d731ece5ceeb4e9cac7907241897f86c65facd665b",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-12T16:41:00",
+  "url": "https://example.com/teletica/2026/08/12/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-los-ase-414",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.74
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.66
+   }
+  ]
+ },
+ {
+  "id": "d2a02833b5bdfb88950a7dbda82b2c03f3bc67e8f5a7e4a9add806ff57bbb076",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-11T16:31:00",
+  "url": "https://example.com/crhoy/2026/08/11/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-864",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.55
+   }
+  ]
+ },
+ {
+  "id": "ab73d4dd67bcb63555ce67f221466310729e21b44a8aaa3a92e96eb6065a7748",
+  "title": "Así votaron las fracciones el primer debate del proyecto sobre el turismo rural comunitario",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "cultura",
+  "date_published": "2026-08-11T15:51:00",
+  "url": "https://example.com/semanario/2026/08/11/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-el-turi-524",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25060,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.44
+   }
+  ]
+ },
+ {
+  "id": "40fd7c8f214ae16972e879273f1c3097e9b52a3e799ef8b63f5c749f432be5b3",
+  "title": "Consultas a instituciones retrasan proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-11T14:41:00",
+  "url": "https://example.com/crhoy/2026/08/11/consultas-a-instituciones-retrasan-proyecto-sobre-los-asentamientos-in-303",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.87
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.44
+   }
+  ]
+ },
+ {
+  "id": "c7fb687a81f44e2c83954c1bc02c7055d31ba38dd4d1751a12d51a831906f257",
+  "title": "¿Qué cambiaría con el proyecto sobre la protección de humedales?",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-08-11T14:40:00",
+  "url": "https://example.com/semanario/2026/08/11/que-cambiaria-con-el-proyecto-sobre-la-proteccion-de-humedales-913",
+  "bills": [
+   {
+    "number": 24101,
+    "link_source": "model",
+    "confidence": 0.88
+   }
+  ]
+ },
+ {
+  "id": "550e6949980dd8562204628250ef8923f65d5fca16198b7e9921279f30b49777",
+  "title": "Cruz Roja atiende emergencia en Turrialba",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-11T10:09:00",
+  "url": "https://example.com/delfino/2026/08/11/cruz-roja-atiende-emergencia-en-turrialba-418",
+  "bills": []
+ },
+ {
+  "id": "9f37723dd3a5acae79dcb84b3cf11a079fa0ff4d58b9d6adf32391b7e75de2f9",
+  "title": "Municipalidad de Desamparados anuncia cierre de vía por obras",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-11T08:20:00",
+  "url": "https://example.com/delfino/2026/08/11/municipalidad-de-desamparados-anuncia-cierre-de-via-por-obras-649",
+  "bills": []
+ },
+ {
+  "id": "61f3da1c990f0545553a1b788003f2e45718780c382bd14589eee851fab1cd72",
+  "title": "Plenario aprueba en primer debate proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-11T07:58:00",
+  "url": "https://example.com/crhoy/2026/08/11/plenario-aprueba-en-primer-debate-proyecto-sobre-los-asentamientos-inf-416",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.98
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.5
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.59
+   }
+  ]
+ },
+ {
+  "id": "267037c897b1b64817ce14a659183f760ba681d6dea9928e70384c9e5c9108b5",
+  "title": "Comisión avanza en iniciativa sobre el turismo rural comunitario",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-10T20:30:00",
+  "url": "https://example.com/crhoy/2026/08/10/comision-avanza-en-iniciativa-sobre-el-turismo-rural-comunitario-276",
+  "bills": [
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.58
+   }
+  ]
+ },
+ {
+  "id": "1cf6d47802d1e53bb74aadef0fd21eb4af0457b2e1f8be60678275928df74261",
+  "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-09T18:11:00",
+  "url": "https://example.com/elmundo/2026/08/09/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-176",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.73
+   },
+   {
+    "number": 25032,
+    "link_source": "model",
+    "confidence": 0.63
+   }
+  ]
+ },
+ {
+  "id": "c61e4db0da9cd73ecb60da89521caeed3d81a71712ba5784e5f8eed6ecd30d22",
+  "title": "Festival cultural reúne a cientos de personas en Upala",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-09T12:50:00",
+  "url": "https://example.com/elmundo/2026/08/09/festival-cultural-reune-a-cientos-de-personas-en-upala-363",
+  "bills": []
+ },
+ {
+  "id": "bc2182b3712bcc133e52abfed7acf3975a6519340df67d05b5b0a5e4dc6e3eab",
+  "title": "Consultas a instituciones retrasan proyecto sobre la ciberseguridad del Estado",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-08-08T18:27:00",
+  "url": "https://example.com/delfino/2026/08/08/consultas-a-instituciones-retrasan-proyecto-sobre-la-ciberseguridad-de-302",
+  "bills": [
+   {
+    "number": 23493,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "dba7974ba4357d80ca3a76cde6019da86d2592a4271bb8ac9215c9117d4b337c",
+  "title": "Mociones de fondo frenan iniciativa sobre las concesiones de obra pública",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-08T13:59:00",
+  "url": "https://example.com/crhoy/2026/08/08/mociones-de-fondo-frenan-iniciativa-sobre-las-concesiones-de-obra-publ-445",
+  "bills": [
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.61
+   }
+  ]
+ },
+ {
+  "id": "432bf52dd3d668016cbb1e28d3a34b938a3839a47304b946d181b3a88704b455",
+  "title": "Festival cultural reúne a cientos de personas en Pérez Zeledón",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-08-07T14:10:00",
+  "url": "https://example.com/teletica/2026/08/07/festival-cultural-reune-a-cientos-de-personas-en-perez-zeledon-275",
+  "bills": []
+ },
+ {
+  "id": "bbab2a1dbbb9e510523958b74e38d596cb8b7078cfd89fee2a3853d893b5eee5",
+  "title": "Mociones de fondo frenan iniciativa sobre el turismo rural comunitario",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-06T15:33:00",
+  "url": "https://example.com/crhoy/2026/08/06/mociones-de-fondo-frenan-iniciativa-sobre-el-turismo-rural-comunitario-621",
+  "bills": [
+   {
+    "number": 23771,
+    "link_source": "model",
+    "confidence": 0.88
+   },
+   {
+    "number": 24593,
+    "link_source": "model",
+    "confidence": 0.58
+   }
+  ]
+ },
+ {
+  "id": "d13f6a0febe73c67fef1011f1f42e011ac28d4117dd898123ecaccbc510f8e59",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-05T11:52:00",
+  "url": "https://example.com/crhoy/2026/08/05/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-288",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.66
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.62
+   }
+  ]
+ },
+ {
+  "id": "283a02370c39974fa7d723a600601ca569339ea71803e16e9f4e0a4793aa9a2a",
+  "title": "Mociones de fondo frenan iniciativa sobre el turismo rural comunitario",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-08-04T21:36:00",
+  "url": "https://example.com/elmundo/2026/08/04/mociones-de-fondo-frenan-iniciativa-sobre-el-turismo-rural-comunitario-980",
+  "bills": [
+   {
+    "number": 23699,
+    "link_source": "model",
+    "confidence": 0.72
+   },
+   {
+    "number": 24784,
+    "link_source": "model",
+    "confidence": 0.73
+   }
+  ]
+ },
+ {
+  "id": "8ba6a3f68a8bf31476da44d26537ff1c4e72b10ed0ef019e713e19dac16a04fe",
+  "title": "Nueva ruta de autobús conectará Upala con la capital",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-08-04T21:25:00",
+  "url": "https://example.com/delfino/2026/08/04/nueva-ruta-de-autobus-conectara-upala-con-la-capital-256",
+  "bills": []
+ },
+ {
+  "id": "defb1bdf3851a187c0ef1aecf0016da10cc5fc646f28774e003ceb8768b91782",
+  "title": "Lluvias provocan inundaciones en Upala",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-08-03T16:27:00",
+  "url": "https://example.com/crhoy/2026/08/03/lluvias-provocan-inundaciones-en-upala-404",
+  "bills": []
+ },
+ {
+  "id": "3f163b4267c12711951f7788a573244952696a3cf2ed3ee06d30ea274cba0572",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el empleo de personas jóvenes",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-07-31T19:52:00",
+  "url": "https://example.com/delfino/2026/07/31/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-empleo-de-personas-jovene-659",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "5ec0c43b57aff11521141301d72a251ffb1b14ba75b6a8fc9cdf311f4e5395ba",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el agua potable en zonas rurales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-31T17:45:00",
+  "url": "https://example.com/elobservador/2026/07/31/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-agua-potable-en-zonas-rur-375",
+  "bills": [
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.6
+   },
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.63
+   },
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.53
+   }
+  ]
+ },
+ {
+  "id": "16000329a2bf3f5384c16b0dd4a01c9f340a89b9e9ead03e86c79837c11f84b6",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el turismo rural comunitario",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-31T08:05:00",
+  "url": "https://example.com/teletica/2026/07/31/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-turismo-rural-comunitario-139",
+  "bills": [
+   {
+    "number": 23699,
+    "link_source": "model",
+    "confidence": 0.92
+   },
+   {
+    "number": 24784,
+    "link_source": "model",
+    "confidence": 0.48
+   },
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "5c6defbe9ce3fea790aaf1ad2ab8a76a9fdc5dcb932df02ace01269e13747d49",
+  "title": "Consultas a instituciones retrasan proyecto sobre el régimen de zonas francas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-31T07:48:00",
+  "url": "https://example.com/elmundo/2026/07/31/consultas-a-instituciones-retrasan-proyecto-sobre-el-regimen-de-zonas--159",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.91
+   },
+   {
+    "number": 25060,
+    "link_source": "model",
+    "confidence": 0.32
+   }
+  ]
+ },
+ {
+  "id": "735ebc724dd39b182c6646d68247b7f3b575fbe8597e8dea699ceeaa9e392af2",
+  "title": "Comisión avanza en iniciativa sobre el agua potable en zonas rurales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-30T20:45:00",
+  "url": "https://example.com/elmundo/2026/07/30/comision-avanza-en-iniciativa-sobre-el-agua-potable-en-zonas-rurales-451",
+  "bills": [
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.82
+   }
+  ]
+ },
+ {
+  "id": "d37ca0b5b70c771a45f39d89c4b216e8c78b4760f7c77a67043f41755ca6097a",
+  "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-07-30T12:51:00",
+  "url": "https://example.com/crhoy/2026/07/30/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-501",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "model",
+    "confidence": 0.56
+   }
+  ]
+ },
+ {
+  "id": "b45b6fb95aab5b2e6c663d307543d1cb8df8c3cb6af615391c15e5e43eb7de93",
+  "title": "Consultas a instituciones retrasan proyecto sobre el turismo rural comunitario",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-29T15:43:00",
+  "url": "https://example.com/crhoy/2026/07/29/consultas-a-instituciones-retrasan-proyecto-sobre-el-turismo-rural-com-847",
+  "bills": [
+   {
+    "number": 23699,
+    "link_source": "model",
+    "confidence": 0.93
+   }
+  ]
+ },
+ {
+  "id": "f71c9721ebace342305445de4832245553ad43642a7759ed8cd82244ec638550",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-07-28T13:13:00",
+  "url": "https://example.com/elobservador/2026/07/28/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-307",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.91
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.5
+   }
+  ]
+ },
+ {
+  "id": "5856837e322ae2f6794d70f2fd923845b36ac41224d41f6900e6aebb06dad713",
+  "title": "Diputados discuten proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-27T19:27:00",
+  "url": "https://example.com/elmundo/2026/07/27/diputados-discuten-proyecto-sobre-los-asentamientos-informales-355",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.74
+   },
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.53
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.37
+   }
+  ]
+ },
+ {
+  "id": "8880dc7d36afa9e5cc4496854a97d28f1f3f289551d357f508b22da8ab15cd5c",
+  "title": "Expediente 23.400: qué propone la reforma sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-27T17:18:00",
+  "url": "https://example.com/crhoy/2026/07/27/expediente-23-400-que-propone-la-reforma-sobre-los-asentamientos-infor-478",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.76
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.32
+   }
+  ]
+ },
+ {
+  "id": "e8d7569c8c4c540964a5891d37fc53c200f28d2aecd930a5c8eba19ffae0bed2",
+  "title": "Mociones de fondo frenan iniciativa sobre la protección de humedales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-07-27T12:10:00",
+  "url": "https://example.com/elmundo/2026/07/27/mociones-de-fondo-frenan-iniciativa-sobre-la-proteccion-de-humedales-594",
+  "bills": [
+   {
+    "number": 24101,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "0e2142317d62f3622eba9b40f6354d477d16e9533d61164b100188b7c02d18af",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el turismo rural comunitario",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-27T11:51:00",
+  "url": "https://example.com/crhoy/2026/07/27/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-turismo-rural-comunitario-671",
+  "bills": [
+   {
+    "number": 23699,
+    "link_source": "model",
+    "confidence": 0.71
+   },
+   {
+    "number": 25060,
+    "link_source": "model",
+    "confidence": 0.49
+   },
+   {
+    "number": 23771,
+    "link_source": "model",
+    "confidence": 0.51
+   }
+  ]
+ },
+ {
+  "id": "c63650a63e3d6e7e3a3f3d8c519e77487f7bbbc5e2ab1fb55c114335b2f714e7",
+  "title": "Mociones de fondo frenan iniciativa sobre el patrimonio arquitectónico",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-25T12:51:00",
+  "url": "https://example.com/elobservador/2026/07/25/mociones-de-fondo-frenan-iniciativa-sobre-el-patrimonio-arquitectonico-581",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.94
+   }
+  ]
+ },
+ {
+  "id": "cb03df7fc5a4f3da7d66962dd2d490299f9d14c5e365bcc0919b61b648e670f7",
+  "title": "Cruz Roja atiende emergencia en San Carlos",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-23T06:48:00",
+  "url": "https://example.com/teletica/2026/07/23/cruz-roja-atiende-emergencia-en-san-carlos-286",
+  "bills": []
+ },
+ {
+  "id": "8fb2214ab5868ec53a36bde26217194dae7d517f88b7ebca9e33cfe29a6f2071",
+  "title": "Municipalidad de Puntarenas anuncia cierre de vía por obras",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-19T08:02:00",
+  "url": "https://example.com/crhoy/2026/07/19/municipalidad-de-puntarenas-anuncia-cierre-de-via-por-obras-947",
+  "bills": []
+ },
+ {
+  "id": "8607d5aee3154e0a9118f3c5b4355d357f775cd85efa5f3779335c804b6d26b8",
+  "title": "Expediente 23.121: qué propone la reforma sobre los asentamientos informales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-07-18T16:40:00",
+  "url": "https://example.com/semanario/2026/07/18/expediente-23-121-que-propone-la-reforma-sobre-los-asentamientos-infor-245",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.7
+   }
+  ]
+ },
+ {
+  "id": "f33a537948a65ce4a48ddc6324ed05868cb12b01b6783e987a15076b5f609f74",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la generación distribuida",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-07-18T12:00:00",
+  "url": "https://example.com/delfino/2026/07/18/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-generacion-distribuida-150",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 25032,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "856bb31e1706de7ba7d2d3d61c985fb8273a71f41f234ae94db4f7a3ce070cd5",
+  "title": "Sectores critican propuesta sobre los asentamientos informales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-07-17T17:30:00",
+  "url": "https://example.com/elobservador/2026/07/17/sectores-critican-propuesta-sobre-los-asentamientos-informales-111",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.65
+   }
+  ]
+ },
+ {
+  "id": "d58b43df4f31e02a088150bf56c5ed4a9aa1da4f89d7689dfbd0c8c548db521f",
+  "title": "Mociones de fondo frenan iniciativa sobre la generación distribuida",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-07-16T21:12:00",
+  "url": "https://example.com/elmundo/2026/07/16/mociones-de-fondo-frenan-iniciativa-sobre-la-generacion-distribuida-784",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.73
+   }
+  ]
+ },
+ {
+  "id": "a7b10b2df7982a6a9dc75b19456fed37550ff64ace1f264935e97c88995e692d",
+  "title": "Diputados discuten proyecto sobre la generación distribuida",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-07-16T07:03:00",
+  "url": "https://example.com/semanario/2026/07/16/diputados-discuten-proyecto-sobre-la-generacion-distribuida-639",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.9
+   },
+   {
+    "number": 23400,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "b9cb5f375d77c0e1906f9571ede03a8a5e1970583015209125d5246f9163df2b",
+  "title": "Diputados discuten proyecto sobre la generación distribuida",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-07-15T20:20:00",
+  "url": "https://example.com/semanario/2026/07/15/diputados-discuten-proyecto-sobre-la-generacion-distribuida-646",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.94
+   }
+  ]
+ },
+ {
+  "id": "a322e5e917352e574b6f5cb628edaaa12bb114c2242bef1895bef3e611fd7c44",
+  "title": "Diputados discuten proyecto sobre la generación distribuida",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-07-14T08:20:00",
+  "url": "https://example.com/elmundo/2026/07/14/diputados-discuten-proyecto-sobre-la-generacion-distribuida-546",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.69
+   },
+   {
+    "number": 25032,
+    "link_source": "model",
+    "confidence": 0.68
+   }
+  ]
+ },
+ {
+  "id": "24c38ee8e4ff1fe3739656951d0b1f37f21a21fd31eaf599673f412288b6456d",
+  "title": "¿Qué cambiaría con el proyecto sobre la generación distribuida?",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-12T15:10:00",
+  "url": "https://example.com/elmundo/2026/07/12/que-cambiaria-con-el-proyecto-sobre-la-generacion-distribuida-949",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "a1f5515b3f4ffbc18bbca57fc29957121dde452c6c7a686d57f5db57547cabdf",
+  "title": "Festival cultural reúne a cientos de personas en Liberia",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-12T08:45:00",
+  "url": "https://example.com/elmundo/2026/07/12/festival-cultural-reune-a-cientos-de-personas-en-liberia-887",
+  "bills": []
+ },
+ {
+  "id": "e3369e556deb91b736fed7fc3ad719e7ba7fd1081ac3330a2c855509b113de02",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la generación distribuida",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-11T07:41:00",
+  "url": "https://example.com/elmundo/2026/07/11/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-generacion-distribuida-751",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.58
+   }
+  ]
+ },
+ {
+  "id": "d2ea5440e7c1aa666b394b45b6c95a4baf3929614cab27382ab22d2a4a91d5a8",
+  "title": "Sectores critican propuesta sobre la generación distribuida",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-07-10T20:11:00",
+  "url": "https://example.com/delfino/2026/07/10/sectores-critican-propuesta-sobre-la-generacion-distribuida-776",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 25235,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "09ab42d10435d351efd4b31217538274ed3468cd45c071c9f86361f0061a9f60",
+  "title": "Sectores critican propuesta sobre el régimen de zonas francas",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-07-10T19:36:00",
+  "url": "https://example.com/semanario/2026/07/10/sectores-critican-propuesta-sobre-el-regimen-de-zonas-francas-440",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.96
+   }
+  ]
+ },
+ {
+  "id": "4752c6358be3c973af89f848c445b71bf4bf9d1f90130c8e0da9ad1a0230f9b0",
+  "title": "Mociones de fondo frenan iniciativa sobre la generación distribuida",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-10T13:53:00",
+  "url": "https://example.com/teletica/2026/07/10/mociones-de-fondo-frenan-iniciativa-sobre-la-generacion-distribuida-394",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "0d435f23b64ad56150619c2372126cffeaf32c169e5856d294227cf5b16bad9d",
+  "title": "Expediente 24.592: qué propone la reforma sobre la generación distribuida",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-07-09T09:53:00",
+  "url": "https://example.com/delfino/2026/07/09/expediente-24-592-que-propone-la-reforma-sobre-la-generacion-distribui-321",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "9e3d5f853b54d112e3205d58ed5568480ddba4930c5d6d54bd208c82aa370a47",
+  "title": "Sectores critican propuesta sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-09T09:35:00",
+  "url": "https://example.com/crhoy/2026/07/09/sectores-critican-propuesta-sobre-los-asentamientos-informales-888",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "cc4d69ba41371a3043a2a53e2525d53fec0687e59413c26309705d51e0b3d10a",
+  "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-07-08T12:13:00",
+  "url": "https://example.com/crhoy/2026/07/08/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-285",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.64
+   },
+   {
+    "number": 23857,
+    "link_source": "model",
+    "confidence": 0.69
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.59
+   }
+  ]
+ },
+ {
+  "id": "1075f4410c0ab2f7358db208e5ed82f8568d5daebc85f89c873f84ee66e5cb0c",
+  "title": "Comisión avanza en iniciativa sobre las plataformas de transporte",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-08T08:30:00",
+  "url": "https://example.com/crhoy/2026/07/08/comision-avanza-en-iniciativa-sobre-las-plataformas-de-transporte-827",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "01e72fe47800d53d70b7983849b952701078690825cea21a88b9329c1e8ac4b2",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la generación distribuida",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-08T07:29:00",
+  "url": "https://example.com/elobservador/2026/07/08/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-generacion-distribuida-632",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.72
+   }
+  ]
+ },
+ {
+  "id": "3d588652a74662df268a143c89e47d21a6f466f9e49e31c5993a192344ae905b",
+  "title": "Nueva ruta de autobús conectará Turrialba con la capital",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-07-08T07:14:00",
+  "url": "https://example.com/delfino/2026/07/08/nueva-ruta-de-autobus-conectara-turrialba-con-la-capital-302",
+  "bills": []
+ },
+ {
+  "id": "b98483a08fd748f7c9cb8aba7be238e21fcdff32eb532025f89f711aaf3431c7",
+  "title": "Organizaciones piden cambios al proyecto sobre la generación distribuida",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-06T20:35:00",
+  "url": "https://example.com/crhoy/2026/07/06/organizaciones-piden-cambios-al-proyecto-sobre-la-generacion-distribui-177",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.6
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.63
+   }
+  ]
+ },
+ {
+  "id": "ae5f109a4f8314556e3fb01ec8f935eea3b582aa73314e607b33b0aef90ae3b1",
+  "title": "Consultas a instituciones retrasan proyecto sobre el seguro de cosechas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-07-06T17:50:00",
+  "url": "https://example.com/elmundo/2026/07/06/consultas-a-instituciones-retrasan-proyecto-sobre-el-seguro-de-cosecha-217",
+  "bills": [
+   {
+    "number": 23457,
+    "link_source": "model",
+    "confidence": 0.97
+   },
+   {
+    "number": 24568,
+    "link_source": "model",
+    "confidence": 0.55
+   }
+  ]
+ },
+ {
+  "id": "2076525c3f8c32625bbe40e62165372ac82e3c3a8b9d48daaca5428ea9c12233",
+  "title": "Diputados discuten proyecto sobre el patrimonio arquitectónico",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-07-05T12:40:00",
+  "url": "https://example.com/delfino/2026/07/05/diputados-discuten-proyecto-sobre-el-patrimonio-arquitectonico-681",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 23493,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "4eb180c5995c03251abb984732ba0a3f1bbd40de532ce46246c40b60602381f5",
+  "title": "Diputados discuten proyecto sobre la generación distribuida",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-04T21:20:00",
+  "url": "https://example.com/elmundo/2026/07/04/diputados-discuten-proyecto-sobre-la-generacion-distribuida-114",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "27e32ba14b23d2ecab733b903412d6371eef70607a5d3f5bed7a490c5c15d54c",
+  "title": "Consultas a instituciones retrasan proyecto sobre la deuda pública",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-04T15:44:00",
+  "url": "https://example.com/teletica/2026/07/04/consultas-a-instituciones-retrasan-proyecto-sobre-la-deuda-publica-875",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.62
+   }
+  ]
+ },
+ {
+  "id": "2dca81fafbf3e56e1944a5a1fc8d02f97eb16e0c2141f07badd5a6415edbec91",
+  "title": "¿Qué cambiaría con el proyecto sobre las bibliotecas públicas?",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-03T10:39:00",
+  "url": "https://example.com/crhoy/2026/07/03/que-cambiaria-con-el-proyecto-sobre-las-bibliotecas-publicas-846",
+  "bills": [
+   {
+    "number": 23304,
+    "link_source": "model",
+    "confidence": 0.73
+   }
+  ]
+ },
+ {
+  "id": "42b433be920e48f68842d296b53db378b6b7d849884b715e39aa82c2b8db8303",
+  "title": "Consultas a instituciones retrasan proyecto sobre la generación distribuida",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-07-02T21:44:00",
+  "url": "https://example.com/teletica/2026/07/02/consultas-a-instituciones-retrasan-proyecto-sobre-la-generacion-distri-363",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.57
+   },
+   {
+    "number": 23682,
+    "link_source": "model",
+    "confidence": 0.64
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.54
+   }
+  ]
+ },
+ {
+  "id": "4ae76511bc622164ca239a248f71b4e0f172cebe07d988f85e33ad47abc4235c",
+  "title": "¿Qué cambiaría con el proyecto sobre la generación distribuida?",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-07-02T19:42:00",
+  "url": "https://example.com/delfino/2026/07/02/que-cambiaria-con-el-proyecto-sobre-la-generacion-distribuida-804",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "387307fd9d73454bb580292b443db7208d8f363ea8bc14901be0caf997dac54d",
+  "title": "Mociones de fondo frenan iniciativa sobre el patrimonio arquitectónico",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-02T13:06:00",
+  "url": "https://example.com/crhoy/2026/07/02/mociones-de-fondo-frenan-iniciativa-sobre-el-patrimonio-arquitectonico-882",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "model",
+    "confidence": 0.55
+   },
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.64
+   }
+  ]
+ },
+ {
+  "id": "f2d857b77b5a6564b6c832eb188b52c1c36ffc3dfaa3b29915e0e4c52ba83052",
+  "title": "Expediente 23.748: qué propone la reforma sobre las playas accesibles",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-07-02T11:50:00",
+  "url": "https://example.com/semanario/2026/07/02/expediente-23-748-que-propone-la-reforma-sobre-las-playas-accesibles-917",
+  "bills": [
+   {
+    "number": 23748,
+    "link_source": "model",
+    "confidence": 0.61
+   },
+   {
+    "number": 23699,
+    "link_source": "model",
+    "confidence": 0.42
+   }
+  ]
+ },
+ {
+  "id": "e685873e4b04a164f1fc293130043bd8feea4257a336831d5431c7efb708121f",
+  "title": "Consultas a instituciones retrasan proyecto sobre la generación distribuida",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "cultura",
+  "date_published": "2026-07-02T08:13:00",
+  "url": "https://example.com/semanario/2026/07/02/consultas-a-instituciones-retrasan-proyecto-sobre-la-generacion-distri-768",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.89
+   }
+  ]
+ },
+ {
+  "id": "2d6d01578f840e55167781352003da1d2013dcf2ad9a8e8aa84389a70c5b6a15",
+  "title": "Lluvias provocan inundaciones en Nicoya",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-07-01T20:15:00",
+  "url": "https://example.com/crhoy/2026/07/01/lluvias-provocan-inundaciones-en-nicoya-472",
+  "bills": []
+ },
+ {
+  "id": "b34aeb173da45617709fa1771a1a47fe8e6e8a06a2cc86d2c24bb86c5d5faaa7",
+  "title": "Organizaciones piden cambios al proyecto sobre el tren eléctrico metropolitano",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-30T09:09:00",
+  "url": "https://example.com/elmundo/2026/06/30/organizaciones-piden-cambios-al-proyecto-sobre-el-tren-electrico-metro-606",
+  "bills": [
+   {
+    "number": 23301,
+    "link_source": "model",
+    "confidence": 0.55
+   },
+   {
+    "number": 24695,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "32087fe597f8c874849893ffc8ce7de6e3f661795d7fccf29dd321b528567d9d",
+  "title": "Expediente 23.771: qué propone la reforma sobre el turismo rural comunitario",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-06-29T16:13:00",
+  "url": "https://example.com/delfino/2026/06/29/expediente-23-771-que-propone-la-reforma-sobre-el-turismo-rural-comuni-790",
+  "bills": [
+   {
+    "number": 23771,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 23500,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "357da06ef7180c4e96fb6b7383c08a879357e33a6ce3d2a5ef85c975eee69745",
+  "title": "Comerciantes de Limón centro reportan aumento de ventas",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-29T07:54:00",
+  "url": "https://example.com/elobservador/2026/06/29/comerciantes-de-limon-centro-reportan-aumento-de-ventas-216",
+  "bills": []
+ },
+ {
+  "id": "ad6b631ffd701cb2d1b7a288a788f0b364244646346db74344c82c0621885e91",
+  "title": "Sectores critican propuesta sobre los asentamientos informales",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-28T14:17:00",
+  "url": "https://example.com/teletica/2026/06/28/sectores-critican-propuesta-sobre-los-asentamientos-informales-315",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.94
+   },
+   {
+    "number": 23162,
+    "link_source": "model",
+    "confidence": 0.54
+   }
+  ]
+ },
+ {
+  "id": "a42dbc41e54530e6b661f055283de9aa5729c9cbdb83edf01659a7969f421cd7",
+  "title": "Organizaciones piden cambios al proyecto sobre la pesca artesanal",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-06-26T17:15:00",
+  "url": "https://example.com/semanario/2026/06/26/organizaciones-piden-cambios-al-proyecto-sobre-la-pesca-artesanal-377",
+  "bills": [
+   {
+    "number": 23500,
+    "link_source": "model",
+    "confidence": 0.89
+   }
+  ]
+ },
+ {
+  "id": "870ad9772785870cb2d3c97a57aae1c162d5377fde973b2ecd942a873145f37b",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre el empleo de personas jóvenes",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-25T12:03:00",
+  "url": "https://example.com/crhoy/2026/06/25/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-empleo-de-personas-jovene-503",
+  "bills": [
+   {
+    "number": 23857,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "139804a61d06d9a55e35bd992659214a911a35a64dcec4a86dba822bfd187c99",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la red vial cantonal",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-24T20:42:00",
+  "url": "https://example.com/crhoy/2026/06/24/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-red-vial-cantonal-646",
+  "bills": [
+   {
+    "number": 25216,
+    "link_source": "model",
+    "confidence": 0.66
+   },
+   {
+    "number": 24472,
+    "link_source": "model",
+    "confidence": 0.56
+   }
+  ]
+ },
+ {
+  "id": "0487f3b4c9382ceeec73a30042ee510fa049dd8cc951b028a3798336332ca8b3",
+  "title": "Expediente 23.121: qué propone la reforma sobre los asentamientos informales",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-06-24T17:00:00",
+  "url": "https://example.com/semanario/2026/06/24/expediente-23-121-que-propone-la-reforma-sobre-los-asentamientos-infor-945",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.89
+   },
+   {
+    "number": 23493,
+    "link_source": "model",
+    "confidence": 0.62
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.69
+   }
+  ]
+ },
+ {
+  "id": "6b6e7c5fbead74f9292082a980a83047bbfbd6ce3d6ae69d6bfb81ef9d71f595",
+  "title": "Organizaciones piden cambios al proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-06-24T11:36:00",
+  "url": "https://example.com/delfino/2026/06/24/organizaciones-piden-cambios-al-proyecto-sobre-los-asentamientos-infor-996",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "0b55acc9669cd8fd306b4dd659f467e862a1bf75f815017a079634342531c419",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-24T11:18:00",
+  "url": "https://example.com/crhoy/2026/06/24/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-318",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.96
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.38
+   }
+  ]
+ },
+ {
+  "id": "5d2042902afdf4d345aea6e45b10a7005b08b58bcce1199755d31dc361969b2a",
+  "title": "Comisión avanza en iniciativa sobre los tiempos de espera en hospitales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-23T11:31:00",
+  "url": "https://example.com/elobservador/2026/06/23/comision-avanza-en-iniciativa-sobre-los-tiempos-de-espera-en-hospitale-551",
+  "bills": [
+   {
+    "number": 24423,
+    "link_source": "model",
+    "confidence": 0.69
+   }
+  ]
+ },
+ {
+  "id": "c200326dde62184eb0c28861316699052ee8e5b65ef322eff61d1b6a6868c54d",
+  "title": "Expediente 23.121: qué propone la reforma sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-06-22T21:36:00",
+  "url": "https://example.com/delfino/2026/06/22/expediente-23-121-que-propone-la-reforma-sobre-los-asentamientos-infor-349",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "b21559260b0cecc723c11d5b1d352eb7d0581981834a1ac06241ad4067628715",
+  "title": "¿Qué cambiaría con el proyecto sobre el turismo rural comunitario?",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-06-22T19:55:00",
+  "url": "https://example.com/elobservador/2026/06/22/que-cambiaria-con-el-proyecto-sobre-el-turismo-rural-comunitario-447",
+  "bills": [
+   {
+    "number": 23771,
+    "link_source": "model",
+    "confidence": 0.8
+   }
+  ]
+ },
+ {
+  "id": "3c972a35c31214396b66d5a5ae1a9fde6b6878972b825645f14ccb15cb7c272d",
+  "title": "Lluvias provocan inundaciones en Pérez Zeledón",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-21T18:19:00",
+  "url": "https://example.com/crhoy/2026/06/21/lluvias-provocan-inundaciones-en-perez-zeledon-514",
+  "bills": []
+ },
+ {
+  "id": "06218d9b60b0b2b832a060bebf6d55f7b95b759b42ec671ffa7f1cc7160b35c0",
+  "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-06-21T15:31:00",
+  "url": "https://example.com/delfino/2026/06/21/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-930",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "20c8cac3736849a184a91ce833a3c93aa27b09783fb746b43372bb84d3bdf88f",
+  "title": "Consultas a instituciones retrasan proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-21T13:27:00",
+  "url": "https://example.com/elmundo/2026/06/21/consultas-a-instituciones-retrasan-proyecto-sobre-los-asentamientos-in-751",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.6
+   }
+  ]
+ },
+ {
+  "id": "eba1085324b5c535788a88af2e0282a0bbda5c219b98ef327f590ef13ae87d51",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-06-19T15:51:00",
+  "url": "https://example.com/delfino/2026/06/19/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-852",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "75c3a8ac180763fbf4725c1cc30aafdfb641e84a220983abe70b713c3adc38db",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre las plataformas de transporte",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-19T07:55:00",
+  "url": "https://example.com/crhoy/2026/06/19/gobierno-anuncia-apoyo-a-iniciativa-sobre-las-plataformas-de-transport-909",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.61
+   },
+   {
+    "number": 23162,
+    "link_source": "model",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "8d250c375c19e8e647eabdc5eb439500b546989187d8e494569964857c7ff4e9",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-18T20:42:00",
+  "url": "https://example.com/crhoy/2026/06/18/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-986",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.82
+   },
+   {
+    "number": 23470,
+    "link_source": "model",
+    "confidence": 0.45
+   }
+  ]
+ },
+ {
+  "id": "02bc63215d8163d6098bf5aabe1962bc809eb29e5268801c9c21aed31fd512dc",
+  "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-18T18:56:00",
+  "url": "https://example.com/teletica/2026/06/18/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-232",
+  "bills": [
+   {
+    "number": 24454,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "5dbc7860b8cd4ed23883f171333bff4b1e3138171befb519da2d7d987f3af3c4",
+  "title": "Expediente 23.500: qué propone la reforma sobre la pesca artesanal",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-18T15:47:00",
+  "url": "https://example.com/teletica/2026/06/18/expediente-23-500-que-propone-la-reforma-sobre-la-pesca-artesanal-957",
+  "bills": [
+   {
+    "number": 23500,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23431,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "a58e2174acc0fc4396f14dedd56404308fbfe075153828ec8c4ee94377dd283b",
+  "title": "Consultas a instituciones retrasan proyecto sobre las plataformas de transporte",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-18T13:44:00",
+  "url": "https://example.com/crhoy/2026/06/18/consultas-a-instituciones-retrasan-proyecto-sobre-las-plataformas-de-t-625",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.74
+   },
+   {
+    "number": 23162,
+    "link_source": "model",
+    "confidence": 0.7
+   },
+   {
+    "number": 23301,
+    "link_source": "model",
+    "confidence": 0.38
+   }
+  ]
+ },
+ {
+  "id": "a0719a8c24abda0e6f8f9b36fc4131f7a440f08e22282873b0bce8f21685f614",
+  "title": "Comerciantes de Desamparados reportan aumento de ventas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-18T10:41:00",
+  "url": "https://example.com/crhoy/2026/06/18/comerciantes-de-desamparados-reportan-aumento-de-ventas-958",
+  "bills": []
+ },
+ {
+  "id": "ced646b37b35a02ecc91168644124f9523f07f634e6493084a9972430608ac9e",
+  "title": "Vecinos de Nicoya denuncian falta de agua",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-18T06:59:00",
+  "url": "https://example.com/crhoy/2026/06/18/vecinos-de-nicoya-denuncian-falta-de-agua-715",
+  "bills": []
+ },
+ {
+  "id": "dbdd829b804835e5432edef0dbe912169e0f5955c8f9c2058e27e76d29dac386",
+  "title": "Escuela de Puntarenas celebra 50 años",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-17T16:47:00",
+  "url": "https://example.com/crhoy/2026/06/17/escuela-de-puntarenas-celebra-50-anos-635",
+  "bills": []
+ },
+ {
+  "id": "bbfd269f304bf96f51e52c61f9ac56d711497ae0e45b033592ca2b333ebba6d0",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-17T10:03:00",
+  "url": "https://example.com/elmundo/2026/06/17/gobierno-anuncia-apoyo-a-iniciativa-sobre-los-asentamientos-informales-711",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.69
+   }
+  ]
+ },
+ {
+  "id": "d83b1e36d0b5f0dff9a101a48ad7001ec9c53d58a3510bd78688a011a1a3dd3b",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre las playas accesibles",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-16T16:38:00",
+  "url": "https://example.com/crhoy/2026/06/16/gobierno-anuncia-apoyo-a-iniciativa-sobre-las-playas-accesibles-387",
+  "bills": [
+   {
+    "number": 23748,
+    "link_source": "model",
+    "confidence": 0.91
+   },
+   {
+    "number": 23149,
+    "link_source": "model",
+    "confidence": 0.31
+   }
+  ]
+ },
+ {
+  "id": "1e4931edf4c787e0d0cf17c46996473c6a1f2670df76ab0dfd272525a04fc2fe",
+  "title": "Consultas a instituciones retrasan proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-16T15:36:00",
+  "url": "https://example.com/elmundo/2026/06/16/consultas-a-instituciones-retrasan-proyecto-sobre-los-asentamientos-in-997",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "b8eb08c1d30c2738e3908e4c2ce3dbc0b79ef73eac36fee531cd03c2be356d42",
+  "title": "Festival cultural reúne a cientos de personas en Puntarenas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-06-15T18:24:00",
+  "url": "https://example.com/delfino/2026/06/15/festival-cultural-reune-a-cientos-de-personas-en-puntarenas-491",
+  "bills": []
+ },
+ {
+  "id": "b9164ab5fbabe703292f4d57dadc12495211c606737c4826980c790aef0f58d7",
+  "title": "¿Qué cambiaría con el proyecto sobre los asentamientos informales?",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-06-15T15:52:00",
+  "url": "https://example.com/delfino/2026/06/15/que-cambiaria-con-el-proyecto-sobre-los-asentamientos-informales-399",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 24125,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "5e15dca1cd1d2d9912d4fc00ed8b334dd5dc5392ab3a40e5d79a4c14e6c4a70a",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre las plataformas de transporte",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-06-15T09:42:00",
+  "url": "https://example.com/semanario/2026/06/15/gobierno-anuncia-apoyo-a-iniciativa-sobre-las-plataformas-de-transport-740",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.95
+   }
+  ]
+ },
+ {
+  "id": "4ecd0e7aa8dd5b8810294d52d84b368069608099acf499cddfe2bb165000bac2",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-12T19:19:00",
+  "url": "https://example.com/crhoy/2026/06/12/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-827",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.76
+   },
+   {
+    "number": 23470,
+    "link_source": "model",
+    "confidence": 0.34
+   }
+  ]
+ },
+ {
+  "id": "719923bf2756202e8dfa2c3969235ebe26c620ecd17a762cdc8ce660c3e3069b",
+  "title": "Diputados discuten proyecto sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-12T17:40:00",
+  "url": "https://example.com/crhoy/2026/06/12/diputados-discuten-proyecto-sobre-los-asentamientos-informales-530",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.78
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.52
+   }
+  ]
+ },
+ {
+  "id": "393437ff476a7ceb926c0a96610a4c8845f50d7fdd7483dfe96d59410d1cddb3",
+  "title": "Diputados discuten proyecto sobre los asentamientos informales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-06-12T13:57:00",
+  "url": "https://example.com/elobservador/2026/06/12/diputados-discuten-proyecto-sobre-los-asentamientos-informales-280",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "d157c4d674dc5b11ae980b4470f0bd79c9df39dc69599fb2d797f4538dc5e38e",
+  "title": "Consultas a instituciones retrasan proyecto sobre las plataformas de transporte",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-10T16:43:00",
+  "url": "https://example.com/elobservador/2026/06/10/consultas-a-instituciones-retrasan-proyecto-sobre-las-plataformas-de-t-113",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.94
+   }
+  ]
+ },
+ {
+  "id": "f5d79f0555a1f6dd69b012faa862d78349f0877cea4b50fb1e694c5703006945",
+  "title": "Comerciantes de Grecia reportan aumento de ventas",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-10T11:44:00",
+  "url": "https://example.com/elobservador/2026/06/10/comerciantes-de-grecia-reportan-aumento-de-ventas-838",
+  "bills": []
+ },
+ {
+  "id": "18136274f7748fedac017d472fe6df24573a8aac36e6021979139cc9b15c6378",
+  "title": "Municipalidad de Puntarenas anuncia cierre de vía por obras",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-09T13:49:00",
+  "url": "https://example.com/teletica/2026/06/09/municipalidad-de-puntarenas-anuncia-cierre-de-via-por-obras-891",
+  "bills": []
+ },
+ {
+  "id": "c1536d44545d28d7f71d0da5006b302c920d70519fb2c47d78525c546d71042f",
+  "title": "Diputados discuten proyecto sobre los asentamientos informales",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-06-08T17:41:00",
+  "url": "https://example.com/elobservador/2026/06/08/diputados-discuten-proyecto-sobre-los-asentamientos-informales-307",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.87
+   },
+   {
+    "number": 24759,
+    "link_source": "model",
+    "confidence": 0.3
+   }
+  ]
+ },
+ {
+  "id": "7474787ba35b6c36e4cea7d1e0f5dcc8b5d5cf2bc853f6db43642de08136e524",
+  "title": "Festival cultural reúne a cientos de personas en Talamanca",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-06-06T14:55:00",
+  "url": "https://example.com/elmundo/2026/06/06/festival-cultural-reune-a-cientos-de-personas-en-talamanca-614",
+  "bills": []
+ },
+ {
+  "id": "a565d35c857dfbcfb7682e7069f569c544b2ee4f52b4145046a778f2b9f419ff",
+  "title": "Diputados discuten proyecto sobre los asentamientos informales",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-06T14:15:00",
+  "url": "https://example.com/elmundo/2026/06/06/diputados-discuten-proyecto-sobre-los-asentamientos-informales-965",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "955b6949d9327547f9c5698b56e13c9144d467d2429b11e7f21f9e8d923a5e57",
+  "title": "Mociones de fondo frenan iniciativa sobre la deuda pública",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "universitarias",
+  "date_published": "2026-06-05T21:39:00",
+  "url": "https://example.com/semanario/2026/06/05/mociones-de-fondo-frenan-iniciativa-sobre-la-deuda-publica-850",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "c3692b1f47ef95033134a86f1a2e895a5313b472f6bfd6c7470923a3a4b265e8",
+  "title": "Sectores critican propuesta sobre el régimen de zonas francas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-04T20:21:00",
+  "url": "https://example.com/elmundo/2026/06/04/sectores-critican-propuesta-sobre-el-regimen-de-zonas-francas-313",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.87
+   },
+   {
+    "number": 25060,
+    "link_source": "model",
+    "confidence": 0.58
+   }
+  ]
+ },
+ {
+  "id": "cee9ba956cdcab4593c4417a365539fa5639ac1a265e6b89dcb6e368b94b9601",
+  "title": "Consultas a instituciones retrasan proyecto sobre las bibliotecas públicas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-06-04T12:39:00",
+  "url": "https://example.com/delfino/2026/06/04/consultas-a-instituciones-retrasan-proyecto-sobre-las-bibliotecas-publ-531",
+  "bills": [
+   {
+    "number": 23162,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "1db48aeb044a33364b4b398fa4b510e2253d35349f534261e76246a6bf0cdc32",
+  "title": "Comisión avanza en iniciativa sobre la generación distribuida",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-06-04T12:29:00",
+  "url": "https://example.com/crhoy/2026/06/04/comision-avanza-en-iniciativa-sobre-la-generacion-distribuida-694",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.97
+   },
+   {
+    "number": 24304,
+    "link_source": "model",
+    "confidence": 0.64
+   }
+  ]
+ },
+ {
+  "id": "1c9703a44a89f947a35db9c3bdff67e55a93ea4b7a9ddf32eec95936f95b3a31",
+  "title": "Expediente 23.699: qué propone la reforma sobre el turismo rural comunitario",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-06-03T21:17:00",
+  "url": "https://example.com/delfino/2026/06/03/expediente-23-699-que-propone-la-reforma-sobre-el-turismo-rural-comuni-444",
+  "bills": [
+   {
+    "number": 23699,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "21eda6aa14622b777823e03179b0dad37ec55cd1f877d2294194f021e53d71cf",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la deuda pública",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-06-03T09:19:00",
+  "url": "https://example.com/elmundo/2026/06/03/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-deuda-publica-714",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.94
+   }
+  ]
+ },
+ {
+  "id": "c94bedcbc83580bdb6f6c5ea2ce7653a646b1d20c494a86cc38c400decd6ff0f",
+  "title": "Mociones de fondo frenan iniciativa sobre las plataformas de transporte",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-05-31T19:37:00",
+  "url": "https://example.com/semanario/2026/05/31/mociones-de-fondo-frenan-iniciativa-sobre-las-plataformas-de-transport-730",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.76
+   }
+  ]
+ },
+ {
+  "id": "bd33334fc986bf7d9a95d730738a2f29b475aad6dd5edd9d48e4878a987f70d2",
+  "title": "Diputados discuten proyecto sobre el régimen de zonas francas",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-30T16:40:00",
+  "url": "https://example.com/teletica/2026/05/30/diputados-discuten-proyecto-sobre-el-regimen-de-zonas-francas-474",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.64
+   },
+   {
+    "number": 23493,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25060,
+    "link_source": "model",
+    "confidence": 0.42
+   }
+  ]
+ },
+ {
+  "id": "fbb1054b78afe7d9332544a33bb157f23c26440129936e4aab12a2d65bcbeea9",
+  "title": "Expediente 24.057: qué propone la reforma sobre el seguro de cosechas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-30T14:32:00",
+  "url": "https://example.com/crhoy/2026/05/30/expediente-24-057-que-propone-la-reforma-sobre-el-seguro-de-cosechas-687",
+  "bills": [
+   {
+    "number": 24057,
+    "link_source": "model",
+    "confidence": 0.81
+   }
+  ]
+ },
+ {
+  "id": "db49a5d8cd84e032ad19f8048f8935ff8356ae55eafb8b95b4f4bf19cf838f94",
+  "title": "Comisión avanza en iniciativa sobre la deuda pública",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-05-30T13:44:00",
+  "url": "https://example.com/delfino/2026/05/30/comision-avanza-en-iniciativa-sobre-la-deuda-publica-741",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "fca5b0b7d76e6437ae2cb361c9aaaf7a061239963270c4bb3b7cf2820f2c758d",
+  "title": "Festival cultural reúne a cientos de personas en Turrialba",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-05-29T20:38:00",
+  "url": "https://example.com/delfino/2026/05/29/festival-cultural-reune-a-cientos-de-personas-en-turrialba-323",
+  "bills": []
+ },
+ {
+  "id": "35184c95b546bb05ddcd200227c4a543171e8c8bebd2f71daebba55afc8c5e5f",
+  "title": "Organizaciones piden cambios al proyecto sobre la generación distribuida",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-29T19:36:00",
+  "url": "https://example.com/teletica/2026/05/29/organizaciones-piden-cambios-al-proyecto-sobre-la-generacion-distribui-294",
+  "bills": [
+   {
+    "number": 23682,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25032,
+    "link_source": "model",
+    "confidence": 0.44
+   },
+   {
+    "number": 24125,
+    "link_source": "model",
+    "confidence": 0.4
+   }
+  ]
+ },
+ {
+  "id": "1582dc65cbcdbf62c7774bde3d6d8d6a9af4845388c74d9caf5c6b4ee389e039",
+  "title": "Expediente 23.724: qué propone la reforma sobre la deuda pública",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-05-28T07:39:00",
+  "url": "https://example.com/crhoy/2026/05/28/expediente-23-724-que-propone-la-reforma-sobre-la-deuda-publica-138",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.93
+   },
+   {
+    "number": 23251,
+    "link_source": "model",
+    "confidence": 0.46
+   },
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.34
+   }
+  ]
+ },
+ {
+  "id": "8f3bc61a8f40336f3fad050ae00f9d398cb91ac49230a68fb5a198a5b786fcf8",
+  "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-27T20:03:00",
+  "url": "https://example.com/elmundo/2026/05/27/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-542",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.82
+   }
+  ]
+ },
+ {
+  "id": "3797303856ad95496af39e17813df3530605ee3dbbc17e48d53d7cdf19336ddd",
+  "title": "Sectores critican propuesta sobre las plataformas de transporte",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-26T14:58:00",
+  "url": "https://example.com/elmundo/2026/05/26/sectores-critican-propuesta-sobre-las-plataformas-de-transporte-395",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.62
+   }
+  ]
+ },
+ {
+  "id": "efa1ba4615d2c99bd5fdea98a6223e8a46f53fea36176d78528d53fcc6c4d169",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la deuda pública",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-26T11:45:00",
+  "url": "https://example.com/elmundo/2026/05/26/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-deuda-publica-315",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25169,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "78178de7dc536fd52e262167f3b65c8a39a182841bf8b6df50fda28b7735658d",
+  "title": "Comisión avanza en iniciativa sobre la deuda pública",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-05-26T09:55:00",
+  "url": "https://example.com/delfino/2026/05/26/comision-avanza-en-iniciativa-sobre-la-deuda-publica-499",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 25169,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "12d79c6cd4648d3f5d024c76c7e674b67d7a628b674068db23b6937f80fbb405",
+  "title": "Organizaciones piden cambios al proyecto sobre la deuda pública",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "cultura",
+  "date_published": "2026-05-26T07:39:00",
+  "url": "https://example.com/semanario/2026/05/26/organizaciones-piden-cambios-al-proyecto-sobre-la-deuda-publica-318",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "model",
+    "confidence": 0.82
+   }
+  ]
+ },
+ {
+  "id": "ec15d060f1e058a4dfa9890f145a35ea963addc21cbf7c2b2935117eede622c5",
+  "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-25T12:09:00",
+  "url": "https://example.com/elmundo/2026/05/25/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-588",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "aa04e7012b478fa8a75ca93dd05131e15bb0f249c07824bd44cfbc0120bd75fd",
+  "title": "¿Qué cambiaría con el proyecto sobre la deuda pública?",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-05-24T17:18:00",
+  "url": "https://example.com/teletica/2026/05/24/que-cambiaria-con-el-proyecto-sobre-la-deuda-publica-685",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23493,
+    "link_source": "model",
+    "confidence": 0.33
+   }
+  ]
+ },
+ {
+  "id": "d7108de946ee2c801b064e5212de702926e3adf388520feeb2c8791fc7311d73",
+  "title": "Comisión avanza en iniciativa sobre el régimen de zonas francas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-24T11:31:00",
+  "url": "https://example.com/crhoy/2026/05/24/comision-avanza-en-iniciativa-sobre-el-regimen-de-zonas-francas-428",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "1dc18a6281fbffa16b66847730dac1b6828e2e326b1bcab8ea038b2ae635fa13",
+  "title": "Diputados discuten proyecto sobre la generación distribuida",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-24T08:19:00",
+  "url": "https://example.com/elobservador/2026/05/24/diputados-discuten-proyecto-sobre-la-generacion-distribuida-172",
+  "bills": [
+   {
+    "number": 23682,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25032,
+    "link_source": "model",
+    "confidence": 0.73
+   },
+   {
+    "number": 24125,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "d97e5e244991bd1ad65e30eb6e2cb3247bbce53406b421ccdbd4f14419891ebe",
+  "title": "Comerciantes de San Carlos reportan aumento de ventas",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-22T19:28:00",
+  "url": "https://example.com/elmundo/2026/05/22/comerciantes-de-san-carlos-reportan-aumento-de-ventas-588",
+  "bills": []
+ },
+ {
+  "id": "fd26399a331d898b5c5812044ecc6bf18bb97f9f57e583ee05d25782cacfe30a",
+  "title": "¿Qué cambiaría con el proyecto sobre las plataformas de transporte?",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-05-22T10:51:00",
+  "url": "https://example.com/teletica/2026/05/22/que-cambiaria-con-el-proyecto-sobre-las-plataformas-de-transporte-137",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.75
+   }
+  ]
+ },
+ {
+  "id": "a4b93140cb5e42fd91924f217ec4216645d60f0ceaeaf8a0d27252914a17bd17",
+  "title": "Lluvias provocan inundaciones en Upala",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-05-22T08:01:00",
+  "url": "https://example.com/delfino/2026/05/22/lluvias-provocan-inundaciones-en-upala-710",
+  "bills": []
+ },
+ {
+  "id": "599dc635b4a04efca0e8cfcac8f7614a091efa75777872273af1ff328ad0fcca",
+  "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-05-21T19:36:00",
+  "url": "https://example.com/delfino/2026/05/21/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-142",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "5f72da803177099830240f6c2580ff48254addc8e82c3fbf7dad4867377720c4",
+  "title": "Mociones de fondo frenan iniciativa sobre las plataformas de transporte",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-21T15:38:00",
+  "url": "https://example.com/teletica/2026/05/21/mociones-de-fondo-frenan-iniciativa-sobre-las-plataformas-de-transport-339",
+  "bills": [
+   {
+    "number": 24695,
+    "link_source": "model",
+    "confidence": 0.58
+   },
+   {
+    "number": 23162,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25024,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "0a2ad15b134ce31a0a273572267e4e0fbf494da03a2e2d9130bf7b6eb254db7e",
+  "title": "Vecinos de Pérez Zeledón denuncian falta de agua",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-05-20T17:12:00",
+  "url": "https://example.com/delfino/2026/05/20/vecinos-de-perez-zeledon-denuncian-falta-de-agua-945",
+  "bills": []
+ },
+ {
+  "id": "f42a2c37f3a64fc981f52a1361d5b3dc7df3f7af6cd9be5aa3f3e527a4a29411",
+  "title": "Sectores critican propuesta sobre la generación distribuida",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-05-20T11:54:00",
+  "url": "https://example.com/crhoy/2026/05/20/sectores-critican-propuesta-sobre-la-generacion-distribuida-598",
+  "bills": [
+   {
+    "number": 23682,
+    "link_source": "model",
+    "confidence": 0.65
+   }
+  ]
+ },
+ {
+  "id": "30cac3e08be5dec5465be671c94367b963d71d3884e9befb106074b287241835",
+  "title": "Nueva ruta de autobús conectará Liberia con la capital",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-05-20T09:42:00",
+  "url": "https://example.com/elmundo/2026/05/20/nueva-ruta-de-autobus-conectara-liberia-con-la-capital-574",
+  "bills": []
+ },
+ {
+  "id": "3b41b1416c238bbee1a69ef92e98fe4908bcfdb759004e26de880748cbab4f1c",
+  "title": "Comisión avanza en iniciativa sobre la deuda pública",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-05-20T06:04:00",
+  "url": "https://example.com/teletica/2026/05/20/comision-avanza-en-iniciativa-sobre-la-deuda-publica-314",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 23493,
+    "link_source": "model",
+    "confidence": 0.69
+   }
+  ]
+ },
+ {
+  "id": "9b2313d40fda43da4babbf90cac024457554a2d1c4f31830163b3536cee8b67d",
+  "title": "Municipalidad de Heredia anuncia cierre de vía por obras",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-05-19T07:31:00",
+  "url": "https://example.com/elmundo/2026/05/19/municipalidad-de-heredia-anuncia-cierre-de-via-por-obras-120",
+  "bills": []
+ },
+ {
+  "id": "a43cf1f0028041467b078aa664eaf5e460de6559dd4b222b034483b62bd6544c",
+  "title": "Sectores critican propuesta sobre los pequeños productores de café",
+  "organization": "elobservador",
+  "outlet_type": "general",
+  "section": "opinion",
+  "date_published": "2026-05-18T14:29:00",
+  "url": "https://example.com/elobservador/2026/05/18/sectores-critican-propuesta-sobre-los-pequenos-productores-de-cafe-564",
+  "bills": [
+   {
+    "number": 23292,
+    "link_source": "model",
+    "confidence": 0.89
+   }
+  ]
+ },
+ {
+  "id": "4bc812391564667a525c27ceb9026843de82ebaffb9331237adf0779e7a8b30f",
+  "title": "Nueva ruta de autobús conectará Talamanca con la capital",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-16T08:47:00",
+  "url": "https://example.com/crhoy/2026/05/16/nueva-ruta-de-autobus-conectara-talamanca-con-la-capital-553",
+  "bills": []
+ },
+ {
+  "id": "2dde11c9d516049693e158f5fc6035882d8a3e697ce3ce171a3b03ac2ac72133",
+  "title": "Mociones de fondo frenan iniciativa sobre la llegada de cruceros",
+  "organization": "elmundo",
+  "outlet_type": "general",
+  "section": "nacionales",
+  "date_published": "2026-05-13T20:11:00",
+  "url": "https://example.com/elmundo/2026/05/13/mociones-de-fondo-frenan-iniciativa-sobre-la-llegada-de-cruceros-248",
+  "bills": [
+   {
+    "number": 24202,
+    "link_source": "model",
+    "confidence": 0.62
+   }
+  ]
+ },
+ {
+  "id": "da4e12954e2070dfef0313641aa839f10e74c6959c5d51dace3fb562aa9d2c21",
+  "title": "Organizaciones piden cambios al proyecto sobre la llegada de cruceros",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-05-13T10:03:00",
+  "url": "https://example.com/delfino/2026/05/13/organizaciones-piden-cambios-al-proyecto-sobre-la-llegada-de-cruceros-898",
+  "bills": [
+   {
+    "number": 24202,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "29511dddce2660bfe3660a23aa4665f01b40246bd493912f6cbe3efcf9f5e602",
+  "title": "¿Qué cambiaría con el proyecto sobre el patrimonio arquitectónico?",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-05-12T09:10:00",
+  "url": "https://example.com/delfino/2026/05/12/que-cambiaria-con-el-proyecto-sobre-el-patrimonio-arquitectonico-639",
+  "bills": [
+   {
+    "number": 25348,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "c89d83aa83c60f06f4e79c9be4c418f7c0b741f161c1adc18d8668008a09866f",
+  "title": "Organizaciones piden cambios al proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-05-11T21:15:00",
+  "url": "https://example.com/delfino/2026/05/11/organizaciones-piden-cambios-al-proyecto-sobre-los-asentamientos-infor-908",
+  "bills": [
+   {
+    "number": 23121,
+    "link_source": "model",
+    "confidence": 0.9
+   },
+   {
+    "number": 24759,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "a0545d3c8fd7763086db47c29356ce516f4450b536efc6815350cf8a7e50db46",
+  "title": "Comisión avanza en iniciativa sobre los asentamientos informales",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-05-09T18:44:00",
+  "url": "https://example.com/crhoy/2026/05/09/comision-avanza-en-iniciativa-sobre-los-asentamientos-informales-322",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "model",
+    "confidence": 0.85
+   }
+  ]
+ },
+ {
+  "id": "f884e1e1b6b8419cf13ee0ebc647f6dd301164599963641d3e58259d014e056b",
+  "title": "Diputados discuten proyecto sobre el seguro de cosechas",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-05-07T17:39:00",
+  "url": "https://example.com/delfino/2026/05/07/diputados-discuten-proyecto-sobre-el-seguro-de-cosechas-162",
+  "bills": [
+   {
+    "number": 24057,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "d28142ee792fa11fd5b5aa10d966c34004698cb49154d65de6bfb0f24c3a35d6",
+  "title": "Expediente 24.592: qué propone la reforma sobre la generación distribuida",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-05-06T16:40:00",
+  "url": "https://example.com/delfino/2026/05/06/expediente-24-592-que-propone-la-reforma-sobre-la-generacion-distribui-394",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "manual",
+    "confidence": null
+   },
+   {
+    "number": 25235,
+    "link_source": "model",
+    "confidence": 0.41
+   }
+  ]
+ },
+ {
+  "id": "9c25d55948eade14c14119cb5c504f21c54a35283878931791841a5e3da65bcb",
+  "title": "Comisión avanza en iniciativa sobre la llegada de cruceros",
+  "organization": "teletica",
+  "outlet_type": "general",
+  "section": "politica",
+  "date_published": "2026-05-06T07:29:00",
+  "url": "https://example.com/teletica/2026/05/06/comision-avanza-en-iniciativa-sobre-la-llegada-de-cruceros-235",
+  "bills": [
+   {
+    "number": 23149,
+    "link_source": "model",
+    "confidence": 0.75
+   },
+   {
+    "number": 23771,
+    "link_source": "manual",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "c6754a5b9cbd50d4f180e47b7741d53b358b1dcfd7a2dbf9b0756e8cdf79c05b",
+  "title": "Mociones de fondo frenan iniciativa sobre las bibliotecas públicas",
+  "organization": "crhoy",
+  "outlet_type": "general",
+  "section": "economia",
+  "date_published": "2026-05-06T07:26:00",
+  "url": "https://example.com/crhoy/2026/05/06/mociones-de-fondo-frenan-iniciativa-sobre-las-bibliotecas-publicas-620",
+  "bills": [
+   {
+    "number": 23304,
+    "link_source": "model",
+    "confidence": 0.57
+   }
+  ]
+ },
+ {
+  "id": "2e089c352eb8f0516fa846daef58e1135ce9f4cf75e5fd032e4e20c61d9ef41a",
+  "title": "Gobierno anuncia apoyo a iniciativa sobre la deuda pública",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "politica",
+  "date_published": "2026-05-04T19:22:00",
+  "url": "https://example.com/delfino/2026/05/04/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-deuda-publica-492",
+  "bills": [
+   {
+    "number": 23724,
+    "link_source": "delfino",
+    "confidence": null
+   },
+   {
+    "number": 23493,
+    "link_source": "model",
+    "confidence": 0.53
+   },
+   {
+    "number": 25169,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "77c23cc3cb18b3584dda163879b8a5f667b1f1c358bf7b3d867e03c10c28edfc",
+  "title": "Consultas a instituciones retrasan proyecto sobre los asentamientos informales",
+  "organization": "delfino",
+  "outlet_type": "specialized",
+  "section": "asamblea",
+  "date_published": "2026-05-03T12:34:00",
+  "url": "https://example.com/delfino/2026/05/03/consultas-a-instituciones-retrasan-proyecto-sobre-los-asentamientos-in-174",
+  "bills": [
+   {
+    "number": 23400,
+    "link_source": "delfino",
+    "confidence": null
+   }
+  ]
+ },
+ {
+  "id": "7e081b6a544a0c4e91d9cb2eb64c592cb4d25f82578a0f812e96af5a420d2419",
+  "title": "Diputados discuten proyecto sobre el régimen de zonas francas",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-05-01T09:00:00",
+  "url": "https://example.com/semanario/2026/05/01/diputados-discuten-proyecto-sobre-el-regimen-de-zonas-francas-880",
+  "bills": [
+   {
+    "number": 25169,
+    "link_source": "model",
+    "confidence": 0.74
+   }
+  ]
+ },
+ {
+  "id": "ffbacfe11d4480d29df195ba5a264150d9d0932bd09c15fd6c335305d75877a8",
+  "title": "Organizaciones piden cambios al proyecto sobre la generación distribuida",
+  "organization": "semanario",
+  "outlet_type": "general",
+  "section": "pais",
+  "date_published": "2026-05-01T07:57:00",
+  "url": "https://example.com/semanario/2026/05/01/organizaciones-piden-cambios-al-proyecto-sobre-la-generacion-distribui-116",
+  "bills": [
+   {
+    "number": 24592,
+    "link_source": "model",
+    "confidence": 0.86
+   }
+  ]
+ }
+]

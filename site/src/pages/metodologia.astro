@@ -1,0 +1,74 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { STUDY_PERIOD } from '../lib/config';
+import { formatDateLong } from '../lib/format';
+import { LINK_SOURCES, CONFIDENCE_BANDS } from '../lib/vocab';
+import { getOutlets } from '../lib/data';
+
+const outlets = getOutlets();
+const metrics = [
+  { name: 'Recall@1', value: '—', note: 'pendiente' },
+  { name: 'Recall@5', value: '—', note: 'pendiente' },
+  { name: 'Precisión (vínculos publicados)', value: '—', note: 'pendiente' },
+  { name: 'Tamaño de la muestra etiquetada', value: '—', note: 'pendiente' },
+];
+---
+<Base title="Metodología" description="Cómo se construyó el cruce entre noticias y expedientes, sus métricas y limitaciones.">
+  <Breadcrumb items={[{ label: 'Metodología' }]} />
+  <div class="prose">
+    <h1>Metodología</h1>
+    <p class="callout">Borrador: varias secciones tienen texto de relleno y las métricas se completarán con los resultados reales.</p>
+
+    <h2>Fuentes</h2>
+    <ul>
+      <li><strong>Expedientes, proponentes y trámite:</strong> Sistema de Información Legislativa (SIL) de la Asamblea Legislativa, desde el expediente 20.000.</li>
+      <li><strong>Votaciones en Plenario:</strong> Delfino.cr.</li>
+      <li><strong>Noticias:</strong> {outlets.map((o) => o.name).join(', ')}. Publicadas entre el {formatDateLong(STUDY_PERIOD.start)} y el {formatDateLong(STUDY_PERIOD.end)}.</li>
+    </ul>
+
+    <h2>Cómo se vincula una noticia con un expediente</h2>
+    <p>
+      Lorem ipsum: cada noticia y cada expediente se representan con <em>embeddings</em> (Qwen3-Embedding-0.6B).
+      Para cada noticia se calculan los expedientes más similares y un <em>ranker</em> evolutivo reordena los
+      candidatos. Una verificación con un modelo de lenguaje está pendiente. [Completar con detalles del pipeline.]
+    </p>
+    <p>Cada vínculo publicado indica su origen:</p>
+    <ul>
+      {Object.values(LINK_SOURCES).map((s) => <li><strong>{s.label}:</strong> {s.description}</li>)}
+    </ul>
+    <p>
+      La confianza (de 0 a 1) solo existe para los vínculos del modelo. En el sitio se agrupa en bandas:
+      {CONFIDENCE_BANDS.map((b, i) => <span>{i > 0 ? ', ' : ''}<strong>{b.label}</strong> (≥ {b.min.toFixed(2).replace('.', ',')})</span>)}.
+    </p>
+
+    <h2>Evaluación</h2>
+    <p>Se etiquetó a mano una muestra de pares noticia–expediente para medir el cruce. [Relleno.]</p>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>Métrica</th><th class="num">Valor</th><th>Nota</th></tr></thead>
+        <tbody>{metrics.map((m) => <tr><td>{m.name}</td><td class="num">{m.value}</td><td class="muted">{m.note}</td></tr>)}</tbody>
+      </table>
+    </div>
+
+    <h2>Limitaciones</h2>
+    <ul>
+      <li>El cruce automático puede proponer vínculos incorrectos u omitir noticias relevantes.</li>
+      <li>Solo se revisaron algunos medios digitales; la ausencia de cobertura aquí no implica ausencia total de cobertura.</li>
+      <li>Las noticias de pago o detrás de muros de suscripción pueden estar subrepresentadas. [Relleno.]</li>
+      <li>Las fechas se expresan en hora local de Costa Rica.</li>
+    </ul>
+
+    <h2>Consideraciones éticas y legales</h2>
+    <ul>
+      <li>No se publica el texto de las noticias, ni fragmentos ni su descripción (Ley 6683 de Derechos de Autor y Derechos Conexos). Solo título, medio, fecha, sección y enlace al original.</li>
+      <li>No se publican fotografías de diputadas y diputados; se usan iniciales.</li>
+      <li>No se elaboran rankings de medios. Las cifras por medio, cuando aparecen, son conteos.</li>
+      <li>Las estadísticas de votación son descriptivas y no valoran a personas ni a fracciones.</li>
+      <li>Cada vínculo muestra su origen y su confianza, y se puede reportar como incorrecto.</li>
+    </ul>
+
+    <h2>Reportar un error</h2>
+    <p>Junto a cada vínculo hay un enlace «¿Este vínculo está mal?» que abre un formulario. Las correcciones se revisan a mano.</p>
+  </div>
+</Base>

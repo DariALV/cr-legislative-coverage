@@ -1,0 +1,116 @@
+---
+/**
+ * Plenary votes with a neutral, descriptive breakdown by faction.
+ * No value judgements: counts only, factions in alphabetical order.
+ */
+import { formatDate } from '../lib/format';
+import { VOTE_ORDER, voteLabel, type VoteValue } from '../lib/vocab';
+import type { Vote } from '../lib/types';
+
+interface Props { votes: Vote[] }
+const { votes } = Astro.props;
+
+const COLORS: Record<VoteValue, string> = {
+  a_favor: 'var(--s-favor)',
+  en_contra: 'var(--s-contra)',
+  ausente: 'var(--s-ausente)',
+};
+
+const blank = () => Object.fromEntries(VOTE_ORDER.map((v) => [v, 0])) as Record<VoteValue, number>;
+
+const prepared = votes.map((v) => {
+  const byFaction = new Map<string, Record<VoteValue, number>>();
+  const totals = blank();
+  for (const d of v.deputies) {
+    if (!byFaction.has(d.party)) byFaction.set(d.party, blank());
+    byFaction.get(d.party)![d.vote]++;
+    totals[d.vote]++;
+  }
+  const rows = [...byFaction.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0], 'es'))
+    .map(([faction, counts]) => ({ faction, counts, total: VOTE_ORDER.reduce((a, k) => a + counts[k], 0) }));
+  const byVote = VOTE_ORDER.map((k) => ({
+    k, names: v.deputies.filter((d) => d.vote === k).map((d) => `${d.name} (${d.party})`).sort((a, b) => a.localeCompare(b, 'es')),
+  }));
+  return { v, rows, totals, byVote };
+});
+---
+{prepared.length === 0 ? (
+  <p class="empty">Este expediente no registra votaciones en el Plenario.</p>
+) : (
+  <div class="votes">
+    <div class="legend small">
+      {VOTE_ORDER.map((k) => (
+        <span><svg width="12" height="12" aria-hidden="true"><rect width="12" height="12" rx="2" fill={COLORS[k]} /></svg>{voteLabel(k)}</span>
+      ))}
+    </div>
+    {prepared.map(({ v, rows, totals, byVote }) => (
+      <section class="vote card">
+        <div class="vote-head">
+          <h3>{v.name}</h3>
+          <span class="muted small">{formatDate(v.date)}</span>
+          <span class="pill">{v.result}</span>
+          <span class="totals small text-2">
+            {VOTE_ORDER.map((k) => <span>{voteLabel(k)}: <strong>{totals[k]}</strong></span>)}
+          </span>
+        </div>
+        <div class="table-wrap">
+          <table class="data">
+            <thead>
+              <tr>
+                <th>Fracción</th>
+                {VOTE_ORDER.map((k) => <th class="num">{voteLabel(k)}</th>)}
+                <th class="bar-col"><span class="visually-hidden">Distribución</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r) => (
+                <tr>
+                  <td>{r.faction}</td>
+                  {VOTE_ORDER.map((k) => <td class="num">{r.counts[k]}</td>)}
+                  <td class="bar-col">
+                    <div class="stack" aria-hidden="true">
+                      {VOTE_ORDER.filter((k) => r.counts[k] > 0).map((k) => (
+                        <span style={`flex:${r.counts[k]};background:${COLORS[k]}`} title={`${voteLabel(k)}: ${r.counts[k]}`}></span>
+                      ))}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <details>
+          <summary>Ver votación nominal ({v.deputies.length} diputaciones)</summary>
+          <div class="nominal">
+            {byVote.map((g) => (
+              <div>
+                <h4>{voteLabel(g.k)} ({g.names.length})</h4>
+                <ul>{g.names.map((n) => <li>{n}</li>)}</ul>
+              </div>
+            ))}
+          </div>
+        </details>
+      </section>
+    ))}
+  </div>
+)}
+
+<style>
+  .votes { display: grid; gap: 1rem; }
+  .legend { display: flex; gap: 1rem; color: var(--text-2); }
+  .legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
+  .vote-head { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: baseline; margin-bottom: 0.5rem; }
+  .vote-head h3 { margin: 0; }
+  .totals { display: flex; gap: 0.75rem; margin-left: auto; }
+  .bar-col { width: 40%; min-width: 120px; }
+  .stack { display: flex; gap: 2px; height: 12px; margin-top: 4px; }
+  .stack span { display: block; height: 100%; }
+  .stack span:first-child { border-radius: 3px 0 0 3px; }
+  .stack span:last-child { border-radius: 0 3px 3px 0; }
+  .stack span:only-child { border-radius: 3px; }
+  details { margin-top: 0.75rem; }
+  .nominal { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; font-size: 0.85rem; }
+  .nominal h4 { margin: 0 0 0.3rem; font-size: 0.85rem; }
+  .nominal ul { margin: 0; padding-left: 1.1rem; color: var(--text-2); }
+</style>

@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import Avatar from '../../components/Avatar.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import StatusPill from '../../components/StatusPill.astro';
+import NewsItem from '../../components/NewsItem.astro';
+import Timeline from '../../components/Timeline.astro';
+import VotesTable from '../../components/VotesTable.astro';
+import { getBills, getBillDetail } from '../../lib/data';
+import { formatBillNumber, formatDate, formatDateLong, pluralize } from '../../lib/format';
+import { href } from '../../lib/paths';
+import { LINK_SOURCES } from '../../lib/vocab';
+
+export function getStaticPaths() {
+  return getBills().map((b) => ({ params: { number: String(b.number) } }));
+}
+
+const number = Number(Astro.params.number);
+const { bill, proponents, steps, votes, news } = getBillDetail(number);
+const outletsCount = new Set(news.map((n) => n.organization)).size;
+const dates = news.map((n) => n.date_published).sort();
+const sourceCounts = Object.keys(LINK_SOURCES).map((k) => ({
+  k, label: LINK_SOURCES[k as keyof typeof LINK_SOURCES].label,
+  n: news.filter((n) => n.link_source === k).length,
+})).filter((s) => s.n > 0);
+const numLabel = formatBillNumber(bill.number);
+const NEWS_SHOWN = 15;
+---
+<Base title={`Expediente ${numLabel}`} description={bill.name}>
+  <Breadcrumb items={[{ label: 'Expedientes', path: 'expedientes/' }, { label: numLabel }]} />
+
+  <header class="bill-header">
+    <div class="row">
+      <span class="bill-num">Expediente N.° {numLabel}</span>
+      <StatusPill status={bill.status} lawNumber={bill.law_number} />
+      <span class="pill">{bill.file_type}</span>
+    </div>
+    <h1>{bill.name}</h1>
+    <div class="item-meta">
+      <span>Presentado el {formatDateLong(bill.date_proposed)}</span>
+      {bill.subjects.map((s) => <a class="tag" href={`${href('expedientes/')}?tema=${encodeURIComponent(s)}`}>{s}</a>)}
+    </div>
+  </header>
+
+  <div class="tiles" style="margin-top:1.25rem">
+    <div class="tile">
+      <div class="tile__label">Noticias vinculadas</div>
+      <div class="tile__value">{news.length}</div>
+      <div class="tile__note">{sourceCounts.map((s) => `${s.n} ${s.label}`).join(' · ') || 'sin cobertura registrada'}</div>
+    </div>
+    <div class="tile">
+      <div class="tile__label">Medios distintos</div>
+      <div class="tile__value">{outletsCount}</div>
+    </div>
+    <div class="tile">
+      <div class="tile__label">Primera y última noticia</div>
+      <div class="tile__value" style="font-size:1.05rem;padding-top:.35rem">
+        {dates.length ? `${formatDate(dates[0])} – ${formatDate(dates[dates.length - 1])}` : '—'}
+      </div>
+    </div>
+    <div class="tile">
+      <div class="tile__label">Votaciones en Plenario</div>
+      <div class="tile__value">{votes.length}</div>
+    </div>
+  </div>
+
+  <div class="section-head"><h2>Cobertura y trámite</h2></div>
+  <Timeline dateProposed={bill.date_proposed} steps={steps} votes={votes} news={news} />
+
+  <div class="section-head">
+    <h2>Noticias vinculadas</h2>
+    <span class="small muted">{pluralize(news.length, 'noticia', 'noticias')} · de la más reciente a la más antigua</span>
+  </div>
+  {news.length ? (
+    <>
+      <p class="callout">
+        Cada vínculo indica su <strong>origen</strong>. Los marcados como «Modelo automático» los propuso el cruce
+        por similitud y muestran su <strong>confianza</strong> (0 a 1); pueden ser errores. Si ves uno incorrecto,
+        usá «¿Este vínculo está mal?».
+      </p>
+      <ul class="list">{news.slice(0, NEWS_SHOWN).map((n) => <NewsItem item={n} billNumber={bill.number} />)}</ul>
+      {news.length > NEWS_SHOWN && (
+        <details class="more-news">
+          <summary>Ver las {news.length - NEWS_SHOWN} noticias restantes</summary>
+          <ul class="list">{news.slice(NEWS_SHOWN).map((n) => <NewsItem item={n} billNumber={bill.number} />)}</ul>
+        </details>
+      )}
+    </>
+  ) : (
+    <p class="empty">No encontramos noticias sobre este expediente en los medios revisados entre mayo y octubre de 2026.</p>
+  )}
+
+  <div class="section-head"><h2>Votaciones</h2></div>
+  <VotesTable votes={votes} />
+
+  <div class="section-head"><h2>Proponentes</h2><span class="small muted">en orden de firma</span></div>
+  <ul class="proponents">
+    {proponents.map((p) => (
+      <li>
+        <Avatar name={p.name} />
+        <div>
+          <div class="item-title">{p.name}</div>
+          <div class="small muted">{p.faction} · {p.province}</div>
+        </div>
+      </li>
+    ))}
+  </ul>
+
+  <p class="small muted" style="margin-top:2.5rem">
+    Fuente del trámite y las votaciones: Sistema de Información Legislativa (SIL) de la Asamblea Legislativa y Delfino.cr.
+    Las noticias se enlazan a su fuente original; este sitio no reproduce su contenido.
+  </p>
+</Base>
+
+<style>
+  .bill-header h1 { margin-top: 0.5rem; }
+  .proponents { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 0.75rem; }
+  .proponents li { display: flex; gap: 0.75rem; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.65rem 0.8rem; }
+  .more-news { margin-top: 0.75rem; }
+  .more-news > .list { border-top: 0; }
+  a.tag { text-decoration: none; }
+  a.tag:hover { color: var(--accent); }
+</style>

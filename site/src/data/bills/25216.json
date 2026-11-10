@@ -1,0 +1,111 @@
+{
+ "bill": {
+  "number": 25216,
+  "name": "Ley de modernización de la red vial cantonal",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-06-25",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Paula Alfaro Maqueta",
+   "Laura Zúñiga Muestra",
+   "Carlos Chaves Ejemplo"
+  ],
+  "news_count": 6,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Paula Alfaro Maqueta",
+   "faction": "Partido Celeste",
+   "province": "San José",
+   "signing_order": 1
+  },
+  {
+   "name": "Laura Zúñiga Muestra",
+   "faction": "Partido Granate",
+   "province": "Puntarenas",
+   "signing_order": 2
+  },
+  {
+   "name": "Carlos Chaves Ejemplo",
+   "faction": "Partido Granate",
+   "province": "Heredia",
+   "signing_order": 3
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2026-06-25",
+   "date_end": "2026-07-25"
+  },
+  {
+   "organ": "Comisión Permanente de Gobierno y Administración",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-07-25",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "1a0f775401f807fd0f22261db92b7db26d2b4b522a2cb7654b54f8ba5cd4a5a2",
+   "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+   "organization": "elmundo",
+   "date_published": "2026-10-08T07:15:00",
+   "url": "https://example.com/elmundo/2026/10/08/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-965",
+   "link_source": "model",
+   "confidence": 0.33
+  },
+  {
+   "id": "3caee78cd01b22c67587428c026e52a4bd0abfd65cffe11b80d9a294c343bb4a",
+   "title": "Consultas a instituciones retrasan proyecto sobre las concesiones de obra pública",
+   "organization": "teletica",
+   "date_published": "2026-10-07T17:21:00",
+   "url": "https://example.com/teletica/2026/10/07/consultas-a-instituciones-retrasan-proyecto-sobre-las-concesiones-de-o-644",
+   "link_source": "model",
+   "confidence": 0.55
+  },
+  {
+   "id": "ca5206f35325f848c1ac4feb03505e446130a3795dbb45d18d74f03a4f9026cb",
+   "title": "¿Qué cambiaría con el proyecto sobre las concesiones de obra pública?",
+   "organization": "delfino",
+   "date_published": "2026-10-07T13:41:00",
+   "url": "https://example.com/delfino/2026/10/07/que-cambiaria-con-el-proyecto-sobre-las-concesiones-de-obra-publica-670",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "569fb369c6bfab72886c0c7b5bac447865169ee89e850db1978ed821c2cc1429",
+   "title": "Organizaciones piden cambios al proyecto sobre las concesiones de obra pública",
+   "organization": "semanario",
+   "date_published": "2026-09-22T07:33:00",
+   "url": "https://example.com/semanario/2026/09/22/organizaciones-piden-cambios-al-proyecto-sobre-las-concesiones-de-obra-469",
+   "link_source": "model",
+   "confidence": 0.49
+  },
+  {
+   "id": "585e4ede558795bd14bbe698e0f98460994db7e8103f2ec8ae49067eb07cf5f6",
+   "title": "Mociones de fondo frenan iniciativa sobre la red vial cantonal",
+   "organization": "elobservador",
+   "date_published": "2026-08-28T13:08:00",
+   "url": "https://example.com/elobservador/2026/08/28/mociones-de-fondo-frenan-iniciativa-sobre-la-red-vial-cantonal-222",
+   "link_source": "model",
+   "confidence": 0.78
+  },
+  {
+   "id": "139804a61d06d9a55e35bd992659214a911a35a64dcec4a86dba822bfd187c99",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la red vial cantonal",
+   "organization": "crhoy",
+   "date_published": "2026-06-24T20:42:00",
+   "url": "https://example.com/crhoy/2026/06/24/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-red-vial-cantonal-646",
+   "link_source": "model",
+   "confidence": 0.66
+  }
+ ]
+}

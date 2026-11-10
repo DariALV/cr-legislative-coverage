@@ -1,0 +1,146 @@
+---
+/**
+ * Unified search: bill number ("24567", "24.567", "exp. 24567"), words of a
+ * bill name or headline (MiniSearch, accent-insensitive), or a pasted news URL.
+ * Indexes are fetched lazily on first focus.
+ */
+interface Props { examples?: string[] }
+const { examples = [] } = Astro.props;
+---
+<div class="search" id="search">
+  <form role="search" class="search__form">
+    <label for="search-q" class="visually-hidden">Buscar expediente, tema o noticia</label>
+    <svg class="search__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M10 3a7 7 0 0 1 5.6 11.2l4.6 4.6-1.4 1.4-4.6-4.6A7 7 0 1 1 10 3Zm0 2a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/></svg>
+    <input id="search-q" name="q" type="search" autocomplete="off" spellcheck="false"
+      placeholder="Número de expediente, tema, titular o enlace de una noticia" />
+  </form>
+  {examples.length > 0 && (
+    <div class="search__examples small muted">
+      Probá con:
+      {examples.map((e) => <button type="button" class="chip" data-example={e}>{e}</button>)}
+    </div>
+  )}
+  <div class="search__results" id="search-results" aria-live="polite"></div>
+</div>
+
+<script>
+  import MiniSearch from 'minisearch';
+  import { loadBills, loadNews, esc } from '../lib/client';
+  import { normalizeText, normalizeUrl, parseBillNumber, formatBillNumber, formatDate } from '../lib/format';
+  import { billHref, newsHref, href } from '../lib/paths';
+  import type { BillIndexRow, NewsIndexRow } from '../lib/types';
+
+  const input = document.getElementById('search-q') as HTMLInputElement;
+  const results = document.getElementById('search-results')!;
+  const form = input.form!;
+
+  type Doc = { id: string; kind: 'bill' | 'news'; text: string; ref: BillIndexRow | NewsIndexRow };
+  let ready: Promise<{ ms: MiniSearch<Doc>; bills: Map<number, BillIndexRow>; urls: Map<string, NewsIndexRow> }> | null = null;
+
+  function init() {
+    ready ??= Promise.all([loadBills(), loadNews()]).then(([bills, news]) => {
+      const ms = new MiniSearch<Doc>({
+        fields: ['text'],
+        storeFields: ['kind', 'ref'],
+        processTerm: (t) => normalizeText(t) || null,
+        searchOptions: { prefix: true, fuzzy: 0.2, combineWith: 'AND' },
+      });
+      ms.addAll([
+        ...bills.map((b) => ({ id: `b${b.n}`, kind: 'bill' as const, text: `${b.name} ${b.subj.join(' ')} ${b.n}`, ref: b })),
+        ...news.map((n) => ({ id: `n${n.id}`, kind: 'news' as const, text: n.t, ref: n })),
+      ]);
+      const urls = new Map<string, NewsIndexRow>();
+      for (const n of news) { const k = normalizeUrl(n.u); if (k) urls.set(k, n); }
+      return { ms, bills: new Map(bills.map((b) => [b.n, b])), urls };
+    });
+    return ready;
+  }
+
+  const billLi = (b: BillIndexRow) => `<li><a href="${billHref(b.n)}">
+      <span class="bill-num">Exp. ${esc(formatBillNumber(b.n))}</span>
+      <span class="r-title">${esc(b.name)}</span>
+      <span class="r-meta">${esc(b.st)} · ${b.nc ? `${b.nc} ${b.nc === 1 ? 'noticia' : 'noticias'}` : 'sin noticias'}</span></a></li>`;
+  const newsLi = (n: NewsIndexRow) => `<li><a href="${newsHref(n.id)}">
+      <span class="r-title">${esc(n.t)}</span>
+      <span class="r-meta">${esc(formatDate(n.d))} · ${n.b.length ? `${n.b.length} ${n.b.length === 1 ? 'expediente' : 'expedientes'}` : 'sin expediente'}</span></a></li>`;
+
+  async function run() {
+    const q = input.value.trim();
+    const url = new URL(location.href);
+    if (q) url.searchParams.set('q', q); else url.searchParams.delete('q');
+    history.replaceState(null, '', url);
+    if (!q) { results.innerHTML = ''; return; }
+    const { ms, bills, urls } = await init();
+    if (q !== input.value.trim()) return; // stale
+
+    const num = parseBillNumber(q);
+    if (num !== null) {
+      const b = bills.get(num);
+      results.innerHTML = b
+        ? `<h3>Expediente</h3><ul>${billLi(b)}</ul>`
+        : `<p class="none">No tenemos el expediente ${esc(formatBillNumber(num))}. El sitio incluye los expedientes desde el 20.000 que están en la base del proyecto.</p>`;
+      return;
+    }
+    const nurl = normalizeUrl(q);
+    if (nurl) {
+      const n = urls.get(nurl);
+      results.innerHTML = n
+        ? `<h3>Noticia</h3><ul>${newsLi(n)}</ul>`
+        : `<p class="none">Esa noticia no está en el corpus (solo incluimos notas de los medios revisados entre mayo y octubre de 2026 que están vinculadas a algún expediente).</p>`;
+      return;
+    }
+    const hits = ms.search(q);
+    const bHits = hits.filter((h) => h.kind === 'bill').slice(0, 6).map((h) => h.ref as BillIndexRow);
+    const nHits = hits.filter((h) => h.kind === 'news').slice(0, 6).map((h) => h.ref as NewsIndexRow);
+    const nb = hits.filter((h) => h.kind === 'bill').length, nn = hits.filter((h) => h.kind === 'news').length;
+    if (!bHits.length && !nHits.length) {
+      results.innerHTML = `<p class="none">Sin resultados para «${esc(q)}».</p>`;
+      return;
+    }
+    const enc = encodeURIComponent(q);
+    results.innerHTML =
+      (bHits.length ? `<h3>Expedientes <span>${nb}</span></h3><ul>${bHits.map(billLi).join('')}</ul>${nb > 6 ? `<a class="more" href="${href('expedientes/')}?q=${enc}">Ver los ${nb} expedientes →</a>` : ''}` : '') +
+      (nHits.length ? `<h3>Noticias <span>${nn}</span></h3><ul>${nHits.map(newsLi).join('')}</ul>${nn > 6 ? `<a class="more" href="${href('noticias/')}?q=${enc}">Ver las ${nn} noticias →</a>` : ''}` : '');
+  }
+
+  let t: number | undefined;
+  input.addEventListener('focus', () => { init(); }, { once: true });
+  input.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(run, 120); });
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const first = results.querySelector<HTMLAnchorElement>('li a');
+    if (first) location.href = first.href; else run();
+  });
+  document.querySelectorAll<HTMLButtonElement>('[data-example]').forEach((b) =>
+    b.addEventListener('click', () => { input.value = b.dataset.example!; input.focus(); run(); }));
+  const initial = new URLSearchParams(location.search).get('q');
+  if (initial) { input.value = initial; run(); }
+</script>
+
+<style>
+  .search { position: relative; }
+  .search__form { position: relative; }
+  .search__icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+  .search__form input {
+    font-size: 1.1rem;
+    padding: 0.85rem 1rem 0.85rem 2.8rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: var(--surface);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+    min-height: 3.2rem;
+  }
+  .search__examples { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin-top: 0.6rem; }
+  .chip { font: inherit; font-size: 0.85rem; border: 1px solid var(--border); background: var(--surface); color: var(--text-2); border-radius: 999px; padding: 0.15rem 0.7rem; cursor: pointer; }
+  .chip:hover { color: var(--accent); border-color: var(--accent); }
+  .search__results:not(:empty) { margin-top: 0.75rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 0.75rem; }
+  .search__results :global(h3) { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin: 0.5rem 0.4rem 0.3rem; }
+  .search__results :global(h3 span) { font-weight: 400; }
+  .search__results :global(ul) { list-style: none; margin: 0; padding: 0; }
+  .search__results :global(li a) { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; align-items: baseline; padding: 0.5rem 0.4rem; border-radius: var(--radius-sm); text-decoration: none; color: var(--text); }
+  .search__results :global(li a:hover), .search__results :global(li a:focus-visible) { background: var(--surface-2); }
+  .search__results :global(.r-title) { font-weight: 600; flex: 1 1 260px; }
+  .search__results :global(.r-meta) { font-size: 0.8rem; color: var(--muted); }
+  .search__results :global(.none) { margin: 0.25rem 0.4rem; color: var(--text-2); }
+  .search__results :global(.more) { display: inline-block; margin: 0.25rem 0.4rem 0.5rem; font-size: 0.9rem; }
+</style>

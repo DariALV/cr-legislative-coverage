@@ -1,0 +1,49 @@
+{
+ "bill": {
+  "number": 24450,
+  "name": "Ley de incentivos para las pensiones no contributivas",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-01-03",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Empleo",
+   "Turismo"
+  ],
+  "proponents": [
+   "Carmen Rojas Maqueta"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Carmen Rojas Maqueta",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 1
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2025-01-03",
+   "date_end": "2025-03-22"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Sociales",
+   "description": "Estudio en comisión, consultas y mociones; dictamen afirmativo de mayoría",
+   "date_start": "2025-03-22",
+   "date_end": "2026-10-08"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Discusión por el fondo en primer debate",
+   "date_start": "2026-10-08",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": []
+}
