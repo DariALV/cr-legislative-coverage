@@ -31,6 +31,7 @@ STATIC_FEATURES = [
   "alive",                 # 1 if the bill was filed, not archived and not a law yet on the news date
   "filed_after_news",      # 1 if the bill was filed after the news
 ]
+BINARY_FEATURES = {"alive", "filed_after_news"}   # left as 0/1 when standardizing
 EVENT_DISTANCE_CAP = 365
 ARCHIVE_PREFIX = "ARCHIVO"          # SIL steps that archive the bill; every other step counts as progress
 LAW_STEP = "PUBLICACION DE LA LEY"  # SIL step (accents removed) that turns the bill into a law

@@ -2,14 +2,13 @@ import numpy as np
 import torch
 
 from tools.evolution_tools.genome import Gene, GenomeSpec
-from tools.retrieval_tools.feature_builder import RankingFeatures
+from tools.retrieval_tools.feature_builder import BINARY_FEATURES, RankingFeatures
 
 DYNAMIC_FEATURES = [
   "active",       # 1 if the bill had a SIL progress event inside the evolved window around the news date
   "event_count",  # log(1 + progress events inside that window)
   "age_decay",    # 2 ** -(age / evolved half-life): 1 for a bill filed that day, 0.5 one half-life later
 ]
-BINARY_FEATURES = {"alive", "filed_after_news"}   # left as 0/1 when standardizing
 WEIGHT_RANGE = 5.0
 TIE_BREAK = 1e-3   # weight of the smooth term that orders individuals with the same coverage
 

@@ -1,0 +1,43 @@
+{
+  "news": 300,
+  "news_answered": 300,
+  "news_with_matches": 104,
+  "matches": 153,
+  "news_cut": 2,
+  "requests": 404,
+  "input_tokens": 11035919,
+  "cost_usd": 0.4635,
+  "models": [
+    "jev-1.14.0"
+  ],
+  "threshold": 0.5,
+  "gate_questions": [
+    "explicit",
+    "implicit",
+    "same_topic"
+  ],
+  "detail_questions": [
+    "centrality",
+    "stance",
+    "author_judges",
+    "new_development",
+    "pueblo_soberano",
+    "liberacion_nacional",
+    "frente_amplio",
+    "unidad_social_cristiana",
+    "agenda_ciudadana",
+    "executive",
+    "voice_business",
+    "voice_labor",
+    "voice_experts",
+    "voice_civil_society",
+    "voice_institutions",
+    "voice_affected",
+    "stage",
+    "explains_content",
+    "explains_impact",
+    "gives_figures",
+    "conflict_frame"
+  ],
+  "max_news_chars": 15000
+}

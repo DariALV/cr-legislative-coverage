@@ -163,11 +163,18 @@ def noul(record: dict, number: int, question: str) -> float:
   return record["answers"].get(f"{bill_key(number)}_{question}", {}).get("noul", 0.0)
 
 def answer_rows(news_id: str, number: int, question: str, answer: dict) -> list[dict]:
+  """Long-format rows of one answer. Score questions also get score_01: the score rescaled to 0-1 (score divided by the
+  highest level), so centrality goes from 0 (in passing) to 1 (main subject) and stance from 0 (strongly critical)
+  through 0.5 (neutral) to 1 (strongly favorable)."""
   base = {"news_id": news_id, "bill": number, "question": question}
   if answer["type"] == "noul":
-    return [base | {"option": "true", "probability": answer["noul"], "score": ""}]
-  score = answer.get("score", "") if answer["type"] == "score" else ""
-  return [base | {"option": option, "probability": p, "score": score}
+    return [base | {"option": "true", "probability": answer["noul"], "score": "", "score_01": ""}]
+  score = score_01 = ""
+  if answer["type"] == "score":
+    score = answer["score"]
+    top = max(int(level) for level in answer["probabilities"])
+    score_01 = round(score / top, 4) if top else ""
+  return [base | {"option": option, "probability": p, "score": score, "score_01": score_01}
           for option, p in answer.get("probabilities", {}).items()]
 
 def read_candidates(path: str | pathlib.Path) -> dict[str, list[tuple[int, int]]]:

@@ -1,0 +1,39 @@
+{
+  "all": {
+    "threshold": 0.5,
+    "news": 300,
+    "truth_bills": 132,
+    "ranker_recall": 0.8712,
+    "recall": 0.8561,
+    "recall_given_candidate": 0.9826,
+    "precision": 0.2517,
+    "found": 113,
+    "missed": 19,
+    "false_positives": 336,
+    "positive_news_found": 0.8922,
+    "none_accuracy": 0.4697,
+    "positives": 102,
+    "negatives": 198
+  },
+  "correcto": {
+    "threshold": 0.5,
+    "news": 189,
+    "truth_bills": 67,
+    "ranker_recall": 0.9403,
+    "recall": 0.9254,
+    "recall_given_candidate": 0.9841,
+    "precision": 0.2805,
+    "found": 62,
+    "missed": 5,
+    "false_positives": 159,
+    "positive_news_found": 0.9355,
+    "none_accuracy": 0.5433,
+    "positives": 62,
+    "negatives": 127
+  },
+  "same_topic_on_negatives": {
+    "negatives": 198,
+    "with_same_topic_candidate": 0
+  },
+  "labels_missing_from_run": 0
+}

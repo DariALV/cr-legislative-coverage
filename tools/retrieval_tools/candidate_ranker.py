@@ -5,8 +5,7 @@ import pathlib
 import numpy as np
 
 from config import Config
-from tools.retrieval_tools.feature_builder import FeatureBuilder, load_features
-from tools.retrieval_tools.ranking_problem import BINARY_FEATURES
+from tools.retrieval_tools.feature_builder import BINARY_FEATURES, FeatureBuilder, load_features
 
 logger = logging.getLogger("cr")
 
