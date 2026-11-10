@@ -12,9 +12,11 @@ FILE_DEFINITION = ("a file of Costa Rica's Legislative Assembly, identified by i
                    "a constitutional reform, an appointment, an investigative committee or a change to the Assembly's "
                    "rules")
 
-# ---- gate: 3 yes/no questions per candidate, one request per news ----
+# ---- gate: 2 yes/no questions per candidate, one request per news ----
+# same_topic was dropped (jev 2026-11-10): almost every negative had some candidate on the same topic, so it did not
+# separate them, and it weighed ~8 % of the gate.
 
-GATE_QUESTIONS = ["explicit", "implicit", "same_topic"]
+GATE_QUESTIONS = ["explicit", "implicit"]
 MATCH_QUESTIONS = ["explicit", "implicit"]   # a candidate is a match when either reaches Config.JEV_MATCH_THRESHOLD
 
 def gate_questions(key: str) -> dict:
@@ -34,9 +36,6 @@ def gate_questions(key: str) -> dict:
       criteria = {"true": "The news describes this specific file, or says who proposed it or what step it is in, "
                           "without giving its number or title.",
                   "false": "The news does not describe this specific file."}),
-    "same_topic": Noul(
-      instructions = f"Is `news` about the same public problem or subject that {bill} deals with, whether or not "
-                     f"it mentions the file?"),
   }
 
 # ---- filter: one question per news, asked over the whole corpus before the ranker and the gate (#43) ----
@@ -89,12 +88,14 @@ VOICES = {
   "voice_civil_society": "non-profit organizations, activists or community groups",
   "voice_institutions": "public institutions other than the Assembly and the Executive (for example CCSS, the "
                         "Comptroller General, the Ombudsman, the Constitutional Court or a municipality)",
-  "voice_affected": "people directly affected by the file, speaking for themselves",
+  # rewritten (jev 2026-11-10): the first wording fired on deputies and institutions (17 of 24 yes quoted a deputy)
+  "voice_affected": "ordinary people directly affected by the file, speaking for themselves",
 }
 STAGES = {
   "filing": "The file was just presented or is waiting to start in committee.",
-  "committee": "The file is being discussed or reported in a committee.",
-  "first_debate": "The file is in the plenary for, or just went through, the first debate.",
+  "committee": "The file is being discussed in a committee, or the committee just approved its report and the file "
+               "now waits for the plenary.",
+  "first_debate": "The plenary is discussing the file in first debate, or just voted it in first debate.",
   "second_debate": "The file is in the plenary for, or just went through, the second and final debate.",
   "veto_or_signing": "The file was approved and is being signed, vetoed or published as law.",
   "constitutional_court": "The file is under review by the Constitutional Court (Sala IV).",
@@ -105,13 +106,41 @@ CONTENT = {
   "explains_content": "Does `news` explain what {bill} would do or change?",
   "explains_impact": "Does `news` say who would be affected by {bill} or what its consequences would be?",
   "gives_figures": "Does `news` give figures about what {bill} would do or cause, such as costs, amounts, rates or "
-                   "numbers of people affected? Expediente numbers, law numbers, dates and vote counts do not count.",
+                   "numbers of people affected? Penalties such as years in prison or fines count. Expediente numbers, law numbers, "
+                   "dates and vote counts do not count.",
   "conflict_frame": "Does `news` present {bill} mainly as a fight between political actors, rather than explaining "
                     "the file itself?",
 }
 
-DETAIL_QUESTIONS = (["centrality", "stance", "author_judges", "new_development"] + list(PARTIES) + ["executive"]
-                    + list(VOICES) + ["stage"] + list(CONTENT))
+# Second round of detail questions (jev 2026-11-10): asked only for the matched bills, to test them on 100 news
+# before deciding which ones go over the corpus.
+PROCESS = {
+  "in_headline": "Does the title of `news` refer to {bill}?",
+  "names_proponent": "Does `news` say who proposed {bill}?",
+  "deputy_quoted": "Does `news` quote or paraphrase a deputy about {bill}?",
+  "background": "Does `news` give background on {bill}, such as when it was filed or what happened to it before?",
+  "explains_procedure": "Does `news` explain how the legislative process works for {bill}, for example what a debate, "
+                        "a committee report, a fast track or a waiver of procedures means, or how many votes it "
+                        "needs?",
+  "vote_reported": "Does `news` report how {bill} was voted, such as the vote count or how deputies or parties voted?",
+  "votes_outlook": "Does `news` say whether {bill} has or lacks the votes it needs to pass?",
+  "constitutionality": "Does `news` raise doubts about the constitutionality of {bill}, or mention a consultation or "
+                       "a ruling of the Constitutional Court (Sala IV) about it?",
+  "international": "Does `news` compare {bill} with other countries, or cite international organizations (such as "
+                   "the OECD, the IMF or the UN) about it?",
+  "human_story": "Does `news` illustrate {bill} with the case of a specific person or family?",
+  # third round (jev 2026-11-10)
+  "next_step": "Does `news` say what comes next for {bill} in the legislative process, such as its next debate, "
+               "the committee or plenary it goes to, or a vote that is scheduled?",
+}
+
+# Dropped after test100 (jev 2026-11-10): fact_check (even rewritten it found ~3 of 5 checks, it is rare and its
+# recall cannot be measured on the sample), and fast_track, pressure_groups, public_opinion, independents,
+# executive_agenda, deadline and funding (5 % yes or less in 83 pairs: too few cases to compare outlets); then
+# own_evidence (missed 16 of ~35 uses of the bill's text) and source_count (over-counted in 19 of 46 news).
+
+DETAIL_QUESTIONS = (["centrality", "stance", "author_judges", "new_development"] + list(PARTIES)
+                    + ["executive"] + list(VOICES) + ["stage"] + list(CONTENT) + list(PROCESS))
 
 def detail_questions(key: str) -> dict:
   """Detail questions for the bill stored at bills.<key>."""
@@ -145,8 +174,57 @@ def detail_questions(key: str) -> dict:
     criteria = POSITIONS)
   for voice, who in VOICES.items():
     questions[voice] = Noul(instructions = f"Does `news` quote or paraphrase {who} about {bill}?")
+  questions["voice_affected"] = Noul(
+    instructions = f"Does `news` quote or paraphrase ordinary people directly affected by {bill}, speaking for "
+                   f"themselves?",
+    criteria = {"true": "The news quotes or paraphrases people who live the consequences of the file in their own "
+                        "lives, such as patients, students, workers, pensioners, residents or their relatives.",
+                "false": "The only people quoted are deputies, ministers or other officials, public institutions, "
+                         "unions, chambers, organizations, experts or the author."})
   questions["stage"] = Choice(instructions = f"According to `news`, where does {bill} stand in the legislative "
                                              f"process?", criteria = STAGES)
-  for name, text in CONTENT.items():
+  for name, text in (CONTENT | PROCESS).items():
     questions[name] = Noul(instructions = text.format(bill = bill))
   return questions
+
+# ---- details, news level: asked once per news inside the details request, only for news with a match ----
+
+NEWS_KEY = "news"   # answer names are news_<question>, next to the b<number>_<question> of each bill
+
+FRAMES = {
+  "conflict": "A disagreement between political actors: who attacks whom, who wins or loses.",
+  "economic": "The economic consequences of the issue: costs, gains, jobs, prices or taxes.",
+  "human_interest": "The personal or emotional side of the issue, told through people affected by it.",
+  "responsibility": "Who caused a problem or who should solve it.",
+  "morality": "Moral or religious principles, what is right or wrong.",
+  "policy": "What a public policy or a bill does and how it would work.",
+}
+
+NEWS_DETAIL_QUESTIONS = ["press_release", "main_frame", "assembly_image", "headline_misleading"]
+
+def news_detail_questions() -> dict:
+  return {
+    # Rewritten after reading the test100 cases (jev 2026-11-10): the first wording also caught summaries of a bill's
+    # text and reports with their own context. Read it together with genre: it only counts for news_report.
+    "press_release": Noul(
+      instructions = "Is `news` a news report that mainly passes on one source's statement, announcement or "
+                     "communiqué (an institution, a party, a deputy, a union, an organization or a government "
+                     "office) in that source's own words and framing, with little or no reporting of its own?",
+      criteria = {"true": "The text is built around one source's announcement or statement: it quotes and "
+                          "paraphrases that source, takes its side, and adds no other voices, no reactions, and at "
+                          "most a sentence or two of background.",
+                  "false": "The text is an opinion column or signed commentary, an interview or an analysis; or it is "
+                           "reporting that adds other sources, reactions, data or background; or the reporter "
+                           "explains a document (a bill's text and exposition of motives, a vote, a technical report) "
+                           "in their own words rather than relaying someone's statements."}),
+    "main_frame": Choice(instructions = "What is the dominant frame of `news`?", criteria = FRAMES),
+    "assembly_image": Score(
+      instructions = "How does `news` portray the Legislative Assembly as an institution?",
+      criteria = ["Very negatively: useless, corrupt, obstructive or out of touch.",
+                  "Somewhat negatively.",
+                  "Neutrally, or the news does not judge the Assembly as a whole.",
+                  "Somewhat positively.",
+                  "Very positively: effective, responsive or doing its job well."]),
+    "headline_misleading": Noul(
+      instructions = "Does the title of `news` exaggerate or contradict what its content says?"),
+  }

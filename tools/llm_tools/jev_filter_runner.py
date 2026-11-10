@@ -65,7 +65,7 @@ class JevFilterRunner:
     logger.info(f"[jev filter] {len(self.news_ids)} news, {len(pending)} left to ask")
     if dry_run:
       return {"news": len(self.news_ids), "pending": len(pending), **self.estimate(pending)}
-    self.jev = self.jev or Jev()
+    self.jev = self.jev or Jev("filter")
     try:
       with ThreadPoolExecutor(self.threads) as pool:
         for future in [pool.submit(self.process, news_id) for news_id in pending]:

@@ -1,0 +1,71 @@
+{
+  "news": 101,
+  "news_answered": 101,
+  "news_with_matches": 46,
+  "matches": 83,
+  "news_cut": 1,
+  "requests": 147,
+  "input_tokens": 3916403,
+  "output_tokens": 480556,
+  "cost_usd": 0.1645,
+  "tokens_by_key": {
+    "tests": 3916403
+  },
+  "models": [
+    "jev-1.14.0"
+  ],
+  "threshold": 0.5,
+  "gate_questions": [
+    "explicit",
+    "implicit",
+    "same_topic"
+  ],
+  "news_detail_questions": [
+    "press_release",
+    "main_frame",
+    "assembly_image",
+    "headline_misleading"
+  ],
+  "detail_questions": [
+    "centrality",
+    "stance",
+    "author_judges",
+    "new_development",
+    "pueblo_soberano",
+    "liberacion_nacional",
+    "frente_amplio",
+    "unidad_social_cristiana",
+    "agenda_ciudadana",
+    "independents",
+    "executive",
+    "voice_business",
+    "voice_labor",
+    "voice_experts",
+    "voice_civil_society",
+    "voice_institutions",
+    "voice_affected",
+    "stage",
+    "explains_content",
+    "explains_impact",
+    "gives_figures",
+    "conflict_frame",
+    "in_headline",
+    "names_proponent",
+    "deputy_quoted",
+    "background",
+    "explains_procedure",
+    "vote_reported",
+    "votes_outlook",
+    "fast_track",
+    "executive_agenda",
+    "deadline",
+    "constitutionality",
+    "funding",
+    "international",
+    "public_opinion",
+    "human_story",
+    "pressure_groups",
+    "fact_check"
+  ],
+  "max_news_chars": 15000
+}

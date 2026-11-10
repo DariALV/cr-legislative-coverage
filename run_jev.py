@@ -5,6 +5,7 @@ import pathlib
 from rich.console import Console
 
 from config import Config
+from tools.display_tools.progress import ProgressBoard
 from tools.display_tools.run_log import setup_run_logging
 from tools.llm_tools.jev_runner import JevRunner
 
@@ -16,6 +17,9 @@ if __name__ == "__main__":
   #   python run_jev.py --name sample --limit 3        (first 3 news only, to try it)
   #   python run_jev.py --name sample --dry-run        (counts the requests left, sends nothing)
   #   python run_jev.py --name corpus --cap 15         (spend at most $15 in this run)
+  #   python run_jev.py --name corpus --stage gate     (only the gate, paid with TYPESAFE_API_KEY_GATE)
+  #   python run_jev.py --name corpus --stage details  (then the details of the matches, with ..._DETAILS)
+  #   python run_jev.py --name test100 --key tests     (both stages, paid with the tests key)
   parser = argparse.ArgumentParser(description = "Ask Jev about the ranker's candidates of each news.")
   parser.add_argument("--name", required = True, help = "run folder inside results/jev/")
   parser.add_argument("--candidates", help = "candidates CSV (default: results/jev/<name>/candidates.csv)")
@@ -23,14 +27,19 @@ if __name__ == "__main__":
   parser.add_argument("--cap", type = float, default = Config.JEV_COST_CAP_USD, help = "USD this run may spend")
   parser.add_argument("--threads", type = int, default = Config.JEV_THREADS)
   parser.add_argument("--limit", type = int, help = "only the first N news")
+  parser.add_argument("--stage", choices = ["both", "gate", "details"], default = "both")
+  parser.add_argument("--key", choices = ["tests", "filter", "gate", "details"],
+                      help = "API key for every request (default: the key named after each stage)")
   parser.add_argument("--dry-run", action = "store_true")
   args = parser.parse_args()
 
   console = Console()
   log_path = setup_run_logging(console)
   output_dir = pathlib.Path(Config.JEV_RESULTS_DIR) / args.name
-  runner = JevRunner(args.candidates or output_dir / "candidates.csv", output_dir, threshold = args.threshold,
-                     cost_cap_usd = args.cap, threads = args.threads, limit = args.limit)
-  summary = runner.run(dry_run = args.dry_run)
+  with ProgressBoard(f"Jev {args.stage} ({args.name})", console = console) as board:
+    runner = JevRunner(args.candidates or output_dir / "candidates.csv", output_dir, threshold = args.threshold,
+                       cost_cap_usd = args.cap, threads = args.threads, limit = args.limit, stage = args.stage,
+                       key = args.key, board = board)
+    summary = runner.run(dry_run = args.dry_run)
   console.print(json.dumps(summary, indent = 2), highlight = False)
   console.print(f"Done. Log: {log_path}", highlight = False)

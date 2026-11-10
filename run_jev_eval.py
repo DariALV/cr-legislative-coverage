@@ -89,7 +89,7 @@ if __name__ == "__main__":
   gate = collections.defaultdict(dict)
   for row in read_csv(folder / "gate.csv"):
     gate[row["news_id"]][int(row["bill"])] = {"match_score": max(float(row["explicit"]), float(row["implicit"])),
-                                              "same_topic": float(row["same_topic"])}
+                                              "same_topic": float(row.get("same_topic") or 0)}
   ranks = collections.defaultdict(dict)
   for row in read_csv(folder / "candidates.csv"):
     ranks[row["news_id"]][int(row["bill"])] = int(row["rank"])
@@ -111,6 +111,7 @@ if __name__ == "__main__":
   # same_topic on the negatives: descriptive only (the negative subtypes are no longer maintained)
   negatives = [label for label in labels if not label.positive]
   topical = [any(s["same_topic"] >= args.threshold for s in gate[label.news_id].values()) for label in negatives]
+  # runs after jev 2026-11-10 have no same_topic: then this counts nothing
   summary["same_topic_on_negatives"] = {"negatives": len(negatives), "with_same_topic_candidate": sum(topical)}
   summary["labels_missing_from_run"] = sum(1 for label in read_labels(args.labels)
                                            if label.in_sample and label.news_id not in gate)

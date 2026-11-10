@@ -138,6 +138,7 @@ class Config:
   JEV_PRICE_PER_MILLION = 0.042        # USD per million input tokens (output is free), docs.typesafe.ai/go/models
   JEV_COST_CAP_USD = 1.0               # a run stops once it has spent this much; raise it with --cap for the corpus
   JEV_THREADS = 3
+  JEV_DETAILS_BATCH = 15               # bills per details request: 21 or more went over Jev's ~64k tokens per request
   JEV_FILTER_THRESHOLD = 0.2           # news whose assembly probability reaches this go on to the ranker and the gate
 
   # Embedding models to try (#6, #32). Adding one is adding an entry; Embedder takes these values as arguments.
