@@ -4,14 +4,14 @@ from dotenv import load_dotenv
 from typesafe_sdk import RetryPolicy, TypeSafeClient
 
 from config import Config
-from tools.llm_tools.jev_questions import detail_questions, gate_questions, genre_question
+from tools.llm_tools.jev_questions import detail_questions, filter_questions, gate_questions, genre_question
 
 @dataclass
 class JevResponse:
   """One answered request. answers maps each question name (b<number>_<question>, or genre) to the answer as the API
   returned it: {"type": "noul", "noul": p}, {"type": "choice", "probabilities": {...}, ...} or {"type": "score",
   "score": s, "probabilities": {...}, ...}."""
-  stage: str            # gate or details
+  stage: str            # filter, gate or details
   model: str            # model name the API reports having used
   input_tokens: int
   answers: dict
@@ -26,6 +26,7 @@ class Jev:
   no database and writes no file. The API key comes from TYPESAFE_API_KEY in .env.
     gate(news, cards):              explicit, implicit and same_topic for every card, plus the genre of the news
     details(news, cards, deputies): the detail questions of jev_questions for every card
+    filter(news):                   the broad news-level question (assembly), asked over the whole corpus first
   """
 
   def __init__(self, model: str = Config.JEV_MODEL, client: TypeSafeClient | None = None):
@@ -49,6 +50,9 @@ class Jev:
       questions |= {f"{key}_{name}": question for name, question in detail_questions(key).items()}
     state = {"news": news, "bills": {bill_key(c["number"]): c for c in cards}, "deputies": deputies}
     return self.ask("details", state, questions)
+
+  def filter(self, news: dict) -> JevResponse:
+    return self.ask("filter", {"news": news}, filter_questions())
 
   def ask(self, stage: str, state: dict, questions: dict) -> JevResponse:
     response = self.client.system_one(state = state, questions = questions, model = self.model)

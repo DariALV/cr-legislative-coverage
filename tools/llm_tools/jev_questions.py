@@ -39,6 +39,20 @@ def gate_questions(key: str) -> dict:
                      f"it mentions the file?"),
   }
 
+# ---- filter: one question per news, asked over the whole corpus before the ranker and the gate (#43) ----
+
+def filter_questions() -> dict:
+  """The broad news-level question: tested on 832 news (all 102 positives of the sample pass, 526 of 532 gold news
+  with threshold 0.2; general 2026-11-08 20:52). The narrower «bill» question lost 14-23 % of the positives."""
+  return {
+    "assembly": Noul(
+      instructions = "Does `news` talk about the Legislative Assembly or about a proposed law, even without naming a "
+                     "specific bill?",
+      criteria = {"true": "The news reports or comments on a bill, a proposed reform, a vote, a committee or the "
+                          "plenary session, or on what deputies are doing as legislators.",
+                  "false": "The news is about something else, and the Assembly or any proposed law does not come up."}),
+  }
+
 GENRES = {
   "news_report": "A news report on recent events.",
   "opinion": "An opinion column, editorial or letter, where the author argues a position.",

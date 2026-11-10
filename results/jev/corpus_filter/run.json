@@ -1,0 +1,18 @@
+{
+  "news_in_corpus": 29698,
+  "news_answered": 29698,
+  "news_passing": 7431,
+  "news_cut": 191,
+  "threshold": 0.2,
+  "input_tokens": 36667609,
+  "cost_usd": 1.54,
+  "tokens_per_news": 1235,
+  "models": [
+    "jev-1.14.0"
+  ],
+  "questions": [
+    "assembly"
+  ],
+  "max_news_chars": 15000,
+  "order_seed": 2026
+}
