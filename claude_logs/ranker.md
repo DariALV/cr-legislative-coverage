@@ -431,3 +431,24 @@ Committed everything left untracked so the other computer has no differences: ev
 
 - numpy instalado en el .venv de esta máquina (2.5.4), y los embeddings y el caché de features ya están acá. `BINARY_FEATURES` pasó de ranking_problem.py (importa torch) a feature_builder.py, así que aplicar la receta solo necesita numpy.
 - Control: features recalculadas para 40 noticias del oro contra el caché del entrenamiento. Cosenos con dif. ≤ 0,0006, z ≤ 0,011, bm25 y fechas idénticos (mismo margen que el control de ranker 2026-11-08 21:42). Links del oro en el top-50: 87/92. Tarda 13 s.
+
+## 2026-11-10 11:31 — pendiente: el ranker deja fuera expedientes nombrados por número; 3 de 34 en test100 (#33 #41)
+
+- Se encontró en la prueba test100 (jev): la nota de Semanario «Asamblea aprobó segundos debates…» nombra «expediente 25.340» (aprobado en segundo debate), pero 25340 no está en el top-50, así que Jev nunca lo vio. Los otros tres que nombra (23.968, 25.094, 23.414) sí quedaron en el top-50 y pasaron la puerta.
+- Conteo con una regex (expediente/proyecto/ley/N.° + número 20000–25897, con o sin punto) en las 101 noticias: 34 menciones explícitas, 31 en el top-50 y 3 fuera (87daced5→23722, 19463ff3→25340, 89eadee2→25420). El ranker no tiene ningún feature de «número mencionado».
+- Propuesta de Claude: agregar como candidato forzado todo número de expediente que aparezca en el texto, además del top-50. Cuesta ≈ 660 tokens por candidato extra en la puerta, y solo se agregan los que no están ya. Sin respuesta.
+
+## 2026-11-10 11:34 — pendiente: menciones explícitas como unión con el top-50 (sin reentrenar) o como feature del GA (reentrenar) (#33 #41)
+
+- El usuario quiere que las menciones explícitas cuenten en el ranking y pregunta si hay que reentrenar el GA.
+- Opción A (recomendación de Claude): unión. Se agregan al top-50 los números encontrados en el texto, después del ranker. No se reentrena, el GA no cambia y no se toca la CV. Los falsos hits de la regex (p. ej. «25.000» cerca de «ley») los descarta la puerta, que solo cuesta tokens.
+- Opción B: feature number_mentioned en el GA. Hay que reentrenar (semillas 7 y 100) y repetir la CV; el oro de Delfino puede inflar ese feature si su lista se armó por número.
+
+## 2026-11-10 11:37 — decisión e implementación: candidatos = top-50 ∪ expedientes nombrados por número, sin reentrenar; se reporta (#33 #41)
+
+- El usuario elige la unión (opción A) y pide reportarla. No se toca el GA ni la CV.
+- tools/retrieval_tools/explicit_mentions.py: un número 20000–25897 (con o sin punto) que existe en bills, con una palabra clave en los 60 caracteres anteriores (expediente, proyecto, iniciativa, N.°, número, reforma, ley). No cuenta si lo sigue una unidad (colones, millones, personas, votos…) ni si lo precede ₡ o $. Busca en el título y en el contenido.
+- CandidateRanker.top_k(forced=...): los nombrados que quedan fuera del top-K se agregan con source=explicit y el rank real que les dio el ranker. Columna named=1 para todo nombrado, esté o no en el top-K. run_candidates escribe candidates_report.json (nombrados, ya en el top-K, agregados con su rank); --no-explicit da el top-K solo.
+- test100 (results/jev/test100_explicit/): 15 de 101 noticias nombran expedientes; 34 nombrados, 32 ya en el top-50 y 2 agregados: 25340 (rank 81, nota de Semanario) y 25420 (rank 89). Las 5.050 filas del top-50 quedan idénticas.
+- Corrección a la entrada anterior: eran 2 fuera, no 3. El caso 87daced5→23722 era «₡23.722 millones», un falso hit de la regex rápida.
+- La corrida test100 de Jev no se repite: sus candidatos son los de antes.

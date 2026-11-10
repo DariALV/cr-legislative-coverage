@@ -160,3 +160,157 @@ Diario del tema. Las pruebas del 2026-11-08 se escribieron en `general.md` antes
 - Por qué 0,2: el filtro solo descarta y lo que pierde no se recupera después. Por eso se elige por recall y no por ahorro. Con 0,2 se pierden 4 de las 532 del oro de Delfino (528/532) y 0 de las 102 positivas de la muestra (la más baja da 0,56).
 - Descartados: 0,1 (8.150 pasan, +719 noticias, ≈ +$1 de puerta, para recuperar a lo sumo 4 del oro); 0,3 (7.054, −377, ahorra ≈ $0,5) y 0,5 (6.477, −954, ≈ $1,4). Esos ahorros son chicos frente al riesgo de perder positivas que la muestra no alcanza a medir.
 - Caveat para el reporte: la probabilidad viene de una sola pregunta ancha (`assembly`). Las 4 del oro que se pierden son el piso conocido de lo que el filtro deja fuera.
+
+## 2026-11-10 09:51 — pendiente: guardar todo lo que entrega Jev y prueba de puerta + detalle en un set chico antes del corpus (#43 #34)
+
+- El usuario pide guardar TODO lo que devuelve Jev y probar puerta + detalle en un set antes de correr las 7.431.
+- Qué se guarda hoy: answers.jsonl tiene el model_dump de cada respuesta, con noul, choice, confidence, score, legend y probabilities. **El confidence sí se guardó** en las corridas de la muestra (choice y score; noul no trae confidence).
+- Qué se pierde: usage.output_tokens; el cuerpo crudo de la API (el SDK usa extra="ignore" y borra los tipos de respuesta que no conoce, aunque quedan en response.raw_http_response); los headers de la respuesta; la latencia; la hora de cada request. En los CSV (gate/details) se pierden confidence y choice: answer_rows solo escribe probability, score y score_01.
+- Corridas pasadas: no se puede recuperar el output_tokens ni los headers. En el filtro solo hubo noul, así que no se perdió ningún confidence.
+- Propuesta de Claude (sin respuesta todavía): guardar el JSON crudo + headers + latencia + timestamp por request; preguntas una vez por corrida; columnas confidence/choice en los CSV; flag --stage gate|details; prueba con 100 noticias al azar de las 7.431.
+
+## 2026-11-10 09:59 — decisión: guardar la respuesta cruda + metadatos por request, confidence/choice en los CSV, prueba con 100 al azar de las 7.431 (#43 #34)
+
+- Aceptado: answers.jsonl suma raw (JSON de la API sin pasar por el SDK), output_tokens, headers, elapsed_s y requested_at; las respuestas parseadas se quedan. Columnas confidence y choice en gate.csv y details.csv. Prueba: 100 noticias al azar (con semilla) de las que pasan el filtro.
+- El usuario: todas estas columnas terminan en la base pública. Falta decidir si van como columnas extra o en una tabla relacional (news_id, bill, pregunta, ...).
+- Antes de la prueba, el usuario quiere revisar las preguntas y ver cuáles se pueden agregar, con su costo estimado.
+- Llaves: el usuario creía que solo se puede tener una en .env porque el SDK lee TYPESAFE_API_KEY. Propuesta de Claude: variables con nombre por etapa, pasadas al cliente con api_key=.
+
+## 2026-11-10 09:59 — Costo por pregunta medido en la muestra: ~4 caracteres de la pregunta por token; detalle = 3.294 + 2.599 por expediente (#43 #34)
+
+- Ajuste lineal sobre las 104 requests del detalle: 3.294 tokens de base (noticia + diputados) + 2.599 por expediente (21 preguntas ≈ 7.570 caracteres + la tarjeta). Puerta: 34.319 por noticia con 50 candidatos.
+- Proyección para las 7.431, suponiendo que ~45 % tienen match y 1,47 expedientes por noticia (la muestra; la prueba de 100 lo mide): puerta ≈ 255 M tokens ≈ $10,7; detalle ≈ 24 M ≈ $1,0. Total ≈ $11,7 de los ≈ $13,5 que quedan.
+- Costo marginal por cada 100 tokens de pregunta: en el detalle (por expediente con match) ≈ $0,02; a nivel noticia (como genre) ≈ $0,03; en la puerta (por candidato, ×50) ≈ $1,56.
+
+## 2026-11-10 10:10 — decisión: preguntas nuevas solo después del match; se aprueban las 6 primeras; llaves por etapa en .env (#34 #43)
+
+- Las preguntas nuevas van en la request del detalle (después del match), nunca en la puerta por candidato. Las de nivel noticia (p. ej. press_release) se hacen una vez por noticia dentro de esa request, solo si la noticia tiene match.
+- Aprobadas: press_release (noticia), in_headline, names_proponent, explains_procedure, background, deputy_quoted.
+- La prueba de 100 sirve para probar muchas preguntas: en la prueba, el detalle cuesta centavos; casi todo el costo es la puerta (100 × 34k ≈ 3,4 M tokens ≈ $0,14).
+- Llaves: el usuario puso en .env TYPESAFE_API_KEY_TESTS, _FILTER, _GATE y _DETAILS (ya no hay TYPESAFE_API_KEY suelta: run_jev_filter.py hay que adaptarlo). Claude elige: la etapa decide la llave; la prueba de 100 usa TESTS (es exploración), y el corpus usa GATE y DETAILS.
+- Pendiente: el usuario pide más preguntas extra para la prueba; Claude propone una segunda lista.
+
+## 2026-11-10 10:22 — Implementado: 22 preguntas nuevas post-match, guardado completo, llaves por etapa; set test100 armado; la llave TESTS da 401 (#34 #43)
+
+- Preguntas: 4 a nivel noticia dentro de la request del detalle (press_release, main_frame, assembly_image, headline_misleading; nombres news_<pregunta>, con bill vacío en details.csv) y 18 por expediente (independents + 17 de PROCESS). El detalle queda en 39 preguntas por expediente. Lista para el usuario: results/jev/test100/questions.md.
+- jev.py: Jev(key) lee TYPESAFE_API_KEY_<KEY>; JevResponse guarda output_tokens, key, requested_at (UTC), elapsed_s, headers (sin set-cookie) y raw (el JSON de la API). jev_runner: --stage both|gate|details y --key; questions.json por corrida; confidence/choice en details.csv y genre_confidence en news.csv; run.json con output_tokens y tokens_by_key. El filtro usa Jev("filter").
+- Probado sin requests: se reconstruyeron las tablas a partir de una copia de results/jev/sample.
+- Set: 100 al azar (random.Random(2026).sample sobre las 7.431 que pasan, sin la de CRHoy) + la nota de CRHoy «Comisión avala proyecto para combatir asociaciones narco» (baca9733…, filtro 1,0). Por medio: Nación 31, CRHoy 21, El Mundo 19, Delfino 16, Semanario 13. Candidatos top-50 en results/jev/test100/candidates.csv.
+- Primer intento (--limit 3, --key tests): 401 de autenticación, sin cobro. TYPESAFE_API_KEY_TESTS mide 109 caracteres y las otras 108: puede tener un carácter de más al pegarla. Espera al usuario.
+
+## 2026-11-10 10:28 — Prueba test100 corrida: 46 de 101 noticias con match (83 pares), 3,92 M tokens, $0,1645 con la llave TESTS (#34 #43)
+
+- El 401 venía de la llave: el usuario pegó otra en TYPESAFE_API_KEY_TESTS y una request mínima pasó (285 tokens). Corrida con 3 noticias y después el resto, sin errores.
+- El campo raw es idéntico a lo que parsea el SDK en las 147 requests: el SDK no estaba descartando nada. Lo que antes sí se perdía: output_tokens (480.556 en esta corrida), headers (x-typesafe-request-id, cf-ray, etc.), latencia y hora.
+- Consola esperada en la llave tests: 3.916.403 + 285 = 3.916.688 tokens; saldo ≈ $2,48 − $0,165 ≈ $2,32.
+- Tokens: puerta 34.170 por noticia; detalle 3.469 + 3.683 por expediente (antes 3.294 + 2.599), con 1,8 expedientes por noticia con match.
+- Proyección al corpus (46 % con match): puerta ≈ $10,7 + detalle ≈ $1,45 = ≈ $12,1. Las 22 preguntas nuevas suman ≈ $0,35.
+- Señales para revisar: independents da not_mentioned en las 83; fast_track, pressure_groups, public_opinion y voice_business casi nunca llegan a 0,5; fact_check da sí en 19 % (sospechoso); press_release en 37 %.
+
+## 2026-11-10 11:14 — Comparación usuario vs. Jev en la nota de CRHoy (25615): coinciden en casi todo; difieren en main_frame, votes_outlook y stance (#34 #39)
+
+- Nota baca9733… «Comisión avala proyecto para combatir asociaciones narco» → match 25615 (implicit 0,93; explicit 0,19). El usuario respondió las 47 a mano antes de ver a Jev.
+- Coinciden (la mayoría por mucho): genre, explicit/implicit, press_release (sí / 0,64), headline_misleading, centrality 2, author_judges, new_development, los 4 partidos a favor + Agenda e independientes sin mención, Ejecutivo a favor (Jev: strongly), las voces, explains_content/impact, gives_figures, conflict_frame y las 17 nuevas salvo votes_outlook.
+- Difieren: main_frame (usuario: human_interest o responsibility, sin seguridad; Jev: policy 1,0); votes_outlook (usuario sí por la unanimidad; Jev 0,22); stance (usuario 3–4; Jev 2,63, entre neutral y algo favorable). assembly_image: usuario «no habla de la Asamblea» = 2; Jev 2,64.
+- Ambiguas en las dos partes: stage (dictaminado, pasa al Plenario: el usuario duda entre committee y first_debate; Jev first_debate 0,72 / committee 0,27); voice_institutions (¿la comisión cuenta? Jev 0,27); gives_figures con años de prisión.
+- El usuario no entendió fast_track ni executive_agenda: el texto de la pregunta (y de la lista) no se entiende.
+- same_topic: el usuario creía que se había removido. Sigue en la puerta; la decisión está abierta desde jev 2026-11-09 18:04 (pesa ~8 % de la puerta, ≈ $0,8 en el corpus).
+
+## 2026-11-10 11:27 — decisión: se saca same_topic de la puerta; stage, gives_figures y executive_agenda reescritas; fast_track se queda (#34 #43)
+
+- Sobre la comparación de CRHoy, el usuario acepta que Jev tenía razón en main_frame (no había leído las definiciones), votes_outlook (se dejó llevar por «votaron a favor») y stance (la nota es descriptiva). voice_institutions: cuenta citar, no mencionar.
+- same_topic sale de la puerta (cierra el pendiente de jev 2026-11-09 18:04): GATE_QUESTIONS = explicit, implicit. run_jev_eval lee same_topic como opcional.
+- stage: committee ahora incluye «la comisión dictaminó y espera al Plenario»; first_debate queda para cuando el Plenario lo discute o lo votó en primer debate (caso CRHoy 25615).
+- gives_figures: las penas (años de prisión, multas) cuentan.
+- fast_track se queda como está: el usuario dice que no la entendió por falta de contexto político, no porque esté mal redactada. executive_agenda se reescribe: explica qué son las sesiones extraordinarias y convocar/desconvocar, y aclara que haber propuesto el proyecto no cuenta.
+- Casos dudosos para revisión manual: results/jev/test100/review_dubious.md (fact_check ≥ 0,5: 16 pares; press_release ≥ 0,5: 17 noticias). A primera vista, press_release marca columnas de opinión y entrevistas (Garnier, Kattia Calvo) y fact_check marca la nota de Nación que verifica a Fernández con 35 votaciones (esa parece correcta).
+
+## 2026-11-10 11:31 — ver ranker.md: el ranker deja fuera expedientes nombrados por número; 3 de 34 en test100
+
+## 2026-11-10 11:37 — ver ranker.md: candidatos = top-50 ∪ expedientes nombrados por número (2 agregados en test100)
+
+## 2026-11-10 11:43 — pendiente: fact_check capta disputas entre fuentes (5 aciertos de 16) y press_release confunde resúmenes de proyectos (11 de 17 bien); redacciones nuevas propuestas (#34 #39)
+
+- Dos subagentes leyeron los textos completos (casos ≥ 0,5 más contraste < 0,2). Detalle: results/jev/test100/review_fact_check_press_release.md. Las citas clave se verificaron contra el texto.
+- fact_check: 5 aciertos, 3 dudosos, 8 falsos positivos. Jev responde «¿alguien disputa una afirmación?» en vez de «¿el medio verifica?». Errores: fuente contra fuente 4, contagio entre expedientes 3, institución que corrige 1, crítica opositora 1, justificación del propio voto 1, columna 1. La probabilidad no separa (el más alto, 0,88, es falso). Posibles falsos negativos en el resumen semanal de Delfino.
+- press_release: 9 sí + 2 casi sí, 3 dudosas, 3 no. Errores: resumen/explicación de proyectos (plantilla de Delfino, Nación) 3, nota con contexto propio 2, columna 1. Filtrar por genre = news_report saca la columna sin perder aciertos.
+- Propuesto (sin respuesta): redacciones nuevas de las dos, la regla genre + ≥ 0,6, decidir si un resumen de un proyecto recién presentado cuenta (recomendación: no) y si un editorial sin firma es la voz del medio (recomendación: sí). Validación: repetir solo el detalle sobre estas 28 noticias con la llave tests (≈ centavos).
+
+## 2026-11-10 11:56 — Redacciones nuevas de fact_check y press_release medidas con Jev: 0 falsos positivos en las dos; fact_check pierde 2 de 5 aciertos (#34 #39)
+
+- Aplicadas en jev_questions.py (fact_check_question con criterios, press_release nueva; un resumen de un proyecto no cuenta, y un editorial sin firma sí cuenta como voz del medio). La regla del género queda para el análisis, no en la pregunta.
+- Medición: results/jev/scripts/jev_rewrite_check.py → results/jev/test100_rewrite/. Vieja y nueva en la misma request, 46 noticias con match, llave tests, 219.125 tokens ≈ $0,009. La vieja reproduce la corrida original (±0,03).
+- press_release: de 11 aciertos / 6 falsos a 9 / 0. Se pierden las 2 «casi sí» (Delfino con cita de la diputada 0,23; OES-UNA 0,44).
+- fact_check: de 5 aciertos / 8 falsos a 3 / 0. Se pierden la corrección a Ariel Mora (22623, de 0,85 a 0,25) y Crucitas (24717, de 0,57 a 0,17). Gana 2 probables aciertos en el resumen de Delfino (25796 y 25798) y 2 falsos en columnas de opinión, que se descartan si se ignora fact_check cuando genre = opinion. El contagio sigue en el límite (24625 0,51; 25291 0,49).
+- Detalle: results/jev/test100/review_fact_check_press_release.md, «Validación».
+
+## 2026-11-10 12:00 — pendiente: ¿tiene sentido fact_check? Es rara (~6 % de los pares), con recall no medible y recall ~3/5 (#34 #39)
+
+- El usuario pregunta si la pregunta tiene sentido. Opinión de Claude: el concepto vale (verificación propia como indicador de calidad), pero es rara (5 aciertos en 83 pares) y difícil de definir (hasta la revisión tuvo 3 dudosos). Con 5 positivos no se puede medir el recall; lo visto es ~3/5. Atrapa más el estilo explícito («La Nación revisó»), lo que puede sesgar la comparación entre medios.
+- Opciones: (a) sacarla; (b) dejarla solo como cota inferior descriptiva, sin comparar medios; (c) cambiarla por una pregunta más observable de trabajo propio (own_evidence: la nota usa documentos o datos que el medio consultó —votaciones, texto del proyecto, presupuestos— además de declaraciones). Recomendación: (c), o (b) si el reporte necesita hablar de verificación. Sin respuesta.
+
+## 2026-11-10 12:03 — decisión: se quita fact_check; pendiente: qué otras preguntas quitar, arreglar o agregar (#34 #39)
+
+- El usuario elige quitar fact_check. Quedó fuera de jev_questions.py (38 preguntas por expediente); jev_rewrite_check.py guarda su propia copia de la versión medida.
+- Revisión de test100 (83 pares): casi sin variación fast_track, pressure_groups, voice_business, public_opinion e independents (desvío < 0,07), y también executive_agenda, deadline y funding (≤ 5 % de sí). Muy correlacionadas: explains_content–explains_impact 0,83, centrality–in_headline 0,82, vote_reported–votes_outlook 0,71, voice_civil_society–voice_labor–pressure_groups ~0,7.
+- voice_affected está rota: de 24 sí, 17 tienen deputy_quoted ≥ 0,5. Se activa con diputados, la Contraloría y Conare, no con personas afectadas.
+- Propuesta de Claude (sin respuesta): quitar fast_track, pressure_groups, public_opinion, independents, executive_agenda, deadline y funding; reescribir voice_affected (personas comunes, no diputados, funcionarios ni organizaciones); agregar own_evidence, next_step y source_count.
+
+## 2026-11-10 12:09 — Tercera ronda en test100: se quitan 7 preguntas, voice_affected reescrita funciona, next_step funciona, own_evidence a medias, source_count falla (#34 #39)
+
+- Aplicado en jev_questions.py: se quitan fast_track, pressure_groups, public_opinion, independents, executive_agenda, deadline y funding; voice_affected se reescribe con criterios; se agregan own_evidence y next_step (por expediente) y source_count (choice por noticia). El detalle queda en 33 preguntas por expediente + 5 por noticia.
+- Medición: results/jev/scripts/jev_round3_check.py → results/jev/test100_round3/ (46 noticias, llave tests, 209.475 tokens ≈ $0,009). Revisión por 2 subagentes: results/jev/test100_round3/review.md.
+- voice_affected: la vieja coincide en 59/83 (24 falsos sí: diputados e instituciones); la nueva en 82/83 (1 manifestante). En la muestra no hay ningún afectado de verdad, así que no se sabe si los detectaría.
+- next_step: 81/83. own_evidence: 64/83, con 16 falsos no cerca del umbral (no reconoce una descripción breve de disposiciones ni el texto citado en una columna). source_count: 27/46, siempre cuenta de más («tres o más» en 38/46).
+- Pendiente: reescribir source_count y own_evidence (redacciones en review.md) y decidir si los documentos cuentan como fuente en source_count (recomendación: no, porque eso lo mide own_evidence). Nota del matcher: 562eae9d hizo match con 25648 y 21769, que tienen el mismo título (expedientes hermanos).
+
+## 2026-11-10 12:32 — Modelo de costo de Jev C(n, p, m) ajustado con el filtro y test100; corpus ≈ $12,6 con las 32 preguntas actuales (#43 #34)
+
+- C = P·n·[(T_all + q_f) + r_f·(T_pass + q_g + K·c_g) + r_f·r_m·(T_pass + D + q_N + b·(c_d + p·m))], P = $0,042/M. Numérico: n·(9.632 + 0,205·p·m) tokens.
+- Constantes: T_all 1.130, T_pass 1.385, r_f 0,25, c_g 597 por candidato (sin same_topic), r_m 0,455, b 1,80, D 1.930, q_N 480, c_d 613; hoy p = 32, m ≈ 75.
+- Lo que falta (7.431 que pasaron): puerta ≈ $9,78 + detalle ≈ $1,31 ≈ $11,1 (la proyección de $12,1 tenía same_topic y 39 preguntas). La puerta es el 88 % del resto; una pregunta más de 75 tokens en el detalle cuesta ≈ $0,02 en el corpus.
+- Por medio: CRHoy tiene las notas más cortas (831 tokens) y Semanario/El Mundo pasan el filtro el 43 % → cuestan ≈ 2,4× por noticia que CRHoy. Tablas por medio y mes en results/jev/cost_model.md.
+
+## 2026-11-10 12:34 — decisión: se quitan own_evidence y source_count; corrida del corpus lista en un comando (run_jev_corpus.py) (#43 #34)
+
+- El usuario: borrar las que no funcionaron. Salen own_evidence y source_count. Quedan voice_affected (reescrita) y next_step. El detalle tiene 32 preguntas por expediente + 4 por noticia (press_release, main_frame, assembly_image, headline_misleading); la puerta, explicit + implicit + genre.
+- Consola según el usuario: jev-filter 36.667.609 tokens (cuadra con run.json); jev-tests 27.115.160 tokens en total (incluye pruebas anteriores; las de hoy suman ≈ 4,35 M: test100 3.916.688, reescritura 219.125, ronda 3 209.475). Saldo $2,32; el usuario carga $15 → ≈ $17,32. Después, Claude gastó 58.300 tokens más en tests (≈ $0,002) probando la puerta con 90 candidatos.
+- run_jev_corpus.py: toma las 7.431 de corpus_filter/filter.csv, arma los candidatos una vez (top-50 ∪ nombrados por número), corre la puerta con la llave GATE (tope $12) y el detalle con la llave DETAILS (tope $3). Todo se reanuda. Salida: results/jev/corpus/.
+- Candidatos ya armados: 371.876 filas (50,04 por noticia, máximo 90); 2.589 expedientes nombrados por número, 326 agregados fuera del top-50 (mediana del rank 177). Se excluyen los números redondos (20.000, 21.000: «20.000 entradas»), que eran 6 falsos.
+- Prueba de la noticia con 90 candidatos con la llave tests: 58.300 tokens, sin error (no hay límite de contexto que la frene).
+- Estimación: puerta ≈ 235 M tokens ≈ $9,85; detalle ≈ 30 M ≈ $1,3; total ≈ $11,2 de ≈ $17,3.
+
+## 2026-11-10 12:38 — Barras de progreso en las corridas de Jev (ProgressBoard): etapa, matches, centavos del tope y avisos (#43)
+
+- El usuario pide ver cuánto falta y si hay problemas. JevRunner recibe board=ProgressBoard. Filas: gate y details (noticias hechas / por hacer, velocidad y ETA), matches (contador) y «¢ of cap» (centavos gastados contra el tope). Las conectan run_jev_corpus.py (un tablero por etapa, con la llave y el tope en el título) y run_jev.py.
+- Errores: una noticia que falla después de los reintentos del SDK suma un aviso (⚠ en la barra, con el mensaje arriba y en el log) y las demás siguen. Antes, un error ya dejaba correr a las demás, pero la corrida terminaba en excepción sin escribir las tablas. Ahora run.json trae failed_this_run y left_by_cap_this_run, y al volver a correr se reintenta lo que faltó.
+- Probado con un Jev falso sobre test100 (sin API): 1 falla simulada contada, el tope de $0,10 cortó a 19 noticias, y el detalle siguió con las que tenían match. Sin terminal interactiva imprime una línea cada 10 %.
+
+## 2026-11-10 12:40 — Saldo antes de la corrida del corpus: $17,32 (#43)
+
+- El usuario cargó $15: el saldo queda en $17,32 justo antes de correr run_jev_corpus.py. Incluye los 58.300 tokens de tests de la prueba de 90 candidatos (≈ $0,002, quizás todavía sin reflejar).
+- Esperado al terminar: ≈ $17,32 − $11,2 ≈ $6,1. jev-gate y jev-details deben cuadrar con tokens_by_key de results/jev/corpus/run.json.
+
+## 2026-11-10 15:07 — Corrida del corpus hecha: 3.662 de 7.431 noticias con match (6.329 pares), $11,47; 8 detalles fallaron por max_tokens_exceeded (#43 #34)
+
+- run_jev_corpus.py (logs/run_2026-11-10_124210.log). Puerta: 7.431 requests en 12 min, 239.917.863 tokens ($10,08, llave gate), 0 fallas, 126 noticias cortadas a 15.000 caracteres. Detalle: 3.654 requests en 3 min, 33.227.400 tokens ($1,40, llave details). Total $11,47 (estimado $11,2). Saldo esperado ≈ $17,32 − $11,47 ≈ $5,85.
+- Matches por noticia: 1 → 2.587, 2 → 612, 3 → 192, 4–9 → 227, 10 o más → 44.
+- Fallaron 8 detalles con 400 max_tokens_exceeded: son noticias con 21–70 matches (listas de convocatorias). El detalle más grande que pasó tuvo 19 expedientes y 64.320 tokens, así que el límite de Jev ronda los 64k tokens por request. Arreglo pendiente: partir el detalle en tandas de expedientes.
+- Tamaños: answers.jsonl 133 MB (pasa el límite de 100 MB de GitHub), details.csv 55 MB, candidates.csv 33 MB, gate.csv 31 MB. answers.jsonl no trae el texto de las noticias (solo respuestas, uso, headers y raw = answers/model/usage).
+
+## 2026-11-10 15:07 — pendiente: cómo recuperar los 8 detalles fallidos y cómo guardar en git los resultados del corpus (#43)
+
+- (1) 8 detalles fallidos: partir Jev.details en tandas de hasta 15 expedientes, con las preguntas por noticia solo en la primera tanda, y unir las respuestas en un único registro de detalle (tokens sumados, raw como lista). Costo ≈ $0,04. Recomendación de Claude: sí, con 15.
+- (2) Git: answers.jsonl pesa 133 MB y comprimido 6,8 MB. Recomendación: commitear answers.jsonl.gz y candidates.csv.gz, más run.json, news.csv, questions.json y candidates_report.json; poner en .gitignore los CSV grandes y el jsonl sin comprimir, porque se regeneran desde answers. Sin respuesta.
+
+## 2026-11-10 15:11 — Detalle partido en tandas de 15 expedientes; las 8 noticias que faltaban ya tienen detalle; corpus completo, $11,51 en total (#43)
+
+- Jev.details manda una request por tanda de Config.JEV_DETAILS_BATCH = 15 expedientes. Las preguntas por noticia van solo en la primera tanda, y merge_responses une las tandas en un solo registro (tokens y tiempo sumados; raw y headers como {"batches": [...]}). Así las tablas no cambian.
+- Se volvió a correr run_jev_corpus.py (logs/run_2026-11-10_151017.log): la puerta no tenía pendientes; el detalle corrió las 8 sin fallas, con 986.769 tokens ($0,04, llave details).
+- Totales finales en results/jev/corpus/run.json: 11.093 registros, 274.132.032 tokens, $11,51; gate 239.917.863 y details 34.214.169 tokens. Las 3.662 noticias con match tienen detalle. Saldo esperado ≈ $17,32 − $11,51 ≈ $5,81.
+
+## 2026-11-10 15:16 — decisión: visor de respuestas de Jev en private_visuals (#69)
+- El usuario pidió una página para ver las respuestas de Jev sobre los pares del corpus. Issue #69 creado (milestone Private visuals).
+- Decidido: se cargan los pares con max(explícito, implícito) ≥ 0,1 (36.941), umbral móvil de 0,1 a 1 (por defecto 0,5); debajo de 0,5 no hay detalle.
+- Dos vistas (por noticia y por expediente) con panel lateral; filtros por respuestas del detalle, explícito vs implícito, cruce con los enlaces de Delfino; resumen con gráficos.
+- `build_data.py` → `private_visuals/output/jev_answers/data.js` (ignorado por git), sin cuerpos de noticia.

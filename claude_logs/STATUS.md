@@ -2,13 +2,16 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-10 09:42 (consola verificada, umbral 0,2 decidido, commits del filtro).
+Última actualización: 2026-11-10 13:10 (corrida de Jev sobre el corpus hecha).
 
 ## Para retomar
 
-El filtro de Jev ya está cerrado: la consola cuadra, el umbral es 0,2 y está commiteado (jev 2026-11-10 09:41). Lo que sigue:
-1. **Saldo**: la cuenta tiene $2,48 y la puerta cuesta ~$10,6. Hay que cargar el resto del presupuesto del corpus antes de correrla.
-2. **Siguiente corrida**: ranker top-50 (run_candidates.py) sobre las 7.431 que pasan → `run_jev.py` (puerta + detalle). Revisar si run_candidates acepta una lista de noticias o hay que darle filter.csv. Estimar el costo con un dry-run y un piloto antes (puerta ≈ 34k tokens por noticia → ~7.400 × 34k ≈ 250 M ≈ $10,6, más el detalle; está dentro de los $15 pero justo). Recordar la llave: la puerta usa `jev-gate` y el detalle `jev-details`, pero `run_jev.py` hace las dos en la misma corrida: decidir con el usuario cómo separar las llaves (p. ej. un flag `--stage gate|details`).
+La corrida de Jev sobre el corpus está completa: 3.662 de 7.431 noticias con match (6.329 pares), todas con detalle; $11,51 (puerta $10,08 + detalle $1,44) (jev 2026-11-10, «Corrida del corpus hecha» y «Detalle partido en tandas»). Resultados en results/jev/corpus/. Falta:
+1. **Consola**: saldo esperado ≈ $5,81 (antes $17,32); jev-gate debería marcar 239.917.863 tokens y jev-details 34.214.169.
+2. **Analizar los resultados del corpus** (#43, #56).
+3. **Git**: answers.jsonl pesa 133 MB (6,8 MB comprimido). Propuesta: commitear los .gz y dejar fuera los CSV grandes, que se regeneran. El usuario lo deja para después; hasta entonces, results/jev/corpus/ no se commitea.
+3. **Formato en la base pública**: columnas extra o tabla relacional (news_id, bill, pregunta, opción, probabilidad, confidence, ...). Lo decide el usuario.
+4. **Commits sin hacer**: (a) captura completa, llaves y rondas de preguntas de Jev (jev.py, jev_questions.py, jev_runner.py, jev_filter_runner.py, run_jev.py, run_jev_eval.py, results/jev/test100*, results/jev/scripts/); (b) unión con los nombrados por número (explicit_mentions.py, candidate_ranker.py, run_candidates.py, results/jev/test100_explicit/); (c) run_jev_corpus.py; (d) logs. results/jev/corpus/candidates.csv pesa 33 MB: se decide si va con los resultados de la corrida.
 
 ## Pendiente: decisiones abiertas
 
@@ -30,13 +33,15 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Oro con número y nombre enmascarados** para medir el sesgo del oro de Delfino. Propuesto, nunca decidido. (embeddings 2026-11-07 12:52; #38)
 
 ### jev
-- **Uso de same_topic** (recomendación de Claude: sacarlo; el usuario lo está considerando): en la muestra, 191 de 198 negativas tienen algún candidato con same_topic ≥ 0,5, así que no separa. Falta decidir cómo usarlo para el análisis del tema con cobertura (p. ej. solo para el top-1–3 del ranker, con un umbral más alto, o por expediente en lugar de por noticia). (jev 2026-11-09)
 
 ### jev (pendientes viejos del diseño; diario `claude_logs/jev.md`)
 - Siguen abiertos de las pruebas del 2026-11-08: desambiguación entre expedientes hermanos (25400/25800), y probar más noticias de paso, decreto, anunciado y ley vigente. (general 2026-11-08 20:05)
 - **Separar llaves en run_jev.py** (puerta → `jev-gate`, detalle → `jev-details`): hoy corre las dos etapas juntas con una sola llave. Ver «Para retomar» 4.
 
 ## Decisiones vigentes
+
+- **Antes de cada commit se revisa privacidad y ética** (nada de cuerpos de noticias, .env, llaves ni datos personales; se avisa siempre que haya riesgo). Regla en CLAUDE.md. (general 2026-11-10 12:39)
+- **Candidatos = top-50 del ranker ∪ expedientes nombrados por número**, sin reentrenar. Se reporta en candidates.csv (source, named, rank real) y en candidates_report.json; caveat comentado en #33. (ranker 2026-11-10, «decisión e implementación: candidatos»)
 
 - **Filtro de Jev sobre el corpus**: `run_jev_filter.py` (pregunta assembly, noticia bajo `news`, sin genre); se guardan todas las probabilidades y el **umbral es 0,2**, confirmado por el usuario (jev 2026-11-10 09:41). Gasto medido con una llave por etapa + saldo antes/después de cada corrida. (jev 2026-11-10 01:09, 01:10; #43)
 - **Expedientes que no son proyectos de ley** (comisiones investigadoras, nombramientos, reformas al Reglamento) **cuentan como positivos**; se marcan en «Tipo de expediente». (general 2026-11-08; #27 #29)
