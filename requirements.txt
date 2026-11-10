@@ -3,6 +3,7 @@
 --extra-index-url https://download.pytorch.org/whl/cu126
 beautifulsoup4>=4.12
 lxml>=5.0
+networkx>=3.0   # Louvain topics for the bills graph (private_visuals/graph)
 numpy>=1.26
 python-dotenv>=1.0
 requests>=2.32

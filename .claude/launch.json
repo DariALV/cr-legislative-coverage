@@ -24,6 +24,20 @@
         "private_visuals"
       ],
       "port": 8766
+    },
+    {
+      "name": "visuals-alt",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8768",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "private_visuals"
+      ],
+      "port": 8768
     }
   ]
 }
