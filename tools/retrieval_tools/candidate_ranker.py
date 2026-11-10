@@ -44,16 +44,27 @@ class CandidateRanker:
     self.mean = gold.static.mean(axis = (1, 2))
     self.std = gold.static.std(axis = (1, 2))
 
-  def top_k(self, news_ids: list[str], k: int = Config.CANDIDATES_K) -> list[dict]:
-    """Rows {news_id, rank, bill, score}, ranks from 1, for every news that has embeddings."""
+  def top_k(self, news_ids: list[str], k: int = Config.CANDIDATES_K,
+            forced: dict[str, list[int]] | None = None) -> list[dict]:
+    """Rows {news_id, rank, bill, score, source, named}, ranks from 1, for every news that has embeddings. forced
+    maps a news to bills that must be candidates whatever their rank (the ones it names by number): those outside
+    the top-K are added with source "explicit" and the rank the ranker gave them, so the report can say how far
+    down they were. named is 1 for every forced bill, inside the top-K or not."""
+    forced = forced or {}
+    position = {int(n): j for j, n in enumerate(self.bill_numbers)}
     rows = []
     for start in range(0, len(news_ids), self.batch_size):
       batch = news_ids[start:start + self.batch_size]
       kept, scores = self.scores(batch)
       for news_id, row in zip(kept, scores):
-        order = np.argsort(-row, kind = "stable")[:k]
-        rows += [{"news_id": news_id, "rank": rank + 1, "bill": int(self.bill_numbers[j]),
-                  "score": round(float(row[j]), 4)} for rank, j in enumerate(order)]
+        ranking = np.argsort(-row, kind = "stable")
+        rank_of = np.empty(len(ranking), dtype = int)
+        rank_of[ranking] = np.arange(1, len(ranking) + 1)
+        named = [n for n in forced.get(news_id, []) if n in position]
+        chosen = list(ranking[:k]) + [position[n] for n in named if rank_of[position[n]] > k]
+        rows += [{"news_id": news_id, "rank": int(rank_of[j]), "bill": int(self.bill_numbers[j]),
+                  "score": round(float(row[j]), 4), "source": "ranker" if rank_of[j] <= k else "explicit",
+                  "named": int(int(self.bill_numbers[j]) in named)} for j in chosen]
       logger.info(f"[candidates] {min(start + self.batch_size, len(news_ids))}/{len(news_ids)} news")
     return rows
 

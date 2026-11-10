@@ -1,0 +1,20 @@
+{
+  "k": 50,
+  "news": 101,
+  "news_naming_bills": 15,
+  "bills_named": 34,
+  "named_in_top_k": 32,
+  "added": 2,
+  "added_rows": [
+    {
+      "news_id": "19463ff3dc4748332d3ceb1df67972f3b838f5eacb0338f484f50a26c668d2b7",
+      "bill": 25340,
+      "ranker_rank": 81
+    },
+    {
+      "news_id": "89eadee2c133132d7f364c2a0c41ef75e0aaa15417edc53c0c3bd77b0bf7a0f7",
+      "bill": 25420,
+      "ranker_rank": 89
+    }
+  ]
+}
