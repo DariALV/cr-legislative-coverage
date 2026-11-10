@@ -426,3 +426,8 @@ Committed everything left untracked so the other computer has no differences: ev
 ## 2026-11-09 15:22 — corrección: el resultado del ranker en la muestra sí estaba registrado (#68 #41)
 
 - La entrada 2026-11-09 13:23 decía que no constaba la métrica ni la receta. Estaban en la otra máquina y llegaron con el pull: ranker 2026-11-08 21:42 (cobertura en las 62 positivas «Correcto», semillas 7 y 100) y 21:44 (K = 50). STATUS se mezcló con esa versión.
+
+## 2026-11-09 16:34 — CandidateRanker validado contra el caché del oro; corre sin torch (#68 #33)
+
+- numpy instalado en el .venv de esta máquina (2.5.4), y los embeddings y el caché de features ya están acá. `BINARY_FEATURES` pasó de ranking_problem.py (importa torch) a feature_builder.py, así que aplicar la receta solo necesita numpy.
+- Control: features recalculadas para 40 noticias del oro contra el caché del entrenamiento. Cosenos con dif. ≤ 0,0006, z ≤ 0,011, bm25 y fechas idénticos (mismo margen que el control de ranker 2026-11-08 21:42). Links del oro en el top-50: 87/92. Tarda 13 s.

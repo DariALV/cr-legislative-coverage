@@ -2,7 +2,13 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-09 (tema jev creado; decisiones rápidas del ranker, los embeddings, los datos y la muestra).
+Última actualización: 2026-11-10 09:42 (consola verificada, umbral 0,2 decidido, commits del filtro).
+
+## Para retomar
+
+El filtro de Jev ya está cerrado: la consola cuadra, el umbral es 0,2 y está commiteado (jev 2026-11-10 09:41). Lo que sigue:
+1. **Saldo**: la cuenta tiene $2,48 y la puerta cuesta ~$10,6. Hay que cargar el resto del presupuesto del corpus antes de correrla.
+2. **Siguiente corrida**: ranker top-50 (run_candidates.py) sobre las 7.431 que pasan → `run_jev.py` (puerta + detalle). Revisar si run_candidates acepta una lista de noticias o hay que darle filter.csv. Estimar el costo con un dry-run y un piloto antes (puerta ≈ 34k tokens por noticia → ~7.400 × 34k ≈ 250 M ≈ $10,6, más el detalle; está dentro de los $15 pero justo). Recordar la llave: la puerta usa `jev-gate` y el detalle `jev-details`, pero `run_jev.py` hace las dos en la misma corrida: decidir con el usuario cómo separar las llaves (p. ej. un flag `--stage gate|details`).
 
 ## Pendiente: decisiones abiertas
 
@@ -19,16 +25,20 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Boilerplate antes de embeber**: avisos de opinión de Delfino (~1.200), avisos de IA de Nación (788), data line de El Mundo (2.749/3.388). Los embeddings ya se corrieron sin limpiar. (data 2026-11-07 01:05; #16 #32)
 
 ### muestra
-- **Trámite ya concluido de una ley vigente**: aprobado que no cuenta si la ley solo se nombra como antecedente (va en «Otros mencionados»). Falta decidir si cuenta una nota sobre los efectos o la aplicación de la ley, porque eso choca con #25 («una ley vigente que se aplica no cuenta»). Recomendación: mantener #25 y contarla solo si informa un paso del trámite (aprobación, firma, veto, publicación). Filas 23 (24259), 62 (24789), PAACUME (23003). (sample 2026-11-09, «pendiente: … choca con #25»)
+- **Trámite ya concluido de una ley vigente** (ahora pesa: es la principal fuente de falsos positivos de Jev en la muestra, jev 2026-11-09): aprobado que no cuenta si la ley solo se nombra como antecedente (va en «Otros mencionados»). Falta decidir si cuenta una nota sobre los efectos o la aplicación de la ley, porque eso choca con #25 («una ley vigente que se aplica no cuenta»). Recomendación: mantener #25 y contarla solo si informa un paso del trámite (aprobación, firma, veto, publicación). Filas 23 (24259), 62 (24789), PAACUME (23003). (sample 2026-11-09, «pendiente: … choca con #25»)
 - **Usar los candidatos del ranker para revisar negativas**: ayuda, pero sesga la revisión. Sin respuesta. (sample 2026-11-07 16:51)
 - **Oro con número y nombre enmascarados** para medir el sesgo del oro de Delfino. Propuesto, nunca decidido. (embeddings 2026-11-07 12:52; #38)
 
-### jev (evaluador TypeSafe; diario `claude_logs/jev.md`, las pruebas del 2026-11-08 están indexadas allí y escritas en general.md)
-- **Prueba de Jev contra etiquetas: Choice de tipo 75 % de acuerdo en 187 Correcto, desacuerdos sobre todo por expedientes que no son proyectos de ley (general 2026-11-08 21:21). Prueba de Jev (2026-11-08)**: puerta de 3 Nouls funciona (19/20 oro, 0/21 al azar); falla en expedientes hermanos (3/84 falsos match). Un request por noticia con 50 candidatos y ficha corta (v2): igual de exacto, 25,5k tokens y $0,001 por noticia; todo el corpus ≈ $35 (≈ $10 con el filtro de palabras estrictas, que deja 8.081 noticias y pasa el 98 % del oro). La ficha con exposición no cabe (límite ~32k tokens por pregunta). Filtro de palabras: el estricto conserva 102/102 positivos de la muestra (el permisivo, 58 % del corpus, tampoco gana nada: ver general 2026-11-08 20:18). Filtro de Jev por noticia probado en 832 noticias (general 2026-11-08 20:52): pregunta ancha assembly pasa 102/102 positivos y 99 % del oro, mejor que el estricto (98 %) al mismo costo (~$8); pendiente elegir filtro y umbral. Faltan: desambiguación entre hermanos, más noticias (de paso, decreto, anunciado, ley vigente), medir el filtro de palabras con la muestra manual, elegir K, tope de largo de noticia,  (general 2026-11-08 20:05)
-- **Diseño de las preguntas a Jev**: puerta con 3 `Noul` (explícito / implícito / mismo tema) y segunda ráfaga solo para los que pasan (centralidad, postura, voz, evento del trámite, guardas contra los negativos de la muestra). Faltan: si «mismo tema» abre la puerta, un request por par o por noticia, tablas para guardar probabilidades, permiso para probar la API. (general 2026-11-08 19:22; #34 #39)
+### jev
+- **Uso de same_topic** (recomendación de Claude: sacarlo; el usuario lo está considerando): en la muestra, 191 de 198 negativas tienen algún candidato con same_topic ≥ 0,5, así que no separa. Falta decidir cómo usarlo para el análisis del tema con cobertura (p. ej. solo para el top-1–3 del ranker, con un umbral más alto, o por expediente en lugar de por noticia). (jev 2026-11-09)
+
+### jev (pendientes viejos del diseño; diario `claude_logs/jev.md`)
+- Siguen abiertos de las pruebas del 2026-11-08: desambiguación entre expedientes hermanos (25400/25800), y probar más noticias de paso, decreto, anunciado y ley vigente. (general 2026-11-08 20:05)
+- **Separar llaves en run_jev.py** (puerta → `jev-gate`, detalle → `jev-details`): hoy corre las dos etapas juntas con una sola llave. Ver «Para retomar» 4.
 
 ## Decisiones vigentes
 
+- **Filtro de Jev sobre el corpus**: `run_jev_filter.py` (pregunta assembly, noticia bajo `news`, sin genre); se guardan todas las probabilidades y el **umbral es 0,2**, confirmado por el usuario (jev 2026-11-10 09:41). Gasto medido con una llave por etapa + saldo antes/después de cada corrida. (jev 2026-11-10 01:09, 01:10; #43)
 - **Expedientes que no son proyectos de ley** (comisiones investigadoras, nombramientos, reformas al Reglamento) **cuentan como positivos**; se marcan en «Tipo de expediente». (general 2026-11-08; #27 #29)
 - **Filtro de Jev por noticia en inglés** (pregunta ancha `assembly`); el español no mejora. (general 2026-11-08)
 - **No se amplía la muestra manual**: queda poco tiempo (trabajo universitario) y la prioridad pasa a ser probar Jev. (jev 2026-11-09)
@@ -41,12 +51,24 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 ## En espera: acciones pendientes
 
-- **Prueba de punta a punta ranker → Jev en la muestra**: código listo y probado con 3 noticias (jev 2026-11-09, «Implementada la clase Jev»). Faltan: (1) descargar la pestaña Etiquetas como CSV; (2) en la máquina con embeddings, `python run_candidates.py --name sample --labels Etiquetas.csv` (sin probar todavía); (3) `python run_jev.py --name sample` (~$0,40); (4) `python run_jev_eval.py --name sample --labels Etiquetas.csv`. (#34 #39 #10)
+- **Filtro de Jev: hecho y commiteado** (7.431 de 29.698 pasan con 0,2; 36.667.609 tokens, igual en la consola; $1,54; jev 2026-11-10 09:41). Siguiente: ranker top-50 → puerta (llave jev-gate) sobre las que pasan. (#43)
+- **Presupuesto de Jev**: $20 en total: $5 de pruebas y $15 para el corpus. Gastado del corpus: filtro $1,54 (incluye el piloto). **Saldo en la consola: $2,48** (jev 2026-11-10 09:41): falta cargar el resto antes de la puerta; quedan ≈ $13,5 del presupuesto para puerta y detalle. Antes de cada corrida de Jev: recordarle al usuario revisar que la llave activa sea la de la etapa (tests/filter/gate/details) y anotar el saldo. (jev 2026-11-09 «decisión: presupuesto»; jev 2026-11-10 01:09)
+- **Prueba ranker → Jev en la muestra: hecha** (jev 2026-11-09, «Prueba de punta a punta en las 300»). En las Correcto, recall 0,87, precisión 0,84 y «ninguno» 0,97, con umbral 0,5 y $0,46. Se repite cuando cierre la revisión humana: `run_jev_eval.py` con el CSV nuevo, y `run_jev.py` solo si cambian los candidatos. (#34 #39)
 - **Evaluar embeddings y ranker en la muestra manual**: el ranker ya se evaluó en las 189 «Correcto» (cobertura @30 ≈ 0,95–0,97; ranker 2026-11-08, entrada «decisión: evaluar el ranker…»). Falta repetirlo cuando cierre la revisión humana y evaluar los embeddings solos. (#41 #68)
 - **Revisión humana de la muestra**: el usuario revisa las "Sin relación" y confirma las propuestas "Corregir"/"Dudoso" de Claude (las 131 nuevas incluidas); después Claude aplica las correcciones confirmadas a las columnas de la etiqueta. Después: las 15 de Delfino (cola aparte), el doble etiquetado a ciegas de 20 noticias (#30) y exportar a CSV.
 - **Comentario en #68** con los resultados de las corridas con exclusión.
 - **Fuera de git** (se copian a mano): la base, `databases/embeddings/`, `databases/retrieval/`, `.env`, `raw/`.
 - **Datos crudos de Jev**: respuestas de la API y scripts en `results/jev/answers/` y `results/jev/scripts/` (jev 2026-11-09 10:00); los scripts leen `TYPESAFE_API_KEY` de `.env`.
+
+## Para redactar el reporte: cuidados con los números (#56)
+
+- Margen: en la muestra hay 62 positivas «Correcto», así que el recall 0,87 de ranker → Jev es ~0,79–0,95. Por medio hay 12–19 positivas: no alcanza para afirmar que un medio sale mejor que otro.
+- Etiquetas: las «Correcto» incluyen propuestas de Claude aceptadas por el usuario, y la revisión humana no ha cerrado. Los números se recalculan con el CSV final.
+- Recall optimista: el pre-etiquetado usó las mismas señales que el ranker (TF-IDF, actividad en el SIL). Las positivas que se escaparon al etiquetar se parecen a las que se le escapan al ranker.
+- Test limpio: las preguntas de Jev se ajustaron mirando la muestra (oficialismo, cifras, ley vigente, mismo tema). Hay que decirlo en el reporte, o validar los cambios con el oro de Delfino.
+- Leyes vigentes: Jev cuenta como match las menciones de fondo a leyes ya aprobadas. Es la principal fuente de falsos positivos (decisión 8).
+- Expedientes hermanos con el mismo nombre (25400 / 25800) se confunden: queda como limitación.
+- Centralidad: usar el valor continuo. Ordena bien las etiquetas (De paso 0,70, Secundario 0,90, Central 1,78 en la escala 0–2), pero sobreestima las menciones de paso.
 
 ## Estado por tema
 
