@@ -145,3 +145,13 @@ Commit `feature: status file and per-topic claude logs` (sin issue: no hay ningu
 ## 2026-11-09 15:24 — decisión: no se registra qué máquina es cuál
 
 - El usuario pide quitar las menciones de máquinas, porque adivinar cuál es cuál enreda. En STATUS se quitó la línea «Esta máquina (MSI)…» (quedó solo la indicación del `.venv`) y «Entre máquinas a mano» pasó a «Fuera de git». También se borró la memoria de Claude `machines.md`.
+
+## 2026-11-10 12:39 — decisión: regla de privacidad y ética antes de commitear
+- Pedido del usuario: nunca commitear lo que pueda ser un problema ético o de privacidad (ej.: cuerpo de noticias, `.env`) y advertir siempre que haya riesgo. Nueva sección en CLAUDE.md, «Privacy and ethics before committing (always)»: incluye llaves/tokens, datos personales y respuestas crudas de API que traigan el texto.
+- Revisión hecha: los archivos sin commitear (results/jev/corpus/, test100*, scripts) solo traen ids, expedientes, puntajes y probabilidades; ningún texto largo ni llaves (los scripts leen TYPESAFE_API_KEY de .env). En lo ya commiteado tampoco hay strings de 400+ caracteres ni archivos tipo .env. `.env`, raw/ y las bases ya están en .gitignore.
+
+## 2026-11-10 16:11 — pendiente: el análisis por medio y por partido choca con el plan del entregable 1 («queda fuera valorar, comparar o rankear medios, diputados o partidos»); falta el corpus público y el sitio (#44–#53)
+
+- Contraste del plan del 21 de octubre con lo hecho al 10 de noviembre. Cumplido o superado: 5 medios y 29.698 noticias (estimado: 3–6k), cruce decidido (ranker + Jev) y K ajustado, muestra de 300, precisión medida, corrida sobre todo el corpus, preguntas extra (estaban fuera «si sobra tiempo»).
+- Pendiente con fecha: corpus público (#44 #45) y cuaderno (#46) para el 10 de noviembre; sitio (#48–#51) y prueba de uso (#52 #53) para el 13; informe, ética y diapositivas (#54–#61) para el 15. También #30 (acuerdo entre anotadores) y #40 (comparación con la línea base).
+- Propuesta de Claude: el análisis sirve como validación (precisión por nivel, 95 % contra las votaciones) y como descripción de la cobertura por expediente. Las comparaciones entre medios y partidos se presentan solo de forma descriptiva y con caveats, o se dejan fuera del sitio. Prioridad: corpus público + sitio.

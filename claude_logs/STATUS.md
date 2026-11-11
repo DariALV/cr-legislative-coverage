@@ -2,16 +2,16 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-10 13:10 (corrida de Jev sobre el corpus hecha).
+Última actualización: 2026-11-10 18:07 (partidos y temas según la prensa, #69).
 
 ## Para retomar
 
 La corrida de Jev sobre el corpus está completa: 3.662 de 7.431 noticias con match (6.329 pares), todas con detalle; $11,51 (puerta $10,08 + detalle $1,44) (jev 2026-11-10, «Corrida del corpus hecha» y «Detalle partido en tandas»). Resultados en results/jev/corpus/. Falta:
 1. **Consola**: saldo esperado ≈ $5,81 (antes $17,32); jev-gate debería marcar 239.917.863 tokens y jev-details 34.214.169.
-2. **Analizar los resultados del corpus** (#43, #56).
+2. **Análisis del corpus hecho con los dos niveles** en results/jev/corpus_analysis/ (README.md, mention/, substantive/, match_review.csv; jev 2026-11-10, «Análisis del corpus rehecho»): mención = explícito ≥ 0,5 o implícito ≥ 0,75 (4.671 pares, ~78–85 %); cobertura sustantiva = además centralidad ≥ 0,25 (3.462 pares, ~88–91 %). Votos filtrados a mayo–octubre y tablas rehechas con la base recargada: posición atribuida vs. voto 92,2 % (130/141) (jev 2026-11-10 17:20). Sin commitear. **Pendiente de alcance:** el plan del entregable 1 deja fuera comparar o rankear medios, diputados o partidos (general 2026-11-10, «pendiente: el análisis por medio…»). Recomendación: validación + descripción por expediente; lo de medios y partidos, solo descriptivo o fuera del sitio. **Prioridad:** corpus público (#44 #45 #46), sitio (#48–#51, viernes 13) e informe (domingo 15). Visor: `private_visuals/jev_answers/` (#69).
 3. **Git**: answers.jsonl pesa 133 MB (6,8 MB comprimido). Propuesta: commitear los .gz y dejar fuera los CSV grandes, que se regeneran. El usuario lo deja para después; hasta entonces, results/jev/corpus/ no se commitea.
 3. **Formato en la base pública**: columnas extra o tabla relacional (news_id, bill, pregunta, opción, probabilidad, confidence, ...). Lo decide el usuario.
-4. **Commits sin hacer**: (a) captura completa, llaves y rondas de preguntas de Jev (jev.py, jev_questions.py, jev_runner.py, jev_filter_runner.py, run_jev.py, run_jev_eval.py, results/jev/test100*, results/jev/scripts/); (b) unión con los nombrados por número (explicit_mentions.py, candidate_ranker.py, run_candidates.py, results/jev/test100_explicit/); (c) run_jev_corpus.py; (d) logs. results/jev/corpus/candidates.csv pesa 33 MB: se decide si va con los resultados de la corrida.
+4. **Commits**: el código, las pruebas, el análisis (a726792) y la muestra repetida (8201be6) de Jev ya están commiteados. Sin commitear: results/jev/corpus/ (se comprime después) y lo de otros chats: CLAUDE.md, claude_logs/data.md, private_visuals/graph/ (con un rename en staging), private_visuals/jev_answers/, results/jev/cost_model.md y results/jev/scripts/jev_cost_*.py. **No commitear** databases/private_corpus.backup_2026-11-10.db (copia de la base privada con texto de noticias; agregarla al .gitignore).
 
 ## Pendiente: decisiones abiertas
 
@@ -40,6 +40,8 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 ## Decisiones vigentes
 
+- **Visualizaciones gráficas**: todas las propuestas, de a pocas, en la página nueva `private_visuals/graph/` (grafo de fuerzas estilo Obsidian, D3 + canvas). Color «cobertura»: gris sin cobertura, casi negro sin cobertura y > 4 años, rojo→verde por stance de Jev. Co-votación: solo votaciones disputadas (minoría ≥ 10 %), promedio por expediente; colores reales de partido solo en el grafo. Partido × tema usa la posición según la prensa, no los votos (en debates todos votan a favor 90–100 %). (jev 2026-11-10 17:05, 17:44, 18:02; #69)
+- **El análisis del corpus usa solo los votos de mayo–octubre** (PERIOD), aunque la base tenga votos desde 2018; el visor usa un mes de margen. (jev 2026-11-10 17:20)
 - **Antes de cada commit se revisa privacidad y ética** (nada de cuerpos de noticias, .env, llaves ni datos personales; se avisa siempre que haya riesgo). Regla en CLAUDE.md. (general 2026-11-10 12:39)
 - **Candidatos = top-50 del ranker ∪ expedientes nombrados por número**, sin reentrenar. Se reporta en candidates.csv (source, named, rank real) y en candidates_report.json; caveat comentado en #33. (ranker 2026-11-10, «decisión e implementación: candidatos»)
 
@@ -58,7 +60,7 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 - **Filtro de Jev: hecho y commiteado** (7.431 de 29.698 pasan con 0,2; 36.667.609 tokens, igual en la consola; $1,54; jev 2026-11-10 09:41). Siguiente: ranker top-50 → puerta (llave jev-gate) sobre las que pasan. (#43)
 - **Presupuesto de Jev**: $20 en total: $5 de pruebas y $15 para el corpus. Gastado del corpus: filtro $1,54 (incluye el piloto). **Saldo en la consola: $2,48** (jev 2026-11-10 09:41): falta cargar el resto antes de la puerta; quedan ≈ $13,5 del presupuesto para puerta y detalle. Antes de cada corrida de Jev: recordarle al usuario revisar que la llave activa sea la de la etapa (tests/filter/gate/details) y anotar el saldo. (jev 2026-11-09 «decisión: presupuesto»; jev 2026-11-10 01:09)
-- **Prueba ranker → Jev en la muestra: hecha** (jev 2026-11-09, «Prueba de punta a punta en las 300»). En las Correcto, recall 0,87, precisión 0,84 y «ninguno» 0,97, con umbral 0,5 y $0,46. Se repite cuando cierre la revisión humana: `run_jev_eval.py` con el CSV nuevo, y `run_jev.py` solo si cambian los candidatos. (#34 #39)
+- **Prueba en la muestra repetida con el sistema final** (results/jev/sample_final/, $0,44; jev 2026-11-10, «Muestra de 300 repetida»). En las Correcto: recall del ranker 0,955; umbral 0,5 → recall 0,866, precisión 0,806, «ninguno» 0,969; mención → 0,687 / 0,902 / 0,984; sustantiva → 0,672 / 0,918 / 0,984. Cuando cierre la revisión humana: `run_jev_eval.py --name sample_final` con el CSV nuevo (no hace falta volver a correr Jev). (#34 #39)
 - **Evaluar embeddings y ranker en la muestra manual**: el ranker ya se evaluó en las 189 «Correcto» (cobertura @30 ≈ 0,95–0,97; ranker 2026-11-08, entrada «decisión: evaluar el ranker…»). Falta repetirlo cuando cierre la revisión humana y evaluar los embeddings solos. (#41 #68)
 - **Revisión humana de la muestra**: el usuario revisa las "Sin relación" y confirma las propuestas "Corregir"/"Dudoso" de Claude (las 131 nuevas incluidas); después Claude aplica las correcciones confirmadas a las columnas de la etiqueta. Después: las 15 de Delfino (cola aparte), el doble etiquetado a ciegas de 20 noticias (#30) y exportar a CSV.
 - **Comentario en #68** con los resultados de las corridas con exclusión.
@@ -79,10 +81,14 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 **datos** (#16 #66 abiertos; #22 #65 cerrados)
 - 5.898 expedientes (20000–25897). `bill_texts`: 5.411 ok, 264 no_exposition, 223 no_text. Texto en `raw/text/asamblea/bills/`.
-- Votos de la lista de Delfino: 9.285 votaciones (8.876 plenary, 409 full_committee) y 513.432 votos. El matcher cruza todos menos 5.
+- Votos de Delfino: 9.288 votaciones (8.879 plenary, 409 full_committee; 2018-05-17 a 2026-11-09) y 513.660 votos, recargados el 2026-11-10 porque la base se había reemplazado por una copia vieja. Sin cruce solo «Cynthia Córdoba Serrano». Respaldo de la base parcial: `databases/private_corpus.backup_2026-11-10.db` (sin ignorar en git; borrar cuando no haga falta). (data 2026-11-10 16:56, 17:04)
 - 235 diputados, 1.880 órganos. 29.875 noticias (mayo–oct 2026).
 
 **explorador** (#67 cerrado): `private_visuals/db_explorer/server.py`, de solo lectura, en localhost:8765 (`db-explorer` en launch.json). Fotos de 168/230 diputados.
+
+**visor de Jev** (#69 abierto): `private_visuals/jev_answers/`, página estática en localhost:8766/jev_answers/ (`visuals` en launch.json). Vistas por noticia y por expediente + pestaña «Análisis» (partidos, votos vs prensa, medios, rankings, proponentes y comisiones, cruces, polémicos, línea temporal). Línea temporal con los 1.420 expedientes (381 activos sin cobertura) y botón en cada expediente. Hecho y verificado; sin commitear (jev 2026-11-10 15:23, 15:54, 16:32). Prensa vs voto: 94–100 % de coincidencia por partido.
+
+**grafos** (#69): `private_visuals/graph/`, en localhost:8766/graph/ (o `visuals-alt`, 8768, si el 8766 está ocupado). Tres pestañas: (1) **Expedientes** (`index.html`, datos con `build_graph.py`, necesita `networkx`): 5.898 expedientes, 26 temas Louvain; color por tema, cobertura, estado o posición de un partido. Commiteado (361b255) salvo el modo «Partidos». (2) **Diputados** (`deputies.html`, `build_deputies.py`): co-votación por legislatura, umbral ajustable, fotos. En 2026–2030: PPSO vota 8–23 % igual que la oposición; PLN–FA 69 %. (3) **Partidos y temas** (`parties.html`): posición que la prensa le atribuye a cada partido por tema; 101 enlaces, solo 3 en contra (FA). (2) y (3) hechos y verificados, **sin commitear**. Quedan los extras (co-mención, medio → tema → etapa, streamgraph). (jev 2026-11-10 17:27, 17:49, 18:07)
 
 **embeddings** (#6 #32 #38 cerrados)
 - bge-m3 y qwen3-0.6b embebidos en el oro y en los 5.898 expedientes (3 variantes).

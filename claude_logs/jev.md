@@ -314,3 +314,139 @@ Diario del tema. Las pruebas del 2026-11-08 se escribieron en `general.md` antes
 - Decidido: se cargan los pares con max(explícito, implícito) ≥ 0,1 (36.941), umbral móvil de 0,1 a 1 (por defecto 0,5); debajo de 0,5 no hay detalle.
 - Dos vistas (por noticia y por expediente) con panel lateral; filtros por respuestas del detalle, explícito vs implícito, cruce con los enlaces de Delfino; resumen con gráficos.
 - `build_data.py` → `private_visuals/output/jev_answers/data.js` (ignorado por git), sin cuerpos de noticia.
+
+## 2026-11-10 15:23 — visor de respuestas de Jev hecho; 25258 junta 389 noticias casi todas implícitas (#69)
+- `private_visuals/jev_answers/`: build_data.py (lee results/jev/corpus + la base en solo lectura) → output/jev_answers/data.js (8,9 MB, ignorado por git); index.html, app.js, labels.js, styles.css. Se abre con el launch `visuals`: http://localhost:8766/jev_answers/index.html
+- Datos: 6.645 noticias, 3.547 expedientes, 37.006 pares (36.941 ≥ 0,1 + 65 enlaces de Delfino por debajo), 6.329 con detalle, 1.421 enlaces de Delfino en la corrida.
+- Verificado en el navegador: con 0,5 da 3.662 noticias y 6.329 pares (igual que run.json); el 94 % de los enlaces de Delfino (1.336/1.421) pasa el umbral; «Delfino sí, Jev no» = 85 pares; «Jev sí, Delfino no» (solo noticias de Delfino) = 564.
+- Hallazgo: 25258 (magistrados suplentes de la Sala IV) tiene 389 matches y 372 son solo implícitos (explícito < 0,5): la pregunta implícita pega cualquier nota sobre la Sala IV o los jueces a ese expediente. Revisar al analizar el corpus.
+
+## 2026-11-10 15:26 — Primer análisis del corpus: 12,3 % de las noticias cubren un expediente; 100 % de lo aprobado en el Plenario tiene cobertura; las posiciones que reporta la prensa coinciden con el voto en 95 % (#43 #56)
+
+- results/jev/corpus_analysis/ (analysis.py, README.md, CSVs). Exploratorio; sí = probabilidad ≥ 0,5.
+- Cobertura: Semanario 25 % de sus noticias, El Mundo 17 %, Delfino 15 %, Nación 10 %, CRHoy 9 %. 1.039 expedientes distintos; el top 10 se lleva el 25 % de los pares. Los más cubiertos: 25258 magistrados suplentes (389), 23414 armonización eléctrica (320), 25754 presupuesto 2027 (249).
+- Actividad: 100 % de los aprobados en 1.° y 2.° debate tienen cobertura; el 39 % de los expedientes con actividad en el SIL no tiene ninguna. Los 10 con más mociones: mediana de 44,5 noticias.
+- Proponentes (presentados de mayo a octubre): el Ejecutivo tiene 22,9 noticias por expediente, Pueblo Soberano 3,9, PLN 2,7 y FA 2,8.
+- Posición atribuida frente al voto en 1.°/2.° debate: 93 de 98 combinaciones partido–expediente con posición clara coinciden (94,9 %). Es una validación externa de las preguntas de posición.
+- Estilo: El Mundo tiene un 55 % de notas tipo comunicado y el tono más favorable (0,63); Semanario, el encuadre de conflicto más alto (48 %) y la imagen de la Asamblea más crítica; Delfino, el encuadre de política pública más alto (56 %). En el 63 % de los pares no hay ninguna voz externa.
+- Caveat nuevo: 21372 (Reglamento contra el hostigamiento sexual de la Asamblea) tiene 57 noticias, solo 1 como tema principal; son casos Alvarado/Obaldía que lo nombran como norma vigente.
+
+## 2026-11-10 15:40 — decisión: pestaña de análisis en el visor de Jev (#69)
+- El usuario pidió mucho más análisis: partido vs partido, votos vs prensa, rankings por medio/partido, cruces de variables, expedientes polémicos y línea temporal por expediente.
+- Decidido (todo lo recomendado): agregación ponderada por probabilidad (valor esperado, mínimo de noticias ajustable para rankings, 5 por defecto); votos vs prensa solo con votaciones de fondo (primer/segundo debate, ratificación, acuerdo; 38 expedientes con match), las 1.714 mociones solo para la cohesión partido vs partido por votos; se agregan partido proponente (bill_proponents + deputy_factions), comisiones (organ_bills), pasos del SIL y votaciones en la línea temporal; va como tercera pestaña «Análisis» del visor, con los mismos filtros.
+
+## 2026-11-10 15:52 — pendiente: los matches solo implícitos (49 % de los pares) aciertan ~50 %; propuesta de exigir implicit ≥ 0,75 si no hay explícito (#43 #34)
+
+- 3.071 de los 6.329 pares son solo implícitos (explicit < 0,5). La centralidad de Jev no los separa: tienen centralidad igual o más alta que los explícitos.
+- Muestra de 50 implícitos (10 de 25258, 6 de 25754, 34 al azar), revisada por 2 subagentes contra el texto: 24 sí, 11 dudosos, 15 no (precisión 48 % estricta, 70 % contando los dudosos). En 25258: 4 sí, 3 dudosos, 3 no. Errores: otro proyecto del mismo tema (clase b, el principal), menciones de fondo, leyes vigentes.
+- Precisión por umbral de implicit en la muestra: ≥ 0,65 → 62 %/79 % (34 de 50); ≥ 0,75 → 73 %/81 % (26); ≥ 0,8 → 80 %/90 % (20); ≥ 0,9 → 100 % (7). Con centralidad ≥ 0,5: 72 %/86 % (29).
+- En el corpus, explicit ≥ 0,5 o implicit ≥ 0,75 deja 4.671 de 6.329 pares (2.788 noticias; 25258 baja de 389 a 176); con ≥ 0,65 quedan 5.242 pares.
+- Propuesta de Claude (sin respuesta): cobertura = explicit ≥ 0,5 o implicit ≥ 0,75; cobertura sustantiva = además centralidad ≥ 0,5; reportar los dos y la sensibilidad. La muestra es chica (±14 puntos).
+
+## 2026-11-10 15:54 — pestaña de análisis hecha; la prensa coincide con el voto de cada partido en 94–100 % (#69)
+- `analysis.js` + `analysis.css`; build_data.py ahora agrega proponentes (partido del primer firmante a la fecha de presentación), comisiones del período (organ_bills), pasos del SIL y las 1.955 votaciones del período con el conteo por fracción (data.js 10,3 MB).
+- Ocho secciones: Partidos (matrices de bandos opuestos según noticias y según votos, clic → expedientes donde chocan/coinciden), Votos vs prensa, Medios (perfil completo con todas las preguntas, sesgo relativo, noticias por semana), Expedientes (rankings por medio y por actor), Proponentes y comisiones, Cruces (dispersión con ejes a elección + matriz Spearman), Polémicos (bandos), Línea temporal (postura, actores, comisiones, pasos, votaciones, cobertura semanal).
+- Resultados con umbral 0,5: votos vs prensa en 44 expedientes con votación de fondo: PPSO 97 % (37/38), PLN 100 % (32/32), FA 94 % (31/33), PUSC 95 % (20/21), CAC 100 % (18/18). PPSO vs FA: 67 % en bandos opuestos según las noticias y 85 % según los votos; PPSO con el Ejecutivo solo 14 %.
+- Sesgo relativo por medio (postura frente a los otros en los mismos expedientes): El Mundo +0,27, Semanario −0,10, CRHoy −0,04, Delfino −0,05, Nación −0,02. Noticias (log) vs postura: r = −0,19 (los más cubiertos salen algo más criticados).
+- Caveats: las votaciones de fondo incluyen reformas al Reglamento y acuerdos; el partido proponente de expedientes viejos es el del período anterior (Acción Ciudadana, PSD, Nueva República…); 25258 sigue inflado por menciones implícitas.
+
+## 2026-11-10 16:04 — pendiente: revisión de 190 matches; propuesta de dos niveles: mención (explícito o implícito ≥ 0,75) y cobertura sustantiva (además centralidad ≥ 0,25) (#43 #34)
+
+- Ronda 2: 140 pares (25 por franja implícita + 40 explícitos), 6 revisores en paralelo (workflow) que no veían la probabilidad de Jev. Junto con la ronda 1 (50) suman 190: results/jev/corpus_analysis/match_review.csv y el anexo del README.
+- Precisión estricta / con dudosos: implícito < 0,65 24 %/51 %; 0,65–0,75 39 %/67 %; 0,75–0,85 66 %/76 %; ≥ 0,85 82 %/92 %; explícito 75 %/82 %. Los 6 explícitos marcados «no» porque el número estaba después de los 8.000 caracteres que vieron los revisores se corrigieron a «sí».
+- La centralidad < 0,25 marca las menciones de paso (28 % de sí). Corpus estimado: A todo 66 %/78 %; B mención 4.671 pares 78 %/85 % (conserva ~88 % de los correctos); C sustantiva 3.462 pares 88 %/91 % (~73 %); D con centralidad ≥ 0,5 no mejora la precisión y conserva ~48 %.
+- Contraste con los enlaces de Delfino: el 95 % de los explícitos de Delfino están en sus enlaces; los implícitos casi no (cota inferior).
+- Propuesta de Claude (sin respuesta): reportar «mención» (B) para cuántos expedientes se nombran, y «cobertura sustantiva» (C) para los rankings, el estilo por medio y las posiciones.
+
+## 2026-11-10 16:11 — decisión: el análisis cuenta en dos niveles, mención (explícito ≥ 0,5 o implícito ≥ 0,75) y cobertura sustantiva (además centralidad ≥ 0,25) (#43 #56)
+
+- El usuario acepta los dos niveles propuestos (jev 2026-11-10, «pendiente: revisión de 190 matches»). No hace falta volver a correr Jev; solo se rehace analysis.py con los filtros.
+- El usuario comparte el plan del entregable 1 (21 de octubre) y pregunta si el análisis responde algo. El plan deja fuera valorar, comparar o rankear medios, diputados o partidos, y pide presentar la cobertura de forma descriptiva.
+
+## 2026-11-10 16:16 — Análisis del corpus rehecho con los dos niveles: 8,8 % de las noticias con cobertura sustantiva; 570 expedientes; 95,8 % de coincidencia con el voto (#43 #56)
+
+- analysis.py corre por nivel y escribe en mention/ y substantive/; la primera pasada queda en first_pass/. README reescrito: las secciones 1–4 son descriptivas (validación, volumen, expedientes, actividad) y la 5 (estilo por medio) es exploratoria y no va al sitio, por el alcance del entregable 1.
+- Mención: 2.788 noticias (9,4 %), 4.671 pares, 820 expedientes. Sustantiva: 2.620 noticias (8,8 %), 3.462 pares, 570 expedientes; el top 10 se lleva el 31 %. Los más cubiertos: 23414 (278), 25754 (182), 25258 (172).
+- Actividad (sustantiva): el 40 % de los expedientes con actividad en el SIL tienen cobertura; aprobados en 1.° debate 92 %, en 2.° debate 89 %. Sin cobertura sustantiva quedan tres convenios aéreos aprobados (25080, 25302, 25207), que solo aparecen en listas. Ejecutivo: ~17 noticias por expediente; los diputados, 2–3.
+- Posiciones contra votos: 92/96 = 95,8 % (sustantiva). Arreglo: party_positions y positions_vs_votes no filtraban por nivel en la primera versión del script; ya filtran.
+
+## 2026-11-10 16:05 — decisión: línea temporal con expedientes sin cobertura y navegación nueva (#69)
+- Pedido del usuario: la línea temporal es difícil de manejar y solo muestra expedientes con cobertura.
+- Decidido: el universo suma los expedientes con actividad en el período (paso del SIL o votación desde mayo: 954, de los que 381 no tienen cobertura a 0,5 y 116 no estaban en data.js); lista lateral con búsqueda, orden y chips con/sin cobertura/con votaciones; hitos del SIL con etiqueta y cronología mezclada (pasos, votaciones, noticias); gráfico separado (cobertura y postura arriba, partidos aparte y plegable); candidatos debajo del umbral en gris; y un botón en cada expediente de la página (listas, panel, análisis) para ir directo a su gráfico. Sin zoom.
+
+## 2026-11-10 16:40 — línea temporal rehecha: 1.420 expedientes, 381 sin cobertura (#69)
+- build_data.py agrega `active` (expedientes con paso del SIL o votación desde el inicio del período) y sus datos: 3.663 expedientes en data.js (116 nuevos sin candidatos), 10,4 MB.
+- Línea temporal: lista lateral (búsqueda, chips todos/con cobertura/sin cobertura/con votaciones, orden, mini barras por semana, ↑↓), gráfico de cobertura y trámite (postura, candidatas bajo el umbral en gris, noticias por semana, hitos del SIL con etiqueta, comisiones, votaciones), partidos en un bloque plegable y cronología mezclada. Botón de línea temporal en cada expediente (filas, tarjetas, panel lateral, listas del análisis).
+- Con umbral 0,5: 1.420 expedientes en la lista (1.039 con cobertura + 381 activos sin cobertura). Ejemplo: 23986 (prisión preventiva) no tiene ninguna noticia ≥ 0,5 pero sí 135 candidatas bajo el umbral, probablemente por expedientes hermanos.
+- Verificado en el navegador (expediente con y sin cobertura, flechas, botón desde el panel).
+
+## 2026-11-10 16:33 — corrección: la entrada «línea temporal rehecha» es de las 16:32, no de las 16:40 (#69)
+- La hora del título se escribió antes de leer el reloj. El contenido no cambia.
+
+## 2026-11-10 16:52 — pendiente: visualizaciones gráficas (mapa de expedientes, red de co-votación, partido × tema) (#69)
+- El usuario pide visualizaciones más vistosas que gráficos (fuerzas, clustering). Claude propone:
+  1. Mapa de los 5.898 expedientes: UMAP sobre embeddings qwen3 + clustering (HDBSCAN o k-means), temas nombrados con los descriptores de `bill_subjects`; tamaño = cobertura de Jev.
+  2. Red de fuerzas de diputados por co-votación (arista = % de votos iguales); los partidos se separan solos y se ven los que cruzan.
+  3. Heatmap partido × tema (% a favor), que necesita los temas de 1.
+  4. Extras: red de co-mención de expedientes, flujo medio → tema → etapa, streamgraph por tema en el tiempo.
+- Hallazgos: `bill_subjects` son descriptores de tesauro (3.141 distintos, 'LEY', 'REFORMA'...), no categorías: hay que agrupar. `votes` en private_corpus.db: 1.955 votaciones sobre solo 87 expedientes (2026-06-10 a 2026-11-05), así que partido × tema queda flaco.
+- Recomendación: 1 + 2, como pestaña nueva del visor privado; no en el sitio público hasta decidir el alcance de partidos. Sin respuesta.
+
+## 2026-11-10 17:05 — decisión: grafos estilo Obsidian, página nueva y de a poco (#69)
+- El usuario quiere todas las visualizaciones propuestas, de a pocas, muy interactivas (deslizadores de fuerzas como Obsidian) y con colores por tipo de nodo (partidos: FA amarillo, PPSO celeste, etc.).
+- Página nueva `private_visuals/graph/` con su propio build; D3-force + canvas.
+- Primera vista: los 5.898 expedientes, aristas a los 5 vecinos por embedding qwen3, temas = comunidades Louvain nombradas por descriptores.
+- Color «cobertura»: gris sin cobertura; casi negro si tiene > 4 años y no tiene cobertura; con cobertura, rojo→verde según el promedio de stance de Jev en notas sustantivas.
+- Votos: recargar primero los de Delfino (data 2026-11-10 16:56) antes de la red de co-votación de diputados.
+
+## 2026-11-10 17:20 — decisión: el análisis del corpus usa solo votos de mayo–octubre; rehecho con la base recargada (#22 #43)
+
+- El usuario eligió filtrar al período (PERIOD, mayo–oct) en vez de usar el período con un mes de margen. `analysis.py`: las tres consultas a `votes` (actividad, posiciones vs. votos, weekly) llevan `date BETWEEN` PERIOD; el grupo pasa a llamarse «plenary votes (May–Oct)».
+- Cambian solo activity_vs_coverage, positions_vs_votes y weekly en los dos niveles. Antes (base parcial, jun–nov) → ahora: votados 87 → 110 (sustantiva 74 % igual; mención 89 → 85 %); 1.er debate 26 → 35; 2.º debate 27 → 39; 4+ mociones 10 → 13 (mediana sustantiva 27 → 15).
+- Posiciones vs. votos: 185 → 249 pares partido–expediente con voto final. Sustantiva: 130 de 141 coinciden (92,2 %; antes 92 de 96, 95,8 %). Mención: 131 de 143 (91,6 %).
+- Las tres leyes de 2.º debate sin cobertura sustantiva siguen siendo 25080, 25302 y 25207. README actualizado con estas cifras.
+
+## 2026-11-10 17:27 — Grafo de expedientes estilo Obsidian hecho y verificado (private_visuals/graph) (#69)
+- `build_graph.py` → `private_visuals/output/graph/bills.js` (1,7 MB, fuera de git): 5.898 expedientes, 22.094 enlaces (5 vecinos por coseno, embeddings qwen3 / exposition), 26 temas Louvain (resolución 0,6, semilla 7, modularidad 0,81) nombrados con 3 descriptores del SIL por c-TF-IDF. Cobertura con los mismos niveles que analysis.py: cuadra con el README (4.671 / 3.462 pares; 820 / 570 expedientes).
+- Página `private_visuals/graph/` (index.html, engine.js genérico, app.js, styles.css; D3 7.9 por CDN, canvas). Colores: Tema (8 tonos repartidos para que temas vecinos no repitan), Cobertura (rojo→gris claro→verde por stance 15–85; gris sin cobertura; casi negro sin cobertura y > 4 años) y Estado. Tamaño = noticias sustantivas. Panel: búsqueda, filtros, leyenda clicable, deslizadores de fuerzas y apariencia, física on/off. Ficha con enlaces al visor (`jev_answers/#bill=N`, deep link nuevo en app.js del visor) y al explorador.
+- Rendimiento: d3.forceManyBody tardaba 90–130 ms por tick con 5.898 nodos. Se reemplazó por una repulsión propia de corto alcance en grilla (con colisión entre círculos) y resortes con tope de estiramiento: ~17 ms por tick en esta máquina (lenta en ese momento).
+- Conteos en modo Cobertura: 90 en contra, 281 neutral, 199 a favor, 1.988 sin cobertura, 3.340 sin cobertura y > 4 años.
+- Caveats: nombres de temas automáticos y sin validar; 487 expedientes sin exposición usan el texto de respaldo; 250 expedientes con solo menciones de paso se pintan como sin cobertura; stance de 1 sola noticia en muchos expedientes; «> 4 años» es fecha de presentación contra la extracción (2026-11-07), no el plazo cuatrienal del SIL.
+- Nuevo: `networkx` en requirements.txt; config `visuals-alt` (puerto 8768) en launch.json porque el 8766 lo usa el servidor de otro chat. Sin commitear.
+- Siguiente (de a pocos): red de co-votación de diputados con colores de partido (los votos ya se recargaron: 9.288 votaciones, 1.991 expedientes), luego partido × tema y los extras.
+
+## 2026-11-10 17:44 — decisión: red de diputados por co-votación (períodos, medida, colores, fotos) (#69)
+- Commit del grafo de expedientes: 361b255.
+- Selector de las 3 legislaturas con votos (2018–2022, 2022–2026, 2026–2030); arranca en la actual.
+- Coincidencia: solo votaciones disputadas (minoría ≥ 10 % de los presentes), promedio dentro de cada expediente y cada expediente pesa igual. Motivo: en 2026–2030, 1.700 de 2.109 votaciones son mociones del 24290. Descartadas: porcentaje simple por votación; solo primer y segundo debate (84 en la actual).
+- Colores reales de partido solo en el grafo (PPSO celeste, PLN verde, FA amarillo, PUSC rojo, CAC naranja, independientes gris; anteriores: PAC naranja oscuro, PRN azul, PNR morado, PLP rosado, PPSD turquesa). El visor queda con los suyos.
+- Nodo = foto con anillo del color del partido (fotos de Delfino copiadas a private_visuals/output/, fuera de git); tamaño = expedientes firmados en la legislatura.
+
+## 2026-11-10 17:49 — Red de diputados por co-votación hecha y verificada (private_visuals/graph/deputies.html) (#69)
+- Nota: la entrada anterior («decisión: red de diputados…») lleva una hora estimada (17:44), no leída del reloj.
+- `build_deputies.py` → `private_visuals/output/graph/deputies.js` (112 KB) y `photos/` (173 fotos copiadas de raw/, fuera de git). Una red por legislatura: 2018–2022 (59 diputados, 279 votaciones disputadas en 168 expedientes), 2022–2026 (58; 2.839 en 407), 2026–2030 (57; 1.355 en 57). Pares con menos de 5 expedientes en común quedan sin dato.
+- Resultado 2026–2030: coincidencia mediana 100 % dentro del partido y 24 % entre partidos. Por pares: PPSO–FA 8 %, PPSO–PLN 23 %, PLN–FA 69 %, PLN–PUSC 83 %, CAC–PLN 86 %. Con umbral 75 % salen tres bloques: PPSO, FA, y PLN + PUSC + CAC. En 2018–2022 y 2022–2026: 87–90 % dentro y 61–65 % entre partidos.
+- Página: selector de legislatura, deslizador «Coincidencia mínima» (rehace los enlaces en vivo; por defecto 75 %), color por partido (colores reales) o provincia, foto con anillo, tamaño = expedientes firmados, grosor del enlace según coincidencia (≥ 85 y ≥ 95). Ficha: con quién vota más y menos, coincidencia con su partido y con el resto. Al pasar por otro diputado con uno seleccionado, el tooltip da la coincidencia entre ambos.
+- Refactor: `app.js` → `bills.js`; lo común del panel pasó a `controls.js`; `engine.js` ahora acepta fotos, niveles de grosor, `setLinks` y valores por defecto por página; pestañas Expedientes | Diputados arriba. El grafo se encuadra en el espacio que deja el panel.
+- Caveats: el partido es el que Delfino le pone más veces en la legislatura (13 «Independiente» en 2018–2022: no se ve de qué fracción salieron); ausencias y abstenciones no cuentan; el umbral de disputada (10 %) y el mínimo de 5 expedientes son parámetros; el tamaño por expedientes firmados no es una medida de calidad.
+- Sin commitear. Siguiente: partido × tema (usa los 26 temas del grafo de expedientes y los votos), luego los extras.
+
+## 2026-11-10 18:02 — decisión: partido × tema con la posición según la prensa; red de fuerzas y color en el mapa (#69)
+- Hallazgo: en primer y segundo debate todos los partidos votan a favor el 90–100 % de las veces en todos los temas (2018–2022: 1.290 de 1.300 aprobados; 2022–2026: 1.467 de 1.528; 2026–2030: 80 de 84, solo 51 expedientes). «% a favor por tema» no discrimina.
+- Medida elegida: posición que la prensa le atribuye a cada partido y al Ejecutivo (preguntas de Jev por partido), en pares con cobertura sustantiva; a favor = +1, en contra = −1, neutral = 0, promedio por expediente y luego por tema (cada expediente pesa igual). Con posición: PPSO 251 expedientes, PLN 218, FA 194, Ejecutivo 184, PUSC 108, CAC 73. Descartado por ahora: votos en contra en debates.
+- Formas elegidas: (1) red de fuerzas partidos–temas, tercera pestaña; (2) modo de color «posición de un partido» en el mapa de expedientes. La matriz de calor no se pidió.
+
+## 2026-11-10 18:07 — Partidos y temas: red de fuerzas y modo «Partidos» en el mapa, hechos y verificados (#69)
+- Datos: `build_graph.py` ahora agrega a cada expediente la posición de cada actor (PPSO, PLN, FA, PUSC, CAC, Ejecutivo): promedio de +1 / 0 / −1 sobre sus noticias sustantivas que le atribuyen posición, y cuántas son. Sin build nuevo: las dos vistas leen `bills.js`.
+- `parties.html` / `parties.js` (tercera pestaña): 6 actores y los temas con enlaces; enlace = promedio por tema (cada expediente pesa igual), color rojo→verde, grosor por cantidad de expedientes (≥ 5, ≥ 10); solo el apoyo tira del resorte. Controles: mínimo de expedientes por enlace (3 por defecto) e interruptores a favor / dividido / en contra. Fichas de tema y de actor.
+- Resultado con mínimo 3: 101 enlaces en 21 temas: 85 a favor, 13 divididos y 3 en contra, los tres del FA (Deporte −0,60 en 5 expedientes; Municipal −0,50 en 4; Propiedad −0,33 en 3). PLN queda en −0,17 en ARESEP/eléctrico (12 expedientes) y el Ejecutivo en +0,78 (14).
+- Mapa de expedientes: modo de color «Partidos» con selector de actor, leyenda (FA: 46 en contra, 4 dividido, 144 a favor, 376 cubiertos sin posición) y resumen por tema clicable; la ficha del expediente lista la posición de cada actor.
+- Motor: enlaces con color propio. `controls.js`: colores de partido, actores y escala de posición compartidos.
+- Caveats: la prensa atribuye sobre todo apoyos (casi todos los promedios son positivos), así que la red sale mayormente verde; es lo que dicen las noticias, no el voto; promedios con 3–5 expedientes son frágiles; un actor no mencionado no cuenta (no es neutral).
+- Sin commitear (junto con la red de diputados). Quedan los extras: co-mención, medio → tema → etapa, streamgraph.
+
+## 2026-11-10 18:32 — Muestra de 300 repetida con el sistema final: en las Correcto, recall 0,866 y precisión 0,806; con «mención», 0,687/0,902; con «sustantiva», 0,672/0,918 (#39 #34 #41)
+
+- results/jev/sample_final/: candidatos top-50 ∪ nombrados por número (7 agregados de 48 nombrados), puerta sin same_topic, detalle final. Llave tests, 10.571.510 tokens, $0,444. Etiquetas: el export de Descargas del 2026-11-09 16:48 (el mismo de la corrida anterior, así que la comparación es directa).
+- Contra la corrida del 2026-11-09 (umbral 0,5 sobre max(explícito, implícito)): recall del ranker 0,940 → 0,955 (Correcto) y 0,871 → 0,909 (todas); recall 0,866 → 0,866; precisión 0,841 → 0,806 (3 falsos positivos más, todos con probabilidad entre 0,50 y 0,53: es ruido de Jev en el límite; uno es un expediente agregado por número, 24753, rank 2242); «ninguno» 0,969 → 0,969.
+- Con los dos niveles (Correcto): mención, recall 0,687 / precisión 0,902 / ninguno 0,984; sustantiva, 0,672 / 0,918 / 0,984. Todas las noticias: mención 0,674 / 0,832; sustantiva 0,599 / 0,859. Subir el umbral cambia recall por precisión, como se estimó en el corpus.
