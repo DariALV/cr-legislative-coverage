@@ -31,10 +31,23 @@
   const IMAGE_MIN_PX = 5;      // below this radius on screen a photo is just noise
   // The engine steps the simulation itself: several ticks per frame while they fit in the
   // budget (a fast machine settles in a third of the frames) and one per frame when they don't.
+  // A frame that is slow to draw (tens of thousands of nodes) gets about as long for ticks as
+  // the drawing takes, up to MAX_TICK_BUDGET_MS, so a big layout settles in fewer frames.
   const TICK_BUDGET_MS = 9;
+  const MAX_TICK_BUDGET_MS = 50;
   const MAX_TICKS_PER_FRAME = 4;
-  const MOVING_LINKS = 6000;   // links drawn per frame while the layout moves; all of them once it settles
+  // Links drawn per frame, while the layout moves and once it settles. With more than that on
+  // screen a frame draws an even sample, stronger to keep the look; zoomed in, they all fit.
+  const MOVING_LINKS = 6000;
+  const SETTLED_LINKS = 40000;
   const MOVING_LABELS = 1500;  // with more nodes than this, names wait until the layout settles
+  // Chrome strokes a line one device pixel wide or more through its general path code, which
+  // is slow with thousands of segments (about 190 ms for the 22,000 links of the bills map), and
+  // a thinner one through its hairline code (9 ms). So thin links are drawn just under a device
+  // pixel, with the alpha raised to keep their weight; only the thick ones keep their width.
+  const HAIRLINE = 0.95;       // device pixels
+  const HAIRLINE_MAX = 2;      // links thinner than this, in device pixels, are drawn as hairlines
+  const SQUARE_BELOW = 1.75;   // nodes smaller than this radius on screen are squares: cheaper to fill than arcs
   const FONT = '"Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif';
 
   // Short-range repulsion on a uniform grid. d3.forceManyBody takes about 100 ms a tick with
@@ -460,6 +473,7 @@
       if (this.running || !this.settings.physics) return;
       this.running = true;
       const sim = this.simulation;
+      let ticked = 0;   // when the ticks of the last frame ended
       const step = () => {
         if (!this.settings.physics) {
           this.running = false;
@@ -467,11 +481,15 @@
           return;
         }
         const start = performance.now();
+        // What the last frame spent besides ticking: drawing it and waiting for the next one.
+        const rest = ticked ? start - ticked : 0;
+        const budget = rest > 2 * TICK_BUDGET_MS ? Math.min(MAX_TICK_BUDGET_MS, rest) : TICK_BUDGET_MS;
         let ticks = 0;
         do {
           sim.tick();
           ticks++;
-        } while (ticks < MAX_TICKS_PER_FRAME && sim.alpha() >= sim.alphaMin() && performance.now() - start < TICK_BUDGET_MS);
+        } while (ticks < MAX_TICKS_PER_FRAME && sim.alpha() >= sim.alphaMin() && performance.now() - start < budget);
+        ticked = performance.now();
         if (sim.alpha() < sim.alphaMin()) {
           this.running = false;
           this.draw();
@@ -592,16 +610,22 @@
       ctx.translate(t.x, t.y);
       ctx.scale(t.k, t.k);
 
-      // Links, one path per thickness level and color. While the layout moves only a sample of
-      // them is drawn, so a frame stays cheap; the rest come back when it settles.
-      const sample = this.running ? Math.max(1, Math.ceil(this.visibleLinks.length / MOVING_LINKS)) : 1;
+      // Links, one path per thickness level and color. A frame draws at most MOVING_LINKS or
+      // SETTLED_LINKS of those on screen (estimated from the share of nodes on screen), as an even sample.
+      let shown = 0;
+      for (const n of this.visibleNodes) if (inView(n)) shown++;
+      const onScreen = this.visibleLinks.length * shown / this.visibleNodes.length;
+      const sample = Math.max(1, Math.ceil(onScreen / (this.running ? MOVING_LINKS : SETTLED_LINKS)));
       if (s.linkWidth > 0) {
         const stroke = (alpha, on, stride = 1) => {
           for (const { level, color, links } of this.linkGroups) {
             ctx.strokeStyle = color || INK;
-            ctx.lineWidth = s.linkWidth * LINK_LEVELS[level].width / t.k;
+            const px = s.linkWidth * LINK_LEVELS[level].width * dpr;   // the width asked for, in device pixels
+            const width = px < HAIRLINE_MAX ? Math.min(px, HAIRLINE) : px;
+            ctx.lineWidth = width / dpr / t.k;
             // A link with its own color carries meaning, so it is drawn stronger than the plain ones.
-            ctx.globalAlpha = Math.min(0.95, alpha * LINK_LEVELS[level].alpha * (color ? COLORED_LINK_BOOST : 1) * Math.sqrt(stride));
+            ctx.globalAlpha = Math.min(0.95, alpha * LINK_LEVELS[level].alpha * (color ? COLORED_LINK_BOOST : 1)
+              * Math.sqrt(stride) * (px / width));
             ctx.beginPath();
             for (let i = 0; i < links.length; i += stride) {
               const l = links[i];
@@ -620,19 +644,26 @@
       }
 
       // Nodes, one path per color. A thin ring in the surface color separates overlapping ones.
+      // Nodes too small on screen to show their shape are squares of the same area.
       const ring = t.k > 0.5 && sample === 1;
+      const square = SQUARE_BELOW / t.k;   // world radius below which a node is drawn as a square
       const paint = (keep, alpha) => {
         ctx.globalAlpha = alpha;
         ctx.strokeStyle = SURFACE;
-        ctx.lineWidth = 1 / t.k;
+        ctx.lineWidth = Math.min(1, HAIRLINE / dpr) / t.k;
         for (const [color, nodes] of this.batches) {
           ctx.fillStyle = color;
           ctx.beginPath();
           for (const n of nodes) {
             if (!inView(n) || !keep(n)) continue;
             const r = this.radius(n);
-            ctx.moveTo(n.x + r, n.y);
-            ctx.arc(n.x, n.y, r, 0, 6.2832);
+            if (r < square) {
+              const half = r * 0.886;   // half the side of a square with the area of the circle
+              ctx.rect(n.x - half, n.y - half, 2 * half, 2 * half);
+            } else {
+              ctx.moveTo(n.x + r, n.y);
+              ctx.arc(n.x, n.y, r, 0, 6.2832);
+            }
           }
           ctx.fill();
           if (ring) ctx.stroke();
