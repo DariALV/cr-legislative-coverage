@@ -557,3 +557,14 @@ Diario del tema. Las pruebas del 2026-11-08 se escribieron en `general.md` antes
 - Arranque: Noticias sin agrupar (al elegir se prende «Juntar»); Expedientes por tema (con firmantes, oculto salvo que se junte); Diputados por partido, con los nombres de grupo prendidos. El mapa guardado entre visitas se omite con el agrupamiento prendido; en Noticias la caché de la sesión se separa por agrupamiento y apagar «Juntar» vuelve al instante al mapa anterior.
 - Medido con el panel oculto (valen las proporciones): figuras 5 ms en diputados (5 grupos), 13 ms en noticias (5 medios, 29.875 nodos), ~12 ms en expedientes (26 temas; con la grilla de 180 eran 30–75 ms). Noticias por medio y color por tema: 5 regiones con su mezcla de temas; Expedientes juntado: 26 islas. Sin errores de consola en las 5 pestañas de fuerzas.
 - Limitación: en Diputados, juntar por provincia casi no separa los grupos (la co-votación y la repulsión fuerte ganan aun con la fuerza al máximo, 0,3).
+
+## 2026-11-11 16:39 — decisión: opacidad de los nodos e interruptor «Ocultar la red» en los grafos (#69)
+- Pedido del usuario: ajustar la opacidad de los nodos (antes descartada) y un botón para ocultar la red y ver solo las figuras.
+- Acordado, con las recomendaciones: «Opacidad de los nodos» en Apariencia (se recuerda como los demás ajustes; las fotos de diputados se multiplican por ella) e interruptor «Ocultar la red» en Grupos, activo solo con un agrupamiento, que esconde nodos, enlaces y nombres de nodos y deja figuras y nombres de grupos. No se recuerda: la página arranca con la red visible. Con la red oculta o los nodos en 0, el nodo bajo el puntero o seleccionado se sigue viendo con sus enlaces y vecinos.
+
+## 2026-11-11 16:41 — Opacidad de los nodos y «Ocultar la red» hechos y verificados (#69)
+- engine.js: `nodeOpacity` escala los nodos y sus fotos; `hideNetwork` deja en 0 nodos, enlaces y nombres de nodos. En los dos casos, el nodo bajo el puntero o seleccionado y sus vecinos se dibujan enteros, con sus enlaces. Las figuras y los nombres de grupo no cambian.
+- controls.js: «Opacidad de los nodos» en Apariencia › Nodos, que se recuerda por pestaña; interruptor «Ocultar la red» en Grupos (Noticias, Expedientes, Diputados), activo solo con un agrupamiento. No se guarda, «Restablecer» lo apaga y elegir «Nada» devuelve la red.
+- Verificado en Diputados (quedan solo las figuras de los partidos con sus nombres; el puntero sobre un nodo escondido lo muestra con sus enlaces), Expedientes y Noticias, sin errores de consola. Al probar, en la pestaña de diputados había ajustes guardados por el usuario (tamaño de nodos 0,3, fotos en 0): se dejaron como estaban.
+
+## 2026-11-11 16:46 — ver sample.md: piloto de la evaluación a ciegas de Jev, sorteo de 50 y página local para contestar
