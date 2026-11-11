@@ -201,3 +201,7 @@
 - El usuario confirma lo que Claude eligió en EmbeddingRunner (embeddings 2026-11-07 03:10): el chunk incluye el título y tiene un cuerpo mínimo de 64 tokens, se cae al nombre si no hay materias, se descartan los números sueltos y los batches son de ~8.192 tokens.
 - También confirma los criterios del analizador (embeddings 2026-11-07 12:59): recall@30, los empates cuentan a favor, mean renormalizado, estratos micro.
 - Se descarta el control con ~12 % de overlap (embeddings 2026-11-06 22:45). Todos los embeddings se hicieron con overlap 0, y se queda así.
+
+## 2026-11-11 10:14 — ver jev.md: pestaña de noticias con los embeddings qwen3 promediados por noticia (propuesta, boilerplate pendiente) (#69)
+
+## 2026-11-11 10:55 — ver jev.md: el boilerplate no forma fragmentos aparte (187 repetidos, 0,1 % de los tokens) y los embeddings de noticias son consultas de búsqueda de expedientes (#69 #32)
