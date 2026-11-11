@@ -11,9 +11,14 @@
   const sentence = (s) => s.charAt(0) + s.slice(1).toLowerCase();
   const cut = (s, n) => (s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s);
   const fmt = (v) => String(+(+v).toFixed(3)).replace(".", ",");
+  const plural = (n, one, many) => `${nf(n)} ${n === 1 ? one : many}`;
 
-  // Colors shared by the pages. Parties in the color people know them by, stepped to read on the
-  // dark surface; the scale goes from against (red) through a neutral light gray to in favor (green).
+  // Colors shared by the pages. Eight categorical hues stepped for the dark surface, in an order
+  // whose neighbors stay apart for color-blind readers. Parties in the color people know them by;
+  // the scale goes from against (red) through a neutral light gray to in favor (green).
+  const PALETTE = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
+  // Jev's stance on a bill, 0-100 (50 is neutral), in the nine steps of STANCE; most bills sit between 30 and 80.
+  const stanceBin = (stance) => Math.round(Math.max(0, Math.min(1, (stance - 15) / 70)) * 8);
   const PARTY_COLORS = { PPSO: "#4db8e8", PLN: "#2fa84f", FA: "#f2c53d", PUSC: "#e04e4e", CAC: "#f08a3c" };
   // The actors whose position on a bill Jev reads from the news, keyed like its questions.
   const ACTORS = {
@@ -87,26 +92,66 @@
       const open = innerWidth > 900 && !$("panel").classList.contains("closed");
       return { top: 56, right: open ? innerWidth - $("panel").getBoundingClientRect().left : 0, bottom: 0, left: 0 };
     };
+    bindPanelToggle();
+  }
+
+  /** The button that folds the panel; `onToggle` runs after it opens or closes. */
+  function bindPanelToggle(onToggle = () => {}) {
     $("panel-toggle").addEventListener("click", () => {
       const closed = $("panel").classList.toggle("closed");
       $("panel-toggle").setAttribute("aria-expanded", String(!closed));
+      onToggle(closed);
     });
   }
 
+  /** Shows `html` in the tooltip next to the pointer. */
+  function showTip(html, e) {
+    const tip = $("tip");
+    tip.innerHTML = html;
+    tip.hidden = false;
+    tip.style.left = Math.max(8, Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8)) + "px";
+    tip.style.top = Math.max(8, Math.min(e.clientY + 16, innerHeight - tip.offsetHeight - 8)) + "px";
+  }
+  const hideTip = () => { $("tip").hidden = true; };
+
   /** Shows `render(node)` next to the pointer while it is over a node. */
   function bindTooltip(graph, render) {
-    const tip = $("tip");
     graph.onHover = (node, e) => {
-      if (!node) { tip.hidden = true; return; }
-      tip.innerHTML = render(node);
-      tip.hidden = false;
-      tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + "px";
-      tip.style.top = Math.min(e.clientY + 16, innerHeight - tip.offsetHeight - 8) + "px";
+      if (node) showTip(render(node), e); else hideTip();
     };
   }
 
+  /** A legend whose rows switch members of `set` on and off; an empty set means "all of them".
+   *  `items` are {key, label, color, count} and `onChange` runs after every click. */
+  function isolateList(box, items, set, onChange) {
+    const render = () => {
+      box.innerHTML = items().map((item) => `
+        <button class="legend-item${set.has(item.key) ? " on" : ""}${set.size && !set.has(item.key) ? " off" : ""}" data-key="${esc(item.key)}">
+          <span class="swatch" style="background:${item.color}"></span>
+          <span class="legend-label" title="${esc(item.label)}">${esc(item.label)}</span>
+          <span class="legend-count">${nf(item.count)}</span>
+        </button>`).join("")
+        + (set.size ? `<button class="link-button" data-clear>Quitar selección</button>` : "");
+    };
+    box.addEventListener("click", (e) => {
+      const item = e.target.closest("[data-key]");
+      if (item) {
+        const key = items().find((i) => String(i.key) === item.dataset.key).key;
+        if (set.has(key)) set.delete(key); else set.add(key);
+      } else if (e.target.closest("[data-clear]")) {
+        set.clear();
+      } else {
+        return;
+      }
+      onChange();
+      render();
+    });
+    render();
+    return render;
+  }
+
   window.GraphUI = {
-    $, nf, esc, norm, sentence, cut, fmt, bindPanel, bindTooltip,
-    PARTY_COLORS, ACTORS, STANCE, positionBin, positionColor, leanOf, leanText, signed,
+    $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindPanelToggle, bindTooltip, showTip, hideTip, isolateList,
+    PALETTE, stanceBin, PARTY_COLORS, ACTORS, STANCE, positionBin, positionColor, leanOf, leanText, signed,
   };
 })();

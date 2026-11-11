@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flujo de la cobertura</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="chart" class="chart">
+    <svg id="flow" role="img" aria-label="Flujo de la cobertura: medio, tema del expediente y etapa según la noticia"></svg>
+    <canvas id="particles" aria-hidden="true"></canvas>
+  </main>
+
+  <header class="title">
+    <nav class="views" aria-label="Grafos">
+      <a href="index.html">Expedientes</a>
+      <a href="deputies.html">Diputados</a>
+      <a href="parties.html">Partidos y temas</a>
+      <a href="comentions.html">Co-mención</a>
+      <a href="flow.html" class="on" aria-current="page">Flujo</a>
+      <a href="stream.html">En el tiempo</a>
+    </nav>
+    <h1>De qué habla cada medio y en qué etapa</h1>
+    <p id="subtitle"></p>
+  </header>
+
+  <p id="missing" class="missing" hidden>
+    Faltan los datos. Generalos con <code>python private_visuals/graph/build_graph.py</code> y recargá la página.
+  </p>
+
+  <aside id="panel" class="panel">
+    <button id="panel-toggle" class="panel-toggle" aria-expanded="true" aria-controls="panel-body">
+      <span>Controles</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="panel-body" class="panel-body">
+      <details open>
+        <summary>Color</summary>
+        <div id="modes" class="modes" role="group" aria-label="Qué columna da el color"></div>
+        <div id="legend" class="legend"></div>
+        <p class="hint">Un clic en una fila, o en un bloque del gráfico, deja solo lo que pasa por ahí.</p>
+      </details>
+
+      <details open>
+        <summary>Filtros</summary>
+        <label class="switch"><span>Noticias que no dicen la etapa</span><input id="show-unstated" type="checkbox"><i></i></label>
+        <label class="switch"><span>Animación</span><input id="motion" type="checkbox"><i></i></label>
+      </details>
+
+      <details open>
+        <summary id="bills-title">Expedientes más cubiertos</summary>
+        <ul id="bills" class="similar"></ul>
+      </details>
+
+      <details>
+        <summary>Cómo leerlo</summary>
+        <p class="hint">Cada franja es un grupo de pares noticia–expediente con cobertura sustantiva; su grosor es cuántos son.
+          Una noticia que trata dos expedientes cuenta dos veces.</p>
+        <p class="hint">La etapa es la que dice la noticia (pregunta <code>stage</code> de Jev), no la del SIL ese día.
+          Los temas son los del mapa de expedientes: automáticos y sin validar.</p>
+      </details>
+    </div>
+  </aside>
+
+  <div id="tip" class="tip" hidden></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="../output/graph/bills.js" onerror="window.GRAPH_BILLS = null"></script>
+  <script src="controls.js"></script>
+  <script src="press.js"></script>
+  <script src="flow.js"></script>
+</body>
+</html>

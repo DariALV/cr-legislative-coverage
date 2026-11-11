@@ -12,7 +12,12 @@ The stance of a bill is the mean Jev stance score (0 against, 1 in favor) over i
 The position of a party (or the Executive) on a bill is the mean of what its substantive news
 attribute to it: in favor +1, against -1, neutral or divided 0; news that don't mention it are skipped.
 
-Only public fields go in (bill number, name, type, dates, status and counts): no article text.
+The press views (co-mentions, outlet -> topic -> stage flow, coverage over time) read the table
+of substantive pairs: one row per news item and bill, with the stage of the bill according to the
+news (Jev's `stage` question). News items are numbered, with only their date and outlet.
+
+Only public fields go in (bill number, name, type, dates, status and counts): no article text,
+titles, URLs or news ids.
 Writes private_visuals/output/graph/bills.js.
 
 Usage: python private_visuals/graph/build_graph.py [--neighbors 5] [--resolution 0.6]
@@ -41,6 +46,9 @@ TOPIC_NAME_WORDS = 3  # descriptors in a topic name
 ACTORS = ["pueblo_soberano", "liberacion_nacional", "frente_amplio", "unidad_social_cristiana",
           "agenda_ciudadana", "executive"]
 FAVOR = {"in_favor": 1, "strongly_in_favor": 1, "against": -1, "strongly_against": -1, "neutral_or_divided": 0}
+# Options of Jev's `stage` question, in the order of the legislative process.
+STAGES = ["filing", "committee", "first_debate", "second_debate", "constitutional_court", "veto_or_signing",
+          "archived_or_rejected", "not_stated"]
 
 
 def is_mention(explicit, implicit):
@@ -122,8 +130,9 @@ def initial_positions(unit, topic_of, n_topics):
 
 
 def load_coverage(con):
-  """bill -> coverage counts and mean stance, from the gate and detail stages of the corpus run."""
-  centrality, stance, attributed = {}, {}, defaultdict(dict)
+  """bill -> coverage counts and mean stance, from the gate and detail stages of the corpus run.
+  Also returns the substantive pairs as (news id, bill, stage according to the news)."""
+  centrality, stance, stage, attributed = {}, {}, {}, defaultdict(dict)
   with open(RUN_DIR / "details.csv", encoding="utf-8") as f:
     for row in csv.DictReader(f):
       if not row["bill"]:
@@ -132,6 +141,8 @@ def load_coverage(con):
       if row["question"] in ACTORS:
         if row["choice"] in FAVOR:
           attributed[key][row["question"]] = FAVOR[row["choice"]]
+      elif row["question"] == "stage":
+        stage[key] = row["choice"]
       elif row["score"] == "":
         continue
       elif row["question"] == "centrality":
@@ -142,6 +153,7 @@ def load_coverage(con):
   coverage = defaultdict(lambda: {"mention": 0, "substantive": 0, "main": 0, "outlets": set(), "stances": [],
                                   "positions": defaultdict(list)})
   pairs = Counter()
+  substantive = []
   with open(RUN_DIR / "gate.csv", encoding="utf-8") as f:
     for row in csv.DictReader(f):
       if row["match"] != "1" or not is_mention(float(row["explicit"]), float(row["implicit"])):
@@ -154,6 +166,7 @@ def load_coverage(con):
         continue
       bill["substantive"] += 1
       pairs["substantive"] += 1
+      substantive.append((key[0], key[1], stage.get(key, "not_stated")))
       bill["outlets"].add(outlet.get(key[0]))
       if centrality[key] >= 0.75:
         bill["main"] += 1
@@ -161,7 +174,27 @@ def load_coverage(con):
         bill["stances"].append(stance[key])
       for actor, value in attributed.get(key, {}).items():
         bill["positions"][actor].append(value)
-  return coverage, pairs
+  return coverage, pairs, substantive
+
+
+def press_table(con, substantive, node_of):
+  """The substantive pairs for the press views: news items numbered by date (only date and
+  outlet are kept), and one row per pair with the node of the bill and the stage it is in
+  according to the news."""
+  published = {news_id: (date[:10], outlet) for news_id, date, outlet in con.execute(
+    "SELECT id, date_published, organization FROM news_articles") if date}
+  rows = [(news_id, node_of[bill], stage) for news_id, bill, stage in substantive
+          if news_id in published and bill in node_of]
+  outlets = sorted({published[news_id][1] for news_id, _, _ in rows})
+  ordered = sorted({news_id for news_id, _, _ in rows}, key=lambda news_id: (published[news_id], news_id))
+  index = {news_id: i for i, news_id in enumerate(ordered)}
+  return {
+    "outlets": outlets,
+    "stages": STAGES,
+    "news": [[published[news_id][0], outlets.index(published[news_id][1])] for news_id in ordered],
+    "pairs": sorted([index[news_id], node, STAGES.index(stage)] for news_id, node, stage in rows),
+    "skipped": len(substantive) - len(rows),
+  }
 
 
 def main():
@@ -192,7 +225,8 @@ def main():
              "size": len(members), "color": slots[topic]}
             for topic, members in enumerate(communities)]
 
-  coverage, pairs = load_coverage(con)
+  coverage, pairs, substantive = load_coverage(con)
+  press = press_table(con, substantive, {number: i for i, number in enumerate(numbers)})
   bills = {row[0]: row[1:] for row in con.execute(
     "SELECT number, name, file_type, date_proposed, status, law_number FROM bills")}
   as_of = con.execute("SELECT max(date_extracted) FROM bills").fetchone()[0][:10]
@@ -236,6 +270,7 @@ def main():
     "topics": topics,
     "nodes": nodes,
     "links": links,
+    "press": press,
   }
   OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
   payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
@@ -251,6 +286,12 @@ def main():
         f"p25 {quantile(0.25)}, median {quantile(0.5)}, p75 {quantile(0.75)}, p90 {quantile(0.9)}, max {stance_values[-1]}")
   for a, actor in enumerate(ACTORS):
     print(f"  position of {actor}: {sum(1 for n in nodes if any(p[0] == a for p in n[14]))} bills")
+  per_news = Counter(news for news, _, _ in press["pairs"])
+  print(f"press table: {len(press['pairs'])} substantive pairs in {len(press['news'])} news "
+        f"({sum(1 for n in per_news.values() if n > 1)} with two or more bills), "
+        f"{press['news'][0][0]} to {press['news'][-1][0]}, skipped {press['skipped']}")
+  for s, stage in enumerate(STAGES):
+    print(f"  stage {stage}: {sum(1 for p in press['pairs'] if p[2] == s)}")
   for t in topics:
     print(f"  {t['size']:>4}  color {t['color']}  {t['name']}")
   print(f"{OUT_PATH.stat().st_size / 1e6:.1f} MB -> {OUT_PATH}")

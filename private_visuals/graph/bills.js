@@ -3,20 +3,17 @@
 (function () {
   "use strict";
   const D = window.GRAPH_BILLS;
-  const { $, nf, esc, norm, sentence, cut, fmt, bindPanel, bindTooltip, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
+  const { $, nf, esc, norm, sentence, cut, fmt, bindPanel, bindTooltip, PALETTE, stanceBin, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
   if (!D) {
     $("missing").hidden = false;
     return;
   }
 
   // ---------- colors ----------
-  // Eight categorical hues stepped for the dark surface. Topics outnumber them, so the build
-  // gives neighboring topics different slots and the map labels carry the identity.
-  const PALETTE = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
+  // Topics outnumber the eight hues of the palette, so the build gives neighboring topics
+  // different slots and the map labels carry the identity.
   const NO_COVERAGE = "#63635d";
   const OLD = "#2f2f2c";
-  // Stance 0-100 (50 is neutral) in nine steps; most bills sit between 30 and 80.
-  const stanceBin = (stance) => Math.round(Math.max(0, Math.min(1, (stance - 15) / 70)) * 8);
   const STATUS = {
     "in progress": { label: "En trámite", color: PALETTE[0] },
     law: { label: "Ley", color: PALETTE[2] },

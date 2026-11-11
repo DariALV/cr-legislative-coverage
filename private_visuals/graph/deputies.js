@@ -3,7 +3,7 @@
 (function () {
   "use strict";
   const D = window.GRAPH_DEPUTIES;
-  const { $, nf, esc, norm, bindPanel, bindTooltip, PARTY_COLORS } = window.GraphUI;
+  const { $, nf, esc, norm, bindPanel, bindTooltip, PALETTE, PARTY_COLORS } = window.GraphUI;
   if (!D) {
     $("missing").hidden = false;
     return;
@@ -28,7 +28,6 @@
   };
   const OTHER_PARTY = { short: "Otro", color: "#8f8e85" };
   const partyOf = (name) => PARTIES[name] || OTHER_PARTY;
-  const PALETTE = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
   const PROVINCES = ["San José", "Alajuela", "Cartago", "Heredia", "Guanacaste", "Puntarenas", "Limón"];
   const provinceColor = (name) => PALETTE[PROVINCES.indexOf(name)] || OTHER_PARTY.color;
   // Thicker links for the pairs that almost always vote together.

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cobertura en el tiempo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="chart" class="chart">
+    <svg id="stream" role="img" aria-label="Cobertura sustantiva por tema y por semana"></svg>
+  </main>
+
+  <header class="title">
+    <nav class="views" aria-label="Grafos">
+      <a href="index.html">Expedientes</a>
+      <a href="deputies.html">Diputados</a>
+      <a href="parties.html">Partidos y temas</a>
+      <a href="comentions.html">Co-mención</a>
+      <a href="flow.html">Flujo</a>
+      <a href="stream.html" class="on" aria-current="page">En el tiempo</a>
+    </nav>
+    <h1>De qué temas habló la prensa cada semana</h1>
+    <p id="subtitle"></p>
+  </header>
+
+  <p id="missing" class="missing" hidden>
+    Faltan los datos. Generalos con <code>python private_visuals/graph/build_graph.py</code> y recargá la página.
+  </p>
+
+  <aside id="panel" class="panel">
+    <button id="panel-toggle" class="panel-toggle" aria-expanded="true" aria-controls="panel-body">
+      <span>Controles</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="panel-body" class="panel-body">
+      <details open>
+        <summary>Forma</summary>
+        <div id="shapes" class="modes" role="group" aria-label="Forma del gráfico"></div>
+        <p id="shape-note" class="hint"></p>
+      </details>
+
+      <details open>
+        <summary>Temas</summary>
+        <div id="groups" class="legend"></div>
+      </details>
+
+      <details>
+        <summary>Medios</summary>
+        <div id="outlets" class="legend"></div>
+      </details>
+
+      <details open>
+        <summary id="bills-title">Expedientes más cubiertos</summary>
+        <ul id="bills" class="similar"></ul>
+        <p id="bills-note" class="hint"></p>
+      </details>
+
+      <details>
+        <summary>Cómo leerlo</summary>
+        <p class="hint">El grosor de cada franja es cuántos pares noticia–expediente con cobertura sustantiva tuvo el tema esa semana
+          (de lunes a domingo). Una noticia que trata dos expedientes cuenta dos veces.</p>
+        <p class="hint">La primera semana solo tiene tres días (1 al 3 de mayo). Los temas son los del mapa de expedientes:
+          automáticos y sin validar. Dos temas comparten color con otro; el nombre sobre la franja y la lista los distinguen.</p>
+      </details>
+    </div>
+  </aside>
+
+  <div id="tip" class="tip" hidden></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="../output/graph/bills.js" onerror="window.GRAPH_BILLS = null"></script>
+  <script src="controls.js"></script>
+  <script src="press.js"></script>
+  <script src="stream.js"></script>
+</body>
+</html>
