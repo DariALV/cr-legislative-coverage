@@ -1,0 +1,271 @@
+{
+  "gate": {
+    "genre": {
+      "type": "choice",
+      "instructions": "What kind of piece is `news`?",
+      "criteria": {
+        "news_report": "A news report on recent events.",
+        "opinion": "An opinion column, editorial or letter, where the author argues a position.",
+        "interview": "An interview, mostly the questions and answers of one person.",
+        "analysis": "An analysis, explainer or long feature that goes beyond the latest event."
+      }
+    },
+    "explicit": {
+      "type": "noul",
+      "instructions": "Does `news` identify `candidates.b<number>` directly, by its expediente number, its official name, or a nickname for it? `candidates.b<number>` is a file of Costa Rica's Legislative Assembly, identified by its expediente number: a bill of law, a constitutional reform, an appointment, an investigative committee or a change to the Assembly's rules.",
+      "criteria": {
+        "true": "The news gives this file's expediente number, quotes its official title, or uses a nickname that refers to this file.",
+        "false": "The news never names this file, even if it discusses a similar subject."
+      }
+    },
+    "implicit": {
+      "type": "noul",
+      "instructions": "Does `news` talk about `candidates.b<number>` without naming it, by describing what it would do or change, or by pointing to who proposed it or where it stands in the Assembly? `candidates.b<number>` is a file of Costa Rica's Legislative Assembly, identified by its expediente number: a bill of law, a constitutional reform, an appointment, an investigative committee or a change to the Assembly's rules.",
+      "criteria": {
+        "true": "The news describes this specific file, or says who proposed it or what step it is in, without giving its number or title.",
+        "false": "The news does not describe this specific file."
+      }
+    }
+  },
+  "details_news": {
+    "press_release": {
+      "type": "noul",
+      "instructions": "Is `news` a news report that mainly passes on one source's statement, announcement or communiqué (an institution, a party, a deputy, a union, an organization or a government office) in that source's own words and framing, with little or no reporting of its own?",
+      "criteria": {
+        "true": "The text is built around one source's announcement or statement: it quotes and paraphrases that source, takes its side, and adds no other voices, no reactions, and at most a sentence or two of background.",
+        "false": "The text is an opinion column or signed commentary, an interview or an analysis; or it is reporting that adds other sources, reactions, data or background; or the reporter explains a document (a bill's text and exposition of motives, a vote, a technical report) in their own words rather than relaying someone's statements."
+      }
+    },
+    "main_frame": {
+      "type": "choice",
+      "instructions": "What is the dominant frame of `news`?",
+      "criteria": {
+        "conflict": "A disagreement between political actors: who attacks whom, who wins or loses.",
+        "economic": "The economic consequences of the issue: costs, gains, jobs, prices or taxes.",
+        "human_interest": "The personal or emotional side of the issue, told through people affected by it.",
+        "responsibility": "Who caused a problem or who should solve it.",
+        "morality": "Moral or religious principles, what is right or wrong.",
+        "policy": "What a public policy or a bill does and how it would work."
+      }
+    },
+    "assembly_image": {
+      "type": "score",
+      "instructions": "How does `news` portray the Legislative Assembly as an institution?",
+      "criteria": [
+        "Very negatively: useless, corrupt, obstructive or out of touch.",
+        "Somewhat negatively.",
+        "Neutrally, or the news does not judge the Assembly as a whole.",
+        "Somewhat positively.",
+        "Very positively: effective, responsive or doing its job well."
+      ]
+    },
+    "headline_misleading": {
+      "type": "noul",
+      "instructions": "Does the title of `news` exaggerate or contradict what its content says?"
+    }
+  },
+  "details": {
+    "centrality": {
+      "type": "score",
+      "instructions": "How much of `news` is about `bills.b<number>`?",
+      "criteria": [
+        "The file appears in passing, in one sentence or in a list, and the news is about something else.",
+        "The file is one part of the news but not its main subject.",
+        "The news is mainly about the file."
+      ]
+    },
+    "stance": {
+      "type": "score",
+      "instructions": "What opinion of `bills.b<number>` does `news` convey as a whole, counting the people it quotes?",
+      "criteria": [
+        "The news is strongly critical of the file.",
+        "The news is mildly critical of the file.",
+        "The news is neutral or balanced about the file.",
+        "The news is mildly favorable to the file.",
+        "The news is strongly favorable to the file."
+      ]
+    },
+    "author_judges": {
+      "type": "noul",
+      "instructions": "Does the author of `news`, and not a person the news quotes, say that `bills.b<number>` is good or bad?"
+    },
+    "new_development": {
+      "type": "noul",
+      "instructions": "Does `news` report something that just happened to `bills.b<number>` in the legislative process, such as its filing, a committee report, a vote, a veto or its publication as law?"
+    },
+    "pueblo_soberano": {
+      "type": "choice",
+      "instructions": "What position on `bills.b<number>` does `news` attribute to the party Pueblo Soberano (PPSO), the governing party since May 2026. News call it «el oficialismo» when they talk about the Assembly that took office in May 2026; «el oficialismo» of the previous Assembly (2022-2026) was another party and does not count as Pueblo Soberano, through its deputies or spokespeople? `deputies` lists each deputy's party.",
+      "criteria": {
+        "not_mentioned": "The news does not say what this actor thinks of the file.",
+        "strongly_against": "The actor firmly opposes the file.",
+        "against": "The actor has objections to the file or leans against it.",
+        "neutral_or_divided": "The actor's position is neutral, undecided, or its members are split.",
+        "in_favor": "The actor supports the file, maybe with reservations.",
+        "strongly_in_favor": "The actor firmly supports or champions the file."
+      }
+    },
+    "liberacion_nacional": {
+      "type": "choice",
+      "instructions": "What position on `bills.b<number>` does `news` attribute to the party Liberación Nacional (PLN), through its deputies or spokespeople? `deputies` lists each deputy's party.",
+      "criteria": {
+        "not_mentioned": "The news does not say what this actor thinks of the file.",
+        "strongly_against": "The actor firmly opposes the file.",
+        "against": "The actor has objections to the file or leans against it.",
+        "neutral_or_divided": "The actor's position is neutral, undecided, or its members are split.",
+        "in_favor": "The actor supports the file, maybe with reservations.",
+        "strongly_in_favor": "The actor firmly supports or champions the file."
+      }
+    },
+    "frente_amplio": {
+      "type": "choice",
+      "instructions": "What position on `bills.b<number>` does `news` attribute to the party Frente Amplio (FA), through its deputies or spokespeople? `deputies` lists each deputy's party.",
+      "criteria": {
+        "not_mentioned": "The news does not say what this actor thinks of the file.",
+        "strongly_against": "The actor firmly opposes the file.",
+        "against": "The actor has objections to the file or leans against it.",
+        "neutral_or_divided": "The actor's position is neutral, undecided, or its members are split.",
+        "in_favor": "The actor supports the file, maybe with reservations.",
+        "strongly_in_favor": "The actor firmly supports or champions the file."
+      }
+    },
+    "unidad_social_cristiana": {
+      "type": "choice",
+      "instructions": "What position on `bills.b<number>` does `news` attribute to the party Unidad Social Cristiana (PUSC), through its deputies or spokespeople? `deputies` lists each deputy's party.",
+      "criteria": {
+        "not_mentioned": "The news does not say what this actor thinks of the file.",
+        "strongly_against": "The actor firmly opposes the file.",
+        "against": "The actor has objections to the file or leans against it.",
+        "neutral_or_divided": "The actor's position is neutral, undecided, or its members are split.",
+        "in_favor": "The actor supports the file, maybe with reservations.",
+        "strongly_in_favor": "The actor firmly supports or champions the file."
+      }
+    },
+    "agenda_ciudadana": {
+      "type": "choice",
+      "instructions": "What position on `bills.b<number>` does `news` attribute to the party Coalición Agenda Ciudadana (CAC), through its deputies or spokespeople? `deputies` lists each deputy's party.",
+      "criteria": {
+        "not_mentioned": "The news does not say what this actor thinks of the file.",
+        "strongly_against": "The actor firmly opposes the file.",
+        "against": "The actor has objections to the file or leans against it.",
+        "neutral_or_divided": "The actor's position is neutral, undecided, or its members are split.",
+        "in_favor": "The actor supports the file, maybe with reservations.",
+        "strongly_in_favor": "The actor firmly supports or champions the file."
+      }
+    },
+    "executive": {
+      "type": "choice",
+      "instructions": "What position on `bills.b<number>` does `news` attribute to the Executive Branch: the President, a minister or a government spokesperson?",
+      "criteria": {
+        "not_mentioned": "The news does not say what this actor thinks of the file.",
+        "strongly_against": "The actor firmly opposes the file.",
+        "against": "The actor has objections to the file or leans against it.",
+        "neutral_or_divided": "The actor's position is neutral, undecided, or its members are split.",
+        "in_favor": "The actor supports the file, maybe with reservations.",
+        "strongly_in_favor": "The actor firmly supports or champions the file."
+      }
+    },
+    "voice_business": {
+      "type": "noul",
+      "instructions": "Does `news` quote or paraphrase business owners, chambers of commerce or industry associations about `bills.b<number>`?"
+    },
+    "voice_labor": {
+      "type": "noul",
+      "instructions": "Does `news` quote or paraphrase unions or workers about `bills.b<number>`?"
+    },
+    "voice_experts": {
+      "type": "noul",
+      "instructions": "Does `news` quote or paraphrase academics, researchers or independent experts about `bills.b<number>`?"
+    },
+    "voice_civil_society": {
+      "type": "noul",
+      "instructions": "Does `news` quote or paraphrase non-profit organizations, activists or community groups about `bills.b<number>`?"
+    },
+    "voice_institutions": {
+      "type": "noul",
+      "instructions": "Does `news` quote or paraphrase public institutions other than the Assembly and the Executive (for example CCSS, the Comptroller General, the Ombudsman, the Constitutional Court or a municipality) about `bills.b<number>`?"
+    },
+    "voice_affected": {
+      "type": "noul",
+      "instructions": "Does `news` quote or paraphrase ordinary people directly affected by `bills.b<number>`, speaking for themselves?",
+      "criteria": {
+        "true": "The news quotes or paraphrases people who live the consequences of the file in their own lives, such as patients, students, workers, pensioners, residents or their relatives.",
+        "false": "The only people quoted are deputies, ministers or other officials, public institutions, unions, chambers, organizations, experts or the author."
+      }
+    },
+    "stage": {
+      "type": "choice",
+      "instructions": "According to `news`, where does `bills.b<number>` stand in the legislative process?",
+      "criteria": {
+        "filing": "The file was just presented or is waiting to start in committee.",
+        "committee": "The file is being discussed in a committee, or the committee just approved its report and the file now waits for the plenary.",
+        "first_debate": "The plenary is discussing the file in first debate, or just voted it in first debate.",
+        "second_debate": "The file is in the plenary for, or just went through, the second and final debate.",
+        "veto_or_signing": "The file was approved and is being signed, vetoed or published as law.",
+        "constitutional_court": "The file is under review by the Constitutional Court (Sala IV).",
+        "archived_or_rejected": "The file was archived, rejected or withdrawn.",
+        "not_stated": "The news does not say where the file stands."
+      }
+    },
+    "explains_content": {
+      "type": "noul",
+      "instructions": "Does `news` explain what `bills.b<number>` would do or change?"
+    },
+    "explains_impact": {
+      "type": "noul",
+      "instructions": "Does `news` say who would be affected by `bills.b<number>` or what its consequences would be?"
+    },
+    "gives_figures": {
+      "type": "noul",
+      "instructions": "Does `news` give figures about what `bills.b<number>` would do or cause, such as costs, amounts, rates or numbers of people affected? Penalties such as years in prison or fines count. Expediente numbers, law numbers, dates and vote counts do not count."
+    },
+    "conflict_frame": {
+      "type": "noul",
+      "instructions": "Does `news` present `bills.b<number>` mainly as a fight between political actors, rather than explaining the file itself?"
+    },
+    "in_headline": {
+      "type": "noul",
+      "instructions": "Does the title of `news` refer to `bills.b<number>`?"
+    },
+    "names_proponent": {
+      "type": "noul",
+      "instructions": "Does `news` say who proposed `bills.b<number>`?"
+    },
+    "deputy_quoted": {
+      "type": "noul",
+      "instructions": "Does `news` quote or paraphrase a deputy about `bills.b<number>`?"
+    },
+    "background": {
+      "type": "noul",
+      "instructions": "Does `news` give background on `bills.b<number>`, such as when it was filed or what happened to it before?"
+    },
+    "explains_procedure": {
+      "type": "noul",
+      "instructions": "Does `news` explain how the legislative process works for `bills.b<number>`, for example what a debate, a committee report, a fast track or a waiver of procedures means, or how many votes it needs?"
+    },
+    "vote_reported": {
+      "type": "noul",
+      "instructions": "Does `news` report how `bills.b<number>` was voted, such as the vote count or how deputies or parties voted?"
+    },
+    "votes_outlook": {
+      "type": "noul",
+      "instructions": "Does `news` say whether `bills.b<number>` has or lacks the votes it needs to pass?"
+    },
+    "constitutionality": {
+      "type": "noul",
+      "instructions": "Does `news` raise doubts about the constitutionality of `bills.b<number>`, or mention a consultation or a ruling of the Constitutional Court (Sala IV) about it?"
+    },
+    "international": {
+      "type": "noul",
+      "instructions": "Does `news` compare `bills.b<number>` with other countries, or cite international organizations (such as the OECD, the IMF or the UN) about it?"
+    },
+    "human_story": {
+      "type": "noul",
+      "instructions": "Does `news` illustrate `bills.b<number>` with the case of a specific person or family?"
+    },
+    "next_step": {
+      "type": "noul",
+      "instructions": "Does `news` say what comes next for `bills.b<number>` in the legislative process, such as its next debate, the committee or plenary it goes to, or a vote that is scheduled?"
+    }
+  }
+}

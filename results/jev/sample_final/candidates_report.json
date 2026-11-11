@@ -1,0 +1,45 @@
+{
+  "k": 50,
+  "news": 300,
+  "news_naming_bills": 34,
+  "bills_named": 48,
+  "named_in_top_k": 41,
+  "added": 7,
+  "added_rows": [
+    {
+      "news_id": "f41ffd1ad61e1d63426400af9acfc8e12a3c8127a03a1dd73884a293b0eb9c96",
+      "bill": 24738,
+      "ranker_rank": 1934
+    },
+    {
+      "news_id": "9eb825a9bddc1c8c926ca26f10536da011d9c613e8b6e81186e7777dcc1f7e6e",
+      "bill": 24461,
+      "ranker_rank": 232
+    },
+    {
+      "news_id": "d0905fbbeb25ad01615b49e1500f1b7751af9edaa7e7ef3bd5d7d85bb8e02035",
+      "bill": 24753,
+      "ranker_rank": 2242
+    },
+    {
+      "news_id": "d0372ba6705b0ba579652106879995396a062a31d8d464e664bbf494c05fdf85",
+      "bill": 24364,
+      "ranker_rank": 291
+    },
+    {
+      "news_id": "7211c746c750fd81efd9e375d18d12f2c6595c996ed03a3d0e8ad7e84b457f4b",
+      "bill": 23572,
+      "ranker_rank": 331
+    },
+    {
+      "news_id": "8e8d8901bf3bdad646c0f5082688e00e571e5c19bec04346af6e46218ba63530",
+      "bill": 23347,
+      "ranker_rank": 435
+    },
+    {
+      "news_id": "439375e98771821bf9ba5ba20ddf4b269a795eda3c735e331a265387c4ba686d",
+      "bill": 23216,
+      "ranker_rank": 406
+    }
+  ]
+}

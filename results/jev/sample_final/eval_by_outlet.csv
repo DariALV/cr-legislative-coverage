@@ -1,0 +1,9 @@
+subset,outlet,threshold,news,truth_bills,ranker_recall,recall,recall_given_candidate,precision,found,missed,false_positives,positive_news_found,none_accuracy,positives,negatives
+all,CRHoy,0.5,75,25,0.92,0.8,0.8696,0.5556,20,5,16,0.8182,0.9434,22,53
+all,El Mundo,0.5,74,31,0.871,0.7419,0.8519,0.7931,23,8,6,0.7857,0.9348,28,46
+all,La Nación,0.5,75,35,0.9143,0.8857,0.9688,0.7045,31,4,13,0.9231,0.9184,26,49
+all,Semanario,0.5,76,41,0.9268,0.878,0.9474,0.8,36,5,9,0.8462,0.92,26,50
+correcto,CRHoy,0.5,51,15,0.8667,0.8,0.9231,0.7059,12,3,5,0.8,0.9722,15,36
+correcto,El Mundo,0.5,51,20,0.95,0.85,0.8947,0.8947,17,3,2,0.8947,0.9688,19,32
+correcto,La Nación,0.5,44,12,1.0,0.9167,0.9167,0.7857,11,1,3,0.9167,0.9688,12,32
+correcto,Semanario,0.5,43,20,1.0,0.9,0.9,0.8182,18,2,4,0.9375,0.963,16,27
