@@ -3,17 +3,11 @@
 (function () {
   "use strict";
   const D = window.GRAPH_BILLS;
-  const $ = (id) => document.getElementById(id);
+  const { $, nf, esc, norm, sentence, cut, fmt, bindPanel, bindTooltip, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
   if (!D) {
     $("missing").hidden = false;
     return;
   }
-
-  const nf = (n) => n.toLocaleString("es-CR");
-  const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-  const sentence = (s) => s.charAt(0) + s.slice(1).toLowerCase();
-  const cut = (s, n) => (s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s);
 
   // ---------- colors ----------
   // Eight categorical hues stepped for the dark surface. Topics outnumber them, so the build
@@ -21,7 +15,6 @@
   const PALETTE = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
   const NO_COVERAGE = "#63635d";
   const OLD = "#2f2f2c";
-  const STANCE = d3.scaleLinear().domain([0, 4, 8]).range(["#d9435e", "#cfccc2", "#23a878"]).interpolate(d3.interpolateLab);
   // Stance 0-100 (50 is neutral) in nine steps; most bills sit between 30 and 80.
   const stanceBin = (stance) => Math.round(Math.max(0, Math.min(1, (stance - 15) / 70)) * 8);
   const STATUS = {
@@ -34,12 +27,14 @@
   // ---------- nodes ----------
   const asOf = new Date(D.meta.as_of);
   const nodes = D.nodes.map((row, i) => {
-    const [number, name, type, date, status, law, topic, mention, substantive, main, outlets, stance, x, y] = row;
+    const [number, name, type, date, status, law, topic, mention, substantive, main, outlets, stance, x, y, positions = []] = row;
     const age = date ? (asOf - new Date(date)) / (365.25 * 864e5) : null;
     const readable = sentence(name);
     return {
       i, number, name, type: D.types[type] || "", date, status: D.statuses[status] || "", law, topic,
       mention, substantive, main, outlets, stance, age, old: age != null && age > OLD_YEARS,
+      // actor index -> what the news say that actor thinks of the bill: mean from -1 to 1, and how many news
+      positions: new Map(positions.map(([actor, value, news]) => [actor, { value: value / 100, news }])),
       x, y,
       size: 3.2 + 1.1 * Math.sqrt(substantive),
       shortLabel: String(number),
@@ -55,6 +50,11 @@
     if (!n.substantive) return n.old ? "old" : "none";
     const bin = stanceBin(n.stance ?? 50);
     return bin <= 2 ? "against" : bin >= 6 ? "favor" : "neutral";
+  };
+  const actors = (D.actors || []).map((key, index) => ({ index, ...ACTORS[key] }));
+  const positionGroup = (n) => {
+    const position = n.positions.get(S.actor);
+    return position ? leanOf(position.value) : n.substantive ? "unstated" : "none";
   };
   const MODES = {
     topic: {
@@ -85,10 +85,32 @@
       group: (n) => n.status,
       legend: Object.entries(STATUS).map(([key, s]) => ({ key, label: s.label, color: s.color })),
     },
+    position: {
+      label: "Partidos",
+      note: "Posición: promedio de lo que las noticias con cobertura sustantiva dicen que ese actor opina del expediente (a favor +1, en contra −1).",
+      color: (n) => {
+        const position = n.positions.get(S.actor);
+        return position ? positionColor(position.value) : n.substantive ? NO_COVERAGE : OLD;
+      },
+      group: positionGroup,
+      get legend() {
+        const who = actors[S.actor].short;
+        return [
+          { key: "against", label: `${who} en contra`, color: positionColor(-0.75) },
+          { key: "neutral", label: `${who} dividido`, color: positionColor(0) },
+          { key: "favor", label: `${who} a favor`, color: positionColor(0.75) },
+          { key: "unstated", label: `Cubierto, sin posición de ${who}`, color: NO_COVERAGE },
+          { key: "none", label: "Sin cobertura", color: OLD, outline: true },
+        ];
+      },
+      scale: true,
+      actors: true,
+    },
   };
+  if (!actors.length) delete MODES.position;   // data built before positions existed
 
   // ---------- state ----------
-  const S = { mode: "topic", isolated: new Set(), query: "", showUncovered: true, showOld: true };
+  const S = { mode: "topic", isolated: new Set(), query: "", showUncovered: true, showOld: true, actor: 0, topicFocus: null };
   const graph = new ForceGraph($("graph"));
   graph.groups = D.topics.map((t, i) => ({ label: t.name, nodes: nodes.filter((n) => n.topic === i) }));
   graph.setData(nodes, links);
@@ -108,8 +130,9 @@
     const mode = MODES[S.mode];
     const found = matches();
     let set = null;
-    if (found || S.isolated.size) {
-      set = new Set((found || nodes).filter((n) => n.visible && (!S.isolated.size || S.isolated.has(mode.group(n)))));
+    if (found || S.isolated.size || S.topicFocus != null) {
+      set = new Set((found || nodes).filter((n) => n.visible && (!S.isolated.size || S.isolated.has(mode.group(n)))
+        && (S.topicFocus == null || n.topic === S.topicFocus)));
       if (!set.size) set = new Set([{}]);  // nothing matches: dim everything
     }
     graph.setHighlight(set);
@@ -137,8 +160,54 @@
       </button>`).join("");
     $("scale").hidden = !mode.scale;
     $("legend-note").textContent = mode.note;
-    $("legend-clear").hidden = !S.isolated.size;
+    $("legend-clear").hidden = !S.isolated.size && S.topicFocus == null;
+    $("actors").hidden = !mode.actors;
+    renderTopicSummary();
   }
+
+  // Under the "Partidos" mode: the topics where the chosen actor has a position on enough bills,
+  // from the one it backs least to the one it backs most. Click one to light up its bills.
+  const SUMMARY_MIN_BILLS = 3;
+  function renderTopicSummary() {
+    const box = $("topic-summary");
+    box.hidden = !MODES[S.mode].actors;
+    if (box.hidden) return;
+    const byTopic = new Map();
+    for (const n of nodes) {
+      const position = n.visible && n.positions.get(S.actor);
+      if (!position) continue;
+      if (!byTopic.has(n.topic)) byTopic.set(n.topic, []);
+      byTopic.get(n.topic).push(position.value);
+    }
+    const rows = [...byTopic].filter(([, values]) => values.length >= SUMMARY_MIN_BILLS)
+      .map(([topic, values]) => ({ topic, n: values.length, value: values.reduce((a, b) => a + b, 0) / values.length }))
+      .sort((a, b) => a.value - b.value);
+    box.innerHTML = `<h4>Por tema (${SUMMARY_MIN_BILLS} expedientes o más)</h4>` + rows.map((r) => `
+      <button class="legend-item${S.topicFocus === r.topic ? " on" : ""}" data-topic="${r.topic}">
+        <span class="swatch" style="background:${positionColor(r.value)}"></span>
+        <span class="legend-label">${esc(D.topics[r.topic].name)}</span>
+        <span class="legend-count">${signed(r.value)} · ${r.n}</span>
+      </button>`).join("");
+  }
+  $("topic-summary").addEventListener("click", (e) => {
+    const item = e.target.closest("[data-topic]");
+    if (!item) return;
+    const topic = +item.dataset.topic;
+    S.topicFocus = S.topicFocus === topic ? null : topic;
+    renderLegend();
+    applyHighlight();
+  });
+  $("actors").innerHTML = actors.map((a) => `<button data-actor="${a.index}" class="${a.index === S.actor ? "on" : ""}" title="${esc(a.name)}">${esc(a.short)}</button>`).join("");
+  $("actors").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-actor]");
+    if (!b || +b.dataset.actor === S.actor) return;
+    S.actor = +b.dataset.actor;
+    S.isolated.clear();
+    for (const other of $("actors").children) other.classList.toggle("on", other === b);
+    applyColors();
+    renderLegend();
+    applyHighlight();
+  });
 
   $("legend").addEventListener("click", (e) => {
     const item = e.target.closest(".legend-item");
@@ -149,7 +218,7 @@
     renderLegend();
     applyHighlight();
   });
-  $("legend-clear").addEventListener("click", () => { S.isolated.clear(); renderLegend(); applyHighlight(); });
+  $("legend-clear").addEventListener("click", () => { S.isolated.clear(); S.topicFocus = null; renderLegend(); applyHighlight(); });
 
   $("modes").innerHTML = Object.entries(MODES).map(([key, m]) =>
     `<button data-mode="${key}" class="${key === S.mode ? "on" : ""}">${m.label}</button>`).join("");
@@ -158,6 +227,7 @@
     if (!b || b.dataset.mode === S.mode) return;
     S.mode = b.dataset.mode;
     S.isolated.clear();
+    S.topicFocus = null;
     for (const other of $("modes").children) other.classList.toggle("on", other === b);
     applyColors();
     renderLegend();
@@ -175,60 +245,12 @@
     graph.fit(found, 700, 2.5);
   });
   const toggle = (id, key, onChange) => {
-    $(id).checked = S[key] ?? graph.settings[key];
+    $(id).checked = S[key];
     $(id).addEventListener("change", (e) => onChange(e.target.checked));
   };
   toggle("show-uncovered", "showUncovered", (v) => { S.showUncovered = v; applyFilters(); });
   toggle("show-old", "showOld", (v) => { S.showOld = v; applyFilters(); });
-  toggle("group-labels", "groupLabels", (v) => graph.set("groupLabels", v));
-  toggle("physics", "physics", (v) => graph.set("physics", v));
-
-  // ---------- sliders ----------
-  const SLIDERS = {
-    appearance: [
-      { key: "nodeScale", label: "Tamaño de los nodos", min: 0.3, max: 4, step: 0.05 },
-      { key: "linkWidth", label: "Grosor de los enlaces", min: 0, max: 4, step: 0.1 },
-      { key: "labelZoom", label: "Umbral del texto", min: 0.3, max: 6, step: 0.1 },
-    ],
-    forces: [
-      { key: "center", label: "Fuerza central", min: 0, max: 0.08, step: 0.001 },
-      { key: "repel", label: "Repulsión", min: 0, max: 1500, step: 10 },
-      { key: "repelRadius", label: "Alcance de la repulsión", min: 20, max: 300, step: 5 },
-      { key: "linkStrength", label: "Fuerza de los enlaces", min: 0, max: 3, step: 0.05 },
-      { key: "linkDistance", label: "Distancia de los enlaces", min: 2, max: 200, step: 1 },
-      { key: "damping", label: "Fricción", min: 0.05, max: 0.9, step: 0.01 },
-    ],
-  };
-  const fmt = (v) => String(+(+v).toFixed(3)).replace(".", ",");
-  for (const [box, sliders] of Object.entries(SLIDERS)) {
-    $(box).innerHTML = sliders.map((s) => `
-      <label class="slider">
-        <span>${s.label}<output id="out-${s.key}">${fmt(graph.settings[s.key])}</output></span>
-        <input type="range" data-key="${s.key}" min="${s.min}" max="${s.max}" step="${s.step}" value="${graph.settings[s.key]}">
-      </label>`).join("");
-    $(box).addEventListener("input", (e) => {
-      const key = e.target.dataset.key;
-      if (!key) return;
-      graph.set(key, +e.target.value);
-      $(`out-${key}`).textContent = fmt(e.target.value);
-    });
-  }
-  $("reheat").addEventListener("click", () => graph.reheat(1));
-  $("fit").addEventListener("click", () => graph.fit());
-  $("reset").addEventListener("click", () => {
-    for (const input of document.querySelectorAll("input[type=range][data-key]")) {
-      const value = ForceGraph.DEFAULTS[input.dataset.key];
-      input.value = value;
-      graph.settings[input.dataset.key] = value;
-      $(`out-${input.dataset.key}`).textContent = fmt(value);
-    }
-    graph.applySettings();
-    graph.reheat(1);
-  });
-  $("panel-toggle").addEventListener("click", () => {
-    const closed = $("panel").classList.toggle("closed");
-    $("panel-toggle").setAttribute("aria-expanded", String(!closed));
-  });
+  bindPanel(graph);
 
   // ---------- tooltip ----------
   const coverageText = (n) => {
@@ -240,18 +262,16 @@
     const bin = stanceBin(stance);
     return bin <= 1 ? "en contra" : bin <= 2 ? "algo en contra" : bin >= 7 ? "a favor" : bin >= 6 ? "algo a favor" : "neutral o dividida";
   };
-  const tip = $("tip");
-  graph.onHover = (n, e) => {
-    if (!n) { tip.hidden = true; return; }
-    tip.innerHTML = `<b>${n.number}</b> ${esc(cut(sentence(n.name), 150))}
-      <span>${esc(D.topics[n.topic].name)} · ${coverageText(n)}</span>`;
-    tip.hidden = false;
-    tip.style.left = Math.min(e.clientX + 14, innerWidth - tip.offsetWidth - 8) + "px";
-    tip.style.top = Math.min(e.clientY + 16, innerHeight - tip.offsetHeight - 8) + "px";
-  };
+  bindTooltip(graph, (n) => `<b>${n.number}</b> ${esc(cut(sentence(n.name), 150))}
+      <span>${esc(D.topics[n.topic].name)} · ${coverageText(n)}</span>`);
 
   // ---------- detail card ----------
   const fmtDate = (iso) => (iso ? new Date(iso + "T12:00:00").toLocaleDateString("es-CR", { day: "numeric", month: "short", year: "numeric" }) : "sin fecha");
+  const positionChip = (n) => (a) => {
+    const position = n.positions.get(a.index);
+    const news = `${position.news} ${position.news === 1 ? "noticia" : "noticias"}`;
+    return `<span title="${esc(a.name)}: ${signed(position.value)} en ${news}"><span class="swatch" style="background:${positionColor(position.value)}"></span>${esc(a.short)} ${leanText(position.value)}</span>`;
+  };
   graph.onSelect = (n) => {
     const card = $("card");
     if (!n) { card.hidden = true; return; }
@@ -270,6 +290,7 @@
         <dt>Estado</dt><dd>${esc(status)}${n.law ? ` N.º ${n.law}` : ""}</dd>
         <dt>Prensa</dt><dd>${coverageText(n)}${n.substantive ? ` en ${n.outlets} ${n.outlets === 1 ? "medio" : "medios"}; tema principal en ${nf(n.main)}` : ""}${n.substantive && n.mention > n.substantive ? `; ${nf(n.mention - n.substantive)} de paso` : ""}</dd>
         ${n.substantive && n.stance != null ? `<dt>Tono</dt><dd><span class="swatch" style="background:${STANCE(stanceBin(n.stance))}"></span>${stanceText(n.stance)} (${n.stance} de 100)</dd>` : ""}
+        ${n.positions.size ? `<dt>Partidos</dt><dd class="positions">${actors.filter((a) => n.positions.has(a.index)).map(positionChip(n)).join("")}</dd>` : ""}
       </dl>
       <div class="card-links">
         <a href="../jev_answers/#bill=${n.number}" target="_blank" rel="noopener">Noticias en el visor de Jev</a>

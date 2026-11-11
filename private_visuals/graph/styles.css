@@ -21,6 +21,11 @@ button { cursor: pointer; }
 #graph { position: fixed; inset: 0; width: 100vw; height: 100vh; display: block; touch-action: none; }
 
 .title { position: fixed; left: 20px; top: 16px; pointer-events: none; }
+.views { display: inline-flex; gap: 2px; padding: 2px; margin-bottom: 10px; pointer-events: auto;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+.views a { padding: 4px 12px; border-radius: 6px; color: var(--ink-3); text-decoration: none; font-size: 12.5px; }
+.views a:hover { color: var(--ink); }
+.views a.on { background: var(--panel-2); color: var(--ink); }
 .title h1 { margin: 0; font-size: 16px; font-weight: 600; }
 .title p { margin: 2px 0 0; color: var(--ink-3); font-size: 12px; }
 
@@ -148,3 +153,30 @@ input[type=range] { width: 100%; margin: 4px 0 0; accent-color: var(--accent); h
   .panel { width: 250px; }
   .card { width: calc(100vw - 32px); }
 }
+
+/* ---------- deputies ---------- */
+.panel details > .modes + .slider { margin-top: 6px; }
+.panel details > .slider + input[type=search] { margin-top: 4px; }
+.person { display: flex; align-items: center; gap: 12px; margin: 0 22px 10px 0; }
+.person img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; object-position: 50% 15%; flex: none; }
+.person h2 { margin: 2px 0 0; }
+
+/* ---------- parties and topics ---------- */
+div.legend-item { cursor: default; }
+.similar a {
+  display: flex; align-items: baseline; gap: 6px; padding: 4px; border-radius: 5px;
+  color: var(--ink-2); font-size: 12px; text-decoration: none;
+}
+.similar a:hover { background: var(--panel-2); }
+.similar a i { white-space: nowrap; }
+.card h2 .swatch { margin-right: 4px; }
+
+/* ---------- "Partidos" color mode on the bills map ---------- */
+.modes.actors { margin-top: 6px; }
+.modes.actors button { font-size: 11.5px; }
+.modes[hidden] { display: none; }
+.legend.summary { margin-top: 10px; max-height: 260px; }
+.legend.summary h4 { margin: 0 0 4px; font-size: 11.5px; font-weight: 600; color: var(--ink-2); }
+.legend.summary .legend-count { white-space: nowrap; }
+.positions { display: flex; flex-wrap: wrap; gap: 2px 10px; }
+.positions > span { white-space: nowrap; }

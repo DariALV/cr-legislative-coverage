@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grafo de diputados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="graph" aria-label="Grafo de diputados según cómo votan"></canvas>
+
+  <header class="title">
+    <nav class="views" aria-label="Grafos">
+      <a href="index.html">Expedientes</a>
+      <a href="deputies.html" class="on" aria-current="page">Diputados</a>
+      <a href="parties.html">Partidos y temas</a>
+    </nav>
+    <h1>Diputados que votan igual</h1>
+    <p id="subtitle"></p>
+  </header>
+
+  <p id="missing" class="missing" hidden>
+    Faltan los datos. Generalos con <code>python private_visuals/graph/build_deputies.py</code> y recargá la página.
+  </p>
+
+  <aside id="panel" class="panel">
+    <button id="panel-toggle" class="panel-toggle" aria-expanded="true" aria-controls="panel-body">
+      <span>Controles</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+    </button>
+    <div id="panel-body" class="panel-body">
+      <details open>
+        <summary>Filtros</summary>
+        <div id="terms" class="modes" role="group" aria-label="Legislatura"></div>
+        <label class="slider">
+          <span>Coincidencia mínima<output id="out-threshold"></output></span>
+          <input id="threshold" type="range" min="40" max="100" step="1">
+        </label>
+        <input id="q" type="search" placeholder="Buscar diputado o partido…" autocomplete="off" aria-label="Buscar diputado">
+        <p id="search-count" class="hint"></p>
+      </details>
+
+      <details open>
+        <summary>Grupos</summary>
+        <div id="modes" class="modes" role="group" aria-label="Color de los nodos"></div>
+        <div id="legend" class="legend"></div>
+        <button id="legend-clear" class="link-button" hidden>Quitar selección</button>
+        <p id="legend-note" class="hint"></p>
+      </details>
+
+      <details>
+        <summary>Apariencia</summary>
+        <div id="appearance"></div>
+      </details>
+
+      <details open>
+        <summary>Fuerzas</summary>
+        <label class="switch"><span>Física</span><input id="physics" type="checkbox"><i></i></label>
+        <div id="forces"></div>
+        <div class="buttons">
+          <button id="reheat">Reanimar</button>
+          <button id="fit">Encuadrar</button>
+          <button id="reset">Restablecer</button>
+        </div>
+      </details>
+    </div>
+  </aside>
+
+  <section id="card" class="card" hidden aria-live="polite"></section>
+  <div id="tip" class="tip" hidden></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="../output/graph/deputies.js" onerror="window.GRAPH_DEPUTIES = null"></script>
+  <script src="engine.js"></script>
+  <script src="controls.js"></script>
+  <script src="deputies.js"></script>
+</body>
+</html>

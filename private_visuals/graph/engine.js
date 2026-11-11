@@ -1,6 +1,7 @@
 // Force-directed graph on a canvas, in the spirit of Obsidian's graph view.
 // The engine knows nothing about bills or deputies: a view hands it nodes
-// ({x, y, size, color, label, ...}) and links ({source, target} as node objects)
+// ({x, y, size, color, label, shortLabel, image?}) and links ({source, target} as node
+// objects, plus optional `level` 0-2 for thickness, `color` and `pull` for spring strength)
 // and sets colors, filters and highlights from outside. Needs d3 v7.
 (function () {
   "use strict";
@@ -23,6 +24,9 @@
   const SURFACE = "#1a1a19";
   const DIM = 0.12;            // opacity of nodes outside the current focus
   const MAX_LABELS = 220;
+  const LINK_LEVELS = [{ width: 1, alpha: 1 }, { width: 1.5, alpha: 1.25 }, { width: 2.2, alpha: 1.6 }];
+  const COLORED_LINK_BOOST = 3;
+  const IMAGE_MIN_PX = 5;      // below this radius on screen a photo is just noise
   const FONT = '"Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif';
 
   // Short-range repulsion on a uniform grid. d3.forceManyBody takes about 100 ms a tick with
@@ -140,7 +144,7 @@
         const s = l.source, t = l.target;
         let dx = t.x + t.vx - s.x - s.vx, dy = t.y + t.vy - s.y - s.vy;
         const d = Math.sqrt(dx * dx + dy * dy) || 1e-3;
-        const f = Math.min(d - distance, limit) / d * alpha * Math.min(1.5, strength * l.base);
+        const f = Math.min(d - distance, limit) / d * alpha * Math.min(1.5, strength * l.base * (l.pull || 1));
         dx *= f; dy *= f;
         t.vx -= dx * l.bias; t.vy -= dy * l.bias;
         s.vx += dx * (1 - l.bias); s.vy += dy * (1 - l.bias);
@@ -153,10 +157,11 @@
   }
 
   class ForceGraph {
-    constructor(canvas) {
+    constructor(canvas, overrides = {}) {
       this.canvas = canvas;
       this.ctx = canvas.getContext("2d");
-      this.settings = { ...DEFAULTS };
+      this.defaults = { ...DEFAULTS, ...overrides };   // what "reset" goes back to
+      this.settings = { ...this.defaults };
       this.transform = d3.zoomIdentity;
       this.nodes = [];
       this.links = [];
@@ -166,6 +171,7 @@
       this.highlight = null;     // Set of nodes kept bright (search, legend), or null
       this.hovered = null;
       this.selected = null;
+      this.insets = () => ({ top: 0, right: 0, bottom: 0, left: 0 });  // canvas area covered by panels
       this.onHover = () => {};
       this.onSelect = () => {};
       this.frame = 0;
@@ -225,22 +231,39 @@
     // ---------- data ----------
     setData(nodes, links) {
       this.nodes = nodes;
+      this.hovered = null;
+      this.select(null);
+      nodes.forEach((n) => { n.visible = true; });
+      this.bySize = [...nodes].sort((a, b) => b.size - a.size);
+      this.keep = () => true;
+      this.setLinks(links, false);
+    }
+
+    /** Replaces the links (say, after moving a threshold) and keeps the nodes where they are. */
+    setLinks(links, reheat = true) {
       this.links = links;
-      nodes.forEach((n) => { n.neighbors = []; n.visible = true; });
+      for (const n of this.nodes) n.neighbors = [];
       for (const l of links) {
         l.source.neighbors.push(l.target);
         l.target.neighbors.push(l.source);
       }
-      this.bySize = [...nodes].sort((a, b) => b.size - a.size);
-      this.setVisible(() => true, false);
-      this.applySettings();
+      this.setVisible(this.keep, reheat);
     }
 
     /** Keeps only the nodes that pass `keep` (and the links between them) in the simulation. */
     setVisible(keep, reheat = true) {
+      this.keep = keep;
       for (const n of this.nodes) n.visible = !!keep(n);
       this.visibleNodes = this.nodes.filter((n) => n.visible);
       this.visibleLinks = this.links.filter((l) => l.source.visible && l.target.visible);
+      // One drawing pass per thickness level and color.
+      const groups = new Map();
+      for (const l of this.visibleLinks) {
+        const key = `${l.level || 0}|${l.color || ""}`;
+        if (!groups.has(key)) groups.set(key, { level: l.level || 0, color: l.color || null, links: [] });
+        groups.get(key).links.push(l);
+      }
+      this.linkGroups = [...groups.values()];
       const degree = new Map();
       for (const l of this.visibleLinks) {
         degree.set(l.source, (degree.get(l.source) || 0) + 1);
@@ -359,9 +382,13 @@
         x0 = Math.min(x0, n.x); x1 = Math.max(x1, n.x);
         y0 = Math.min(y0, n.y); y1 = Math.max(y1, n.y);
       }
-      const pad = Math.min(60, this.width / 8, this.height / 8);
-      const k = Math.min(maxZoom, (this.width - 2 * pad) / Math.max(x1 - x0, 1), (this.height - 2 * pad) / Math.max(y1 - y0, 1));
-      const t = d3.zoomIdentity.translate(this.width / 2, this.height / 2).scale(k).translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
+      // Frame inside the part of the canvas that no panel covers.
+      const inset = this.insets();
+      const width = this.width - inset.left - inset.right, height = this.height - inset.top - inset.bottom;
+      const pad = Math.min(60, width / 8, height / 8);
+      const k = Math.min(maxZoom, (width - 2 * pad) / Math.max(x1 - x0, 1), (height - 2 * pad) / Math.max(y1 - y0, 1));
+      const t = d3.zoomIdentity.translate(inset.left + width / 2, inset.top + height / 2).scale(k)
+        .translate(-(x0 + x1) / 2, -(y0 + y1) / 2);
       d3.select(this.canvas).transition().duration(duration).call(this.zoom.transform, t);
     }
 
@@ -393,32 +420,28 @@
       ctx.translate(t.x, t.y);
       ctx.scale(t.k, t.k);
 
-      // Links.
+      // Links, one path per thickness level and color.
       if (s.linkWidth > 0) {
-        ctx.lineWidth = s.linkWidth / t.k;
-        ctx.strokeStyle = INK;
-        // Fainter when zoomed out, where thousands of links overlap and would wash out the nodes.
-        ctx.globalAlpha = bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k));
-        ctx.beginPath();
-        for (const l of this.visibleLinks) {
-          const a = l.source, b = l.target;
-          if (!inView(a) && !inView(b)) continue;
-          ctx.moveTo(a.x, a.y);
-          ctx.lineTo(b.x, b.y);
-        }
-        ctx.stroke();
-        if (bright) {
-          ctx.globalAlpha = near ? 0.75 : 0.3;
-          ctx.beginPath();
-          for (const l of this.visibleLinks) {
-            const a = l.source, b = l.target;
-            const on = near ? (a === anchor || b === anchor) : (bright.has(a) && bright.has(b));
-            if (!on) continue;
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
+        const stroke = (alpha, on) => {
+          for (const { level, color, links } of this.linkGroups) {
+            ctx.strokeStyle = color || INK;
+            ctx.lineWidth = s.linkWidth * LINK_LEVELS[level].width / t.k;
+            // A link with its own color carries meaning, so it is drawn stronger than the plain ones.
+            ctx.globalAlpha = Math.min(0.95, alpha * LINK_LEVELS[level].alpha * (color ? COLORED_LINK_BOOST : 1));
+            ctx.beginPath();
+            for (const l of links) {
+              const a = l.source, b = l.target;
+              if ((!inView(a) && !inView(b)) || !on(a, b)) continue;
+              ctx.moveTo(a.x, a.y);
+              ctx.lineTo(b.x, b.y);
+            }
+            ctx.stroke();
           }
-          ctx.stroke();
-        }
+        };
+        // Fainter when zoomed out, where thousands of links overlap and would wash out the nodes.
+        stroke(bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k)), () => true);
+        if (near) stroke(0.75, (a, b) => a === anchor || b === anchor);
+        else if (bright) stroke(0.3, (a, b) => bright.has(a) && bright.has(b));
       }
 
       // Nodes, one path per color. A thin ring in the surface color separates overlapping ones.
@@ -446,6 +469,7 @@
       } else {
         paint(() => true, 1);
       }
+      this.drawImages(inView, bright);
       ctx.globalAlpha = 1;
       for (const n of [this.selected, this.hovered]) {
         if (!n || !n.visible) continue;
@@ -459,6 +483,29 @@
 
       this.drawNodeLabels(inView, near, bright);
       if (s.groupLabels) this.drawGroupLabels();
+    }
+
+    /** Photos inside the nodes that have one; the node's color stays visible as a ring. */
+    drawImages(inView, bright) {
+      const { ctx, transform: t } = this;
+      for (const n of this.visibleNodes) {
+        const image = n.image;
+        if (!image || !image.complete || !image.naturalWidth || !inView(n)) continue;
+        const r = this.radius(n);
+        if (r * t.k < IMAGE_MIN_PX) continue;
+        const inner = r - Math.max(2 / t.k, r * 0.14);
+        // Square crop; portraits keep the top, where the face is.
+        const side = Math.min(image.naturalWidth, image.naturalHeight);
+        const sx = (image.naturalWidth - side) / 2;
+        const sy = (image.naturalHeight - side) * 0.15;
+        ctx.globalAlpha = bright && !bright.has(n) ? DIM : 1;
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, inner, 0, 6.2832);
+        ctx.clip();
+        ctx.drawImage(image, sx, sy, side, side, n.x - inner, n.y - inner, inner * 2, inner * 2);
+        ctx.restore();
+      }
     }
 
     text(label, x, y, alpha, font, color) {
