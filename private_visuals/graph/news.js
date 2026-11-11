@@ -5,7 +5,7 @@
 (function () {
   "use strict";
   const D = window.GRAPH_NEWS, B = window.GRAPH_BILLS;
-  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindTooltip, PALETTE, stanceBin, STANCE } = window.GraphUI;
+  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindGrouping, bindTooltip, PALETTE, stanceBin, STANCE } = window.GraphUI;
   if (!D) {
     $("missing").hidden = false;
     return;
@@ -169,19 +169,22 @@
   if (!B) delete MODES.topic;   // no bills graph data: no topics
 
   // ---------- state ----------
-  const SEPARATE = 0.06;   // pull toward the middle of the own color when the groups are separated
+  const GATHER = 0.06;   // pull toward the middle of the own group when the groups are gathered
   const S = { subset: "all", links: "content", mode: "outlet", isolated: new Set(), query: "" };
   const graph = new ForceGraph($("graph"), { far: 5, repelRadius: 40, labelZoom: 2.2 });
   graph.simulation.alphaDecay(0.035);   // tens of thousands of nodes: settle in 200 ticks instead of 300
   const subsetNow = () => LINK_SETS[S.links].subset || S.subset;
-  const stateKey = () => `${subsetNow()}|${S.links}`;
+  // What sets the layout: the news shown, what links them and, when gathered, the grouping.
+  let grouping = null;   // bindGrouping, below
+  const stateKey = () => `${subsetNow()}|${S.links}|${grouping && grouping.gathered() ? grouping.by() : "-"}`;
+  let lastKey = null;    // the state the current positions belong to
   // Only the whole map is remembered between visits: it is the slow one to lay out.
   const storageKey = `graph:news:${D.meta.as_of}:${nodes.length}`;
   graph.setData(nodes, []);   // apply() puts the links in
   const restored = graph.restoreLayout(storageKey);
   // The layouts already made in this visit, to go back to them without laying them out again.
   const layouts = new Map();
-  const remember = () => layouts.set(stateKey(), Float32Array.from(nodes.flatMap((n) => [n.x, n.y])));
+  const remember = (key = stateKey()) => layouts.set(key, Float32Array.from(nodes.flatMap((n) => [n.x, n.y])));
   function recall() {
     const saved = layouts.get(stateKey());
     if (!saved) return false;
@@ -192,7 +195,9 @@
   function apply() {
     const subset = SUBSETS[subsetNow()];
     for (const n of nodes) n.kept = !subset.keep || subset.keep(n);
-    graph.layoutKey = stateKey() === "all|content" ? storageKey : null;
+    lastKey = stateKey();
+    // The engine keeps it only while the groups are not gathered.
+    graph.layoutKey = subsetNow() === "all" && S.links === "content" ? storageKey : null;
     graph.setLinks(S.links === "content" ? contentLinks(subsetNow()) : billLinks(), false);
     graph.setVisible((n) => n.kept, false);
     $("heading").textContent = LINK_SETS[S.links].heading;
@@ -215,23 +220,9 @@
 
   function applyColors() {
     const mode = MODES[S.mode];
-    for (const n of nodes) {
-      n.color = mode.color(n);
-      n.group = mode.group(n);   // what "separate by color" pulls together
-    }
-    renderGroupLabels();
+    for (const n of nodes) n.color = mode.color(n);
     graph.colorsChanged();
-    if (graph.settings.group > 0) graph.reheat(0.6);
-  }
-
-  // Map labels at the middle of each group: for the topics, which gather by content, or any mode once
-  // separated (unseparated, the outlets all have their middle near the middle of the map).
-  function renderGroupLabels() {
-    const mode = MODES[S.mode];
-    if (!mode.labels && !(graph.settings.group > 0)) { graph.groups = []; return; }
-    const members = new Map();
-    for (const n of nodes) if (n.group !== "none") (members.get(n.group) || members.set(n.group, []).get(n.group)).push(n);
-    graph.groups = mode.legend().filter((item) => members.has(item.key)).map((item) => ({ label: item.label, nodes: members.get(item.key) }));
+    grouping.refresh();   // the shapes take the colors when the grouping is the color
   }
 
   function matches() {
@@ -319,21 +310,18 @@
     graph.fit(found, 700, 2.5);
   });
 
-  bindPanel(graph, { grouping: true });
-  // "Separate by color" is the force panel's "group by color" at a set strength.
-  $("separate").checked = graph.settings.group > 0;
-  $("separate").addEventListener("change", (e) => {
-    const value = e.target.checked ? SEPARATE : 0;
-    graph.set("group", value);
-    const slider = document.querySelector('input[data-key="group"]');
-    if (slider) { slider.value = value; $("out-group").textContent = fmt(value); }
-    renderGroupLabels();
-    graph.reheat(0.8);
-  });
-  $("forces").addEventListener("input", (e) => {
-    if (e.target.dataset.key !== "group") return;
-    $("separate").checked = +e.target.value > 0;
-    renderGroupLabels();
+  bindPanel(graph, { grouping: true, look: "news" });
+  // The outlets are mixed all over the map, so picking a grouping also gathers the groups. Moving in
+  // or out of a gathered state keeps the layout it leaves and goes back to one this visit already made.
+  grouping = bindGrouping(graph, {
+    modes: MODES, colorMode: () => S.mode, nodes: () => nodes, groupBy: "none", strength: GATHER, gatherOnPick: true,
+    onChange: () => {
+      const key = stateKey();
+      if (key === lastKey) return;
+      if (lastKey) remember(lastKey);
+      lastKey = key;
+      if (recall()) { graph.startAt(0.02); graph.requestDraw(); }
+    },
   });
 
   // ---------- tooltip ----------

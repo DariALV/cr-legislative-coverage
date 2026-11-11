@@ -47,9 +47,8 @@
       </details>
 
       <details open>
-        <summary>Grupos</summary>
+        <summary>Color</summary>
         <div id="modes" class="modes wrap" role="group" aria-label="Color de los nodos"></div>
-        <label class="switch"><span>Separar por color</span><input id="separate" type="checkbox"><i></i></label>
         <div id="scale" class="scale" hidden>
           <div id="scale-bar" class="scale-bar"></div>
           <div class="scale-ends"><span>en contra</span><span>neutral</span><span>a favor</span></div>
@@ -59,10 +58,17 @@
         <p id="legend-note" class="hint"></p>
       </details>
 
+      <details open>
+        <summary>Grupos</summary>
+        <label class="field"><span>Agrupar por</span><select id="group-by" aria-label="Agrupar por"></select></label>
+        <label class="switch"><span>Juntar los grupos</span><input id="gather" type="checkbox"><i></i></label>
+        <label class="switch"><span>Figuras</span><input id="shapes" type="checkbox"><i></i></label>
+        <p id="group-note" class="hint"></p>
+      </details>
+
       <details>
         <summary>Apariencia</summary>
         <div id="appearance"></div>
-        <label class="switch"><span>Nombres de los grupos</span><input id="group-labels" type="checkbox"><i></i></label>
       </details>
 
       <details>

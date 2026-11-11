@@ -230,3 +230,8 @@ body:has(.panel.closed) .chart { right: 20px; }
 .presets button.on { border-color: var(--accent); color: var(--ink); }
 .modes.fit { grid-auto-columns: auto; }   /* buttons as wide as their labels */
 .modes.fit button { padding: 5px 8px; white-space: nowrap; }
+
+/* ---------- appearance subheadings and the Grupos section ---------- */
+.subhead { margin: 12px 0 2px; font-size: 10.5px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-3); }
+.subhead:first-child { margin-top: 4px; }
+.switch:has(input:disabled) { opacity: .45; cursor: default; }

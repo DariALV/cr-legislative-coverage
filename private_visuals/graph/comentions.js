@@ -199,7 +199,7 @@
     if (found.length === 1) graph.select(found[0]);
     graph.fit(found, 700, 2.5);
   });
-  bindPanel(graph);
+  bindPanel(graph, { look: "comentions" });
 
   // ---------- tooltip ----------
   const weightOf = (a, b) => graph.visibleLinks.find((l) => (l.source === a && l.target === b) || (l.source === b && l.target === a))?.weight;

@@ -5,7 +5,7 @@
 (function () {
   "use strict";
   const D = window.GRAPH_BILLS, NB = window.GRAPH_NEIGHBORS;
-  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindTooltip, PALETTE, stanceBin, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
+  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindGrouping, bindTooltip, PALETTE, stanceBin, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
   if (!D || !NB) {
     $("missing").hidden = false;
     return;
@@ -168,20 +168,16 @@
   // The long-range repulsion is what lets the topics drift apart into islands; with it the
   // short-range one only has to keep neighbors from overlapping, so its reach can be short.
   const graph = new ForceGraph($("graph"), { far: 5, repelRadius: 40 });
-  const topicGroups = D.topics.map((t, i) => ({ label: t.name, nodes: nodes.filter((n) => n.topic === i) }));
   const layoutKey = () => `graph:bills:${D.meta.as_of}:${nodes.length}:${S.links}`;
-  graph.groups = topicGroups;
   graph.setData(nodes, []);   // applyFilters() puts the links in
   const restored = graph.restoreLayout(layoutKey());
+  let grouping = null;        // bindGrouping, below
 
   function applyColors() {
     const mode = MODES[S.mode];
-    for (const n of nodes) {
-      n.color = mode.color(n);
-      n.group = mode.group(n);   // what "group by color" pulls together
-    }
+    for (const n of nodes) n.color = mode.color(n);
     graph.colorsChanged();
-    if (graph.settings.group > 0) graph.reheat(0.6);
+    grouping.refresh();   // the shapes take the colors when the grouping is the color
   }
 
   function matches() {
@@ -331,8 +327,7 @@
     S.links = b.dataset.links;
     for (const other of $("links").children) other.classList.toggle("on", other === b);
     $("links-note").textContent = LINK_SETS[S.links].note;
-    // The topic names mark where each topic sits; with the signers the topics are scattered.
-    graph.groups = S.links === "signers" ? [] : topicGroups;
+    grouping.refresh();   // with the signers the groups scatter, so their names and shapes go (see hidden)
     applyFilters();
     graph.reheat(1);
   });
@@ -370,7 +365,14 @@
   });
   renderWindow();
   toggle("show-old", "showOld", (v) => { S.showOld = v; applyFilters(); });
-  bindPanel(graph, { grouping: true });
+  bindPanel(graph, { grouping: true, look: "bills" });
+  // Grouped by topic from the start, as the topic names always were; the similarity links already
+  // gather the topics, so the pull stays off unless asked for.
+  grouping = bindGrouping(graph, {
+    modes: MODES, colorMode: () => S.mode, nodes: () => nodes, groupBy: "topic", strength: 0.06,
+    hidden: () => S.links === "signers",
+    hiddenNote: "Con los firmantes, los grupos quedan dispersos por el mapa: «Juntar los grupos» los reúne y muestra sus nombres y figuras.",
+  });
 
   // ---------- tooltip ----------
   const coverageText = (n) => {

@@ -16,16 +16,25 @@
     linkDistance: 30,
     damping: 0.4,        // velocity decay: higher settles faster
     nodeScale: 1,
+    imageOpacity: 1,     // photos inside the nodes; at 0 the nodes are plain
     linkWidth: 1,
+    linkOpacity: 1,      // multiplier on the links' opacity; at 0 only those of the node under the pointer show
     labelZoom: 1.6,      // zoom level at which node labels start to appear
-    groupLabels: true,
+    labelSize: 11,       // node names, in px
+    labelOpacity: 1,     // node names shown by the zoom (those of the node under the pointer stay)
+    maxLabels: 220,      // node names drawn at once, biggest nodes first
+    groupLabels: true,   // the names of the groups (graph.groups) on the map
+    groupLabelSize: 11,
+    groupLabelOpacity: 1,
+    shapes: true,        // a soft patch of color behind each group (see computeShapes)
+    shapeOpacity: 1,
+    shapeEdges: false,   // the outline of each patch, where it holds most of the group's nodes
     physics: true,
   };
   const INK = "#f0efec";
   const INK_SOFT = "#c3c2b7";
   const SURFACE = "#1a1a19";
   const DIM = 0.12;            // opacity of nodes outside the current focus
-  const MAX_LABELS = 220;
   const LINK_LEVELS = [{ width: 1, alpha: 1 }, { width: 1.5, alpha: 1.25 }, { width: 2.2, alpha: 1.6 }];
   const COLORED_LINK_BOOST = 3;
   const IMAGE_MIN_PX = 5;      // below this radius on screen a photo is just noise
@@ -246,30 +255,101 @@
     return force;
   }
 
-  // Pull toward the middle of the node's own group. The group is whatever the page puts in
-  // node.group (its color mode, usually), so changing it makes the nodes regroup.
+  // Pull toward the middle of the node's own group, plus a push between whole groups. The group is
+  // whatever the page puts in node.group, so changing it makes the nodes regroup. The pull alone
+  // gathers each group around its middle, but groups spread over the whole map have their middles
+  // close together, and they would only pile up there. So two groups whose middles are closer than
+  // their sizes ask (GROUP_ROOM times the sum of their spreads) also move apart, as a whole, each
+  // the more the smaller it is.
+  const GROUP_ROOM = 1.5;   // a spread (root mean square distance to the middle) is ~0.7 of a disk's radius
+  const GROUP_PUSH = 2;     // push per unit of overlap, relative to the pull's strength
   function forceGroup() {
     let nodes = [], strength = 0;
     function force(alpha) {
       if (strength <= 0) return;
-      const middles = new Map();
+      const groups = new Map();
       for (const d of nodes) {
         if (d.group === undefined) continue;
-        let m = middles.get(d.group);
-        if (!m) middles.set(d.group, m = [0, 0, 0]);
-        m[0] += d.x; m[1] += d.y; m[2]++;
+        let g = groups.get(d.group);
+        if (!g) groups.set(d.group, g = { x: 0, y: 0, n: 0, spread: 0, px: 0, py: 0 });
+        g.x += d.x; g.y += d.y; g.n++;
+      }
+      for (const g of groups.values()) { g.x /= g.n; g.y /= g.n; }
+      for (const d of nodes) {
+        const g = groups.get(d.group);
+        if (g) g.spread += (d.x - g.x) ** 2 + (d.y - g.y) ** 2;
+      }
+      const list = [...groups.values()];
+      for (const g of list) g.spread = Math.sqrt(g.spread / g.n);
+      for (let i = 0; i < list.length; i++) {
+        const a = list[i];
+        for (let j = i + 1; j < list.length; j++) {
+          const b = list[j];
+          let dx = a.x - b.x, dy = a.y - b.y, dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 1e-6) { dx = Math.random() - 0.5; dy = Math.random() - 0.5; dist = Math.sqrt(dx * dx + dy * dy); }
+          const overlap = GROUP_ROOM * (a.spread + b.spread) - dist;
+          if (overlap <= 0) continue;
+          const f = overlap / dist * GROUP_PUSH * strength * alpha;
+          const share = b.n / (a.n + b.n);
+          a.px += dx * f * share; a.py += dy * f * share;
+          b.px -= dx * f * (1 - share); b.py -= dy * f * (1 - share);
+        }
       }
       const k = strength * alpha;
       for (const d of nodes) {
-        const m = middles.get(d.group);
-        if (!m) continue;
-        d.vx += (m[0] / m[2] - d.x) * k;
-        d.vy += (m[1] / m[2] - d.y) * k;
+        const g = groups.get(d.group);
+        if (!g) continue;
+        d.vx += (g.x - d.x) * k + g.px;
+        d.vy += (g.y - d.y) * k + g.py;
       }
     }
     force.initialize = (list) => { nodes = list; };
     force.strength = (v) => { strength = v; return force; };
     return force;
+  }
+
+  // Group shapes: a soft patch of color behind each group, made from the density of its nodes on a
+  // coarse grid. It is strongest where most of the group sits and fades out toward its stray nodes;
+  // where the patches of two groups overlap, their colors mix. The outline, when drawn, is the
+  // density level that holds SHAPE_COVER of the group's nodes.
+  const SHAPE_CELLS = 180;      // grid cells along the longer side of the map, for up to
+  const SHAPE_FULL_GROUPS = 8;  // ... this many groups; with more, a coarser grid keeps the total work even,
+  const SHAPE_MIN_CELLS = 96;   // ... down to this
+  const SHAPE_COVER = 0.8;      // share of a group's nodes inside its outline
+  const SHAPE_CORE = 0.5;       // share of its nodes in the part drawn at full strength
+  const SHAPE_FADE = 0.35;      // the patch fades out at this share of the outline's density
+  const SHAPE_ALPHA = 0.3;      // opacity of a full-strength patch at opacity 1
+  const SHAPE_SPREAD = 0.2;     // blur, as a share of the group's spread (root mean square distance to its middle),
+  const SHAPE_GAP = 0.75;       // ... or of the usual gap between its nodes, if wider (small, loose groups)
+  const SHAPE_MAX_BLUR = 0.07;  // ... and never more than this share of the map
+  const SHAPE_EVERY_MS = 250;   // while the layout moves, the shapes are redone at least this often,
+  const SHAPE_SHARE = 0.15;     // ... or more often if they take less than this share of the time
+  const SHAPE_SAMPLE = 3000;    // nodes per group read to place the levels
+
+  /** One pass of a box blur of radius `r` cells over the window [x0, x1] x [y0, y1] of the grid `a`
+   *  (rows of `w` cells), through `b` and back into `a`; the grid is taken as 0 outside the window.
+   *  Three passes are close to a Gaussian blur with a standard deviation of about r cells. */
+  function boxBlur(a, b, w, x0, x1, y0, y1, r) {
+    const scale = 1 / (2 * r + 1);
+    for (let y = y0; y <= y1; y++) {
+      const row = y * w;
+      let sum = 0;
+      for (let x = x0; x <= x1 && x <= x0 + r; x++) sum += a[row + x];
+      for (let x = x0; x <= x1; x++) {
+        b[row + x] = sum * scale;
+        if (x + r + 1 <= x1) sum += a[row + x + r + 1];
+        if (x - r >= x0) sum -= a[row + x - r];
+      }
+    }
+    for (let x = x0; x <= x1; x++) {
+      let sum = 0;
+      for (let y = y0; y <= y1 && y <= y0 + r; y++) sum += b[y * w + x];
+      for (let y = y0; y <= y1; y++) {
+        a[y * w + x] = sum * scale;
+        if (y + r + 1 <= y1) sum += b[(y + r + 1) * w + x];
+        if (y - r >= y0) sum -= b[(y - r) * w + x];
+      }
+    }
   }
 
   class ForceGraph {
@@ -283,7 +363,11 @@
       this.links = [];
       this.visibleNodes = [];
       this.visibleLinks = [];
-      this.groups = [];          // [{label, nodes}] drawn as map labels at their centroid
+      this.groups = [];          // [{key, label, color, nodes, shape}], see setGroups
+      this.shapes = null;        // the patches behind the groups, see computeShapes
+      this.shapesDirty = true;   // the nodes moved or the groups changed since the patches were made
+      this.shapesAt = 0;         // when they were made
+      this.shapesCost = 0;       // and how long that took, in ms
       this.highlight = null;     // Set of nodes kept bright (search, legend), or null
       this.hovered = null;
       this.selected = null;
@@ -402,10 +486,20 @@
       }
       this.simulation.nodes(this.visibleNodes);
       this.linkForce.links(this.visibleLinks);
+      this.shapesDirty = true;
       this.applySettings();
       if (this.selected && !this.selected.visible) this.select(null);
       this.colorsChanged();
       if (reheat) this.reheat(0.4);
+    }
+
+    /** The groups named on the map and drawn as patches: [{key, label, color, nodes, shape}].
+     *  `nodes` may include hidden ones (only the visible count); `shape: false` names a group
+     *  without drawing its patch. The group pull (settings.group) follows node.group instead. */
+    setGroups(groups) {
+      this.groups = groups;
+      this.shapesDirty = true;
+      this.requestDraw();
     }
 
     /** Call after changing node.color. */
@@ -452,6 +546,7 @@
         if (value) this.reheat(0.3);   // when switched off, run() stops by itself on its next frame
         return;
       }
+      if (["shapes", "shapeEdges", "nodeScale"].includes(key)) this.shapesDirty = true;
       this.applySettings();
       if (["center", "repel", "repelRadius", "far", "group", "linkStrength", "linkDistance", "damping"].includes(key)) this.reheat(0.5);
     }
@@ -490,6 +585,7 @@
           ticks++;
         } while (ticks < MAX_TICKS_PER_FRAME && sim.alpha() >= sim.alphaMin() && performance.now() - start < budget);
         ticked = performance.now();
+        this.shapesDirty = true;
         if (sim.alpha() < sim.alphaMin()) {
           this.running = false;
           this.draw();
@@ -518,7 +614,8 @@
     }
 
     saveLayout() {
-      if (!this.layoutKey) return;
+      // Only the map without the group pull is remembered: the next visit opens with the pull off.
+      if (!this.layoutKey || this.settings.group > 0) return;
       try {
         localStorage.setItem(this.layoutKey, JSON.stringify(this.nodes.flatMap((n) => [Math.round(n.x), Math.round(n.y)])));
       } catch (error) { /* storage full or blocked: the layout is simply not remembered */ }
@@ -528,6 +625,7 @@
       node.fx = this.transform.invertX(sx);
       node.fy = this.transform.invertY(sy);
       if (!this.settings.physics) { node.x = node.fx; node.y = node.fy; }
+      this.shapesDirty = true;
     }
 
     // ---------- geometry ----------
@@ -610,6 +708,19 @@
       ctx.translate(t.x, t.y);
       ctx.scale(t.k, t.k);
 
+      // The patches of the groups, behind everything else. While the layout moves they are redone as
+      // often as they take SHAPE_SHARE of the time (every frame for a few hundred nodes), and at least
+      // every SHAPE_EVERY_MS; once it settles, right away.
+      if (s.shapes && this.groups.length) {
+        const wait = this.running ? Math.min(SHAPE_EVERY_MS, this.shapesCost / SHAPE_SHARE) : 0;
+        if (this.shapesDirty && performance.now() - this.shapesAt >= wait) {
+          const start = performance.now();
+          this.computeShapes();
+          this.shapesCost = performance.now() - start;
+        }
+        this.drawShapes();
+      }
+
       // Links, one path per thickness level and color. A frame draws at most MOVING_LINKS or
       // SETTLED_LINKS of those on screen (estimated from the share of nodes on screen), as an even sample.
       let shown = 0;
@@ -638,9 +749,11 @@
           }
         };
         // Fainter when zoomed out, where thousands of links overlap and would wash out the nodes.
-        stroke(bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k)), () => true, sample);
+        // linkOpacity scales them all except those of the node under the pointer, which stay even at 0.
+        const base = s.linkOpacity * (bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k)));
+        if (base > 0) stroke(base, () => true, sample);
         if (near) stroke(0.75, (a, b) => a === anchor || b === anchor);
-        else if (bright) stroke(0.3, (a, b) => bright.has(a) && bright.has(b));
+        else if (bright && s.linkOpacity > 0) stroke(0.3 * s.linkOpacity, (a, b) => bright.has(a) && bright.has(b));
       }
 
       // Nodes, one path per color. A thin ring in the surface color separates overlapping ones.
@@ -693,7 +806,8 @@
 
     /** Photos inside the nodes that have one; the node's color stays visible as a ring. */
     drawImages(inView, bright) {
-      const { ctx, transform: t } = this;
+      const { ctx, transform: t, settings: s } = this;
+      if (s.imageOpacity <= 0) return;
       for (const n of this.visibleNodes) {
         const image = n.image;
         if (!image || !image.complete || !image.naturalWidth || !inView(n)) continue;
@@ -704,7 +818,7 @@
         const side = Math.min(image.naturalWidth, image.naturalHeight);
         const sx = (image.naturalWidth - side) / 2;
         const sy = (image.naturalHeight - side) * 0.15;
-        ctx.globalAlpha = bright && !bright.has(n) ? DIM : 1;
+        ctx.globalAlpha = (bright && !bright.has(n) ? DIM : 1) * s.imageOpacity;
         ctx.save();
         ctx.beginPath();
         ctx.arc(n.x, n.y, inner, 0, 6.2832);
@@ -714,11 +828,12 @@
       }
     }
 
-    text(label, x, y, alpha, font, color) {
+    /** Writes `label` with a halo in the surface color, as thick as the font asks. */
+    text(label, x, y, alpha, size, weight, color) {
       const { ctx } = this;
-      ctx.font = font;
+      ctx.font = `${weight} ${size}px ${FONT}`;
       ctx.globalAlpha = alpha;
-      ctx.lineWidth = 3;
+      ctx.lineWidth = Math.max(2, Math.min(6, size * 0.28));
       ctx.strokeStyle = SURFACE;
       ctx.strokeText(label, x, y);
       ctx.fillStyle = color;
@@ -737,46 +852,224 @@
         if (drawn.has(n)) return;
         drawn.add(n);
         const y = t.applyY(n.y) + this.radius(n) * t.k + 4;
-        this.text(strong || long ? n.label : n.shortLabel, t.applyX(n.x), y, alpha,
-          `${strong ? 600 : 400} 11px ${FONT}`, strong ? INK : INK_SOFT);
+        this.text(strong || long ? n.label : n.shortLabel, t.applyX(n.x), y, alpha, s.labelSize, strong ? 600 : 400, strong ? INK : INK_SOFT);
       };
+      // The names around the node under the pointer don't follow labelOpacity, like its links.
       if (near) {
         const anchor = this.hovered || this.selected;
         label(anchor, 1, true);
         for (const n of near) if (inView(n)) label(n, 0.9, false);
       }
-      if (fade > 0 && !(this.running && this.visibleNodes.length > MOVING_LABELS)) {
+      const alpha = fade * 0.9 * s.labelOpacity;
+      if (alpha > 0 && s.maxLabels > 0 && !(this.running && this.visibleNodes.length > MOVING_LABELS)) {
         let count = 0;
         for (const n of this.bySize) {
           if (!n.visible || !inView(n)) continue;
           if (bright && !bright.has(n)) continue;
-          label(n, fade * 0.9, false);
-          if (++count >= MAX_LABELS) break;
+          label(n, alpha, false);
+          if (++count >= s.maxLabels) break;
         }
       }
       ctx.globalAlpha = 1;
     }
 
     drawGroupLabels() {
-      const { ctx, transform: t } = this;
+      const { ctx, transform: t, settings: s } = this;
       // They are a map legend: clearest when zoomed out, out of the way when reading nodes.
-      const alpha = Math.max(0, Math.min(1, 1.15 - t.k * 0.45));
+      const alpha = Math.max(0, Math.min(1, 1.15 - t.k * 0.45)) * s.groupLabelOpacity;
       if (alpha <= 0.02) return;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      const font = `600 11px ${FONT}`;
-      ctx.font = font;
+      ctx.lineJoin = "round";
+      ctx.font = `600 ${s.groupLabelSize}px ${FONT}`;
       const placed = [];
       for (const g of this.groups) {
-        let x = 0, y = 0, count = 0;
-        for (const n of g.nodes) if (n.visible) { x += n.x; y += n.y; count++; }
-        if (!count) continue;
-        const sx = t.applyX(x / count), sy = t.applyY(y / count);
+        // Where the group's patch is densest; without patches, at the middle of its visible nodes.
+        let x = 0, y = 0;
+        if (this.shapes && g.peak && g.shape !== false) {
+          [x, y] = g.peak;
+        } else {
+          let count = 0;
+          for (const n of g.nodes) if (n.visible) { x += n.x; y += n.y; count++; }
+          if (!count) continue;
+          x /= count; y /= count;
+        }
+        const sx = t.applyX(x), sy = t.applyY(y);
         const w = ctx.measureText(g.label).width / 2 + 6;
-        if (sx + w < 0 || sx - w > this.width || sy < -10 || sy > this.height + 10) continue;
-        if (placed.some((p) => Math.abs(p.x - sx) < p.w + w && Math.abs(p.y - sy) < 16)) continue;
+        if (sx + w < 0 || sx - w > this.width || sy < -s.groupLabelSize || sy > this.height + s.groupLabelSize) continue;
+        if (placed.some((p) => Math.abs(p.x - sx) < p.w + w && Math.abs(p.y - sy) < s.groupLabelSize * 1.45)) continue;
         placed.push({ x: sx, y: sy, w });
-        this.text(g.label, sx, sy, alpha, font, INK);
+        this.text(g.label, sx, sy, alpha, s.groupLabelSize, 600, INK);
+      }
+      ctx.globalAlpha = 1;
+    }
+
+    /** Makes the patches behind the groups (see SHAPE_* above): one grid for all of them, a blurred
+     *  density per group, and one image where every cell takes the colors of the groups present
+     *  there, mixed by how strong each one is. The outlines are traced only once the layout rests. */
+    computeShapes() {
+      this.shapesDirty = false;
+      this.shapesAt = performance.now();
+      this.shapes = null;
+      const s = this.settings;
+      const sets = [];
+      for (const g of this.groups) {
+        g.peak = null;
+        if (g.shape === false) continue;
+        const members = g.nodes.filter((n) => n.visible);
+        if (members.length) sets.push({ g, members });
+      }
+      if (!sets.length) return;
+
+      // The grid covers the visible members with room around them for the widest blur.
+      let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+      for (const { members } of sets) {
+        for (const n of members) {
+          if (n.x < x0) x0 = n.x;
+          if (n.x > x1) x1 = n.x;
+          if (n.y < y0) y0 = n.y;
+          if (n.y > y1) y1 = n.y;
+        }
+      }
+      const maxBlur = SHAPE_MAX_BLUR * Math.max(x1 - x0, y1 - y0, 50);
+      const pad = 3.2 * maxBlur;
+      x0 -= pad; y0 -= pad; x1 += pad; y1 += pad;
+      const cells = Math.max(SHAPE_MIN_CELLS, Math.round(SHAPE_CELLS * Math.min(1, Math.sqrt(SHAPE_FULL_GROUPS / sets.length))));
+      const cell = Math.max(x1 - x0, y1 - y0) / cells;
+      const w = Math.ceil((x1 - x0) / cell) + 2, h = Math.ceil((y1 - y0) / cell) + 2;
+      const size = w * h;
+      const density = new Float32Array(size), scratch = new Float32Array(size);
+      const weight = new Float32Array(size), red = new Float32Array(size), green = new Float32Array(size), blue = new Float32Array(size);
+      const edges = [];
+      const outline = s.shapeEdges && !this.running;
+      // Grid value i sits at (x0 + (i % w) * cell, y0 + floor(i / w) * cell).
+      const densityAt = (n) => {
+        const gx = (n.x - x0) / cell, gy = (n.y - y0) / cell;
+        const ix = Math.floor(gx), iy = Math.floor(gy), fx = gx - ix, fy = gy - iy, i = ix + iy * w;
+        return (density[i] * (1 - fx) + density[i + 1] * fx) * (1 - fy) + (density[i + w] * (1 - fx) + density[i + w + 1] * fx) * fy;
+      };
+
+      for (const { g, members } of sets) {
+        // The blur follows the group's own spread, so a tight group stays tight and one in two
+        // places makes two patches. A small group spread thin gets at least its usual gap between
+        // nodes (the side of the square each node gets in a disk as wide as the group), so its
+        // nodes make one patch and not one dot each. Never thinner than its nodes nor wider than maxBlur.
+        let mx = 0, my = 0, radius = 0;
+        for (const n of members) { mx += n.x; my += n.y; radius += n.size; }
+        mx /= members.length; my /= members.length;
+        radius = radius / members.length * s.nodeScale;
+        let spread = 0;
+        for (const n of members) spread += (n.x - mx) ** 2 + (n.y - my) ** 2;
+        spread = Math.sqrt(spread / members.length);
+        const gap = spread * Math.sqrt(Math.PI / members.length);
+        const blur = Math.min(maxBlur, Math.max(1.5 * cell, 1.2 * radius, SHAPE_SPREAD * spread, SHAPE_GAP * gap));
+        const r = Math.max(1, Math.round(blur / cell));
+
+        // The group's own window of the grid: its nodes plus the 3r cells the three passes reach.
+        // Outside it the density is 0, so the work follows the group's size, not the map's.
+        let gx0 = Infinity, gx1 = -Infinity, gy0 = Infinity, gy1 = -Infinity;
+        for (const n of members) {
+          const gx = (n.x - x0) / cell, gy = (n.y - y0) / cell;
+          if (gx < gx0) gx0 = gx;
+          if (gx > gx1) gx1 = gx;
+          if (gy < gy0) gy0 = gy;
+          if (gy > gy1) gy1 = gy;
+        }
+        const reach = 3 * r + 2;
+        const wx0 = Math.max(0, Math.floor(gx0) - reach), wx1 = Math.min(w - 1, Math.ceil(gx1) + reach);
+        const wy0 = Math.max(0, Math.floor(gy0) - reach), wy1 = Math.min(h - 1, Math.ceil(gy1) + reach);
+
+        // Each node spread over the four cells around it, then three box passes.
+        for (let y = wy0; y <= wy1; y++) density.fill(0, y * w + wx0, y * w + wx1 + 1);
+        for (const n of members) {
+          const gx = (n.x - x0) / cell, gy = (n.y - y0) / cell;
+          const ix = Math.floor(gx), iy = Math.floor(gy), fx = gx - ix, fy = gy - iy, i = ix + iy * w;
+          density[i] += (1 - fx) * (1 - fy);
+          density[i + 1] += fx * (1 - fy);
+          density[i + w] += (1 - fx) * fy;
+          density[i + w + 1] += fx * fy;
+        }
+        for (let pass = 0; pass < 3; pass++) boxBlur(density, scratch, w, wx0, wx1, wy0, wy1, r);
+
+        // Levels read at the nodes: the outline holds SHAPE_COVER of them, the full-strength core SHAPE_CORE.
+        const step = Math.max(1, Math.floor(members.length / SHAPE_SAMPLE));
+        const levels = [];
+        for (let k = 0; k < members.length; k += step) levels.push(densityAt(members[k]));
+        levels.sort((a, b) => a - b);
+        const edge = levels[Math.floor((1 - SHAPE_COVER) * (levels.length - 1))];
+        const core = Math.max(edge * 1.25, levels[Math.floor((1 - SHAPE_CORE) * (levels.length - 1))]);
+        const low = edge * SHAPE_FADE;
+
+        const color = d3.rgb(g.color);
+        let peak = -1, peakAt = 0;
+        for (let y = wy0; y <= wy1; y++) {
+          for (let i = y * w + wx0, end = y * w + wx1; i <= end; i++) {
+            const v = density[i];
+            if (v > peak) { peak = v; peakAt = i; }
+            if (v <= low) continue;
+            const t = Math.min(1, (v - low) / (core - low));
+            const u = t * t * (3 - 2 * t);   // smoothstep: soft both at the rim and toward the core
+            weight[i] += u;
+            red[i] += u * color.r;
+            green[i] += u * color.g;
+            blue[i] += u * color.b;
+          }
+        }
+        g.peak = [x0 + (peakAt % w) * cell, y0 + Math.floor(peakAt / w) * cell];
+
+        if (outline) {
+          // Traced on the window alone; d3.contours puts grid value i at i + 0.5.
+          const ww = wx1 - wx0 + 1, wh = wy1 - wy0 + 1, part = new Float32Array(ww * wh);
+          for (let y = 0; y < wh; y++) part.set(density.subarray((wy0 + y) * w + wx0, (wy0 + y) * w + wx1 + 1), y * ww);
+          const [geometry] = d3.contours().size([ww, wh]).thresholds([edge])(part);
+          const path = new Path2D();
+          for (const polygon of geometry.coordinates) {
+            for (const ring of polygon) {
+              ring.forEach(([cx, cy], k) => {
+                const px = x0 + (wx0 + cx - 0.5) * cell, py = y0 + (wy0 + cy - 0.5) * cell;
+                if (k) path.lineTo(px, py); else path.moveTo(px, py);
+              });
+              path.closePath();
+            }
+          }
+          edges.push({ color: g.color, path });
+        }
+      }
+
+      // One image, a pixel per cell: the mixed color, and as opaque as the groups there are strong.
+      const image = new ImageData(w, h);
+      const px = image.data;
+      for (let i = 0; i < size; i++) {
+        const sum = weight[i];
+        if (sum < 0.004) continue;
+        px[4 * i] = red[i] / sum;
+        px[4 * i + 1] = green[i] / sum;
+        px[4 * i + 2] = blue[i] / sum;
+        px[4 * i + 3] = Math.min(1, sum) * 255;
+      }
+      const canvas = this.shapeCanvas || (this.shapeCanvas = document.createElement("canvas"));
+      canvas.width = w;
+      canvas.height = h;
+      canvas.getContext("2d").putImageData(image, 0, 0);
+      // Pixel i covers [i, i + 1) of the image, so the image starts half a cell before x0.
+      this.shapes = { canvas, x: x0 - cell / 2, y: y0 - cell / 2, width: w * cell, height: h * cell, edges };
+    }
+
+    drawShapes() {
+      const { ctx, transform: t, settings: s, shapes } = this;
+      if (!shapes || s.shapeOpacity <= 0) return;
+      ctx.globalAlpha = Math.min(1, SHAPE_ALPHA * s.shapeOpacity);
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = "high";
+      ctx.drawImage(shapes.canvas, shapes.x, shapes.y, shapes.width, shapes.height);
+      if (shapes.edges.length && s.shapeEdges) {
+        ctx.globalAlpha = Math.min(1, 0.6 * s.shapeOpacity);
+        ctx.lineWidth = 1.2 / t.k;
+        ctx.lineJoin = "round";
+        for (const { color, path } of shapes.edges) {
+          ctx.strokeStyle = color;
+          ctx.stroke(path);
+        }
       }
       ctx.globalAlpha = 1;
     }

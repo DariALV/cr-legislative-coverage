@@ -61,7 +61,7 @@
       </details>
 
       <details open>
-        <summary>Grupos</summary>
+        <summary>Color</summary>
         <div id="modes" class="modes" role="group" aria-label="Color de los nodos"></div>
         <div id="actors" class="modes actors" role="group" aria-label="Partido o actor" hidden></div>
         <div id="scale" class="scale" hidden>
@@ -74,10 +74,17 @@
         <div id="topic-summary" class="legend summary" hidden></div>
       </details>
 
+      <details open>
+        <summary>Grupos</summary>
+        <label class="field"><span>Agrupar por</span><select id="group-by" aria-label="Agrupar por"></select></label>
+        <label class="switch"><span>Juntar los grupos</span><input id="gather" type="checkbox"><i></i></label>
+        <label class="switch"><span>Figuras</span><input id="shapes" type="checkbox"><i></i></label>
+        <p id="group-note" class="hint"></p>
+      </details>
+
       <details>
         <summary>Apariencia</summary>
         <div id="appearance"></div>
-        <label class="switch"><span>Nombres de los temas</span><input id="group-labels" type="checkbox"><i></i></label>
       </details>
 
       <details>

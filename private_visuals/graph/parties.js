@@ -140,7 +140,7 @@
     $(`show-${lean}`).checked = S.show[lean];
     $(`show-${lean}`).addEventListener("change", (e) => { S.show[lean] = e.target.checked; refreshLinks(); });
   }
-  bindPanel(graph);
+  bindPanel(graph, { look: "parties" });
 
   // ---------- tooltip ----------
   const cellText = (actor, topic) => {

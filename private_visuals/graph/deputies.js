@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   const D = window.GRAPH_DEPUTIES;
-  const { $, nf, esc, norm, plural, bindPanel, bindTooltip, PALETTE, PARTY_COLORS } = window.GraphUI;
+  const { $, nf, esc, norm, plural, bindPanel, bindGrouping, bindTooltip, PALETTE, PARTY_COLORS } = window.GraphUI;
   // No data file, or one from before the connection types: running the build again fixes both.
   if (!D || !D.terms[0].links) {
     $("missing").hidden = false;
@@ -40,8 +40,9 @@
   // `custom` holds the thresholds the user moved, by connection type; the rest come from the data.
   const S = { term: D.terms.length - 1, link: "votes", threshold: 75, custom: {}, mode: "party", isolated: new Set(), query: "" };
   const graph = new ForceGraph($("graph"), {
-    center: 0.05, repel: 1500, repelRadius: 260, linkDistance: 70, linkWidth: 0.6, labelZoom: 0.5, groupLabels: false,
+    center: 0.05, repel: 1500, repelRadius: 260, linkDistance: 70, linkWidth: 0.6, labelZoom: 0.5,
   });
+  let grouping = null;       // bindGrouping, below
   let T, L, nodes, pairs;    // current term, its links of the current connection type, its nodes and the pair lookup
   let moved = false;         // the user took over the camera: stop re-framing
 
@@ -137,7 +138,7 @@
       group: (n) => n.party,
       legend: () => [...new Set(nodes.map((n) => n.party))]
         .sort((a, b) => count(b) - count(a))
-        .map((p) => ({ key: p, label: `${partyOf(p).short} · ${p.replace(/^Partido /, "")}`, color: partyOf(p).color })),
+        .map((p) => ({ key: p, label: `${partyOf(p).short} · ${p.replace(/^Partido /, "")}`, short: partyOf(p).short, color: partyOf(p).color })),
     },
     province: {
       label: "Provincia",
@@ -206,6 +207,7 @@
   function applyColors() {
     for (const n of nodes) n.color = MODES[S.mode].color(n);
     graph.colorsChanged();
+    grouping.refresh();   // a new term brings new nodes; the shapes take the colors when the grouping is the color
   }
 
   function applyHighlight() {
@@ -294,7 +296,10 @@
     if (found.length === 1) graph.select(found[0]);
     graph.fit(found, 700, 2.5);
   });
-  bindPanel(graph);
+  bindPanel(graph, { grouping: true, images: true, look: "deputies" });
+  // Grouped by party: its shape shows where the co-voting puts each party and how much the parties
+  // overlap. Gathering them would hide exactly that, so the pull stays off unless asked for.
+  grouping = bindGrouping(graph, { modes: MODES, colorMode: () => S.mode, nodes: () => nodes, groupBy: "party", strength: 0.06 });
 
   // ---------- tooltip ----------
   const pairText = (a, b) => LINKS[S.link].pair(a, b, pairOf(a, b));
