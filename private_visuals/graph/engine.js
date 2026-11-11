@@ -16,7 +16,9 @@
     linkDistance: 30,
     damping: 0.4,        // velocity decay: higher settles faster
     nodeScale: 1,
-    imageOpacity: 1,     // photos inside the nodes; at 0 the nodes are plain
+    nodeOpacity: 1,      // at 0 only the node under the pointer (or the selected one) and its neighbors show
+    imageOpacity: 1,     // photos inside the nodes, times nodeOpacity; at 0 the nodes are plain
+    hideNetwork: false,  // nodes, links and node names out of sight, leaving the group shapes and names
     linkWidth: 1,
     linkOpacity: 1,      // multiplier on the links' opacity; at 0 only those of the node under the pointer show
     labelZoom: 1.6,      // zoom level at which node labels start to appear
@@ -749,11 +751,13 @@
           }
         };
         // Fainter when zoomed out, where thousands of links overlap and would wash out the nodes.
-        // linkOpacity scales them all except those of the node under the pointer, which stay even at 0.
-        const base = s.linkOpacity * (bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k)));
+        // linkOpacity (and hiding the network) scales them all except those of the node under the
+        // pointer, which stay even at 0.
+        const opacity = s.hideNetwork ? 0 : s.linkOpacity;
+        const base = opacity * (bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k)));
         if (base > 0) stroke(base, () => true, sample);
         if (near) stroke(0.75, (a, b) => a === anchor || b === anchor);
-        else if (bright && s.linkOpacity > 0) stroke(0.3 * s.linkOpacity, (a, b) => bright.has(a) && bright.has(b));
+        else if (bright && opacity > 0) stroke(0.3 * opacity, (a, b) => bright.has(a) && bright.has(b));
       }
 
       // Nodes, one path per color. A thin ring in the surface color separates overlapping ones.
@@ -782,13 +786,21 @@
           if (ring) ctx.stroke();
         }
       };
-      if (bright) {
-        paint((n) => !bright.has(n), DIM);
-        paint((n) => bright.has(n), 1);
-      } else {
-        paint(() => true, 1);
+      // nodeOpacity (and hiding the network) scales them all except the node under the pointer and
+      // its neighbors, which stay at full strength.
+      const fill = s.hideNetwork ? 0 : s.nodeOpacity;
+      if (near) {
+        if (fill > 0) paint((n) => !near.has(n), DIM * fill);
+        paint((n) => near.has(n), 1);
+      } else if (bright) {
+        if (fill > 0) {
+          paint((n) => !bright.has(n), DIM * fill);
+          paint((n) => bright.has(n), fill);
+        }
+      } else if (fill > 0) {
+        paint(() => true, fill);
       }
-      this.drawImages(inView, bright);
+      this.drawImages(inView, near, bright, fill);
       ctx.globalAlpha = 1;
       for (const n of [this.selected, this.hovered]) {
         if (!n || !n.visible) continue;
@@ -805,7 +817,7 @@
     }
 
     /** Photos inside the nodes that have one; the node's color stays visible as a ring. */
-    drawImages(inView, bright) {
+    drawImages(inView, near, bright, fill) {
       const { ctx, transform: t, settings: s } = this;
       if (s.imageOpacity <= 0) return;
       for (const n of this.visibleNodes) {
@@ -813,12 +825,15 @@
         if (!image || !image.complete || !image.naturalWidth || !inView(n)) continue;
         const r = this.radius(n);
         if (r * t.k < IMAGE_MIN_PX) continue;
+        // As strong as the node it sits in (see draw), times imageOpacity.
+        const alpha = (near && near.has(n) ? 1 : fill * (bright && !bright.has(n) ? DIM : 1)) * s.imageOpacity;
+        if (alpha <= 0) continue;
         const inner = r - Math.max(2 / t.k, r * 0.14);
         // Square crop; portraits keep the top, where the face is.
         const side = Math.min(image.naturalWidth, image.naturalHeight);
         const sx = (image.naturalWidth - side) / 2;
         const sy = (image.naturalHeight - side) * 0.15;
-        ctx.globalAlpha = (bright && !bright.has(n) ? DIM : 1) * s.imageOpacity;
+        ctx.globalAlpha = alpha;
         ctx.save();
         ctx.beginPath();
         ctx.arc(n.x, n.y, inner, 0, 6.2832);
@@ -860,7 +875,7 @@
         label(anchor, 1, true);
         for (const n of near) if (inView(n)) label(n, 0.9, false);
       }
-      const alpha = fade * 0.9 * s.labelOpacity;
+      const alpha = s.hideNetwork ? 0 : fade * 0.9 * s.labelOpacity;
       if (alpha > 0 && s.maxLabels > 0 && !(this.running && this.visibleNodes.length > MOVING_LABELS)) {
         let count = 0;
         for (const n of this.bySize) {

@@ -45,6 +45,7 @@
     appearance: [
       { section: "Nodos" },
       { key: "nodeScale", label: "Tamaño de los nodos", min: 0.3, max: 4, step: 0.05 },
+      { key: "nodeOpacity", label: "Opacidad de los nodos", min: 0, max: 1, step: 0.05 },
       { key: "imageOpacity", label: "Opacidad de las fotos", min: 0, max: 1, step: 0.05, needs: "images" },
       { section: "Enlaces" },
       { key: "linkWidth", label: "Grosor de los enlaces", min: 0, max: 4, step: 0.1 },
@@ -143,6 +144,7 @@
         else { input.value = value; $(`out-${key}`).textContent = fmt(value); }
       }
       graph.settings.shapes = graph.defaults.shapes;
+      graph.settings.hideNetwork = graph.defaults.hideNetwork;
       graph.shapesDirty = true;
       saveLook(graph);
       graph.applySettings();
@@ -215,7 +217,8 @@
   // ---------- grouping ----------
   const SHAPE_GRAY = "#a3a197";   // patches of groups that are not what colors the nodes
 
-  /** The "group by" picker and the "gather" and "shapes" switches of the Grupos section. The page's
+  /** The "group by" picker and the "gather", "shapes" and "hide the network" switches of the Grupos
+   *  section (the last one is not remembered: a page always opens with its network in sight). The page's
    *  color modes double as the ways to group: each has `label`, `group(n)` and `legend` (a list, or a
    *  function giving one, of {key, label, short?, color}); the key "none" (no value) gets no name or shape.
    *  Options:
@@ -227,7 +230,7 @@
    *  Returns {refresh, by, gathered}; call refresh() after the colors, the nodes or the filters change. */
   function bindGrouping(graph, o) {
     const legendOf = (mode) => (typeof mode.legend === "function" ? mode.legend() : mode.legend);
-    const picker = $("group-by"), gather = $("gather"), shapes = $("shapes");
+    const picker = $("group-by"), gather = $("gather"), shapes = $("shapes"), hide = $("hide-network");
     let by = o.groupBy || "none";
     picker.innerHTML = `<option value="none">Nada</option>`
       + Object.entries(o.modes).map(([key, mode]) => `<option value="${key}">${esc(mode.label)}</option>`).join("");
@@ -267,6 +270,10 @@
       gather.disabled = shapes.disabled = !mode;
       gather.checked = gathered();
       shapes.checked = graph.settings.shapes;
+      if (hide) {
+        hide.disabled = !mode;
+        hide.checked = graph.settings.hideNetwork;
+      }
       const note = $("group-note");
       if (note) {
         note.textContent = !mode ? "Elegí un atributo para nombrar los grupos en el mapa y dibujar una figura detrás de cada uno."
@@ -289,6 +296,8 @@
 
     picker.addEventListener("change", () => {
       by = picker.value;
+      // Without groups there are no shapes to show, so the network comes back.
+      if (by === "none" && graph.settings.hideNetwork) graph.set("hideNetwork", false);
       if (by === "none" && gathered()) setPull(false);
       else if (by !== "none" && o.gatherOnPick && !gathered()) setPull(true);
       if (apply() && gathered()) graph.reheat(0.6);   // the nodes regroup
@@ -300,6 +309,7 @@
       if (o.onChange) o.onChange();
     });
     shapes.addEventListener("change", () => setFromPanel(graph, "shapes", shapes.checked));
+    if (hide) hide.addEventListener("change", () => graph.set("hideNetwork", hide.checked));
     // The force slider and the reset button also move the pull.
     document.addEventListener("graph-settings", (e) => {
       if (e.detail.key !== "group" && e.detail.key !== null) return;
