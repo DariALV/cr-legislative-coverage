@@ -450,3 +450,14 @@ Diario del tema. Las pruebas del 2026-11-08 se escribieron en `general.md` antes
 - results/jev/sample_final/: candidatos top-50 ∪ nombrados por número (7 agregados de 48 nombrados), puerta sin same_topic, detalle final. Llave tests, 10.571.510 tokens, $0,444. Etiquetas: el export de Descargas del 2026-11-09 16:48 (el mismo de la corrida anterior, así que la comparación es directa).
 - Contra la corrida del 2026-11-09 (umbral 0,5 sobre max(explícito, implícito)): recall del ranker 0,940 → 0,955 (Correcto) y 0,871 → 0,909 (todas); recall 0,866 → 0,866; precisión 0,841 → 0,806 (3 falsos positivos más, todos con probabilidad entre 0,50 y 0,53: es ruido de Jev en el límite; uno es un expediente agregado por número, 24753, rank 2242); «ninguno» 0,969 → 0,969.
 - Con los dos niveles (Correcto): mención, recall 0,687 / precisión 0,902 / ninguno 0,984; sustantiva, 0,672 / 0,918 / 0,984. Todas las noticias: mención 0,674 / 0,832; sustantiva 0,599 / 0,859. Subir el umbral cambia recall por precisión, como se estimó en el corpus.
+
+## 2026-11-10 18:39 — pendiente: el análisis del corpus usó la tabla de votos incompleta (1.955 votaciones, jun–nov); hay que rehacerlo filtrando al período (#43 #56)
+
+- La base se había reemplazado por una copia vieja (data 2026-11-10 16:56). Otro chat recargó los votos de Delfino (9.288 desde 2018) y dejó el respaldo databases/private_corpus.backup_2026-11-10.db (data 2026-11-10 17:04). Claude vio los 1.955 votos al empezar el análisis y no los contrastó con los 9.285 del STATUS.
+- Afecta solo las cifras que usan votos: «votados en el Plenario», aprobados en 1.° y 2.° debate, «4+ mociones» y posiciones contra votos. El resto del análisis no usa votos.
+- Propuesta de Claude (sin respuesta): filtrar los votos a mayo–octubre de 2026 y volver a correr analysis.py (no hace falta Jev).
+
+## 2026-11-10 18:40 — corrección: el análisis ya estaba rehecho con los votos de mayo–octubre (otro chat, 17:20) y entró en el commit a726792 (#43 #56)
+
+- La entrada «pendiente: el análisis del corpus usó la tabla de votos incompleta» estaba desactualizada: otro chat ya había filtrado las tres consultas a votes al período y actualizado el README (jev 2026-11-10 17:20, «decisión: el análisis del corpus usa solo votos de mayo–octubre»). Esa versión es la que se commiteó en a726792.
+- Cifras vigentes: posiciones contra votos 130/141 = 92,2 % (sustantiva) y 131/143 = 91,6 % (mención); 110 expedientes votados en el Plenario; 35 aprobados en 1.er debate y 39 en 2.º; sin cobertura sustantiva quedan los mismos 3 convenios aéreos.
