@@ -34,6 +34,7 @@ Closed list of topics. Ask the user before creating a new one; anything that fit
 | `sample.md` | manual labeled sample, pre-labeled batches, negatives review | #25–#31 |
 | `ranker.md` | learning-to-rank, evolutionary ranker, fitness on GPU, folds and runs | #33 #41 #68 |
 | `jev.md` | Jev (TypeSafe) evaluator: probes, filters, costs, question design | #34 #39 #43 |
+| `future.md` | future work beyond the course: cheaper pipeline, longer periods, new views on news and bills, other Costa Rican public data sources, public products | — |
 | `general.md` | repo rules (CLAUDE.md), issue housekeeping, machines, anything cross-cutting | — |
 
 - Always log. Anything worth remembering goes in: decisions taken with the user (and the options discarded), observations about sources and data (e.g. "SIL has no X column"), what was implemented and how, caveats, errors and their fixes, counts and results of runs.
@@ -98,3 +99,16 @@ Before committing, show the user the proposed message, plus any suggestion (anot
 - If an issue matches what is being discussed (e.g. the conversation is exactly what #60 asks for), say so, and add a comment to that issue with the relevant findings, decisions or caveats.
 - Right after implementing something, check which issue(s) it belongs to, so the work gets linked and, if it finishes the issue, closed.
 - Commit as often as it makes sense: as soon as a coherent piece of work is done, propose the commit (following "Commits" above) instead of letting uncommitted changes pile up. Prefer several small, well-linked commits over one large mixed one.
+
+## Privacy and ethics before committing (always)
+
+Never commit anything that could be an ethical, legal or privacy problem. For example:
+
+- The body or full text of a news article (copyrighted, and some sit behind a paywall). Public fields such as URL, title, date, outlet and author are fine, as are IDs, labels, scores and short derived features.
+- `.env`, API keys, tokens, passwords or anything that reads like a secret, even in a log, a notebook output or a results file.
+- Personal data beyond what is already public and needed (e.g. private contact data, emails, the user's personal details).
+- Raw API responses or prompts that embed any of the above (e.g. a Jev request that carries the article text).
+
+Before every commit (and before proposing one), check the files that would go in: `git status`, the untracked files and, for data and results files, their columns or a few lines. Large CSV/JSON/JSONL files under `results/` deserve an explicit look.
+
+Always warn the user, in chat and before the commit, whenever something carries a risk: say which file, what the risk is, and propose keeping it out (`.gitignore`, dropping columns, or moving it outside git like `raw/` and the databases). When in doubt, leave it out and ask.

@@ -233,3 +233,27 @@ Pendiente de decisión del usuario (no se implementó nada): recuperar exposicio
 ## 2026-11-09 13:50 — decisión: Semanario sin autor no se toca (#16)
 
 - Las 2.222 notas de Semanario con `author` vacío se quedan así. El usuario dice que es un metadato irrelevante para el análisis. No hace falta caveat.
+
+## 2026-11-10 16:56 — La base local perdió los votos completos: tiene solo jun–nov 2026 (#22)
+
+- Aviso del usuario: «los votos de Delfino solo cubren ~junio–noviembre». Es cierto **en la base actual**: `votes` tiene 1.955 votaciones de 87 expedientes (2026-06-10 a 2026-11-05; 1.737 en agosto) y `vote_deputies` 111.378, sin la columna `kind`.
+- Es el estado de la corrida rota del 2026-11-07 01:42. La corrida completa (`logs/run_2026-11-07_022724.log`, cerró 03:31) sí guardó 9.285 votaciones desde 2018-05-17 y 513.432 votos, pero `private_corpus.db` tiene fecha de modificación 2026-11-07 02:15: la base fue reemplazada por una copia anterior (probablemente al copiarla entre máquinas, general 2026-11-07 02:10).
+- Lo demás está: `raw/links/delfino/votes_list.json` completo (1.042 páginas, 9.693 votaciones) y ~9.391 páginas de votación en caché. Rehacer solo los votos (`scrap_delfino_votes` → `replace_vote_tables` → `link_vote_deputies`) casi no baja nada; la columna `kind` se agrega sola.
+- Afecta todo lo que leyó votos desde el 7-nov: el visor de Jev (#69, «solo 87 expedientes tienen votos», prensa vs voto) y el análisis del corpus. pendiente: el usuario decide si se recargan.
+
+## 2026-11-10 17:04 — Votos de Delfino recargados en la base: 9.288 desde 2018 (#22)
+
+- Pedido del usuario. Respaldo previo: `databases/private_corpus.backup_2026-11-10.db` (la base con solo jun–nov). Script de solo votos en el scratchpad (`scrap_delfino_votes` → `replace_vote_tables` → `link_vote_deputies`), log `logs/run_2026-11-10_165729.log`, ~6 min, casi todo desde la caché.
+- Resultado: 9.288 votaciones de 1.991 expedientes (8.879 plenary, 409 full_committee; 2018-05-17 a 2026-11-09, 3 nuevas desde el 7-nov) y 513.660 votos. Ahora la columna `kind` existe.
+- Cruce con diputados: 513.655 de 513.660; solo queda sin cruce «Cynthia Córdoba Serrano» (el matcher de #22 ya arregla los otros 5). 4 votaciones sin diputados (25754 ya los trae).
+- Visor de Jev regenerado (`build_data.py`): 2.234 votaciones de 181 expedientes desde 2026-04-01 (antes 87 expedientes). Carga sin errores en localhost:8766.
+- pendiente: `results/jev/corpus_analysis/analysis.py` lee `votes` sin filtrar por período (líneas 129 y 196). Con el historial completo, «plenary votes (any)» y posiciones vs. votos mezclarían votaciones desde 2018. Falta decidir si se filtra al período antes de volver a correrlo.
+
+## 2026-11-10 17:16 — Los votos no están topados en 10 por expediente; salen de la lista general (#22)
+
+- Duda del usuario: si se scrapearon solo las 10 votaciones más recientes de cada expediente. No: hay 45 expedientes con más de 10 (24290: 2.625; 21182: 857; 23090: 501; 24079: 95) y 8 con exactamente 10. Distribución: 1.792 con 1–4, 146 con 5–9.
+- La fuente es la lista general `/asamblea/votaciones?pagina=N`: 9.696 entradas en `votes_list.json` (9.037 proyecto, 411 plena, 248 elección) y las mociones sin expediente se saltan al leer. Lista contra base: todo lo de la base está en la lista; las 408 que faltan son las 248 elecciones y 160 de expedientes < 20000 (FIRST_BILL).
+- En vivo hoy: la página 1042 trae 10 y la 1043 trae 3 (la lista corrió por las votaciones nuevas): 201805101 y 201805141 (expediente 19117, ya en la lista) y una moción. No falta nada al final.
+- El visor muestra 2.234 porque `build_data.py` (`load_context`) limita votos, pasos y comisiones al período de noticias con un mes de margen (desde 2026-04-01). Es por diseño, no por falta de datos.
+
+## 2026-11-10 17:20 — ver jev.md: el análisis del corpus usa solo votos de mayo–octubre (#22)

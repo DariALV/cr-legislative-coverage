@@ -231,3 +231,6 @@ results/evolution/**/population.csv
 
 # Astro site: the Python template above ignores lib/ anywhere
 !site/src/lib/
+
+# Local backup of the private database (has news text): never commit
+databases/private_corpus.backup_*.db

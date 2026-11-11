@@ -155,3 +155,18 @@ Commit `feature: status file and per-topic claude logs` (sin issue: no hay ningu
 - Contraste del plan del 21 de octubre con lo hecho al 10 de noviembre. Cumplido o superado: 5 medios y 29.698 noticias (estimado: 3–6k), cruce decidido (ranker + Jev) y K ajustado, muestra de 300, precisión medida, corrida sobre todo el corpus, preguntas extra (estaban fuera «si sobra tiempo»).
 - Pendiente con fecha: corpus público (#44 #45) y cuaderno (#46) para el 10 de noviembre; sitio (#48–#51) y prueba de uso (#52 #53) para el 13; informe, ética y diapositivas (#54–#61) para el 15. También #30 (acuerdo entre anotadores) y #40 (comparación con la línea base).
 - Propuesta de Claude: el análisis sirve como validación (precisión por nivel, 95 % contra las votaciones) y como descripción de la cobertura por expediente. Las comparaciones entre medios y partidos se presentan solo de forma descriptiva y con caveats, o se dejan fuera del sitio. Prioridad: corpus público + sitio.
+
+## 2026-11-10 18:52 — Para el informe: universo de expedientes del análisis y trabajo futuro (bajar K mejorando el ranker) (#56)
+
+- El usuario: no tiene sentido medir la cobertura sobre los 5.898 expedientes (2018–2026) con noticias de mayo a octubre de 2026; en el informe, el universo comparable es el de los expedientes con actividad en el período (924 con pasos en el SIL, 306 presentados, 110 votados).
+- Trabajo futuro según el usuario: ampliar el período de noticias choca con el costo de Jev; la vía es mejorar el ranker para bajar K sin perder recall. Datos: el costo de la puerta es casi proporcional a K (~650 tokens por candidato); recall del ranker en el oro: @10 0,852, @20 0,911, @30 0,927, @50 0,954 (ranker 2026-11-07). Costo de este corpus: filtro $1,54 + puerta $10,08 + detalle $1,44 = $13,06 por 6 meses (~29,7k noticias).
+
+## 2026-11-10 18:58 — decisión: nuevo tema de diario future.md (trabajo a futuro), a pedido del usuario
+
+- El usuario pidió un claude_logs específico para el trabajo a futuro. Se agregó claude_logs/future.md y la fila correspondiente en la tabla de temas de CLAUDE.md (tabla cerrada; este es un tema nuevo autorizado por el usuario).
+
+## 2026-11-10 21:10 — Pull del scaffold del sitio Astro (18d064b) y commits pendientes hechos (#69 #43)
+- Entró 1 commit remoto de andrik: `site/` (Astro) y `.gitignore` (quita `/site`, agrega `!site/src/lib/`). Sin conflictos; hubo que hacer stash porque el rename app.js → bills.js en staging trababa el merge.
+- Revisión de privacidad: sin texto de noticias ni llaves; los datos de los visores van a `private_visuals/output/` (ignorado).
+- Commits: grafos (#69), visor de respuestas de Jev (#69), modelo de costos (#43), logs + CLAUDE.md (#22 #56). `databases/private_corpus.backup_*.db` agregado al .gitignore.
+- Fuera de git a propósito: `results/jev/corpus/` y `results/jev/jev_corpus.zip` (decisión pendiente, STATUS «Para retomar» 3).

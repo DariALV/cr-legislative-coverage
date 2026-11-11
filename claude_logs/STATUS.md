@@ -2,7 +2,7 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-10 18:07 (partidos y temas según la prensa, #69).
+Última actualización: 2026-11-10 21:10 (pull del sitio Astro y commits de grafos, visor, costos y logs).
 
 ## Para retomar
 
@@ -11,7 +11,7 @@ La corrida de Jev sobre el corpus está completa: 3.662 de 7.431 noticias con ma
 2. **Análisis del corpus hecho con los dos niveles** en results/jev/corpus_analysis/ (README.md, mention/, substantive/, match_review.csv; jev 2026-11-10, «Análisis del corpus rehecho»): mención = explícito ≥ 0,5 o implícito ≥ 0,75 (4.671 pares, ~78–85 %); cobertura sustantiva = además centralidad ≥ 0,25 (3.462 pares, ~88–91 %). Votos filtrados a mayo–octubre y tablas rehechas con la base recargada: posición atribuida vs. voto 92,2 % (130/141) (jev 2026-11-10 17:20). Sin commitear. **Pendiente de alcance:** el plan del entregable 1 deja fuera comparar o rankear medios, diputados o partidos (general 2026-11-10, «pendiente: el análisis por medio…»). Recomendación: validación + descripción por expediente; lo de medios y partidos, solo descriptivo o fuera del sitio. **Prioridad:** corpus público (#44 #45 #46), sitio (#48–#51, viernes 13) e informe (domingo 15). Visor: `private_visuals/jev_answers/` (#69).
 3. **Git**: answers.jsonl pesa 133 MB (6,8 MB comprimido). Propuesta: commitear los .gz y dejar fuera los CSV grandes, que se regeneran. El usuario lo deja para después; hasta entonces, results/jev/corpus/ no se commitea.
 3. **Formato en la base pública**: columnas extra o tabla relacional (news_id, bill, pregunta, opción, probabilidad, confidence, ...). Lo decide el usuario.
-4. **Commits**: el código, las pruebas, el análisis (a726792) y la muestra repetida (8201be6) de Jev ya están commiteados. Sin commitear: results/jev/corpus/ (se comprime después) y lo de otros chats: CLAUDE.md, claude_logs/data.md, private_visuals/graph/ (con un rename en staging), private_visuals/jev_answers/, results/jev/cost_model.md y results/jev/scripts/jev_cost_*.py. **No commitear** databases/private_corpus.backup_2026-11-10.db (copia de la base privada con texto de noticias; agregarla al .gitignore).
+4. **Commits**: todo lo de Jev, grafos (#69), visor de respuestas (#69), modelo de costos (#43) y logs está commiteado y pusheado (general 2026-11-10 21:10). Sin commitear solo results/jev/corpus/ y results/jev/jev_corpus.zip (decisión pendiente del punto 3). El respaldo databases/private_corpus.backup_2026-11-10.db ya está en el .gitignore. En main está también `site/` (scaffold Astro de andrik, 18d064b).
 
 ## Pendiente: decisiones abiertas
 
@@ -79,16 +79,18 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 ## Estado por tema
 
+**trabajo a futuro** (diario nuevo `future.md`, 2026-11-10): ideas por tema (abaratar el pipeline bajando K, otras miradas como leyes vigentes o «dice frente a vota», nuevas fuentes públicas, productos). Solo ideas, nada decidido.
+
 **datos** (#16 #66 abiertos; #22 #65 cerrados)
 - 5.898 expedientes (20000–25897). `bill_texts`: 5.411 ok, 264 no_exposition, 223 no_text. Texto en `raw/text/asamblea/bills/`.
-- Votos de Delfino: 9.288 votaciones (8.879 plenary, 409 full_committee; 2018-05-17 a 2026-11-09) y 513.660 votos, recargados el 2026-11-10 porque la base se había reemplazado por una copia vieja. Sin cruce solo «Cynthia Córdoba Serrano». Respaldo de la base parcial: `databases/private_corpus.backup_2026-11-10.db` (sin ignorar en git; borrar cuando no haga falta). (data 2026-11-10 16:56, 17:04)
+- Votos de Delfino: 9.288 votaciones (8.879 plenary, 409 full_committee; 2018-05-17 a 2026-11-09) y 513.660 votos, recargados el 2026-11-10 porque la base se había reemplazado por una copia vieja. Sin cruce solo «Cynthia Córdoba Serrano». Respaldo de la base parcial: `databases/private_corpus.backup_2026-11-10.db` (ignorado en git; borrar cuando no haga falta). (data 2026-11-10 16:56, 17:04)
 - 235 diputados, 1.880 órganos. 29.875 noticias (mayo–oct 2026).
 
 **explorador** (#67 cerrado): `private_visuals/db_explorer/server.py`, de solo lectura, en localhost:8765 (`db-explorer` en launch.json). Fotos de 168/230 diputados.
 
-**visor de Jev** (#69 abierto): `private_visuals/jev_answers/`, página estática en localhost:8766/jev_answers/ (`visuals` en launch.json). Vistas por noticia y por expediente + pestaña «Análisis» (partidos, votos vs prensa, medios, rankings, proponentes y comisiones, cruces, polémicos, línea temporal). Línea temporal con los 1.420 expedientes (381 activos sin cobertura) y botón en cada expediente. Hecho y verificado; sin commitear (jev 2026-11-10 15:23, 15:54, 16:32). Prensa vs voto: 94–100 % de coincidencia por partido.
+**visor de Jev** (#69 abierto): `private_visuals/jev_answers/`, página estática en localhost:8766/jev_answers/ (`visuals` en launch.json). Vistas por noticia y por expediente + pestaña «Análisis» (partidos, votos vs prensa, medios, rankings, proponentes y comisiones, cruces, polémicos, línea temporal). Línea temporal con los 1.420 expedientes (381 activos sin cobertura) y botón en cada expediente. Hecho, verificado y commiteado (jev 2026-11-10 15:23, 15:54, 16:32). Prensa vs voto: 94–100 % de coincidencia por partido.
 
-**grafos** (#69): `private_visuals/graph/`, en localhost:8766/graph/ (o `visuals-alt`, 8768, si el 8766 está ocupado). Tres pestañas: (1) **Expedientes** (`index.html`, datos con `build_graph.py`, necesita `networkx`): 5.898 expedientes, 26 temas Louvain; color por tema, cobertura, estado o posición de un partido. Commiteado (361b255) salvo el modo «Partidos». (2) **Diputados** (`deputies.html`, `build_deputies.py`): co-votación por legislatura, umbral ajustable, fotos. En 2026–2030: PPSO vota 8–23 % igual que la oposición; PLN–FA 69 %. (3) **Partidos y temas** (`parties.html`): posición que la prensa le atribuye a cada partido por tema; 101 enlaces, solo 3 en contra (FA). (2) y (3) hechos y verificados, **sin commitear**. Quedan los extras (co-mención, medio → tema → etapa, streamgraph). (jev 2026-11-10 17:27, 17:49, 18:07)
+**grafos** (#69): `private_visuals/graph/`, en localhost:8766/graph/ (o `visuals-alt`, 8768, si el 8766 está ocupado). Tres pestañas: (1) **Expedientes** (`index.html`, datos con `build_graph.py`, necesita `networkx`): 5.898 expedientes, 26 temas Louvain; color por tema, cobertura, estado o posición de un partido. Commiteado (361b255) salvo el modo «Partidos». (2) **Diputados** (`deputies.html`, `build_deputies.py`): co-votación por legislatura, umbral ajustable, fotos. En 2026–2030: PPSO vota 8–23 % igual que la oposición; PLN–FA 69 %. (3) **Partidos y temas** (`parties.html`): posición que la prensa le atribuye a cada partido por tema; 101 enlaces, solo 3 en contra (FA). (2) y (3) hechos, verificados y commiteados. Quedan los extras (co-mención, medio → tema → etapa, streamgraph). (jev 2026-11-10 17:27, 17:49, 18:07)
 
 **embeddings** (#6 #32 #38 cerrados)
 - bge-m3 y qwen3-0.6b embebidos en el oro y en los 5.898 expedientes (3 variantes).
