@@ -18,7 +18,7 @@
       <a href="flow.html">Flujo</a>
       <a href="stream.html">En el tiempo</a>
     </nav>
-    <h1>Diputados que votan igual</h1>
+    <h1 id="heading">Diputados que votan igual</h1>
     <p id="subtitle"></p>
   </header>
 
@@ -36,11 +36,17 @@
         <summary>Filtros</summary>
         <div id="terms" class="modes" role="group" aria-label="Legislatura"></div>
         <label class="slider">
-          <span>Coincidencia mínima<output id="out-threshold"></output></span>
+          <span><span id="threshold-label">Coincidencia mínima</span><output id="out-threshold"></output></span>
           <input id="threshold" type="range" min="40" max="100" step="1">
         </label>
         <input id="q" type="search" placeholder="Buscar diputado o partido…" autocomplete="off" aria-label="Buscar diputado">
         <p id="search-count" class="hint"></p>
+      </details>
+
+      <details open>
+        <summary>Conexiones</summary>
+        <div id="links" class="modes" role="group" aria-label="Qué une a dos diputados"></div>
+        <p id="links-note" class="hint"></p>
       </details>
 
       <details open>

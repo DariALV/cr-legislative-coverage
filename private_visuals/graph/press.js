@@ -27,10 +27,25 @@
     not_stated: "No se dice",
   };
 
+  const GENRES = { news_report: "Noticia", opinion: "Opinión", interview: "Entrevista", analysis: "Análisis" };
+  const FRAMES = {
+    policy: "Política pública", conflict: "Conflicto", economic: "Económico", responsibility: "Responsabilidad",
+    human_interest: "Interés humano", morality: "Moral",
+  };
+
   const outlets = D.press.outlets.map((key, id) => ({ id, key, ...(OUTLETS[key] || { name: key, color: NEUTRAL }) }));
   const stages = D.press.stages.map((key, id) => ({
     id, key, name: STAGES[key] || key, color: key === "not_stated" ? NEUTRAL : PALETTE[id], unstated: key === "not_stated",
   }));
+  // Genre and main frame of the news item (Jev's `genre` and `main_frame`); a news item without
+  // an answer goes to a last, gray item.
+  const coded = (keys, names, column) => {
+    const items = (keys || []).map((key, id) => ({ id, key, name: names[key] || key, color: PALETTE[id] }));
+    if (D.press.news.some((row) => !(row[column] >= 0))) items.push({ id: items.length, key: "unknown", name: "Sin dato", color: NEUTRAL });
+    return items;
+  };
+  const genres = coded(D.press.genres, GENRES, 2), frames = coded(D.press.frames, FRAMES, 3);
+  const codeOf = (value, items) => (value >= 0 ? value : items.length - 1);
 
   // ---------- weeks ----------
   // Weeks run Monday to Sunday; the first one starts on the Monday on or before the first news.
@@ -53,9 +68,16 @@
   const weekPosition = (date) => (date.getTime() - start) / (7 * DAY) - 0.5;
 
   // ---------- pairs ----------
-  const pairs = D.press.pairs.map(([news, node, stage]) => ({
-    news, node, stage, outlet: D.press.news[news][1], week: weekOf(D.press.news[news][0]), topic: D.nodes[node][F.topic],
-  }));
+  // `mentions` has every pair, passing mentions included; `pairs` only the substantive ones,
+  // which is what the views count unless they say otherwise.
+  const mentions = D.press.pairs.map(([news, node, stage, substantive = 1]) => {
+    const [date, outlet, genre, frame] = D.press.news[news];
+    return {
+      news, node, stage, substantive: !!substantive, outlet, genre: codeOf(genre, genres), frame: codeOf(frame, frames),
+      week: weekOf(date), topic: D.nodes[node][F.topic],
+    };
+  });
+  const pairs = mentions.filter((p) => p.substantive);
 
   // ---------- topic groups ----------
   // The most covered topics keep the color they have on the bills map. The palette has eight
@@ -86,7 +108,7 @@
     groups.push({ id: groups.length, topic: null, name: `Otros ${rest.length} temas`, short: "Otros", color: NEUTRAL, other: true });
   }
   const groupOfTopic = new Map(order.map((topic, id) => [topic, id]));
-  for (const p of pairs) p.group = groupOfTopic.has(p.topic) ? groupOfTopic.get(p.topic) : groups.length - 1;
+  for (const p of mentions) p.group = groupOfTopic.has(p.topic) ? groupOfTopic.get(p.topic) : groups.length - 1;
 
   /** The fields of a bill the press views show. */
   const bill = (node) => {
@@ -98,5 +120,5 @@
     .sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, limit).map(([node, count]) => ({ ...bill(node), count }));
 
   const period = `${dayMonth(new Date(firstDay))} al ${dayMonth(new Date(lastDay))} de ${new Date(lastDay).getUTCFullYear()}`;
-  window.GraphPress = { outlets, stages, groups, pairs, weeks, weekLabel, weekPosition, bill, topBills, period, NEUTRAL, newsCount: D.press.news.length };
+  window.GraphPress = { outlets, stages, genres, frames, groups, pairs, mentions, weeks, weekLabel, weekPosition, bill, topBills, period, NEUTRAL };
 })();

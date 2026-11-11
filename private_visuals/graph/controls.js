@@ -49,16 +49,19 @@
       { key: "center", label: "Fuerza central", min: 0, max: 0.15, step: 0.001 },
       { key: "repel", label: "Repulsión", min: 0, max: 3000, step: 10 },
       { key: "repelRadius", label: "Alcance de la repulsión", min: 20, max: 500, step: 5 },
+      { key: "far", label: "Separación entre grupos", min: 0, max: 12, step: 0.1 },
+      { key: "group", label: "Agrupar por color", min: 0, max: 0.3, step: 0.005, needs: "grouping" },
       { key: "linkStrength", label: "Fuerza de los enlaces", min: 0, max: 3, step: 0.05 },
       { key: "linkDistance", label: "Distancia de los enlaces", min: 2, max: 250, step: 1 },
       { key: "damping", label: "Fricción", min: 0.05, max: 0.9, step: 0.01 },
     ],
   };
 
-  /** Renders the sliders and wires the switches and buttons present on the page. */
-  function bindPanel(graph) {
+  /** Renders the sliders and wires the switches and buttons present on the page.
+   *  `features.grouping`: the page fills node.group, so the "group by color" slider makes sense. */
+  function bindPanel(graph, features = {}) {
     for (const [box, sliders] of Object.entries(SLIDERS)) {
-      $(box).innerHTML = sliders.map((s) => `
+      $(box).innerHTML = sliders.filter((s) => !s.needs || features[s.needs]).map((s) => `
         <label class="slider">
           <span>${s.label}<output id="out-${s.key}">${fmt(graph.settings[s.key])}</output></span>
           <input type="range" data-key="${s.key}" min="${s.min}" max="${s.max}" step="${s.step}" value="${graph.settings[s.key]}">

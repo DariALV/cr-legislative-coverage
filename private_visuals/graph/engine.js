@@ -10,6 +10,8 @@
     center: 0.008,       // pull toward the middle
     repel: 300,          // node-to-node repulsion
     repelRadius: 80,     // nodes farther apart than this don't push each other
+    far: 0,              // long-range repulsion between whole regions: what opens gaps between groups
+    group: 0,            // pull of each node toward the middle of its own group (node.group)
     linkStrength: 1,     // multiplier on d3's per-link default
     linkDistance: 30,
     damping: 0.4,        // velocity decay: higher settles faster
@@ -27,6 +29,12 @@
   const LINK_LEVELS = [{ width: 1, alpha: 1 }, { width: 1.5, alpha: 1.25 }, { width: 2.2, alpha: 1.6 }];
   const COLORED_LINK_BOOST = 3;
   const IMAGE_MIN_PX = 5;      // below this radius on screen a photo is just noise
+  // The engine steps the simulation itself: several ticks per frame while they fit in the
+  // budget (a fast machine settles in a third of the frames) and one per frame when they don't.
+  const TICK_BUDGET_MS = 9;
+  const MAX_TICKS_PER_FRAME = 4;
+  const MOVING_LINKS = 6000;   // links drawn per frame while the layout moves; all of them once it settles
+  const MOVING_LABELS = 1500;  // with more nodes than this, names wait until the layout settles
   const FONT = '"Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif';
 
   // Short-range repulsion on a uniform grid. d3.forceManyBody takes about 100 ms a tick with
@@ -156,6 +164,101 @@
     return force;
   }
 
+  // Long-range repulsion, computed between the cells of a coarse grid instead of between nodes.
+  // Every occupied cell pushes away with a force that falls off as 1/distance, and a node takes
+  // the push at its own position, interpolated between the four cell centers around it. This is
+  // what opens gaps between groups that don't touch: the short-range force can't, and
+  // d3.forceManyBody does it node by node, which costs about twenty times more here.
+  // With the pull toward the center, the nodes settle at an even density (about
+  // center / (pi * strength) nodes per square unit), and the links gather them above it.
+  const FAR_CELLS = 28;
+  function forceFar() {
+    let nodes = [], strength = 0;
+    const G = FAR_CELLS, cells = G * G;
+    const mass = new Float64Array(cells), mx = new Float64Array(cells), my = new Float64Array(cells);
+    const fx = new Float64Array(cells), fy = new Float64Array(cells), occupied = new Int32Array(cells);
+    function force(alpha) {
+      const n = nodes.length;
+      if (n < 2 || strength <= 0) return;
+      let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+      for (let i = 0; i < n; i++) {
+        const d = nodes[i];
+        if (d.x < x0) x0 = d.x;
+        if (d.x > x1) x1 = d.x;
+        if (d.y < y0) y0 = d.y;
+        if (d.y > y1) y1 = d.y;
+      }
+      const w = Math.max((x1 - x0) / G, 1e-6), h = Math.max((y1 - y0) / G, 1e-6);
+      mass.fill(0); mx.fill(0); my.fill(0);
+      for (let i = 0; i < n; i++) {
+        const d = nodes[i];
+        const c = Math.min(G - 1, Math.floor((d.x - x0) / w)) + G * Math.min(G - 1, Math.floor((d.y - y0) / h));
+        mass[c]++; mx[c] += d.x; my[c] += d.y;
+      }
+      let count = 0;
+      for (let c = 0; c < cells; c++) {
+        if (!mass[c]) continue;
+        mx[c] /= mass[c]; my[c] /= mass[c];
+        occupied[count++] = c;
+      }
+      // Push at every cell center from the other occupied cells. `soft` keeps a center of mass
+      // that sits right next to a cell center from blowing up.
+      const k = strength * alpha, soft = 0.25 * w * h;
+      for (let cy = 0; cy < G; cy++) {
+        for (let cx = 0; cx < G; cx++) {
+          const c = cx + cy * G, px = x0 + (cx + 0.5) * w, py = y0 + (cy + 0.5) * h;
+          let ax = 0, ay = 0;
+          for (let o = 0; o < count; o++) {
+            const b = occupied[o];
+            if (b === c) continue;
+            const dx = px - mx[b], dy = py - my[b];
+            const f = mass[b] / (dx * dx + dy * dy + soft);
+            ax += dx * f; ay += dy * f;
+          }
+          fx[c] = ax * k; fy[c] = ay * k;
+        }
+      }
+      for (let i = 0; i < n; i++) {
+        const d = nodes[i];
+        const gx = (d.x - x0) / w - 0.5, gy = (d.y - y0) / h - 0.5;
+        const ix = Math.max(0, Math.min(G - 2, Math.floor(gx))), iy = Math.max(0, Math.min(G - 2, Math.floor(gy)));
+        const tx = Math.max(0, Math.min(1, gx - ix)), ty = Math.max(0, Math.min(1, gy - iy));
+        const a = ix + iy * G, b = a + 1, c = a + G, e = c + 1;
+        d.vx += (fx[a] * (1 - tx) + fx[b] * tx) * (1 - ty) + (fx[c] * (1 - tx) + fx[e] * tx) * ty;
+        d.vy += (fy[a] * (1 - tx) + fy[b] * tx) * (1 - ty) + (fy[c] * (1 - tx) + fy[e] * tx) * ty;
+      }
+    }
+    force.initialize = (list) => { nodes = list; };
+    force.strength = (v) => { strength = v; return force; };
+    return force;
+  }
+
+  // Pull toward the middle of the node's own group. The group is whatever the page puts in
+  // node.group (its color mode, usually), so changing it makes the nodes regroup.
+  function forceGroup() {
+    let nodes = [], strength = 0;
+    function force(alpha) {
+      if (strength <= 0) return;
+      const middles = new Map();
+      for (const d of nodes) {
+        if (d.group === undefined) continue;
+        let m = middles.get(d.group);
+        if (!m) middles.set(d.group, m = [0, 0, 0]);
+        m[0] += d.x; m[1] += d.y; m[2]++;
+      }
+      const k = strength * alpha;
+      for (const d of nodes) {
+        const m = middles.get(d.group);
+        if (!m) continue;
+        d.vx += (m[0] / m[2] - d.x) * k;
+        d.vy += (m[1] / m[2] - d.y) * k;
+      }
+    }
+    force.initialize = (list) => { nodes = list; };
+    force.strength = (v) => { strength = v; return force; };
+    return force;
+  }
+
   class ForceGraph {
     constructor(canvas, overrides = {}) {
       this.canvas = canvas;
@@ -174,19 +277,25 @@
       this.insets = () => ({ top: 0, right: 0, bottom: 0, left: 0 });  // canvas area covered by panels
       this.onHover = () => {};
       this.onSelect = () => {};
+      this.onSettled = () => {};  // the layout stopped moving
       this.frame = 0;
+      this.running = false;      // the simulation is being stepped
+      this.layoutKey = null;     // where the settled positions are remembered (see restoreLayout)
 
       this.linkForce = forceSpring();
       this.chargeForce = forceRepel().nodeRadius((n) => n.size * this.settings.nodeScale);
+      this.farForce = forceFar();
+      this.groupForce = forceGroup();
       this.xForce = d3.forceX(0);
       this.yForce = d3.forceY(0);
       this.simulation = d3.forceSimulation()
         .force("link", this.linkForce)
         .force("charge", this.chargeForce)
+        .force("far", this.farForce)
+        .force("group", this.groupForce)
         .force("x", this.xForce)
         .force("y", this.yForce)
-        .on("tick", () => this.requestDraw())
-        .stop();
+        .stop();   // stepped by run(), not by d3's own timer
 
       this.zoom = d3.zoom().scaleExtent([0.03, 14]).on("zoom", (e) => {
         this.transform = e.transform;
@@ -197,7 +306,10 @@
         // The subject is a wrapper without x/y, so event.x/y stay in canvas pixels.
         .subject((e) => { const node = this.nodeAt(e.x, e.y); return node ? { node } : null; })
         .on("start", (e) => {
-          if (!e.active && this.settings.physics) this.simulation.alphaTarget(0.25).restart();
+          if (!e.active && this.settings.physics) {
+            this.simulation.alphaTarget(0.25);
+            this.run();
+          }
           this.pin(e.subject.node, e.x, e.y);
         })
         .on("drag", (e) => { this.pin(e.subject.node, e.x, e.y); this.requestDraw(); })
@@ -313,6 +425,8 @@
       const s = this.settings;
       this.linkForce.distance(s.linkDistance).strength(s.linkStrength);
       this.chargeForce.strength(s.repel).radius(s.repelRadius);
+      this.farForce.strength(s.far);
+      this.groupForce.strength(s.group);
       this.xForce.strength(s.center);
       this.yForce.strength(s.center);
       this.simulation.velocityDecay(s.damping);
@@ -322,16 +436,74 @@
     set(key, value) {
       this.settings[key] = value;
       if (key === "physics") {
-        if (value) this.reheat(0.3); else this.simulation.stop();
+        if (value) this.reheat(0.3);   // when switched off, run() stops by itself on its next frame
         return;
       }
       this.applySettings();
-      if (["center", "repel", "repelRadius", "linkStrength", "linkDistance", "damping"].includes(key)) this.reheat(0.5);
+      if (["center", "repel", "repelRadius", "far", "group", "linkStrength", "linkDistance", "damping"].includes(key)) this.reheat(0.5);
     }
 
     reheat(alpha = 1) {
       if (!this.settings.physics) return;
-      this.simulation.alpha(Math.max(this.simulation.alpha(), alpha)).restart();
+      this.simulation.alpha(Math.max(this.simulation.alpha(), alpha));
+      this.run();
+    }
+
+    /** Sets how much the layout still has to move (1 is a full rearrangement) and runs it. */
+    startAt(alpha) {
+      this.simulation.alpha(alpha);
+      this.run();
+    }
+
+    /** Steps the simulation, frame by frame, until it cools down. */
+    run() {
+      if (this.running || !this.settings.physics) return;
+      this.running = true;
+      const sim = this.simulation;
+      const step = () => {
+        if (!this.settings.physics) {
+          this.running = false;
+          this.requestDraw();
+          return;
+        }
+        const start = performance.now();
+        let ticks = 0;
+        do {
+          sim.tick();
+          ticks++;
+        } while (ticks < MAX_TICKS_PER_FRAME && sim.alpha() >= sim.alphaMin() && performance.now() - start < TICK_BUDGET_MS);
+        if (sim.alpha() < sim.alphaMin()) {
+          this.running = false;
+          this.draw();
+          this.saveLayout();
+          this.onSettled();
+          return;
+        }
+        this.draw();
+        requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    }
+
+    /** Starts from the positions remembered under `key`, if there are any for these nodes,
+     *  and remembers the settled ones there from now on. Returns whether it found them. */
+    restoreLayout(key) {
+      this.layoutKey = key;
+      try {
+        const saved = JSON.parse(localStorage.getItem(key));
+        if (!saved || saved.length !== this.nodes.length * 2) return false;
+        this.nodes.forEach((n, i) => { n.x = saved[2 * i]; n.y = saved[2 * i + 1]; });
+        return true;
+      } catch (error) {
+        return false;   // no storage (private window) or a damaged entry: just lay it out again
+      }
+    }
+
+    saveLayout() {
+      if (!this.layoutKey) return;
+      try {
+        localStorage.setItem(this.layoutKey, JSON.stringify(this.nodes.flatMap((n) => [Math.round(n.x), Math.round(n.y)])));
+      } catch (error) { /* storage full or blocked: the layout is simply not remembered */ }
     }
 
     pin(node, sx, sy) {
@@ -420,16 +592,19 @@
       ctx.translate(t.x, t.y);
       ctx.scale(t.k, t.k);
 
-      // Links, one path per thickness level and color.
+      // Links, one path per thickness level and color. While the layout moves only a sample of
+      // them is drawn, so a frame stays cheap; the rest come back when it settles.
+      const sample = this.running ? Math.max(1, Math.ceil(this.visibleLinks.length / MOVING_LINKS)) : 1;
       if (s.linkWidth > 0) {
-        const stroke = (alpha, on) => {
+        const stroke = (alpha, on, stride = 1) => {
           for (const { level, color, links } of this.linkGroups) {
             ctx.strokeStyle = color || INK;
             ctx.lineWidth = s.linkWidth * LINK_LEVELS[level].width / t.k;
             // A link with its own color carries meaning, so it is drawn stronger than the plain ones.
-            ctx.globalAlpha = Math.min(0.95, alpha * LINK_LEVELS[level].alpha * (color ? COLORED_LINK_BOOST : 1));
+            ctx.globalAlpha = Math.min(0.95, alpha * LINK_LEVELS[level].alpha * (color ? COLORED_LINK_BOOST : 1) * Math.sqrt(stride));
             ctx.beginPath();
-            for (const l of links) {
+            for (let i = 0; i < links.length; i += stride) {
+              const l = links[i];
               const a = l.source, b = l.target;
               if ((!inView(a) && !inView(b)) || !on(a, b)) continue;
               ctx.moveTo(a.x, a.y);
@@ -439,13 +614,13 @@
           }
         };
         // Fainter when zoomed out, where thousands of links overlap and would wash out the nodes.
-        stroke(bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k)), () => true);
+        stroke(bright ? 0.03 : Math.max(0.045, Math.min(0.3, 0.16 * t.k)), () => true, sample);
         if (near) stroke(0.75, (a, b) => a === anchor || b === anchor);
         else if (bright) stroke(0.3, (a, b) => bright.has(a) && bright.has(b));
       }
 
       // Nodes, one path per color. A thin ring in the surface color separates overlapping ones.
-      const ring = t.k > 0.5;
+      const ring = t.k > 0.5 && sample === 1;
       const paint = (keep, alpha) => {
         ctx.globalAlpha = alpha;
         ctx.strokeStyle = SURFACE;
@@ -539,7 +714,7 @@
         label(anchor, 1, true);
         for (const n of near) if (inView(n)) label(n, 0.9, false);
       }
-      if (fade > 0) {
+      if (fade > 0 && !(this.running && this.visibleNodes.length > MOVING_LABELS)) {
         let count = 0;
         for (const n of this.bySize) {
           if (!n.visible || !inView(n)) continue;

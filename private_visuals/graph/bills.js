@@ -1,10 +1,12 @@
 // Bills graph (#69): every bill linked to its most similar bills, colored by topic,
-// press coverage or status. Data comes from build_graph.py (window.GRAPH_BILLS).
+// press coverage or status. The links can be swapped (similar exposition, name or subject
+// descriptors, or the same signers) and the bills narrowed to a window of filing dates.
+// Data comes from build_graph.py (window.GRAPH_BILLS).
 (function () {
   "use strict";
-  const D = window.GRAPH_BILLS;
-  const { $, nf, esc, norm, sentence, cut, fmt, bindPanel, bindTooltip, PALETTE, stanceBin, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
-  if (!D) {
+  const D = window.GRAPH_BILLS, NB = window.GRAPH_NEIGHBORS;
+  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindTooltip, PALETTE, stanceBin, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
+  if (!D || !NB) {
     $("missing").hidden = false;
     return;
   }
@@ -23,6 +25,15 @@
 
   // ---------- nodes ----------
   const asOf = new Date(D.meta.as_of);
+  // Filing dates as months counted from the first one, for the time window.
+  const firstDate = d3.min(D.nodes, (row) => row[3] || undefined) || D.meta.as_of;
+  const monthOf = (iso) => (+iso.slice(0, 4) - +firstDate.slice(0, 4)) * 12 + (+iso.slice(5, 7) - +firstDate.slice(5, 7));
+  const lastMonth = monthOf(D.meta.as_of);
+  const monthLabel = (index) => {
+    const month = +firstDate.slice(5, 7) - 1 + index;
+    return new Date(Date.UTC(+firstDate.slice(0, 4) + Math.floor(month / 12), month % 12, 1))
+      .toLocaleDateString("es-CR", { month: "short", year: "numeric", timeZone: "UTC" });
+  };
   const nodes = D.nodes.map((row, i) => {
     const [number, name, type, date, status, law, topic, mention, substantive, main, outlets, stance, x, y, positions = []] = row;
     const age = date ? (asOf - new Date(date)) / (365.25 * 864e5) : null;
@@ -30,6 +41,7 @@
     return {
       i, number, name, type: D.types[type] || "", date, status: D.statuses[status] || "", law, topic,
       mention, substantive, main, outlets, stance, age, old: age != null && age > OLD_YEARS,
+      month: date ? Math.max(0, Math.min(lastMonth, monthOf(date))) : 0,
       // actor index -> what the news say that actor thinks of the bill: mean from -1 to 1, and how many news
       positions: new Map(positions.map(([actor, value, news]) => [actor, { value: value / 100, news }])),
       x, y,
@@ -39,7 +51,49 @@
       search: norm(`${number} ${name}`),
     };
   });
-  const links = D.links.map(([a, b, w]) => ({ source: nodes[a], target: nodes[b], w }));
+
+  // ---------- link sets ----------
+  // Different rules for joining two bills. For each one the build stores the nearest bills of
+  // every bill, best first (window.GRAPH_NEIGHBORS), and the page joins each bill it shows to the
+  // first five of them that are also shown. So the links follow the filters: in a window of
+  // filing dates a bill is tied to the most similar bills of that window, not to ones left out.
+  const PER_BILL = D.meta.neighbors || 5;
+  const STORED = NB.stored;
+  const LINK_SETS = {
+    exposition: { label: "Exposición", list: "Expedientes más parecidos", what: "la exposición de motivos más parecida (embeddings qwen3)" },
+    name: { label: "Nombre", list: "Expedientes con el nombre más parecido", what: "el nombre más parecido (embeddings qwen3)" },
+    subjects: { label: "Descriptores", list: "Expedientes con descriptores más parecidos", what: "los descriptores del SIL más parecidos (embeddings qwen3)" },
+    signers: { label: "Firmantes", list: "Expedientes con los mismos firmantes",
+      what: "más firmantes en común (Jaccard; entre empates, los presentados más cerca). Los expedientes sin firmantes en el SIL no aparecen" },
+  };
+  for (const [key, set] of Object.entries(LINK_SETS)) {
+    if (!NB.lists[key]) { delete LINK_SETS[key]; continue; }   // data built without that kind of link
+    Object.assign(set, NB.lists[key]);
+    [set.low, set.high] = d3.extent(set.sims, (w) => (w < 0 ? undefined : w));
+    set.note = `Enlaces: cada expediente con los ${PER_BILL} que tienen ${set.what}, entre los que están a la vista `
+      + `(se buscan entre sus ${STORED} más cercanos, así que en una ventana angosta algunos quedan con menos).`;
+  }
+  /** Whether the bill has any data for this kind of link (a bill with no signers on record has none). */
+  const linkable = (n, key) => LINK_SETS[key].ids[n.i * STORED] >= 0;
+  /** Links among the bills marked `kept`. */
+  function makeLinks(key) {
+    const { ids, sims, low, high } = LINK_SETS[key];
+    const links = [], seen = new Set();
+    for (const n of nodes) {
+      if (!n.kept) continue;
+      for (let k = 0, at = n.i * STORED, taken = 0; k < STORED && taken < PER_BILL && ids[at] >= 0; k++, at++) {
+        const other = nodes[ids[at]];
+        if (!other.kept) continue;
+        taken++;
+        const pair = n.i < other.i ? n.i * nodes.length + other.i : other.i * nodes.length + n.i;
+        if (seen.has(pair)) continue;   // the other bill already listed this one
+        seen.add(pair);
+        // The more alike two bills are, the harder their link pulls, so the closest ones end up together.
+        links.push({ source: n, target: other, w: sims[at], pull: 0.4 + 1.2 * (sims[at] - low) / (high - low || 1) });
+      }
+    }
+    return links;
+  }
 
   // ---------- color modes ----------
   // Each mode says how to color a node and which legend group it falls in.
@@ -107,15 +161,27 @@
   if (!actors.length) delete MODES.position;   // data built before positions existed
 
   // ---------- state ----------
-  const S = { mode: "topic", isolated: new Set(), query: "", showUncovered: true, showOld: true, actor: 0, topicFocus: null };
-  const graph = new ForceGraph($("graph"));
-  graph.groups = D.topics.map((t, i) => ({ label: t.name, nodes: nodes.filter((n) => n.topic === i) }));
-  graph.setData(nodes, links);
+  const S = {
+    mode: "topic", isolated: new Set(), query: "", showUncovered: true, showOld: true, actor: 0, topicFocus: null,
+    links: "exposition", from: 0, to: lastMonth,
+  };
+  // The long-range repulsion is what lets the topics drift apart into islands; with it the
+  // short-range one only has to keep neighbors from overlapping, so its reach can be short.
+  const graph = new ForceGraph($("graph"), { far: 5, repelRadius: 40 });
+  const topicGroups = D.topics.map((t, i) => ({ label: t.name, nodes: nodes.filter((n) => n.topic === i) }));
+  const layoutKey = () => `graph:bills:${D.meta.as_of}:${nodes.length}:${S.links}`;
+  graph.groups = topicGroups;
+  graph.setData(nodes, []);   // applyFilters() puts the links in
+  const restored = graph.restoreLayout(layoutKey());
 
   function applyColors() {
     const mode = MODES[S.mode];
-    for (const n of nodes) n.color = mode.color(n);
+    for (const n of nodes) {
+      n.color = mode.color(n);
+      n.group = mode.group(n);   // what "group by color" pulls together
+    }
     graph.colorsChanged();
+    if (graph.settings.group > 0) graph.reheat(0.6);
   }
 
   function matches() {
@@ -137,7 +203,15 @@
   }
 
   function applyFilters() {
-    graph.setVisible((n) => (S.showUncovered || n.substantive > 0) && (S.showOld || !n.old));
+    for (const n of nodes) {
+      n.kept = (S.showUncovered || n.substantive > 0) && (S.showOld || !n.old)
+        && n.month >= S.from && n.month <= S.to && linkable(n, S.links);
+    }
+    // Only the layout of the whole map is worth remembering for the next visit.
+    const whole = S.showUncovered && S.showOld && S.from === 0 && S.to === lastMonth;
+    graph.layoutKey = whole ? layoutKey() : null;
+    graph.setLinks(makeLinks(S.links), false);
+    graph.setVisible((n) => n.kept);
     renderLegend();
     applyHighlight();
     renderSubtitle();
@@ -246,8 +320,57 @@
     $(id).addEventListener("change", (e) => onChange(e.target.checked));
   };
   toggle("show-uncovered", "showUncovered", (v) => { S.showUncovered = v; applyFilters(); });
+
+  // Connections: swapping the link set keeps the bills where they are and lets them flow to the new layout.
+  $("links").innerHTML = Object.entries(LINK_SETS).map(([key, set]) =>
+    `<button data-links="${key}" class="${key === S.links ? "on" : ""}">${set.label}</button>`).join("");
+  $("links-note").textContent = LINK_SETS[S.links].note;
+  $("links").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-links]");
+    if (!b || b.dataset.links === S.links) return;
+    S.links = b.dataset.links;
+    for (const other of $("links").children) other.classList.toggle("on", other === b);
+    $("links-note").textContent = LINK_SETS[S.links].note;
+    // The topic names mark where each topic sits; with the signers the topics are scattered.
+    graph.groups = S.links === "signers" ? [] : topicGroups;
+    applyFilters();
+    graph.reheat(1);
+  });
+
+  // Time window on the filing date, with shortcuts for the legislative terms (they start on May 1).
+  const clampMonth = (iso) => Math.max(0, Math.min(lastMonth, monthOf(iso)));
+  const WINDOWS = [
+    { label: "Todo", from: 0, to: lastMonth },
+    { label: "2018–2022", from: clampMonth("2018-05-01"), to: clampMonth("2022-04-30") },
+    { label: "2022–2026", from: clampMonth("2022-05-01"), to: clampMonth("2026-04-30") },
+    { label: "2026–2030", from: clampMonth("2026-05-01"), to: lastMonth },
+    { label: "Último año", from: Math.max(0, lastMonth - 11), to: lastMonth },
+  ];
+  function renderWindow() {
+    $("from").value = S.from;
+    $("to").value = S.to;
+    $("out-from").textContent = monthLabel(S.from);
+    $("out-to").textContent = monthLabel(S.to);
+    $("windows").innerHTML = WINDOWS.map((w, i) =>
+      `<button data-window="${i}" class="${w.from === S.from && w.to === S.to ? "on" : ""}">${w.label}</button>`).join("");
+  }
+  function setWindow(from, to) {
+    S.from = from;
+    S.to = to;
+    renderWindow();
+    applyFilters();
+  }
+  for (const id of ["from", "to"]) $(id).max = lastMonth;
+  // The two ends push each other, so the window is never empty.
+  $("from").addEventListener("input", (e) => setWindow(+e.target.value, Math.max(S.to, +e.target.value)));
+  $("to").addEventListener("input", (e) => setWindow(Math.min(S.from, +e.target.value), +e.target.value));
+  $("windows").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-window]");
+    if (b) setWindow(WINDOWS[+b.dataset.window].from, WINDOWS[+b.dataset.window].to);
+  });
+  renderWindow();
   toggle("show-old", "showOld", (v) => { S.showOld = v; applyFilters(); });
-  bindPanel(graph);
+  bindPanel(graph, { grouping: true });
 
   // ---------- tooltip ----------
   const coverageText = (n) => {
@@ -273,7 +396,7 @@
     const card = $("card");
     if (!n) { card.hidden = true; return; }
     const status = STATUS[n.status]?.label || n.status || "sin estado";
-    const similar = links.filter((l) => l.source === n || l.target === n)
+    const similar = graph.links.filter((l) => l.source === n || l.target === n)
       .map((l) => ({ node: l.source === n ? l.target : l.source, w: l.w }))
       .sort((a, b) => b.w - a.w);
     card.innerHTML = `
@@ -293,7 +416,7 @@
         <a href="../jev_answers/#bill=${n.number}" target="_blank" rel="noopener">Noticias en el visor de Jev</a>
         <a href="http://localhost:8765/#/bill/${n.number}" target="_blank" rel="noopener">Explorador de la base</a>
       </div>
-      <h3>Expedientes más parecidos</h3>
+      <h3>${LINK_SETS[S.links].list}</h3>
       <ul class="similar">${similar.map((s) => `
         <li><button data-node="${s.node.i}"${s.node.visible ? "" : " disabled"}>
           <span class="swatch" style="background:${s.node.color}"></span>
@@ -313,12 +436,14 @@
 
   // ---------- start ----------
   function renderSubtitle() {
-    $("subtitle").textContent = `${nf(graph.visibleNodes.length)} expedientes · ${nf(graph.visibleLinks.length)} enlaces · ${D.topics.length} temas`;
+    const whole = S.from === 0 && S.to === lastMonth;
+    $("subtitle").textContent = `${plural(graph.visibleNodes.length, "expediente", "expedientes")} · ${nf(graph.visibleLinks.length)} enlaces · ${D.topics.length} temas`
+      + (whole ? "" : ` · presentados de ${monthLabel(S.from)} a ${monthLabel(S.to)}`);
   }
   applyColors();
-  renderLegend();
-  renderSubtitle();
+  applyFilters();
   graph.fit(nodes, 0, 3);
-  graph.reheat(1);
+  // A layout remembered from the last visit only needs a touch-up, not the whole animation.
+  graph.startAt(restored ? 0.05 : 1);
   window.GRAPH = graph;
 })();

@@ -251,7 +251,7 @@
   // ---------- start ----------
   let moved = false;   // the user took over the camera: stop re-framing
   for (const type of ["wheel", "pointerdown"]) graph.canvas.addEventListener(type, () => { moved = true; }, { passive: true });
-  graph.simulation.on("end.frame", () => { if (!moved) graph.fit(undefined, 600, 2); });
+  graph.onSettled = () => { if (!moved) graph.fit(undefined, 600, 2); };
   graph.setData(nodes, []);
   // A bill with no link under the current filters would just float away: leave it out.
   graph.setVisible((n) => n.neighbors.length > 0, false);

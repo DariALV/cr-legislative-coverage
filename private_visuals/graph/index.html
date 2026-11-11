@@ -41,6 +41,25 @@
       </details>
 
       <details open>
+        <summary>Conexiones</summary>
+        <div id="links" class="modes wrap" role="group" aria-label="Qué une a dos expedientes"></div>
+        <p id="links-note" class="hint"></p>
+      </details>
+
+      <details open>
+        <summary>Fecha de presentación</summary>
+        <label class="slider">
+          <span>Desde<output id="out-from"></output></span>
+          <input id="from" type="range" min="0" step="1">
+        </label>
+        <label class="slider">
+          <span>Hasta<output id="out-to"></output></span>
+          <input id="to" type="range" min="0" step="1">
+        </label>
+        <div id="windows" class="presets" role="group" aria-label="Atajos de fechas"></div>
+      </details>
+
+      <details open>
         <summary>Grupos</summary>
         <div id="modes" class="modes" role="group" aria-label="Color de los nodos"></div>
         <div id="actors" class="modes actors" role="group" aria-label="Partido o actor" hidden></div>
@@ -60,7 +79,7 @@
         <label class="switch"><span>Nombres de los temas</span><input id="group-labels" type="checkbox"><i></i></label>
       </details>
 
-      <details open>
+      <details>
         <summary>Fuerzas</summary>
         <label class="switch"><span>Física</span><input id="physics" type="checkbox"><i></i></label>
         <div id="forces"></div>
@@ -78,6 +97,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script src="../output/graph/bills.js" onerror="window.GRAPH_BILLS = null"></script>
+  <script src="../output/graph/neighbors.js" onerror="window.GRAPH_NEIGHBORS = null"></script>
   <script src="engine.js"></script>
   <script src="controls.js"></script>
   <script src="bills.js"></script>

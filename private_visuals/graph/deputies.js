@@ -1,10 +1,12 @@
-// Deputies graph (#69): two deputies are linked when they vote alike, so the blocs of each
-// legislative term show up on their own. Data comes from build_deputies.py (window.GRAPH_DEPUTIES).
+// Deputies graph (#69): two deputies are linked when they vote alike, sign the same bills or sit
+// on the same committees, so the blocs of each legislative term show up on their own. Data comes
+// from build_deputies.py (window.GRAPH_DEPUTIES).
 (function () {
   "use strict";
   const D = window.GRAPH_DEPUTIES;
-  const { $, nf, esc, norm, bindPanel, bindTooltip, PALETTE, PARTY_COLORS } = window.GraphUI;
-  if (!D) {
+  const { $, nf, esc, norm, plural, bindPanel, bindTooltip, PALETTE, PARTY_COLORS } = window.GraphUI;
+  // No data file, or one from before the connection types: running the build again fixes both.
+  if (!D || !D.terms[0].links) {
     $("missing").hidden = false;
     return;
   }
@@ -30,19 +32,101 @@
   const partyOf = (name) => PARTIES[name] || OTHER_PARTY;
   const PROVINCES = ["San José", "Alajuela", "Cartago", "Heredia", "Guanacaste", "Puntarenas", "Limón"];
   const provinceColor = (name) => PALETTE[PROVINCES.indexOf(name)] || OTHER_PARTY.color;
-  // Thicker links for the pairs that almost always vote together.
+  // Thicker links for the pairs that almost always vote together (the other connection types
+  // are put on this scale first, see makeLinks).
   const linkLevel = (agreement) => (agreement >= 95 ? 2 : agreement >= 85 ? 1 : 0);
 
   // ---------- state ----------
-  const S = { term: D.terms.length - 1, threshold: 75, mode: "party", isolated: new Set(), query: "" };
+  // `custom` holds the thresholds the user moved, by connection type; the rest come from the data.
+  const S = { term: D.terms.length - 1, link: "votes", threshold: 75, custom: {}, mode: "party", isolated: new Set(), query: "" };
   const graph = new ForceGraph($("graph"), {
     center: 0.05, repel: 1500, repelRadius: 260, linkDistance: 70, linkWidth: 0.6, labelZoom: 0.5, groupLabels: false,
   });
-  let T, nodes, agreement;   // current term, its nodes and the pair lookup
+  let T, L, nodes, pairs;    // current term, its links of the current connection type, its nodes and the pair lookup
   let moved = false;         // the user took over the camera: stop re-framing
 
   const pairKey = (a, b) => (a.i < b.i ? a.i * nodes.length + b.i : b.i * nodes.length + a.i);
-  const pairOf = (a, b) => agreement.get(pairKey(a, b));
+  const pairOf = (a, b) => pairs.get(pairKey(a, b));
+
+  // ---------- connection types ----------
+  // What links two deputies. Each type has its own pairs in the data (T.links[key]), as
+  // [a, b, value, count]: a value from 0 to 100 and the bills or committees behind it.
+  // `pair` is the sentence about deputy `a` and another one, `row` what a row of the card shows.
+  // The types with `none` are overlaps: a pair that is not in the data has nothing in common.
+  // `min` is where the slider starts: agreement stays mostly above 40, overlaps mostly below it.
+  const LINKS = {
+    votes: {
+      label: "Co-votación",
+      title: "Diputados que votan igual",
+      slider: "Coincidencia mínima",
+      min: 40,
+      missing: "Sin votaciones en esta legislatura.",
+      subtitle: () => `coincidencia ≥ ${S.threshold} % · ${nf(T.contested)} votaciones disputadas en ${nf(T.bills)} expedientes`,
+      note: () => "Dos diputados se enlazan si votaron igual al menos ese porcentaje de las veces: "
+        + `solo cuentan las votaciones disputadas (la minoría fue al menos el ${Math.round(D.meta.contested * 100)} %) y cada expediente pesa lo mismo.`,
+      pair: (a, b, pair) => (pair ? `Coincide ${pair.value} % con ${esc(b.short)} (${pair.count} expedientes)`
+        : `Muy pocos expedientes en común con ${esc(b.short)}`),
+      row: (pair) => `${pair.value} %`,
+      summary: "Coincide",
+      most: "Vota más parecido a",
+      least: "Vota menos parecido a",
+    },
+    signatures: {
+      label: "Co-firma",
+      title: "Diputados que firman juntos",
+      slider: "Firmas en común mínimas",
+      min: 0,
+      missing: "Sin datos de firmas en esta legislatura.",
+      subtitle: () => `firmas en común ≥ ${S.threshold} % · ${nf(L.total)} expedientes firmados por diputados`,
+      note: () => "Dos diputados se enlazan si los expedientes que firmaron los dos son al menos ese porcentaje "
+        + "de los que firmó alguno de los dos en la legislatura.",
+      pair: (a, b, pair) => (pair
+        ? `Firmó ${plural(a.bills, "expediente", "expedientes")}, ${nf(pair.count)} con ${esc(b.short)}, que firmó ${nf(b.bills)} (${pair.value} % en común)`
+        : `Ningún expediente firmado con ${esc(b.short)}`),
+      row: (pair) => `${nf(pair.count)} en común · ${pair.value} %`,
+      summary: "Co-firma",
+      most: "Firma más con",
+      least: "Firma menos con",
+      none: (n) => `No firmó ningún expediente con ${plural(n, "diputado", "diputados")}.`,
+    },
+    committees: {
+      label: "Comisiones",
+      title: "Diputados que comparten comisiones",
+      slider: "Comisiones en común mínimas",
+      min: 0,
+      missing: "Sin datos de comisiones en esta legislatura.",
+      subtitle: () => `comisiones en común ≥ ${S.threshold} % · ${nf(L.total)} comisiones`,
+      note: () => "Dos diputados se enlazan si las comisiones en que estuvieron los dos son al menos ese porcentaje "
+        + "de aquellas en que estuvo alguno de los dos, en cualquier momento de la legislatura. No cuentan el Plenario ni el Directorio.",
+      pair: (a, b, pair) => (pair
+        ? `Estuvo en ${plural(a.committees, "comisión", "comisiones")}, ${pair.count} con ${esc(b.short)}, que estuvo en ${b.committees} (${pair.value} % en común)`
+        : `Ninguna comisión en común con ${esc(b.short)}`),
+      row: (pair) => `${pair.count} en común · ${pair.value} %`,
+      summary: "Comparte",
+      most: "Comparte más comisiones con",
+      least: "Comparte menos comisiones con",
+      none: (n) => `No comparte ninguna comisión con ${plural(n, "diputado", "diputados")}.`,
+    },
+  };
+
+  // Moves to another connection type of the current term: its pairs, its threshold and the texts
+  // that name it. The caller rebuilds the links.
+  function useLink(key) {
+    S.link = key;
+    L = T.links[key];
+    pairs = new Map(L.pairs.map(([a, b, value, count]) => [a * nodes.length + b, { value, count }]));
+    // Every type and term has its own scale, hence its own default; a threshold the user moved stays.
+    S.threshold = S.custom[key] ?? L.threshold;
+    $("threshold").min = LINKS[key].min;  // before the value, or a default below the old minimum gets clamped
+    $("threshold").value = S.threshold;
+    $("out-threshold").textContent = `${S.threshold} %`;
+    $("threshold-label").textContent = LINKS[key].slider;
+    $("heading").textContent = LINKS[key].title;
+    const missing = Object.keys(LINKS).filter((k) => !T.links[k]);
+    $("links").innerHTML = Object.entries(LINKS).map(([k, m]) =>
+      `<button data-link="${k}" class="${k === key ? "on" : ""}"${missing.includes(k) ? ' disabled style="opacity: .4; cursor: default"' : ""}>${m.label}</button>`).join("");
+    $("links-note").textContent = missing.map((k) => LINKS[k].missing).join(" ");
+  }
 
   // ---------- color modes ----------
   const MODES = {
@@ -93,7 +177,7 @@
       }
       return node;
     });
-    agreement = new Map(T.pairs.map(([a, b, value, shared]) => [a * nodes.length + b, { value, shared }]));
+    useLink(T.links[S.link] ? S.link : "votes");  // a term may lack the data of a connection type
     graph.setData(nodes, makeLinks());
     applyColors();
     renderLegend();
@@ -106,10 +190,15 @@
   }
 
   function makeLinks() {
+    // Overlaps run far below agreement, so every connection type goes onto the co-voting scale
+    // before it sets thickness and pull: its default threshold lands on 75 and its strong links
+    // on 95 (co-voting maps onto itself).
+    const step = 20 / (L.strong - L.threshold);
     const links = [];
-    for (const [a, b, value] of T.pairs) {
+    for (const [a, b, value] of L.pairs) {
       if (value < S.threshold) continue;
-      links.push({ source: nodes[a], target: nodes[b], value, level: linkLevel(value), pull: (value / 100) ** 2 });
+      const agreement = Math.max(0, Math.min(100, 75 + (value - L.threshold) * step));
+      links.push({ source: nodes[a], target: nodes[b], value, level: linkLevel(agreement), pull: (agreement / 100) ** 2 });
     }
     return links;
   }
@@ -134,8 +223,7 @@
   }
 
   function renderSubtitle() {
-    $("subtitle").textContent = `${nodes.length} diputados · ${nf(graph.visibleLinks.length)} enlaces con coincidencia ≥ ${S.threshold} % · `
-      + `${nf(T.contested)} votaciones disputadas en ${nf(T.bills)} expedientes`;
+    $("subtitle").textContent = `${nodes.length} diputados · ${nf(graph.visibleLinks.length)} enlaces con ${LINKS[S.link].subtitle()}`;
   }
 
   // ---------- legend ----------
@@ -150,8 +238,7 @@
         <span class="legend-label">${esc(item.label)}</span>
         <span class="legend-count">${nf(counts.get(item.key) || 0)}</span>
       </button>`).join("");
-    $("legend-note").textContent = `${mode.note} Dos diputados se enlazan si votaron igual al menos ese porcentaje de las veces: `
-      + `solo cuentan las votaciones disputadas (la minoría fue al menos el ${Math.round(D.meta.contested * 100)} %) y cada expediente pesa lo mismo.`;
+    $("legend-note").textContent = `${mode.note} ${LINKS[S.link].note()}`;
     $("legend-clear").hidden = !S.isolated.size;
   }
   $("legend").addEventListener("click", (e) => {
@@ -183,10 +270,18 @@
     const b = e.target.closest("[data-term]");
     if (b && +b.dataset.term !== S.term) loadTerm(+b.dataset.term);
   });
-  $("threshold").value = S.threshold;
-  $("out-threshold").textContent = `${S.threshold} %`;
+  $("links").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-link]");
+    if (!b || b.dataset.link === S.link) return;
+    useLink(b.dataset.link);
+    graph.setLinks(makeLinks(), false);
+    graph.reheat(1);  // a whole new arrangement, not the nudge of moving the threshold
+    renderLegend();
+    renderSubtitle();
+    renderCard(graph.selected);
+  });
   $("threshold").addEventListener("input", (e) => {
-    S.threshold = +e.target.value;
+    S.threshold = S.custom[S.link] = +e.target.value;
     $("out-threshold").textContent = `${S.threshold} %`;
     graph.setLinks(makeLinks());
     renderSubtitle();
@@ -202,30 +297,32 @@
   bindPanel(graph);
 
   // ---------- tooltip ----------
-  const pairText = (a, b) => {
-    const pair = pairOf(a, b);
-    return pair ? `Coincide ${pair.value} % con ${esc(b.short)} (${pair.shared} expedientes)`
-      : `Muy pocos expedientes en común con ${esc(b.short)}`;
-  };
+  const pairText = (a, b) => LINKS[S.link].pair(a, b, pairOf(a, b));
   bindTooltip(graph, (n) => `<b>${esc(n.name)}</b>
     <span>${esc(partyOf(n.party).short)} · ${esc(n.province || "sin provincia")}</span>
     ${graph.selected && graph.selected !== n ? `<span>${pairText(n, graph.selected)}</span>` : ""}`);
 
   // ---------- detail card ----------
   const mean = (values) => (values.length ? Math.round(values.reduce((a, b) => a + b, 0) / values.length) : null);
-  const row = (other, value) => `
-    <li><button data-node="${other.i}">
-      <span class="swatch" style="background:${partyOf(other.party).color}"></span>
-      <b>${esc(other.short)}</b> ${esc(partyOf(other.party).short)}
-      <i>${value} %</i></button></li>`;
-  graph.onSelect = (n) => {
+  function renderCard(n) {
     const card = $("card");
     if (!n) { card.hidden = true; return; }
-    const others = nodes.filter((o) => o !== n && pairOf(n, o))
-      .map((o) => ({ node: o, value: pairOf(n, o).value }))
+    const link = LINKS[S.link];
+    // A pair that is not in the data has no value in co-voting (too few bills in common) and a 0 in the overlaps.
+    const others = nodes.filter((o) => o !== n && (link.none || pairOf(n, o)))
+      .map((o) => ({ node: o, ...(pairOf(n, o) || { value: 0, count: 0 }) }))
       .sort((a, b) => b.value - a.value);
     const own = mean(others.filter((o) => o.node.party === n.party).map((o) => o.value));
     const rest = mean(others.filter((o) => o.node.party !== n.party).map((o) => o.value));
+    // The lists rank those with something in common; the rest would be a tie at 0, so they are only counted.
+    const common = others.filter((o) => o.count);
+    const list = (title, rows) => (rows.length ? `
+      <h3>${title}</h3>
+      <ul class="similar">${rows.map((o) => `
+        <li><button data-node="${o.node.i}" title="${link.pair(n, o.node, o)}">
+          <span class="swatch" style="background:${partyOf(o.node.party).color}"></span>
+          <b>${esc(o.node.short)}</b> ${esc(partyOf(o.node.party).short)}
+          <i>${link.row(o)}</i></button></li>`).join("")}</ul>` : "");
     card.innerHTML = `
       <button class="card-close" id="card-close" aria-label="Cerrar">×</button>
       <div class="person">
@@ -240,15 +337,16 @@
         <dt>Provincia</dt><dd>${esc(n.province || "sin dato")}</dd>
         <dt>Firmó</dt><dd>${nf(n.bills)} expedientes</dd>
         <dt>Votó en</dt><dd>${nf(n.voted)} de ${nf(T.votes)} votaciones</dd>
-        <dt>Coincide</dt><dd>${own != null ? `${own} % con su partido` : "sin compañeros de partido"}${rest != null ? ` · ${rest} % con el resto` : ""}</dd>
+        ${S.link === "committees" ? `<dt>Comisiones</dt><dd>${n.committees} en la legislatura</dd>` : ""}
+        <dt>${link.summary}</dt><dd>${own != null ? `${own} % con su partido` : "sin compañeros de partido"}${rest != null ? ` · ${rest} % con el resto` : ""}</dd>
       </dl>
       ${n.deputy_id ? `<div class="card-links"><a href="http://localhost:8765/#/deputy/${n.deputy_id}" target="_blank" rel="noopener">Explorador de la base</a></div>` : ""}
-      <h3>Vota más parecido a</h3>
-      <ul class="similar">${others.slice(0, 6).map((o) => row(o.node, o.value)).join("")}</ul>
-      <h3>Vota menos parecido a</h3>
-      <ul class="similar">${others.slice(-5).reverse().map((o) => row(o.node, o.value)).join("")}</ul>`;
+      ${list(link.most, common.slice(0, 6))}
+      ${list(link.least, common.slice(-5).reverse())}
+      ${common.length < others.length ? `<p class="hint">${link.none(others.length - common.length)}</p>` : ""}`;
     card.hidden = false;
-  };
+  }
+  graph.onSelect = renderCard;
   $("card").addEventListener("click", (e) => {
     if (e.target.closest("#card-close")) { graph.select(null); return; }
     const b = e.target.closest("[data-node]");
@@ -259,7 +357,7 @@
   // ---------- start ----------
   // Re-frame when the layout settles, unless the user already moved the camera.
   for (const type of ["wheel", "pointerdown"]) graph.canvas.addEventListener(type, () => { moved = true; }, { passive: true });
-  graph.simulation.on("end.frame", () => { if (!moved) graph.fit(nodes, 600, 2.2); });
+  graph.onSettled = () => { if (!moved) graph.fit(nodes, 600, 2.2); };
   loadTerm(S.term);
   window.GRAPH = graph;
 })();

@@ -207,7 +207,7 @@
   // ---------- start ----------
   let moved = false;   // the user took over the camera: stop re-framing
   for (const type of ["wheel", "pointerdown"]) graph.canvas.addEventListener(type, () => { moved = true; }, { passive: true });
-  graph.simulation.on("end.frame", () => { if (!moved) graph.fit(nodes, 600, 2); });
+  graph.onSettled = () => { if (!moved) graph.fit(nodes, 600, 2); };
   graph.setData(nodes, makeLinks());
   // A topic with no link under the current filters would just float away: leave it out.
   graph.setVisible((n) => n.kind === "actor" || n.neighbors.length > 0, false);

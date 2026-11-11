@@ -214,3 +214,17 @@ body:has(.panel.closed) .chart { right: 20px; }
 @media (max-width: 900px) {
   .chart { right: 20px; }
 }
+
+/* ---------- pickers in the panel ---------- */
+.panel select {
+  width: 100%; padding: 5px 8px; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line); border-radius: 6px; font: inherit;
+}
+.panel select:focus { outline: none; border-color: var(--accent); }
+.field { display: grid; grid-template-columns: 82px 1fr; align-items: center; gap: 6px; padding: 3px 0; color: var(--ink-2); }
+.modes.wrap { grid-auto-flow: row; grid-template-columns: repeat(2, 1fr); }
+.modes + .hint { margin-top: 6px; }
+.presets { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.presets button { padding: 3px 8px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; font-size: 11.5px; color: var(--ink-2); }
+.presets button:hover { border-color: var(--ink-3); color: var(--ink); }
+.presets button.on { border-color: var(--accent); color: var(--ink); }
