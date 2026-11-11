@@ -1,0 +1,17 @@
+---
+interface Props { status: string; lawNumber?: number | null }
+const { status, lawNumber = null } = Astro.props;
+const key =
+  status === 'Convertido en ley' ? 'law' :
+  status === 'Archivado' ? 'archived' :
+  status === 'Dictaminado' ? 'reported' : 'active';
+---
+<span class={`pill pill--status status--${key}`}>
+  {status}{lawNumber ? ` · Ley ${lawNumber}` : ''}
+</span>
+
+<style>
+  .status--law { color: var(--accent); border-color: currentColor; background: var(--accent-soft); }
+  .status--archived { color: var(--muted); }
+  .status--reported { color: var(--text); }
+</style>

@@ -165,7 +165,6 @@ venv.bak/
 .ropeproject
 
 # mkdocs documentation
-/site
 
 # mypy
 .mypy_cache/
@@ -229,3 +228,6 @@ databases/embeddings/
 databases/retrieval/
 # Evolution runs (#68): per-individual history is big and regenerated from the seed; summaries stay in git
 results/evolution/**/population.csv
+
+# Astro site: the Python template above ignores lib/ anywhere
+!site/src/lib/

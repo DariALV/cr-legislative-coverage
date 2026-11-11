@@ -1,0 +1,83 @@
+{
+ "bill": {
+  "number": 23419,
+  "name": "Reforma del artículo 49 de la Ley General sobre las concesiones de obra pública",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-01-17",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Andrés Arias Borrador",
+   "Silvia Brenes Maqueta",
+   "Tomás Brenes Muestra",
+   "Pablo Quesada Ensayo",
+   "Luis Brenes Ficticio",
+   "Tomás Chaves Ensayo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Andrés Arias Borrador",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 1
+  },
+  {
+   "name": "Silvia Brenes Maqueta",
+   "faction": "Partido Ámbar",
+   "province": "Heredia",
+   "signing_order": 2
+  },
+  {
+   "name": "Tomás Brenes Muestra",
+   "faction": "Partido Ámbar",
+   "province": "Alajuela",
+   "signing_order": 3
+  },
+  {
+   "name": "Pablo Quesada Ensayo",
+   "faction": "Partido Olivo",
+   "province": "Alajuela",
+   "signing_order": 4
+  },
+  {
+   "name": "Luis Brenes Ficticio",
+   "faction": "Partido Índigo",
+   "province": "Cartago",
+   "signing_order": 5
+  },
+  {
+   "name": "Tomás Chaves Ensayo",
+   "faction": "Partido Granate",
+   "province": "Alajuela",
+   "signing_order": 6
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2023-01-17",
+   "date_end": "2025-04-19"
+  },
+  {
+   "organ": "Comisión Permanente de Gobierno y Administración",
+   "description": "Estudio en comisión, consultas y mociones; dictamen afirmativo de mayoría",
+   "date_start": "2025-04-19",
+   "date_end": "2026-06-13"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Discusión por el fondo en primer debate",
+   "date_start": "2026-06-13",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": []
+}

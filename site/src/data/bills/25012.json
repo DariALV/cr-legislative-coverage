@@ -1,0 +1,42 @@
+{
+ "bill": {
+  "number": 25012,
+  "name": "Ley de modernización de la transparencia en compras públicas",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-02-01",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "Adrián Chaves Muestra"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Adrián Chaves Muestra",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 1
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2026-02-01",
+   "date_end": "2026-08-28"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Hacendarios",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-08-28",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": []
+}

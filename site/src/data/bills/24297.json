@@ -1,0 +1,77 @@
+{
+ "bill": {
+  "number": 24297,
+  "name": "Reforma del artículo 46 de la Ley General sobre la llegada de cruceros",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-08-22",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo"
+  ],
+  "proponents": [
+   "Laura Zúñiga Muestra",
+   "Diego Calderón Ficticio",
+   "Carlos Umaña Borrador",
+   "Carmen Alfaro Prueba",
+   "Pablo Quesada Ensayo",
+   "Tomás Brenes Muestra"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Laura Zúñiga Muestra",
+   "faction": "Partido Granate",
+   "province": "Puntarenas",
+   "signing_order": 1
+  },
+  {
+   "name": "Diego Calderón Ficticio",
+   "faction": "Partido Granate",
+   "province": "San José",
+   "signing_order": 2
+  },
+  {
+   "name": "Carlos Umaña Borrador",
+   "faction": "Partido Índigo",
+   "province": "Puntarenas",
+   "signing_order": 3
+  },
+  {
+   "name": "Carmen Alfaro Prueba",
+   "faction": "Independiente",
+   "province": "San José",
+   "signing_order": 4
+  },
+  {
+   "name": "Pablo Quesada Ensayo",
+   "faction": "Partido Olivo",
+   "province": "Alajuela",
+   "signing_order": 5
+  },
+  {
+   "name": "Tomás Brenes Muestra",
+   "faction": "Partido Ámbar",
+   "province": "Alajuela",
+   "signing_order": 6
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2024-08-22",
+   "date_end": "2026-06-21"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Económicos",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-06-21",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": []
+}

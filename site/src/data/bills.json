@@ -1,0 +1,1156 @@
+[
+ {
+  "number": 25348,
+  "name": "Adición de un capítulo sobre el patrimonio arquitectónico a la Ley N.° 8217",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-09-12",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Cultura",
+   "Salud"
+  ],
+  "proponents": [
+   "Ricardo Solano Maqueta",
+   "Pablo Jiménez Ejemplo",
+   "Adrián Vargas Maqueta"
+  ],
+  "news_count": 13,
+  "votes_count": 0
+ },
+ {
+  "number": 25235,
+  "name": "Reforma del artículo 111 de la Ley General sobre la jornada laboral flexible",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-07-11",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Empleo"
+  ],
+  "proponents": [
+   "Carlos Salas Borrador",
+   "Elena Quesada Ficticio",
+   "Fernando Jiménez Prueba",
+   "Carmen Brenes Simulacro",
+   "Rodrigo Umaña Prueba"
+  ],
+  "news_count": 4,
+  "votes_count": 0
+ },
+ {
+  "number": 25216,
+  "name": "Ley de modernización de la red vial cantonal",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-06-25",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Paula Alfaro Maqueta",
+   "Laura Zúñiga Muestra",
+   "Carlos Chaves Ejemplo"
+  ],
+  "news_count": 6,
+  "votes_count": 0
+ },
+ {
+  "number": 25192,
+  "name": "Ley para fortalecer los pequeños productores de café",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-06-12",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Agro",
+   "Hacienda"
+  ],
+  "proponents": [
+   "Tomás Zúñiga Muestra",
+   "José Solano Ficticio"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 25169,
+  "name": "Ley para fortalecer el régimen de zonas francas",
+  "file_type": "Reforma constitucional",
+  "date_proposed": "2026-05-25",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "Pablo Alfaro Borrador",
+   "Luis Brenes Ficticio",
+   "Carlos Salas Borrador",
+   "Ricardo Solano Muestra"
+  ],
+  "news_count": 23,
+  "votes_count": 0
+ },
+ {
+  "number": 25114,
+  "name": "Ley de modernización de la movilidad en bicicleta",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-03-21",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Transporte"
+  ],
+  "proponents": [
+   "Adrián Vargas Maqueta",
+   "Lucía Alfaro Borrador",
+   "Carlos Chaves Ejemplo",
+   "Pablo Alfaro Borrador"
+  ],
+  "news_count": 1,
+  "votes_count": 1
+ },
+ {
+  "number": 25093,
+  "name": "Adición de un capítulo sobre el tren eléctrico metropolitano a la Ley N.° 9277",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-04-04",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Transporte"
+  ],
+  "proponents": [
+   "Luis Brenes Ficticio",
+   "Paula Solano Ejemplo",
+   "Diego Umaña Ficticio",
+   "Paula Quesada Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 25060,
+  "name": "Ley de modernización del turismo rural comunitario",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-02-18",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Hacienda"
+  ],
+  "proponents": [
+   "Ricardo Solano Muestra",
+   "María Umaña Ficticio"
+  ],
+  "news_count": 6,
+  "votes_count": 0
+ },
+ {
+  "number": 25032,
+  "name": "Adición de un capítulo sobre la generación distribuida a la Ley N.° 8586",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-02-08",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Energía",
+   "Educación"
+  ],
+  "proponents": [
+   "Carlos Umaña Borrador",
+   "Tomás Rojas Ficticio",
+   "Ricardo Arias Ejemplo",
+   "Elena Quesada Ficticio",
+   "Carlos Salas Borrador"
+  ],
+  "news_count": 6,
+  "votes_count": 0
+ },
+ {
+  "number": 25024,
+  "name": "Ley marco sobre el tren eléctrico metropolitano",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-01-10",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Transporte"
+  ],
+  "proponents": [
+   "Carmen Rojas Maqueta",
+   "Carlos Chaves Ejemplo",
+   "Paula Quesada Ejemplo",
+   "José Vargas Ficticio"
+  ],
+  "news_count": 1,
+  "votes_count": 0
+ },
+ {
+  "number": 25017,
+  "name": "Ley de incentivos para los tiempos de espera en hospitales",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-01-26",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Salud"
+  ],
+  "proponents": [
+   "Paula Solano Ejemplo",
+   "Pablo Quesada Ensayo",
+   "Elena Chaves Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 25012,
+  "name": "Ley de modernización de la transparencia en compras públicas",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-02-01",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "Adrián Chaves Muestra"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 25007,
+  "name": "Ley para fortalecer las bibliotecas públicas",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-01-30",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Cultura"
+  ],
+  "proponents": [
+   "Pablo Jiménez Ejemplo",
+   "Laura Zúñiga Muestra",
+   "Elena Chaves Ejemplo",
+   "Marta Chaves Ficticio",
+   "Pablo Alfaro Borrador"
+  ],
+  "news_count": 1,
+  "votes_count": 1
+ },
+ {
+  "number": 24993,
+  "name": "Ley de modernización de la red vial cantonal",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-12-17",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Pablo Alfaro Borrador",
+   "Ricardo Arias Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 24865,
+  "name": "Ley de modernización de la movilidad en bicicleta",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-10-11",
+  "status": "Convertido en ley",
+  "law_number": 10696,
+  "subjects": [
+   "Transporte"
+  ],
+  "proponents": [
+   "Tomás Zúñiga Muestra"
+  ],
+  "news_count": 0,
+  "votes_count": 2
+ },
+ {
+  "number": 24784,
+  "name": "Reforma del artículo 15 de la Ley General sobre el agua potable en zonas rurales",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-08-05",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Ambiente",
+   "Turismo"
+  ],
+  "proponents": [
+   "Esteban Salas Prueba",
+   "Pablo Alfaro Borrador",
+   "Adrián Arias Muestra",
+   "Adrián Vargas Maqueta",
+   "Paula Solano Ejemplo",
+   "Adrián Chaves Muestra"
+  ],
+  "news_count": 4,
+  "votes_count": 0
+ },
+ {
+  "number": 24759,
+  "name": "Ley de incentivos para el patrimonio arquitectónico",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-07-08",
+  "status": "Convertido en ley",
+  "law_number": 10830,
+  "subjects": [
+   "Cultura"
+  ],
+  "proponents": [
+   "Pablo Alfaro Borrador",
+   "Paula Solano Ejemplo"
+  ],
+  "news_count": 6,
+  "votes_count": 2
+ },
+ {
+  "number": 24757,
+  "name": "Ley para fortalecer los puentes en rutas nacionales",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-07-09",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura",
+   "Vivienda"
+  ],
+  "proponents": [
+   "Paula Quesada Ejemplo",
+   "Ricardo Solano Muestra",
+   "Carmen Brenes Simulacro",
+   "Mauricio Zúñiga Ensayo",
+   "Ana Brenes Muestra"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 24695,
+  "name": "Adición de un capítulo sobre las plataformas de transporte a la Ley N.° 7229",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-06-22",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Transporte"
+  ],
+  "proponents": [
+   "Fernando Jiménez Prueba",
+   "Isabel Arias Muestra",
+   "Carlos Zúñiga Maqueta",
+   "Daniela Solano Prueba"
+  ],
+  "news_count": 11,
+  "votes_count": 0
+ },
+ {
+  "number": 24690,
+  "name": "Ley de modernización del sistema penitenciario",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-06-09",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Seguridad",
+   "Educación"
+  ],
+  "proponents": [
+   "Adrián Solano Ficticio",
+   "Paula Solano Ejemplo",
+   "Diego Salas Simulacro",
+   "Laura Zúñiga Muestra",
+   "Tomás Calderón Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 24593,
+  "name": "Ley de regulación de la inteligencia artificial en el sector público",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-03-21",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Tecnología"
+  ],
+  "proponents": [
+   "Pablo Jiménez Ejemplo"
+  ],
+  "news_count": 1,
+  "votes_count": 0
+ },
+ {
+  "number": 24592,
+  "name": "Adición de un capítulo sobre la generación distribuida a la Ley N.° 7366",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-03-17",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Energía",
+   "Vivienda",
+   "Empleo"
+  ],
+  "proponents": [
+   "Ana Solano Borrador",
+   "Paula Solano Ejemplo",
+   "Carlos Salas Borrador",
+   "Tomás Brenes Muestra",
+   "Diego Salas Simulacro"
+  ],
+  "news_count": 34,
+  "votes_count": 0
+ },
+ {
+  "number": 24568,
+  "name": "Reforma del artículo 15 de la Ley General sobre el seguro de cosechas",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-04-01",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Agro"
+  ],
+  "proponents": [
+   "Ana Brenes Muestra"
+  ],
+  "news_count": 3,
+  "votes_count": 1
+ },
+ {
+  "number": 24472,
+  "name": "Ley de regulación del turismo rural comunitario",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-01-27",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Carmen Brenes Simulacro",
+   "Adrián Solano Ficticio",
+   "Adrián Arias Muestra",
+   "Ricardo Arias Ejemplo"
+  ],
+  "news_count": 13,
+  "votes_count": 1
+ },
+ {
+  "number": 24454,
+  "name": "Ley para fortalecer las concesiones de obra pública",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-01-16",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Diego Salas Simulacro",
+   "Carmen Brenes Simulacro",
+   "Luis Calderón Maqueta",
+   "Mauricio Zúñiga Ensayo",
+   "Carlos Salas Borrador",
+   "Carmen Rojas Maqueta"
+  ],
+  "news_count": 21,
+  "votes_count": 0
+ },
+ {
+  "number": 24450,
+  "name": "Ley de incentivos para las pensiones no contributivas",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-01-03",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Empleo",
+   "Turismo"
+  ],
+  "proponents": [
+   "Carmen Rojas Maqueta"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 24424,
+  "name": "Ley de modernización de los puentes en rutas nacionales",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-12-06",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura",
+   "Seguridad"
+  ],
+  "proponents": [
+   "Isabel Arias Muestra",
+   "Luis Brenes Ficticio",
+   "Adrián Solano Ficticio",
+   "Isabel Umaña Ensayo",
+   "Ricardo Solano Maqueta"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 24423,
+  "name": "Reforma del artículo 25 de la Ley General sobre los tiempos de espera en hospitales",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-11-28",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Salud"
+  ],
+  "proponents": [
+   "Lucía Alfaro Borrador",
+   "Andrés Rojas Muestra"
+  ],
+  "news_count": 3,
+  "votes_count": 0
+ },
+ {
+  "number": 24304,
+  "name": "Reforma del artículo 84 de la Ley General sobre el tren eléctrico metropolitano",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-09-10",
+  "status": "Convertido en ley",
+  "law_number": 10400,
+  "subjects": [
+   "Transporte",
+   "Vivienda",
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Silvia Brenes Maqueta",
+   "Diego Salas Simulacro",
+   "Tomás Zúñiga Muestra",
+   "Paula Mora Borrador",
+   "Tomás Brenes Muestra",
+   "Andrés Rojas Muestra"
+  ],
+  "news_count": 14,
+  "votes_count": 2
+ },
+ {
+  "number": 24297,
+  "name": "Reforma del artículo 46 de la Ley General sobre la llegada de cruceros",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-08-22",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo"
+  ],
+  "proponents": [
+   "Laura Zúñiga Muestra",
+   "Diego Calderón Ficticio",
+   "Carlos Umaña Borrador",
+   "Carmen Alfaro Prueba",
+   "Pablo Quesada Ensayo",
+   "Tomás Brenes Muestra"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 24233,
+  "name": "Ley de regulación de los puentes en rutas nacionales",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-07-30",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura",
+   "Transporte",
+   "Agro"
+  ],
+  "proponents": [
+   "Carlos Umaña Borrador",
+   "Mauricio Zúñiga Ensayo",
+   "Rodrigo Umaña Prueba",
+   "Luis Calderón Maqueta"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 24202,
+  "name": "Ley de regulación de la llegada de cruceros",
+  "file_type": "Aprobación de convenio",
+  "date_proposed": "2024-06-19",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo"
+  ],
+  "proponents": [
+   "Luis Calderón Maqueta",
+   "Tomás Zúñiga Muestra"
+  ],
+  "news_count": 4,
+  "votes_count": 1
+ },
+ {
+  "number": 24125,
+  "name": "Ley marco sobre las concesiones de obra pública",
+  "file_type": "Aprobación de convenio",
+  "date_proposed": "2024-05-24",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura",
+   "Vivienda",
+   "Energía"
+  ],
+  "proponents": [
+   "Tomás Brenes Muestra",
+   "Ana Solano Borrador",
+   "María Umaña Ficticio",
+   "José Solano Ficticio"
+  ],
+  "news_count": 19,
+  "votes_count": 1
+ },
+ {
+  "number": 24115,
+  "name": "Ley para fortalecer la inteligencia artificial en el sector público",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-05-23",
+  "status": "Convertido en ley",
+  "law_number": 10820,
+  "subjects": [
+   "Tecnología"
+  ],
+  "proponents": [
+   "Andrés Arias Borrador",
+   "Adrián Solano Ficticio",
+   "Fernando Jiménez Prueba",
+   "María Umaña Ficticio",
+   "Tomás Chaves Ensayo",
+   "Paula Quesada Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 2
+ },
+ {
+  "number": 24101,
+  "name": "Reforma del artículo 141 de la Ley General sobre la protección de humedales",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-04-27",
+  "status": "Convertido en ley",
+  "law_number": 10780,
+  "subjects": [
+   "Ambiente"
+  ],
+  "proponents": [
+   "Adrián Arias Muestra",
+   "Andrés Rojas Muestra",
+   "Elena Chaves Ejemplo",
+   "Isabel Umaña Ensayo",
+   "Elena Quesada Ficticio"
+  ],
+  "news_count": 4,
+  "votes_count": 2
+ },
+ {
+  "number": 24057,
+  "name": "Ley de modernización del seguro de cosechas",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-03-06",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Agro"
+  ],
+  "proponents": [
+   "Carlos Umaña Borrador",
+   "Daniela Solano Prueba"
+  ],
+  "news_count": 4,
+  "votes_count": 1
+ },
+ {
+  "number": 23940,
+  "name": "Ley marco sobre el régimen de zonas francas",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-01-24",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "María Umaña Ficticio",
+   "Ricardo Chaves Borrador",
+   "Adrián Chaves Muestra",
+   "Lucía Alfaro Borrador",
+   "Isabel Arias Muestra",
+   "Isabel Umaña Ensayo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 23857,
+  "name": "Ley de regulación del empleo de personas jóvenes",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-11-29",
+  "status": "Convertido en ley",
+  "law_number": 10563,
+  "subjects": [
+   "Empleo"
+  ],
+  "proponents": [
+   "Esteban Salas Prueba",
+   "Carmen Alfaro Prueba",
+   "Luis Calderón Maqueta",
+   "Marta Chaves Ficticio",
+   "Diego Calderón Ficticio",
+   "Pablo Quesada Ensayo"
+  ],
+  "news_count": 10,
+  "votes_count": 2
+ },
+ {
+  "number": 23798,
+  "name": "Adición de un capítulo sobre la inteligencia artificial en el sector público a la Ley N.° 7025",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-10-19",
+  "status": "Convertido en ley",
+  "law_number": 10679,
+  "subjects": [
+   "Tecnología"
+  ],
+  "proponents": [
+   "Paula Quesada Ejemplo",
+   "Ricardo Chaves Borrador",
+   "Carlos Zúñiga Maqueta"
+  ],
+  "news_count": 0,
+  "votes_count": 2
+ },
+ {
+  "number": 23771,
+  "name": "Ley de incentivos para el turismo rural comunitario",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-09-07",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Educación",
+   "Tecnología"
+  ],
+  "proponents": [
+   "Esteban Salas Prueba"
+  ],
+  "news_count": 6,
+  "votes_count": 0
+ },
+ {
+  "number": 23748,
+  "name": "Ley para fortalecer las playas accesibles",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-08-19",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Salud"
+  ],
+  "proponents": [
+   "Luis Calderón Maqueta"
+  ],
+  "news_count": 4,
+  "votes_count": 1
+ },
+ {
+  "number": 23724,
+  "name": "Ley marco sobre la deuda pública",
+  "file_type": "Reforma constitucional",
+  "date_proposed": "2023-08-21",
+  "status": "Convertido en ley",
+  "law_number": 10838,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "Adrián Vargas Maqueta",
+   "Ricardo Arias Ejemplo",
+   "Isabel Umaña Ensayo",
+   "Ricardo Solano Muestra",
+   "Elena Chaves Ejemplo",
+   "Pablo Chaves Maqueta"
+  ],
+  "news_count": 14,
+  "votes_count": 2
+ },
+ {
+  "number": 23699,
+  "name": "Reforma del artículo 96 de la Ley General sobre el turismo rural comunitario",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-08-07",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Ambiente",
+   "Salud"
+  ],
+  "proponents": [
+   "Tomás Chaves Ensayo",
+   "Silvia Brenes Maqueta",
+   "Marta Chaves Ficticio"
+  ],
+  "news_count": 8,
+  "votes_count": 0
+ },
+ {
+  "number": 23682,
+  "name": "Reforma del artículo 40 de la Ley General sobre la generación distribuida",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-07-03",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Energía"
+  ],
+  "proponents": [
+   "Carlos Zúñiga Maqueta",
+   "Carmen Rojas Maqueta",
+   "Carmen Brenes Simulacro"
+  ],
+  "news_count": 5,
+  "votes_count": 0
+ },
+ {
+  "number": 23560,
+  "name": "Ley de modernización de la transparencia en compras públicas",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-04-07",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "Ricardo Solano Muestra",
+   "Carmen Alfaro Prueba",
+   "Isabel Umaña Ensayo",
+   "Carlos Salas Borrador",
+   "Luis Calderón Maqueta",
+   "Pablo Quesada Ensayo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 23500,
+  "name": "Ley marco sobre la pesca artesanal",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-03-03",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Agro",
+   "Educación"
+  ],
+  "proponents": [
+   "Pablo Jiménez Ejemplo",
+   "Mauricio Zúñiga Ensayo",
+   "Paula Quesada Ejemplo",
+   "Natalia Zúñiga Prueba",
+   "Tomás Chaves Ensayo"
+  ],
+  "news_count": 3,
+  "votes_count": 0
+ },
+ {
+  "number": 23493,
+  "name": "Ley para fortalecer la ciberseguridad del Estado",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-02-15",
+  "status": "Convertido en ley",
+  "law_number": 10881,
+  "subjects": [
+   "Tecnología",
+   "Hacienda",
+   "Cultura"
+  ],
+  "proponents": [
+   "Adrián Vargas Maqueta",
+   "Luis Calderón Maqueta",
+   "Adrián Solano Ficticio",
+   "Diego Calderón Ficticio",
+   "Adrián Arias Muestra"
+  ],
+  "news_count": 7,
+  "votes_count": 2
+ },
+ {
+  "number": 23470,
+  "name": "Ley de modernización de las industrias creativas",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-02-22",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Cultura"
+  ],
+  "proponents": [
+   "Daniela Solano Prueba"
+  ],
+  "news_count": 2,
+  "votes_count": 1
+ },
+ {
+  "number": 23457,
+  "name": "Ley de incentivos para el seguro de cosechas",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-02-12",
+  "status": "Convertido en ley",
+  "law_number": 10767,
+  "subjects": [
+   "Agro",
+   "Salud"
+  ],
+  "proponents": [
+   "Marta Chaves Ficticio"
+  ],
+  "news_count": 12,
+  "votes_count": 2
+ },
+ {
+  "number": 23431,
+  "name": "Ley para fortalecer los pequeños productores de café",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-02-03",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Agro"
+  ],
+  "proponents": [
+   "Daniela Quesada Simulacro",
+   "Daniela Solano Prueba",
+   "Laura Zúñiga Muestra"
+  ],
+  "news_count": 9,
+  "votes_count": 0
+ },
+ {
+  "number": 23426,
+  "name": "Ley de modernización de la gestión de residuos plásticos",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-01-04",
+  "status": "Convertido en ley",
+  "law_number": 10600,
+  "subjects": [
+   "Ambiente"
+  ],
+  "proponents": [
+   "Mauricio Zúñiga Ensayo",
+   "Natalia Zúñiga Prueba",
+   "Adrián Arias Muestra",
+   "Tomás Calderón Ejemplo"
+  ],
+  "news_count": 0,
+  "votes_count": 2
+ },
+ {
+  "number": 23419,
+  "name": "Reforma del artículo 49 de la Ley General sobre las concesiones de obra pública",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-01-17",
+  "status": "Dictaminado",
+  "law_number": null,
+  "subjects": [
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Andrés Arias Borrador",
+   "Silvia Brenes Maqueta",
+   "Tomás Brenes Muestra",
+   "Pablo Quesada Ensayo",
+   "Luis Brenes Ficticio",
+   "Tomás Chaves Ensayo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ {
+  "number": 23400,
+  "name": "Reforma del artículo 175 de la Ley General sobre los asentamientos informales",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-12-26",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Vivienda"
+  ],
+  "proponents": [
+   "Isabel Arias Muestra",
+   "Ricardo Solano Muestra",
+   "Paula Alfaro Maqueta",
+   "Tomás Calderón Ejemplo"
+  ],
+  "news_count": 48,
+  "votes_count": 1
+ },
+ {
+  "number": 23304,
+  "name": "Reforma del artículo 125 de la Ley General sobre las bibliotecas públicas",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-11-10",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Cultura"
+  ],
+  "proponents": [
+   "Rodrigo Umaña Prueba",
+   "Luis Brenes Ficticio",
+   "Andrés Rojas Muestra",
+   "José Vargas Ficticio"
+  ],
+  "news_count": 3,
+  "votes_count": 0
+ },
+ {
+  "number": 23301,
+  "name": "Ley marco sobre el tren eléctrico metropolitano",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-10-16",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Transporte",
+   "Salud",
+   "Agro"
+  ],
+  "proponents": [
+   "Pablo Quesada Ensayo",
+   "Carlos Umaña Borrador",
+   "Tomás Rojas Ficticio",
+   "Elena Chaves Ejemplo",
+   "Adrián Vargas Maqueta"
+  ],
+  "news_count": 7,
+  "votes_count": 1
+ },
+ {
+  "number": 23292,
+  "name": "Ley de modernización de los pequeños productores de café",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-10-24",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Agro",
+   "Educación"
+  ],
+  "proponents": [
+   "Fernando Jiménez Prueba",
+   "Natalia Zúñiga Prueba",
+   "Ricardo Chaves Borrador",
+   "Carmen Rojas Maqueta"
+  ],
+  "news_count": 7,
+  "votes_count": 0
+ },
+ {
+  "number": 23251,
+  "name": "Ley para fortalecer el agua potable en zonas rurales",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-08-31",
+  "status": "Convertido en ley",
+  "law_number": 10790,
+  "subjects": [
+   "Ambiente",
+   "Infraestructura",
+   "Hacienda"
+  ],
+  "proponents": [
+   "Luis Brenes Ficticio",
+   "Isabel Arias Muestra",
+   "Tomás Chaves Ensayo"
+  ],
+  "news_count": 14,
+  "votes_count": 2
+ },
+ {
+  "number": 23162,
+  "name": "Ley marco sobre las bibliotecas públicas",
+  "file_type": "Reforma constitucional",
+  "date_proposed": "2022-07-07",
+  "status": "Convertido en ley",
+  "law_number": 10482,
+  "subjects": [
+   "Cultura",
+   "Transporte"
+  ],
+  "proponents": [
+   "Tomás Zúñiga Muestra",
+   "Ricardo Solano Muestra"
+  ],
+  "news_count": 7,
+  "votes_count": 2
+ },
+ {
+  "number": 23149,
+  "name": "Ley de modernización de la llegada de cruceros",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-07-15",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Seguridad"
+  ],
+  "proponents": [
+   "Adrián Arias Muestra",
+   "Carlos Salas Borrador",
+   "Diego Umaña Ficticio"
+  ],
+  "news_count": 2,
+  "votes_count": 0
+ },
+ {
+  "number": 23121,
+  "name": "Adición de un capítulo sobre los asentamientos informales a la Ley N.° 9532",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-05-28",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Vivienda",
+   "Cultura"
+  ],
+  "proponents": [
+   "Daniela Solano Prueba",
+   "Diego Umaña Ficticio",
+   "Natalia Zúñiga Prueba",
+   "Paula Solano Ejemplo"
+  ],
+  "news_count": 34,
+  "votes_count": 0
+ }
+]

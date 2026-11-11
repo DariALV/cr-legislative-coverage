@@ -1,0 +1,158 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getBills } from '../../lib/data';
+import { BILL_STATUSES } from '../../lib/vocab';
+import { PAGE_SIZE } from '../../lib/config';
+
+const bills = getBills();
+const statuses = [...new Set([...BILL_STATUSES, ...bills.map((b) => b.status)])]
+  .filter((s) => bills.some((b) => b.status === s));
+const years = [...new Set(bills.map((b) => b.date_proposed.slice(0, 4)))].sort().reverse();
+const subjects = [...new Set(bills.flatMap((b) => b.subjects))].sort((a, b) => a.localeCompare(b, 'es'));
+const withNews = bills.filter((b) => b.news_count > 0).length;
+---
+<Base title="Expedientes" description="Listado de proyectos de ley con su cobertura en medios.">
+  <Breadcrumb items={[{ label: 'Expedientes' }]} />
+  <h1>Expedientes</h1>
+  <p class="text-2">
+    {`${bills.length} proyectos de ley. ${withNews} aparecen en al menos una noticia del período; ${bills.length - withNews} no aparecen en ninguna.`}
+  </p>
+
+  <form class="filters" id="bill-filters" data-page-size={PAGE_SIZE}>
+    <div class="field field--wide">
+      <label for="f-q">Buscar en el nombre o número</label>
+      <input id="f-q" name="q" type="search" placeholder="Ej.: humedales, 24.567" autocomplete="off" />
+    </div>
+    <div class="field">
+      <label for="f-estado">Estado</label>
+      <select id="f-estado" name="estado">
+        <option value="">Todos</option>
+        {statuses.map((s) => <option value={s}>{s}</option>)}
+      </select>
+    </div>
+    <div class="field">
+      <label for="f-anio">Año de presentación</label>
+      <select id="f-anio" name="anio">
+        <option value="">Todos</option>
+        {years.map((y) => <option value={y}>{y}</option>)}
+      </select>
+    </div>
+    <div class="field">
+      <label for="f-tema">Tema</label>
+      <select id="f-tema" name="tema">
+        <option value="">Todos</option>
+        {subjects.map((s) => <option value={s}>{s}</option>)}
+      </select>
+    </div>
+    <div class="field">
+      <label for="f-cob">Cobertura</label>
+      <select id="f-cob" name="cobertura">
+        <option value="">Con y sin noticias</option>
+        <option value="con">Con noticias</option>
+        <option value="sin">Sin noticias</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="f-ley">Convertido en ley</label>
+      <select id="f-ley" name="ley">
+        <option value="">Indistinto</option>
+        <option value="si">Sí</option>
+        <option value="no">No</option>
+      </select>
+    </div>
+  </form>
+
+  <div class="results-bar">
+    <fieldset class="segmented" id="bill-sort">
+      <legend class="visually-hidden">Ordenar</legend>
+      <input type="radio" id="o-noticias" name="orden" value="" form="bill-filters" checked /><label for="o-noticias">Con más noticias</label>
+      <input type="radio" id="o-recientes" name="orden" value="recientes" form="bill-filters" /><label for="o-recientes">Más recientes</label>
+      <input type="radio" id="o-antiguos" name="orden" value="antiguos" form="bill-filters" /><label for="o-antiguos">Más antiguos</label>
+    </fieldset>
+    <button type="reset" form="bill-filters" class="btn">Limpiar filtros</button>
+  </div>
+  <p class="count" id="bill-count" aria-live="polite">Cargando…</p>
+  <ul class="list" id="bill-list"></ul>
+  <nav class="pager" id="bill-pager" aria-label="Paginación"></nav>
+  <noscript><p class="empty">Este listado necesita JavaScript. Podés descargar los datos desde la página «Datos».</p></noscript>
+</Base>
+
+<script>
+  import { loadBills, billRowHtml, readParams, writeParams } from '../../lib/client';
+  import { normalizeText, parseBillNumber } from '../../lib/format';
+  import type { BillIndexRow } from '../../lib/types';
+
+  const form = document.getElementById('bill-filters') as HTMLFormElement;
+  const sort = document.getElementById('bill-sort')!;
+  const list = document.getElementById('bill-list')!;
+  const count = document.getElementById('bill-count')!;
+  const pager = document.getElementById('bill-pager')!;
+  const pageSize = Number(form.dataset.pageSize);
+  const FIELDS = ['q', 'estado', 'anio', 'tema', 'cobertura', 'ley', 'orden'] as const;
+  let page = 1;
+
+  const params = readParams();
+  for (const f of FIELDS) {
+    const el = form.elements.namedItem(f) as HTMLInputElement | HTMLSelectElement | RadioNodeList;
+    if (params.get(f)) el.value = params.get(f)!;
+  }
+  page = Math.max(1, Number(params.get('pagina') ?? 1));
+
+  function state() {
+    const fd = new FormData(form);
+    return Object.fromEntries(FIELDS.map((f) => [f, String(fd.get(f) ?? '')])) as Record<(typeof FIELDS)[number], string>;
+  }
+
+  function filter(rows: BillIndexRow[]) {
+    const s = state();
+    const num = parseBillNumber(s.q);
+    const words = num ? [] : normalizeText(s.q).split(' ').filter(Boolean);
+    let out = rows.filter((b) =>
+      (!num || b.n === num) &&
+      (!s.estado || b.st === s.estado) &&
+      (!s.anio || String(b.y) === s.anio) &&
+      (!s.tema || b.subj.includes(s.tema)) &&
+      (!s.cobertura || (s.cobertura === 'con' ? b.nc > 0 : b.nc === 0)) &&
+      (!s.ley || (s.ley === 'si' ? b.law !== null : b.law === null)) &&
+      (!words.length || (() => {
+        const hay = normalizeText(`${b.n} ${b.name} ${b.subj.join(' ')}`);
+        return words.every((w) => hay.includes(w));
+      })()),
+    );
+    if (s.orden === 'recientes') out = out.sort((a, b) => b.n - a.n);
+    else if (s.orden === 'antiguos') out = out.sort((a, b) => a.n - b.n);
+    else out = out.sort((a, b) => b.nc - a.nc || b.n - a.n);
+    return out;
+  }
+
+  async function render() {
+    const rows = filter(await loadBills());
+    const pages = Math.max(1, Math.ceil(rows.length / pageSize));
+    page = Math.min(page, pages);
+    const slice = rows.slice((page - 1) * pageSize, page * pageSize);
+    list.innerHTML = slice.length ? slice.map(billRowHtml).join('') : '<li class="empty">Ningún expediente coincide con los filtros.</li>';
+    const from = rows.length ? (page - 1) * pageSize + 1 : 0;
+    count.textContent = `${rows.length} ${rows.length === 1 ? 'expediente' : 'expedientes'}` + (rows.length > pageSize ? ` · mostrando ${from}–${from + slice.length - 1}` : '');
+    pager.innerHTML = pages > 1
+      ? `<button class="btn" data-p="${page - 1}" ${page === 1 ? 'disabled' : ''}>← Anterior</button>
+         <span>Página ${page} de ${pages}</span>
+         <button class="btn" data-p="${page + 1}" ${page === pages ? 'disabled' : ''}>Siguiente →</button>`
+      : '';
+    writeParams({ ...state(), pagina: page > 1 ? String(page) : '' });
+  }
+
+  let t: number | undefined;
+  form.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(() => { page = 1; render(); }, 150); });
+  sort.addEventListener('change', () => { page = 1; render(); });
+  form.addEventListener('submit', (e) => e.preventDefault());
+  form.addEventListener('reset', () => setTimeout(() => { page = 1; render(); }));
+  pager.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-p]');
+    if (!b) return;
+    page = Number(b.dataset.p);
+    render();
+    list.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  });
+  render().catch((err) => { count.textContent = String(err); });
+</script>

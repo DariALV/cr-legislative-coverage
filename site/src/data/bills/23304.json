@@ -1,0 +1,97 @@
+{
+ "bill": {
+  "number": 23304,
+  "name": "Reforma del artículo 125 de la Ley General sobre las bibliotecas públicas",
+  "file_type": "Ordinario",
+  "date_proposed": "2022-11-10",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Cultura"
+  ],
+  "proponents": [
+   "Rodrigo Umaña Prueba",
+   "Luis Brenes Ficticio",
+   "Andrés Rojas Muestra",
+   "José Vargas Ficticio"
+  ],
+  "news_count": 3,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Rodrigo Umaña Prueba",
+   "faction": "Partido Celeste",
+   "province": "San José",
+   "signing_order": 1
+  },
+  {
+   "name": "Luis Brenes Ficticio",
+   "faction": "Partido Índigo",
+   "province": "Cartago",
+   "signing_order": 2
+  },
+  {
+   "name": "Andrés Rojas Muestra",
+   "faction": "Partido Celeste",
+   "province": "San José",
+   "signing_order": 3
+  },
+  {
+   "name": "José Vargas Ficticio",
+   "faction": "Partido Ámbar",
+   "province": "Alajuela",
+   "signing_order": 4
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2022-11-10",
+   "date_end": "2023-05-01"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Sociales",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2023-05-01",
+   "date_end": "2024-05-22"
+  },
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Archivado por vencimiento del plazo cuatrienal",
+   "date_start": "2024-05-22",
+   "date_end": "2024-05-22"
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "9e45b813bbc84ad4192c97d6b360308f8cddf58004842ad61efe906d2bdaaefc",
+   "title": "Mociones de fondo frenan iniciativa sobre el patrimonio arquitectónico",
+   "organization": "crhoy",
+   "date_published": "2026-10-28T09:24:00",
+   "url": "https://example.com/crhoy/2026/10/28/mociones-de-fondo-frenan-iniciativa-sobre-el-patrimonio-arquitectonico-135",
+   "link_source": "model",
+   "confidence": 0.36
+  },
+  {
+   "id": "2dca81fafbf3e56e1944a5a1fc8d02f97eb16e0c2141f07badd5a6415edbec91",
+   "title": "¿Qué cambiaría con el proyecto sobre las bibliotecas públicas?",
+   "organization": "crhoy",
+   "date_published": "2026-07-03T10:39:00",
+   "url": "https://example.com/crhoy/2026/07/03/que-cambiaria-con-el-proyecto-sobre-las-bibliotecas-publicas-846",
+   "link_source": "model",
+   "confidence": 0.73
+  },
+  {
+   "id": "c6754a5b9cbd50d4f180e47b7741d53b358b1dcfd7a2dbf9b0756e8cdf79c05b",
+   "title": "Mociones de fondo frenan iniciativa sobre las bibliotecas públicas",
+   "organization": "crhoy",
+   "date_published": "2026-05-06T07:26:00",
+   "url": "https://example.com/crhoy/2026/05/06/mociones-de-fondo-frenan-iniciativa-sobre-las-bibliotecas-publicas-620",
+   "link_source": "model",
+   "confidence": 0.57
+  }
+ ]
+}

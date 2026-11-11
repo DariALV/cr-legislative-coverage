@@ -1,0 +1,73 @@
+{
+ "bill": {
+  "number": 25024,
+  "name": "Ley marco sobre el tren eléctrico metropolitano",
+  "file_type": "Ordinario",
+  "date_proposed": "2026-01-10",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Transporte"
+  ],
+  "proponents": [
+   "Carmen Rojas Maqueta",
+   "Carlos Chaves Ejemplo",
+   "Paula Quesada Ejemplo",
+   "José Vargas Ficticio"
+  ],
+  "news_count": 1,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Carmen Rojas Maqueta",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 1
+  },
+  {
+   "name": "Carlos Chaves Ejemplo",
+   "faction": "Partido Granate",
+   "province": "Heredia",
+   "signing_order": 2
+  },
+  {
+   "name": "Paula Quesada Ejemplo",
+   "faction": "Partido Índigo",
+   "province": "San José",
+   "signing_order": 3
+  },
+  {
+   "name": "José Vargas Ficticio",
+   "faction": "Partido Ámbar",
+   "province": "Alajuela",
+   "signing_order": 4
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2026-01-10",
+   "date_end": "2026-04-30"
+  },
+  {
+   "organ": "Comisión Permanente de Gobierno y Administración",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-04-30",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "5f72da803177099830240f6c2580ff48254addc8e82c3fbf7dad4867377720c4",
+   "title": "Mociones de fondo frenan iniciativa sobre las plataformas de transporte",
+   "organization": "teletica",
+   "date_published": "2026-05-21T15:38:00",
+   "url": "https://example.com/teletica/2026/05/21/mociones-de-fondo-frenan-iniciativa-sobre-las-plataformas-de-transport-339",
+   "link_source": "manual",
+   "confidence": null
+  }
+ ]
+}

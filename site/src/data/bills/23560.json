@@ -1,0 +1,83 @@
+{
+ "bill": {
+  "number": 23560,
+  "name": "Ley de modernización de la transparencia en compras públicas",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-04-07",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "Ricardo Solano Muestra",
+   "Carmen Alfaro Prueba",
+   "Isabel Umaña Ensayo",
+   "Carlos Salas Borrador",
+   "Luis Calderón Maqueta",
+   "Pablo Quesada Ensayo"
+  ],
+  "news_count": 0,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Ricardo Solano Muestra",
+   "faction": "Partido Índigo",
+   "province": "San José",
+   "signing_order": 1
+  },
+  {
+   "name": "Carmen Alfaro Prueba",
+   "faction": "Independiente",
+   "province": "San José",
+   "signing_order": 2
+  },
+  {
+   "name": "Isabel Umaña Ensayo",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 3
+  },
+  {
+   "name": "Carlos Salas Borrador",
+   "faction": "Partido Granate",
+   "province": "Puntarenas",
+   "signing_order": 4
+  },
+  {
+   "name": "Luis Calderón Maqueta",
+   "faction": "Partido Ámbar",
+   "province": "Cartago",
+   "signing_order": 5
+  },
+  {
+   "name": "Pablo Quesada Ensayo",
+   "faction": "Partido Olivo",
+   "province": "Alajuela",
+   "signing_order": 6
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2023-04-07",
+   "date_end": "2023-05-07"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Hacendarios",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2023-05-07",
+   "date_end": "2023-11-21"
+  },
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Archivado por vencimiento del plazo cuatrienal",
+   "date_start": "2023-11-21",
+   "date_end": "2023-11-21"
+  }
+ ],
+ "votes": [],
+ "news": []
+}

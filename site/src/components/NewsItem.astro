@@ -1,0 +1,27 @@
+---
+/** One news article in a bill's list. Only title, outlet, date and link. */
+import LinkBadge from './LinkBadge.astro';
+import { formatDate } from '../lib/format';
+import { newsHref } from '../lib/paths';
+import { outletName } from '../lib/data';
+import type { BillNewsLink } from '../lib/types';
+
+interface Props { item: BillNewsLink; billNumber: number }
+const { item, billNumber } = Astro.props;
+const outlet = outletName(item.organization);
+---
+<li class="news-item">
+  <div class="item-title"><a href={newsHref(item.id)}>{item.title}</a></div>
+  <div class="item-meta">
+    <span>{outlet}</span>
+    <time datetime={item.date_published}>{formatDate(item.date_published)}</time>
+    <a href={item.url} target="_blank" rel="noopener nofollow">Leer en {outlet} ↗</a>
+  </div>
+  <div class="badge-row">
+    <LinkBadge source={item.link_source} confidence={item.confidence} billNumber={billNumber} newsId={item.id} />
+  </div>
+</li>
+
+<style>
+  .badge-row { margin-top: 0.4rem; }
+</style>

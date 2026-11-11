@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { href } from '../lib/paths';
+import { getSiteStats, getOutlets } from '../lib/data';
+import { formatInt, formatDate } from '../lib/format';
+
+const s = getSiteStats();
+const outlets = getOutlets();
+const files = [
+  { file: 'data/descargas/expedientes.csv', label: 'Expedientes (CSV)', rows: s.bills, desc: 'Una fila por expediente con estado, temas y conteos.' },
+  { file: 'data/descargas/noticias.csv', label: 'Noticias (CSV)', rows: s.news, desc: 'Una fila por noticia: título, medio, fecha, sección y enlace. Sin texto.' },
+  { file: 'data/descargas/vinculos.csv', label: 'Vínculos noticia–expediente (CSV)', rows: s.links, desc: 'Una fila por vínculo con su origen y confianza.' },
+  { file: 'data/bills-index.json', label: 'Índice de expedientes (JSON)', rows: s.bills, desc: 'El mismo índice compacto que usa el buscador.' },
+  { file: 'data/news-index.json', label: 'Índice de noticias (JSON)', rows: s.news, desc: 'El mismo índice compacto que usa el buscador.' },
+];
+const dictionary = [
+  ['expedientes', 'number', 'entero', 'Número de expediente en el SIL.'],
+  ['expedientes', 'status', 'texto', 'Estado del trámite (valores por confirmar).'],
+  ['expedientes', 'law_number', 'entero o vacío', 'Número de ley, si se convirtió en ley.'],
+  ['expedientes', 'news_count', 'entero', 'Noticias vinculadas en el período.'],
+  ['noticias', 'id', 'texto (64)', 'SHA-256 hexadecimal de la URL; identificador estable.'],
+  ['noticias', 'organization', 'texto', 'Clave del medio (crhoy, delfino, …).'],
+  ['noticias', 'date_published', 'fecha y hora', 'Hora local de Costa Rica, sin zona horaria.'],
+  ['vinculos', 'link_source', 'texto', 'Origen del vínculo: delfino, manual o model (por confirmar).'],
+  ['vinculos', 'confidence', 'decimal 0–1 o vacío', 'Confianza del modelo; vacío si el vínculo no viene del modelo.'],
+];
+---
+<Base title="Datos" description="Descarga del corpus público y diccionario de datos.">
+  <Breadcrumb items={[{ label: 'Datos' }]} />
+  <div class="prose">
+    <h1>Datos abiertos</h1>
+    <p class="callout">Borrador: los archivos contienen los datos de prueba del sitio. Se reemplazarán por el corpus público real.</p>
+    <p>
+      El corpus público incluye metadatos de expedientes, noticias y vínculos. No incluye el texto de las noticias.
+      Licencia: [por definir].
+    </p>
+  </div>
+
+  <h2>Resumen del corpus</h2>
+  <div class="tiles summary">
+    <div class="tile">
+      <div class="tile__label">Noticias vinculadas</div>
+      <div class="tile__value">{formatInt(s.linkedNews)}</div>
+      <div class="tile__note">de {formatInt(s.news)} revisadas · {formatInt(s.links)} vínculos</div>
+    </div>
+    <div class="tile">
+      <div class="tile__label">Expedientes con cobertura</div>
+      <div class="tile__value">{formatInt(s.billsWithCoverage)} <span class="of">/ {formatInt(s.bills)}</span></div>
+      <div class="tile__note">{formatInt(s.bills - s.billsWithCoverage)} sin ninguna noticia</div>
+    </div>
+    <div class="tile">
+      <div class="tile__label">Medios revisados</div>
+      <div class="tile__value">{s.outlets}</div>
+      <div class="tile__note">{outlets.map((o) => o.name).join(', ')}</div>
+    </div>
+    <div class="tile">
+      <div class="tile__label">Período</div>
+      <div class="tile__value period">{formatDate(s.period.start)} – {formatDate(s.period.end)}</div>
+    </div>
+  </div>
+
+  <h2>Descargas</h2>
+  <ul class="list downloads">
+    {files.map((f) => (
+      <li>
+        <div class="item-title"><a href={href(f.file)} download>{f.label}</a></div>
+        <div class="item-meta"><span>{f.desc}</span><span>{formatInt(f.rows)} filas</span></div>
+      </li>
+    ))}
+  </ul>
+
+  <h2>Diccionario de datos</h2>
+  <div class="table-wrap">
+    <table class="data">
+      <thead><tr><th>Archivo</th><th>Campo</th><th>Tipo</th><th>Descripción</th></tr></thead>
+      <tbody>{dictionary.map(([a, b, c, d]) => <tr><td>{a}</td><td class="mono">{b}</td><td>{c}</td><td>{d}</td></tr>)}</tbody>
+    </table>
+  </div>
+</Base>
+
+<style>
+  .summary { margin-bottom: 0.5rem; }
+  .summary .tile { max-width: 16rem; }
+  .of { font-size: 1rem; font-weight: 400; color: var(--muted); }
+  .period { font-size: 1.15rem; padding-top: 0.3rem; }
+</style>

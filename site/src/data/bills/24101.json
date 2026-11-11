@@ -1,0 +1,712 @@
+{
+ "bill": {
+  "number": 24101,
+  "name": "Reforma del artículo 141 de la Ley General sobre la protección de humedales",
+  "file_type": "Ordinario",
+  "date_proposed": "2024-04-27",
+  "status": "Convertido en ley",
+  "law_number": 10780,
+  "subjects": [
+   "Ambiente"
+  ],
+  "proponents": [
+   "Adrián Arias Muestra",
+   "Andrés Rojas Muestra",
+   "Elena Chaves Ejemplo",
+   "Isabel Umaña Ensayo",
+   "Elena Quesada Ficticio"
+  ],
+  "news_count": 4,
+  "votes_count": 2
+ },
+ "proponents": [
+  {
+   "name": "Adrián Arias Muestra",
+   "faction": "Partido Índigo",
+   "province": "Guanacaste",
+   "signing_order": 1
+  },
+  {
+   "name": "Andrés Rojas Muestra",
+   "faction": "Partido Celeste",
+   "province": "San José",
+   "signing_order": 2
+  },
+  {
+   "name": "Elena Chaves Ejemplo",
+   "faction": "Partido Celeste",
+   "province": "Limón",
+   "signing_order": 3
+  },
+  {
+   "name": "Isabel Umaña Ensayo",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 4
+  },
+  {
+   "name": "Elena Quesada Ficticio",
+   "faction": "Partido Celeste",
+   "province": "San José",
+   "signing_order": 5
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2024-04-27",
+   "date_end": "2024-05-09"
+  },
+  {
+   "organ": "Comisión Permanente Especial de Ambiente",
+   "description": "Estudio en comisión, consultas y mociones; dictamen afirmativo de mayoría",
+   "date_start": "2024-05-09",
+   "date_end": "2024-06-07"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Discusión por el fondo en primer debate",
+   "date_start": "2024-06-07",
+   "date_end": "2024-07-11"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Segundo debate",
+   "date_start": "2024-07-11",
+   "date_end": "2024-08-23"
+  },
+  {
+   "organ": "Poder Ejecutivo",
+   "description": "Sanción y publicación en La Gaceta",
+   "date_start": "2024-08-23",
+   "date_end": "2024-09-08"
+  }
+ ],
+ "votes": [
+  {
+   "vote_id": 22,
+   "date": "2024-07-11",
+   "name": "Primer debate",
+   "result": "Aprobado",
+   "deputies": [
+    {
+     "name": "Tomás Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Luis Calderón Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Solano Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "José Vargas Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Chaves Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Arias Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Rojas Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Vargas Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Silvia Brenes Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Ana Solano Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Daniela Quesada Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Solano Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Daniela Solano Prueba",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Alfaro Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Brenes Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Arias Borrador",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Isabel Umaña Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Tomás Calderón Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Marta Chaves Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Elena Quesada Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Rodrigo Umaña Prueba",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Andrés Rojas Muestra",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Natalia Zúñiga Prueba",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Umaña Muestra",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Elena Chaves Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Mauricio Zúñiga Ensayo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Arias Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Ricardo Solano Maqueta",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Alfaro Maqueta",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Umaña Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Lucía Alfaro Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Rojas Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Chaves Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Chaves Ensayo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Calderón Ficticio",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Chaves Ejemplo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Laura Zúñiga Muestra",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Pablo Jiménez Ejemplo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Chaves Maqueta",
+     "party": "Partido Granate",
+     "vote": "ausente"
+    },
+    {
+     "name": "Paula Mora Borrador",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Salas Simulacro",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Salas Borrador",
+     "party": "Partido Granate",
+     "vote": "ausente"
+    },
+    {
+     "name": "Ricardo Solano Muestra",
+     "party": "Partido Índigo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Paula Quesada Ejemplo",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Arias Muestra",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Fernando Jiménez Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Esteban Salas Prueba",
+     "party": "Partido Índigo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carlos Umaña Borrador",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Luis Brenes Ficticio",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Zúñiga Muestra",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "María Umaña Ficticio",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Quesada Ensayo",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "José Solano Ficticio",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carlos Zúñiga Maqueta",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Alfaro Prueba",
+     "party": "Independiente",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Vargas Maqueta",
+     "party": "Independiente",
+     "vote": "en_contra"
+    }
+   ]
+  },
+  {
+   "vote_id": 23,
+   "date": "2024-08-23",
+   "name": "Segundo debate",
+   "result": "Aprobado",
+   "deputies": [
+    {
+     "name": "Tomás Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Luis Calderón Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Solano Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "José Vargas Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Chaves Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Arias Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Rojas Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Vargas Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Silvia Brenes Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Solano Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Daniela Quesada Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Solano Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Daniela Solano Prueba",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Alfaro Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Brenes Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Arias Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Umaña Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Calderón Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Marta Chaves Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Elena Quesada Ficticio",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Rodrigo Umaña Prueba",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Rojas Muestra",
+     "party": "Partido Celeste",
+     "vote": "ausente"
+    },
+    {
+     "name": "Natalia Zúñiga Prueba",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Isabel Umaña Muestra",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Elena Chaves Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Mauricio Zúñiga Ensayo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Arias Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Solano Maqueta",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Paula Alfaro Maqueta",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Umaña Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Lucía Alfaro Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Rojas Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Chaves Borrador",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Tomás Chaves Ensayo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Calderón Ficticio",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carlos Chaves Ejemplo",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Laura Zúñiga Muestra",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Jiménez Ejemplo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Chaves Maqueta",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Paula Mora Borrador",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Diego Salas Simulacro",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carlos Salas Borrador",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Ricardo Solano Muestra",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Quesada Ejemplo",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Arias Muestra",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Fernando Jiménez Prueba",
+     "party": "Partido Índigo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Esteban Salas Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Umaña Borrador",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Luis Brenes Ficticio",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Zúñiga Muestra",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "María Umaña Ficticio",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Pablo Quesada Ensayo",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "José Solano Ficticio",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Zúñiga Maqueta",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Alfaro Prueba",
+     "party": "Independiente",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Vargas Maqueta",
+     "party": "Independiente",
+     "vote": "a_favor"
+    }
+   ]
+  }
+ ],
+ "news": [
+  {
+   "id": "5bc8f112e029ab1442a3895d8cf8fc14e5afdbdbcd1bb5a03db5e4ad40b787c4",
+   "title": "Consultas a instituciones retrasan proyecto sobre el agua potable en zonas rurales",
+   "organization": "elmundo",
+   "date_published": "2026-09-30T15:30:00",
+   "url": "https://example.com/elmundo/2026/09/30/consultas-a-instituciones-retrasan-proyecto-sobre-el-agua-potable-en-z-170",
+   "link_source": "model",
+   "confidence": 0.49
+  },
+  {
+   "id": "9259567f999884c8eacd48784b64510a98a01038aec98d733186f61d53d2bf2b",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la protección de humedales",
+   "organization": "semanario",
+   "date_published": "2026-08-19T12:38:00",
+   "url": "https://example.com/semanario/2026/08/19/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-proteccion-de-humedales-276",
+   "link_source": "model",
+   "confidence": 0.72
+  },
+  {
+   "id": "c7fb687a81f44e2c83954c1bc02c7055d31ba38dd4d1751a12d51a831906f257",
+   "title": "¿Qué cambiaría con el proyecto sobre la protección de humedales?",
+   "organization": "semanario",
+   "date_published": "2026-08-11T14:40:00",
+   "url": "https://example.com/semanario/2026/08/11/que-cambiaria-con-el-proyecto-sobre-la-proteccion-de-humedales-913",
+   "link_source": "model",
+   "confidence": 0.88
+  },
+  {
+   "id": "e8d7569c8c4c540964a5891d37fc53c200f28d2aecd930a5c8eba19ffae0bed2",
+   "title": "Mociones de fondo frenan iniciativa sobre la protección de humedales",
+   "organization": "elmundo",
+   "date_published": "2026-07-27T12:10:00",
+   "url": "https://example.com/elmundo/2026/07/27/mociones-de-fondo-frenan-iniciativa-sobre-la-proteccion-de-humedales-594",
+   "link_source": "model",
+   "confidence": 0.74
+  }
+ ]
+}

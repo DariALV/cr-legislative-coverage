@@ -1,0 +1,488 @@
+{
+ "bill": {
+  "number": 24472,
+  "name": "Ley de regulación del turismo rural comunitario",
+  "file_type": "Ordinario",
+  "date_proposed": "2025-01-27",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Infraestructura"
+  ],
+  "proponents": [
+   "Carmen Brenes Simulacro",
+   "Adrián Solano Ficticio",
+   "Adrián Arias Muestra",
+   "Ricardo Arias Ejemplo"
+  ],
+  "news_count": 13,
+  "votes_count": 1
+ },
+ "proponents": [
+  {
+   "name": "Carmen Brenes Simulacro",
+   "faction": "Partido Ámbar",
+   "province": "Alajuela",
+   "signing_order": 1
+  },
+  {
+   "name": "Adrián Solano Ficticio",
+   "faction": "Partido Ámbar",
+   "province": "Limón",
+   "signing_order": 2
+  },
+  {
+   "name": "Adrián Arias Muestra",
+   "faction": "Partido Índigo",
+   "province": "Guanacaste",
+   "signing_order": 3
+  },
+  {
+   "name": "Ricardo Arias Ejemplo",
+   "faction": "Partido Celeste",
+   "province": "Guanacaste",
+   "signing_order": 4
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2025-01-27",
+   "date_end": "2025-03-07"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Económicos",
+   "description": "Estudio en comisión, consultas y mociones; dictamen afirmativo de mayoría",
+   "date_start": "2025-03-07",
+   "date_end": "2025-05-19"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Discusión por el fondo en primer debate",
+   "date_start": "2025-05-19",
+   "date_end": "2026-08-14"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Segundo debate",
+   "date_start": "2026-08-14",
+   "date_end": null
+  }
+ ],
+ "votes": [
+  {
+   "vote_id": 30,
+   "date": "2026-08-14",
+   "name": "Primer debate",
+   "result": "Aprobado",
+   "deputies": [
+    {
+     "name": "Tomás Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Luis Calderón Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Solano Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "José Vargas Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Chaves Muestra",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Isabel Arias Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Rojas Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Pablo Vargas Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Silvia Brenes Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Solano Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Daniela Quesada Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Solano Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Daniela Solano Prueba",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Alfaro Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Brenes Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Arias Borrador",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Isabel Umaña Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Calderón Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Marta Chaves Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Elena Quesada Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Rodrigo Umaña Prueba",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Andrés Rojas Muestra",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Natalia Zúñiga Prueba",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Umaña Muestra",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Elena Chaves Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Mauricio Zúñiga Ensayo",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Ricardo Arias Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Solano Maqueta",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Paula Alfaro Maqueta",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Diego Umaña Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Lucía Alfaro Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Rojas Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Chaves Borrador",
+     "party": "Partido Celeste",
+     "vote": "ausente"
+    },
+    {
+     "name": "Tomás Chaves Ensayo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Calderón Ficticio",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Chaves Ejemplo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Laura Zúñiga Muestra",
+     "party": "Partido Granate",
+     "vote": "ausente"
+    },
+    {
+     "name": "Pablo Jiménez Ejemplo",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Pablo Chaves Maqueta",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Paula Mora Borrador",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Diego Salas Simulacro",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Salas Borrador",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Ricardo Solano Muestra",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Quesada Ejemplo",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Arias Muestra",
+     "party": "Partido Índigo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Fernando Jiménez Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Esteban Salas Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Umaña Borrador",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Luis Brenes Ficticio",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Zúñiga Muestra",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "María Umaña Ficticio",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Quesada Ensayo",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "José Solano Ficticio",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Zúñiga Maqueta",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carmen Alfaro Prueba",
+     "party": "Independiente",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Adrián Vargas Maqueta",
+     "party": "Independiente",
+     "vote": "a_favor"
+    }
+   ]
+  }
+ ],
+ "news": [
+  {
+   "id": "ce3c37750f8b609c35f0ef65d774fca0ab1185462b6443755da9b186fde29f3f",
+   "title": "Sectores critican propuesta sobre las concesiones de obra pública",
+   "organization": "crhoy",
+   "date_published": "2026-10-07T14:46:00",
+   "url": "https://example.com/crhoy/2026/10/07/sectores-critican-propuesta-sobre-las-concesiones-de-obra-publica-272",
+   "link_source": "model",
+   "confidence": 0.5
+  },
+  {
+   "id": "6e48d4399723bea458cd8e1e725eeb793f920923ad664d0e8a928b4710e8c7de",
+   "title": "Diputados discuten proyecto sobre las concesiones de obra pública",
+   "organization": "delfino",
+   "date_published": "2026-09-27T09:29:00",
+   "url": "https://example.com/delfino/2026/09/27/diputados-discuten-proyecto-sobre-las-concesiones-de-obra-publica-774",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "65b413080abe6e5d29bbd611744d9ea95b0c141756bda86fb8b6ebdbc9fd131b",
+   "title": "Diputados discuten proyecto sobre las concesiones de obra pública",
+   "organization": "elmundo",
+   "date_published": "2026-09-22T07:26:00",
+   "url": "https://example.com/elmundo/2026/09/22/diputados-discuten-proyecto-sobre-las-concesiones-de-obra-publica-731",
+   "link_source": "model",
+   "confidence": 0.74
+  },
+  {
+   "id": "a8d88a21506869a9f63a4fa819f036010b53ded9751bf7168a7bcf9938d232a4",
+   "title": "Sectores critican propuesta sobre el turismo rural comunitario",
+   "organization": "delfino",
+   "date_published": "2026-09-09T19:09:00",
+   "url": "https://example.com/delfino/2026/09/09/sectores-critican-propuesta-sobre-el-turismo-rural-comunitario-240",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "dc3890c130e6f8ca1d92907fb8f0325d11a65a2e7c0d433498effea70452cb30",
+   "title": "Sectores critican propuesta sobre el turismo rural comunitario",
+   "organization": "delfino",
+   "date_published": "2026-08-25T11:15:00",
+   "url": "https://example.com/delfino/2026/08/25/sectores-critican-propuesta-sobre-el-turismo-rural-comunitario-441",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "998cc8f09794122c06505015621133467c15e9b9e1c975381c00384310b7b1b3",
+   "title": "Organizaciones piden cambios al proyecto sobre el turismo rural comunitario",
+   "organization": "teletica",
+   "date_published": "2026-08-24T21:13:00",
+   "url": "https://example.com/teletica/2026/08/24/organizaciones-piden-cambios-al-proyecto-sobre-el-turismo-rural-comuni-495",
+   "link_source": "model",
+   "confidence": 0.59
+  },
+  {
+   "id": "7375d2746ba5760486dde99c55ffc0e72166c9f39d4306a33141331ef13f6ec0",
+   "title": "Así votaron las fracciones el primer debate del proyecto sobre el turismo rural comunitario",
+   "organization": "crhoy",
+   "date_published": "2026-08-19T06:06:00",
+   "url": "https://example.com/crhoy/2026/08/19/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-el-turi-975",
+   "link_source": "model",
+   "confidence": 0.92
+  },
+  {
+   "id": "7d37cc81b284da4baa43d86252b764d5dd1bec0cd0e7d13a1537789ded026816",
+   "title": "Así votaron las fracciones el primer debate del proyecto sobre el turismo rural comunitario",
+   "organization": "semanario",
+   "date_published": "2026-08-15T14:39:00",
+   "url": "https://example.com/semanario/2026/08/15/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-el-turi-389",
+   "link_source": "model",
+   "confidence": 0.79
+  },
+  {
+   "id": "7301e9962251560d006f2a15defd829434ff126cfae991de86ac4835a002051d",
+   "title": "Mociones de fondo frenan iniciativa sobre el turismo rural comunitario",
+   "organization": "crhoy",
+   "date_published": "2026-08-12T20:09:00",
+   "url": "https://example.com/crhoy/2026/08/12/mociones-de-fondo-frenan-iniciativa-sobre-el-turismo-rural-comunitario-312",
+   "link_source": "model",
+   "confidence": 0.91
+  },
+  {
+   "id": "ab73d4dd67bcb63555ce67f221466310729e21b44a8aaa3a92e96eb6065a7748",
+   "title": "Así votaron las fracciones el primer debate del proyecto sobre el turismo rural comunitario",
+   "organization": "semanario",
+   "date_published": "2026-08-11T15:51:00",
+   "url": "https://example.com/semanario/2026/08/11/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-el-turi-524",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "267037c897b1b64817ce14a659183f760ba681d6dea9928e70384c9e5c9108b5",
+   "title": "Comisión avanza en iniciativa sobre el turismo rural comunitario",
+   "organization": "crhoy",
+   "date_published": "2026-08-10T20:30:00",
+   "url": "https://example.com/crhoy/2026/08/10/comision-avanza-en-iniciativa-sobre-el-turismo-rural-comunitario-276",
+   "link_source": "model",
+   "confidence": 0.58
+  },
+  {
+   "id": "5ec0c43b57aff11521141301d72a251ffb1b14ba75b6a8fc9cdf311f4e5395ba",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre el agua potable en zonas rurales",
+   "organization": "elobservador",
+   "date_published": "2026-07-31T17:45:00",
+   "url": "https://example.com/elobservador/2026/07/31/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-agua-potable-en-zonas-rur-375",
+   "link_source": "model",
+   "confidence": 0.63
+  },
+  {
+   "id": "139804a61d06d9a55e35bd992659214a911a35a64dcec4a86dba822bfd187c99",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la red vial cantonal",
+   "organization": "crhoy",
+   "date_published": "2026-06-24T20:42:00",
+   "url": "https://example.com/crhoy/2026/06/24/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-red-vial-cantonal-646",
+   "link_source": "model",
+   "confidence": 0.56
+  }
+ ]
+}

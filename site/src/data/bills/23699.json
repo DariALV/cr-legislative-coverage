@@ -1,0 +1,137 @@
+{
+ "bill": {
+  "number": 23699,
+  "name": "Reforma del artículo 96 de la Ley General sobre el turismo rural comunitario",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-08-07",
+  "status": "Archivado",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Ambiente",
+   "Salud"
+  ],
+  "proponents": [
+   "Tomás Chaves Ensayo",
+   "Silvia Brenes Maqueta",
+   "Marta Chaves Ficticio"
+  ],
+  "news_count": 8,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Tomás Chaves Ensayo",
+   "faction": "Partido Granate",
+   "province": "Alajuela",
+   "signing_order": 1
+  },
+  {
+   "name": "Silvia Brenes Maqueta",
+   "faction": "Partido Ámbar",
+   "province": "Heredia",
+   "signing_order": 2
+  },
+  {
+   "name": "Marta Chaves Ficticio",
+   "faction": "Partido Ámbar",
+   "province": "San José",
+   "signing_order": 3
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2023-08-07",
+   "date_end": "2024-05-28"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Económicos",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2024-05-28",
+   "date_end": "2026-07-28"
+  },
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Archivado por vencimiento del plazo cuatrienal",
+   "date_start": "2026-07-28",
+   "date_end": "2026-07-28"
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "39a76deea5965c4c0e6810411756aa9460ea21744f35f1f7f364017b61894559",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre el patrimonio arquitectónico",
+   "organization": "elmundo",
+   "date_published": "2026-10-27T16:31:00",
+   "url": "https://example.com/elmundo/2026/10/27/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-patrimonio-arquitectonico-260",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "a8d88a21506869a9f63a4fa819f036010b53ded9751bf7168a7bcf9938d232a4",
+   "title": "Sectores critican propuesta sobre el turismo rural comunitario",
+   "organization": "delfino",
+   "date_published": "2026-09-09T19:09:00",
+   "url": "https://example.com/delfino/2026/09/09/sectores-critican-propuesta-sobre-el-turismo-rural-comunitario-240",
+   "link_source": "model",
+   "confidence": 0.54
+  },
+  {
+   "id": "283a02370c39974fa7d723a600601ca569339ea71803e16e9f4e0a4793aa9a2a",
+   "title": "Mociones de fondo frenan iniciativa sobre el turismo rural comunitario",
+   "organization": "elmundo",
+   "date_published": "2026-08-04T21:36:00",
+   "url": "https://example.com/elmundo/2026/08/04/mociones-de-fondo-frenan-iniciativa-sobre-el-turismo-rural-comunitario-980",
+   "link_source": "model",
+   "confidence": 0.72
+  },
+  {
+   "id": "16000329a2bf3f5384c16b0dd4a01c9f340a89b9e9ead03e86c79837c11f84b6",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre el turismo rural comunitario",
+   "organization": "teletica",
+   "date_published": "2026-07-31T08:05:00",
+   "url": "https://example.com/teletica/2026/07/31/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-turismo-rural-comunitario-139",
+   "link_source": "model",
+   "confidence": 0.92
+  },
+  {
+   "id": "b45b6fb95aab5b2e6c663d307543d1cb8df8c3cb6af615391c15e5e43eb7de93",
+   "title": "Consultas a instituciones retrasan proyecto sobre el turismo rural comunitario",
+   "organization": "crhoy",
+   "date_published": "2026-07-29T15:43:00",
+   "url": "https://example.com/crhoy/2026/07/29/consultas-a-instituciones-retrasan-proyecto-sobre-el-turismo-rural-com-847",
+   "link_source": "model",
+   "confidence": 0.93
+  },
+  {
+   "id": "0e2142317d62f3622eba9b40f6354d477d16e9533d61164b100188b7c02d18af",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre el turismo rural comunitario",
+   "organization": "crhoy",
+   "date_published": "2026-07-27T11:51:00",
+   "url": "https://example.com/crhoy/2026/07/27/gobierno-anuncia-apoyo-a-iniciativa-sobre-el-turismo-rural-comunitario-671",
+   "link_source": "model",
+   "confidence": 0.71
+  },
+  {
+   "id": "f2d857b77b5a6564b6c832eb188b52c1c36ffc3dfaa3b29915e0e4c52ba83052",
+   "title": "Expediente 23.748: qué propone la reforma sobre las playas accesibles",
+   "organization": "semanario",
+   "date_published": "2026-07-02T11:50:00",
+   "url": "https://example.com/semanario/2026/07/02/expediente-23-748-que-propone-la-reforma-sobre-las-playas-accesibles-917",
+   "link_source": "model",
+   "confidence": 0.42
+  },
+  {
+   "id": "1c9703a44a89f947a35db9c3bdff67e55a93ea4b7a9ddf32eec95936f95b3a31",
+   "title": "Expediente 23.699: qué propone la reforma sobre el turismo rural comunitario",
+   "organization": "delfino",
+   "date_published": "2026-06-03T21:17:00",
+   "url": "https://example.com/delfino/2026/06/03/expediente-23-699-que-propone-la-reforma-sobre-el-turismo-rural-comuni-444",
+   "link_source": "manual",
+   "confidence": null
+  }
+ ]
+}

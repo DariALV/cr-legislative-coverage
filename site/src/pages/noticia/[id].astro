@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import BillCard from '../../components/BillCard.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getNews, getBillSummary, outletName } from '../../lib/data';
+import { formatDateLong } from '../../lib/format';
+import { OUTLET_TYPES } from '../../lib/vocab';
+import type { NewsArticle } from '../../lib/types';
+
+export function getStaticPaths() {
+  return getNews().map((n) => ({ params: { id: n.id }, props: { article: n } }));
+}
+
+interface Props { article: NewsArticle }
+const { article } = Astro.props;
+const outlet = outletName(article.organization);
+const time = article.date_published.slice(11, 16);
+const linked = article.bills
+  .map((l) => ({ link: l, bill: getBillSummary(l.number) }))
+  .filter((x) => x.bill !== undefined)
+  .sort((a, b) => (b.link.confidence ?? 1) - (a.link.confidence ?? 1));
+---
+<Base title={article.title} description={`Noticia de ${outlet} y los expedientes legislativos vinculados.`}>
+  <Breadcrumb items={[{ label: 'Noticias', path: 'noticias/' }, { label: outlet }]} />
+
+  <article class="news-head card">
+    <div class="row small muted">
+      <span class="pill">{outlet}</span>
+      <span>{OUTLET_TYPES[article.outlet_type]?.label ?? article.outlet_type}</span>
+      <span>Sección: {article.section}</span>
+    </div>
+    <h1>{article.title}</h1>
+    <p class="text-2">
+      Publicada el <time datetime={article.date_published}>{formatDateLong(article.date_published)}{time !== '00:00' ? `, ${time}` : ''}</time>
+    </p>
+    <div class="row">
+      <a class="btn btn--primary" href={article.url} target="_blank" rel="noopener nofollow">Leer en {outlet} ↗</a>
+      <span class="small muted mono url">{article.url}</span>
+    </div>
+    <p class="small muted" style="margin:1rem 0 0">
+      Por respeto a los derechos de autor, aquí no se reproduce el texto de la noticia. Leela en el sitio del medio.
+    </p>
+  </article>
+
+  <div class="section-head">
+    <h2>Expedientes vinculados</h2>
+    <span class="small muted">{linked.length} {linked.length === 1 ? 'expediente' : 'expedientes'}</span>
+  </div>
+  {linked.length ? (
+    <ul class="list">
+      {linked.map(({ link, bill }) => <BillCard bill={bill!} link={link} newsId={article.id} />)}
+    </ul>
+  ) : (
+    <p class="empty">Esta noticia no tiene expedientes vinculados.</p>
+  )}
+</Base>
+
+<style>
+  .news-head h1 { margin: 0.75rem 0 0.25rem; }
+  .url { overflow-wrap: anywhere; }
+</style>

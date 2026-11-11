@@ -1,0 +1,139 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import { getNews, getOutlets } from '../../lib/data';
+import { PAGE_SIZE, STUDY_PERIOD } from '../../lib/config';
+
+const news = getNews();
+const outlets = getOutlets();
+const linked = news.filter((n) => n.bills.length > 0).length;
+const outletMap = Object.fromEntries(outlets.map((o) => [o.key, o.name]));
+---
+<Base title="Noticias" description="Noticias de medios costarricenses vinculadas a proyectos de ley.">
+  <Breadcrumb items={[{ label: 'Noticias' }]} />
+  <h1>Noticias</h1>
+  <p class="text-2">
+    {news.length} noticias publicadas entre mayo y octubre de 2026; {linked} están vinculadas a al menos un expediente.
+    De cada nota se muestra solo el título, el medio, la fecha y el enlace al original.
+  </p>
+
+  <form class="filters" id="news-filters" data-page-size={PAGE_SIZE} data-outlets={JSON.stringify(outletMap)}>
+    <div class="field field--wide">
+      <label for="n-q">Buscar en el titular</label>
+      <input id="n-q" name="q" type="search" placeholder="Ej.: comisión, agua potable" autocomplete="off" />
+    </div>
+    <div class="field">
+      <label for="n-medio">Medio</label>
+      <select id="n-medio" name="medio">
+        <option value="">Todos</option>
+        {outlets.map((o) => <option value={o.key}>{o.name}</option>)}
+      </select>
+    </div>
+    <div class="field">
+      <label for="n-desde">Desde</label>
+      <input id="n-desde" name="desde" type="date" min={STUDY_PERIOD.start} max={STUDY_PERIOD.end} />
+    </div>
+    <div class="field">
+      <label for="n-hasta">Hasta</label>
+      <input id="n-hasta" name="hasta" type="date" min={STUDY_PERIOD.start} max={STUDY_PERIOD.end} />
+    </div>
+    <div class="field">
+      <label for="n-vinc">Vínculo con expedientes</label>
+      <select id="n-vinc" name="vinculo">
+        <option value="">Con y sin vínculo</option>
+        <option value="con">Con expediente</option>
+        <option value="sin">Sin expediente</option>
+      </select>
+    </div>
+  </form>
+
+  <div class="results-bar">
+    <fieldset class="segmented" id="news-sort">
+      <legend class="visually-hidden">Ordenar</legend>
+      <input type="radio" id="o-recientes" name="orden" value="" form="news-filters" checked /><label for="o-recientes">Más recientes</label>
+      <input type="radio" id="o-antiguas" name="orden" value="antiguas" form="news-filters" /><label for="o-antiguas">Más antiguas</label>
+    </fieldset>
+    <button type="reset" form="news-filters" class="btn">Limpiar filtros</button>
+  </div>
+  <p class="count" id="news-count" aria-live="polite">Cargando…</p>
+  <ul class="list" id="news-list"></ul>
+  <nav class="pager" id="news-pager" aria-label="Paginación"></nav>
+  <noscript><p class="empty">Este listado necesita JavaScript. Podés descargar los datos desde la página «Datos».</p></noscript>
+</Base>
+
+<script>
+  import { loadNews, newsRowHtml, readParams, writeParams } from '../../lib/client';
+  import { normalizeText } from '../../lib/format';
+  import type { NewsIndexRow } from '../../lib/types';
+
+  const form = document.getElementById('news-filters') as HTMLFormElement;
+  const sort = document.getElementById('news-sort')!;
+  const list = document.getElementById('news-list')!;
+  const count = document.getElementById('news-count')!;
+  const pager = document.getElementById('news-pager')!;
+  const pageSize = Number(form.dataset.pageSize);
+  const outlets = JSON.parse(form.dataset.outlets ?? '{}') as Record<string, string>;
+  const FIELDS = ['q', 'medio', 'desde', 'hasta', 'vinculo', 'orden'] as const;
+  let page = 1;
+
+  const params = readParams();
+  for (const f of FIELDS) {
+    const el = form.elements.namedItem(f) as HTMLInputElement | HTMLSelectElement | RadioNodeList;
+    if (params.get(f)) el.value = params.get(f)!;
+  }
+  page = Math.max(1, Number(params.get('pagina') ?? 1));
+
+  function state() {
+    const fd = new FormData(form);
+    return Object.fromEntries(FIELDS.map((f) => [f, String(fd.get(f) ?? '')])) as Record<(typeof FIELDS)[number], string>;
+  }
+
+  // Precompute normalized titles once.
+  const norm = new WeakMap<NewsIndexRow, string>();
+  const titleOf = (n: NewsIndexRow) => { let v = norm.get(n); if (!v) { v = normalizeText(n.t); norm.set(n, v); } return v; };
+
+  function filter(rows: NewsIndexRow[]) {
+    const s = state();
+    const words = normalizeText(s.q).split(' ').filter(Boolean);
+    const out = rows.filter((n) =>
+      (!s.medio || n.o === s.medio) &&
+      (!s.desde || n.d.slice(0, 10) >= s.desde) &&
+      (!s.hasta || n.d.slice(0, 10) <= s.hasta) &&
+      (!s.vinculo || (s.vinculo === 'con' ? n.b.length > 0 : n.b.length === 0)) &&
+      (!words.length || words.every((w) => titleOf(n).includes(w))),
+    );
+    return s.orden === 'antiguas'
+      ? out.sort((a, b) => a.d.localeCompare(b.d))
+      : out.sort((a, b) => b.d.localeCompare(a.d));
+  }
+
+  async function render() {
+    const rows = filter(await loadNews());
+    const pages = Math.max(1, Math.ceil(rows.length / pageSize));
+    page = Math.min(page, pages);
+    const slice = rows.slice((page - 1) * pageSize, page * pageSize);
+    list.innerHTML = slice.length ? slice.map((n) => newsRowHtml(n, outlets)).join('') : '<li class="empty">Ninguna noticia coincide con los filtros.</li>';
+    const from = rows.length ? (page - 1) * pageSize + 1 : 0;
+    count.textContent = `${rows.length} ${rows.length === 1 ? 'noticia' : 'noticias'}` + (rows.length > pageSize ? ` · mostrando ${from}–${from + slice.length - 1}` : '');
+    pager.innerHTML = pages > 1
+      ? `<button class="btn" data-p="${page - 1}" ${page === 1 ? 'disabled' : ''}>← Anterior</button>
+         <span>Página ${page} de ${pages}</span>
+         <button class="btn" data-p="${page + 1}" ${page === pages ? 'disabled' : ''}>Siguiente →</button>`
+      : '';
+    writeParams({ ...state(), pagina: page > 1 ? String(page) : '' });
+  }
+
+  let t: number | undefined;
+  form.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(() => { page = 1; render(); }, 150); });
+  sort.addEventListener('change', () => { page = 1; render(); });
+  form.addEventListener('submit', (e) => e.preventDefault());
+  form.addEventListener('reset', () => setTimeout(() => { page = 1; render(); }));
+  pager.addEventListener('click', (e) => {
+    const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-p]');
+    if (!b) return;
+    page = Number(b.dataset.p);
+    render();
+    list.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  });
+  render().catch((err) => { count.textContent = String(err); });
+</script>

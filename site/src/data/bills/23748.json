@@ -1,0 +1,386 @@
+{
+ "bill": {
+  "number": 23748,
+  "name": "Ley para fortalecer las playas accesibles",
+  "file_type": "Ordinario",
+  "date_proposed": "2023-08-19",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Turismo",
+   "Salud"
+  ],
+  "proponents": [
+   "Luis Calderón Maqueta"
+  ],
+  "news_count": 4,
+  "votes_count": 1
+ },
+ "proponents": [
+  {
+   "name": "Luis Calderón Maqueta",
+   "faction": "Partido Ámbar",
+   "province": "Cartago",
+   "signing_order": 1
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2023-08-19",
+   "date_end": "2024-07-06"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Económicos",
+   "description": "Estudio en comisión, consultas y mociones; dictamen afirmativo de mayoría",
+   "date_start": "2024-07-06",
+   "date_end": "2025-01-06"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Discusión por el fondo en primer debate",
+   "date_start": "2025-01-06",
+   "date_end": "2026-01-29"
+  },
+  {
+   "organ": "Plenario",
+   "description": "Segundo debate",
+   "date_start": "2026-01-29",
+   "date_end": null
+  }
+ ],
+ "votes": [
+  {
+   "vote_id": 16,
+   "date": "2026-01-29",
+   "name": "Primer debate",
+   "result": "Aprobado",
+   "deputies": [
+    {
+     "name": "Tomás Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Luis Calderón Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Adrián Solano Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "José Vargas Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Chaves Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Arias Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Rojas Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Vargas Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Silvia Brenes Maqueta",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ana Solano Borrador",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Daniela Quesada Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Paula Solano Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Daniela Solano Prueba",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Alfaro Borrador",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Ana Brenes Muestra",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Brenes Simulacro",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Arias Borrador",
+     "party": "Partido Ámbar",
+     "vote": "ausente"
+    },
+    {
+     "name": "Isabel Umaña Ensayo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Calderón Ejemplo",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Marta Chaves Ficticio",
+     "party": "Partido Ámbar",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Elena Quesada Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Rodrigo Umaña Prueba",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Andrés Rojas Muestra",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Natalia Zúñiga Prueba",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Isabel Umaña Muestra",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Elena Chaves Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Mauricio Zúñiga Ensayo",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Arias Ejemplo",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Ricardo Solano Maqueta",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Paula Alfaro Maqueta",
+     "party": "Partido Celeste",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Diego Umaña Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Lucía Alfaro Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Rojas Ficticio",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Ricardo Chaves Borrador",
+     "party": "Partido Celeste",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Tomás Chaves Ensayo",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Diego Calderón Ficticio",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carlos Chaves Ejemplo",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Laura Zúñiga Muestra",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Jiménez Ejemplo",
+     "party": "Partido Granate",
+     "vote": "ausente"
+    },
+    {
+     "name": "Pablo Chaves Maqueta",
+     "party": "Partido Granate",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Mora Borrador",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Diego Salas Simulacro",
+     "party": "Partido Granate",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carlos Salas Borrador",
+     "party": "Partido Granate",
+     "vote": "ausente"
+    },
+    {
+     "name": "Ricardo Solano Muestra",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Paula Quesada Ejemplo",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Adrián Arias Muestra",
+     "party": "Partido Índigo",
+     "vote": "ausente"
+    },
+    {
+     "name": "Fernando Jiménez Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Esteban Salas Prueba",
+     "party": "Partido Índigo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carlos Umaña Borrador",
+     "party": "Partido Índigo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Luis Brenes Ficticio",
+     "party": "Partido Índigo",
+     "vote": "ausente"
+    },
+    {
+     "name": "Tomás Zúñiga Muestra",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "María Umaña Ficticio",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Pablo Quesada Ensayo",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "José Solano Ficticio",
+     "party": "Partido Olivo",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Carlos Zúñiga Maqueta",
+     "party": "Partido Olivo",
+     "vote": "a_favor"
+    },
+    {
+     "name": "Carmen Alfaro Prueba",
+     "party": "Independiente",
+     "vote": "en_contra"
+    },
+    {
+     "name": "Adrián Vargas Maqueta",
+     "party": "Independiente",
+     "vote": "a_favor"
+    }
+   ]
+  }
+ ],
+ "news": [
+  {
+   "id": "a8d88a21506869a9f63a4fa819f036010b53ded9751bf7168a7bcf9938d232a4",
+   "title": "Sectores critican propuesta sobre el turismo rural comunitario",
+   "organization": "delfino",
+   "date_published": "2026-09-09T19:09:00",
+   "url": "https://example.com/delfino/2026/09/09/sectores-critican-propuesta-sobre-el-turismo-rural-comunitario-240",
+   "link_source": "model",
+   "confidence": 0.64
+  },
+  {
+   "id": "7d37cc81b284da4baa43d86252b764d5dd1bec0cd0e7d13a1537789ded026816",
+   "title": "Así votaron las fracciones el primer debate del proyecto sobre el turismo rural comunitario",
+   "organization": "semanario",
+   "date_published": "2026-08-15T14:39:00",
+   "url": "https://example.com/semanario/2026/08/15/asi-votaron-las-fracciones-el-primer-debate-del-proyecto-sobre-el-turi-389",
+   "link_source": "model",
+   "confidence": 0.61
+  },
+  {
+   "id": "f2d857b77b5a6564b6c832eb188b52c1c36ffc3dfaa3b29915e0e4c52ba83052",
+   "title": "Expediente 23.748: qué propone la reforma sobre las playas accesibles",
+   "organization": "semanario",
+   "date_published": "2026-07-02T11:50:00",
+   "url": "https://example.com/semanario/2026/07/02/expediente-23-748-que-propone-la-reforma-sobre-las-playas-accesibles-917",
+   "link_source": "model",
+   "confidence": 0.61
+  },
+  {
+   "id": "d83b1e36d0b5f0dff9a101a48ad7001ec9c53d58a3510bd78688a011a1a3dd3b",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre las playas accesibles",
+   "organization": "crhoy",
+   "date_published": "2026-06-16T16:38:00",
+   "url": "https://example.com/crhoy/2026/06/16/gobierno-anuncia-apoyo-a-iniciativa-sobre-las-playas-accesibles-387",
+   "link_source": "model",
+   "confidence": 0.91
+  }
+ ]
+}

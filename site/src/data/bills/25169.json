@@ -1,0 +1,271 @@
+{
+ "bill": {
+  "number": 25169,
+  "name": "Ley para fortalecer el régimen de zonas francas",
+  "file_type": "Reforma constitucional",
+  "date_proposed": "2026-05-25",
+  "status": "En trámite",
+  "law_number": null,
+  "subjects": [
+   "Hacienda"
+  ],
+  "proponents": [
+   "Pablo Alfaro Borrador",
+   "Luis Brenes Ficticio",
+   "Carlos Salas Borrador",
+   "Ricardo Solano Muestra"
+  ],
+  "news_count": 23,
+  "votes_count": 0
+ },
+ "proponents": [
+  {
+   "name": "Pablo Alfaro Borrador",
+   "faction": "Partido Ámbar",
+   "province": "Guanacaste",
+   "signing_order": 1
+  },
+  {
+   "name": "Luis Brenes Ficticio",
+   "faction": "Partido Índigo",
+   "province": "Cartago",
+   "signing_order": 2
+  },
+  {
+   "name": "Carlos Salas Borrador",
+   "faction": "Partido Granate",
+   "province": "Puntarenas",
+   "signing_order": 3
+  },
+  {
+   "name": "Ricardo Solano Muestra",
+   "faction": "Partido Índigo",
+   "province": "San José",
+   "signing_order": 4
+  }
+ ],
+ "steps": [
+  {
+   "organ": "Secretaría del Directorio",
+   "description": "Presentación del proyecto y asignación a comisión",
+   "date_start": "2026-05-25",
+   "date_end": "2026-09-28"
+  },
+  {
+   "organ": "Comisión Permanente de Asuntos Hacendarios",
+   "description": "Estudio en comisión, consultas y mociones",
+   "date_start": "2026-09-28",
+   "date_end": null
+  }
+ ],
+ "votes": [],
+ "news": [
+  {
+   "id": "56780838ee27b116220d2e1581f418e9642139a81c2467622c782fd7b41cd99b",
+   "title": "Comisión avanza en iniciativa sobre el régimen de zonas francas",
+   "organization": "elmundo",
+   "date_published": "2026-10-26T12:45:00",
+   "url": "https://example.com/elmundo/2026/10/26/comision-avanza-en-iniciativa-sobre-el-regimen-de-zonas-francas-562",
+   "link_source": "model",
+   "confidence": 0.76
+  },
+  {
+   "id": "10efbd13b34b55a8e1b7e3294f26cef1b3f3d91e2dc886d59556a85ade5a3379",
+   "title": "Comisión avanza en iniciativa sobre el régimen de zonas francas",
+   "organization": "delfino",
+   "date_published": "2026-10-08T17:00:00",
+   "url": "https://example.com/delfino/2026/10/08/comision-avanza-en-iniciativa-sobre-el-regimen-de-zonas-francas-136",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "2f33e9f2f0cc9b36ed7970999f6cdc370b985314896ea89be0235a2c62463562",
+   "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+   "organization": "crhoy",
+   "date_published": "2026-10-08T08:49:00",
+   "url": "https://example.com/crhoy/2026/10/08/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-201",
+   "link_source": "model",
+   "confidence": 0.66
+  },
+  {
+   "id": "a312b5640e42f2502c54de8f358571ab73029a33d7e75b56bba516e86ea86c63",
+   "title": "Consultas a instituciones retrasan proyecto sobre el régimen de zonas francas",
+   "organization": "semanario",
+   "date_published": "2026-10-05T11:42:00",
+   "url": "https://example.com/semanario/2026/10/05/consultas-a-instituciones-retrasan-proyecto-sobre-el-regimen-de-zonas--588",
+   "link_source": "model",
+   "confidence": 0.68
+  },
+  {
+   "id": "225026b6aa4a0f4b8802830e31018280472380e1ae2d89a166c34f5a3789f047",
+   "title": "Organizaciones piden cambios al proyecto sobre el régimen de zonas francas",
+   "organization": "delfino",
+   "date_published": "2026-10-04T09:54:00",
+   "url": "https://example.com/delfino/2026/10/04/organizaciones-piden-cambios-al-proyecto-sobre-el-regimen-de-zonas-fra-311",
+   "link_source": "model",
+   "confidence": 0.82
+  },
+  {
+   "id": "5bc8f112e029ab1442a3895d8cf8fc14e5afdbdbcd1bb5a03db5e4ad40b787c4",
+   "title": "Consultas a instituciones retrasan proyecto sobre el agua potable en zonas rurales",
+   "organization": "elmundo",
+   "date_published": "2026-09-30T15:30:00",
+   "url": "https://example.com/elmundo/2026/09/30/consultas-a-instituciones-retrasan-proyecto-sobre-el-agua-potable-en-z-170",
+   "link_source": "model",
+   "confidence": 0.34
+  },
+  {
+   "id": "8ddb7b910e470091be37de3d948cd7225c173bda7dc814d5c20db40dc8554c5a",
+   "title": "Mociones de fondo frenan iniciativa sobre el régimen de zonas francas",
+   "organization": "elmundo",
+   "date_published": "2026-09-28T18:57:00",
+   "url": "https://example.com/elmundo/2026/09/28/mociones-de-fondo-frenan-iniciativa-sobre-el-regimen-de-zonas-francas-765",
+   "link_source": "model",
+   "confidence": 0.75
+  },
+  {
+   "id": "9222e0f0dd7bcf42135205fc8b50a2aea4a50d54085e5691de26d84d38265ba2",
+   "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+   "organization": "delfino",
+   "date_published": "2026-09-27T08:49:00",
+   "url": "https://example.com/delfino/2026/09/27/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-698",
+   "link_source": "model",
+   "confidence": 0.79
+  },
+  {
+   "id": "5466d4c5f5dd8a14cdab533a1e5f17848abf3727778eb5ecf7f9e4c568dfeb14",
+   "title": "Mociones de fondo frenan iniciativa sobre el régimen de zonas francas",
+   "organization": "delfino",
+   "date_published": "2026-09-26T15:46:00",
+   "url": "https://example.com/delfino/2026/09/26/mociones-de-fondo-frenan-iniciativa-sobre-el-regimen-de-zonas-francas-297",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "b9e49597e5959e94cd99ce6bb662b98ce04aa8c37f77c93fe8ecbc360f28a687",
+   "title": "Mociones de fondo frenan iniciativa sobre el régimen de zonas francas",
+   "organization": "elmundo",
+   "date_published": "2026-08-19T19:08:00",
+   "url": "https://example.com/elmundo/2026/08/19/mociones-de-fondo-frenan-iniciativa-sobre-el-regimen-de-zonas-francas-187",
+   "link_source": "model",
+   "confidence": 0.89
+  },
+  {
+   "id": "5c6defbe9ce3fea790aaf1ad2ab8a76a9fdc5dcb932df02ace01269e13747d49",
+   "title": "Consultas a instituciones retrasan proyecto sobre el régimen de zonas francas",
+   "organization": "elmundo",
+   "date_published": "2026-07-31T07:48:00",
+   "url": "https://example.com/elmundo/2026/07/31/consultas-a-instituciones-retrasan-proyecto-sobre-el-regimen-de-zonas--159",
+   "link_source": "model",
+   "confidence": 0.91
+  },
+  {
+   "id": "09ab42d10435d351efd4b31217538274ed3468cd45c071c9f86361f0061a9f60",
+   "title": "Sectores critican propuesta sobre el régimen de zonas francas",
+   "organization": "semanario",
+   "date_published": "2026-07-10T19:36:00",
+   "url": "https://example.com/semanario/2026/07/10/sectores-critican-propuesta-sobre-el-regimen-de-zonas-francas-440",
+   "link_source": "model",
+   "confidence": 0.96
+  },
+  {
+   "id": "c3692b1f47ef95033134a86f1a2e895a5313b472f6bfd6c7470923a3a4b265e8",
+   "title": "Sectores critican propuesta sobre el régimen de zonas francas",
+   "organization": "elmundo",
+   "date_published": "2026-06-04T20:21:00",
+   "url": "https://example.com/elmundo/2026/06/04/sectores-critican-propuesta-sobre-el-regimen-de-zonas-francas-313",
+   "link_source": "model",
+   "confidence": 0.87
+  },
+  {
+   "id": "bd33334fc986bf7d9a95d730738a2f29b475aad6dd5edd9d48e4878a987f70d2",
+   "title": "Diputados discuten proyecto sobre el régimen de zonas francas",
+   "organization": "teletica",
+   "date_published": "2026-05-30T16:40:00",
+   "url": "https://example.com/teletica/2026/05/30/diputados-discuten-proyecto-sobre-el-regimen-de-zonas-francas-474",
+   "link_source": "model",
+   "confidence": 0.64
+  },
+  {
+   "id": "1582dc65cbcdbf62c7774bde3d6d8d6a9af4845388c74d9caf5c6b4ee389e039",
+   "title": "Expediente 23.724: qué propone la reforma sobre la deuda pública",
+   "organization": "crhoy",
+   "date_published": "2026-05-28T07:39:00",
+   "url": "https://example.com/crhoy/2026/05/28/expediente-23-724-que-propone-la-reforma-sobre-la-deuda-publica-138",
+   "link_source": "model",
+   "confidence": 0.34
+  },
+  {
+   "id": "8f3bc61a8f40336f3fad050ae00f9d398cb91ac49230a68fb5a198a5b786fcf8",
+   "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+   "organization": "elmundo",
+   "date_published": "2026-05-27T20:03:00",
+   "url": "https://example.com/elmundo/2026/05/27/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-542",
+   "link_source": "model",
+   "confidence": 0.82
+  },
+  {
+   "id": "efa1ba4615d2c99bd5fdea98a6223e8a46f53fea36176d78528d53fcc6c4d169",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la deuda pública",
+   "organization": "elmundo",
+   "date_published": "2026-05-26T11:45:00",
+   "url": "https://example.com/elmundo/2026/05/26/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-deuda-publica-315",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "78178de7dc536fd52e262167f3b65c8a39a182841bf8b6df50fda28b7735658d",
+   "title": "Comisión avanza en iniciativa sobre la deuda pública",
+   "organization": "delfino",
+   "date_published": "2026-05-26T09:55:00",
+   "url": "https://example.com/delfino/2026/05/26/comision-avanza-en-iniciativa-sobre-la-deuda-publica-499",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "ec15d060f1e058a4dfa9890f145a35ea963addc21cbf7c2b2935117eede622c5",
+   "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+   "organization": "elmundo",
+   "date_published": "2026-05-25T12:09:00",
+   "url": "https://example.com/elmundo/2026/05/25/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-588",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "d7108de946ee2c801b064e5212de702926e3adf388520feeb2c8791fc7311d73",
+   "title": "Comisión avanza en iniciativa sobre el régimen de zonas francas",
+   "organization": "crhoy",
+   "date_published": "2026-05-24T11:31:00",
+   "url": "https://example.com/crhoy/2026/05/24/comision-avanza-en-iniciativa-sobre-el-regimen-de-zonas-francas-428",
+   "link_source": "model",
+   "confidence": 0.75
+  },
+  {
+   "id": "599dc635b4a04efca0e8cfcac8f7614a091efa75777872273af1ff328ad0fcca",
+   "title": "Expediente 25.169: qué propone la reforma sobre el régimen de zonas francas",
+   "organization": "delfino",
+   "date_published": "2026-05-21T19:36:00",
+   "url": "https://example.com/delfino/2026/05/21/expediente-25-169-que-propone-la-reforma-sobre-el-regimen-de-zonas-fra-142",
+   "link_source": "manual",
+   "confidence": null
+  },
+  {
+   "id": "2e089c352eb8f0516fa846daef58e1135ce9f4cf75e5fd032e4e20c61d9ef41a",
+   "title": "Gobierno anuncia apoyo a iniciativa sobre la deuda pública",
+   "organization": "delfino",
+   "date_published": "2026-05-04T19:22:00",
+   "url": "https://example.com/delfino/2026/05/04/gobierno-anuncia-apoyo-a-iniciativa-sobre-la-deuda-publica-492",
+   "link_source": "delfino",
+   "confidence": null
+  },
+  {
+   "id": "7e081b6a544a0c4e91d9cb2eb64c592cb4d25f82578a0f812e96af5a420d2419",
+   "title": "Diputados discuten proyecto sobre el régimen de zonas francas",
+   "organization": "semanario",
+   "date_published": "2026-05-01T09:00:00",
+   "url": "https://example.com/semanario/2026/05/01/diputados-discuten-proyecto-sobre-el-regimen-de-zonas-francas-880",
+   "link_source": "model",
+   "confidence": 0.74
+  }
+ ]
+}
