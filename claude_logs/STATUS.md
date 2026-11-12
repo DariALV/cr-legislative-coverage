@@ -2,7 +2,7 @@
 
 Estado actual del proyecto. Se reescribe, no se agrega: lo que deja de ser cierto se borra (la historia queda en los diarios por tema). Las referencias `tema fecha hora` apuntan a la entrada del diario `claude_logs/<tema>.md`.
 
-Última actualización: 2026-11-11 16:46 (piloto de la evaluación a ciegas de Jev listo: sorteo de 50 y página local probada, sin commitear; el usuario contesta las 6 del piloto. Antes, 16:41: opacidad de los nodos y «Ocultar la red» hechos y verificados; commiteados en c60c7b4 con sus logs; antes, «Agrupar por», figuras y apariencia commiteados y pusheados hasta c4ef6f5. Antes, 16:11: propuesto el rediseño de la muestra para evaluar a Jev a ciegas, esperando respuesta del usuario; 15:55: repaso de lo que falta para cerrar los milestones 1–5).
+Última actualización: 2026-11-11 20:22 (hosting decidido, formulario y licencia ocultos, commits en siteV1. Antes, 19:21: mociones resumidas en tabla, hecho sin commitear. Antes, 19:12: lista de lo que falta para el sitio y el reporte final, y pendiente de las mociones. Antes, 18:29: sitio conectado a los datos reales con export_public.py, sin commitear. Antes, 16:46: piloto de la evaluación a ciegas de Jev listo: sorteo de 50 y página local probada, sin commitear; el usuario contesta las 6 del piloto. Antes, 16:41: opacidad de los nodos y «Ocultar la red» hechos y verificados; commiteados en c60c7b4 con sus logs; antes, «Agrupar por», figuras y apariencia commiteados y pusheados hasta c4ef6f5. Antes, 16:11: propuesto el rediseño de la muestra para evaluar a Jev a ciegas, esperando respuesta del usuario; 15:55: repaso de lo que falta para cerrar los milestones 1–5).
 
 ## Para retomar
 
@@ -73,6 +73,7 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 
 ## En espera: acciones pendientes
 
+- **Sitio con datos reales: hecho, sin commitear** (general 2026-11-11 18:14, 18:29, 19:00): ver la sección «Sitio y reporte final: lo que falta».
 
 - **Piloto de la evaluación a ciegas: lo contesta el usuario** (sample 2026-11-11 16:46). Son 6 noticias en http://localhost:8770 (`jev-eval` en launch.json, o `python private_visuals/jev_eval/server.py`). Al terminar, la página muestra los minutos activos. Con eso se decide 50 o 30, y se pasa a `--set all`. Las respuestas van a results/jev/human_eval/answers.json. Mientras tanto no se abre el visor de Jev ni los grafos.
 - **Filtro de Jev: hecho y commiteado** (7.431 de 29.698 pasan con 0,2; 36.667.609 tokens, igual en la consola; $1,54; jev 2026-11-10 09:41). Siguiente: ranker top-50 → puerta (llave jev-gate) sobre las que pasan. (#43)
@@ -83,6 +84,32 @@ Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarla
 - **Comentario en #68** con los resultados de las corridas con exclusión.
 - **Fuera de git** (se copian a mano): la base, `databases/embeddings/`, `databases/retrieval/`, `.env`, `raw/`.
 - **Datos crudos de Jev**: respuestas de la API y scripts en `results/jev/answers/` y `results/jev/scripts/` (jev 2026-11-09 10:00); los scripts leen `TYPESAFE_API_KEY` de `.env`.
+
+## Sitio y reporte final: lo que falta (#48–#51, #56)
+
+Máquina del usuario (la del sitio); los datos están en `databasesV1/`, `rawV1/`, `resultsV1/` (ya en el `.gitignore`). Diario: general 2026-11-11 18:14, 18:29, 19:00, 19:12, 19:21. En los logs no se escribe el nombre del usuario ni el del compañero («el usuario», «el compañero»).
+
+**Hecho y commiteado en `siteV1` (sin push):** `export_public.py` (correr con `--database databasesV1/private_corpus.db --jev-dir resultsV1/jev/corpus`), vocabulario del sitio en español, metodología sin relleno, `IS_DUMMY_DATA = false`. El sitio compila: 3.751 páginas.
+
+**Cifras para el reporte** (cobertura sustantiva: explícito ≥ 0,5 o implícito ≥ 0,75, y centralidad ≥ 0,25):
+- Recolectado: 5.898 expedientes, 29.875 noticias (29.698 con texto), 9.288 votaciones, 5 medios, mayo–octubre 2026.
+- Pipeline: 7.431 noticias pasan el filtro; 50 candidatos por noticia; 6.329 pares con match; 4.671 de mención; 3.462 sustantivos.
+- Publicado: 3.462 vínculos (751 `enlace`, 2.711 `modelo`), 2.620 noticias, 1.126 expedientes (570 con cobertura, 556 solo con actividad), 617 votaciones en detalle y 4.106 mociones resumidas en tabla (decisión del usuario, general 19:21).
+- Evaluación (preliminar): candidatos 95 %; precisión 88–91 % (190 pares) y 92 % en la muestra; exhaustividad 67 %; noticias sin expediente sin vínculo 98 %. Costo de Jev: $11,51 + $1,54 del filtro.
+
+**Decisiones abiertas del usuario:**
+2. Temas = descriptores del SIL (1.965 distintos, hasta 144 por expediente). Recomendación: mostrar 5–6.
+3. Mayúsculas del SIL en nombres, títulos y fracciones.
+5. Actualizar o borrar `site/scripts/make_dummy_data.mjs` (desfasado).
+6. Confirmar lo que Claude eligió: «actividad» (presentado, paso o votación en el período), confianza = máx(explícito, implícito), y que 674 de los 1.425 enlaces de Delfino quedan fuera por no ser sustantivos.
+
+**Hosting (decidido, general 2026-11-11 «decisión: hosting en GitHub Pages»):** GitHub Pages desde este repo; workflow en `.github/workflows/deploy.yml` con `path: site`, base `/cr-legislative-coverage`. Commiteado en la rama `siteV1`, sin push. Falta: push, mezclar a `main` y que el compañero active Pages (Source: GitHub Actions). El sitio no necesita hostear la base.
+
+**Confirmar con el compañero:** que el recorte de notas largas (15.000 caracteres) deja el inicio; que «Jev 1.14» se puede nombrar en público; que no se publican fotos de diputados (la metodología lo afirma).
+
+**Falta para publicar:** URL del formulario de reporte y licencia de los datos (ocultos mientras `REPORT_FORM_URL` y `DATA_LICENSE` sean `null` en `site/src/lib/config.ts`); recalcular las cifras de la constante `RUN` de metodología con el CSV final de la muestra.
+
+**Problemas conocidos:** 157 proponentes sin fracción (Poder Ejecutivo y sin cruce); 17 expedientes sin temas; dist pesa 103 MB; la línea de tiempo ya no marca las mociones; un expediente (25894) presentado después del período entra por cobertura o por un paso; republicaciones de notas (80 pares de Delfino, 101 de Nación) no se depuraron.
 
 ## Para redactar el reporte: cuidados con los números (#56)
 

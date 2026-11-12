@@ -170,3 +170,65 @@ Commit `feature: status file and per-topic claude logs` (sin issue: no hay ningu
 - Revisión de privacidad: sin texto de noticias ni llaves; los datos de los visores van a `private_visuals/output/` (ignorado).
 - Commits: grafos (#69), visor de respuestas de Jev (#69), modelo de costos (#43), logs + CLAUDE.md (#22 #56). `databases/private_corpus.backup_*.db` agregado al .gitignore.
 - Fuera de git a propósito: `results/jev/corpus/` y `results/jev/jev_corpus.zip` (decisión pendiente, STATUS «Para retomar» 3).
+
+## 2026-11-11 18:14 — hallazgo: las carpetas V1 sirven para el sitio, pero falta el exportador (#48–#51)
+
+Revisión en la máquina del usuario de `databasesV1/`, `rawV1/` y `resultsV1/` contra el contrato de `site/src/lib/types.ts`. Solo lectura, sin cambios de código.
+- `databasesV1/private_corpus.db` (328 MB, 18 tablas) trae todo lo que el sitio pide: 5.898 expedientes, pasos, proponentes, fracciones, 9.288 votaciones, 29.875 noticias. `public_corpus.db` pesa 0 bytes: está vacía, nunca se generó.
+- Los vínculos noticia–expediente del sitio salen de `resultsV1/jev/corpus/gate.csv` (6.329 pares con match) y `details.csv`, no de `news_bill_links` (1.425, solo el oro de Delfino, source = `link`).
+- `export_public.py`, que el sitio nombra como fuente de `site/src/data/`, no existe. Es lo que hay que escribir.
+- Diferencias con el dummy: status `archived / in progress / law` (el sitio espera español); votos `for / against / absent` + «Abstención» (225) y «Ausente (pierde dieta)» (31); `file_type` en mayúsculas del SIL; medios reales crhoy, delfino, elmundo, nacion, semanario (el dummy tiene elobservador y teletica, no nacion); link_source real: `link` y Jev.
+- Riesgo: las tres carpetas V1 no están en el `.gitignore` (este ignora `databases/` y `raw/`, no los nombres con V1). La base trae el cuerpo de las noticias y `answers.jsonl` las respuestas crudas.
+
+## 2026-11-11 18:29 — decisión: el sitio usa los datos reales con `export_public.py` (#48–#51)
+
+El usuario decidió: vínculos de cobertura sustantiva; solo noticias con expediente vinculado; expedientes con cobertura o actividad; todas las votaciones; valores como están en la base, con los vocabularios en inglés traducidos al español.
+- `export_public.py` (raíz, nuevo): lee la base en solo lectura y `gate.csv` + `details.csv` de Jev, y escribe `site/src/data/`. Acá se corre con `--database databasesV1/private_corpus.db --jev-dir resultsV1/jev/corpus`. Nunca exporta `content`.
+- Resultado: 3.462 vínculos (751 que además enlaza el medio, 2.711 solo del modelo), 2.620 noticias, 1.126 expedientes (570 con cobertura, 556 solo con actividad), 4.723 votaciones. `site/src/data/` pesa 33 MB.
+- Lo que Claude eligió sin preguntar, todo en constantes del exportador: «actividad» = presentado, con un paso o con una votación en mayo–octubre; `link_source` = `enlace` si el par está en `news_bill_links`, si no `modelo`; confianza = el mayor entre explicit e implicit; votos `abstencion` y `ausente_pierde_dieta` como valores propios; `kind` de la votación traducido (Plenario / Comisión con potestad legislativa plena).
+- Sitio: `vocab.ts`, `LinkBadge`, `VotesTable`, `Timeline`, `types.ts` (campo `kind`), textos de `datos` y `metodologia`, `IS_DUMMY_DATA = false`. `astro check` sin errores y `npm run build` arma 3.751 páginas en 19 s (dist 149 MB).
+- Caveats: la página del expediente 24290 pesa 30 MB (2.625 votaciones, casi todas mociones) y la del 21182, 10 MB (857); los temas son los descriptores del SIL (1.965 distintos, mediana 14 por expediente, hasta 144); nombres y títulos van en mayúsculas como en el SIL; 157 proponentes sin fracción (Poder Ejecutivo y sin cruce); `make_dummy_data.mjs` quedó desfasado del vocabulario nuevo; metodología sigue con texto de relleno.
+- `.gitignore`: agregadas `databasesV1/`, `rawV1/` y `resultsV1/`. Nada commiteado.
+
+## 2026-11-11 19:00 — metodología del sitio reescrita con los datos reales (#48–#51)
+
+A pedido del usuario, `site/src/pages/metodologia.astro` quedó sin texto de relleno. Sin commitear.
+- Secciones: fuentes, qué se publica (cifras leídas de los datos al compilar), los cuatro pasos del cruce (filtro, candidatos, verificación, centralidad), regla de cobertura sustantiva, evaluación, limitaciones, ética.
+- Métricas puestas, tomadas de STATUS y de `results/jev/corpus_analysis/README.md`: candidatos 95 %; precisión 88–91 % (190 pares revisados) y 92 % en la muestra; exhaustividad 67 %; noticias sin expediente sin vínculo 98 %. Van como preliminares, con los tres cuidados de «Para redactar el reporte» (62 positivas, revisión humana sin cerrar, preguntas ajustadas con la muestra).
+- Las cifras del pipeline están en la constante `RUN` de la página: hay que actualizarlas si se recalcula con el CSV final de la muestra.
+- Por confirmar con el compañero: que el recorte de noticias largas (15.000 caracteres) deja el inicio; que el nombre «Jev 1.14» se puede publicar. Sigue pendiente el formulario de reporte (`REPORT_FORM_URL` apunta a example.com) y la licencia en la página de datos («[por definir]»).
+
+## 2026-11-11 19:12 — pendiente: qué hacer con las votaciones de mociones en el sitio (#48–#51)
+
+El usuario preguntó por qué el expediente 24290 muestra cientos de «Votación (Plenario): Moción de fondo». No es un error del exportador: es lo que hay en la base.
+- El 24290 (jornadas 4x3) tiene 2.625 votaciones: 2.569 mociones de fondo (2.544 rechazadas), 33 de orden y solo 1 «Primer debate». 1.697 son de agosto de 2026, hasta 301 en un día: es la táctica de presentar mociones en masa para atrasar el proyecto, y Delfino registra cada una como votación.
+- En lo exportado, 4.106 de las 4.723 votaciones (87 %) son mociones; 12 expedientes de toda la base tienen más de 20 votaciones. El sitio se diseñó pensando en 1–3 votaciones por expediente.
+- Opciones: (A) mostrar completas solo las votaciones de trámite (debates, dispensas, plazo cuatrienal, etc.) y resumir las mociones en una tabla por tipo y resultado, con enlace a Delfino; (B) lo mismo, con las mociones en una lista compacta sin nominal; (C) dejar todo y paginar. Recomendación de Claude: A, y contar el número de mociones como dato del expediente (es señal de conflicto). Sin decidir.
+- El usuario pidió además guardar la lista de lo que falta para el reporte final y el sitio: quedó en STATUS, sección «Sitio y reporte final: lo que falta».
+
+## 2026-11-11 19:21 — decisión: las mociones se publican resumidas en una tabla (#48–#51)
+
+El usuario aprobó la opción A de la entrada de 19:12. Hecho y verificado, sin commitear.
+- `export_public.py`: las votaciones cuyo nombre empieza con «Moción» ya no salen una por una. Cada expediente lleva `motions` (tipo, aprobadas, rechazadas, otras = anuladas o empatadas, primera y última fecha) y `motions_count`; `votes_count` cuenta solo las votaciones de trámite, que conservan el voto nominal.
+- Sitio: tabla «Mociones votadas» arriba de las votaciones (`VotesTable.astro`), nota «y N mociones votadas» en la ficha, columna `motions_count` en el CSV de expedientes y dos filas en el diccionario de datos; la metodología lo explica.
+- Resultado: 617 votaciones en detalle y 4.106 mociones resumidas. `site/src/data/` baja de 33 a 13 MB y dist de 149 a 103 MB. La página del 24290 pasa de 30 MB a menos de 0,6 MB; la más pesada ahora es la del 24037 (1,4 MB). El máximo de votaciones en detalle por expediente es 11.
+- Caveat: la línea de tiempo del expediente ya no marca las mociones; la tabla no enlaza a Delfino porque no hay una URL por expediente en la base (solo por votación).
+- Regla nueva de logs: no se escribe el nombre del usuario, se pone «el usuario». Se corrigieron las entradas de hoy desde las 18:14 (excepción puntual al append-only, pedida por el usuario).
+
+## 2026-11-11 19:46 — pendiente: dónde y cómo se hostea el sitio (#48–#51)
+
+El usuario preguntó los pasos para publicar el sitio y si hay que hostear la base. Hallazgos, sin cambios de código:
+- No hay que hostear ninguna base: el sitio es estático (Astro, `output: 'static'`). `export_public.py` lee la base y los CSV de Jev y escribe `site/src/data/`; el build convierte eso en HTML, JSON y CSV. Lo privado (base, texto de noticias, embeddings, `raw/`, respuestas crudas de Jev) nunca sale de la máquina.
+- El deploy que hay no corre tal como está: el workflow está en `site/.github/workflows/deploy.yml` y GitHub solo lee `.github/workflows/` en la raíz del repo; además no indica `path: site`, y `astro.config.mjs` usa la base `/cr-legislative-coverage-site`, que no coincide con este repo (`cr-legislative-coverage`). Parece pensado para un repo aparte.
+- El build en GitHub necesita `site/src/data/` commiteado (13 MB), porque la base no está en git. Eso responde la decisión abierta 4 si se elige construir en GitHub.
+- Opciones: (A) GitHub Pages desde este mismo repo: mover el workflow a la raíz, `path: site`, base `/cr-legislative-coverage`; el dueño del repo (el compañero) activa Pages. (B) repo aparte `cr-legislative-coverage-site` del usuario, con el contenido de `site/`: no hay que tocar la base ni el workflow. (C) Netlify o Cloudflare Pages subiendo `dist/`. Recomendación de Claude: A si el repo es público o se puede hacer público; si no, B. Sin decidir. En esta máquina no hay `gh`, así que no se pudo ver si el repo es público.
+- Regla de logs ampliada: al compañero del usuario tampoco se le nombra; se escribe «el compañero» o «la contraparte».
+
+## 2026-11-11 20:22 — decisión: hosting en GitHub Pages desde este repo; formulario y licencia ocultos (#48 #51)
+
+El usuario eligió la opción A de la entrada anterior y pidió commitear en la rama `siteV1`.
+- Deploy: el workflow pasó de `site/.github/workflows/` a `.github/workflows/deploy.yml` en la raíz, con `path: site` y disparo solo cuando cambia `site/` o el workflow; la base de `astro.config.mjs` es ahora `/cr-legislative-coverage`. Corre con push a `main` (o a mano), no desde `siteV1`: se publica al mezclar la rama.
+- Falta, del lado del compañero (dueño del repo): Settings → Pages → Source «GitHub Actions». El repo es público (la API de GitHub responde sin autenticación).
+- Formulario de reporte y licencia desactivados hasta que existan: `REPORT_FORM_URL` y `DATA_LICENSE` valen `null` en `site/src/lib/config.ts`, y con eso se ocultan el enlace «¿Este vínculo está mal?», sus menciones (ficha del expediente y metodología) y la línea de licencia de la página de datos. Para reactivar basta poner el valor.
+- Revisión de privacidad antes del commit: `site/src/data/` solo trae campos públicos (sin `content`, `description` ni autor); las carpetas V1 están ignoradas; quedan fuera `.vscode/` y `site/.vscode/settings.json`.
+- Issues leídos por la API: #48 hosting, #49 consulta por expediente, #50 por medio y fecha, #51 limitaciones. Ninguno se cierra todavía: #48 cierra cuando el sitio esté en línea.
