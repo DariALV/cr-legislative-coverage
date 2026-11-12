@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths: ['site/**', '.github/workflows/deploy.yml']
   workflow_dispatch:
 
 permissions:
@@ -21,6 +22,8 @@ jobs:
       - uses: actions/checkout@v5
       - name: Build with Astro
         uses: withastro/action@v5
+        with:
+          path: site
         env:
           # https://<owner>.github.io — base path is set in astro.config.mjs
           SITE_URL: https://${{ github.repository_owner }}.github.io
