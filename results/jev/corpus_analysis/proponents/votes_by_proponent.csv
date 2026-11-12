@@ -1,0 +1,71 @@
+source,holder,proponent,bills,favor,against,mixed,pct_favor,pct_against
+votes,PPSO,PPSO,2,2,0,0,100.0,0.0
+votes,PPSO,Executive (2026-),0,0,0,0,,
+votes,PPSO,PPSD (2022-26),5,5,0,0,100.0,0.0
+votes,PPSO,Executive (before 2026-05-08),24,24,0,0,100.0,0.0
+votes,PPSO,PLN,5,4,1,0,80.0,20.0
+votes,PPSO,FA,3,3,0,0,100.0,0.0
+votes,PPSO,PUSC,7,7,0,0,100.0,0.0
+votes,PPSO,CAC,0,0,0,0,,
+votes,PPSO,other parties,4,4,0,0,100.0,0.0
+votes,PPSO,no proponent,0,0,0,0,,
+votes,PPSO,OFFICIALISM (PPSO + Executive 2026-),2,2,0,0,100.0,0.0
+votes,PPSO,"OPPOSITION (PLN, FA, PUSC, CAC)",15,14,1,0,93.3,6.7
+votes,PPSO,ALL,50,49,1,0,98.0,2.0
+votes,PPSO,ALL PROPOSED BY OTHERS,48,47,1,0,97.9,2.1
+votes,PLN,PPSO,2,2,0,0,100.0,0.0
+votes,PLN,Executive (2026-),0,0,0,0,,
+votes,PLN,PPSD (2022-26),5,5,0,0,100.0,0.0
+votes,PLN,Executive (before 2026-05-08),24,21,2,1,87.5,8.3
+votes,PLN,PLN,5,5,0,0,100.0,0.0
+votes,PLN,FA,3,3,0,0,100.0,0.0
+votes,PLN,PUSC,7,6,1,0,85.7,14.3
+votes,PLN,CAC,0,0,0,0,,
+votes,PLN,other parties,4,4,0,0,100.0,0.0
+votes,PLN,no proponent,0,0,0,0,,
+votes,PLN,OFFICIALISM (PPSO + Executive 2026-),2,2,0,0,100.0,0.0
+votes,PLN,"OPPOSITION (PLN, FA, PUSC, CAC)",15,14,1,0,93.3,6.7
+votes,PLN,ALL,50,46,3,1,92.0,6.0
+votes,PLN,ALL PROPOSED BY OTHERS,45,41,3,1,91.1,6.7
+votes,FA,PPSO,2,2,0,0,100.0,0.0
+votes,FA,Executive (2026-),0,0,0,0,,
+votes,FA,PPSD (2022-26),5,5,0,0,100.0,0.0
+votes,FA,Executive (before 2026-05-08),24,22,2,0,91.7,8.3
+votes,FA,PLN,5,5,0,0,100.0,0.0
+votes,FA,FA,3,3,0,0,100.0,0.0
+votes,FA,PUSC,7,5,2,0,71.4,28.6
+votes,FA,CAC,0,0,0,0,,
+votes,FA,other parties,4,3,1,0,75.0,25.0
+votes,FA,no proponent,0,0,0,0,,
+votes,FA,OFFICIALISM (PPSO + Executive 2026-),2,2,0,0,100.0,0.0
+votes,FA,"OPPOSITION (PLN, FA, PUSC, CAC)",15,13,2,0,86.7,13.3
+votes,FA,ALL,50,45,5,0,90.0,10.0
+votes,FA,ALL PROPOSED BY OTHERS,47,42,5,0,89.4,10.6
+votes,PUSC,PPSO,2,2,0,0,100.0,0.0
+votes,PUSC,Executive (2026-),0,0,0,0,,
+votes,PUSC,PPSD (2022-26),5,5,0,0,100.0,0.0
+votes,PUSC,Executive (before 2026-05-08),24,22,2,0,91.7,8.3
+votes,PUSC,PLN,5,5,0,0,100.0,0.0
+votes,PUSC,FA,3,3,0,0,100.0,0.0
+votes,PUSC,PUSC,7,7,0,0,100.0,0.0
+votes,PUSC,CAC,0,0,0,0,,
+votes,PUSC,other parties,4,4,0,0,100.0,0.0
+votes,PUSC,no proponent,0,0,0,0,,
+votes,PUSC,OFFICIALISM (PPSO + Executive 2026-),2,2,0,0,100.0,0.0
+votes,PUSC,"OPPOSITION (PLN, FA, PUSC, CAC)",15,15,0,0,100.0,0.0
+votes,PUSC,ALL,50,48,2,0,96.0,4.0
+votes,PUSC,ALL PROPOSED BY OTHERS,43,41,2,0,95.3,4.7
+votes,CAC,PPSO,2,2,0,0,100.0,0.0
+votes,CAC,Executive (2026-),0,0,0,0,,
+votes,CAC,PPSD (2022-26),5,5,0,0,100.0,0.0
+votes,CAC,Executive (before 2026-05-08),23,20,3,0,87.0,13.0
+votes,CAC,PLN,5,5,0,0,100.0,0.0
+votes,CAC,FA,3,3,0,0,100.0,0.0
+votes,CAC,PUSC,7,5,2,0,71.4,28.6
+votes,CAC,CAC,0,0,0,0,,
+votes,CAC,other parties,4,4,0,0,100.0,0.0
+votes,CAC,no proponent,0,0,0,0,,
+votes,CAC,OFFICIALISM (PPSO + Executive 2026-),2,2,0,0,100.0,0.0
+votes,CAC,"OPPOSITION (PLN, FA, PUSC, CAC)",15,13,2,0,86.7,13.3
+votes,CAC,ALL,49,44,5,0,89.8,10.2
+votes,CAC,ALL PROPOSED BY OTHERS,49,44,5,0,89.8,10.2

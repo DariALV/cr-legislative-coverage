@@ -1,0 +1,225 @@
+{
+ "bases": {
+  "all bills (20000-25897)": 5898,
+  "alive in the period (in progress now, or SIL step May-Oct)": 2156,
+  "in progress now": 1826,
+  "SIL step May-Oct": 924,
+  "filed May-Oct": 306,
+  "plenary vote May-Oct": 110
+ },
+ "concentration": {
+  "mention | all bills (20000-25897)": {
+   "mean_all": 0.79,
+   "gini_all": 0.954,
+   "covered": 820,
+   "mean_covered": 5.7,
+   "median_covered": 2.0,
+   "p75_covered": 4,
+   "p90_covered": 12,
+   "p99_covered": 56,
+   "max": 304,
+   "gini_covered": 0.666
+  },
+  "mention | alive in the period (in progress now, or SIL step May-Oct)": {
+   "mean_all": 2.02,
+   "gini_all": 0.9,
+   "covered": 658,
+   "mean_covered": 6.61,
+   "median_covered": 2.0,
+   "p75_covered": 5,
+   "p90_covered": 13,
+   "p99_covered": 73,
+   "max": 304,
+   "gini_covered": 0.671
+  },
+  "mention | in progress now": {
+   "mean_all": 1.77,
+   "gini_all": 0.9,
+   "covered": 516,
+   "mean_covered": 6.25,
+   "median_covered": 2.0,
+   "p75_covered": 5,
+   "p90_covered": 13,
+   "p99_covered": 55,
+   "max": 188,
+   "gini_covered": 0.646
+  },
+  "mention | SIL step May-Oct": {
+   "mean_all": 4.23,
+   "gini_all": 0.811,
+   "covered": 532,
+   "mean_covered": 7.34,
+   "median_covered": 3.0,
+   "p75_covered": 6,
+   "p90_covered": 17,
+   "p99_covered": 75,
+   "max": 304,
+   "gini_covered": 0.672
+  },
+  "mention | filed May-Oct": {
+   "mean_all": 5.87,
+   "gini_all": 0.694,
+   "covered": 245,
+   "mean_covered": 7.33,
+   "median_covered": 3,
+   "p75_covered": 7,
+   "p90_covered": 17,
+   "p99_covered": 73,
+   "max": 188,
+   "gini_covered": 0.617
+  },
+  "mention | plenary vote May-Oct": {
+   "mean_all": 16.35,
+   "gini_all": 0.689,
+   "covered": 94,
+   "mean_covered": 19.13,
+   "median_covered": 10.0,
+   "p75_covered": 19,
+   "p90_covered": 41,
+   "p99_covered": 304,
+   "max": 304,
+   "gini_covered": 0.636
+  },
+  "mention | top shares": {
+   "top_1": 6.5,
+   "top_5": 17.8,
+   "top_10": 24.6,
+   "top_20": 33.3,
+   "top_50": 48.4,
+   "top_100": 62.4,
+   "bills_for_half_of_pairs": 55
+  },
+  "substantive | all bills (20000-25897)": {
+   "mean_all": 0.59,
+   "gini_all": 0.969,
+   "covered": 570,
+   "mean_covered": 6.07,
+   "median_covered": 2.0,
+   "p75_covered": 5,
+   "p90_covered": 12,
+   "p99_covered": 69,
+   "max": 278,
+   "gini_covered": 0.682
+  },
+  "substantive | alive in the period (in progress now, or SIL step May-Oct)": {
+   "mean_all": 1.5,
+   "gini_all": 0.934,
+   "covered": 458,
+   "mean_covered": 7.07,
+   "median_covered": 2.0,
+   "p75_covered": 5,
+   "p90_covered": 16,
+   "p99_covered": 71,
+   "max": 278,
+   "gini_covered": 0.687
+  },
+  "substantive | in progress now": {
+   "mean_all": 1.35,
+   "gini_all": 0.929,
+   "covered": 387,
+   "mean_covered": 6.37,
+   "median_covered": 2,
+   "p75_covered": 5,
+   "p90_covered": 15,
+   "p99_covered": 71,
+   "max": 182,
+   "gini_covered": 0.664
+  },
+  "substantive | SIL step May-Oct": {
+   "mean_all": 3.19,
+   "gini_all": 0.871,
+   "covered": 374,
+   "mean_covered": 7.89,
+   "median_covered": 3.0,
+   "p75_covered": 6,
+   "p90_covered": 18,
+   "p99_covered": 77,
+   "max": 278,
+   "gini_covered": 0.682
+  },
+  "substantive | filed May-Oct": {
+   "mean_all": 5.06,
+   "gini_all": 0.713,
+   "covered": 231,
+   "mean_covered": 6.7,
+   "median_covered": 3,
+   "p75_covered": 6,
+   "p90_covered": 17,
+   "p99_covered": 60,
+   "max": 182,
+   "gini_covered": 0.62
+  },
+  "substantive | plenary vote May-Oct": {
+   "mean_all": 12.51,
+   "gini_all": 0.782,
+   "covered": 81,
+   "mean_covered": 16.99,
+   "median_covered": 6,
+   "p75_covered": 15,
+   "p90_covered": 40,
+   "p99_covered": 278,
+   "max": 278,
+   "gini_covered": 0.704
+  },
+  "substantive | top shares": {
+   "top_1": 8.0,
+   "top_5": 22.5,
+   "top_10": 30.6,
+   "top_20": 40.8,
+   "top_50": 57.7,
+   "top_100": 71.5,
+   "bills_for_half_of_pairs": 35
+  }
+ },
+ "other": {
+  "bills_per_news": {
+   "1": 2189,
+   "2": 252,
+   "3": 89,
+   "4": 31,
+   "5": 19,
+   "6": 21,
+   "7": 9,
+   "8": 4,
+   "9": 1,
+   "10": 2,
+   "11": 3
+  },
+  "news_with_substantive_coverage": 2620,
+  "outlets_per_bill": {
+   "1": 285,
+   "2": 107,
+   "3": 70,
+   "4": 46,
+   "5": 62
+  },
+  "span_days_bills_2+": {
+   "bills": 337,
+   "median": 31,
+   "p75": 76,
+   "same_day_only": 23
+  },
+  "distinct_days_with_news": {
+   "median": 2.0,
+   "bills_1_day": 256
+  },
+  "single_outlet_bills_by_outlet": {
+   "delfino": 140,
+   "semanario": 45,
+   "nacion": 45,
+   "crhoy": 30,
+   "elmundo": 25
+  },
+  "spearman_alive": {
+   "sil_steps_vs_news": 0.496,
+   "plenary_votes_vs_news": 0.323
+  },
+  "spearman_covered_alive": {
+   "sil_steps_vs_news": 0.37,
+   "plenary_votes_vs_news": 0.26
+  },
+  "bills_mentioned_never_substantive": 250,
+  "bills_main_subject_of_any_news": 339,
+  "bills_main_subject_of_5+_news": 69
+ }
+}

@@ -1,0 +1,20 @@
+question,option,news,pct
+press_release,no,2253,86.0
+press_release,yes,367,14.0
+main_frame,conflict,865,33.0
+main_frame,economic,216,8.2
+main_frame,human_interest,42,1.6
+main_frame,morality,36,1.4
+main_frame,policy,1326,50.6
+main_frame,responsibility,135,5.2
+assembly_image,"0: Very negatively: useless, corrupt, obstructive or out of tou",52,2.0
+assembly_image,1: Somewhat negatively.,529,20.2
+assembly_image,"2: Neutrally, or the news does not judge the Assembly as a whol",1888,72.1
+assembly_image,3: Somewhat positively.,143,5.5
+assembly_image,"4: Very positively: effective, responsive or doing its job well",8,0.3
+headline_misleading,no,2539,96.9
+headline_misleading,yes,81,3.1
+genre,analysis,121,4.6
+genre,interview,14,0.5
+genre,news_report,2147,81.9
+genre,opinion,338,12.9

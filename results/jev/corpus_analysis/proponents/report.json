@@ -1,0 +1,23 @@
+{
+ "pairs": 3462,
+ "bills_by_proponent_covered": {
+  "PLN": 108,
+  "PPSO": 95,
+  "FA": 86,
+  "Executive (before 2026-05-08)": 72,
+  "other parties": 62,
+  "PUSC": 52,
+  "no proponent": 33,
+  "Executive (2026-)": 32,
+  "PPSD (2022-26)": 24,
+  "CAC": 6
+ },
+ "press_vs_vote_own_bills": {
+  "agree": 16,
+  "disagree": 0
+ },
+ "press_vs_vote_other_bills": {
+  "agree": 114,
+  "disagree": 10
+ }
+}

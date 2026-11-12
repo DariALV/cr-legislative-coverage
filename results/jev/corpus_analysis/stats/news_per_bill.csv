@@ -1,0 +1,13 @@
+level,base,bills,0,1,2,3,4,5,6-9,10-19,20-49,50-99,100+,covered,pct_covered
+mention,all bills (20000-25897),5898,5078,329,156,84,59,24,61,61,34,9,3,820,13.9
+mention,"alive in the period (in progress now, or SIL step May-Oct)",2156,1498,227,125,75,53,20,54,58,34,9,3,658,30.5
+mention,in progress now,1826,1310,168,91,67,50,19,42,45,26,6,2,516,28.3
+mention,SIL step May-Oct,924,392,159,106,65,42,16,50,51,33,7,3,532,57.6
+mention,filed May-Oct,306,61,50,48,35,28,10,28,25,18,2,1,245,80.1
+mention,plenary vote May-Oct,110,16,10,8,5,8,3,11,26,15,6,2,94,85.5
+substantive,all bills (20000-25897),5898,5328,233,99,61,32,28,48,33,27,6,3,570,9.7
+substantive,"alive in the period (in progress now, or SIL step May-Oct)",2156,1698,163,79,54,27,26,41,32,27,6,3,458,21.2
+substantive,in progress now,1826,1439,135,70,51,25,19,34,25,22,4,2,387,21.2
+substantive,SIL step May-Oct,924,550,108,68,50,24,25,37,29,25,5,3,374,40.5
+substantive,filed May-Oct,306,75,52,47,43,16,15,22,18,15,2,1,231,75.5
+substantive,plenary vote May-Oct,110,29,20,6,4,4,5,12,14,10,4,2,81,73.6

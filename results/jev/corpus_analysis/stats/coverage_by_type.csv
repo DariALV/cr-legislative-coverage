@@ -1,0 +1,10 @@
+type,bills,alive,covered,pct_covered_all,pct_covered_alive,news,median_news_covered
+appointments,93,75,15,16.1,16.0,359,9
+budgets,59,3,4,6.8,100.0,313,64.5
+constitutional reform / justices,126,64,33,26.2,46.9,141,3
+honors committee,140,116,8,5.7,6.9,13,1.0
+investigative committee,253,72,20,7.9,19.4,99,1.5
+ordinary bill,4978,1664,468,9.4,22.5,2414,2.0
+other,44,20,8,18.2,25.0,36,3.5
+rules reform,138,78,14,10.1,15.4,87,3.0
+ship docking permits,67,64,0,0.0,0.0,0,0

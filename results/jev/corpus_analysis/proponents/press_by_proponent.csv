@@ -1,0 +1,85 @@
+source,holder,proponent,bills,favor,against,mixed,pct_favor,pct_against
+press,PPSO,PPSO,93,93,0,0,100.0,0.0
+press,PPSO,Executive (2026-),22,21,1,0,95.5,4.5
+press,PPSO,PPSD (2022-26),10,7,1,2,70.0,10.0
+press,PPSO,Executive (before 2026-05-08),25,25,0,0,100.0,0.0
+press,PPSO,PLN,28,9,12,7,32.1,42.9
+press,PPSO,FA,22,5,14,3,22.7,63.6
+press,PPSO,PUSC,16,13,3,0,81.2,18.8
+press,PPSO,CAC,2,0,2,0,0.0,100.0
+press,PPSO,other parties,13,9,3,1,69.2,23.1
+press,PPSO,no proponent,20,10,9,1,50.0,45.0
+press,PPSO,OFFICIALISM (PPSO + Executive 2026-),115,114,1,0,99.1,0.9
+press,PPSO,"OPPOSITION (PLN, FA, PUSC, CAC)",68,27,31,10,39.7,45.6
+press,PPSO,ALL,251,192,45,14,76.5,17.9
+press,PPSO,ALL PROPOSED BY OTHERS,116,68,35,13,58.6,30.2
+press,PLN,PPSO,17,10,6,1,58.8,35.3
+press,PLN,Executive (2026-),16,6,9,1,37.5,56.2
+press,PLN,PPSD (2022-26),7,7,0,0,100.0,0.0
+press,PLN,Executive (before 2026-05-08),29,13,15,1,44.8,51.7
+press,PLN,PLN,74,73,1,0,98.6,1.4
+press,PLN,FA,28,22,5,1,78.6,17.9
+press,PLN,PUSC,12,6,4,2,50.0,33.3
+press,PLN,CAC,1,1,0,0,100.0,0.0
+press,PLN,other parties,13,11,1,1,84.6,7.7
+press,PLN,no proponent,21,15,5,1,71.4,23.8
+press,PLN,OFFICIALISM (PPSO + Executive 2026-),33,16,15,2,48.5,45.5
+press,PLN,"OPPOSITION (PLN, FA, PUSC, CAC)",115,102,10,3,88.7,8.7
+press,PLN,ALL,218,164,46,8,75.2,21.1
+press,PLN,ALL PROPOSED BY OTHERS,123,76,40,7,61.8,32.5
+press,FA,PPSO,19,8,11,0,42.1,57.9
+press,FA,Executive (2026-),12,2,9,1,16.7,75.0
+press,FA,PPSD (2022-26),6,5,1,0,83.3,16.7
+press,FA,Executive (before 2026-05-08),27,17,10,0,63.0,37.0
+press,FA,PLN,20,16,3,1,80.0,15.0
+press,FA,FA,68,68,0,0,100.0,0.0
+press,FA,PUSC,12,6,6,0,50.0,50.0
+press,FA,CAC,0,0,0,0,,
+press,FA,other parties,10,8,2,0,80.0,20.0
+press,FA,no proponent,20,14,4,2,70.0,20.0
+press,FA,OFFICIALISM (PPSO + Executive 2026-),31,10,20,1,32.3,64.5
+press,FA,"OPPOSITION (PLN, FA, PUSC, CAC)",100,90,9,1,90.0,9.0
+press,FA,ALL,194,144,46,4,74.2,23.7
+press,FA,ALL PROPOSED BY OTHERS,106,62,42,2,58.5,39.6
+press,PUSC,PPSO,9,4,5,0,44.4,55.6
+press,PUSC,Executive (2026-),10,2,8,0,20.0,80.0
+press,PUSC,PPSD (2022-26),5,4,0,1,80.0,0.0
+press,PUSC,Executive (before 2026-05-08),14,7,6,1,50.0,42.9
+press,PUSC,PLN,9,9,0,0,100.0,0.0
+press,PUSC,FA,14,10,3,1,71.4,21.4
+press,PUSC,PUSC,29,29,0,0,100.0,0.0
+press,PUSC,CAC,1,1,0,0,100.0,0.0
+press,PUSC,other parties,9,7,2,0,77.8,22.2
+press,PUSC,no proponent,8,5,3,0,62.5,37.5
+press,PUSC,OFFICIALISM (PPSO + Executive 2026-),19,6,13,0,31.6,68.4
+press,PUSC,"OPPOSITION (PLN, FA, PUSC, CAC)",53,49,3,1,92.5,5.7
+press,PUSC,ALL,108,78,27,3,72.2,25.0
+press,PUSC,ALL PROPOSED BY OTHERS,71,44,24,3,62.0,33.8
+press,CAC,PPSO,10,5,5,0,50.0,50.0
+press,CAC,Executive (2026-),7,1,4,2,14.3,57.1
+press,CAC,PPSD (2022-26),2,1,0,1,50.0,0.0
+press,CAC,Executive (before 2026-05-08),14,9,5,0,64.3,35.7
+press,CAC,PLN,5,5,0,0,100.0,0.0
+press,CAC,FA,12,11,0,1,91.7,0.0
+press,CAC,PUSC,5,2,2,1,40.0,40.0
+press,CAC,CAC,6,6,0,0,100.0,0.0
+press,CAC,other parties,6,5,1,0,83.3,16.7
+press,CAC,no proponent,6,4,1,1,66.7,16.7
+press,CAC,OFFICIALISM (PPSO + Executive 2026-),17,6,9,2,35.3,52.9
+press,CAC,"OPPOSITION (PLN, FA, PUSC, CAC)",28,24,2,2,85.7,7.1
+press,CAC,ALL,73,49,18,6,67.1,24.7
+press,CAC,ALL PROPOSED BY OTHERS,61,39,17,5,63.9,27.9
+press,Executive,PPSO,20,19,1,0,95.0,5.0
+press,Executive,Executive (2026-),32,32,0,0,100.0,0.0
+press,Executive,PPSD (2022-26),6,5,1,0,83.3,16.7
+press,Executive,Executive (before 2026-05-08),53,49,3,1,92.5,5.7
+press,Executive,PLN,23,9,11,3,39.1,47.8
+press,Executive,FA,13,6,6,1,46.2,46.2
+press,Executive,PUSC,12,11,1,0,91.7,8.3
+press,Executive,CAC,0,0,0,0,,
+press,Executive,other parties,12,9,3,0,75.0,25.0
+press,Executive,no proponent,13,3,9,1,23.1,69.2
+press,Executive,OFFICIALISM (PPSO + Executive 2026-),52,51,1,0,98.1,1.9
+press,Executive,"OPPOSITION (PLN, FA, PUSC, CAC)",48,26,18,4,54.2,37.5
+press,Executive,ALL,184,143,35,6,77.7,19.0
+press,Executive,ALL PROPOSED BY OTHERS,119,89,25,5,74.8,21.0
