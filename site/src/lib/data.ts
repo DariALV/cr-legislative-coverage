@@ -2,8 +2,7 @@
  * Data access layer (build time only). This is the ONLY module that knows
  * where the JSON files live. Pages and components import from here.
  *
- * Source of truth: src/data/ (written by export_public.py, or by
- * scripts/make_dummy_data.mjs during the dummy phase). Compact versions for
+ * Source of truth: src/data/ (written by export_public.py in the main repo). Compact versions for
  * the browser are emitted by src/pages/data/*.json.ts.
  */
 import { readFileSync, existsSync } from 'node:fs';

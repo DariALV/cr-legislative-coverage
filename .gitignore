@@ -234,3 +234,8 @@ results/evolution/**/population.csv
 
 # Local backup of the private database (has news text): never commit
 databases/private_corpus.backup_*.db
+
+# Data copied from the other machine (same content as databases/, raw/ and results/jev/corpus/)
+databasesV1/
+rawV1/
+resultsV1/

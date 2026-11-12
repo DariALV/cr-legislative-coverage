@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import { href } from '../lib/paths';
+import { DATA_LICENSE } from '../lib/config';
 import { getSiteStats, getOutlets } from '../lib/data';
 import { formatInt, formatDate } from '../lib/format';
 
@@ -16,24 +17,25 @@ const files = [
 ];
 const dictionary = [
   ['expedientes', 'number', 'entero', 'Número de expediente en el SIL.'],
-  ['expedientes', 'status', 'texto', 'Estado del trámite (valores por confirmar).'],
+  ['expedientes', 'status', 'texto', 'Estado del trámite: En trámite, Convertido en ley o Archivado.'],
   ['expedientes', 'law_number', 'entero o vacío', 'Número de ley, si se convirtió en ley.'],
   ['expedientes', 'news_count', 'entero', 'Noticias vinculadas en el período.'],
+  ['expedientes', 'votes_count', 'entero', 'Votaciones de trámite (debates, dispensas y otras), sin contar mociones.'],
+  ['expedientes', 'motions_count', 'entero', 'Mociones votadas sobre el expediente.'],
   ['noticias', 'id', 'texto (64)', 'SHA-256 hexadecimal de la URL; identificador estable.'],
   ['noticias', 'organization', 'texto', 'Clave del medio (crhoy, delfino, …).'],
   ['noticias', 'date_published', 'fecha y hora', 'Hora local de Costa Rica, sin zona horaria.'],
-  ['vinculos', 'link_source', 'texto', 'Origen del vínculo: delfino, manual o model (por confirmar).'],
-  ['vinculos', 'confidence', 'decimal 0–1 o vacío', 'Confianza del modelo; vacío si el vínculo no viene del modelo.'],
+  ['vinculos', 'link_source', 'texto', 'Origen del vínculo: enlace (la noticia enlaza la ficha del expediente) o modelo (cruce automático).'],
+  ['vinculos', 'confidence', 'decimal 0–1 o vacío', 'Probabilidad que el modelo le da al vínculo.'],
 ];
 ---
 <Base title="Datos" description="Descarga del corpus público y diccionario de datos.">
   <Breadcrumb items={[{ label: 'Datos' }]} />
   <div class="prose">
     <h1>Datos abiertos</h1>
-    <p class="callout">Borrador: los archivos contienen los datos de prueba del sitio. Se reemplazarán por el corpus público real.</p>
     <p>
       El corpus público incluye metadatos de expedientes, noticias y vínculos. No incluye el texto de las noticias.
-      Licencia: [por definir].
+      {DATA_LICENSE && ` Licencia: ${DATA_LICENSE}.`}
     </p>
   </div>
 

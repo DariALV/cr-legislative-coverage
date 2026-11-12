@@ -1,19 +1,26 @@
 ---
 /**
- * Plenary votes with a neutral, descriptive breakdown by faction.
+ * Votes (plenary and full committee) with a neutral, descriptive breakdown by faction.
  * No value judgements: counts only, factions in alphabetical order.
  */
-import { formatDate } from '../lib/format';
+import { formatDate, formatInt } from '../lib/format';
 import { VOTE_ORDER, voteLabel, type VoteValue } from '../lib/vocab';
-import type { Vote } from '../lib/types';
+import type { MotionSummary, Vote } from '../lib/types';
 
-interface Props { votes: Vote[] }
-const { votes } = Astro.props;
+interface Props { votes: Vote[]; motions?: MotionSummary[] }
+const { votes, motions = [] } = Astro.props;
+const motionTotal = (m: MotionSummary) => m.approved + m.rejected + m.other;
+const motionsCount = motions.reduce((a, m) => a + motionTotal(m), 0);
+const hasOther = motions.some((m) => m.other > 0);
+const period = (m: MotionSummary) =>
+  m.date_first === m.date_last ? formatDate(m.date_first) : `${formatDate(m.date_first)} – ${formatDate(m.date_last)}`;
 
 const COLORS: Record<VoteValue, string> = {
   a_favor: 'var(--s-favor)',
   en_contra: 'var(--s-contra)',
+  abstencion: 'var(--s-abstencion)',
   ausente: 'var(--s-ausente)',
+  ausente_pierde_dieta: 'var(--s-ausente)',
 };
 
 const blank = () => Object.fromEntries(VOTE_ORDER.map((v) => [v, 0])) as Record<VoteValue, number>;
@@ -35,8 +42,42 @@ const prepared = votes.map((v) => {
   return { v, rows, totals, byVote };
 });
 ---
+{motions.length > 0 && (
+  <section class="motions card">
+    <h3>Mociones votadas: {formatInt(motionsCount)}</h3>
+    <p class="muted small">
+      Las mociones se muestran resumidas por tipo. El detalle de cada una está en Delfino.cr.
+    </p>
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr>
+            <th>Tipo de moción</th>
+            <th class="num">Aprobadas</th>
+            <th class="num">Rechazadas</th>
+            {hasOther && <th class="num">Anuladas o empatadas</th>}
+            <th class="num">Total</th>
+            <th>Fechas</th>
+          </tr>
+        </thead>
+        <tbody>
+          {motions.map((m) => (
+            <tr>
+              <td>{m.name}</td>
+              <td class="num">{formatInt(m.approved)}</td>
+              <td class="num">{formatInt(m.rejected)}</td>
+              {hasOther && <td class="num">{formatInt(m.other)}</td>}
+              <td class="num">{formatInt(motionTotal(m))}</td>
+              <td class="muted">{period(m)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+)}
 {prepared.length === 0 ? (
-  <p class="empty">Este expediente no registra votaciones en el Plenario.</p>
+  motions.length === 0 && <p class="empty">Este expediente no registra votaciones.</p>
 ) : (
   <div class="votes">
     <div class="legend small">
@@ -50,6 +91,7 @@ const prepared = votes.map((v) => {
           <h3>{v.name}</h3>
           <span class="muted small">{formatDate(v.date)}</span>
           <span class="pill">{v.result}</span>
+          <span class="muted small">{v.kind}</span>
           <span class="totals small text-2">
             {VOTE_ORDER.map((k) => <span>{voteLabel(k)}: <strong>{totals[k]}</strong></span>)}
           </span>
@@ -98,6 +140,8 @@ const prepared = votes.map((v) => {
 
 <style>
   .votes { display: grid; gap: 1rem; }
+  .motions { margin-bottom: 1rem; }
+  .motions h3 { margin: 0 0 0.25rem; }
   .legend { display: flex; gap: 1rem; color: var(--text-2); }
   .legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
   .vote-head { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: baseline; margin-bottom: 0.5rem; }

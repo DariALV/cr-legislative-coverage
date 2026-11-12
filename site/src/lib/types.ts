@@ -3,8 +3,7 @@
  * export_public.py (main repo). Dates are Costa Rica local time without
  * timezone: "YYYY-MM-DD" or "YYYY-MM-DDTHH:MM:SS".
  *
- * Enumerations whose real values are still to be confirmed are declared in
- * ./vocab.ts, which is the single place to update them.
+ * Controlled vocabularies are declared in ./vocab.ts.
  */
 import type { LinkSource, VoteValue, OutletType } from './vocab';
 
@@ -26,7 +25,10 @@ export interface BillSummary {
   subjects: string[];
   proponents: string[];
   news_count: number;
+  /** Votes published in detail (motions excluded). */
   votes_count: number;
+  /** Motions voted on this bill, published only as a summary. */
+  motions_count: number;
 }
 
 export interface Proponent {
@@ -54,7 +56,20 @@ export interface Vote {
   date: IsoDate;
   name: string;
   result: string;
+  /** "Plenario" or "Comisión con potestad legislativa plena". */
+  kind: string;
   deputies: VoteDeputy[];
+}
+
+/** Motions of one kind voted on a bill (e.g. "Moción de fondo"). */
+export interface MotionSummary {
+  name: string;
+  approved: number;
+  rejected: number;
+  /** Annulled or tied. */
+  other: number;
+  date_first: IsoDate;
+  date_last: IsoDate;
 }
 
 /** A news article as seen from a bill. */
@@ -74,6 +89,7 @@ export interface BillDetail {
   proponents: Proponent[];
   steps: BillStep[];
   votes: Vote[];
+  motions: MotionSummary[];
   news: BillNewsLink[];
 }
 

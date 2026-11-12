@@ -1,7 +1,7 @@
 ---
 /**
  * Shows where a news↔bill link comes from and how confident it is, plus
- * the "¿Este vínculo está mal?" report link.
+ * the "¿Este vínculo está mal?" report link when a report form is configured.
  */
 import { describeLink, reportLinkUrl } from '../lib/links';
 import type { LinkSource } from '../lib/types';
@@ -14,10 +14,11 @@ interface Props {
 }
 const { source, confidence, billNumber, newsId } = Astro.props;
 const d = describeLink(source, confidence);
+const reportUrl = reportLinkUrl(billNumber, newsId);
 ---
 <span class="link-badge">
   <span class={`src src--${source}`} title={d.sourceDescription}>
-    {source === 'model' ? (
+    {source === 'modelo' ? (
       <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M8 1l1.6 3.9L14 5.5l-3.2 2.8.9 4.2L8 10.4l-3.7 2.1.9-4.2L2 5.5l4.4-.6z"/></svg>
     ) : (
       <svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path fill="currentColor" d="M6.2 11.6 2.6 8l1.2-1.2 2.4 2.4 6-6L13.4 4.4z"/></svg>
@@ -30,7 +31,7 @@ const d = describeLink(source, confidence);
       Confianza {d.band.label} <span class="mono">{d.confidenceText}</span>
     </span>
   )}
-  <a class="report" href={reportLinkUrl(billNumber, newsId)} target="_blank" rel="noopener">¿Este vínculo está mal?</a>
+  {reportUrl && <a class="report" href={reportUrl} target="_blank" rel="noopener">¿Este vínculo está mal?</a>}
 </span>
 
 <style>
@@ -44,7 +45,7 @@ const d = describeLink(source, confidence);
     background: var(--surface-2);
     white-space: nowrap;
   }
-  .src--model { border-style: dashed; background: transparent; }
+  .src--modelo { border-style: dashed; background: transparent; }
   .meter { display: inline-block; width: 32px; height: 6px; border-radius: 3px; background: var(--grid); overflow: hidden; }
   .meter > span { display: block; height: 100%; border-radius: 3px; background: var(--conf-medium); }
   .conf--high .meter > span { background: var(--conf-high); }
