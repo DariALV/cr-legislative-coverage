@@ -41,7 +41,7 @@ const events: Ev[] = [
   })),
   ...votes.map((v) => ({
     day: toDayNumber(v.date), date: v.date, kind: 'vote' as const,
-    title: `Votación en Plenario: ${v.name}`, detail: v.result, open: false,
+    title: `Votación (${v.kind}): ${v.name}`, detail: v.result, open: false,
   })),
 ].sort((a, b) => a.day - b.day || (a.kind === 'vote' ? 1 : -1));
 const numbered = events.map((e, i) => ({ ...e, n: i + 1 }));

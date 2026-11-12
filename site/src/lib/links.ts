@@ -2,8 +2,9 @@
 import { REPORT_FORM_URL } from './config';
 import { confidenceBand, LINK_SOURCES, type LinkSource } from './vocab';
 
-/** URL of the external form, pre-filled with the link being reported. */
-export function reportLinkUrl(billNumber: number, newsId: string): string {
+/** URL of the external form, pre-filled with the link being reported; null while there is no form. */
+export function reportLinkUrl(billNumber: number, newsId: string): string | null {
+  if (!REPORT_FORM_URL) return null;
   const u = new URL(REPORT_FORM_URL);
   u.searchParams.set('expediente', String(billNumber));
   u.searchParams.set('noticia', newsId);

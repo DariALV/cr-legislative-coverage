@@ -21,6 +21,7 @@
   --s-favor: #2a78d6;
   --s-contra: #eb6834;
   --s-ausente: #bdbbb3;
+  --s-abstencion: #8a7fb5;
   --s-step-a: #c9c7c0;
   --s-step-b: #a9a7a0;
   --s-window: rgba(42, 120, 214, 0.1);
@@ -58,6 +59,7 @@
     --s-favor: #3987e5;
     --s-contra: #d95926;
     --s-ausente: #5e5d58;
+    --s-abstencion: #8a7fb5;
     --s-step-a: #4a4945;
     --s-step-b: #6a6964;
     --s-window: rgba(57, 135, 229, 0.16);
@@ -86,6 +88,7 @@
   --s-favor: #3987e5;
   --s-contra: #d95926;
   --s-ausente: #5e5d58;
+  --s-abstencion: #8a7fb5;
   --s-step-a: #4a4945;
   --s-step-b: #6a6964;
   --s-window: rgba(57, 135, 229, 0.16);

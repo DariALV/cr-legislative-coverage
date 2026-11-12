@@ -1,27 +1,24 @@
 /**
  * Controlled vocabularies and their Spanish labels.
  *
- * TO CONFIRM WITH REAL DATA (private_corpus.db). Update ONLY this file:
- *  - link_source values  -> news_bill_links.source
- *  - vote values         -> vote_deputies.vote
- *  - bill status / file_type values
- *  - whether confidence exists for every link or only for "model" links
- *
- * scripts/make_dummy_data.mjs mirrors these values for the dummy dataset.
+ * The keys are the values written by export_public.py (main repo), which
+ * translates the English vocabularies of private_corpus.db to Spanish.
+ * Keep both in sync:
+ *  - link_source   <- news_bill_links.source ("link") or a Jev match
+ *  - vote values   <- vote_deputies.vote
+ *  - bill status   <- bills.status
+ * file_type, vote result, section and names are published as they are in
+ * the database.
  */
 
 export const LINK_SOURCES = {
-  delfino: {
-    label: 'Delfino',
-    description: 'Vínculo tomado de la ficha del expediente publicada por Delfino.cr.',
+  enlace: {
+    label: 'Enlace del medio',
+    description: 'La noticia enlaza la ficha del expediente, y el modelo confirma que lo cubre.',
   },
-  manual: {
-    label: 'Revisión manual',
-    description: 'Vínculo revisado a mano por el equipo del proyecto.',
-  },
-  model: {
+  modelo: {
     label: 'Modelo automático',
-    description: 'Vínculo propuesto por el cruce automático (embeddings + ranker). Puede equivocarse.',
+    description: 'Vínculo propuesto por el cruce automático (embeddings, ranker y verificación con un modelo de lenguaje). Puede equivocarse.',
   },
 } as const;
 export type LinkSource = keyof typeof LINK_SOURCES;
@@ -29,10 +26,12 @@ export type LinkSource = keyof typeof LINK_SOURCES;
 export const VOTE_VALUES = {
   a_favor: { label: 'A favor' },
   en_contra: { label: 'En contra' },
+  abstencion: { label: 'Abstención' },
   ausente: { label: 'Ausente' },
+  ausente_pierde_dieta: { label: 'Ausente (pierde dieta)' },
 } as const;
 export type VoteValue = keyof typeof VOTE_VALUES;
-export const VOTE_ORDER: VoteValue[] = ['a_favor', 'en_contra', 'ausente'];
+export const VOTE_ORDER: VoteValue[] = ['a_favor', 'en_contra', 'abstencion', 'ausente', 'ausente_pierde_dieta'];
 
 export const OUTLET_TYPES = {
   general: { label: 'Generalista' },
@@ -40,10 +39,8 @@ export const OUTLET_TYPES = {
 } as const;
 export type OutletType = keyof typeof OUTLET_TYPES;
 
-/** Known bill statuses (dummy). Unknown values are still displayed verbatim. */
-export const BILL_STATUSES = ['En trámite', 'Dictaminado', 'Convertido en ley', 'Archivado'];
-
-export const FILE_TYPES = ['Ordinario', 'Reforma constitucional', 'Aprobación de convenio'];
+/** Bill statuses, in display order. Unknown values are still displayed verbatim. */
+export const BILL_STATUSES = ['En trámite', 'Convertido en ley', 'Archivado'];
 
 /** Confidence bands used by LinkBadge. Applies only when confidence !== null. */
 export const CONFIDENCE_BANDS = [

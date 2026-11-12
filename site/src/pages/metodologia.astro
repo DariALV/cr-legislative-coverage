@@ -1,61 +1,170 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
-import { STUDY_PERIOD } from '../lib/config';
-import { formatDateLong } from '../lib/format';
+import { STUDY_PERIOD, REPORT_FORM_URL } from '../lib/config';
+import { formatDateLong, formatInt } from '../lib/format';
 import { LINK_SOURCES, CONFIDENCE_BANDS } from '../lib/vocab';
-import { getOutlets } from '../lib/data';
+import { getOutlets, getSiteStats } from '../lib/data';
 
 const outlets = getOutlets();
+const s = getSiteStats();
+
+/** Figures of the pipeline run (main repo: results/jev/corpus and corpus_analysis). */
+const RUN = {
+  billsCollected: 5898,
+  newsCollected: 29875,
+  newsWithText: 29698,
+  newsPassingFilter: 7431,
+  candidatesPerNews: 50,
+  reviewedPairs: 190,
+  sampleNews: 300,
+  samplePositivePairs: 62,
+};
+
 const metrics = [
-  { name: 'Recall@1', value: '—', note: 'pendiente' },
-  { name: 'Recall@5', value: '—', note: 'pendiente' },
-  { name: 'Precisión (vínculos publicados)', value: '—', note: 'pendiente' },
-  { name: 'Tamaño de la muestra etiquetada', value: '—', note: 'pendiente' },
+  {
+    name: 'El expediente correcto está entre los candidatos',
+    value: '95 %',
+    note: `En los ${RUN.samplePositivePairs} pares positivos de la muestra manual; también 95 % frente a los enlaces que Delfino pone a los expedientes.`,
+  },
+  {
+    name: 'Vínculos publicados que son correctos (precisión)',
+    value: '88–91 %',
+    note: `${RUN.reviewedPairs} vínculos revisados a mano contra el texto de la noticia. En la muestra manual: 92 %.`,
+  },
+  {
+    name: 'Pares de la muestra que el sitio encuentra (exhaustividad)',
+    value: '67 %',
+    note: 'La muestra cuenta también las menciones de paso, que el sitio deja fuera a propósito.',
+  },
+  {
+    name: 'Noticias sin expediente que quedan sin vínculo',
+    value: '98 %',
+    note: 'Noticias de la muestra que no tratan ningún expediente.',
+  },
 ];
 ---
 <Base title="Metodología" description="Cómo se construyó el cruce entre noticias y expedientes, sus métricas y limitaciones.">
   <Breadcrumb items={[{ label: 'Metodología' }]} />
   <div class="prose">
     <h1>Metodología</h1>
-    <p class="callout">Borrador: varias secciones tienen texto de relleno y las métricas se completarán con los resultados reales.</p>
+    <p>
+      Este sitio muestra qué expedientes de la Asamblea Legislativa aparecen en las noticias de cinco medios
+      digitales, entre el {formatDateLong(STUDY_PERIOD.start)} y el {formatDateLong(STUDY_PERIOD.end)}. El cruce
+      entre noticias y expedientes es automático. Esta página explica cómo se hizo, qué tan bien acierta y qué
+      límites tiene.
+    </p>
 
     <h2>Fuentes</h2>
     <ul>
-      <li><strong>Expedientes, proponentes y trámite:</strong> Sistema de Información Legislativa (SIL) de la Asamblea Legislativa, desde el expediente 20.000.</li>
-      <li><strong>Votaciones en Plenario:</strong> Delfino.cr.</li>
-      <li><strong>Noticias:</strong> {outlets.map((o) => o.name).join(', ')}. Publicadas entre el {formatDateLong(STUDY_PERIOD.start)} y el {formatDateLong(STUDY_PERIOD.end)}.</li>
+      <li>
+        <strong>Expedientes, proponentes y trámite:</strong> Sistema de Información Legislativa (SIL) de la
+        Asamblea Legislativa. Se recogieron los {formatInt(RUN.billsCollected)} expedientes desde el 20.000,
+        presentado en junio de 2016, porque las noticias del período también tratan expedientes viejos.
+      </li>
+      <li><strong>Votaciones:</strong> Delfino.cr, que publica el voto de cada diputación en el Plenario y en las comisiones con potestad legislativa plena.</li>
+      <li>
+        <strong>Noticias:</strong> {outlets.map((o) => o.name).join(', ')}. Se recogieron las
+        {' '}{formatInt(RUN.newsCollected)} notas que estos medios publicaron en el período, de todas las secciones.
+      </li>
+    </ul>
+
+    <h2>Qué se publica en el sitio</h2>
+    <ul>
+      <li><strong>Noticias:</strong> las {formatInt(s.news)} que tratan al menos un expediente.</li>
+      <li>
+        <strong>Expedientes:</strong> {formatInt(s.bills)}. Son los que tienen noticias vinculadas
+        ({formatInt(s.billsWithCoverage)}) y los que tuvieron actividad en el período sin llegar a los medios:
+        se presentaron, avanzaron un paso del trámite o se votaron.
+      </li>
+      <li><strong>Vínculos noticia–expediente:</strong> {formatInt(s.links)}. Una noticia puede tratar varios expedientes.</li>
+      <li>
+        <strong>Votaciones:</strong> todas las de los expedientes publicados, también las anteriores al período.
+        Las mociones se muestran resumidas por tipo y resultado, porque un solo expediente puede acumular miles.
+      </li>
     </ul>
 
     <h2>Cómo se vincula una noticia con un expediente</h2>
+    <p>La mayoría de las noticias no dice el número del expediente, así que el cruce se hace en cuatro pasos:</p>
+    <ol>
+      <li>
+        <strong>Filtro.</strong> Un modelo de lenguaje lee cada noticia y estima si trata sobre la Asamblea
+        Legislativa o sobre legislación. Pasan {formatInt(RUN.newsPassingFilter)} de las
+        {' '}{formatInt(RUN.newsWithText)} noticias con texto.
+      </li>
+      <li>
+        <strong>Candidatos.</strong> Para cada noticia que pasa se eligen los {RUN.candidatesPerNews} expedientes
+        más parecidos. La noticia y la exposición de motivos de cada expediente se representan con
+        {' '}<em>embeddings</em> (Qwen3-Embedding-0.6B), y un modelo de ordenamiento combina esa similitud con otras
+        señales, como las palabras en común y la actividad reciente del expediente. A los candidatos se suman los
+        expedientes que la noticia nombra por número.
+      </li>
+      <li>
+        <strong>Verificación.</strong> Un modelo de lenguaje evaluador (Jev 1.14) lee la noticia junto con cada
+        candidato y responde dos preguntas: si la noticia lo identifica de forma directa, por número, nombre
+        oficial o apodo; y si habla de él sin nombrarlo, al describir lo que cambia, quién lo propuso o en qué
+        paso está.
+      </li>
+      <li>
+        <strong>Centralidad.</strong> Para cada par que pasa la verificación, el mismo modelo estima cuánto de la
+        noticia trata sobre ese expediente.
+      </li>
+    </ol>
     <p>
-      Lorem ipsum: cada noticia y cada expediente se representan con <em>embeddings</em> (Qwen3-Embedding-0.6B).
-      Para cada noticia se calculan los expedientes más similares y un <em>ranker</em> evolutivo reordena los
-      candidatos. Una verificación con un modelo de lenguaje está pendiente. [Completar con detalles del pipeline.]
+      Se publican solo los vínculos de <strong>cobertura sustantiva</strong>: la identificación directa tiene
+      probabilidad de 0,5 o más, o la indirecta de 0,75 o más, y el expediente no es una mención de paso. Una nota
+      que solo nombra un expediente en una lista o como antecedente no cuenta.
     </p>
-    <p>Cada vínculo publicado indica su origen:</p>
+    <p>Cada vínculo indica su origen:</p>
     <ul>
-      {Object.values(LINK_SOURCES).map((s) => <li><strong>{s.label}:</strong> {s.description}</li>)}
+      {Object.values(LINK_SOURCES).map((src) => <li><strong>{src.label}:</strong> {src.description}</li>)}
     </ul>
     <p>
-      La confianza (de 0 a 1) solo existe para los vínculos del modelo. En el sitio se agrupa en bandas:
+      La confianza (de 0 a 1) es la probabilidad que el modelo evaluador le da al vínculo. En el sitio se agrupa en bandas:
       {CONFIDENCE_BANDS.map((b, i) => <span>{i > 0 ? ', ' : ''}<strong>{b.label}</strong> (≥ {b.min.toFixed(2).replace('.', ',')})</span>)}.
     </p>
 
     <h2>Evaluación</h2>
-    <p>Se etiquetó a mano una muestra de pares noticia–expediente para medir el cruce. [Relleno.]</p>
+    <p>
+      El cruce se midió de dos maneras. Primero, con una muestra de {RUN.sampleNews} noticias etiquetadas a mano,
+      100 que tratan algún expediente y 200 que no. Segundo, con una revisión de {RUN.reviewedPairs} vínculos del
+      resultado final contra el texto de la noticia.
+    </p>
     <div class="table-wrap">
       <table class="data">
-        <thead><tr><th>Métrica</th><th class="num">Valor</th><th>Nota</th></tr></thead>
+        <thead><tr><th>Medida</th><th class="num">Valor</th><th>Cómo se midió</th></tr></thead>
         <tbody>{metrics.map((m) => <tr><td>{m.name}</td><td class="num">{m.value}</td><td class="muted">{m.note}</td></tr>)}</tbody>
       </table>
     </div>
+    <p>
+      En resumen: cerca de nueve de cada diez vínculos publicados son correctos, y el sitio deja fuera una parte
+      de la cobertura real. Estas cifras son preliminares por tres razones:
+    </p>
+    <ul>
+      <li>La muestra tiene {RUN.samplePositivePairs} pares positivos confirmados, así que cada porcentaje tiene un margen de unos ocho a diez puntos.</li>
+      <li>La revisión humana de la muestra no ha terminado, y parte de las etiquetas las propuso un asistente automático y las aceptó el equipo.</li>
+      <li>Las preguntas del modelo evaluador se ajustaron mirando esa misma muestra, lo que favorece el resultado.</li>
+    </ul>
 
     <h2>Limitaciones</h2>
     <ul>
       <li>El cruce automático puede proponer vínculos incorrectos u omitir noticias relevantes.</li>
-      <li>Solo se revisaron algunos medios digitales; la ausencia de cobertura aquí no implica ausencia total de cobertura.</li>
-      <li>Las noticias de pago o detrás de muros de suscripción pueden estar subrepresentadas. [Relleno.]</li>
+      <li>
+        El error más frecuente son las leyes ya aprobadas: una noticia sobre cómo se aplica una ley vigente puede
+        quedar vinculada al expediente que le dio origen, aunque no hable de su trámite.
+      </li>
+      <li>Los expedientes distintos con el mismo nombre o un texto casi igual se confunden entre sí.</li>
+      <li>
+        Solo se revisaron cinco medios digitales, sin televisión, radio ni redes sociales. Que un expediente no
+        tenga noticias aquí no significa que no tuvo cobertura.
+      </li>
+      <li>Las notas cuyo texto no se pudo obtener ({formatInt(RUN.newsCollected - RUN.newsWithText)}) quedaron fuera del cruce, y de las notas muy largas el modelo leyó solo el inicio.</li>
+      <li>Una misma nota puede aparecer dos veces cuando el medio la republica con otra dirección.</li>
+      <li>
+        Los nombres, tipos y temas de los expedientes se muestran como están en el SIL. Los temas son sus
+        descriptores, no una clasificación propia.
+      </li>
+      <li>Los expedientes incluyen trámites que no son proyectos de ley: reformas constitucionales, nombramientos, comisiones investigadoras y reformas al Reglamento.</li>
       <li>Las fechas se expresan en hora local de Costa Rica.</li>
     </ul>
 
@@ -64,11 +173,15 @@ const metrics = [
       <li>No se publica el texto de las noticias, ni fragmentos ni su descripción (Ley 6683 de Derechos de Autor y Derechos Conexos). Solo título, medio, fecha, sección y enlace al original.</li>
       <li>No se publican fotografías de diputadas y diputados; se usan iniciales.</li>
       <li>No se elaboran rankings de medios. Las cifras por medio, cuando aparecen, son conteos.</li>
-      <li>Las estadísticas de votación son descriptivas y no valoran a personas ni a fracciones.</li>
-      <li>Cada vínculo muestra su origen y su confianza, y se puede reportar como incorrecto.</li>
+      <li>Las votaciones se muestran como conteos, sin valorar a personas ni a fracciones.</li>
+      <li>Cada vínculo muestra su origen y su confianza{REPORT_FORM_URL && ', y se puede reportar como incorrecto'}.</li>
     </ul>
 
-    <h2>Reportar un error</h2>
-    <p>Junto a cada vínculo hay un enlace «¿Este vínculo está mal?» que abre un formulario. Las correcciones se revisan a mano.</p>
+    {REPORT_FORM_URL && (
+      <>
+        <h2>Reportar un error</h2>
+        <p>Junto a cada vínculo hay un enlace «¿Este vínculo está mal?» que abre un formulario. Las correcciones se revisan a mano.</p>
+      </>
+    )}
   </div>
 </Base>
