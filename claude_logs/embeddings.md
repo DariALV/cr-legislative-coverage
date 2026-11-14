@@ -205,3 +205,9 @@
 ## 2026-11-11 10:14 — ver jev.md: pestaña de noticias con los embeddings qwen3 promediados por noticia (propuesta, boilerplate pendiente) (#69)
 
 ## 2026-11-11 10:55 — ver jev.md: el boilerplate no forma fragmentos aparte (187 repetidos, 0,1 % de los tokens) y los embeddings de noticias son consultas de búsqueda de expedientes (#69 #32)
+
+## 2026-11-13 17:26 — Página de Embeddings con los datos reales en vez de los de prueba (#38)
+- Pedido del usuario: que la página local de embeddings (`private_visuals/embedding_cross/`) muestre los originales. En esta máquina `private_visuals/output/embedding_cross/data.js` seguía siendo el de prueba (TF-IDF + enlaces, 2026-11-06, 400 noticias); la exportación de la corrida del 2026-11-07 nunca llegó acá.
+- Exportado solo el top-50 de la mejor configuración (qwen3-0.6b/news_256/bills_exposition/max) con `EmbeddingAnalyzer.export_top`, sin volver a correr `run_analysis.py` para no reescribir `results/embeddings/` (en git). Ningún archivo de código cambió.
+- Comprobación: AUC 0,963, igual que la corrida del 2026-11-07 13:25. La página: 532 noticias del oro, 4.259 expedientes distintos, 863 de los 1.423 enlaces de Delfino dentro del top-50 (por enlace; el 0,805 de recall@50 es por noticia), sin la etiqueta de prueba, sin errores en la consola.
+- data.js sigue fuera de git (private_visuals/output/ en .gitignore). Copia de los datos de prueba en el scratchpad de la sesión (temporal); se regeneran con `make_test_data.py`.

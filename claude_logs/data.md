@@ -257,3 +257,9 @@ Pendiente de decisión del usuario (no se implementó nada): recuperar exposicio
 - El visor muestra 2.234 porque `build_data.py` (`load_context`) limita votos, pasos y comisiones al período de noticias con un mes de margen (desde 2026-04-01). Es por diseño, no por falta de datos.
 
 ## 2026-11-10 17:20 — ver jev.md: el análisis del corpus usa solo votos de mayo–octubre (#22)
+
+## 2026-11-11 21:08 — docs/news.md escrita: fuentes, período, recolección por medio, filtro de secciones, tabla, cobertura de campos, limpieza no hecha y términos (#18 #16)
+
+- Pedido del usuario. En inglés, con el estilo de docs/bills.md. Fuentes: comentarios de #11 #14 #15 #18 #62 #63 #16, el código de los parsers y section_filter.py, y la base.
+- Cifras medidas en la base: crhoy 9.442 (174 Partial, 260 sin sección), nacion 9.424 (3 sin autor, 199 secciones), delfino 5.399 (2 Partial), elmundo 3.388, semanario 2.222 (sin autor todas, 1 Partial); 177 sin cuerpo → el filtro de Jev corrió sobre 29.698. news_bill_links: 1.425.
+- Se cierra #18 con el commit (closes #18). Sin commitear todavía.

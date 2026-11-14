@@ -568,3 +568,94 @@ Diario del tema. Las pruebas del 2026-11-08 se escribieron en `general.md` antes
 - Verificado en Diputados (quedan solo las figuras de los partidos con sus nombres; el puntero sobre un nodo escondido lo muestra con sus enlaces), Expedientes y Noticias, sin errores de consola. Al probar, en la pestaña de diputados había ajustes guardados por el usuario (tamaño de nodos 0,3, fotos en 0): se dejaron como estaban.
 
 ## 2026-11-11 16:46 — ver sample.md: piloto de la evaluación a ciegas de Jev, sorteo de 50 y página local para contestar
+
+## 2026-11-11 17:38 — ver sample.md: piloto de la evaluación a ciegas, puerta 4 de 4 y detalle 58 de 72 iguales; sorteo rehecho con noticias cortas
+
+## 2026-11-11 17:53 — ver sample.md: revisión de las 15 diferencias del piloto (Jev 9, usuario 4, ambiguas 2)
+
+## 2026-11-11 18:35 — ver future.md: lazo Jev ↔ GA; los positivos solo implícitos < 0,75 son el 16 % en el puesto 1 y el 43 % en los puestos 21–50
+
+## 2026-11-11 20:49 — Baseline por número medido gratis en el corpus: solo el 39,5 % de los matches de Jev escribe el número del expediente (#36 #40)
+
+- El usuario cuestiona el baseline: ranker + Jev ya se justifica porque a mano serían meses. Se le explicó que el baseline no compara contra un humano sino contra una regla gratis (¿hace falta lo caro?).
+- Medido con lo que ya hay (candidates.csv columna named + gate.csv), sin correr nada nuevo: de los 6.329 pares con match, 2.498 (39,5 %) tienen el número escrito en la noticia; a nivel mención, 2.496 de 4.671 (53,4 %). 1.325 de 3.662 noticias con match tienen algún número.
+- Al revés: de los 2.589 pares con número escrito, Jev dice mención en 2.496 (96,4 %).
+- Lectura: la regex de número sola se perdería ~60 % de los matches (~47 % de las menciones). Caveat: medido contra Jev, no contra etiquetas humanas, y sin la parte de nombre oficial.
+- Propuesto: usar esto como el baseline y cerrar #36 #40 (y #37 con la comparación hecha en el corpus). Esperando respuesta.
+
+## 2026-11-11 20:51 — decisión: la medición en el corpus es el baseline; cerrados #36 #37 #40 con comentario (#36 #37 #40)
+
+- El usuario aprobó («Sí, cerralos»). #36: la regex de número de explicit_mentions.py es el baseline; no se hizo keyword matching. #40: tabla 39,5 % / 53,4 % y 96,4 % al revés, con los caveats (contra Jev, no humano; en el corpus, no en la muestra). #37: ranker + Jev en la muestra (sample_final), #35 not planned y baseline en el corpus.
+
+## 2026-11-11 21:13 — cobertura alrededor de los pasos del trámite: 47 % de las noticias caen a ±días de un hito, contra 8 % al azar (#56)
+- Pregunta del usuario: ¿qué tan común es que la cobertura de un expediente se concentre en la presentación y en los debates? Pares de cobertura sustantiva (3.462), hitos del SIL y votos del Plenario; «cerca» = de 2 días antes a 3 después del hito; base = mismas noticias repartidas al azar en mayo–octubre. Script y salidas en el scratchpad (`milestones.py`, `out_substantive/`, `out_mention/`), no en el repo.
+- 46,7 % de las noticias caen cerca de un hito de su expediente (base 7,7 %; con menciones 44,9 % vs 7,6 %). Hitos: presentación 665, primer debate 249, dictamen 171, otras votaciones del Plenario 156, ley firmada/publicada 113, archivo 84, mociones de fondo 58, segundo debate 55.
+- Por hito (¿≥ 1 noticia en la ventana?): presentación 69 %, segundo debate 86 %, otras votaciones del Plenario 72 %, mociones de fondo 69 %, primer debate 42 %, ley publicada 34 %, dictamen 26 %, mociones 137 24 %, ingreso a la agenda de comisión 8 %, archivo 3,5 %. Pico el día del hito (presentación: 1,43 noticias ese día por expediente cubierto); en la publicación de la ley el pico va antes (es la firma/segundo debate).
+- Ráfagas (corte a 7 días sin noticias): 62 % de los 570 expedientes tienen una sola ráfaga; el 70 % de las ráfagas de ≥ 3 noticias arranca junto a un hito (83 % de sus noticias). De 211 expedientes con ráfaga al presentarse, 126 no vuelven a salir; esa ráfaga se lleva 1.048 de sus 1.511 noticias.
+- El patrón «presentación + debate» casi no se puede ver en seis meses: solo 4 expedientes se presentan y llegan al Plenario en el período, y 3 tienen las dos ráfagas.
+- Lo que queda fuera de los hitos es negociación política sin paso en el SIL: magistrados (25258), minería (24717), eurobonos (25363, sin pasos desde enero aunque se negocia en Hacendarios) y 21372 (reglamento de hostigamiento, citado por casos de diputados, no por su trámite). 197 expedientes con cubierta no tienen ningún hito en la ventana (538 noticias).
+
+## 2026-11-11 21:18 — decisión: el análisis por paso del trámite se guarda en results/jev/corpus_analysis/milestones/ (#56)
+- El usuario aprobó guardarlo. El script pasó del scratchpad a `results/jev/corpus_analysis/milestones/milestones.py`; lee la base con `Config`, como `analysis.py`, y escribe en `substantive/` y `mention/` (bills_share_near.csv, milestones.csv, episodes.csv, report.json).
+- Vuelto a correr con los dos niveles: mismas cifras que la entrada de las 21:13 (47 %/8 % sustantiva, 45 %/8 % menciones). README.md en español con la tabla por paso y los cuidados.
+- Privacidad: solo números y nombres de expedientes, fechas y conteos; nada de las noticias.
+
+## 2026-11-11 21:27 — estadística descriptiva del corpus: 79 % de los expedientes vivos sin noticias, 35 expedientes se llevan la mitad (#56)
+- Pedido del usuario: cuántos expedientes tienen 0, 1, 2… noticias, cuántos hay en cada nivel de las preguntas de Jev y otras cifras. En `results/jev/corpus_analysis/stats/` (stats.py, README.md, CSV y report.json), sin commitear. Solo agregados, nada de las noticias.
+- Sustantiva: con cobertura 9,7 % de los 5.898, 21,2 % de los 2.156 vivos (en trámite o con paso en el SIL en mayo–oct), 40,5 % de los con paso en el SIL, 75,5 % de los presentados en el período, 73,6 % de los votados en el Plenario. De los vivos cubiertos, 36 % en una sola noticia. Mediana 2, p90 16, máximo 278; Gini 0,68 entre cubiertos; 35 expedientes = la mitad de los pares.
+- 84 % de las noticias trata un solo expediente; 50 % de los expedientes cubiertos sale en un solo medio (140 de esos en Delfino); 256 de 570 se cubren en un solo día. Spearman pasos del SIL vs noticias 0,50 en los vivos, 0,37 entre los cubiertos.
+- Preguntas: posición neutral 41,7 % de los pares, crítica 29,8 %, favorable 28,5 %; el Ejecutivo y PPSO son los actores con más posición atribuida (38 % y 40 % de los pares), casi siempre a favor. Etapa más dicha: presentación 23 %, no la dice 29 %. Encuadre: política pública 51 %, conflicto 33 %.
+- Caveat a revisar: «caso personal» sale en 20 % de los pares y «personas afectadas» en 2,2 %; posible sobreconteo de Jev. La base «vivos» es aproximada (el SIL no da fecha de cierre).
+
+## 2026-11-11 21:35 — posición atribuida por la prensa según quién propuso: cada partido apoya ~60 % de los expedientes de otros; oficialismo vs oposición 32–48 % (#56)
+- Pedido del usuario: ¿qué tan a favor está el PPSO, y cada partido, de los expedientes que proponen otros? En `results/jev/corpus_analysis/proponents/` (party_vs_proponent.py, README.md, CSV), sin commitear. Proponente = partido del primer firmante o Ejecutivo (partido en 2026-05-08); oficialismo = PPSO + Ejecutivo 2026. Posición por expediente = signo de la suma de las noticias sustantivas (+1/−1/0).
+- Propios: 98–100 % a favor. De otros: PPSO 59 % (47 % sin los 25 del Ejecutivo anterior, todos a favor), PLN 62 %, FA 58 %, PUSC 62 %, CAC 64 %, Ejecutivo 75 %. PPSO sobre la oposición 40 % (PLN 32 %, FA 23 %, PUSC 81 %); la oposición sobre el oficialismo 32–48 %. Entre PLN y FA 71–100 %; los del PUSC 40–50 % en la oposición.
+- Votos (primer y segundo debate, 50 expedientes): todas las fracciones 90–98 % a favor sin importar el proponente. Prensa y voto coinciden en 130/140. La pelea que muestra la prensa no llega a las votaciones finales.
+- Los expedientes sin proponente (elecciones de magistrados, nombramientos) van aparte. Caveats: alcance (el entregable 1 no compara partidos: si va al informe, como exploratorio), solo donde la prensa atribuye posición, cuenta expedientes y no noticias, primer firmante, celdas chicas.
+
+## 2026-11-11 21:43 — commit 969c65c: milestones/, stats/ y proponents/ del análisis del corpus (#56)
+- Commiteadas las tres carpetas de results/jev/corpus_analysis/ (script, CSV, report.json y README cada una); 26 archivos, solo agregados y números/nombres de expedientes. Sin push. Los logs quedan para un commit aparte (tienen cambios de otros chats).
+
+## 2026-11-11 21:44 — corrección: el commit del análisis es cf58f02, no 969c65c (rebase al hacer pull) (#56)
+- Pull con rebase: entraron 5 commits del sitio (PR #70, babdaa4) y el commit local de milestones/, stats/ y proponents/ quedó como cf58f02. Sin push.
+
+## 2026-11-11 21:45 — push de cf58f02 (análisis milestones/, stats/, proponents/) a origin/main (#56)
+
+## 2026-11-12 15:44 — pendiente: el grafo se traba mientras corre la física; medido en Noticias, causas y arreglos propuestos (#69)
+Medido en news.html (29.875 nodos, 132.706 enlaces, dpr 1,25), JS solamente (el raster va aparte):
+- Un paso de la simulación tarda ~20 ms (p90 35 ms). Con `MAX_TICK_BUDGET_MS = 50` un cuadro se va a 40–70 ms mientras la física corre: a ~15 fps. Quieto, dibujar cuesta 5–8 ms y va fluido. De ahí el «a veces sí, a veces no»: se traba después de cargar sin layout guardado, al arrastrar un nodo (alphaTarget 0,25 recalienta todo el mapa), al mover un control de fuerzas o al agrupar, y se suelta cuando se asienta (~200 pasos).
+- Bug: mientras la física corre, cada pan, zoom o hover dibuja dos veces por cuadro (run() llama a draw() directo y el zoom/hover agenda otro requestDraw). Medido: 2 dibujos por cuadro al hacer pan con la física andando.
+- Otros: hover sobre un nodo con muchos enlaces sube el dibujo de 6 a 13 ms; linkWidth ≥ 2 saca los enlaces del camino hairline (6 → 10 ms en JS, mucho más en raster); nodeAt recorre todos los nodos en cada pointermove (~1 ms).
+Arreglos propuestos, esperando respuesta: (1) un solo dibujo por cuadro; (2) pausar los pasos de la física mientras se hace pan o zoom; (3) bajar el tope de pasos por cuadro en mapas grandes (asienta más lento pero sin trabarse); (4) arrastrar recalienta menos en mapas grandes.
+
+## 2026-11-12 15:50 — corrección: con el raster incluido, el mapa de noticias entero cuesta ~46 ms por cuadro aun quieto (#69)
+La entrada de 15:44 midió solo JS. Forzando el raster (getImageData tras cada dibujo, ventana 1024×768, dpr 1,25): mapa entero quieto 46 ms; con la física, muestra de enlaces 34 ms + 20–40 ms de pasos; hover sobre el nodo más conectado 57 ms; zoom 1 → 36 ms; zoom 3 → 17 ms. O sea: con todo el mapa a la vista va a ~20 fps siempre, a ~10–15 con la física y a ~8 al interactuar mientras corre (doble dibujo); acercado va fluido. Coincide con el pendiente de STATUS (80–110 ms en pantalla grande). El costo es dibujar los enlaces (hasta 40.000 por cuadro quieto).
+
+## 2026-11-12 15:44 — corrección: la entrada «con el raster incluido…» es de las 15:44, no de las 15:50 (#69)
+
+## 2026-11-12 15:49 — pendiente: el lag que no depende de los nodos viene de las «figuras»: dibujarlas con suavizado "high" cuesta ~11 ms por cuadro (#69)
+El usuario aclara: se traba también en Expedientes (5.898) y con el filtro de menos de 4 años, así que no es la física. Medido en index.html, quieto, con raster (getImageData), canvas 1024×768: con figuras 14–26 ms por cuadro según el zoom; sin figuras 1,6–11 ms. Las figuras son una imagen de 102×102 celdas estirada a toda la pantalla con imageSmoothingQuality = "high"; su costo depende de los píxeles que cubren, no de los nodos, y crece con la ventana, el dpr y el zoom (acercado tapan toda la pantalla). Probado el mismo dibujo: high 18,6/14,3 ms (zoom 1/4), medium 13,3/9,2, low 7,7/4,0, sin suavizar 6,9/2,9. A la vista, low se ve igual de suave (la densidad ya viene difuminada). Por qué «a veces»: solo pesa con figuras prendidas (Expedientes agrupa por tema desde el inicio), con la ventana grande o acercado. Propuesto, esperando respuesta: pasar drawShapes a "low", y además el arreglo del doble dibujo (jev 2026-11-12 15:44).
+
+## 2026-11-12 15:53 — hecho en engine.js: un solo dibujo por cuadro y figuras con suavizado "low"; la ganancia de "low" queda en duda (#69)
+- requestDraw() no hace nada mientras la física corre (run() ya dibuja cada cuadro) y run() cancela un dibujo pendiente al arrancar. Verificado: pan + pointermove con la física andando da 1 dibujo por cuadro (antes 2); quieto, un pan dibuja una vez.
+- drawShapes pasa de imageSmoothingQuality "high" a "low". Medido otra vez con el panel visible (canvas 1280×960, dpr 1,25): high 24/20 ms (zoom 1/4), low 21/16, sin figuras 11/2,4. La ganancia es menor que la de 15:49 (high 14 → low 4).
+- Caveat del método: medí forzando el raster con getImageData después de cada dibujo, y eso puede pasar el canvas de Chrome al modo CPU, donde estirar una imagen a toda la pantalla es caro; en GPU cuesta poco. Así que el costo de las figuras puede estar inflado en mis números. No pude medir cuadros reales: con el panel del navegador oculto, requestAnimationFrame va a 1 por segundo.
+- Hipótesis para el «a veces»: si Chrome está dibujando el canvas por CPU (aceleración por hardware apagada, o caída del proceso de GPU, que deja la sesión en software hasta reiniciar), las figuras y los enlaces se vuelven caros sin importar los nodos. Pedido al usuario: probar apagando «Figuras» y mirar chrome://gpu (Canvas). Si son las figuras, arreglo posible: dibujarlas en un canvas aparte detrás, movido con transform de CSS (lo escala el compositor). Sin commitear.
+
+## 2026-11-13 01:26 — pendiente: por qué los grafos no se comportan como el de Obsidian; física de Obsidian investigada (#69)
+- Fuente: extracción de terceros del bundle de Obsidian 1.13.7 (sim.js, «Graph Worker»): github.com/Christian-Gennari/Nostos-Rebirth, PR #134 y docs/obsidian-graph-physics.md. No es oficial; Obsidian no documenta el motor.
+- Obsidian: d3-force en un Web Worker (WASM + JS), dibujo con PIXI/WebGL. forceX/forceY 0,1; forceLink distancia 250, fuerza 1/min(grado) como d3; forceManyBody −1000 (deslizador 10 al cubo), distanceMin 30, sin distanceMax (todos se repelen con todos, Barnes-Hut); forceCollide radio fijo 60, fuerza 0,5; velocityDecay 0,6; alphaDecay de d3 (300 ticks); 1 tick cada 16,7 ms con setTimeout. Arrastre: alpha y alphaTarget 0,3 en cada movimiento; al soltar, alphaTarget 0 y se asienta con inercia.
+- Nuestro motor (engine.js) difiere en: repulsión de corto alcance que se apaga en repelRadius (40 en expedientes y noticias) en vez de global; resortes con tope a 2,5 distancias; colisión por tamaño del nodo (+2) en vez de radio 60; centro 0,008 (12× menos); fricción 0,4; hasta 4 ticks por cuadro según el presupuesto (el tiempo de la animación cambia con la carga); enlaces muestreados mientras se mueve. La repulsión corta se eligió por costo (jev 2026-11-11 10:14).
+- Los datos también pesan: expedientes y noticias son grafos k-vecinos (5–6 por nodo), sin hubs ni huérfanos, y el tamaño sale de la cobertura, no del grado. Aun con la física de Obsidian darían una malla pareja.
+- Propuesto, esperando respuesta: un modo «Obsidian» en el motor (repulsión global Barnes-Hut en un Worker, colisión fija, sin tope en los resortes, tick a tiempo fijo), probado primero en Expedientes y Diputados.
+
+## 2026-11-13 01:30 — decisión: sí al modo «Obsidian» en el motor de los grafos; pendiente: sus detalles (#69)
+- El usuario aprueba hacer el modo «Obsidian» propuesto en la entrada de las 01:26. Antes de escribir código quedan por acordar: dónde se elige y con qué valor arranca cada pestaña; Worker o hilo principal; deslizadores de Obsidian tal cual o los nuestros; escala de distancias frente al tamaño de los nodos; tamaño por grado; qué pasa con «Separación entre grupos» y «Juntar los grupos»; el mapa recordado; posición al cambiar de modo; y cómo se verifica sin abrir los grafos durante la evaluación a ciegas.
+- No se pudo medir d3.forceManyBody con los tamaños nuestros: bajar d3 al scratchpad para correrlo en node fue denegado. Queda la medición vieja (~100 ms por tick con 6.000 nodos apretados, comentario de engine.js).
+
+## 2026-11-13 01:44 — modo «Obsidian» en los grafos: hecho y verificado en Expedientes y Diputados, sin commitear (#69)
+- Decisiones del usuario: «sí, todas» las recomendaciones de la entrada de las 01:30 (selector por pestaña que arranca en «Propio» y se recuerda; deslizadores de Obsidian con sus rangos más fricción; escala fija; tamaño por enlaces como opción aparte; sin «Separación entre grupos», con «Juntar los grupos»; mapa recordado por modo; parte de las posiciones actuales; verificar solo Expedientes por tema y Diputados).
+- engine.js: «Modelo» Propio / Obsidian. En Obsidian la física corre en un Web Worker (Blob con d3 de cdnjs + forceGroup): forceX/Y, forceLink de d3, forceManyBody −(deslizador³), distanceMin 30, forceCollide 60 a 0,5 (más grande solo si el nodo lo es), velocityDecay 0,6, decaimiento de d3, un tick cada 16,7 ms; el arrastre deja alpha y alphaTarget en 0,3. Todo en un mundo 3 veces más chico (largos / 3, carga / 9): misma forma, y los umbrales de zoom de nombres y enlaces siguen sirviendo. Mapa recordado con sufijo «:obsidian». «Tamaño por cantidad de enlaces» en Apariencia (√(enlaces+1), misma media). news.js: alphaDecay como ajuste y el modo en la clave de los mapas de la visita.
+- Por qué el Worker: medido en el hilo principal, 43 ms por tick con los 5.898 expedientes (repulsión 31, colisión 11). En el Worker la página no se traba, pero la física sigue lenta: ~10 ticks/s al empezar y ~13–30 s hasta asentarse (la máquina estaba lenta: el tick propio dio 17 ms contra 5 ms en la medición vieja). Diputados (57 nodos): 40 ticks/s, 7 s. Noticias (29.875) no se probó en modo Obsidian: va a ser mucho más lenta.
+- Verificado: el disco al estilo Obsidian con los temas en sectores (Expedientes, color por tema) y bloques separados sin fotos encimadas (Diputados); cambio de modo y deslizadores; arrastre (los vecinos siguen, al soltar se asienta); recuerdo del modo; Noticias, Partidos y Co-mención cargan sin errores en modo propio. Error encontrado y arreglado: el Worker terminaba si solo se subía alphaTarget (inicio del arrastre). Los dos modos quedaron en «Propio» al terminar la prueba.
+- Caveat: los valores de Obsidian vienen de una extracción de terceros, no de documentación oficial; «velocityDecay 0,6» se tomó con la semántica de d3.

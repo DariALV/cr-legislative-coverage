@@ -452,3 +452,12 @@ Committed everything left untracked so the other computer has no differences: ev
 - test100 (results/jev/test100_explicit/): 15 de 101 noticias nombran expedientes; 34 nombrados, 32 ya en el top-50 y 2 agregados: 25340 (rank 81, nota de Semanario) y 25420 (rank 89). Las 5.050 filas del top-50 quedan idénticas.
 - Corrección a la entrada anterior: eran 2 fuera, no 3. El caso 87daced5→23722 era «₡23.722 millones», un falso hit de la regex rápida.
 - La corrida test100 de Jev no se repite: sus candidatos son los de antes.
+
+## 2026-11-11 18:35 — ver future.md: lazo Jev ↔ GA; en el corpus, 71 % de los pares con match está en el top-10 y 4,5 % fuera del top-50 (solo por número)
+
+## 2026-11-11 18:51 — ver future.md: alternativas para subir el recall; el 57 % de los pares con match sin número es de expedientes citados por número en una noticia anterior
+
+## 2026-11-11 20:43 — decisión: #68 se cierra con las corridas del GA; el ranker por gradiente (A/B/C) pasa a future.md (#68)
+
+- El usuario elige no correr A/B/C (1 neurona / 12→16→1 / 12→32→16→1) por el tiempo hasta el informe. Se cierra #68 con un comentario: corridas excl15 semillas 7 y 100 (CV @50 0,954, @100 0,970, base 0,751 / 0,809), noticias-agenda aparte (0,80–0,84 @100), barrido de K (results/evolution/k_sweep.csv) y la diferencia con el issue (no se comparó contra un ranker por gradiente).
+- Detalle de la general: general.md 2026-11-11 20:43.

@@ -171,6 +171,16 @@ Commit `feature: status file and per-topic claude logs` (sin issue: no hay ningu
 - Commits: grafos (#69), visor de respuestas de Jev (#69), modelo de costos (#43), logs + CLAUDE.md (#22 #56). `databases/private_corpus.backup_*.db` agregado al .gitignore.
 - Fuera de git a propósito: `results/jev/corpus/` y `results/jev/jev_corpus.zip` (decisión pendiente, STATUS «Para retomar» 3).
 
+## 2026-11-11 15:55 — pendiente: repaso de los milestones 1–5; cerrables ya #27 #28 #33 #34, lo demás espera la revisión de la muestra (#29), un baseline (#36) y decisiones de alcance
+
+- Pedido del usuario: qué falta para cerrar los milestones 1–5. Hay 19 issues abiertos (M1 2, M2 2, M3 5, M4 6, M5 4). No se cerró ni se comentó nada.
+- Cerrables ya, con comentario de cierre: #27 (100 positivas; el issue pedía ~50), #28 (200 negativas), #33 (top-50 ∪ nombrados, corrido en el corpus) y #34 (puerta de Jev; respuestas crudas en answers.jsonl y modelo `jev-1.14.0` en run.json; sin temperatura y con varios expedientes por noticia, distinto de lo que pide el issue).
+- Esperan la revisión humana de la muestra (#29): #39 y #41 (repetir `run_jev_eval.py` con el CSV final, sin costo de Jev), y los números de #31 y #42. Cabos sueltos de #29: reclasificar «Anunciado sin expediente» con expediente, la decisión del trámite concluido y la cola de 15 de Delfino (nunca hecha).
+- Sin hacer: #35 (extracción directa), #36 (baseline; solo existe la regex de `explicit_mentions.py`, usada como fuente de candidatos), #37 (falta el baseline en la muestra), #40 (depende de #36), #68 (comentario con las corridas excl15 y la comparación con el ranker por gradiente, A/B/C sin decidir) y las docs #18 #31 #42 (en docs/ solo están bills.md y asamblea.md).
+- #16, medido en la base: la data line de El Mundo sigue en 2.749 de 3.388; hay 64 copias con contenido idéntico (57 de Nación) y 80 páginas -2 de Delfino. En Jev pesan casi nada: 1 + 5 de las 3.662 noticias con match (6 de 6.329 pares). `extraction_status` es solo Success/Partial en todos los medios.
+- #66: falta marcar los expedientes vivos en el período (la regla ya existe como `alive` en `feature_builder.py`) y decidir los 255 «in progress» con paso ARCHIVO. #19: Delfino sigue dando los votos (9.288 votaciones), 5.399 noticias y los 1.425 enlaces de oro; falta leer sus términos y decidir qué se publica.
+- Recomendaciones (sin decidir): cerrar ya los cuatro; #35 como not planned; baseline mínimo (número + nombre oficial) en las 300, local y gratis, para #36 #37 #40; #68 solo con la variante (A) o pasar la comparación a future.md; #30 si Andrik puede, si no not planned con la limitación; #16 documentar sin limpiar (Jev y los embeddings ya corrieron sobre el texto crudo) y cerrar; docs nuevas en docs/, en inglés como bills.md.
+
 ## 2026-11-11 18:14 — hallazgo: las carpetas V1 sirven para el sitio, pero falta el exportador (#48–#51)
 
 Revisión en la máquina del usuario de `databasesV1/`, `rawV1/` y `resultsV1/` contra el contrato de `site/src/lib/types.ts`. Solo lectura, sin cambios de código.
@@ -232,6 +242,39 @@ El usuario eligió la opción A de la entrada anterior y pidió commitear en la 
 - Formulario de reporte y licencia desactivados hasta que existan: `REPORT_FORM_URL` y `DATA_LICENSE` valen `null` en `site/src/lib/config.ts`, y con eso se ocultan el enlace «¿Este vínculo está mal?», sus menciones (ficha del expediente y metodología) y la línea de licencia de la página de datos. Para reactivar basta poner el valor.
 - Revisión de privacidad antes del commit: `site/src/data/` solo trae campos públicos (sin `content`, `description` ni autor); las carpetas V1 están ignoradas; quedan fuera `.vscode/` y `site/.vscode/settings.json`.
 - Issues leídos por la API: #48 hosting, #49 consulta por expediente, #50 por medio y fecha, #51 limitaciones. Ninguno se cierra todavía: #48 cierra cuando el sitio esté en línea.
+
+## 2026-11-11 20:43 — decisión: cierre parcial de los milestones 1–5; se cierran #16 #33 #34 y #35 (not planned), #68 pasa A/B/C a future.md, docs en docs/ en inglés
+
+- Pedido del usuario: resolver lo pendiente de los milestones. Se le preguntó sobre lo listado en la entrada de las 15:55.
+- Cerrar ya, con comentario de cierre: #33 (top-50 ∪ nombrados), #34 (puerta de Jev, con la diferencia: sin temperatura y varios expedientes por noticia), #35 como not planned y #16 (documentar sin limpiar y cerrar). **#27 y #28 no se eligieron**: quedan abiertos.
+- #68: las variantes por gradiente A/B/C no se corren; pasan a future.md y #68 se cierra con las corridas del GA (excl15, semillas 7 y 100). Ver ranker.md y future.md.
+- Docs #18 #31 #42: docs/news.md, docs/sample.md y docs/matching.md, en inglés como bills.md. #31 y #42 llevan números que dependen de la evaluación a ciegas.
+- Baseline (#36 #37 #40): el usuario no entendió la pregunta; se le explica y queda pendiente.
+
+## 2026-11-11 20:51 — ver jev.md: cerrados #36 #37 #40 con el baseline por número medido en el corpus
+
+## 2026-11-11 21:08 — ver data.md: docs/news.md escrita para cerrar #18
+
+## 2026-11-11 21:44 — pull sin conflictos en el código; conflictos solo en STATUS.md y general.md sin commitear, resueltos juntando las dos partes
+- Entraron 5 commits del sitio (PR #70 desde siteV1, babdaa4). El commit local del análisis se rebasó encima (cf58f02). Los cambios locales sin commitear se guardaron con stash; al volver chocaron STATUS.md (la línea de «Última actualización») y general.md (entradas agregadas en las dos máquinas). Se juntaron las dos partes, con las entradas de general.md en orden de hora. Copia previa en el scratchpad de la sesión. El stash queda guardado hasta confirmar.
+
+## 2026-11-11 21:46 — hallazgo: el deploy del sitio falló porque GitHub Pages no está activado; el build sí pasa (#48)
+- El push a main del PR #70 disparó «Deploy to GitHub Pages» (run 43142849673): el build de Astro terminó, y falló `actions/deploy-pages` con «Creating Pages deployment failed / Not Found». La API de Pages del repo responde 404: Pages no está activado.
+- Falta que el dueño del repo active Settings → Pages → Source «GitHub Actions» y vuelva a correr el workflow (Re-run, o `gh run rerun 43142849673`).
+- Ojo con los logs compartidos: las entradas de la otra máquina (18:14–20:22) llaman «el usuario» a quien trabajaba allá y «el compañero» al dueño del repo; en esta máquina es al revés. Revisado `site/src/data/news.json`: solo id, título, medio, tipo, sección, fecha, url y expedientes; sin texto.
+
+## 2026-11-11 21:54 — sitio publicado en https://darialv.github.io/cr-legislative-coverage/ (#48)
+- Pages ya estaba activado (build_type workflow). Se volvió a correr el run 43142849673: build 24 s, deploy 11 s, ambos bien. Inicio, metodología, datos y el expediente 24290 responden 200 (el 24290 pesa 245 KB).
+
+## 2026-11-11 22:05 — cerrado #48 con comentario: Astro estático en GitHub Pages desde este repo (#48)
+- Comentario con la decisión, la URL y los caveats: site/src/data/ commiteado (solo campos públicos), formulario y licencia ocultos hasta que existan, primer deploy fallido por Pages sin activar.
+
+## 2026-11-11 22:08 — pendiente: qué va al corpus público y qué queda privado; inventario de tablas, resultados de Jev y cifras (#44 #45 #19)
+- Inventario: la base privada tiene 18 tablas; `databases/public_corpus.db` está vacía (0 bytes). Lo público hoy es solo lo que `export_public.py` deja en el sitio.
+- Recomendación de Claude: (1) del SIL (expedientes, pasos, descriptores, proponentes, leyes, diputados, órganos) todo público, CC BY 4.0; (2) noticias: solo metadatos (id, url, medio, título, fecha, sección, autor), de las 29.875, sin `content` ni `description`; (3) vínculos: los 6.329 pares con explicit/implicit y el nivel (mención/sustantiva) marcado, más los 1.425 enlaces de Delfino; (4) detalle de Jev en tabla larga (news_id, bill, question, option, probability) sin `headline_misleading` ni `author_judges` (valoran al medio, fuera del alcance del entregable 1); (5) candidates.csv, gate.csv completo y answers.jsonl en un zip aparte, no en la base; (6) privado siempre: cuerpos, raw/, embeddings, fotos, notas del usuario en human_eval, evidencias/comentarios de la muestra.
+- Choque detectado: el sitio ya publica votos de Delfino (617 votaciones) y #19 (términos de Delfino) sigue abierto.
+- Revisado: answers.jsonl no trae texto de noticias ni llaves (solo nombre de la llave, headers y request id). La exposición de motivos suma ~70 MB de texto oficial del SIL.
+- Esperando respuesta del usuario sobre 6 decisiones (ver STATUS, «corpus público»).
 
 ## 2026-11-13 10:53 — pendiente: mostrar el texto del proyecto en la página de cada expediente (#49)
 
@@ -318,3 +361,17 @@ El usuario aprobó la opción A de la entrada de 10:53 y pidió un enlace a la f
 ## 2026-11-13 19:04 — commits de la ficha sin recuadros; los del texto, votaciones y evaluación ya están en origin/main (#49)
 
 - El usuario subió 9842982, d3b81db y 544e96e (main al día con origin). La ficha sin recuadros va en un commit propio más el de logs.
+
+## 2026-11-14 12:09 — pull de main: entraron 5 commits del sitio (#49 #52); STATUS.md y general.md juntados a mano
+- Entraron 9842982, d3b81db, 544e96e, 57169dc y 6fa6403 (texto base en la ficha, votaciones por fracción, línea de tiempo, página de evaluación, ficha sin recuadros; ~2.200 archivos, casi todos site/public/textos/ y site/src/data/bills/). Fast-forward.
+- Ningún archivo de código chocaba con lo local. Solo STATUS.md y general.md: se copiaron al scratchpad, se volvieron a HEAD, pull, y se juntaron: general.md = local + entradas del 13 nov de la otra máquina al final (en orden de hora); STATUS = local + los párrafos del sitio del 13 nov bajo «Hosting».
+
+## 2026-11-14 12:11 — pendiente: división en commits de lo que falta commitear (tema común, evaluación a ciegas, docs/news.md, logs)
+- Propuesta en orden: (1) docs/news.md (#18, ¿closes?); (2) tema común + servidor único + launch.json + explorador, réplicas, grafos y visor de Jev en el tema (#67 #69); va junto el modo «Obsidian» y el arreglo de lag porque engine.js y controls.js mezclan las tres cosas; antes: borrar theme/_compare.html y agregar el OFL.txt de Poppins; (3) evaluación a ciegas: config.py, run_human_eval.py, run_claude_eval.py, los tres de tools/sample_tools/, private_visuals/jev_eval/ (necesita /theme/, por eso va después de 2) (#39 #30); (4) logs.
+- Revisado: ningún archivo nuevo trae texto de noticias ni llaves. human_eval/answers.json lleva 23 notas del usuario (opiniones cortas sobre cada noticia, nombran diputados) y adjudication_pilot.csv razones de arbitraje; el repo es público. Recomendación: commitear ahora draw.csv y draw_v1.csv y dejar answers y analysis/ para cuando cierre la evaluación (además el usuario no debe ver las de Claude antes de terminar).
+- Fuera: jev_data.py y jev_dataclasses.py (borradores sin uso, la clase es la plantilla «inventory» de la doc de Python; de quién son, sin saber), results/jev/corpus/ y jev_corpus.zip (decisión pendiente de «Para retomar» 3).
+
+## 2026-11-14 13:21 — decisión y commits: se dejan fuera los borradores jev_data.py/jev_dataclasses.py y las respuestas de la evaluación; 3 commits más logs, sin push
+- El usuario aprobó la división de 12:11 y dejar fuera jev_data.py, jev_dataclasses.py y las respuestas de la evaluación a ciegas (human_eval/answers.json, analysis/ y claude_eval/) hasta que cierre.
+- Commits: 3493b8a docs/news.md (#18, sin `closes`: no se confirmó si cierra el issue); ddb4ac2 tema común + servidor único + páginas locales con modo «Obsidian» y arreglo de lag (#67 #69; 50 archivos); 5ecc8eb evaluación a ciegas con draw.csv y draw_v1.csv (#39 #30); y el de logs.
+- Quedó pendiente: el OFL.txt de Poppins (descarga sin aprobar; el README de fonts ya nombra la licencia) y theme/_compare.html, que quedó fuera del commit sin borrarse. Nada pusheado.
