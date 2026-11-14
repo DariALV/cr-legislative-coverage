@@ -20,8 +20,9 @@ import argparse
 import importlib.util
 import json
 import mimetypes
+import socket
 import threading
-from http.server import SimpleHTTPRequestHandler
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -33,6 +34,7 @@ mimetypes.add_type("font/woff2", ".woff2")
 EXPLORER = "/db_explorer/"
 EVAL = "/jev_eval/"
 HOME = "/db_explorer/"   # where http://localhost:8766/ goes
+MAX_BODY_BYTES = 2_000_000   # larger evaluation posts are not read
 
 
 def load(name, path):
@@ -133,7 +135,7 @@ class Handler(SimpleHTTPRequestHandler):
       return self.send_json({"error": "not found"}, 404)
     length = int(self.headers.get("Content-Length") or 0)
     # Too large: not read; EvalApp.post answers 400 for the empty body.
-    body = self.rfile.read(length) if 0 < length <= 2_000_000 else b""
+    body = self.rfile.read(length) if 0 < length <= MAX_BODY_BYTES else b""
     status, data = self.evaluation_call(lambda app: app.post(path.removeprefix(EVAL[:-1]), body))
     return self.send_json(data, status)
 
@@ -143,6 +145,20 @@ class Handler(SimpleHTTPRequestHandler):
     except Exception as error:   # e.g. the draw or the corpus is missing; the other pages keep working
       return 503, {"error": f"la evaluación no pudo cargar: {type(error).__name__}: {error}"}
     return call(app)
+
+
+class Server(ThreadingHTTPServer):
+  """Refuses to start if the port is taken.
+
+  http.server sets SO_REUSEADDR, which on Windows lets a second process bind the same port while an
+  old server (with old code) keeps answering. Exclusive bind avoids that.
+  """
+  allow_reuse_address = False
+
+  def server_bind(self):
+    if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):  # Windows only
+      self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
+    super().server_bind()
 
 
 def main():
@@ -158,7 +174,7 @@ def main():
   explorer.DB_PATH = args.db.resolve()
   Handler.evaluation = Evaluation(args.eval_set, args.eval_limit or None, args.answers)
   try:
-    server = explorer.Server(("127.0.0.1", args.port), Handler)   # exclusive bind: fails if the port is taken
+    server = Server(("127.0.0.1", args.port), Handler)   # exclusive bind: fails if the port is taken
   except OSError:
     raise SystemExit(f"El puerto {args.port} ya está en uso. Cerrá el otro servidor o usá --port <otro>.")
   print(f"Páginas locales en http://localhost:{args.port}/  (base del explorador: {explorer.DB_PATH})", flush=True)

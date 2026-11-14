@@ -1071,7 +1071,7 @@ function showFatal(message) {
   layout.replaceChildren(h("div", { class: "fatal" },
     h("h1", {}, "No se pudo abrir la evaluación"),
     h("p", {}, message),
-    h("p", {}, "Revisá que el servidor esté corriendo: ", h("code", {}, "python private_visuals/jev_eval/server.py"))));
+    h("p", {}, "Revisá que el servidor esté corriendo: ", h("code", {}, "python private_visuals/server.py"))));
 }
 
 init();

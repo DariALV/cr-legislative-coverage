@@ -2,13 +2,12 @@
 // right after it. Optional attributes on the aside:
 //   data-subnav="id"         empty <nav id="id" class="nav-sub"> under the current page, filled by the page itself
 //   data-card-title / -text  small status card above the theme picker
-// Every page is served by private_visuals/server.py (8766, or another --port), so links stay on the same origin. The
-// old standalone servers of the explorer (8765) and the blind evaluation (8770) still work; from them, links go to 8766.
+// Every page is served by private_visuals/server.py (8766, or another --port), so links stay on the same origin.
 (() => {
   const side = document.currentScript.previousElementSibling;
   if (!side || !side.classList.contains("side")) return;
   const here = side.dataset.page;
-  const visuals = ["8765", "8770"].includes(location.port) ? "http://localhost:8766" : location.origin;
+  const visuals = location.origin;
 
   const ICONS = {
     explorer: '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',

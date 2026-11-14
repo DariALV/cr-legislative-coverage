@@ -1,14 +1,13 @@
 """Local read-only explorer for private_corpus.db.
 
-Serves the static page in this folder plus a small JSON API on top of SQLite.
-Standard library only. Run from the repo root or anywhere:
+A small JSON API on top of SQLite for the page in this folder. Standard library only. It has no server of its own:
+private_visuals/server.py serves the page and mounts api() and photo() below under /db_explorer/:
 
-    python private_visuals/db_explorer/server.py [--port 8765] [--db path/to/db]
+    python private_visuals/server.py [--port 8766] [--db path/to/db]
 
-and open http://localhost:8765. Usually it is served together with the other local pages by private_visuals/server.py,
-at http://localhost:8766/db_explorer/, which mounts api() and photo() below under /db_explorer/.
+and open http://localhost:8766/db_explorer/.
 
-Endpoints (all GET, JSON):
+Endpoints (all GET, JSON, relative to /db_explorer/):
     /api/bills, /api/bill/<n>              bills: compact index (filtered in the browser) and detail
     /api/deputies, /api/deputy/<person_id> deputies: one entry per person (all their terms)
     /api/organs, /api/organ/<organ_code>   organs (committees, Plenario, Directorio...)
@@ -20,26 +19,17 @@ Endpoints (all GET, JSON):
 Every person in the JSON carries "photo" (its photos/ URL, relative to the page, or null) and "ini" (initials of first name and first
 surname, shown when there is no photo).
 """
-import argparse
 import json
-import mimetypes
-import socket
 import sqlite3
 import unicodedata
 from functools import lru_cache
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 DEFAULT_DB = ROOT / "databases" / "private_corpus.db"
 PHOTOS_DIR = ROOT / "raw" / "images" / "delfino" / "deputies"
-# The Windows registry may give other types to these, and browsers then refuse modules and fonts.
-mimetypes.add_type("text/javascript", ".js")
-mimetypes.add_type("font/woff2", ".woff2")
-# Shared look of the local pages (tokens, fonts, sidebar), served under /theme/.
-THEME_DIR = HERE.parent / "theme"
 # Words skipped when taking initials ("DE LA CRUZ" -> "C").
 NAME_PARTICLES = {"DE", "DEL", "LA", "LAS", "LOS", "Y"}
 
@@ -488,100 +478,3 @@ def photo(name):
         return None
     ctype = "image/jpeg" if name.lower().endswith((".jpg", ".jpeg")) else "image/png"
     return (PHOTOS_DIR / name).read_bytes(), ctype
-
-
-# ---------------------------------------------------------------- http (standalone server)
-
-class Handler(SimpleHTTPRequestHandler):
-    def __init__(self, *a, **kw):
-        super().__init__(*a, directory=str(HERE), **kw)
-
-    def log_message(self, fmt, *args):
-        pass  # keep the terminal quiet
-
-    def translate_path(self, path):
-        # /theme/... comes from private_visuals/theme; the parent class already drops ".." and drive parts.
-        if urlparse(path).path.startswith("/theme/"):
-            inside = Path(super().translate_path(path)).relative_to(HERE / "theme")
-            return str(THEME_DIR / inside)
-        return super().translate_path(path)
-
-    def send_json(self, body, status=200):
-        if not isinstance(body, bytes):
-            body = json.dumps(body, ensure_ascii=False).encode("utf-8")
-        self.send_response(status)
-        self.send_header("Content-Type", "application/json; charset=utf-8")
-        self.send_header("Content-Length", str(len(body)))
-        self.send_header("Cache-Control", "no-store")
-        self.end_headers()
-        self.wfile.write(body)
-
-    def send_photo(self, name):
-        found = photo(name)
-        if not found:
-            return self.send_error(404)
-        body, ctype = found
-        self.send_response(200)
-        self.send_header("Content-Type", ctype)
-        self.send_header("Content-Length", str(len(body)))
-        self.end_headers()
-        self.wfile.write(body)
-
-    def end_headers(self):
-        # Static files too: no caching, so edits to the page show up on reload.
-        if self.path.startswith("/photos/"):
-            self.send_header("Cache-Control", "max-age=86400")
-        elif not self.path.startswith("/api/"):
-            self.send_header("Cache-Control", "no-store")
-        super().end_headers()
-
-    def do_GET(self):
-        url = urlparse(self.path)
-        path = url.path
-        if path.startswith("/photos/"):
-            return self.send_photo(path.removeprefix("/photos/"))
-        if not path.startswith("/api/"):
-            if path.endswith(".py"):
-                return self.send_error(404)
-            return super().do_GET()
-        status, body = api(path, url.query)
-        return self.send_json(body, status)
-
-
-class Server(ThreadingHTTPServer):
-    """Refuses to start if the port is taken.
-
-    http.server sets SO_REUSEADDR, which on Windows lets a second process bind the same port while an
-    old server (with old code) keeps answering. Exclusive bind avoids that.
-    """
-    allow_reuse_address = False
-
-    def server_bind(self):
-        if hasattr(socket, "SO_EXCLUSIVEADDRUSE"):  # Windows only
-            self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_EXCLUSIVEADDRUSE, 1)
-        super().server_bind()
-
-
-def main():
-    global DB_PATH
-    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--port", type=int, default=8765)
-    ap.add_argument("--db", type=Path, default=DEFAULT_DB)
-    args = ap.parse_args()
-    DB_PATH = args.db.resolve()
-    if not DB_PATH.exists():
-        raise SystemExit(f"No existe la base: {DB_PATH}")
-    try:
-        srv = Server(("127.0.0.1", args.port), Handler)
-    except OSError:
-        raise SystemExit(f"El puerto {args.port} ya está en uso (¿otro explorador corriendo?). "
-                         f"Cerralo o usá --port <otro>.")
-    print(f"Explorador en http://localhost:{args.port}  (base: {DB_PATH}, solo lectura)")
-    try:
-        srv.serve_forever()
-    except KeyboardInterrupt:
-        pass
-
-
-if __name__ == "__main__":
-    main()

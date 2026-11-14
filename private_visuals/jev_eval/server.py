@@ -1,14 +1,16 @@
 """Local page to answer Jev's questions by hand, without seeing Jev's answers (blind evaluation of Jev).
 
-Serves the static page in this folder plus a small JSON API. The news and the bill cards come from JevContext, so they
-are exactly what Jev saw: the content cut at JEV_MAX_NEWS_CHARS and the same short card per bill. Nothing from Jev's
-answers reaches the page; the candidates keep the ranker's order but go without scores or how they were found.
+The JSON API of the page in this folder. The news and the bill cards come from JevContext, so they are exactly what
+Jev saw: the content cut at JEV_MAX_NEWS_CHARS and the same short card per bill. Nothing from Jev's answers reaches the
+page; the candidates keep the ranker's order but go without scores or how they were found.
 Answers are saved to results/jev/human_eval/answers.json: ids, options, notes and timings, no news text.
 
-    python private_visuals/jev_eval/server.py [--port 8770] [--set pilot|all] [--limit N] [--answers path]
+It has no server of its own: private_visuals/server.py serves the page and mounts EvalApp.get() and EvalApp.post()
+under /jev_eval/:
 
-Usually it is served together with the other local pages by private_visuals/server.py, at
-http://localhost:8766/jev_eval/, which mounts EvalApp.get() and EvalApp.post() under /jev_eval/.
+    python private_visuals/server.py [--port 8766] [--eval-set pilot|all] [--eval-limit N] [--answers path]
+
+and open http://localhost:8766/jev_eval/.
 
 Endpoints (the page calls them relative to itself, api/...):
     GET  /api/session          the draw in order, the questions, the deputies with their party, the saved answers
@@ -17,14 +19,12 @@ Endpoints (the page calls them relative to itself, api/...):
     GET  /api/card/<number>    the card of one bill
     POST /api/answers/<id>     saves the answers of one news (the entry is replaced whole)
 """
-import argparse
 import csv
 import json
 import os
 import sys
 import threading
 from datetime import datetime, timezone
-from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -38,7 +38,6 @@ from tools.llm_tools.jev_context import JevContext
 DRAW_PATH = ROOT / Config.HUMAN_EVAL_DIR / "draw.csv"
 DEFAULT_ANSWERS = ROOT / Config.HUMAN_EVAL_DIR / "answers.json"
 CORPUS_DIR = ROOT / Config.JEV_RESULTS_DIR / "corpus"
-MAX_BODY_BYTES = 2_000_000
 
 class AnswerStore:
   """The answers file, {"news": {news_id: entry}}, rewritten whole and atomically on every save."""
@@ -137,62 +136,3 @@ class EvalApp:
     if not isinstance(entry, dict):
       return 400, {"error": "the answers must be an object"}
     return 200, {"ok": True, "saved_at": self.store.save(news_id, entry)}
-
-def read_body(handler) -> bytes | None:
-  """The request body, or None when it is missing or larger than MAX_BODY_BYTES (then it is not read)."""
-  length = int(handler.headers.get("Content-Length") or 0)
-  if length <= 0 or length > MAX_BODY_BYTES:
-    return None
-  return handler.rfile.read(length)
-
-class Handler(SimpleHTTPRequestHandler):
-  app: EvalApp
-
-  def __init__(self, *args, **kwargs):
-    super().__init__(*args, directory = str(HERE), **kwargs)
-
-  def end_headers(self):
-    self.send_header("Cache-Control", "no-store")   # always the latest page after an edit, no Ctrl+F5
-    super().end_headers()
-
-  def log_request(self, code = "-", size = "-"):
-    if not str(code).startswith(("2", "3")):
-      super().log_request(code, size)
-
-  def do_GET(self):
-    path = self.path.split("?", 1)[0]
-    if path.startswith("/api/"):
-      status, data = self.app.get(path)
-      return self.send_json(data, status)
-    if path.endswith(".py"):
-      return self.send_error(404)
-    if path == "/":
-      self.path = "/index.html"
-    return super().do_GET()
-
-  def do_POST(self):
-    status, data = self.app.post(self.path.split("?", 1)[0], read_body(self) or b"")
-    return self.send_json(data, status)
-
-  def send_json(self, data, status: int = 200):
-    body = json.dumps(data, ensure_ascii = False).encode("utf-8")
-    self.send_response(status)
-    self.send_header("Content-Type", "application/json; charset=utf-8")
-    self.send_header("Content-Length", str(len(body)))
-    self.end_headers()
-    self.wfile.write(body)
-
-if __name__ == "__main__":
-  parser = argparse.ArgumentParser(description = "Local page to answer Jev's questions by hand, without its answers.")
-  parser.add_argument("--port", type = int, default = 8770)
-  parser.add_argument("--set", choices = ["pilot", "all"], default = "pilot",
-                      help = "only the pilot news, or the whole draw")
-  parser.add_argument("--limit", type = int, default = None,
-                      help = "only the first N news of the set (the draw is balanced at 30, so --set all --limit 30)")
-  parser.add_argument("--answers", type = Path, default = DEFAULT_ANSWERS, help = "where the answers are saved")
-  args = parser.parse_args()
-  Handler.app = EvalApp(args.set, args.answers.resolve(), args.limit)
-  server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
-  print(f"{len(Handler.app.items)} news ({args.set}) on http://localhost:{args.port}  answers -> {args.answers}",
-        flush = True)
-  server.serve_forever()
