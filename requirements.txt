@@ -1,6 +1,8 @@
 # PyTorch's CUDA builds live on their own index; without it pip installs the CPU-only torch on Windows.
-# Check on the GPU machine: python -c "import torch; print(torch.cuda.is_available())"
---extra-index-url https://download.pytorch.org/whl/cu126
+# cu128 is the oldest build with Blackwell GPUs (RTX 50xx) and runs on drivers < 580 (cu130 needs 580+).
+# Check on the GPU machine: python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
+# Use Python 3.13: some packages (pyyaml, CUDA torch) have no wheels for 3.15 yet.
+--extra-index-url https://download.pytorch.org/whl/cu128
 beautifulsoup4>=4.12
 lxml>=5.0
 networkx>=3.0   # Louvain topics for the bills graph (private_visuals/graph)
@@ -9,7 +11,7 @@ python-dotenv>=1.0
 requests>=2.32
 rich>=13.0
 sentence-transformers>=3.0
-torch>=2.6
+torch>=2.6,<2.12   # the cu128 index stops at 2.11; newer versions come CPU-only from PyPI
 transformers>=4.51   # Qwen3-Embedding needs 4.51+
 typesafe-sdk>=0.7.5
 urllib3>=2.0
