@@ -46,29 +46,18 @@ const events: Ev[] = [
 ].sort((a, b) => a.day - b.day || (a.kind === 'vote' ? 1 : -1));
 const numbered = events.map((e, i) => ({ ...e, n: i + 1 }));
 
-/* ---- chart geometry ---- */
-const W = 760, H = 230;
-const M = { l: 34, r: 12, t: 52, b: 28 };
-const iw = W - M.l - M.r, ih = H - M.t - M.b;
+/* ---- chart geometry: news above the axis, procedure events below it ---- */
+const W = 760;
+const M = { l: 12, r: 12, t: 18 };
+const BARS_H = 84;
+const AXIS_Y = M.t + BARS_H;
+const MARKER_Y = [AXIS_Y + 44, AXIS_Y + 66];
+const iw = W - M.l - M.r;
 const span = nWeeks * 7;
 const x = (d: number) => M.l + ((d - w0) / span) * iw;
 const band = iw / nWeeks;
-const barW = Math.min(24, band - 2);
-
-function niceStep(max: number) {
-  for (const s of [1, 2, 5, 10, 20, 25, 50, 100, 200, 500]) if (max / s <= 4) return s;
-  return 1000;
-}
-const step = niceStep(Math.max(1, maxCount));
-const yMax = Math.max(step, Math.ceil(Math.max(1, maxCount) / step) * step);
-const y = (v: number) => M.t + ih - (v / yMax) * ih;
-const yTicks = Array.from({ length: yMax / step + 1 }, (_, i) => i * step);
-
-function barPath(cx: number, v: number) {
-  const x0 = cx - barW / 2, x1 = cx + barW / 2, yb = y(0), yt = y(v);
-  const r = Math.min(4, yb - yt, barW / 2);
-  return `M${x0},${yb}V${yt + r}Q${x0},${yt} ${x0 + r},${yt}H${x1 - r}Q${x1},${yt} ${x1},${yt + r}V${yb}Z`;
-}
+const barW = Math.min(8, band - 2);
+const y = (v: number) => AXIS_Y - 4 - (v / Math.max(1, maxCount)) * (BARS_H - 4);
 
 const months: { day: number; label: string }[] = [];
 {
@@ -81,20 +70,41 @@ const months: { day: number; label: string }[] = [];
   }
 }
 
-// Markers for events inside the period; stagger when they collide.
-const markers: { n: number; kind: Ev['kind']; cx: number; row: number; title: string }[] = [];
-for (const e of numbered.filter((e) => inPeriod(e.day))) {
-  const cx = x(e.day + 0.5);
-  const prev = markers.filter((m) => Math.abs(m.cx - cx) < 20);
-  const row = prev.length ? (Math.max(...prev.map((m) => m.row)) + 1) % 2 : 0;
-  markers.push({ n: e.n, kind: e.kind, cx, row, title: `${e.n}. ${formatDate(e.date)} · ${e.title}` });
+// Markers for events inside the period. Events that fall on (almost) the same
+// spot share one marker ("3–6"); neighbouring markers alternate between two rows.
+const markers: { label: string; kind: Ev['kind']; cx: number; row: number; w: number; title: string }[] = [];
+{
+  const clusters: (typeof numbered)[] = [];
+  for (const e of numbered.filter((e) => inPeriod(e.day))) {
+    const last = clusters.at(-1);
+    if (last && x(e.day + 0.5) - x(last[0].day + 0.5) < 14) last.push(e);
+    else clusters.push([e]);
+  }
+  for (const c of clusters) {
+    const cx = (x(c[0].day + 0.5) + x(c.at(-1)!.day + 0.5)) / 2;
+    const label = c.length === 1 ? String(c[0].n) : `${c[0].n}–${c.at(-1)!.n}`;
+    const w = Math.max(16, label.length * 6 + 8);
+    const prev = markers.at(-1);
+    const row = prev && cx - prev.cx < (w + prev.w) / 2 + 4 ? (prev.row + 1) % 2 : 0;
+    markers.push({
+      label, cx, row, w,
+      kind: c.some((e) => e.kind === 'vote') ? 'vote' : 'step',
+      title: c.map((e) => `${e.n}. ${formatDate(e.date)} · ${e.title}`).join('\n'),
+    });
+  }
 }
+const markerRows = markers.length ? Math.max(...markers.map((m) => m.row)) + 1 : 0;
+const H = markerRows ? MARKER_Y[markerRows - 1] + 14 : AXIS_Y + 26;
 
 /* ---- overview strip (whole procedure) ---- */
 const proposedDay = toDayNumber(dateProposed);
 const lastDay = Math.max(PE, ...steps.map((s) => toDayNumber(s.date_end ?? s.date_start)));
 const OW = 760, OH = 64, OM = { l: 34, r: 12 };
 const ox = (d: number) => OM.l + ((d - proposedDay) / Math.max(1, lastDay - proposedDay)) * (OW - OM.l - OM.r);
+// Start of the study period: a single tick. Not drawn when the bill was filed after that start.
+const showPeriodTick = PS >= proposedDay;
+const periodX = Math.min(OW - OM.r, ox(PS));
+const periodLabelEnd = periodX > OW - 190;
 const segments = steps.map((s, i) => {
   const a = toDayNumber(s.date_start);
   const b = s.date_end ? toDayNumber(s.date_end) : PE;
@@ -112,60 +122,62 @@ const totalInPeriod = weeks.reduce((a, w) => a + w.count, 0);
 <figure class="timeline">
   <figcaption>
     <strong>Noticias por semana</strong>
-    <span class="muted"> · {formatDate(STUDY_PERIOD.start)} – {formatDate(STUDY_PERIOD.end)}</span>
+    <span class="muted small">{formatDate(STUDY_PERIOD.start)} – {formatDate(STUDY_PERIOD.end)}</span>
     <span class="legend">
-      <span><svg width="12" height="12" aria-hidden="true"><rect width="12" height="12" rx="2" fill="var(--s-news)"/></svg> Noticias vinculadas</span>
-      <span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--text)"/></svg> Paso del trámite</span>
-      <span><svg width="14" height="14" aria-hidden="true"><rect x="2.5" y="2.5" width="9" height="9" transform="rotate(45 7 7)" fill="var(--s-contra)"/></svg> Votación</span>
+      <span><svg width="6" height="12" aria-hidden="true"><rect width="6" height="12" rx="3" fill="var(--s-news)"/></svg> Noticias vinculadas</span>
+      <span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="var(--surface)" stroke="var(--text-2)" stroke-width="1.5"/></svg> Paso del trámite</span>
+      <span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--s-contra)"/></svg> Votación</span>
     </span>
   </figcaption>
 
-  <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Gráfico de barras: ${totalInPeriod} noticias vinculadas en el período, por semana, con ${markers.length} eventos del trámite marcados.`}>
-    {yTicks.map((t) => (
-      <g>
-        <line x1={M.l} x2={W - M.r} y1={y(t)} y2={y(t)} stroke="var(--grid)" stroke-width="1" />
-        <text x={M.l - 6} y={y(t) + 4} text-anchor="end" class="tick">{t}</text>
-      </g>
+  <svg class="chart" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Línea de tiempo: ${totalInPeriod} noticias vinculadas en el período, por semana, sobre el eje; ${markers.length} marcas de eventos del trámite, bajo el eje.`}>
+    {weeks.map((w, i) => {
+      const cx = M.l + (i + 0.5) * band;
+      return (
+        <g class="wk">
+          <title>Semana del {formatDate(fromDayNumber(w.start))}: {w.count} {w.count === 1 ? 'noticia' : 'noticias'}</title>
+          <rect class="hit" x={M.l + i * band} y="0" width={band} height={AXIS_Y} fill="transparent" />
+          {w.count > 0 && <rect class="bar" x={cx - barW / 2} y={y(w.count)} width={barW} height={AXIS_Y - 4 - y(w.count) + 0.01} rx={barW / 2} fill="var(--s-news)" />}
+          {w.count > 0 && <text x={cx} y={y(w.count) - 5} text-anchor="middle" class="count">{w.count}</text>}
+        </g>
+      );
+    })}
+    {markers.map((m) => (
+      <line x1={m.cx} x2={m.cx} y1={AXIS_Y} y2={MARKER_Y[m.row] - 9} stroke="var(--border)" stroke-width="1" />
     ))}
+    <line x1={M.l} x2={W - M.r} y1={AXIS_Y} y2={AXIS_Y} stroke="var(--border)" stroke-width="1.5" />
     {months.map((m) => (
       <g>
-        <line x1={x(m.day)} x2={x(m.day)} y1={y(0)} y2={y(0) + 5} stroke="var(--border)" />
-        <text x={x(m.day) + 3} y={H - 8} class="tick">{m.label}</text>
+        <circle cx={x(m.day)} cy={AXIS_Y} r="4" fill="var(--surface)" stroke="var(--text-2)" stroke-width="1.5" />
+        <text x={x(m.day)} y={AXIS_Y + 18} text-anchor={x(m.day) < M.l + 12 ? 'start' : 'middle'} class="tick">{m.label}</text>
       </g>
     ))}
-    {markers.map((m) => (
-      <line x1={m.cx} x2={m.cx} y1={M.t - 14 - m.row * 22 + 8} y2={y(0)} stroke="var(--text-2)" stroke-width="1" opacity="0.55" />
-    ))}
-    {weeks.map((w, i) => (
-      <g class="wk">
-        <title>Semana del {formatDate(fromDayNumber(w.start))}: {w.count} {w.count === 1 ? 'noticia' : 'noticias'}</title>
-        <rect x={M.l + i * band} y={M.t} width={band} height={ih} fill="transparent" />
-        {w.count > 0 && <path class="bar" d={barPath(M.l + (i + 0.5) * band, w.count)} fill="var(--s-news)" />}
-      </g>
-    ))}
-    <line x1={M.l} x2={W - M.r} y1={y(0)} y2={y(0)} stroke="var(--text-2)" stroke-width="1" />
     {markers.map((m) => {
-      const cy = M.t - 14 - m.row * 22;
+      const cy = MARKER_Y[m.row];
       return (
         <g class="marker">
           <title>{m.title}</title>
-          {m.kind === 'vote'
-            ? <rect x={m.cx - 8} y={cy - 8} width="16" height="16" transform={`rotate(45 ${m.cx} ${cy})`} fill="var(--s-contra)" stroke="var(--surface)" stroke-width="2" />
-            : <circle cx={m.cx} cy={cy} r="9" fill="var(--text)" stroke="var(--surface)" stroke-width="2" />}
-          <text x={m.cx} y={cy + 4} text-anchor="middle" class={m.kind === 'vote' ? 'mk mk--vote' : 'mk'}>{m.n}</text>
+          <rect x={m.cx - m.w / 2} y={cy - 8} width={m.w} height="16" rx="8"
+            fill={m.kind === 'vote' ? 'var(--s-contra)' : 'var(--surface)'}
+            stroke={m.kind === 'vote' ? 'var(--s-contra)' : 'var(--text-2)'} stroke-width="1.5" />
+          <text x={m.cx} y={cy + 3.5} text-anchor="middle" class={m.kind === 'vote' ? 'mk mk--vote' : 'mk'}>{m.label}</text>
         </g>
       );
     })}
     {totalInPeriod === 0 && (
-      <text x={M.l + iw / 2} y={M.t + ih / 2} text-anchor="middle" class="empty-label">Sin noticias vinculadas en el período</text>
+      <text x={M.l + iw / 2} y={M.t + BARS_H / 2} text-anchor="middle" class="empty-label">Sin noticias vinculadas en el período</text>
     )}
   </svg>
 
   <div class="overview">
     <div class="overview__label small muted">Trámite completo, desde la presentación ({formatDate(dateProposed)})</div>
     <svg class="chart" viewBox={`0 0 ${OW} ${OH}`} role="img" aria-label="Duración de cada paso del trámite y ubicación del período de estudio.">
-      <rect x={ox(PS)} y="4" width={Math.max(2, ox(PE) - ox(PS))} height={OH - 22} fill="var(--s-window)" rx="3" />
-      <text x={ox(PE)} y="15" text-anchor="end" class="tick">período de estudio</text>
+      {showPeriodTick && (
+        <g>
+          <line x1={periodX} x2={periodX} y1="6" y2="42" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3" opacity="0.7" />
+          <text x={periodLabelEnd ? periodX - 5 : periodX + 5} y="12" text-anchor={periodLabelEnd ? 'end' : 'start'} class="tick tick--faint">inicio del período de estudio</text>
+        </g>
+      )}
       {segments.map((s) => (
         <rect x={s.x} y="22" width={s.w} height="14" rx="3" fill={s.i % 2 ? 'var(--s-step-b)' : 'var(--s-step-a)'} opacity={s.open ? 0.55 : 1}>
           <title>{s.title}</title>
@@ -185,7 +197,10 @@ const totalInPeriod = weeks.reduce((a, w) => a + w.count, 0);
     </svg>
   </div>
 
-  <ol class="events">
+  {numbered.length > 0 && (
+  <details class="events-view">
+    <summary>Ver las fechas del trámite ({numbered.length} {numbered.length === 1 ? 'evento' : 'eventos'})</summary>
+    <ol class="events">
     {numbered.map((e) => (
       <li class={inPeriod(e.day) ? 'in-period' : ''}>
         <span class={`num num--${e.kind}`} aria-hidden="true">{e.n}</span>
@@ -195,11 +210,13 @@ const totalInPeriod = weeks.reduce((a, w) => a + w.count, 0);
             <strong>{e.title}</strong>
             {e.open && <span class="pill">en curso</span>}
           </div>
-          <div class="small text-2">{e.detail}</div>
+          <div class="small text-2 ev-detail">{e.detail}</div>
         </div>
       </li>
     ))}
-  </ol>
+    </ol>
+  </details>
+  )}
 
   <details class="table-view">
     <summary>Ver las cifras semanales como tabla</summary>
@@ -221,25 +238,34 @@ const totalInPeriod = weeks.reduce((a, w) => a + w.count, 0);
   .legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
   .chart { display: block; width: 100%; height: auto; overflow: visible; }
   .tick { font-size: 11px; fill: var(--muted); }
-  .mk { font-size: 10px; font-weight: 700; fill: var(--surface); }
+  .tick--faint { font-size: 10px; opacity: 0.8; }
+  .count { font-size: 10px; fill: var(--text-2); font-variant-numeric: tabular-nums; }
+  .mk { font-size: 9.5px; font-weight: 700; fill: var(--text-2); }
   .mk--vote { fill: #fff; }
   .empty-label { font-size: 13px; fill: var(--muted); }
   .wk:hover .bar { filter: brightness(1.15); }
-  .wk:hover rect { fill: var(--s-window); }
+  .wk:hover .hit { fill: var(--grid); }
   .overview { margin-top: 0.75rem; }
-  .events { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: 0.55rem; }
-  .events li { display: flex; gap: 0.65rem; align-items: flex-start; }
-  .events li:not(.in-period) { opacity: 0.8; }
+  .events-view { margin-top: 1rem; }
+  .events-view summary { cursor: pointer; }
+  .events { list-style: none; margin: 1rem 0 0; padding: 0; }
+  .events li { position: relative; display: flex; gap: 0.9rem; align-items: flex-start; padding-bottom: 1.15rem; line-height: 1.5; }
+  .events li:last-child { padding-bottom: 0; }
+  /* rail joining one event to the next */
+  .events li:not(:last-child)::before { content: ''; position: absolute; left: 11px; top: 24px; bottom: 0; width: 1px; background: var(--border); }
   .num {
-    flex: none; display: inline-grid; place-items: center;
-    width: 22px; height: 22px; margin-top: 1px; border-radius: 50%;
-    background: var(--surface-2); color: var(--text-2); border: 1px solid var(--border);
-    font-size: 0.72rem; font-weight: 700;
+    flex: none; display: inline-grid; place-items: center; position: relative;
+    width: 23px; height: 23px; border-radius: 50%;
+    background: var(--surface); color: var(--text-2); border: 1px solid var(--border);
+    font-size: 0.7rem; font-weight: 600;
   }
-  .in-period .num--step { background: var(--text); color: var(--surface); border-color: var(--text); }
-  .in-period .num--vote { background: var(--s-contra); color: #fff; border-color: var(--s-contra); }
-  .num--vote { border-radius: 4px; }
-  .ev-head { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; align-items: baseline; font-size: 0.92rem; }
-  .ev-head time { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 6.5em; }
+  .in-period .num { border-color: var(--text-2); }
+  .num--vote { color: var(--s-contra); border-color: var(--s-contra); }
+  .in-period .num--vote { background: var(--s-contra); color: #fff; }
+  .ev-head { font-size: 0.95rem; }
+  .ev-head time { display: block; color: var(--muted); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+  .ev-head strong { font-weight: 600; }
+  .ev-head .pill { margin-left: 0.4rem; }
+  .ev-detail { margin-top: 0.15rem; max-width: 70ch; }
   .table-view { margin-top: 1rem; }
 </style>

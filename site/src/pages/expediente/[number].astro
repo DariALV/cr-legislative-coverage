@@ -6,6 +6,7 @@ import StatusPill from '../../components/StatusPill.astro';
 import NewsItem from '../../components/NewsItem.astro';
 import Timeline from '../../components/Timeline.astro';
 import VotesTable from '../../components/VotesTable.astro';
+import BillText from '../../components/BillText.astro';
 import { REPORT_FORM_URL } from '../../lib/config';
 import { getBills, getBillDetail } from '../../lib/data';
 import { formatBillNumber, formatDate, formatDateLong, formatInt, pluralize } from '../../lib/format';
@@ -17,7 +18,7 @@ export function getStaticPaths() {
 }
 
 const number = Number(Astro.params.number);
-const { bill, proponents, steps, votes, motions, news } = getBillDetail(number);
+const { bill, proponents, steps, votes, motions, text, news } = getBillDetail(number);
 const outletsCount = new Set(news.map((n) => n.organization)).size;
 const dates = news.map((n) => n.date_published).sort();
 const sourceCounts = Object.keys(LINK_SOURCES).map((k) => ({
@@ -66,30 +67,11 @@ const NEWS_SHOWN = 15;
     </div>
   </div>
 
+  <div class="section-head"><h2>Texto del proyecto</h2><span class="small muted">texto base, como se presentó</span></div>
+  <BillText number={bill.number} text={text} />
+
   <div class="section-head"><h2>Cobertura y trámite</h2></div>
   <Timeline dateProposed={bill.date_proposed} steps={steps} votes={votes} news={news} />
-
-  <div class="section-head">
-    <h2>Noticias vinculadas</h2>
-    <span class="small muted">{pluralize(news.length, 'noticia', 'noticias')} · de la más reciente a la más antigua</span>
-  </div>
-  {news.length ? (
-    <>
-      <p class="callout">
-        Cada vínculo indica su <strong>origen</strong>. Los marcados como «Modelo automático» los propuso el cruce
-        por similitud y muestran su <strong>confianza</strong> (0 a 1); pueden ser errores.{REPORT_FORM_URL && ' Si ves uno incorrecto, usá «¿Este vínculo está mal?».'}
-      </p>
-      <ul class="list">{news.slice(0, NEWS_SHOWN).map((n) => <NewsItem item={n} billNumber={bill.number} />)}</ul>
-      {news.length > NEWS_SHOWN && (
-        <details class="more-news">
-          <summary>Ver las {news.length - NEWS_SHOWN} noticias restantes</summary>
-          <ul class="list">{news.slice(NEWS_SHOWN).map((n) => <NewsItem item={n} billNumber={bill.number} />)}</ul>
-        </details>
-      )}
-    </>
-  ) : (
-    <p class="empty">No encontramos noticias sobre este expediente en los medios revisados entre mayo y octubre de 2026.</p>
-  )}
 
   <div class="section-head"><h2>Votaciones</h2></div>
   <VotesTable votes={votes} motions={motions} />
@@ -107,10 +89,27 @@ const NEWS_SHOWN = 15;
     ))}
   </ul>
 
-  <p class="small muted" style="margin-top:2.5rem">
-    Fuente del trámite y las votaciones: Sistema de Información Legislativa (SIL) de la Asamblea Legislativa y Delfino.cr.
-    Las noticias se enlazan a su fuente original; este sitio no reproduce su contenido.
-  </p>
+  <div class="section-head">
+    <h2>Noticias vinculadas</h2>
+    <span class="small muted">{pluralize(news.length, 'noticia', 'noticias')} · de la más reciente a la más antigua</span>
+  </div>
+  {news.length ? (
+    <>
+      <p class="small muted">
+        Cada vínculo indica su <strong>origen</strong>. Los marcados como «Modelo automático» los propuso el cruce
+        por similitud y muestran su <strong>confianza</strong> (0 a 1); pueden ser errores.{REPORT_FORM_URL && ' Si ves uno incorrecto, usá «¿Este vínculo está mal?».'}
+      </p>
+      <ul class="list">{news.slice(0, NEWS_SHOWN).map((n) => <NewsItem item={n} billNumber={bill.number} />)}</ul>
+      {news.length > NEWS_SHOWN && (
+        <details class="more-news">
+          <summary>Ver las {news.length - NEWS_SHOWN} noticias restantes</summary>
+          <ul class="list">{news.slice(NEWS_SHOWN).map((n) => <NewsItem item={n} billNumber={bill.number} />)}</ul>
+        </details>
+      )}
+    </>
+  ) : (
+    <p class="empty">No encontramos noticias sobre este expediente en los medios revisados entre mayo y octubre de 2026.</p>
+  )}
 </Base>
 
 <style>

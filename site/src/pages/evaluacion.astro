@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumb from '../components/Breadcrumb.astro';
+import { EVALUATION_FORM_URL } from '../lib/config';
+---
+<Base title="Evaluación de la página" description="Objetivo del sitio y cuestionario para evaluarlo.">
+  <Breadcrumb items={[{ label: 'Evaluación de la página' }]} />
+  <div class="prose">
+    <h1>Evaluación de la página</h1>
+
+    <h2>Nuestro objetivo</h2>
+    <p>
+      Queremos que cualquier persona pueda ver, sin conocimientos técnicos, qué proyectos de ley de la Asamblea
+      Legislativa llegan a los medios de comunicación en Costa Rica y cuáles avanzan sin cobertura. Para eso el
+      sitio reúne en un solo lugar el trámite de cada expediente, sus votaciones, su texto y las noticias que lo
+      tratan.
+    </p>
+
+    <h2>Ayudanos a evaluarla</h2>
+    <p>
+      Tu opinión nos sirve para saber si el sitio cumple ese objetivo y qué hay que mejorar. Después de
+      recorrerlo, contestá el cuestionario:
+    </p>
+    <p>
+      <a class="button" href={EVALUATION_FORM_URL} target="_blank" rel="noopener">Ir al cuestionario ↗</a>
+    </p>
+    <p class="small muted">El cuestionario se abre en Google Forms, en una pestaña nueva.</p>
+  </div>
+</Base>
+
+<style>
+  .button {
+    display: inline-block; padding: 0.6rem 1.1rem; border-radius: var(--radius);
+    background: var(--accent); color: var(--surface); font-weight: 600; text-decoration: none;
+  }
+  .button:hover { filter: brightness(1.1); }
+</style>

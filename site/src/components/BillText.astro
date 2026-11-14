@@ -1,0 +1,84 @@
+---
+/**
+ * Base text of a bill in a scroll box. The text is a static file
+ * (textos/<number>.txt, one line per paragraph) fetched only when the reader
+ * opens the section, so the bill page stays light.
+ */
+import { SIL_URL } from '../lib/config';
+import { formatInt } from '../lib/format';
+import { href } from '../lib/paths';
+import type { BillTextInfo } from '../lib/types';
+
+interface Props { number: number; text: BillTextInfo }
+const { number, text } = Astro.props;
+---
+{text.available ? (
+  <details class="bill-text" data-src={href(`textos/${number}.txt`)}>
+    <summary>Leer el texto base ({formatInt(text.words)} palabras)</summary>
+    <div class="bill-text__box" tabindex="0" role="region" aria-label="Texto base del proyecto" aria-live="polite">
+      <p class="muted">Cargando el texto…</p>
+    </div>
+    {text.truncated && (
+      <p class="small muted">
+        Se muestra solo el inicio: el texto completo es muy largo y casi todo son cuadros.
+      </p>
+    )}
+  </details>
+) : (
+  <p class="empty">El SIL no tiene un texto asociado a este expediente.</p>
+)}
+<p class="small muted bill-text__source">
+  Fuente: <a href={SIL_URL} target="_blank" rel="noopener">SIL de la Asamblea Legislativa ↗</a> ·
+  <a href={href('metodologia/')}>qué texto es y cómo se obtuvo</a>
+</p>
+
+<script>
+  /** A short line fully in upper case is a heading of the document (title, "DECRETA", chapter names). */
+  const isHeading = (line: string) => line.length <= 160 && /[A-ZÁÉÍÓÚÑ]/.test(line) && line === line.toUpperCase();
+
+  document.querySelectorAll<HTMLDetailsElement>('details.bill-text').forEach((details) => {
+    const box = details.querySelector<HTMLElement>('.bill-text__box')!;
+    let state: 'idle' | 'loading' | 'done' = 'idle';
+    details.addEventListener('toggle', async () => {
+      if (!details.open || state !== 'idle') return;
+      state = 'loading';
+      try {
+        const response = await fetch(details.dataset.src!);
+        if (!response.ok) throw new Error(String(response.status));
+        const lines = (await response.text()).split('\n').map((l) => l.trim()).filter(Boolean);
+        const fragment = document.createDocumentFragment();
+        for (const line of lines) {
+          const p = document.createElement('p');
+          p.textContent = line;
+          if (isHeading(line)) p.className = 'heading';
+          fragment.append(p);
+        }
+        box.replaceChildren(fragment);
+        state = 'done';
+      } catch {
+        box.replaceChildren(Object.assign(document.createElement('p'), {
+          className: 'muted', textContent: 'No se pudo cargar el texto. Cerrá y volvé a abrir esta sección para reintentar.',
+        }));
+        state = 'idle';
+      }
+    });
+  });
+</script>
+
+<style>
+  .bill-text summary { cursor: pointer; font-weight: 600; }
+  .bill-text__box {
+    margin-top: 0.75rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .bill-text__box :global(p) { margin: 0 0 0.75rem; max-width: 72ch; overflow-wrap: anywhere; }
+  .bill-text__box :global(p.heading) { font-weight: 600; margin-top: 1.25rem; }
+  .bill-text__source { margin-top: 0.75rem; }
+</style>

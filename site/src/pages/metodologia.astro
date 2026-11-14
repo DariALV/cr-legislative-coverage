@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
-import { STUDY_PERIOD, REPORT_FORM_URL } from '../lib/config';
+import { STUDY_PERIOD, REPORT_FORM_URL, SIL_URL } from '../lib/config';
 import { formatDateLong, formatInt } from '../lib/format';
 import { LINK_SOURCES, CONFIDENCE_BANDS } from '../lib/vocab';
 import { getOutlets, getSiteStats } from '../lib/data';
@@ -62,12 +62,24 @@ const metrics = [
         Asamblea Legislativa. Se recogieron los {formatInt(RUN.billsCollected)} expedientes desde el 20.000,
         presentado en junio de 2016, porque las noticias del período también tratan expedientes viejos.
       </li>
+      <li>
+        <strong>Texto de los proyectos:</strong> también del
+        {' '}<a href={SIL_URL} target="_blank" rel="noopener">SIL ↗</a>, botón «Texto base» de cada expediente.
+        El SIL no ofrece un enlace directo a cada documento. Es el texto con el que se presentó el proyecto;
+        no incluye los cambios posteriores por mociones o dictámenes, y se muestra sin el formato del documento
+        original. Los textos muy largos, casi todos presupuestos, se muestran solo en su inicio.
+      </li>
       <li><strong>Votaciones:</strong> Delfino.cr, que publica el voto de cada diputación en el Plenario y en las comisiones con potestad legislativa plena.</li>
       <li>
         <strong>Noticias:</strong> {outlets.map((o) => o.name).join(', ')}. Se recogieron las
         {' '}{formatInt(RUN.newsCollected)} notas que estos medios publicaron en el período, de todas las secciones.
       </li>
     </ul>
+
+    <p>
+      El trámite y las votaciones de cada expediente vienen del SIL y de Delfino.cr. Las noticias se enlazan a su
+      fuente original; este sitio no reproduce su contenido.
+    </p>
 
     <h2>Qué se publica en el sitio</h2>
     <ul>

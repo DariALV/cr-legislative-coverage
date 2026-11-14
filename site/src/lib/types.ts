@@ -72,6 +72,16 @@ export interface MotionSummary {
   date_last: IsoDate;
 }
 
+/** Base text of a bill (the one it was filed with), served as textos/<number>.txt. */
+export interface BillTextInfo {
+  /** False when the SIL has no text for the bill. */
+  available: boolean;
+  /** True when only the beginning is published (very long texts, mostly budget tables). */
+  truncated: boolean;
+  /** Words of the whole text, before any cut. */
+  words: number;
+}
+
 /** A news article as seen from a bill. */
 export interface BillNewsLink {
   id: string;
@@ -90,6 +100,7 @@ export interface BillDetail {
   steps: BillStep[];
   votes: Vote[];
   motions: MotionSummary[];
+  text: BillTextInfo;
   news: BillNewsLink[];
 }
 

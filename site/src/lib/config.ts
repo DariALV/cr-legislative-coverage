@@ -19,11 +19,17 @@ export const STUDY_PERIOD = { start: '2026-05-01', end: '2026-10-31' } as const;
  */
 export const REPORT_FORM_URL: string | null = null;
 
+/** External questionnaire where visitors evaluate the site, linked from /evaluacion. */
+export const EVALUATION_FORM_URL = 'https://forms.gle/3rLXye8CRz88ZTnKA';
+
 /** License of the public data, shown on /datos. Hidden while null. */
 export const DATA_LICENSE: string | null = null;
 
 /** Future /analizar module: endpoint of the embeddings backend (not decided yet). */
 export const ANALYZE_ENDPOINT: string | null = null;
+
+/** Public consultation system of the Asamblea Legislativa, where the bill texts were retrieved. */
+export const SIL_URL = 'https://produccion.asamblea.go.cr/SILConsulta/';
 
 /** Page size used by the client-side listings. */
 export const PAGE_SIZE = 25;

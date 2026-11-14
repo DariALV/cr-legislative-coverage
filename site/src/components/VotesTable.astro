@@ -1,14 +1,20 @@
 ---
 /**
  * Votes (plenary and full committee) with a neutral, descriptive breakdown by faction.
- * No value judgements: counts only, factions in alphabetical order.
+ * No value judgements: counts only.
+ *
+ * layout "dots" (default): one dot per deputy, coloured by faction, in one row per
+ * vote value; the table by faction stays available in a collapsed section.
+ * layout "table": the earlier view, a table by faction with a stacked bar.
  */
 import { formatDate, formatInt } from '../lib/format';
 import { VOTE_ORDER, voteLabel, type VoteValue } from '../lib/vocab';
+import { partyColor, partyRank, partyShort } from '../lib/parties';
 import type { MotionSummary, Vote } from '../lib/types';
 
-interface Props { votes: Vote[]; motions?: MotionSummary[] }
-const { votes, motions = [] } = Astro.props;
+interface Props { votes: Vote[]; motions?: MotionSummary[]; layout?: 'dots' | 'table' }
+const { votes, motions = [], layout = 'dots' } = Astro.props;
+const dots = layout === 'dots';
 const motionTotal = (m: MotionSummary) => m.approved + m.rejected + m.other;
 const motionsCount = motions.reduce((a, m) => a + motionTotal(m), 0);
 const hasOther = motions.some((m) => m.other > 0);
@@ -39,8 +45,22 @@ const prepared = votes.map((v) => {
   const byVote = VOTE_ORDER.map((k) => ({
     k, names: v.deputies.filter((d) => d.vote === k).map((d) => `${d.name} (${d.party})`).sort((a, b) => a.localeCompare(b, 'es')),
   }));
-  return { v, rows, totals, byVote };
+  const byParty = (a: { party: string; name: string }, b: { party: string; name: string }) =>
+    partyRank(a.party) - partyRank(b.party) || a.party.localeCompare(b.party, 'es') || a.name.localeCompare(b.name, 'es');
+  const dotRows = VOTE_ORDER.map((k) => {
+    const deputies = v.deputies.filter((d) => d.vote === k).sort(byParty);
+    const groups: { party: string; deputies: typeof deputies }[] = [];
+    for (const d of deputies) {
+      if (groups.at(-1)?.party !== d.party) groups.push({ party: d.party, deputies: [] });
+      groups.at(-1)!.deputies.push(d);
+    }
+    const summary = groups.map((g) => `${partyShort(g.party)} ${g.deputies.length}`).join(', ');
+    return { k, count: deputies.length, groups, summary };
+  }).filter((r) => r.count > 0 || r.k === 'a_favor' || r.k === 'en_contra');
+  return { v, rows, totals, byVote, dotRows };
 });
+const partiesShown = [...new Set(votes.flatMap((v) => v.deputies.map((d) => d.party)))]
+  .sort((a, b) => partyRank(a) - partyRank(b) || a.localeCompare(b, 'es'));
 ---
 {motions.length > 0 && (
   <section class="motions card">
@@ -80,29 +100,56 @@ const prepared = votes.map((v) => {
   motions.length === 0 && <p class="empty">Este expediente no registra votaciones.</p>
 ) : (
   <div class="votes">
-    <div class="legend small">
-      {VOTE_ORDER.map((k) => (
-        <span><svg width="12" height="12" aria-hidden="true"><rect width="12" height="12" rx="2" fill={COLORS[k]} /></svg>{voteLabel(k)}</span>
-      ))}
-    </div>
-    {prepared.map(({ v, rows, totals, byVote }) => (
+    {dots ? (
+      <div class="legend small">
+        <span class="muted">Cada círculo es una diputación:</span>
+        {partiesShown.map((p) => <span><i class="dot" style={`background:${partyColor(p)}`}></i>{p}</span>)}
+      </div>
+    ) : (
+      <div class="legend small">
+        {VOTE_ORDER.map((k) => (
+          <span><svg width="12" height="12" aria-hidden="true"><rect width="12" height="12" rx="2" fill={COLORS[k]} /></svg>{voteLabel(k)}</span>
+        ))}
+      </div>
+    )}
+    {prepared.map(({ v, rows, totals, byVote, dotRows }) => (
       <section class="vote card">
         <div class="vote-head">
           <h3>{v.name}</h3>
           <span class="muted small">{formatDate(v.date)}</span>
           <span class="pill">{v.result}</span>
           <span class="muted small">{v.kind}</span>
-          <span class="totals small text-2">
-            {VOTE_ORDER.map((k) => <span>{voteLabel(k)}: <strong>{totals[k]}</strong></span>)}
-          </span>
+          {!dots && (
+            <span class="totals small text-2">
+              {VOTE_ORDER.map((k) => <span>{voteLabel(k)}: <strong>{totals[k]}</strong></span>)}
+            </span>
+          )}
         </div>
+        {dots && (
+          <div class="dot-rows">
+            {dotRows.map((r) => (
+              <div class="dot-row">
+                <span class="dot-row__label">{voteLabel(r.k)}</span>
+                <strong class="dot-row__count">{r.count}</strong>
+                <div class="dot-row__dots" role="img" aria-label={`${voteLabel(r.k)}: ${r.count}${r.summary ? ` (${r.summary})` : ''}`}>
+                  {r.groups.map((g) => (
+                    <span class="dot-group">
+                      {g.deputies.map((d) => <i class="dot" style={`background:${partyColor(d.party)}`} title={`${d.name} · ${d.party}`}></i>)}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+        <Fragment set:html={dots ? '<details><summary>Ver conteo por fracción</summary>' : ''} />
         <div class="table-wrap">
           <table class="data">
             <thead>
               <tr>
                 <th>Fracción</th>
                 {VOTE_ORDER.map((k) => <th class="num">{voteLabel(k)}</th>)}
-                <th class="bar-col"><span class="visually-hidden">Distribución</span></th>
+                {!dots && <th class="bar-col"><span class="visually-hidden">Distribución</span></th>}
               </tr>
             </thead>
             <tbody>
@@ -110,18 +157,21 @@ const prepared = votes.map((v) => {
                 <tr>
                   <td>{r.faction}</td>
                   {VOTE_ORDER.map((k) => <td class="num">{r.counts[k]}</td>)}
-                  <td class="bar-col">
-                    <div class="stack" aria-hidden="true">
-                      {VOTE_ORDER.filter((k) => r.counts[k] > 0).map((k) => (
-                        <span style={`flex:${r.counts[k]};background:${COLORS[k]}`} title={`${voteLabel(k)}: ${r.counts[k]}`}></span>
-                      ))}
-                    </div>
-                  </td>
+                  {!dots && (
+                    <td class="bar-col">
+                      <div class="stack" aria-hidden="true">
+                        {VOTE_ORDER.filter((k) => r.counts[k] > 0).map((k) => (
+                          <span style={`flex:${r.counts[k]};background:${COLORS[k]}`} title={`${voteLabel(k)}: ${r.counts[k]}`}></span>
+                        ))}
+                      </div>
+                    </td>
+                  )}
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        <Fragment set:html={dots ? '</details>' : ''} />
         <details>
           <summary>Ver votación nominal ({v.deputies.length} diputaciones)</summary>
           <div class="nominal">
@@ -142,7 +192,18 @@ const prepared = votes.map((v) => {
   .votes { display: grid; gap: 1rem; }
   .motions { margin-bottom: 1rem; }
   .motions h3 { margin: 0 0 0.25rem; }
-  .legend { display: flex; gap: 1rem; color: var(--text-2); }
+  .legend { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; color: var(--text-2); }
+  .dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18); flex: none; }
+  .dot-rows { display: grid; gap: 0.6rem; margin: 0.5rem 0 0.25rem; }
+  .dot-row { display: grid; grid-template-columns: 9.5rem 2.2rem 1fr; gap: 0.5rem; align-items: start; }
+  .dot-row__label { color: var(--text-2); font-size: 0.9rem; }
+  .dot-row__count { font-size: 1.15rem; line-height: 1.1; text-align: right; font-variant-numeric: tabular-nums; }
+  .dot-row__dots { display: flex; flex-wrap: wrap; gap: 4px 10px; min-height: 14px; padding-top: 2px; }
+  .dot-group { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+  @media (max-width: 560px) {
+    .dot-row { grid-template-columns: 1fr auto; }
+    .dot-row__dots { grid-column: 1 / -1; }
+  }
   .legend span { display: inline-flex; align-items: center; gap: 0.35rem; }
   .vote-head { display: flex; flex-wrap: wrap; gap: 0.25rem 0.75rem; align-items: baseline; margin-bottom: 0.5rem; }
   .vote-head h3 { margin: 0; }
