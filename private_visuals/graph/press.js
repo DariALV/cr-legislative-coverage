@@ -8,19 +8,17 @@
     window.GraphPress = null;
     return;
   }
-  const { PALETTE, sentence } = window.GraphUI;
+  const { token, cat, CATS, outletColor, sentence } = window.GraphUI;
   const F = Object.fromEntries(D.fields.map((name, i) => [name, i]));
   const TOP_TOPICS = 10;
-  const NEUTRAL = "#7d7c75";   // "other" topics, "not stated" and nodes that carry no color
+  // Colors are theme tokens read each time an item's `color` is asked for, so the views only have to
+  // draw again on "themechange". The neutral one goes to "other" topics, "not stated" and nodes that carry no color.
+  const neutral = () => token("--data-neutral");
+  /** `item` with a `color` that reads `color()` each time. */
+  const tinted = (item, color) => Object.defineProperty(item, "color", { get: color, enumerable: true });
 
-  // Outlets keep the hue they have in the Jev viewer, stepped for the dark surface.
-  const OUTLETS = {
-    crhoy: { name: "CRHoy", color: PALETTE[7] },
-    nacion: { name: "La Nación", color: PALETTE[0] },
-    delfino: { name: "Delfino", color: PALETTE[1] },
-    elmundo: { name: "El Mundo", color: PALETTE[5] },
-    semanario: { name: "Semanario Universidad", color: PALETTE[6] },
-  };
+  // Outlets keep the hue they have in the Jev viewer (the theme's outlet tokens).
+  const OUTLETS = { crhoy: "CRHoy", nacion: "La Nación", delfino: "Delfino", elmundo: "El Mundo", semanario: "Semanario Universidad" };
   const STAGES = {
     filing: "Presentado", committee: "Comisión", first_debate: "Primer debate", second_debate: "Segundo debate",
     constitutional_court: "Sala IV", veto_or_signing: "Sanción o veto", archived_or_rejected: "Archivado o rechazado",
@@ -33,15 +31,15 @@
     human_interest: "Interés humano", morality: "Moral",
   };
 
-  const outlets = D.press.outlets.map((key, id) => ({ id, key, ...(OUTLETS[key] || { name: key, color: NEUTRAL }) }));
-  const stages = D.press.stages.map((key, id) => ({
-    id, key, name: STAGES[key] || key, color: key === "not_stated" ? NEUTRAL : PALETTE[id], unstated: key === "not_stated",
-  }));
+  const outlets = D.press.outlets.map((key, id) => tinted({ id, key, name: OUTLETS[key] || key },
+    () => (OUTLETS[key] ? outletColor(key) : neutral())));
+  const stages = D.press.stages.map((key, id) => tinted({ id, key, name: STAGES[key] || key, unstated: key === "not_stated" },
+    () => (key === "not_stated" ? neutral() : cat(id))));
   // Genre and main frame of the news item (Jev's `genre` and `main_frame`); a news item without
   // an answer goes to a last, gray item.
   const coded = (keys, names, column) => {
-    const items = (keys || []).map((key, id) => ({ id, key, name: names[key] || key, color: PALETTE[id] }));
-    if (D.press.news.some((row) => !(row[column] >= 0))) items.push({ id: items.length, key: "unknown", name: "Sin dato", color: NEUTRAL });
+    const items = (keys || []).map((key, id) => tinted({ id, key, name: names[key] || key }, () => cat(id)));
+    if (D.press.news.some((row) => !(row[column] >= 0))) items.push(tinted({ id: items.length, key: "unknown", name: "Sin dato" }, neutral));
     return items;
   };
   const genres = coded(D.press.genres, GENRES, 2), frames = coded(D.press.frames, FRAMES, 3);
@@ -90,8 +88,8 @@
   const walk = (first) => {
     const order = [];
     for (let pass = 0; order.length < top.length; pass++) {
-      for (let step = 0; step < PALETTE.length; step++) {
-        const topic = (bySlot.get((first + step) % PALETTE.length) || [])[pass];
+      for (let step = 0; step < CATS; step++) {
+        const topic = (bySlot.get((first + step) % CATS) || [])[pass];
         if (topic != null) order.push(topic);
       }
     }
@@ -99,13 +97,13 @@
   };
   const spread = (order) => d3.min(order, (a, i) => d3.min(order, (b, j) =>
     (j > i && D.topics[a].color === D.topics[b].color ? j - i : Infinity)));
-  const order = d3.range(PALETTE.length).map(walk).reduce((best, o) => (spread(o) > spread(best) ? o : best));
-  const groups = order.map((topic, id) => ({
-    id, topic, name: D.topics[topic].name, short: D.topics[topic].name.split(" · ")[0], color: PALETTE[D.topics[topic].color],
-  }));
+  const order = d3.range(CATS).map(walk).reduce((best, o) => (spread(o) > spread(best) ? o : best));
+  const groups = order.map((topic, id) => tinted({
+    id, topic, name: D.topics[topic].name, short: D.topics[topic].name.split(" · ")[0],
+  }, () => cat(D.topics[topic].color)));
   const rest = [...volume.keys()].filter((t) => !top.includes(t));
   if (rest.length) {
-    groups.push({ id: groups.length, topic: null, name: `Otros ${rest.length} temas`, short: "Otros", color: NEUTRAL, other: true });
+    groups.push(tinted({ id: groups.length, topic: null, name: `Otros ${rest.length} temas`, short: "Otros", other: true }, neutral));
   }
   const groupOfTopic = new Map(order.map((topic, id) => [topic, id]));
   for (const p of mentions) p.group = groupOfTopic.has(p.topic) ? groupOfTopic.get(p.topic) : groups.length - 1;
@@ -120,5 +118,8 @@
     .sort((a, b) => b[1] - a[1] || a[0] - b[0]).slice(0, limit).map(([node, count]) => ({ ...bill(node), count }));
 
   const period = `${dayMonth(new Date(firstDay))} al ${dayMonth(new Date(lastDay))} de ${new Date(lastDay).getUTCFullYear()}`;
-  window.GraphPress = { outlets, stages, genres, frames, groups, pairs, mentions, weeks, weekLabel, weekPosition, bill, topBills, period, NEUTRAL };
+  window.GraphPress = {
+    outlets, stages, genres, frames, groups, pairs, mentions, weeks, weekLabel, weekPosition, bill, topBills, period,
+    get NEUTRAL() { return neutral(); },
+  };
 })();

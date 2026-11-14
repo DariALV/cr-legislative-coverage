@@ -30,7 +30,7 @@ export default {
 
   async init() {
     if (DEPS) return;
-    const data = await getJSON("/api/deputies");
+    const data = await getJSON("api/deputies");
     DEPS = data.deputies; TOTALS = data.totals;
   },
 
@@ -86,7 +86,7 @@ export default {
   },
 
   async load(id) {
-    if (!cache.has(id)) cache.set(id, await getJSON(`/api/deputy/${id}`));
+    if (!cache.has(id)) cache.set(id, await getJSON(`api/deputy/${id}`));
     return cache.get(id);
   },
 

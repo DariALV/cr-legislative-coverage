@@ -4,13 +4,14 @@
 (function () {
   "use strict";
   const D = window.GRAPH_BILLS;
-  const { $, nf, esc, sentence, cut, bindPanel, bindTooltip, ACTORS, STANCE, positionColor, leanOf, leanText, signed } = window.GraphUI;
+  const { $, nf, esc, sentence, cut, bindPanel, bindTooltip, token, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
   if (!D || !D.actors) {
     $("missing").hidden = false;
     return;
   }
 
-  const TOPIC_COLOR = "#7d7c75";   // topics stay neutral: the links and the parties carry the color
+  // Topics stay neutral (a theme token, read when used): the links and the parties carry the color.
+  const topicColor = () => token("--data-neutral");
 
   const plural = (n, one, many) => `${nf(n)} ${n === 1 ? one : many}`;
 
@@ -38,7 +39,7 @@
     const bills = new Set();
     for (const [k, cell] of cells) if (+k.split("|")[0] === index) cell.bills.forEach((b) => bills.add(b.number));
     return {
-      kind: "actor", id: index, ...ACTORS[key], bills: bills.size,
+      kind: "actor", id: index, key, ...ACTORS[key], bills: bills.size,
       x: Math.cos(angle) * 300, y: Math.sin(angle) * 300,
       size: 24, color: ACTORS[key].color, label: ACTORS[key].short, shortLabel: ACTORS[key].short,
     };
@@ -47,7 +48,7 @@
     kind: "topic", id: index, name: t.name, bills: covered[index].length,
     x: (Math.random() - 0.5) * 240, y: (Math.random() - 0.5) * 240,
     size: 6 + 1.5 * Math.sqrt(covered[index].length),
-    color: TOPIC_COLOR, label: t.name, shortLabel: t.name.split(" · ")[0],
+    color: topicColor(), label: t.name, shortLabel: t.name.split(" · ")[0],
   })).filter((t) => t.bills > 0);
   const nodes = [...actors, ...topics];
 
@@ -109,7 +110,7 @@
         <span class="legend-count">${nf(a.bills)}</span>
       </button>`).join("") + `
       <div class="legend-item" aria-hidden="true">
-        <span class="swatch" style="background:${TOPIC_COLOR}"></span>
+        <span class="swatch" style="background:${topicColor()}"></span>
         <span class="legend-label">Tema (tamaño: expedientes cubiertos)</span>
       </div>`;
     $("legend-clear").hidden = !S.isolated.size;
@@ -126,7 +127,6 @@
     applyHighlight();
   });
   $("legend-clear").addEventListener("click", () => { S.isolated.clear(); renderLegend(); applyHighlight(); });
-  $("scale-bar").style.background = `linear-gradient(90deg, ${d3.range(9).map((i) => STANCE(i)).join(",")})`;
 
   // ---------- filters ----------
   $("min-bills").value = S.minBills;
@@ -208,6 +208,16 @@
   let moved = false;   // the user took over the camera: stop re-framing
   for (const type of ["wheel", "pointerdown"]) graph.canvas.addEventListener(type, () => { moved = true; }, { passive: true });
   graph.onSettled = () => { if (!moved) graph.fit(nodes, 600, 2); };
+  // A theme change brings new colors: parties, topics, links, the legend and the open card take them.
+  document.addEventListener("themechange", () => {
+    for (const actor of actors) actor.color = ACTORS[actor.key].color;
+    for (const topic of topics) topic.color = topicColor();
+    for (const link of graph.links) link.color = positionColor(link.value);
+    graph.linkColorsChanged();
+    graph.colorsChanged();
+    renderLegend();
+    graph.onSelect(graph.selected);
+  });
   graph.setData(nodes, makeLinks());
   // A topic with no link under the current filters would just float away: leave it out.
   graph.setVisible((n) => n.kind === "actor" || n.neighbors.length > 0, false);

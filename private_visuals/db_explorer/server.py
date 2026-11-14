@@ -5,7 +5,8 @@ Standard library only. Run from the repo root or anywhere:
 
     python private_visuals/db_explorer/server.py [--port 8765] [--db path/to/db]
 
-and open http://localhost:8765
+and open http://localhost:8765. Usually it is served together with the other local pages by private_visuals/server.py,
+at http://localhost:8766/db_explorer/, which mounts api() and photo() below under /db_explorer/.
 
 Endpoints (all GET, JSON):
     /api/bills, /api/bill/<n>              bills: compact index (filtered in the browser) and detail
@@ -16,11 +17,12 @@ Endpoints (all GET, JSON):
     /api/news/<id>                         one article, full content and linked bills
     /photos/<file>                         deputy photos from raw/images/delfino/deputies (fetch_photos.py)
 
-Every person in the JSON carries "photo" (its /photos/ URL, or null) and "ini" (initials of first name and first
+Every person in the JSON carries "photo" (its photos/ URL, relative to the page, or null) and "ini" (initials of first name and first
 surname, shown when there is no photo).
 """
 import argparse
 import json
+import mimetypes
 import socket
 import sqlite3
 import unicodedata
@@ -33,6 +35,11 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 DEFAULT_DB = ROOT / "databases" / "private_corpus.db"
 PHOTOS_DIR = ROOT / "raw" / "images" / "delfino" / "deputies"
+# The Windows registry may give other types to these, and browsers then refuse modules and fonts.
+mimetypes.add_type("text/javascript", ".js")
+mimetypes.add_type("font/woff2", ".woff2")
+# Shared look of the local pages (tokens, fonts, sidebar), served under /theme/.
+THEME_DIR = HERE.parent / "theme"
 # Words skipped when taking initials ("DE LA CRUZ" -> "C").
 NAME_PARTICLES = {"DE", "DEL", "LA", "LAS", "LOS", "Y"}
 
@@ -85,7 +92,7 @@ def initials(names, surnames):
 def add_face(d, person_id, names, surnames):
     """Adds "photo" and "ini" to a person dict (names/surnames None when the person is not a known deputy)."""
     file = photos().get(person_id)
-    d["photo"] = f"/photos/{file}" if file else None
+    d["photo"] = f"photos/{file}" if file else None  # relative: works at / and under /db_explorer/
     d["ini"] = initials(names, surnames) if names or surnames else None
     return d
 
@@ -437,7 +444,53 @@ def news_detail(news_id):
     return d
 
 
-# ---------------------------------------------------------------- http
+# ---------------------------------------------------------------- api (shared with private_visuals/server.py)
+
+def api(path, query=""):
+    """(status, body) for one API path such as "/api/bill/123", without any mount prefix."""
+    parts = path.strip("/").split("/")
+    notfound = (404, {"error": "not found"})
+    try:
+        if parts == ["api", "bills"]:
+            return 200, bills_index()
+        if parts == ["api", "deputies"]:
+            return 200, deputies_index()
+        if parts == ["api", "organs"]:
+            return 200, organs_index()
+        if parts == ["api", "news"]:
+            return 200, news_search(parse_qs(query))
+        if parts == ["api", "news-facets"]:
+            return 200, news_facets()
+        if len(parts) == 3:
+            kind, key = parts[1], parts[2]
+            if kind == "news":
+                d = news_detail(key)
+            elif not key.isdigit():
+                d = None
+            elif kind == "bill":
+                d = bill_detail(int(key))
+            elif kind == "deputy":
+                d = deputy_detail(int(key))
+            elif kind == "organ":
+                d = organ_detail(int(key))
+            else:
+                return 404, {"error": "unknown endpoint"}
+            return (200, d) if d else notfound
+        return 404, {"error": "unknown endpoint"}
+    except (sqlite3.Error, ValueError) as e:
+        return 500, {"error": str(e)}
+
+
+def photo(name):
+    """(bytes, content type) of one deputy photo, or None. Only files listed in the index: nothing else under raw/
+    can be read through this route."""
+    if name not in set(photos().values()):
+        return None
+    ctype = "image/jpeg" if name.lower().endswith((".jpg", ".jpeg")) else "image/png"
+    return (PHOTOS_DIR / name).read_bytes(), ctype
+
+
+# ---------------------------------------------------------------- http (standalone server)
 
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *a, **kw):
@@ -445,6 +498,13 @@ class Handler(SimpleHTTPRequestHandler):
 
     def log_message(self, fmt, *args):
         pass  # keep the terminal quiet
+
+    def translate_path(self, path):
+        # /theme/... comes from private_visuals/theme; the parent class already drops ".." and drive parts.
+        if urlparse(path).path.startswith("/theme/"):
+            inside = Path(super().translate_path(path)).relative_to(HERE / "theme")
+            return str(THEME_DIR / inside)
+        return super().translate_path(path)
 
     def send_json(self, body, status=200):
         if not isinstance(body, bytes):
@@ -457,12 +517,12 @@ class Handler(SimpleHTTPRequestHandler):
         self.wfile.write(body)
 
     def send_photo(self, name):
-        # Only files listed in the index: nothing else under raw/ can be read through this route.
-        if name not in set(photos().values()):
+        found = photo(name)
+        if not found:
             return self.send_error(404)
-        body = (PHOTOS_DIR / name).read_bytes()
+        body, ctype = found
         self.send_response(200)
-        self.send_header("Content-Type", "image/jpeg" if name.lower().endswith((".jpg", ".jpeg")) else "image/png")
+        self.send_header("Content-Type", ctype)
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
@@ -484,37 +544,8 @@ class Handler(SimpleHTTPRequestHandler):
             if path.endswith(".py"):
                 return self.send_error(404)
             return super().do_GET()
-        parts = path.strip("/").split("/")
-        notfound = lambda: self.send_json({"error": "not found"}, 404)
-        try:
-            if parts == ["api", "bills"]:
-                return self.send_json(bills_index())
-            if parts == ["api", "deputies"]:
-                return self.send_json(deputies_index())
-            if parts == ["api", "organs"]:
-                return self.send_json(organs_index())
-            if parts == ["api", "news"]:
-                return self.send_json(news_search(parse_qs(url.query)))
-            if parts == ["api", "news-facets"]:
-                return self.send_json(news_facets())
-            if len(parts) == 3:
-                kind, key = parts[1], parts[2]
-                if kind == "news":
-                    d = news_detail(key)
-                elif not key.isdigit():
-                    d = None
-                elif kind == "bill":
-                    d = bill_detail(int(key))
-                elif kind == "deputy":
-                    d = deputy_detail(int(key))
-                elif kind == "organ":
-                    d = organ_detail(int(key))
-                else:
-                    return self.send_json({"error": "unknown endpoint"}, 404)
-                return self.send_json(d) if d else notfound()
-            return self.send_json({"error": "unknown endpoint"}, 404)
-        except (sqlite3.Error, ValueError) as e:
-            return self.send_json({"error": str(e)}, 500)
+        status, body = api(path, url.query)
+        return self.send_json(body, status)
 
 
 class Server(ThreadingHTTPServer):

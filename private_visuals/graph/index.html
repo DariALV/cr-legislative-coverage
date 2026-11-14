@@ -4,104 +4,105 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Grafo de expedientes</title>
+  <link rel="stylesheet" href="../theme/theme.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="../theme/theme.js"></script>
 </head>
 <body>
-  <canvas id="graph" aria-label="Grafo de expedientes legislativos"></canvas>
+  <div class="app">
+    <aside class="side" data-page="graph" data-subnav="views"></aside>
+    <script src="../theme/nav.js"></script>
 
-  <header class="title">
-    <nav class="views" aria-label="Grafos">
-      <a href="index.html" class="on" aria-current="page">Expedientes</a>
-      <a href="deputies.html">Diputados</a>
-      <a href="parties.html">Partidos y temas</a>
-      <a href="news.html">Noticias</a>
-      <a href="comentions.html">Co-mención</a>
-      <a href="flow.html">Flujo</a>
-      <a href="stream.html">En el tiempo</a>
-    </nav>
-    <h1>Expedientes por parecido</h1>
-    <p id="subtitle"></p>
-  </header>
+    <div class="main">
+      <canvas id="graph" aria-label="Grafo de expedientes legislativos"></canvas>
 
-  <p id="missing" class="missing" hidden>
-    Faltan los datos. Generalos con <code>python private_visuals/graph/build_graph.py</code> y recargá la página.
-  </p>
+      <header class="title">
+        <h1>Expedientes por parecido</h1>
+        <p id="subtitle"></p>
+      </header>
 
-  <aside id="panel" class="panel">
-    <button id="panel-toggle" class="panel-toggle" aria-expanded="true" aria-controls="panel-body">
-      <span>Controles</span>
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-    </button>
-    <div id="panel-body" class="panel-body">
-      <details open>
-        <summary>Filtros</summary>
-        <input id="q" type="search" placeholder="Buscar número o nombre…" autocomplete="off" aria-label="Buscar expediente">
-        <p id="search-count" class="hint"></p>
-        <label class="switch"><span>Sin cobertura</span><input id="show-uncovered" type="checkbox"><i></i></label>
-        <label class="switch"><span>Más de 4 años</span><input id="show-old" type="checkbox"><i></i></label>
-      </details>
+      <p id="missing" class="missing" hidden>
+        Faltan los datos. Generalos con <code>python private_visuals/graph/build_graph.py</code> y recargá la página.
+      </p>
 
-      <details open>
-        <summary>Conexiones</summary>
-        <div id="links" class="modes wrap" role="group" aria-label="Qué une a dos expedientes"></div>
-        <p id="links-note" class="hint"></p>
-      </details>
+      <aside id="panel" class="panel">
+        <button id="panel-toggle" class="panel-toggle" aria-expanded="true" aria-controls="panel-body">
+          <span>Controles</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div id="panel-body" class="panel-body">
+          <details open>
+            <summary>Filtros</summary>
+            <input id="q" type="search" placeholder="Buscar número o nombre…" autocomplete="off" aria-label="Buscar expediente">
+            <p id="search-count" class="hint"></p>
+            <label class="switch"><span>Sin cobertura</span><input id="show-uncovered" type="checkbox"><i></i></label>
+            <label class="switch"><span>Más de 4 años</span><input id="show-old" type="checkbox"><i></i></label>
+          </details>
 
-      <details open>
-        <summary>Fecha de presentación</summary>
-        <label class="slider">
-          <span>Desde<output id="out-from"></output></span>
-          <input id="from" type="range" min="0" step="1">
-        </label>
-        <label class="slider">
-          <span>Hasta<output id="out-to"></output></span>
-          <input id="to" type="range" min="0" step="1">
-        </label>
-        <div id="windows" class="presets" role="group" aria-label="Atajos de fechas"></div>
-      </details>
+          <details open>
+            <summary>Conexiones</summary>
+            <div id="links" class="modes wrap" role="group" aria-label="Qué une a dos expedientes"></div>
+            <p id="links-note" class="hint"></p>
+          </details>
 
-      <details open>
-        <summary>Color</summary>
-        <div id="modes" class="modes" role="group" aria-label="Color de los nodos"></div>
-        <div id="actors" class="modes actors" role="group" aria-label="Partido o actor" hidden></div>
-        <div id="scale" class="scale" hidden>
-          <div id="scale-bar" class="scale-bar"></div>
-          <div class="scale-ends"><span>en contra</span><span>neutral</span><span>a favor</span></div>
+          <details open>
+            <summary>Fecha de presentación</summary>
+            <label class="slider">
+              <span>Desde<output id="out-from"></output></span>
+              <input id="from" type="range" min="0" step="1">
+            </label>
+            <label class="slider">
+              <span>Hasta<output id="out-to"></output></span>
+              <input id="to" type="range" min="0" step="1">
+            </label>
+            <div id="windows" class="presets" role="group" aria-label="Atajos de fechas"></div>
+          </details>
+
+          <details open>
+            <summary>Color</summary>
+            <div id="modes" class="modes" role="group" aria-label="Color de los nodos"></div>
+            <div id="actors" class="modes actors" role="group" aria-label="Partido o actor" hidden></div>
+            <div id="scale" class="scale" hidden>
+              <div id="scale-bar" class="scale-bar"></div>
+              <div class="scale-ends"><span>en contra</span><span>neutral</span><span>a favor</span></div>
+            </div>
+            <div id="legend" class="legend"></div>
+            <button id="legend-clear" class="link-button" hidden>Quitar selección</button>
+            <p id="legend-note" class="hint"></p>
+            <div id="topic-summary" class="legend summary" hidden></div>
+          </details>
+
+          <details open>
+            <summary>Grupos</summary>
+            <label class="field"><span>Agrupar por</span><select id="group-by" aria-label="Agrupar por"></select></label>
+            <label class="switch"><span>Juntar los grupos</span><input id="gather" type="checkbox"><i></i></label>
+            <label class="switch"><span>Figuras</span><input id="shapes" type="checkbox"><i></i></label>
+            <label class="switch"><span>Ocultar la red</span><input id="hide-network" type="checkbox"><i></i></label>
+            <p id="group-note" class="hint"></p>
+          </details>
+
+          <details>
+            <summary>Apariencia</summary>
+            <div id="appearance"></div>
+          </details>
+
+          <details>
+            <summary>Fuerzas</summary>
+            <label class="switch"><span>Física</span><input id="physics" type="checkbox"><i></i></label>
+            <div id="forces"></div>
+            <div class="buttons">
+              <button id="reheat">Reanimar</button>
+              <button id="fit">Encuadrar</button>
+              <button id="reset">Restablecer</button>
+            </div>
+          </details>
         </div>
-        <div id="legend" class="legend"></div>
-        <button id="legend-clear" class="link-button" hidden>Quitar selección</button>
-        <p id="legend-note" class="hint"></p>
-        <div id="topic-summary" class="legend summary" hidden></div>
-      </details>
+      </aside>
 
-      <details open>
-        <summary>Grupos</summary>
-        <label class="field"><span>Agrupar por</span><select id="group-by" aria-label="Agrupar por"></select></label>
-        <label class="switch"><span>Juntar los grupos</span><input id="gather" type="checkbox"><i></i></label>
-        <label class="switch"><span>Figuras</span><input id="shapes" type="checkbox"><i></i></label>
-        <label class="switch"><span>Ocultar la red</span><input id="hide-network" type="checkbox"><i></i></label>
-        <p id="group-note" class="hint"></p>
-      </details>
-
-      <details>
-        <summary>Apariencia</summary>
-        <div id="appearance"></div>
-      </details>
-
-      <details>
-        <summary>Fuerzas</summary>
-        <label class="switch"><span>Física</span><input id="physics" type="checkbox"><i></i></label>
-        <div id="forces"></div>
-        <div class="buttons">
-          <button id="reheat">Reanimar</button>
-          <button id="fit">Encuadrar</button>
-          <button id="reset">Restablecer</button>
-        </div>
-      </details>
+      <section id="card" class="detail" hidden aria-live="polite"></section>
     </div>
-  </aside>
+  </div>
 
-  <section id="card" class="card" hidden aria-live="polite"></section>
   <div id="tip" class="tip" hidden></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>

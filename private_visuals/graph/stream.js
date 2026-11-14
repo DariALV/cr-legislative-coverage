@@ -209,6 +209,11 @@
   });
 
   // ---------- start ----------
+  // A theme change brings new colors (press.js reads them from the theme): the layers and the lists take them.
+  document.addEventListener("themechange", () => {
+    layer.areas.selectAll("path").attr("fill", (l) => P.groups[l.key].color);
+    renderLists();
+  });
   const resize = () => render(false);
   addEventListener("resize", resize);
   bindPanelToggle(resize);

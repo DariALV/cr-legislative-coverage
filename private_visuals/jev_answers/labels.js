@@ -1,5 +1,6 @@
 // Spanish labels for Jev's questions and options (the questions themselves are in English, see
 // results/jev/corpus/questions.json). Kept apart from app.js so wording can change without touching logic.
+// Colors are theme tokens (../theme/theme.css), so they follow the light and dark themes.
 window.JEV_LABELS = {
   outlets: {
     crhoy: { name: "CRHoy", color: "var(--crhoy)" },
@@ -29,10 +30,11 @@ window.JEV_LABELS = {
     pueblo_soberano: "PPSO", liberacion_nacional: "PLN", frente_amplio: "FA",
     unidad_social_cristiana: "PUSC", agenda_ciudadana: "CAC", executive: "Ejecutivo",
   },
-  // Categorical slots in fixed order (validated reference palette), one per actor; other parties are gray.
+  // One categorical theme token per actor, in fixed order (blue, orange, green, gold, pink, teal); other parties use
+  // --data-neutral. On purpose these are not the parties' real colors (--party-*). Token names, resolved when drawing.
   actorColors: {
-    pueblo_soberano: "#2a78d6", liberacion_nacional: "#eb6834", frente_amplio: "#1baf7a",
-    unidad_social_cristiana: "#eda100", agenda_ciudadana: "#e87ba4", executive: "#008300",
+    pueblo_soberano: "--cat-1", liberacion_nacional: "--cat-2", frente_amplio: "--cat-3",
+    unidad_social_cristiana: "--cat-4", agenda_ciudadana: "--cat-5", executive: "--cat-6",
   },
   position: {
     not_mentioned: "No dice", strongly_against: "Muy en contra", against: "En contra",

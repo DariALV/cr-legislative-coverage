@@ -17,7 +17,7 @@ export default {
   placeholder: "Elegí una noticia para leerla y ver los expedientes enlazados.",
 
   async init() {
-    if (!FACETS) FACETS = await getJSON("/api/news-facets");
+    if (!FACETS) FACETS = await getJSON("api/news-facets");
   },
 
   stats: () => [
@@ -44,7 +44,7 @@ export default {
     }
   },
 
-  page: (offset) => getJSON(`/api/news?${params(offset)}`),
+  page: (offset) => getJSON(`api/news?${params(offset)}`),
 
   countLine: (n) => `${fmtN(n)} noticia${n === 1 ? "" : "s"}` + (FACETS && n !== FACETS.total ? ` de ${fmtN(FACETS.total)}` : ""),
   idOf: (a) => a.id,
@@ -67,7 +67,7 @@ export default {
   },
 
   async load(id) {
-    if (!cache.has(id)) cache.set(id, await getJSON(`/api/news/${encodeURIComponent(id)}`));
+    if (!cache.has(id)) cache.set(id, await getJSON(`api/news/${encodeURIComponent(id)}`));
     return cache.get(id);
   },
 

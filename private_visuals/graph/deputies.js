@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   const D = window.GRAPH_DEPUTIES;
-  const { $, nf, esc, norm, plural, bindPanel, bindGrouping, bindTooltip, PALETTE, PARTY_COLORS } = window.GraphUI;
+  const { $, nf, esc, norm, plural, bindPanel, bindGrouping, bindTooltip, cat, partyColor } = window.GraphUI;
   // No data file, or one from before the connection types: running the build again fixes both.
   if (!D || !D.terms[0].links) {
     $("missing").hidden = false;
@@ -12,26 +12,28 @@
   }
 
   // ---------- colors ----------
-  // Each party in its own color, as people know them, stepped to read on the dark surface.
+  // Each party in its own color, as people know them (the theme's --party-* tokens, adjusted to read on
+  // each theme's background), read when used; the page recolors everything on "themechange" (see the end).
+  const party = (short, token = short) => ({ short, get color() { return partyColor(token); } });
   const PARTIES = {
-    "Partido Pueblo Soberano": { short: "PPSO", color: PARTY_COLORS.PPSO },
-    "Partido Liberación Nacional": { short: "PLN", color: PARTY_COLORS.PLN },
-    "Partido Frente Amplio": { short: "FA", color: PARTY_COLORS.FA },
-    "Partido Unidad Social Cristiana": { short: "PUSC", color: PARTY_COLORS.PUSC },
-    "Coalición Agenda Ciudadana": { short: "CAC", color: PARTY_COLORS.CAC },
-    "Independiente": { short: "Indep.", color: "#8f8e85" },
-    "Partido Acción Ciudadana": { short: "PAC", color: "#c9601a" },
-    "Partido Restauración Nacional": { short: "PRN", color: "#3f6fd9" },
-    "Partido Nueva República": { short: "PNR", color: "#9a6fe0" },
-    "Partido Liberal Progresista": { short: "PLP", color: "#e87ba4" },
-    "Partido Progreso Social Democrático": { short: "PPSD", color: "#2bb5a6" },
-    "Partido Integración Nacional": { short: "PIN", color: "#b08968" },
-    "Partido Republicano Social Cristiano": { short: "PRSC", color: "#c77d7d" },
+    "Partido Pueblo Soberano": party("PPSO"),
+    "Partido Liberación Nacional": party("PLN"),
+    "Partido Frente Amplio": party("FA"),
+    "Partido Unidad Social Cristiana": party("PUSC"),
+    "Coalición Agenda Ciudadana": party("CAC"),
+    "Independiente": party("Indep.", "other"),
+    "Partido Acción Ciudadana": party("PAC"),
+    "Partido Restauración Nacional": party("PRN"),
+    "Partido Nueva República": party("PNR"),
+    "Partido Liberal Progresista": party("PLP"),
+    "Partido Progreso Social Democrático": party("PPSD"),
+    "Partido Integración Nacional": party("PIN"),
+    "Partido Republicano Social Cristiano": party("PRSC"),
   };
-  const OTHER_PARTY = { short: "Otro", color: "#8f8e85" };
+  const OTHER_PARTY = party("Otro", "other");
   const partyOf = (name) => PARTIES[name] || OTHER_PARTY;
   const PROVINCES = ["San José", "Alajuela", "Cartago", "Heredia", "Guanacaste", "Puntarenas", "Limón"];
-  const provinceColor = (name) => PALETTE[PROVINCES.indexOf(name)] || OTHER_PARTY.color;
+  const provinceColor = (name) => (PROVINCES.includes(name) ? cat(PROVINCES.indexOf(name)) : OTHER_PARTY.color);
   // Thicker links for the pairs that almost always vote together (the other connection types
   // are put on this scale first, see makeLinks).
   const linkLevel = (agreement) => (agreement >= 95 ? 2 : agreement >= 85 ? 1 : 0);
@@ -345,7 +347,7 @@
         ${S.link === "committees" ? `<dt>Comisiones</dt><dd>${n.committees} en la legislatura</dd>` : ""}
         <dt>${link.summary}</dt><dd>${own != null ? `${own} % con su partido` : "sin compañeros de partido"}${rest != null ? ` · ${rest} % con el resto` : ""}</dd>
       </dl>
-      ${n.deputy_id ? `<div class="card-links"><a href="http://localhost:8765/#/deputy/${n.deputy_id}" target="_blank" rel="noopener">Explorador de la base</a></div>` : ""}
+      ${n.deputy_id ? `<div class="card-links"><a href="../db_explorer/#/deputy/${n.deputy_id}" target="_blank" rel="noopener">Explorador de la base</a></div>` : ""}
       ${list(link.most, common.slice(0, 6))}
       ${list(link.least, common.slice(-5).reverse())}
       ${common.length < others.length ? `<p class="hint">${link.none(others.length - common.length)}</p>` : ""}`;
@@ -363,6 +365,12 @@
   // Re-frame when the layout settles, unless the user already moved the camera.
   for (const type of ["wheel", "pointerdown"]) graph.canvas.addEventListener(type, () => { moved = true; }, { passive: true });
   graph.onSettled = () => { if (!moved) graph.fit(nodes, 600, 2.2); };
+  // A theme change brings new colors: nodes, group shapes, the legend and the open card take them.
+  document.addEventListener("themechange", () => {
+    applyColors();
+    renderLegend();
+    renderCard(graph.selected);
+  });
   loadTerm(S.term);
   window.GRAPH = graph;
 })();

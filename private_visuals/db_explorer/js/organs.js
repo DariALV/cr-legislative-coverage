@@ -36,7 +36,7 @@ export default {
 
   async init() {
     if (ORGANS) return;
-    const data = await getJSON("/api/organs");
+    const data = await getJSON("api/organs");
     ORGANS = data.organs; TOTALS = data.totals;
   },
 
@@ -89,7 +89,7 @@ export default {
   },
 
   async load(code) {
-    if (!cache.has(code)) cache.set(code, await getJSON(`/api/organ/${code}`));
+    if (!cache.has(code)) cache.set(code, await getJSON(`api/organ/${code}`));
     return cache.get(code);
   },
 

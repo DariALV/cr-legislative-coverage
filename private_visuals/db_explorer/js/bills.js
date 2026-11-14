@@ -50,7 +50,7 @@ export default {
 
   async init() {
     if (BILLS) return;
-    const data = await getJSON("/api/bills");
+    const data = await getJSON("api/bills");
     BILLS = data.bills; TOTALS = data.totals;
     BILLS.forEach((b) => byNumber.set(b.n, b));
   },
@@ -116,7 +116,7 @@ export default {
   },
 
   async load(n) {
-    if (!cache.has(n)) cache.set(n, await getJSON(`/api/bill/${n}`));
+    if (!cache.has(n)) cache.set(n, await getJSON(`api/bill/${n}`));
     return cache.get(n);
   },
 
@@ -306,7 +306,7 @@ function noticias(d) {
 async function loadNews(btn) {
   btn.textContent = "Cargando…";
   try {
-    const a = await getJSON(`/api/news/${encodeURIComponent(btn.dataset.news)}`);
+    const a = await getJSON(`api/news/${encodeURIComponent(btn.dataset.news)}`);
     const item = btn.closest(".news-item");
     let p = item.querySelector("[data-snip]");
     if (!p) { p = document.createElement("p"); p.className = "news-snippet"; btn.before(p); }

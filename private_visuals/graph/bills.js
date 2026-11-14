@@ -5,21 +5,24 @@
 (function () {
   "use strict";
   const D = window.GRAPH_BILLS, NB = window.GRAPH_NEIGHBORS;
-  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindGrouping, bindTooltip, PALETTE, stanceBin, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
+  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindGrouping, bindTooltip, token, cat, stanceBin, STANCE, ACTORS, positionColor, leanOf, leanText, signed } = window.GraphUI;
   if (!D || !NB) {
     $("missing").hidden = false;
     return;
   }
 
   // ---------- colors ----------
-  // Topics outnumber the eight hues of the palette, so the build gives neighboring topics
-  // different slots and the map labels carry the identity.
-  const NO_COVERAGE = "#63635d";
-  const OLD = "#2f2f2c";
+  // Topics outnumber the eight categorical hues, so the build gives neighboring topics different
+  // slots and the map labels carry the identity. Colors are theme tokens, read when used (see
+  // controls.js); the page recolors everything on "themechange" (see the end).
+  const noCoverage = () => token("--data-none");
+  const oldColor = () => token("--data-old");   // no coverage and older than OLD_YEARS: faded on purpose
+  const topicColor = (topic) => cat(D.topics[topic].color);
+  const status = (label, slot) => ({ label, get color() { return cat(slot); } });
   const STATUS = {
-    "in progress": { label: "En trámite", color: PALETTE[0] },
-    law: { label: "Ley", color: PALETTE[2] },
-    archived: { label: "Archivado", color: PALETTE[1] },
+    "in progress": status("En trámite", 0),
+    law: status("Ley", 2),
+    archived: status("Archivado", 1),
   };
   const OLD_YEARS = 4;
 
@@ -111,37 +114,39 @@
     topic: {
       label: "Tema",
       note: "Temas: comunidades del grafo de similitud, nombradas con sus descriptores del SIL más propios. Los colores se repiten entre temas lejanos.",
-      color: (n) => PALETTE[D.topics[n.topic].color],
+      color: (n) => topicColor(n.topic),
       group: (n) => n.topic,
-      legend: D.topics.map((t, i) => ({ key: i, label: t.name, color: PALETTE[t.color] })),
+      get legend() { return D.topics.map((t, i) => ({ key: i, label: t.name, color: topicColor(i) })); },
     },
     coverage: {
       label: "Cobertura",
       note: "Tono: promedio del puntaje de postura de Jev en las noticias con cobertura sustantiva del expediente.",
-      color: (n) => (n.substantive ? STANCE(stanceBin(n.stance ?? 50)) : n.old ? OLD : NO_COVERAGE),
+      color: (n) => (n.substantive ? STANCE(stanceBin(n.stance ?? 50)) : n.old ? oldColor() : noCoverage()),
       group: coverageGroup,
-      legend: [
-        { key: "against", label: "Prensa en contra", color: STANCE(1) },
-        { key: "neutral", label: "Prensa neutral o dividida", color: STANCE(4) },
-        { key: "favor", label: "Prensa a favor", color: STANCE(7) },
-        { key: "none", label: "Sin cobertura", color: NO_COVERAGE },
-        { key: "old", label: `Sin cobertura y más de ${OLD_YEARS} años`, color: OLD, outline: true },
-      ],
+      get legend() {
+        return [
+          { key: "against", label: "Prensa en contra", color: STANCE(1) },
+          { key: "neutral", label: "Prensa neutral o dividida", color: STANCE(4) },
+          { key: "favor", label: "Prensa a favor", color: STANCE(7) },
+          { key: "none", label: "Sin cobertura", color: noCoverage() },
+          { key: "old", label: `Sin cobertura y más de ${OLD_YEARS} años`, color: oldColor(), outline: true },
+        ];
+      },
       scale: true,
     },
     status: {
       label: "Estado",
       note: `Estado en el SIL al ${D.meta.as_of}.`,
-      color: (n) => (STATUS[n.status] || { color: NO_COVERAGE }).color,
+      color: (n) => (STATUS[n.status] ? STATUS[n.status].color : noCoverage()),
       group: (n) => n.status,
-      legend: Object.entries(STATUS).map(([key, s]) => ({ key, label: s.label, color: s.color })),
+      get legend() { return Object.entries(STATUS).map(([key, s]) => ({ key, label: s.label, color: s.color })); },
     },
     position: {
       label: "Partidos",
       note: "Posición: promedio de lo que las noticias con cobertura sustantiva dicen que ese actor opina del expediente (a favor +1, en contra −1).",
       color: (n) => {
         const position = n.positions.get(S.actor);
-        return position ? positionColor(position.value) : n.substantive ? NO_COVERAGE : OLD;
+        return position ? positionColor(position.value) : n.substantive ? noCoverage() : oldColor();
       },
       group: positionGroup,
       get legend() {
@@ -150,8 +155,8 @@
           { key: "against", label: `${who} en contra`, color: positionColor(-0.75) },
           { key: "neutral", label: `${who} dividido`, color: positionColor(0) },
           { key: "favor", label: `${who} a favor`, color: positionColor(0.75) },
-          { key: "unstated", label: `Cubierto, sin posición de ${who}`, color: NO_COVERAGE },
-          { key: "none", label: "Sin cobertura", color: OLD, outline: true },
+          { key: "unstated", label: `Cubierto, sin posición de ${who}`, color: noCoverage() },
+          { key: "none", label: "Sin cobertura", color: oldColor(), outline: true },
         ];
       },
       scale: true,
@@ -300,7 +305,6 @@
     renderLegend();
     applyHighlight();
   });
-  $("scale-bar").style.background = `linear-gradient(90deg, ${d3.range(9).map((i) => STANCE(i)).join(",")})`;
 
   // ---------- filters ----------
   $("q").addEventListener("input", (e) => { S.query = e.target.value; applyHighlight(); });
@@ -406,7 +410,7 @@
       <div class="card-number">Expediente ${n.number}</div>
       <h2>${esc(sentence(n.name))}</h2>
       <dl>
-        <dt>Tema</dt><dd><span class="swatch" style="background:${PALETTE[D.topics[n.topic].color]}"></span>${esc(D.topics[n.topic].name)}</dd>
+        <dt>Tema</dt><dd><span class="swatch" style="background:${topicColor(n.topic)}"></span>${esc(D.topics[n.topic].name)}</dd>
         <dt>Tipo</dt><dd>${esc(sentence(n.type.replace(/^PROCEDIMIENTO\s+/, "")))}</dd>
         <dt>Presentado</dt><dd>${fmtDate(n.date)}${n.age != null ? ` · ${fmt(n.age.toFixed(1))} años` : ""}</dd>
         <dt>Estado</dt><dd>${esc(status)}${n.law ? ` N.º ${n.law}` : ""}</dd>
@@ -416,7 +420,7 @@
       </dl>
       <div class="card-links">
         <a href="../jev_answers/#bill=${n.number}" target="_blank" rel="noopener">Noticias en el visor de Jev</a>
-        <a href="http://localhost:8765/#/bill/${n.number}" target="_blank" rel="noopener">Explorador de la base</a>
+        <a href="../db_explorer/#/bill/${n.number}" target="_blank" rel="noopener">Explorador de la base</a>
       </div>
       <h3>${LINK_SETS[S.links].list}</h3>
       <ul class="similar">${similar.map((s) => `
@@ -442,6 +446,12 @@
     $("subtitle").textContent = `${plural(graph.visibleNodes.length, "expediente", "expedientes")} · ${nf(graph.visibleLinks.length)} enlaces · ${D.topics.length} temas`
       + (whole ? "" : ` · presentados de ${monthLabel(S.from)} a ${monthLabel(S.to)}`);
   }
+  // A theme change brings new colors: nodes, group shapes, legends and the open card take them.
+  document.addEventListener("themechange", () => {
+    applyColors();
+    renderLegend();
+    graph.onSelect(graph.selected);
+  });
   applyColors();
   applyFilters();
   graph.fit(nodes, 0, 3);

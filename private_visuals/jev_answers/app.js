@@ -20,11 +20,15 @@
   const FRAMES = Q.main_frame.options;
   const GENRES = D.meta.genre_options;
   const POSITIONS = Q[ACTORS[0]].options;
-  const STANCE_COLORS = ["var(--neg-2)", "var(--neg-1)", "var(--neu)", "var(--pos-1)", "var(--pos-2)"];
+  const K = window.JEV_COLORS;
+  // Five-step stance scale (very critical .. very favorable) on the theme's diverging tokens.
+  const STANCE_TOKENS = ["--div-neg", "--div-neg-soft", "--div-mid", "--div-pos-soft", "--div-pos"];
+  const STANCE_COLORS = STANCE_TOKENS.map((t) => `var(${t})`);
   const POSITION_COLORS = {
-    not_mentioned: "", strongly_against: "var(--neg-2)", against: "var(--neg-1)",
-    neutral_or_divided: "var(--neu)", in_favor: "var(--pos-1)", strongly_in_favor: "var(--pos-2)",
+    not_mentioned: "", strongly_against: "var(--div-neg)", against: "var(--div-neg-soft)",
+    neutral_or_divided: "var(--div-mid)", in_favor: "var(--div-pos-soft)", strongly_in_favor: "var(--div-pos)",
   };
+  const VIEWS = [["news", "Por noticia", "news"], ["bill", "Por expediente", "doc"], ["analysis", "Análisis", "chart"]];
 
   // ---------- helpers ----------
   const norm = (s) => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -35,7 +39,7 @@
   const band = (v) => (v >= 80 ? "hi" : v >= 50 ? "mid" : "lo");
   const fmtDate = (iso) => new Date(iso).toLocaleDateString("es-CR", { day: "numeric", month: "short", year: "numeric" });
   const argmax = (arr) => arr.reduce((best, v, i) => (v > arr[best] ? i : best), 0);
-  const outletOf = (k) => OUTLETS[k] || { name: k, color: "var(--ink-3)" };
+  const outletOf = (k) => OUTLETS[k] || { name: k, color: "var(--data-none)" };
 
   // ---------- data model ----------
   const news = D.news.map((n, i) => {
@@ -347,7 +351,7 @@
       <button class="hbar${r.on ? " on" : ""}${opts.static ? " static" : ""}" ${r.act ? `data-act="${r.act}"` : ""}
         data-tip="<b>${nf(r.count)}</b> ${esc(opts.unit || "")} · ${esc(r.label)}${total ? ` · ${Math.round((r.count / total) * 100)} %` : ""}">
         <span class="lbl">${esc(r.label)}</span>
-        <span class="track"><i style="width:${(r.count / max) * 100}%;--c:${r.color || "var(--mid)"}"></i></span>
+        <span class="track"><i style="width:${(r.count / max) * 100}%;--c:${r.color || "var(--progress)"}"></i></span>
         <span class="val">${nf(r.count)}</span>
       </button>`).join("")}</div>`;
   }
@@ -424,6 +428,7 @@
   }
 
   // ---------- header stats ----------
+  const TILE_TONES = ["sky", "mint", "lavender", "peach", "rose"];
   function renderStats(kept) {
     const nNews = new Set(kept.map((p) => p.n.i)).size;
     const nBills = new Set(kept.map((p) => p.b.num)).size;
@@ -435,7 +440,7 @@
       ["Pares", nf(kept.length), ""],
       ["Con detalle", nf(withDet), kept.length ? `${Math.round((withDet / kept.length) * 100)} %` : ""],
       ["Enlaces de Delfino que pasan", `${delfinoLinks.length ? Math.round((hit / delfinoLinks.length) * 100) : 0} %`, `${nf(hit)}/${nf(delfinoLinks.length)}`],
-    ].map(([k, v, s]) => `<div class="stat"><dt>${k}</dt><dd>${v}${s ? `<small>${s}</small>` : ""}</dd></div>`).join("");
+    ].map(([k, v, s], i) => `<div class="stat ${TILE_TONES[i]}"><dt>${k}</dt><dd>${v}${s ? `<small>${s}</small>` : ""}</dd></div>`).join("");
   }
 
   // ---------- active filter pills ----------
@@ -495,6 +500,7 @@
       $("list").innerHTML = "";
       $("empty").hidden = true;
       window.JEV_ANALYSIS?.render(kept, base);
+      setToolbarH();
       return;
     }
     groups = group(kept);
@@ -503,6 +509,7 @@
     renderMore();
     $("empty").hidden = groups.length > 0;
     renderCharts(base, kept);
+    setToolbarH();
     const sortLabel = Object.fromEntries(SORTS[S.view])[S.sort[S.view]].toLowerCase();
     const detNote = pairDetailActive() || newsDetailActive() ? " · solo pares con detalle (≥ 0,50 en la corrida)" : "";
     $("result-line").innerHTML = groups.length
@@ -579,19 +586,22 @@
   function distRows(probs, labels, opts = {}) {
     const top = argmax(probs);
     return `<div class="dist">${probs.map((v, i) => `
-      <div class="d${i === top ? " lead" : ""}" style="--c:${opts.colors ? opts.colors[i] : "var(--mid)"}">
+      <div class="d${i === top ? " lead" : ""}" style="--c:${opts.colors ? opts.colors[i] : "var(--progress)"}">
         <span>${esc(labels[i])}</span><span class="bar"><i style="width:${v}%"></i></span><b>${fp(v)}</b>
       </div>`).join("")}</div>`;
   }
-  function scale(probs, labels, colors) {
-    return `<div class="scale">${probs.map((v, i) => `<i style="background:${colors[i]};opacity:${0.18 + (v / 100) * 0.82}" data-tip="${esc(labels[i])}: <b>${fp(v)}</b>">${v >= 12 ? fp(v) : ""}</i>`).join("")}</div>
+  // Each step is its stance color faded toward the card by its probability; the text keeps 4.5:1 on it.
+  function scale(probs, labels, tokens) {
+    return `<div class="scale">${probs.map((v, i) => `<i style="${K.cellStyle(K.mix(K.tok("--surface"), K.tok(tokens[i]), 0.18 + (v / 100) * 0.82))}" data-tip="${esc(labels[i])}: <b>${fp(v)}</b>">${v >= 12 ? fp(v) : ""}</i>`).join("")}</div>
       <div class="scale-lbl"><span>${esc(labels[0])}</span><span>${esc(labels.at(-1))}</span></div>`;
   }
   function flag(label, v, key) {
     return `<div class="flag${v >= 50 ? " yes" : ""}" title="${qTitle(key)}">${icon("check")}<span>${esc(label)}</span><b>${fp(v)}</b></div>`;
   }
 
+  let panelPair = null;
   function openPanel(p) {
+    panelPair = p;
     const n = p.n, b = p.b, o = outletOf(n.outlet), d = p.det, a = n.a;
     const gate = (k, v) => v < 0
       ? `<div class="g"><div class="k">${k}</div><div class="v" style="color:var(--ink-3)">—</div><div class="k">no estuvo entre los candidatos</div></div>`
@@ -616,7 +626,7 @@
         <div class="qhead" title="${qTitle("centrality")}">Centralidad<span>${(d.centrality[0] / 100).toFixed(2).replace(".", ",")} de 2</span></div>
         ${distRows(d.centrality.slice(2), L.centrality)}
         <div class="qhead" title="${qTitle("stance")}">Postura de la noticia<span>${(d.stance[0] / 100).toFixed(2).replace(".", ",")} de 4</span></div>
-        ${scale(d.stance.slice(2), L.stance, STANCE_COLORS)}
+        ${scale(d.stance.slice(2), L.stance, STANCE_TOKENS)}
         <div class="qhead" title="${qTitle("stage")}">Etapa según la noticia</div>
         ${distRows(d.stage, STAGES.map((k) => L.stage[k]))}
       </section>
@@ -635,7 +645,7 @@
       <div class="qhead" title="${qTitle("genre")}">Género</div>${distRows(n.genreProbs, GENRES.map((k) => L.genre[k]))}`;
     if (a.main_frame) {
       html += `<div class="qhead" title="${qTitle("main_frame")}">Encuadre dominante</div>${distRows(a.main_frame, FRAMES.map((k) => L.main_frame[k]))}
-        <div class="qhead" title="${qTitle("assembly_image")}">Imagen de la Asamblea</div>${scale(a.assembly_image.slice(2), L.assembly_image, STANCE_COLORS)}
+        <div class="qhead" title="${qTitle("assembly_image")}">Imagen de la Asamblea</div>${scale(a.assembly_image.slice(2), L.assembly_image, STANCE_TOKENS)}
         <div class="flags" style="margin-top:12px">${flag(L.news_flags.press_release, a.press_release, "press_release")}${flag(L.news_flags.headline_misleading, a.headline_misleading, "headline_misleading")}</div>`;
     }
     html += `</section>`;
@@ -654,6 +664,7 @@
     document.body.classList.add("locked");
   }
   function closePanel() {
+    panelPair = null;
     $("panel").classList.remove("open");
     $("panel").setAttribute("aria-hidden", "true");
     $("scrim").hidden = true;
@@ -695,6 +706,9 @@
   // ---------- controls ----------
   function syncControls() {
     document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", String(t.dataset.view === S.view)));
+    document.querySelectorAll("#views [data-view]").forEach((a) => {
+      if (a.dataset.view === S.view) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current");
+    });
     $("sort").innerHTML = (SORTS[S.view] || []).map(([k, l]) => `<option value="${k}"${S.sort[S.view] === k ? " selected" : ""}>${l}</option>`).join("");
     document.querySelectorAll("#outlets .chip").forEach((c) => c.setAttribute("aria-pressed", String(S.outlets.has(c.dataset.outlet))));
     document.querySelectorAll("#mode button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.mode === S.mode)));
@@ -718,9 +732,17 @@
     apply();
   });
 
-  document.querySelector(".tabs").addEventListener("click", (e) => {
-    const t = e.target.closest(".tab");
-    if (!t || t.dataset.view === S.view) return;
+  // The views live in the sidebar (under this page) and, for narrow screens and the folded sidebar, in the toolbar.
+  const subnav = $("views");
+  if (subnav) {
+    subnav.setAttribute("aria-label", "Vistas");
+    subnav.innerHTML = VIEWS.map(([k, label, ic]) => `<a class="nav-item" href="#" data-view="${k}">${icon(ic)}<span class="label">${label}</span></a>`).join("");
+  }
+  document.addEventListener("click", (e) => {
+    const t = e.target.closest("[data-view]");
+    if (!t) return;
+    e.preventDefault();
+    if (t.dataset.view === S.view) return;
     S.view = t.dataset.view;
     syncControls();
     apply();
@@ -745,6 +767,7 @@
     $("filters").hidden = !open;
     e.currentTarget.setAttribute("aria-expanded", String(open));
     if (open) renderFilters();
+    setToolbarH();
   });
   $("toggle-summary").addEventListener("click", (e) => {
     const open = e.currentTarget.getAttribute("aria-expanded") === "true";
@@ -754,6 +777,21 @@
   $("charts").addEventListener("click", (e) => {
     const b = e.target.closest("[data-act]");
     if (b) chartAction(b.dataset.act);
+  });
+
+  // Sticky elements under the toolbar need its height, which changes with wrapping and the filter drawer.
+  const setToolbarH = () => document.documentElement.style.setProperty("--toolbar-h", document.querySelector(".toolbar").offsetHeight + "px");
+  addEventListener("resize", setToolbarH);
+
+  // Colors computed in JS (stance scale in the panel, the analysis charts) are redrawn when the theme changes;
+  // everything else uses var(--token) and follows by itself. View, filters, selection and scroll are kept.
+  document.addEventListener("themechange", () => {
+    if (isAnalysis()) window.JEV_ANALYSIS?.rerender();
+    if (panelPair) {
+      const top = $("panel-body").scrollTop;
+      openPanel(panelPair);
+      $("panel-body").scrollTop = top;
+    }
   });
 
   const toTop = $("to-top");

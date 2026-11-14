@@ -5,7 +5,7 @@
 (function () {
   "use strict";
   const D = window.GRAPH_NEWS, B = window.GRAPH_BILLS;
-  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindGrouping, bindTooltip, PALETTE, stanceBin, STANCE } = window.GraphUI;
+  const { $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindGrouping, bindTooltip, token, cat, outletColor, stanceBin, STANCE } = window.GraphUI;
   if (!D) {
     $("missing").hidden = false;
     return;
@@ -19,16 +19,26 @@
   }
   const TOPICS = B ? B.topics : [];
   const billName = (number) => (BILLS.has(number) ? sentence(BILLS.get(number).name) : "");
-  const topicColor = (number) => (BILLS.has(number) ? PALETTE[TOPICS[BILLS.get(number).topic].color] : NONE);
+  const topicColor = (number) => (BILLS.has(number) ? cat(TOPICS[BILLS.get(number).topic].color) : none());
 
   // ---------- labels and colors ----------
-  const NONE = "#63635d";
+  // Colors are theme tokens read when used (see controls.js); the page recolors everything on "themechange".
+  const none = () => token("--data-none");   // no bill, outside the filter
   const OUTLETS = { crhoy: "CRHoy", nacion: "La Nación", delfino: "Delfino", elmundo: "El Mundo CR", semanario: "Semanario Universidad" };
   const outletLabel = (key) => OUTLETS[key] || key;
   const GENRES = { news_report: "Noticia", opinion: "Opinión", interview: "Entrevista", analysis: "Análisis" };
   const months = [...new Set(D.nodes.map((row) => row[D.fields.indexOf("date")].slice(0, 7)))].sort();
   const monthLabel = (index) => new Date(`${months[index]}-15T12:00:00`).toLocaleDateString("es-CR", { month: "long", year: "numeric" });
-  const monthColor = (index) => d3.interpolateViridis(0.3 + 0.65 * index / Math.max(1, months.length - 1));
+  // Months along viridis (perceptually even, readable by color-blind readers), over the part of it that
+  // stands out from the canvas: from the dark violet to the green on a light canvas, from the blue to
+  // the yellow on a dark one. Which one is told by the lightness of the theme's --canvas.
+  let monthRange = null;
+  document.addEventListener("themechange", () => { monthRange = null; });
+  const monthColor = (index) => {
+    if (!monthRange) monthRange = d3.hsl(token("--canvas")).l > 0.5 ? [0.02, 0.78] : [0.3, 0.95];
+    const [low, high] = monthRange;
+    return d3.interpolateViridis(low + (high - low) * index / Math.max(1, months.length - 1));
+  };
   const fmtDate = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("es-CR", { day: "numeric", month: "short", year: "numeric" });
 
   // ---------- nodes ----------
@@ -124,26 +134,26 @@
     outlet: {
       label: "Medio",
       note: "Medio que publicó la noticia.",
-      color: (n) => PALETTE[D.outlets.indexOf(n.outlet)],
+      color: (n) => outletColor(n.outlet),
       group: (n) => n.outlet,
-      legend: () => D.outlets.map((o, i) => ({ key: o, label: outletLabel(o), color: PALETTE[i] })),
+      legend: () => D.outlets.map((o) => ({ key: o, label: outletLabel(o), color: outletColor(o) })),
     },
     topic: {
       label: "Tema",
       note: "Tema del expediente principal de la noticia (el de mayor centralidad según Jev), tomado del grafo de expedientes.",
-      color: (n) => (n.topic != null ? PALETTE[TOPICS[n.topic].color] : NONE),
+      color: (n) => (n.topic != null ? cat(TOPICS[n.topic].color) : none()),
       group: (n) => (n.topic != null ? n.topic : "none"),
-      legend: () => [...TOPICS.map((t, i) => ({ key: i, label: t.name, color: PALETTE[t.color] })),
-        { key: "none", label: "Sin expediente", color: NONE }],
+      legend: () => [...TOPICS.map((t, i) => ({ key: i, label: t.name, color: cat(t.color) })),
+        { key: "none", label: "Sin expediente", color: none() }],
       labels: true,
     },
     genre: {
       label: "Género",
       note: "Género según Jev. Solo lo tienen las noticias que pasan el filtro sobre la Asamblea.",
-      color: (n) => (n.genre ? PALETTE[D.genres.indexOf(n.genre)] : NONE),
+      color: (n) => (n.genre ? cat(D.genres.indexOf(n.genre)) : none()),
       group: (n) => n.genre || "none",
-      legend: () => [...D.genres.map((g, i) => ({ key: g, label: GENRES[g] || g, color: PALETTE[i] })),
-        { key: "none", label: "Fuera del filtro", color: NONE }],
+      legend: () => [...D.genres.map((g, i) => ({ key: g, label: GENRES[g] || g, color: cat(i) })),
+        { key: "none", label: "Fuera del filtro", color: none() }],
     },
     month: {
       label: "Mes",
@@ -155,13 +165,13 @@
     tone: {
       label: "Tono",
       note: "Postura de la noticia sobre su expediente principal, según Jev (0 en contra, 100 a favor).",
-      color: (n) => (n.main && n.main.stance != null ? STANCE(stanceBin(n.main.stance)) : NONE),
+      color: (n) => (n.main && n.main.stance != null ? STANCE(stanceBin(n.main.stance)) : none()),
       group: toneGroup,
       legend: () => [
         { key: "against", label: "En contra", color: STANCE(1) },
         { key: "neutral", label: "Neutral o dividida", color: STANCE(4) },
         { key: "favor", label: "A favor", color: STANCE(7) },
-        { key: "none", label: "Sin expediente", color: NONE },
+        { key: "none", label: "Sin expediente", color: none() },
       ],
       scale: true,
     },
@@ -171,12 +181,12 @@
   // ---------- state ----------
   const GATHER = 0.06;   // pull toward the middle of the own group when the groups are gathered
   const S = { subset: "all", links: "content", mode: "outlet", isolated: new Set(), query: "" };
-  const graph = new ForceGraph($("graph"), { far: 5, repelRadius: 40, labelZoom: 2.2 });
-  graph.simulation.alphaDecay(0.035);   // tens of thousands of nodes: settle in 200 ticks instead of 300
+  // Tens of thousands of nodes: settle in 200 ticks instead of 300 (Obsidian's mode keeps its own 300).
+  const graph = new ForceGraph($("graph"), { far: 5, repelRadius: 40, labelZoom: 2.2, alphaDecay: 0.035 });
   const subsetNow = () => LINK_SETS[S.links].subset || S.subset;
-  // What sets the layout: the news shown, what links them and, when gathered, the grouping.
+  // What sets the layout: the physics, the news shown, what links them and, when gathered, the grouping.
   let grouping = null;   // bindGrouping, below
-  const stateKey = () => `${subsetNow()}|${S.links}|${grouping && grouping.gathered() ? grouping.by() : "-"}`;
+  const stateKey = () => `${graph.settings.mode}|${subsetNow()}|${S.links}|${grouping && grouping.gathered() ? grouping.by() : "-"}`;
   let lastKey = null;    // the state the current positions belong to
   // Only the whole map is remembered between visits: it is the slow one to lay out.
   const storageKey = `graph:news:${D.meta.as_of}:${nodes.length}`;
@@ -299,7 +309,6 @@
     renderLegend();
     applyHighlight();
   });
-  $("scale-bar").style.background = `linear-gradient(90deg, ${d3.range(9).map((i) => STANCE(i)).join(",")})`;
 
   $("q").addEventListener("input", (e) => { S.query = e.target.value; applyHighlight(); });
   $("q").addEventListener("keydown", (e) => {
@@ -323,6 +332,9 @@
       if (recall()) { graph.startAt(0.02); graph.requestDraw(); }
     },
   });
+
+  // Another physics starts from the positions on screen: the layout now belongs to the new mode.
+  document.addEventListener("graph-settings", (e) => { if (e.detail.key === "mode") lastKey = stateKey(); });
 
   // ---------- tooltip ----------
   bindTooltip(graph, (n) => `<b>${esc(cut(n.title, 140))}</b>
@@ -356,7 +368,7 @@
       </dl>
       <div class="card-links">
         ${url ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Abrir la noticia</a>` : ""}
-        <a href="http://localhost:8765/#/news/${encodeURIComponent(n.id)}" target="_blank" rel="noopener">Explorador de la base</a>
+        <a href="../db_explorer/#/news/${encodeURIComponent(n.id)}" target="_blank" rel="noopener">Explorador de la base</a>
         ${n.main ? `<a href="../jev_answers/#bill=${n.main.number}" target="_blank" rel="noopener">Expediente ${n.main.number} en el visor de Jev</a>` : ""}
       </div>
       ${linked.length ? `<h3>${LINK_SETS[S.links].list}</h3>
@@ -385,6 +397,12 @@
   let moved = false;   // the user took over the camera: stop re-framing
   for (const type of ["wheel", "pointerdown"]) graph.canvas.addEventListener(type, () => { moved = true; }, { passive: true });
   graph.onSettled = () => { if (!moved) graph.fit(graph.visibleNodes, 600, 3); };
+  // A theme change brings new colors: nodes, group shapes, the legend and the open card take them.
+  document.addEventListener("themechange", () => {
+    applyColors();
+    renderLegend();
+    graph.onSelect(graph.selected);
+  });
   applyColors();
   apply();
   graph.fit(nodes, 0, 3);

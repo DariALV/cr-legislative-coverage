@@ -62,7 +62,7 @@
     ["Expedientes distintos", Object.keys(bills).length.toLocaleString("es-CR")],
     ["Conexiones", allScores.length.toLocaleString("es-CR")],
     ["Enlaces explícitos", explicit.toLocaleString("es-CR")],
-  ].map(([k, v]) => `<div class="stat"><dt>${k}</dt><dd>${v}</dd></div>`).join("");
+  ].map(([k, v], i) => `<div class="stat ${["sky", "mint", "lavender", "peach"][i]}"><dt>${k}</dt><dd>${v}</dd></div>`).join("");
 
   // ---------- outlet chips ----------
   const counts = {};

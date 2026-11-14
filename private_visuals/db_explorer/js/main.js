@@ -12,6 +12,9 @@ const SECTIONS = [bills, deputies, organs, news];
 const byList = Object.fromEntries(SECTIONS.map((s) => [s.listRoute, s]));
 const byItem = Object.fromEntries(SECTIONS.map((s) => [s.route, s]));
 
+// Pastel tone of each stat tile, in order.
+const TILE_TONES = ["sky", "mint", "lavender", "peach", "rose"];
+
 let section = null;       // current section
 let current = null;       // id of the open item (string)
 let items = [];           // items rendered in the list, in order
@@ -22,7 +25,15 @@ let busy = false;
 const setToolbarH = () => document.documentElement.style.setProperty("--toolbar-h", document.querySelector(".toolbar").offsetHeight + "px");
 addEventListener("resize", setToolbarH);
 
-$("nav").innerHTML = SECTIONS.map((s) => `<a href="#/${s.listRoute}" data-s="${s.listRoute}">${s.label}</a>`).join("");
+// One line under the page title per section.
+const SUBTITLES = {
+  bills: "Expedientes del SIL con su trámite, votaciones y noticias",
+  deputies: "Diputados con sus fracciones, comisiones y expedientes",
+  organs: "Comisiones y demás órganos de la Asamblea",
+  news: "Noticias de los cinco medios, mayo a octubre de 2026",
+};
+
+$("nav").innerHTML = SECTIONS.map((s) => `<a class="nav-item" href="#/${s.listRoute}" data-s="${s.listRoute}" title="${s.label}">${icon(s.icon)}<span class="label">${s.label}</span></a>`).join("");
 
 // ---------- routing ----------
 async function route() {
@@ -38,8 +49,13 @@ async function route() {
 async function enter(s) {
   section = s;
   current = null;
-  document.querySelectorAll("#nav a").forEach((a) => a.classList.toggle("active", a.dataset.s === s.listRoute));
+  document.querySelectorAll("#nav a").forEach((a) => {
+    if (a.dataset.s === s.listRoute) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  });
   document.title = `${s.label} · Explorador del corpus`;
+  $("page-title").textContent = s.label;
+  $("page-sub").textContent = SUBTITLES[s.listRoute] || "";
   $("toolbar").innerHTML = "";
   $("stats").innerHTML = "";
   $("list").innerHTML = "";
@@ -53,7 +69,7 @@ async function enter(s) {
     return fail();
   }
   if (section !== s) return;
-  $("stats").innerHTML = s.stats().map(([k, v]) => `<div class="stat"><dt>${k}</dt><dd>${v}</dd></div>`).join("");
+  $("stats").innerHTML = s.stats().map(([k, v], i) => `<div class="stat ${TILE_TONES[i % TILE_TONES.length]}"><dt>${k}</dt><dd>${v}</dd></div>`).join("");
   $("toolbar").innerHTML = s.toolbar();
   s.bind($("toolbar"), refresh);
   setToolbarH();

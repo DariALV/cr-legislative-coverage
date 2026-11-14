@@ -15,6 +15,16 @@
     linkStrength: 1,     // multiplier on d3's per-link default
     linkDistance: 30,
     damping: 0.4,        // velocity decay: higher settles faster
+    alphaDecay: 1 - Math.pow(0.001, 1 / 300),   // d3's: the layout settles in 300 ticks
+    // "obsidian" swaps the forces above for those of Obsidian's graph view (see OBSIDIAN below);
+    // these are its four sliders, with its ranges and defaults, plus the friction.
+    mode: "own",
+    obCenter: 0.1,
+    obRepel: 10,         // the charge is this value cubed
+    obLinkStrength: 1,
+    obLinkDistance: 250,
+    obDamping: 0.6,
+    sizeByLinks: false,  // node sizes follow the number of links instead of node.size (same mean size)
     nodeScale: 1,
     nodeOpacity: 1,      // at 0 only the node under the pointer (or the selected one) and its neighbors show
     imageOpacity: 1,     // photos inside the nodes, times nodeOpacity; at 0 the nodes are plain
@@ -33,9 +43,12 @@
     shapeEdges: false,   // the outline of each patch, where it holds most of the group's nodes
     physics: true,
   };
-  const INK = "#f0efec";
-  const INK_SOFT = "#c3c2b7";
-  const SURFACE = "#1a1a19";
+  // Colors of the engine's own marks (plain links, rings, names), from the shared theme's tokens
+  // (../theme/theme.js must be loaded): ink for links and strong names, a softer ink for the other
+  // names, the canvas color for the halos and the ring around each node. Read on the first draw and
+  // again after every "themechange"; the page sets the colors of the nodes, colored links and groups.
+  const THEME = { ink: "--ink", inkSoft: "--ink-2", canvas: "--canvas", font: "--font" };
+  const readTheme = () => Object.fromEntries(Object.entries(THEME).map(([key, name]) => [key, window.LC.css(name)]));
   const DIM = 0.12;            // opacity of nodes outside the current focus
   const LINK_LEVELS = [{ width: 1, alpha: 1 }, { width: 1.5, alpha: 1.25 }, { width: 2.2, alpha: 1.6 }];
   const COLORED_LINK_BOOST = 3;
@@ -59,7 +72,16 @@
   const HAIRLINE = 0.95;       // device pixels
   const HAIRLINE_MAX = 2;      // links thinner than this, in device pixels, are drawn as hairlines
   const SQUARE_BELOW = 1.75;   // nodes smaller than this radius on screen are squares: cheaper to fill than arcs
-  const FONT = '"Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif';
+
+  // Obsidian's graph view, as read from its 1.13.7 bundle by a third party (Obsidian does not document
+  // it): d3-force with forceX/forceY at the center strength, d3's forceLink, forceManyBody with a charge
+  // of minus the repel slider cubed and distanceMin 30 (no distanceMax: every node pushes every other),
+  // forceCollide of radius 60 at strength 0.5, velocityDecay 0.6, d3's alpha decay and one tick every
+  // 1000/60 ms. Dragging keeps alpha and alphaTarget at 0.3; letting go lets it cool with inertia.
+  // Our nodes are about a third the size of Obsidian's for the same distances, so the whole thing runs
+  // in a world SCALE times smaller: lengths divided by SCALE and the charge by SCALE squared, which
+  // gives the same layout, shrunk, and keeps the zoom levels of names and links as they are.
+  const OBSIDIAN = { scale: 3, distanceMin: 30, collide: 60, collideStrength: 0.5, reheat: 0.3, tickMs: 1000 / 60 };
 
   // Short-range repulsion on a uniform grid. d3.forceManyBody takes about 100 ms a tick with
   // 6,000 nodes packed this densely; this one only pairs up nodes closer than `radius`,
@@ -310,6 +332,126 @@
     return force;
   }
 
+  // ---------- Obsidian's mode in a Web Worker ----------
+  // Global repulsion costs ~43 ms a tick with the 5,898 bills (measured), too slow for the page's own
+  // thread, so in Obsidian's mode the simulation runs in a worker, like Obsidian's: it ticks on its own
+  // clock and posts the positions back; the page only draws the latest ones. The worker's source is
+  // this function plus d3 and forceGroup, put together in obsidianWorkerUrl.
+  function obsidianWorker() {
+    const sim = d3.forceSimulation().stop();
+    const link = d3.forceLink(), charge = d3.forceManyBody(), collide = d3.forceCollide(), group = forceGroup();
+    sim.force("link", link).force("charge", charge).force("collide", collide).force("group", group)
+      .force("x", d3.forceX(0)).force("y", d3.forceY(0));
+    let nodes = [], degree = new Int32Array(0), radius = new Float32Array(0), linkStrength = 1;
+    let running = false, timer = 0, seq = 0;
+    const strength = (l) => linkStrength * l.pull / Math.min(degree[l.source.index], degree[l.target.index]);
+    function post(end) {
+      const xy = new Float32Array(2 * nodes.length);
+      nodes.forEach((d, i) => { xy[2 * i] = d.x; xy[2 * i + 1] = d.y; });
+      postMessage({ xy, alpha: sim.alpha(), seq, end }, [xy.buffer]);
+    }
+    function step() {
+      if (!running) return;
+      // Done once cold, unless a drag holds alphaTarget up (d3 then raises alpha on the next ticks).
+      if ((sim.alpha() < sim.alphaMin() && sim.alphaTarget() < sim.alphaMin()) || !nodes.length) { running = false; post(true); return; }
+      timer = setTimeout(step, TICK_MS);   // scheduled first, as Obsidian does: a slow tick runs back to back
+      sim.tick();
+      post(false);
+    }
+    onmessage = ({ data: m }) => {
+      if (m.type === "data") {
+        nodes = Array.from({ length: m.n }, (_, i) => ({ x: m.xy[2 * i], y: m.xy[2 * i + 1], vx: 0, vy: 0 }));
+        degree = new Int32Array(m.n);
+        const links = Array.from(m.source, (source, k) => {
+          degree[source]++; degree[m.target[k]]++;
+          return { source, target: m.target[k], pull: m.pull[k] };
+        });
+        sim.nodes(nodes);
+        link.links(links);
+      } else if (m.type === "forces") {
+        linkStrength = m.linkStrength;
+        radius = m.radius;
+        link.distance(m.linkDistance).strength(strength);
+        charge.strength(m.charge).distanceMin(m.distanceMin);
+        collide.strength(m.collideStrength).radius((d, i) => radius[i]);
+        group.strength(m.group);
+        sim.force("x").strength(m.center);
+        sim.force("y").strength(m.center);
+        sim.velocityDecay(m.damping).alphaDecay(m.alphaDecay);
+      } else if (m.type === "groups") {
+        nodes.forEach((d, i) => { d.group = m.group[i] < 0 ? undefined : m.group[i]; });
+      } else if (m.type === "alpha") {
+        if (m.alpha != null) sim.alpha(m.alpha);
+        if (m.alphaTarget != null) sim.alphaTarget(m.alphaTarget);
+        seq = m.seq;
+      } else if (m.type === "pin") {
+        const d = nodes[m.i];
+        if (d) { d.fx = m.x; d.fy = m.y; }
+      } else if (m.type === "run") {
+        if (!running) { running = true; step(); }
+      } else if (m.type === "stop") {
+        running = false;
+        clearTimeout(timer);
+      }
+    };
+  }
+  let workerUrl = null;
+  function obsidianWorkerUrl() {
+    if (workerUrl) return workerUrl;
+    const d3Script = [...document.scripts].find((el) => /\/d3(\.min)?\.js/.test(el.src));
+    const source = `importScripts(${JSON.stringify(d3Script.src)});
+const GROUP_ROOM = ${GROUP_ROOM}, GROUP_PUSH = ${GROUP_PUSH}, TICK_MS = ${OBSIDIAN.tickMs};
+const forceGroup = ${forceGroup.toString()};
+(${obsidianWorker.toString()})();`;
+    return (workerUrl = URL.createObjectURL(new Blob([source], { type: "text/javascript" })));
+  }
+
+  /** The page's side of the worker, with the part of d3's simulation API the engine uses (alpha,
+   *  alphaTarget, alphaMin). Alpha lives in the worker; a report older than the last value set here
+   *  (seq) is ignored, so a reheat is never undone by a tick that was already on its way. */
+  class RemoteSimulation {
+    constructor(onTick) {
+      this.onTick = onTick;   // (positions, end) => ...
+      this.worker = null;
+      this.running = false;
+      this.current = 0;
+      this.target = 0;
+      this.seq = 0;
+    }
+    post(message, transfer) {
+      if (!this.worker) {
+        this.worker = new Worker(obsidianWorkerUrl());
+        this.worker.onmessage = ({ data }) => {
+          if (data.seq === this.seq) this.current = data.alpha;
+          if (data.end && data.seq === this.seq) this.running = false;
+          this.onTick(data.xy, data.end);
+        };
+      }
+      this.worker.postMessage(message, transfer);
+    }
+    alpha(value) {
+      if (value === undefined) return this.current;
+      this.current = value;
+      this.post({ type: "alpha", alpha: value, seq: ++this.seq });
+      return this;
+    }
+    alphaTarget(value) {
+      if (value === undefined) return this.target;
+      this.target = value;
+      this.post({ type: "alpha", alphaTarget: value, seq: ++this.seq });
+      return this;
+    }
+    alphaMin() { return 0.001; }
+    run() {
+      this.running = true;
+      this.post({ type: "run" });
+    }
+    stop() {
+      this.running = false;
+      if (this.worker) this.worker.postMessage({ type: "stop" });
+    }
+  }
+
   // Group shapes: a soft patch of color behind each group, made from the density of its nodes on a
   // coarse grid. It is strongest where most of the group sits and fades out toward its stray nodes;
   // where the patches of two groups overlap, their colors mix. The outline, when drawn, is the
@@ -380,9 +522,23 @@
       this.frame = 0;
       this.running = false;      // the simulation is being stepped
       this.layoutKey = null;     // where the settled positions are remembered (see restoreLayout)
+      this.theme = null;         // the colors and font of the engine's own marks, see readTheme
 
       this.linkForce = forceSpring();
-      this.chargeForce = forceRepel().nodeRadius((n) => n.size * this.settings.nodeScale);
+      this.chargeForce = forceRepel().nodeRadius((n) => this.sizeOf(n) * this.settings.nodeScale);
+      // Obsidian's mode runs in a worker (see RemoteSimulation); its collision radius is fixed, and
+      // grows past that only for nodes bigger than it (photos), so they don't overlap.
+      this.collideRadius = (n) => Math.max(OBSIDIAN.collide / OBSIDIAN.scale, this.sizeOf(n) * this.settings.nodeScale + COLLIDE_PAD);
+      this.activeMode = "own";   // the physics in force, see applyMode
+      // The worker's positions go into the nodes as they arrive; the next frame draws them.
+      this.remote = new RemoteSimulation((xy) => {
+        if (!this.obsidian || xy.length !== 2 * this.visibleNodes.length) return;   // stale: the mode or the nodes changed
+        this.visibleNodes.forEach((d, i) => {
+          if (d.fx != null) { d.x = d.fx; d.y = d.fy; } else { d.x = xy[2 * i]; d.y = xy[2 * i + 1]; }
+        });
+        this.shapesDirty = true;
+        this.requestDraw();
+      });
       this.farForce = forceFar();
       this.groupForce = forceGroup();
       this.xForce = d3.forceX(0);
@@ -406,16 +562,27 @@
         .subject((e) => { const node = this.nodeAt(e.x, e.y); return node ? { node } : null; })
         .on("start", (e) => {
           if (!e.active && this.settings.physics) {
-            this.simulation.alphaTarget(0.25);
+            this.sim.alphaTarget(this.obsidian ? OBSIDIAN.reheat : 0.25);
             this.run();
           }
           this.pin(e.subject.node, e.x, e.y);
         })
-        .on("drag", (e) => { this.pin(e.subject.node, e.x, e.y); this.requestDraw(); })
+        .on("drag", (e) => {
+          this.pin(e.subject.node, e.x, e.y);
+          // Obsidian keeps the layout hot through the whole gesture.
+          if (this.obsidian && this.settings.physics) {
+            this.sim.alpha(Math.max(this.sim.alpha(), OBSIDIAN.reheat));
+            this.run();
+          }
+          this.requestDraw();
+        })
         .on("end", (e) => {
-          if (!e.active) this.simulation.alphaTarget(0);
+          if (!e.active) this.sim.alphaTarget(0);
           const node = e.subject.node;
-          if (this.settings.physics) { node.fx = null; node.fy = null; }
+          if (this.settings.physics) {
+            node.fx = null; node.fy = null;
+            if (this.obsidian) this.remote.post({ type: "pin", i: node.vi, x: null, y: null });
+          }
           else { node.x = node.fx; node.y = node.fy; node.fx = null; node.fy = null; }
         });
       d3.select(canvas).call(drag).call(this.zoom).on("dblclick.zoom", null);
@@ -436,7 +603,97 @@
       });
       canvas.addEventListener("click", (e) => this.select(this.nodeAt(e.offsetX, e.offsetY)));
       addEventListener("resize", () => this.resize());
+      // New colors: the marks are drawn again (the page recolors its nodes on the same event).
+      document.addEventListener("themechange", () => {
+        this.theme = null;
+        this.shapesDirty = true;
+        this.requestDraw();
+      });
+      // Names drawn before the theme's font arrived used a fallback.
+      if (document.fonts) document.fonts.ready.then(() => this.requestDraw());
+      // The physics mode is remembered per page, and read here so that restoreLayout finds the right map.
+      this.modeKey = `graph:physics:${location.pathname.split("/").pop() || "index.html"}`;
+      try {
+        if (localStorage.getItem(this.modeKey) === "obsidian") this.settings.mode = "obsidian";
+      } catch (error) { /* no storage: the page's own physics */ }
       this.resize();
+    }
+
+    get obsidian() { return this.settings.mode === "obsidian"; }
+    /** The simulation that moves the nodes: d3's here, or Obsidian's in the worker. */
+    get sim() { return this.obsidian ? this.remote : this.simulation; }
+
+    /** The node's size before nodeScale: the page's, or by its number of links (see updateSizes). */
+    sizeOf(node) {
+      return this.settings.sizeByLinks ? node.linkSize : node.size;
+    }
+
+    /** Sizes by number of links: the square root of the links plus one, scaled so that the visible
+     *  nodes keep the mean size the page gave them. */
+    updateSizes() {
+      const nodes = this.visibleNodes;
+      let mean = 0, weight = 0;
+      for (const n of nodes) { mean += n.size; weight += Math.sqrt((n.degree || 0) + 1); }
+      const k = nodes.length ? mean / weight : 1;
+      for (const n of nodes) n.linkSize = k * Math.sqrt((n.degree || 0) + 1);
+      this.bySize = [...this.nodes].sort((a, b) => (this.sizeOf(b) || 0) - (this.sizeOf(a) || 0));
+    }
+
+    /** Switches between the engine's own physics and Obsidian's, from the current positions. */
+    setMode(mode) {
+      if (mode === this.settings.mode) return;
+      this.settings.mode = mode;
+      try { localStorage.setItem(this.modeKey, mode); } catch (error) { /* not remembered */ }
+      this.applySettings();
+      this.reheat(1);
+    }
+
+    /** On leaving Obsidian's mode, stops the worker. The simulation on this thread keeps the
+     *  engine's own forces either way; in Obsidian's mode it just isn't stepped. */
+    applyMode() {
+      const mode = this.settings.mode;
+      if (mode === this.activeMode) return;
+      this.activeMode = mode;
+      if (mode !== "obsidian") {
+        // Back on this thread, from where the worker left the nodes and at rest.
+        this.remote.stop();
+        for (const n of this.nodes) { n.vx = 0; n.vy = 0; }
+      }
+    }
+
+    /** Hands the worker the visible nodes (at their current positions) and links, then the forces
+     *  and the groups. Node i of the worker is this.visibleNodes[i] (node.vi). */
+    sendData() {
+      const nodes = this.visibleNodes, links = this.visibleLinks, n = nodes.length;
+      const xy = new Float32Array(2 * n);
+      nodes.forEach((d, i) => { d.vi = i; xy[2 * i] = d.x; xy[2 * i + 1] = d.y; });
+      const source = new Int32Array(links.length), target = new Int32Array(links.length), pull = new Float32Array(links.length);
+      links.forEach((l, k) => { source[k] = l.source.vi; target[k] = l.target.vi; pull[k] = l.pull || 1; });
+      this.remote.post({ type: "data", n, xy, source, target, pull }, [xy.buffer, source.buffer, target.buffer, pull.buffer]);
+      this.sendForces();
+      this.sendGroups();
+      for (const d of nodes) if (d.fx != null) this.remote.post({ type: "pin", i: d.vi, x: d.fx, y: d.fy });
+    }
+
+    sendForces() {
+      const s = this.settings, scale = OBSIDIAN.scale;
+      const radius = Float32Array.from(this.visibleNodes, this.collideRadius);
+      this.remote.post({
+        type: "forces", center: s.obCenter, charge: -Math.max(1, s.obRepel ** 3) / (scale * scale),
+        distanceMin: OBSIDIAN.distanceMin / scale, linkDistance: s.obLinkDistance / scale, linkStrength: s.obLinkStrength,
+        collideStrength: OBSIDIAN.collideStrength, group: s.group, damping: s.obDamping, alphaDecay: DEFAULTS.alphaDecay, radius,
+      }, [radius.buffer]);
+    }
+
+    /** node.group, as small integers (-1: none). */
+    sendGroups() {
+      const ids = new Map(), group = new Int32Array(this.visibleNodes.length);
+      this.visibleNodes.forEach((d, i) => {
+        if (d.group === undefined) { group[i] = -1; return; }
+        if (!ids.has(d.group)) ids.set(d.group, ids.size);
+        group[i] = ids.get(d.group);
+      });
+      this.remote.post({ type: "groups", group }, [group.buffer]);
     }
 
     // ---------- data ----------
@@ -445,8 +702,7 @@
       this.hovered = null;
       this.select(null);
       nodes.forEach((n) => { n.visible = true; });
-      this.bySize = [...nodes].sort((a, b) => b.size - a.size);
-      this.keep = () => true;
+      this.keep = () => true;   // setLinks sorts this.bySize, see updateSizes
       this.setLinks(links, false);
     }
 
@@ -467,14 +723,7 @@
       for (const n of this.nodes) n.visible = !!keep(n);
       this.visibleNodes = this.nodes.filter((n) => n.visible);
       this.visibleLinks = this.links.filter((l) => l.source.visible && l.target.visible);
-      // One drawing pass per thickness level and color.
-      const groups = new Map();
-      for (const l of this.visibleLinks) {
-        const key = `${l.level || 0}|${l.color || ""}`;
-        if (!groups.has(key)) groups.set(key, { level: l.level || 0, color: l.color || null, links: [] });
-        groups.get(key).links.push(l);
-      }
-      this.linkGroups = [...groups.values()];
+      this.groupLinks();
       const degree = new Map();
       for (const l of this.visibleLinks) {
         degree.set(l.source, (degree.get(l.source) || 0) + 1);
@@ -486,6 +735,9 @@
         l.base = 1 / Math.min(a, b);
         l.bias = a / (a + b);
       }
+      for (const n of this.nodes) n.degree = degree.get(n) || 0;
+      this.updateSizes();
+      if (this.obsidian && this.remote.running) this.sendData();   // other nodes or links: the worker starts over
       this.simulation.nodes(this.visibleNodes);
       this.linkForce.links(this.visibleLinks);
       this.shapesDirty = true;
@@ -504,6 +756,23 @@
       this.requestDraw();
     }
 
+    /** One drawing pass per thickness level and color of the visible links. */
+    groupLinks() {
+      const groups = new Map();
+      for (const l of this.visibleLinks) {
+        const key = `${l.level || 0}|${l.color || ""}`;
+        if (!groups.has(key)) groups.set(key, { level: l.level || 0, color: l.color || null, links: [] });
+        groups.get(key).links.push(l);
+      }
+      this.linkGroups = [...groups.values()];
+    }
+
+    /** Call after changing link.color (say, after a theme change). */
+    linkColorsChanged() {
+      this.groupLinks();
+      this.requestDraw();
+    }
+
     /** Call after changing node.color. */
     colorsChanged() {
       const batches = new Map();
@@ -512,7 +781,7 @@
         batches.get(n.color).push(n);
       }
       // Colors whose nodes are bigger on average go last, so they aren't buried under the small ones.
-      const meanSize = (list) => list.reduce((sum, n) => sum + n.size, 0) / list.length;
+      const meanSize = (list) => list.reduce((sum, n) => sum + this.sizeOf(n), 0) / list.length;
       this.batches = [...batches].sort((a, b) => meanSize(a[1]) - meanSize(b[1]));
       this.requestDraw();
     }
@@ -532,63 +801,91 @@
     // ---------- forces ----------
     applySettings() {
       const s = this.settings;
+      this.applyMode();
+      this.groupForce.strength(s.group);
       this.linkForce.distance(s.linkDistance).strength(s.linkStrength);
       this.chargeForce.strength(s.repel).radius(s.repelRadius);
       this.farForce.strength(s.far);
-      this.groupForce.strength(s.group);
       this.xForce.strength(s.center);
       this.yForce.strength(s.center);
-      this.simulation.velocityDecay(s.damping);
+      this.simulation.velocityDecay(s.damping).alphaDecay(s.alphaDecay);
+      if (this.obsidian && this.remote.worker) this.sendForces();   // new values or new sizes
       this.requestDraw();
     }
 
     set(key, value) {
+      if (key === "mode") { this.setMode(value); return; }
       this.settings[key] = value;
       if (key === "physics") {
         if (value) this.reheat(0.3);   // when switched off, run() stops by itself on its next frame
+        else this.remote.stop();
         return;
       }
-      if (["shapes", "shapeEdges", "nodeScale"].includes(key)) this.shapesDirty = true;
+      if (key === "sizeByLinks") {
+        this.updateSizes();
+        this.colorsChanged();
+      }
+      if (["shapes", "shapeEdges", "nodeScale", "sizeByLinks"].includes(key)) this.shapesDirty = true;
       this.applySettings();
-      if (["center", "repel", "repelRadius", "far", "group", "linkStrength", "linkDistance", "damping"].includes(key)) this.reheat(0.5);
+      // Obsidian's worker is reheated to 0.3 when its forces change; a size changes the collisions.
+      const own = ["center", "repel", "repelRadius", "far", "linkStrength", "linkDistance", "damping"];
+      const obsidian = ["obCenter", "obRepel", "obLinkStrength", "obLinkDistance", "obDamping"];
+      if (key === "group") this.reheat(this.obsidian ? OBSIDIAN.reheat : 0.5);
+      else if (own.includes(key) && !this.obsidian) this.reheat(0.5);
+      else if (obsidian.includes(key) && this.obsidian) this.reheat(OBSIDIAN.reheat);
+      else if (key === "sizeByLinks" || (key === "nodeScale" && this.obsidian)) this.reheat(0.3);
     }
 
     reheat(alpha = 1) {
       if (!this.settings.physics) return;
-      this.simulation.alpha(Math.max(this.simulation.alpha(), alpha));
+      const sim = this.sim;
+      sim.alpha(Math.max(sim.alpha(), alpha));
+      if (this.obsidian && this.remote.running) this.sendGroups();   // a reheat often follows a regrouping
       this.run();
     }
 
     /** Sets how much the layout still has to move (1 is a full rearrangement) and runs it. */
     startAt(alpha) {
-      this.simulation.alpha(alpha);
+      // The page may have just placed the nodes itself: the worker starts again from there.
+      if (this.obsidian && this.remote.running) this.sendData();
+      this.sim.alpha(alpha);
       this.run();
     }
 
-    /** Steps the simulation, frame by frame, until it cools down. */
+    /** Steps the simulation, frame by frame, until it cools down. In Obsidian's mode the worker
+     *  steps it, and each frame draws the latest positions it sent. */
     run() {
-      if (this.running || !this.settings.physics) return;
+      if (!this.settings.physics) return;
+      if (this.obsidian && !this.remote.running) {
+        this.sendData();
+        this.remote.run();
+      }
+      if (this.running) return;
       this.running = true;
-      const sim = this.simulation;
+      // While it runs, every frame is drawn here, so a draw already asked for would be a second one.
+      if (this.frame) { cancelAnimationFrame(this.frame); this.frame = 0; }
       let ticked = 0;   // when the ticks of the last frame ended
       const step = () => {
+        const sim = this.sim;   // the mode may change while it runs
         if (!this.settings.physics) {
           this.running = false;
           this.requestDraw();
           return;
         }
         const start = performance.now();
-        // What the last frame spent besides ticking: drawing it and waiting for the next one.
-        const rest = ticked ? start - ticked : 0;
-        const budget = rest > 2 * TICK_BUDGET_MS ? Math.min(MAX_TICK_BUDGET_MS, rest) : TICK_BUDGET_MS;
-        let ticks = 0;
-        do {
-          sim.tick();
-          ticks++;
-        } while (ticks < MAX_TICKS_PER_FRAME && sim.alpha() >= sim.alphaMin() && performance.now() - start < budget);
+        if (!this.obsidian) {   // in Obsidian's mode the worker's positions are already in the nodes
+          // What the last frame spent besides ticking: drawing it and waiting for the next one.
+          const rest = ticked ? start - ticked : 0;
+          const budget = rest > 2 * TICK_BUDGET_MS ? Math.min(MAX_TICK_BUDGET_MS, rest) : TICK_BUDGET_MS;
+          let ticks = 0;
+          do {
+            sim.tick();
+            ticks++;
+          } while (ticks < MAX_TICKS_PER_FRAME && sim.alpha() >= sim.alphaMin() && performance.now() - start < budget);
+        }
         ticked = performance.now();
         this.shapesDirty = true;
-        if (sim.alpha() < sim.alphaMin()) {
+        if (this.obsidian ? !this.remote.running : sim.alpha() < sim.alphaMin()) {
           this.running = false;
           this.draw();
           this.saveLayout();
@@ -606,7 +903,7 @@
     restoreLayout(key) {
       this.layoutKey = key;
       try {
-        const saved = JSON.parse(localStorage.getItem(key));
+        const saved = JSON.parse(localStorage.getItem(this.storageKey()));
         if (!saved || saved.length !== this.nodes.length * 2) return false;
         this.nodes.forEach((n, i) => { n.x = saved[2 * i]; n.y = saved[2 * i + 1]; });
         return true;
@@ -615,11 +912,16 @@
       }
     }
 
+    /** Each physics mode remembers its own map. */
+    storageKey() {
+      return this.obsidian ? `${this.layoutKey}:obsidian` : this.layoutKey;
+    }
+
     saveLayout() {
       // Only the map without the group pull is remembered: the next visit opens with the pull off.
       if (!this.layoutKey || this.settings.group > 0) return;
       try {
-        localStorage.setItem(this.layoutKey, JSON.stringify(this.nodes.flatMap((n) => [Math.round(n.x), Math.round(n.y)])));
+        localStorage.setItem(this.storageKey(), JSON.stringify(this.nodes.flatMap((n) => [Math.round(n.x), Math.round(n.y)])));
       } catch (error) { /* storage full or blocked: the layout is simply not remembered */ }
     }
 
@@ -627,12 +929,13 @@
       node.fx = this.transform.invertX(sx);
       node.fy = this.transform.invertY(sy);
       if (!this.settings.physics) { node.x = node.fx; node.y = node.fy; }
+      else if (this.obsidian) this.remote.post({ type: "pin", i: node.vi, x: node.fx, y: node.fy });
       this.shapesDirty = true;
     }
 
     // ---------- geometry ----------
     radius(node) {
-      return Math.max(node.size * this.settings.nodeScale, 1.6 / this.transform.k);
+      return Math.max(this.sizeOf(node) * this.settings.nodeScale, 1.6 / this.transform.k);
     }
 
     nodeAt(sx, sy) {
@@ -684,12 +987,15 @@
 
     // ---------- drawing ----------
     requestDraw() {
-      if (this.frame) return;
+      // The simulation draws every frame while it runs (see run): pan, zoom or hover only need to
+      // change what that draw shows, not draw the frame a second time.
+      if (this.frame || this.running) return;
       this.frame = requestAnimationFrame(() => { this.frame = 0; this.draw(); });
     }
 
     draw() {
       const { ctx, transform: t, settings: s } = this;
+      const theme = this.theme || (this.theme = readTheme());
       const dpr = devicePixelRatio || 1;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, this.width, this.height);
@@ -732,7 +1038,7 @@
       if (s.linkWidth > 0) {
         const stroke = (alpha, on, stride = 1) => {
           for (const { level, color, links } of this.linkGroups) {
-            ctx.strokeStyle = color || INK;
+            ctx.strokeStyle = color || theme.ink;
             const px = s.linkWidth * LINK_LEVELS[level].width * dpr;   // the width asked for, in device pixels
             const width = px < HAIRLINE_MAX ? Math.min(px, HAIRLINE) : px;
             ctx.lineWidth = width / dpr / t.k;
@@ -766,7 +1072,7 @@
       const square = SQUARE_BELOW / t.k;   // world radius below which a node is drawn as a square
       const paint = (keep, alpha) => {
         ctx.globalAlpha = alpha;
-        ctx.strokeStyle = SURFACE;
+        ctx.strokeStyle = theme.canvas;
         ctx.lineWidth = Math.min(1, HAIRLINE / dpr) / t.k;
         for (const [color, nodes] of this.batches) {
           ctx.fillStyle = color;
@@ -804,7 +1110,7 @@
       ctx.globalAlpha = 1;
       for (const n of [this.selected, this.hovered]) {
         if (!n || !n.visible) continue;
-        ctx.strokeStyle = INK;
+        ctx.strokeStyle = theme.ink;
         ctx.lineWidth = 2 / t.k;
         ctx.beginPath();
         ctx.arc(n.x, n.y, this.radius(n) + 2 / t.k, 0, 6.2832);
@@ -843,13 +1149,13 @@
       }
     }
 
-    /** Writes `label` with a halo in the surface color, as thick as the font asks. */
+    /** Writes `label` with a halo in the canvas color, as thick as the font asks. */
     text(label, x, y, alpha, size, weight, color) {
-      const { ctx } = this;
-      ctx.font = `${weight} ${size}px ${FONT}`;
+      const { ctx, theme } = this;
+      ctx.font = `${weight} ${size}px ${theme.font}`;
       ctx.globalAlpha = alpha;
       ctx.lineWidth = Math.max(2, Math.min(6, size * 0.28));
-      ctx.strokeStyle = SURFACE;
+      ctx.strokeStyle = theme.canvas;
       ctx.strokeText(label, x, y);
       ctx.fillStyle = color;
       ctx.fillText(label, x, y);
@@ -867,7 +1173,9 @@
         if (drawn.has(n)) return;
         drawn.add(n);
         const y = t.applyY(n.y) + this.radius(n) * t.k + 4;
-        this.text(strong || long ? n.label : n.shortLabel, t.applyX(n.x), y, alpha, s.labelSize, strong ? 600 : 400, strong ? INK : INK_SOFT);
+        // 500 is the lightest weight the theme's font ships.
+        this.text(strong || long ? n.label : n.shortLabel, t.applyX(n.x), y, alpha, s.labelSize, strong ? 600 : 500,
+          strong ? this.theme.ink : this.theme.inkSoft);
       };
       // The names around the node under the pointer don't follow labelOpacity, like its links.
       if (near) {
@@ -896,7 +1204,7 @@
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.lineJoin = "round";
-      ctx.font = `600 ${s.groupLabelSize}px ${FONT}`;
+      ctx.font = `600 ${s.groupLabelSize}px ${this.theme.font}`;
       const placed = [];
       for (const g of this.groups) {
         // Where the group's patch is densest; without patches, at the middle of its visible nodes.
@@ -914,7 +1222,7 @@
         if (sx + w < 0 || sx - w > this.width || sy < -s.groupLabelSize || sy > this.height + s.groupLabelSize) continue;
         if (placed.some((p) => Math.abs(p.x - sx) < p.w + w && Math.abs(p.y - sy) < s.groupLabelSize * 1.45)) continue;
         placed.push({ x: sx, y: sy, w });
-        this.text(g.label, sx, sy, alpha, s.groupLabelSize, 600, INK);
+        this.text(g.label, sx, sy, alpha, s.groupLabelSize, 600, this.theme.ink);
       }
       ctx.globalAlpha = 1;
     }
@@ -970,7 +1278,7 @@
         // nodes (the side of the square each node gets in a disk as wide as the group), so its
         // nodes make one patch and not one dot each. Never thinner than its nodes nor wider than maxBlur.
         let mx = 0, my = 0, radius = 0;
-        for (const n of members) { mx += n.x; my += n.y; radius += n.size; }
+        for (const n of members) { mx += n.x; my += n.y; radius += this.sizeOf(n); }
         mx /= members.length; my /= members.length;
         radius = radius / members.length * s.nodeScale;
         let spread = 0;
@@ -1074,8 +1382,10 @@
       const { ctx, transform: t, settings: s, shapes } = this;
       if (!shapes || s.shapeOpacity <= 0) return;
       ctx.globalAlpha = Math.min(1, SHAPE_ALPHA * s.shapeOpacity);
+      // Bilinear is enough: the density is already blurred. "high" stretches the small image over the
+      // whole screen at about ten times the cost (~11 ms a frame), whatever the number of nodes.
       ctx.imageSmoothingEnabled = true;
-      ctx.imageSmoothingQuality = "high";
+      ctx.imageSmoothingQuality = "low";
       ctx.drawImage(shapes.canvas, shapes.x, shapes.y, shapes.width, shapes.height);
       if (shapes.edges.length && s.shapeEdges) {
         ctx.globalAlpha = Math.min(1, 0.6 * s.shapeOpacity);

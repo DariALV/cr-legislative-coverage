@@ -18,7 +18,9 @@
     ["proponents", "Proponentes y comisiones"], ["cross", "Cruces"], ["polemic", "Polémicos"], ["timeline", "Línea temporal"],
   ];
   const VOTING = ["pueblo_soberano", "liberacion_nacional", "frente_amplio", "unidad_social_cristiana", "agenda_ciudadana"];
-  const DIV = ["#c2334d", "#e98a9b", "#b4b9c3", "#7cc7a8", "#0f8a5f"];
+  // Stance ramp (against .. in favor) as theme tokens; inline var() follows the theme by itself.
+  const DIV = ["var(--div-neg)", "var(--div-neg-soft)", "var(--div-mid)", "var(--div-pos-soft)", "var(--div-pos)"];
+  const K = window.JEV_COLORS;
 
   // ---------- small helpers ----------
   const sum = (xs) => xs.reduce((s, x) => s + x, 0);
@@ -27,21 +29,16 @@
   const sg = (x, d = 2) => (x == null ? "—" : `${x > 0 ? "+" : ""}${x.toFixed(d).replace(".", ",")}`);
   const dec = (x, d = 2) => (x == null ? "—" : x.toFixed(d).replace(".", ","));
   const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
-  // Diverging color for a value in -1..1 (gray at 0).
-  function divColor(v) {
-    if (v == null || Number.isNaN(v)) return "var(--soft)";
-    const t = clamp(v, -1, 1);
-    const [r1, g1, b1] = [180, 185, 195];
-    const end = t < 0 ? [194, 51, 77] : [15, 138, 95];
-    const k = Math.min(1, Math.abs(t) * 1.6);
-    const c = [0, 1, 2].map((i) => Math.round([r1, g1, b1][i] + (end[i] - [r1, g1, b1][i]) * k));
-    return `rgb(${c.join(",")})`;
-  }
-  // Sequential (one hue) for 0..1.
-  const seqColor = (v) => (v == null ? "var(--soft)" : `rgba(59, 111, 224, ${0.06 + clamp(v, 0, 1) * 0.84})`);
-  const inkOn = (v, signed) => (Math.abs(v ?? 0) > (signed ? 0.45 : 0.55) ? "#fff" : "var(--ink)");
+  // Colors computed here are resolved from the theme at render time (colors.js) and redrawn on "themechange".
+  // Diverging color for a value in -1..1 (--div-mid at 0); signed text color; sequential color for 0..1.
+  const divColor = K.div;
+  const divText = K.divText;
+  const seqColor = K.seq;
+  // Inline style of a colored cell: the background plus a text color with at least 4.5:1 on it.
+  const cell = (bg) => K.cellStyle(bg);
   const actorName = (k) => C.L.actorShort[k] || k;
-  const actorColor = (k) => C.L.actorColors[k] || "#9aa1ad";
+  // Actors carry a categorical token (labels.js); other parties and "no proponent" are neutral gray.
+  const actorColor = (k) => K.tok(C.L.actorColors[k] || "--data-neutral");
   const billLabel = (n) => `${n} · ${C.bills[n]?.name || ""}`;
   const short = (s, n = 70) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
   const tipAttr = (html) => `data-tip="${C.esc(html)}"`;
@@ -186,14 +183,14 @@
   }
 
   function matrixHtml(keys, valueOf, tipOf, clickOf) {
-    return `<table class="mx"><thead><tr><th></th>${keys.map((k) => `<th><span class="dot" style="background:${actorColor(k)}"></span>${actorName(k)}</th>`).join("")}</tr></thead>
+    return `<div class="scroll-x"><table class="mx"><thead><tr><th></th>${keys.map((k) => `<th><span class="dot" style="background:${actorColor(k)}"></span>${actorName(k)}</th>`).join("")}</tr></thead>
       <tbody>${keys.map((i) => `<tr><th><span class="dot" style="background:${actorColor(i)}"></span>${actorName(i)}</th>${keys.map((j) => {
         if (i === j) return `<td class="diag"></td>`;
         const v = valueOf(i, j);
         const signed = v == null ? null : 1 - 2 * v; // agreement +1, opposition -1
-        return `<td style="background:${divColor(signed)};color:${inkOn(signed, true)}" ${tipAttr(tipOf(i, j))} ${clickOf ? `data-cell="${i}|${j}"` : ""}
+        return `<td style="${cell(divColor(signed))}" ${tipAttr(tipOf(i, j))} ${clickOf ? `data-cell="${i}|${j}"` : ""}
           class="${st.cell === i + "|" + j ? "sel" : ""}">${v == null ? "·" : Math.round(v * 100)}</td>`;
-      }).join("")}</tr>`).join("")}</tbody></table>`;
+      }).join("")}</tr>`).join("")}</tbody></table></div>`;
   }
 
   function sectionParties(det, aggs) {
@@ -218,7 +215,7 @@
           <span class="ao-split" ${tipAttr(`En contra <b>${dec(o.a, 0)}</b> · neutral <b>${dec(o.n, 0)}</b> · a favor <b>${dec(o.f, 0)}</b>`)}>
             <i style="flex:${o.a};background:${DIV[0]}"></i><i style="flex:${o.n};background:${DIV[2]}"></i><i style="flex:${o.f};background:${DIV[4]}"></i>
           </span>
-          <span class="ao-lean" style="color:${divColor(o.lean)}">${sg(o.lean)}</span>
+          <span class="ao-lean" style="color:${divText(o.lean)}">${sg(o.lean)}</span>
         </div>`).join("")}</div>
       <div class="legend-row"><span><i style="background:${DIV[0]}"></i>En contra</span><span><i style="background:${DIV[2]}"></i>Neutral o dividido</span><span><i style="background:${DIV[4]}"></i>A favor</span><span>· número: inclinación media (−1 a +1)</span></div>
     </div>`;
@@ -231,7 +228,7 @@
       }, true)}</div>`;
     const voteCard = `<div class="a-card"><h3>Según las votaciones: % en bandos opuestos</h3>
       <p class="a-note">Posición mayoritaria de cada fracción en cada votación del período (${C.nf(vm.n)} votaciones${C.S.from || C.S.to ? ", con el filtro de fechas" : ""}). Las mociones cuentan acá, porque miden si votan juntos, no si apoyan el proyecto.</p>
-      <div class="seg small" data-ctl="voteSet">${[["all", "Todas"], ["fondo", "Solo de fondo"]].map(([k, l]) => `<button data-v="${k}" aria-pressed="${st.voteSet === k}">${l}</button>`).join("")}</div>
+      <div class="segmented seg small" data-ctl="voteSet">${[["all", "Todas"], ["fondo", "Solo de fondo"]].map(([k, l]) => `<button data-v="${k}" aria-pressed="${st.voteSet === k}">${l}</button>`).join("")}</div>
       ${matrixHtml(VOTING, (i, j) => vshare(vm.cells[i + "|" + j]), (i, j) => {
         const c = vm.cells[i + "|" + j];
         return `${actorName(i)} vs ${actorName(j)}: <b>${pctf(vshare(c))}</b> votaron distinto · ${c.opp} distinto / ${c.same} igual`;
@@ -251,7 +248,7 @@
       const top = (key) => [...rows].sort((a, b) => b[key] - a[key]).slice(0, 10);
       const list = (rs, key, title) => `<div><h4>${title}</h4><ul class="a-list">${rs.length ? rs.map((r) => `
         <li data-bill="${r.g.num}"><span class="num">${r.g.num}${tlb(r.g.num)}</span><span class="nm">${C.esc(short(r.g.b?.name || "", 90))}</span>
-          <span class="mini">${actorName(i)} <b style="color:${divColor(r.li)}">${sg(r.li, 1)}</b> · ${actorName(j)} <b style="color:${divColor(r.lj)}">${sg(r.lj, 1)}</b></span>
+          <span class="mini">${actorName(i)} <b style="color:${divText(r.li)}">${sg(r.li, 1)}</b> · ${actorName(j)} <b style="color:${divText(r.lj)}">${sg(r.lj, 1)}</b></span>
           <b class="v">${dec(r[key], 1)}</b></li>`).join("") : `<li class="none">Nada con los filtros actuales.</li>`}</ul></div>`;
       detail = `<div class="a-card"><h3>${C.L.actors[i]} vs ${C.L.actors[j]} <button class="btn ghost" data-ctl="cellClose">${C.icon("x")}Cerrar</button></h3>
         <div class="two">${list(top("opp"), "opp", "Donde más chocan")}${list(top("agr"), "agr", "Donde más coinciden")}</div></div>`;
@@ -303,7 +300,7 @@
         <td class="mini">${r.vs.map((v) => `<div ${tipAttr(C.esc(v[4]))}>${v[2]} · ${C.esc(v[3])} · <b>${C.esc(v[5])}</b></div>`).join("")}</td>
         ${r.cells.map((c) => `<td><div class="vc">
           <span class="vbadge ${c.vote === 1 ? "for" : c.vote === -1 ? "ag" : ""}" ${tipAttr(`Votos: ${c.t[0]} a favor · ${c.t[1]} en contra · ${c.t[2]} ausentes`)}>${c.vote == null ? "—" : c.vote === 1 ? "A favor" : c.vote === -1 ? "En contra" : "Dividido"} <small>${c.t[0]}–${c.t[1]}</small></span>
-          <span class="pbadge" style="background:${divColor(c.press)};color:${inkOn(c.press, true)}" ${tipAttr(`Prensa: inclinación <b>${sg(c.press)}</b> · ${dec(c.m, 1)} menciones`)}>${c.press == null ? "no dice" : sg(c.press, 1)}</span>
+          <span class="pbadge" style="${cell(divColor(c.press))}" ${tipAttr(`Prensa: inclinación <b>${sg(c.press)}</b> · ${dec(c.m, 1)} menciones`)}>${c.press == null ? "no dice" : sg(c.press, 1)}</span>
           ${verdictIcon[c.verdict]}</div></td>`).join("")}</tr>`).join("")}
       </tbody></table></div>` : `<p class="a-note">Ningún expediente con votación de fondo pasa los filtros.</p>`}</div>`;
   }
@@ -350,15 +347,14 @@
     ];
     const profile = `<div class="a-card"><h3>Perfil de cada medio</h3>
       <p class="a-note">Promedio de las probabilidades de Jev por medio. Cada fila se colorea respecto de su propio máximo; las filas con signo van de rojo (−) a verde (+).</p>
-      <div class="scroll-x"><table class="hm"><thead><tr><th></th>${outs.map((o) => `<th style="color:${C.OUTLETS[o].color}">${C.OUTLETS[o].name}</th>`).join("")}</tr></thead><tbody>
+      <div class="scroll-x"><table class="hm"><thead><tr><th></th>${outs.map((o) => `<th style="color:oklch(from ${C.OUTLETS[o].color} min(l, var(--text-lmax)) calc(c * var(--text-cboost)) h)">${C.OUTLETS[o].name}</th>`).join("")}</tr></thead><tbody>
       ${groups.map(([title, rows]) => `<tr class="grp"><th colspan="${outs.length + 1}">${title}</th></tr>${rows.map(([label, f, kind, fmt]) => {
         const vals = outs.map((o) => f(o));
         const max = Math.max(1e-9, ...vals.filter((v) => v != null).map(Math.abs));
         return `<tr><th>${C.esc(label)}</th>${vals.map((v, i) => {
           const bg = kind === "signed" ? divColor(v == null ? null : v / Math.max(0.25, max)) : seqColor(v == null ? null : v / max);
           const txt = v == null ? "—" : kind === "count" ? C.nf(v) : kind === "signed" ? sg(v) : fmt ? fmt(v) : pctf(v);
-          const sv = kind === "signed" ? (v ?? 0) / Math.max(0.25, max) : (v ?? 0) / max;
-          return `<td style="background:${bg};color:${inkOn(sv, kind === "signed")}" ${tipAttr(`${C.OUTLETS[outs[i]].name} · ${C.esc(label)}: <b>${txt}</b>`)}>${txt}</td>`;
+          return `<td style="${cell(bg)}" ${tipAttr(`${C.OUTLETS[outs[i]].name} · ${C.esc(label)}: <b>${txt}</b>`)}>${txt}</td>`;
         }).join("")}</tr>`;
       }).join("")}`).join("")}</tbody></table></div></div>`;
 
@@ -436,7 +432,7 @@
     const row = (g, v) => `<li data-bill="${g.num}" ${tipAttr(`${C.esc(g.b?.name || "")}<br><b>${sg(v)}</b> · ${g.newsCount} noticias · ${g.nOutlets} medios`)}>
       <span class="num">${g.num}${tlb(g.num)}</span><span class="nm">${C.esc(short(g.b?.name || "", 80))}</span>
       <span class="divbar"><i style="${v < 0 ? `right:50%;width:${Math.abs(v) * 50}%;background:${DIV[0]}` : `left:50%;width:${v * 50}%;background:${DIV[4]}`}"></i></span>
-      <b class="v" style="color:${divColor(v)}">${sg(v)}</b><span class="n">${g.newsCount}</span></li>`;
+      <b class="v" style="color:${divText(v)}">${sg(v)}</b><span class="n">${g.newsCount}</span></li>`;
     const metricLabel = metric === "stance" ? "postura de la noticia" : `inclinación de ${C.L.actors[metric]}`;
     return `<div class="a-card a-controls">
         <label>Medio <select data-ctl="rankOutlet"><option value="all">Todos</option>${Object.keys(C.OUTLETS).map((o) => `<option value="${o}"${st.rankOutlet === o ? " selected" : ""}>${C.OUTLETS[o].name}</option>`).join("")}</select></label>
@@ -480,8 +476,8 @@
         const ce = mean(gs.flatMap((g) => g.pairs.map((p) => p.cen)));
         return `<tr><th>${C.L.actorColors[k] ? `<span class="dot" style="background:${actorColor(k)}"></span>` : ""}${C.esc(pname(k))}</th>
           <td>${gs.length}</td><td>${C.nf(news)}</td><td>${dec(news / gs.length, 1)}</td>
-          <td style="background:${divColor(stc * 2)};color:${inkOn(stc * 2, true)}">${sg(stc)}</td><td>${pctf(cr)}</td><td>${dec(ce)}</td>
-          ${C.ACTORS.map((a) => { const v = actorLeanOn(gs, a); return `<td style="background:${divColor(v)};color:${inkOn(v, true)}" ${tipAttr(`${C.L.actors[a]} sobre proyectos de ${C.esc(pname(k))}: <b>${sg(v)}</b>`)}>${v == null ? "·" : sg(v, 1)}</td>`; }).join("")}</tr>`;
+          <td style="${cell(divColor(stc * 2))}">${sg(stc)}</td><td>${pctf(cr)}</td><td>${dec(ce)}</td>
+          ${C.ACTORS.map((a) => { const v = actorLeanOn(gs, a); return `<td style="${cell(divColor(v))}" ${tipAttr(`${C.L.actors[a]} sobre proyectos de ${C.esc(pname(k))}: <b>${sg(v)}</b>`)}>${v == null ? "·" : sg(v, 1)}</td>`; }).join("")}</tr>`;
       }).join("")}</tbody></table></div></div>`;
 
     // Committees: a bill counts in every organ it went through during the period.
@@ -569,22 +565,23 @@
     const Y = (v) => T + (1 - (v - y0) / (y1 - y0)) * (H - T - B);
     const tickVals = (lo, hi, k) => Array.from({ length: 5 }, (_, i) => lo + ((hi - lo) * i) / 4);
     const fmtT = (k, v) => (VARS[k][2] === "log" ? C.nf(Math.round(10 ** v)) : Math.abs(v) < 10 ? dec(v) : C.nf(Math.round(v)));
+    const STATUS = { law: "var(--law)", "in progress": "var(--progress)", archived: "var(--archived)" };
     const colorOf = (g) => {
-      if (st.color === "proponent") return g.proponent && C.L.actorColors[g.proponent] ? C.L.actorColors[g.proponent] : "#9aa1ad";
-      if (st.color === "status") return { law: "#0f8a5f", "in progress": "#3b6fe0", archived: "#9aa1ad" }[g.b?.status] || "#c9cdd4";
+      if (st.color === "proponent") return actorColor(g.proponent);
+      if (st.color === "status") return STATUS[g.b?.status] || "var(--data-none)";
       const top = Object.entries(g.outlets).sort((a, b) => b[1].n - a[1].n)[0];
-      return top ? C.OUTLETS[top[0]].color : "#9aa1ad";
+      return top ? C.OUTLETS[top[0]].color : "var(--data-none)";
     };
     const legend = st.color === "proponent"
-      ? [...C.ACTORS.map((k) => [C.L.actors[k], actorColor(k)]), ["Otro o sin proponente", "#9aa1ad"]]
-      : st.color === "status" ? [["Ley", "#0f8a5f"], ["En trámite", "#3b6fe0"], ["Archivado", "#9aa1ad"]]
+      ? [...C.ACTORS.map((k) => [C.L.actors[k], actorColor(k)]), ["Otro o sin proponente", actorColor(null)]]
+      : st.color === "status" ? [["Ley", STATUS.law], ["En trámite", STATUS["in progress"]], ["Archivado", STATUS.archived], ["Sin estado", "var(--data-none)"]]
       : Object.values(C.OUTLETS).map((o) => [o.name, o.color]);
     const svg = `<svg class="chart-svg scatter" viewBox="0 0 ${W} ${H}">
       ${tickVals(x0, x1).map((v) => `<line x1="${X(v)}" x2="${X(v)}" y1="${T}" y2="${H - B}" class="grid"/><text x="${X(v)}" y="${H - B + 14}" class="ax" text-anchor="middle">${fmtT(st.x, v)}</text>`).join("")}
       ${tickVals(y0, y1).map((v) => `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" class="grid"/><text x="${L - 6}" y="${Y(v) + 3}" class="ax" text-anchor="end">${fmtT(st.y, v)}</text>`).join("")}
       <text x="${(L + W - R) / 2}" y="${H - 6}" class="ax-t" text-anchor="middle">${VARS[st.x][0]}${VARS[st.x][2] === "log" ? " (escala log)" : ""}</text>
       <text x="12" y="${(T + H - B) / 2}" class="ax-t" text-anchor="middle" transform="rotate(-90 12 ${(T + H - B) / 2})">${VARS[st.y][0]}${VARS[st.y][2] === "log" ? " (log)" : ""}</text>
-      ${pts.map(([a, b, g], i) => `<circle cx="${X(xs[i])}" cy="${Y(ys[i])}" r="${clamp(2.5 + Math.sqrt(g.newsCount) * 0.9, 3, 16)}" fill="${colorOf(g)}" fill-opacity=".72" stroke="#fff" stroke-width="1.5"
+      ${pts.map(([a, b, g], i) => `<circle cx="${X(xs[i])}" cy="${Y(ys[i])}" r="${clamp(2.5 + Math.sqrt(g.newsCount) * 0.9, 3, 16)}" fill="${colorOf(g)}" fill-opacity=".55" stroke="${colorOf(g)}" stroke-width="1.5"
         data-bill="${g.num}" ${tipAttr(`<b>${g.num}</b> ${C.esc(short(g.b?.name || "", 90))}<br>${VARS[st.x][0]}: <b>${fmtT(st.x, tx(st.x, a))}</b> · ${VARS[st.y][0]}: <b>${fmtT(st.y, tx(st.y, b))}</b><br>${g.newsCount} noticias`)}/>`).join("")}
     </svg>`;
     const sel = (ctl, cur) => `<select data-ctl="${ctl}">${keys.map((k) => `<option value="${k}"${cur === k ? " selected" : ""}>${VARS[k][0]}</option>`).join("")}</select>`;
@@ -595,7 +592,7 @@
         if (a === b) return `<td class="diag"></td>`;
         const pp = pairsOf(a, b);
         const v = spearman(pp.map((p) => p[0]), pp.map((p) => p[1]));
-        return `<td data-xy="${b}|${a}" style="background:${divColor(v)};color:${inkOn(v, true)}" class="${st.x === b && st.y === a ? "sel" : ""}" ${tipAttr(`${VARS[a][0]} vs ${VARS[b][0]}: ρ = <b>${dec(v)}</b> (${pp.length} expedientes)`)}>${v == null ? "·" : Math.round(v * 100) / 100}</td>`;
+        return `<td data-xy="${b}|${a}" style="${cell(divColor(v))}" class="${st.x === b && st.y === a ? "sel" : ""}" ${tipAttr(`${VARS[a][0]} vs ${VARS[b][0]}: ρ = <b>${dec(v)}</b> (${pp.length} expedientes)`)}>${v == null ? "·" : Math.round(v * 100) / 100}</td>`;
       }).join("")}</tr>`).join("")}</tbody></table></div>`;
     return `<div class="a-card a-controls">
         <label>Eje X ${sel("x", st.x)}</label><label>Eje Y ${sel("y", st.y)}</label>
@@ -617,9 +614,9 @@
       const total = Math.max(1, sum(sides.map((s) => s.f + s.a)));
       const left = sides.filter((s) => s.a > 0.05).sort((a, b) => b.a - a.a);
       const right = sides.filter((s) => s.f > 0.05).sort((a, b) => b.f - a.f);
-      const seg = (s, v, side) => `<i style="flex:${v};background:${actorColor(s.k)}" ${tipAttr(`${C.L.actors[s.k]} ${side}: <b>${dec(v, 1)}</b> (inclinación ${sg(s.leanMean)})`)}>${v / total > 0.12 ? actorName(s.k) : ""}</i>`;
-      return `<div class="camps"><div class="side l" style="width:${(sum(left.map((s) => s.a)) / total) * 50}%">${left.map((s) => seg(s, s.a, "en contra")).join("")}</div>
-        <span class="mid"></span><div class="side r" style="width:${(sum(right.map((s) => s.f)) / total) * 50}%">${right.map((s) => seg(s, s.f, "a favor")).join("")}</div></div>`;
+      const seg = (s, v, side) => `<i style="flex:${v};${cell(actorColor(s.k))}" ${tipAttr(`${C.L.actors[s.k]} ${side}: <b>${dec(v, 1)}</b> (inclinación ${sg(s.leanMean)})`)}>${v / total > 0.12 ? actorName(s.k) : ""}</i>`;
+      return `<div class="camps"><div class="camp l" style="width:${(sum(left.map((s) => s.a)) / total) * 50}%">${left.map((s) => seg(s, s.a, "en contra")).join("")}</div>
+        <span class="camp-axis"></span><div class="camp r" style="width:${(sum(right.map((s) => s.f)) / total) * 50}%">${right.map((s) => seg(s, s.f, "a favor")).join("")}</div></div>`;
     };
     const outletDots = (g) => `<div class="odots"><span class="zero"></span>${Object.entries(g.outlets).map(([o, x]) => {
       const v = x.stance / x.n;
@@ -719,7 +716,7 @@
     const bw = W / nW;
     const ticks = [...g.steps.map((s) => s[0]), ...g.votes.map((v) => v[2])].map((d) => ((new Date(d).getTime() - t0) / (t1 - t0)) * W);
     return `<svg class="spark" viewBox="0 0 ${W} ${H + 4}" preserveAspectRatio="none">
-      ${bins.map((c, i) => (c ? `<rect x="${i * bw + 0.5}" y="${H - (c / max) * H}" width="${Math.max(1, bw - 1)}" height="${(c / max) * H}" fill="var(--mid)"/>` : "")).join("")}
+      ${bins.map((c, i) => (c ? `<rect x="${i * bw + 0.5}" y="${H - (c / max) * H}" width="${Math.max(1, bw - 1)}" height="${(c / max) * H}" fill="var(--progress)"/>` : "")).join("")}
       ${ticks.map((x) => `<rect x="${clamp(x, 0, W - 1)}" y="${H + 1}" width="1.2" height="3" fill="var(--ink-3)"/>`).join("")}
       <line x1="0" x2="${W}" y1="${H}" y2="${H}" stroke="var(--line-strong)" stroke-width="1"/></svg>`;
   }
@@ -803,19 +800,19 @@
       stance = `${laneLabel(Ys(1) + 4, "favorable")}${laneLabel(Ys(0) + 4, "neutral")}${laneLabel(Ys(-1) + 4, "crítica")}
         <line x1="${L}" x2="${W - R}" y1="${Ys(0)}" y2="${Ys(0)}" class="zero"/>
         ${roll.length > 1 ? `<polyline points="${roll.join(" ")}" fill="none" stroke="var(--ink)" stroke-opacity=".5" stroke-width="2"/>` : ""}
-        ${det.map((p) => { const s = soft(p); return `<circle cx="${X(p.n.date)}" cy="${Ys(s.stance)}" r="${3.5 + p.cen * 2.5}" fill="${C.OUTLETS[p.n.outlet]?.color || "#999"}" fill-opacity=".85" stroke="#fff" stroke-width="1.5" data-pair="${p.idx}"
+        ${det.map((p) => { const s = soft(p); return `<circle cx="${X(p.n.date)}" cy="${Ys(s.stance)}" r="${3.5 + p.cen * 2.5}" fill="${C.OUTLETS[p.n.outlet]?.color || "var(--data-none)"}" stroke="var(--surface)" stroke-width="1.5" data-pair="${p.idx}"
           ${tipAttr(`${C.esc(C.OUTLETS[p.n.outlet]?.name)} · ${p.n.day}<br><b>${C.esc(short(p.n.title, 110))}</b><br>Postura ${sg(s.stance)} · centralidad ${dec(p.cen)} · prob. ${C.fp(C.val(p))}`)}/>`; }).join("")}
-        ${noDet.map((p) => `<circle cx="${X(p.n.date)}" cy="${Ys(0)}" r="4" fill="#fff" stroke="${C.OUTLETS[p.n.outlet]?.color}" stroke-width="2" data-pair="${p.idx}" ${tipAttr(`Sin detalle · ${C.esc(short(p.n.title, 100))}`)}/>`).join("")}`;
+        ${noDet.map((p) => `<circle cx="${X(p.n.date)}" cy="${Ys(0)}" r="4" fill="var(--surface)" stroke="${C.OUTLETS[p.n.outlet]?.color || "var(--data-none)"}" stroke-width="2" data-pair="${p.idx}" ${tipAttr(`Sin detalle · ${C.esc(short(p.n.title, 100))}`)}/>`).join("")}`;
     } else {
       stance = `${laneLabel(yS + 20, "postura")}<text x="${(L + W) / 2}" y="${yS + 21}" class="ax-t" text-anchor="middle">Ninguna noticia pasa el umbral de ${C.fp(C.S.thr)} con los filtros actuales</text>
-        ${noDet.map((p) => `<circle cx="${X(p.n.date)}" cy="${yS + 8}" r="4" fill="#fff" stroke="${C.OUTLETS[p.n.outlet]?.color}" stroke-width="2" data-pair="${p.idx}" ${tipAttr(`Sin detalle · ${C.esc(short(p.n.title, 100))}`)}/>`).join("")}`;
+        ${noDet.map((p) => `<circle cx="${X(p.n.date)}" cy="${yS + 8}" r="4" fill="var(--surface)" stroke="${C.OUTLETS[p.n.outlet]?.color || "var(--data-none)"}" stroke-width="2" data-pair="${p.idx}" ${tipAttr(`Sin detalle · ${C.esc(short(p.n.title, 100))}`)}/>`).join("")}`;
     }
 
     // 2. Candidates under the threshold.
     const Yb = (v) => yB + hB - ((v - 10) / Math.max(1, C.S.thr - 10)) * hB;
     const below = `${laneLabel(yB + hB / 2 + 4, "bajo umbral")}
       <line x1="${L}" x2="${W - R}" y1="${yB + hB}" y2="${yB + hB}" class="grid"/>
-      ${g.below.length ? g.below.map((p) => `<circle cx="${X(p.n.date)}" cy="${Yb(C.val(p))}" r="3.5" fill="#9aa1ad" fill-opacity=".55" data-pair="${p.idx}"
+      ${g.below.length ? g.below.map((p) => `<circle cx="${X(p.n.date)}" cy="${Yb(C.val(p))}" r="3.5" fill="var(--data-none)" data-pair="${p.idx}"
         ${tipAttr(`Bajo el umbral: prob. <b>${C.fp(C.val(p))}</b> · ${C.esc(C.OUTLETS[p.n.outlet]?.name)} · ${p.n.day}<br>${C.esc(short(p.n.title, 110))}`)}/>`).join("")
         : `<text x="${L + 6}" y="${yB + hB / 2 + 4}" class="ax">ninguna candidata entre 0,10 y el umbral</text>`}`;
 
@@ -833,7 +830,7 @@
         return [...Object.keys(C.OUTLETS), "_below"].filter((k) => o[k]).map((k) => {
           const h = (o[k] / wmax) * hW;
           y -= h;
-          const color = k === "_below" ? "#d6d9df" : C.OUTLETS[k].color;
+          const color = k === "_below" ? "var(--data-none)" : C.OUTLETS[k].color;
           return `<rect x="${x}" y="${y}" width="${bw}" height="${Math.max(1, h - 1)}" fill="${color}" ${tipAttr(`Semana del ${w}: <b>${o[k]}</b> ${k === "_below" ? "bajo el umbral" : C.OUTLETS[k].name}`)}/>`;
         }).join("");
       }).join("")}`;
@@ -849,7 +846,7 @@
       ${comms.map(([oi, a, z], i) => {
         const xa = X(a && a > TL.from ? a : TL.from), xz = X(z && z < TL.to ? z : TL.to), y = yC + i * 18;
         const name = C.D.organs[oi][0];
-        return `<g ${tipAttr(`${C.esc(name)}<br>${a || "?"} → ${z || "sigue"}`)}><rect x="${xa}" y="${y}" width="${Math.max(4, xz - xa)}" height="14" rx="4" fill="var(--accent)" fill-opacity=".14" stroke="var(--accent)" stroke-opacity=".35"/>
+        return `<g ${tipAttr(`${C.esc(name)}<br>${a || "?"} → ${z || "sigue"}`)}><rect x="${xa}" y="${y}" width="${Math.max(4, xz - xa)}" height="14" rx="4" fill="var(--accent)" fill-opacity=".14" stroke="var(--accent)" stroke-opacity=".6"/>
           <text x="${xa + 6}" y="${y + 10.5}" class="cm">${C.esc(short(name, Math.max(6, Math.floor((xz - xa) / 6))))}</text></g>`;
       }).join("")}
       ${comms.length ? laneLabel(yC + 11, "comisiones") : ""}
@@ -858,7 +855,7 @@
         const x = X(v[2]), y = yV + 11, r = v[6] ? 7 : 4.5;
         const ok = /aprob/i.test(v[5]);
         return `<g ${tipAttr(`${v[2]} · <b>${C.esc(v[3])}</b> · ${C.esc(v[5])}<br>${C.esc(short(v[4], 140))}<br>${VOTING.filter((k) => v[7][k]).map((k) => `${actorName(k)} ${v[7][k][0]}–${v[7][k][1]}`).join(" · ")}`)}>
-          <path d="M${x} ${y - r} L${x + r} ${y} L${x} ${y + r} L${x - r} ${y} Z" fill="${ok ? DIV[4] : DIV[0]}" fill-opacity="${v[6] ? 1 : 0.5}" stroke="#fff"/>
+          <path d="M${x} ${y - r} L${x + r} ${y} L${x} ${y + r} L${x - r} ${y} Z" fill="${ok ? DIV[4] : DIV[0]}" fill-opacity="${v[6] ? 1 : 0.5}" stroke="var(--surface)"/>
           ${v[6] ? (x + v[3].length * 7 + 24 > W - R
             ? `<text x="${x - 9}" y="${y + 4}" class="ms" text-anchor="end">${C.esc(v[3])} ${ok ? "✓" : "✗"}</text>`
             : `<text x="${x + 9}" y="${y + 4}" class="ms">${C.esc(v[3])} ${ok ? "✓" : "✗"}</text>`) : ""}</g>`;
@@ -866,7 +863,7 @@
 
     return `<svg class="chart-svg tl" viewBox="0 0 ${W} ${H}">${grid}${stance}${below}${cov}${proc}</svg>
       <div class="legend-row">${Object.values(C.OUTLETS).map((o) => `<span><i style="background:${o.color};border-radius:50%"></i>${o.name}</span>`).join("")}
-        <span><i style="background:#9aa1ad;border-radius:50%"></i>bajo umbral</span>
+        <span><i style="background:var(--data-none);border-radius:50%"></i>bajo umbral</span>
         <span>· tamaño: centralidad · línea: promedio de ±7 días · ◆ votación (grande = de fondo; verde aprobada, roja rechazada)</span></div>`;
   }
 
@@ -895,7 +892,7 @@
       const a = agg[k], lm = a.m >= 0.5 ? a.lean / a.m : null;
       return `<div class="ao-row short"><span class="ao-name"><span class="dot" style="background:${actorColor(k)}"></span>${C.L.actors[k]}</span>
         <span class="ao-split" ${tipAttr(`En contra <b>${dec(a.a, 1)}</b> · a favor <b>${dec(a.f, 1)}</b> · menciones ${dec(a.m, 1)} de ${det.length}`)}><i style="flex:${a.a};background:${DIV[0]}"></i><i style="flex:${Math.max(0, a.m - a.a - a.f)};background:${DIV[2]}"></i><i style="flex:${a.f};background:${DIV[4]}"></i><i style="flex:${Math.max(0.01, det.length - a.m)};background:var(--soft)"></i></span>
-        <span class="ao-lean" style="color:${divColor(lm)}">${lm == null ? "no dice" : sg(lm)}</span></div>`;
+        <span class="ao-lean" style="color:${divText(lm)}">${lm == null ? "no dice" : sg(lm)}</span></div>`;
     }).join("");
     return `<svg class="chart-svg tl" viewBox="0 0 ${W} ${H}">${lanes}</svg>
       <div class="legend-row"><span><i style="background:${DIV[0]}"></i>en contra</span><span><i style="background:${DIV[2]}"></i>neutral</span><span><i style="background:${DIV[4]}"></i>a favor</span><span>· opacidad: qué tan seguro es que la noticia lo menciona</span></div>
@@ -925,8 +922,8 @@
       const right = e.kind === "news" && p.det
         ? `<span class="tag stance" style="--sc:${divColor(soft(p).stance * 2)}">${sg(soft(p).stance)}</span>`
         : `<span class="tag">${C.fp(C.val(p))}</span>`;
-      return `<li class="ev ${e.kind}" data-pair="${p.idx}"><span class="d">${day}</span><span class="ic" style="color:${e.kind === "below" ? "#9aa1ad" : o?.color}">${e.kind === "below" ? "○" : "●"}</span>
-        <span class="tx"><span class="who" style="color:${e.kind === "below" ? "var(--ink-3)" : o?.color}">${C.esc(o?.name || p.n.outlet)}</span> ${C.esc(p.n.title)}${e.kind === "below" ? `<span class="mini"> · bajo el umbral</span>` : ""}</span>${right}</li>`;
+      return `<li class="ev ${e.kind}" data-pair="${p.idx}"><span class="d">${day}</span><span class="ic" style="color:${e.kind === "below" ? "var(--data-none)" : o?.color || "var(--data-none)"}">${e.kind === "below" ? "○" : "●"}</span>
+        <span class="tx"><span class="who" style="color:${e.kind === "below" ? "var(--ink-3)" : `oklch(from ${o?.color} min(l, var(--text-lmax)) calc(c * var(--text-cboost)) h)`}">${C.esc(o?.name || p.n.outlet)}</span> ${C.esc(p.n.title)}${e.kind === "below" ? `<span class="mini"> · bajo el umbral</span>` : ""}</span>${right}</li>`;
     }).join("")}</ul>`;
   }
 
@@ -1028,6 +1025,14 @@
 
   // ---------- events (delegated once) ----------
   function rerender() { render(lastKept, lastBase); }
+  // Redraw in place (theme change): keeps the section, the selection and the scroll of inner scrolling boxes.
+  function redraw() {
+    if (!C || root().hidden) return;
+    const boxes = () => [...root().querySelectorAll(".tl-items, .chrono, .scroll-x")];
+    const pos = boxes().map((b) => [b.scrollTop, b.scrollLeft]);
+    rerender();
+    boxes().forEach((b, i) => { if (pos[i]) [b.scrollTop, b.scrollLeft] = pos[i]; });
+  }
   const root = () => document.getElementById("analysis");
   addEventListener("load", () => {
     const el = root();
@@ -1094,5 +1099,5 @@
     });
   });
 
-  window.JEV_ANALYSIS = { render, showTimeline };
+  window.JEV_ANALYSIS = { render, showTimeline, rerender: redraw };
 })();

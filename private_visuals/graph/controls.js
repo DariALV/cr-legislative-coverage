@@ -13,28 +13,51 @@
   const fmt = (v) => String(+(+v).toFixed(3)).replace(".", ",");
   const plural = (n, one, many) => `${nf(n)} ${n === 1 ? one : many}`;
 
-  // Colors shared by the pages. Eight categorical hues stepped for the dark surface, in an order
-  // whose neighbors stay apart for color-blind readers. Parties in the color people know them by;
-  // the scale goes from against (red) through a neutral light gray to in favor (green).
-  const PALETTE = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
+  // ---------- colors ----------
+  // Every color comes from a token of the shared theme (../theme/theme.css), read when it is used:
+  // the theme redefines them for light and dark (and future styles), and fires "themechange" on
+  // document when they change. The values are kept until then, so drawing thousands of nodes does not
+  // read the style each time; this listener runs before the pages' own (controls.js loads first).
+  const tokens = new Map();
+  /** Current value of a theme token, e.g. token("--data-none"). */
+  const token = (name) => {
+    let value = tokens.get(name);
+    if (value === undefined) tokens.set(name, value = window.LC.css(name));
+    return value;
+  };
+  document.addEventListener("themechange", () => tokens.clear());
+  // Eight categorical hues (--cat-1..8), in an order whose neighbors stay apart for color-blind readers.
+  const CATS = 8;
+  const cat = (i) => token(`--cat-${(i % CATS) + 1}`);
+  // Parties in the color people know them by (--party-*), outlets in the hue they have in the Jev viewer.
+  const partyColor = (short) => token(`--party-${short.toLowerCase()}`);
+  const outletColor = (key) => token(`--${key}`) || token("--data-neutral");
   // Jev's stance on a bill, 0-100 (50 is neutral), in the nine steps of STANCE; most bills sit between 30 and 80.
   const stanceBin = (stance) => Math.round(Math.max(0, Math.min(1, (stance - 15) / 70)) * 8);
-  const PARTY_COLORS = { PPSO: "#4db8e8", PLN: "#2fa84f", FA: "#f2c53d", PUSC: "#e04e4e", CAC: "#f08a3c" };
   // The actors whose position on a bill Jev reads from the news, keyed like its questions.
+  // `color` is read from the theme each time (copy the actor and the copy keeps the color of that moment).
+  const actor = (short, name, party) => ({ short, name, get color() { return partyColor(party); } });
   const ACTORS = {
-    pueblo_soberano: { short: "PPSO", name: "Pueblo Soberano", color: PARTY_COLORS.PPSO },
-    liberacion_nacional: { short: "PLN", name: "Liberación Nacional", color: PARTY_COLORS.PLN },
-    frente_amplio: { short: "FA", name: "Frente Amplio", color: PARTY_COLORS.FA },
-    unidad_social_cristiana: { short: "PUSC", name: "Unidad Social Cristiana", color: PARTY_COLORS.PUSC },
-    agenda_ciudadana: { short: "CAC", name: "Coalición Agenda Ciudadana", color: PARTY_COLORS.CAC },
-    executive: { short: "Ejecutivo", name: "Poder Ejecutivo", color: "#e8e6df" },
+    pueblo_soberano: actor("PPSO", "Pueblo Soberano", "ppso"),
+    liberacion_nacional: actor("PLN", "Liberación Nacional", "pln"),
+    frente_amplio: actor("FA", "Frente Amplio", "fa"),
+    unidad_social_cristiana: actor("PUSC", "Unidad Social Cristiana", "pusc"),
+    agenda_ciudadana: actor("CAC", "Coalición Agenda Ciudadana", "cac"),
+    executive: actor("Ejecutivo", "Poder Ejecutivo", "executive"),
   };
   const LEAN = 0.25;   // from here on a mean position (-1 to 1) counts as in favor or against
   const leanOf = (value) => (value >= LEAN ? "favor" : value <= -LEAN ? "against" : "neutral");
   const leanText = (value) => (value >= 0.6 ? "a favor" : value >= LEAN ? "más bien a favor"
     : value > -LEAN ? "dividido" : value > -0.6 ? "más bien en contra" : "en contra");
   const signed = (value) => `${value < 0 ? "−" : "+"}${Math.abs(value).toFixed(2).replace(".", ",")}`;
-  const STANCE = d3.scaleLinear().domain([0, 4, 8]).range(["#d9435e", "#cfccc2", "#23a878"]).interpolate(d3.interpolateLab);
+  // Against → neutral → in favor, through the theme's diverging tokens (the scale bars in the panel draw
+  // the same stops in CSS, see .scale-bar). Rebuilt after a theme change.
+  const DIVERGING = ["--div-neg", "--div-neg-soft", "--div-mid", "--div-pos-soft", "--div-pos"];
+  let stanceScale = null;
+  document.addEventListener("themechange", () => { stanceScale = null; });
+  /** Color of a stance bin, 0 (against) to 8 (in favor). */
+  const STANCE = (bin) => (stanceScale || (stanceScale = d3.scaleLinear().domain([0, 2, 4, 6, 8])
+    .range(DIVERGING.map(token)).interpolate(d3.interpolateLab)))(bin);
   /** Color of a position from -1 (against) to 1 (in favor), in nine steps. */
   const positionBin = (value) => Math.round((Math.max(-1, Math.min(1, value)) + 1) * 4);
   const positionColor = (value) => STANCE(positionBin(value));
@@ -46,6 +69,7 @@
       { section: "Nodos" },
       { key: "nodeScale", label: "Tamaño de los nodos", min: 0.3, max: 4, step: 0.05 },
       { key: "nodeOpacity", label: "Opacidad de los nodos", min: 0, max: 1, step: 0.05 },
+      { key: "sizeByLinks", label: "Tamaño por cantidad de enlaces", toggle: true },
       { key: "imageOpacity", label: "Opacidad de las fotos", min: 0, max: 1, step: 0.05, needs: "images" },
       { section: "Enlaces" },
       { key: "linkWidth", label: "Grosor de los enlaces", min: 0, max: 4, step: 0.1 },
@@ -62,15 +86,21 @@
       { key: "shapeOpacity", label: "Opacidad de las figuras", min: 0, max: 3, step: 0.05, needs: "grouping" },
       { key: "shapeEdges", label: "Borde de las figuras", toggle: true, needs: "grouping" },
     ],
+    // `mode` shows a control only with that physics (see the engine's settings.mode).
     forces: [
-      { key: "center", label: "Fuerza central", min: 0, max: 0.15, step: 0.001 },
-      { key: "repel", label: "Repulsión", min: 0, max: 3000, step: 10 },
-      { key: "repelRadius", label: "Alcance de la repulsión", min: 20, max: 500, step: 5 },
-      { key: "far", label: "Separación entre grupos", min: 0, max: 12, step: 0.1 },
+      { key: "center", label: "Fuerza central", min: 0, max: 0.15, step: 0.001, mode: "own" },
+      { key: "repel", label: "Repulsión", min: 0, max: 3000, step: 10, mode: "own" },
+      { key: "repelRadius", label: "Alcance de la repulsión", min: 20, max: 500, step: 5, mode: "own" },
+      { key: "far", label: "Separación entre grupos", min: 0, max: 12, step: 0.1, mode: "own" },
+      { key: "obCenter", label: "Fuerza central", min: 0, max: 1, step: 0.01, mode: "obsidian" },
+      { key: "obRepel", label: "Repulsión", min: 0, max: 20, step: 0.01, mode: "obsidian" },
       { key: "group", label: "Fuerza para juntar los grupos", min: 0, max: 0.3, step: 0.005, needs: "grouping" },
-      { key: "linkStrength", label: "Fuerza de los enlaces", min: 0, max: 3, step: 0.05 },
-      { key: "linkDistance", label: "Distancia de los enlaces", min: 2, max: 250, step: 1 },
-      { key: "damping", label: "Fricción", min: 0.05, max: 0.9, step: 0.01 },
+      { key: "linkStrength", label: "Fuerza de los enlaces", min: 0, max: 3, step: 0.05, mode: "own" },
+      { key: "linkDistance", label: "Distancia de los enlaces", min: 2, max: 250, step: 1, mode: "own" },
+      { key: "damping", label: "Fricción", min: 0.05, max: 0.9, step: 0.01, mode: "own" },
+      { key: "obLinkStrength", label: "Fuerza de los enlaces", min: 0, max: 1, step: 0.01, mode: "obsidian" },
+      { key: "obLinkDistance", label: "Distancia de los enlaces", min: 30, max: 500, step: 1, mode: "obsidian" },
+      { key: "obDamping", label: "Fricción", min: 0.05, max: 0.9, step: 0.01, mode: "obsidian" },
     ],
   };
 
@@ -86,6 +116,8 @@
         if (key in saved && typeof saved[key] === typeof graph.defaults[key]) graph.settings[key] = saved[key];
       }
       graph.shapesDirty = true;
+      graph.updateSizes();   // sizeByLinks may have changed
+      graph.colorsChanged();
       graph.applySettings();
     } catch (error) { /* no storage (private window) or a damaged entry: the defaults stay */ }
   }
@@ -110,9 +142,10 @@
   function bindPanel(graph, features = {}) {
     graph.lookKey = features.look ? `graph:look:${features.look}` : null;
     if (graph.lookKey) loadLook(graph);
+    const mode = (s) => (s.mode ? ` data-mode="${s.mode}"${s.mode !== graph.settings.mode ? ' style="display:none"' : ""}` : "");
     const control = (s) => (s.section ? `<h4 class="subhead">${s.section}</h4>`
       : s.toggle ? `<label class="switch"><span>${s.label}</span><input type="checkbox" data-key="${s.key}"${graph.settings[s.key] ? " checked" : ""}><i></i></label>`
-        : `<label class="slider">
+        : `<label class="slider"${mode(s)}>
           <span>${s.label}<output id="out-${s.key}">${fmt(graph.settings[s.key])}</output></span>
           <input type="range" data-key="${s.key}" min="${s.min}" max="${s.max}" step="${s.step}" value="${graph.settings[s.key]}">
         </label>`);
@@ -133,6 +166,16 @@
       $("physics").checked = graph.settings.physics;
       $("physics").addEventListener("change", (e) => graph.set("physics", e.target.checked));
     }
+    // Which physics: the engine's own or Obsidian's, each with its own sliders.
+    $("forces").insertAdjacentHTML("afterbegin", `<label class="field"><span>Modelo</span>
+      <select id="physics-mode" aria-label="Modelo de física">
+        <option value="own">Propio</option><option value="obsidian">Obsidian</option>
+      </select></label>`);
+    $("physics-mode").value = graph.settings.mode;
+    $("physics-mode").addEventListener("change", (e) => {
+      for (const el of $("forces").querySelectorAll("[data-mode]")) el.style.display = el.dataset.mode === e.target.value ? "" : "none";
+      setFromPanel(graph, "mode", e.target.value);
+    });
     $("reheat").addEventListener("click", () => graph.reheat(1));
     $("fit").addEventListener("click", () => graph.fit());
     // Back to the page's defaults, look and forces alike.
@@ -146,6 +189,8 @@
       graph.settings.shapes = graph.defaults.shapes;
       graph.settings.hideNetwork = graph.defaults.hideNetwork;
       graph.shapesDirty = true;
+      graph.updateSizes();
+      graph.colorsChanged();
       saveLook(graph);
       graph.applySettings();
       document.dispatchEvent(new CustomEvent("graph-settings", { detail: { key: null } }));
@@ -154,7 +199,8 @@
     // The graph is framed in the space left by the title and, on wide screens, the open panel.
     graph.insets = () => {
       const open = innerWidth > 900 && !$("panel").classList.contains("closed");
-      return { top: 56, right: open ? innerWidth - $("panel").getBoundingClientRect().left : 0, bottom: 0, left: 0 };
+      const right = open ? graph.canvas.getBoundingClientRect().right - $("panel").getBoundingClientRect().left : 0;
+      return { top: 56, right: Math.max(0, right), bottom: 0, left: 0 };
     };
     bindPanelToggle();
   }
@@ -215,7 +261,6 @@
   }
 
   // ---------- grouping ----------
-  const SHAPE_GRAY = "#a3a197";   // patches of groups that are not what colors the nodes
 
   /** The "group by" picker and the "gather", "shapes" and "hide the network" switches of the Grupos
    *  section (the last one is not remembered: a page always opens with its network in sight). The page's
@@ -263,7 +308,8 @@
         const same = named === color;
         groups = legendOf(named).filter((item) => members.has(item.key)).map((item) => ({
           key: item.key, label: item.short || item.label, nodes: members.get(item.key),
-          color: same ? item.color : SHAPE_GRAY, shape: !!mode,
+          // The patches of groups that are not what colors the nodes go in a neutral gray.
+          color: same ? item.color : token("--data-shape"), shape: !!mode,
         }));
       }
       graph.setGroups(groups);
@@ -323,8 +369,30 @@
     };
   }
 
+  // ---------- views ----------
+  // The graph pages, as items of the sidebar's sub-navigation (theme/nav.js leaves an empty
+  // <nav id="views"> under "Grafos"); the current one is marked.
+  const VIEWS = [
+    ["index.html", "Expedientes", '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>'],
+    ["deputies.html", "Diputados", '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/>'],
+    ["parties.html", "Partidos y temas", '<path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/>'],
+    ["news.html", "Noticias", '<path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2"/><path d="M8 9h5M8 13h5"/>'],
+    ["comentions.html", "Co-mención", '<circle cx="7" cy="12" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="m9.7 10.6 4.6-2.2M9.7 13.4l4.6 2.2"/>'],
+    ["flow.html", "Flujo", '<path d="M3 6h4c5 0 5 12 10 12h4"/><path d="M3 18h4c5 0 5-12 10-12h4"/>'],
+    ["stream.html", "En el tiempo", '<path d="M3 17c3-1 4-5 7-5s4 3 7 2 3-4 4-4"/><path d="M3 20h18"/><path d="M3 4v16"/>'],
+  ];
+  function renderViews() {
+    const box = $("views");
+    if (!box) return;
+    const here = location.pathname.split("/").pop() || "index.html";
+    box.innerHTML = VIEWS.map(([href, label, icon]) =>
+      `<a class="nav-item" href="${href}" title="${label}"${href === here ? ' aria-current="page"' : ""}>`
+      + `<svg viewBox="0 0 24 24" aria-hidden="true">${icon}</svg><span class="label">${label}</span></a>`).join("");
+  }
+  renderViews();
+
   window.GraphUI = {
     $, nf, esc, norm, sentence, cut, fmt, plural, bindPanel, bindPanelToggle, bindTooltip, showTip, hideTip, isolateList, bindGrouping,
-    PALETTE, stanceBin, PARTY_COLORS, ACTORS, STANCE, positionBin, positionColor, leanOf, leanText, signed,
+    token, cat, CATS, partyColor, outletColor, stanceBin, ACTORS, STANCE, positionBin, positionColor, leanOf, leanText, signed,
   };
 })();

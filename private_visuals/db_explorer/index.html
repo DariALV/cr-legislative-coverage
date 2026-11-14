@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Explorador del corpus</title>
+  <link rel="stylesheet" href="../theme/theme.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="../theme/theme.js"></script>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -26,47 +28,46 @@
     <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
   </svg>
 
-  <header class="top">
-    <div class="wrap">
-      <div class="brand">
-        <span class="brand-mark"><svg><use href="#i-db"/></svg></span>
-        <div>
-          <h1>Explorador del corpus</h1>
-          <p class="sub">private_corpus.db · solo lectura</p>
-        </div>
-        <nav class="tabs-main" id="nav" aria-label="Secciones"></nav>
-      </div>
+  <div class="app">
+    <aside class="side" data-page="explorer" data-subnav="nav" data-card-title="private_corpus.db" data-card-text="Solo lectura"></aside>
+    <script src="../theme/nav.js"></script>
+
+    <div class="main">
+      <header class="page-head">
+        <h1 id="page-title">Explorador del corpus</h1>
+        <p id="page-sub"></p>
+      </header>
       <dl class="stats" id="stats"></dl>
+
+      <div class="toolbar">
+        <div class="toolbar-inner" id="toolbar"></div>
+      </div>
+
+      <main class="layout" id="layout">
+        <section class="pane-list">
+          <p class="result-line" id="result-line">Cargando…</p>
+          <div id="list" class="list" role="list"></div>
+          <div id="sentinel" class="sentinel"></div>
+          <div id="empty" class="empty" hidden>
+            <svg><use href="#i-empty"/></svg>
+            <p>Ningún resultado coincide con los filtros.</p>
+          </div>
+        </section>
+
+        <section class="pane-detail" id="detail">
+          <div class="placeholder">
+            <svg><use href="#i-doc"/></svg>
+            <p>Elegí un elemento de la lista.</p>
+          </div>
+        </section>
+      </main>
+
+      <div id="error" class="empty" hidden>
+        <svg><use href="#i-db"/></svg>
+        <p>No se pudo conectar con el servidor.</p>
+        <p class="hint">Corré <code>python private_visuals/server.py</code> y abrí <code>http://localhost:8766/db_explorer/</code></p>
+      </div>
     </div>
-  </header>
-
-  <div class="toolbar">
-    <div class="wrap toolbar-inner" id="toolbar"></div>
-  </div>
-
-  <main class="wrap layout" id="layout">
-    <section class="pane-list">
-      <p class="result-line" id="result-line">Cargando…</p>
-      <div id="list" class="list" role="list"></div>
-      <div id="sentinel" class="sentinel"></div>
-      <div id="empty" class="empty" hidden>
-        <svg><use href="#i-empty"/></svg>
-        <p>Ningún resultado coincide con los filtros.</p>
-      </div>
-    </section>
-
-    <section class="pane-detail" id="detail">
-      <div class="placeholder">
-        <svg><use href="#i-doc"/></svg>
-        <p>Elegí un elemento de la lista.</p>
-      </div>
-    </section>
-  </main>
-
-  <div id="error" class="empty" hidden>
-    <svg><use href="#i-db"/></svg>
-    <p>No se pudo conectar con el servidor.</p>
-    <p class="hint">Corré <code>python private_visuals/db_explorer/server.py</code> y abrí <code>http://localhost:8765</code></p>
   </div>
 
   <script type="module" src="js/main.js"></script>

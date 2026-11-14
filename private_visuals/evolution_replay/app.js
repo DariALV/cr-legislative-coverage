@@ -135,10 +135,12 @@ function scale([d0, d1], [r0, r1]) {
 }
 
 function fitnessColor(part, value) {
-  // Sequential ramp from a light to a dark blue, over the run's fitness range.
+  // Sequential ramp over the run's fitness range, from --ramp-low to --ramp-high (the theme sets both, so the high
+  // end always has the most contrast with the card).
   const t = Math.max(0, Math.min(1, (value - part.fitnessRange[0]) / ((part.fitnessRange[1] - part.fitnessRange[0]) || 1)));
-  const light = [205, 220, 245], dark = [20, 60, 150];
-  const c = light.map((l, i) => Math.round(l + t * (dark[i] - l)));
+  const rgb = (hex) => [1, 3, 5].map((k) => parseInt(hex.slice(k, k + 2), 16));
+  const low = rgb(css("--ramp-low")), high = rgb(css("--ramp-high"));
+  const c = low.map((l, i) => Math.round(l + t * (high[i] - l)));
   return `rgb(${c[0]},${c[1]},${c[2]})`;
 }
 
@@ -381,6 +383,13 @@ document.addEventListener("keydown", (e) => {
   if (e.key === " ") { e.preventDefault(); play(); }
   if (e.key === "ArrowLeft") { stop(); show(state.generation - 1); }
   if (e.key === "ArrowRight") { stop(); show(state.generation + 1); }
+});
+
+// Colors are read from CSS when drawing: redraw everything when the theme changes.
+document.addEventListener("themechange", () => {
+  if (!state.part) return;
+  drawFitness();
+  show(state.generation);
 });
 
 if (window.EVOLUTION_DATA) {

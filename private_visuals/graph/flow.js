@@ -317,6 +317,14 @@
   // ---------- start ----------
   const resize = () => { sizeCanvas(); render(false); };
   addEventListener("resize", resize);
+  // A theme change brings new colors (press.js reads them from the theme): bands, blocks, particles and legend
+  // take them where they are, without a new layout.
+  document.addEventListener("themechange", () => {
+    for (const l of links) l.color = columnOf[S.color].item.get(l.c).color;
+    layer.links.selectAll("path").attr("fill", (l) => l.color);
+    layer.nodes.selectAll("g").select("rect").attr("fill", (n) => (n.dim === S.color ? n.item.color : P.NEUTRAL));
+    renderLegend();
+  });
   bindPanelToggle(resize);
   resize();
   window.FLOW = { state: S, get nodes() { return nodes; }, get links() { return links; }, get total() { return total; } };

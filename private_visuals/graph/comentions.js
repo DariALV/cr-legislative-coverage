@@ -4,7 +4,7 @@
 (function () {
   "use strict";
   const D = window.GRAPH_BILLS, P = window.GraphPress;
-  const { $, nf, esc, norm, cut, plural, bindPanel, bindTooltip, isolateList, PALETTE, STANCE, stanceBin } = window.GraphUI;
+  const { $, nf, esc, norm, cut, plural, bindPanel, bindTooltip, isolateList, cat, STANCE, stanceBin } = window.GraphUI;
   if (!D || !P) {
     $("missing").hidden = false;
     return;
@@ -60,9 +60,9 @@
     topic: {
       label: "Tema",
       note: "Temas del mapa de expedientes (parecido entre textos). Los colores se repiten entre temas lejanos.",
-      color: (n) => PALETTE[D.topics[n.topic].color],
+      color: (n) => cat(D.topics[n.topic].color),
       group: (n) => n.topic,
-      legend: () => D.topics.map((t, i) => ({ key: i, label: t.name, color: PALETTE[t.color] })),
+      legend: () => D.topics.map((t, i) => ({ key: i, label: t.name, color: cat(t.color) })),
     },
     tone: {
       label: "Tono",
@@ -168,7 +168,6 @@
     renderLegend();
     applyHighlight();
   });
-  $("scale-bar").style.background = `linear-gradient(90deg, ${d3.range(9).map((i) => STANCE(i)).join(",")})`;
 
   // ---------- filters ----------
   function refreshLinks() {
@@ -189,7 +188,7 @@
     $(id).addEventListener("change", (e) => { S[key] = e.target.checked; refreshLinks(); });
   }
   const multiByOutlet = d3.rollup(multi, (list) => list.length, (o) => o);
-  isolateList($("outlets"), () => P.outlets.map((o) => ({ key: o.id, label: o.name, color: P.NEUTRAL, count: multiByOutlet.get(o.id) || 0 })),
+  const renderOutlets = isolateList($("outlets"), () => P.outlets.map((o) => ({ key: o.id, label: o.name, color: P.NEUTRAL, count: multiByOutlet.get(o.id) || 0 })),
     S.outlets, refreshLinks);
   $("q").addEventListener("input", (e) => { S.query = e.target.value; applyHighlight(); });
   $("q").addEventListener("keydown", (e) => {
@@ -222,13 +221,13 @@
       <div class="card-number">Expediente ${n.number}</div>
       <h2>${esc(n.name)}</h2>
       <dl>
-        <dt>Tema</dt><dd><span class="swatch" style="background:${PALETTE[D.topics[n.topic].color]}"></span>${esc(D.topics[n.topic].name)}</dd>
+        <dt>Tema</dt><dd><span class="swatch" style="background:${cat(D.topics[n.topic].color)}"></span>${esc(D.topics[n.topic].name)}</dd>
         <dt>Prensa</dt><dd>${plural(n.substantive, "noticia", "noticias")} con cobertura sustantiva</dd>
         ${n.stance != null ? `<dt>Tono</dt><dd><span class="swatch" style="background:${STANCE(stanceBin(n.stance))}"></span>${n.stance} de 100</dd>` : ""}
       </dl>
       <div class="card-links">
         <a href="../jev_answers/#bill=${n.number}" target="_blank" rel="noopener">Noticias en el visor de Jev</a>
-        <a href="http://localhost:8765/#/bill/${n.number}" target="_blank" rel="noopener">Explorador de la base</a>
+        <a href="../db_explorer/#/bill/${n.number}" target="_blank" rel="noopener">Explorador de la base</a>
       </div>
       <h3>Sale en la misma noticia que (noticias en común)</h3>
       <ul class="similar">${together.map((t) => `
@@ -252,6 +251,13 @@
   let moved = false;   // the user took over the camera: stop re-framing
   for (const type of ["wheel", "pointerdown"]) graph.canvas.addEventListener(type, () => { moved = true; }, { passive: true });
   graph.onSettled = () => { if (!moved) graph.fit(undefined, 600, 2); };
+  // A theme change brings new colors: nodes, legends and the open card take them.
+  document.addEventListener("themechange", () => {
+    applyColors();
+    renderLegend();
+    renderOutlets();
+    graph.onSelect(graph.selected);
+  });
   graph.setData(nodes, []);
   // A bill with no link under the current filters would just float away: leave it out.
   graph.setVisible((n) => n.neighbors.length > 0, false);
