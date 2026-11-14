@@ -639,9 +639,6 @@ class Pipeline:
                   f"other signers, or terms before {deputies_since.date()})")
     return data
 
-  def apply_embeddings(self):
-    pass
-
 def run_in_parallel(jobs: dict[str, Callable[[], Any]]) -> dict[str, Any]:
   """Runs each job in its own thread. Returns {name: result} for the jobs that finished without errors."""
   results: dict[str, Any] = {}

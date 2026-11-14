@@ -49,18 +49,6 @@ class Embedder:
       starts.append(starts[-1] + max_tokens - overlap)
     return self._slice(text, offsets, [(start, start + max_tokens) for start in starts])
 
-  def chunk_by_count(self, text: str, n_chunks: int, overlap: int = 0) -> list[str]:
-    """
-    n_chunks chunks of (nearly) equal size, each extended by overlap tokens into the next one. E.g. 2000 tokens in
-    10 chunks: 10 chunks of 200 tokens (+ overlap). A text shorter than n_chunks tokens gives one chunk per token.
-    """
-    if n_chunks <= 0 or overlap < 0:
-      raise ValueError("n_chunks must be positive and overlap can't be negative")
-    offsets = self._token_offsets(text)
-    n_chunks = min(n_chunks, len(offsets))
-    bounds = [i * len(offsets) // n_chunks for i in range(n_chunks + 1)]
-    return self._slice(text, offsets, [(bounds[i], bounds[i + 1] + overlap) for i in range(n_chunks)])
-
   @staticmethod
   def mean(embeddings: np.ndarray) -> np.ndarray:
     """Average of several vectors (e.g. the chunks of one text), normalized again."""

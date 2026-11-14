@@ -326,13 +326,6 @@ class Database:
       self.insert_news_bill_links(news_id, bill_numbers, source)
     self.connection.commit()
 
-  def get_news_bill_links(self, source: str | None = None) -> list[tuple[str, int, str]]:
-    if source is None:
-      self.cursor.execute("SELECT news_id, bill_number, source FROM news_bill_links")
-    else:
-      self.cursor.execute("SELECT news_id, bill_number, source FROM news_bill_links WHERE source = ?", [source])
-    return self.cursor.fetchall()
-
   def insert_news_articles(self, article_list: list[NewsArticle]):
 
     max_steps_to_commit = Config.COMMIT_BATCH_SIZE
@@ -346,18 +339,6 @@ class Database:
         self.connection.commit()
     
     self.connection.commit()
-
-  def get_news_articles(self) -> list[NewsArticle]:
-    self.cursor.execute("SELECT * FROM news_articles")
-    results = self.cursor.fetchall()
-
-    news_articles: list[NewsArticle] = []
-
-    for r in results:
-      article: NewsArticle = NewsArticle(r[0], r[1], r[2], r[3], r[4], datetime.fromisoformat(r[5]), r[6], r[7], datetime.fromisoformat(r[8]), r[9], r[10], r[11])
-      news_articles.append(article)
-    
-    return news_articles
 
   def replace_bill_tables(self, bills: list[Bill], laws: list[Law]) -> dict[str, int]:
     """

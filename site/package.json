@@ -10,7 +10,6 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "data:dummy": "node scripts/make_dummy_data.mjs",
     "astro": "astro"
   },
   "dependencies": {

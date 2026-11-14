@@ -81,24 +81,5 @@ class GenomeSpec:
     genes = np.atleast_2d(genes)
     return {gene.name: gene.decode(genes[:, j]) for j, gene in enumerate(self.genes)}
 
-  def decode_row(self, row: np.ndarray) -> dict:
-    """One genome → {gene name: plain Python value}, for JSON and CSV."""
-    return {name: values[0].item() for name, values in self.decode(row[None, :]).items()}
-
-  def encode_row(self, values: dict) -> np.ndarray:
-    """{gene name: decoded value} → one encoded genome (genes left out get the middle of their range)."""
-    row = (self.low + self.high) / 2
-    for j, gene in enumerate(self.genes):
-      if gene.name not in values:
-        continue
-      value = values[gene.name]
-      if gene.kind == "bool":
-        row[j] = 1.0 if value else 0.0
-      elif gene.kind == "log":
-        row[j] = math.log(value)
-      else:
-        row[j] = float(value)
-    return self.clip(row)
-
   def to_json(self) -> list[dict]:
     return [asdict(g) for g in self.genes]

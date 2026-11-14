@@ -307,12 +307,6 @@ class EmbeddingRunner:
             "database": str(database),
             "database_modified": datetime.fromtimestamp(database.stat().st_mtime).isoformat(timespec = "seconds")}
 
-def load_run(path: str | pathlib.Path) -> tuple[dict[str, np.ndarray], dict]:
-  """Arrays of a saved run and its metadata."""
-  with np.load(path) as data:
-    arrays = {name: data[name] for name in data.files if name != "meta"}
-    return arrays, json.loads(str(data["meta"]))
-
 CONTROL_CHARACTERS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 def clean_text(text: str | None) -> str:
