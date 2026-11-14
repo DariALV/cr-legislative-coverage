@@ -375,3 +375,32 @@ El usuario aprobó la opción A de la entrada de 10:53 y pidió un enlace a la f
 - El usuario aprobó la división de 12:11 y dejar fuera jev_data.py, jev_dataclasses.py y las respuestas de la evaluación a ciegas (human_eval/answers.json, analysis/ y claude_eval/) hasta que cierre.
 - Commits: 3493b8a docs/news.md (#18, sin `closes`: no se confirmó si cierra el issue); ddb4ac2 tema común + servidor único + páginas locales con modo «Obsidian» y arreglo de lag (#67 #69; 50 archivos); 5ecc8eb evaluación a ciegas con draw.csv y draw_v1.csv (#39 #30); y el de logs.
 - Quedó pendiente: el OFL.txt de Poppins (descarga sin aprobar; el README de fonts ya nombra la licencia) y theme/_compare.html, que quedó fuera del commit sin borrarse. Nada pusheado.
+
+## 2026-11-14 14:09 — pendiente: limpieza del repo, inventario y propuesta (sin tocar nada)
+- Pedido del usuario: revisar todo el proyecto por limpieza («hay demasiados archivos regados»). Solo se inventarió; nada borrado ni movido.
+- Imports: todos los módulos de `tools/` se usan. Funciones sin uso: `Pipeline.apply_embeddings` (stub `pass`), `Database.get_news_bill_links` y `get_news_articles`, `FileManager.delete_html` y `json_exists`, `HTMLFetcher.is_valid`, `Embedder.chunk_by_count`, `embedding_runner.load_run`, `Genome.decode_row` y `encode_row`.
+- `gpu_monitor.csv` (232 KB, raíz) está en git desde 3c578a1, aunque ranker 2026-11-07 dice que no se commitea.
+- Restos de datos de prueba: `site/scripts/make_dummy_data.mjs` (+ `data:dummy` en package.json, ya en STATUS) y `private_visuals/embedding_cross/make_test_data.py`.
+- Raíz con 18 .py (14 `run_*`); código dentro de `results/` (`results/jev/scripts/` 13 scripts, `results/jev/corpus_analysis/*.py`); `results/jev/` mezcla lo final con experimentos superados (probe_v1, filter_v1*, types_v1, test100*, sample_compact, sample_hybrid_sim). `tools/sample_tools/human_eval_draw.py` lee esas rutas viejas: mover exige ajustarla.
+- `db_explorer/server.py` y `jev_eval/server.py` conservan su `main()` suelto (8765/8770) además del servidor único; el 8770 no sirve /theme/.
+- STATUS.md: 191 líneas / 44 KB (meta ~100), con datos viejos (p. ej. corpus_analysis «sin commitear», ya está en git). README.md raíz: una línea.
+- Las respuestas de Jev en git (*.jsonl) no traen texto de noticias: solo ids, probabilidades y tokens. Sin riesgo de privacidad.
+- En esta máquina no hay `gh` ni bases locales (databases/, raw/ vacíos): no se cruzó con los issues.
+
+## 2026-11-14 14:10 — requirements.txt pasa a cu128 con torch <2.12: con cu126 se instalaba torch de CPU
+- Al rehacer el venv en la laptop salió `torch 2.15.0+cpu`. El índice cu126 llega solo a 2.14.1 y en PyPI está 2.15.0 (solo CPU en Windows); con `torch>=2.6`, pip toma la versión más alta y se queda con la de CPU.
+- La GPU es una RTX 5050 (Blackwell, sm_120): necesita builds cu128 o más nuevas. cu130 (2.14.1) pide driver ≥ 580 y el de la laptop es 573.22, así que va cu128, que llega a 2.11.0 (cu129 llega a 2.9.0).
+- Cambio: `--extra-index-url .../cu128` y `torch>=2.6,<2.12`, con comentarios. También nota de usar Python 3.13: con 3.15 pyyaml no tiene wheel (pide Visual C++) y no hay torch con CUDA.
+- Arreglo del venv ya creado: `pip uninstall -y torch` y `pip install torch==2.11.0 --index-url https://download.pytorch.org/whl/cu128`. Sin commitear.
+
+## 2026-11-14 14:20 — decisión e implementación: limpieza del repo (puntos 1–5 y 8; el 6 queda para después, el 7 lo revisa el usuario)
+- Decidido por el usuario: borrar `gpu_monitor.csv` (no lo usa); aplicar las recomendaciones salvo el 6 (mover scripts a `scripts/`, «luego vemos»); el 7 (STATUS) lo quiere revisar antes de reescribirlo.
+- Hecho, sin commitear: `gpu_monitor.csv` borrado; 10 funciones sin uso quitadas (sin imports colgando, compila); `make_dummy_data.mjs` + `data:dummy` y `make_test_data.py` borrados (la pista de embedding_cross ahora dice `run_analysis.py`).
+- Servidores: `db_explorer/server.py` y `jev_eval/server.py` ya no arrancan solos (sin Handler ni main); `Server` (bind exclusivo) pasó a `private_visuals/server.py`; nav.js ya no redirige desde 8765/8770. Verificado en 8766: páginas 200, .py 404, API 503 porque en esta máquina no está la base (igual que antes).
+- `results/jev/experiments/`: probe_v1, probe_v2_short, filter_v1, filter_v1_es, types_v1, test100, test100_explicit, test100_rewrite, test100_round3, sample_compact, sample_hybrid_sim (git mv). Rutas ajustadas en human_eval_draw.py (todas resuelven), 4 scripts de results/jev/scripts, cost_model.md y una revisión de test100. Lo final queda arriba: corpus_filter, corpus_analysis, sample, sample_final, human_eval, answers, scripts, cost_*.
+- README.md raíz en inglés: qué es, estructura, orden del pipeline, qué queda fuera de git.
+- `requirements.txt` modificado por otro chat (general 14:10): fuera de estos commits.
+
+## 2026-11-14 16:37 — commits de la limpieza del repo, sin push
+- Por pedido del usuario: a8652f7 (código muerto, generadores de datos de prueba, gpu_monitor.csv), d7320bb (servidor único de páginas #67), d0a577f (experimentos de Jev a results/jev/experiments #39), ddf3c3b (README raíz) y el de logs.
+- Fuera: requirements.txt (cambio de otro chat, general 14:10) y `results/jev/corpus/` (256 MB, apareció sin seguimiento durante la sesión; no está en el .gitignore, solo resultsV1/). Fuera de git a propósito según STATUS.

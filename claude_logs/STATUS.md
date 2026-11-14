@@ -17,6 +17,9 @@ La corrida de Jev sobre el corpus está completa: 3.662 de 7.431 noticias con ma
 
 Decisiones que se discutieron y nunca se tomaron. Cualquier chat puede retomarlas con el usuario.
 
+### limpieza del repo (general 2026-11-14 14:09 y la entrada siguiente)
+Hechos y commiteados (a8652f7, d7320bb, d0a577f, ddf3c3b y logs; sin push) los puntos 1–5 y 8 (gpu_monitor.csv borrado, funciones muertas, datos de prueba, servidores sueltos, `results/jev/experiments/`, README). Falta: (6) mover los .py de la raíz y `results/jev/scripts/` a `scripts/`: el usuario lo deja para después; (7) reescribir este STATUS: el usuario quiere revisar primero qué sigue pendiente. Ojo: `results/jev/corpus/` (256 MB) está en esta máquina sin seguimiento y sin regla en el .gitignore: no commitear.
+
 ### estilo de las páginas locales (explorer 2026-11-13)
 Commiteado en ddb4ac2 (sin push): tema común `private_visuals/theme/` (theme.css oficial, variants.css generado por build_styles.py con Sobrio, Editorial, Cálido, Proyector, Accesible, Sitio web (el del sitio Astro, estilo extra; decidido) y Original; Ajustes en la barra; theme.js/nav.js) en el explorador (server.py sirve /theme/), embedding_cross, evolution_replay, los 7 grafos y el visor de Jev (explorer, «estilos intercambiables…» y «grafos y visor de Jev…»). jev_eval también, con barra y Ajustes (explorer 2026-11-13 20:32; solo en 8766, el servidor suelto 8770 no sirve /theme/). **Falta**: agregar el OFL.txt completo a theme/fonts (descarga, pedir permiso). Abiertos: ¿traducir evolution_replay?; ¿issue nuevo para el estilo? Colores de datos del Oficial en claro = colores de los mosaicos (pastel, sin 3:1 a propósito), partidos en pastel con su matiz, texto con --*-text en el tono de las etiquetas (oklch relativo, --text-lmax/--text-cboost); daltonismo solo en Accesible (explorer 2026-11-13, «los colores de datos del Oficial en claro son los de los mosaicos»). Pasteles de datos con la opción H (L −0,09, C ×2 desde el mosaico; explorer 2026-11-13, «opción H»). theme/_compare.html quedó fuera del commit, sin borrar. **Commiteado en ddb4ac2** (explorer 2026-11-13 17:38): un solo servidor `private_visuals/server.py` (launch.json: `pages` 8766, `pages-alt` 8768); todas las páginas en http://localhost:8766/<carpeta>/, explorador en /db_explorer/, evaluación en /jev_eval/. En marcha en 8766 desde 17:40 (viejos cerrados; un Ctrl+F5 único por navegador para soltar el nav.js viejo; queda un explorador suelto viejo en 8765).
 
@@ -163,7 +166,7 @@ Máquina del usuario (la del sitio); los datos están en `databasesV1/`, `rawV1/
 - Votos de Delfino: 9.288 votaciones (8.879 plenary, 409 full_committee; 2018-05-17 a 2026-11-09) y 513.660 votos, recargados el 2026-11-10 porque la base se había reemplazado por una copia vieja. Sin cruce solo «Cynthia Córdoba Serrano». Respaldo de la base parcial: `databases/private_corpus.backup_2026-11-10.db` (ignorado en git; borrar cuando no haga falta). (data 2026-11-10 16:56, 17:04)
 - 235 diputados, 1.880 órganos. 29.875 noticias (mayo–oct 2026).
 
-**explorador** (#67 cerrado): `private_visuals/db_explorer/server.py`, de solo lectura, en localhost:8766/db_explorer/ (`pages` en launch.json; el server.py suelto sigue en 8765). Fotos de 168/230 diputados.
+**explorador** (#67 cerrado): `private_visuals/db_explorer/server.py`, de solo lectura, en localhost:8766/db_explorer/ (`pages` en launch.json; ya no tiene servidor propio). Fotos de 168/230 diputados.
 
 **visor de Jev** (#69, cerrado en GitHub el 2026-11-11 11:04; los commits de grafos lo siguen citando): `private_visuals/jev_answers/`, página estática en localhost:8766/jev_answers/ (`pages` en launch.json). Vistas por noticia y por expediente + pestaña «Análisis» (partidos, votos vs prensa, medios, rankings, proponentes y comisiones, cruces, polémicos, línea temporal). Línea temporal con los 1.420 expedientes (381 activos sin cobertura) y botón en cada expediente. Hecho, verificado y commiteado (jev 2026-11-10 15:23, 15:54, 16:32). Prensa vs voto: 94–100 % de coincidencia por partido.
 
@@ -188,4 +191,5 @@ Máquina del usuario (la del sitio); los datos están en `databasesV1/`, `rawV1/
 
 **general**
 - Usar `.venv/Scripts/python.exe` (el `python` suelto puede no tener torch). Si el pip del `.venv` falla, usar `python -m pip`.
+- El venv va con Python 3.13 (con 3.15 no hay wheels de pyyaml ni torch con CUDA). requirements.txt usa cu128 y torch <2.12 (RTX 5050, driver 573); cambio sin commitear (general 2026-11-14 14:10).
 - Memoria de Claude: este STATUS más los diarios por tema (desde 2026-11-08). Los logs diarios viejos quedan en `claude_logs/archive/`.
