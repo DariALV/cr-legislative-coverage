@@ -308,3 +308,13 @@ El usuario aprobó la opción A de la entrada de 10:53 y pidió un enlace a la f
 
 - A pedido del usuario, `site/README.md` (antes la plantilla de Astro) explica el flujo: cambio de presentación o de datos (exportador), revisar con dev/check/build, revisar qué se sube, commit y push a main, comprobar la corrida en Actions. En español; elegido por Claude ponerlo en `site/` y no en el README raíz, que está vacío y corresponde a #47.
 - La página de evaluación se vincula a #52 (protocolo y cuestionario de usabilidad).
+
+## 2026-11-13 18:58 — decisión: página del expediente sin recuadros, secciones separadas por una línea gris (#49)
+
+- A pedido del usuario se quitaron los recuadros (fondo, borde y relleno) del gráfico de cobertura, de la tabla de mociones y de cada votación. Cada sección de la página empieza con una línea fina (`var(--border)`) y las votaciones se separan entre sí con la misma línea.
+- Elegido por Claude, a confirmar: siguen con recuadro las tarjetas de cifras de arriba, las fichas de proponentes y la caja con scroll del texto del proyecto. La clase global `.card` no cambió (la usa la página de noticia).
+- Archivos: `Timeline.astro`, `VotesTable.astro`, `expediente/[number].astro` (solo estilos). `astro check` 0 errores, build completo. Sin ver en navegador. Sin commit.
+
+## 2026-11-13 19:04 — commits de la ficha sin recuadros; los del texto, votaciones y evaluación ya están en origin/main (#49)
+
+- El usuario subió 9842982, d3b81db y 544e96e (main al día con origin). La ficha sin recuadros va en un commit propio más el de logs.
