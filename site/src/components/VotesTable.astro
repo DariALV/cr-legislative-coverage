@@ -63,7 +63,7 @@ const partiesShown = [...new Set(votes.flatMap((v) => v.deputies.map((d) => d.pa
   .sort((a, b) => partyRank(a) - partyRank(b) || a.localeCompare(b, 'es'));
 ---
 {motions.length > 0 && (
-  <section class="motions card">
+  <section class="motions">
     <h3>Mociones votadas: {formatInt(motionsCount)}</h3>
     <p class="muted small">
       Las mociones se muestran resumidas por tipo. El detalle de cada una está en Delfino.cr.
@@ -113,7 +113,7 @@ const partiesShown = [...new Set(votes.flatMap((v) => v.deputies.map((d) => d.pa
       </div>
     )}
     {prepared.map(({ v, rows, totals, byVote, dotRows }) => (
-      <section class="vote card">
+      <section class="vote">
         <div class="vote-head">
           <h3>{v.name}</h3>
           <span class="muted small">{formatDate(v.date)}</span>
@@ -189,8 +189,11 @@ const partiesShown = [...new Set(votes.flatMap((v) => v.deputies.map((d) => d.pa
 )}
 
 <style>
-  .votes { display: grid; gap: 1rem; }
-  .motions { margin-bottom: 1rem; }
+  /* Flat blocks: a faint rule between one vote and the next, no boxes. */
+  .votes { display: grid; gap: 1.5rem; }
+  .vote + .vote { border-top: 1px solid var(--border); padding-top: 1.5rem; }
+  .motions { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+  .motions:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
   .motions h3 { margin: 0 0 0.25rem; }
   .legend { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; color: var(--text-2); }
   .dot { display: inline-block; width: 14px; height: 14px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.18); flex: none; }
