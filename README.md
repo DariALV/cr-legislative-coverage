@@ -20,7 +20,6 @@ https://darialv.github.io/cr-legislative-coverage
 | `private_visuals/` | Local pages (explorer, graphs, Jev viewer, blind evaluation...), all served by `private_visuals/server.py` |
 | `site/` | The public Astro site, deployed to GitHub Pages on every push to `main` that touches it (see `site/README.md`) |
 | `docs/` | How the data was collected and cleaned: `news.md`, `bills.md`, `asamblea.md` |
-| `claude_logs/` | Project journal (Spanish): `STATUS.md` is the current state, one append-only file per topic |
 
 ## Pipeline
 

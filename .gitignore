@@ -239,3 +239,9 @@ databases/private_corpus.backup_*.db
 databasesV1/
 rawV1/
 resultsV1/
+
+# Full Jev corpus run: answers.jsonl alone is 133 MB; moved between machines by hand (see claude_logs/STATUS.md)
+results/jev/corpus/
+
+# Claude project journal: kept local only, shared with the professor on request
+claude_logs/
