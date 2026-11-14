@@ -1,0 +1,332 @@
+"use strict";
+/* Spanish help for the blind evaluation page: a title and a plain explanation for each Jev question, the legislative
+   terms the questions use, and how to use the page. The questions themselves stay in English, as Jev saw them; this
+   only explains them, it does not change them. */
+
+const QUESTION_TITLES = {
+  genre: "Tipo de pieza",
+  mention: "¿Habla de este expediente?",
+  press_release: "¿Es un comunicado?",
+  main_frame: "Encuadre principal",
+  assembly_image: "Imagen de la Asamblea",
+  headline_misleading: "¿Título engañoso?",
+  centrality: "Centralidad",
+  stance: "Postura de la noticia",
+  author_judges: "¿El autor lo juzga?",
+  new_development: "¿Novedad en el trámite?",
+  pueblo_soberano: "Pueblo Soberano (PPSO)",
+  liberacion_nacional: "Liberación Nacional (PLN)",
+  frente_amplio: "Frente Amplio (FA)",
+  unidad_social_cristiana: "Unidad Social Cristiana (PUSC)",
+  agenda_ciudadana: "Coalición Agenda Ciudadana (CAC)",
+  executive: "Poder Ejecutivo",
+  voice_business: "Empresas",
+  voice_labor: "Trabajadores",
+  voice_experts: "Expertos",
+  voice_civil_society: "Sociedad civil",
+  voice_institutions: "Instituciones",
+  voice_affected: "Personas afectadas",
+  stage: "Etapa del trámite",
+  explains_content: "¿Explica qué haría?",
+  explains_impact: "¿Explica a quién afecta?",
+  gives_figures: "¿Da cifras?",
+  conflict_frame: "¿Lo cuenta como pelea política?",
+  in_headline: "¿Está en el título?",
+  names_proponent: "¿Dice quién lo propuso?",
+  deputy_quoted: "¿Cita a un diputado?",
+  background: "¿Da antecedentes?",
+  explains_procedure: "¿Explica el trámite?",
+  vote_reported: "¿Reporta una votación?",
+  votes_outlook: "¿Dice si tiene los votos?",
+  constitutionality: "¿Constitucionalidad o Sala IV?",
+  international: "¿Comparación internacional?",
+  human_story: "¿Historia de una persona?",
+  next_step: "¿Dice qué sigue?",
+};
+
+const PARTY_POINTS = [
+  "Not mentioned: la noticia no dice qué piensa este actor del expediente.",
+  "Strongly against: se opone con firmeza. Against: tiene objeciones o se inclina en contra.",
+  "Neutral / divided: su posición es neutral o indecisa, o sus miembros están divididos.",
+  "In favor: lo apoya, quizá con reservas. Strongly in favor: lo apoya con firmeza o lo impulsa.",
+  "Cuenta lo que la noticia dice que piensan, dicen o hacen sus diputados o voceros.",
+];
+const VOICE_INTRO = "Si la noticia cita o parafrasea a este tipo de fuente hablando de este expediente. Tiene que hablar: si la noticia solo la menciona, no cuenta.";
+
+/* Help for each question: what it asks, how to decide, and related terms (ids of CONCEPTS). */
+const QUESTION_HELP = {
+  genre: {
+    what: "Qué clase de texto es.",
+    points: [
+      "News report: noticia sobre hechos recientes.",
+      "Opinion: columna, editorial o carta en la que el autor defiende una postura.",
+      "Interview: entrevista; sobre todo las preguntas y respuestas de una persona.",
+      "Analysis: análisis, explicación o reportaje largo que va más allá del último hecho.",
+    ],
+  },
+  mention: {
+    what: "Para cada expediente candidato: si la noticia lo nombra, si habla de él sin nombrarlo, o si no habla de él.",
+    points: [
+      "Lo nombra: da el número del expediente (por ejemplo 25.123), cita su título oficial o usa un apodo que se refiere a él.",
+      "Lo describe: habla de este expediente en particular sin dar su número ni su título: qué haría o cambiaría, quién lo propuso o en qué paso del trámite está.",
+      "No: no habla de este expediente, aunque trate un tema parecido.",
+      "Si varios expedientes tratan el mismo tema y nada en la noticia calza con uno en particular, no marqués ninguno como «Lo describe».",
+      "Si lo nombra y además lo describe, elegí «Lo nombra».",
+      "Si la noticia habla de un expediente que no está en la lista, buscalo en «¿Falta alguno?», al final de la lista.",
+    ],
+    terms: ["expediente", "tipos", "apodo", "proponente"],
+  },
+  press_release: {
+    what: "Si la noticia se limita a pasar el anuncio o la declaración de una sola fuente, con sus palabras y su enfoque, casi sin reporteo propio.",
+    points: [
+      "Yes: está armada alrededor de lo que anunció o dijo una fuente (una institución, un partido, un diputado, un sindicato, una organización o una oficina de gobierno). La cita y la parafrasea, toma su lado y no agrega otras voces ni reacciones; a lo sumo una o dos frases de contexto.",
+      "No: es opinión, entrevista o análisis; o es reporteo que agrega otras fuentes, reacciones, datos o contexto; o el periodista explica con sus propias palabras un documento (el texto y la exposición de motivos de un proyecto, una votación, un informe técnico).",
+      "Si el periodista cuenta una votación o un documento con sus palabras, es «No», aunque la noticia parezca salida de un comunicado.",
+    ],
+    terms: ["parafrasear", "exposicion"],
+  },
+  main_frame: {
+    what: "El ángulo que domina la noticia: desde dónde cuenta el tema.",
+    points: [
+      "Conflict: el desacuerdo entre actores políticos; quién ataca a quién, quién gana o pierde.",
+      "Economic: las consecuencias económicas: costos, ganancias, empleos, precios o impuestos.",
+      "Human interest: el lado personal o emocional, contado a través de personas afectadas.",
+      "Responsibility: quién causó un problema o quién debería resolverlo.",
+      "Morality: principios morales o religiosos; lo que está bien o mal.",
+      "Policy: qué hace una política pública o un proyecto y cómo funcionaría.",
+      "Elegí el que domina el texto entero, no el de una frase suelta.",
+    ],
+    terms: ["encuadre"],
+  },
+  assembly_image: {
+    what: "Cómo retrata la noticia a la Asamblea Legislativa como institución, no a un diputado o a un partido en particular.",
+    points: [
+      "Very negatively: la pinta inútil, corrupta, como un estorbo o desconectada de la gente.",
+      "Neutrally: la menciona sin juzgarla, o no juzga a la Asamblea en conjunto.",
+      "Very positively: la pinta eficaz, atenta a lo que pasa o haciendo bien su trabajo.",
+    ],
+  },
+  headline_misleading: {
+    what: "Si el título exagera lo que dice el texto, o lo contradice.",
+  },
+  centrality: {
+    what: "Cuánto de la noticia trata de este expediente.",
+    points: [
+      "De paso: aparece en una frase o en una lista, y la noticia es sobre otra cosa.",
+      "Una parte: es parte de la noticia, pero no su tema principal.",
+      "Principal: la noticia trata sobre todo de este expediente.",
+    ],
+  },
+  stance: {
+    what: "Qué opinión sobre el expediente transmite la noticia en conjunto, contando a las personas que cita (no solo al autor).",
+    points: [
+      "Es la opinión sobre el expediente entero, no sobre una moción o un cambio que se le hizo.",
+      "Neutral o equilibrada: nadie lo valora, o las opiniones a favor y en contra se compensan.",
+      "Crítica o favorable: lo que predomina en lo que se dice y en lo que se cita.",
+    ],
+  },
+  author_judges: {
+    what: "Si el autor de la noticia, con su propia voz, dice que el expediente es bueno o malo. Lo que opinan las personas citadas no cuenta aquí.",
+  },
+  new_development: {
+    what: "Si la noticia informa algo que le acaba de pasar al expediente dentro del proceso legislativo.",
+    points: ["Por ejemplo: que se presentó, un dictamen de comisión, una votación, un veto o su publicación como ley."],
+    terms: ["dictamen", "sancion_veto", "gaceta"],
+  },
+  executive: {
+    what: "Qué posición sobre el expediente le atribuye la noticia al Poder Ejecutivo: la Presidencia, un ministro o un vocero del gobierno.",
+    points: PARTY_POINTS.slice(0, 4),
+    terms: ["ejecutivo"],
+  },
+  voice_business: { what: VOICE_INTRO, points: ["Empresas: empresarios, cámaras empresariales o gremios de la industria."], terms: ["parafrasear"] },
+  voice_labor: { what: VOICE_INTRO, points: ["Trabajadores: sindicatos o trabajadores."], terms: ["parafrasear"] },
+  voice_experts: { what: VOICE_INTRO, points: ["Expertos: académicos, investigadores o expertos independientes."], terms: ["parafrasear"] },
+  voice_civil_society: {
+    what: VOICE_INTRO,
+    points: ["Sociedad civil: organizaciones sin fines de lucro, activistas o grupos comunitarios."],
+    terms: ["parafrasear"],
+  },
+  voice_institutions: {
+    what: VOICE_INTRO,
+    points: ["Instituciones públicas que no sean la Asamblea ni el Poder Ejecutivo, como la CCSS, la Contraloría, la Defensoría de los Habitantes, la Sala IV o una municipalidad."],
+    terms: ["instituciones", "parafrasear"],
+  },
+  voice_affected: {
+    what: VOICE_INTRO,
+    points: [
+      "Personas comunes a las que el expediente les cambia la vida, hablando por sí mismas: pacientes, estudiantes, trabajadores, pensionados, vecinos o sus familiares.",
+      "No cuentan: diputados, ministros u otros funcionarios, instituciones, sindicatos, cámaras, organizaciones, expertos ni el autor.",
+    ],
+    terms: ["parafrasear"],
+  },
+  stage: {
+    what: "Dónde está el expediente en el proceso legislativo según lo que dice la noticia, aunque sepás que hoy está en otro paso.",
+    points: [
+      "Filing: recién presentado, o esperando empezar en comisión.",
+      "Committee: se discute en una comisión, o la comisión acaba de dictaminarlo y espera el Plenario.",
+      "First debate: el Plenario lo discute en primer debate, o acaba de votarlo en primer debate.",
+      "Second debate: está en el Plenario para el segundo y último debate, o acaba de pasarlo.",
+      "Veto or signing: ya se aprobó y se está firmando, vetando o publicando como ley.",
+      "Constitutional Court: lo está revisando la Sala Constitucional (Sala IV).",
+      "Archived or rejected: se archivó, se rechazó o se retiró.",
+      "Not stated: la noticia no dice en qué paso está.",
+    ],
+    terms: ["comision", "dictamen", "plenario", "primer_debate", "segundo_debate", "sala_iv", "sancion_veto", "archivo"],
+  },
+  explains_content: { what: "Si la noticia explica qué haría o cambiaría el expediente." },
+  explains_impact: { what: "Si la noticia dice a quién afectaría el expediente o qué consecuencias tendría." },
+  gives_figures: {
+    what: "Si la noticia da cifras sobre lo que el expediente haría o causaría.",
+    points: [
+      "Cuentan: costos, montos, tasas, cantidad de personas afectadas, y penas como años de cárcel o multas.",
+      "No cuentan: números de expediente o de ley, fechas ni conteos de votos.",
+    ],
+  },
+  conflict_frame: { what: "Si presenta el expediente sobre todo como una pelea entre actores políticos, más que explicando el expediente mismo.", terms: ["encuadre"] },
+  in_headline: { what: "Si el título de la noticia se refiere a este expediente." },
+  names_proponent: {
+    what: "Si la noticia dice quién presentó el expediente: por ejemplo, uno o varios diputados, una fracción o el Poder Ejecutivo.",
+    points: ["Es quien presentó el expediente, no quien impulsó una moción o un cambio dentro de él."],
+    terms: ["proponente", "fraccion"],
+  },
+  deputy_quoted: { what: "Si la noticia cita o parafrasea a un diputado o una diputada sobre este expediente.", terms: ["parafrasear"] },
+  background: { what: "Si la noticia da antecedentes del expediente, como cuándo se presentó o qué le pasó antes." },
+  explains_procedure: {
+    what: "Si la noticia explica cómo funciona el proceso legislativo para este expediente.",
+    points: ["Por ejemplo: qué significa un debate, un dictamen, la vía rápida o una dispensa de trámite, o cuántos votos necesita."],
+    terms: ["primer_debate", "dictamen", "via_rapida", "dispensa", "votos"],
+  },
+  vote_reported: { what: "Si la noticia dice cómo se votó el expediente: el conteo de votos, o cómo votaron diputados o partidos.", terms: ["votos"] },
+  votes_outlook: {
+    what: "Si la noticia dice si el expediente tiene, o no, los votos que necesita para aprobarse.",
+    points: ["Habla de que se apruebe el expediente; una votación sobre una moción no cuenta."],
+    terms: ["votos"],
+  },
+  constitutionality: {
+    what: "Si la noticia plantea dudas sobre si el expediente choca con la Constitución, o menciona una consulta o una resolución de la Sala Constitucional (Sala IV) sobre él.",
+    terms: ["sala_iv"],
+  },
+  international: { what: "Si la noticia compara el expediente con otros países, o cita a organismos internacionales como la OCDE, el FMI o la ONU.", terms: ["internacionales"] },
+  human_story: { what: "Si la noticia ilustra el expediente con el caso de una persona o una familia concreta." },
+  next_step: {
+    what: "Si la noticia dice qué viene después para el expediente: su próximo debate, la comisión o el Plenario al que va, o una votación programada.",
+    terms: ["comision", "plenario", "primer_debate", "segundo_debate"],
+  },
+};
+for (const key of ["pueblo_soberano", "liberacion_nacional", "frente_amplio", "unidad_social_cristiana", "agenda_ciudadana"]) {
+  QUESTION_HELP[key] = {
+    what: "Qué posición sobre el expediente le atribuye la noticia a este partido, a través de sus diputados o voceros.",
+    points: key === "pueblo_soberano"
+      ? ["Pueblo Soberano es el partido de gobierno desde mayo de 2026: el «oficialismo» de la Asamblea actual. El oficialismo de la Asamblea anterior (2022-2026) era otro partido y no cuenta como Pueblo Soberano.", ...PARTY_POINTS]
+      : PARTY_POINTS,
+    terms: ["fraccion", "oficialismo", "roster"],
+  };
+}
+
+/* Legislative and legal terms the questions use, for someone who doesn't follow the Assembly. */
+const CONCEPTS = [
+  { id: "expediente", title: "Expediente",
+    text: ["El número con el que la Asamblea Legislativa identifica cada asunto que tramita, por ejemplo 25.123. La mayoría son proyectos de ley. Las noticias lo escriben con o sin punto: «expediente 25.123» o «25123»."] },
+  { id: "tipos", title: "Tipos de expediente",
+    text: ["Proyecto de ley: una ley nueva o un cambio a una ley.",
+      "Reforma constitucional: cambia la Constitución Política. Tiene un trámite más largo y necesita 38 votos.",
+      "Nombramiento: la Asamblea elige o ratifica a una persona en un cargo, por ejemplo magistrados, quien dirige la Defensoría de los Habitantes o la Contraloría.",
+      "Comisión investigadora: un grupo de diputados investiga un tema y presenta un informe. No hace leyes.",
+      "Reforma al Reglamento: cambia las reglas internas con las que funciona la Asamblea."] },
+  { id: "apodo", title: "Apodo de un proyecto",
+    text: ["Nombre informal con el que la prensa o los políticos llaman a un proyecto, distinto de su título oficial. Si la noticia usa un apodo que se refiere a un expediente, eso cuenta como nombrarlo."] },
+  { id: "proponente", title: "Proponente o firmantes",
+    text: ["Quien presenta el expediente: uno o varios diputados, o el Poder Ejecutivo. Los diputados que lo firman al presentarlo son sus proponentes."] },
+  { id: "exposicion", title: "Exposición de motivos",
+    text: ["El texto que acompaña a un proyecto y explica por qué se propone y qué busca. Va antes de los artículos."] },
+  { id: "comision", title: "Comisión",
+    text: ["Grupo de diputados que estudia los expedientes antes de que lleguen al Plenario. Las comisiones permanentes se reparten por tema (por ejemplo Hacendarios, Económicos, Sociales, Jurídicos, Agropecuarios, Gobierno y Administración).",
+      "También hay comisiones especiales, como las investigadoras, y comisiones con potestad legislativa plena, que pueden aprobar algunas leyes en lugar del Plenario."] },
+  { id: "dictamen", title: "Dictamen",
+    text: ["El informe con el que una comisión recomienda aprobar (dictamen afirmativo) o rechazar (dictamen negativo) un expediente. Si la comisión no se pone de acuerdo, puede haber un dictamen de mayoría y otro de minoría."] },
+  { id: "plenario", title: "Plenario",
+    text: ["La sesión de los 57 diputados juntos, donde se discuten y se votan los expedientes."] },
+  { id: "primer_debate", title: "Primer debate",
+    text: ["La primera discusión y votación de un expediente en el Plenario (o en una comisión con potestad plena). En esta etapa los diputados pueden presentar mociones para cambiar el texto."] },
+  { id: "segundo_debate", title: "Segundo debate",
+    text: ["La votación final de un expediente en el Plenario. Si se aprueba, pasa al Poder Ejecutivo para que lo firme o lo vete."] },
+  { id: "sala_iv", title: "Sala Constitucional (Sala IV)",
+    text: ["La sala de la Corte Suprema de Justicia que vela por que las leyes respeten la Constitución.",
+      "Entre el primer y el segundo debate, un grupo de diputados puede consultarle si un proyecto choca con la Constitución; en algunos casos la consulta es obligatoria. Mientras la Sala responde, el segundo debate espera."] },
+  { id: "sancion_veto", title: "Sanción, veto y resello",
+    text: ["Aprobado en segundo debate, el expediente va al Poder Ejecutivo, que lo firma (sanción) o lo veta (lo devuelve sin firmar, con objeciones).",
+      "Si hay veto, la Asamblea puede insistir y aprobarlo de nuevo con 38 votos (resello)."] },
+  { id: "gaceta", title: "La Gaceta",
+    text: ["El diario oficial. Por lo general, una ley empieza a regir cuando se publica ahí."] },
+  { id: "archivo", title: "Archivo y plazo cuatrienal",
+    text: ["Un expediente que no se vota en cuatro años se archiva, salvo que la Asamblea le dé más tiempo (prórroga del plazo cuatrienal). Un expediente también deja de avanzar si se rechaza o si sus proponentes lo retiran."] },
+  { id: "via_rapida", title: "Vía rápida",
+    text: ["Un procedimiento especial que le pone plazos más cortos a un expediente para acelerarlo. Se aprueba con una votación de dos tercios (38 votos)."] },
+  { id: "dispensa", title: "Dispensa de trámite",
+    text: ["El Plenario decide que un expediente se salte el paso por comisión y se discuta directamente."] },
+  { id: "mocion", title: "Moción",
+    text: ["Una propuesta formal de uno o varios diputados, por ejemplo para cambiar un artículo de un proyecto o para cambiar su trámite."] },
+  { id: "texto_sustitutivo", title: "Texto sustitutivo",
+    text: ["Una versión nueva y completa de un proyecto que reemplaza a la que se presentó."] },
+  { id: "votos", title: "Votos necesarios",
+    text: ["La mayoría de los expedientes se aprueba por mayoría simple de los diputados presentes.",
+      "Algunos necesitan 38 votos, dos tercios de los 57: por ejemplo, una reforma constitucional, la vía rápida o un resello después de un veto."] },
+  { id: "extraordinarias", title: "Sesiones extraordinarias",
+    text: ["Períodos del año en los que la Asamblea solo puede discutir los expedientes que el Poder Ejecutivo convoca, es decir, que pone en la agenda."] },
+  { id: "ejecutivo", title: "Poder Ejecutivo",
+    text: ["El gobierno: la Presidencia de la República, los ministerios y sus voceros."] },
+  { id: "oficialismo", title: "Oficialismo y oposición",
+    text: ["El oficialismo es el partido del gobierno; en la Asamblea que empezó en mayo de 2026 es Pueblo Soberano. La oposición son los demás partidos."] },
+  { id: "fraccion", title: "Fracción",
+    text: ["El grupo de diputados de un mismo partido. El jefe o la jefa de fracción es su vocero principal."] },
+  { id: "ley_vigente", title: "Ley vigente y decreto ejecutivo",
+    text: ["Una ley vigente ya se aprobó y se publicó; un proyecto de ley todavía no es ley.",
+      "Un decreto ejecutivo es una norma que dicta el Poder Ejecutivo por su cuenta, sin pasar por la Asamblea."] },
+  { id: "audiencias", title: "Consultas y audiencias",
+    text: ["Mientras estudia un proyecto, una comisión le pide criterio a instituciones y recibe a personas o grupos interesados."] },
+  { id: "instituciones", title: "Instituciones que aparecen seguido",
+    text: ["CCSS: Caja Costarricense de Seguro Social, a cargo de la salud pública y de las pensiones.",
+      "Contraloría General de la República: vigila cómo se usa el dinero público.",
+      "Defensoría de los Habitantes: defiende los derechos de las personas frente al Estado.",
+      "Procuraduría General de la República: el abogado del Estado.",
+      "Municipalidades: los gobiernos locales de cada cantón."] },
+  { id: "internacionales", title: "Organismos internacionales",
+    text: ["OCDE: organización de países que recomienda buenas prácticas de política pública; Costa Rica es miembro.",
+      "FMI: Fondo Monetario Internacional. ONU: Organización de las Naciones Unidas."] },
+  { id: "parafrasear", title: "Citar o parafrasear",
+    text: ["Citar es reproducir las palabras de alguien, por lo general entre comillas. Parafrasear es contar con otras palabras lo que dijo («según el sindicato, el proyecto…»). Las dos cuentan."] },
+  { id: "encuadre", title: "Encuadre",
+    text: ["El ángulo desde el que una noticia cuenta un tema: como una pelea, como un asunto económico, como una historia humana, etc."] },
+];
+
+const HOWTO = [
+  "Leé la noticia a la izquierda y contestá a la derecha, de arriba hacia abajo.",
+  "Primero el tipo de pieza. Después, en «Expedientes», marcá los candidatos de los que habla la noticia y apretá «Listo». Si marcaste alguno, aparecen las preguntas sobre la noticia y las de cada expediente marcado.",
+  "Las preguntas están en inglés, tal como las vio Jev. Este glosario explica cada una en español: tocá el «?» junto a cualquier pregunta.",
+  "Contestá según lo que dice la noticia, no según lo que sabés del tema por otro lado.",
+  "Las preguntas de detalle son sobre el expediente entero. Si la noticia trata de una moción, de un reglamento o de un cambio al expediente, contestá sobre el expediente: quién propuso el expediente (no la moción), si el expediente tiene los votos (no la moción), qué opina la noticia del expediente.",
+  "En los casos límite, leé las líneas «Yes:» y «No:» de la pregunta: ahí está definido qué cuenta.",
+  "Citar o parafrasear exige que la fuente hable: que la noticia cuente lo que dijo o piensa. Si solo se la menciona, no cuenta.",
+  "Si una respuesta te deja dudas, contestala igual con tu mejor opción y marcala como «Dudosa».",
+  "Para cambiar una respuesta, elegí otra opción. Para borrarla, volvé a tocar la que está marcada.",
+  "Todo se guarda solo. Podés cerrar la página y seguir después donde quedaste.",
+  "La página mide el tiempo activo en cada noticia, para estimar cuánto toman las 50.",
+  "Mientras contestás, no abras el visor de Jev ni los grafos.",
+];
+
+const SHORTCUTS = [
+  ["↑ ↓", "moverse entre preguntas (o J y K)"],
+  ["1 – 8", "elegir la opción con ese número"],
+  ["S · N", "sí o no, en las preguntas de sí o no"],
+  ["D", "marcar o desmarcar como dudosa"],
+  ["?", "abrir el glosario en la pregunta actual"],
+  ["Esc", "cerrar el glosario"],
+];
+
+const PARTIES = {
+  "PUEBLO SOBERANO": { short: "PPSO", name: "Pueblo Soberano", note: "partido de gobierno desde mayo de 2026" },
+  "LIBERACIÓN NACIONAL": { short: "PLN", name: "Liberación Nacional" },
+  "FRENTE AMPLIO": { short: "FA", name: "Frente Amplio" },
+  "UNIDAD SOCIAL CRISTIANA": { short: "PUSC", name: "Unidad Social Cristiana" },
+  "COALICION AGENDA CIUDADANA": { short: "CAC", name: "Coalición Agenda Ciudadana" },
+};

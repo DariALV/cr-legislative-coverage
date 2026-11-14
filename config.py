@@ -141,6 +141,17 @@ class Config:
   JEV_DETAILS_BATCH = 15               # bills per details request: 21 or more went over Jev's ~64k tokens per request
   JEV_FILTER_THRESHOLD = 0.2           # news whose assembly probability reaches this go on to the ranker and the gate
 
+  # Blind evaluation of Jev's answers: news from the corpus run, half with a gate match and half without, answered
+  # by hand with every Jev question (HumanEvalDraw). News already used to tune or review Jev stay out.
+  HUMAN_EVAL_DIR = "results/jev/human_eval"   # ids, answers and timings only (no news text), kept in git
+  HUMAN_EVAL_SEED = 20261111
+  HUMAN_EVAL_STAGES = (3, 5)                  # news per outlet and group (with a gate match / without) by the end of
+                                              # each block: the first 30 rows are balanced, so the set can stop there
+  HUMAN_EVAL_MAX_MATCHES = 3                  # news with more gate matches stay out, so one news can't take an hour
+  HUMAN_EVAL_MAX_CHARS = 2000                 # only short news are answered by hand; longer ones are left to Claude.
+                                              # 2,000 is the lowest cap that keeps 5 per outlet and group
+  HUMAN_EVAL_PILOT = 6                        # the first rows, answered first to time the work
+
   # Embedding models to try (#6, #32). Adding one is adding an entry; Embedder takes these values as arguments.
   EMBEDDING_MODELS = {
     "bge-m3": EmbeddingModel("BAAI/bge-m3", max_tokens = 8192),

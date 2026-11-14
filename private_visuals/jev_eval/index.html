@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluación de Jev</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231f6b59'/%3E%3Crect x='7' y='7' width='18' height='18' rx='5' fill='%2368ad97'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../theme/theme.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="../theme/theme.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="side" data-page="eval"></aside>
+    <script src="../theme/nav.js"></script>
+
+    <div class="eval">
+  <header class="topbar">
+    <div class="eval-brand">
+      <span class="eval-brand-mark" aria-hidden="true"></span>
+      <div>
+        <div class="eval-title">Evaluación de Jev</div>
+        <div class="eval-sub" id="set-label">Cargando…</div>
+      </div>
+    </div>
+    <div class="progress-area">
+      <div class="progress-text" id="progress-text" aria-live="polite"></div>
+      <div class="progress-track" id="progress-track"></div>
+    </div>
+    <div class="top-actions">
+      <span class="save-state" id="save-state" aria-live="polite"></span>
+      <button type="button" class="btn ghost" id="open-glossary">Glosario <kbd>?</kbd></button>
+    </div>
+  </header>
+
+  <main class="layout" id="layout">
+    <article class="news-pane" id="news-pane"></article>
+    <section class="answer-pane" id="answer-pane" aria-label="Respuestas"></section>
+  </main>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="glossary" id="glossary" aria-hidden="true" aria-label="Glosario">
+    <div class="g-head">
+      <div class="g-head-row">
+        <h2>Glosario</h2>
+        <button type="button" class="btn small" id="close-glossary">Cerrar <kbd>Esc</kbd></button>
+      </div>
+      <input class="input" id="glossary-search" type="search" placeholder="Buscar: dictamen, Sala IV, PLN, una diputada…" autocomplete="off">
+      <nav class="g-tabs" id="glossary-tabs"></nav>
+    </div>
+    <div class="g-body" id="glossary-body"></div>
+  </aside>
+    </div>
+  </div>
+
+  <script src="glossary.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
