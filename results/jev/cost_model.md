@@ -1,7 +1,7 @@
 # Modelo de costo de Jev (2026-11-10)
 
 Scripts: `results/jev/scripts/jev_cost_fit.py` (ajuste por etapa) y `results/jev/scripts/jev_cost_stats.py` (por medio y mes).
-Fuentes: `results/jev/corpus_filter/` (29.698 noticias, filtro) y `results/jev/test100/` (101 puertas, 46 detalles).
+Fuentes: `results/jev/corpus_filter/` (29.698 noticias, filtro) y `results/jev/experiments/test100/` (101 puertas, 46 detalles).
 
 ## Fórmula (n = noticias que entran al filtro)
 

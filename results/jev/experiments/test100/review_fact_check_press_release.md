@@ -69,7 +69,7 @@ false: an opinion column, interview or analysis; reporting that adds other sourc
 
 Regla combinada: el género más probable es news_report y `press_release` ≥ 0,6.
 
-## Validación de las redacciones nuevas (results/jev/test100_rewrite/)
+## Validación de las redacciones nuevas (results/jev/experiments/test100_rewrite/)
 
 Hubo una request por noticia con match (46 noticias), con la vieja y la nueva redacción en la misma request y el mismo estado del detalle. Se pagó con la llave tests: 219.125 tokens, ≈ $0,009. La vieja reproduce la corrida original con ±0,03.
 

@@ -2,7 +2,7 @@
 Old vs. rewritten fact_check and press_release (jev 2026-11-10). For every news of test100 with a match, one request
 with the same state as the details stage (news, matched bills, deputies) and only these questions:
 news_press_release_old, news_press_release, b<n>_fact_check_old, b<n>_fact_check. Old and new go in the same
-request, so the only difference is the wording. Paid with the tests key. Output in results/jev/test100_rewrite/.
+request, so the only difference is the wording. Paid with the tests key. Output in results/jev/experiments/test100_rewrite/.
   python results/jev/scripts/jev_rewrite_check.py [--limit N]
 """
 import argparse
@@ -38,8 +38,8 @@ def fact_check_question(bill: str) -> Noul:
                f"contrasting it with a prior claim; or the checked claim is about another file or a general topic "
                f"and {bill} only appears as an example or a data point."})
 
-RUN = pathlib.Path("results/jev/test100")
-OUT = pathlib.Path("results/jev/test100_rewrite")
+RUN = pathlib.Path("results/jev/experiments/test100")
+OUT = pathlib.Path("results/jev/experiments/test100_rewrite")
 
 def old_question(stage: str, name: str, key: str | None = None) -> Noul:
   data = dict(json.loads((RUN / "questions.json").read_text(encoding = "utf-8"))[stage][name])

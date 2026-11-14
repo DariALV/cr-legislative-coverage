@@ -4,7 +4,7 @@ meta = {r["news_id"]: r for r in csv.DictReader(open("results/jev/corpus_filter/
 tok = {}
 for line in open("results/jev/corpus_filter/answers.jsonl", encoding="utf-8"):
   r = json.loads(line); tok[r["news_id"]] = r["input_tokens"] - QF
-ids100 = [l.strip() for l in open("results/jev/test100/news_ids.txt") if l.strip()]
+ids100 = [l.strip() for l in open("results/jev/experiments/test100/news_ids.txt") if l.strip()]
 print("test100 news mean tokens", round(st.mean(tok[i] for i in ids100 if i in tok)))
 def summ(ids):
   t = [tok[i] for i in ids]

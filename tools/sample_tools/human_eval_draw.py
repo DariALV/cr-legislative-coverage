@@ -12,9 +12,10 @@ from config import Config
 # sample. They stay out of the blind evaluation, so it is a clean test. CSV files are read by their news_id column;
 # the raw answer files are scanned for news ids (64 hex characters).
 USED_CSV = ["results/sample/queue.csv", "results/jev/sample/news.csv", "results/jev/sample_final/news.csv",
-            "results/jev/test100/news.csv", "results/jev/corpus_analysis/match_review.csv",
-            "results/jev/filter_v1.csv", "results/jev/probe_v1.csv", "results/jev/types_v1.csv"]
-USED_JSONL = ["results/jev/answers/*.jsonl", "results/jev/test100*/answers.jsonl"]
+            "results/jev/corpus_analysis/match_review.csv", "results/jev/experiments/test100/news.csv",
+            "results/jev/experiments/filter_v1.csv", "results/jev/experiments/probe_v1.csv",
+            "results/jev/experiments/types_v1.csv"]
+USED_JSONL = ["results/jev/answers/*.jsonl", "results/jev/experiments/test100*/answers.jsonl"]
 NEWS_ID = re.compile(r"\b[0-9a-f]{64}\b")
 
 class HumanEvalDraw:

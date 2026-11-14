@@ -23,7 +23,7 @@ print("filter records", len(ftok))
 
 # --- test100 fits ---
 gate, det = [], []
-for line in open("results/jev/test100/answers.jsonl", encoding="utf-8"):
+for line in open("results/jev/experiments/test100/answers.jsonl", encoding="utf-8"):
   r = json.loads(line); a = r["answers"]
   if r["news_id"] not in ftok: continue
   if r["stage"] == "gate":

@@ -1,7 +1,7 @@
 """
 Third round of detail questions on test100 (jev 2026-11-10): the rewritten voice_affected (next to the old wording,
 in the same request) and the new own_evidence, next_step and source_count. One request per news of test100 with a
-match, with the same state as the details stage. Paid with the tests key. Output in results/jev/test100_round3/.
+match, with the same state as the details stage. Paid with the tests key. Output in results/jev/experiments/test100_round3/.
   python results/jev/scripts/jev_round3_check.py [--limit N]
 own_evidence and source_count were dropped from jev_questions after this run (jev 2026-11-10), so the script no
 longer runs as it is; it stays as the record of what was asked.
@@ -21,8 +21,8 @@ from tools.llm_tools.jev import Jev, bill_key  # noqa: E402
 from tools.llm_tools.jev_context import JevContext  # noqa: E402
 from tools.llm_tools.jev_questions import detail_questions, news_detail_questions  # noqa: E402
 
-RUN = pathlib.Path("results/jev/test100")
-OUT = pathlib.Path("results/jev/test100_round3")
+RUN = pathlib.Path("results/jev/experiments/test100")
+OUT = pathlib.Path("results/jev/experiments/test100_round3")
 BILL_QUESTIONS = ["voice_affected", "own_evidence", "next_step"]
 
 def main():
