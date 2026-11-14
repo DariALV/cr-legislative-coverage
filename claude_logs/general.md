@@ -232,3 +232,79 @@ El usuario eligió la opción A de la entrada anterior y pidió commitear en la 
 - Formulario de reporte y licencia desactivados hasta que existan: `REPORT_FORM_URL` y `DATA_LICENSE` valen `null` en `site/src/lib/config.ts`, y con eso se ocultan el enlace «¿Este vínculo está mal?», sus menciones (ficha del expediente y metodología) y la línea de licencia de la página de datos. Para reactivar basta poner el valor.
 - Revisión de privacidad antes del commit: `site/src/data/` solo trae campos públicos (sin `content`, `description` ni autor); las carpetas V1 están ignoradas; quedan fuera `.vscode/` y `site/.vscode/settings.json`.
 - Issues leídos por la API: #48 hosting, #49 consulta por expediente, #50 por medio y fecha, #51 limitaciones. Ninguno se cierra todavía: #48 cierra cuando el sitio esté en línea.
+
+## 2026-11-13 10:53 — pendiente: mostrar el texto del proyecto en la página de cada expediente (#49)
+
+El usuario preguntó si se puede incrustar el texto de cada proyecto en su página. Solo se revisó la viabilidad, sin código.
+- Hay texto para los 1.126 expedientes publicados en `raw/text/asamblea/bills/<number>.txt` (texto plano, una línea por párrafo, sin formato ni tablas): 1.046 con texto completo, 7 solo con una nota y 73 sin texto en el SIL. Pesan 44,6 MB (mediana 16 KB); 20 pasan de 200 KB y son casi todos presupuestos (el 25754 pesa 5,3 MB). Sin esos 20 son 28 MB.
+- No se puede enlazar al documento en el SIL: el .docx sale de un POST con sesión, sin dirección fija, y los .docx no se guardaron.
+- Es el «texto base» (como se presentó), no el texto vigente tras mociones o dictámenes: hay que rotularlo así.
+- Opciones: (A) sección «Texto del proyecto» en la ficha, en un recuadro con scroll, que carga un archivo estático por expediente solo al abrirlo; (B) página aparte `/expediente/<n>/texto/`; (C) solo la exposición de motivos en la ficha. Recomendación de Claude: A, con tope de tamaño para los presupuestos (se muestra el inicio y se avisa). Sin decidir. Exige commitear los textos (repo público); son documentos oficiales públicos, a diferencia de las noticias.
+
+## 2026-11-13 12:16 — decisión: el texto base del proyecto se lee en la ficha del expediente (#49)
+
+El usuario aprobó la opción A de la entrada de 10:53 y pidió un enlace a la fuente, o un script para hacerlo después. Hecho y verificado con build, sin commitear (rama `main`).
+- `export_public.py`: copia el texto base de cada expediente publicado a `site/public/textos/<number>.txt` (opciones `--texts-dir` y `--texts-out`) y agrega `text` (available, truncated, words) al JSON del expediente. Tope `TEXT_MAX_CHARS` = 150.000 caracteres, cortado en un párrafo.
+- Resultado: 1.053 textos (33 cortados, casi todos presupuestos) y 73 expedientes sin texto en el SIL. `site/public/textos/` suma unos 28 MB de texto; dist pasa a 134 MB.
+- Sitio: componente nuevo `BillText.astro`, sección «Texto del proyecto» al final de la ficha. Recuadro con scroll (70 % del alto de la pantalla) que baja el archivo solo al abrirlo; las líneas cortas en mayúsculas van en negrita como encabezados. Avisa que es el texto base, sin los cambios posteriores, y sin el formato original.
+- Enlace a la fuente: va a la entrada del SIL (`SIL_URL` en `site/src/lib/config.ts`) y dice que se busca con el botón «Texto base». No hay enlace directo por documento: el .docx sale de una consulta con sesión.
+- `download_bill_documents.py` (raíz, nuevo): baja los .docx originales de los expedientes publicados a `raw/docx/asamblea/bills/`, para ofrecerlos como descarga más adelante. Sin probar contra el SIL: necesita la caché `raw/csv/asamblea/bills/<n>/general`, que solo está en la máquina del compañero. Son unos 200 KB por archivo (~225 MB los 1.126), así que no caben bien en git: habría que decidir dónde alojarlos.
+- No se probó en un navegador: se revisó el HTML generado, la ruta del archivo y que `astro check` y el build pasan.
+
+## 2026-11-13 15:11 — decisión: texto del proyecto arriba en la página del expediente y aclaraciones a metodología (#49)
+
+- A pedido del usuario, la sección «Texto del proyecto» pasó de después de Proponentes a justo después de las tarjetas de cifras, antes de «Cobertura y trámite».
+- El aviso «Cada vínculo indica su origen…» ya no usa la clase `callout` (recuadro gris); es un párrafo `small muted`. La clase sigue en global.css, sin uso.
+- Las aclaraciones del texto base (qué texto es, sin formato, botón «Texto base», sin enlace directo) y la nota de fuentes del pie pasaron a metodología, sección Fuentes (ítem nuevo «Texto de los proyectos» y un párrafo final).
+- Elegido por Claude, a confirmar: en la página del expediente queda una línea corta bajo el texto (enlace al SIL y a Metodología) y un pie «Fuentes y alcance de los datos: Metodología».
+- `astro check` 0 errores, build 3751 páginas. Sin probar en navegador. Sin commit.
+
+## 2026-11-13 15:33 — decisión: votaciones como círculos por fracción, con la vista anterior recuperable (#49)
+
+- A pedido del usuario, cada votación se muestra con un círculo por diputación, coloreado por fracción, en una fila por sentido del voto (A favor, En contra, y Abstención/Ausente si hay), con el total al lado. El nombre sale al pasar el cursor. La tabla por fracción queda en un desplegable «Ver conteo por fracción»; la votación nominal sigue igual.
+- Colores dados por el usuario: PUSC azul, Pueblo Soberano celeste, PLN verde, FA amarillo, Coalición Agenda Ciudadana rojo. Están en `site/src/lib/parties.ts`.
+- Elegido por Claude, a confirmar: colores de las ocho fracciones de legislaturas anteriores que aparecen en votaciones viejas (PPSD morado, PNR verde azulado, PLP naranja, PAC magenta, PRN café, PIN gris azulado, PRSC gris oscuro, Independiente gris) y el orden de las fracciones (el de esa lista).
+- Para volver a la vista anterior (tabla con barra apilada): `<VotesTable ... layout="table" />` en `site/src/pages/expediente/[number].astro`. El componente conserva las dos vistas.
+- Se quitó el pie «Fuentes y alcance de los datos: Metodología» de la página del expediente (el enlace ya está en el pie del sitio).
+- `astro check` 0 errores, build 3751 páginas. Sin probar en navegador. Sin commit.
+
+## 2026-11-13 15:50 — decisión: la lista de fechas del trámite queda plegada bajo el gráfico de cobertura (#49)
+
+- A pedido del usuario, en «Cobertura y trámite» la lista numerada de eventos (pasos y votaciones con su fecha) va dentro de un desplegable «Ver las fechas del trámite (N eventos)», cerrado por defecto. El gráfico semanal y la franja del trámite completo siguen siempre visibles.
+- Los números de los marcadores del gráfico remiten a esa lista; con la lista cerrada el detalle sale al pasar el cursor sobre el marcador.
+- Cambio solo en `site/src/components/Timeline.astro`. `astro check` 0 errores. Sin probar en navegador. Sin commit.
+
+## 2026-11-13 16:00 — decisión: las noticias vinculadas van al final de la página del expediente (#49)
+
+- A pedido del usuario, «Noticias vinculadas» pasó a después de Proponentes. Orden actual de la página: Texto del proyecto, Cobertura y trámite, Votaciones, Proponentes, Noticias vinculadas.
+- `astro check` 0 errores. Sin probar en navegador. Sin commit.
+
+## 2026-11-13 16:15 — decisión: gráfico de cobertura más limpio, noticias sobre el eje y trámite debajo (#49)
+
+- A pedido del usuario se rediseñó el gráfico «Noticias por semana» de `Timeline.astro`: un eje con un círculo por mes; arriba, las noticias de cada semana como barras finas con su número; abajo, los eventos del trámite. Sin eje vertical ni rejilla.
+- Elegido por Claude, a confirmar: los eventos que caen el mismo día comparten una marca con el rango («19–23»); antes se encimaban (en 24290 había 9 marcas sobre 3 puntos). Votación = marca naranja rellena, paso = marca con borde.
+- Período de estudio más discreto: en la franja del trámite completo pasó de un recuadro azul a una línea fina gris con su etiqueta; en el título, las fechas van en letra pequeña.
+- La versión anterior está en git (`git show HEAD:site/src/components/Timeline.astro`); la lista plegada de fechas no cambió.
+- `astro check` 0 errores y build completo. No se pudo ver renderizado: Firefox sin ventana no generó la captura y no hay otro renderizador en esta máquina; se revisaron solo las coordenadas del SVG generado. Sin commit.
+
+## 2026-11-13 18:07 — decisión: lista de fechas como línea de tiempo vertical sencilla y período de estudio como un solo palito (#49)
+
+- A pedido del usuario, la lista plegada de fechas del trámite pasó a una línea de tiempo vertical corriente: riel fino que une los eventos, fecha en una línea pequeña, título debajo y detalle, con más aire entre eventos (`Timeline.astro`, solo estilos).
+- En la franja del trámite completo, el período de estudio ya no es una línea horizontal, que se salía por la izquierda en expedientes presentados dentro del período. Ahora es un palito punteado con la etiqueta «inicio del período de estudio», sujeto al borde izquierdo cuando el expediente es más nuevo que el período; la etiqueta pasa a la izquierda del palito si queda cerca del borde derecho.
+- `astro check` 0 errores y build completo. Sigue sin verse renderizado. Sin commit.
+
+## 2026-11-13 18:08 — corrección: el palito del período de estudio no se dibuja en expedientes presentados después de su inicio (#49)
+
+- Corrige la entrada anterior: sujetar el palito al borde izquierdo decía «inicio del período de estudio» en una fecha que no lo era (p. ej. 25894, presentado el 4 nov 2026). Ahora, si el expediente se presentó después del inicio del período, la franja no lleva palito ni etiqueta.
+- `astro check` 0 errores y build completo. Sin commit.
+
+## 2026-11-13 18:44 — página «Evaluación de la página» con el objetivo y el enlace al cuestionario (#49)
+
+- A pedido del usuario: página nueva `site/src/pages/evaluacion.astro`, enlazada en el pie junto a Metodología y Datos y descargas. Tiene «Nuestro objetivo» y un botón al cuestionario (Google Forms, `EVALUATION_FORM_URL` en `site/src/lib/config.ts`).
+- El texto del objetivo lo redactó Claude a partir del lema del sitio; el usuario debe revisarlo o dar el texto oficial. No se describe el cuestionario (duración, anonimato) porque Claude no lo vio.
+- `astro check` 0 errores, build 3752 páginas. Sin probar en navegador. Sin commit.
+
+## 2026-11-13 18:50 — README del sitio con el flujo para actualizar la página (#48)
+
+- A pedido del usuario, `site/README.md` (antes la plantilla de Astro) explica el flujo: cambio de presentación o de datos (exportador), revisar con dev/check/build, revisar qué se sube, commit y push a main, comprobar la corrida en Actions. En español; elegido por Claude ponerlo en `site/` y no en el README raíz, que está vacío y corresponde a #47.
+- La página de evaluación se vincula a #52 (protocolo y cuestionario de usabilidad).
