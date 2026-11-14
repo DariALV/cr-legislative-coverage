@@ -1,0 +1,201 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE ASEGURAMIENTO DEL SERVICIO ELÉCTRICO
+JOSÉ FRANCISCO NICOLÁS ALVARADO
+DIPUTADO
+EXPEDIENTE N.º 24.755
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY DE ASEGURAMIENTO DEL SERVICIO ELÉCTRICO
+Expediente N.º 24.755
+ASAMBLEA LEGISLATIVA:
+El asegurar que todos los consumidores de electricidad cuenten con un servicio eléctrico ininterrumpido el mayor tiempo posible, constituye un reto de enormes proporciones físicas y económicas, sobre todo al considerar la preocupación por la satisfacción de la demanda de energía eléctrica a nivel nacional, en armonía con el ambiente; de tal manera que pueda garantizarse, en todas las actividades del desarrollo socioeconómico del país, con responsabilidad ambiental.
+La transición energética de Costa Rica, de una situación de dependencia centenaria del consumo de los derivados del petróleo, importados o refinados localmente, a una renovable, representa un anhelo del costarricense que comenzó a materializarse con la fundación del Instituto Costarricense de Electricidad (ICE) gracias a nuestros antepasados; los que, con una visión extraordinaria, impulsaron la producción a través de la explotación de las fuerzas hidráulicas para el consumo de electricidad y su aplicación en la movilidad de personas y carga por el tranvía y el ferrocarril en el litoral Pacífico.
+Desafortunadamente, con el auge del uso de los derivados de petróleo relativamente más económicos y el desarrollo de maquinaria y vehículos que los requerían, se perdió esa tradición en el transporte de pasajeros y carga, pero se mantuvo firme en la generación de electricidad, con el desarrollo de proyectos cada vez más ambiciosos y la aparición de empresas municipales y cooperativas rurales que, junto con el ICE, han logrado la electrificación casi total del país, mucho antes que sus países vecinos.
+Hoy, ante el desarrollo de tecnologías eficaces en el aprovechamiento de recursos naturales renovables, apoyados en la heroica iniciativa de la explotación de campos geotérmicos en el norte del país, debe continuarse con el reto de convertir toda nuestra matriz energética en una que aproveche el desarrollo de todas las fuentes primarias renovables disponibles y, fundamentalmente, autóctonas; utilizadas directamente o transformándolas en formas energéticas secundarias y comerciales, con la aplicación de tecnologías cada vez más sofisticadas y eficientes, de menor costo de inversión y operación, y garantizando una simbiosis con el ambiente natural en que vivimos; protegiéndolo, conservándolo y restaurándolo, con el objetivo de reducir las emisiones de gases nocivos a la atmósfera, pero además conservando la enorme biodiversidad del suelo en que subsistimos, fuente fundamental de nuestra salud.
+Por tal motivo, se plantea una ley que, particularmente, intensifique la producción de energía eléctrica, con las prácticas más modernas de protección ambiental, que garanticen el menor impacto en su desarrollo y operación, mediante la evaluación profunda, no solo de la renovabilidad de las fuentes energéticas, sino del ciclo de vida de los proyectos y la menor afectación del ecosistema marino-terrestre, la protección y aumento de la cobertura boscosa, las áreas protegidas, la mejor disposición y reciclaje de desechos y la sostenibilidad y resiliencia de los sistemas de generación, transporte, distribución, comercialización y consumo de la energía eléctrica en todo el país.
+Resulta así indispensable un análisis exhaustivo de las diferentes formas y equipos de consumo, su renovación, eficacia, eficiencia y reparación, con el fin de reducir al máximo las pérdidas técnicas de energía y el consumo superfluo, para sentar las bases de una proyección de la demanda eléctrica que incluya todas las necesidades y previsiones para una electricidad de calidad y de menor costo, en la potenciación del crecimiento económico sostenido, con inversiones crecientes, servicios electrónicos e informáticos de alta calidad, turismo, educación y salud, y una mejora sostenida en el bienestar y la distribución del ingreso, que satisfaga todas las necesidades de un desarrollo social integral, sostenido y equitativo para todos los habitantes del país.
+Mientras se alcanza la meta, y debido a su carácter variable en el tiempo, el uso de fuentes renovables será necesario complementarlo con fuentes de origen térmico, o con almacenamiento químico, mientras se profundiza la transición, hacia otras fuentes energéticas renovables que todavía están en investigación y desarrollo.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE ASEGURAMIENTO DEL SERVICIO ELÉCTRICO
+TÍTULO I
+Disposiciones generales
+CAPÍTULO I
+Generalidades y fundamentos
+ARTÍCULO 1- Objetivo
+El propósito de la presente ley consiste en el ordenamiento de las relaciones entre los diferentes actores que participan en el desarrollo y la operación del sistema eléctrico nacional, con la intención de que las actividades que realizan, en función de la aplicación de su marco legal respectivo, tengan la mayor efectividad posible en la consolidación de un sistema eléctrico robusto y resiliente, cuya operación satisfaga en primera instancia las necesidades de energía eléctrica del país, en sus diferentes actividades socioeconómicas, con la calidad y continuidad necesarias, al menor costo posible y en armonía con la preservación de un ambiente sostenible y sustentable en el largo plazo.
+ARTÍCULO 2- Fundamentos
+El suministro de energía eléctrica en las etapas de generación, transmisión, distribución y comercialización es un servicio público, según el artículo 5, inciso a) Funciones, de la ley 7593, Ley de la Autoridad Reguladora de los Servicios Públicos (ARESEP), en cuanto a la fijación de precios y tarifas de las etapas de ese servicio público. Se mantienen los principios de calidad, cantidad, confiabilidad, continuidad, oportunidad, prestación óptima y cuidado del ambiente, con que deberá realizarse ese servicio.
+ARTÍCULO 3- Definiciones
+Agente del Mercado Eléctrico Regional: el Agente del Mercado Eléctrico Regional es el Instituto Costarricense de Electricidad y sus empresas, según leyes: Aprobación del Tratado Marco del Mercado Eléctrico de América Central y su Protocolo, artículos 2 y 3 (Ley 7848); Aprobación del Segundo Protocolo al Tratado Marco del Mercado Eléctrico de América Central, artículos 2 y 3 (Ley 9004).
+Aresep: Autoridad Reguladora de los Servicios Públicos.
+Calidad: principio regulatorio que garantiza el rango de valor de los parámetros técnicos del suministro eléctrico que requieren los equipos eléctricos al consumir electricidad.
+Cecon: Centro de Control Nacional del Sistema Eléctrico Nacional, órgano de desconcentración máxima adscrito al ICE.
+CNFL: Compañía Nacional de Fuerza y Luz.
+Continuidad: principio regulatorio inherente a la prestación de un servicio público que implica la recepción regular e ininterrumpida del mismo, a fin de no generar perjuicios a los usuarios.
+Coopealfaroruiz: Cooperativa de Electrificación Rural de Alfaro Ruiz R.L.
+Coopeguanacaste: Cooperativa de Electrificación Rural de Guanacaste R.L.
+Coopelesca: Cooperativa de Electrificación Rural de San Carlos R.L.
+Coopesantos: Cooperativa de Electrificación Rural Los Santos R.L.
+Distribuidoras: empresas eléctricas que distribuyen, comercializan y generan energía eléctrica en su área de concesión: CNFL, Coopealfaroruiz, Coopeguanacaste, Coopelesca, Coopesantos, ESPH, ICE, Jasec.
+Docse: División de Operación y Control del Sistema Eléctrico del ICE.
+ESPH: Empresa de Servicios Públicos de Heredia.
+Excedentes de distribución: excedentes de energía eléctrica de las empresas distribuidoras, luego de cubrir las necesidades de consumo de los abonados en su área geográfica de concesión.
+Excedentes de generación privada: excedentes de energía, luego de cumplir con la entrega de energía eléctrica contratada con el ICE.
+ICE: Instituto Costarricense de Electricidad.
+Jasec: Junta Administrativa del Servicio Eléctrico Municipal de Cartago.
+MEM: Mercado Eléctrico Mayorista
+MEN: Mercado Eléctrico Nacional.
+MER: Mercado Eléctrico Regional.
+Minae: Ministerio de Ambiente y Energía.
+OM: Operador del mercado eléctrico.
+OS: Operador del sistema eléctrico.
+PNE: Plan Nacional de Energía. Documento de planificación sectorial del desarrollo futuro del sector energía que incluye, entre otros temas, un diagnóstico de la situación actual, escenarios de la proyección indicativa de la demanda de los energéticos, las fuentes a utilizar, los sitios de potencial ubicación de proyectos, la política de subsidios entre energéticos, las medidas de uso racional de energía, la gobernanza del sector, la importación de energéticos no renovables y la relación con la protección del ambiente.
+Pnesen: Plan Nacional de Expansión del Sistema Eléctrico Nacional. Instrumento de planificación del desarrollo del Sistema Eléctrico Nacional en energía y potencia, con la secuencia de entrada en operación de los diferentes proyectos de generación eléctrica, incluidos en el portafolio de proyectos de todos los generadores del sistema y su infraestructura asociada, considerando la optimización de sus costos.
+Reserva fría: capacidad instalada en centrales eléctricas apagadas interconectadas, que pueden entrar en operación rápidamente para respaldar una falta de generación en línea por una contingencia.
+Reserva rodante: capacidad de generación en línea que actúa instantáneamente ante cambios rápidos en el consumo, para mantener la frecuencia del sistema eléctrico en su rango de operación.
+SEN: Sistema Eléctrico Nacional, incluye subsistemas aislados.
+SER: Sistema eléctrico regional.
+Servicios auxiliares: servicios que coadyuvan en la operación confiable y continua de un sistema eléctrico, tales como las reservas de capacidad, las posibilidades de desconexión de abonados o la producción de potencia reactiva.
+SNI: Sistema Nacional Interconectado.
+Suministro eléctrico: conjunto de acciones y procesos técnicos que concatenados satisfacen las necesidades de consumo de electricidad.
+TÍTULO II
+La demanda de energía eléctrica
+CAPÍTULO I
+Rectoría y planificación
+ARTÍCULO 4- El Ministerio de Ambiente y Energía
+El Minae es el ente rector del sector ambiente y del sector energía y por ende del subsector eléctrico. Define la política sectorial de energía eléctrica, mediante el Plan Nacional de Energía, (PNE), en el largo plazo, considerando las modificaciones coyunturales que le imprima cada periodo gubernamental, considerando los fundamentos y objetivos contemplados en el Plan Nacional de Desarrollo de cada cuatrienio gubernamental.
+El Plan nacional de energía, en su apartado dedicado a la energía eléctrica, deberá contener al menos un diagnóstico de la situación energética observada, una proyección indicativa de la demanda de electricidad a corto, mediano y largo plazo, las fuentes energéticas renovables y no renovables a desarrollar para cubrir esa demanda, las áreas terrestres y marinas susceptibles de instalación de infraestructura, una política de precios relativos que oriente el consumo, la política de uso racional de electricidad a implementar y la política de participación en el Mercado Eléctrico Regional (MER).
+ARTÍCULO 5- El Plan Nacional de Expansión del Sistema Eléctrico Nacional
+Corresponde al Instituto Costarricense de Electricidad, ICE, la elaboración del Plan Nacional de Expansión de Energía Eléctrica, del Sistema Eléctrico Nacional, en consulta con las demás empresas distribuidoras: Compañía Nacional de Fuerza y Luz (CNFL), Empresas Municipales, (Empresa de Servicios Públicos de Heredia (ESPH) y Junta Administradora del Servicio Eléctrico Municipal de Cartago (Jasec)), Cooperativas de Electrificación Rural: (Cooperativa de Electrificación Rural de San Carlos R.L. (Coopelesca), Cooperativa de Electrificación Rural de Alfaro Ruíz R.L., (Coopealfaro), Cooperativa de Electrificación Rural de Guanacaste R.L. (Coopeguanacaste), Cooperativa de Electrificación Rural de Los Santos R.L. (Coopesantos)), únicas distribuidoras y comercializadoras en sus respectivas áreas de concesión eléctrica.
+ARTÍCULO 6- Características del Plan Nacional de Expansión
+El Plan deberá considerar tres escenarios de la inversión necesaria para materializar el Plan y los costos de operación proyectados anualmente del SEN. El marco referencial del Pnesen será el Plan Nacional de Energía (PNE).
+Tendrá un horizonte de 20 años, pero podrá ser actualizado cada dos años o menos si las circunstancias lo ameritan.
+La elaboración del PNEEE considerará al menos los siguientes elementos en su contenido:
+- Tres escenarios de proyección de la demanda eléctrica correspondientes a diferentes posibles escenarios de proyección del crecimiento económico nacional con base en variables explicativas de todos los sectores, incluyendo el efecto del uso eficiente de la energía y la transición hacia la movilidad eléctrica y los equipos y maquinaria eléctrica.
+- Un portafolio de proyectos futuros renovables y no renovables, candidatos, con fecha de incorporación al SEN y con la cuantificación de la reducción de emisiones de gases de efecto invernadero a la atmósfera y la conservación de la cobertura boscosa y la biodiversidad terrestre y marina.
+- Una proyección de las exportaciones e importaciones de electricidad al MER.
+- Una cuantificación de la reserva fría incluyendo los proyectos no renovables a desarrollar.
+- El efecto de la generación distribuida.
+- Otros elementos que contribuyan a su esclarecimiento.
+TÍTULO III
+La distribución y la comercialización de electricidad
+CAPÍTULO I
+La distribución de electricidad
+ARTÍCULO 7- Distribución de energía eléctrica
+La función de distribución de energía eléctrica, a través de redes eléctricas en media y baja tensión de distribución, representa un monopolio natural, en las áreas geográficas de las áreas de concesión donde prestan el servicio eléctrico exclusivamente las distribuidoras, con base en la legislación que le aplique, respectivamente a cada una de ellas.
+ARTÍCULO 8- Comercialización de la energía eléctrica
+La comercialización de la energía eléctrica la ejercerán únicamente las distribuidoras, para todos los abonados que se establezcan en su área de concesión, y constituye un servicio público regulado, aunque podrán autorizar en su red la compra de excedentes de energía a generadores distribuidos, independientes o agregados, según se establece en la ley de Promoción y Regulación de Recursos Energéticos Distribuidos a partir de Fuentes Renovables (10086).
+CAPÍTULO II
+La venta de excedentes
+ARTÍCULO 9- La venta de excedentes entre distribuidoras, luego de cubrir su demanda geográfica y sus necesidades de servicios auxiliares, podrá ser vendida a otras distribuidoras, según la ley de Participación de las Cooperativas de Electrificación Rural y de las Empresas de Servicios Públicos Municipales en el Desarrollo Nacional (8345).
+TÍTULO IV
+El transporte de energía eléctrica
+CAPÍTULO I
+La red de transmisión
+ARTÍCULO 10- Transporte de energía eléctrica
+El transporte de energía eléctrica a través de las subestaciones y las líneas eléctricas de alta tensión, que conforman la red de transmisión, es un monopolio natural, a cargo del Instituto Costarricense de Electricidad (ICE), para trasegar toda energía que circule en el Sistema Eléctrico Nacional. Su planificación, diseño, construcción, operación y mantenimiento son funciones que deberá realizar el ICE, para mantener la interconexión en tiempo real, de todos los elementos que accedan a sus puntos de conexión y garantizar la confiabilidad, continuidad, seguridad, eficiencia y calidad del servicio eléctrico de electricidad en todo el territorio nacional.
+ARTÍCULO 11- Garantía de interconexión
+En su calidad de servicio regulado por Aresep, el ICE mantiene la operación de su red de transmisión eléctrica, a través de la definición y cuantificación de un peaje por el derecho de transportar energía de los diferentes integrantes del SEN, brindando un acceso igualitario a todos los usuarios de la red, en función de la disponibilidad de sus componentes, incluyendo las exportaciones e importaciones de electricidad al y del Mercado Eléctrico Regional (MER), respectivamente.
+TÍTULO V
+La generación de energía eléctrica
+CAPÍTULO I
+Renovabilidad
+ARTÍCULO 12- Fuentes de energía
+El SEN debe maximizar el desarrollo de proyectos de generación eléctrica con recursos naturales renovables para cubrir la demanda de electricidad, creciente, conforme se sustituya el consumo de energía con hidrocarburos, a otro con fuentes de origen renovable y de emisiones controladas, bajo en gases de efecto invernadero, pero con el compromiso del menor impacto ambiental, el cuidado de la cobertura forestal y de la valiosa biodiversidad terrestre y marina del país, mientras cumplen su ciclo de vida.
+ARTÍCULO 13- Control del desarrollo de la generación eléctrica
+El ICE priorizará y controlará el desarrollo de proyectos de generación eléctrica específicos del país, mediante la elaboración de un portafolio sobre proyectos a ejecutar, considerando los lineamientos establecidos en el Plan Nacional de Energía, enfatizando sobre la autorización de zonas potenciales de desarrollo de proyectos y sus fuentes asociadas, tomando en consideración sus propios proyectos, los de las otras distribuidoras y los de los generadores privados, en función de la demanda futura nacional y regional.
+CAPÍTULO II
+La generación privada de electricidad
+ARTÍCULO 14- Capacidad instalada de los proyectos de generación privada de electricidad
+La capacidad instalada total a contratar por el ICE al conjunto de generadores privados de electricidad en centrales de limitada capacidad, según ley 7200, capítulo I, ascenderá a un máximo del 20% de la capacidad instalada del SEN. En ningún momento el precio de contratación de la energía que el ICE adquiera a los generadores privados de una fuente renovable determinada, podrá ser superior al precio medio del conjunto de centrales de generación de la fuente renovable específica del SEN. El límite de la capacidad instalada, de cada proyecto mencionado en el capítulo I de la Ley 7200, será de 30MW.
+ARTÍCULO 15- Excedentes de generación privada
+Los excedentes de oportunidad, de los generadores privados, definidos en la ley 7200, una vez satisfechos los contratos con el ICE, podrán ser adquiridos mediante contrato público por las demás distribuidoras para atender su propia demanda y así completar sus necesidades de generación.
+CAPÍTULO III
+Obligaciones del ICE
+ARTÍCULO 16- Garantía del abastecimiento nacional
+El ICE será el garante, en todo momento, del abastecimiento nacional; para lo cuál maximizará sus esfuerzos en procura de mantener un servicio al costo mínimo posible. Concomitantemente, el ICE incluirá en su plan de inversiones y gastos los recursos necesarios para garantizar esta obligación.
+El ICE y sus empresas serán el único agente del mercado eléctrico regional, con el fin de garantizar que el abastecimiento nacional de energía eléctrica pueda contar con el respaldo de la generación de energía eléctrica regional en sus diferentes modalidades contractuales. Las economías producto de las exportaciones al MER serán repartidas equitativamente entre todos los consumidores a través de la metodología regulatoria del costo variable de generación.
+ARTÍCULO 17- Delegación
+El ICE delegará en su órgano adscrito, el Cecon, todas sus funciones como operador del sistema, (OS) y del mercado, (OM), nacional y regional, para que el Cecon ejerza todas sus actividades con independencia, como Centro de Control Nacional del Sistema Eléctrico.
+CAPÍTULO IV
+Servicios auxiliares
+ARTÍCULO 18- Servicios auxiliares
+Los servicios auxiliares que puedan brindar todos los integrantes del SEN podrán ser adquiridos mediante contrato público, por el Centro de Control Eléctrico Nacional (Cecon), para satisfacer la continuidad, confiabilidad y estabilidad del SEN.
+TÍTULO VI
+El Centro de Control Nacional del Sistema Eléctrico (Cecon)
+CAPÍTULO I
+Transformación
+ARTÍCULO 19- El Centro de Control Nacional del Sistema Eléctrico (Cecon)
+Transfórmese la División de Operación y Control del Sistema Eléctrico, del ICE, con todos sus activos, sistemas, bienes muebles e inmuebles, incluyendo todos los que el ICE pone a su disposición para operar el sistema interconectado (SEN) y el regional (SER) y los mercados nacional y regional, incluido su personal conservando sus derechos laborales en el ICE y funciones, en el Centro de Control Nacional del Sistema Eléctrico (Cecon).
+Este será un órgano de máxima desconcentración, adscrito al ICE; tendrá personería jurídica instrumental propia para su administración, para realizar la actividad contractual, administrar sus recursos y su presupuesto, así como para suscribir los contratos y convenios que requiera para el cumplimiento de sus funciones. Será independiente de todo prestador de servicios públicos y privados de electricidad y deberá orientar sus acciones hacia la consecución de los objetivos establecidos en los Planes Nacional de Desarrollo y los Planes Nacional de Energía.
+Todos los pasivos financieros, así como el valor en libros de los bienes a traspasar, serán asumidos por el Cecon. Su ámbito de acción será todo el territorio nacional y asumirá las responsabilidades, derechos, obligaciones y funciones del Operador de Sistema y Operador de Mercado Eléctrico Nacional y las de Costa Rica ante el ente Operador Regional en el Mercado Eléctrico Regional. Ejercerá sus funciones bajo los principios de independencia, imparcialidad y transparencia. Sus competencias en relación con el MEN le corresponden con respecto de toda la energía eléctrica del Sistema Eléctrico Nacional (SEN).
+CAPÍTULO II
+Funciones, organización y financiamiento
+ARTÍCULO 20- Funciones del Centro de Control Nacional del Sistema Eléctrico (Cecon)
+a- Realizar el planeamiento operativo eléctrico nacional en sus diferentes etapas, considerando, entre otros aspectos, el desarrollo de la infraestructura eléctrica, crecimiento de la demanda de potencia y energía, los servicios auxiliares, las pérdidas de transmisión, la estacionalidad nacional y regional del recurso hidroeléctrico, eólico, solar y de biomasa, los costos de combustibles, los costos de operación y mantenimiento del parque de generación renovable y no renovable nacional y de la infraestructura de transporte; y los precios de importación y exportación de la energía eléctrica del MER, incluyendo los peajes de transmisión.
+b- Despachar el Sistema Eléctrico Nacional optimizando el costo de la energía eléctrica controlada, considerando todas las fuentes primarias y secundarias de generación eléctrica.
+c- Realizar la planeación de la operación integrada de los recursos de generación y transmisión del Sistema Eléctrico Nacional.
+d- Realizar las funciones de Operador del Sistema y Operador del Mercado para el Mercado Eléctrico Nacional, y para lo dispuesto en el Tratado Marco y los reglamentos del Mercado Eléctrico Regional.
+e- Garantizar la eficiencia del predespacho, despacho económico y centralizado y post-despacho.
+f- Administrar el Mercado Eléctrico Nacional de Costa Rica.
+g- Administrar en forma centralizada el SEN y el Mercado Eléctrico Nacional garantizando el libre acceso a las redes eléctricas de distribución y transmisión nacionales.
+h- Operar el Mercado Eléctrico Nacional y el Mercado Eléctrico Mayorista Nacional en todas las etapas del proceso a nivel nacional y en todas sus modalidades contractuales.
+i- Atender las contingencias en tiempo real en cumplimiento de los reglamentos respectivos.
+j- Cumplir con la legislación nacional y la normativa técnica que emitan las autoridades nacionales y regionales.
+k- Garantizar la satisfacción de la demanda nacional, antes que la exportación al MER.
+l- Cualquier otra que le asigne la Aresep en el marco de sus competencias conforme a su ley orgánica.
+ARTÍCULO 21- Organización Cecon
+El Cecon tendrá los siguientes órganos: un consejo directivo, una dirección ejecutiva, una asesoría legal y una auditoría interna.
+Estará facultado para establecer su organización interna, a fin de cumplir sus funciones.
+El Consejo Directivo será el superior jerárquico y estará integrado por tres miembros propietarios, y un suplente, quienes durarán en sus cargos seis años, aunque el titular anterior no haya cumplido su periodo completo. No podrán reelegirse y ejercerán sus cargos a tiempo completo y con dedicación exclusiva.
+Entre sus miembros se elegirá un presidente, cada tres años, quien tendrá la representación judicial y extrajudicial del Cecon. Para evitar el cambio simultáneo de todos sus miembros, al entrar en vigencia esta ley, se elegirán dos miembros propietarios y un suplente, y un año después el otro miembro propietario.
+Los miembros titulares y el suplente del Consejo serán nombrados por concurso externo, por la Junta Directiva del ICE, por mayoría calificada de dos terceras partes de la totalidad de sus miembros y serán propuestos a la Asamblea Legislativa, quien ratificará su nombramiento. Para ser miembro del Consejo Directivo, se requiere:
+- Ser costarricense.
+- Mayor de treinta años.
+- Tener idoneidad técnica: grado académico universitario de licenciatura, según corresponda en ingeniería, ciencias económicas y ciencias de la computación.
+- Acreditar al menos 5 años de experiencia en actividades profesionales relacionadas con energía eléctrica, mercados eléctricos y control de sistemas eléctricos.
+- Estar incorporado en el colegio profesional correspondiente cuando corresponda.
+- No poseer sanciones en los últimos cinco años.
+No podrán, designarse en el cargo de Junta Directiva quienes sean parientes ni cónyuges de ministros, viceministros, presidentes ejecutivos, gerentes o similares, miembros de Junta Directiva, accionistas, asesores y/o consultores de ningún participante en el Mercado Eléctrico Nacional o Regional hasta el cuarto grado de parentesco por consanguinidad o afinidad.
+Esta prohibición permanecerá vigente hasta doce meses de que los funcionarios antes señalados hayan dejado de prestar sus servicios. Cualquier violación a este impedimento causará la nulidad absoluta del nombramiento con el reintegro de cualquier suma por concepto de pago que hubiese percibido.
+La Dirección Ejecutiva estará a cargo de un director ejecutivo, cuya designación la hará el Consejo Directivo, mediante votación de mayoría simple de sus miembros, quien deberá reunir los requisitos de idoneidad y experiencia para tal fin, habiendo aprobado una prueba de conocimientos técnicos.
+El cargo de director tendrá una duración de seis años prorrogables; y podrá ser de libre remoción del Consejo Directivo, mediante votación unánime de sus miembros. Vencido el nombramiento del cargo o removido del mismo, la persona no podrá laborar directa o indirectamente para ningún agente del mercado eléctrico nacional o del mercado mayorista por un periodo de veinticuatro meses posteriores a la finalización de la relación laboral.
+El Cecon contará con un Departamento de Asesoría Legal, pero la asesoría legal al Consejo será independiente de ese departamento, brindada por un abogado especialista en regulación de sistemas y mercados eléctricos, nombrado por el Consejo, el cual participará en las reuniones del Consejo, con voz, pero sin voto.
+El Cecon será auditado por la Auditoría Interna del ICE. El auditor interno asignado al Cecon será un contador público autorizado, con experiencia profesional mínima de cinco años en auditoría de empresas eléctricas y conocimientos en mercados eléctricos. Asistirá regularmente a las sesiones del Consejo Directivo.
+El Cecon podrá convenir con el ICE, la prestación de otros servicios administrativos generales.
+CAPÍTULO III
+Financiamiento
+ARTÍCULO 22- Financiamiento
+El Centro de Control Nacional (Cecon) tendrá exclusivamente financiamiento a través de un canon que se calculará en función de su presupuesto, ambos aprobados por la Contraloría General de la República. El canon, que se establecerá anualmente, se aplicará de forma específica en la facturación mensual de las empresas que distribuyen y comercializan la energía eléctrica, como un costo fijo, por kWh de consumo, las cuales girarán lo recaudado mensualmente al Cecon. La liquidación anual de la ejecución presupuestaria será fiscalizada por la Aresep como parte del servicio público de electricidad que presta el ICE. Los excedentes anuales, luego de la liquidación anual del presupuesto anterior serán incorporados por el Cecon, como superávit en el ejercicio siguiente.
+CAPÍTULO IV
+Despacho
+ARTÍCULO 23- Jerarquía de las operaciones de despacho
+Le corresponde al Cecon realizar el predespacho, despacho y post despacho del Mercado Eléctrico Nacional. Mediante reglamentación a esta Ley se determinará la forma en que estos procesos interactúan, transfieren información y se coordinan.
+Igualmente deberá realizar el despacho económico óptimo de las unidades de generación sujetas a despacho en el Sistema Eléctrico Nacional y el de las transacciones en el Mercado Eléctrico Regional. Además, deberá coordinar la venta de excedentes entre las distribuidoras y de los generadores privados a las distribuidoras. El Cecon debe garantizar que el SEN cuente con los servicios auxiliares necesarios para la operación integrada y que se cumplan los compromisos con el MER.
+CAPÍTULO V – Jerarquía del ICE
+ARTÍCULO 24- Obligación del Consejo Directivo del Cecon
+El Cecon deberá someter a aprobación del Consejo Directivo del Instituto Costarricense de Electricidad las estrategias del órgano, los planes anuales operativos, los estados financieros, las normas y políticas que regulen las condiciones laborales, la creación de plazas, los esquemas de remuneración, las obligaciones y los derechos de los funcionarios y trabajadores, los reglamentos técnicos y los informes de rendición de cuentas anuales que requiera el ICE.
+TÍTULO VII
+Disposiciones finales
+CAPÍTULO I
+Reformas a la Ley 7.200, Ley que Autoriza la Generación Eléctrica Autónoma o Paralela
+ARTÍCULO 25- Se reforman los artículos 2, 5 y 7 de la Ley 7.200, Ley que Autoriza la Generación Eléctrica Autónoma o Paralela
+Artículo 2- Son centrales de limitada capacidad las centrales hidroeléctricas y aquellas no convencionales que no sobrepasen los treinta mil kilovatios (30.000 kW).
+Artículo 5- El (SNE) tendrá facultad para otorgar concesiones destinadas a explotar centrales eléctricas de capacidad limitada, hasta de un máximo de 30.000 kilovatios (30.000 kW) y por un plazo no mayor de veinte años.
+Asimismo, podrá prorrogar esas concesiones, modificarlas o traspasarlas, sin que se requiera autorización legislativa; pero este requisito será indispensable cuando la explotación sobrepase los treinta mil kilovatios o el adquirente tenga concesiones aprobadas que, sumadas a la nueva, excedan de esa cantidad.
+El límite de kilovatios establecido en el párrafo anterior también se aplicará a las concesiones que se otorguen en favor de las personas, físicas o jurídicas, que no se contemplen en los artículos 1 y 2 de esta ley. De estas disposiciones, se exceptúa la CNFL.
+Artículo 7- El Instituto Costarricense de Electricidad podrá declarar elegible un proyecto para la explotación de una central de limitada capacidad, siempre y cuando la potencia, por concepto de generación paralela, no llegue a constituir más del veinte por ciento (20%) de la potencia del conjunto de centrales eléctricas que conforman el sistema eléctrico nacional.
+El Instituto Costarricense de Electricidad rechazará las solicitudes que interfieran con un proyecto o concesión anterior, en trámite u otorgada.
+TÍTULO VIII
+Disposiciones transitorias
+CAPÍTULO I
+Transitorios
+TRANSITORIO I- El ICE mantendrá en funciones la División de Operación y Control del Sistema Eléctrico (Docse), hasta que el Centro de Control Nacional del Sistema Eléctrico, Cecon, esté listo para funcionar de manera independiente. El ICE coordinará los aspectos administrativos y técnicos que sean necesarios para garantizar la transformación del Docse en el Cecon y el Minae vigilará que la transición de competencias y atribuciones se realice con base en el marco legal vigente.
+TRANSITORIO II- A la entrada en vigencia de esta ley el Consejo Directivo del ICE someterá el presupuesto del primer año de operación del Cecon, a la Contraloría General de la República, para su aprobación.
+Rige a partir de su publicación.
+José Francisco Nicolás Alvarado
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 13-01-2025).

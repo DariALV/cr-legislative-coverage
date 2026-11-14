@@ -1,0 +1,200 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA LA IMPLEMENTACIÓN DE SISTEMAS DE
+INTELIGENCIA ARTIFICIAL (IA)
+JOHANA OBANDO BONILLA
+Y OTRA SEÑORA DIPUTADA
+Y SEÑORES DIPUTADOS
+EXPEDIENTE N.º 24.484
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY PARA LA IMPLEMENTACIÓN DE SISTEMAS DE
+INTELIGENCIA ARTIFICIAL (IA)
+Expediente N.° 24.484
+ASAMBLEA LEGISLATIVA:
+La inteligencia artificial como concepto no es algo novedoso. Ya desde la década de los años 50 varios científicos habían concebido matemáticamente fórmulas para explicar como una maquina podía solucionar problemas en forma similar al proceso lógico desarrollado por el cerebro humano.
+La posibilidad que las máquinas “aprendiesen” con base a los datos suministrados y respondieran en forma esperada o coherente a una cuestión concreta, es una actividad que ha fascinado al ser humano por décadas. Sin embargo, no fue sino hasta tiempos relativamente recientes que dicha capacidad evolucionó notablemente hasta sorprender a sus propios creadores.
+Ahora bien, esta posibilidad del aprendizaje de computadoras que se convierten en superinteligentes siempre ha generado temores y emociones en contra, por parte del público en general. Esto se ha reflejado en el cine, la literatura y múltiples series de televisión, solo por citar algunos ejemplos. La máquina que se vuelve contra su creador y alcanza un máximo nivel de conciencia, no ha dejado de estar presente en el imaginario humano desde la invención de las computadoras.
+Durante varias décadas, los adelantos tecnológicos en materia de inteligencia artificial estaban enfocados en la resolución de problemas particulares, sin que a nadie le ocurriera, procurar sistemas de uso general, es decir, sistemas capaces de resolver una infinidad de problemas y cuestiones para acceso del público en general.
+Adicionalmente, en forma lenta pero segura se publicaron una serie de invenciones que aplican la inteligencia artificial en diferentes áreas y para resolver problemas puntuales, tales como sistemas de reconocimiento de voz y otras aplicaciones para asistir a los seres humanos en servicios de atención al público por vía telefónica.
+Sin embargo, todos estos sistemas tenían las limitaciones propias de la época. Computadoras sin gran capacidad de memoria con relativa lentitud en procesamiento de datos, falta de fuentes ilimitadas de datos o data-sets para “alimentar” a los sistemas y escasa inversión de capital público y privado para impulsar estos desarrollos.
+Esta situación cambio dramáticamente a partir de la fundación de la compañía “OPEN-AI” en diciembre de 2015 que reunió a un grupo de científicos altamente especializados en el tema y con el aporte de capital de Microsoft que prácticamente abrió la puerta para el desarrollo de sistemas y herramientas de inteligencia artificial sin limitaciones objetivas. Open AI tuvo desde sus inicios, no solo la suma de los conocimientos de sus fundadores, sino también el capital necesario para poder contar con los mejores equipos y el uso de los sistemas de cloud computing de Mircosoft.
+Los avances logrados desde entonces en materia de inteligencia artificial son muy superiores a todo lo hecho en las últimas cinco décadas de desarrollos aislados o incipientes. Este avance vertiginoso ha llevado a un grupo de científicos (Future of Life Institute) a publicar una carta abierta en marzo de 2023 en la cual se destaca el pedido siguiente:
+La carta pide "a todos los laboratorios de IA que suspendan inmediatamente durante al menos 6 meses el entrenamiento de sistemas de IA más potentes que GPT-4", citando riesgos. Como la propaganda política generada por IA, la automatización extrema de los empleos, la obsolescencia humana y una pérdida de control en toda la sociedad. Esta carta recibió más de 20.000 firmas, entre ellas investigadores académicos de IA y directores ejecutivos de la industria como Yoshua Bengio, Stuart Russell, Elon Musk, Steve Wozniak y Yuval Noah Harari. En igual sentido, un grupo de expertos y científicos en AI firmaron una declaración publicada por el Centro para la Seguridad de la Inteligencia Artificial:
+Mitigar el riesgo de extinción por la IA debería ser una prioridad global junto con otros riesgos a escala social, como las pandemias y la guerra nuclear.
+Sin embargo, nada de esto ha ocurrido, los desarrollos de inteligencia artificial continúan sin pausa, no solo por parte de empresas privadas como OPEN AI, que había comenzado como una organización sin fines de lucro y con propósitos altruistas, sino también por parte de gobiernos alrededor del mundo, con múltiples propósitos incluso militares.
+Esta avalancha de desarrollos científicos y empresariales alrededor de la IA ha hecho saltar alarmas en todas partes del mundo. La empresa Goldman Sachs público un informe en marzo de 2023 donde señala que “la inteligencia artificial perderá o degradará 300 millones de empleos”.
+Probablemente, uno de los sectores con mayor afectación y con ejemplos muy palpables en los medios de comunicación es el de los derechos de autor. Numerosas plataformas ofrecen la posibilidad de hacer canciones, libros, imágenes con muy poco esfuerzo y solo aportando unos pocos parámetros, se puede llegar a generar una obra “nueva” que es el fruto de la ingesta, manipulación y análisis computacional de cientos de miles de datos (materiales preexistentes protegidos por derechos de autor). Esto expone a los sectores del entretenimiento y la cultura a serios daños y perjuicios económicos.
+Pero el impacto de la IA no se queda en los derechos de autor, se estima que los sistemas de uso general de inteligencia artificial y la llamada inteligencia artificial generativa van a afectar sectores del mercado laboral tradicionalmente ocupados por profesionales universitarios que nunca fueron realmente afectados negativamente por avances tecnológicos de automatización o mecanización de labores. Estos sistemas pueden, por ejemplo, redactar documentos y demandas, pueden escribir libros y generar obras de arte y todo con una mínima intervención humana.
+Existen muchas áreas críticas donde la IA promete hacer grandes contribuciones, como por ejemplo en el diagnostico muy temprano de enfermedades graves y en el desarrollo acelerado de nuevos medicamentos.
+Hay un doble aspecto a tomar en cuenta al evaluar estos desarrollos, primero la afectación directa a las comunidades y grupos sociales y laborales y segundo la afectación económica a sectores de la economía creativa que deben ahora competir con copias fabricadas en forma automática de creaciones similares, trabajos profesionales, etc.
+En cuanto a sectores vulnerables que pudieran estar afectados de una manera más aguda tenemos que los artistas musicales han visto aparecer en plataformas digitales canciones creadas mediante el uso no autorizado de sus voces, imágenes y atributos de su personalidad.
+Todas estas situaciones obligan a contar con una protección legal especifica, concebida tomando en cuenta la práctica, el estado de la tecnología y la necesidad de proteger sectores vulnerables de la sociedad.
+1- Sobre la experiencia legislativa a nivel mundial:
+Al momento de la redacción de este proyecto de ley existen en América Latina, Europa y Estados Unidos leyes de reciente aprobación que buscan desde diferentes ángulos regular la inteligencia artificial. Estos antecedentes son los siguientes:
+Perú: Ley de Inteligencia Artificial, # 31.814, de 4 de Julio de 2023 (“Ley que Promueve el Uso de la Inteligencia Artificial en Favor del Desarrollo Económico y Social del País”). Esta ley es muy breve y básicamente somete el desarrollo de inteligencia artificial en el país a principios de ética, respeto a los derechos humanos y respeto a la privacidad de las personas. Igualmente, designa al Consejo de ministros y a la secretaria de gobierno y transformación digital como órganos de aplicación de la ley.
+Unión Europea: la ley aprobada por el Parlamento Europeo, en marzo de 2024, establece 3 niveles de riesgo para las actividades enmarcadas o afectadas por la IA y un grupo de actividades prohibidas. En cuanto a estas últimas, las siguientes actividades quedan prohibidas para los proveedores y operadores de sistemas de inteligencia artificial:
+1- Despliegue de técnicas subliminales, manipuladoras o engañosas para distorsionar el comportamiento y perjudicar la toma de decisiones con conocimiento de causa, causando un daño significativo.
+2- Explotar las vulnerabilidades relacionadas con la edad, la discapacidad o las circunstancias socioeconómicas para distorsionar el comportamiento, causando daños significativos.
+3- Sistemas de categorización biométrica que infieran atributos sensibles (raza, opiniones políticas, afiliación sindical, creencias religiosas o filosóficas, vida sexual u orientación sexual), excepto el etiquetado o filtrado de conjuntos de datos biométricos adquiridos legalmente o cuando las fuerzas de seguridad categoricen datos biométricos.
+4- Puntuación social, es decir, evaluar o clasificar a individuos o grupos basándose en comportamientos sociales o rasgos personales, causando un trato perjudicial o desfavorable a esas personas.
+5- Evaluar el riesgo de que un individuo cometa delitos penales basándose únicamente en perfiles o rasgos de personalidad, excepto cuando se utilice para aumentar las evaluaciones humanas basadas en hechos objetivos y verificables directamente relacionados con la actividad delictiva.
+6- Compilación de bases de datos de reconocimiento facial mediante el raspado no selectivo de imágenes faciales de Internet o de grabaciones de CCTV.
+7- Inferir emociones en lugares de trabajo o centros educativos, salvo por razones médicas o de seguridad.
+8- Identificación biométrica remota (RBI) "en tiempo real" en espacios de acceso público para las fuerzas de seguridad excepto cuando:
+9- Búsqueda de personas desaparecidas, víctimas de secuestros y personas víctimas de la trata de -seres humanos o la explotación sexual.
+10- Prevenir una amenaza sustancial e inminente para la vida, o un ataque terrorista previsible.
+11- Identificar a sospechosos de delitos graves (por ejemplo, asesinato, violación, robo a mano armada, tráfico de estupefacientes y armas ilegales, delincuencia organizada y delitos contra el medio ambiente, etc.).
+En cuanto a los niveles de riesgo, la ley establece que ciertas actividades consideradas de alto riesgo estarán sujetas a la aprobación y supervisión de una oficina pública que deberá crearse; por ejemplo, los sistemas de AI que forman parte de vehículos automotores. Le siguen los sistemas de riesgo moderado, como los servicios de propósito general.
+Finalmente, existe un tercero nivel de riesgo, llamado mínimo, donde los sistemas de inteligencia artificial tienen ciertas obligaciones formales, tales como:
+1- Obligaciones de transparencia y mantenimiento de registros claros y precisos de los materiales, datos y obras protegidas utilizadas para el entrenamiento de los modelos de inteligencia artificial.
+2- Obligaciones etiquetado y advertencia a los usuarios y consumidores de estos sistemas, de forma que cuando se utiliza estos sistemas o se recibe o consume un producto generado mediante el uso de IA, exista una advertencia clara y precisa. Esto permite al consumidor tomar una decisión fundamentada y razonada.
+2- Ley “Elvis” del estado de Tennessee, Estados Unidos, de 21 de marzo de 2024 (“Ley de Garantía de Semejanza de Seguridad de Voz e Imagen de 2024”)
+Esta ley ofrece una protección especifica a los artistas musicales y audiovisuales contra el uso no autorizado de sus voces, imágenes y personalidades. La protección es de naturaleza civil y abarca tanto a aquellos que hagan los llamados “Deep fakes” como a los que introduzcan tecnologías o servicios tecnológicos que permitan la producción y explotación de estas falsas producciones.
+3- Acciones y campañas desarrolladas por organizaciones civiles
+Numerosas organizaciones representativas de titulares de derechos de autor y derechos conexos han expresado públicamente su posición sobre la inteligencia artificial para llamar la atención de los gobiernos y empresas acerca de los riesgos del uso no responsable de la inteligencia artificial.
+La campaña desarrollada por la Asociación de la Industria Musical de los Estados Unidos (The Recording Industry of America-RIAA) y que ha sido apoyada por más de 200 organizaciones a nivel global, se basa en 7 principios que promueven el uso responsable de la inteligencia artificial:
+I) LA TECNOLOGÍA HA EMPODERADO LA EXPRESIÓN HUMANA DESDE HACE TIEMPO, Y LA IA NO SERÁ LA EXCEPCIÓN: durante generaciones, varias tecnologías se han utilizado con éxito para apoyar la creatividad humana. Tome la música, por ejemplo... Desde piano “Rolls” hasta amplificación, pedales de guitarra, sintetizadores, cajas de ritmos, estaciones de trabajo de audio digital, bibliotecas de ritmos y “stems” y más, los creadores musicales han utilizado durante mucho tiempo la tecnología para expresar sus visiones a través de diferentes voces, instrumentos y dispositivos. La IA ya es y desempeñará cada vez más ese papel como una herramienta para ayudar en el proceso creativo, lo que permite que una gama más amplia de personas se exprese de manera creativa. Además, la IA tiene muchos usos valiosos fuera del proceso creativo en sí, incluidos aquellos que amplifican las conexiones de los fans, perfeccionan las recomendaciones personalizadas, identifican el contenido de forma rápida y precisa, ayudan con la programación, automatizan y mejoran los sistemas de pago eficientes, y más. Adoptamos estos avances tecnológicos.
+II) LAS OBRAS CREADAS POR EL SER HUMANO CONTINUARÁN JUGANDO UN PAPEL ESENCIAL EN NUESTRAS VIDAS: las obras creativas dan forma a nuestra identidad, valores y visión del mundo. Las personas se relacionan más profundamente con las obras que encarnan la experiencia vivida, las percepciones y las actitudes de los demás. Solo los humanos pueden crear y realizar plenamente obras escritas, grabadas, creadas o interpretadas con un significado tan específico. El arte no puede existir independientemente de la cultura humana.
+III) EL USO DE OBRAS, INTERPRETACIONES ARTÍSTICAS Y FONOGRAMAS PROTEGIDOS POR DERECHOS DE AUTOR Y DERECHOS CONEXOS Y EL USO DE VOCES E IMÁGENES DE ARTISTAS, REQUIERE AUTORIZACIÓN PREVIA, LICENCIA Y CUMPLIMIENTO DE TODAS LAS LEYES CORRESPONDIENTES: reconocemos plenamente el inmenso potencial de la IA para ampliar los límites del conocimiento y el progreso científico. Sin embargo, al igual que con las tecnologías anteriores, el uso de obras y otras creaciones protegidas por derechos de autor y derechos conexos requiere el permiso del titular de los derechos. La IA debe estar sujeta a licencias libremente negociadas para el uso de obras en el desarrollo y entrenamiento de modelos de IA. Los creadores y los propietarios de los derechos de autor deben conservar el control exclusivo sobre cómo se utiliza su contenido. Los desarrolladores de IA deben asegurarse de que cualquier contenido utilizado con fines de entrenamiento esté aprobado y autorizado por el titular de los derechos de autor y derechos conexos, incluido el contenido utilizado anteriormente por cualquier IA pre-entrenada que puedan adoptar. Además, las voces y semejanzas de los artistas y atletas solo deben usarse con su consentimiento y con pago de una compensación justa para usos específicos.
+IV) LOS GOBIERNOS NO DEBEN CREAR NUEVAS EXEPCIONES NI LIMITACIONES A LOS DERECHOS DE AUTOR O DERECHOS CONEXOS U OTRAS EXENCIONES DE PI QUE PERMITAN A LOS DESARROLLADORES DE IA EXPLOTAR A LOS CREADORES SIN PERMISO NI COMPENSACIÓN: AI no debe recibir excepciones ni limitaciones de la ley de derechos de autor y derechos conexos u otras leyes de propiedad intelectual y debe cumplir con los principios básicos de competencia y compensación justas en el mercado. La creación de atajos especiales o lagunas legales para la IA dañaría a los empleos basados en actividades creativas, dañaría las marcas de los creadores y limitaría los incentivos para crear e invertir en nuevas obras.
+V) LOS DERECHOS DE AUTOR Y DERECHOS CONEXOS SÓLO DEBEN PROTEGER EL VALOR ÚNICO DE LA CREATIVIDAD INTELECTUAL HUMANA: la protección de los derechos de autor existe para ayudar a incentivar y recompensar la creatividad, la habilidad, el trabajo y el juicio humanos, no los productos creados y generados únicamente por máquinas. Los creadores humanos, ya sea que usen herramientas tradicionales o expresen su creatividad usando computadoras, son la base de las industrias creativas y debemos asegurarnos de que se les pague a los creadores humanos por su trabajo.
+VI) LA CONFIANZA Y LA TRANSPARENCIA SON ESENCIALES PARA EL ÉXITO DE LA IA Y LA PROTECCIÓN DE LOS CREADORES: es esencial llevar un registro completo de las obras, las interpretaciones, fonogramas y otros bienes protegidos por derechos de autor y derechos conexos, incluida la forma en que se usaron para desarrollar y entrenar cualquier sistema de IA. La transparencia algorítmica y la identificación clara de la procedencia de un trabajo son fundamentales para la confiabilidad de la IA. Las partes interesadas deben trabajar en colaboración para desarrollar estándares para tecnologías que identifiquen la entrada utilizada para crear la salida generada por IA. Además de obtener las licencias apropiadas, el contenido generado únicamente por IA debe etiquetarse describiendo todas las entradas y la metodología utilizadas para crearlo, informando las opciones del consumidor y protegiendo a los creadores y titulares de derechos.
+VII) LOS INTERESES DE LOS CREADORES DEBEN ESTAR REPRESENTADOS EN LA FORMULACIÓN DE POLÍTICAS POR PARTE DE LOS GOBIERNOS: los legisladores deben considerar los intereses de los creadores humanos al elaborar políticas en torno a la IA. Los creadores viven a la vanguardia de las evoluciones tecnológicas y las están construyendo e inspirando y, como tales, necesitan un asiento en la mesa en cualquier conversación sobre legislación, regulación o prioridades gubernamentales con respecto a la IA que afectaría su creatividad y la forma en que afecta a su industria y sustento.
+4- De los desarrollos multilaterales
+El G7 estableció sus compromisos con la propiedad intelectual en sus Principios rectores internacionales y su Código de Conducta voluntario en el punto 11, en el que afirma la necesidad de “implementar medidas apropiadas de ingreso de datos y protecciones para los datos personales y la propiedad intelectual” (octubre de 2023).
+El G20, en su Declaración de Líderes de Nueva Delhi, reconoció la importancia de los derechos de propiedad intelectual en la construcción de infraestructura pública digital junto con el aprovechamiento de la IA de manera responsable y para todos (septiembre de 2023).
+5- Importancia de un proyecto de ley de esta naturaleza
+La importancia de sistematizar el uso de la inteligencia artificial (IA) radica en principios tecnológicos y técnicos que trascienden la discusión política y deben atenderse de la manera más expedita. En el mundo contemporáneo, la IA ha demostrado ser una herramienta de enorme potencial para transformar diversos sectores de la sociedad, desde la economía hasta la educación, pasando por la salud y la administración pública.
+No obstante, el avance de estas tecnologías también trae consigo desafíos significativos en términos de ética, seguridad y regulación. Es en este contexto que la presente ley encuentra su justificación y relevancia, buscando establecer un marco normativo que permita un desarrollo ordenado y responsable de la IA en Costa Rica.
+El proyecto de ley propuesto tiene como uno de sus pilares fundamentales brindar a la Administración Pública las pautas necesarias para el manejo y la adopción de tecnologías de IA. Esto implica no solo la creación de protocolos claros y procedimientos estandarizados, sino también la capacitación de los funcionarios públicos para que puedan comprender y gestionar de manera efectiva estas herramientas. La sistematización del uso de la IA en el ámbito gubernamental permitirá mejorar la eficiencia y transparencia de los servicios públicos, facilitando la toma de decisiones basada en datos y optimizando los recursos disponibles.
+Además, la ley establece un marco responsable para el uso de la IA, reconoce la necesidad de proteger los derechos de los ciudadanos y garantizar que estas tecnologías se utilicen de manera equitativa.
+Uno de los objetivos estratégicos de esta ley es posicionar a Costa Rica como un referente internacional en la regulación y el uso ético de la IA. Para lograr esto se promoverá la colaboración entre el sector público y privado, fomentando la investigación y el desarrollo de tecnologías de IA dentro del país. La ley incentivará la creación de alianzas con universidades, centros de investigación y empresas tecnológicas, con el fin de impulsar la innovación y atraer inversiones extranjeras. De esta manera, Costa Rica se proyectará como un destino líder en la producción y aplicación de IA, capaz de competir en el mercado global y contribuir al desarrollo sostenible.
+Asimismo, la implementación de esta ley busca abarcar todas las aristas del uso de la IA en el sector privado, desde la industria manufacturera hasta los servicios financieros y el comercio electrónico. Se establecerán normas claras para la utilización de IA en diferentes contextos, asegurando que las empresas adopten prácticas responsables y alineadas con los principios éticos y legales establecidos. La regulación adecuada del uso de IA en el sector privado es fundamental para proteger a los consumidores, prevenir prácticas desleales y promover la competencia justa.
+La sistematización del uso de la inteligencia artificial en Costa Rica mediante esta ley no solo busca proporcionar a la administración pública las herramientas necesarias para gestionar estas tecnologías, sino también establecer un marco regulatorio robusto y ético que sirva de ejemplo a nivel internacional. Este esfuerzo contribuirá a posicionar al país como un líder en la adopción y regulación de la IA, atrayendo inversiones y talentos que impulsarán el desarrollo económico y social. La normativa propuesta se fundamenta en la necesidad de equilibrar la innovación con la protección de los derechos y la seguridad de los ciudadanos, asegurando que el progreso tecnológico se traduzca en beneficios tangibles para nuestro país.
+Por ende, se presenta el siguiente proyecto de ley para consideración de la Asamblea Legislativa a espera de su debida aprobación por parte de las señoras y señores diputados.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA LA IMPLEMENTACIÓN DE SISTEMAS DE
+INTELIGENCIA ARTIFICIAL (IA)
+Capítulo I
+Ámbito de aplicación de la ley. Competencia por territorio y materia
+ARTÍCULO 1- La presente ley es de orden público y de observancia obligatoria en todo el territorio nacional. Se aplicará también a los nacionales o extranjeros que se encuentren fuera del territorio de Costa Rica cuando concurran una o más de las siguientes circunstancias:
+a) Son operadores de un sistema o modelo de inteligencia artificial que está disponible para su uso en territorio nacional.
+b) Sean proveedores o desarrolladores de un sistema o modelo de inteligencia artificial que haya sido puesto a disposición del público en territorio nacional.
+c) Sean contratistas, revendedores, representantes, mandatarios o apoderados de cualquiera de las partes mencionadas en los párrafos anteriores.
+d) Explotar un sitio de Internet que ofrezca a los usuarios productos o modelos generados por inteligencia artificial.
+e) Serán responsables solidarios de las actividades descritas en el artículo anterior aquellas personas físicas o jurídicas que proporcionen a los sistemas o modelos de inteligencia artificial datos, bases o series de bases de datos que permitan el entrenamiento de dichos sistemas o modelos.
+ARTÍCULO 2- Para el desarrollo, despliegue y utilización de sistemas basados en la inteligencia artificial se deben tomar en cuenta los siguientes aspectos:
+La centralidad de la persona humana.
+Respeto y promoción de los derechos y valores humanos democrático.
+Libre desarrollo de la personalidad y libertad de expresión.
+Un desarrollo ecológicamente equilibrado.
+Igualdad, no discriminación, pluralidad y diversidad.
+Derechos sociales, especialmente la valoración del trabajo humano.
+Desarrollo socioeconómico, científico, tecnológico y de innovación.
+Protección del consumidor, libre empresa y competencia.
+Privacidad, protección de datos personales y autodeterminación informativa.
+Promover la investigación y el desarrollo con el objetivo de estimular el desarrollo social y reducir las desigualdades, así como la innovación en los sectores productivos y en las administraciones públicas y asociaciones. asociaciones público-privadas.
+Acceso abierto a la información y difusión de datos, estructurada y segura.
+Protección de los derechos culturales y promoción de los bienes y actividades históricas.
+Educación y concienciación de los sistemas de inteligencia promover el pleno desarrollo y ejercicio de la ciudadanía.
+Protección y promoción de los derechos de grupo especialmente de las personas mayores, las personas con discapacidad, y con plena protección, y en su mejor interés, de las personas con discapacidad, niños y adolescentes, reconociendo su vulnerabilidad agravada.
+ñ) Integridad de la información, protección y fomento de la integridad de la fiabilidad, exactitud y coherencia de la información.
+Reforzar el proceso democrático, el pluralismo político y hacer que la frente a la desinformación y el discurso del odio, la discriminación y la o violencia.
+Protección de los derechos de propiedad intelectual, teniendo debidamente en cuenta su función social.
+Garantizar la seguridad de la información y la ciberseguridad.
+Inserción, integración y competitividad de Costa Rica en el mercado internacional.
+ARTÍCULO 3- Los siguientes principios y la buena fe se aplicarán a la inteligencia artificial:
+Crecimiento integrador, desarrollo sostenible y bienestar, incluido el trabajo y la protección de los trabajadores.
+Autodeterminación y libertad de decisión y elección.
+Supervisión humana eficaz y adecuada durante todo el ciclo de vida de la inteligencia artificial, teniendo en cuenta el grado de riesgo que entraña.
+No a la discriminación ilegal y abusiva.
+Justicia, equidad e inclusión.
+transparencia y obligación de comunicar e informar, respetando el secreto comercial e industrial.
+Diligencia debida y auditabilidad durante todo el ciclo de vida del sistema de inteligencia artificial, en función del riesgo de que se trate y del estado del arte del desarrollo tecnológico.
+Fiabilidad y robustez del sistema de inteligencia artificial.
+Protección de los derechos y garantías fundamentales, incluyendo el debido proceso, la impugnabilidad y los procedimientos procesales.
+Rendición de cuentas, responsabilidad y reparación integral de daños.
+Prevención, precaución y mitigación de riesgos y daños.
+No maleficencia y proporcionalidad entre los métodos utilizados y los fines determinados y legítimos del sistema de inteligencia artificial.
+Desarrollo y uso ético y responsable de la inteligencia artificial.
+Una gobernanza transparente y participativa orientada a proteger los derechos individuales, sociales, colectivos y sociales fundamentales.
+ñ) Fomentar la interoperabilidad de la IA para permitir el acceso y la innovación colaborativa.
+La posibilidad y la condición de las personas con discapacidad sistemas y tecnologías de forma segura y autónoma, garantizando la plena accesibilidad a la información y la comunicación.
+Protección integral de la infancia y la adolescencia.
+Capítulo II
+Derechos de las personas y grupos afectados por los sistemas de IA
+ARTÍCULO 4- Los siguientes derechos se aplican a las personas o grupos, independientemente del grado de riesgo, que se ejercerá en la forma y condiciones descritas en el presente artículo:
+a) El derecho a la información previa sobre sus interacciones con el sistema de inteligencia artificial, de forma accesible, gratuita y de fácil acceso. comprensible, incluido el carácter automatizado de la interacción, salvo en el caso de sistemas de IA dedicados única y exclusivamente a la ciberseguridad y la ciberdefensa.
+b) Derecho a la intimidad y a la protección de datos personales, en particular los derechos de los interesados, en los términos previstos en la ley.
+c) El derecho a la determinación humana y a la participación en las decisiones tomadas por los sistemas de inteligencia artificial, teniendo en cuenta el contexto, el nivel de riesgo del sistema y el estado actual del desarrollo tecnológico.
+d) El derecho a no sufrir discriminación, conductas abusivas y el derecho a la corrección de prejuicios discriminatorios directos, indirectos, ilícitos o abusivos.
+Capítulo III
+Definiciones
+ARTÍCULO 5- Para la interpretación y aplicación de la presente ley se tendrán en cuenta las siguientes definiciones.
+a) Inteligencia artificial: es el conjunto de tecnologías que combinan ordenadores, algoritmos, datos y técnicas de aprendizaje informático para que realicen actividades y procesos de forma similar al cerebro humano.
+b) Sistema de inteligencia artificial: es la integración del aprendizaje computacional con algoritmos y grandes cantidades de datos para procesar información y generar un resultado determinado por el desarrollador u operador del sistema.
+c) Tipos de inteligencia artificial:
+1- Generativa: es la inteligencia artificial permite el procesamiento acelerado de datos con el fin de generar un resultado nuevo y diferente a la suma de todos los datos utilizados para el entrenamiento del sistema o modelo.
+2- Predictiva: es la inteligencia artificial que permite predecir un evento futuro o proyectar un resultado a través del procesamiento de datos y sirve como auxiliar en el desarrollo de una actividad humana.
+3- Cognitiva: es la inteligencia artificial que abarca principalmente las tecnologías y herramientas que permiten a apps, websites y bots ver, oír, hablar, comprender e interpretar las necesidades del usuario por medio del lenguaje natural. Es decir, son las aplicaciones de la IA que permiten a las máquinas aprender el lenguaje de los usuarios para que éstos no tengan que aprender el lenguaje de las máquinas.
+4- De interfaz: es la inteligencia artificial que se encarga del procesamiento del Lenguaje Natural (NLP), el reconocimiento de imágenes, la transcripción o los sistemas de búsqueda.
+a) Entrenamiento de sistemas de IA: la actividad de ingerir grandes cantidades de datos en un sistema de inteligencia artificial para que el sistema pueda realizar un procesamiento neuronal y generar un resultado nuevo y distintivo. Los datos pueden consistir en materiales que son producto del trabajo intelectual humano y que están protegidos por la propiedad intelectual u otras leyes.
+b) Conjuntos de datos: los conjuntos de datos son series de bases de datos, que pueden contener materiales o contenidos protegidos, que se utilizan para entrenar sistemas de inteligencia artificial.
+c) Falsificación profunda: contenido de imagen, audio o vídeo generado o manipulado por IA que se asemeja a personas, objetos, lugares, entidades o acontecimientos existentes y que a una persona le parecería falsamente auténtico o veraz.
+Capítulo IV
+Zonas de impacto primario sujetas a evaluación y autorización por parte del Estado
+ARTÍCULO 6- Se consideran áreas de impacto primario, sujetas a la evaluación y autorización del Estado, el desarrollo, implementación o disponibilidad de sistemas o modelos de inteligencia artificial las siguientes actividades:
+i. Uso de datos personales.
+ii) Sistemas o servicios sanitarios públicos o privados e investigación científica con fines médicos o para el desarrollo de fármacos.
+iii) Acceso al mercado laboral.
+iv) Educación pública.
+v) Infraestructuras críticas.
+vi) Acceso a los servicios públicos.
+vi) Servicios policiales.
+vi) Control de fronteras.
+vii) Sistema judicial.
+viii) Sistema electoral y campañas electorales.
+xi) Incorporación de sistemas de inteligencia artificial en productos o servicios de uso masivo.
+x) Servicios, productos de cualquier tipo para menores.
+xi) Utilización de contenidos protegidos por derechos de autor y derechos afines, que en todo caso estará sujeta a la autorización previa de los correspondientes titulares de los derechos.
+ARTÍCULO 7- La identificación biométrica en tiempo real sólo podrá ser realizada por las autoridades públicas nacionales en ejercicio de sus competencias legales y constitucionales en la investigación de delitos graves y con orden judicial.
+ARTÍCULO 8- Para el despliegue de sistemas de inteligencia artificial de conformidad con el artículo 2 de la presente ley, se estarán sujetas a un procedimiento administrativo de evaluación previa para su uso, el cual será implementado por Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones (Micitt) de conformidad con el reglamento de la presente ley.
+ARTÍCULO 9- Cuando se utilicen o incorporen sistemas de inteligencia artificial en productos o servicios de uso masivo, deberán contener indicaciones claras, precisas y visibles que permitan a los usuarios de estos productos o servicios conocer de antemano esta circunstancia. Esta obligación se extiende a las plataformas o servicios en línea que incorporen elementos o modelos de inteligencia artificial que se pongan a disposición de los usuarios.
+ARTÍCULO 10- Los sistemas de inteligencia artificial generativa deberán generar y poner a disposición en un formato accesible y sin coste alguno para las partes con intereses legítimos, registros e informes claros y precisos de los datos, materiales y otros contenidos utilizados para el entrenamiento de dichos sistemas, incluso si dichos datos y materiales son suministrados o facilitados por un tercero. El reglamento de la ley determinará el alcance y los detalles de esta obligación.
+Capítulo V
+Prohibiciones
+ARTÍCULO 11- Se prohíbe el desarrollo, uso y disponibilidad de sistemas o modelos de inteligencia artificial para la explotación de grupos o individuos vulnerables de la sociedad, técnicas subliminales para la manipulación del comportamiento humano, clasificación de grupos sociales, elaboración de sentencias o decisiones por los órganos del poder judicial, elaboración de proyectos de ley por el poder legislativo, elaboración de decretos o reglamentos por el ejecutivo nacional y la evaluación o calificación social de individuos.
+ARTÍCULO 12- Queda prohibida la generación, utilización o distribución de imágenes, producciones sonoras, visuales o audiovisuales de cualquier tipo o mensajes generados mediante el uso de sistemas de inteligencia artificial generativa y que utilicen la voz, imagen o atributos de la personalidad de una persona sin autorización previa y expresa.
+ARTÍCULO 13- También está prohibido el uso de material protegido por derechos de autor o derechos afines en un proceso de IA sin la autorización previa y expresa de los correspondientes titulares de los derechos.
+Capítulo VI
+Obligaciones comunes a los servicios de IA desplegados
+o disponibles en el territorio nacional
+ARTÍCULO 14- Los sistemas de inteligencia artificial de uso general deberán contar con políticas claras y precisas de buenas prácticas para el desarrollo, uso y disponibilidad de dichos sistemas en el territorio nacional. Dichas prácticas contendrán, como mínimo, normas de uso interno obligatorio para proteger los datos personales y evitar que el uso de la inteligencia artificial genere perjuicios a los derechos de terceros o a los intereses públicos.
+Todos los sistemas o modelos de Inteligencia Artificial que se pongan a disposición del público, se implanten o se desarrollen en el territorio nacional deberán elaborar y poner a disposición de las partes con intereses legítimos, en un formato accesible y de forma gratuita, informes claros y precisos de todos los datos, bases de datos, incluidos los contenidos protegidos por derechos de autor o derechos afines, que se hayan utilizado en la formación, diseño o funcionamiento de dichos sistemas o modelos. Estos informes se elaborarán en formato legible por ordenador y máquina.
+Capítulo VII
+Implementación de Inteligencia Artificial
+ARTÍCULO 15- La Dirección de Investigación, Desarrollo e Innovación del Micitt tendrá a su cargo el desarrollo e implementación de las políticas nacionales, estrategias y programas relacionados con el uso, desarrollo e implementación de los sistemas y modelos de inteligencia artificial en el país. También tendrán a su cargo los procedimientos administrativos para la evaluación, uso e implementación de los sistemas de inteligencia artificial de impacto primario, establecidos en el artículo 6 de la presente ley.
+ARTÍCULO 16- La Dirección de Investigación, Desarrollo e Innovación obtendrá recursos para la implementación de la presente ley de la siguiente manera:
+a) Las transferencias procedentes del Presupuesto Nacional de la República al Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones (Micitt), con el fin de contratar personal especializado, calificado y técnico en las materias de su competencia, infraestructura, materiales, recursos, implementos y cualquier otro requerimiento para su funcionamiento.
+b) Las donaciones y las subvenciones provenientes de otros países, entidades públicas u organismos internacionales.
+ARTÍCULO 17- Fomentar la cooperación entre entidades públicas y privadas para incentivar las buenas prácticas en inteligencia artificial (IA), con el fin de promover el uso responsable de la inteligencia artificial (IA).
+ARTÍCULO 18- La Dirección de Investigación, Desarrollo e Innovación será también el ente nacional asesor facultativo de las oficinas, ministerios, entes descentralizados, gobiernos locales y demás ramas del poder público en materia de inteligencia artificial y especialmente en:
+Elaboración de reglamentos y normas internas de los entes públicos para el uso de inteligencia artificial por parte de funcionarios públicos en ejercicio de sus funciones.
+Formulación y recomendación de políticas públicas y programas científicos para el desarrollo de sistemas de inteligencia artificial en el territorio nacional.
+La coordinación con entes similares extranjeros para propiciar la actualización y mejoramiento de la legislación y normas nacionales en materia de inteligencia artificial.
+La cooperación con las autoridades nacionales y gobiernos extranjeros para la investigación y sanción de los delitos cometidos mediante el uso de la inteligencia artificial.
+La creación de programas, premios, concursos y eventos académicos enfocados en el desarrollo sustentable de sistemas de inteligencia artificial que beneficien intereses nacionales y respeten los derechos de terceros.
+Desarrollo de políticas de buenas prácticas para los sistemas de inteligencia artificial de uso general.
+Establecimiento de los requisitos y formalidades que se deberán cumplir para el etiquetado de los productos y servicios que incorporen inteligencia artificial.
+Capítulo VIII
+Disposiciones Transitorias
+TRANSITORIO I- El reglamento de esta ley desarrollará el procedimiento administrativo para la evaluación y autorización de los sistemas de inteligencia artificial de impacto primario.
+TRANSITORIO II- El Poder Ejecutivo deberá reglamentar la presente ley en un plazo de seis meses posterior a su publicación.
+Rige a partir de su publicación.
+Johana Obando Bonilla Cynthia Maritza Córdoba Serrano
+Luis Diego Vargas Rodríguez Eliécer Feinzaig Mintz
+Diputadas y diputados
+NOTA: Este proyecto cumplió el trámite de revisión de forma en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 20-08-2024).

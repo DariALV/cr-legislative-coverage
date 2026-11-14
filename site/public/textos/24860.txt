@@ -1,0 +1,942 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE RÉGIMEN SANCIONADOR DE PERSONAS SERVIDORAS E INTEGRANTES DE LISTAS DE SUPLENTES, ELEGIBLES
+Y MERITORIAS DEL PODER JUDICIAL
+RODRIGO ARIAS SÁNCHEZ
+DANNY VARGAS SERRANO
+DIPUTADOS
+EXPEDIENTE N.º 24.860
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY DE RÉGIMEN SANCIONADOR DE PERSONAS SERVIDORAS E INTEGRANTES DE LISTAS DE SUPLENTES, ELEGIBLES
+Y MERITORIAS DEL PODER JUDICIAL
+Expediente N.° 24.860
+ASAMBLEA LEGISLATIVA:
+Esta legislación tiene como norte garantizar a la ciudadanía una correcta y proba administración de justicia, mediante un procedimiento administrativo sancionador eficaz, que respete el debido proceso, y sirva de herramienta para fortalecer el ingreso y reclutamiento del personal judicial, regular su aplicación no solo a los servidores judiciales activos, sino también a quienes se encuentran en listas de suplentes o elegibles e incorporar al procedimiento disciplinario institutos novedosos, con la finalidad de recabar la prueba y fortalecer la investigación administrativa para la lucha contra la corrupción y la infiltración del crimen organizado en el Poder Judicial. Su articulado es el resultado de varios años de trabajo en el seno del Poder Judicial, dirigido a unificar y actualizar la normativa interna a las necesidades actuales ante las faltas a la probidad, teniendo como antecedentes inmediatos el Código de Ética y las Reglas prácticas para el ejercicio del régimen disciplinario por Corte Plena, ambas normas promulgadas por la Corte Suprema de Justicia en los años 2019 y 2021 respectivamente.
+Esta legislación está dirigida a regular el régimen disciplinario de las personas servidoras en propiedad, interinas y meritorias, así como establecer las reglas de un nuevo régimen sancionador de quienes, sin tener un nombramiento activo como servidoras judiciales, integran listas de suplentes, elegibles o de meritorios. Tal condición jurídica favorable -la pertenencia a una lista- les permite optar por futuros nombramientos en el Poder Judicial. En este último supuesto el procedimiento tendrá como finalidad determinar la existencia de motivos que justifiquen la exclusión de la persona de la respectiva lista y con ello evitar futuros nombramientos en los plazos y términos establecidos en la norma que se presenta.
+El texto propuesto parte de la sistematización de la jurisprudencia que en esta materia ha emanado de las Sala Primera, Segunda y Constitucional de la Corte Suprema de Justicia, así como de los criterios sentados por los principales organismos supranacionales de protección de derechos humanos. Aquí no está de más precisar que el presente articulado es también el resultado de un amplio proceso de audiencias en el que se recibieron observaciones de magistradas y magistrados, de diversos órganos técnicos del Poder Judicial, a saber, el Consejo Superior, la Defensa Pública, el Organismo de Investigación Judicial, la Dirección Ejecutiva, la Dirección de Planificación, la Dirección Jurídica, la Escuela Judicial y el Centro de Apoyo, Coordinación y Mejoramiento de la Función Jurisdiccional, así como también se recibieron observaciones presentadas por distintas organizaciones gremiales entre las que se pueden referir Acojud, Anejud, Anprojud, Sindepu, Sindejud, Sitrajud. Incluso se contó con la asistencia de instancias externas al Poder Judicial como la Contraloría General de la República, la organización no gubernamental estadounidense Centro Nacional de Tribunales Estatales (NCSC siglas en inglés de National Center for State Courts), y de la Oficina Internacional de Asistencia Antinarcóticos y Cumplimiento de la Ley del Gobierno de los Estados Unidos (INL siglas en inglés de Bureau of International Narcotics and Law Enforcement Affairs). Todas las observaciones recibidas fueron analizadas y de todas se tomaron insumos en mayor o menor medida para enriquecer el texto que a continuación se presenta.
+Este proyecto de ley tiene sustento en tres ejes transversales: a) Seguridad jurídica y debido proceso para las personas partes de un procedimiento sancionador, b) La lucha contra la corrupción y la infiltración del crimen organizado en el Poder Judicial, y c) Una reestructuración dirigida a especializar y tecnificar los órganos disciplinarios, unificando sus procedimientos, amén de descongestionar la Corte Plena de temas disciplinarios.
+En el primero de los ejes expuestos, el texto incorpora un moderno y amplio elenco de derechos de quienes interactúan en el procedimiento disciplinario, en particular de la persona que podría resultar sancionada. Se establece la posibilidad de que la Corte Suprema de Justicia fije una política de atención prioritaria en materia sancionadora, según las demandas de cada momento histórico, pudiendo direccionar la persecución disciplinaria en aspectos específicos del accionar judicial, verbigracia: lucha contra la mora judicial, combate contra la corrupción, maltrato al usuario, etc. Adicionalmente, se establece un sistema unificado y actualizado de faltas, que a la fecha están dispersas en distintas normas jurídicas, armonizándolas además con otras leyes, a la vez que se positivizan los parámetros de atenuación o agravamiento de las faltas, todo lo anterior sin excluir regímenes especiales que pueden servir de mejor manera a la justicia, como ejemplo la normativa en materia de acoso sexual.
+Como segundo eje y principal avance de la normativa propuesta está el tratamiento especial al tema de la lucha contra la corrupción, partiendo de su definición en lo que respecta a la función jurisdiccional en estricto sentido y a los demás servicios que presta el Poder Judicial, regulando plazos y generando nuevas herramientas de prueba, todo lo anterior, para combatir de forma expedita y eficaz a las organizaciones delictivas que pretenden penetrar el Poder Judicial, erradicando la impunidad atribuible a la falta de herramientas investigativas y de prueba.
+Debe subrayarse en este punto los importantes avances que incorpora esta propuesta normativa, tales como la habilitación que se establece para que en procedimientos sancionadores sea posible utilizar las intervenciones telefónicas ordenadas en el marco de un proceso penal y obtenidas bajo todos los recaudos del debido proceso que rigen esa materia jurisdiccional. Este avance es fundamental pues al día de hoy, pese a que dichas intervenciones permitan acreditar la existencia de corrupción a lo interno de este poder de la República, si el proceso penal no finaliza con una sentencia condenatoria que pueda ser la base del procedimiento disciplinario, dichas intervenciones no pueden ser trasladadas de un proceso penal a un procedimiento disciplinario, permitiendo que el funcionario o funcionaria quede impune no obstante la existencia de las referidas intervenciones.
+Otro de los avances que se incorpora para la lucha contra la penetración del crimen organizado en el Poder Judicial, es el instituto del acceso a información sensible con participación y garantía de la Jurisdicción Contencioso Administrativa, mecanismo ya presente en el ordenamiento jurídico costarricense desde el año 2019, e incorporado en la Ley de Fortalecimiento de las Autoridades de Competencia de Costa Rica, Ley 9736, ajustándolo para que funja como una de las principales herramientas para la lucha contra la corrupción y el crimen organizado en el siglo XXI. A través de este instituto, las autoridades disciplinarias del Poder Judicial podrán solicitar de forma motivada al Juzgado Contencioso Administrativo, mediante un proceso sumarísimo, que se brinde acceso a información sensible necesaria para acreditar hechos de corrupción, verbigracia: información bancaria o societaria, la que de otra forma no estaría al alcance del procedimiento disciplinario. En tal supuesto, la autoridad judicial, en el marco de la independencia judicial y en ejercicio de la función jurisdiccional, fungirá como juez o jueza de garantías, revisando el mérito y la procedencia total o parcial de la gestión presentada, ordenando la entrega de la información o denegándola, todo lo anterior también de forma razonada y con control jurisdiccional.
+Como parte de la batería de institutos novedosos en este tema, se habilita a las autoridades disciplinarias del Poder Judicial, que en investigaciones por corrupción puedan acceder al sistema de declaraciones que las y los servidores del Poder Judicial presentan ante la Contraloría General de la República, aspecto que sin lugar a duda coadyuvará en la detección de incrementos no justificados de patrimonio.
+Como tercer eje del nuevo sistema propuesto está la reestructuración orgánica y competencial de los órganos disciplinarios, lo anterior claro está, sin contravenir las disposiciones que sobre el particular establece la Constitución Política en materia de régimen disciplinario de las y los magistrados de la Corte Suprema de Justicia. Hoy en día, la Corte Plena debe atender gran cantidad de temas disciplinarios de juezas y jueces, los que consumen ingentes cantidades de tiempo y otros recursos. La normativa que se plantea permitiría trasladar estos asuntos a otras instancias, creadas a partir de la reorganización de la estructura actual, modificación que, además de brindar eficiencia a la labor de la Corte Plena, permite especializar órganos técnicos, cumpliendo, a su vez, los más recientes estándares que sobre este particular ha establecido la Corte Interamericana de Derechos Humanos.
+Aquí, se debe precisar que los ejes expuestos, si bien son los principales aportes de la presente normativa, no son los únicos avances que cobija esta legislación, pues el texto da varios pasos adelante en materia de justicia restaurativa, cuya implementación actual en el régimen disciplinario ha sido exitosa, pero limitada debido al marco legal existente. Adicionalmente, se ofrece una mayor participación de las víctimas en el procedimiento disciplinario. Otro aspecto digno de destacar es el relativo a la prohibición de reingreso por diez años de las personas que han sido despedidas del Poder Judicial, ajustada a los estándares constitucionales y la creación de un registro público de personas despedidas por corrupción.
+Debido a que la última reforma de la Ley Orgánica del Poder Judicial mediante Ley 7333, de 5 de mayo de 1993, en materia de régimen disciplinario, se dio hace más de treinta años, hoy se impone una reforma integral, acorde con los desafíos de los tiempos, en procura de fortalecer una correcta administración de justicia y la institucionalidad.
+El texto que de este proyecto de ley fue avalado por la Corte Plena, sesión N.º 055-2024, del 16 de diciembre de 2024.
+Por las razones expuestas, el suscrito diputado que suscribe esta iniciativa acoge para su trámite este proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE RÉGIMEN SANCIONADOR DE PERSONAS SERVIDORAS E INTEGRANTES DE LISTAS DE SUPLENTES, ELEGIBLES
+Y MERITORIAS DEL PODER JUDICIAL
+LIBRO I
+Parte general
+TÍTULO I
+Disposiciones generales y principios
+CAPÍTULO I
+Disposiciones generales
+ARTÍCULO 1- Objeto
+La presente ley tiene por objeto regular el régimen disciplinario aplicable a las personas servidoras y el régimen sancionador a integrantes de listas de suplentes, elegibles y meritorias del Poder Judicial, sin nombramiento activo, con el fin de garantizar a la ciudadanía una correcta y proba administración de justicia, mediante un procedimiento administrativo sancionador eficaz, que respete el debido proceso.
+ARTÍCULO 2- Ámbito de aplicación
+Esta ley se aplicará a toda persona servidora judicial, sin importar su condición de propietaria, interina o meritoria, con nombramiento activo, que presuntamente haya incurrido en una conducta que pudiera configurar una falta y contra quien se siga un procedimiento para determinar su eventual responsabilidad.
+De igual manera, se aplicará a quien disfrute de un permiso con o sin goce de salario, o a quien le haya cesado la relación de servicio, siempre que el procedimiento haya dado inicio previo al cese de la relación, salvo lo dispuesto en el párrafo siguiente.
+Se aplicará además a quien integre las listas de suplentes, elegibles o meritorias para diferentes puestos en el Poder Judicial, sin nombramiento activo, únicamente a efectos de determinar la posible exclusión de las listas que integran, sin que esto constituya una sanción disciplinaria.
+ARTÍCULO 3- Finalidad del régimen sancionador
+El régimen sancionador tiene por finalidad la verificación de la verdad real de los hechos objeto del procedimiento, asegurar la eficiencia, cumplimiento, decoro y una correcta administración de justicia, así como de los demás servicios que presta el Poder Judicial; determinar la responsabilidad y asegurar la corrección del personal judicial y de quienes integren las listas de suplentes, elegibles o meritorias para diferentes puestos en el Poder Judicial, con respeto para sus derechos subjetivos e intereses legítimos, de acuerdo con el ordenamiento jurídico.
+ARTÍCULO 4- Responsabilidades no excluyentes
+El régimen sancionador regulado en esta ley se entiende sin perjuicio de la responsabilidad civil y penal en la que puedan incurrir las personas servidoras judiciales y quienes integren las listas de suplentes, elegibles o meritorias, así como del ejercicio de las potestades sancionadoras de la Contraloría General de la República, que se harán efectivas en la forma prevista en la normativa que las regulan; todo en resguardo del principio regulado en el artículo 14 de esta ley.
+ARTÍCULO 5- Normativa aplicable
+La responsabilidad de las personas servidoras judiciales y de quienes integren las listas de suplentes, elegibles o meritorias para diferentes puestos en el Poder Judicial, deberá determinarse por el procedimiento establecido en esta ley y, a falta de regla expresa, se aplicará la Ley Orgánica del Poder Judicial, la Ley General de la Administración Pública y, en su caso, los principios del derecho público y procesal en general, así como los sustanciales y formales del derecho laboral. Cuando se investiguen faltas que puedan constituir hostigamiento sexual o laboral, se aplicarán en lo conducente lo establecido en la legislación especial que lo regula y la normativa infralegal interna.
+ARTÍCULO 6- Régimen de nulidades
+El régimen de nulidades se regirá de acuerdo con lo dispuesto en la Ley General de la Administración Pública.
+ARTÍCULO 7- Corrupción
+Para efectos de la aplicación de esta ley, se entenderá por corrupción el abuso o uso indebido del poder, recursos públicos, funciones y atribuciones públicas, para obtener o conceder beneficios particulares, en contravención de las disposiciones legales y la normativa existente. Serán actos de corrupción de las personas servidoras judiciales y de quienes integren las listas de suplentes, elegibles o meritorias para diferentes puestos en el Poder Judicial:
+1- Requerir o aceptar, directa o indirectamente, cualquier objeto de valor pecuniario u otros beneficios como dádivas, favores, premios, promesas o ventajas para sí mismo o para otra persona o entidad, a cambio de la realización u omisión de cualquier acto en el ejercicio de sus funciones, bajo cualquier modalidad o denominación.
+2- Ofrecer u otorgar, directa o indirectamente, a otra persona servidora pública, cualquier objeto de valor pecuniario u otros beneficios como dádivas, favores, premios, promesas o ventajas para esa persona servidora o para otra persona o entidad a cambio de la realización u omisión de cualquier acto en el ejercicio de sus funciones, bajo cualquier modalidad o denominación.
+3- Realizar cualquier acción u omisión con el fin de obtener ilícitamente beneficios para sí mismo o para un tercero.
+4- Aprovechar u ocultar, mediando dolo o culpa grave, bienes provenientes de cualesquiera de los actos a los que se refiere el presente artículo.
+5- Conocer, asesorar, auxiliar, opinar, influir de cualquier forma, participar en la discusión o resolver asuntos sometidos a su conocimiento por el ejercicio de sus funciones, ya sea individualmente o integrando un órgano colegiado, encontrándose en un conflicto de interés.
+6- Utilizar o aprovechar cualquier facultad otorgada para el desempeño del cargo público, para obtener o conceder beneficios particulares.
+7- Desviar la gestión de los fondos públicos, ejerciendo las facultades o competencias otorgadas en razón del cargo, con una finalidad distinta a la conferida para el cumplimiento de sus deberes y competencias públicas.
+8- Divulgar información para otorgar una ventaja indebida a personas físicas o jurídicas.
+9- Participar en grado de autoría, coautoría, instigación, complicidad, encubrimiento o en cualquier otra forma en la comisión de cualquiera de los actos descritos en el presente artículo.
+10- Cualquier otra conducta calificada así por el ordenamiento jurídico.
+CAPÍTULO II
+Principios y derechos
+ARTÍCULO 8- Legalidad
+Constituyen conductas sujetas a responsabilidad de toda persona servidora judicial y de quienes integren las listas de suplentes, elegibles o meritorias para diferentes puestos en el Poder Judicial, las vulneraciones al ordenamiento jurídico que configuren faltas disciplinarias. Únicamente podrán imponerse las sanciones previstas en esta ley.
+La responsabilidad sólo podrá ser acordada por el órgano competente, mediante el procedimiento establecido en esta ley.
+ARTÍCULO 9- Responsabilidad en el procedimiento sancionador
+A quienes les resulte aplicable la presente ley podrán ser sancionados por hechos constitutivos de faltas disciplinarias de las que resulten responsables a título de dolo o culpa grave. Queda prohibida toda forma de responsabilidad objetiva.
+ARTÍCULO 10- Independencia judicial y funcional
+El régimen sancionador no podrá utilizarse con la finalidad de amenazar o comprometer la independencia judicial ni la independencia funcional del personal del Poder Judicial.
+ARTÍCULO 11- Derecho de defensa
+Es inviolable la defensa de cualquiera de las partes en el procedimiento sancionador.
+Durante el procedimiento la persona encausada tiene derecho a ejercer de manera plena y eficaz su defensa, a la asistencia y defensa letrada si así lo considera, a hacer uso de todos los recursos legales a su alcance, formular las peticiones que considere oportunas, participar en los actos procedimentales y gozar de todas las garantías dispuestas por el ordenamiento jurídico.
+ARTÍCULO 12- Derechos de la persona encausada
+En sus relaciones con el órgano sancionador, toda persona encausada tiene derecho a:
+1- Ser informada de manera individualizada, concreta y oportuna sobre los hechos que se le imputan.
+2- La oportunidad de contar con un plazo razonable para la preparación de su defensa.
+3- La imparcialidad y objetividad de los órganos que emitan el acto final y el acto definitivo.
+4- Presentar peticiones, ya sea de forma individual o colectiva.
+5- Contar con defensa técnica o ejercer su defensa por sus propios medios.
+6- Acceder a información sobre el estado y desarrollo del procedimiento en el que sean parte.
+7- Formular alegaciones y presentar pruebas.
+8- Impugnar el acto final sancionatorio.
+9- Eximirse de la presentación de documentos que emanen o se encuentren en poder de cualquier órgano del Poder Judicial.
+10- Recibir respuestas fundadas y motivadas respecto a las peticiones y solicitudes presentadas.
+11- Obtener copias y certificaciones de documentos que se encuentren en posesión del Poder Judicial, salvo aquellas excepciones contempladas expresamente por la ley.
+12- Acceder a registros y archivos administrativos de acuerdo con los procedimientos y regulaciones establecidas por ley.
+13- Exigir que los órganos competentes y personas servidoras públicas actúen con responsabilidad en el ejercicio de sus funciones.
+14- Intervenir en el procedimiento a través de medios tecnológicos o electrónicos disponibles en la entidad o integrados en el Poder Judicial, bajo las reglas existentes.
+15- Cualquier otro que le reconozca la normativa aplicable.
+ARTÍCULO 13- Estado de inocencia
+La persona servidora judicial sujeta al régimen sancionador será considerada inocente mientras no se declare su responsabilidad en resolución final en firme, dictada en respeto de lo establecido en el ordenamiento jurídico. En caso de duda razonable, se resolverá a favor de la persona investigada o encausada.
+ARTÍCULO 14- Prohibición de doble persecución
+Ninguna persona podrá ser sometida a procedimiento sancionador o sancionada administrativamente más de una vez por el mismo hecho.
+ARTÍCULO 15- Gratuidad
+Toda actuación en el procedimiento sancionador será gratuita para las partes, salvo disposición legal en contrario. En igual sentido, tampoco habrá lugar a la imposición de costas a favor o en contra de la administración ni de las partes.
+ARTÍCULO 16- Oficiosidad
+El procedimiento sancionador se impulsará de oficio, con el objeto de verificar los hechos relevantes para el adecuado ejercicio de la potestad sancionadora.
+ARTÍCULO 17- Imparcialidad
+Quienes intervengan en la investigación, tramitación y resolución del régimen sancionador deberán actuar, durante el procedimiento, de manera imparcial y objetiva. Las decisiones y resoluciones que se tomen serán adoptadas bajo criterios de absoluta objetividad, previa garantía del debido proceso y derecho de defensa de las partes.
+Quien funja como órgano director no podrá integrar el órgano decisor que emita la resolución final del procedimiento.
+ARTÍCULO 18- Informalismo
+El procedimiento sancionador deberá tramitarse con la intención de lograr un máximo de celeridad y eficiencia, mediante el uso moderado de los formalismos, siempre en respeto del ordenamiento jurídico y los derechos de las partes.
+Se dará una interpretación informal a las normas del procedimiento en tanto beneficien a las partes, pero esto no podrá servir para subsanar nulidades que sean absolutas.
+ARTÍCULO 19- Confidencialidad
+La información contenida en el expediente sancionador tiene carácter de confidencial, excepto para las partes y otros intervinientes en los términos de esta ley, los cuales tendrán libre acceso a todos los documentos y pruebas que consten en el expediente, salvo disposición legal en contrario.
+El carácter confidencial del contenido del expediente cesa con la firmeza del acto que dé término de manera definitiva al procedimiento. Quedan a salvo las piezas que por disposición de ley mantienen ese carácter.
+CAPÍTULO III
+Política del régimen sancionador del Poder Judicial
+ARTÍCULO 20- Política del régimen sancionador del Poder Judicial
+Corte Plena aprobará cada cinco años o cuando las circunstancias lo ameriten, la política del régimen sancionador para asegurar la eficiencia, cumplimiento, decoro y una correcta administración de justicia, así como de los demás servicios que presta el Poder Judicial, en el marco de la presente ley.
+TÍTULO II
+Las faltas y las sanciones
+CAPÍTULO I
+Las faltas
+SECCIÓN PRIMERA
+La falta
+ARTÍCULO 21- La falta
+Constituye falta toda acción u omisión cometida por persona servidora judicial o que integre una lista de suplentes, elegibles o meritorias para un puesto dentro del Poder Judicial, mediando dolo o culpa grave, que sea opuesta al ordenamiento jurídico e infrinja un deber funcional; sea contraria al deber de probidad; la satisfacción del interés público o que afecte o atente contra el buen funcionamiento o la imagen del Poder Judicial y sus fines; el correcto desempeño de las funciones o el uso de los recursos públicos.
+También constituye falta toda acción u omisión separable del ejercicio de las funciones, cometida por persona servidora judicial o que integre una lista de suplentes, elegibles o meritorias para un puesto dentro del Poder Judicial, mediando dolo o culpa grave, que sea opuesta al ordenamiento jurídico o que pueda afectar la confianza, eficacia y el buen servicio del Poder Judicial o su imagen; dicha afectación debe ser comprobable y debe existir una relación de causalidad directa con la conducta de la persona.
+SECCIÓN SEGUNDA
+Clasificación y descripción de las faltas
+ARTÍCULO 22- Clasificación de las faltas
+Las faltas cometidas por quienes les resulte aplicable la presente ley se clasifican en graves y leves.
+ARTÍCULO 23- Faltas graves
+Se consideran faltas graves:
+1- La infracción de las incompatibilidades establecidas en la Ley Orgánica del Poder Judicial y el Estatuto de Servicio Judicial.
+2- La infracción de las prohibiciones establecidas en los artículos 8 y 9 incisos 1, 2, 3, 7 y 9 de la Ley Orgánica del Poder Judicial.
+3- La infracción al deber de reserva y discreción establecido en el artículo 9 bis de la Ley Orgánica del Poder Judicial.
+4- El incurrir en actos de corrupción en los términos que establece esta ley.
+5- La omisión de denuncia de actos de corrupción cuando se tenga un conocimiento del hecho.
+6- Las contempladas en el artículo 38 de la Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública.
+7- Las contempladas en el artículo 21 de la ley de Protección de las Personas Denunciantes y Testigos de Actos de Corrupción contra Represalias Laborales.
+8- Las contempladas en los artículos 39 y 40 de la Ley General de Control Interno.
+9- Las contempladas en el artículo 125 de la Ley General de Contratación Pública.
+10- Las contempladas en el artículo 5 de la Ley para Prevenir, Atender, Sancionar y Erradicar la Violencia contra las Mujeres en la Política.
+11- El hostigamiento o acoso sexual.
+12- El hostigamiento o acoso laboral.
+13- Las contempladas en el artículo 81 del Código de Trabajo, en lo que sean compatibles con el ejercicio de la función pública.
+14- La discriminación por razones de edad, etnia, sexo, religión, raza, orientación sexual, estado civil, opinión política, ascendencia nacional, origen social, filiación, condición de salud, discapacidad, afiliación sindical, situación económica o cualquier otra forma análoga de discriminación.
+15- El interesarse indebidamente, dirigiendo órdenes o presiones de cualquier tipo, en asuntos cuya resolución corresponda a los tribunales o a otras dependencias del Poder Judicial.
+16- El abandono injustificado y reiterado del desempeño de la función.
+17- El abandono injustificado de labores o inasistencia injustificada a laborar durante dos días consecutivos o más de dos días alternos en el mismo mes calendario.
+18- El uso indebido de información confidencial a la que tenga acceso en razón de sus funciones.
+19- El adelanto o retraso en el trámite de una gestión para favorecer a una de las partes, cuando se realice de manera dolosa.
+20- La alteración de estadística o controles del despacho, cuando se realice de manera dolosa.
+21- El cobro indebido de rubros administrativos, cuando se realice de manera dolosa.
+22- El extravío o pérdida de documentos judiciales físicos o electrónicos, cuando se realice de manera dolosa.
+23- El daño, extravío, alteración, uso indebido o mala manipulación de bienes o documentos, en el ejercicio del cargo, cuando se realice de manera dolosa.
+24- La falta al resguardo y custodia de evidencias que pertenecen a un proceso judicial o un procedimiento administrativo, cuando se realice de manera dolosa.
+25- La falta al resguardo, custodia y uso indebido de activos, máquinas, materiales, útiles, muebles, instalaciones o herramientas de la institución, cuando se realice de manera dolosa.
+26- El uso o entrega de documentos alterados para obtener un beneficio personal o a favor de un tercero, cuando se realice de manera dolosa.
+27- Las acciones u omisiones funcionales que generen responsabilidad civil.
+28- El obtener dos evaluaciones del desempeño consecutivas inferiores a una calificación del setenta por ciento (70%), que se encuentren en firme y asignadas en respeto al procedimiento establecido en el ordenamiento jurídico.
+29- El incumplimiento injustificado por parte de las jefaturas de darle seguimiento a los planes de trabajo anuales establecidos para la evaluación del desempeño del personal a su cargo.
+30- La comisión de cualquier hecho constitutivo de delito doloso, como autor o partícipe, cuando así haya sido declarada en sentencia en firme. Tratándose de delitos culposos, el órgano competente examinará el hecho a efecto de determinar si justifica o no la aplicación del régimen sancionador de conformidad con lo dispuesto en el artículo 25 de esta ley.
+31- El retardo grave e injustificado en la administración de justicia.
+32- El error grave e injustificado en la administración de justicia, declarado jurisdiccionalmente, lo anterior siempre en resguardo del principio de independencia judicial.
+33- La falta de aplicación del régimen sancionador, o la falta de comunicación al órgano competente por parte de quien esté obligado a hacerlo, cuando conociere la existencia de un hecho que pueda configurar una falta.
+34- Las omisiones sin causa justificada, que generen la prescripción o caducidad de procesos judiciales o procedimientos administrativos.
+35- El incumplimiento injustificado de recomendaciones, informes vinculantes u órdenes de hacer o no hacer, emitidos por la Corte Plena, Consejo Superior o la Auditoría Judicial.
+36- El incumplimiento injustificado del acto que ponga fin a un procedimiento mediante la terminación convencional.
+37- La comisión de una falta leve habiendo sido la persona sancionada anteriormente por otras dos leves que consten en el expediente de la persona servidora, suplente, elegible o meritoria, o la comisión de tres o más faltas leves que deban ser sancionadas simultáneamente.
+38- Cualquier otra que el ordenamiento jurídico establezca.
+ARTÍCULO 24- Faltas leves
+Se considerarán faltas leves:
+1- La falta de respeto a los superiores jerárquicos, hacia otra persona servidora judicial, profesional en derecho o cualquier otra persona, en su presencia, en escrito que se les dirija o con publicidad, siempre que no constituya falta grave.
+2- El exceso o abuso cometido contra cualquier otra persona servidora judicial, abogada o particular, que acudan a los despachos en cualquier concepto, cuando no constituya falta grave.
+3- La infracción de las prohibiciones o deberes establecidos en la Ley Orgánica del Poder Judicial, cuando no constituya falta grave.
+4- El abandono injustificado de labores o inasistencia injustificada a laborar durante un día, dos días alternos o dos medias jornadas alternas en el mismo mes calendario.
+5- La inasistencia o impuntualidad injustificada a una diligencia, judicial o de un procedimiento administrativo, debidamente señalada y en la que se deba participar en razón de las funciones, cuando no constituya falta grave.
+6- La desatención de una diligencia de un proceso judicial o de un procedimiento administrativo, en la que se participa por medios tecnológicos, cuando no constituya falta grave.
+7- El retraso injustificado en el despacho de los asuntos, o en su resolución, cuando no constituya falta grave.
+8- El adelanto o retraso en el trámite de una gestión para favorecer a una de las partes, cuando se realice mediando culpa grave.
+9- La alteración de estadística o controles del despacho, cuando se realice mediando culpa grave.
+10- El cobro indebido de rubros administrativos, cuando se realice mediando culpa grave.
+11- El extravío o pérdida de documentos judiciales físicos o electrónicos, cuando se realice mediando culpa grave.
+12- El daño, extravío, alteración, uso indebido o mala manipulación de bienes o documentos, en el ejercicio del cargo, cuando se realice mediando culpa grave.
+13- La falta al resguardo y custodia de evidencias que pertenecen a un proceso judicial o un procedimiento administrativo, cuando se realice mediando culpa grave.
+14- La falta al resguardo, custodia y uso indebido de activos, máquinas, materiales, útiles, muebles, instalaciones o herramientas de la institución, cuando se realice mediando culpa grave.
+15- El uso o entrega de documentos alterados para obtener un beneficio personal o a favor de un tercero, cuando se realice mediando culpa grave.
+16- El no pago injustificado de una obligación de crédito, que deba atender como parte deudora principal, que se esté cobrando por vía monitoria que tenga resolución intimatoria firme o sentencia condenatoria y, en el resto de los supuestos, cuando exista un saldo en descubierto de un proceso de ejecución.
+17- Cualquier otra que el ordenamiento jurídico establezca.
+ARTÍCULO 25- Criterios para calificar las faltas
+Toda otra acción u omisión que constituya falta según esta ley, no prevista en los dos artículos anteriores, será conocida por los órganos competentes a efecto de determinar si se califica como grave o leve, de conformidad con los siguientes criterios:
+1- La forma de culpabilidad con la que actuó la persona servidora en el hecho.
+2- El modo y grado de participación de la persona en el hecho y su resultado.
+3- Las modalidades y circunstancias en que se cometió el hecho.
+4- Lo relevante del deber, función o norma infringida, para la correcta administración de justicia, así como de los demás servicios que presta del Poder Judicial.
+5- La naturaleza esencial del servicio afectado.
+6- El perjuicio causado a la institución, sus fines, confianza, eficacia e imagen, a los recursos públicos, a las personas destinatarias del servicio o contra quien se dirigió el hecho.
+7- La magnitud del riesgo creado para la institución, sus fines, confianza, eficacia e imagen, a los recursos públicos, a las personas destinatarias del servicio o contra quien se dirigió el hecho.
+Tal determinación deberá formar parte de la motivación del acto final, bajo pena de nulidad absoluta.
+CAPÍTULO II
+Las sanciones
+SECCIÓN PRIMERA
+Clases de sanciones
+ARTÍCULO 26- Clases de sanciones para personas servidoras con nombramiento activo
+Las sanciones que se pueden imponer a quienes tienen un nombramiento activo en el Poder Judicial, son:
+1- Amonestación escrita.
+2- Suspensión sin goce de salario.
+3- Despido sin responsabilidad patronal.
+Cuando alguna otra ley haga mención de las sanciones de “revocatoria de nombramiento” o “destitución”, deberá entenderse como despido sin responsabilidad patronal.
+ARTÍCULO 27- Exclusión de personas suplentes, elegibles o meritorias sin nombramiento activo
+En el caso de las personas suplentes, elegibles o meritorias que se encuentran sin nombramiento activo en el Poder Judicial, se les podrá excluir temporal o de manera definitiva de las listas que integran.
+SECCIÓN SEGUNDA
+Fijación de las sanciones
+ARTÍCULO 28- De las sanciones
+Las faltas leves podrán sancionarse con amonestación escrita, suspensión sin goce de salario hasta por tres meses y exclusión temporal de la lista de suplentes, elegibles o meritorias hasta por tres meses; y las graves con amonestación escrita, suspensión sin goce de salario hasta por seis meses, exclusión temporal de la lista de suplentes, elegibles o meritorias hasta por seis meses, despido sin responsabilidad patronal y exclusión definitiva de la lista de suplentes, elegibles o meritorias.
+ARTÍCULO 29- Fijación de la sanción
+La sanción deberá imponerse conforme a los límites señalados en el artículo anterior, en apego al principio de proporcionalidad y razonabilidad, y debidamente motivada, para lo cual se tomará en consideración, cuando apliquen en el caso concreto, lo siguiente:
+1- El impacto negativo en la administración de justicia o cualquier otro servicio que brinda el Poder Judicial; se entiende que, a mayor perjuicio, mayor gravedad en la sanción.
+2- La reincidencia en la comisión de faltas disciplinarias será criterio para agravar la sanción.
+3- El sancionar varias faltas, de modo que la sanción se fijará dentro de los límites para la de mayor gravedad.
+4- El rango y las funciones de la persona servidora; se entiende que, a mayor jerarquía y complejidad de estas, mayor será la obligación de apreciar la legalidad, oportunidad y conveniencia de las acciones y omisiones que autoriza o ejecuta.
+5- El tiempo servido en el Poder Judicial, será valorado como agravante o atenuante según el caso concreto.
+6- La no existencia de sanciones anteriores será valorada como un criterio de atenuación de la sanción.
+7- La diligencia y eficiencia de la persona en el desempeño de sus funciones de manera previa y posterior al inicio del procedimiento sancionador, será valorado como un criterio de atenuación de la sanción.
+8- La conducta desplegada por la persona para intentar corregir su actuar o minimizar el perjuicio provocado, siempre que sea por iniciativa propia y previo a la apertura del procedimiento sancionador, será valorado como un criterio de atenuación.
+9- La conducta desplegada por la persona para intentar ocultar la prueba y los efectos de la falta, siempre que sea por iniciativa propia y previo a la apertura del procedimiento sancionador, será criterio para agravar la sanción.
+10- Los criterios dispuestos en leyes especiales para causales de faltas reguladas en ellas.
+TÍTULO III
+Del procedimiento
+CAPÍTULO I
+Inhibitoria y recusación
+ARTÍCULO 30- Causales de impedimento
+Serán causales de impedimento las establecidas en el Código Procesal Civil y el Código Procesal Contencioso Administrativo. También lo será toda aquella circunstancia que, aunque no esté expresamente establecida, comprometa seriamente la imparcialidad y objetividad de la persona llamada a intervenir en el trámite y resolución del asunto.
+No será causal de impedimento, aquella que se derive de un vínculo a nivel laboral o académico previo o actual dentro del Poder Judicial, con alguna de las partes.
+ARTÍCULO 31- Trámite de la inhibitoria del órgano director
+La persona instructora de un órgano director que tuviere causal de impedimento, deberá separarse del conocimiento del asunto, hará constar el motivo y el fundamento de derecho, aportará la prueba correspondiente y remitirá de inmediato el expediente al órgano decisor.
+El órgano decisor resolverá de manera motivada y por escrito, sin mayor trámite y con prioridad. Si la inhibitoria fuera declarada procedente, designará en la misma resolución a quien le corresponda asumir la instrucción del procedimiento.
+Rechazada la inhibitoria, la persona que la formuló quedará habilitada para el conocimiento del asunto.
+ARTÍCULO 32- Trámite de la inhibitoria del órgano decisor y el Tribunal Administrativo Sancionador de Apelación
+Cuando el motivo de impedimento afectare a un órgano decisor o al Tribunal Administrativo Sancionador de Apelación, se procederá en la forma prevista por el artículo anterior y con los siguientes criterios:
+1- Si se tratare de una persona miembro de una sección o cuerpo colegiado de los órganos referidos, su resolución corresponderá a la restante integración por simple mayoría sin que para tal efecto sean aplicables las reglas del cuórum estructural.
+2- Si la causal comprendiere a todas las personas que integran la sección o cuerpo colegiado, su resolución corresponderá a otra conformación colegiada dentro del mismo órgano o, en su defecto, a las personas suplentes que se designen conforme lo dispone la Ley Orgánica del Poder Judicial.
+3- Si se tratare de una dirección de un órgano auxiliar de justicia, lo conocerá el Tribunal Administrativo Sancionador.
+ARTÍCULO 33- Recusación
+Las partes e intervinientes podrán recusar a quien integre el órgano director, decisor o el Tribunal Administrativo Sancionador de Apelación, cuando estimen que concurre una causal por la que debió inhibirse.
+ARTÍCULO 34- Trámite de la recusación
+La recusación deberá formularse tan pronto se tenga conocimiento de la causal en que se funde; se hará por escrito, expresando el motivo en que se basa y refiriendo o aportando la prueba correspondiente. También podrá formularse de manera oral, durante la comparecencia oral, siempre que cumpla los requisitos referidos.
+Interpuesta la recusación, si contra quien se dirige acepta la causal, se inhibirá; si la niega, lo indicará así por escrito y procederá en la forma dispuesta en los artículos anteriores.
+El órgano encargado de resolver la recusación podrá recabar informes y la prueba que considere oportunos dentro de un plazo máximo de cinco días; resolverá en la forma y términos señalados en los artículos anteriores.
+ARTÍCULO 35- Efectos de la recusación
+La solicitud de recusación suspenderá la práctica de los actos del procedimiento a cargo de la persona funcionaria recusada. Serán inválidos los actos administrativos que hayan sido emitidos por quien se encuentre en un motivo de inhibitoria debidamente declarada.
+ARTÍCULO 36- Recursos
+Las resoluciones que se dicten con motivo de las inhibitorias no tendrán recurso alguno; las que emitan pronunciamiento sobre recusaciones tendrán recurso de apelación.
+ARTÍCULO 37- Deber de votación
+Tratándose de un órgano decisor colegiado, de no existir causal de impedimento, es obligación de quienes lo integren ejercer el voto sin que exista la posibilidad de abstenerse.
+CAPÍTULO II
+Competencias sancionadoras
+SECCIÓN PRIMERA
+Normas generales
+ARTÍCULO 38- Criterios determinantes de la competencia
+La competencia de los órganos con potestad sancionadora se determinará de acuerdo con los siguientes criterios:
+1- Puesto o cargo que desempeñaba la persona al momento de la comisión del hecho que constituye falta.
+2- La posible sanción a imponer, según lo dispuesto en el artículo 67 de esta ley.
+ARTÍCULO 39- Perpetuidad de la competencia
+Los cambios en cuanto al puesto o cargo que desempeñe la persona, sean por nombramiento en propiedad o interino, traslado, permuta, reubicación, ascenso o cualquier otro movimiento de personal, no modificarán la competencia que se determine conforme los criterios establecidos en el artículo anterior; salvo que el cambio de puesto o cargo sea hacia uno cuyo régimen sancionador es exclusivo de la Corte Plena, caso en el cual conocerá ese órgano.
+ARTÍCULO 40- Incompetencia
+En cualquier estado del procedimiento previo al cierre de la fase constitutiva, el órgano decisor podrá, de oficio o a gestión de parte, determinar su falta de competencia para resolver respecto a la aplicación del régimen sancionador; emitirá resolución fundada al respecto y remitirá las actuaciones al órgano correspondiente.
+El órgano que en definitiva resulte competente continuará el procedimiento y mantendrá todo lo actuado, salvo que ello no sea jurídicamente posible.
+ARTÍCULO 41- Conflictos de competencia
+Si el órgano que recibe las actuaciones discrepa del criterio expuesto para remitirle la competencia, elevará las actuaciones al Tribunal Administrativo Sancionador de Apelación, a fin de que resuelva el conflicto de competencia. Estos trámites no suspenderán el procedimiento.
+SECCIÓN SEGUNDA
+Medios para el ejercicio de la competencia sancionadora
+ARTÍCULO 42- Potestad de instrucción e investigación
+Los órganos directores de los procedimientos regidos por esta ley tendrán la potestad de practicar todos los actos de instrucción y diligencias de investigación necesarias para el esclarecimiento de la verdad real de los hechos y la determinación de responsabilidades; con las excepciones dispuestas en esta ley, tendrán la potestad de resolver todas las cuestiones interlocutorias surgidas durante la tramitación del procedimiento, con el fin de lograr el correcto desarrollo de este.
+Los órganos directores podrán contar con la asistencia de la Unidad de Auxiliares de Investigación prevista en el artículo 77 de esta ley, para la realización de las diligencias que resulten necesarias, quienes actuarán bajo la dirección del órgano director.
+El órgano director puede hacerse asesorar por profesionales en la materia que se estime pertinente, quienes estarán cubiertos por el deber de confidencialidad regulado en el artículo 19 de esta ley.
+ARTÍCULO 43- Facultades de inspección
+Los órganos directores podrán realizar cuantas inspecciones sean necesarias para la debida aplicación del régimen sancionador, requiriendo la autorización judicial cuando así corresponda.
+Para ello tendrán las siguientes facultades de inspección:
+1- Acceder a cualquier local, instalación o terreno del Poder Judicial.
+2- Verificar toda clase de libros, registros, expedientes judiciales u otros documentos que no tengan carácter privado o confidencial, que sean relativos a la actividad de que se trate, cualquiera que sea su soporte material, incluidos los programas informáticos y los archivos magnéticos, ópticos o de cualquier otra clase.
+3- Hacer u obtener copias o extractos, en cualquier formato, de dichos libros, registros, expedientes judiciales o documentos.
+4- Retener por un plazo máximo de diez días los libros o documentos mencionados en el inciso 2.
+5- Precintar todos los locales, libros o documentos y demás bienes del Poder Judicial durante el tiempo y en la medida en que sea necesario para la inspección.
+6- Solicitar a cualquier persona servidora del Poder Judicial que rinda informe sobre hechos o documentos relacionados con el objeto y la finalidad de la inspección y guardar constancia de sus respuestas.
+7- La regulada en el artículo 139, siguientes y concordantes de esta ley.
+Las personas funcionarias encargadas de la diligencia levantarán acta de sus actuaciones y harán prueba, salvo que se acredite lo contrario, de los hechos que motiven su formalización.
+Los datos e informaciones obtenidos sólo podrán ser utilizados por el órgano director o decisor para las finalidades previstas en esta ley.
+ARTÍCULO 44- Requerimientos de información y deber de secreto
+Toda persona física o jurídica y los órganos de cualquier Administración Pública quedan sujetos al deber de colaboración con los órganos directores o decisores de procedimientos sancionadores del Poder Judicial debidamente acreditados para tal diligencia; están obligados a proporcionar, a requerimiento de esta y dentro del plazo que se les confiera, toda clase de datos e informaciones de que dispongan y que puedan resultar necesarias para el desarrollo de las funciones de dichos órganos; lo anterior, con las limitaciones que el ordenamiento jurídico establece.
+Los requerimientos de información deberán estar motivados y ser proporcionados al fin perseguido. En los requerimientos que dicte al efecto, se expondrá de forma detallada y concreta el contenido de la información que se vaya a solicitar, especificando de manera justificada la pertinencia de tal información y el uso que pretende hacerse de esta.
+Los datos e informaciones que tengan carácter confidencial, obtenidos por los órganos instructores o decisores en el desempeño de sus funciones conforme a las reglas contempladas en esta ley, solo podrán ser cedidos a los tribunales que los soliciten a efectos de los procesos judiciales correspondientes, sin perjuicio del acceso al expediente que tendrá la persona encausada y su defensa técnica. Quien tenga conocimiento de estos datos estará obligado a guardar secreto respecto de estos. Sin perjuicio de las responsabilidades penales y civiles que pudieran corresponder, la violación del deber de secreto se considerará falta grave.
+ARTÍCULO 45- Acceso a los registros y base de datos del Poder Judicial
+Los órganos instructores o decisores tendrán acceso a los registros y a las bases de datos que obren en poder de todo órgano del Poder Judicial, salvo disposición legal en contrario. A estos efectos, se realizarán los desarrollos informáticos oportunos con el fin de facilitar el acceso electrónico, de forma que se puedan realizar consultas sobre información contenidas en las bases de datos y registros en condiciones que mantengan la seguridad, confidencialidad e integridad de la información.
+ARTÍCULO 46- Entrevistas
+El deber de colaboración con los órganos directores incluye la facultad de realizar entrevistas a cualquier persona física sea o no funcionaria del Poder Judicial, cuando puedan estar en posesión de datos e informaciones que puedan resultar necesarios para la aplicación de lo previsto en la presente ley.
+La realización de entrevistas previa convocatoria se motivará en el acto por el que, en su caso, se convoque al entrevistado.
+Las entrevistas no podrán obligar a sus destinatarios a declarar contra sí mismos ni a admitir la comisión de una falta, conforme el derecho de abstención que regula el ordenamiento jurídico. Quienes se entrevisten podrán contar con la presencia de asistencia letrada de su elección durante la celebración de la diligencia.
+Las entrevistas se realizarán en las dependencias de los órganos instructores. Asimismo, podrán realizarse en la sede de una empresa o entidad previo consentimiento de esta o a través de medios tecnológicos que, mediante la videoconferencia o nuevos mecanismos tecnológicos autorizados por el Poder Judicial, permitan la comunicación bidireccional y simultánea de imagen y sonido, la interacción visual, auditiva y verbal entre quien se entreviste y la persona instructora.
+Cuando la naturaleza de la actuación lo requiera, las entrevistas podrán ser grabadas y transcritas. Asimismo, el personal encargado de la entrevista podrá levantar acta de esta en la que quede constancia de su contenido. La persona entrevistada podrá, en su caso, solicitar una copia del acta, grabación o transcripción de la entrevista.
+ARTÍCULO 47- Potestad sancionadora
+Los órganos decisores podrán imponer las sanciones definidas en esta ley mediante acto debidamente motivado. Además, si razones de necesidad o conveniencia evidente exigen que el procedimiento sea decidido antes de estar listo para el acto final, podrá adoptarse a pedido del órgano director o de una de las partes una decisión provisional distinta de una sanción, advirtiéndolo expresamente en los términos establecidos por la Ley General de la Administración Pública.
+Todo acto final de procedimiento podrá contener además de las sanciones, recomendaciones a los órganos correspondientes en los términos del artículo 176 de esta ley.
+En su caso, en el acto final, el órgano decisor podrá poner en conocimiento de cualquier instancia del Poder Judicial, información que resulte relevante para asegurar la eficiencia, cumplimiento y decoro de las funciones encomendadas al Poder Judicial, así como garantizar a la ciudadanía una correcta administración de justicia.
+ARTÍCULO 48- Vigilancia del cumplimiento de las obligaciones, actos y acuerdos
+Los órganos decisores vigilarán la ejecución y el cumplimiento de los actos o acuerdos administrativos que se adopten en aplicación de esta ley, sean de índole cautelar como final.
+La vigilancia se llevará a cabo en los términos que se establezcan reglamentariamente y en el propio acto que ponga fin al procedimiento. Para ello, los órganos decisores podrán solicitar la cooperación de las instancias del Poder Judicial que corresponda.
+SECCIÓN TERCERA
+Corte Plena
+ARTÍCULO 49- Competencia
+Corresponde a la Corte Plena ejercer el régimen sancionador únicamente sobre las siguientes personas:
+1- Integrantes titulares de la Corte Suprema de Justicia y del Consejo Superior del Poder Judicial.
+2- Integrantes suplentes de la Corte Suprema de Justicia y del Consejo Superior del Poder Judicial, cuando la conducta investigada se haya realizado ejerciendo el cargo suplente, en los demás casos la competencia corresponderá al órgano respectivo.
+3- Fiscal o fiscala general, y fiscal o fiscala general subrogante de elección por Corte Plena cuando la conducta investigada se haya realizado ejerciendo el cargo suplente, en los demás casos la competencia corresponderá al órgano respectivo.
+4- Director o directora y subdirector o subdirectora del Organismo de Investigación Judicial.
+5- Director o directora y subdirector o subdirectora de la Defensa Pública.
+6- Auditor o auditora general y subauditor o subauditora general del Poder Judicial.
+7- Jueces y juezas decisoras del Tribunal Administrativo Sancionador y del Tribunal Administrativo Sancionador de Apelación.
+También le corresponde a la Corte Plena conocer los recursos extraordinarios de revisión que se interpongan en contra de los actos finales con sanción que se encuentran en firme, dictados en los procedimientos sancionadores de su competencia.
+ARTÍCULO 50- Cuórum estructural
+El cuórum mínimo para que la Corte Plena se constituya como órgano decisor, es de quince integrantes.
+ARTÍCULO 51- Carácter de las votaciones
+Las votaciones en que se discutan aspectos relacionados con el ejercicio del régimen sancionador de magistrados y magistradas serán secretas conforme el artículo 165 de la Constitución Política. En los restantes casos en que le corresponda a Corte Plena ejercer el régimen sancionador deberá constar la forma en que votaron sus miembros.
+ARTÍCULO 52- Cuórum funcional
+La sanción de amonestación escrita que se imponga a magistrados y magistradas titulares se adoptará por mayoría simple del total de quienes integran Corte Plena. Para decretar la sanción de suspensión el acuerdo habrá de tomarse por dos tercios del total de sus miembros conforme el artículo 165 de la Constitución Política; si esa misma cantidad de integrantes considerare que lo procedente es el despido sin responsabilidad patronal, así lo comunicará a la Asamblea Legislativa, para que resuelva lo que corresponda.
+Tratándose de magistrados y magistradas suplentes, se aplicarán las reglas del párrafo anterior. Para la imposición de la sanción de exclusión temporal de la lista de suplentes el acuerdo habrá de tomarse por dos tercios del total de quienes integren la Corte Plena y cuando sea la exclusión definitiva por diez años, deberá comunicarlo a la Asamblea Legislativa, para que resuelva lo que corresponda.
+En los demás casos que corresponde a la Corte Plena ejercer el régimen sancionador, bastará mayoría simple para imponer sanción; salvo cuando se trate de decretar el despido sin responsabilidad patronal del fiscal o la fiscala general o cualquier otro puesto que por disposición legal requiera del voto de las dos terceras partes del total de integrantes de ese órgano.
+Las demás resoluciones que se dicten por parte de Corte Plena en ejercicio del régimen sancionador se tomarán por mayoría simple del total de sus miembros, salvo lo dispuesto en el artículo 32 inciso 1 de esta ley.
+ARTÍCULO 53- Órgano director
+Cuando el procedimiento se dirija contra una persona magistrada, la Corte Plena, mediante estricto rol que se llevará para tales efectos, designará a uno de sus integrantes como órgano director, quien no integrará la Corte Plena como órgano decisor en el caso concreto. Cuando la complejidad o la naturaleza del asunto lo amerite a juicio de la Corte, se podrá integrar dicho órgano en forma colegiada, con hasta tres miembros; igual integración se hará cuando la ley así lo establezca; en estos casos tampoco integrarán la Corte Plena como órgano decisor en el caso concreto.
+En los demás casos que son competencia de la Corte Plena, una persona jueza del Tribunal Administrativo Sancionador se desempeñará como órgano director del procedimiento y preparará un informe sobre los hechos investigados, facultades que ejercerá con total independencia funcional y de criterio. La designación se realizará mediante un estricto rol que se llevará para tales efectos. Cuando la investigación se dirija contra la persona auditora general o subauditora general, el órgano director deberá cumplir, además de los procedimientos que se regulan en esta ley, aquellos que se establecen en la normativa especializada.
+SECCIÓN CUARTA
+Presidencia de la Corte Suprema de Justicia
+ARTÍCULO 54- Potestad cautelar de la Presidencia de la Corte
+Sin perjuicio de las competencias dispuestas en esta ley, en casos de extrema urgencia, quien presida la Corte Suprema de Justicia, mediante acto debidamente motivado podrá disponer de manera provisionalísima, como medida cautelar, la permuta, el traslado y aun suspender preventivamente del ejercicio de sus funciones, hasta por ocho días, con goce de salario, a las personas servidoras judiciales, en los casos en que puedan ser sometidas al régimen sancionador, previo a dar cuenta a la Corte Plena, al Tribunal Administrativo Sancionador o a la dirección del órgano auxiliar de justicia con competencia sancionadora, para que, siguiendo el debido proceso, en su caso den inicio y tramiten el procedimiento, así como resuelvan lo que corresponda en definitiva respecto a la medida cautelar. En el caso de que el órgano competente decida no iniciar el procedimiento, quedará sin efecto alguno la medida cautelar provisionalísima adoptada por la Presidencia de la Corte.
+ARTÍCULO 55- Potestad de valoración preliminar
+Corresponderá a quien presida la Corte valorar, de manera preliminar las denuncias contra las personas servidoras señaladas en el artículo 49 de esta ley y podrá decretar su rechazo de plano, cuando se estuviera ante alguno de los supuestos contemplados en el artículo 166 de esta ley.
+A estos efectos, podrá hacerse asesorar por las personas servidoras judiciales que estime pertinente, quienes estarán cubiertos por el deber de confidencialidad regulado en el artículo 19 de esta ley.
+SECCIÓN QUINTA
+Asamblea Legislativa
+ARTÍCULO 56- Competencia
+En los casos en que dos tercios del total de los miembros de Corte Plena resuelva que procede imponer a una persona magistrada las sanciones de despido sin responsabilidad patronal o la exclusión definitiva de la lista de personas magistradas suplentes, corresponderá a la Asamblea Legislativa resolver en definitiva el asunto.
+El procedimiento a seguir en estos casos será el establecido en el Reglamento de la Asamblea Legislativa vigente.
+SECCIÓN SEXTA
+Tribunal Administrativo Sancionador del Poder Judicial
+ARTÍCULO 57- Competencia
+Corresponde al Tribunal Administrativo Sancionador ejercer el régimen sancionador sobre todo el personal judicial, con excepción de quienes se señalan en el artículo 49 de esta ley y sin perjuicio de las atribuciones que tengan en la materia otros órganos del Poder Judicial.
+ARTÍCULO 58- Integración colegiada
+El Tribunal Administrativo Sancionador se constituirá como cuerpo colegiado, integrado con tres juezas o jueces decisores, para conocer de los siguientes asuntos:
+1- De la aplicación del régimen sancionador cuando la falta investigada involucre corrupción, acoso sexual, acoso laboral, pueda ser calificada como grave, o la ley así lo establezca.
+2- De las solicitudes de desestimación cuando la falta denunciada involucre corrupción.
+3- De los impedimentos, las inhibitorias y las recusaciones, de sus integrantes en propiedad y suplentes.
+ARTÍCULO 59- Integración unipersonal
+El Tribunal Administrativo Sancionador se constituirá de manera unipersonal, para conocer de los siguientes asuntos:
+1- De la aplicación del régimen sancionador cuando la falta pueda ser calificada como leve y no involucre ninguno de los criterios dispuestos en el inciso 1 del artículo anterior.
+2- De la imposición de medidas cautelares a la persona servidora judicial sujeta al procedimiento, sin perjuicio de lo regulado en el artículo 54 de esta ley.
+3- De las solicitudes de desestimación.
+4- De la resolución que decreta la incompetencia a otro órgano con potestad sancionadora o de la que ordena elevar el conflicto de competencia.
+5- De los impedimentos, las inhibitorias y las recusaciones, de las direcciones de órganos auxiliares de justicia.
+ARTÍCULO 60- Conformación
+El Tribunal Administrativo Sancionador contará con las personas juezas decisoras, instructoras y los demás puestos que se requieran para su debido funcionamiento, en el número y en los lugares que sean necesarios para el mejor servicio, según lo disponga la Corte Plena.
+Las personas juezas decisoras actuarán individualmente en el desempeño de sus funciones, sin ninguna subordinación, con total independencia funcional y de criterio; actuarán como cuerpo colegiado cuando se trate de aplicar el régimen sancionador en los casos previstos en esta ley o dictar medidas referentes a la organización de la oficina y del personal subalterno.
+La Corte Plena designará por períodos de tres años y con la posibilidad de reelección, a una persona jueza coordinadora de la oficina, quien tendrá facultades para resolver de forma inmediata los problemas administrativos que se presenten en el despacho; sin embargo, sus decisiones no podrán prevalecer sobre las que dicte el cuerpo colegiado por mayoría. Quien ejerza este cargo deberá comunicar a quien presida la Corte Plena los asuntos que puedan afectar el buen servicio y la imagen institucional, de que tenga noticia la oficina a su cargo. La persona que ocupe este cargo de coordinación devengará un incentivo salarial respecto de las demás personas juezas decisoras, por las labores administrativas que debe desempeñar.
+ARTÍCULO 61- Requisitos de las personas juezas decisoras
+Para ser miembro del Tribunal Administrativo Sancionador se requiere:
+1- Tener al menos treinta años de edad.
+2- Poseer el título o grado académico de licenciatura en derecho e incorporado al colegio profesional respectivo.
+3- Contar con al menos cinco años de experiencia profesional en derecho en temas afines a la materia.
+4- Ser de reconocida solvencia moral.
+ARTÍCULO 62- Nombramientos de las personas juezas decisoras
+La Corte Plena nombrará a las personas juezas decisoras por períodos de seis años y podrá reelegirlas. Los nombramientos que se hagan por haber quedado una vacante se harán por un período completo.
+ARTÍCULO 63- Órgano director
+Las personas instructoras del Tribunal Administrativo Sancionador fungirán como órgano director de los procedimientos que les correspondan resolver a dicho despacho; para tales efectos, tendrán todas las facultades y deberes de investigación, instrucción y tramitación que se establecen en esta ley y el ordenamiento jurídico. Para el ejercicio de dichas funciones actuarán individualmente sin ninguna subordinación, con total independencia funcional y de criterio. Tratándose de asuntos que puedan afectar el buen servicio y la imagen institucional, deberán informar al respecto a quien coordine el Tribunal.
+ARTÍCULO 64- Requisitos de las personas instructoras
+Para ser instructora o instructor del Tribunal Administrativo Sancionador se requiere:
+1- Ser mayor de edad.
+2- Poseer el título o grado académico de licenciatura en derecho e incorporado al colegio profesional respectivo.
+3- Contar con al menos cuatro años de ejercicio de la profesión de abogado o abogada, o en los casos de personas servidoras judiciales, con al menos dos años de práctica judicial.
+4- Ser de reconocida solvencia moral.
+ARTÍCULO 65- Informe de labores del Tribunal Administrativo Sancionador
+El Tribunal Administrativo Sancionador deberá presentar al Consejo Superior, en el mes de enero de cada año, un informe administrativo de su labor. Las personas juezas decisoras deberán rendir ese informe conjuntamente.
+ARTÍCULO 66- Traslado y remoción del personal del Tribunal Administrativo Sancionador
+La Corte Plena podrá trasladar o remover a las personas juezas decisoras o instructoras del Tribunal Administrativo Sancionador aun por pérdida de confianza.
+SECCIÓN SÉTIMA
+Direcciones de órganos auxiliares de justicia
+ARTÍCULO 67- Competencia
+Las direcciones de los órganos auxiliares de justicia podrán ejercer el régimen sancionador sobre el personal a su cargo, cuando por la naturaleza de la falta no deba aplicarse una sanción de suspensión sin goce de salario o exclusión temporal de la lista de suplentes, elegibles o meritorias, mayores de un mes.
+ARTÍCULO 68- Órganos directores
+Constituirán órganos directores y tendrán todas las facultades y deberes de investigación, instrucción y tramitación que se establecen en la ley:
+1- Unidad de Régimen Sancionador del Ministerio Público, para los procedimientos que sean de conocimiento de la Fiscalía General de la República.
+2- Unidad de Régimen Sancionador de la Defensa Pública, para los procedimientos que sean de conocimiento de la Dirección de la Defensa Pública.
+3- Unidad de Régimen Sancionador del Organismo de Investigación Judicial, para los procedimientos que sean de conocimiento de la Dirección del Organismo de Investigación Judicial.
+Estas unidades contarán con el personal que requieran para su debido funcionamiento y que sean necesarios para el mejor servicio, según lo disponga la respectiva dirección.
+Para el ejercicio de sus funciones, los órganos directores no estarán subordinados a las direcciones a que pertenecen y ejercerán las facultades referidas con total independencia funcional y de criterio.
+ARTÍCULO 69- Requisitos de las personas instructoras
+Las personas instructoras que conformen las unidades referidas en el artículo anterior deberán cumplir los mismos requisitos establecidos para quienes cumplen esa función en el Tribunal Administrativo Sancionador.
+SECCIÓN OCTAVA
+Tribunal Administrativo Sancionador de Apelación
+ARTÍCULO 70- Competencia
+Corresponde al Tribunal Administrativo Sancionador de Apelación resolver los recursos de apelación y los recursos extraordinarios de revisión planteados en contra de actos susceptibles de tales impugnaciones, adoptados por el Tribunal Administrativo Sancionador y las Direcciones de órganos auxiliares de justicia.
+ARTÍCULO 71- Integración colegiada
+El Tribunal Administrativo Sancionador de Apelación se constituirá como cuerpo colegiado, integrado con tres juezas o jueces, para conocer de los siguientes asuntos:
+1- De los recursos de apelación contra las resoluciones finales dictadas por el Tribunal Administrativo Sancionador.
+2- De los recursos de apelación contra las desestimaciones dictadas por el Tribunal Administrativo Sancionador, cuando la falta denunciada involucre corrupción.
+3- De los recursos extraordinarios de revisión contra los actos finales con sanción que se encuentran en firme, dictados por el Tribunal Administrativo Sancionador o las direcciones de órganos auxiliares de justicia.
+4- De los impedimentos, las inhibitorias y las recusaciones, de sus integrantes en propiedad y suplentes.
+5- De los demás asuntos que la ley establezca.
+ARTÍCULO 72- Integración unipersonal
+El Tribunal Administrativo Sancionador de Apelación se constituirá de manera unipersonal, para conocer de los siguientes asuntos:
+1- De los recursos de apelación contra las resoluciones finales dictadas por las Direcciones de órganos auxiliares de justicia.
+2- De los recursos de apelación contra las desestimaciones dictadas por el Tribunal Administrativo Sancionador o las direcciones de órganos auxiliares de justicia, salvo que la falta denunciada involucre corrupción.
+3- De los recursos de apelación contra los rechazos de plano dictados por los órganos directores del Tribunal Administrativo Sancionador o de las direcciones de órganos auxiliares de justicia.
+4- De los recursos de apelación contra las resoluciones que decidan sobre medidas cautelares dictadas por el Tribunal Administrativo Sancionador o las direcciones de órganos auxiliares de justicia.
+5- De los recursos de apelación contra las resoluciones que denieguen el conocimiento y acceso a una pieza del expediente, dictadas por el Tribunal Administrativo Sancionador o las direcciones de órganos auxiliares de justicia.
+6- De los conflictos de competencia, excepto en los supuestos que tengan relación con las potestades disciplinarias de Corte Plena.
+7- De los demás asuntos que se determinen por ley.
+ARTÍCULO 73- Conformación
+El Tribunal Administrativo Sancionador de Apelación contará con las personas juezas de apelación y los demás puestos que se requieran para su debido funcionamiento, en el número que sean necesarios para el mejor servicio, según lo disponga la Corte Plena.
+Las personas juezas de apelación actuarán individualmente en el desempeño de sus funciones, sin ninguna subordinación entre sí y como cuerpo colegiado en los casos previstos en esta ley o a fin de dictar medidas referentes a la organización de la oficina y del personal subalterno.
+La Corte Plena designará por períodos de tres años y con la posibilidad de reelección, a una persona jueza coordinadora de la oficina, quien tendrá facultades para resolver de forma inmediata los problemas administrativos que se presenten en el despacho; sin embargo, sus decisiones no pueden prevalecer sobre las que dicte el cuerpo colegiado por mayoría. Quien ejerza este cargo deberá comunicar a quien presida la Corte Plena los asuntos que puedan afectar el buen servicio y la imagen institucional, de que tenga noticia la oficina a su cargo. La persona que ocupe este cargo de coordinación devengará un incentivo salarial respecto de las demás personas juezas decisoras, por las labores administrativas que debe desempeñar.
+ARTÍCULO 74- Requisitos de las personas juezas de apelación
+Para ser juez o jueza del Tribunal Administrativo Sancionador de Apelación se requiere:
+1- Tener al menos treinta y cinco años de edad.
+2- Poseer el título o grado académico de licenciatura en derecho e incorporado al colegio profesional respectivo.
+3- Contar con al menos seis años de experiencia profesional en derecho en temas afines a la materia, o al menos dos años como persona jueza decisora del Tribunal Administrativo Sancionador.
+4- Ser de reconocida solvencia moral.
+ARTÍCULO 75- Nombramientos de las personas juezas de apelación
+La Corte Plena nombrará a las personas juezas de apelación por períodos de seis años y podrá reelegirlas. Los nombramientos que se hagan por haber quedado una vacante se harán por un período completo.
+ARTÍCULO 76- Informe de labores del Tribunal Administrativo Sancionador de Apelación
+El Tribunal Administrativo Sancionador de Apelación deberá presentar al Consejo Superior, en el mes de enero de cada año, un informe administrativo de su labor. Las personas juezas del tribunal deberán rendir ese informe conjuntamente.
+ARTÍCULO 77- Traslado y remoción del personal del Tribunal Administrativo Sancionador de Apelación
+La Corte Plena podrá trasladar o remover a las personas juezas del Tribunal Administrativo Sancionador de Apelación aun por pérdida de confianza.
+SECCIÓN NOVENA
+Auxiliares de Investigación
+ARTÍCULO 78- Unidad de auxiliares de investigación
+Existirá una Unidad de Auxiliares de Investigación; dependerá orgánicamente del Tribunal Administrativo Sancionador, pero quienes la integran actuarán bajo la dirección de quien ostente la función de órgano director.
+SECCIÓN DÉCIMA
+Comisión de Relaciones Laborales
+ARTÍCULO 79- Comisión de Relaciones Laborales
+La comisión a que hace referencia el artículo 66 de la Ley Orgánica del Poder Judicial deberá, a petición de parte interesada, conocer y emitir dictamen no vinculante sobre los procedimientos sancionadores seguidos contra personas servidoras judiciales y quienes integren las listas de suplentes, elegibles o meritorias para diferentes puestos en el Poder Judicial, de previo a que esos asuntos sean conocidos por el órgano decisor que dictará el acto final.
+CAPÍTULO III
+Sujetos del procedimiento
+SECCIÓN PRIMERA
+Partes del procedimiento
+ARTÍCULO 80- Partes del procedimiento
+Serán partes en el procedimiento la persona encausada y la persona denunciante cualificado.
+ARTÍCULO 81- Persona encausada
+Se denominará así a la persona servidora judicial o quien integre una lista de suplentes, elegibles o meritorios sin nombramiento activo en el Poder Judicial, que pueda resultar directamente afectada por el acto final dictado en un procedimiento regulado en esta ley.
+ARTÍCULO 82- Denunciante cualificado
+Será denunciante cualificado aquella persona, física o jurídica, privada o pública, directamente afectada por la conducta denunciada, que pone en conocimiento del órgano competente el presunto hecho que configura falta, siempre que solicite ostentar tal condición.
+La persona denunciante cualificado tendrá la condición de parte en el procedimiento, le asistirán todos los derechos del debido proceso, de modo que podrá presentar alegatos, ofrecer prueba, participar en la producción de esta, desistir de la denuncia, designar representación técnica, pactar una terminación convencional del asunto por medio de justicia restaurativa y presentar los recursos ordinarios dispuestos en esta ley.
+Corresponde a la persona denunciante demostrar por medios idóneos la afectación directa causada por la conducta denunciada, para constituirse como denunciante cualificado, de lo contrario se reputará como denunciante simple.
+ARTÍCULO 83- Denunciante simple
+Será denunciante simple aquella persona, física o jurídica, privada o pública, sin ser afectada directamente por la conducta, que pone en conocimiento del órgano disciplinario el presunto hecho que configura falta.
+La persona denunciante simple no tendrá la condición de parte en el procedimiento, por lo que no le asisten los derechos del debido proceso y únicamente se le deberá informar si su denuncia será tramitada y notificar el resultado, cuando haya aportado un medio para recibir notificaciones; sin embargo, al no ser parte del procedimiento no contará con el derecho de presentar recurso alguno.
+SECCIÓN SEGUNDA
+Otros intervinientes
+ARTÍCULO 84- Patrocinio letrado
+Las partes podrán contar con patrocinio letrado. La firma de la persona profesional en derecho autenticante implicará, salvo manifestación expresa en contrario, que asume la dirección profesional del procedimiento con las facultades de actuar en nombre de la parte para todo lo que le beneficie, siempre y cuando no se requiera su participación personal.
+Quien ejerza el patrocinio letrado será responsable por el contenido de sus gestiones o de aquellas que autentica.
+ARTÍCULO 85- Defensa técnica
+La persona encausada podrá apersonar defensa técnica de su confianza a su costo, o solicitar los servicios de la Defensa Pública conforme a lo dispuesto en el artículo 152 de la Ley Orgánica del Poder Judicial.
+El apersonamiento de Defensa Pública no requerirá de la firma de la persona encausada y procederá únicamente cuando la presunta falta que provoca la apertura del procedimiento esté directamente ligada a las funciones propias y deberes del cargo de la persona encausada. Resultará improcedente cuando el procedimiento haya dado inicio para investigar una falta separable del ejercicio de las funciones propias y deberes del cargo, aun cuando haya sido cometida dentro del servicio público o jornada laboral.
+El derecho de contar con los servicios de la Defensa Pública se pierde cuando se extingue la relación de servicio entre la persona encausada y el Poder Judicial, en cuyo supuesto podrá apersonar defensa técnica de su confianza a su costo, la cual asumirá el procedimiento en el estado que se encuentra.
+ARTÍCULO 86- Representación técnica de la persona denunciante cualificado
+Quien constituya denunciante cualificado podrá designar representación técnica de su confianza a su costo, a fin de ejercer los derechos del debido proceso que le asisten.
+En los procedimientos que se investiguen faltas que puedan constituir hostigamiento laboral, la persona denunciante cualificado podrá solicitar que la representación técnica la ejerza la Defensa Pública; tratándose de hostigamiento sexual, recaerá sobre profesional en derecho de la Secretaría Técnica de Género del Poder Judicial.
+ARTÍCULO 87- Coadyuvantes
+La coadyuvancia se regirá de acuerdo con lo dispuesto en la Ley General de la Administración Pública al respecto.
+SECCIÓN TERCERA
+Deberes de las partes y otros intervinientes
+ARTÍCULO 88- Deberes de las partes y otros intervinientes
+Las partes y demás intervinientes deberán ajustar su conducta a la buena fe, a la lealtad, a la probidad, al uso racional del sistema procedimental y al respeto debido de los sujetos procedimentales, evitando todo comportamiento malicioso, temerario, negligente, dilatorio, irrespetuoso o fraudulento.
+CAPÍTULO IV
+La actividad procedimental
+SECCIÓN PRIMERA
+Formalidades del procedimiento
+ARTÍCULO 89- Idioma
+Los actos del procedimiento deberán realizarse en idioma español. Cuando una de las partes o declarantes no hable o comprenda el idioma, el Poder Judicial asegurará el auxilio de persona traductora o intérprete oficial.
+La parte que aporte un documento redactado en idioma distinto del español deberá acompañarlo con una traducción, salvo en el caso de los idiomas indígenas, cuya traducción correrá a cargo del Poder Judicial.
+Cuando se presente en el despacho una persona usuaria con discapacidad que desee formular una denuncia, se realizará una entrevista preliminar en un lugar adecuado. Se consultará sobre el tipo de discapacidad que tiene y cuáles son los apoyos que requiere.
+Posterior a la entrevista, se comunicará a la mayor brevedad con el órgano director que por rol le corresponda brindar la atención primaria, quien deberá utilizar también los mecanismos de apoyo adecuados para la persona denunciante con discapacidad con la finalidad de procurar la autonomía, la información, la participación y la igualdad en el procedimiento.
+De conformidad con las políticas institucionales, el órgano que recibe la denuncia está en el deber de conocer el bloque de protección de las personas con discapacidad y aplicar lo que corresponda conforme a los debidos ajustes y apoyos requeridos indicados por la persona en situación de discapacidad.
+ARTÍCULO 90- Tiempo
+Todos los días y horas son hábiles para realizar las actuaciones del procedimiento.
+ARTÍCULO 91- Lugar
+Las actuaciones del procedimiento se realizarán en la sede del órgano respectivo o en cualquier parte del territorio nacional.
+ARTÍCULO 92- Medios tecnológicos
+Los distintos actos del procedimiento, aun la recepción de prueba, se podrán realizar por los medios tecnológicos autorizados por el Poder Judicial, siempre que permitan la comunicación bidireccional y simultánea de imagen y sonido, la interacción visual, auditiva y verbal entre quienes participen.
+Cuando por medios tecnológicos se realicen actos del procedimiento en el que las partes o la fuente de prueba se encontrara en el extranjero, se aplicarán las formalidades establecidas en esta ley y el acto se tendrá como realizado en el territorio nacional para todos sus efectos.
+SECCIÓN SEGUNDA
+El expediente
+ARTÍCULO 93- Conformación del expediente
+Las gestiones, actos y actuaciones del procedimiento darán lugar a la formación de una carpeta informática ordenada secuencial y cronológicamente. Se formará, consultará y conservará por medios tecnológicos.
+En casos excepcionales y cuando fuere absolutamente indispensable, el órgano competente podrá disponer de manera fundada, la confección de un expediente físico.
+ARTÍCULO 94- Acceso al expediente
+Las partes y demás intervinientes tendrán acceso al expediente mediante los medios tecnológicos dispuestos por la Corte Suprema de Justicia podrán examinar, leer y copiar cualquier pieza que conste en este. Asimismo, podrán solicitar certificación de las copias que les interesen, pero el costo de estas correrá por cuenta de quien las solicite.
+El acceso al expediente podrá restringirse, conforme lo dispuesto en el artículo siguiente.
+ARTÍCULO 95- Restricciones del acceso al expediente
+El órgano competente podrá denegar el conocimiento y acceso a una pieza del expediente, mediante resolución fundada, conforme las siguientes restricciones:
+1- Quien constituya denunciante simple no tendrá acceso a las piezas del expediente.
+2- No habrá acceso a los proyectos de dictámenes de órganos consultivos ni proyectos de resolución. Tratándose de órganos colegiados, tampoco habrá acceso a los informes del órgano ponente que servirán como base de los actos finales y definitivos.
+3- En los procedimientos por infracciones al Régimen de la Hacienda Pública y corrupción, las comparecencias serán orales y públicas; sin embargo, el órgano director podrá declararlas privadas, total o parcialmente, por razones de decoro, por derecho a la intimidad de las partes o de terceras personas, cuando estime que se entorpece la recopilación de evidencia o peligre un secreto cuya revelación sea castigada penalmente; y
+4- Cualquier otra que la ley así establezca.
+Contra la resolución que deniegue el acceso a las piezas del expediente cabrá el recurso de revocatoria, según se disponga en esta ley.
+ARTÍCULO 96- Reposición del expediente
+Si se llegare a perder, dañar o extraviar el expediente o una de sus piezas, el órgano competente podrá solicitar a la parte la copia del recibido de la información extraviada, dañada o perdida, siempre y cuando no se pueda obtener por el mismo órgano. En todo caso el órgano competente no podrá trasladar a la parte los gastos que implique la reposición de documentos.
+SECCIÓN TERCERA
+Actos y resoluciones del procedimiento
+ARTÍCULO 97- Documentación mediante acta
+Cuando un acto del procedimiento deba hacerse constar en un acta, el órgano competente que lo practique la levantará haciendo constar el lugar, fecha y hora, el nombre de las personas que participaron y una descripción exhaustiva de la diligencia realizada. Deberá leerse y firmarse por quienes participaron, inmediatamente después del acto o actuación documentada, salvo cuando el acto se haya realizado por medios tecnológicos, en cuyo caso bastará la firma del órgano respectivo.
+Tratándose de un acto que fuere grabado en audio o en audio y video, el acta podrá ser levantada posteriormente, de manera lacónica y con la sola firma del órgano competente. La grabación de la diligencia deberá conservarse junto con las actuaciones del procedimiento.
+ARTÍCULO 98- Actos
+Las conductas administrativas formales que emita el órgano con potestad sancionadora serán de mero trámite con o sin efecto propio; actos finales cuando pongan fin a la fase constitutiva del procedimiento y serán actos definitivos los que resuelvan un recurso interpuesto en contra del acto final dando por agotada la vía administrativa.
+Los actos se podrán emitir por escrito o de manera oral durante la comparecencia, salvo el acto final que deberá ser escrito. Cuando se emitan por escrito, deberán incluir los nombres y firmas de quienes integraron el órgano; siempre deberán señalar el lugar y fecha en que se dictaron.
+ARTÍCULO 99- Motivación de los actos
+Los actos de mero trámite sin efecto propio no requerirán de una motivación y bastará con la remisión a la norma que las sustenta; los de efecto propio tendrán una motivación sucinta pero suficiente; y los actos que ponen fin a los procedimientos o deciden respecto del fondo de los hechos sujetos al régimen sancionador deberán ser suficientemente fundamentados en las circunstancias de hecho y derecho que llevaron a la decisión del órgano, conforme a las reglas de la sana crítica y a lo planteado por las partes interesadas.
+ARTÍCULO 100- Adición y aclaración
+El órgano competente podrá aclarar cualquier pronunciamiento oscuro, ambiguo o contradictorio que contenga un acto, o adicionar sobre algún punto discutido; tratándose del acto final o definitivo, la adición o aclaración solo procederá respecto de la parte dispositiva.
+Las partes y demás intervinientes podrán solicitar la adición o aclaración solamente de los actos de trámite con efecto propio, el acto final y el acto definitivo; cuando se haya dictado de manera escrita deberán hacerlo dentro de los tres días siguientes; si se dictó de manera oral deberán solicitar y justificarlo de forma oral en el mismo momento y se resolverá de inmediato.
+La solicitud de adición o aclaración interrumpirá el término para interponer los recursos que procedan, el cual se reiniciará una vez notificado lo resuelto.
+ARTÍCULO 101- Errores materiales
+El órgano competente podrá corregir en cualquier momento los errores puramente materiales que contengan los actos administrativos que emitió, con la finalidad de orientar el curso normal del procedimiento o ejecutar el respectivo pronunciamiento y, siempre y cuando, la corrección no implique una modificación sustancial de dicho acto.
+SECCIÓN CUARTA
+Notificaciones y citaciones
+ARTÍCULO 102- Normas aplicables
+La notificación de los actos administrativos dictados en el procedimiento se regirá por lo dispuesto en la Ley de Notificaciones Judiciales, la cual se integrará con el artículo siguiente. Tratándose de una citación de las partes o cualquier tercera persona, se aplicará lo regulado en la Ley General de la Administración Pública.
+ARTÍCULO 103- Notificación del acto inicial de traslado de cargos
+El acto inicial de traslado de cargos se notificará a la persona encausada en la dirección electrónica asignada por el Poder Judicial o en la dirección electrónica personal que la persona denunciada suministró a la Dirección de Gestión Humana, siempre que se garantice la seguridad del acto de comunicación, el debido proceso y el derecho de defensa. Subsidiariamente, se notificará de manera personal, en el domicilio que consta en su expediente de la Dirección de Gestión Humana, su casa de habitación o en su domicilio real o registral.
+SECCIÓN QUINTA
+Términos y plazos
+ARTÍCULO 104- Cómputo
+El cómputo de los términos y plazos del procedimiento se regirá por lo dispuesto en la Ley General de la Administración Pública y la Ley de Notificaciones Judiciales.
+SECCIÓN SEXTA
+Actuaciones de las partes y demás intervinientes
+ARTÍCULO 105- Firma
+Las actuaciones o gestiones escritas de las partes y demás intervinientes deberán estar firmadas de manera gráfica o digital por quien peticiona.
+Cuando la gestión escrita se presente de forma personal por quien la suscribe, se hará la confrontación respectiva de la firma con el documento oficial de identidad. Si quien peticiona no supiera escribir o tuviera imposibilidad física para hacerlo, se hará constar en el escrito y firmará a su ruego otra persona; si tuviera imposibilidad para presentarlo de manera personal deberá la oficina que recibe el documento acreditar la identidad de quien lo presentare mediante la confrontación del documento oficial de identidad.
+Si el escrito se tramita por medios tecnológicos, se requerirá la firma digital, sin perjuicio de nuevas tecnologías cuya autorización se hará de la forma establecida por la ley o por la Corte Suprema de Justicia por medio de reglamento.
+La falta de firma en los términos indicados producirá necesariamente el rechazo y archivo de la gestión.
+ARTÍCULO 106- Presentación
+Las gestiones escritas y demás documentos se presentarán de forma electrónica, directamente en el despacho del órgano al que van dirigidas o en cualquier oficina de recepción de documentos del Poder Judicial. De toda gestión se extenderá inmediatamente acuse de recibo por parte del despacho, por medios tecnológicos cuando ingresen de esa forma, o bien, de forma física caso en el cual los documentos serán escaneados con constancia de que están siendo utilizados en el procedimiento y se devolverán a los interesados, quienes tienen la obligación de custodiarlos y presentarlos al órgano competente, cuando sean requeridos.
+El despacho que reciba una gestión que es competencia de otro órgano, deberá remitirla de forma inmediata a quien corresponda.
+ARTÍCULO 107- Efectos
+Las gestiones escritas producirán efectos el día y hora de su presentación, con independencia de la jornada ordinaria de trabajo del órgano.
+Las que se presenten ante despacho u órgano incompetente, surtirán efecto a partir del momento en que sean recibidas por el órgano que debe conocerlas.
+SECCIÓN SÉTIMA
+Procedimientos conexos y acumulación
+ARTÍCULO 108- Procedimientos conexos
+Los procedimientos son conexos:
+1- Cuando exista identidad de la persona investigada.
+2- Cuando exista identidad o relación entre los hechos por los que se investigan a distintas personas.
+3- Cuando un hecho que constituya falta se ha cometido para perpetrar o facilitar la comisión de otro.
+4- Cuando el hecho que constituya falta se ha cometido para procurar a la persona responsable o a otras el provecho o la impunidad.
+ARTÍCULO 109- Acumulación
+Se podrán acumular y tramitar en conjunto dos o más procedimientos sancionadores cuando exista conexidad entre ellos.
+ARTÍCULO 110- Improcedencia de la acumulación
+No procederá la acumulación de procedimientos que son conexos, cuando se presente una o varias de las siguientes circunstancias:
+1- Se encuentren en fases distintas.
+2- Implique el retraso en la instrucción o resolución de alguno de ellos.
+3- Se produzca una alteración en la tramitación del asunto.
+4- En uno de ellos se investiguen hechos que puedan configurar la falta de hostigamiento sexual y los demás no sean de la misma naturaleza.
+5- En uno de ellos se investigue a una persona cuyo régimen sancionador es exclusivo de la Corte Plena y los demás no lo sean.
+6- Su resolución corresponda a Direcciones de órganos auxiliares de justicia distintas; esta excepción no aplicará cuando la conexidad sea entre un procedimiento que corresponda ser resuelto por el Tribunal Administrativo Sancionador y otro por una dirección, en cuyo caso el primero será el competente para conocer de los procedimientos acumulados.
+CAPÍTULO V
+Formas de terminación extraordinaria del procedimiento
+SECCIÓN PRIMERA
+Desistimiento
+ARTÍCULO 111- Procedencia
+Quien se constituya denunciante cualificado podrá desistir de su denuncia, sin perjuicio de que el órgano decisor, mediante acto motivado, disponga que continúe el procedimiento.
+ARTÍCULO 112- Efectos
+El desistimiento sólo afectará los hechos atinentes exclusivamente a la persona denunciante cualificado que lo formule.
+ARTÍCULO 113- Trámite y resolución del desistimiento
+El desistimiento podrá hacerse por escrito o de forma oral en la comparecencia respectiva.
+La gestión de desistimiento realizada por escrito será puesta en conocimiento de las demás partes e intervinientes por el plazo de tres días, a fin de que se pronuncien al respecto. Si el desistimiento se realiza en la comparecencia oral, será puesta en conocimiento y se les dará la palabra en el acto, a fin de que se pronuncien.
+La gestión del desistimiento será resuelta por el órgano decisor mediante acto motivado.
+SECCIÓN SEGUNDA
+Terminación convencional del procedimiento
+ARTÍCULO 114- Terminación convencional del procedimiento
+En cualquier momento del procedimiento, hasta antes de que inicie el plazo para el dictado del acto final, el órgano director podrá acordar, a propuesta de la persona encausada, el inicio de las actuaciones tendentes a la terminación convencional del asunto; estas podrán realizarse dentro del procedimiento o por medio del procedimiento de justicia restaurativa. Este acuerdo de inicio de la terminación convencional será notificado a las partes.
+ARTÍCULO 115- Requisitos
+Los acuerdos que se pacten con la persona encausada podrán contener compromisos de hacer o dejar de hacer, siempre que no sean contrarios al orden público. No será posible pactar la terminación convencional en los casos en que la ley expresamente lo prohíba, los que constituyan acoso sexual o corrupción. Será requisito para la terminación convencional, que la persona encausada no se haya beneficiado de esta medida por una conducta similar en los últimos tres años.
+Tratándose de faltas que impliquen daños o pérdidas de activos, máquinas, materiales, útiles, muebles, instalaciones o herramientas de la institución y que no haya mediado dolo en su comisión, se podrá pactar el valor patrimonial correspondiente a su reparación o restitución.
+ARTÍCULO 116- Actuaciones de la terminación convencional dentro del procedimiento
+Una vez que la persona encausada manifiesta su interés de acordar la terminación convencional dentro del procedimiento, el órgano director dictará una resolución de inicio de dichas actuaciones en la cual le otorgará un plazo no superior a cinco días para que presente su propuesta de compromisos advirtiendo que, en caso de no presentarse en el plazo concedido, se tendrá por desistida y se continuará con el procedimiento hasta el dictado del acto final.
+Una vez presentados los compromisos, el órgano director evaluará si resuelven adecuadamente los efectos lesivos de la conducta sujeta a investigación.
+En caso de estimar que la propuesta no cumple a satisfacción con tales objetivos, mediante acto motivado así lo hará ver a la persona encausada, otorgándosele un nuevo y definitivo plazo de tres días para que, en su caso, formule una nueva propuesta o manifieste que desiste de la petición de terminación convencional del procedimiento. Vencido el plazo otorgado, de no presentarse una nueva propuesta, se entenderá tácitamente desistida la intención de terminación convencional del procedimiento.
+En caso de estimarse más eficiente y célere, el órgano director podrá convocar a una audiencia oral a fin de escuchar la propuesta de la persona encausada y a las demás partes; de ser así, se concentrarán las actuaciones antes indicadas, de modo que al término de la audiencia se deberá definir el contenido de la propuesta o su desistimiento.
+En los supuestos en que el órgano director llegue a considerar que la propuesta es idónea, la pondrá en conocimiento del órgano decisor y de las demás partes con el fin de que puedan aducir, en el plazo de tres días, cuantas alegaciones crean convenientes, las cuales no serán vinculantes. De estimarse más eficiente y célere, el órgano decisor podrá convocar a una audiencia oral a fin de escuchar la propuesta de la persona encausada y a las demás partes; de ser así, se concentrarán las actuaciones antes indicadas, de modo que al término de la audiencia se deberá definir el contenido de la propuesta o su desistimiento.
+ARTÍCULO 117- Trámite de justicia restaurativa
+El procedimiento de justicia restaurativa procederá a instancia de la persona encausada o quien constituya denunciante cualificado, quienes, en cualquier momento hasta antes de que inicie el plazo para el dictado del acto final, podrán solicitar al órgano director iniciar las actuaciones para acordar la terminación convencional por medio del procedimiento de justicia restaurativa. El órgano director pondrá en conocimiento de las demás partes de la solicitud realizada, a fin de que manifiesten su anuencia de acordar la terminación convencional por este medio; en caso de que alguna se oponga, no será posible continuar con las actuaciones en justicia restaurativa.
+En el supuesto de que ambas partes expresen anuencia de acordar la terminación convencional por este medio, el órgano director fungirá como persona facilitadora del procedimiento de justicia restaurativa y conformará el equipo interdisciplinario con el equipo psicosocial, que se encontrará adscrito a la Dirección Nacional de Justicia Restaurativa.
+Las actuaciones de la terminación convencional por medio del procedimiento de justicia restaurativa se reglamentarán por el Poder Judicial.
+ARTÍCULO 118- Examen de la propuesta por parte del órgano decisor
+Corresponderá al órgano decisor examinar la propuesta de compromisos para en su caso incorporarlos a la resolución que ponga fin al procedimiento.
+Recibida la propuesta de terminación convencional acordada dentro del procedimiento o por medio del procedimiento de justicia restaurativa, el órgano decisor podrá:
+1- Resolver el expediente por terminación convencional, estimando adecuados los compromisos presentados.
+2- Determinar que los compromisos presentados no resuelven adecuadamente los efectos lesivos de la conducta sujeta a investigación, en cuyo caso, podrá conceder un plazo de tres días para que la persona encausada presente nuevos compromisos que resuelvan los problemas detectados. Si, transcurrido este plazo, la persona encausada no hubiera presentado nuevos compromisos, se tendrá por desistida su petición y el órgano decisor instará la continuación del procedimiento.
+ARTÍCULO 119- Del acto final que decreta la terminación convencional del procedimiento
+El contenido mínimo del acto que ponga fin al procedimiento mediante la terminación convencional, será:
+1- La identificación de la persona que resulte obligada por los compromisos.
+2- El ámbito personal, territorial y temporal de los compromisos.
+3- El objeto de los compromisos y su alcance.
+4- El régimen de vigilancia del cumplimiento de los compromisos.
+El incumplimiento del acto que ponga fin al procedimiento mediante la terminación convencional tendrá la consideración de falta grave de acuerdo con lo establecido en el artículo 23 de esta ley.
+ARTÍCULO 120- Terminación convencional parcial
+Si la terminación convencional fuere parcial, el órgano competente continuará el procedimiento en lo que no haya habido acuerdo.
+ARTÍCULO 121- Plazo de cumplimiento
+El plazo máximo para el cumplimiento de los compromisos pactados en la terminación convencional será de tres años.
+En caso de cumplimiento de los compromisos pactados, se deberá resolver a favor de la persona encausada archivando el asunto. De no cumplirse, sin justa causa, se reactivará el procedimiento en el estado que se encontraba antes de la suspensión. En caso de incumplimiento por causa justificada, el órgano decisor podrá prorrogar el plazo de acuerdo con las circunstancias particulares; si finalizada la prórroga no se han cumplido los compromisos, se reactivará el procedimiento en el estado que se encontraba antes de haberse acordado la terminación convencional.
+ARTÍCULO 122- Anotación
+Cumplidos los compromisos pactados en la terminación convencional, el órgano decisor lo comunicará a la Dirección de Gestión Humana, para que se anote en el expediente de la persona encausada que se benefició con la terminación convencional.
+La anotación se hará únicamente con la finalidad de poder verificar el requisito de admisibilidad que se establece en el artículo 115 de la presente ley y no podrá ser utilizada con ningún otro propósito.
+La anotación de la terminación convencional se mantendrá en el expediente personal durante el plazo de tres años; vencido este, la Dirección de Gestión Humana la eliminará de oficio.
+CAPÍTULO VI
+Del tiempo del procedimiento
+SECCIÓN PRIMERA
+Plazo para iniciar un procedimiento
+ARTÍCULO 123- Plazo y causal de suspensión
+No se iniciará procedimiento después de transcurridos cinco años a partir de la comisión de la falta y, para las faltas continuadas, desde el día en que cesó su ejecución. Cuando una persona servidora presuntamente cometa varias faltas, el plazo para iniciar el procedimiento se computará separadamente.
+Tratándose de faltas por infracción a leyes especiales, regirán los plazos indicados en dichas normas.
+Cuando exista investigación penal por los mismos hechos, el referido plazo se suspenderá de pleno derecho.
+SECCIÓN SEGUNDA
+Plazo para la apertura del procedimiento
+ARTÍCULO 124- Plazo y causales de suspensión
+Sin perjuicio del plazo establecido en el artículo anterior y bajo pena de nulidad, el acto de apertura del procedimiento deberá emitirse a más tardar tres meses contados a partir del momento en que el órgano con potestad sancionadora tiene conocimiento de los hechos.
+Dicho plazo se suspenderá cuando el órgano director ordene mediante acto fundado la realización de una investigación preliminar; se mantendrá suspendido hasta que se emita el acto de mero trámite haciendo constar su finalización o se supere el plazo establecido en el artículo 172 de esta ley.
+De igual manera, se podrá suspender el plazo cuando la investigación disciplinaria tenga únicamente como base prueba que existe en un proceso penal al que el órgano disciplinario no haya podido tener acceso por razones de ley. En este caso el órgano director deberá emitir acto fundado al respecto y el plazo se mantendrá suspendido hasta que pueda tener acceso al expediente penal.
+SECCIÓN TERCERA
+Plazo para la sustanciación de la fase constitutiva
+ARTÍCULO 125- Plazo
+La fase constitutiva del procedimiento deberá sustanciarse en un plazo máximo de un año. Tratándose de un procedimiento que involucre corrupción, el plazo será de dos años.
+ARTÍCULO 126- Causales de suspensión
+El plazo para la sustanciación de la fase constitutiva se suspenderá:
+1- Cuando la investigación tenga únicamente como base prueba que existe en un proceso penal que se pueda comprometer por la apertura o sustanciación de la fase constitutiva del procedimiento. En ese caso el órgano director deberá emitir acto fundado al respecto y el plazo se mantendrá suspendido hasta que tenga conocimiento que el proceso penal ha finalizado.
+2- Cuando se haya pactado una terminación convencional del procedimiento. En ese caso se suspenderá durante el plazo que se haya establecido para el cumplimiento de los compromisos pactados.
+3- Cuando así se ordene en resolución jurisdiccional.
+Terminada la causa de la suspensión, el plazo continuará su curso.
+SECCIÓN CUARTA
+Plazo del dictado del acto final
+ARTÍCULO 127- Plazo
+Bajo pena de nulidad, el acto final deberá emitirse en el plazo de un mes calendario, que se calculará a partir del día hábil siguiente de vencida la audiencia final o, cuando proceda, de recibido el acto emitido por el órgano externo o la Comisión de Relaciones Laborales cuando se haya solicitado dictamen o autorización previa.
+ARTÍCULO 128- Causales de suspensión
+El plazo del dictado del acto final se suspenderá:
+1- Cuando se ordene prueba para mejor resolver y continuará a partir del día natural siguiente de evacuada.
+2- Cuando así se ordene en resolución jurisdiccional.
+Terminada la causa de la suspensión, el plazo continuará su curso.
+SECCIÓN QUINTA
+Plazo para la ejecución de la sanción
+ARTÍCULO 129- Plazo y causales de suspensión
+El órgano competente contará con un plazo de un año para la ejecución de la sanción impuesta. Dicho plazo se suspenderá cuando por causas ajenas la sanción no pueda ejecutarse o así se disponga en orden jurisdiccional.
+SECCIÓN SEXTA
+Caducidad del procedimiento
+ARTÍCULO 130- Plazo
+Cuando el procedimiento se paralice por más de seis meses en virtud de causa imputable exclusivamente al órgano competente que lo haya iniciado, de oficio o por denuncia, se producirá la caducidad y se ordenará su archivo.
+CAPÍTULO VII
+La prueba
+SECCIÓN PRIMERA
+Normas generales
+ARTÍCULO 131- Objetividad
+El órgano con potestad sancionadora, de oficio o a petición de parte, ordenará y practicará todas las diligencias de prueba útiles, necesarias y pertinentes en relación con los hechos investigados y que resulten controvertidos.
+ARTÍCULO 132- Carga de la prueba
+La carga de la prueba respecto del hecho investigado le corresponderá al órgano director. Quien invoque un hecho distinto en su favor tendrá la carga de la prueba al respecto, sin perjuicio de que el órgano director, de oficio o a petición de parte, gestione la obtención de elementos de prueba que no le sea posible acceder a las partes.
+ARTÍCULO 133- Medios de prueba
+Serán admisibles como medios de prueba la declaración de parte, la declaración testimonial, los testigos peritos, los peritajes, los documentos e informes, medios científicos y tecnológicos, y cualquier otro permitido por el derecho público y el derecho común; estos se practicarán conforme a las normas de la Ley General de la Administración Pública, el Código Procesal Contencioso Administrativo y el Código Procesal Civil, en cuanto le sean compatibles.
+Las pruebas que consten en los expedientes judiciales incluso penales, cualquiera sea su naturaleza, podrán ser incorporadas al procedimiento administrativo siguiendo las disposiciones de esta ley, sin necesidad de ratificación y serán valoradas por el órgano disciplinario.
+ARTÍCULO 134- Libertad probatoria
+Los hechos y las circunstancias de interés que los rodean podrán probarse por cualquier medio de prueba permitido, salvo prohibición expresa de la ley.
+ARTÍCULO 135- Valoración
+Todas las pruebas serán valoradas de conformidad con las reglas de la sana crítica. La conducta de las partes durante el procedimiento podrá constituir un elemento de convicción ratificante de las pruebas.
+ARTÍCULO 136- Presunción de autenticidad, validez y eficacia de los documentos
+Los documentos admitidos, tácita o expresamente, se presumirán auténticos y válidos mientras no se pruebe lo contrario. Las copias físicas y las presentadas por medios tecnológicos gozarán de la misma validez y eficacia del documento original, siempre que quede garantizada su autenticidad, integridad y conservación.
+En caso de que se alegue o presuma la alteración de la copia del documento, el órgano disciplinario podrá ordenar que se presente o exhiba el original a fin de su cotejo; tratándose de documentos que son resguardados por personas servidoras o instituciones públicas, podrá solicitar que se expida una copia certificada.
+ARTÍCULO 137- Acceso a expedientes judiciales y administrativos
+El órgano con potestad sancionadora podrá tener acceso a los expedientes judiciales y administrativos de interés para el procedimiento y la prueba recabada en ellos, mediante los sistemas informáticos del Poder Judicial, o bien, por medio del examen del expediente físico.
+Tratándose de expedientes penales, el órgano competente deberá solicitar dicho acceso mediante acto motivado a la autoridad jurisdiccional correspondiente quien, de manera fundada, decidirá al respecto, tomando en cuenta los fines del procedimiento; el principio de proporcionalidad; la posible afectación procesal que pueda sufrir el expediente penal de accederse a lo solicitado y los derechos fundamentales de las personas que se puedan ver afectadas con tal decisión. Dicho acceso solo se puede solicitar una vez recibida la declaración indagatoria de la persona investigada en la causa penal por delitos de acción pública o de acción pública perseguible a instancia privada. Tratándose de procesos por delitos de acción privada, tal acceso se puede solicitar a partir del momento en que el tribunal de juicio de audiencia a la contraparte de la querella presentada.
+La información referida en el párrafo anterior será de acceso restringido a terceros y denunciantes. Las copias de expedientes judiciales tendrán la misma validez y eficacia de los originales, para demostrar las actuaciones realizadas en los procesos judiciales, salvo que se pruebe lo contrario.
+La solicitud de acceso a la información obtenida en un proceso penal al amparo de la Ley sobre Registro, Secuestro y Examen de Documentos Privados e Intervención de las Comunicaciones, N.° 7425, del 09 de agosto de 1994, solo procederá en casos de faltas por corrupción.
+ARTÍCULO 138- Gastos
+En los casos en que, a petición de parte o interviniente, deba recibirse prueba cuya realización implique gastos que no deba soportar la Administración, el órgano competente deberá prevenir a quien la propone que la aporte por sus medios.
+ARTÍCULO 139- Facultades y deberes
+A los fines de la recepción de la prueba, el órgano director tendrá las mismas facultades y deberes que las autoridades judiciales.
+Cuando se requiera la prestación del juramento, se recibirá por las creencias de quien jura, después de haberle instruido sobre las penas con que la ley reprime el falso testimonio o la denuncia calumniosa. Quien declare prometerá decir la verdad en todo cuanto sepa y se le pregunte. Si la persona se niega a prestar juramento en virtud de creencias religiosas o ideológicas, se le exigirá promesa de decir la verdad, con las mismas advertencias y sin perjuicio del derecho de abstención que regula el ordenamiento jurídico.
+SECCIÓN SEGUNDA
+Inspección y acceso a prueba con autorización judicial en faltas por corrupción
+ARTÍCULO 140- Trámite de garantía judicial
+El órgano decisor, de oficio o a petición del órgano director, podrá solicitar autorización, mediante acto fundado, al Juzgado Contencioso-Administrativo y Civil de Hacienda para ingresar a oficinas e instalaciones públicas o privadas, o requerir y acceder a información que no pueda obtener directamente; cuando esto sea necesario para recabar o evitar que se pierda o destruya evidencia para la investigación en procedimientos sancionadores.
+El Juzgado Contencioso-Administrativo y Civil de Hacienda revisará que la solicitud cumpla con todos los requisitos establecidos en la presente ley y en el plazo de cinco días resolverá mediante auto fundado lo que en derecho corresponda. En caso de autorizar el acceso, lo podrá hacer con los ajustes que estime procedentes en relación con su alcance. En la autorización que al efecto dicte, se señalará su finalidad, así como los lugares e información que serán objeto de la diligencia. En el caso de tratarse de una Administración Pública se precisará el órgano que resguarde la información; tratándose de órganos desconcentrados el superior podrá ordenar la entrega de la información.
+Contra lo resuelto por el Juzgado cabrá recurso de apelación dentro de los tres días siguientes a la notificación, el cual se presentará directamente ante el Tribunal de Apelaciones de lo Contencioso Administrativo. El Tribunal resolverá sin más trámite y con prioridad sobre cualquier otro asunto. Contra la decisión de segunda instancia no cabrá recurso alguno.
+ARTÍCULO 141- Procedencia del trámite de garantía judicial
+El trámite de garantía judicial procederá cuando concurra alguno de los siguientes supuestos:
+1- Un procedimiento en curso para determinar la existencia de una falta por corrupción, ya sea en investigación preliminar o en fase constitutiva.
+2- Indicios sobre la existencia de evidencia privada o de carácter confidencial que sea relevante para dicha investigación, que esté en poder de una o más personas físicas o jurídicas públicas o privadas, sean objeto o no de la investigación.
+3- Peligro de que, en ausencia de la autorización de acceso a la información, dicha evidencia no pueda ser incorporada a la investigación, incluyendo la posibilidad de su pérdida o destrucción.
+ARTÍCULO 142- Confidencialidad de la diligencia
+La existencia y el contenido de todas las actuaciones que se tomen en relación con la diligencia serán confidenciales, al menos hasta el momento de su realización. Una vez finalizada la diligencia, la información será clasificada por el órgano correspondiente, según la etapa del procedimiento en la que se realice.
+Todas las personas funcionarias que participen en la diligencia deberán resguardar la confidencialidad sobre toda información que conozcan antes y en el transcurso de la diligencia, de conformidad con la normativa vigente y aplicable a la materia.
+ARTÍCULO 143- Alcances del acceso a información mediante el trámite de garantía judicial
+Durante la diligencia, el personal autorizado podrá exigir el acceso a información financiera contable, información crediticia y bancaria, Registro de Transparencia y Beneficiarios Finales, libros de contabilidad, documentos, contratos, correspondencia, archivos, registros de visitas, agendas, correos electrónicos del Poder Judicial, respaldos digitales de almacenamiento externo y cualquier otra información que conste en documentos físicos o archivos electrónicos, independientemente del formato, el tipo de archivo o dispositivo en el que esté almacenada; lo anterior, en la medida en que se relacionen con el objeto de la investigación y estén comprendidos dentro de la autorización judicial de acceso.
+El órgano decisor podrá autorizar la participación de otras personas funcionarias cuya asistencia sea necesaria, en razón de sus conocimientos técnicos.
+ARTÍCULO 144- Deber de colaboración del personal del lugar objeto de la diligencia
+Quienes laboren en los lugares que sean objeto de una diligencia mediante la cual se accederá a la información autorizada por la autoridad judicial, tendrán la obligación de someterse a ella y a colaborar razonablemente, absteniéndose de realizar cualquier acción que injustificadamente interfiera o la retrase. Asimismo, deberán proporcionar la información y los documentos que le sean solicitados y que se relacionen con el objeto de la investigación, tal y como se describe en la autorización judicial. Para ello, deberán permitir el acceso a oficinas, computadoras, libros, documentos, dispositivos de almacenamiento, archiveros o cualquier otro bien o medio físico o digital que pueda contener tal información.
+ARTÍCULO 145- Potestades adicionales durante la diligencia
+La persona funcionaria a cargo de la diligencia estará autorizada para entrevistar y requerir información, en el acto, a cualquier persona que se encuentre presente durante la visita, con el objeto de indagar sobre la existencia y ubicación de la información y los documentos que sean pertinentes para la investigación. Estas deberán proporcionar cualquier información que sea útil para localizar la información y documentación pertinente, salvo que se trate de la persona funcionaria investigada o encausada.
+ARTÍCULO 146- Participación de la persona funcionaria investigada o encausada en la diligencia
+La persona contra quien se dirija la investigación y su defensa técnica tendrá derecho a estar presente durante la diligencia y de formular, en el acto, las observaciones que considere pertinentes sobre las actuaciones de la autoridad, que deberán constar en el acta respectiva. Asimismo, tendrá derecho a contar con defensa técnica durante la diligencia, pero su no presencia no impedirá la realización de esta.
+ARTÍCULO 147- Ampliación del acceso a información mediante el trámite de garantía judicial
+Si durante la diligencia surge sospecha razonable de que, en cualesquiera otra oficina o instalación pública o privada, se halla evidencia relevante para el objeto de la diligencia, que pueda servir para verificar la verdad real de los hechos, el órgano decisor podrá solicitar a la autoridad judicial competente una ampliación de la autorización concedida, para que se tenga acceso a la información que exista en dichas oficinas, instalaciones o establecimientos.
+ARTÍCULO 148- Requerimiento y entrega de información
+Cuando la información deba ser obtenida mediante requerimiento, esta será entregada por quien la posea en el plazo establecido por la autoridad judicial.
+SECCIÓN TERCERA
+Declaraciones juradas sobre la situación patrimonial
+ARTÍCULO 149- Acceso a las declaraciones juradas sobre la situación patrimonial
+La Contraloría General de la República habilitará un módulo de consulta en el Sistema de Declaraciones Juradas de Bienes para los órganos directores y decisores regulados en esta ley, con el propósito de monitorear y verificar que todos los funcionarios judiciales obligados a declarar presenten las declaraciones juradas de bienes.
+El módulo de consulta dará acceso a la información de la declaración jurada sobre la situación patrimonial en los casos de investigaciones y procedimientos sancionadores asociados a actos de corrupción o infracciones de la Ley N.° 8422.
+CAPÍTULO VIII
+Medidas cautelares
+ARTÍCULO 150- Oportunidad, legitimación y finalidad
+En los procedimientos se podrán decretar las medidas cautelares que resulten oportunas, razonables e indispensables, para garantizar la averiguación de la verdad real, para no afectar gravemente la correcta administración de justicia y de los demás servicios que presta el Poder Judicial, o para garantizar la situación jurídica de terceras personas o la efectividad del acto final.
+Tales medidas procederán de oficio, a solicitud del órgano director o de cualquier interviniente, durante el curso de la investigación preliminar, luego de iniciado el procedimiento e incluso con posterioridad al acto final, en este último caso, si resultaren indispensables para la efectiva ejecución de lo dispuesto por el órgano decisor.
+ARTÍCULO 151- Tipos de medidas cautelares
+Las medidas cautelares que se podrán decretar son:
+1- La suspensión temporal con goce de salario. Esta medida resulta de carácter excepcional y solamente deberá decretarse cuando la aplicación de otras no sea suficiente para cumplir la finalidad dispuesta en el artículo anterior.
+2- El traslado temporal a otro lugar de trabajo.
+3- La permuta temporal del puesto o cargo.
+4- La prohibición de perturbar a la persona denunciante o a los eventuales testigos.
+5- La prohibición de interferir en el uso y disfrute de los instrumentos de trabajo de la persona denunciante o eventuales testigos.
+6- El cambio en la supervisión de las labores de la persona denunciante, cuando la persona encausada sea su superior inmediato.
+7- Cualquier otra que tienda a la protección de la persona denunciante y testigos.
+8- Cualquier otra que resulte oportuna, razonable e indispensable, para garantizar la averiguación de la verdad real, para no afectar gravemente la normal prestación del servicio público o para garantizar la situación jurídica de terceras personas o la efectividad del acto final.
+9- Las dispuestas en leyes especiales para las faltas reguladas en ellas.
+Las medidas cautelares serán aplicadas a la persona encausada; de manera excepcional, se podrán aplicar a la persona denunciante cualificado, cuando ostente la condición de servidora judicial, exista su consentimiento o solicitud de su representación técnica y se esté ante hechos que puedan constituir acoso sexual o laboral.
+ARTÍCULO 152- Presupuestos
+Las medidas cautelares podrán decretarse cuando concurran los siguientes presupuestos:
+1- Existan elementos de convicción suficientes para sostener, razonablemente, que la denuncia no es temeraria o evidentemente improcedente o impertinente.
+2- Que la permanencia de la persona servidora o la ejecución o permanencia de la conducta sometida al procedimiento, produzca graves daños o perjuicios, actuales o potenciales, al servicio público, al Poder Judicial o a la persona denunciante.
+3- Las dispuestas en leyes especiales para las faltas reguladas en ellas.
+ARTÍCULO 153- Requisitos de valoración
+Para otorgar o denegar una medida cautelar, el órgano decisor deberá valorar el principio de proporcionalidad, ponderando la eventual lesión al interés público, los daños y los perjuicios provocados con la medida a terceras personas, así como los caracteres de instrumentalidad y provisionalidad que debe tener la medida, de modo que no se afecte la gestión sustantiva de la Institución, ni se afecte en forma grave la situación jurídica de terceras personas.
+También, deberá valorar las posibilidades y previsiones financieras que la Institución deberá efectuar para la ejecución de la medida cautelar.
+ARTÍCULO 154- Trámite
+Solicitada la medida cautelar, el órgano decisor dará audiencia a las partes e intervinientes por tres días, salvo lo previsto en el artículo siguiente. Transcurrido ese plazo resolverá lo procedente.
+Todo acto administrativo emitido por el órgano decisor en relación con medidas cautelares deberá ser debidamente fundamentado y comunicarse de forma inmediata, a fin de lograr su pronta y debida ejecución.
+En caso de cuestionarse la competencia al momento en que deba adoptarse una medida cautelar de oficio o a gestión de parte, esta podrá decretarse de previo a la remisión del expediente al órgano que resolverá el conflicto de competencia. En caso de determinarse la incompetencia del órgano que ordenó la medida cautelar, esto no acarreará la nulidad de dicho acto, pero podrá ser revisado oficiosamente por el órgano competente para determinar si mantiene, modifica o revoca lo dispuesto.
+ARTÍCULO 155- Casos de extrema urgencia
+En casos de extrema urgencia, el órgano decisor de oficio o a solicitud del órgano director o parte, podrá decretar las medidas cautelares sin conceder audiencia.
+En el acto administrativo que ordena una medida cautelar bajo estas condiciones, se dará audiencia por tres días a las partes e intervinientes, sin efectos suspensivos para la ejecución de la medida ya dispuesta. Transcurrido el plazo indicado, el órgano decisor valorará los alegatos y pruebas aportadas, para determinar si mantiene, modifica o revoca lo dispuesto.
+ARTÍCULO 156- Modificación, sustitución, supresión y nuevo análisis de las medidas
+Cuando varíen las circunstancias que motivaron la imposición de alguna medida cautelar, el órgano decisor podrá de oficio o a instancia del órgano director o de cualquier interviniente, modificarla, sustituirla o suprimirla.
+En igual forma, cuando varíen las circunstancias que dieron motivo al rechazo de una medida cautelar, el órgano decisor, de oficio o a instancia del órgano director o de cualquier interviniente, podrá considerar nuevamente la procedencia de aquella u otra medida distinta.
+ARTÍCULO 157- Recursos
+Contra el acto en el que se decida respecto de una medida cautelar cabrán los recursos ordinarios sin efecto suspensivo, según se disponga en esta ley. Si la resolución fue dictada por Corte Plena, cabrá únicamente el recurso de reconsideración o reposición, que también será sin efecto suspensivo.
+LIBRO II
+El procedimiento
+TÍTULO I
+El procedimiento
+CAPÍTULO I
+Objeto y formas de iniciar el procedimiento
+ARTÍCULO 158- Objeto del procedimiento
+El procedimiento servirá para asegurar la eficiencia, cumplimiento y decoro de las funciones encomendadas al Poder Judicial, garantizar a la ciudadanía una correcta administración de justicia, determinar la responsabilidad y asegurar la corrección del personal judicial, con respeto a los derechos subjetivos e intereses legítimos de las personas servidoras judiciales. Queda excluida toda reclamación patrimonial.
+El objeto más importante del procedimiento es la verificación de la verdad real de los hechos que sirven de motivo al acto final.
+ARTÍCULO 159- Formas de iniciar el procedimiento
+El procedimiento iniciará de oficio o a instancia de parte, en virtud de denuncia interpuesta ante el órgano competente.
+ARTÍCULO 160- Denuncia
+La denuncia podrá ser formulada de manera verbal o escrita, sin necesidad de patrocinio letrado, por quien tenga conocimiento de alguna conducta que pueda constituir una falta por parte de una persona servidora judicial o quien integre una lista de suplentes, elegibles o meritorias en el Poder Judicial.
+La denuncia no tendrá formalidades especiales para su presentación, salvo su firma, el detalle y la relación de los hechos denunciados deberán tener un grado mínimo de claridad y precisión, que permitan comprender sus motivos y sustanciar el dictado de un acto inicial de traslado de cargos o al menos, ordenar una investigación preliminar; asimismo, se deberá aportar la prueba en que se sustenta, cuya admisibilidad se valorará en la audiencia oral. En caso de que no se cumpla con lo anterior, el órgano director le otorgará a la persona denunciante diez días para que complete la información que fundamenta su denuncia; lo anterior bajo apercibimiento de que el incumplimiento facultará el rechazo de plano, sin perjuicio de que sea presentada con mayores elementos posteriormente como una nueva denuncia.
+De presentarse una denuncia sin firma, esta se entenderá como anónima y se aplicará lo dispuesto en el artículo siguiente.
+ARTÍCULO 161- Denuncias anónimas
+No se dará trámite a las denuncias que sean presentadas en forma anónima. En casos de corrupción podrá realizarse una investigación preliminar a fin de determinar si procede la apertura de un procedimiento en razón de una denuncia presentada de esta manera, cuando con esta se reciban elementos de prueba que den mérito para ello.
+ARTÍCULO 162- Conocimiento de oficio
+Los órganos con potestad sancionadora procederán de oficio a iniciar una investigación al momento de tener conocimiento por cualquier medio de un hecho que pueda constituir falta.
+ARTÍCULO 163- Informes de la Contraloría General de la República
+La Contraloría General de la República, en el marco de sus competencias, podrá remitir al Tribunal Administrativo Sancionador del Poder Judicial, los informes relacionados con una persona servidora judicial obligada a declarar, por presuntas infracciones asociadas a la Ley N.° 8422 con el propósito de que se valore la apertura de las investigaciones o procedimientos correspondientes.
+CAPÍTULO II
+ACTUACIONES PRELIMINARES
+Sección Primera
+Valoración inicial
+ARTÍCULO 164- Trámite de valoración preliminar
+En el caso de denuncias contra personas servidoras cuyo régimen sancionador es exclusivo de la Corte Plena, para efectos de la potestad de valoración preliminar regulada en el artículo 55 de esta ley, el asunto deberá trasladarse de manera inmediata a quien presida la Corte Suprema de Justicia.
+Si la denuncia, o lo conocido de oficio, resulta manifiestamente impertinente o improcedente deberá dictar su rechazo de plano sin mayor trámite; este acto tendrá recurso de reposición ante el mismo órgano.
+En caso de no proceder el rechazo de plano, deberá dentro del plazo de ocho días designar al órgano director según estricto rol que se llevará al efecto. El incumplimiento de dicho plazo no generará nulidad del procedimiento que posteriormente se inicie.
+ARTÍCULO 165- Valoración inicial del órgano director
+Recibida la denuncia o teniendo conocimiento de oficio sobre hechos que puedan constituir falta, el órgano director realizará su valoración inicial, con el fin de determinar si procede:
+1- Dar apertura al procedimiento mediante la confección y notificación efectiva del acto inicial de traslado de cargos.
+2- Ordenar mediante una resolución fundada la realización de una investigación preliminar.
+3- Rechazar de plano la denuncia.
+4- Trasladar el asunto al órgano decisor para el dictado de una desestimación.
+Sección Segunda
+Rechazo de plano
+ARTÍCULO 166- Causales del rechazo de plano
+El órgano director procederá a rechazar de plano el asunto, cuando:
+1- Fuere manifiestamente impertinente o improcedente.
+2- Se refiera exclusivamente a interpretación de normas jurídicas.
+3- La denuncia se presente de manera anónima, sin elementos de prueba que le den mérito.
+4- Fuere evidente que ha transcurrido el plazo para iniciar un procedimiento.
+5- Que la denuncia no cumpla con las formalidades establecidas en el artículo 160 de esta ley.
+ARTÍCULO 167- Acto del rechazo de plano
+El órgano director emitirá acto fundado en el que exponga los motivos que sustenten el rechazo de plano; este se comunicará a la persona denunciante, sea cualificado o simple, que haya aportado medio para recibir notificaciones.
+Sección Tercera
+Investigación preliminar
+ARTÍCULO 168- Finalidad de la investigación preliminar
+Si recibida la denuncia o conocido de oficio el hecho, no existen elementos de convicción suficientes para individualizar a la persona presuntamente responsable, determinar que existe mérito para la apertura del procedimiento o para realizar una intimación de cargos clara, precisa y circunstanciada, el órgano director podrá ordenar mediante acto fundado la realización de una investigación preliminar previa al procedimiento, con la finalidad de recopilar la prueba que resulte pertinente para tales efectos. De igual manera podrá proceder en el caso de los informes remitidos por la Contraloría General de la República o denuncias anónimas en el término del artículo 161 de esta ley.
+ARTÍCULO 169- Técnicas de investigación
+La investigación preliminar deberá realizarse practicando todas las diligencias pertinentes y utilizando todos los medios probatorios legalmente posibles, según lo amerite cada caso.
+Las diligencias correspondientes podrán realizarse con la asistencia de la Unidad de Auxiliares de Investigación, según lo dispuesto en el artículo 78 de esta ley.
+ARTÍCULO 170- Carácter unilateral y confidencial
+La investigación preliminar se realizará unilateralmente por parte del órgano director, tendrá carácter privado y mientras no concluya, la prueba recopilada y dictámenes o informes emitidos, serán confidenciales para cualquier persona, aun para la denunciante y la investigada.
+No se informará a la persona investigada sobre las actuaciones que se están realizando, salvo que sea para solicitarle que rinda un informe, en cuyo caso tendrá derecho a no constituir prueba en su perjuicio.
+Cuando se dé apertura al procedimiento, deberá ponerse toda la información y prueba recabada a disposición de la persona encausada, para que pueda oportunamente ejercer su derecho de defensa; de igual manera, quien constituya denunciante cualificado podrá tener acceso a las actuaciones, a fin de ejercer los derechos del debido proceso que le asisten.
+ARTÍCULO 171- Defensa técnica durante la investigación preliminar
+La persona investigada a quien se le solicite rendir un informe tendrá derecho a contar con defensa técnica que le asesore, conforme lo dispuesto en el artículo 85 de esta ley.
+ARTÍCULO 172- Duración de la investigación preliminar
+La investigación preliminar deberá realizarse en un plazo de hasta seis meses. Cuando la falta investigada involucre corrupción, será de hasta un año. Si el plazo dispuesto venciera sin que se haya dado apertura al procedimiento, se reanudará el cómputo del plazo establecido en el artículo 124 de esta ley, sin perjuicio de la continuación de la investigación preliminar.
+ARTÍCULO 173- Finalización de la investigación preliminar
+Finalizada la investigación preliminar, el órgano director deberá emitir un acto de mero trámite haciendo constar tal situación; asimismo, adoptará los actos que correspondan conforme a los artículos siguientes.
+Sección Cuarta
+Desestimación
+ARTÍCULO 174- Causales de desestimación
+Procederá la desestimación, cuando:
+1- Se determine que el hecho no constituye falta.
+2- No existan méritos para la formulación de cargos.
+3- No existan elementos de convicción suficientes para individualizar a la persona responsable y no existe razonablemente la posibilidad de incorporar más elementos de prueba para su identificación.
+4- No existan elementos de convicción que permitan tener un grado de probabilidad suficiente de la comisión del hecho por parte de la persona servidora o que integre listas de suplentes, elegibles o meritorias, y no existe razonablemente la posibilidad de incorporar más elementos de prueba.
+5- Se determine que ha transcurrido el plazo para iniciar un procedimiento.
+6- Cuando no sea procedente o necesario realizar una investigación preliminar y no existan méritos para la formulación de cargos.
+ARTÍCULO 175- Traslado al órgano decisor
+Cuando quien instruya considere que procede la desestimación, trasladará el asunto a conocimiento del órgano decisor con breve mención de las razones de hecho y derecho que sustentan su criterio para lo que bastará que deje constancia al respecto en el traslado.
+ARTÍCULO 176- Dictado de la desestimación
+Recibidas las actuaciones, el órgano decisor procederá en el plazo de cinco días a dictar la desestimación mediante acto fundado. El incumplimiento de dicho plazo no generará nulidad de lo resuelto.
+El acto de desestimación se comunicará a la persona denunciante que haya aportado medio para recibir notificaciones.
+ARTÍCULO 177- Recomendaciones
+Al dictar la desestimación, el órgano decisor tendrá la facultad de emitir recomendaciones a la Corte Plena, Consejo Superior, Fiscalía General, Dirección del Organismo de Investigación Judicial o Dirección de la Defensa Pública, con la finalidad de orientar el comportamiento del personal judicial, velar por el adecuado desarrollo de las funciones del despacho u oficina, prevenir o gestionar riesgos al Sistema de Control Interno, asegurar el buen servicio público y la imagen de la institución. Estas se comunicarán al encontrarse en firme el acto de desestimación. No procederá recurso alguno en contra de las recomendaciones que se realicen.
+ARTÍCULO 178- Disconformidad
+Cuando el órgano decisor considere que no procede decretar la desestimación del asunto, devolverá las actuaciones a la persona instructora mediante acto fundado, para que amplíe la investigación preliminar o emita el acto inicial de traslado de cargos, según corresponda.
+Quien instruye el asunto deberá proceder según lo dispuesto por el órgano decisor, dentro de los plazos establecidos en esta ley.
+CAPÍTULO III
+FASE CONSTITUTIVA DEL PROCEDIMIENTO
+ARTÍCULO 179- Apertura formal del procedimiento
+Cuando se cuente con los elementos subjetivos y objetivos que permitan, en un grado de probabilidad suficiente, presumir la existencia de una falta, individualizar a la persona presuntamente responsable, así como realizar una formulación clara, precisa y circunstanciada de hechos, el órgano director deberá dar apertura formal al procedimiento mediante el dictado por escrito del acto inicial de traslado de cargos.
+ARTÍCULO 180- Procedimiento contra persona suplente, elegible o meritoria sin nombramiento activo
+En los casos que se dé apertura al procedimiento contra persona suplente, elegible o meritoria que no tiene nombramiento activo en el Poder Judicial, se continuará y podrá finalizar, pero únicamente a fin de determinar la imposición de una de las sanciones de exclusión de la lista de suplentes, elegibles o meritorias contempladas en esta ley.
+Si la persona suplente o elegible se encuentra con un nombramiento activo en el Poder Judicial, se podrá imponer cualquiera de las sanciones previstas en el artículo 26 de esta ley.
+ARTÍCULO 181- Procedimiento contra persona que renuncie o se jubile
+En los casos que se notifique el acto inicial y traslado de cargos del procedimiento contra una persona servidora, suplente, elegible o meritoria que posteriormente renuncie o se jubile, se deberá continuar y podrá finalizar. Si la falta investigada puede ser sancionada con despido sin responsabilidad patronal, se suspenderá el pago de la cesantía que pudiera corresponderle, para lo cual el órgano director lo comunicará de manera inmediata a la Dirección de Gestión Humana, para que proceda conforme corresponda.
+ARTÍCULO 182- Requisitos del acto inicial de traslado de cargos
+El acto inicial de traslado de cargos deberá contener al menos, lo siguiente:
+1- Identificación plena de la persona encausada, incluyendo el nombre completo, puesto y lugar de trabajo.
+2- La imputación clara, precisa y circunstanciada de los hechos que se atribuyen.
+3- Cita de los preceptos legales aplicables.
+4- La posible calificación de la falta y las posibles sanciones a imponer.
+5- Los derechos de la persona encausada dentro del procedimiento, regulados en el artículo 12 de esta ley.
+6- Prevención a la persona encausada para que indique un medio para recibir notificaciones.
+7- Prevención a la persona encausada para que indique si cuenta con alguna condición de vulnerabilidad o fuero de protección, y para que aporte la prueba correspondiente.
+8- Indicar que se estará señalando una audiencia oral en la que podrá ejercer los derechos establecidos en el artículo 194 de esta ley.
+9- Advertir a la persona encausada que, de comprobarse su responsabilidad por dolo o culpa grave, podría implicar la apertura de un procedimiento por responsabilidad patrimonial, cuando así proceda según los hechos que se le atribuyan.
+10- La indicación de la prueba que consta en el expediente hasta ese momento.
+11- El medio o lugar donde se deben presentar las gestiones para el expediente.
+12- Indicar los recursos que proceden en su contra.
+13- Cualquier otro aspecto que sea necesario para el debido ejercicio del derecho de defensa por la persona encausada.
+14- En los casos que sea procedente, advertir sobre la posibilidad de proponer una terminación convencional dentro del procedimiento o por medio de Justicia Restaurativa, conforme lo dispuesto en esta ley.
+ARTÍCULO 183- Notificación del acto inicial de traslado de cargos y plazo para apersonarse
+El acto inicial de traslado de cargos deberá notificarse a la persona encausada en las formas dispuestas en el artículo 103 de esta ley; se le concederá un plazo de cinco días para que se apersone al procedimiento, señale medio para recibir notificaciones y, en caso de que proceda, solicite la designación de Defensa Pública, sin perjuicio del derecho de rendir su contestación en la audiencia oral.
+ARTÍCULO 184- Hechos novedosos
+Si durante la investigación de una denuncia o la tramitación de un procedimiento surgieren hechos novedosos que puedan dar lugar a la aplicación del régimen sancionador contra la misma persona y estos guardan relación con los hechos investigados originalmente, se podrá confeccionar y notificar de manera efectiva una ampliación del acto inicial de traslado de cargos, que deberá cumplir con los requisitos establecidos en la presente ley.
+Cuando surgieren hechos novedosos que involucren a una persona distinta, pero que guardan relación con los hechos investigados originalmente, se podrá confeccionar y notificar de manera efectiva un acto inicial de traslado de cargos contra la nueva persona y tramitar la investigación en el mismo expediente, a fin de asegurar una mejor comprensión de la totalidad de los hechos.
+Si la investigación de los hechos novedosos implica un retraso a la instrucción de los hechos iniciales o produzca una alteración en la tramitación del asunto, se procederá a testimoniar piezas e iniciar un nuevo procedimiento.
+ARTÍCULO 185- Valoración pericial en procedimientos por hostigamiento sexual o laboral
+En los procedimientos que se investiguen faltas que puedan constituir hostigamiento sexual u hostigamiento laboral, el órgano director podrá solicitar a la Sección de Psiquiatría y Psicología del Departamento de Medicina Legal, la Sección de Medicina del Trabajo, o al Departamento de Trabajo Social, llevar a cabo valoraciones periciales de carácter psicológico o psiquiátrico de las personas denunciante cualificada y encausada, así como estudios sociales del entorno laboral y familiar de la primera. La participación en las valoraciones serán voluntarias para las partes y así se les deberá de informar.
+El dictamen psicológico y psiquiátrico de la persona denunciante cualificada deberá indicar la relación entre su condición emocional o mental y el presunto acoso laboral que denuncia, las recomendaciones y las razones concretas en que se fundamenta.
+En el caso de la persona encausada, el dictamen deberá referirse al ajuste psicológico, incluyendo manejo del estrés, el perfil de personalidad, el control de emociones y relacionar esas variables en cómo influyen en el puesto que desempeña, sus relaciones interpersonales en general y con figuras de autoridad, el estilo de liderazgo o formas de supervisión de personal, esto último cuando corresponda, entre otros aspectos. Además, las recomendaciones deberán incluir si está en condiciones de supervisar personal o si requiere algún tratamiento o atención psicológica para desempeñarse de manera saludable con las personas a su cargo.
+En ambos casos deberá valorarse la confiabilidad de la información brindada por la persona evaluada.
+ARTÍCULO 186- Señalamiento a audiencia oral
+El órgano director convocará a las partes y demás intervinientes a una audiencia oral, a fin de que se ofrezca la prueba y resuelva sobre su admisión; se planteen las defensas previas o de fondo; se realicen alegatos de nulidades; se solicite la terminación convencional del asunto mediante el procedimiento o por medio de justicia restaurativa; se realicen las petitorias que se estimen; tratándose de la persona encausada, podrá solicitar rendir declaración, la cual se le recibirá sin prestar juramento, sin perjuicio de que puedan gestionarse de manera escrita previamente. Asimismo, en la audiencia se recibirá la prueba testimonial y pericial admitida.
+El órgano director dispondrá el lugar donde se realizará la diligencia o si esta se llevará a cabo por medios tecnológicos.
+La audiencia será privada, salvo lo dispuesto en el artículo 95 inciso 3 de esta ley.
+La comunicación del señalamiento deberá hacerse con al menos quince días de anticipación.
+ARTÍCULO 187- Citaciones
+El órgano director citará a las personas testigos y peritos; dispondrá las medidas necesarias para organizar y desarrollar la audiencia. Será obligación de las partes coadyuvar en la localización y comparecencia de quienes vayan a ser propuestos como testigos; el órgano director les brindará el auxilio necesario por medio de la expedición de las citas.
+ARTÍCULO 188- Asistencia
+Solo las partes y demás intervinientes del procedimiento podrán comparecer a la audiencia, pero el órgano director podrá permitir la presencia de estudiantes, profesores, asistentes legales o auxiliares del órgano disciplinario, quienes asistirán obligados por el secreto profesional y el principio de confidencialidad.
+La ausencia injustificada de alguna de las partes o intervinientes no impedirá la celebración de la audiencia, pero esto no se tomará como una aceptación de los hechos ni de la prueba.
+ARTÍCULO 189- Resolución de alegatos de nulidad y defensas previas
+De haberse realizado alegatos de nulidad sobre aspectos propios del procedimiento, el órgano director deberá resolverlas de manera oral; cuando sean nulidades que impliquen pronunciamiento sobre el fondo, deberá reservarlas para ser conocidas por el órgano decisor en el acto final. Si la nulidad por cuestiones de fondo tiene incidencia directa en el procedimiento, quien instruye podrá ponerlas en conocimiento de manera inmediata del órgano decisor, para lo correspondiente. La parte deberá interponer los alegatos de nulidad a más tardar al inicio de la audiencia oral, bajo pena de preclusión.
+De existir defensas previas, quien instruye deberá suspender la audiencia y trasladar el asunto a conocimiento del órgano decisor para su resolución inmediata, salvo que sean manifiestamente improcedentes. Tratándose de excepciones de fondo, deberá reservarlas para ser conocidas en el acto final por el órgano decisor.
+ARTÍCULO 190- Grabación, acta y minuta de la audiencia
+El órgano director deberá realizar una grabación de la audiencia, mediante cualquier mecanismo técnico; esta deberá conservarse junto con las actuaciones del procedimiento.
+Se levantará una minuta de la audiencia; en caso de que no sea posible realizar la grabación, deberá levantarse acta detallada, que contendrá:
+1- El lugar y la fecha de la diligencia, con indicación de la hora de inicio y finalización, así como de las suspensiones y las reanudaciones.
+2- El nombre completo del órgano director.
+3- Los datos de las partes, sus abogados y representantes.
+4- Un breve resumen del desarrollo de la audiencia, con indicación, cuando participen en esta, del nombre de los peritos, testigos, testigos-peritos e intérpretes, así como la referencia de los documentos leídos y de los otros elementos probatorios reproducidos.
+5- Las solicitudes y decisiones producidas en el curso de la audiencia y las objeciones de las partes.
+6- La observancia de las formalidades esenciales.
+7- Las otras menciones prescritas por ley que el órgano decisor ordene hacer; las que soliciten las partes, cuando les interese dejar constancia inmediata de algún acontecimiento o del contenido de algún elemento esencial de la prueba y las revocatorias o protestas de recurrir.
+8- La firma de las partes o de sus representantes y del órgano director. En caso de renuencia de los primeros o por impedimentos tecnológicos, quien instruya dejará constancia de ello y firmará el acta.
+ARTÍCULO 191- Posposición de la audiencia
+El órgano competente podrá posponer la comparecencia si encuentra defectos graves en su convocatoria o por causas de fuerza mayor, caso fortuito o cualquier otra razón justificada que imposibilite su realización.
+ARTÍCULO 192- Continuidad y suspensión
+La comparecencia se realizará sin interrupción, durante las sesiones consecutivas que sean necesarias hasta su terminación, pero se podrá suspender en los casos siguientes:
+1- Por fuerza mayor.
+2- Caso fortuito.
+3- Cuando deba resolverse alguna gestión que, por su naturaleza, no pueda decidirse inmediatamente.
+4- Si de manera justificada no comparecen testigos, peritos o intérpretes, salvo que pueda continuarse con la recepción de otras pruebas hasta que se haga llegar a la persona ausente.
+5- En caso de que alguna persona que integre el órgano disciplinario, las partes o representaciones técnicas que hayan comparecido estén impedidas de continuar con la diligencia por justa causa.
+ARTÍCULO 193- Dirección de la audiencia
+La dirección de la audiencia estará a cargo de quien instruye el procedimiento.
+Quien dirija la audiencia tendrá las mismas potestades y deberes que las autoridades judiciales; explicará a las partes sobre sus fines; hará las advertencias legales que correspondan; recibirá los juramentos y las declaraciones; ejercerá el poder de disciplina y moderará la discusión, impidiendo intervenciones impertinentes y notoriamente dilatorias, sin coartar el derecho de defensa; retirará de la diligencia a quien no siga sus instrucciones; mantendrá el orden y velará por que se guarde el respeto y la consideración debidos. Tratándose de una diligencia realizadas por un cuerpo colegiado, este en pleno resolverá cuando se impugne una decisión de quien la dirige.
+ARTÍCULO 194- Desarrollo de la audiencia
+En el día y la hora fijados, el órgano director se constituirá en el lugar o por el medio tecnológico dispuesto, verificará la presencia de las partes y demás intervinientes, y cuando corresponda, la de los testigos, peritos o intérpretes. Declarará abierta la audiencia y advertirá a las partes que tendrán el derecho y carga de:
+1- Exponer los fundamentos de hecho y de derecho que sustenten sus pretensiones y manifestar lo que estimen pertinente en defensa de sus intereses.
+2- Ofrecer cualquier prueba legítima.
+3- Obtener su admisión y trámite cuando sea pertinente, necesaria y relevante.
+4- Interrogar y contrainterrogar.
+5- Aclarar, ampliar o reformar su petición o defensa inicial, si la hubiere.
+6- Proponer la terminación convencional del asunto por medio del procedimiento ordinario o por Justicia Restaurativa.
+7- En cualquier momento de la audiencia, la persona encausada podrá solicitar rendir declaración, la cual se le recibirá sin prestar juramento. Quien dirija la audiencia deberá advertirle que puede abstenerse de declarar, sin que su silencio le perjudique o le afecte en nada. La persona encausada podrá disponer si responde preguntas de las partes y del órgano director, o solo de alguna de ellas.
+Se recibirá la prueba, en el siguiente orden: declaración de partes, testimonial de funcionarios, testimonial, testimonial pericial, pericial y cualesquiera otra que corresponda; se llamará primero la admitida a solicitud de la parte denunciante cualificada, la admitida de oficio por el órgano director y, por último, la propuesta por la parte encausada. De oficio o a solicitud de parte, se podrá alterar el orden indicado. La prueba se recibirá conforme a las normas de la Ley General de la Administración Pública, el Código Procesal Contencioso Administrativo y el Código Procesal Civil, en ese orden. Interrogará primero la parte proponente, luego la contraria y finalmente el órgano director; tratándose de prueba admitida de oficio, interrogará el órgano director, luego la parte denunciante cualificada y finalmente por la parte encausada.
+Concluida la recepción de las probanzas, el órgano director podrá consultar a las partes si renuncian al plazo de la audiencia final y de ser así, les concederá la palabra para que realicen sus alegatos de conclusiones de forma oral, por el tiempo que considere necesario y razonable, según la complejidad del asunto, y sin que exista derecho de réplica.
+CAPÍTULO IV
+CIERRE DE LA FASE CONSTITUTIVA
+Sección Primera
+Audiencia final
+ARTÍCULO 195- Audiencia final
+Recibida la prueba, en la misma comparecencia oral se otorgará audiencia final por cinco días a las partes para que formulen por escritos los alegatos de conclusiones que consideren. No se requerirá que la persona instructora emita informe final con sus conclusiones y recomendaciones.
+El plazo se tendrá por vencido si la parte presenta su alegato antes de su vencimiento.
+Vencido el término indicado, el asunto pasará a ser resuelto salvo en los casos regulados en el artículo siguiente.
+ARTÍCULO 196- Dictamen o autorización previa
+Cuando se requiera dictamen previo o autorización de cualquier órgano externo para poder imponer la sanción de despido sin responsabilidad patronal, vencido el término de la audiencia final el órgano decisor remitirá de inmediato la solicitud y copia del expediente al órgano correspondiente.
+Cuando se haya solicitado la intervención de la Comisión de Relaciones Laborales, se procederá de la misma manera, y esta deberá evacuar, mediante dictamen motivado, la consulta dentro del término de un mes después de la recepción del asunto. Cinco días después de vencido dicho plazo sin que se haya recibido el dictamen por el órgano decisor, se entenderá rechazada la gestión y se continuará con el procedimiento.
+El plazo de prescripción se suspenderá durante el tiempo en el que el expediente se encuentre en conocimiento del órgano externo o de la Comisión.
+El acto que emita el órgano externo o la Comisión no será vinculante para el órgano decisor, salvo disposición expresa de ley y carecerá de recurso.
+Recibido el acto que emita el órgano externo o la Comisión, el asunto pasará a ser resuelto.
+Sección Segunda
+Prueba para mejor resolver
+ARTÍCULO 197- Prueba para mejor resolver
+El órgano decisor podrá ordenar, de oficio o a gestión de parte, prueba para mejor resolver. No podrá ordenarse esta prueba cuando pudo haber sido ofrecida en la fase constitutiva y no lo haya sido, o cuando haya sido declarada inevacuable o nula, o rechazada por extemporánea o inadmisible.
+Sección Tercera
+Acto Final
+ARTÍCULO 198- Dictado del acto final
+El órgano decisor dictará el acto final dentro del mes siguiente de vencido el término de la audiencia final o, de recibido el acto emitido por el órgano externo o la Comisión de Relaciones Laborales cuando se haya solicitado dictamen o autorización previa. Se deberá notificar conforme al artículo 2 de la Ley de Notificaciones Judiciales.
+En su caso, tratándose de órgano decisor colegiado, el dictado de la resolución final estará precedido por la deliberación de sus integrantes.
+ARTÍCULO 199- Requisitos formales del acto final
+Además de los requisitos formales propios de todo acto administrativo, el acto final deberá contener al menos:
+1- Un encabezamiento que incluirá la mención del órgano, el lugar y fecha en que se dicta, el número del expediente, nombre de quienes integran el órgano, las partes e intervinientes, y la descripción o denominación de la falta atribuida.

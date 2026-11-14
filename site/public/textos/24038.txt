@@ -1,0 +1,79 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE INCENTIVO DEL USO DE LOS LABORATORIOS REMOTOS DE LAS
+UNIVERSIDADES PÚBLICAS PARA EL FORTALECIMIENTO
+DE LA EDUCACIÓN EN COSTA RICA
+VANESSA DE PAUL CASTRO MORA
+DIPUTADA
+EXPEDIENTE N.° 24.038
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY DE INCENTIVO DEL USO DE LOS LABORATORIOS REMOTOS DE LAS
+UNIVERSIDADES PÚBLICAS PARA EL FORTALECIMIENTO
+DE LA EDUCACIÓN EN COSTA RICA.
+Expediente N.° 24.038
+ASAMBLEA LEGISLATIVA:
+El trabajo experimental:
+La irrupción de la pandemia de COVID-19 y las consecuentes medidas de distanciamiento social adoptadas por la mayoría de los gobiernos modificaron sustancialmente cientos de aspectos de la vida en sociedad. Particularmente, las prácticas educativas en contextos formales debieron adaptarse a nuevas mediaciones. Así, las instituciones debieron desplegar dispositivos de Enseñanza Remota de Emergencia para garantizar la continuidad pedagógica.1 En lo que referente a la enseñanza de las ciencias naturales, el uso de Laboratorios Remotos en la universidad permitió abordar el trabajo experimental y registró resultados muy positivos.2,3
+En educación primaria y secundaria la imagen negativa por parte de los estudiantes de las ciencias naturales (física, química y biología) se presenta como una dificultad. Actualmente lo que se enseña en las aulas es principalmente el contenido teórico de los distintos temas, sin embargo, la ciencia reviste carácter experimental, y es por esta razón que es de gran importancia contar con actividades experimentales que refuercen el contenido teórico visto en las clases en todos los niveles educativos, ya que esto genera una mejor comprensión y además desarrolla distintas habilidades necesarias para la formación STEIM (Ciencia, Tecnología, Ingeniería y Matemáticas).
+1. García-Peñalvo, F. J., Corell, A., Abella-García, V. y Grande, M. (2020). La evaluación online en la educación superior en tiempos de la covid-19. Education in the Knowledge Society, 21(12), 1-26. DOI: http://dx.doi.org/10.14201/eks.23086
+2. Zárate, R., Canchola, S., Suárez, J. Aporte de los laboratorios remotos a la alfabetización científica: Un caso de estudio. Educare Electronic Journal, 27(2), 1-18. DOI: https://doi.org/10.15359/ree.27-2.15806
+3.Zamora, R. Laboratorios Remotos: Actualidad y Tendencias Futuras. Scientia et Technica, 51, 113-118.
+Trabajo experimental y Noveno Informe del Estado de la Educación
+Según el noveno Informe del Estado de la Educación (2023)4, Costa Rica enfrenta una serie de desafíos educativos que amenazan la calidad y equidad de la educación en el país. El fenómeno denominado "apagón educativo" que ocurrió durante el período 2018-2021, dejó a los estudiantes de preescolar, ciclo básico y diversificado con importantes carencias en los aprendizajes fundamentales. Esta situación se vio agravada por la pandemia de COVID-19, debido a huelgas magisteriales y recortes de contenidos que generaron interrupciones en el curso lectivo. Como resultado, los estudiantes avanzaron en el sistema educativo con una preparación deficiente, lo que ha afectado su capacidad para tener éxito en niveles educativos superiores, incluyendo la educación universitaria en carreras de corte STEIM. Además, del rezago educativo, otro problema que enfrenta Costa Rica son las profundas desigualdades de género en su sistema educativo. Esto ha llevado a una sub representación de mujeres en carreras STEIM, a pesar de que estas áreas son fundamentales para el desarrollo del país. Aunque han existido avances en la graduación de mujeres en carreras de este corte durante la última década, la mejora se concentra en áreas específicas, mientras que las mujeres siguen siendo minoría en profesiones relacionadas con la Ciencia y Tecnología.
+Ante este panorama educativo desafiante, Laboratorios Remotos (LR) se presentan como una solución tecnológica innovadora y efectiva, debido a que ofrecen experiencias prácticas y enriquecedoras en ciencia y tecnología desde edades tempranas, ayudando a construir bases sólidas para el aprendizaje STEM. A través de la implementación de LR en las aulas y fuera de estas, los estudiantes pueden participar en experimentos prácticos, incluso en áreas donde los recursos físicos son limitados. Esto no solo fomenta su interés y comprensión en ciencias y matemáticas, sino que también les proporciona las habilidades y conocimientos necesarios para tener éxito en carreras STEIM, contrarrestando así el rezago educativo y promoviendo un futuro académico y laboral más prometedor al proporcionar un entorno de aprendizaje interactivo y de apoyo que se alinea a las nuevas políticas educativas del país, debido a que este tipo de recursos se encuentran inmersos en entornos digitales, son de fácil uso y acceso para la población estudiantil. Los Laboratorios Remotos tienen el potencial de transformar la educación en Costa Rica, mejorando la calidad, la equidad y la participación en carreras STEIM, preparando a las futuras generaciones para afrontar los desafíos del conocimiento, el desarrollo personal y profesional.
+Laboratorios Remotos
+Un Laboratorio Remoto es un recurso educativo que integra Software y Hardware para realizar una actividad experimental real que se accede a través de Internet, permitiendo a profesores y estudiantes manipular equipamiento a distancia.5 Los estudiantes realizan la actividad de manera individual o grupal y comparten su proceso de aprendizaje entre pares y con su docente, promoviendo el desarrollo de habilidades transversales para un uso crítico y creativo de las tecnologías digitales.
+En Costa Rica hasta el momento el Laboratorio de Experimentación Remota de la Universidad Estatal a Distancia posee una amplia gama de estos recursos educativos que se pueden emplear para realiza trabajo experimental desde la primaria hasta la universidad. Estos permiten el desarrollo de actividades experimentales que no requieren de una infraestructura donde se realicen prácticas de manera presencial, lo que es importante debido a que la inversión en la infraestructura de un recinto para prácticas de las ciencias es alta, y el costo de utilizar un laboratorio remoto es mucho más reducido que mantener un laboratorio presencial, el cuál debe tener los equipos adecuados, reactivos y además encargarse de los residuos generados.
+Ventajas de los Laboratorios Remotos
+Se trabaja con equipos y datos reales.
+Incrementan el acceso a herramientas científicas, permitiendo a los estudiantes de todas las partes del mundo en diferentes dispositivos.6
+Permiten una mayor utilización de los equipos de laboratorio, al estar disponibles 24 h, los 365 días del año.7
+Fomentan el trabajo autónomo, que es fundamental en el modelo educativo actual.7
+Permiten al profesor seguir los progresos de los estudiantes, a través de los registros que genera el sistema de gestión de Laboratorios Remotos.8
+Proporcionan experiencias que los laboratorios tradicionales no pueden ofrecer, como el acceso a una gama mucho más amplia de equipos que son demasiado caros, peligrosos o logísticamente problemáticos.9
+Algunos laboratorios permiten la atención de grupos masivos y heterogéneos.10
+Importancia de la experimentación en edades tempranas
+Desde el año 1984 Kolb11 señalaba que, la ciencia es un campo amplio y complejo en donde una aproximación únicamente teórica sería incorrecto, y que es necesario una parte práctica donde el alumno pueda experimentar. En las aulas de primaria y secundaria, la experimentación es prácticamente inexistente debido a la falta de recursos que permiten llevar a cabo este tipo de actividades, y esto genera un gran vacío en estas materias.
+La ciencia es de suma importancia ya que está presente en la vida cotidiana y ayuda a comprender el mundo que nos rodea, parte del problema radica en que se piensa que estos temas son muy complejos para ser asimilados por niños y jóvenes a temprana edad, pero este es un pensamiento erróneo. En la etapa de la niñez se pasa por un proceso de descubrimiento del mundo y se producen una infinidad de preguntas12 las cuáles deben ser aprovechadas para producir un acercamiento a la experimentación que les permita una mejor comprensión de la ciencia y a su vez potenciar un interés en esta. En este sentido, la observación y la experimentación genera curiosidad, facilitan la motivación y el interés hacia los contenidos teóricos.
+Además, un descubrimiento temprano de una vocación científica orienta a que una mayor cantidad de niños se interesen por el campo de profesiones STEM13. El uso de laboratorio remotos y virtuales genera una serie de competencias digitales, que permiten a su vez generar competencias integrales en el campo de las ciencias, tecnologías, ingenierías y matemáticas. Un ejemplo son las ingenierías, que son profesiones que requieren del uso de tecnología como base, de tener capacidad de innovación, del uso de matemáticas y fundamentos básicos en ciencias. En otras palabras, el uso de herramientas tecnológicas, que permitan mediatizar experiencias reales, como parte del modelo educativo motivará a la niñez a acercarse a estas carreras, tan necesarias en la actualidad bajo el modelo económico y de desarrollo del país.
+El Observatorio Laboral de Profesiones del Consejo Nacional de Rectores, para el 2022 dentro de las profesiones con mayor probabilidad de empleabilidad y mejores salarios se encuentran las ingenierías en informática y computaciones, relacionadas a las TIC, Diseño Industrial y otras de este campo.14
+El objetivo de este proyecto:
+El objetivo de este Proyecto de Ley es establecer una legislación nacional que promueva las capacidades STEIM por medio del trabajo experimental remoto con las ventajas de las Tecnologías de la Información y la Comunicación en todo el sistema educativo costarricense.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE INCENTIVO DEL USO DE LOS LABORATORIOS REMOTOS DE LAS
+UNIVERSIDADES PÚBLICAS PARA EL FORTALECIMIENTO
+DE LA EDUCACIÓN EN COSTA RICA.
+TÍTULO I
+DISPOSICIONES PRELIMINARES
+ARTÍCULO 1- Objeto de la Ley. El objetivo principal de esta legislación es establecer el marco legal necesario para promover el acceso de los centros educativos de nivel medio, técnico y otras instituciones públicas de educación básica y superior a los laboratorios remotos de las Universidades Públicas, en particular de la Universidad Estatal a Distancia. Esto se lleva a cabo con el propósito de fortalecer las habilidades necesarias para que los estudiantes puedan completar con éxito su proceso educativo, e incentivar vocaciones científicas que, en el futuro, mejoren las oportunidades educativas y laborales en Costa Rica.
+ARTÍCULO 2- Ámbito de Aplicación. Esta ley se aplica en todo el territorio nacional. La presente ley será de aplicación para las siguientes entidades públicas:
+a)- La Universidad Estatal a Distancia y Universidades Públicas de Costa Rica.
+c)- El Ministerio de Educación Pública.
+ARTÍCULO 3- Finalidad. El objetivo de este Proyecto de Ley es establecer una legislación nacional que promueva las capacidades STEM y mitigue las repercusiones negativas del “apagón educativo” por medio del trabajo experimental remoto con las ventajas de las Tecnologías de la Información y la Comunicación en todo el sistema educativo costarricense.
+TÍTULO II
+DE LOS LABORATORIOS REMOTOS
+ARTÍCULO 4- Definición de Laboratorios Remotos. Se define como Laboratorios Remotos (LR) a los recursos educativos que integran software y hardware para llevar a cabo actividades experimentales reales a través de Internet, permitiendo a estudiantes y profesores manipular equipos y realizar experimentos a distancia.
+ARTÍCULO 5- Acceso a Laboratorios Remotos. Las instituciones educativas de nivel medio, técnico y superior, públicas y privadas, podrán acceder a los Laboratorios Remotos de las Universidades Públicas, en particular de la Universidad Estatal a Distancia, con el fin de enriquecer el aprendizaje y la enseñanza de las ciencias naturales y matemáticas.
+ARTÍCULO 6- Uso de Laboratorios Remotos. El uso de Laboratorios Remotos se promoverá como complemento a la enseñanza tradicional de las ciencias naturales, enfatizando la importancia de la experimentación en edades tempranas.
+ARTÍCULO 7- Capacitación y Recursos para Docentes. El Ministerio de Educación Pública, en colaboración con las Universidades Públicas, establecerá programas de capacitación y proporcionará recursos para los docentes con el fin de facilitar la implementación efectiva de Laboratorios Remotos en el currículo educativo.
+TÍTULO III
+DE LOS BENEFICIOS DE LA IMPLEMENTACIÓN
+ARTÍCULO 8- Beneficios de los Laboratorios Remotos para la Educación. Se reconoce que la implementación de Laboratorios Remotos en el sistema educativo tiene múltiples beneficios, que incluyen:
+Incremento del acceso a herramientas científicas.
+Disponibilidad las veinticuatro horas de equipos de laboratorio.
+Fomento del trabajo autónomo de los estudiantes.
+Seguimiento y evaluación más efectiva de los progresos de los estudiantes.
+Ampliación de experiencias que los laboratorios tradicionales no pueden ofrecer.
+f)- Atención de grupos masivos y heterogéneos.
+ARTÍCULO 9- Fomento de las Vocaciones Científicas. Se enfatiza la importancia de la experimentación temprana en la formación de vocaciones científicas y se alienta a las instituciones educativas a utilizar Laboratorios Remotos como una herramienta para motivar a los estudiantes hacia carreras STEIM.
+TÍTULO IV
+DISPOSICIONES FINALES
+ARTÍCULO 10- Recursos para la Implementación. El Ministerio de Educación Pública en coordinación con las universidades públicas destinará la asignación de recursos necesarios para la implementación efectiva de esta ley, incluyendo la adquisición de equipos y la formación de docentes.
+Rige a partir de su publicación.
+Vanessa de Paul Castro Mora
+Diputada
+NOTAS: El expediente legislativo aún no tiene comisión asignada.
+El texto fue confrontado y revisado por el Departamento de Servicios Parlamentarios, para hacerle los ajustes formales requeridos por el SIL. (Fecha de subido al SIL: 13-12-2023).

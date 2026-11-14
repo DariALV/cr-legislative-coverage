@@ -1,0 +1,40 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA GARANTIZAR EL PLENO EJERCICIO DEL DERECHO DE RECESO SOCIETARIO
+ABRIL GORDIENKO LÓPEZ
+Y OTRO SEÑOR DIPUTADO
+EXPEDIENTE N.º 25.739
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY PARA GARANTIZAR EL PLENO EJERCICIO DEL DERECHO DE RECESO SOCIETARIO
+Expediente N.º 25.739
+ASAMBLEA LEGISLATIVA:
+En el año 2026 se aprobó la Ley n.º 10902, tramitada bajo el expediente legislativo n.º 23.472. Dicha reforma adicionó un último párrafo al artículo 32 bis del Código de Comercio, Ley n.º 3284, del 30 de abril de 1964, con el propósito de establecer que las personas socias que ejerzan su derecho de receso no podrán readquirir posteriormente esa condición. Asimismo, la reforma buscó precisar el momento a partir del cual se entiende extinguida la condición de socio.
+El derecho de receso constituye un mecanismo de protección de las personas socias minoritarias, al facultarlas para separarse de la sociedad cuando concurran los supuestos previstos en el propio Código de Comercio. Esta naturaleza ha sido reconocida por la jurisprudencia constitucional. En ese sentido, la resolución n.º 2014-1584 señala:
+No es posible reputar las relaciones societarias como perpetuas, precisamente porque en protección del derecho fundamental de asociación, manifestado en sus dos facetas, está la de constituir una asociación como también la de librarse de ella, si esta última no resulta conveniente a los intereses de una minoría. Ciertamente, el principio mayoritario permitiría el derecho de autorregulación dentro de una relación societaria, que, claramente sirve para poder establecer la estructuración propia del giro comercial, pero no es apto para subordinar el ejercicio de un derecho constitucional, en su faceta negativa, especialmente de una minoría de socios. Aunque se señale que la ausencia de normativa vinculada a este tipo de sociedad anónimas resulta perjudicial, el ejercicio que prevé el Código de Comercio se encuentra limitado a ciertos supuestos, cumpliendo con un mínimo de formalidades, es decir, no es ad nutum que permitiría exigir la separación en cualquier momento, sino que el código lo establece en determinados momentos.
+A la luz de esta naturaleza jurídica, la reforma aprobada en 2026 presenta dos problemas fundamentales. En primer lugar, la reforma establece que la pérdida de condición de socio se da en el momento que el socio que se acoge a su derecho de receso hace depósito de sus acciones. Sin embargo, resulta más coherente que la pérdida de la condición de socio se produzca una vez efectuado el reembolso correspondiente, momento en el cual se extingue de forma definitiva el vínculo societario. De lo contrario, se generaría un período de incertidumbre respecto de los derechos y obligaciones de la persona recedente, mientras aún no ha recibido el pago de sus acciones, situación que podría vulnerar el principio de seguridad jurídica.
+En segundo término, la prohibición absoluta de readquirir la condición de socio una vez ejercido el derecho de receso constituye una restricción desproporcionada a la autonomía de la voluntad. Conforme al ordenamiento jurídico costarricense, la condición de socio deriva de la titularidad de las acciones. En consecuencia, una persona que haya ejercido válidamente su derecho de receso podría adquirir nuevamente acciones de la sociedad y, por esa sola circunstancia, recuperar la condición de socia.
+Desde esta perspectiva, carece de justificación y vulnera todo derecho, impedir que una persona vuelva a integrar la sociedad mediante la adquisición de acciones. Tal prohibición limita injustificadamente tanto la libre circulación de las acciones como la libertad contractual de quienes desean enajenarlas o adquirirlas, sin que exista una razón objetiva que sustente una restricción de esa naturaleza.
+En términos prácticos, ello implicaría que una persona que ejerció su derecho de receso, pero que años después desea reincorporarse a la sociedad mediante la adquisición de acciones, tendría impedido hacerlo de manera permanente, pese a que ya no subsistan las circunstancias que motivaron originalmente su separación.
+Adicionalmente, esta disposición podría entrar en contradicción con el propio artículo 32 bis que pretende reformar, el cual establece que: “Es nulo cualquier pacto que tienda a entorpecer, limitar o excluir el derecho de receso”.
+En efecto, la imposibilidad definitiva de recuperar la condición de socio podría constituir un factor disuasorio para el ejercicio del derecho de receso, al imponer una consecuencia permanente que excede la finalidad propia de ese instituto. En ese sentido, la amenaza de una exclusión irreversible de la sociedad podría convertirse en un mecanismo indirecto de presión para que las personas socias decidan no ejercer un derecho que el propio ordenamiento jurídico les reconoce, aun cuando se configuren todos los presupuestos legales para ello.
+Estas preocupaciones fueron resaltadas en el informe AL-DEST-IJU-145-2023 del 19 de julio de 2023 realizado por el Departamento de Servicios Técnicos de la Asamblea Legislativa, a ello, las observaciones no fueron atendidas en el texto aprobado y por ello resulta necesario realizar una nueva reforma al Código de Comercio para atender estas falencias.
+En vista de lo expuesto y con el fin de proteger el derecho de receso, se somete a discusión del plenario legislativo el presente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA GARANTIZAR EL PLENO EJERCICIO DEL DERECHO DE RECESO SOCIETARIO
+ARTÍCULO ÚNICO– Se reforma el artículo 32 bis del Código de Comercio, Ley n.° 3284, del 30 de abril de 1964, y sus reformas, para que en adelante se lea de la siguiente manera:
+Artículo 32 bis- Los socios disidentes de los acuerdos de prórroga del plazo social, traslado del domicilio social al extranjero y transformación y fusión que generen un aumento de su responsabilidad, tienen derecho a retirarse de la sociedad y a obtener el reembolso de sus acciones, según el precio promedio del último trimestre, si se cotizan en bolsa, o proporcionalmente al patrimonio social resultante de una estimación pericial.
+La declaración de retiro debe ser comunicada a la sociedad por carta certificada o por otro medio de fácil comprobación, por los socios que intervinieron en la asamblea, dentro de los cinco días siguientes a la inscripción del acuerdo en el Registro Mercantil.
+Puede también ejercer el derecho de receso, el socio que compruebe:
+Que la sociedad, a pesar de tener utilidades durante dos períodos consecutivos, no repartió en efectivo cuando menos el diez por ciento (10%) en dividendos, en cada período.
+Que ha cambiado el giro de su actividad de modo que le cause perjuicio. En estos casos, la acción caduca un año después de haberse producido la causal.
+Para efectos del ejercicio del derecho de receso, las acciones del recedente deben ser depositadas en una entidad financiera o bancaria, o en una central para el depósito de valores, desde la notificación establecida en el párrafo segundo de este artículo.
+El valor de sus acciones le será reembolsado al recedente en un plazo máximo de sesenta días, contados a partir de la notificación a la sociedad, en dinero efectivo.
+Es nulo cualquier pacto que tienda a entorpecer, limitar o excluir el derecho de receso.
+Ejercido el derecho de receso o de separación, una vez depositadas las acciones y efectuado el reembolso de su valor, se pierde la condición de socio.
+Rige a partir de su publicación
+Abril Gordienko López Antonio Trejos Mazariegos
+Diputada y diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 26-08-2026).

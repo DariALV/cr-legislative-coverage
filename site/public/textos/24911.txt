@@ -1,0 +1,63 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+REFORMA DEL ARTÍCULO 21 DE LA LEY REGULADORA
+DEL TRANSPORTE REMUNERADO DE PERSONAS EN
+VEHÍCULOS AUTOMOTORES, LEY N.º 3503, DEL10
+DE MAYO DE 1965 Y SUS REFORMAS, PARA
+GARANTIZAR SEGURIDAD JURÍDICA PARA
+LA MODERNIZACIÓN DEL
+SERVICIO DE BUSES
+DANIEL VARGAS QUIRÓS
+VARIOS SEÑORES DIPUTADOS
+Y SEÑORAS DIPUTADAS
+EXPEDIENTE N.º 24.911
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+REFORMA DEL ARTÍCULO 21 DE LA LEY REGULADORA
+DEL TRANSPORTE REMUNERADO DE PERSONAS EN
+VEHÍCULOS AUTOMOTORES, LEY N.º 3503, DEL10
+DE MAYO DE 1965 Y SUS REFORMAS, PARA
+GARANTIZAR SEGURIDAD JURÍDICA PARA
+LA MODERNIZACIÓN DEL
+SERVICIO DE BUSES
+Expediente N.º 24.911
+ASAMBLEA LEGISLATIVA:
+La presente iniciativa de ley surge con el propósito de alinear el plazo de la concesión en el régimen de concesiones de transporte público, modalidad buses, y por lo tanto el plazo de la amortización a la vida útil de los buses. Este alineamiento es imperativo para la transición de buses convencionales a buses eléctricos. Además, se adecúa el texto para generar seguridad jurídica en cuanto a la renovación de las concesiones. Los puntos fundamentales que justifican esta reforma se detallan a continuación:
+1- CLARIDAD EN LA TERMINOLOGÍA
+La redacción actual del artículo 21 de la Ley Reguladora del Transporte Remunerado de Personas en Vehículos Automotores (Ley N.º 3503) establece que el “término” de la concesión será el determinado en el contrato correspondiente; no obstante, el uso de esta palabra puede generar ambigüedad, ya que en el ámbito jurídico su significado difiere del de plazo.
+Según la Real Academia Española (RAE):
+- Plazo: tiempo establecido para cumplir una obligación.
+- Término: límite o punto final de algo.
+Dado que plazo hace referencia al período de vigencia de la concesión y término a su finalización, el uso de este último puede inducir a interpretaciones erróneas sobre su duración y renovación. Para garantizar seguridad jurídica y precisión normativa se propone sustituir “término” por “plazo” en el artículo 21, asegurando una interpretación clara y uniforme.
+2- PLAZO DE LAS CONCESIONES
+En el artículo 21 se establece que el término (o, según la propuesta, el "plazo") de las concesiones "...podrá ser de hasta siete años …". Esta limitación tiene dos implicaciones económicas: a) el concesionario solo es sujeto de crédito en el año 1 de su concesión y b) el crédito deberá amortizarse en siete años, a pesar de que la vida útil legalmente establecida de los buses es de quince años (el artículo 46 bis de la Ley N.º 7600 establece que el MOPT no permitirá la circulación de autobuses de ruta regular después de transcurridos quince años desde su fabricación).
+Es por esta razón que la metodología tarifaria de la Aresep incluye la depreciación del 80% del valor de los buses en los primeros siete años y en los siguientes ocho años se deprecia el restante 20% del valor del bus. Esta desalineación del plazo de la concesión (7) y la vida útil legal del bus (15), da como resultado, aplicando la metodología de Aresep, una tarifa más alta durante los primeros siete años de uso de los buses comparado con la situación que se daría si la depreciación se diera a lo largo de los quince años de uso de los buses. Actualmente la depreciación anual es del 11,42% del valor nuevo del bus en los primeros siete años versus una depreciación del 6,66% anual en el caso de que la depreciación sea a lo largo de quince años.
+El efecto de esta desalineación sobre las tarifas que pagan los usuarios se agrava con los buses eléctricos, ya que estos tienen un valor superior al doble del valor de los buses diésel y, por lo tanto, el valor absoluto de la depreciación también se duplica, resultando en tarifas más altas de lo necesario para prestar el servicio al costo. Con el fin de no obstaculizar la electrificación del transporte público con un aumento innecesario de las tarifas al realizar el cambio hacia buses eléctricos se hace necesario adecuar el plazo de la concesión a la vida útil de los buses utilizados, que por su calidad y costo de reparación puede variar entre los distintos buses utilizados.
+Es así como el presente proyecto de ley propone que la administración determine el plazo de la concesión según la vida útil del vehículo de transporte de personas, alineado al plazo de amortización de los créditos otorgados a los operadores, plazo que se plasmaría en el respectivo contrato de concesión.
+3- RENOVACIÓN DE LAS CONCESIONES
+En el artículo 21 se establece que el término (o, según la propuesta, el "plazo") de las concesiones "...podrá ser de hasta siete años, pero podrá ser renovado…" si el concesionario ha cumplido con todas sus obligaciones legales y contractuales. La indicación de que “podrá ser renovado” permite la no renovación, aun cuando el concesionario haya cumplido a cabalidad con todas sus obligaciones contractuales.
+Esta disposición legal implica que el concesionario podrá tener acceso a un crédito por el plazo de la concesión solo en el año uno de la concesión. Cada año que transcurra a partir de ahí el plazo restante de la concesión se reduce en un año y por lo tanto el plazo del crédito; sin embargo, la metodología del Aresep para el cálculo de tarifas no toma en cuenta, y no lo puede hacer, la reducción del plazo de amortización del crédito en función del año en que el concesionario tuvo que sustituir un bus al final de su vida útil por uno nuevo, generando irremediablemente una desalineación entre el plazo restante del contrato de concesión y la vida útil de los buses a partir del año dos de la concesión.
+Por otro lado, la incertidumbre económica de esta disposición no genera ningún beneficio para los usuarios, ya que en el marco de una regulación que fija todos los parámetros relevantes del servicio, como las tarifas, horarios, frecuencias, tipo de vehículo, cantidad de vehículos, comodidad de las unidades, limpieza, entre otros, no es posible generar ningún beneficio mediante la adjudicación concursada de una concesión de ruta. Todo lo contrario, debido a la existencia de costos hundidos en la prestación del servicio, como los gastos legales iniciales, el equipamiento de cargadores de los buses eléctricos o los tanques de autoconsumo de diésel, la capacitación de los choferes, entre otros, el nuevo concesionario tendría costos más altos que el anterior generados por el mismo cambio de concesionario, sin beneficio alguno para los usuarios.
+Es por ello que, en la práctica, durante las últimas décadas se ha constatado que las concesiones de ruta ordinaria son renovadas de forma consecutiva siempre que el concesionario cumpla cabalmente con los requisitos establecidos; sin embargo, la disposición actual que permite la no renovación de la concesión genera incertidumbre tanto para los concesionarios como para las entidades financieras que respaldan sus operaciones.
+Es importante recordar que el artículo 13 de la Ley N.º 3503 establece que el contrato de concesión debe incluir las causales que dan derecho al Estado para cancelar administrativamente la concesión en cualquier momento, indistintamente del término de la concesión.
+Por esta razón se propone modificar la ley mencionada, para establecer de manera clara que el plazo de las concesiones será renovado siempre que el concesionario haya cumplido a cabalidad con las obligaciones establecidas en el contrato de concesión y en la normativa aplicable. Este cambio fortalecerá el principio de continuidad del servicio y premiará el cumplimiento normativo en beneficio de los usuarios, sin que el Estado pierda la potestad de cancelar la concesión en cualquier momento ante incumplimientos normativos.
+De acuerdo con lo expuesto, se somete a consideración de los diputados y diputadas el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+REFORMA DEL ARTÍCULO 21 DE LA LEY REGULADORA
+DEL TRANSPORTE REMUNERADO DE PERSONAS EN
+VEHÍCULOS AUTOMOTORES, LEY N.º 3503, DEL10
+DE MAYO DE 1965 Y SUS REFORMAS, PARA
+GARANTIZAR SEGURIDAD JURÍDICA PARA
+LA MODERNIZACIÓN DEL
+SERVICIO DE BUSES
+ARTÍCULO ÚNICO- Refórmese el artículo 21 de la Ley Reguladora del Transporte Remunerado de Personas en Vehículos Automotores, Ley N.º 3503, del 10 de mayo de 1965 y sus reformas. El texto será el siguiente:
+Artículo 21- Plazo de las concesiones
+El plazo de la concesión será el que señale el contrato de concesión y se fijará tomando en cuenta el monto de la inversión y el plazo para amortizarlo y obtener una ganancia justa. El plazo de la concesión será renovado si el concesionario ha cumplido a cabalidad con todas y cada una de sus obligaciones y se ha comprometido formalmente a cumplir con las disposiciones que se establezcan conforme a la Ley N.º 3503.
+Rige a partir de su publicación.
+Daniel Gerardo Vargas Quirós
+Pilar Cisneros Gallo Luis Diego Vargas Rodríguez
+Manuel Esteban Morales Díaz María Daniela Rojas Salas
+Diputados y diputadas
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 31-03-2025).

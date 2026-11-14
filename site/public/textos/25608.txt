@@ -1,0 +1,830 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+REFORMA A LA LEY DE LA ADMINISTRACIÓN FINANCIERA DE LA REPÚBLICA Y PRESUPUESTOS PÚBLICOS PARA EL FORTALECIMIENTO DE LA GESTIÓN PRESUPUESTARIA INSTITUCIONAL, EL CONTROL PARLAMENTARIO
+Y SU VINCULACIÓN CON LA DEUDA PÚBLICA
+SALVADOR PADILLA VILLANUEVA
+DIPUTADO
+EXPEDIENTE N.º 25.608
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+REFORMA A LA LEY DE LA ADMINISTRACIÓN FINANCIERA DE LA REPÚBLICA Y PRESUPUESTOS PÚBLICOS PARA EL FORTALECIMIENTO DE LA GESTIÓN PRESUPUESTARIA INSTITUCIONAL, EL CONTROL PARLAMENTARIO
+Y SU VINCULACIÓN CON LA DEUDA PÚBLICA
+Expediente N.º 25.608
+ASAMBLEA LEGISLATIVA:
+La eficiencia en la administración de los recursos públicos constituye uno de los principios esenciales de la Hacienda Pública y un elemento indispensable para garantizar la sostenibilidad fiscal, la estabilidad macroeconómica y el adecuado cumplimiento de los fines del Estado.
+La Constitución Política de la República de Costa Rica establece, en sus artículos 11, 176, 177 y 184, los principios de legalidad, eficiencia, transparencia, control y fiscalización en la administración de los recursos públicos, así como la obligación del Estado de garantizar una adecuada gestión presupuestaria y financiera.
+Asimismo, la Ley 8131, Administración Financiera de la República y Presupuestos Públicos y la Ley 8292, Ley General de Control Interno, establecen responsabilidades concretas para la administración activa, las auditorías internas y los órganos de control, orientadas a fortalecer la eficiencia, eficacia, economía y transparencia en el uso de los fondos públicos.
+No obstante, durante los últimos años se han evidenciado niveles persistentes de subejecución presupuestaria en distintas instituciones del sector público, situación que refleja debilidades estructurales en los procesos de planificación institucional, formulación presupuestaria, contratación administrativa, administración de riesgos, ejecución financiera y seguimiento de proyectos públicos.
+La problemática adquiere especial relevancia cuando los recursos no ejecutados provienen de endeudamiento público, créditos externos o empréstitos internacionales, dado que ello implica costos financieros para el Estado sin que dichos recursos se traduzcan oportunamente en infraestructura, bienes, servicios o programas de impacto para la ciudadanía.
+El análisis de la ejecución presupuestaria del Gobierno central durante los ejercicios económicos 2022, 2023 y 2024 evidencia niveles recurrentes de subejecución institucional que afectan la eficiencia y calidad del gasto público.
+Durante dicho período, los recursos no ejecutados alcanzaron montos significativos:
+En el año 2022, la subejecución presupuestaria ascendió a aproximadamente ₡552 mil millones, equivalente al 4,91% del presupuesto final.
+En el año 2023, los recursos no ejecutados alcanzaron aproximadamente ₡763 mil millones, equivalentes al 6,38% del presupuesto final, constituyéndose en el nivel más alto del período analizado.
+En el año 2024, la subejecución presupuestaria fue cercana a ₡586 mil millones, equivalente al 4,77% del presupuesto final.
+CUADRO 1: COMPORTAMIENTO DE LOS RECURSOS FINANCIEROS NO EJECUTADOS
+PERIODO 2022, en millones de colones
+TÍTULO
+DESCRIPCIÓN
+PRESUPUESTO FINAL 2022
+DEVENGO 2022
+NO DEVENGO 2022
+230
+SERV. DEUDA PÚBLICA.
+4,660,438.2
+4,413,065.4
+247,372.8
+210
+M. EDUC. PÚBLICA.
+2,577,673.7
+2,501,532.6
+76,141.1
+209
+M. OBRAS PÚBLICAS Y TRANSP.
+372,950.5
+332,144.8
+40,805.7
+231
+RÉGIM. PENSIONES.
+1,119,177.0
+1,089,768.1
+29,408.9
+211
+M. SALUD.
+344,631.2
+316,513.5
+28,117.7
+301
+PODER JUDICIAL.
+476,365.2
+453,234.0
+23,131.2
+214
+M. JUSTIFICA Y PAZ.
+197,590.7
+176,621.6
+20,969.1
+205
+M. SEGURIDAD.
+268,230.8
+250,218.2
+18,012.6
+212
+M. TRABAJO Y S. SOCIAL.
+597,486.2
+587,304.7
+10,181.5
+401
+TRIBUNAL SUPREMO ELECC.
+57,540.5
+47,549.7
+9,990.8
+206
+M. DE HACIENDA.
+115,532.5
+107,642.7
+7,889.8
+213
+M. CULTURA Y JUVENTUD.
+50,085.1
+42,265.1
+7,820.0
+219
+M. AMBIENTE Y ENERGIA.
+57,540.3
+50,937.1
+6,603.2
+203
+M. GOBERNACION Y POLICÍA.
+51,659.7
+46,692.6
+4,967.1
+207
+M. AGRICULTURA Y GANAD.
+53,528.0
+48,672.5
+4,855.5
+101
+ASAMBLEA LEGISLATIVA.
+47,269.7
+42,773.2
+4,496.5
+201
+PRESIDENCIA REPÚBLICA.
+80,046.5
+76,793.3
+3,253.2
+204
+M. RELACIONES EXT Y CULTO.
+26,989.9
+24,180.4
+2,809.5
+202
+M. PRESIDENCIA.
+10,911.0
+9,758.6
+1,152.4
+103
+DEFEN. HABITANTES.
+5,899.8
+4,921.9
+977.9
+102
+CONTRALORÍA GENERAL R.
+20,590.5
+19,642.6
+947.9
+218
+M. CIENCIA Y TECNOLOGÍA.
+7,161.1
+6,312.0
+849.1
+216
+M. COMERCIO EXTERIOR.
+7,906.2
+7,241.8
+664.4
+208
+M. ECONOMÍA, IND. Y COM.
+15,538.0
+15,148.7
+389.3
+217
+M. PLANIF. NAC. Y POL. ECON.
+13,582.1
+13,300.6
+281.5
+215
+M. DE VIVIENDA Y ASENT.HUM.
+5,630.9
+5,390.2
+240.7
+OBRAS ESPECÍFICAS.
+TOTAL:
+11,241,955.3
+10,689,625.9
+552,329.4
+Fuente: Informe técnico elaborado por el Departamento de Análisis Presupuestario, sobre la liquidación del presupuesto ordinario y extraordinario de la República para el ejercicio económico del 2022 (Ley 10.103, del 7 de diciembre del 2021).
+CUADRO 2: COMPORTAMIENTO DE LOS RECURSOS FINANCIEROS NO EJECUTADOS
+PERIODO 2023, en millones de colones
+TÍTULO
+DESCRIPCIÓN
+PRES. FINAL 2023
+DEVENGO 2023
+NO DEVENGO 2023
+230
+SERV. DEUDA PÚBLICA.
+5,305,714.2
+4,908,430.7
+397,283.5
+210
+M. EDUC. PÚBLICA.
+2,533,934.3
+2,485,993.5
+47,940.8
+209
+M. OBRAS PÚBLICAS Y TRANSP.
+432,556.1
+383,869.6
+48,686.5
+231
+RÉGIM. PENSIONES.
+1,126,577.1
+1,116,549.5
+10,027.6
+211
+M. SALUD.
+333,903.7
+289,905.2
+43,998.5
+301
+PODER JUDICIAL.
+491,553.6
+466,597.7
+24,955.9
+214
+M. JUSTICIA Y PAZ.
+192,464.5
+171,923.0
+20,541.5
+205
+M. SEGURIDAD.
+273,544.5
+249,550.1
+23,994.4
+212
+M. TRABAJO Y S. SOCIAL.
+625,800.4
+604,660.1
+21,140.3
+401
+TRIBUNAL SUPREMO ELECC.
+57,986.0
+46,320.8
+11,665.2
+206
+M. DE HACIENDA.
+162,757.6
+106,115.3
+56,642.3
+213
+M. CULTURA Y JUVENTUD.
+47,817.7
+40,899.0
+6,918.7
+219
+M. AMBIENTE Y ENERGÍA.
+56,712.2
+50,617.2
+6,095.0
+203
+M. GOBERNACIÓN Y POLICÍA.
+63,405.1
+46,571.0
+16,834.1
+207
+M. AGRICULTURA Y GANAD.
+52,693.0
+48,541.2
+4,151.8
+101
+ASAMBLEA LEGISLATIVA.
+48,290.3
+43,518.0
+4,772.3
+201
+PRESIDENCIA REPÚBLICA.
+41,239.3
+36,948.8
+4,290.5
+204
+M. RELACIONES EXT Y CULTO.
+27,006.4
+21,415.1
+5,591.3
+202
+M. PRESIDENCIA.
+11,722.8
+10,416.9
+1,305.9
+103
+DEFEN. HABITANTES.
+5,801.4
+4,701.0
+1,100.4
+102
+CONTRALORÍA GENERAL R.
+20,590.4
+19,736.6
+853.8
+218
+M. CIENCIA Y TECNOLOGÍA.
+7,081.4
+6,167.7
+913.7
+216
+M. COMERCIO EXTERIOR.
+7,945.5
+6,780.8
+1,164.7
+208
+M. ECONOMÍA, IND. Y COM.
+15,350.8
+14,425.6
+925.2
+217
+M. PLANIF. NAC. Y POL. ECON.
+13,469.4
+13,128.1
+341.3
+215
+M. DE VIVIENDA Y ASENT.HUM.
+5,650.2
+4,526.1
+1,124.1
+OBRAS ESPECÍFICAS.
+TOTAL:
+11,961,567.9
+11,198,308.6
+763,259.3
+Fuente: Informe Técnico elaborado por el Departamento de Análisis Presupuestario sobre la liquidación del presupuesto ordinario y extraordinario de la República para el ejercicio económico del 2023 (Ley 10.331, del 29 de noviembre del 2022).
+CUADRO 3: COMPORTAMIENTO DE LOS RECURSOS FINANCIEROS NO EJECUTADOS
+PERIODO 2024, en millones de colones
+TÍTULO
+DESCRIPCIÓN
+PRES. FINAL 2024
+DEVENGO 2024
+NO DEVENGO 2024
+230
+SERV. DEUDA PÚBLICA.
+5,291,135.3
+4,936,308.8
+354,826.5
+210
+M. EDUC. PÚBLICA.
+2,687,815.2
+2,656,356.3
+31,458.9
+209
+M. OBRAS PÚBLICAS Y TRANSP.
+432,181.2
+390,999.3
+41,181.9
+231
+RÉGIM. PENSIONES
+1,200,509.8
+1,183,549.5
+16,960.3
+211
+M. SALUD.
+371,275.7
+343,393.8
+27,881.9
+301
+PODER JUDICIAL.
+507,294.9
+489,252.9
+18,042.0
+214
+M. JUSTICIA Y PAZ.
+199,625.2
+179,397.6
+20,227.6
+205
+M. SEGURIDAD.
+319,540.1
+284,721.8
+34,818.3
+212
+M. TRABAJO Y S. SOCIAL.
+667,864.8
+661,350.7
+6,514.1
+401
+TRIBUNAL SUPREMO ELECC.
+54,045.9
+46,351.9
+7,694.0
+206
+M. DE HACIENDA.
+149,810.8
+133,611.0
+16,199.8
+213
+M. CULTURA Y JUVENTUD.
+49,447.3
+44,786.3
+4,661.0
+219
+M. AMBIENTE Y ENERGÍA.
+58,335.2
+54,543.9
+3,791.3
+203
+M. GOBERNACIÓN Y POLICÍA.
+58,826.8
+50,702.0
+8,124.8
+207
+M. AGRICULTURA Y GANAD.
+58,218.9
+55,670.9
+2,548.0
+101
+ASAMBLEA LEGISLATIVA.
+48,907.1
+45,192.7
+3,714.4
+201
+PRESIDENCIA REPÚBLICA.
+36,743.6
+34,688.7
+2,054.9
+204
+M. RELACIONES EXT. Y CULTO.
+27,842.7
+23,626.5
+4,216.2
+202
+M. PRESIDENCIA.
+12,032.1
+10,802.3
+1,229.8
+103
+DEFEN. HABITANTES.
+5,987.3
+5,278.8
+708.5
+102
+CONTRALORÍA GENERAL R.
+20,399.4
+19,903.7
+495.7
+218
+M. CIENCIA Y TECNOLOGÍA.
+9,615.3
+8,494.2
+1,121.1
+216
+M. COMERCIO EXTERIOR.
+11,549.5
+10,926.9
+622.6
+208
+M. ECONOMÍA, IND. Y COM.
+16,591.2
+15,553.6
+1,037.6
+217
+M. PLANIF. NAC. Y POL. ECON.
+19,032.0
+18,284.0
+748.0
+215
+M. DE VIVIENDA Y ASENT.HUM.
+6,055.3
+5,843.6
+211.7
+OBRAS ESPECÍFICAS.
+TOTAL:
+12,320,682.6
+11,709,591.7
+611,090.9
+Fuente: Informe Técnico elaborado por el Departamento de Análisis Presupuestario sobre la liquidación del presupuesto ordinario y extraordinario de la República para el ejercicio económico del 2024 (Ley 10.427, del 11 de diciembre del 2023).
+CUADRO 4: COMPORTAMIENTO DE LOS RECURSOS FINANCIEROS NO EJECUTADOS
+PERIODO 2025, en millones de colones
+TÍTULO
+DESCRIPCIÓN.
+PRESUPUESTO FINAL 2025
+DEVENGO 2025
+NO DEVENGO 2025
+230
+SERV. DEUDA PÚBLICA.
+5,096,600.1
+4,697,881.9
+398,718.2
+210
+M. EDUC. PÚBLICA.
+2,721,800.5
+2,661,792.9
+60,007.6
+209
+M.OBRAS PÚBLICAS Y TRANSP.
+431,641.3
+392,605.4
+39,035.9
+231
+RÉGIM. PENSIONES
+1,201,521.0
+1,177,190.1
+24,330.9
+211
+M. SALUD
+357,402.6
+323,953.1
+33,449.5
+301
+PODER JUDICIAL
+535,218.5
+512,155.6
+23,062.9
+214
+M. JUSTICIA Y PAZ.
+212,772.0
+187,903.0
+24,869.0
+205
+M. SEGURIDAD.
+326,313.2
+299,687.9
+26,625.3
+212
+M. TRABAJO Y S. SOCIAL.
+679,712.4
+674,766.5
+4,945.9
+401
+TRIBUNAL SUPREMO ELECC.
+56,954.8
+45,790.6
+11,164.2
+206
+M. DE HACIENDA.
+145,840.8
+128,770.5
+17,070.3
+213
+M. CULTURA Y JUVENTUD.
+48,994.6
+45,292.5
+3,702.1
+219
+M. AMBIENTE Y ENERGIA.
+58,569.7
+55,890.5
+2,679.2
+203
+M. GOBERNACIÓN Y POLICÍA.
+62,095.1
+53,836.7
+8,258.4
+207
+M. AGRICULTURA Y GANAD.
+59,221.6
+57,715.6
+1,506.0
+101
+ASAMBLEA LEGISLATIVA.
+49,542.6
+46,597.2
+2,945.4
+201
+PRESIDENCIA REPÚBLICA.
+36,594.2
+35,313.7
+1,280.5
+204
+M. RELACIONES EXT. Y CULTO.
+31,534.8
+24,942.6
+6,592.2
+202
+M. PRESIDENCIA
+11,465.8
+10,418.1
+1,047.7
+103
+DEFEN. HABITANTES.
+6,046.4
+5,515.9
+530.5
+102
+CONTRALORÍA GENERAL R.
+20,590.4
+20,072.1
+518.3
+218
+M. CIENCIA Y TECNOLOGÍA.
+9,727.2
+9,268.8
+458.4
+216
+M. COMERCIO EXTERIOR.
+12,234.9
+10,334.9
+1,900.0
+208
+M. ECONOMÍA, IND. Y COM.
+16,598.8
+15,460.2
+1,138.6
+217
+M. PLANIF. NAC. Y POL. ECON.
+18,624.3
+17,917.4
+706.9
+215
+M. DE VIVIENDA Y ASENT.HUM.
+7,231.4
+7,045.0
+186.4
+OBRAS ESPECÍFICAS.
+2,500.0
+2,500.0
+TOTAL:
+12,217,349.0
+11,518,118.7
+699,230.3
+Fuente: Informe Técnico elaborado por el Departamento de Análisis Presupuestario AL-DAPR-INF-012-2026, del 27/05/2026, sobre la liquidación del presupuesto ordinario y extraordinario de la República para el ejercicio económico del 2025 (Ley 10.620, del 6 de diciembre del 2024).
+De acuerdo con la información esbozada y los temas abordados en los apartados siguientes, se identifican niveles persistentes de subejecución en áreas vinculadas con:
+Servicio de la deuda pública.
+Infraestructura vial.
+Seguridad.
+Justicia.
+Programas sociales.
+Proyectos financiados mediante recursos externos.
+Infraestructura hídrica y movilidad resiliente.
+La permanencia de estos niveles de subejecución evidencia presuntas debilidades institucionales relacionadas con:
+Planificación institucional.
+Formulación presupuestaria.
+Capacidad de ejecución.
+Contratación administrativa.
+Seguimiento técnico y financiero de proyectos.
+Gestión de riesgos.
+Coordinación interinstitucional.
+Aunado al comportamiento interanual anterior, es importante mencionar los altos niveles de subejecución mostrados en años anteriores, específicamente para los periodos 2018 al 2021.
+CUADRO 5: COMPORTAMIENTO DE LOS RECURSOS FINANCIEROS NO EJECUTADOS
+PERIODO 2018-2021, en millones de colones
+NO EJECUTADO
+2018
+NO EJECUTADO
+2019
+NO EJECUTADO
+2020
+NO EJECUTADO
+2021
+1.137.427.4
+1.145.077.8
+1.069.783.2
+810.312.7
+Fuente: Informe elaborado por el Departamento de Análisis Presupuestario con datos de las liquidaciones de egresos de la Contabilidad Nacional.
+Del cuadro anterior se desprende que, al cierre del periodo 2018, el monto de subejecución presupuestaria alcanzó los ¢1,1 billones de colones, manteniéndose este comportamiento durante los años 2019, 2020 y, prácticamente, 2021, según se ilustra seguidamente.
+Fuente: Informe elaborado por el Departamento de Análisis Presupuestario AL-DAPR-INF-012-2026 del 27/05/2026, con datos de las liquidaciones de egresos de la Contabilidad Nacional.
+Es importante destacar que la conformación de los altos índices de subejecución corresponde a la partida 230, Servicio de la Deuda Pública, en el que para este primer año 2018, la subejecución fue por el orden de los ¢593.336.0 millones de colones y, los restantes periodos, 2019 al 2021, los montos no ejecutados rondaron los ¢783.417.8 millones para el 2019, ¢568.609.5 para el 2020 y ¢344.117.7 para el 2021.
+Asimismo, el análisis histórico de la deuda pública del Gobierno central evidencia un crecimiento sostenido y estructural del endeudamiento estatal.
+La deuda pública total pasó de aproximadamente ₡3,9 billones en el año 2008 a ₡29,3 billones en el año 2024, representando un incremento acumulado superior a los seiscientos cincuenta por ciento (650%).
+Fuente: Elaboración propia, datos obtenidos del informe elaborado por el Departamento de Análisis Presupuestario de la Asamblea Legislativa, a partir de datos del portal del Ministerio de Hacienda al 12/02/2025.
+Aunque entre los años 2021 y 2024 se observa una desaceleración relativa en el ritmo de crecimiento de la deuda pública, el saldo total continúa aumentando de manera sostenida, generando mayores obligaciones financieras y reduciendo progresivamente el espacio fiscal disponible para inversión pública, infraestructura, programas sociales, seguridad, salud y educación.
+Adicionalmente, el análisis histórico evidencia que la deuda interna continúa representando el principal componente del endeudamiento público, superando el 70% del total de la deuda del Gobierno central, lo cual genera:
+Presión sobre el mercado financiero nacional.
+Incremento de obligaciones por servicio de deuda.
+Restricción del crédito interno.
+Mayor vulnerabilidad fiscal y financiera.
+Por su parte, el crecimiento de la deuda externa incrementa la exposición del país a riesgos cambiarios y financieros, derivados de obligaciones denominadas en moneda extranjera.
+Especial preocupación genera la baja ejecución de recursos financiados mediante créditos externos y empréstitos internacionales.
+El análisis de la cartera de créditos externos en ejecución al 30 de noviembre de 2025 evidencia que, de un total aproximado de US$3.188 millones aprobados, únicamente se habían desembolsado alrededor de US$1.292 millones, equivalentes a un 40,6% del total autorizado.
+CUADRO 6: COMPORTAMIENTO DE LOS CRÉDITOS EXTERNOS DEL GOBIERNO CENTRAL Y EL RESTO DEL SECTOR PÚBLICO
+AL 30/11/2025, en millones de dólares
+ACREEDOR
+PROGRAMA O PROYECTO
+DEUDOR/GARANTE
+ORGANISMO EJECUTOR
+MONTO EQUIVALENTE EN US$
+BCIE
+2198
+Programa de Alcantarillado y Control de Inundaciones para Limón
+GOBNO
+AYA/Senara
+55.080.000,00
+2220
+Proyecto de Abastecimiento de Agua para la Cuenca Media del río Tempisque y Comunidades Costeras (Paacume)
+GOBNO
+Senara
+425.000.000,00
+2317
+Programa de emergencia para la reconstrucción integral y resiliente de infraestructura (Proeri)
+GOBNO
+CNE
+700.000.000,00
+2129
+Proyecto de Reducción de Agua No Contabilizada y Optimización de la Eficiencia Energética en el GAM
+AYA
+AYA
+130.000.000,00
+2164
+Programa de Abastecimiento del Área Metropolitana de San José, Acueductos Urbanos II y Alcantarillado Sanitario de Juanito Mora de Puntarenas
+AYA
+AYA
+154.562.390,29
+2188-A
+Programa Acueductos y Alcantarillados en Ciudades Costeras (PAACC)
+AYA
+AYA
+111.128.810,00
+1.575.771.200,29
+BID
+3071/OC-CR
+Programa de Infraestructura de Transporte
+GOBNO
+MOPT
+400.000.000,00
+3072/CH-CR
+Programa de Infraestructura de Transporte
+50.000.000,00
+3488/OC-CR
+Programa de Integración Fronteriza de Costa Rica
+GOBNO
+COMEX
+100.000.000,00
+4507/OC-CR
+Programa Red Vial Cantonal II
+GOBNO
+MOPT
+144.036.000,00
+4864/OC-CR
+Programa de Infraestructura Vial y Promoción de Asociaciones Público-Privadas
+GOBNO
+MOPT
+125.000.000,00
+4871/OC-CR
+Programa de Seguridad Ciudadana y Prevención de Violencia
+GOBNO
+MJP
+100.000.000,00
+5823/OC-CR
+Programa de Infraestructura Vial y Movilidad Urbana: Conectividad Resiliente
+GOBNO
+MOPT
+225.000.000,00
+1.144.036.000,00
+BIRF
+9075-CR
+Proyecto Hacienda Digital para el Bicentenario
+GOBNO
+MH
+141.640.000,00
+9502-CR
+Segundo Préstamo de Políticas de Desarrollo de la Gestión del Riesgo de Desastres en Costa Rica con Opción de Desembolso Diferido ante Catástrofes (CAT DDO)
+GOBNO
+CNE
+160.000.000,00
+301.640.000,00
+JICA
+CR-P5-2
+Proyecto Geotérmico Borinquen I 1/
+ICE / GOBNO
+ICE
+166.587.616,97
+166.587.616,97
+TOTAL, en US$
+3.188.034.817,26
+Fuente: Elaborado por el DAP de la Asamblea Legislativa de Costa Rica, con información de la Dirección de Crédito Público del Ministerio de Hacienda, 2026. AL-DAPR-INF-009-2026, *Entiéndase las siglas “GOBNO” como “Gobierno”.
+De los programas y proyectos analizados:
+Dos se encuentran en condición crítica.
+Trece presentan estado de alerta.
+Únicamente uno refleja un desempeño satisfactorio.
+Entre los proyectos con mayores niveles de rezago destacan iniciativas relacionadas con:
+Infraestructura vial.
+Agua y saneamiento.
+Reconstrucción y resiliencia.
+Infraestructura hídrica.
+Movilidad resiliente.
+Modernización institucional.
+La baja ejecución de recursos provenientes de endeudamiento externo genera consecuencias negativas para las finanzas públicas, entre ellas:
+Incremento de costos financieros.
+Pago de intereses y comisiones sobre recursos no utilizados.
+Retraso en obras estratégicas.
+Deterioro de la calidad del gasto público.
+Ineficiencia administrativa.
+Mayor presión sobre la sostenibilidad fiscal del Estado.
+Ante esta realidad, resulta indispensable fortalecer los mecanismos de control político, fiscalización presupuestaria, seguimiento técnico y evaluación institucional sobre la ejecución del gasto público y el uso de recursos provenientes de deuda pública.
+En este contexto, se pretende reformar la Ley 8131, Ley de Administración Financiera y Presupuestos Públicos, para fortalecer los procedimientos de evaluación presupuestaria aplicables durante el trámite, gestión y resultado final de la información que consigna la propuesta del presupuesto ordinario y extraordinario de la República.
+Lo anterior permitirá disponer de mayores elementos técnicos para evaluar:
+Los procesos de planificación y formulación presupuestaria.
+La razonabilidad técnica y financiera de las partidas presupuestarias.
+Los niveles históricos de ejecución y subejecución presupuestaria.
+El comportamiento de los recursos financiados mediante deuda pública y crédito externo.
+La eficiencia, eficacia, economía y oportunidad del gasto público.
+Las observaciones y recomendaciones emitidas por auditorías internas y por la Contraloría General de la República.
+El cumplimiento de recomendaciones vinculadas con control interno y administración financiera.
+La presente iniciativa se fundamenta además en:
+Los principios de eficiencia, eficacia, economía, transparencia y sostenibilidad fiscal contenidos en la Ley 8131.
+Las obligaciones establecidas en los artículos 8, 9 y 10 de la Ley General de Control Interno, Ley 8292.
+Las competencias de control político y fiscalización conferidas a la Asamblea Legislativa.
+Las atribuciones de la Comisión Permanente Ordinaria de Asuntos Hacendarios establecidas en los artículos 65 y 66 del Reglamento de la Asamblea Legislativa.
+Las competencias de la Comisión Permanente Especial para el Control del Ingreso y el Gasto Públicos establecidas en el artículo 89 del reglamento legislativo.
+Señores legisladores, con la presente reforma se propone el fortalecimiento de la disciplina fiscal, mejorar la calidad y eficiencia del gasto público, optimizar el uso de los recursos provenientes de endeudamiento y robustecer los mecanismos de transparencia, control parlamentario y rendición de cuentas en la administración financiera del Estado costarricense.
+Para alcanzar los fines supra citados es que se propone que las instituciones públicas deban identificar y justificar el origen de los diferentes niveles de subejecución presupuestarias de manera tal que los fondos asignados respondan a las necesidades reales institucionales.
+En virtud de lo anterior, se somete a consideración de la Asamblea Legislativa el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+REFORMA A LA LEY DE ADMINISTRACIÓN FINANCIERA DE LA REPÚBLICA Y PRESUPUESTOS PÚBLICOS PARA EL FORTALECIMIENTO DE LA GESTIÓN PRESUPUESTARIA INSTITUCIONAL, EL CONTROL PARLAMENTARIO Y SU VINCULACIÓN CON LA DEUDA PÚBLICA
+ARTÍCULO 1- Adiciónese un nuevo párrafo tercero al artículo 52 de la Ley 8131, Administración Financiera de la República y Presupuestos Públicos, del 18 de setiembre del 2001. El texto es el siguiente:
+Artículo 52-
+(…)
+Como parte del proceso de evaluación de la ejecución presupuestaria, las instituciones deberán identificar, analizar y justificar los niveles de subejecución presupuestaria, conforme a los criterios técnicos y metodológicos establecidos por el Ministerio de Hacienda.
+(…).
+ARTÍCULO 2- Adiciónese un artículo 52 bis a la Ley 8131, Administración Financiera de la República y Presupuestos Públicos, del 18 de setiembre del 2001. El texto es el siguiente:
+Artículo 52 bis- Gestión de la subejecución presupuestaria
+La subejecución presupuestaria deberá contener:
+a) Subejecución justificada, entiéndase compromisos presupuestarios ya adquiridos.
+b) Subejecución no justificada, entiéndase recursos no utilizados ni comprometidos.
+En la subejecución no justificada no podrá modificarse el programa de adquisiciones con nuevas necesidades por el simple hecho de no ejecución de concursos de contratación inicialmente programados, o para mantener el nivel del gasto para el año siguiente salvo casos debidamente justificados.
+El hecho de mantener un presupuesto anual aprobado no significa que se deben utilizar la totalidad de los recursos presupuestados, el deber es la utilización de los recursos financieros en satisfacción de la necesidad real institucional.
+c) La evaluación de la ejecución presupuestaria deberá considerar no solo el porcentaje de ejecución financiera, sino también criterios de eficiencia, calidad, oportunidad, sostenibilidad y cumplimiento de metas institucionales, evitando incentivos al gasto ineficiente o acelerado al cierre del ejercicio económico.
+El Ministerio de Hacienda establecerá mediante reglamento los criterios técnicos para dicha clasificación.
+d) La subejecución presupuestaria deberá ser analizada y gestionada bajo criterios técnicos orientados a mejorar la eficiencia, calidad y sostenibilidad del gasto público.
+Los recursos no ejecutados cuya fuente de financiamiento provenga de endeudamiento público deberán destinarse prioritariamente a la amortización de la deuda correspondiente, salvo justificación técnica debidamente motivada.
+La aplicación de este artículo deberá realizarse de manera proporcional y razonable, evitando generar incentivos al gasto ineficiente y garantizando la calidad del gasto público.
+ARTÍCULO 3- Refórmese el párrafo final del artículo 56 de la Ley 8131, Administración Financiera de la República y Presupuestos Públicos, del 18 de setiembre del 2001. El texto es el siguiente:
+Artículo 56- Resultados de la evaluación
+(…)
+Además, ambos ministerios elaborarán conjuntamente un informe de cierre del ejercicio presupuestario, el cual dentro de sus rubros deberá incluir un análisis detallado de la subejecución presupuestaria institucional, incluyendo su clasificación, causas y el destino de los recursos no ejecutados, y lo presentarán a la Autoridad Presupuestaria para que lo conozca y proponga recomendaciones al presidente de la República. Todos los informes de evaluación generados por la Administración estarán a disposición de la Contraloría para los efectos del cumplimiento de sus atribuciones.
+ARTÍCULO 4- Adiciónese un artículo 56 bis a la Ley 8131, Administración Financiera de la República y Presupuestos Públicos, del 18 de setiembre del 2001. El texto es el siguiente:
+Artículo 56 bis- Informe nacional sobre subejecución y deuda pública
+El Ministerio de Hacienda deberá presentar anualmente a la Asamblea Legislativa un informe consolidado que contenga:
+a) El nivel de subejecución presupuestaria del sector público
+b) La clasificación de la subejecución según fuente de financiamiento.
+c) Las causas principales de subejecución.
+d) Los recursos provenientes de endeudamiento público no ejecutados.
+e) Los montos aplicados a amortización de deuda pública.
+f) El comportamiento de la ejecución de créditos externos y empréstitos.
+El informe deberá identificar proyectos financiados mediante crédito externo que presenten riesgos significativos de atraso, baja ejecución o incremento de costos financieros, incorporando alertas tempranas y recomendaciones correctivas.
+ARTÍCULO 5- Adiciónese un artículo 56 ter a la Ley 8131, Administración Financiera de la República y Presupuestos Públicos, del 18 de setiembre del 2001. El texto es el siguiente:
+Artículo 56 ter- Informe anual institucional de ejecución presupuestaria
+Toda institución pública deberá presentar un informe anual de ejecución presupuestaria ante el Ministerio de Hacienda, con copia a la Comisión Permanente de Asuntos Hacendarios de la Asamblea Legislativa, que incluya:
+a) Presupuesto inicial aprobado.
+b) Modificaciones presupuestarias realizadas y su justificación.
+c) Nivel de ejecución presupuestaria.
+d) Nivel y monto de subejecución presupuestaria.
+e) Clasificación de la subejecución según fuente de financiamiento y causas.
+f) Ejecución de recursos financiados mediante deuda, interna o crédito externo.
+g) Medidas correctivas adoptadas.
+Este informe constituirá insumo obligatorio para los procesos de planificación institucional y formulación presupuestaria del período siguiente.
+TRANSITORIO I- El Poder Ejecutivo reglamentará la presente ley en un plazo máximo de seis meses contados a partir de su publicación en el diario oficial La Gaceta.
+TRANSITORIO II- El Ministerio de Hacienda deberá emitir los lineamientos técnicos y metodológicos para la clasificación y análisis de la subejecución presupuestaria dentro de los seis meses posteriores a la entrada en vigencia de la presente ley.
+TRANSITORIO III- Las instituciones públicas deberán adecuar sus sistemas de planificación, seguimiento y control presupuestario dentro del plazo de doce meses contados a partir de la entrada en vigencia de la presente ley.
+Rige a partir de su publicación.
+Salvador Padilla Villanueva
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 11-06-2026).

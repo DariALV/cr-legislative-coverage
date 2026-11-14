@@ -1,0 +1,373 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+CREACIÓN DEL SISTEMA NACIONAL DE CUIDADOS Y APOYOS PARA PERSONAS ADULTAS Y PERSONAS ADULTAS MAYORES
+EN SITUACIÓN DE DEPENDENCIA (SINCA)
+CATALINA MONTERO GÓMEZ
+DIPUTADO
+EXPEDIENTE N.° 21.962
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+CREACIÓN DEL SISTEMA NACIONAL DE CUIDADOS Y APOYOS PARA PERSONAS ADULTAS Y PERSONAS ADULTAS MAYORES
+EN SITUACIÓN DE DEPENDENCIA (SINCA)
+Expediente N.° 21.962
+ASAMBLEA LEGISLATIVA:
+1. Exposición de motivos
+Cambio demográfico
+El mejoramiento de las condiciones de vida sanitarias, económicas, sociales y educativas en la región, que devienen en el incremento en la esperanza de vida al nacer, además de una situación ventajosa en términos de bienestar respecto de otras épocas, han implicado un cambio demográfico que tendrá un impacto en las economías.
+El cambio demográfico para las próximas décadas representará incrementos en los grupos de mayor edad, tanto para el caso regional (ver gráfico 1) como para Costa Rica (ver gráfico 2), con la consecuente profundización de las necesidades generadas por la vejez, la salud y las discapacidades.
+En ese sentido, se intensificarán los requerimientos de trabajos de cuidados que, no presentes en el mercado seguirán siendo proporcionados de manera no remunerada como sobrecarga para las mujeres principalmente. Al desbordarse la demanda de cuidados respecto de lo que el régimen de bienestar costarricense, incluyendo los trabajos no remunerados, puede aportar, se verá un impacto negativo en el bienestar de toda la población. Tal como ha sido advertido por la Economía Feminista Latinoamericana como la Crisis Global de los Cuidados.
+Este fenómeno generará importantes cambios en la demanda regional de bienes y servicios, incidiendo en las estructuras del mercado laboral, lo cual debe resolverse desde la interseccionalidad, la perspectiva de derechos humanos, de la economía de los cuidados y el enfoque sistémico.
+Informes del Instituto Nacional de Estadística y Censos (INEC) advierten que el segmento poblacional que más crecerá en los próximos años corresponde a las personas adultas mayores. El tamaño de esta población se triplicará en las próximas décadas y tenderá al millón de personas para 2050.
+Gráfico 1
+Fuente: División de Población del Departamento de Asuntos Económicos y Sociales de la Secretaría de las Naciones Unidas. Panorama de la Población Mundial: Revisión 2017 (Chaverri, 2019).
+Gráfico 2
+Fuente: Celade-División de Población de la Cepal. Revisión 2017 (Chaverri, 2019).
+Cabe resaltar que con la emergencia sanitaria internacional que estamos enfrentando actualmente, donde la población adulta mayor y la población con discapacidad califican como de alto riesgo, los requerimientos de cuidados se intensifican aceleradamente y el trabajo de cuidados no remunerados que contiene el desborde del sistema de salud llegará a ser insuficiente antes de lo previsto, lo cual apresurará los impactos negativos de una crisis nacional de cuidados. Por lo tanto, es con premura y emergencia que Costa Rica debe constituir un Sistema Integral de Cuidados eficiente, universal, inclusivo y de calidad.
+Para enfrentar este desafío existen diversos instrumentos jurídicos y tratados multilaterales, relacionados con los cuidados y apoyos para personas adultas mayores, personas con discapacidad, otras poblaciones vulneradas en situación de dependencia y personas cuidadoras que servirán como referente.
+1.2 Marco normativo
+La Convención Interamericana sobre la Protección de los Derechos Humanos de las Personas Adultas Mayores, en el artículo 12 indica: “La persona mayor tiene derecho a un sistema integral de cuidados que provea la protección y promoción de la salud, cobertura de servicios sociales, seguridad alimentaria y nutricional, agua, vestuario y vivienda; promoviendo que la persona mayor pueda decidir permanecer en su hogar y mantener su independencia y autonomía”. Asimismo, esta norma regula una serie de elementos relativos a programas y servicios de cuidados a los que tienen derecho las personas adultas mayores, sus familias y personas cuidadoras.
+Considerando que los avances en atención en salud ágil y oportuna permiten la prolongación de la vida con calidad, se puede afirmar que en muchas situaciones la variable discapacidad se entrelaza con la de edad adulta mayor, por lo cual es menester tener presente la norma marco de la Convención Internacional sobre los Derechos de las Personas con Discapacidad, ratificada por Costa Rica mediante la Ley 8661, que se refiere particularmente al deber del Estado de asegurar condiciones para garantizar el respeto al derecho a vivir de forma independiente y a ser incluido en la comunidad, así expresamente indica el inciso b) del artículo 19 de esta Convención, que los Estados deben tomar medidas para asegurar que:
+b) Las personas con discapacidad tengan acceso a una variedad de servicios de asistencia domiciliaria, residencial y otros servicios de apoyo de la comunidad, incluida la asistencia personal que sea necesaria para facilitar su existencia y su inclusión en la comunidad y para evitar su aislamiento o separación de ésta; (Organización de Naciones Unidas, 2007).
+Además, en el inciso c) del artículo 28 amplía la obligación del Estado para garantizar el derecho a un nivel de vida adecuado y a la protección social de las personas con discapacidad y sus familias, indicando que los Estados deben:
+c) Asegurar el acceso de las personas con discapacidad y de sus familias que vivan en situaciones de pobreza, a asistencia del Estado para sufragar gastos relacionados con su discapacidad, incluidos capacitación, asesoramiento, asistencia financiera y servicios de cuidados temporales adecuados; (ONU, 2007).
+También, en el marco del derecho internacional de las personas trabajadoras el Convenio 156 de la Organización Internacional del Trabajo (OIT), ratificado mediante la Ley 9608, publicada el 5 de diciembre de 2018, denominado “Convenio sobre la igualdad de oportunidades y de trato entre trabajadores y trabajadoras con responsabilidades familiares”, establece responsabilidades para el Estado en materia de cuidados. Este instrumento de reciente adopción fortalece el marco regulador al indicar en el artículo 1:
+El presente Convenio se aplica a los trabajadores y a las trabajadoras con responsabilidades hacia los hijos a su cargo, cuando tales responsabilidades limiten sus posibilidades de prepararse para la actividad económica y de ingresar, participar y progresar en ella. (…) Las disposiciones del presente Convenio se aplicarán también a los trabajadores y a las trabajadoras con responsabilidades respecto de otros miembros de su familia directa que de manera evidente necesiten su cuidado o sostén, cuando tales responsabilidades limiten sus posibilidades de prepararse para la actividad económica y de ingresar, participar y progresar en ella. (OIT, 2018).
+Las personas trabajadoras con responsabilidades familiares pueden entonces ser hijas, hijos, parejas, hermanas o hermanos, personas que por lo general se ven privadas de oportunidades de formación profesional e inserción laboral, en virtud de sus responsabilidades de cuidado, o bien, limitadas en su desarrollo laboral y profesional. En tal sentido, el Convenio le genera a los Estados el deber, en el inciso b), del artículo 5, de “desarrollar o promover servicios comunitarios, públicos o privados, tales como los servicios y medios de asistencia a la infancia y de asistencia familiar” (2018).
+Nuestra Carta Magna establece en el artículo 51 que, al igual que la familia, la madre, el niño y la niña tienen derecho a la protección especial del Estado, las personas adultas mayores y las personas con discapacidad, las cuales son poblaciones históricamente vulneradas por razones de salud, edad y discapacidad y tienen necesidades diversas altamente complejas que pueden generar situación de dependencia en las diferentes etapas de la vida.
+Aunado a lo anterior, la implementación de políticas, programas y servicios de cuidados y apoyos para poblaciones en situación de vulnerabilidad y dependencia asociados a factores de edad, discapacidad, enfermedades crónicas y degenerativas está fundamentada en los siguientes cuerpos legales:
+- La Ley Fundamental de Educación de 1957, con varias reformas posteriores, y la creación del Departamento de Educación Especial del MEP en 1972, respaldan las iniciativas relacionadas con la educación especial en todos los niveles del sistema educativo.
+- La Ley N.º 7600, Igualdad de oportunidades para las Personas con Discapacidad, de 1996, es una iniciativa legal temprana, que abrió paso a la posterior política.
+- La Ley N.º 7935, "Ley Integral para la Persona Adulta Mayor", de 1999, establece el marco legal y crea la institución rectora, el Consejo Nacional de la Persona Adulta Mayor (Conapam).
+- La Ley N.º 8589, “Ley de Penalización de la Violencia Contra las Mujeres”, de 25 de abril de 2007.
+- La Ley N.º 8661, “Ley de Aprobación de la Convención sobre los Derechos de las Personas con Discapacidad y su Protocolo”. Ratificada por Decreto Ejecutivo N.º 34780, de 29 de setiembre de 2008.
+- El Decreto Ejecutivo N.º 34961-MP, “Reglamento para que el Consejo Nacional de la Persona Adulta Mayor (Conapam) Califique a las Personas Adultas Mayores solas que Soliciten Bono de Vivienda”, de 25 de noviembre de 2008.
+- La Ley N.º 8688, “Creación del Sistema Nacional para la Atención y Prevención de la Violencia contra las Mujeres y la Violencia Intrafamiliar”, de 4 de diciembre de 2008.
+- El "Reglamento del Programa Régimen no Contributivo de Pensiones", de 2008, fue impulsado por la Junta Directiva de la CCSS y creó el instrumento al que alude.
+- La Ley N.º 8718, “Autorización para el Cambio de Nombre de la Junta de Protección, Social y Establecimiento de la Distribución de Rentas de las Loterías Nacionales”, de 17 de febrero de 2009.
+- La Ley N.º 8783, “Reforma a la Ley de Desarrollo Social y Asignaciones Familiares”, Reforma del 13 de octubre de 2009.
+- La Directriz N.º 008-P. Directriz general para el aporte de recursos públicos para la conformación y desarrollo de la Red de Cuido de Niños, Niñas y Personas Adultas Mayores, Publicada en el Diario Oficial La Gaceta N.º 168 de 30 de agosto de 2010.
+- La Ley N.º 8924, “Modificación de la Ley del Sistema Financiero Nacional para la Vivienda y Creación del Banco Hipotecario de la Vivienda, N.º 7052, y sus Reformas”, vigente a partir del 8 de marzo del 2011.
+- El Decreto N.º 36524-MP-MBSF-PLAN-MTSS-MEP, publicado el 10 de junio de 2011 en el diario oficial La Gaceta dando vida a la Política Nacional en Discapacidad 2011-2030 (Ponadis).
+- El Decreto N.º 36607-MP. “Declaratoria de interés público de la conformación y desarrollo de la Red de Atención Progresiva para el Cuido Integral de las Personas Adultas Mayores de Costa Rica”, publicado en el diario oficial La Gaceta N.º 117 de 17 de junio de 2011.
+- La Política Nacional de Salud Mental 2012-2021, Ministerio de Salud.
+- El Decreto Ejecutivo N.º 38036-MP-MBSF “Política Nacional de Envejecimiento y Vejez 2011-2021”, 2013
+El “Consenso de Montevideo sobre Población y Desarrollo. Cepal”. Instrumento jurídico internacional vinculante, 2013.
+- El Plan nacional para la enfermedad de alzheimer y demencias relacionadas, esfuerzos compartidos 2014-2024.
+- La “Agenda 2030: Objetivos de Desarrollo Sostenible”, PNUD, enero de 2015.
+- La Ley N.º 9303, de 2015, transformó el Consejo Nacional de Rehabilitación y Educación Especial (CNREE), entidad rectora en materia de discapacidad a la fecha, en Consejo Nacional de Personas con Discapacidad (Conapdis), que pasa a ser la nueva entidad líder en la materia.
+- La Ley N.º 9379, de 2016, para la Promoción de la Autonomía Personal de las Personas con Discapacidad creó el programa que lleva el mismo nombre y que consiste en una prestación económica estatal.
+- La Estrategia y plan de acción mundiales sobre el envejecimiento y la salud 2016-2020: hacia un mundo en el que todas las personas puedan vivir una vida prolongada y sana (OMS), 2016.
+- La Política nacional para la atención a las personas en situación de abandono y situación de calle 2016-2026.
+- La Ley N.° 9394, “Convención Interamericana de Protección de los Derechos Humanos de las Personas Adultas Mayores”, de 2016 su objetivo es promover, proteger y asegurar el reconocimiento y el pleno goce y ejercicio, en condiciones de igualdad, de todos los derechos humanos y libertades fundamentales.
+- La Ley N.º 9773, de 2019, Autorización para el cambio de nombre de la Junta de Protección Social y establecimiento de la distribución de rentas de las loterías nacionales y Ley General de la Persona Joven.
+- El Acuerdo N.° DM-JG-1021-2017 para oficializar y declarar de interés público y nacional la “Norma Nacional de Atención a Personas Adultas con Deterioro Cognitivo y Demencia”, del año 2017.
+- La Estrategia nacional para un envejecimiento saludable: basado en el curso de vida 2018-2020 del Ministerio de Salud, 2018.
+- El Decreto 40955-MEP 19 de marzo de 2018, “Establecimiento de la Inclusión y la Accesibilidad en el Sistema Educativo Costarricense”.
+- La Ley N.º 9747 Código Procesal de Familia, del 2019.
+En este marco resulta fundamental la generación de políticas, programas y servicios que garanticen protección y calidad de vida para poblaciones vulneradas, sujetas de cuidados y apoyos, como es el caso de las personas adultas mayores, las personas adultas con discapacidad, personas que están en situación de abandono en hospitales o comunidades, personas con enfermedades progresivas y/o degenerativas.
+1.3 Políticas de cuidados
+La Comisión Económica para América Latina y el Caribe (Cepal) afirma que las políticas de cuidados abarcan aquellas acciones públicas referidas a la organización social y económica del trabajo, destinadas a garantizar el bienestar físico y emocional cotidiano de las personas con algún grado de dependencia.
+Las poblaciones vulneradas son diversas y por ello las necesidades de estas personas son diferentes, dependiendo de múltiples factores como la edad, la procedencia geográfica, la condición socioeconómica, el nivel de dependencia, las discapacidades y el entorno socioafectivo. De ahí que los cuidados deban incorporar diversas dimensiones: salud, educación, deporte y recreación, apoyo emocional y espiritual, acceso a la justicia, participación política, apoyos financieros y autonomía económica, accesibilidad e inclusión social y laboral, entre otras.
+Lo anterior implica disponer de una política de los cuidados para el caso costarricense, que considere a las personas destinatarias y proveedoras de los cuidados, así como medidas que garanticen tanto el acceso a servicios, tiempo y recursos para el cuidado, como para velar por su calidad, regulación y supervisión.
+La División de Desarrollo Social de la Cepal, a partir de un enfoque de derechos de las personas sujetas y prestadoras de cuidados, promueve que el cuidado se consolide como un pilar de la protección social que debe guiarse por los principios de respeto a la dignidad de la persona, la igualdad y solidaridad intergeneracional y de género, así como articularse en legislaciones, políticas, programas y servicios que constituyan sistemas integrados de cuidado.
+Los sistemas de atención a personas en situación de dependencia o long term care sistems (LTCS) son uno de los campos de las políticas sociales que han ido adquiriendo creciente protagonismo en los países desarrollados en los últimos decenios y, aunque de manera incipiente todavía, con mayor visibilidad en los países de renta media o en vías de desarrollo. Organismos como el Banco Interamericano de Desarrollo (BID), Organización Mundial de la Salud (OMS), Organización Panamericana de la Salud (OPS), Organización para la Cooperación y el Desarrollo Económicos (OCDE), OIT y la Cepal han llamado la atención sobre la intensificación de los cuidados dirigidos a las personas que requieren apoyos para la realización de actividades en la vida cotidiana.
+1.4 Sinca
+Existen en nuestro país instituciones públicas creadas para la defensa y protección de derechos de las poblaciones sujetas de cuidados, entre las que se incluyen: Ministerio de Desarrollo Humano e Inclusión Social e Instituto Mixto de Ayuda Social (IMAS), Ministerio de Educación Pública (MEP), Ministerio de Salud Pública (MSP), Ministerio de Trabajo y Seguridad Social (MTSS), Caja Costarricense de Seguro Social (CCSS), Consejo Nacional de la Persona Adulta Mayor (Conapam), Consejo Nacional de Personas con Discapacidad (Conapdis), además organizaciones no gubernamentales (ONGs) que brindan servicios a estas poblaciones, entre otras; además de instituciones que coadyuvan con el financiamiento de dichos programas, entre ellas: el Fondo de Desarrollo Social y Asignaciones Familiares (Fodesaf) y la Junta de Protección Social (JPS).
+Estas entidades, aunque de manera poco articulada han creado programas y servicios, con el propósito de atender necesidades y requerimientos de personas que corresponden con uno o varios de los factores mencionados; además requieren fortalecer mecanismos de control, selección y atención estandarizados, que permitan verificar la eficiencia y la cobertura, así como evitar duplicidad de funciones. Esto hace que prevalezcan vacíos tanto en la política social selectiva, como en los objetivos del régimen de bienestar.
+Aunado a lo anterior, se denota la existencia de una desvinculación entre la atención integral de la pobreza y las posibilidades de superación de esta, por medio de inserción laboral, tanto de las personas beneficiarias de los cuidados como de las personas cuidadoras.
+El cuidado ha implicado históricamente un trabajo gratuito diario, realizado principalmente por mujeres, cuya relevancia económica ha sido invisibilizada por las instituciones sociales. Esto enmarca la necesidad y el reto de transformar la estructura económica con el objetivo de mejorar las condiciones de bienestar en los hogares; modificar los mecanismos de selección; incorporar opciones de copago de servicios; facilitar la inserción laboral de las mujeres y su autonomía económica, transferir las actividades de cuidados al mercado donde estas sean reconocidas y remuneradas como actividades productivas y sean ejercidas indistintamente por hombres y mujeres.
+La visibilización de los cuidados como una actividad productiva reconocida y remunerada plantea, además, el reto de alinear la política social con la realidad económica y social del país, donde prevalecen sectores que enfrentan desigualdad en las oportunidades y en el acceso a los recursos materiales, económicos y formativos. Este alineamiento permitiría romper el círculo perverso de la pobreza, favoreciendo el desarrollo integral de cada persona.
+De esta forma, Costa Rica marcaría un avance importante en materia de inserción, principalmente femenina en el mercado de trabajo, calidad y cobertura de cuidados de larga duración y establecería el cuarto pilar del Estado de bienestar bajo el paradigma de la corresponsabilidad entre Estado, las empresas, la familia y la comunidad.
+Este proyecto de ley tiene como objetivo la creación de un Sistema Nacional de Cuidados y Apoyos para personas adultas y personas adultas mayores en situación de dependencia (Sinca), que optimice la ejecución de los recursos existentes, incorpore otros recursos necesarios, cree, organice y articule servicios sociales y sociosanitarios dirigidos a personas que están en situación de abandono en hospitales y comunidades, personas adultas mayores, personas adultas con discapacidad, personas con enfermedades progresivas y/o degenerativas, así como atender los requerimientos de las personas cuidadoras, generando una categoría ocupacional y salarial. De tal manera que el país logre, paulatinamente, cerrar la brecha entre la oferta y la demanda de los servicios de cuidados.
+Este sistema deberá integrar servicios de cuidados con estándares de calidad y accesibilidad, tomando en cuenta las características de la población usuaria. Por lo que requerirá la gestión de la institucionalidad pública, según competencias respectivas; la participación comprometida de las municipalidades, en concordancia con su deber de velar por el bienestar de todas las personas habitantes de los respectivos cantones; la contribución y responsabilidad de sectores productivos, organizaciones y sociedad civil.
+Todas las instituciones, en el ámbito de sus competencias, asumirán las responsabilidades asignadas en la presente ley con los recursos disponibles, considerando que no se están creando nuevos servicios ni nuevas responsabilidades sino ampliando y profundizando las existentes.
+Por todo lo anterior someto a consideración de las señoras y los señores diputados el presente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+CREACIÓN DEL SISTEMA NACIONAL DE CUIDADOS Y APOYOS PARA PERSONAS ADULTAS Y PERSONAS ADULTAS MAYORES
+EN SITUACIÓN DE DEPENDENCIA (SINCA)
+Capítulo I
+Disposiciones generales
+ARTÍCULO1- Creación del Sinca
+La presente ley crea el Sistema Nacional de Cuidados y Apoyos para personas adultas y personas adultas mayores en situación de dependencia (Sinca), el cual tendrá como objeto optimizar la ejecución de los recursos existentes, incorporar otros recursos necesarios, crear, ampliar y articular los servicios de atención general o especializada que sean necesarios para garantizar la calidad de vida, la atención, los apoyos y el cuidado de personas que están en situación de abandono en hospitales y comunidades, personas adultas mayores, personas adultas con discapacidad, personas con enfermedades progresivas, o enfermedades degenerativas y las personas cuidadoras.
+Los servicios de atención general o especializada deberán ser inclusivos, aprovechando modalidades residenciales, a domicilio, de asistencia personal, educativos, de salud, recreativos, nutricionales, entre otros.
+Lo anterior sin perjuicio de hacer efectivo el derecho fundamental a la protección especial del Estado por medio de distintas formas de cuidados y asistencia, mediante un modelo solidario donde convergen el Estado, las comunidades, las familias, las organizaciones sociales y el sector privado como prestador de servicios y aportador de recursos al sistema.
+ARTÍCULO 2- Definiciones
+Para la correcta interpretación y aplicación de esta ley se establecen las siguientes definiciones:
+Autonomía: derecho de toda persona a construir su propio proyecto de vida, de manera independiente, controlando, afrontando, tomando y ejecutando sus propias decisiones en los ámbitos público y privado, hasta donde su capacidad funcional le permita.
+Implica el respeto a los derechos políticos, civiles, económicos, sociales, culturales, sexuales y reproductivos, y la garantía de la protección especial del Estado.
+Canasta básica normativa: descripción del conjunto de necesidades de vivienda, educación, vestido, salud, recreación, servicios públicos y alimentarios, que requiere como mínimo una persona para satisfacer sus necesidades básicas, de acuerdo con el ingreso per cápita establecido por el Instituto Nacional de Estadística y Censos (INEC).
+Canasta básica de los cuidados en la edad adulta mayor: descripción del conjunto de productos, servicios y bienes de uso individual, para la atención adecuada de la persona adulta mayor, según sus requerimientos, nivel y progresividad de la dependencia. Pueden incluir, entre otros: ayudas técnicas; suplementos nutricionales; productos de higiene como pañales, cremas, toallas húmedas, jabones hipoalergénicos, entre otros; medicamentos especializados que se encuentran fuera de esquema de medicamentos de la Caja Costarricense de Seguro Social; asistencia personal, servicios terapéuticos. La canasta básica de los cuidados es complementaria con la canasta normativa y la canasta derivada de la discapacidad, dependiendo de las condiciones individuales de la persona adulta mayor.
+Canasta derivada de la discapacidad: descripción del conjunto de una serie de productos, servicios y bienes vitales de uso individual, para la atención de la persona con discapacidad. La canasta derivada de la discapacidad está basada en las necesidades específicas que se generan a partir de la presencia de una o más deficiencias en una persona, en relación con los obstáculos del entorno.
+Condición de pobreza: se consideran en condición de pobreza las personas adultas mayores que no cuentan con los recursos propios para subsidiar sus gastos contenidos en la canasta básica normativa y la canasta básica de los cuidados en la edad adulta mayor.
+Cuidados: las acciones que las personas requieren para satisfacer sus necesidades básicas, educativas, de salud, de protección, nutrición, recreación, acompañamiento, incluida la estimulación para el desarrollo de habilidades, competencias, actividades de vida diaria y otras, de conformidad con la edad, tipo de discapacidad, y la discapacidad asociada a enfermedad grave o terminal.
+Persona cuidadora: persona que realiza acciones de cuidados de manera remunerada o no remunerada.
+Dependencia: situación en que se encuentran personas que, por falta o pérdida de autonomía física, psíquica o intelectual, se ven limitadas para realizar las actividades básicas e instrumentales de vida diaria por lo que requieren acompañamiento, supervisión, atención directa, estimulación para el desarrollo de habilidades o apoyos.
+De conformidad con el “Baremo de Valoración de la Dependencia” se definen tres grados:
+Grado I o moderada: cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria al menos una vez al día o tienen necesidades de apoyo intermitente o limitado para su autonomía personal.
+Grado II o severa: cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria dos o tres veces al día, pero no requiere el apoyo permanente de una persona cuidadora.
+Grado III o gran dependencia: cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria varias veces al día y, por su pérdida parcial o total de autonomía física, mental o intelectual necesita el apoyo continuo y generalizado.
+Discapacidad: concepto que evoluciona y que resulta de la interacción entre las personas con deficiencias y las barreras debidas a la actitud y al entorno que evitan su participación plena y efectiva en la sociedad, en igualdad de condiciones con las demás.
+Economía de los cuidados: proceso del sistema económico donde inician las transferencias de valor que se acumulan en los bienes y servicios finales de los que dispone la sociedad para ofrecer bienestar a las personas. Este proceso sostiene el régimen de bienestar, a base de la explotación gratuita del trabajo, mayoritariamente femenino, destinado al cuidado de personas en situación de dependencia y de la sociedad en general.
+Envejecimiento: proceso gradual que se desarrolla durante el curso de la vida y que conlleva cambios biológicos, fisiológicos, psicosociales y funcionales de manifestaciones varias, las cuales se asocian con interacciones dinámicas y permanentes entre la persona sujeta de cuidados y su medio.
+Envejecimiento activo y saludable: proceso por el cual se optimizan las oportunidades de bienestar físico, mental y social, de participar en actividades sociales, económicas, culturales, espirituales y cívicas, y de contar con protección, seguridad y atención, con el objetivo de garantizar la calidad de vida de todas las personas en edad adulta mayor.
+Salvaguardia: según el artículo 230 de la Ley N.º 5476, Código de Familia, para garantizar el ejercicio seguro y efectivo de los derechos y las obligaciones de las personas mayores de edad con discapacidad intelectual, mental y psicosocial, en un marco de respeto a su voluntad y preferencias, sin que haya conflicto de intereses ni influencia indebida, se establece la salvaguardia para la igualdad jurídica de las personas con discapacidad, que será proporcionada y adaptada a la circunstancia de la persona.
+Gerontología: ciencia que estudia los aspectos sociales, psicológicos, espirituales y biológicos del proceso y las condiciones generadas del envejecimiento.
+Persona profesional en gerontología: profesional con formación gerontológica, que interviene en el proceso de envejecimiento de las personas a nivel individual y colectivo, desde una perspectiva integral, con el objetivo de potenciar la calidad de vida de la población en general y de las personas adultas mayores.
+Productos y servicios de apoyo: dispositivos, equipos, instrumentos, tecnologías, software y todas aquellas acciones y productos diseñados o disponibles en el mercado para propiciar la autonomía personal de las personas adultas mayores o con discapacidad.
+Red de cuidados: aplicación de políticas, planes, programas, recursos, servicios y acciones, de origen público o privado que, de manera articulada, coordinada, ágil, oportuna, eficiente, satisfacen las demandas derivadas del proceso de envejecimiento tanto de las personas sujetas de cuidados como de las personas cuidadoras.
+Servicios inclusivos: servicios abiertos al público, que cuentan con condiciones para asegurar la igualdad y la accesibilidad, considerando las diversas necesidades, situaciones y condiciones que enfrentan las personas usuarias.
+Sistema de cuidados: conjunto de procesos, procedimientos y recursos regulados por políticas, normas y principios que, de manera articulada, producen bienes y servicios de calidad para las personas sujetas de cuidados.
+Vulnerabilidad social: propensión a la indefensión, inseguridad, shocks y estrés, de personas, familias y comunidades, provocada por exposición a riesgos, eventos socioeconómicos, situaciones de salud, discriminación, violencia y no reconocimiento de sus derechos.
+ARTÍCULO 3- Población objetivo
+La población objetivo del Sinca la constituyen personas que están en situación de abandono en hospitales y comunidades, personas adultas mayores, personas adultas con discapacidad, personas con enfermedades progresivas, personas con enfermedades degenerativas con distintos niveles de dependencia, que pueden estar o no en condición de pobreza, pobreza extrema o vulnerabilidad social.
+Se incluye, además, a las personas cuidadoras que requieren oportunidades de capacitación, formación para el trabajo, inserción laboral, respiro, reconocimiento de su trabajo de cuidados, entre otras herramientas que le permitan administrar las responsabilidades de cuidados no remunerados y remunerados, cuando estos últimos sean indispensables para solventar las necesidades materiales y de bienestar personales y de su familia.
+Capítulo II
+Fines y principios
+ARTÍCULO 4- Fines
+La presente ley tiene como propósito la universalización de los servicios de cuidados y apoyos requeridos por personas que están en situación de abandono en hospitales y comunidades, personas adultas mayores, personas adultas con discapacidad, personas con enfermedades progresivas, personas con enfermedades degenerativas y personas que ejercen las labores de cuidados.
+ARTÍCULO 5- Principios
+La presente ley se regirá por los siguientes principios:
+a) La universalidad de los servicios de cuidados y apoyos.
+b) La no discriminación.
+c) La progresividad en la implementación y acceso a los servicios y prestaciones para todas las personas en situación de dependencia.
+d) La equidad de género.
+e) Accesibilidad y diseño universal.
+f) Respeto a la diversidad.
+g) Solidaridad.
+h) Autonomía personal.
+Capítulo III
+Conformación y competencias del Sinca
+ARTÍCULO 6- Conformación
+El Sinca estará conformado por el conjunto de políticas, planes, programas, proyectos, servicios, recursos, procesos y procedimientos de entidades públicas o privadas que ostenten competencia en la atención de necesidades de la población objetivo con criterios de calidad, oportunidad, accesibilidad e inclusividad.
+ARTÍCULO 7- Competencias
+El Sinca tendrá las siguientes competencias esenciales:
+a) Articular los servicios de cuidados y apoyos para la población objetivo, con criterios de calidad, accesibilidad, oportunidad e inclusividad, considerando necesidades y características de esta población según edad, discapacidad, condiciones socioeconómicas, nivel de autonomía, salud y procedencia geográfica, principalmente.
+b) Promover la optimización y aprovechamiento máximo de la capacidad instalada en la institucionalidad pública y organizaciones no gubernamentales que atienden necesidades y requerimientos de la población objetivo, y la que deba crearse.
+c) Ofrecer a las personas cuidadoras la oportunidad de incorporarse a programas de capacitación o formación profesional, así como al mercado laboral, mediante el aprovechamiento de las opciones de cuidados y apoyos que se articulen desde el Sinca en coordinación con el Ministerio de Educación Pública, Ministerio de Trabajo y Seguridad Social, Instituto Nacional de Aprendizaje, Instituto Mixto de Ayuda Social, Caja Costarricense de Seguro Social, organizaciones no gubernamentales, universidades y otras entidades competentes.
+d) Visibilizar e intervenir la economía de los cuidados para impulsar la oferta y gestionar la demanda de bienes y servicios de cuidados y apoyos.
+e) Promover la creación y aprovechamiento de mecanismos de articulación, coordinación, regulación, control de la calidad de los servicios y la administración eficiente de los recursos involucrados en el Sinca.
+f) Disponer y gestionar información actualizada accesible sobre las necesidades de cuidados y disponibilidad de recursos, productos y servicios de apoyo en el ámbito de las competencias institucionales.
+g) Desarrollar mecanismos de modulación financiera que garantice la viabilidad y factibilidad de la oferta de cuidados mediante un modelo solidario.
+h) Contribuir con un cambio cultural en la sociedad costarricense para hacer efectiva la corresponsabilidad de los cuidados entre los diferentes actores de la sociedad.
+i) Coordinar y articular con los gobiernos locales, instituciones públicas, organizaciones no gubernamentales, las redes de cuidos, sector privado y organismos internacionales para potenciar la disponibilidad de recursos, así como la prestación de bienes y servicios en los cuidados.
+j) Promover la regionalización de los servicios de cuidados de manera que se puedan atender las necesidades de la población objetivo en cualquier parte del país.
+k) Promover e incentivar la creación de organizaciones no gubernamentales que coadyuven con el Sinca en la detección temprana y atención oportuna de las necesidades de la población.
+l) Promover la creación y actualización de protocolos de atención en las instituciones competentes que faciliten la atención de las necesidades y requerimientos de la población objetivo.
+m) Promover campañas educativas contra el abandono de personas adultas y adultas mayores en situación de dependencia desde las instituciones competentes.
+n) Otras que le asigne el Poder Ejecutivo.
+Capítulo IV
+Estructura y actividad administrativa de sus instancias
+ARTÍCULO 8- Estructura del Sinca
+Orgánicamente el Sinca estará conformado por una Secretaría Técnica, una Comisión Técnica Interinstitucional, y comités cantonales de coordinación.
+SECCIÓN I
+Secretaría Técnica
+ARTÍCULO 9- Creación
+Se crea la Secretaría Técnica del Sinca, la cual funcionará como una dependencia del Ministerio de Trabajo y Seguridad Social, que tendrá la potestad de ubicarla en la estructura técnica y administrativa de la institución.
+ARTÍCULO 10- Coordinación
+La Secretaría Técnica tendrá a cargo la función de coordinación entre actores públicos y privados del Sinca para el seguimiento y la articulación de los diferentes procesos técnicos, administrativos, metodológicos y financieros, en el marco de las políticas públicas y los compromisos nacionales, regionales y locales adquiridos, en atención de las necesidades y requerimientos de la población objetivo. Asimismo, deberá gestionar y coordinar cualquier otro subproceso pertinente en relación con la capacitación, atención e inserción laboral de personas cuidadoras.
+ARTÍCULO 11- Estructura
+Esta Secretaría Técnica tendrá la estructura administrativa que se defina vía reglamento, pudiendo contar con el personal subalterno que le asigne el Ministerio de Trabajo y Seguridad Social.
+ARTÍCULO 12- Funciones
+Además de las señaladas en los artículos anteriores, serán funciones de la Secretaría Técnica del Sinca las siguientes:
+a) Coordinar las acciones técnicas y operativas interinstitucionales relacionadas con el Sinca.
+b) Velar por la ejecución y el cumplimiento de directrices y políticas en materia de cuidados y apoyos para la población objetivo, así como los acuerdos de la Comisión Técnica Interinstitucional y del funcionamiento en general del sistema.
+c) Coordinar las acciones tendientes a la formulación y ejecución de programas que desarrollen los entes no gubernamentales y los órganos del Estado con respecto a cuidados y apoyos.
+d) Crear y mantener una plataforma informática única de información y gestión, que brinde soporte para la operación del Sinca, y que genere datos para la toma de decisiones, las acciones de seguimientos y la evaluación de resultados.
+e) Elaborar todos los baremos para determinar niveles de dependencia de las personas sujetas de atención.
+f) Sistematizar información de la oferta de servicios disponibles para cubrir la demanda de cuidados y apoyos de la población objetivo, así como los enlaces institucionales, regionales y cantonales, según las competencias de las entidades públicas y organizaciones de la sociedad civil que conforman el Sinca.
+g) Sistematizar la instrumentación y protocolos de evaluaciones técnicas necesarias para la articulación de cuidados y apoyos en todo el país, incluido el organigrama de procesos de las instituciones participantes en el andamiaje de los cuidados, desde que se solicitan los cuidados o apoyos hasta que se reciben, y se realice el seguimiento respectivo.
+h) Coordinar la Comisión Técnica Interinstitucional.
+i) Otras que, por reglamento, le asigne el Poder Ejecutivo.
+ARTÍCULO 13- Evaluación y verificación de la situación de dependencia, vulnerabilidad social, pobreza y pobreza extrema
+La Secretaría Técnica deberá gestionar, en conjunto con otras instituciones competentes, los instrumentos y protocolos de evaluaciones técnicas pertinentes y atinentes a verificaciones de la situación de la población objetivo, considerando el Baremo de la Dependencia, la canasta básica normativa, la canasta derivada de la discapacidad y la canasta básica de los cuidados en la edad adulta mayor, así como la valoración de la capacidad de pago, la valoración vocacional y la valoración del entorno familiar para determinar la capacidad de cuidados de las familias.
+Los instrumentos de valoración serán utilizados desde las redes de cuido hasta los comités cantonales de coordinación a efecto de caracterizar y canalizar las necesidades y requerimientos de la población objetivo.
+SECCIÓN II
+Comisión Técnica Interinstitucional
+ARTÍCULO 14- Creación
+Se crea la Comisión Técnica Interinstitucional para el fortalecimiento del Sinca como un órgano de coordinación de las acciones nacionales, regionales y locales de atención a las necesidades de la población objetivo, desde las competencias de cada institución.
+ARTÍCULO 15- Constitución
+La Comisión Técnica Interinstitucional se constituye como la asamblea de representantes de las instituciones con responsabilidad directa en gestionar, a lo interno de la entidad que representa, las acciones oportunas y pertinentes, para garantizar el cuidado y los apoyos requeridos por la población objetivo, desde los ámbitos nacional, regional y cantonal.
+ARTÍCULO 16- Integración
+La Comisión Técnica Interinstitucional estará integrada por una persona representante de las instituciones que se indican a continuación:
+a) Presidencia de la República.
+b) Ministerio de Trabajo y Seguridad Social (MTSS), (que la coordinará).
+c) Ministerio de Salud Pública (MSP).
+d) Ministerio de Educación Pública (MEP).
+e) Junta de Protección Social (JPS).
+f) Instituto Mixto de Ayuda Social (IMAS).
+g) Caja Costarricense de Seguro Social (CCSS).
+h) Consejo Nacional de Personas con Discapacidad (Conapdis).
+i) Consejo Nacional de la Persona Adulta Mayor (Conapam).
+j) Instituto Nacional de las Mujeres (Inamu).
+k) Consejo Nacional de Rectores (Conare).
+l) Organizaciones que atienden personas adultas mayores.
+m) Municipalidades.
+n) Organizaciones de personas adultas con discapacidad.
+ARTÍCULO17- Designación
+Estas personas serán designadas por la persona jerarca de cada entidad participante, con excepción de la persona representante de las municipalidades y concejos municipales de distrito, la cual será nombrada en sesión extraordinaria de la asamblea de la Unión Nacional de Gobiernos Locales, en tanto que las personas representantes de las organizaciones de personas adultas mayores y de personas adultas con discapacidad serán nombradas en el seno de la asamblea de estas organizaciones.
+ARTÍCULO 18- Sesiones
+La Comisión Técnica Interinstitucional sesionará ordinariamente una vez cada dos meses y, extraordinariamente, cuando la convoque la Secretaría Técnica del Sinca. Las decisiones se tomarán con votación por mayoría simple de las personas presentes y sus integrantes fungirán en forma ad honorem.
+ARTÍCULO 19- Comisiones especiales
+La Comisión Técnica Interinstitucional podrá constituir comisiones especiales de trabajo, permanentes o temporales, con fines específicos y la participación de personas representantes de otras entidades públicas y organizaciones no gubernamentales.
+ARTÍCULO 20- Asesoramiento
+La Comisión podrá llamar a otras personas en calidad de asesoras, para fines de consulta, quienes tendrán voz, pero no voto.
+ARTÍCULO 21- Regulación
+Supletoriamente, la Comisión Técnica Interinstitucional se regirá por las reglas de organización de la Ley N.º 6227, Ley General de la Administración Pública, para órganos colegiados.
+ARTÍCULO 22- Funciones
+La Comisión Técnica Interinstitucional tendrá las siguientes funciones:
+a) Aprobar directrices, políticas, acuerdos y requerimientos para que las instituciones responsables de los servicios de los cuidados ejecuten.
+b) Asesorar a la Secretaría Técnica en la formulación, seguimiento y evaluación del cumplimiento de directrices, políticas, acuerdos y requerimientos de intervención de las instituciones responsables de los servicios de cuidados y apoyos para la población objetivo, los cuales deberán ser considerados en el proyecto de ley de presupuesto nacional, por parte de cada institución pública involucrada.
+c) Accionar con oficinas y servicios regionales y cantonales de la entidad representada, a fin de dar atención inmediata a necesidades de la población objetivo, según sus competencias.
+d) Cada una de las instituciones de la Comisión deberá rendir cuentas del accionar de su representada con respecto a los servicios de cuidados que realiza, de acuerdo con las competencias correspondientes.
+e) Promover evaluaciones periódicas del accionar de las instituciones del sistema con el fin de analizar los resultados para la toma de decisiones de la Comisión.
+f) Proponer políticas, programas y acciones pertinentes para el adecuado funcionamiento y desarrollo del Sinca.
+g) Coordinar con las oficinas y servicios regionales y cantonales de sus representadas a fin de dar a conocer y aclarar dudas respecto a políticas, programas y acciones que deban ejecutarse, de manera articulada para atender diversas necesidades de la población objetivo.
+h) Participar en la elaboración de los planes de acción interinstitucionales del Sinca.
+i) Conocer y pronunciarse sobre las evaluaciones y los informes de seguimiento que se realicen sobre el funcionamiento del Sinca.
+j) Las competencias esenciales definidas en esta ley que resulten compatibles con la competencia administrativa atribuida a esta Comisión.
+k) Otras que le asigne la Secretaría Técnica.
+SECCIÓN III
+Comités Cantonales de Coordinación
+ARTÍCULO 23- Creación
+Créanse los comités cantonales de coordinación, como órganos de enlace entre la Comisión Técnica Interinstitucional y las autoridades superiores de las instituciones con responsabilidad directa en la atención de la población objetivo por medio de sus direcciones o representantes regionales, para la coordinación de políticas públicas, programas y servicios.
+Cada comité cantonal de coordinación se regirá por las reglas de organización de la Ley N.º 6227, Ley General de la Administración Pública, para órganos colegiados. Cuando se conforme un Comité Cantonal de Coordinación deberán acatarse las disposiciones sobre operatividad y funcionamiento que se definan vía reglamento.
+ARTÍCULO 24- Funcionamiento
+Estos comités funcionarán con participación de la institucionalidad pública representada en el sistema y en el cantón, incluidas las municipalidades, así como la representación de la sociedad civil, para el análisis, resolución, canalización y seguimiento de situaciones de la población objetivo que requieran atención por parte de instituciones públicas o privadas, o bien, instituciones públicas y privadas.
+Para el proceso de análisis y resolución se aprovecharán los servicios y recursos disponibles, tanto en la institucionalidad pública, como en la comunidad de procedencia de la población objetivo.
+Los comités cantonales de coordinación serán presididos por la persona que designe la alcaldía municipal respectiva. Esta persona estará encargada de aspectos de logística y organización.
+Estos comités sesionarán dos veces al mes ordinariamente, y extraordinariamente cuando sea necesario.
+ARTÍCULO 25- Funciones
+Además de las señaladas en los párrafos anteriores, serán funciones de los comités cantonales de coordinación las siguientes:
+a) Articular las políticas públicas, programas y servicios de atención con las necesidades de la población objetivo.
+b) Coordinar con la representación respectiva, en la Comisión Técnica Interinstitucional, para garantizar que las situaciones de la población objetivo sean canalizadas y hayan sido atendidas y resueltas con criterios de calidad y oportunidad, de conformidad con las políticas públicas, programas, servicios, recursos y protocolos existentes para tal fin.
+c) Atender necesidades y requerimientos de la población objetivo que se dirijan a la sede del comité cantonal de coordinación o a integrantes de este comité.
+d) Disponer, desde las respectivas instituciones, de mecanismos de comunicación e información, accesibles e inclusivos, que permitan conocer oportunamente de necesidades y requerimientos de la población objetivo, planteadas desde la ciudadanía, que requieran atención oportuna.
+e) Disponer, desde las respectivas instituciones, de información detallada sobre programas, servicios, protocolos y recursos disponibles para atender necesidades y requerimientos la población objetivo, así como personal institucional a quien dirigirse en caso requerido.
+f) Promover y apoyar la conformación de las redes comunitarias de atención a la población objetivo.
+g) Coordinar con las redes comunitarias a efecto de canalizar las necesidades y requerimientos de la población objetivo hacia otras instituciones competentes.
+h) Otras que contribuyan al logro de sus cometidos en el fortalecimiento del Sinca y su organización nacional, regional y cantonal.
+ARTÍCULO 26- Situación económica de la persona usuaria del Sinca
+Con base en la valoración integral de la población objetivo, el comité cantonal de coordinación y las instituciones representadas en el ámbito de su competencia, brindarán los servicios y apoyos requeridos. No obstante, le corresponderá al IMAS determinar la condición de pobreza o pobreza extrema, tomando en cuenta la canasta básica normativa, la canasta derivada de la discapacidad y la canasta básica de los cuidados en la edad adulta mayor.
+Capítulo V
+Cuidados, apoyos, instituciones y personas cuidadoras
+ARTÍCULO 27- Derechos de las personas cuidadoras
+Las personas cuidadoras tendrán derecho a disponer de los recursos necesarios que les permitan brindar cuidados oportunos y de calidad sin que ello implique un deterioro de la calidad de vida y oportunidades de desarrollo propias y de su familia.
+ARTÍCULO 28- Obligaciones de las instituciones integrantes del Sinca
+El Estado, por medio de sus instituciones, se encargará de brindar los apoyos necesarios para garantizar este derecho, incluyendo servicios de respiro, asistencia económica, formación para el trabajo, capacitación para los cuidados, entre otros, cuando estas personas no cuenten con los recursos que satisfagan tales necesidades.
+Las instituciones competentes integrantes del Sinca deberán ofrecer a las familias de personas sujetas de cuidados y personas cuidadoras apoyos que les permitan administrar de manera adecuada los cuidados, entre ellos:
+a) El Fondo Nacional de Telecomunicaciones (Fonatel), en coordinación con el Instituto Costarricense de Electricidad (ICE), proporcionarán apoyos técnicos y tecnológicos necesarios para que desde las instituciones del Sinca se pueda bridar asesoramiento a las personas cuidadoras vía telefónica, videoconferencia, telemedicina, centros de llamadas, etc., sobre situaciones que enfrente la población objetivo.
+b) Información y formas de accesar a pensiones del régimen no contributivo y otras ayudas económicas para mejorar la calidad de vida de la población objetivo en situaciones de pobreza y pobreza extrema.
+c) El IMAS, en coordinación con el INEC, determinará la canasta básica de los cuidados a personas adultas mayores, que considere los niveles de dependencia expuestos en la presente ley, cuyo monto será adicionado a la canasta básica normativa y la canasta derivada de la discapacidad cuando proceda, a efecto de evaluar la condición de pobreza y el acceso a las ayudas sociales por pobreza, pobreza extrema, o vulnerabilidad social.
+d) El INA, en coordinación con el MEP y otras instituciones competentes, se encargará de facilitar la formación profesional a personas cuidadoras de las personas sujetas de cuidado en áreas que les permitan insertarse en el mercado laboral, por medio de modalidades de enseñanza que consideren su condición como cuidadoras. El IMAS apoyará a personas en condición de pobreza y pobreza extrema para solventar gastos del proceso de formación.
+e) El INA, en coordinación con el MEP, las universidades públicas, el MTSS y otras instituciones competentes, se encargarán de facilitar e intensificar programas y servicios educativos, formativos, uso del tiempo, calidad de vida y de inserción laboral a la población objetivo según el nivel de dependencia. Esta oferta de programas y servicios deberá estar suficientemente publicitada en medios y formatos accesibles para toda la población.
+f) Las universidades públicas promoverán que las unidades académicas incorporen contenidos y desarrollen proyectos de graduación e investigaciones relacionados con el impacto del cambio demográfico en las personas y la economía de los cuidados.
+g) El INA, en coordinación con el MTSS y otras instituciones competentes, promoverán la inserción laboral de personas cuidadoras interesadas.
+h) El Conapam facilitará, a las familias que no cuenten con recursos para contratar servicios de cuidados adecuados, información y servicios en las distintas modalidades de la Red de atención progresiva para el cuido integral de personas adultas mayores, con el objetivo de que las personas cuidadoras aprovechen parte de su tiempo en formación para el trabajo e inserción laboral.
+i) El Conapdis facilitará, a las familias que no cuenten con recursos para contratar servicios de cuidados adecuados, información y servicios en las distintas modalidades de atención.
+j) La CCSS facilitará información a las personas cuidadoras sobre los servicios de cuidados incluidos la atención del dolor y los cuidados paliativos para atender necesidades y requerimientos de las familias de la población objetivo.
+k) El Ministerio de Trabajo y Seguridad Social coordinará con el sector empresarial la generación de modalidades de trabajo para que personas cuidadoras no se vean obligadas a dejar sus puestos de trabajo para dedicarse a la atención de personas a su cuidado. Asimismo, establecerá mecanismos y protocolos para hacer efectivas las modalidades que defina.
+l) El Conapam y el Conapdis en coordinación con el IMAS y otras instituciones competentes determinarán mecanismos y formas de copago de servicios, en todas las modalidades existentes y las que se puedan crear, para dar atención integral a personas adultas mayores, personas adultas con discapacidad y personas cuidadoras que no se encuentren en situación de pobreza o pobreza extrema.
+m) Las organizaciones no gubernamentales que atienden personas adultas mayores y personas adultas con discapacidad con el apoyo de la JPS, podrán generar programas y servicios de respiro para familias y personas cuidadoras incorporando sistemas de copago en caso de familias y personas cuidadoras que no estén en situación de pobreza o pobreza extrema.
+n) El Conapam promoverá la creación de organizaciones no gubernamentales en todas las regiones del país que se constituyan en contraparte de la Red de atención progresiva para el cuido integral de personas adultas mayores y de otros servicios interinstitucionales no sujetos a la condición de pobreza o pobreza extrema.
+o) Las organizaciones no gubernamentales existentes, y las que se conformen en adelante, podrán participar en los comités cantonales de coordinación y realimentar la gestión de dichos comités.
+p) El Inamu intensificará los mecanismos de información, asesoramiento, recepción, resolución y canalización de situaciones de violencia contra mujeres adultas con y sin discapacidad y cuidadoras. Incluido el abandono como forma de violencia.
+q) El Inamu destinará recursos del programa de emprendimientos para mujeres o grupos de mujeres interesadas en los cuidados como actividad económica remunerada de manera individual o asociativa. Apoyará por medio de asesoramiento y recursos económicos, iniciativas, desde cualquier parte del país.
+r) El MTSS, en coordinación con el Ministerio de Economía, Industria y Comercio (MEIC) y otras instituciones competentes, destinará recursos para financiar emprendimientos individuales y colectivos relacionados con los cuidados.
+s) El Instituto Mixto de Ayuda Social destinará recursos para que personas en condición de pobreza, interesadas en el cuidado de personas como opción de capacitación e inserción laboral se capaciten.
+t) La Presidencia de la República promoverá proyectos de asistencia técnica y financiera con agencias nacionales e internacionales que coadyuven con la atención de personas adultas mayores. Asimismo, presentará y convocará proyectos de ley que se requieran para fortalecer el Sinca, la Red de atención progresiva para el cuido integral de personas adultas mayores, y la gestión del Conapam.
+u) EI Conapam deberá actualizar el Protocolo de coordinación para la asignación y el giro de los recursos económicos a las organizaciones privadas sin fines de lucro que atienden a personas adultas mayores, así como la Estrategia e instrumentos de supervisión y evaluación técnica de programas subvencionados por medio de esta institución.
+v) EI Conapdis deberá actualizar el Protocolo de coordinación para la asignación y el giro de los recursos económicos a las organizaciones privadas sin fines de lucro que atienden a personas adultas con discapacidad, así como la Estrategia e instrumentos de supervisión y evaluación técnica de programas subvencionados por el Conapdis.
+w) El Instituto Nacional de Estadística y Censos, determinará la metodología e inclusión en las encuestas nacionales del cálculo sobre el monto de la canasta básica de los cuidados a personas adultas mayores, que considere los niveles de dependencia expuesto en la presente ley.
+ARTÍCULO 29- Mecanismos de atención y agilización.
+Las instituciones responsables del funcionamiento del Sinca pondrán a disponibilidad de la población objetivo, información presencial, física, electrónica, telefónica, en línea, audiovisual, en formatos accesibles, sobre los trámites, requisitos para optar por los servicios y ayudas relativas a los cuidados, así como compromisos de la familia o de las personas cuidadoras. Se informará por los mismos medios sobre los servicios dirigidos a las personas cuidadoras de personas adultas mayores en materia laboral, formación profesional y de atención directa.
+ARTÍCULO 30- Profesionalización de los cuidados
+Las instituciones públicas competentes, educativas y formativas, organizarán e intensificarán programas de capacitación sobre los cuidados para que personas interesadas se capaciten y se certifiquen en esta actividad como una opción laboral.
+El MTSS, en coordinación con el INA y otras entidades competentes, definirá el perfil ocupacional y el salario mínimo de las personas que se dediquen a los cuidados, como opción laboral remunerada.
+El MTSS, además, será encargado de:
+a) Mantener actualizada la Bolsa Nacional de Empleo, con la categoría de Persona cuidadora.
+b) Elaborar junto con el Ministerio de Salud un carné de identificación de personas cuidadoras.
+c) Coordinar con las entidades públicas y privadas la divulgación de información referida a la figura de la persona cuidadora y la incorporación de este recurso humano en la Bolsa Nacional de Empleo.
+d) Disponer y facilitar el acceso a las diversas plataformas de empleabilidad existentes a personas interesadas en los cuidados como opción laboral.
+e) Realizar la prospección laboral de personas cuidadoras para todo el país, en conjunto con el Instituto Nacional de Estadística y Censos.
+f) Elaborar junto con la Caja Costarricense de Seguro Social la normativa pertinente y atinente a incapacidades laborales de las personas cuidadoras.
+g) Actualizar junto con INEC las categorías y clases ocupacionales referidas a cuidados contenidas en la Clasificación de actividades económicas de Costa Rica.
+Capítulo VI
+Financiamiento y recursos
+ARTÍCULO 31- Recursos presupuestarios
+Para atender los requerimientos de recursos presupuestarios del Sinca se incluyen las siguientes fuentes:
+a) El Fodesaf dispondrá de un 3% adicional para fortalecer y ampliar los programas y servicios del Conapam dirigidos a la atención de personas adultas mayores y personas cuidadoras.
+b) Las instituciones con responsabilidad en la atención de poblaciones objetivo de esta ley podrán disponer de los recursos presupuestados y celebrar convenios de cooperación interinstitucional con entes públicos y privados para fortalecer y ampliar los servicios existentes desde el ámbito de competencia respectivo.
+c) Las organizaciones no gubernamentales existentes y las que se constituyan en adelante podrán disponer de los recursos provenientes del Fodesaf por medio del Conapam y el Conapdis para fortalecer y ampliar los programas y servicios dirigidos a la atención de personas adultas mayores, personas adultas con discapacidad y personas cuidadoras.
+d) Las organizaciones no gubernamentales existentes y las que se constituyan en adelante podrán disponer de los recursos que la JPS distribuye para fortalecer y ampliar los programas y servicios dirigidos a la atención de personas adultas mayores, personas adultas con discapacidad y personas cuidadoras.
+e) La CCSS podrá disponer de recursos del Régimen No Contributivo de pensiones para atender necesidades de personas adultas mayores y personas adultas con discapacidad, cuya valoración, de la condición de pobreza o pobreza extrema, deberá considerar la canasta básica normativa, la canasta básica derivada de la discapacidad y la canasta básica de los cuidados a personas adultas mayores cuando corresponda.
+f) Todas las instituciones asumirán el costo de la designación de la representación en la Comisión Técnica.
+g) El MTSS dispondrá del personal mínimo necesario para organizar la secretaría técnica del Sinca.
+h) Todas las instituciones, en el ámbito de sus competencias, asumirán las responsabilidades asignadas en la presente ley con los recursos disponibles, considerando que no se están creando nuevos servicios ni nuevas responsabilidades sino ampliando y profundizando las existentes.
+i) Todos los demás recursos que por ley que se destinan a la atención de personas adultas mayores y personas adultas con discapacidad.
+ARTÍCULO 32- Donaciones
+Se autoriza al Estado, a las instituciones públicas y a las empresas constituidas como sociedades anónimas, para donar a los programas y servicios dirigidos a personas adultas mayores, personas adultas con discapacidad y personas cuidadoras a cargo de entidades públicas y organizaciones no gubernamentales toda clase de bienes, servicios y recursos disponibles, así como para colaborar con el Sistema, en las áreas de sus respectivas competencias.
+Para atender gastos administrativos en materia de logística y funcionamiento mínimo de la secretaría técnica, la Comisión Técnica Interinstitucional y los comités cantonales de coordinación señalados en esta ley, los entes y órganos de derecho público participantes del Sinca podrán celebrar convenios de colaboración interinstitucional en lo conducente.
+Capítulo VII
+Reformas y adiciones
+ARTÍCULO 33- Reforma de la Ley N.º 7935
+Refórmese el inciso e) del artículo 1 de la Ley Integral de la Persona Adulta Mayor, Ley N.º 7935, de 25 de octubre de 1999, y sus reformas, pera que en adelante se lea:
+(…)
+e) Impulsar, coordinar, orientar, ampliar, articular y fortalecer la Red de Atención Progresiva para el Cuido Integral de las Personas Adultas Mayores en Costa Rica, por medio del Sistema Nacional de Cuidados y Apoyos a Personas Adultas Mayores (Sinca), con el propósito de asegurar la atención integral e interinstitucional de las personas adultas mayores, por parte de entidades públicas y privadas, físicas y jurídicas, y velar por el funcionamiento adecuado de los programas y servicios destinados a esta población, considerando diversos niveles de dependencia y la situación de vulnerabilidad que enfrenten.
+(…)
+ARTÍCULO 34- Reforma del artículo 3 de la ley N.° 5662
+Refórmense los incisos m) y o) del artículo 3 de la ley N.º 5662, Ley de Desarrollo Social y Asignaciones Familiares, de 23 de diciembre de 1954, y sus reformas, para que en adelante se lean:
+Artículo 3- (…)
+m) Se destinará al Fondo de Subsidios para la Vivienda, creado por la Ley N.º 7052, de 13 de noviembre de 1986, al menos un quince punto cero siete por ciento (15,07%) de todos los ingresos anuales ordinarios y extraordinarios del Fondo de Desarrollo Social y Asignaciones Familiares (Fodesaf). En ningún caso percibirá un monto inferior al equivalente al treinta por ciento (30%) de los recursos que Fodesaf recaude por concepto de recargo del cinco por ciento (5%) establecido en el inciso b) del artículo 15 de esta ley y sus reformas.
+(…)
+o) Al Consejo Nacional de la Persona Adulta Mayor (Conapam) se destinará un cinco por ciento (5%) de todos los ingresos anuales, ordinarios y extraordinarios, percibidos por Fodesaf, para el cumplimiento de los fines y las funciones establecidos en su ley de creación. A partir del primer giro de los recursos aquí dispuestos, Fodesaf cesará el financiamiento actual y futuro de programas de Conapam acordados mediante convenios.
+De estos recursos el Conapam podrá destinar hasta un cincuenta por ciento (50%) para coadyuvar con los costos operativos de la atención de personas adultas mayores en diferentes modalidades, incluida la asistencia personal en el domicilio o en establecimientos de atención diurna o de larga estancia. Las organizaciones no gubernamentales a cargo de estos establecimientos deberán comprobar su idoneidad ante el Ministerio de Salud Pública, estar acreditadas de conformidad de la Ley General de Salud, y sus reformas, lo estipulado en el reglamento de esta ley, y deberán tener el carácter de bienestar social vigente otorgado por el IMAS.
+ARTÍCULO 35- Reforma del artículo 35 de la Ley N.º 5476
+Refórmese el artículo 35 de la Ley N.º 5476, Código de Familia, de 29 de octubre de 2019 para que se lea:
+Artículo 35- Obligación de sufragar proporcionalmente los gastos de la familia. Ambas personas cónyuges son responsables de sufragar las necesidades y los gastos de la familia y cada una responderá proporcionalmente de acuerdo con sus aptitudes, posibilidades e ingresos económicos, así como la obligación para ambas personas de compartir el trabajo doméstico y de cuidados, y la responsabilidad parental sobre hijos, hijas y familiares dependientes.
+La persona cónyuge que desempeñe, exclusivamente o en una mayor proporción que la otra cónyuge, el trabajo doméstico no remunerado en el hogar y al cuidado de hijos e hijas o familiares dependientes tendrá derecho a que dichas labores se estimen como su contribución económica al sostenimiento del hogar en la proporción correspondiente.
+Las mismas disposiciones serán aplicables para las uniones de hecho.
+Las personas adultas mayores serán sujetas de cuidados por parte de hijos, hijas u otras personas familiares.
+ARTÍCULO 36- Adición de un artículo 35 bis de la Ley N.º 5476
+Adiciónese un artículo 35 bis a la Ley N.º 5476, Código de Familia, de 29 de octubre de 2019, que se leerá de la siguiente forma:
+Artículo 35 bis- Objeción de la obligación de los cuidados
+Las personas que, por lo dispuesto en el artículo anterior, estén obligadas a garantizar el cuidado de personas adultas mayores familiares podrán solicitar ante una persona jueza el levantamiento de esta obligación en caso de haber sufrido abusos (físicos, psicológicos y sexuales) por parte de la persona sujeta de cuidados.
+ARTÍCULO 37- Adición de un párrafo al artículo 230 de la Ley N.º 5476
+Adiciónese un párrafo al final del artículo 230 de la Ley N.º 5476, Código de familia, de 21 de diciembre de 1973 que se leerá:
+Artículo 230- (…)
+La persona garante para la igualdad jurídica o quien ejerza la salvaguardia de la persona con discapacidad deberá ser evaluada por medio de un informe pericial realizado por una persona profesional en gerontología o psicología, con el objetivo de determinar la idoneidad de la persona garante.
+Capítulo VIII
+Disposiciones finales
+ARTÍCULO 38- Reglamentación
+El Poder Ejecutivo reglamentará la presente ley dentro de los seis meses posteriores a su entrada en vigor. Empero, la falta de reglamentación no impedirá la aplicación de esta ley ni su obligatoria observancia, en cuanto sus disposiciones sean suficientes por sí mismas para ello.
+Capítulo IX
+Disposiciones Transitorias
+Transitorio I
+En un plazo de seis meses a partir de la entrada en vigencia de esta ley, la Secretaría Técnica del Sinca habrá elaborado todos los baremos para determinar niveles de dependencia de las personas sujetas de atención.
+Transitorio II
+En el plazo máximo de seis meses después de la entrada en vigencia de la presente ley, la Secretaría Técnica del Sinca presentará al país información sistematizada de la oferta de servicios que permiten cubrir la demanda de cuidados y apoyos a la población objetivo, así como de enlaces institucionales, regionales y cantonales, según las competencias de las entidades públicas y organizaciones de la sociedad civil que conforman el Sinca.
+Transitorio III
+En el plazo máximo de doce meses después de entrada en vigencia la presente ley, la Secretaría Técnica del Sinca habrá concluido la sistematización de toda la instrumentación y protocolos de evaluaciones técnicas necesarias para la articulación de cuidados y apoyos en todo el país, incluido el organigrama de procesos de las instituciones participantes en el andamiaje de los cuidados, desde que se solicitan los cuidados o apoyos hasta que se reciben, y se realice el seguimiento respectivo.
+Transitorio IV
+El Ministerio de Trabajo y Seguridad Social, en coordinación con otras instituciones competentes, y en un plazo máximo de un año a partir de la publicación de la presente ley, deberá:
+a) Elaborar en conjunto con el Instituto Nacional de Estadística y Censos la prospección laboral de personas cuidadoras.
+b) Elaborar los criterios de categoría ocupacional, categoría salarial, descriptor laboral, salario mínimo y perfil ocupacional de los cuidados. Para ello podrá convocar la colaboración profesional que considere necesaria tanto de instituciones públicas como privadas.
+c)- Elaborar junto con la Caja Costarricense de Seguro Social la normativa pertinente y atinente a incapacidades laborales de las personas cuidadoras.
+d)- Actualizar junto con INEC las categorías y clases ocupacionales referidas a los cuidados contenidas en la Clasificación de actividades económicas de Costa Rica.
+Transitorio V
+El Instituto de Estadística y Censos, en un plazo máximo de 6 meses a partir de la publicación de la presente ley, determinará la metodología e inclusión en las encuestas nacionales del cálculo sobre el monto de la canasta básica de los cuidados a personas adultas mayores, que considere los niveles de dependencia expuestos en la presente ley.
+Transitorio VI
+En un plazo máximo de diez meses a partir de la publicación de la presente ley, el IMAS incorporará, en el Sistema de Información y de Evaluación de la Condición de Pobreza, la variable de la canasta básica de los cuidados a personas adultas mayores para que sea adicionada a la línea de pobreza establecida por la canasta normativa.
+Transitorio VII
+El Conapam y el Conapdis, en un plazo máximo de seis meses a partir de la publicación de la presente ley, habrá elaborado los mecanismos de copago de servicios de cuidados.
+Transitorio VIII
+El Conapam y el Conapdis en un plazo máximo de doce meses a partir de la publicación de la presente ley, ampliará la cobertura de servicios hasta en un 50%.
+Transitorio IX
+En un plazo de seis meses el Fonatel y el ICE habrán instalado, en conjunto con las instituciones del Sinca, la plataforma para el centro de llamadas y otros mecanismos de atención y asesoramiento a personas cuidadoras y personas sujetas de cuidados.
+Rige a partir de su publicación.
+Catalina Montero Gómez
+Diputada
+15 de mayo de 2020
+NOTAS: Este proyecto pasó a estudio e informe de la Comisión Permanente Especial de Asuntos de Discapacidad y de Adulto Mayor.
+Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios.

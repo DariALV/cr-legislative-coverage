@@ -1,0 +1,148 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+REFORMA DE LOS ARTÍCULOS 55, 60 Y 68 DEL CÓDIGO ELECTORAL, PARA LA INSCRIPCIÓN Y CANCELACIÓN DE INSCRIPCIONES DE PARTIDOS POLÍTICOS
+DANIEL GERARDO VARGAS QUIRÓS
+DIPUTADO
+EXPEDIENTE N.º 25.229
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+REFORMA DE LOS ARTÍCULOS 55, 60 Y 68 DEL CÓDIGO ELECTORAL, PARA LA INSCRIPCIÓN Y CANCELACIÓN DE INSCRIPCIONES DE PARTIDOS POLÍTICOS
+Expediente N.º 25.229
+ASAMBLEA LEGISLATIVA:
+El sistema electoral costarricense es un sistema de partidos políticos, contemplado así en el Código Electoral, demás legislación nacional y la misma Carta Magna.
+ARTÍCULO 98.- Los ciudadanos tendrán el derecho de agruparse en partidos para intervenir en la política nacional, siempre que los partidos se comprometan en sus programas a respetar el orden constitucional de la República.
+Los partidos políticos expresarán el pluralismo político, concurrirán a la formación y manifestación de la voluntad popular y serán instrumentos fundamentales para la participación política. Su creación y el ejercicio de su actividad serán libres dentro del respeto a la Constitución y la ley. Su estructura interna y funcionamiento deberán ser democráticos.
+De este mismo artículo constitucional se desprende que los partidos políticos están llamados a representar la voluntad popular, por lo que sus propuestas, ideas y organización política deben tener una vocación de poder que, en un sistema de democracia representativa, como el nuestro, se traduce en votos.
+En las últimas elecciones nacionales y municipales se ha visto un aumento considerable en el número de partidos políticos inscritos, pasando de 8 partidos en 1980 a 155 partidos para el año 2024 (incluye partidos a escala nacional, provincial y cantonal).
+Según estimaciones con información disponible en el sitio web del TSE, para las elecciones 2026 se podrían presentar cerca de 20 partidos políticos a escala nacional, continuando con la tendencia de crecimiento de partidos políticos descrita.
+Este número creciente de partidos políticos no ha frenado el abstencionismo ni las opiniones de la mayoría de la población con respecto a estas estructuras, que siguen teniendo el último lugar de confianza en la mayoría de las encuestas de opinión, por lo que sus ideas y propuestas no parecen ser novedosas ni atractivas, y evidencia, además, un desencanto general del electorado al sistema de partidos.
+Cuadro 1. Evaluación de la labor de las instituciones, 2019-2025. Tomado de Encuesta de Opinión Pública, publicada por el Centro de Investigación y Estudios Políticos (CIEP) y la Escuela de Ciencias Políticas de la Universidad de Costa Rica, abril 2025.
+Este desdén por los partidos se fundamenta, en parte, también por la percepción entre la población de una apatía general hacia los partidos políticos. Según el informe de Resultados de la Encuesta de Opinión Pública, publicada por el Centro de Investigación y Estudios Políticos (CIEP) y la Escuela de Ciencias Políticas de la Universidad de Costa Rica (UCR), para abril de 2025 “los datos recopilados en esta oportunidad reportan, nuevamente, niveles bajos de simpatía partidaria. En esta coyuntura, el 87% de las personas consultadas indica no tener simpatía partidaria y el 13% restante sí indica tener vínculos con alguna agrupación política”.
+Ello se refleja en la indecisión y desdén del electorado en torno a las próximas elecciones de 2026, en donde el estudio del CIEP-UCR explicita que “los datos recopilados en esta oportunidad reportan, nuevamente, niveles bajos de simpatía partidaria. En esta coyuntura, el 87% de las personas consultadas indica no tener simpatía partidaria y el 13% restante sí indica tener vínculos con alguna agrupación política”; es evidente que la proliferación de partidos políticos no ha logrado atraer a la población.
+Si se toma como referencia de análisis la última elección nacional, esta tuvo una participación de 25 partidos políticos que buscaban la presidencia de la República y un total de 36 que buscaban acceder a alguna diputación. La diferencia corresponde a partidos de escala provincial.
+De los 25 partidos inscritos con papeleta presidencial, 19 no alcanzaron el 1% de los votos válidos emitidos, incluso estas 19 agrupaciones en conjunto sumaron apenas el 5% de los votos emitidos. En el caso de diputaciones de los 36 partidos políticos mencionados, solo 6 obtuvieron al menos una curul, 10 partidos obtuvieron una votación total nacional menor al 3% y otros 9 partidos no alcanzaron el 1%, hubo 11 partidos que participaron a escala provincial, ninguno de ellos alcanzó alguna diputación.
+El limitar el número de partidos políticos que tengan la posibilidad de participar en la elección, a partir de su grado de representatividad para la población, significa contar con una oferta electoral más atinente a la realidad del país. Esto no imposibilita una pluralidad de representación, pero sí filtra aquellas agrupaciones que no obtienen un mínimo de apoyo y que se posicionan muy lejos de obtener una representación en cargos públicos. Asimismo, tampoco se limita el derecho a participar, ni a ser electo, ya que no se está limitando el derecho del individuo a afiliarse a otra agrupación partidaria.
+Lo anterior se relaciona con el principio de representatividad y eficacia del voto, el cual sostiene que un partido político, para ser considerado un actor relevante y legítimo en el sistema democrático, debe contar con un respaldo mínimo de la ciudadanía. Si un partido no logra este umbral, se considera que su representatividad es demasiado baja para justificar su presencia en un espacio de debate y deliberación nacional como entidad política con acceso a recursos públicos.
+Al respecto, Héctor Fernández, director general del Registro Electoral del Tribunal Supremo de Elecciones (TSE), en entrevista al Seminario Universidad del 14 de agosto de 2024, expuso su preocupación de que “se continúe desnaturalizando la función esencial de los partidos políticos.
+En esta misma idea, el politólogo Robert Dahl en su concepto de poliarquía establece que entre los requisitos para una democracia efectiva está la necesidad de partidos políticos robustos y capaces de competir por el poder de manera significativa. Esto no es posible, como se ha apuntado, con partidos políticos con un apoyo tan bajo en las elecciones, por lo que la existencia de un umbral también se justifica en la necesidad de que los partidos sean viables y sostenibles en el tiempo, demostrando capacidad de organización y movilización de votantes.
+Adicionalmente, mantener el registro de partidos que consistentemente obtienen un porcentaje ínfimo de votos representa una carga de esfuerzo considerable para el sistema electoral y el erario; un umbral mínimo de votos garantiza que los partidos que participan de la contienda tienen un peso significativo en el electorado, evitando que recursos económicos, tiempo, administrativos, entre otros, se destinen a organizaciones con apoyo marginal. Así también lo recordó Héctor Fernández al recalcar que “en las pasadas elecciones municipales, tuvimos que atender cerca de cinco mil asambleas, lo que supone un esfuerzo muy fuerte para la institución, porque la mayoría se celebran fuera de horas hábiles, en fines de semana, en noches… Implica jornadas extraordinarias, viáticos, alimentación, y no pocos funcionarios pasaron meses sin poder disfrutar un fin de semana”.
+Este tema se ha revisado también en otros países de la región, como lo evidencia Salvador Romero Ballivián en su libro de 2020, titulado “Elecciones en América Latina”, en donde se expone que, en términos generales, en la región “se endurecieron los requisitos para el reconocimiento de la personalidad jurídica –en especial en el porcentaje de firmas para obtenerla– y se elevaron los umbrales de votación para conservar el registro, incluso hasta 5% de los votos válidos”.
+Por ejemplo, y tomando como referencia datos del Observatorio de Reformas Políticas en América Latina, se puede observar el comparativo de requisitos para inscribir partidos políticos en América Latina.
+Tabla 1. Número mínimo de afiliados para inscripción de partidos políticos en América Latina, diciembre 2024
+País
+Número mínimo de afiliados
+Argentina
+4000 inscritos en el registro electoral por distrito
+Bolivia
+1.5%
+Ecuador
+1.5%
+Uruguay
+0.5%
+Venezuela
+0.5%
+Honduras
+2%
+República Dominicana
+2%
+Colombia
+50.000 firmas
+El Salvador
+50.000 firmas
+México
+Nacional: 3.000 personas en el Estado o 300 en distrito.
+Local: no menor al 0.26% del padrón electoral del distrito.
+Costa Rica
+3000 adhesiones para partidos nacionales. Para partidos cantonales y
+provinciales, el 1% del número de electores inscritos en la provincia o cantón.
+Fuente. Observatorio de Reformas Políticas en América Latina, 4 de diciembre de 2024.
+Como se evidencia, en países como Argentina, s e solicita un número mínimo de afiliados por distrito electoral, otros solicitan un porcentaje sobre el padrón, en los casos de Bolivia y Ecuador sería del 1.5%, en Uruguay y Venezuela es del 0.5%, otros países utilizan un porcentaje que se calcula con los votos válidos de la última elección, como es el caso de Honduras y República Dominicana que solicita un 2% de afiliados, y otros un número específico, que para el caso de Colombia y El Salvador sería de 50 mil firmas. En otros países solicitan un números de firmas por suscripciones electorales y administrativas como sucede en México, entre otras dinámicas en la región. Para el caso de Costa Rica se solicitan tres mil firmas que, si se considera el padrón electoral al 31 de mayo de 2025, según el TSE, que tiene un total de 3 705 481 electores, el porcentaje de firmas significa un 0.08% del padrón electoral.
+Respecto a la supervivencia de partidos políticos, del mismo Observatorio de Reformas Políticas en América Latina se extrae lo siguiente.
+Tabla 2. Porcentaje de votos requerido para supervivencia de partidos políticos en América Latina. Diciembre 2024.
+País
+Porcentaje de votos requerido
+Argentina
+2% de padrón
+electoral
+Paraguay
+Al menos el 1%del total de los votos válidos emitidos en cada una de las dos
+últimas elecciones pluripersonales
+República Dominicana
+1% de votos válidos emitidos en
+las últimas elecciones ordinarias,
+presidencial, congresual, municipal o de distrito municipal correspondiente al
+mismo periodo electoral.
+Honduras
+2% de los votos válidos, tomando
+como base el nivel electivo de mayor
+votación obtenida
+Panamá
+Superior al 2% de votos en las elecciones generales
+Bolivia
+3% del total de votos válidos en la
+última elección concurrida
+México
+3% de los votos respecto de la anterior elección
+Nicaragua
+4% de votos de los votos válidos
+en elecciones a presidente y vicepresidente. En el caso de alianzas
+electorales, 4% de los votos multiplicado por el número de partidos que conforman la alianza electoral
+Perú
+5% de votos válidos a nivel nacional
+Ecuador
+5% de los votos válidos en dos
+Elecciones pluripersonales nacionales
+sucesivas
+Guatemala
+5% de los votos válidos emitidos en
+las elecciones generales
+Chile
+5% de los sufragios válidamente
+emitidos en la última elección de
+diputados, en cada una de a lo menos
+8 regiones o en cada una de a lo
+menos 3 regiones geográficamente
+contiguas
+Costa Rica
+Porcentaje de votos igual o superior al
+número de adhesiones exigidas
+Fuente. Observatorio de Reformas Políticas en América Latina. 4 de diciembre de 2024
+En la tabla anterior, países como Argentina consideran necesario que un partido político obtenga un número de votos mayor o igual a 2% del padrón electoral, mientras que otros exigen como criterio de supervivencia obtener un porcentaje mínimo en los votos válidos de la última elección, como el caso Paraguay y República Dominicana con un 1%, de Honduras y Panamá con un 2%, Bolivia y México que considera un 3%, Nicaragua y Perú un 4%, Ecuador y Guatemala un 5%, o el caso Chile que sea un 5% en cada una de a lo menos 8 regiones o en cada una de a lo menos 3 regiones geográficamente contiguas. Para Costa Rica el artículo 68 del Código Electoral indica un porcentaje de votos igual o superior al número de adhesiones exigidas, que se entiende se refiere a las 3 mil mencionadas anteriormente, que, si se consideran los votos válidos para presidencia en primera ronda de la última elección 2022, que fue de 2 094 816 votos, significaría en términos porcentuales apenas un 0.14% de los votos.
+Los casos de realidad nacional resaltados, en contraste con los ejemplos anteriores de la región, expone una falta de normativa jurídica mucho más férrea y eficaz capaz de garantizar una adecuada representación del padrón electoral en la Legislatura, a través de partidos políticos cuyo desempeño electoral fundamenta en gran medida su presencia en el plenario como entidades democráticas y transparentes canalizadoras de demandas e intereses multifacéticos.
+La cancelación de partidos políticos con un muy reducido apoyo electoral y la ampliación de adhesiones para crear partidos nuevos, incentiva a las agrupaciones a consolidar su base de apoyo y a fusionarse o reorganizarse si no logran el respaldo necesario. Ello es una forma de asegurar que los partidos con una mínima vitalidad política perduren como entidades representativas y canalizadoras.
+En esta misma discusión en torno a una representación electoral eficaz y eficiente, es importante considerar la conveniencia de que los partidos políticos de nueva inscripción no utilicen el nombre ni la divisa de agrupaciones políticas que hayan sido cancelados recientemente para evitar confusiones al elector.
+En virtud de lo anterior, se somete a conocimiento de los señores y señoras diputadas el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+REFORMA A LOS ARTÍCULOS 55, 60 Y 68 DEL CÓDIGO ELECTORAL PARA LA INSCRIPCIÓN Y CANCELACIÓN DE INSCRIPCIONES DE PARTIDOS POLÍTICOS
+ARTÍCULO 1- Se reforma el artículo 55 de la ley Nº 8765 Código Electoral, para que se lea de la siguiente forma:
+Artículo 55- Exclusividad del nombre, la divisa y el lema
+El nombre, la divisa y el lema de un partido le pertenecen con exclusividad. Es inadmisible la inscripción de un partido con elementos distintivos iguales o similares a los de otro partido inscrito en cualquier escala, o con derecho de prelación para ser inscrito, cuando con ello pueda producir confusión, tampoco podrá utilizarse el nombre, la divisa ni el lema que sean iguales o similares a los de un partido político cuya cancelación de inscripción se haya dado en los últimos 16 años. En estos elementos distintivos no se admitirán como divisa la bandera o el escudo costarricenses o de otros países, ni la invocación de motivos religiosos o símbolos patrios.
+(…)
+ARTÍCULO 2- Se reforma el inciso e) del artículo 60 de la ley Nº 8765 Código Electoral, para que se lea de la siguiente forma:
+e) Adhesiones de personas electoras que correspondan al 1% del padrón electoral vigente a la fecha de constitución del partido. Dicho porcentaje aplica según el ámbito territorial al que se inscribe el partido, sea nacional, provincial o cantonal.
+ARTÍCULO 3- Se reforma el artículo 68 de la ley Nº 8765 Código Electoral, para que se lea de la siguiente forma:
+Artículo 68- Cancelación de inscripciones
+Con la salvedad de lo dispuesto para las coaliciones, la Dirección General del Registro Electoral cancelará, sin más trámite, las inscripciones de los partidos políticos por las causales que se describen a continuación:
+Partidos que no participen de la última elección anterior respectiva.
+Partidos Políticos que no hayan renovado sus estructuras en un periodo igual o superior a 5 años.
+Partidos Políticos a escala nacional que cumplan con todas las siguientes condiciones:
+Que no obtenga en la elección nacional anterior respectiva, un número de votos igual o superior al 2% de los votos válidos emitidos para presidencia de la República
+Que no hayan obtenido al menos una diputación.
+Que no obtenga, en la elección nacional anterior respectiva, un número de votos igual o superior al 2% del total nacional de los votos válidos emitidos para diputaciones.
+Si un partido político inscrito a escala nacional cumple con las condiciones descritas anteriormente, pero tienen personas electas en algún puesto de elección popular a nivel municipal, no podrá participar de la elección nacional siguiente y la cancelación del partido político se hará efectiva en el momento que las personas mencionadas finalicen el periodo para el que fueron electas.
+Partidos a escala provincial que cumplan con todas las siguientes condiciones:
+Que no hayan obtenido al menos una diputación.
+Que no obtengan, en la elección anterior respectiva, un número de votos igual o superior al 2% de los votos válidos para diputaciones de la provincia que está inscrito.
+Si un partido político inscrito a escala provincial cumple con las condiciones descritas anteriormente, pero tienen personas electas en algún puesto de elección popular a nivel municipal, no podrá participar de la elección nacional siguiente y la cancelación del partido político se hará efectiva en el momento que las personas mencionadas finalicen el periodo para el que fueron electas.
+Partidos a escala cantonal que cumplan con todas las siguientes condiciones:
+Que no obtenga, en la elección anterior respectiva, un número de votos igual o superior al 2% de votos válidos emitidos para la alcaldía en el cantón en que está inscrito.
+Que no obtengan al menos un regidor o regidora.
+Que no obtengan al menos un síndico o síndica.
+Que no obtenga, en la elección anterior respectiva, un número de votos igual o superior al 2% de votos válidos emitidos para regidores en el cantón en que está inscrito.
+Que no obtenga, en la elección anterior respectiva, un número de votos igual o superior al 2% de votos válidos emitidos para síndicos en el cantón en que está inscrito.
+Rige a partir de su publicación.
+Daniel Gerardo Vargas Quirós
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 22-10-2025).

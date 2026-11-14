@@ -1,0 +1,192 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY QUE SANCIONA EL APODERAMIENTO ILEGAL DE ENERGÍA ELÉCTRICA Y LOS DAÑOS AL SISTEMA ELÉCTRICO
+DANIEL GERARDO VARGAS QUIRÓS
+Y OTRA SEÑORA DIPUTADA
+EXPEDIENTE N.º 25.234
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY QUE SANCIONA EL APODERAMIENTO ILEGAL DE ENERGÍA ELÉCTRICA Y LOS DAÑOS AL SISTEMA ELÉCTRICO
+Expediente N.º 25.234
+ASAMBLEA LEGISLATIVA:
+El Código Penal regula el delito de hurto simple en el artículo 208, y en el artículo 212 el robo simple. Sobre el artículo 208, este indica lo siguiente:
+Hurto simple.
+Artículo 208.- Hurto
+Será reprimido con prisión de un mes a tres años, el que se apoderare ilegítimamente de una cosa mueble, total o parcialmente ajena. (Lo resaltado es propio).
+Por otro lado, la redacción del artículo 212 del Código Penal indica:
+Robo simple.
+Artículo 212.-El que se apodere ilegítimamente de una cosa mueble, total o parcialmente ajena, será reprimido con las siguientes penas:
+1) Con prisión de seis meses a tres años, cuando la sustracción sea cometida con fuerza en las cosas y su cuantía no exceda de tres veces el salario base (*).
+2) Con prisión de uno a seis años, si mediara la circunstancia prevista en el inciso anterior y el monto de lo sustraído excediera de tres veces el salario base.
+3) Con prisión de tres a nueve años, cuando el hecho sea cometido con violencia o con intimidación sobre las personas. (Lo resaltado es propio).
+Adicionalmente, el artículo 229 del Código Penal dice lo siguiente:
+Artículo 229.- Daño agravado
+Se impondrá prisión de seis meses a cuatro años:
+1) Si el daño fuere ejecutado en cosas de valor científico, artístico, cultural o religioso, cuando, por el lugar en que se encuentren, se hallaren libradas a la confianza pública, o destinadas al servicio, la utilidad o la reverencia de un número indeterminado de personas.
+2) Cuando el daño recayere sobre medios o vías de comunicación o tránsito, sobre puentes o canales, sobre plantas de producción o conductos de agua, de electricidad o de sustancias energéticas.
+3) Cuando el hecho fuere ejecutado con violencia en las personas o con amenazas.
+4) Cuando el hecho fuere ejecutado por tres o más personas.
+5) Cuando el daño fuere contra equipamientos policiales.
+6) Cuando el daño recayera sobre redes, sistemas o equipos informáticos, telemáticos o electrónicos, o sus componentes físicos, lógicos o periféricos. (Lo resaltado es propio).
+Una vez analizado lo anterior, se concluye que la redacción de los artículos 208 y 212 del Código citado supra se circunscribe a la palabra “cosa”, no así los bienes. No obstante, es menester indicar que bien y cosa, desde la perspectiva jurídica, no es lo mismo, pues una cosa es toda entidad material o inmaterial que existe en la naturaleza. En cambio, el bien es una cosa que tiene utilidad para las personas y tiene un valor patrimonial.
+Al respecto, es menester trazar la diferencia a partir de lo indicado por el jurista Víctor Pérez Vargas en su libro Derecho Privado, sexta edición, 2021, página 210, el cual dice:
+En un sentido más técnico “se llamará cosa… una parte del mundo externo, cualquiera que sea, la cual puede servir para la actuación de un interés humano, individual o colectivo. Las cosas pueden ser objeto de situaciones jurídicas, y cuando asumen en acto este carácter pasan a ser bienes. En síntesis: cosa calificación jurídica: bien. Observe entonces que los bienes tienen dos elementos: uno material, la entidad espacial; otro formal, la calificación jurídica. “Al elemento material deberá asociarse la calificación (emanada de la norma) por virtud de la cual entre todas las cosas que puedan llegar a ser bienes jurídicos lo serán solo las que en acto la norma considera como* objetos de determinados derechos”. Obsérvese, que la cosa es el elemento material del bien. Pugliatti sostiene al respecto: “la noción de cosa prejurídica y neutra, en cuanto constituye el elemento material del concepto jurídico del bien, a través del interés que el Ordenamiento tiende a tutelar, atribuyendo al sujeto un determinado derecho.
+Por otro lado, es necesario indicar que Ley n.° 7593, Ley de la Autoridad Reguladora de los Servicios Públicos, define el servicio público en su artículo 3, inciso a), el cual indica textualmente lo siguiente:
+Artículo 3.- Definiciones
+Para efectos de esta ley, se definen los siguientes conceptos:
+a) Servicio Público. El que por su importancia para el desarrollo sostenible del país sea calificado como tal por la Asamblea Legislativa, con el fin de sujetarlo a las regulaciones de esta ley.
+No obstante, en consonancia con lo anterior se debe de traer a colación la Resolución n.º 14921 – 2008 de la Sala Constitucional, la cual, sobre servicio público, ha dicho:
+La titularidad de un servicio público la asume un ente público a través de la figura denominada “publicatio” que debe efectuar la Constitución o la ley, en virtud de la cual la actividad es sustraída de las relaciones jurídico-privadas y pasa a ser regulada, organizada y prestada bajo un régimen de Derecho Público-Administrativo exorbitante del Derecho común. La titularidad pública de un servicio público, habilita a la respectiva administración pública para determinar la forma de gestionarlo, ya sea directamente (nomine propio) o indirectamente a través de figuras tales como la concesión o la gestión interesada.
+Adicionalmente, el artículo 5, inciso a), de la Ley de la Autoridad Reguladora de los Servicios Públicos tipificó como servicio público el suministro de energía eléctrica, lo que se procede a citar textualmente:
+Artículo 5.- Funciones
+En los servicios públicos definidos en este artículo, la Autoridad Reguladora fijará precios y tarifas; además, velará por el cumplimiento de las normas de calidad, cantidad, confiabilidad, continuidad, oportunidad y prestación óptima, según el artículo 25 de esta ley. Los servicios públicos antes mencionados son:
+Suministro de energía eléctrica en las etapas de generación, trasmisión, distribución y comercialización. (Lo resaltado es propio).
+A partir de lo anterior, y a la vista de la redacción que actualmente tienen los artículos de robo y hurto en el Código Penal anteriormente indicados, se concluye que no se tiene expresamente la palabra “bien”, lo que puede generar impunidad cuando se requiera darle persecución y condenar algunos ilícitos, como sucede en los casos de robo y hurto de energía eléctrica.
+El daño causado en contra del Sistema Eléctrico puede generar graves afectaciones, las cuales se pueden analizar desde dos perspectivas. Primero, evidentemente, es el daño material causado por la comisión del delito. Segundo, se refiere a los intereses difusos que van de la mano con la prestación de un servicio público.
+Datos de la Compañía Nacional de Fuerza y Luz de los valores de pérdidas asociados a ilícitos de energía durante el período 2016 a 2024
+Año
+Compra Anual (MWh)
+Venta Anual (MWh)
+% Pérdidas Anuales Totales
+Pérdidas Anuales Totales (MWh)
+Pérdidas Anuales Totales (kWh)
+% Pérdidas No Técnicas de Energía
+Pérdidas No Técnicas de Energía (MWh)
+Pérdidas No Técnicas de Energía (KWh)
+Precio Promedio (Ingreso/kWh) 1/
+Valor de las Pérdidas No Técnicas de Energía Anuales Totales
+(Millones de colones)
+REAL 2016
+3 949 905,71
+3 544 293,91
+10,04%
+396 443,15
+396 443 147,59
+4,94%
+195 125,34
+195 125 342,10
+₡100,92
+₡19 692,05
+REAL 2017
+3 933 910,44
+3 549 039,33
+9,73%
+382 591,98
+382 591 984,89
+4,77%
+187 647,53
+187 647 527,91
+₡100,92
+₡18 937,39
+REAL 2018
+3 900 953,53
+3 531 052,81
+9,43%
+368 048,65
+368 048 650,88
+4,69%
+182 954,72
+182 954 720,48
+₡100,92
+₡18 463,79
+REAL 2019
+3 875 116,33
+3 507 012,53
+9,56%
+370 270,77
+370 270 765,12
+4,64%
+179 714,19
+179 714 186,58
+₡98,22
+₡17 651,53
+REAL 2020
+3 677 387,23
+3 326 859,94
+9,53%
+350 527,29
+350 527 289,04
+4,59%
+168 664,73
+168 664 726,35
+₡108,02
+₡18 219,16
+REAL 2021
+3 698 076,21
+3 330 196,38
+9,95%
+367 879,82
+367 879 824,55
+4,98%
+184 247,42
+184 247 423,56
+₡95,26
+₡17 551,41
+REAL 2022
+3 708 639,02
+3 347 932,42
+9,73%
+360 706,60
+360 706 604,15
+4,76%
+176 465,65
+176 465 648,29
+₡99,87
+₡17 623,62
+REAL 2023
+3 803 588,18
+3 443 193,46
+9,48%
+360 394,72
+360 394 719,81
+4,50%
+171 030,18
+171 030 180,64
+₡94,44
+₡16 152,09
+REAL 2024
+3 937 929,75
+3 572 006,65
+9,29%
+365 923,11
+365 923 105,01
+4,30%
+169 180,45
+169 180 450,78
+₡85,78
+₡14 512,30
+Del cuadro anterior, se concluye que las pérdidas no técnicas de energía contemplan las condiciones ilícitas y de estafa por parte de terceros, de forma tal que obtienen energía eléctrica sin pagar por ella, y las pérdidas administrativas son aquellas propias de la gestión de la empresa y se refieren, por ejemplo, a problemas de lectura, anomalías en los procesos de facturación, entre otros.
+Así las cosas, una vez analizado lo anterior y usando como base el expediente número 23.935, Ley que Sanciona el Apoderamiento Ilegal de Energía Eléctrica, el cual fue rechazado en la Comisión Permanente Ordinaria de Asuntos Jurídicos, lo cual consta en el acta de la sesión ordinaria n.° 39 del martes 29 de octubre del 2024, se llegó a la conclusión de que hay mucho debate doctrinal sobre la tipificación del robo y hurto de energía eléctrica en nuestra legislación.
+Dentro de las respuestas a las consultas que obtuvo el expediente legislativo citado supra la jurista Rosaura Chinchilla Calderón indicó lo siguiente:
+Luego de análisis efectuado puede indicarse que, aunque hay debate doctrinal sobre si el apoderamiento de energías está actualmente tipificado o no (en el texto se adjunta un voto de la Sala Tercera que sí lo considera incorporado en los tipos penales actuales) lo idóneo es introducir una variación en los tipos vigentes para clarificar el punto. Sin embargo, la técnica legislativa seguida por el proyecto (crear nuevos tipos penales y aludir solo a un tipo de energía —eléctrica— y solo a una entidad que la suministra) no es la adecuada y genera graves problemas, duplicidades, trasposiciones y confusiones que, lejos de resolver la discusión actual, la agravarán. Bastaba introducir en los tipos penales de hurto, robo y daños la palabra “bien” junto a la palabra “cosa” ya existente para solucionar el vacío. (Lo resaltado es propio).
+A partir de lo anterior, la presente propuesta legislativa tiene como objetivo agregar la palabra “bien” a los tipos penales de los artículos 208 y 212 del Código Penal con la finalidad de poder sancionar con mayor seguridad jurídica los casos en los que haya robo y hurto de energía eléctrica pues esta última conceptualmente se engloba en el concepto de bien.
+Adicionalmente, con relación al artículo 229, delito de “Daño Agravado” del Código Penal, se propone incluir en el inciso 1 de este artículo la pablara bien por las razones anteriormente esgrimidas. Aunado a lo anterior, se incluye “servicio público” con el objetivo que en los casos que se haya generado un daño en una cosa o bien destinado a un servicio público sea aplicable este artículo.
+Por todas estas razones, presentamos a la consideración de la Asamblea Legislativa el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY QUE SANCIONA EL APODERAMIENTO ILEGAL DE ENERGÍA ELÉCTRICA Y LOS DAÑOS AL SISTEMA ELÉCTRICO
+ARTÍCULO 1- Se reforma el artículo 208 de la Ley 4573, Código Penal, del 4 de mayo del 1970, para que se lea así:
+Hurto simple
+Artículo 208- Hurto
+Será reprimido con prisión de un mes a tres años, el que se apoderare ilegítimamente de una cosa o bien mueble, total o parcialmente ajena.
+ARTÍCULO 2- Se reforma el artículo 212 de la Ley 4573, Código Penal, del 4 de mayo del 1970, para que se lea así:
+Robo simple
+Artículo 212- El que se apodere ilegítimamente de una cosa o bien mueble, total o parcialmente ajena, será reprimido con las siguientes penas:
+1- Con prisión de seis meses a tres años, cuando la sustracción sea cometida con fuerza en las cosas y su cuantía no exceda de tres veces el salario base (*).
+2- Con prisión de uno a seis años, si mediara la circunstancia prevista en el inciso anterior y el monto de lo sustraído excediera de tres veces el salario base.
+3- Con prisión de tres a nueve años, cuando el hecho sea cometido con violencia o con intimidación sobre las personas.
+ARTÍCULO 3- Se reforma el artículo 229 de la Ley 4573, Código Penal, del 4 de mayo del 1970, para que se lea así:
+Daño agravado
+Artículo 229- Daño agravado
+Se impondrá prisión de seis meses a cuatro años:
+1- Si el daño fuere ejecutado en cosas o bienes de valor científico, artístico, cultural o religioso, cuando, por el lugar en que se encuentren, se hallaren libradas a la confianza pública, la utilidad o la reverencia de un número indeterminado de personas o destinadas a un servicio público.
+2- Cuando el daño recayere sobre medios o vías de comunicación o tránsito, sobre puentes o canales, sobre plantas de producción o conductos de agua, de electricidad o de sustancias energéticas.
+3- Cuando el hecho fuere ejecutado con violencia en las personas o con amenazas.
+4- Cuando el hecho fuere ejecutado por tres o más personas.
+5- Cuando el daño sea contra equipamientos, dispositivos electrónicos o tecnológicos, utilizados por alguna autoridad policial.
+6- Cuando el daño recayera sobre redes, sistemas o equipos informáticos, telemáticos o electrónicos, o sus componentes físicos, lógicos o periféricos.
+Rige a partir de su publicación.
+Daniel Gerardo Vargas Quirós Pilar Cisneros Gallo
+Diputado y diputada
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 14-10-2025).

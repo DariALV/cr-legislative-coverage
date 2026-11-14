@@ -1,0 +1,262 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA EL FORTALECIMIENTO Y MODERNIZACIÓN DE LAS COMPETENCIAS DE LA JUNTA DE PROTECCIÓN SOCIAL Y REGULACIÓN DE LOS JUEGOS DE AZAR EN EL MARCO DE LA SEGURIDAD Y LA LUCHA CONTRA EL CRIMEN ORGANIZADO
+ESMERALDA BRITTON GONZÁLEZ
+OTRAS SEÑORAS DIPUTADAS
+Y SEÑOR DIPUTADO
+EXPEDIENTE N.º 25.600
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY PARA EL FORTALECIMIENTO Y MODERNIZACIÓN DE LAS COMPETENCIAS DE LA JUNTA DE PROTECCIÓN SOCIAL Y REGULACIÓN DE LOS JUEGOS DE AZAR EN EL MARCO DE LA SEGURIDAD Y LA LUCHA CONTRA EL CRIMEN ORGANIZADO
+Expediente N.º 25.600
+ASAMBLEA LEGISLATIVA:
+La actividad de loterías y juegos de azar ha sido históricamente considerada en Costa Rica como una actividad de interés público, cuya explotación se encuentra reservada al Estado a través de la Junta de Protección Social, institución encargada de canalizar los recursos generados por esta actividad hacia programas sociales de alcance nacional. Financia más de 440 organizaciones y 500 programas dirigidos a personas en vulnerabilidad, incluyendo adultos mayores, personas con discapacidad, prevención del cáncer, cuidados paliativos, y enfermedades raras. Personas en situación de calle, para la infancia y adolescencia, proyectos de prevención de explotación sexual comercial y creación de centros de atención para menores. Los fondos se distribuyen a través de giros directos a proyectos.
+Este modelo institucional ha permitido que una actividad económica tradicionalmente asociada al entretenimiento y al azar se convierta en un instrumento de redistribución social que contribuye al financiamiento de programas de interés público, consolidándose como uno de los mecanismos históricos de solidaridad social del Estado costarricense.
+No obstante, la transformación digital de la economía ha generado cambios profundos en la forma en que se desarrollan, comercializan y operan los juegos de azar. La evolución tecnológica de los mercados ha transformado significativamente la industria global del azar, trasladando una parte creciente de sus operaciones hacia entornos digitales.
+Actualmente, gran parte de las actividades relacionadas con apuestas, sorteos y comercialización de productos de azar se realizan mediante sistemas informáticos complejos que integran plataformas digitales, aplicaciones móviles, algoritmos de generación de números aleatorios y sistemas electrónicos de pago.
+Por otra parte, la proliferación de plataformas digitales que operan sin autorización estatal puede facilitar la circulación de recursos financieros fuera de los mecanismos de supervisión institucional, lo cual genera riesgos asociados a la evasión fiscal, la legitimación de capitales, el fraude informático y otras actividades ilícitas.
+En el contexto costarricense, el análisis de estas dinámicas ha sido objeto de seguimiento por parte del Organismo de Investigación Judicial, particularmente en lo relativo al uso de plataformas digitales para la realización de apuestas y actividades de azar sin autorización estatal.
+Para la Junta de Protección Social el desarrollo de plataformas tecnológicas no autorizadas genera impactos negativos en múltiples dimensiones:
+Reduce los recursos disponibles para programas sociales financiados mediante la actividad de loterías.
+Debilita la capacidad del Estado para supervisar el funcionamiento del mercado.
+Incrementa los riesgos asociados al fraude tecnológico.
+Dificulta la trazabilidad de los flujos financieros vinculados a esta actividad.
+La evidencia disponible sugiere que el mercado ilegal de apuestas es muy significativo, en el orden de cientos de miles de millones de colones anuales. Datos recientes de la Junta de Protección Social (JPS) estiman que alrededor del 53 % del mercado total de loterías y apuestas está hoy en manos ilegales. Este porcentaje equivale a unos ₡297.000 millones por año (casi la mitad de los ingresos potenciales de la JPS). Como resultado, la JPS pierde más de la mitad de los recursos que podría destinar a programas sociales.
+Según datos oficiales del Organismo de Investigación Judicial (OIJ), la magnitud del crimen organizado en el país exige medidas urgentes. Sus estadísticas agregadas evidencian el aumento de las investigaciones por legitimación de capitales o lavado de dinero, las cuales crecieron de 126 casos en 2024 a 157 casos en 2025. San José destaca como el principal foco de este delito, con un incremento de 88 casos en 2024 a 127 en 2025. Si bien estos datos no detallan los mecanismos con los cuales se gestan dichos ilícitos, es innegable que el mercado ilegal de apuestas y juegos de azar no regulados constituye, precisamente, un instrumento tecnológico ideal para la movilización y ocultamiento de estos fondos ilícitos procedentes del narcotráfico.
+La expansión del mercado digital de apuestas y juegos de azar no constituye únicamente un fenómeno tecnológico, sino también un desafío regulatorio que exige la actualización de las capacidades institucionales del Estado para supervisar plataformas digitales, auditar sistemas informáticos críticos y garantizar la integridad de los mecanismos tecnológicos que determinan los resultados de los juegos de azar.
+En ausencia de mecanismos modernos de gobernanza tecnológica, la actividad de azar digitalizada puede generar riesgos relevantes para el orden económico, la fe pública y la sostenibilidad del sistema de financiamiento social que administra la Junta de Protección Social.
+La experiencia internacional demuestra que los sistemas de lotería modernos requieren mecanismos avanzados de fiscalización tecnológica que incluyen auditoría de software, monitoreo de transacciones en tiempo real, certificación de algoritmos de aleatoriedad y control sobre los accesos privilegiados a los sistemas informáticos.
+Diversos países han implementado modelos institucionales basados en la integración de tecnología, supervisión pública y control de plataformas digitales. Entre ellos destacan:
+Reino Unido, donde la Lotería Nacional ha generado más de cincuenta mil millones de libras esterlinas para causas sociales bajo esquemas avanzados de regulación tecnológica y protección del usuario.
+Colombia, cuya entidad reguladora, Coljuegos, utiliza sistemas de reporte en tiempo real para fortalecer el control del mercado y asegurar transferencias a la salud pública.
+España y la provincia de Ontario en Canadá, que han desarrollado modelos multicanal de comercialización digital que incrementan la eficiencia operativa y la supervisión pública.
+Estas experiencias demuestran que la sostenibilidad de los sistemas públicos de lotería depende cada vez más de infraestructuras tecnológicas robustas y de mecanismos de gobernanza digital capaces de supervisar el mercado en tiempo real.
+La evolución tecnológica del sector también ha evidenciado riesgos asociados a la manipulación de sistemas informáticos utilizados para determinar los resultados de los juegos de azar. Uno de los casos más ilustrativos en la experiencia internacional es el denominado Hot Lotto scandal, ocurrido en los Estados Unidos entre los años 2010 y 2017.
+En dicho caso, un funcionario encargado de la seguridad informática de la Multi-State Lottery Association instaló código malicioso en los sistemas que ejecutaban el generador de números aleatorios de la lotería, lo que permitió predecir los números ganadores en determinadas fechas y obtener premios millonarios de forma fraudulenta.
+En otras palabras, este caso evidenció la necesidad de fortalecer los controles tecnológicos sobre los sistemas de azar, particularmente en lo relativo a:
+Certificación de los generadores de números aleatorios.
+Auditoría independiente de los sistemas informáticos.
+Monitoreo de operaciones en tiempo real.
+Control sobre accesos privilegiados a los sistemas.
+Otro de los desafíos que plantea la digitalización de la actividad de azar es la necesidad de garantizar la trazabilidad de las operaciones financieras y la transparencia de los flujos económicos asociados a esta actividad.
+El mercado ilegal de apuestas y juegos de azar no solo genera pérdidas económicas para el sistema de financiamiento social administrado por la Junta de Protección Social, sino que también puede constituir un vehículo para actividades ilícitas como la legitimación de capitales o el financiamiento de otras actividades criminales.
+La actividad económica vinculada a los juegos de azar puede alcanzar volúmenes financieros significativos que generan riesgos para el orden económico y la confianza pública cuando no existen mecanismos adecuados de supervisión. Por esta razón, el fortalecimiento institucional de la Junta de Protección Social no constituye únicamente una medida de regulación del mercado de juegos de azar, sino una acción orientada a proteger uno de los mecanismos históricos de financiamiento de programas sociales en Costa Rica.
+Frente a este escenario, el presente proyecto de ley tiene como propósito modernizar el marco jurídico aplicable a la actividad de loterías y juegos de azar, incorporando herramientas contemporáneas de regulación tecnológica, supervisión digital y gestión del riesgo que permitan asegurar la integridad de los sistemas, la trazabilidad de las operaciones y la protección del interés público.
+El proyecto incorpora mecanismos orientados a fortalecer la transparencia del sistema mediante la implementación de herramientas tecnológicas de monitoreo, auditoría y certificación de los mecanismos que determinan los resultados de los juegos. Asimismo, establece políticas y procedimientos de prevención del lavado de dinero y financiamiento al terrorismo conforme a la Ley n.º 8204 y a las recomendaciones del Grupo de Acción Financiera Internacional, así como la constitución de garantías económicas y reservas patrimoniales vinculadas al volumen de operaciones de los operadores autorizados con el propósito de mitigar riesgos derivados del incumplimiento de obligaciones contractuales, financieras o administrativas.
+Estas medidas buscan asegurar que la actividad de azar autorizada se desarrolle dentro de un marco de responsabilidad financiera, transparencia y estabilidad institucional que permita preservar la integridad del sistema y proteger los recursos destinados a programas sociales, conforme con los principios constitucionales que rigen la actuación de la Administración Pública y la intervención del Estado en actividades económicas que involucran interés público, protección de la fe pública y resguardo del orden económico. En este sentido, la iniciativa no introduce un nuevo régimen monopolístico, sino que fortalece y actualiza el marco jurídico existente para adecuarlo a las condiciones tecnológicas contemporáneas en que se desarrolla el mercado de juegos de azar.
+En resumen, el fortalecimiento de la Junta de Protección Social mediante herramientas tecnológicas de supervisión, trazabilidad y control digital constituye un ejemplo de innovación pública aplicada a la gestión de mercados regulados. La regulación de plataformas tecnológicas, sistemas algorítmicos y mercados digitales constituye actualmente un área central de la política pública en materia de innovación y transformación digital. Por estas razones, el proyecto no debe entenderse únicamente como una regulación del mercado de juegos de azar, sino como una actualización del marco institucional del Estado costarricense frente a los desafíos tecnológicos que plantea la digitalización de este sector económico.
+Adicionalmente, el proyecto incorpora disposiciones relacionadas con sanciones para actividades desarrolladas sin el título habilitante correspondiente, como instrumentos necesarios para asegurar que la actividad de azar se desarrolle bajo estándares adecuados de integridad tecnológica y supervisión pública.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA EL FORTALECIMIENTO Y MODERNIZACIÓN DE LAS COMPETENCIAS DE LA JUNTA DE PROTECCIÓN SOCIAL Y REGULACIÓN DE LOS JUEGOS DE
+AZAR EN EL MARCO DE LA SEGURIDAD Y LA LUCHA CONTRA EL
+CRIMEN ORGANIZADO
+CAPÍTULO I
+Disposiciones Generales
+ARTÍCULO 1- Objeto de la ley
+La presente ley tiene por objeto reconocer, fortalecer y modernizar las competencias exclusivas de la Junta de Protección Social, las cuales se ejercen en dos funciones institucionales claramente diferenciadas e igualmente esenciales:
+Como operador directo y desarrollador de loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías y demás juegos de azar, en cualquiera de sus modalidades, que la propia Junta decida ejecutar directamente en todo el territorio nacional, con el fin de generar recursos para financiar programas sociales, de salud, educación y bienestar de poblaciones vulnerables.
+En su calidad de operador directo, la Junta mantendrá y podrá ampliar su propia oferta de productos de loterías, apuestas y juegos de azar, sin que ello implique renuncia alguna a su rol regulador ni cree confusión entre ambas funciones, las cuales deberán ejercerse con separación operativa adecuada para garantizar imparcialidad en la supervisión de los concesionarios privados.
+Como autoridad reguladora, supervisora y fiscalizadora única del sector de juegos de azar en su totalidad, con potestad exclusiva para autorizar, conceder, vigilar, inspeccionar, sancionar y revocar títulos habilitantes a operadores privados, así como para establecer las normas técnicas, de seguridad, prevención de lavado de activos, financiación del terrorismo, protección al consumidor, juego responsable y prevención de la ludopatía.
+En su calidad de regulador, la Junta de Protección Social queda autorizada a otorgar títulos habilitantes a operadores privados bajo estricta supervisión, permitiendo la participación de operadores, siempre que cumplan con los más altos estándares de transparencia, seguridad tecnológica, solvencia económica y protección al jugador.
+ARTÍCULO 2- Ámbito de aplicación
+La presente ley será aplicable en todo el territorio nacional y alcanzará a todas las personas físicas o jurídicas, nacionales o extranjeras, que realicen actividades de venta, administración, comercialización, financiamiento o explotación de loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías y demás juegos de azar, en cualquiera de sus modalidades, mediante cualquier medio físico, digital, plataforma tecnológica, aplicación móvil o red informática.
+Esta ley será aplicable cuando dichas actividades:
+Se realicen dentro del territorio nacional; o
+Tengan como destino o estén dirigidas al mercado costarricense, independientemente del lugar de origen del operador, servidor o transacción. Se entenderá que existe direccionamiento hacia el mercado costarricense cuando se envíe publicidad, se permita registro o acceso desde territorio costarricense sin geobloqueo efectivo, o se ofrezcan servicios en español o con referencias locales.
+Las plataformas y operadores autorizados por la Junta de Protección Social deberán implementar geobloqueo efectivo y medidas técnicas para impedir el acceso y participación de residentes costarricenses en sitios no autorizados, en coordinación con autoridades de telecomunicaciones y ciberseguridad.
+Todas las transacciones relacionadas con loterías, apuestas, apuestas deportivas, juegos de azar, videoloterías y productos de azar deberán realizarse exclusivamente en moneda de curso legal, prohibiéndose el uso de criptoactivos, monedas virtuales o cualquier medio de pago no regulado por el Banco Central de Costa Rica o el Sistema Bancario Nacional, salvo excepciones expresamente autorizadas por la Junta de Protección Social para fines de trazabilidad y prevención de lavado de activos.
+Están excluidos del ámbito de esta ley los juegos de suerte y azar de carácter tradicional, familiar y escolar, que no sean objeto de explotación lucrativa por los jugadores o por terceros, así como las competiciones de puro pasatiempo o recreo; también están excluidos los sorteos promocionales que realicen los comerciantes o los industriales para impulsar sus ventas, los juegos con fin benéfico emprendidos por asociaciones de desarrollo de la comunidad debidamente inscritas al amparo de la Ley sobre el Desarrollo de la Comunidad, Ley n.° 3859, del 7 de abril de 1967 y sus reformas, así como los sorteos de las sociedades de capitalización que solo podrán ser realizados directamente por estas entidades.
+Quedan fuera del ámbito de aplicación de la presente ley la actividad de casinos, el juego Crea y el Bingo de la Cruz Roja, de conformidad con lo establecido en la ley de Autorización para el Cambio de Nombre de la Junta de Protección Social y Establecimiento de la Distribución de Rentas de las Loterías Nacionales, Ley n.° 8718 del 17 de febrero de 2009, y sus reformas.
+ARTÍCULO 3- Principios que deben cumplir las plataformas digitales
+Cualquier plataforma digital autorizada por la Junta de Protección Social para vender, administrar y comercializar loterías, apuestas, apuestas deportivas, juegos de azar, videoloterías o cualquier otro producto de azar de manera digital, deberá implementar y cumplir los principios de:
+Protección efectiva al consumidor
+Interoperabilidad
+Seguridad de la información
+Protección de datos personales
+Accesibilidad universal
+Neutralidad tecnológica
+Inclusión digital
+Eficiencia
+Transparencia
+ARTÍCULO 4- Órgano competente, autonomía y coordinación interinstitucional
+La Junta de Protección Social, como órgano con autonomía administrativa y funcional, tendrá la competencia exclusiva para autorizar, regular, reglamentar, fiscalizar, supervisar y sancionar todas las actividades relacionadas con la venta, administración, comercialización, financiamiento y explotación de loterías y productos de azar, en sus diversas modalidades, incluyendo plataformas digitales y apuestas deportivas.
+Para el ejercicio de estas funciones, adoptará mejores prácticas internacionales en materia de integridad del sector, prevención de ludopatía, combate al lavado de activos y financiación del terrorismo, protección al consumidor y juego responsable, tales como protocolos de verificación de identidad como “Conozca a su Cliente”, mecanismos de autoexclusión, límites de depósito y gasto, monitoreo de riesgos y uso de tecnologías seguras para detección de irregularidades.
+Asimismo, coordinará acciones de manera obligatoria y sistemática con instituciones estatales, autoridades judiciales, administrativas y organismos internacionales para garantizar el cumplimiento efectivo de esta normativa y la prevención de riesgos asociados. Esta coordinación incluirá, sin carácter limitativo:
+Colaboración con la Unidad de Inteligencia Financiera (UIF), el Consejo Nacional de Supervisión del Sistema Financiero (Conassif) y el Instituto Costarricense sobre Drogas (ICD) para la prevención, detección y reporte de lavado de activos y financiación del terrorismo, alineado con estándares del Grupo de Acción Financiera (GAFI) y recomendaciones específicas para el sector de juegos de azar.
+Cooperación con el Ministerio de Salud, la Comisión Nacional del Consumidor (CNC) y entidades de salud mental para implementar y supervisar programas de juego responsable, prevención de adicciones como la ludopatía, educación sobre riesgos, autoexclusión voluntaria y atención a jugadores vulnerables.
+Intercambio de información y acciones conjuntas con el Organismo de Investigación Judicial (OIJ), la Policía de Control Fiscal, el Ministerio de Seguridad Pública y autoridades deportivas para combatir el juego ilegal, la corrupción en el deporte, el fraude y operadores no autorizados.
+Participación en mecanismos de cooperación internacional, como la Asociación Internacional de Reguladores de Juego, Interpol o foros regionales, para intercambio de inteligencia, estrategias contra actividades transfronterizas ilegales y armonización de estándares internacionales.
+Lo anterior sin perjuicio de las competencias constitucionales y legales de otras autoridades administrativas y judiciales.
+La Junta de Protección Social deberá establecer un marco de evaluación periódica de su efectividad regulatoria, basado en indicadores clave de desempeño, relacionados con canalización del mercado regulado, reducción de juego ilegal, prevención de daños sociales y cumplimiento de regulaciones antilavado de activos y financiamiento del terrorismo, publicando informes anuales transparentes sobre sus actividades, concesiones otorgadas, sanciones aplicadas y resultados obtenidos.
+ARTÍCULO 5- Definiciones
+Para efectos de esta ley, se entiende como:
+Administrar: conjunto de acciones orientadas a gestionar, controlar, organizar y supervisar los recursos, procesos, operaciones y sistemas tecnológicos necesarios para la ejecución, mantenimiento, fiscalización, supervisión y desarrollo de actividades relacionadas con loterías, apuestas y juegos de azar, incluyendo la gestión de plataformas digitales, puntos de venta físicos o virtuales, canales de distribución y mecanismos de pago, en armonía con estándares internacionales de seguridad y transparencia.
+Apuesta: actividad de juego en la que se arriesgan cantidades de dinero u objetos económicamente evaluables sobre el resultado de un acontecimiento futuro e incierto, ajeno o independiente de los participantes en su totalidad o en parte, cuya cuantía del premio se determina en función de las cantidades apostadas, las cuotas fijadas previamente o factores establecidos en las reglas de la modalidad.
+Apuesta deportiva: modalidad de apuesta en la que se arriesga dinero u objetos evaluables sobre el resultado de un evento deportivo real que incluye partidos, torneos, competencias o procesos relacionados, o sobre la ocurrencia o no de hechos específicos en dichos eventos, conforme a cuotas o condiciones predeterminadas.
+Comercializar: conjunto de actividades de promoción, publicidad responsable, distribución, intermediación, venta directa o indirecta, logística y oferta al público de loterías, apuestas deportivas, juegos de azar, videoloterías y productos de azar en cualquiera de sus modalidades, sujetas a restricciones de publicidad y protección al consumidor.
+Contrato de suerte y azar: el contrato de adhesión entre el apostador y el operador del juego; de naturaleza aleatoria, cuyo objeto envuelve la expectativa de ganancia o pérdida, dependiendo de la ocurrencia o no de un hecho futuro e incierto.
+Financiar: acción de aportar, invertir o proporcionar recursos económicos, capital, créditos, garantías o cualquier instrumento financiero para el desarrollo, operación, expansión, sostenimiento o explotación de actividades vinculadas con loterías, apuestas y juegos de azar, incluyendo mecanismos de pago y financiación de operadores autorizados.
+Geobloqueo: técnica o conjunto de medidas tecnológicas que restringen o impiden el acceso, visualización, registro, participación o transacción en un sitio web, plataforma, aplicación o servicio digital en función de la ubicación geográfica real o percibida del usuario.
+Esta restricción se basa en la determinación de la localización del usuario mediante métodos como:
+Análisis de la dirección IP (protocolo de internet).
+Consultas GPS (en dispositivos móviles).
+Datos de red (latencia, geolocalización Wi-Fi o triangulación celular).
+Información de cuenta o pago (dirección de facturación, método de pago asociado a un país).
+Otros indicadores (idioma del navegador, huso horario).
+Juego de azar: toda actividad en la que se arriesgan cantidades de dinero u objetos económicamente evaluables sobre resultados futuros e inciertos, dependientes exclusiva o fundamentalmente de la suerte, el azar o la casualidad, permitiendo la transferencia de premios entre participantes o al ganador, independientemente de que predomine en algún grado la destreza o habilidad.
+Juego de azar en línea: modalidad de juego de azar que se ofrece, organiza, explota, gestiona o desarrolla mediante medios electrónicos, informáticos, telemáticos, digitales, plataformas web, aplicaciones móviles o cualquier canal interactivo remoto, incluyendo apuestas virtuales y eventos generados por sistemas de números aleatorios.
+Lotería: actividad de juego en la que se otorgan premios cuando un número, combinación de números, signos o elementos expresados en el billete, boleto, tiquete o equivalente electrónico coinciden total o parcialmente con los determinados como ganadores mediante sorteo, evento o programa predeterminado, o en loterías instantáneas y/o presorteadas. Se comercializan en soportes materiales, informáticos, telemáticos, telefónicos o interactivos, con participación onerosa.
+Ludopatía: se entiende como el trastorno caracterizado por: pérdida de control sobre el juego en cuanto a frecuencia, intensidad y duración; prioridad creciente del juego sobre otras actividades vitales; y continuación pese a consecuencias negativas graves, conforme a la Clasificación Internacional de Enfermedades (CIE-11) de la Organización Mundial de la Salud y estándares internacionales y el ordenamiento jurídico costarricense.
+Sistemas de Generación Aleatoria (SGA o RGN, por sus siglas en inglés): conjunto de hardware, software, algoritmos y procedimientos técnicos diseñados para producir resultados impredecibles, uniformemente distribuidos e independientes en juegos donde el azar es un elemento predominante o exclusivo.
+Título habilitante: título jurídico-administrativo emitido por la Junta de Protección Social mediante el cual se otorga a personas físicas o jurídicas, nacionales o extranjeras, previo cumplimiento de requisitos, una autorización, licencia, permiso o concesión administrativa para organizar, explotar, vender, administrar o comercializar una o varias modalidades de loterías preimpresas o electrónicas, apuestas deportivas, videoloterías y juegos de azar en el territorio nacional, por un plazo determinado, sujeto a requisitos de solvencia, idoneidad, cumplimiento técnico y obligaciones de juego responsable y antilavado.
+Vender: acto oneroso mediante el cual se transfiere directamente al consumidor final o participante el derecho de participación en loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías u otros juegos de azar, por cualquier medio físico, digital, plataforma tecnológica o aplicación móvil, incluyendo la emisión de boletos, créditos o accesos electrónicos.
+CAPÍTULO II
+Sobre los Títulos Habilitantes
+ARTÍCULO 6- Regulación y condiciones para el otorgamiento de títulos habilitantes
+La Junta Directiva de la Junta de Protección Social, mediante reglamento debidamente motivado y publicado, establecerá los requisitos legales, técnicos, financieros, administrativos, de idoneidad y de cumplimiento normativo, así como las condiciones, alcances, modalidades, procedimientos, plazos, tasas y criterios objetivos aplicables para el otorgamiento, selección, emisión, renovación, modificación, suspensión y revocatoria de los títulos habilitantes que autoricen a personas físicas o jurídicas, nacionales o extranjeras, a realizar las actividades de organización, explotación, venta, administración, comercialización o financiamiento de loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías y demás juegos de azar en cualquiera de sus modalidades, previstas en la presente ley.
+El reglamento deberá garantizar la observancia de los principios de publicidad, concurrencia competitiva, igualdad de trato, no discriminación, transparencia, objetividad, proporcionalidad, seguridad jurídica, eficiencia, eficacia y responsabilidad social, promoviendo la libre competencia y la participación en igualdad de condiciones de todos los interesados que cumplan los requisitos.
+Asimismo, incorporará mecanismos para prevenir conflictos de interés, corrupción y prácticas anticompetitivas, en armonía con el ordenamiento jurídico costarricense y establecerá las condiciones, requisitos y procedimientos para la gestión, fiscalización, operación y control de las loterías, apuestas, apuestas deportivas, juegos de azar, videoloterías y demás productos de azar en cualquiera de sus modalidades autorizadas.
+ARTÍCULO 7- Requisitos mínimos para el otorgamiento de títulos habilitantes
+Para la emisión, renovación o mantenimiento de títulos habilitantes, la Junta de Protección Social deberá exigir el cumplimiento de requisitos que acrediten la suficiencia, idoneidad y capacidad del solicitante en los ámbitos legal, jurídico, técnico, financiero, administrativo, operativo y de cumplimiento normativo.
+Estos requisitos se establecerán en el reglamento correspondiente, asegurando proporcionalidad, objetividad y alineación con estándares internacionales.
+Entre los requisitos mínimos que deberán cumplir los solicitantes, sean personas físicas o jurídicas, se incluyen, sin carácter limitativo, los siguientes:
+Requisitos jurídicos y de idoneidad:
+Constitución como persona jurídica con objeto social exclusivo o principal relacionado con la organización, explotación, comercialización o administración de juegos de azar, o forma societaria análoga permitida por la normativa costarricense.
+Certificación de antecedentes judiciales y penales limpios de las personas físicas solicitantes, representantes legales, socios, administradores, directivos y beneficiarios finales efectivos, incluyendo verificación de no concurrencia de prohibiciones o incompatibilidades.
+Certificación que acredite la titularidad de las acciones, estructura accionaria completa y beneficiario final real de la persona jurídica solicitante.
+Requisitos económicos y financieros:
+Capital social mínimo desembolsado y solvencia financiera demostrable, ajustado por modalidad.
+Estados financieros auditados, informes de crédito y proyecciones financieras que demuestren capacidad para cubrir premios, obligaciones tributarias, devoluciones a jugadores y sanciones potenciales.
+Constitución de garantías económicas mediante instrumentos reconocidos por la normativa nacional, destinadas a cubrir riesgos derivados del incumplimiento contractual, obligaciones tributarias, compromisos con los consumidores. El monto de la garantía se fijará como porcentaje del total de ventas anuales proyectadas o reales, ajustado anualmente, considerando variables como la modalidad y tipo de producto de azar, plazo del título habilitante, monto proyectado de ventas, obligaciones asumidas y nivel de riesgo.
+La garantía deberá actualizarse anualmente conforme a la variación real de las ventas y mantenerse vigente durante todo el plazo del título habilitante.
+Los procedimientos para su constitución, ejecución, liberación y sustitución serán establecidos mediante reglamento emitido por la Junta de Protección Social, con mecanismos de ejecución inmediata en caso de incumplimiento.
+Requisitos técnicos y de seguridad:
+Certificación independiente de plataformas, software, sistemas de generación aleatoria, seguridad de la información, protección de datos personales y sistemas antifraude.
+Implementación de protocolos de verificación de identidad, como “Conozca a su Cliente”, geobloqueo efectivo para residentes costarricenses en sitios no autorizados, segregación de cuentas de jugadores y operadores, y medidas de ciberseguridad alineadas con estándares internacionales.
+Requisitos de prevención de lavado de activos y financiamiento del terrorismo:
+Documentación que demuestre el cumplimiento de estándares nacionales e internacionales, incluyendo sistema de gestión de riesgos, oficial de cumplimiento designado, políticas de monitoreo de transacciones, reportes de operaciones sospechosas a la UIF y procedimientos de debida diligencia reforzada para jugadores de alto riesgo.
+Requisitos de juego responsable y protección al consumidor:
+Compromiso y plan detallado para implementar programas de juego responsable: mecanismos de autoexclusión voluntaria, límites de depósito, gasto, tiempo, verificación de edad y prohibición de acceso a menores, herramientas de monitoreo de comportamientos de riesgo, publicidad responsable y colaboración con entidades de salud para prevención de ludopatía.
+Otros requisitos complementarios:
+Seguro de responsabilidad civil o equivalente para cubrir daños a terceros o jugadores.
+Compromiso de cooperación con la Junta de Protección Social en fiscalización continua, auditorías y reporte de información.
+La Junta de Protección Social podrá exigir requisitos adicionales según la modalidad específica, proporcionales al riesgo. El incumplimiento de cualquiera de estos requisitos será causal de denegación, suspensión o revocatoria del título habilitante, con derecho a audiencia y motivación adecuada.
+ARTÍCULO 8- Extinción de los títulos habilitantes
+Los títulos habilitantes extinguirán sus efectos por las causales siguientes, sin perjuicio de las demás que se establezcan reglamentariamente:
+Vencimiento del plazo de vigencia otorgado, salvo que se haya solicitado y aprobado su renovación conforme a lo dispuesto en esta ley y en el reglamento correspondiente.
+Renuncia expresa y voluntaria del titular, presentada por escrito ante la Junta de Protección Social con al menos treinta (30) días hábiles de anticipación al efecto deseado.
+Revocatoria motivada por la Junta de Protección Social, como consecuencia del incumplimiento grave o reiterado de cualquiera de los requisitos establecidos en el artículo 7 de esta ley, de las obligaciones derivadas del título habilitante, de las disposiciones reglamentarias o de las normas de prevención de lavado de activos y financiamiento del terrorismo.
+Declaratoria de nulidad del título habilitante por vicio originario en su otorgamiento.
+Disolución, liquidación o quiebra de la persona jurídica titular, o muerte del titular persona física sin que exista sucesor legal habilitado para continuar la explotación.
+La Junta de Protección Social regulará, mediante reglamento, el procedimiento detallado para la extinción de los títulos habilitantes, el cual deberá garantizar el debido proceso, el derecho de audiencia y defensa del titular, la notificación expresa y motivada, los plazos perentorios, los efectos jurídicos inmediatos, incluyendo la suspensión provisional de operaciones cuando proceda, la liquidación y devolución o ejecución de garantías económicas, el destino de los fondos de jugadores y la publicidad de la extinción.
+La extinción del título habilitante no exime al titular de las responsabilidades civiles, administrativas, penales o tributarias derivadas de actos u omisiones ocurridos durante su vigencia, ni impide la ejecución inmediata de las garantías constituidas.
+CAPÍTULO III
+Buenas Prácticas del Sector y Prevención de la Ludopatía y el Fraude
+ARTÍCULO 9- Buenas prácticas en juego responsable y prevención de la ludopatía
+Toda persona física o jurídica titular de un título habilitante podrá implementar políticas activas y efectivas de juego responsable, adoptando estándares, protocolos, herramientas y medidas reconocidas a nivel nacional e internacional que promuevan el juego como actividad recreativa controlada, prevengan la ludopatía y mitiguen sus daños asociados.
+Los operadores podrán implementar, como mínimo las siguientes medidas y buenas prácticas:
+Mecanismos de verificación de identidad y edad:
+Verificación obligatoria y robusta de edad e identidad en todos los canales, físicos y digitales, incluyendo documentos oficiales, verificación biométrica o facial donde sea técnicamente viable, y prohibición absoluta de participación de menores de 18 años.
+Sistemas de geobloqueo y bloqueo automático para accesos desde cuentas sospechosas de menores.
+Herramientas de control y límites del jugador:
+Límites obligatorios y personalizables de depósito, gasto, tiempo de juego y pérdidas.
+Mensajes de advertencia en tiempo real sobre tiempo jugado, saldo y riesgos.
+Periodos de enfriamiento y autoexclusión voluntaria temporal o permanente.
+Programas de monitoreo y detección temprana:
+Uso de algoritmos y herramientas de análisis de comportamiento para identificar patrones de riesgo como juego intensivo, persecución de pérdidas, entre otros; con intervención proactiva.
+Registro y seguimiento de jugadores vulnerables.
+Publicidad y promoción responsable:
+Prohibición de publicidad dirigida a menores, vulnerables o que incite a juego compulsivo, asocie éxito o lujo o banalice riesgos.
+Inclusión obligatoria de mensajes de juego responsable en toda publicidad y plataformas.
+Educación, información y acceso a ayuda:
+Información clara y accesible sobre riesgos del juego, signos de ludopatía y recursos de ayuda como líneas telefónicas gratuitas, centros de tratamiento o Ministerio de Salud.
+Colaboración con entidades de salud mental y prevención de adicciones para campañas de sensibilización y programas de atención.
+Responsabilidad social corporativa y reporte:
+Designación de un oficial o comité de juego responsable.
+Auditorías periódicas independientes de cumplimiento.
+Reportes anuales a la Junta de Protección Social sobre implementación, indicadores de riesgo detectados y acciones tomadas.
+La Junta de Protección Social podrá sugerir buenas prácticas adicionales o actualizaciones periódicas en el reglamento, basadas en evidencia científica y mejores prácticas internacionales.
+ARTÍCULO 10- Integridad y prevención del fraude
+Toda persona física o jurídica titular de un título habilitante deberá implementar mecanismos técnicos, operativos, de control interno y de gobernanza que aseguren la transparencia, la integridad y la equidad de las actividades autorizadas, protegiendo la impredecibilidad natural de los eventos y previniendo cualquier forma de fraude, manipulación de resultados, amaño de competiciones, uso indebido de información privilegiada o colusión.
+Se entiende por integridad en este contexto la preservación de la autenticidad, imparcialidad y naturaleza impredecible de las competiciones o eventos de juego, evitando cualquier alteración indebida del resultado, desarrollo o curso de estos con fines de ventaja económica, deportiva o de cualquier otra índole.
+Los operadores deberán implementar, como mínimo y de forma obligatoria, las siguientes medidas:
+Sistemas de monitoreo y auditoría en tiempo real:
+Implementación de herramientas tecnológicas avanzadas, incluyendo algoritmos de inteligencia artificial, análisis de patrones de apuestas y sistemas de alerta temprana, para detectar en tiempo real patrones irregulares de apuestas, anomalías en mercados, volúmenes inusuales, apuestas concentradas en resultados específicos o conductas que sugieran amaño, manipulación o fraude en los resultados.
+Monitoreo continuo de mercados de apuestas, con integración de datos de múltiples fuentes para identificar irregularidades.
+Protocolos de prevención, detección y denuncia obligatoria:
+Protocolos internos claros y documentados para la prevención y detección de indicios de fraude, manipulación de resultados, colusión entre participantes, uso de información privilegiada o cualquier conducta que comprometa la integridad.
+Obligación de denuncia inmediata y detallada ante la Junta de Protección Social, el Organismo de Investigación Judicial (OIJ), autoridades deportivas competentes y, cuando proceda, la Unidad de Inteligencia Financiera (UIF) o fiscalía, al identificar indicios razonables de irregularidades.
+Cooperación activa con federaciones deportivas, ligas y organismos internacionales para intercambio de información y seguimiento de alertas.
+Herramientas tecnológicas para garantizar aleatoriedad y seguridad:
+Certificación independiente y periódica, por laboratorios acreditados, de Sistemas de Generación Aleatoria y sistemas de determinación de resultados en juegos de azar no deportivos, asegurando impredecibilidad, uniformidad estadística e independencia de resultados.
+En apuestas deportivas, mecanismos de verificación de integridad de eventos.
+Medidas adicionales de ciberseguridad, auditorías independientes anuales y segregación de funciones para prevenir conflictos de interés o manipulación interna.
+ARTÍCULO 11- Prevención del lavado de activos y financiamiento del terrorismo
+Toda persona física o jurídica titular de un título habilitante debe implementar un sistema integral de prevención y control del lavado de activos y financiamiento del terrorismo, conforme a la Ley n.° 7786, Ley sobre Estupefacientes, Sustancias Psicotrópicas, Drogas de Uso No Autorizado, Actividades Conexas, Legitimación de Capitales y Financiamiento al Terrorismo, del 15 de mayo de 1998, y sus reformas, las recomendaciones del GAFI y la normativa de la UIF y Conassif.
+El sistema debe incluir, como mínimo:
+Evaluación de riesgos específica y actualizada anualmente.
+Debida diligencia del cliente, con verificación de identidad y origen de fondos en casos de alto riesgo.
+Monitoreo continuo de transacciones para detectar operaciones inusuales o sospechosas.
+Reporte inmediato a la UIF de operaciones sospechosas y transacciones en efectivo que superen los umbrales legales.
+Conservación de registros por al menos cinco años.
+Designación de un oficial de cumplimiento y capacitación anual obligatoria para todo el personal.
+Auditorías internas y externas periódicas.
+La Junta de Protección Social, en coordinación con la UIF y Conassif, supervisará el cumplimiento y podrá emitir directrices específicas para el sector.
+Capítulo IV
+Rol Fiscalizador de la Junta de Protección Social
+ARTÍCULO 12- Fiscalización por parte de la Junta de Protección Social
+La Junta de Protección Social ejercerá la competencia exclusiva en materia de fiscalización y supervisión de todas las actividades autorizadas mediante títulos habilitantes.
+La fiscalización abarcará el cumplimiento integral de las obligaciones legales, técnicas, financieras, administrativas, operativas y de prevención de riesgos establecidas en esta ley, su reglamento y el título habilitante correspondiente. Incluirá, como mínimo, las siguientes acciones:
+Auditorías periódicas, programadas y no anunciadas, sobre el cumplimiento de todas las obligaciones del operador.
+Revisión y análisis de operaciones financieras, transacciones, flujos de fondos, premios pagados y garantías constituidas.
+Supervisión continua del cumplimiento de requisitos técnicos, de seguridad, juego responsable, prevención de lavado de activos, integridad y protección al consumidor.
+Inspecciones in situ y remotas, incluyendo acceso a sistemas, plataformas, registros y locales de operación.
+Requerimiento de información, documentos y reportes periódicos o extraordinarios al operador.
+Aplicación de medidas cautelares y sanciones administrativas en caso de incumplimiento, conforme al procedimiento establecido en esta ley y en la normativa general de procedimiento administrativo.
+La Junta de Protección Social podrá coordinar acciones de fiscalización con otras instituciones competentes, como la Unidad de Inteligencia Financiera, el Organismo de Investigación Judicial o la Comisión Nacional del Consumidor, cuando lo requiera la naturaleza de los hechos investigados.
+Los operadores deberán facilitar el acceso irrestricto a toda la información y documentación solicitada, bajo pena de sanción. La Junta publicará anualmente un informe resumido y anonimizado sobre las acciones de fiscalización realizadas, resultados obtenidos y sanciones aplicadas, garantizando la transparencia y rendición de cuentas.
+Capítulo V
+Prohibición General
+ARTÍCULO 13- Prohibición general
+Se prohíbe a toda persona física o jurídica, nacional o extranjera, realizar, directa o indirectamente, sin contar con título habilitante vigente otorgado por la Junta de Protección Social cualquiera de las siguientes actividades:
+Administrar, comercializar, financiar, organizar, explotar o facilitar, por cualquier medio físico, digital, plataforma tecnológica, aplicación móvil o red informática, loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías y demás juegos de azar en cualquiera de sus modalidades.
+Utilizar, imitar, reproducir o asociar indebidamente símbolos, marcas, logotipos, nombres comerciales, programación de sorteos, denominaciones o cualquier signo distintivo de la Junta de Protección Social o de sus productos autorizados en actividades no autorizadas, generando confusión o aprovechamiento indebido de reputación, en concordancia con lo establecido en la Ley de Marcas y Otros Signos Distintivos, Ley n.° 7978, del 6 de enero del 2000, y sus reformas.
+Importar, exportar, fabricar, desarrollar, implementar, distribuir, poseer o comercializar dispositivos, equipos, software, terminales o instrumentos destinados exclusiva o principalmente a la realización de actividades prohibidas por esta ley.
+Publicitar, promocionar o inducir, por cualquier medio, la participación en juegos de azar no autorizados, incluyendo publicidad en medios digitales, redes sociales, afiliados o influenciadores y creadores de contenido digitales.
+Se prohíbe absolutamente la participación de personas menores de 18 años en cualquier modalidad de lotería, apuesta, apuesta deportiva o juego de azar. Los titulares de títulos habilitantes deberán implementar mecanismos efectivos y certificados de verificación de edad e identidad en todos sus canales y plataformas de operación, ya sea físicos, digitales o móviles, con sanciones inmediatas por incumplimiento.
+Las prohibiciones establecidas en este artículo tienen carácter general y extraterritorial cuando las actividades tengan como destino el mercado costarricense, independientemente del lugar de origen del operador o servidor.
+Capítulo VI
+Reforma y Adición a otras Leyes
+ARTÍCULO 14- Se adiciona un nuevo artículo 249 bis al Código Penal, Ley n.° 4573 del 4 de mayo de 1970, y sus reformas, que se leerá de la siguiente manera:
+Administración, comercialización y financiamiento de loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías y juegos de azar, sin autorización o título habilitante.
+Artículo 249 bis- A quien, sin título habilitante vigente y con el fin de obtener un beneficio económico propio o para terceros, organice, administre, comercialice o financie loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías o juegos de azar en cualquiera de sus modalidades, se le impondrá pena de prisión de dos (2) a seis (6) años.
+Se considerarán agravantes, aumentando la pena hasta en un tercio:
+Participación o afectación de menores de edad o grupos vulnerables.
+Uso de plataformas digitales, transfronterizas o tecnologías para evadir controles.
+Obtención de beneficios económicos superiores a cincuenta (50) salarios base.
+Reincidencia o participación en forma organizada.
+ARTÍCULO 15- Se reforma el artículo 1 de la Ley de Responsabilidad de las Personas Jurídicas sobre Cohechos Domésticos, Soborno Transnacional y otros Delitos, Ley n.° 9699, del 10 de junio de 2019, y sus reformas, para que en adelante se lea de la siguiente manera:
+Artículo 1- Objeto de la presente ley
+La presente ley regula la responsabilidad penal de las personas jurídicas respecto de los delitos contemplados en la Ley 8422, Ley contra la Corrupción y el Enriquecimiento Ilícito en la Función Pública, del 6 de octubre de 2004, en sus artículos 45, 48, 49, 50, 51, 52, 55, 57 y 58; los delitos contemplados en la Ley 4573, Código Penal, de 4 de mayo de 1970, en sus artículos 249 bis, 347, 348, 349, 350,351, 352, 352 bis, 353, 354, 355, 361, 363, 363 bis y 368 bis, y el delito contemplado en el artículo 69 de la Ley 7786, Ley sobre Estupefacientes, Sustancias Psicotrópicas, Drogas de Uso No Autorizado, Actividades Conexas, Legitimación de Capitales y Financiamiento al Terrorismo, del 30 de abril de 1998.
+Asimismo, esta ley regula el procedimiento para la investigación y el establecimiento de dicha responsabilidad penal, la determinación de las sanciones penales correspondientes y la ejecución de estas y los supuestos en los cuales la presente ley resulta procedente.
+Lo anterior, sin perjuicio de la responsabilidad penal individual de las personas físicas por la comisión de cualquiera de los delitos mencionados en el párrafo primero de este artículo.
+ARTÍCULO 16- Se reforma el artículo 12 de la Ley de Rifas y Loterías, n.° 1387, del 21 de noviembre de 1951, y sus reformas, para que en adelante se lea:
+Artículo 12- Registro y revisión
+Si al efectuarse el registro de equipaje o la revisión documental o física de mercancías, vehículos y unidades de transporte y sus cargas, las autoridades aduaneras, la Policía de Control Fiscal u otras autoridades policiales competentes, encontraren equipos, dispositivos e instrumentos, sean físicos o tecnológicos que se utilicen para vender, administrar, comercializar y financiar loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías y juegos de azar sin autorización o título habilitante, estos serán incautados y se pondrán a la orden de la autoridad competente que corresponda.
+Mediante decreto ejecutivo, se definirá el listado o categorías de equipos, dispositivos e instrumentos, sean físicos o tecnológicos prohibidos por su potencial uso en actividades ilegales relacionadas con loterías preimpresas o electrónicas, apuestas, apuestas deportivas, videoloterías y juegos de azar prohibidos.
+ARTÍCULO 17- Se reforma el artículo 2 de la Ley Autorización para el Cambio de Nombre de la Junta de Protección Social y Establecimiento de la Distribución de Rentas de las Loterías Nacionales, n.° 8718, del 17 de febrero de 2009, y sus reformas, para que en adelante se lea:
+Artículo 2- La Junta de Protección Social es un ente descentralizado del sector público; posee personalidad jurídica y patrimonio propios, así como autonomía administrativa y funcional para el desempeño de sus funciones.
+Tendrá a su cargo, en forma exclusiva, la creación, administración, venta y comercialización de todas las loterías, tanto las preimpresas como las electrónicas, las apuestas deportivas, los juegos, las video-loterías y otros productos de azar, en el territorio nacional, a excepción de los casinos; sin perjuicio de las concesiones, autorizaciones y títulos habilitantes que otorgue a operadores privados para la administración, comercialización o explotación de estos productos, en cumplimiento de los fines públicos asignados, tales como la generación de ingresos fiscales para programas sociales, la prevención de riesgos asociados y la protección al consumidor.
+También, corresponde a la Junta de Protección Social la exclusividad en la realización de todo tipo de rifas, tanto las preimpresas como las electrónicas, excepto las realizadas para fines promocionales, en las cuales no deberá mediar cobro alguno para su participación; además de las efectuadas por asociaciones, fundaciones y entidades de bien social, cuyas utilidades se destinen a esos fines. Estas últimas deberán contar con la aprobación de la Junta Directiva de la Junta de Protección Social, conforme a los controles que esta Institución establezca para su realización. La anterior disposición no afecta las normas que en forma específica regulan la actividad de casinos, el juego Crea y el Bingo de la Cruz Roja.
+Para la aprobación de cualquier concesión, autorización y título habilitante, será necesario el voto de dos terceras partes de los miembros de la Junta Directiva, previa verificación de requisitos técnicos, legales, financieros y de cumplimiento normativo, incluyendo la implementación de medidas de juego responsable.
+ARTÍCULO 18- Derogatorias
+Deróguense los artículos 3, 4, 5, 6, 7, 8, 9 y 10 de la Ley de Rifas y Loterías, n.° 1387, del 21 de noviembre de 1951.
+TRANSITORIO ÚNICO- Dentro de un plazo máximo de seis meses siguientes a la publicación de la ley, el Poder Ejecutivo procederá a reglamentarla para garantizar su operatividad.
+Rige a partir de su publicación.
+Esmeralda Britton González Kattia María Ulate Alvarado
+Wilson Alfredo Jiménez Cordero Gréthel María Ávila Vargas
+Abril Gordienko López María Isabel Camareno Camareno
+Diputadas y diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 26-05-2026).

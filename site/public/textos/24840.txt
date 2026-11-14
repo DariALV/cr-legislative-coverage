@@ -1,0 +1,622 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE ETIQUETADO FRONTAL CON ADVERTENCIAS NUTRICIONALES
+PARA PRODUCTOS ALIMENTICIOS Y BEBIDAS CON
+CONTENIDO NO ALCOHÓLICO
+ANDREA ÁLVAREZ MARÍN
+MONSERRAT RUÍZ GUEVARA
+DIPUTADAS
+EXPEDIENTE N.º 24.840
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY DE ETIQUETADO FRONTAL CON ADVERTENCIAS NUTRICIONALES
+PARA PRODUCTOS ALIMENTICIOS Y BEBIDAS CON
+CONTENIDO NO ALCOHÓLICO
+Expediente N.º 24.840
+ASAMBLEA LEGISLATIVA:
+Esta propuesta se enmarca en la promoción de entornos alimentarios saludables como medio para mejorar la alimentación de las personas costarricenses y, por tanto, su calidad de vida y su salud.
+Alrededor del 44% de las muertes en las Américas -o cerca de 3,1 millones- son causadas por la hipertensión arterial, la hiperglucemia en ayunas, la obesidad y el sobrepeso. La mala alimentación se debe, en gran medida, a la amplia disponibilidad y comercialización de alimentos y bebidas procesados y ultraprocesados que tienen un contenido excesivo de azúcares, grasas y sodio.
+A pesar de que en Costa Rica, como resultado de inversiones sociales y de salud, la población ha experimentado un mejor nivel de vida en indicadores de salud, como las tasas de mortalidad infantil y la esperanza de vida al nacer, las enfermedades no transmisibles (ENT) ocupan la primera causa de muerte, morbilidad y discapacidad desde hace más de tres décadas (Ministerio de Salud, 2018). En nuestro país se han venido incrementando las enfermedades cardiovasculares, cáncer, diabetes y enfermedades pulmonares crónicas, conocidas como enfermedades no transmisibles -ENT- y obesidad.
+En el cuadro siguiente se observa que entre las primeras causas de muerte se encuentran las ENT, desplazadas en el 2020 por fallecimientos por covid-19.
+Cuadro N.° 1
+5 principales causas de muerte
+2019 y 2020 Costa Rica
+Causa de muerte
+Porcentaje
+Porcentaje
+2019
+2020
+Covid-19
+-
+1
+8.9
+Enfermedad isquémica del corazón
+1
+9.4
+3
+7.7
+Diabetes mellitus
+2
+7.1
+2
+8.8
+Enfermedades cerebrovasculares
+3
+4.3
+4
+5.5
+Enfermedades hipertensivas
+4
+4.6
+5
+4.4
+Enfermedades crónicas de las vías respiratorias
+5
+4.2
+6
+3.9
+Fuente: elaboración propia con datos del INEC.
+Como se observa en la figura N.º 1, en el año 2022 el 58% de la mortalidad se debió a ENT y de estas 46% por causas cardiovasculares, dentro de la ENT el 46% se debió a eventos cardiovasculares, el 34% a Cáncer y el 15% a diabetes mellitus.
+Figura N.° 1
+Mortalidad por grandes grupos de causas
+Costa Rica, 2022
+Fuente: Presentación Dr. Jorge E. Victoria R., M.D., Mg. Sc, asesor Prevención y Control de Enfermedades. OPS/OMS – Oficina en Costa Rica. 2023
+En un comunicado conjunto de la Escuela de Salud Pública, el Instituto de Investigaciones en Salud y la Escuela de Nutrición de la Universidad de Costa Rica indican que:
+La obesidad, diabetes tipo 2, hipertensión arterial y algunos tipos de cáncer son enfermedades no transmisibles relacionadas con la alimentación (ENT-RA). En Costa Rica, las ENT-RA aumentan a un ritmo alarmante, lo que representa un grave problema para la salud pública. Según la Encuesta de Factores de Riesgo Cardiovascular de la Caja Costarricense de Seguro Social (CCSS), 2018, dirigida a mayores de 19 años, se observó un país de América Latina con mayor prevalencia de sobrepeso y obesidad. El estudio también reveló que el 32,6% de la población de 15 a 65 años presentaron sobrepeso y el 30,6% presentaron obesidad según el Índice de Masa Corporal (IMC), o sea, 2 de cada 3 hombres y mujeres poseen un exceso de peso.
+Obesidad
+La Encuesta de Factores de Riesgo Cardiovasculares del 2018 encontró que la prevalencia de sobrepeso y obesidad para la población mayor de 18 años en general fue de 39,5% y de 31,2%, respectivamente. Siendo esta mayor en el grupo de 65 años y más para el sobrepeso, con un valor de 48,7%, mientras que el de obesidad evidenció la prevalencia más elevada en el grupo de 40 a 64 años, prevalencia de hipertensión arterial de 37,2% y una prevalencia de diabetes de 14,8%. En la Encuesta de Factores de Riesgo Cardiovascular de la CCSS (2014), la prevalencia de sobrepeso y obesidad fue de 36,8% y 29,4%, respectivamente, en la población mayor de 19 años.
+En el I Censo Escolar Peso/Talla de Costa Rica 2016, se encontró un 34% de exceso de peso y según la Encuesta Colegial de Vigilancia Nutricional y Actividad Física, 2018, se observó un 30,9% de sobrepeso y obesidad en adolescentes. Estas cifras representan un grave problema de salud pública especialmente en la niñez y adolescencia. La obesidad en estos grupos de población se encuentra asociada a muchas probabilidades de seguir siendo obesos en la edad adulta y a un riesgo de contraer a edades más tempranas Enfermedades No Transmisibles y Renal Aguda (ENT-RA). Igualmente, las ENT-RA tienen consecuencias a nivel económico y sanitario.
+Las ENT-RA repercuten no solo en la salud sino en el desarrollo humano y socioeconómico del país, ya que tiene efectos negativos en la educación y la productividad laboral incrementando aún más los costos societarios. La carga atribuible de morbimortalidad de las ENT-RA ha generado un impacto en la calidad de vida de la población y en la economía nacional, por ser uno de los gastos más altos en la prestación de los servicios de salud.
+Con base en lo señalado en el Censo Peso-Talla del año 2016, las tendencias de aumento y de diferencias sociales en la obesidad determinan que aquellos estratos de la población con menor nivel educativo y socioeconómico puedan ser los más afectados. Al analizar el sobrepeso y obesidad se observó una mayor prevalencia en la zona urbana (34,8%) comparada con la zona rural (31,3%); sin embargo, en ambas zonas coexiste el sobrepeso y la obesidad.
+El sobrepeso y la obesidad, por sexo, mostró que las mujeres tienen mayor prevalencia de sobrepeso (20,6%, comparado con 20,6% en hombres), pero la prevalencia de obesidad fue mayor en los hombres (16.6%, comparado con 11,6% en mujeres). Independientemente del sexo, 34 de cada 100 escolares tienen sobrepeso u obesidad.
+Al analizar los resultados según edad se encontró una tendencia al incremento del sobrepeso y la obesidad que inicia a los 8 años, alcanzando las prevalencias más altas, entre los 9-11 años, mientras que a los 12 años declina levemente la tendencia creciente de la obesidad.
+La malnutrición por exceso se registró a lo largo de todo el país, siendo la mayor prevalencia en la Gran Área Metropolitana, principalmente en Heredia y San José. Es importante mencionar que para en todos los niveles del índice de desarrollo social existen problemas de sobrepeso y obesidad en los escolares.
+Datos que ya se evidenciaban en estudios anteriores como los que reflejaba la Encuesta Nacional de Nutrición 2008-2009, que en ese momento alertaba de un aumento considerable en la obesidad en distintos rangos de edad. Esta tendencia se refleja en diversos estudios, por ejemplo el Estudio Latinoamericano de Nutrición y Salud (Elans) publicado en el año 2016, determinó que Costa Rica es el segundo país, con un 35,2%.
+La Encuesta Colegial de Vigilancia Nutricional y Actividad Física 2018 encontró en la población adolescente un 30,9% de prevalencia de sobrepeso y obesidad, la distribución en zona urbana fue de 31,5% y para zona rural se estimó en 29,2%. Además, se encontró una mayor proporción en mujeres (23,8%) con sobrepeso, respecto a los hombres (18,1%); en el caso de la obesidad, los hombres presentaron una prevalencia de 10,5% y las mujeres de 9,2%.
+La obesidad en estos grupos de población se encuentra asociada a muchas probabilidades de seguir siendo obesos en la edad adulta y a un riesgo de contraer a edades más tempranas ENT.
+Los niños en particular están pagando un alto precio por la obesidad. Los niños con sobrepeso tienen un menor rendimiento escolar, obtienen notas más bajas, son más propensos a faltar a la escuela y están fuera de la escuela durante más tiempo que los niños con un peso saludable. Asimismo, los niños con obesidad tienen un 13% menos de probabilidades de obtener buenos resultados escolares y, cuando crecen, tienen menos probabilidades de completar la educación superior. Los niños con obesidad muestran una menor satisfacción con la vida y son hasta tres veces más propensos a sufrir acoso, lo cual puede contribuir a disminuir su rendimiento escolar.
+“La incidencia de la obesidad en nuestro país ha pasado de ser una simple estadística para convertirse en “alarma” de salud pública y contrario a otras enfermedades silenciosas, está a la vista por lo que urge como sociedad hacer cambios drásticos en los hábitos alimenticios”, afirmó en ese momento la doctora Norma Meza, expresidenta del Colegio de Profesionales en Nutrición de Costa Rica.
+Según estimaciones de la OMS para el año 2060, se prevé que en Costa Rica la prevalencia de la población total (adultos y niños) con sobrepeso u obesidad será del 94%.
+Dislipidemias
+Otro factor de riesgo cardiovascular son las dislipidemias, que son alteraciones en los niveles de grasa de la sangre. Las principales manifestaciones son elevación del colesterol, de los triglicéridos o de ambos y un colesterol HDL bajo (conocido como colesterol “bueno”). Este último, a diferencia del colesterol “malo”, es protector de infarto al miocardio.
+En la Encuesta de Factores de Riesgo Cardiovascular del 2018 se encontró que la prevalencia de la dislipidemia diagnosticada fue de 27,1%, mayor en el grupo de 65 y más años, con un 46,3%. En la población general la prevalencia de LDL en niveles superiores iguales a 130 mg/dl fue de 33,4%; en el sexo femenino fue de 35,4% y de estas el grupo de 40 a 64 años tuvo una prevalencia mayor (42,0%). En el sexo masculino la prevalencia fue de 31,2%, siendo también más frecuente en ese grupo de edad, con una prevalencia del 38,7%.
+Con respecto a la prevalencia de niveles elevados de triglicéridos (≥150 mg/dL), la población general tuvo una prevalencia 45,3%, siendo para la población masculina de 49,6% y de 41,3% para la población femenina. Los grupos de edad con más altas prevalencias correspondieron a un 39,1% para el grupo entre 20 y 29 años, de 50,6% para la población entre 40 y 64 años y de 46,7% para el grupo de adultos mayores
+Este riesgo se encontró también en escolares de 9 a 11 años tamizados en el 2020: se encontró que, de 61 426 usuarios, el 49 contaba con al menos un perfil de lípidos y de estos, como se observa en la figura N.° 2, la alteración del perfil fue de 29% para triglicéridos, 23% HDL colesterol y 12% LDL colesterol, o sea, un 48% (14 285) de estos niños ya tienen un perfil de lípidos.
+El consumo alto de ácidos grasos trans (AGT) aumenta el riesgo de muerte por cualquier causa en 34% y por cardiopatías coronarias en 28%, así como el riesgo de aparición de cardiopatías coronarias en 21%, por niveles altos de consumo de ácidos grasos trans producidos industrialmente.
+Los ácidos grasos trans se consideran nutrientes críticos por su asociación con las enfermedades no transmisibles.
+Durante el 2022, el Instituto Costarricense de Investigación y Enseñanza en Nutrición y Salud (Inciensa) realizó un monitoreo de ácidos grasos trans en alimentos procesados y ultra procesados, como resultado de este monitoreo se concluyó que la mayoría de los productos recolectados que declararon AGT y energía presentaron una cantidad excesiva de AGT de acuerdo con el modelo de perfil de nutrientes de la OPS. 2. Al no existir medidas regulatorias para declarar ácidos grasos trans se observó que solo el 40,8% (n=3017) de los productos recolectados reportaron esta información. Únicamente en cinco categorías de alimentos 70% o más de los productos reportan AGT. 3. Persisten productos que exceden los 2 gramos de AGT por cada 100 gramos de grasa total.
+Figura N.° 2
+Perfil de lípidos alterados
+Escolares tamizados de 9 a 11 años
+CCSS, 2020
+Fuente: Informe de resultados de la evaluación de la prestación de servicios de salud 2020 y tendencias del 2021, CCSS, 2021.
+Enfermedades cardiovasculares
+Las enfermedades cardiovasculares incluyen los trastornos del corazón y de los vasos sanguíneos, la hipertensión arterial, cardiopatía coronaria (infarto de miocardio), enfermedad cerebrovascular, enfermedad vascular periférica, insuficiencia cardíaca, cardiopatía reumática, cardiopatía congénita y miocardiopatías según la Encuesta de Factores de Riesgo Cardiovascular de la Caja Costarricense de Seguro Social (CCSS) de 2018, en mayores de 18 años se observó una prevalencia en la población de hipertensión arterial de 37,2% (diagnosticada 32,4%, no diagnosticada 4,8%).
+El análisis de la prevalencia de hipertensión arterial muestra una tendencia creciente, siendo más elevada en el grupo de 65 años, con un 69,8 %.
+Según el Instituto Nacional de Estadística y Censos (INEC) en el primer semestre del 2020 ocurrieron 11.550 muertes, de las cuales 573 correspondieron a infarto agudo del miocardio y más de 1.280 a enfermedades ligadas al corazón y cerebrovasculares.
+En la figura 3 se llama la atención al problema relacionado con las dislipidemias, que producen enfermedades como las arteriopatías coronarias y periféricas, la primera relacionada con infartos de miocardio y la segunda es la principal causa de amputaciones a nivel mundial, se ha encontrado que entre 1% y el 3% de los pacientes con este padecimiento sufre una amputación de alguna de sus extremidades y un 5% si son diabéticos.
+Figura N.° 3
+Fuente: https://delfino.cr/2020/09/enfermedades-cardiovasculares-son-la-primera-causa-de-muerte-en-costa-rica
+Diabetes Mellitus (DM)
+Según la encuesta de Factores de Riesgo Cardiovascular de la Caja Costarricense de Seguro Social (CCSS) del 2018, se observó una prevalencia de diabetes diagnosticada en la población general de 10,9%, con una prevalencia según sexo de 12,4% para el sexo femenino y de 9,3% para el sexo masculino, con una tendencia creciente según grupo de edad para ambos sexos. La diabetes no diagnosticada, por su parte, tuvo una prevalencia general de 3,9% y una prevalencia según sexo de 4,6% para el sexo masculino y de 3,2% para el sexo femenino.
+Según se observa en el gráfico siguiente hay una tendencia creciente en la mortalidad por DM.
+Gráfico N.° 1
+Mortalidad por diabetes
+Costa Rica 2015 - 2020
+Fuente: INEC. Bases de datos mortalidad 2015-2020 Presentación Dr. Jorge E. Victoria R., M.D., Mg. Sc, asesor Prevención y Control de Enfermedades. OPS/OMS – Oficina en Costa Rica, 2023.
+Como consecuencia de la DM existe una probabilidad cada día mayor de morir en grupo de edad de 30 a 70 años, como se muestra en el siguiente gráfico:
+Gráfico N.° 2
+Probabilidad incondicional de morir por diabetes
+Grupo de edad de 30 a 70 años
+Costa Rica
+Fuente: INEC. Bases de datos mortalidad 2015-2020 Presentación Dr. Jorge E. Victoria R., M.D., Mg. Sc, asesor Prevención y Control de Enfermedades. OPS/OMS – Oficina en Costa Rica, 2023.
+Enfermedad Renal Crónica (ECR), en esta enfermedad hay un daño sostenido a los riñones, lo cual produce un daño crónico de la función renal y puede incluso progresar gradualmente a enfermedad renal crónica en el estadio terminal. La diabetes tipo 2, las dietas altas en sodio, obesidad y la hipertensión arterial son factores que pueden llevar a la ECR. Los factores de riesgo relacionados con la dieta pueden llegar a relacionar hasta un 60% de los casos.
+Sodio/sal
+Uno de los factores que influyen sobre los niveles de la presión arterial es el consumo de sal por encima de lo recomendado. Según un estudio realizado en Costa Rica por Blanco-Metzler A. y colaboradoras, la disponibilidad de sodio aumentó en el periodo 2004-2005 a 2012-2013 de 3,9 a 4,6 g/persona/día. Las principales fuentes de sodio en la dieta fueron la sal doméstica (60%), los alimentos procesados y los condimentos (con sodio añadido) (27,4%). El sodio disponible para el consumo en los hogares costarricenses supera ampliamente los niveles de ingesta recomendados en las zonas urbanas y rurales y en todos los estratos de ingresos, el sodio disponible para el consumo a nivel del hogar supera considerablemente la recomendación máxima de la Organización Mundial de la Salud (<2 g de sodio/persona/día). Las zonas rurales y las personas con menores ingresos son las que tienen mayor riesgo de tener un alto consumo de sodio.
+En la Encuesta de Vigilancia de Factores de Riesgo Cardiovascular del 2018 se encontró que la práctica de adicionar productos considerados con alto contenido en sal a la comida preparada en el hogar se encontró que en la población general esta tendencia alcanzó el 31,0% de la población adulta. La práctica considerada como “a veces” se evidenció en el 26,6% de la población general.
+La sal no es solo el salero que conocemos. También se encuentra en la comida procesada, como se evidencia en el estudio realizado por Roselló y colaboradores, que encontró que el sodio de la sal y los condimentos a base de sal durante 2004-2019, aumentó del 69,5% al 75,5%; el aporte de la sal común, del 60,2 al 64,8%. Además, que los alimentos procesados y ultra procesados con aporte de sodio añadido de 2012-2013 a 2018-2019 aumentaron del 14,2 al 16,9% y disminuyeron en las comidas preparadas (del 7,2 al 2,8%). Luego de un aumento del 12% en el consumo de sal entre 2004-2005 y 2012-2013, a un nivel casi el doble de lo recomendado, se ha estabilizado en el último período.
+A pesar de la introducción gradual de políticas y programas de reducción de sodio en la dieta en las agendas políticas en América Latina ningún país de ha alcanzado el objetivo mundial de sodio de la OMS, es el caso de Costa Rica.
+En un estudio de modelado de escenarios realizado por Vega, J. y colaboradores mostró que un número considerable de muertes atribuibles a ECV podrían prevenirse o posponerse si la población costarricense redujera su consumo de sal en la dieta siguiendo las recomendaciones establecidas en el país. Lo cual se observa en el siguiente cuadro:
+Cuadro N.° 2
+Muertes por ECV evitadas o pospuestas (DPP) según los escenarios de reducción del consumo de sal, presentadas por tipo de causa
+Costa Rica 2018
+Fuente: Vega-Solano J, Blanco-Metzler A, Madriz-Morales K, Fernandes-Nilson EA, Labonté ME (2021) Impact of salt intake reduction on CVD mortality in Costa Rica: A scenario modelling study. PLOS ONE 16(1): e0245388. https://doi.org/10.1371/journal.pone.0245388 https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0245388
+En el 2022 el Instituto Costarricense de Investigación y Enseñanza en Nutrición y Salud (Inciensa) realizó un monitoreo para conocer la situación del contenido de sodio declarado en el etiquetado nutricional y cumplimiento de las metas mundiales, regionales y nacionales de reducción de sodio en alimentos preenvasados, concluyendo que, en los últimos cuatro años, no se observaron avances en la reducción de sodio en los alimentos preenvasados comercializados en Costa Rica, aun cuando los límites de las metas nacionales se encuentran desactualizados desde hace 2 años. Lo anterior de acuerdo con los resultados obtenidos en las seis subcategorías claves durante 2015 y 2018, y los obtenidos en el presente año (2022):
+- El cumplimiento pasó de 80% en el 2015, a 87% en 2018 y disminuyó a 84,5% en el 2022.
+- Solo una categoría mejoró el cumplimiento: “condimentos” (76, 82 y 88% en el 2015, 2018 y 2022).
+- Tres categorías no presentaron avances importantes: “galletería” (93,95 y 96% en el 2015, 2018 y 2022), “panificación” (52, 69 y 70%, en el 2015, 2018 y 2022) y “embutidos” (95, 86,87% en el 2015, 2018 y 2022), y dos desmejoraron: “repostería” (62,83 y 74% en el 2015, 2018 y 2022) y “salsas” (67,83 y 76% en el 2015, 2018 y 2022).
+Mortalidad por cáncer
+En el año 2019, las mujeres presentaron una tasa ajustada de mortalidad de 12 por 100 000 para cáncer de mama; de 3,7 por 100 000 para cáncer de pulmón, y de 9,5 por 100 000 para cáncer de colon y recto. En el caso de la población masculina presentó una tasa ajustada de mortalidad por cáncer de próstata de 15,4 por 100 000; de pulmón, de 7,7 por 100 000, y de colon y recto, de 10,6 por 100 000.
+Según datos del Ministerio de para el año 2021, el primer lugar de mortalidad por cáncer en hombres fue producto del cáncer de próstata (468 casos), lo cual representa un aumento para este año del 5% con respecto al 2020, lo que representó el 16% de todos los fallecimientos masculinos por cáncer registrados en el país. El 69% de los fallecimientos por cáncer de próstata registrados en el 2021, se ubican en el grupo de edad de mayores de 75 años.
+Costos de las enfermedades no transmisibles
+La siguiente información del documento: INCAP-SE-COMISCA. Costo de la atención de las enfermedades no transmisibles relacionadas con la alimentación y su impacto económico en el sistema de salud y el capital humano en Centroamérica y República Dominicana: un llamado a la acción hacia la creación de ambientes alimentarios más saludables. Guatemala: Incap, dic. 2020, analiza la inversión en salud para la atención de estas enfermedades.
+Los costos elevados de atención y tratamiento de las ENT-RA representan una carga económica para los sistemas de salud imposibles de afrontar. También aumentan el gasto de bolsillo en las familias que pueden derivar en gastos catastróficos para el hogar.
+Las altas prevalencias de las ENT-RA reducen el Producto Interno Bruto de los países y su productividad potencial como resultado del ausentismo laboral asociado a la discapacidad, enfermedad y muerte prematura.
+La implementación de medidas destinadas a proteger a la población general, como la regulación del mercadeo y promoción de alimentos y bebidas poco saludables dirigido a niños y el uso de etiquetas de advertencia en la parte frontal de los empaques, son clave para frenar el rápido aumento de las ENT-RA y los costos directos e indirectos provocados por estas enfermedades.
+El estudio agrega:
+La implementación múltiple de varias intervenciones o políticas podría alcanzar mayores ganancias en salud que lo que se alcanzaría con las intervenciones por separado. Una estrategia que combine múltiples intervenciones para crear ambientes alimentarios más saludables podría provocar mayores ahorros en salud en los países y podría disminuir las razones de costo-efectividad que se presentaron en el cuadro anterior.[31] Por cada DALY evitado, se reducen costos directos (hospitalización, medicamentos, gastos de bolsillo) y los costos indirectos (discapacidad, mortalidad, pérdida en el PIB) provocados por las ENT-RA.
+Cuadro N.° 3
+Costos indirectos de las enfermedades no transmisibles relacionadas con
+la alimentación, estimación de la carga económica
+Costa Rica (en millones de $USD)
+Pérdida
+Diabetes, ECV y cáncer
+Enfermedad cardiovascular (ECV)
+Cáncer
+PIB total
+$4.88 miles de millones
+$7.69 miles de millones
+$ 6.48 miles de millones
+PIB per cápita
+$961
+$1514
+$1275
+Nota: para la enfermedad cardiovascular las sub causas de incluyeron aneurisma aórtico, fibrilación auricular, enfermedad cerebrovascular, accidente cerebrovascular y otras hemorragias, cardiomiopatía hipertensiva, enfermedad cardiaca isquémica, accidente cerebrovascular isquémico, hipertensión arterial, enfermedad cardiaca hipertensiva y otras enfermedades cardiovasculares.
+Fuente: elaboración propia a partir de datos de Bloom DE, et al., 2018 tomado de Incap-Secomisca, 2020.
+El tercer Objetivo de Desarrollo Sostenible reconoció la importancia de las ECV al apuntar a una reducción de un tercio en la mortalidad prematura debido a enfermedades no transmisibles, lo que cobra importancia en el cálculo de los DALYs, que son los años totales de vida saludable, que se pierden debido a la discapacidad, enfermedad o muerte prematura, un DALYs representa un año de vida saludable perdido. Para el año 2015, los DALYs estandarizados por edad para las enfermedades cardiovasculares relacionadas con la alimentación fue de 2,273.7/100,000. Como referencia, para el 2015, si nuestro país hubiera tenido la tasa de Arabia Saudita, país tropical con una tasa muy baja de 170.56 DALYs por 1000 habitantes, el PIB hubiera sido un 1% más alto que el PIB real (Incap-Secomisca, 2020).
+El costo total para un centro de radioterapia en los países miembros del SICA oscila entre USD 1.6 (Belice) y USD 53.1 (Guatemala) millones de dólares americanos, según se observa en el cuadro siguiente para Costa Rica tuvo un costo de $37.5, en el 2018.
+Cuadro N.° 4
+Costos directos de la atención de cáncer de mama, cuantificado sobre la inversión en un centro de radioterapia y medicamentos para el año 2019 y costos directos de las enfermedades cardiovasculares, cuantificado sobre atención en rehabilitación cardiaca en el año 2018
+Costa Rica
+Costo total de inversión en un centro de radioterapia en millones de dólares americanos (USD)1.
+$37.5
+Costos directos de medicamentos administrados durante el tratamiento de cáncer de mama por paciente, incluyendo suministros y tiempo de personal (USD)2.
+Por aplicación subcutánea de trastuzumab: $78.68
+Por aplicación intravenosa de trastuzumab:$ 467.34
+Costo medio para atender a un paciente en centros de rehabilitación cardíaca (US PPA):
+$867.38
+Costo total de los programas para brindar rehabilitación cardíaca por paciente (USD PPA):
+$300
+Fuente: elaboración propia con datos de Datta NR, et al., 2019: Castro-Cordero JA, et al., 2019, Moghei M, et al., 2018 y Razavi A, et al., 2018. Tomado de Incap-Secomisca, 2020.
+En el cuadro anterior se muestra el costo de la rehabilitación cardíaca para Costa Rica, estimaciones expresadas como paridad del poder adquisitivo (PPA). La PPA es un indicador económico para comparar el nivel de vida entre distintos países, teniendo en cuenta el PIB per cápita en términos del costo de vida en cada país. El costo medio para atender a un paciente fue de USD 945.91 PPA a nivel mundial. En los países miembros del SICA de los que se disponen datos, el costo total por paciente oscila entre USD 89.57 (Guatemala) y USD 867.38 PPA (Costa Rica).
+En el cuadro N.° 5 se observa que el costo directo per cápita para tratamiento de la diabetes tipo 2 en 2000 y 2015 y el gasto total en salud per cápita. Las estimaciones de costo directo para diabetes en 2000 fueron mayores que el gasto en salud en personas menores de 65 años de edad. En 2015, en el escenario conservador (E1), el costo directo per cápita fue $1047 y en el escenario de amplia cobertura de tratamientos (E2), el costo per cápita directo fue mayor que el gasto per cápita en salud.
+El costo medio en diabetes tipo 2 por persona, en dólares americanos (USD) para Costa Rica es de: $1420.
+Cuadro N.° 5
+Costo total y per cápita atribuidos a la diabetes tipo 2
+y gasto en salud per cápita
+Costa Rica, 2000 y 2015
+(millones de dólares americanos)
+Costo total y per cápita y gasto en salud per cápita
+2000 (< 65 años)
+2015 (≥ 20 años)
+Costo directo per cápita (USD)
+Gasto en salud per cápita (USD)
+Costo directo per cápita (USD)
+E1
+Costo directo per cápita (USD)
+E2
+Gasto en salud per cápita (USD)
+$624
+$285
+$1047
+$1870
+$1390
+Fuente: elaboración propia de datos de Barceló A, 2003 y 2017. Tomado de Incap-Secomisca, 2020.
+Las ENT pueden aumentar la inequidad y perpetuar el ciclo de pobreza, el nivel educativo, el empleo, las coberturas de protección o la inequidad en género son algunos de los determinantes sociales que inciden tanto directamente en el desarrollo de ENT como en el desarrollo de factores de riesgo: como el tabaquismo, inactividad física, uso nocivo del alcohol, dieta no saludable, entre otros.
+Por otro lado, existen determinantes comerciales y “las entidades comerciales pueden tener efectos positivos en la salud y la sociedad, sobre todo mediante la creación de productos y servicios que sean beneficiosos, o incluso esenciales, para la salud; sin embargo, ahora hay evidencia abrumadora de que algunas, particularmente las corporaciones multinacionales y transnacionales más grandes, están teniendo efectos cada vez más negativos en la salud humana y planetaria y en las desigualdades sociales y de salud.
+Figura N.° 4
+Aumento de la inequidad y ciclo de pobreza
+Fuente: presentación Dr. Jorge E. Victoria R., M.D., Mg. Sc, asesor Prevención y Control de Enfermedades. OPS/OMS – Oficina en Costa Rica, 2023.
+Nuestro país cuenta con la Estrategia Nacional de Abordaje Integral de las enfermedades no Transmisibles y Obesidad 2022-2030 liderada por el Ministerio de Salud. Esta estrategia plantea la importancia de mejorar la calidad de vida de las personas. Constituye un instrumento para articular los esfuerzos nacionales orientados al abordaje efectivo de dichas condiciones de salud, el cual se encuentra alineado con los compromisos asumidos por el país para el avance en el cumplimiento de los Objetivos de Desarrollo Sostenible.
+En el país se ha venido trabajando de diversas formas para enfrentar este problema de salud pública. En el año 2013 el Ministerio de Salud, con el apoyo técnico y financiero de la OPS/OMS y en articulación con múltiples actores institucionales y sociales, formuló la Estrategia Nacional para el Abordaje Integral de las ENT y Obesidad 2013-2021 (en adelante Estrategia ENTO), en concordancia con los planteamientos de la Estrategia Mundial para la Prevención y el Control de las ENT de la OMS. Para el caso costarricense, la carga atribuible a las enfermedades crónicas para el año 2005 representó un 61% de los años de vida perdidos debido a la discapacidad o muertes prematuras, considerando para este cálculo la referencia de expectativa de vida en Costa Rica para dicho año. Esta carga atribuible a las enfermedades crónicas no transmisibles ha generado un impacto en las condiciones de vida de la población y en la economía nacional, por ser uno de los gastos más altos en la prestación de los servicios de salud.
+En la figura siguiente se muestran las enfermedades no transmisibles contempladas en el abordaje de la estrategia nacional de la ENTO 2022-2030:
+Figura N.° 5
+Enfermedades no transmisibles contempladas en la estrategia nacional de
+abordaje integral de las ENTO 2022-2030
+Fuente: Costa Rica. Ministerio de Salud. Plan de Acción 2022-2025 de la estrategia nacional de abordaje integral de las enfermedades no transmisibles.
+Con el plan, se pretende “detener el aumento relativo de la tasa de mortalidad prematura por las ENT priorizadas (cáncer, cardiovascular, cerebrovascular, respiratoria crónica, renal crónica y diabetes)”. Para lo cual se definieron seis metas de impacto en la mortalidad prematura al 2030 por las enfermedades priorizadas:
+1- Reducir 2,5% la tasa de mortalidad prematura por cáncer de cérvix, mama, estómago y colon.
+2- Detener el aumento relativo de la tasa de mortalidad prematura por enfermedades cerebrovasculares mediante su prevención y tratamiento.
+3- Detener el aumento relativo de la tasa de mortalidad prematura por diabetes mellitus mediante su prevención y tratamiento.
+4- Detener el aumento relativo de la tasa de mortalidad prematura por enfermedad isquémica mediante su prevención y tratamiento.
+5- Detener el aumento relativo de la tasa de mortalidad prematura por enfermedades respiratorias crónicas mediante su prevención y tratamiento.
+6- Detener el aumento relativo de la tasa de mortalidad prematura por enfermedad renal crónica mediante su prevención y tratamiento.
+Alimentación adecuada y nutritiva según la perspectiva de los organismos internacionales
+El derecho a la salud y el derecho a la alimentación se encuentran indisolublemente unidos al constituirse en derechos básicos sin los cuales no se puede alcanzar un nivel de vida digno. El enfoque sobre el derecho humano a la alimentación y su relación con el derecho a la salud se ha ido modificando para incluir la perspectiva de alimentación adecuada y nutritiva, ampliando la concepción histórica que considera al derecho a la alimentación como la garantía de ser protegidos contra el hambre.
+El Comité de Derechos Económicos, Sociales y Culturales (CDESC) de la ONU, señaló que el derecho a la salud abarca una amplia variedad de factores determinantes que incluyen a la alimentación adecuada.
+El derecho a la alimentación adecuada está reconocido en diversos tratados internacionales siendo el Pacto Internacional de Derechos Económicos, Sociales y Culturales aquel que lo trata de manera más completa.
+La observación general N.º 12 del CDESC (1999) sostiene que el concepto de alimentación adecuada comprende la disponibilidad de alimentos en cantidad y calidad suficientes para satisfacer las necesidades alimentarias, sin sustancias nocivas y aceptables para una cultura determinada; y la sostenibilidad del acceso a los alimentos de las generaciones presentes y futuras. En este sentido, el CDESC determinó que los deberes que recaen sobre los Estados en relación al derecho a una alimentación adecuada son las obligaciones de respetar, proteger y realizar: “el Estado debe procurar iniciar actividades con el fin de fortalecer el acceso y la utilización por parte de la población de los recursos y medios que aseguren sus medios de vida, incluida la seguridad alimentaria…”.
+Interés superior del menor
+El artículo 51 de nuestra Constitución establece que la familia es un elemento natural y fundamento de la sociedad, tiene derecho a la protección especial del Estado. Igualmente tendrá derecho a esa protección la madre, el niño, el anciano y el enfermo desvalido. Esta garantía permite que el Estado tome medidas de protección de esos grupos vulnerables.
+Cumpliendo con esa obligación el Estado costarricense ha suscrito la Ley 7184, Convención sobre los Derechos del Niño. Esta Convención establece la obligación de los Estados de adoptar las medidas administrativas, legales y de cualquier índole para garantizar los derechos de las personas menores de edad:
+Artículo 4- Los Estados Parte adoptarán todas las medidas administrativas, legislativas y de otra índole para dar efectividad a los derechos reconocidos en la presente Convención. En lo que respecta a los derechos económicos, sociales y culturales, los Estados Partes adoptarán esas medidas hasta el máximo de los recursos de que dispongan y, cuando sea necesario, dentro del marco de la cooperación internacional.
+De la Convención destaca lo estipulado en el artículo 17 sobre la obligación estatal de establecer directrices que protejan a los menores de información y material perjudicial para su bienestar:
+Artículo 17- Los Estados Parte reconocen la importante función que desempeñan los medios de comunicación social y velarán porque el niño tenga acceso a información y material procedentes de diversas fuentes nacionales e internacionales, en especial la información y el material que tengan por finalidad promover su bienestar social, espiritual y moral y su salud física y mental. Con tal objeto, los Estados Partes:
+(…)
+e) Promoverán la elaboración de directrices apropiadas para proteger al niño contra toda información y material perjudicial para su bienestar, teniendo en cuenta las disposiciones de los artículos 13 y 18.
+La ley 7739 aprueba el Código de la Niñez y la Adolescencia, que viene a ampliar las obligaciones del Estado en la protección de las personas menores de edad:
+Artículo 4- Políticas estatales
+Será obligación general del Estado adoptar las medidas administrativas, legislativas, presupuestarias y de cualquier índole, para garantizar la plena efectividad de los derechos fundamentales de las personas menores de edad.
+En la formulación y ejecución de políticas, el acceso a los servicios públicos y su prestación se mantendrá siempre presente el interés superior de estas personas. Toda acción u omisión contraria a este principio constituye un acto discriminatorio que viola los derechos fundamentales de esta población.
+De conformidad con el régimen de protección especial que la Constitución Política, la Convención sobre los Derechos del Niño, este Código y leyes conexas garantizan a las personas menores de edad, el Estado no podrá alegar limitaciones presupuestarias para desatender las obligaciones aquí establecidas.
+El interés superior del menor se incorpora en el artículo 5 fortaleciendo la protección de los menores:
+Artículo 5- Interés superior
+Toda acción pública o privada concerniente a una persona menor de dieciocho años, deberá considerar su interés superior, el cual le garantiza el respeto de sus derechos en un ambiente físico y mental sano, en procura del pleno desarrollo personal.
+La determinación del interés superior deberá considerar:
+a) Su condición de sujeto de derechos y responsabilidades.
+b) Su edad, grado de madurez, capacidad de discernimiento y demás condiciones personales.
+c) Las condiciones socioeconómicas en que se desenvuelve.
+d) La correspondencia entre el interés individual y el social.
+Estas garantías permiten al Estado costarricense la adopción de medidas orientadas a la efectiva protección de los menores. Encontramos que nuestro país cuenta con protección especial como es la "Norma para Etiquetado Nutricional de productos alimenticios preenvasados para consumo humano para la población a partir de 3 años de edad”, así como el Reglamento de comedores y sodas escolares del MEP.
+Ley General de Salud
+La Ley General de Salud parte del principio de que la salud es un bien de interés público que el Estado debe tutelar. La Ley contempla una serie de disposiciones de orden público que atribuyen al Ministerio de Salud potestades sobre todos los sujetos públicos o privados.
+La salud es un bien de interés público tutelado por el Estado. El artículo 2 señala que es función esencial del Estado velar por la salud de la población, correspondiendo al Ministerio de Salud la definición de salud, la planificación y coordinación de todas las actividades públicas y privadas relativas a la salud, así como la ejecución de aquellas actividades que le competen de acuerdo con la ley.
+El Ministerio de Salud en resguardo de la salud pública, según el artículo 4, establece que toda persona, natural o jurídica, queda sujeta a los mandatos de esa Ley, reglamentos, órdenes generales o particulares, ordinarias y de emergencia, que las autoridades de salud dicten en el ejercicio de sus competencias.
+Corresponde a los Estados tomar medidas para prevenir y evitar interferencias al derecho a la salud. En el caso de dietas poco saludables, en su deber de proteger el derecho a la salud, deberá regular que, actividades como la industria de alimentos y bebidas brinde información precisa, comprensible, adecuada. Información que facilite la toma de decisión del consumidor.
+En relación con los operadores de actividades en materia de alimentos para consumo humano la ley indicada contempla una serie de obligaciones derivadas del derecho a la salud:
+Artículo 196- La nutrición adecuada y la ingestión de alimentos de buena calidad y en condiciones sanitarias, son esenciales para la salud y por lo tanto, las personas naturales y jurídicas que se ocupen en actividades relacionadas con alimentos, destinados al consumo de la población, deberán poner el máximo de su diligencia y evitar omisiones en el cumplimiento de las disposiciones legales y reglamentarias pertinentes y de las órdenes especiales que la autoridad de salud pueda dictar, dentro de sus facultades, en resguardo de la salud.
+Artículo 197- Se entiende por alimento y por producto alimenticio, para los efectos legales y reglamentarios, toda sustancia o producto natural o elaborado, que al ser ingerido por el hombre (sic) proporcione al organismo los elementos necesarios para su mantenimiento, desarrollo y actividad y todo aquel, que, sin tener tales propiedades, se consuma por hábito o agrado.
+Se consideran alimentos, para los mismos efectos, los aditivos alimentarios tendiéndose por tal, toda sustancia o producto natural o elaborado, que, poseyendo o no cualidades nutritivas, se adicione a los alimentos para coadyuvar, modificar o conservar sus propiedades.
+Artículo 198- Se entenderá por alimento enriquecido todo aquel al cual se le han adicionado sustancias en las cantidades recomendadas por los reglamentos a las normas nutricionales con el objeto de reforzar su valor nutritivo.
+Derechos de los consumidores
+La normativa costarricense contempla la debida protección de los derechos del consumidor. Para ello se cuenta con la Ley 7472 sobre la Promoción de la Competencia y Defensa Efectiva del Consumidor.
+El artículo 32 establece el listado de derechos del consumidor:
+Derechos del consumidor
+Sin perjuicio de lo establecido en tratados, convenciones internacionales de las que Costa Rica sea parte, legislación interna ordinaria, reglamentos, principios generales de derecho, usos y costumbres, son derechos fundamentales e irrenunciables del consumidor, los siguientes:
+a) La protección contra los riesgos que puedan afectar su salud, su seguridad y el medio (sic) ambiente.
+b) La protección de sus legítimos intereses económicos y sociales.
+c) El acceso a una información, veraz y oportuna, sobre los diferentes bienes y servicios, con especificación correcta de cantidad, características, composición, calidad y precio.
+d) La educación y la divulgación sobre el consumo adecuado de bienes o servicios, que aseguren la libertad de escogencia y la igualdad en la contratación.
+e) La protección administrativa y judicial contra la publicidad engañosa, las prácticas y las cláusulas abusivas, así como los métodos comerciales desleales o que restrinjan la libre elección.
+f) Mecanismos efectivos de acceso para la tutela administrativa y judicial de sus derechos e intereses legítimos, que conduzcan a prevenir adecuadamente, sancionar y reparar con prontitud la lesión de estos, según corresponda.
+g) Recibir el apoyo del Estado para formar grupos y organizaciones de consumidores y la oportunidad de que sus opiniones sean escuchadas en los procesos de decisión que les afecten.
+En el artículo 33 se detallas las funciones del Poder Ejecutivo:
+En los términos establecidos en la presente Ley, son funciones esenciales del Estado las siguientes:
+a) Velar porque los bienes y servicios que se vendan y se presten en el mercado, cumplan con las normas de salud, seguridad, medio ambiente y los estándares de calidad.
+b) Formular programas de educación e información para el consumidor, con el propósito de capacitarlo para que pueda discernir y tomar decisiones fundadas acerca del consumo de bienes y servicios, con conocimiento de sus derechos.
+c) Fomentar y promover las organizaciones de consumidores y garantizar su participación en los procesos de decisión y reclamo, en torno a cuestiones que afectan sus intereses.
+d) Garantizar el acceso a mecanismos efectivos y ágiles de tutela administrativa y judicial, para defender los derechos y los intereses legítimos de los consumidores.
+e) Estructurar una canasta básica que satisfaga, por lo menos, las necesidades de los costarricenses cuyo ingreso sea igual o inferior al salario mínimo establecido por ley y regular, cuando lo considere necesario, los bienes y servicios que la componen.
+Como contraparte de los derechos, en el artículo 34 se detallan una serie de obligaciones del comerciante y el productor con el consumidor:
+(…)
+b) Informar suficientemente al consumidor, en español y de manera clara y veraz, acerca de los elementos que incidan de forma directa sobre su decisión de consumo. Debe enterarlo de la naturaleza, la composición, el contenido, la fecha de caducidad, el peso, cuando corresponda, de las características de los bienes y servicios, el país de origen, el precio de contado en el empaque, el recipiente, el envase o la etiqueta del producto y la góndola o el anaquel del establecimiento comercial, así como de cualquier otro dato determinante, como sustancias adicionales que se le hayan agregado al producto original.
+En el caso de los productos agropecuarios, debe indicarse el país de origen de cada producto en un lugar visible del empaque, el envase o la etiqueta, así como la fecha de producción o procesamiento en el país de origen. Tratándose de productos no empacados o envasados, esta información deberá consignarse en un lugar visible y claramente legible de la góndola o el anaquel del establecimiento comercial donde se encuentren ubicados. En todos estos casos, los productos nacionales deberán identificarse con la frase: "Producido en Costa Rica" u otra que permita identificar claramente el origen del producto. La verificación de lo dispuesto en el párrafo anterior, en materia de información y trazabilidad, la deberán realizar el Ministerio de Agricultura y Ganadería (MAG), el Ministerio de Salud y el Ministerio de Hacienda por medio de la Dirección General de Aduanas, de conformidad con lo que al efecto dispongan los reglamentos técnicos específicos aplicables a cada producto.
+Si se trata de productos orgánicos, esta condición deberá indicarse en un lugar visible. Además, la etiqueta del producto deberá indicar cuál es el ente certificador.
+De acuerdo con lo dispuesto en el reglamento de la presente ley, cuando el producto que se vende o el servicio que se presta se pague al crédito, deben indicarse siempre, de forma visible, el plazo, la tasa de interés anual sobre saldos, la base, las comisiones y la persona física o jurídica que brinda el financiamiento, si es un tercero.
+c) Ofrecer, promocionar o publicitar los bienes y servicios de acuerdo con lo establecido en el artículo (*)34 de esta Ley. (*Actualmente corresponde al 37).
+d) Suministrar, a los consumidores, las instrucciones para utilizar adecuadamente los artículos e informar sobre los riesgos que entrañe el uso al que se destinan o el normalmente previsible para su salud, su seguridad y el ambiente.
+m) Cumplir con lo dispuesto en las normas de calidad y las reglamentaciones técnicas de acatamiento obligatorio.
+n) Mantener en buenas condiciones de funcionamiento y debidamente calibradas las pesas, las medidas, las registradoras, las básculas y los demás instrumentos de medición, que utilicen en sus negocios.
+ñ) Extender la factura o el comprobante de compra, donde conste, en forma clara, la identificación de los bienes o servicios, así como el precio efectivamente cobrado. En los casos de ventas masivas, se faculta al Ministerio de Economía, Industria y Comercio para autorizar el establecimiento de otros sistemas mediante los cuales se compruebe la compra.
+o) Apegarse a la equidad, los buenos usos mercantiles y a la ley, en su trato con los consumidores.
+Toda información, publicidad u oferta al público de bienes ofrecidos o servicios por prestar, transmitida por cualquier medio o forma de comunicación, vincula al productor que la transmite, la utiliza o la ordena y forma parte del contrato.
+El incumplimiento de alguna de las obligaciones enumeradas en este artículo, faculta al interesado para acudir a la Comisión nacional del consumidor creada en esta Ley, o a los órganos jurisdiccionales competentes y para hacer valer sus derechos, en los términos que señala el artículo (*)43 de la presente Ley. (*Actualmente corresponde al 46).
+En la normativa transcrita encontramos base para la protección del consumidor de contar con información que le permita tomar decisiones de compra basadas en información accesible que sea fácilmente comprensible al revisar el empaque del producto. Todo enmarcado en la obligación del Estado de proteger la salud pública, a cargo del ministro del ramo.
+Ambientes alimentarios
+La Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO) a los ambientes alimentarios los define como: “El conjunto de todos los diferentes tipos de alimentos que las personas tienen a su disposición y alcance en sus vidas cotidianas, es decir, la variedad de alimentos que se encuentran en supermercados, pequeñas tiendas al por menor, mercado de productos frescos, puestos ambulantes, cafeterías, casas de té, comedores escolares, restaurantes y demás lugares donde las personas compran y consumen alimentos”. (Fuente: Araneda, J y col Una mirada actualizada sobre los ambientes alimentarios y obesidad. Rev Chil Salud Pública 2020, Vol. 24(1): 67-71).
+Los ambientes o entornos alimentarios comprenden aspectos sociales de la vida cotidiana, además del entorno físico en que habita una persona y que finalmente orienta su consumo alimentario. Un ambiente alimentario saludable favorece la selección o el consumo de alimentos o preparaciones culinarias sanas; por el contrario, un entorno alimentario no saludable o un ambiente obesogénico promueve la disponibilidad de alimentos de alta densidad energética, como los ultraprocesados, lo cual condiciona la presencia de enfermedades crónicas como obesidad y sobrepeso.
+Los patrones alimentarios de la población y el estado nutricional se moldean en los ambientes en donde las personas estudian, crecen, trabajan y se desarrollan, por lo cual implementar medidas para crear un ambiente alimentario más saludable es el camino más costo-efectivo para mejorar las dietas de la población y prevenir las ENT y la obesidad (Incap-Secomisca, 2020). Entre estas políticas se recomiendan el etiquetado nutricional frontal de advertencia, impuestos, subsidios a los alimentos saludables y las restricciones al mercadeo, promoción y publicidad a los productos alimenticios con exceso de nutrientes críticos y aumentar la disponibilidad de alimentos saludables.
+En los últimos años, la población ha sufrido un cambio nutricional, que se caracterizado por un incremento en el consumo de alimentos ultraprocesados y una disminución de alimentos naturales, como vegetales, frutas, leguminosas y cereales integrales. La dieta actual presenta una elevada densidad energética, a menudo provocada por un alto consumo de alimentos ultraprocesados ricos principalmente en azúcares, grasas saturadas y calorías, el consumo excesivo de estos nutrientes se ha asociado al desarrollo de enfermedades no transmisibles como la obesidad, enfermedades cardiovasculares y la diabetes.
+En el país existe una creciente oferta de alimentos preenvasados y ultraprocesados en supermercados, restaurantes y otros servicios de alimentación, con un perfil nutricional desfavorable o poco saludable En informes de la Organización Panamericana de la Salud se encontró que un incremento en las ventas per cápita de estos productos está asociado con el aumento del peso corporal y el desarrollo de enfermedades no transmisibles.
+Durante el periodo 2000-2013 se observó un aumento de 9,8% y 19,5% en las ventas de bebidas y alimentos ultraprocesados, respectivamente.
+En un estudio que evaluó la ingesta dietética de los principales nutrientes y sus fuentes alimenticias en adolescentes costarricenses de 1996 a 2017 se encontró que los adolescentes de 2017 informaron un consumo significativamente mayor de grasas insaturadas ácidos, bebidas azucaradas bollería/postres, otros alimentos ricos en almidón refinados y refrigerios/comidas rápidas que sus contrapartes de 1996. En 1996 y 2006, la principal fuente de calorías fue el arroz blanco, mientras que en 2017 fueron las bebidas azucaradas. La proporción de consumo de frijoles y arroz blanco fue significativamente mayor en 1996.
+Alimentación saludable en la región
+El Consejo de Ministros de Salud de Centroamérica -Comisca- del Sistema de Integración de Centroamericana (SICA), cuenta con una serie de infografías sobre enfermedades no transmisibles y alimentos ultra procesados:
+En el marco de la Semana del Bienestar Emocional 2020 y el 71 Aniversario el INCAP, SE-COMISCA e INCAP presentamos una campaña informativa acerca de la importancia de una alimentación saludable, la prevención de enfermedades crónicas y el denominado Etiquetado Frontal de Advertencia Nutricional (EFAN) el cual es una de las intervenciones más costo-efectivas para la prevención de enfermedades no transmisibles; y una estrategia esencial para la creación de ambientes y sistemas alimentarios saludables y sostenibles.
+La propuesta de un nuevo etiquetado frontal de advertencia nutricional fue elevada a la Secretaría de Integración Económica Centroamericana (SIECA) por el Consejo de Ministros de Salud de Centro América y República Dominicana (COMISCA), con el fin de fortalecer y mejorar el Reglamento Técnico Centroamericano (RTCA) en materia de etiquetado de alimentos y bebidas.
+El motivo de esta campaña es informar a la población y a las partes de interesadas sobre la importancia de contar con un nuevo etiquetado frontal de advertencia nutricional, basado en la mejor evidencia disponible, que ayude a la población a tomar decisiones más saludables y a su vez reduzca la carga de enfermedades crónicas para la población y para los sistemas de salud de los Estados miembros del SICA.
+Figura N.° 6
+¿Qué es exactamente el etiquetado frontal de advertencia?
+El etiquetado de alimentos está relacionado con una variedad amplia de estrategias de mercadeo que tienen por objetivo lograr el reconocimiento social de que productos superfluos y potencialmente dañinos a la salud son alimentos esenciales. Para ello se incorporan al etiquetado elementos persuasivos e información o declaraciones engañosas o poco claras que promueven su compra.
+La OPS la considera una de sus líneas de acción para la prevención de la obesidad en la niñez y la adolescencia. Incluso la Organización Mundial de la Salud, en el Informe de la Comisión para Acabar con la Obesidad Infantil (ECHO), propone poner en marcha un etiquetado del frente del envase fácil de interpretar, apoyado en la educación del público para que tanto los adultos como los niños tengan conocimientos básicos en materia de nutrición.
+El etiquetado frontal es una herramienta educativa en sí misma, pues suministra información y se integra a las recomendaciones de la educación alimentaria y de las campañas educativas que se impulsen. En comparación con las campañas de educación alimentaria en los medios de comunicación, el etiquetado frontal de advertencias es más costo-efectivo, dado su alcance y gran autosostenibilidad con el transcurso del tiempo.
+Se han comparado diferentes sistemas para informar a los consumidores sobre el contenido excesivo de nutrientes críticos, los diferentes estudios llegan a la misma conclusión: las advertencias nutricionales en el etiquetado frontal cumplen mejor con la finalidad propuesta que otros sistemas, en varios países de América Latina, los estudios han demostrado que el etiquetado frontal con la advertencia con los octágonos el que mejor cumple con la finalidad de informar a los consumidores cuáles son los productos que contienen cantidades excesivas de nutriente.
+El etiquetado frontal de advertencias ha sido adoptado por muchos países a nivel mundial con diferentes modelos, como se muestra a en la figura siguiente:
+Figura N.° 7
+Fuente: https://www.nocomasmasmentiras.org/wp-content/uploads/2023/06/Etiquetado-frontal-de-advertencia-alrededor-del-mundo.pdf
+En América Latina (AMRO) lo han adoptado: Argentina, Bolivia, Brasil, Canadá, Chile, Colombia, Ecuador, México, Perú, Paraguay, Uruguay y Venezuela.
+Figura N.° 8
+Países de la AMRO que habían adoptado un sistema de FOPNL
+(hasta agosto de 2022)
+Fuente: Estudio de políticas sobre el etiquetado nutricional frontal en las Américas: Evolución y resultados https://www.thelancet.com/cms/10.1016/j.lana.2022.100400/attachment/c436f5a9-d339-4e9a-ba7b-0dceccf847c9/mmc2.pdf
+Tipos de sistemas de etiquetado
+Existe muchos sistemas de etiquetado frontal con información nutricional, pero cada uno tiene una finalidad diferente. Se anotan algunos según se describen en el documento “El etiquetado frontal como instrumento de política para prevenir enfermedades no transmisibles en la Región de las Américas” de la OPS.
+Sellos de aprobación: se colocan logotipos y sellos en el frente del envase en los productos alimenticios cuya compra se quiere promover (por ejemplo, el logotipo del ojo de la cerradura verde originalmente diseñado por la Dirección Nacional de Alimentos de Suecia y el logotipo “Choices” desarrollado por fabricantes de productos ultraprocesados).
+Sistemas de resumen: otorgan una puntuación resumida al valor nutritivo del producto (por ejemplo, los cinco niveles del sistema Nutri- Score elaborado en Francia, que emplea las letras A, B, C, D y E, el producto más favorable nutricionalmente obtiene una puntuación “A” verde y el producto nutricionalmente menos favorable obtiene una puntuación “E” roja o las 10 puntuaciones del sistema Health Star de Australia, que va de media estrella a cinco estrellas, cuantas más estrellas, más saludable es el alimento.
+Cantidades diarias orientativas (CDO, también conocidas a veces por la sigla en inglés GDA) monocromáticas
+Aplican una reproducción en miniatura del cuadro de datos nutricionales en la etiqueta frontal (como los que utiliza la industria de productos ultraprocesados indican el número de calorías, la cantidad de ciertos nutrientes y su aporte porcentual a la ingesta diaria).
+CDO o sistema de ingesta de referencia codificado por colores
+Utilizan tres colores, igual que los semáforos, dependiendo del contenido del nutriente. Las casillas vienen coloreadas de rojo, si el contenido del nutriente es elevado, de amarillo si el contenido es medio, o de verde si el contenido es bajo (por ejemplo, el sistema de codificación por colores en el etiquetado frontal de adopción voluntaria del Reino Unido):
+Diversos estudios han demostrado que el Sistema de etiquetado GDA tiene la comprensión más baja y genera confusión importante en población de bajos recursos.
+Sistemas con texto y codificación cromática para nutrientes específicos, también conocidos como “sistemas de semáforo”
+Utilizan información textual múltiple asociada con códigos de color para indicar el nivel de concentración de nutrientes específicos (por ejemplo, el sistema ecuatoriano de cumplimiento obligatorio presenta el contenido de azúcares, grasas o sodio empleando texto, códigos cromáticos y barras de diferente tamaño para indicar el nivel de concentración de estos nutrientes en el producto como alto, medio o bajo).
+Advertencias nutricionales “ALTO EN/EXCESO”
+Emplean sellos con texto en la etiqueta frontal del envase para informar a los consumidores cuando un producto contiene cantidades altas o excesivas de nutrientes críticos. Se señala “ALTO EN ‘X” o “EXCESO “X”, donde X representaría al nutriente de preocupación en cantidad elevada o excesiva (por ejemplo, EXCESO AZÚCARES).
+Evaluación de experiencias
+En Brasil se realizó un estudio a fin de evaluar la influencia de las declaraciones nutricionales sobre la eficacia de los modelos de etiquetado nutricional en el frente del paquete (FoPNL) en la comprensión de la información nutricional, la percepción de salud y la intención de compra de los consumidores brasileños. Los resultados indicaron que la presencia de FoPNL aumentó la comprensión de la información y redujo la percepción de salud y la intención de compra. Los resultados prueban la eficacia de FoPNL en la comprensión y el juicio del consumidor.
+En Chile se realizó otro estudio para examinar los cambios en el contenido de calorías, azúcar, sodio y grasas saturadas de las compras de alimentos y bebidas después de la primera fase de implementación de esta ley, encontrando que la ley chilena de fase 1 de etiquetado de alimentos y políticas publicitarias se asoció con compras reducidas de alto contenido, lo que provocó disminuciones en los nutrientes comprados de interés.
+En Guatemala se realizó un estudio que evalúa la eficacia de Etiquetado Nutricional Frontal (FOPW) frente a las Pautas de Cantidad Diaria (GDA) sobre la percepción de salubridad (HP), la intención de compra (PI) y la comprensión objetiva del contenido de nutrientes (UNC) de los productos. Conclusiones: “FOPWL reduce la percepción de salubridad de los productos y la intención de compra, y aumenta la comprensión del contenido de nutrientes de los productos en comparación con GDA, es una herramienta efectiva para seleccionar opciones más saludables en adultos y niños, de comunidades rurales y urbanas y con menos de 6 años de educación”.
+En Costa Rica se han realizado dos estudios sobre etiquetado de alimentos:
+En el 2016 Unicef realizó un estudio en Argentina, Chile, Costa Rica y México con la finalidad de analizar las prácticas voluntarias sobre productos dirigidos a niños y las reglamentaciones actuales de etiquetado de alimentos, identificar modelos clave de etiquetado, regulados o voluntarios; probar el uso, la percepción y la preferencia de tales sistemas de etiquetado en padres y cuidadores; y proporcionar recomendaciones específicas a las principales partes interesadas de la región. Los datos demostraron que los padres sí están interesados en el contenido nutrimental de los productos que compran a sus hijos. En general se pudo observar que el 33% de los encuestados utilizan el etiquetado frecuentemente o siempre al momento de hacer compras para sus hijos o hijas, mientras que el 27% lo utiliza ocasionalmente. En general, la razón de preferencia del semáforo nutrimental, octágonos y sistema de resumen mayormente se debió al uso, (fácil, rápido y simple).
+No obstante, los resultados no fueron individualizados, se llega a la conclusión de que, para el desarrollo e implementación de un etiquetado efectivo, se debe mostrar de manera simple, consistente, llamativa y que se pueda interpretar rápidamente, que no requiera de habilidades matemáticas, que tome poco tiempo para interpretarlo y que sea consistente en toda la región.
+Para esto se propone dirigir los esfuerzos de la regulación del etiquetado frontal a los grupos más vulnerables (quienes tienen menor nivel de educación, menor nivel socioeconómico y viven en zonas rurales, entre otros). Además que debe ser respaldado y elaborado con evidencia científica, generada por instituciones que no tengan conflicto de interés y debe ir acompañado de una campaña educativa que asegure su sustentabilidad (Unicef, Instituto Nacional de Salud Pública de México, 2016).
+En el año 2016, en Costa Rica se realiza un estudio con el objetivo de explorar los conocimientos, importancia, utilidad y preferencias en población adulta del Gran Área Metropolitana de Costa Rica del etiquetado frontal de alimentos procesados como insumo para la toma de decisiones y ejecución de acciones en alimentación y nutrición. Se evaluaron diez sistemas de etiquetado nutricional frontal:
+1- GDA (Guía Diaria de Alimentación) monocromático.
+2- GDA coloreado.
+3- Semáforo.
+4- Esquema de la American Heart Association (AHA).
+5- Guía por estrellas (Health Star Rating).
+6- Programa Choices.
+7- Sensible Solution.
+8- Programa Smart Choices.
+9- NuValy.
+10- Keyhole
+Entre los hallazgos se tuvo que el 83% desconocen el significado de términos básicos utilizados en el etiquetado frontal, “tamaño de porción” y un 81% el “porcentaje de valor diario de nutrientes”.
+El 52% de los encuestados afirmó que el etiquetado frontal influía en su decisión de compra especialmente porque facilitaba consultar las calorías y nutrientes específicos, mientras que un 14% indicó que le permitía determinar las posibles consecuencias en la salud al consumir un alimento preenvasado. Sin embargo, un 48% negó la influencia del etiquetado frontal al momento de comprar debido a que ésta estaba regida por la costumbre o preferencia hacia una marca y por el factor precio (29%), un 25% indico que era información sin importancia, un 10% confusa y difícil de entender o insuficiente para la toma de decisión (4%).
+El 88% indicó que el etiquetado frontal ayudaba en la elección de productos alimenticios procesados. El etiquetado frontal fue catalogado como una herramienta útil para prevenir las ENT al considerar que facilita el control del consumo de nutrientes.
+Se concluyó que el etiquetado frontal de fácil interpretación, como lo es la Guía Diaria de Alimentación Coloreado fue preferido por una población educada que representa un posible agente de cambio en la práctica de una alimentación saludable, donde puede haber mayor impacto por los hábitos alimenticios que los caracterizan y el interés mostrado (Inciensa, 2016).
+Un estudio realizado por la Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO) y el Instituto de Nutrición y Tecnología de los Alimentos de la Universidad de Chile (INTA) concluyó:
+En este estudio, hemos encontrado que posterior a la implementación de la Ley de Etiquetado en Chile la industria de alimentos cambió positivamente sus discursos en cuanto a la regulación, mejoró la calidad de la oferta de alimentos, disminuyendo principalmente el contenido de azúcares y de sodio y utilizó la presencia de un portafolio de productos más saludables como una estrategia de promoción de sus productos. Adicionalmente, observamos que en términos agregados no hubo ningún impacto en cuanto a empleos, salarios y producción física del sector productivo de alimentos. Finalmente, nos parece relevante aclarar que las políticas de promoción de salud tienen objetivos sanitarios y, por ende, el levantamiento de información en cuanto a la respuesta de la industria de alimentos debe considerarse un argumento adicional, pero secundario en la promulgación de estas políticas. Existe evidencia robusta que demuestra el costo-efectividad de la implementación de acciones a nivel de entornos alimentarios en la prevención de la obesidad y sus enfermedades asociadas, en países con una variedad de contextos políticos y económicos.
+Existen otras evaluaciones sobre los resultados de la ley, realizadas por grupos académicos nacionales liderados por el Instituto de Nutrición y Tecnología de Alimentos (INTA) de la Universidad de Chile, en conjunto con la Universidad Diego Portales y la Universidad de Carolina del Norte de EEUU que demuestran lo siguiente:
+- Una disminución de un 14% de la compra de cereales para desayuno.
+- Un 25% menos en la compra de bebidas azucaradas.
+- Un 17% menos en la compra de postres envasados.
+- Una reducción promedio entre 46-62% de exposición de publicidad de alimentos en preescolares y adolescentes.
+- Que el 90% de las madres de preescolares, entienden y valoran positivamente los sellos de advertencia.
+- Una mejora de un 30% en la identificación de alimentos saludables por parte de las madres de los niños evaluados.
+- Una reducción en promedio de 25% de azúcares en las categorías de alimentos estudiadas.
+- Una reducción en promedio entre un 5-10% de sodio en las categorías de alimentos estudiadas.
+En México se realizó un monitoreo de la política de etiquetado frontal de advertencia, con el objetivo de analizar su impacto encontrando lo siguiente:
+Los resultados a corto y mediano plazo de diversos estudios realizaron por el Instituto Nacional de Salud Pública son consistentes entre sí mostrando que el etiquetado frontal de advertencias es aprobado, comprendido y usado por la población mexicana.
+La implementación del etiquetado frontal ha generado cambios saludables en las decisiones de compras reportados por los consumidores, a la par de una reformulación masiva mejorando la calidad de los productos y un cambio favorable en precios de productos más competitivos.
+Se determinó lo siguiente:
+- Aprobación de adultos: el 74% lo aprueba.
+- Aprobación en padres: 85% de los padres de familia a favor.
+- Comprensión del etiquetado en niños: 58% de padres de familia reportan que sus hijos comprenden fácilmente el etiquetado.
+- Comprensión adolescente: 77% reporta el etiquetado fácil’ o ’muy fácil’ de comprender, semejante a lo encontrado en Chile.
+- Comprensión de mini sellos: 51,1% de respuestas correctas para para identificar el producto menos saludable.
+- El 66% de los adultos reporto su uso.
+- El 65% de los padres de familia lo usa para comparar productos.
+- El 30% de los adolescentes los usa ‘frecuentemente’ o ’todo el tiempo’ al decidir qué comer o comprar.
+- EL 80% de los padres reportan comprar menos o dejar de comprar productos por los sellos.
+- Con respecto a la decisión de compra: 40,6% de adolescentes y 45,3% de adultos compran menos.
+- Reformulación de productos con edulcorantes 26% vs 17% (antes).
+¿Por qué es importante un Etiquetado Frontal de Advertencia?
+Los consumidores carecemos de información de fácil comprensión sobre los alimentos que consumimos, que nos permita analizar si son altos en sal, azúcar, grasas saturadas y calorías. Es cierto que los productos empacados cuentan con etiquetado sobre el contenido de elementos, pero esa información del producto empacado no es visible y entendible de manera que permita al consumidor tomar una decisión saludable basada en información entendible.
+Los últimos años, se ha venido planteando la utilización de una herramienta de información nutricional complementaria, conocida como etiquetado frontal de advertencia nutricional. Este instrumento de etiquetado frontal se convierte en una herramienta complementaria para facilitar la comprensión del consumidor del valor nutricional de los alimentos y con ello garantizar el derecho a la salud y a la información.
+Existe una tendencia mundial en que las comidas caseras son reemplazadas por alimentos procesados y bebidas azucaradas, por eso, es importante contar con herramientas para que los consumidores puedan utilizar, para conocer si el producto preenvasado que desean comprar tiene o no nutrientes críticos como: sodio, azúcares, grasas y calorías asociados a la mayor carga de enfermedades.
+La finalidad de las advertencias nutricionales en el etiquetado frontal del empaque es informar a los consumidores de una manera rápida, correcta y sencilla si el producto tiene una cantidad excesiva de nutrientes críticos como azúcares, grasas o sodio. No prohíbe a los consumidores comprar los productos, solo los ayuda a tomar una decisión fundamentada.
+La herramienta de etiquetado frontal busca también promover hábitos alimentarios más saludables y ciudadanos informados sobre lo que consumen.
+¿Por qué los sellos con figura de octágonos?
+El Instituto de Nutrición y Tecnología de Alimentos (INTA), Universidad de Chile, realizó un “Estudio sobre evaluación de mensajes de advertencia de nutrientes críticos en el rotulado de alimentos” en el año 2012, que detectó en el grupo objetivo claras diferencias a favor del mensaje de advertencia “exceso de azúcar” presentado dentro de un disco negro (octágono, figura xxx), en relación con otros propotipos. Asimismo, se concluyó que, en los casos de haber múltiples nutrientes críticos en exceso, es preferible poner varios mensajes de advertencia, uno por nutriente excesivo, en lugar de presentarlos todos en un único mensaje.
+Figura N.° 9
+Sello o disco
+En Costa Rica en el 2022 se realizó otro estudio con la finalidad de explorar los conocimientos, importancia, utilidad y preferencias en población adulta del Gran Área Metropolitana de Costa Rica del etiquetado frontal de alimentos procesados como insumo para la toma de decisiones y ejecución de acciones en alimentación y nutrición.
+Se incluyeron únicamente mayores de 18 años, distribuidos aleatoriamente en cinco grupos: un grupo control, que evaluó las imágenes sin etiquetado nutricional frontal, y cuatro grupos experimentales que evaluaron las imágenes con uno de los cuatro sistemas de etiquetado evaluados (Guías Diarias de Alimentación (GDA), Advertencia octagonales, Semáforo y Nutri score.
+Se demostró que con los sistemas de sellos octagonales de advertencia los consumidores tomaron las mejores decisiones al elegir con mayor frecuencia comprar los productos alimenticios menos nocivos para la salud y lograron identificar correctamente con mayor frecuencia los productos menos nocivos y la presencia de un exceso de nutrientes críticos. Además, presentaron una mayor probabilidad de identificar correctamente cuándo los productos contenían cantidades excesivas de azúcares, sodio, grasas, grasas saturadas o grasas trans, y de identificar correctamente la opción menos nociva para la salud y de elegir comprar la opción menos nociva para la salud.
+En Jamaica se evaluaron los efectos de tres esquemas diferentes de etiquetado en el frente del paquete sobre la comprensión objetiva y la intención de compra de productos en Jamaica. (etiquetas de advertencia octogonales negras (OWL), lupa con un solo icono alto (MGG) o etiquetado de semáforo (TFL). Se encontró que las etiquetas de advertencia octagonales funcionaron mejor para mejorar la capacidad de los compradores adultos en Jamaica para comprender la información nutricional y alentarlos a comprar la opción menos dañina con más frecuencia.
+En Colombia se realizó un estudio cuyo objetivo fue evaluar las percepciones y reacciones a diferentes diseños de advertencia. Se trató de un experimento aleatorizado en un panel en línea de adultos mayores de 18 años (n= 1997). Los participantes fueron asignados al azar para ver una de cuatro etiquetas: una etiqueta de control (código de barras), una advertencia de octágono, una advertencia de círculo y una advertencia de triángulo. Después de ver todos los tipos de etiquetas, el 49% de los participantes seleccionaron la advertencia del octágono como la que más les disuadía de consumir productos con alto contenido de nutrientes preocupantes, mientras que el 21% y el 27% seleccionaron la advertencia del círculo y el triángulo.
+Con la finalidad de identificar el esquema del frente del paquete (múltiple semáforo (MTL), Nutri-Score (NS) y el sistema de advertencia del octágono negro (WS)) más eficaz para reducir la intención de compra y la percepción de la salubridad del producto de yogures y galletas, y queso para untar, y evaluar la influencia conjunta de las declaraciones de nutrientes sobre los efectos: se realizó un experimento controlado aleatorizado. Los hallazgos respaldaron que WS funciona mejor que NS y MTL en la reducción de la intención de compra y la percepción de salubridad de productos con cantidades excesivas de nutrientes críticos asociados con la mayor carga de enfermedades.
+Los octágonos son de color negro con borde y letras en color blanco y con la advertencia en mayúscula. Estas señalan si el alimento o bebida no alcohólica preenvasada contiene exceso en sodio, azúcares, grasas o calorías.
+Esta figura o sello se ubicaría en el tercio superior de la superficie principal de exhibición del envase del alimento o bebida no alcohólica preenvasada que contenga los nutrientes críticos antes mencionados.
+No podrá estar cubierto por ningún otro elemento, ni será desprendible. Deberá también estar escrito en idioma español.
+Información simple
+Se reitera que el etiquetado frontal tiene como objetivo informar de manera ágil y simple sobre los nutrientes críticos que se encuentran en exceso en el producto. Es de fácil comprensión. En la parte de atrás siempre estará la tabla nutrimental que detalladamente desglosará el contenido de los ingredientes.
+Una herramienta como esta presenta atributos positivos, ayuda al consumidor a identificar productos que contienen cantidades excesivas de nutrientes críticos como: grasas, azúcares, sodio y calorías.
+En necesario contar con una herramienta sencilla para el consumidor dado que hay varios factores que inciden en la decisión de compra en los consumidores y se ha comprobado que los consumidores realizan muy poco esfuerzo cognitivo y tiempo para decidir sus compras.
+¿Qué son los nutrientes críticos?
+Los nutrientes críticos son aquellos cuyo déficit o exceso en la alimentación constituye un factor de riesgo, tales como la sal, el azúcar, las grasas o calorías, tal como se muestra en la siguiente figura:
+Figura N.° 10
+Obesidad
+El proyecto no tiene como objetivo resolver el problema de la obesidad. El proyecto busca contribuir con las políticas nacionales para atender este problema. Se contempla la importancia de la educación desde el hogar y centros educativos sobre alimentación saludable.
+El objetivo del etiquetado frontal con advertencia es proteger la salud y los derechos humanos de la población, por medio del acceso a información visible, rápida y de fácil comprensión sobre los nutrientes críticos que contienen los alimentos o bebidas no alcohólica preenvasadas.
+Esto se visualiza en la siguiente figura que corresponde a un infográfico de Comisca, evidencia que un ambiente promotor de la salud se enmarca en políticas nacionales. Y dentro de estas el etiquetado de advertencia nutricional al frente del empaque:
+Figura N.° 11
+Visibiliza ingredientes que pueden representar un riesgo para la salud de las personas, ya que se asocian con enfermedades como la hipertensión, la diabetes y la obesidad:
+Figura N.° 12
+Define cuándo los productos tienen contenido excesivo de azúcares, grasas, grasas saturadas, grasas trans y sodio y se basa en las metas de ingesta de nutrientes de la población de la OMS, que se ajustan de acuerdo con las necesidades energéticas, no una cantidad fija por día.
+Se basa en las recomendaciones de la Organización Mundial de la Salud (OMS) y las metas de ingesta de nutrientes que se han formulado con base en un riguroso examen científico de la evidencia.
+Perfil de nutrientes
+El Modelo de Perfil de Nutrientes de la Organización Panamericana de la Salud (OPS) es el instrumento desarrollado a pedido de los países de la región para poder establecer qué productos deben ser alcanzados por las regulaciones y llevar la advertencia sanitaria.
+Proporciona una herramienta para clasificar los productos con contenido excesivo de azúcares, grasas, grasas saturadas, grasas trans y sodio y se basa en las metas de ingesta de nutrientes de la población de la OMS.
+Aspectos relevantes de esta propuesta
+Esta propuesta, sometida a consideración de esta honorable Asamblea, presenta algunos elementos que deben destacarse, tales como las siguientes.
+Se vuelve un imperativo ético actuar y adoptar el sistema de advertencias nutricionales en el etiquetado frontal teniendo en cuenta el volumen y la congruencia de la evidencia que apoya este sistema: el que mejor cumple con la finalidad de informar a los consumidores cuáles son los productos que contienen cantidades excesivas de nutrientes que son causa de la morbilidad y la mortalidad más altas en la Región de las Américas.
+Plazo de inicio
+La ley entraría en vigencia 18 meses después de su aprobación. Esto con el fin de dar tiempo a la industria alimentaria para realizar los ajustes necesarios, tales como posibles modificaciones en sus empaques, lo que no sería un costo adicional a su actividad, ya que es parte de su accionar.
+Este holgado periodo permitirá al sector industrial agotar los inventarios, para que con una nueva contratación de material para sustituir lo que se está agotando, pueda ajustarse a lo establecido en la ley.
+Igual oportunidad se tendrá en el caso de preparar alguna campaña promocional y de diferenciación de sus productos, momentos en que el reemplazo de los empaques permitirá ajustar lo dispuesto en la ley.
+Reiteramos que implementar este etiquetado requerirá una primera inversión en las placas que se necesitan para imprimir los empaques con un posible sello. Será una inversión por única vez.
+Ya en el mercado nacional encontramos productos importados con estos sellos, provenientes de países como México o Chile. Esto deberá incluirse en aquellos productos nacionales de alimentos y bebidas que se exporten a terceros mercados como Chile, México, Argentina o Colombia, para cumplir con regulaciones del país destino de sus productos, por lo que debe estar preparado para acatar normas internacionales, regionales o nacionales.
+Leyendas precautorias
+Se contemplan leyendas precautorias sobre contenido de cafeína y edulcorantes, no recomendables para consumo en niñas y niños y así evitar que los consuman.
+Exclusiones
+El etiquetado frontal se aplicará a los productos que estén formulados, elaborados y envasados en ausencia del consumidor, que tengan agregados azúcares y/o sodio y/o grasas como ingredientes propiamente dichos, o como parte de otros ingredientes de la fórmula, y las cantidades de azúcares añadidos, grasas saturadas, grasas totales, sodio y/o energía en el producto listo para el consumo (preparado de acuerdo a las instrucciones del fabricante, si corresponde) sean iguales o superiores a los límites establecidos por decreto.
+La propuesta claramente establece que no se aplicaría a todos los productos.
+Expresamente se excluyen los siguientes productos:
+- Sal destinada al consumo humano.
+- Aceites vegetales.
+- Azúcar blanco, moreno, refinada, panela y miel.
+- Extractos de café, granos de café enteros o molidos descafeinados o no.
+- Hierbas, especias o mezcla de ellas.
+- Infusiones de hierbas.
+- Vinagres fermentados y sucedáneos.
+- Suplementos a la dieta.
+- Preparados para lactantes
+Productos genéticamente modificados
+Una advertencia necesaria es que esta propuesta de ley no se aplicaría a productos genéticamente modificados.
+No se prohibirá ningún producto
+Otra información aclaratoria, la propuesta no viene a prohibir producto alguno, el consumidor con su libre albedrío decidirá sobre su poder de compra contando con información más clara para tomar su libre decisión sobre si lo adquiere o no.
+Reglamento Técnico Centroamericano
+En nuestro país está vigente el Reglamento (decreto 37280-COMEX-MEIC) de Etiquetado General de los Alimentos Previamente Envasados (Preenvasados), basado en el reglamento comunitario Reglamento Centroamericano de Etiquetado de Alimentos Preenvasados RTCA 67.01.07:10, y el decreto 40454-Meic-Comex publicado en el Acuerdo N.° 1-2016 (Comieco-LXXVII) del 1 de setiembre de 2016 y su anexo: "Guía para la Interpretación del Reglamento Técnico Centroamericano sobre Etiquetado General de los Alimentos Previamente Envasados (Preenvasados)"). Ambos aprobados por el Consejo de Ministros de Integración Económica -Comieco- del SICA.
+La actual versión del RTCA 67.01.07:10 establece el marco normativo común de requisitos y exigencias para el etiquetado de un producto previamente envasado, se indican las reglas para el etiquetado de esos productos en Centroamérica, con el fin de propiciar su libre circulación en la región.
+El RTCA 67.01.07:10 está basado en las disposiciones del Codex Alimentarius, que es el más alto organismo internacional en materia de normas de alimentación, este es un organismo subsidiario de la Organización de las Naciones Unidas para la Agricultura y la Alimentación (FAO) y de la Organización Mundial de la Salud (OMS), la cual creó el “Codex Alimentarius o Código de Alimentación.” que es el conjunto de normas alimentarias adoptadas internacionalmente y presentadas de manera uniforme para proteger la salud de los consumidores, garantizar comportamientos correctos en el mercado internacional de los alimentos y coordinar todos los trabajos internacionales sobre normas alimentarias.
+Se debe destacar que este reglamento carece de los lineamientos del Codex Alimentarius, contenidos en el anexo 2 de las directrices para el etiquetado nutricional CXG 2-1985. Por ello no viene a exigir nuevos requisitos, únicamente viene a facilitar información complementaria para facilitar al consumidor la toma de su decisión de adquirir o no ese producto.
+Esta propuesta busca complementar nuestra normativa vigente para ajustarse a las disposiciones vigentes del Codex Alimentarius, a lo establecido en el anexo 2 de las Directrices para el Etiquetado Nutricional CXG 2-1985.
+El anexo 2: Directrices para el Etiquetado Nutricional en la Parte Frontal del Envase, en el punto 3 establece:
+El etiquetado nutricional en la parte frontal del envase (ENPFE) es una forma de información nutricional complementaria que presenta información nutricional simplificada en la parte frontal del envase de los alimentos preenvasados (resaltado nuestro).
+Puede incluir símbolos/gráficos, texto o una combinación de estos que proporcionen información sobre el valor nutricional global de los alimentos y/o sobre los nutrientes incluidos en el ENPFE a nivel nacional.
+Esta iniciativa de ley precisamente se basa en el anexo del Codex Alimentarius: el derecho humano a la salud, el derecho del consumidor de ser informado, con información simplificada e indicando factores de riesgo.
+Esa definición incluye varios elementos a resaltar: reducción de riesgo de contraer una enfermedad o problema relacionado con la salud, correcta interpretación por parte del consumidor, usar un lenguaje apropiado y haciendo referencia a otros factores de riesgo.
+Como indicamos el RTCA 67.01.07:10 es una adaptación de la Norma General del Codex para etiquetado de los Alimentos Previamente envasados Codex Stan 1-1985 (Rev. 1-1991 y enmendada en su 23°, 24°, 36°, 28° 31° y 33 períodos de sesiones 1999, 2001, 2003, 2005, 2008 y 2010). Esta norma Codex Stan 1-1985, establece una amplia definición de etiquetado:
+“Etiquetado”, cualquier material escrito, impreso o gráfico que contiene la etiqueta, acompaña al alimento o se expone cerca del alimento, incluso el que tiene por objeto fomentar su venta o colocación.
+La propuesta se ajusta a lo dispuesto en el punto 3 del RTCA 67.01.07:10 en las definiciones:
+3.7. Etiqueta: cualquier marbete, rótulo, marca, imagen, u otra materia descriptiva o gráfica, que se haya escrito, impreso, estarcido, marcado en relieve o en hueco-grabado o adherido al envase de un alimento.
+3.8. Etiqueta complementaria: aquella que se utiliza para poner a disposición del consumidor la información obligatoria cuando en la etiqueta original esta se encuentra en un idioma diferente al español o para agregar aquellos elementos obligatorios no incluidos en la etiqueta original y que el presente reglamento exige.
+3.9. Etiquetado: cualquier material escrito, impreso o gráfico que contiene la etiqueta, y que acompaña al alimento.
+El RTCA 67.01.07:10 indica en el punto 8:
+8.1. Etiquetado opcional. En el etiquetado podrá presentarse cualquier información o representación gráfica, así como materia escrita. impresa o gráfica, siempre que no esté en contradicción con los requisitos obligatorios del presente reglamento técnico, incluidos los referentes a la declaración de propiedades y al engaño, establecidos en la sección 4 Principios generales.
+RTCR 135:2002 Etiquetado nutricional de los alimentos preenvasados
+La propuesta también ha contemplado las disposiciones relacionadas con el derecho a la información que tienen los consumidores, de acuerdo a lo establecido en el decreto 30256-MEIC-S que aprueba el RTCR: 135:2002 Etiquetado nutricional de los alimentos preenvasados, que claramente indica:
+2º Que es función del Estado velar por que la información presentada en la etiqueta y en la publicidad de los alimentos no induzca a error o engaño al consumidor.
+3º Que es derecho del consumidor contar con información correcta que le permita discernir entre los diferentes productos que se ofrecen en el mercado, con el fin de proteger su salud y la economía doméstica.
+4º Que la información nutricional incorrecta e incompleta puede inducir a engaño y afectar la salud del consumidor.
+5º Que el etiquetado nutricional es una herramienta útil para la prevención y tratamiento de algunas enfermedades.
+Este decreto RTCA 135:2002 contiene las siguientes definiciones relacionadas con esta propuesta:
+3- DEFINICIONES
+Para los fines del presente reglamento se entenderá por:
+3.13 Declaración de propiedades relativas a la función de nutrientes: aquellas que describen la función fisiológica de un nutriente en el crecimiento, el desarrollo y las funciones normales del organismo.
+Ejemplos: "El calcio ayuda al desarrollo de dientes y huesos fuertes"; "La proteína ayuda a construir y reparar los tejidos corporales"; "El hierro es un factor en la formación de los glóbulos rojos"; "La vitamina E protege de la oxidación de la grasa de los tejidos corporales"; "Contiene ácido fólico: el ácido fólico contribuye al crecimiento normal del feto".
+3.14 Declaración de propiedades relativas al contenido de nutrientes: aquellas que describen el nivel de un determinado nutriente contenido en un alimento.
+Ejemplos: "fuente de energía"; "alto en fibra"; "bajo en grasa".
+3.15 Etiquetado nutricional: toda descripción destinada a informar al consumidor sobre las propiedades nutricionales de un alimento; comprende dos componentes: a) declaración de nutrientes. b) la información nutricional complementaria. (resaltado nuestro).
+Acuerdos regionales
+Igualmente, es necesario aclarar que esta propuesta de ley no generará obstáculos técnicos al comercio. Los acuerdos de libre comercio contemplan cláusulas referidas al derecho de los Estados parte de establecer normativa de protección de la salud, de los menores.
+El artículo 2 del Acuerdo sobre Obstáculos Técnicos al Comercio establece que:
+2.2 Los miembros se asegurarán de que no se elaboren, adopten o apliquen reglamentos técnicos que tengan por objeto o efecto crear obstáculos innecesarios al comercio internacional. A tal fin, los reglamentos técnicos no restringirán el comercio más de lo necesario para alcanzar un objetivo legítimo, teniendo en cuenta los riesgos que crearía no alcanzarlo. Tales objetivos legítimos son, entre otros: los imperativos de la seguridad nacional; la prevención de prácticas que puedan inducir a error; la protección de la salud o seguridad humanas, de la vida o la salud animal o vegetal, o del medio ambiente. Al evaluar esos riesgos, los elementos que es pertinente tomar en consideración son, entre otros: la información disponible científica y técnica, la tecnología de elaboración conexa o los usos finales a que se destinen los productos.
+Por su parte, el Protocolo de Guatemala, Ley N.° 7629, de 1996, indica que las normas técnicas derivadas de los procesos de concertación regional son instrumentos que deben ser aplicados de forma obligatoria a lo interno de los países, y por derivarse del Tratado General de Integración Económica Centroamericana, tienen superioridad jerárquica sobre las leyes nacionales, al tener el mismo rango de un tratado; no obstante, contemplan que no se puede omitir que la protección de la salud ostenta de una prioridad reconocida en el mismo marco que estableció los procesos de armonización regional, sea la que en su artículo 7 señala:
+Artículo 7. Los Estados parte convienen en perfeccionar la zona de libre comercio para todos los bienes originarios de sus respectivos territorios, para cuyo fin se eliminarán gradualmente todas las barreras arancelarias y no arancelarias al comercio intrarregional, eliminando toda restricción de carácter cuantitativo y cualquier otra medida de efecto equivalente, mediante la cual una de las Partes impida o dificulte unilateralmente el libre comercio. Las mercancías originarias de los Estados' Parte gozarán de tratamiento nacional en el territorio de todos ellos. Queda a salvo el derecho de los Estados a establecer medidas de seguridad, policía y sanidad. Los Estados Parte acordarán a su vez un Reglamento Uniforme que regule todo lo referente a las medidas relativas a sanidad. Los Estados Parte se comprometen, en materia de normas técnicas, a conservar la aplicación del trato nacional a las ya existentes y convienen en establecer un proceso de armonización regional de la normativa técnica en general, que propicie el mejoramiento de la calidad de la producción y favorezca al consumidor, sin que ello implique obstáculos al comercio intrarregional. (Resaltado nuestro).
+De esa manera señala que esa disposición permite a los países miembros tomar decisiones basadas en la protección de la salud en cada país.
+Acuerdo sobre obstáculos técnicos al comercio
+Otra necesaria aclaración respecto a cualquier temor de que afectara el comercio internacional de los socios comerciales que no utilizan este sistema de etiquetado.
+En la región latinoamericana existe una tendencia de incluir regulaciones similares, precisamente para garantizar que los productos tengan aceptación en los consumidores de otros países, sin olvidar que nuestro país tiene suscritos tratados de libre comercio con otros países, como México, Chile, Perú, donde el etiquetado frontal está vigente. Esto se evidencia con productos en el mercado nacional que cuentan con esos sellos de advertencia, que provienen de otros países.
+Responsabilidad social empresarial
+El sector industrial debería considerar que esta propuesta les permitiría de manera solidaria contribuir con el mejoramiento de la calidad de vida de los habitantes de Costa Rica, como parte de su responsabilidad social empresarial. Sin olvidar los Principios Rectores de las Naciones Unidas sobre las Empresas y los Derechos Humanos, donde se establece que las empresas tienen la responsabilidad de identificar y mitigar los impactos negativos de sus operaciones sobre el derecho a la salud. Corresponde al Estado la supervisión de las empresas para prevenir impactos adversos sobre los derechos humanos.
+No podemos olvidar que las ENT tienen un gran impacto, socavan la productividad y aumentan los gastos de atención médica al mejorar la salud de la población, y conllevará a que los costos de atención de la ENT disminuyan, así mismo las discapacidades y las incapacidades laborales, lo que contribuirá positivamente en la reactivación de la economía nacional.
+En la publicación del The Lancet sobre los determinantes comerciales de la salud (dic 7, 2021) la Dra. Margaret Chan, siendo directora de la OMS, recuerda que:
+- La influencia corporativa se ejerce a través de cuatro canales: marketing, que mejora la deseabilidad y aceptabilidad de los productos insalubres; cabildeo, que puede obstaculizar las barreras políticas como el empaquetado genérico y la edad mínima para beber; estrategias de responsabilidad social empresarial, que pueden desviar la atención y encubrir reputaciones empañadas; y extensas cadenas de suministro, que amplifican la influencia de la empresa en todo el mundo. Estos canales impulsan el alcance corporativo y magnifican el impacto en la salud de la empresa comercial. La amplitud y profundidad de la influencia corporativa se amplía a medida que se llega a más personas con cada vez más opciones de consumo.
+El sector de alimentos y bebidas tiene que cumplir con regulaciones externas para la exportación, por lo que debería estar preparado para cumplir con las normas internacionales, regionales o nacionales.
+Los costos iniciales del etiquetado serán una inversión por única vez en la sustitución de las placas que se necesitan para imprimir las etiquetas. Las empresas que exportan o que operan en diferentes países ya tienen la obligación de cumplir con diferentes requisitos legislativos. Por otra parte, los costos iniciales para las empresas se diluyen durante el período de implementación.
+Pueden utilizarse temporalmente pequeñas calcomanías adheridas a la etiqueta frontal cuando ya se haya fabricado una gran cantidad de un producto con fechas de vencimiento a largo plazo. En esos casos, cuando el producto ya se ha etiquetado y está listo para venderse en el mercado nacional, los fabricantes pueden adherir pequeñas calcomanías con advertencias nutricionales para cumplir con la
+normativa. Los productos nuevos llevarán la nueva etiqueta, impresa con la placa nueva que incorpora las advertencias nutricionales en la etiqueta o en el envase.
+Los costos económicos incluyen tanto los costos de la atención médica y social como los costos "indirectos" resultantes de la morbilidad y la muerte como consecuencia de enfermedades crónicas relacionadas con la obesidad, y la consiguiente pérdida de productividad económica. Como indica el diagrama, los costos indirectos "invisibles" para la economía son significativamente superiores a los costes "visibles" de la asistencia sanitaria y social.
+Figura N.° 13
+“Desglose de los costes económicos de la obesidad utilizados para la predicción actual de los costes económicos del sobrepeso y la obesidad (datos de 2019)”
+Fuente: https://data.worldobesity.org/publications/WOF-Economic-Impacts-2-V2.pdf
+Por lo tanto, Costa Rica gana con la prevención y control de la ENT y obesidad no solo en aspectos sociales, sino económicos, como se observa en el siguiente esquema:
+Figura N.° 14
+El Valor de la Prevención y Control de las Enfermedades No Transmisibles
+Fuente: Presentación Dr. Jorge E. Victoria R., M.D., Mg. Sc, Asesor Prevención y Control de Enfermedades. OPS/OMS – Oficina en Costa Rica. 2023
+Por ejemplo, con tan solo una inversión de US $1.27 por persona y por año en los países de ingresos bajos y medios se podría lograr generar mayor crecimiento económico al 2030, tal como se muestra en el siguiente gráfico:
+Gráfico N.° 3
+Fuente: presentación Dr. Jorge E. Victoria R., M.D., Mg. Sc, asesor Prevención y Control de Enfermedades. OPS/OMS – Oficina en Costa Rica. 2023
+La industria y los líderes gubernamentales pueden proteger y mejorar la salud y promover la equidad en salud. Por tanto, en virtud de las anteriores consideraciones, se somete a conocimiento de la Asamblea Legislativa el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE ETIQUETADO FRONTAL CON ADVERTENCIAS NUTRICIONALES
+PARA PRODUCTOS ALIMENTICIOS Y BEBIDAS CON
+CONTENIDO NO ALCOHÓLICO
+ARTÍCULO 1- Objeto
+La presente ley tiene por objeto establecer un marco regulatorio para el etiquetado frontal de productos alimenticios y bebidas con contenido no alcohólico. Lo anterior, como mecanismo de advertencia nutricional, promoviendo el acceso a la información de manera visible, rápida y de fácil comprensión para las personas consumidoras de ese tipo de productos, cuando se comercialicen en el país y las reglas aplicables cuando se importen de otro.
+ARTÍCULO 2- Definiciones
+Para efectos de la presente ley, se entenderá por:
+Envase: cualquier recipiente o envoltura en la cual está contenido el producto preenvasado para su venta al consumidor.
+Envase múltiple o colectivo: cualquier empaque, recipiente o envoltura en la que se encuentren contenidos dos o más unidades de producto preenvasado, iguales o diferentes, destinados para su venta al consumidor.
+Etiqueta: cualquier rótulo, marbete, inscripción, imagen u otra materia descriptiva o gráfica, escrita, impresa, estarcida, marcada, grabada en alto o bajo relieve, adherida, sobrepuesta o fijada al envase del producto preenvasado o, cuando no sea posible por las características del producto, al embalaje.
+Etiquetado nutricional: toda descripción destinada a informar al consumidor sobre las propiedades nutricionales de un alimento, comprende dos componentes: a) declaración de nutrientes y b) la información nutricional complementaria.
+Etiquetado frontal de advertencia: sistema de información simplificado, ubicado en el área principal de exhibición del envase, que advierte de manera veraz, clara, rápida y simple sobre el contenido que exceda los niveles máximos de nutrientes críticos e ingredientes.
+Etiquetado frontal de advertencia de alimentos y bebidas no alcohólicas: sistema de información simplificada en el área frontal de exhibición del envase, el cual deberá advertir de manera veraz, clara, rápida y simple sobre el contenido que exceda los niveles máximos de contenido energético, azucares añadidos, grasas saturadas, sodio y los demás nutrientes críticos e ingredientes.
+Etiquetado frontal de advertencia de alimentos y bebidas no alcohólicas: sistema de información simplificada, en el área frontal de exhibición del envase, el cual debe advertir de manera veraz, clara, rápida y simple sobre el contenido que exceda los niveles máximos de contenido energético, azucares añadidos, grasas saturadas, grasas, sodio y los nutrimentos críticos, ingredientes y las demás que determine el Ministerio de Salud.
+Sistema de etiquetado frontal: sistema de información situado en la superficie principal de exhibición, que comprende los sellos de advertencia y las leyendas precautorias.
+Ingredientes: cualquier sustancia, incluidos los aditivos alimentarios, que se emplee en la fabricación o preparación de un alimento y esté presente en el producto final.
+Nutrientes críticos: sustancias químicas contenidas en los alimentos, cuyo exceso en la alimentación constituye un factor de riesgo de las enfermedades crónicas no transmisibles y obesidad. Estos son azúcares libres, grasas totales, grasas saturadas, grasas trans y sodio, serán determinados por el Ministerio de Salud.
+Publicidad y promoción: toda forma de comunicación, recomendación, mensaje o acción comercial con el fin, el efecto o el posible efecto de promover directa o indirectamente un producto, o de aumentar el reconocimiento, la atracción o el consumo de un producto.
+Patrocinio: toda forma de contribución a cualquier acto, actividad o individuo con el fin, el efecto o el posible efecto de promover directa o indirectamente un producto o el consumo de un producto.
+Personas menores de edad: personas con edad inferior a 18 años.
+Superficie principal de exhibición: área donde se encuentran la denominación y la marca comercial del producto.
+ñ) RTCA: Reglamentos Técnicos Centroamericanos.
+ARTÍCULO 3- Sujetos obligados
+Quedan sujetos a las obligaciones establecidas en la presente ley todas las personas, físicas o jurídicas, que fabriquen, produzcan, elaboren, fraccionen, envasen, reempaquen, encomienden envasar o fabriquen, distribuyan, comercialicen, pongan su marca o importen alimentos preenvasados para consumo humano en el territorio nacional.
+ARTÍCULO 4- Declaración de nutrientes
+Los alimentos preenvasados deben incluir en el etiquetado la declaración de nutrientes.
+El Ministerio de Salud considerará los tratados y convenciones internacionales de los cuales el Estado costarricense sea parte e incluyan materia de etiquetado para complementar esta ley.
+ARTÍCULO 5- Etiquetado frontal de advertencia nutricional
+Los alimentos preenvasados que contengan añadidos de azúcares libres, grasas o sodio, y en cuya composición final el contenido de nutrientes críticos y su valor energético exceda los valores establecidos de acuerdo con la presente ley deben incluir en la superficie principal del envase del producto y del envase múltiple o colectivo sellos de advertencia indelebles por cada nutriente crítico en exceso, según corresponda: “EXCESO DE AZÚCARES”; “EXCESO DE GRASAS”; “EXCESO DE GRASAS SATURADAS”; “EXCESO DE GRASAS TRANS”; “EXCESO DE SODIO”; “EXCESO DE CALORÍAS”.
+ARTÍCULO 6- Leyendas precautorias
+Adicional al etiquetado frontal de advertencia nutricional a que se refiere el artículo anterior, los alimentos preenvasados deberán cumplir con lo siguiente:
+a) Aquellos que contengan edulcorantes deben incluir en la superficie principal de exhibición del producto una leyenda precautoria indeleble que indique “CONTIENE EDULCORANTES - NO RECOMENDABLE PARA NIÑOS/AS”.
+b) Aquellos que contengan cafeína deben incluir en la superficie principal de exhibición del producto una leyenda precautoria indeleble que indique “CONTIENE CAFEÍNA - NO RECOMENDABLE PARA NIÑOS/AS Y PERSONAS SENSIBLES A LA CAFEÍNA”.
+ARTÍCULO 7- Características del etiquetado frontal de advertencia nutricional
+El etiquetado frontal de advertencia deberá hacerse de manera separada e independiente a la declaración de ingredientes e información nutricional, para indicar los productos que excedan los límites máximos de contenido energético, azúcares añadidos, grasas saturadas, sodio y los demás nutrientes críticos e ingredientes que establezca la normativa.
+El etiquetado frontal de advertencia nutricional o los sellos de advertencia para los efectos de esta ley, deben tener las siguientes características:
+a) Tener la forma de octágonos de color negro, con borde y letras en color blanco en mayúsculas, aplicados sobre un plano de fondo en color blanco.
+b) Estar ubicados en el tercio superior de la superficie principal de exhibición del envase.
+c) No podrá estar cubierto de forma parcial o total por ningún otro elemento.
+d) Será indeleble, no desprendible y estará escrito en idioma español.
+El tamaño de los sellos será normado vía reglamento, de acuerdo con las características del envase y al tamaño de la superficie principal de exhibición del envase. Para productos cuya superficie principal de exhibición sea inferior a 10 cm2 (diez centímetros cuadrados), cuando el espacio a ser ocupado por las advertencias que deben aplicarse supere el área total de esa superficie, el Ministerio de Salud determinará la alternativa de aplicación de las advertencias por medio del reglamento.
+ARTÍCULO 8- Otros sistemas de etiquetado frontal
+Se comprenderá por cumplido el etiquetado regulado en esta ley, cuando el producto provenga de su país de origen envasado, o bien, del país de reenvase, con etiquetas que cumplan los mismos requisitos establecidos en la presente normativa.
+ARTÍCULO 9- Valores establecidos para la aplicación del etiquetado frontal de advertencia nutricional
+Los valores de azúcares libres, grasas, grasas saturadas, grasas trans y sodio establecidos para obligar la inclusión de los sellos de advertencia son los siguientes:
+Exceso sodio: si la razón entre la cantidad de sodio (mg) en cualquier cantidad dada del producto y la energía (kcal) es igual o mayor a 1:1.
+También deberán llevar la advertencia “EXCESO SODIO” los productos que contengan cantidad de sodio superior a 300 mg por 100 g de producto y las bebidas endulzadas o saborizadas que no contengan calorías y que contengan cantidad de sodio superior a 40 mg por 100 ml de producto.
+Exceso azúcares: si en cualquier cantidad dada del producto la cantidad de energía (kcal) proveniente de los azúcares libres (gramos de azúcares libres x 4 kcal) es igual o mayor a 10% del total de energía (kcal).
+Exceso grasas: si en cualquier cantidad dada del producto la cantidad de energía (kcal) proveniente del total de grasas (gramos de grasas totales x 9 kcal) es igual o mayor a 30% del total de energía (kcal).
+Exceso grasas saturadas: si en cualquier cantidad dada del producto la cantidad de energía (kcal) proveniente de grasas saturadas (gramos de grasas saturadas x 9 kcal) es igual o mayor a 10% del total de energía (kcal).
+Exceso grasas trans: si en cualquier cantidad dada del producto la cantidad de energía (kcal) proveniente de grasas trans (gramos de grasas trans x 9 kcal) es igual o mayor al 1% del total de energía (kcal).
+En cuanto a los umbrales para definir la advertencia “EXCESO DE CALORÍAS” el Ministerio de Salud debe establecer parámetros específicos para su determinación vía reglamento.
+La determinación de estos umbrales corresponde a los límites del Modelo de Perfil de Nutrientes de la Organización Panamericana de la Salud; el Ministerio de Salud podrá actualizarlos de acuerdo a futuros cambios en las metas de ingesta de nutrientes de la población de la OMS, conforme establezca la Organización Panamericana de la Salud.
+ARTÍCULO 10– Excepciones
+Se exceptúan de la aplicación de lo establecido en los artículos 5 y 6 de la presente ley, los siguientes productos, siempre y cuando se presenten como el producto final acondicionado a la venta al público, sin adición de ningún otro ingrediente y sin ningún procesamiento o transformación, ni incluyan alguna declaración de propiedades nutricionales o de salud:
+Sal destinada al consumo humano.
+Aceites vegetales.
+Azúcar blanco, moreno, refinada, panela y miel.
+Extractos de café, granos de café enteros o molidos descafeinados o no.
+Hierbas, especias o mezcla de ellas.
+Infusiones de hierbas.
+Vinagres fermentados y sucedáneos.
+Suplementos a la dieta.
+Preparados para lactantes.
+Los alimentos para propósitos médicos específicos.
+Los suplementos dietarios.
+Las fórmulas para lactantes, niños y niñas hasta los 36 meses de edad.
+Los productos no envasados para la venta al consumidor.
+Los alimentos preparados en restaurantes o comercios gastronómicos;
+ñ) Los productos fraccionados al peso en mostrador a la vista de las y los consumidores.
+Los alimentos acondicionados para la venta al público constituidos por un único ingrediente, sin procesamiento o mínimamente procesados, que no poseen agregado de nutrientes críticos.
+Los vegetales en estado natural, las carnes frescas, huevo fresco de gallina y de otras especies, las legumbres o los cereales secos, siempre que no hayan sido adicionados con azúcares, sodio y/o grasas.
+Aquellos alimentos o bebidas sin contenido alcohólico preenvasados que, vía reglamento, determine el Ministerio de Salud, siempre que se cumpla con el objeto de esta ley.
+ARTÍCULO 11- Promoción de la alimentación saludable
+Corresponderá al Ministerio de Salud y al Ministerio de Educación Pública, al Instituto Costarricense de Investigación y Enseñanza en Nutrición y Salud, a la Caja Costarricense de Seguro Social y a la Dirección Nacional de Centros de Educación y Nutrición y de Centros Infantiles de Atención Integral, así como a los establecimientos de la Red de Cuido y los gobiernos locales ejecutar acciones, dentro del ámbito de sus competencias, que contribuyan al desarrollo de hábitos para una alimentación saludable y adviertan sobre los efectos nocivos de productos con exceso en calorías, grasas, grasas saturadas, grasas trans, azúcares, sodio y otros componentes.
+Dichas instituciones deberán mantener una difusión permanente sobre dietas, hábitos alimenticios y procedimientos que conduzcan al consumo efectivo de los mínimos de nutrientes para la población y no exceder los máximos de azucares, grasas saturadas, grasas trans y sodio, con base en lo recomendado por el Ministerio de Salud en la materia.
+ARTÍCULO 12- Autoridad de aplicación, control y fiscalización
+La autoridad encargada de la aplicación de la presente ley será el Ministerio de Salud, que regulará, controlará y fiscalizará el cumplimiento de lo dispuesto en esta ley y sus reglamentos. En caso de ser necesario se coordinarán esfuerzos con el Ministerio de Economía, Industria y Comercio, en lo de su competencia.
+ARTÍCULO 13- Sanciones
+El incumplimiento de lo dispuesto en la presente ley será sancionado con multas de entre tres y diez salarios base referenciados al artículo 2 de la Ley N.º 7337, de 5 de mayo de 1993.
+Además de las sanciones de multa indicadas, el Ministerio de Salud podrá suspender o revocar permisos sanitarios de funcionamiento a los infractores o imponer la clausura de aquellos establecimientos que incumplan las obligaciones estipuladas en la presente ley.
+ARTÍCULO 14- Inspecciones
+Los funcionarios del Ministerio de Salud, en colaboración con inspectores municipales, debidamente identificados de acuerdo con sus competencias, podrán realizar inspecciones de verificación, seguimiento o cumplimiento de la normativa relativa a la aplicación de esta ley. Para dicho efecto, los inspectores tendrán carácter de autoridad de policía, con fe pública.
+Durante la inspección, los funcionarios indicados en el párrafo anterior tendrán libre acceso a las instalaciones o los sitios de inspección y podrán hacerse acompañar de las personas expertas que consideren necesarias, así como de la Fuerza Pública, quienes están en la obligación de facilitar toda la colaboración que estos requieran para el eficaz cumplimiento de sus funciones. En todo caso, la inspección se realizará garantizando el debido proceso.
+ARTÍCULO 15- Decomiso de productos
+El Ministerio de Salud queda facultado para realizar los decomisos de alimentos preenvasados que incumplan con lo dispuesto en esta ley y sus reglamentos.
+ARTÍCULO 16- Acta de decomiso
+Las autoridades sanitarias que procedan al decomiso de los productos levantarán un acta en presencia de dos testigos. Ese documento deberá contener la fecha, el lugar, el nombre y los apellidos de las personas que actúan con indicación de las diligencias realizadas y la firma de todos los intervinientes o la mención de que alguno no puede o quiere firmar. Se entregará copia del acta a la persona a quien se le decomisen los productos o a quien se encuentre en el lugar del decomiso. Los productos decomisados serán puestos, de inmediato, a la orden de la autoridad competente.
+En caso de encontrarse indicios de incumplimiento de esta ley o su reglamento, se le notificará al responsable el inicio del procedimiento respectivo.
+ARTÍCULO 17- Procedimiento administrativo
+Todas las actuaciones y acciones de esta ley se tramitarán de conformidad con el procedimiento sumario establecido en la Ley General de la Administración Pública y la Ley General de Salud.
+ARTÍCULO 18- Suspensión o revocatoria de permisos, patentes y licencias
+Cuando el mismo infractor sea sancionado por cometer una infracción a esta ley, en más de dos ocasiones en el plazo de un año calendario, el Ministerio de Salud, de acuerdo con sus competencias, podrá cerrar hasta por tres días los locales comerciales, suspender o revocar los permisos y los registros necesarios para la realización de las actividades que hayan dado lugar a la comisión de las infracciones.
+Adicional a la suspensión o revocatoria de permisos y registros deberán establecer la sanción pecuniaria correspondiente a la infracción. En todo caso se deberá garantizar el debido proceso y el derecho de defensa de los administrados.
+ARTÍCULO 19- Plazo para pago de multas y ejecución de otras sanciones
+Las sanciones establecidas en la presente ley deben pagarse o cumplirse en un término máximo de treinta días naturales a partir de su imposición.
+ARTÍCULO 20- Destino específico de las recaudaciones por sanciones
+El destino específico de los recursos que se recauden por sanciones aplicadas por esta ley corresponderá en un 70% al Ministerio de Salud y en un 30% al Ministerio de Educación Pública, para garantizar el efectivo cumplimiento de esta ley.
+REFORMA DE OTRAS LEYES
+ARTÍCULO 21- Se adiciona un inciso e) al artículo 137 y se reforma el párrafo segundo del artículo 359, ambos de la de la Ley General de Salud, N.° 5395, de la Ley General de Salud, y sus reformas, de 30 de octubre de 1973, cuyos textos dirán:
+Artículo 137- Serán objeto de decomiso:
+[…]
+d) Los productos alimenticios y bebidas con contenido alcohólico que no cumplan con las regulaciones de etiquetado frontal con advertencias nutricionales, si les aplicara.
+Artículo 359-
+[…]
+Las autoridades de salud procederán, por propia autoridad, al decomiso de los alimentos y medicamentos ostensiblemente deteriorados, contaminados, adulterados o falsificados, así como los que incumplan la normativa vigente en materia de etiquetado frontal sobre advertencias nutricionales, si les aplicara. Igualmente decomisarán los estupefacientes, alucinógenos y las sustancias o productos psicotrópicos capaces de producir dependencia en las personas, así como sustancias tóxicas o peligrosas, así declarados por la autoridad de salud cuando su tenencia y uso sean ilegales o antirreglamentarias.
+DISPOSICIONES TRANSITORIAS
+TRANSITORIO I- El Poder Ejecutivo reglamentará la presente ley en un plazo no mayor de 6 meses a partir de su publicación en el Diario Oficial.
+TRANSITORIO II- Los fabricantes, distribuidores e importadores de productos alimenticios y/o bebidas sin contenido alcohólico preenvasados a los que corresponda la aplicación de etiquetado dispuesto por esta ley, contarán con un plazo de seis meses para ajustar los bienes que produzcan como nuevos a partir de la entrada en vigencia de esta ley para adaptarse a lo señalado en esta normativa. En caso de que la empresa sea PYME, conforme a la ley, contarán con un plazo máximo de hasta de doce meses.
+En caso de productos que no contengan el etiquetado en su empaque de origen, posterior a los seis meses señalados, se deberá colocar sellos conforme las disposiciones que indique el Ministerio de Salud, vía reglamento.
+TRANSITORIO III- Los fabricantes, distribuidores e importadores de productos alimenticios y/o bebidas sin contenido alcohólico preenvasados a los que corresponda la aplicación de etiquetado dispuesto por esta ley podrán colocar sus productos sin etiquetado hasta agotar existencias; sin embargo, deberán tomar las medidas oportunas teniendo como plazo máximo para colocarlos en el mercado hasta dieciséis meses después de la entrada en vigencia de esta ley.
+Luego del plazo citado, si los productos sin etiquetado no se han logrado colocar en el mercado hasta agotar existencias, toda empresa deberá colocar los sellos de etiquetado a sus productos en stock, no pudiendo inobservar lo dispuesto en esta normativa más allá del plazo citado en el párrafo anterior. Todo conforme a las disposiciones que indique el Ministerio de Salud, vía reglamento.
+Rige dieciocho meses a partir de su publicación en el diario oficial.
+Andrea Álvarez Marín Monserrat Ruíz Guevara
+Diputadas
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 27-02-2025).

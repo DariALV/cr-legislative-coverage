@@ -1,0 +1,104 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY REGULATORIA DE LOS SECRETOS DE ESTADO
+JORGE EDUARDO DENGO ROSABAL
+Y OTROS SEÑORES DIPUTADOS
+Y SEÑORAS DIPUTADAS
+EXPEDIENTE N.º 23.437
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+NOTA: A solicitud de la parte interesada, este Departamento no realizó la revisión de errores formales, materiales e idiomáticos que pueda tener este proyecto de ley.
+PROYECTO DE LEY
+LEY REGULATORIA DE LOS SECRETOS DE ESTADO
+Expediente N.º 23.437
+ASAMBLEA LEGISLATIVA:
+La Constitución Política de Costa Rica asegura, en su artículo 30, el acceso a la información de interés público que permita a la ciudadanía conocer sobre la actuación y las decisiones que toman los funcionarios públicos en la gestión de los recursos del Estado, así como la actuación de los gobernantes en representación del pueblo. Esa fue la voluntad de la Asamblea Nacional Constituyente de 1949, de cuyas actas se puede extraer la siguiente cita:
+“…El Diputado VARGAS FERNÁNDEZ expresó que en la moción retirada había un concepto que, a su juicio, debería mantenerse: el que garantiza el libre acceso a las fuentes oficiales de información. Agregó que algunos gobiernos inescrupulosos habían cerrado a determinados periódicos el libre acceso a esas fuentes. Eso no debe repetirse en el futuro. Tales fuentes oficiales de información deben estar abiertas para todos los ciudadanos. Por otra parte, la prensa cumple mejor su misión si tiene esta garantía. El Diputado GÓMEZ calificó la idea anterior de muy saludable, no sólo para la prensa sino para todos los ciudadanos, que de este modo tendrán libre acceso a las fuentes oficiales de información.”
+No obstante, la Asamblea Nacional Constituyente también fue consciente de la necesidad que tiene el Estado de proteger los intereses del país, limitando el acceso a cierta información que pueda comprometer la seguridad nacional, aspecto que el diputado constituyente Baudrit González dejó constar señalando lo siguiente:
+“… El señor BAUDRIT GONZÁLEZ manifestó que aun cuando estaba de acuerdo con el agregado propuesto, existían ciertos documentos –como los del Ministerio de Relaciones Exteriores– que no pueden ponerse al alcance de todos cuantos los soliciten. De ahí que estima prudente que se haga la salvedad en lo que se refiere a los Secretos de Estado. El Diputado VARGAS FERNÁNDEZ accedió a modificar su moción en el sentido indicado. Puesta a votación la moción de éste para incluir un nuevo artículo que diga: “Queda garantizado el libre acceso a las fuentes oficiales de información; quedan a salvo los secretos de Estado”, fue aprobada.”
+A su vez, con la intención de que el artículo fuera lo más claro posible, se modificó la redacción para evitar comprometer aspectos de seguridad:
+“El Diputado DESANTI LEÓN presentó moción para que el artículo 30 se lea del modo siguiente: “Se garantiza el libre acceso a los departamentos administrativos con propósitos de información sobre asuntos de interés público. Quedan a salvo los secretos de Estado”. El proponente explicó que el artículo 30, tal y como fue aprobado en otra ocasión, no era lo suficientemente claro y explícito. De mantenerse esa redacción, el derecho consagrado bien podría resultar platónico, inoperante en la realidad.”
+Finalmente, el texto definitivo que hasta la fecha sigue vigente en la Constitución Política de la República de Costa Rica quedó de la siguiente manera:
+"Artículo 30- Se garantiza el libre acceso a los departamentos administrativos con propósitos de información sobre asuntos de interés público. Quedan a salvo los secretos de Estado"
+Regulación de los secretos de Estado en Costa Rica
+Costa Rica carece de una ley específica para regular la declaratoria de información como secreto de Estado. La determinación de cuál información puede calificarse como sensible para la seguridad nacional, y por ende poder declararse como secreto de Estado, está basada en la jurisprudencia desarrollada tanto por la voluntad del constituyente como por el criterio emitido por parte de la Sala Constitucional a raíz de este. Como puede apreciarse anteriormente, la exclusión de los secretos de Estado como parte de la información que debe estar disponible para que sea consultada por la ciudadanía, responde a la preocupación de los diputados constituyentes por salvaguardar temas como las Relaciones Internacionales.
+Este vacío legislativo ha sido señalado por la Sala Constitucional, calificando la incertidumbre que provoca como “grave”, debido a la necesidad de claridad en dicha materia. Al respecto, en la sentencia N.° 03564 menciona la Sala:
+“(...) El secreto de Estado como un límite al derecho de acceso a la información administrativa es reserva de ley (artículo 19, párrafo 1º, de la Ley General de la Administración Pública), empero, han transcurrido más de cincuenta años desde la vigencia de la Constitución y todavía persiste la omisión legislativa en el dictado de una ley de secretos de estado y materias clasificadas. Esta laguna legislativa, obviamente, ha provocado una grave incertidumbre y ha propiciado la costumbre contra legem (...)”
+A raíz de esto, es la Sala Constitucional la que ha emitido jurisprudencia que ha permitido delimitar las razones por las que determinada información puede declararse como secreto de Estado y limitar estrictamente su acceso únicamente a los funcionarios que así lo requieran para los procesos de toma de decisiones propios de sus funciones. No obstante, la jurisprudencia no puede solventar la necesidad existente de legislación, pues esta, al ser criterio de las instancias judiciales, puede cambiar en el tiempo.
+En cuanto legislación, la Ley General de Administración Pública establece en su artículo 272 sobre al acceso al expediente administrativo y sus piezas que las partes y sus representantes, y cualquier abogado, tendrán derecho en cualquier fase del procedimiento a examinar, leer y copiar cualquier pieza del expediente, así como a pedir certificación de la misma. Mientras que en su artículo 273 menciona que no habrá acceso a las piezas del expediente cuyo conocimiento pueda comprometer secretos de Estado.
+En cuanto al Código Penal establece las penas correspondientes al delito de espionaje, señalando lo siguiente en su artículo 295:
+“Espionaje. Será reprimido con prisión de uno a seis años a quien procure u obtenga indebidamente secretos de Estado debidamente decretados relativos a la seguridad interna o externa de la nación, la defensa de la soberanía nacional y las relaciones exteriores de Costa Rica.
+La pena será de dos a ocho años de prisión cuando la conducta se realice mediante manipulación informática, programas informáticos maliciosos o por el uso de tecnologías de la información y la comunicación.”
+Como puede observarse, la legislación únicamente mantiene criterios sobre la exclusión de los secretos de Estado de aquella información que pueda ser consultada por la ciudadanía o por funcionarios públicos, respetando el mandato constitucional del artículo 30. No obstante, existe un riesgo en mantener poca claridad en materia de secretos de Estado cuando los criterios dependen de la jurisprudencia emitida por la Sala, pues estos criterios no están exentos de cambiar dado que dicho órgano judicial no está sujeto a su propio criterio. En ese escenario, es necesario asegurar tanto la seguridad nacional y resguardar los intereses de la nación con la herramienta de los secretos de Estado como de asegurar el derecho al acceso a la información mediante una norma específica.
+Legislación Comparada
+En materia de secreto de Estado, la regulación de estos se da de forma diversa, aunque priva en ellos la tesis de que la clasificación de una información como secreta en los Estados de derecho debe ser una excepción en la gestión de la información y al acceso a la misma:
+“(...) la regulación del secreto, como excepción al principio democrático de publicidad o transparencia, ha de partir del presupuesto básico en un Estado de Derecho, esto es, la libertad fundamental a dar y recibir información. (...)”
+Esto se fundamenta en el principio de publicidad que debe privar en las regulaciones respecto a la clasificación de información como secreto de Estado:
+“En un Estado democrático la publicidad es el principio general, por lo que impera la necesidad de establecer una regulación adecuada que, partiendo de dicho presupuesto democrático, afirme la excepcionalidad absoluta de la clasificación de determinadas materias como secretos oficiales. Su naturaleza de excepción y la necesidad de su aplicación restrictiva se justifica en la proclamación de la publicidad y la transparencia como principio general en la actuación del Estado y en la efectividad del derecho fundamental a dar y recibir información.”
+A continuación, se muestra los aspectos más relevantes de las legislaciones y/o regulaciones de Estados Unidos, España, Chile, Italia, Reino Unido y Alemania.
+Legislación comparada
+Estados Unidos
+España
+Chile
+Italia
+Reino Unido
+Alemania
+Tipo de legislación
+No cuenta con una ley específica
+Ley 9/1968, de 5 de abril, sobre secretos oficiales.
+Ley sobre Acceso Información Pública y causales de reserva y secreto, N.° 20.285.
+Ley del 24 de octubre de 1977 sobre instituciones y ordenamiento del servicio de información y seguridad y normativa del secreto de Estado.
+Ley de secretos oficiales y Ley de Divulgación de Interés Público1998.
+Ley sobre los requisitos y procedimientos para los controles de seguridad federales y la protección de la información clasificada
+Plazos
+Los secretos oficiales pueden clasificarse como tales hasta 25 años, no obstante, según su grado de sensibilidad, puede prorrogarse el plazo hasta por 50 años más.
+No existe en la legislación actual, no obstante, existe una iniciativa de reforma que incorporaría plazos entre los 5 y los 50 años.
+Durante 5 años, prorrogables a 5 más. En algunos casos específicos puede declararse una información como secreto de Estado sin un plazo definido. Estos casos son: “(…) la planificación militar o estratégica, y de aquellos cuyo
+conocimiento o difusión puedan afectar: a) La integridad territorial de
+Chile; b) La interpretación o el cumplimiento de un tratado
+internacional suscrito por Chile en materia de límites; c) La defensa
+internacional de los derechos de Chile, y d) La política exterior del país
+de manera grave”
+Se desclasifica automáticamente a un nivel inferior cuando hayan transcurrido cinco años desde la fecha de fijación; una vez transcurrido otro período de cinco años, cesan las restricciones de clasificación.
+La información de los secretos de Estado se desclasifica tras 20 años.
+La información puede mantenerse como secreto de Estado por 30 años, prorrogables a 30 años más en caso de requerirlo.
+Materia que puede clasificarse como secreto de Estado
+Aspectos de seguridad nacional y defensa.
+Los asuntos, actos, documentos, informaciones, datos y objetos cuyo conocimiento por personas no autorizadas pueda dañar o poner en riesgo la seguridad y defensa del Estado.
+Cuando la publicidad afectare el debido cumplimiento de las funciones de los órganos del Estado, los derechos de las personas, la seguridad de la Nación o el interés nacional.
+“(…) Así las cosas, están cubiertos por el secreto de Estado, según el artículo 12 de
+la LSE, los actos, los documentos, las noticias, las actividades y cualquier otra cosa
+cuya difusión sea idónea para provocar daño a la integridad del Estado democrático,
+a los acuerdos internacionales, a la defensa de las instituciones constitucionales y a su fundamento, al libre ejercicio de los órganos constitucionales, a la independencia
+del Estado respecto a otros Estados y a las relaciones con éstos, y a la preparación
+y defensa militar.”
+Las excepciones a la y Ley de Divulgación de Interés Público1998.
+1. Seguridad e inteligencia.
+2. Defensa.
+3. Relaciones internacionales.
+“(…) La información clasificada es de interés público, en particular para proteger el bienestar de la Federación o de un Land, hechos, objetos o hallazgos que requieren secreto, independientemente de la forma en que se presenten. Los elementos clasificados también pueden ser productos y los documentos asociados, así como medios clave asociados para descifrar, cifrar y transmitir información (medios criptográficos) (…)”
+Como es evidente, la legislación de otros países no solo protege el acceso a la información, haciendo de los secretos de Estado una excepción de las normas que procuran la publicidad de la información y la transparencia, también delimitan aquella información que pueda ser considerada como secreto de Estado.
+Necesidad de una ley regulatoria
+Como puede apreciarse, la tendencia internacional en Estados democráticos de derecho es velar por el acceso a la información como derecho de los ciudadanos, así como proteger el principio de publicidad y transparencia que deben regir la función pública y los actos del Estado, sin que esto vaya en detrimento de la seguridad nacional y los intereses de cada país, a través de leyes específicas que regulan la figura de secretos de Estado.
+Esta tendencia no es casualidad, se trata de una forma de blindar los derechos de los ciudadanos ante posibles abusos de parte del Estado mediante el uso de una herramienta que, por su naturaleza, permite establecer un velo que separa a la ciudadanía del accionar de las autoridades. Si bien se tiene clara la necesidad de que las autoridades tengan la capacidad de limitar el acceso a cierta información que, de difundirse, podría poner en riesgo a la misma ciudadanía y a las instituciones democráticas que rigen la convivencia en sociedad, un amplio margen de discrecionalidad en esta materia puede llevar que se vulneren los derechos humanos y se encubra la responsabilidad del Estado, sus funcionarios o de terceros con el beneplácito de este.
+En ese sentido, Costa Rica presenta un vacío en su legislación que se ha ido llenando con la jurisprudencia emitida por la Sala Constitucional, no obstante, materializar dicha jurisprudencia en una norma que pueda incorporar ese criterio y poner al país a la vanguardia en dicha materia supone darle firmeza a la doctrina jurídica y fortalecer las acciones para asegurar el mandato constitucional de protección del derecho de acceso a la información.
+En ese sentido, se han presentado algunos proyectos que buscaban saldar esa deuda legislativa en materia de secreto de Estado. Tal es el caso del proyecto de ley N.° 18639, Ley Reguladora de los secretos de Estado presentado por el ex diputado Luis Fishman Zonzinski, el cual se archivó el 8 de diciembre de 2016, donde se expone de forma clara los antecedentes en esta materia que han permitido declarar información sensible como secreto de Estado.
+En la misma línea se encuentra el proyecto presentado por el ex diputado José María Villalta Flores-Estrada, expediente N.° 21.172, “Reforma del artículo 273 de la Ley General de la Administración Pública, Ley N.° 6227 de 2 de mayo de 1978 y de los artículos 293 y 295 del Código Penal, Ley N.° 4573 de 4 de mayo de 1970. Ley para armonizar la regulación de los secretos de estado con la protección de los derechos humanos”. Este proyecto, cuyo objetivo principal es proteger los derechos humanos, estableciendo que no serán punibles las revelaciones de información que encubran lesiones a estos, regula el secreto de Estado dejando clara la potestad del Ejecutivo de utilizar esta figura. Sin embargo, carece de uno de los elementos esenciales encontrados en la legislación internacional revisada como lo es el plazo de tiempo por el que determinada información puede permanecer con esta restricción de acceso.
+Por ello, se pone a conocimiento de sus señorías el presente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA DECRETA:
+LEY REGULATORIA DE LOS SECRETOS DE ESTADO
+ARTÍCULO 1- Podrán ser declarados como secreto de Estado los documentos, informaciones y datos cuya revelación pueda perjudicar de forma sensible la seguridad interna o externa de la Nación, la defensa de la soberanía nacional y las relaciones internacionales de Costa Rica.
+La publicación del decreto respectivo podrá omitir aquellos aspectos cuya revelación sea considerada contraproducente por el Poder Ejecutivo para los fines señalados en el párrafo anterior.
+ARTÍCULO 2- La declaración de documentos, informaciones y datos como secreto de Estado podrá tener una vigencia por hasta 20 años.
+ARTÍCULO 3- No podrá declararse como secreto de Estado aquella información que evidencie actos que lesionen los derechos humanos, cometidos por funcionarios públicos o fuerzas del orden nacionales o extranjeras, en el territorio nacional.
+ARTÍCULO 4- Adiciónese un artículo 32 bis a la Ley de la Jurisdicción Constitucional, N.º 7135, de 11 de octubre de 1989, cuyo texto será el siguiente:
+Artículo 32 bis- Cuando el amparo se refiera al derecho de petición y de obtener pronta resolución, establecido en el artículo 27 de la Constitución Política, y no hubiere plazo señalado para contestar, se entenderá que la violación se produce una vez transcurridos diez días hábiles desde la fecha en que fue presentada la solicitud en la oficina administrativa, sin perjuicio de que, en la decisión del recurso, se aprecien las razones que se aduzcan para considerar insuficiente ese plazo, atendidas las circunstancias y la índole del asunto.
+La documentación será remitida de forma confidencial únicamente a los magistrados que deban resolver. Tanto las resoluciones como los expedientes donde se tramiten estos asuntos deberán omitir cualquier referencia a la información que se considere válidamente declarada secreto de Estado.
+La violación de lo dispuesto en el párrafo anterior será considerada Revelación de Secretos, según lo dispuesto en el artículo 293 del Código Penal, Ley N.º 4573, de 4 de mayo de 1970 y sus reformas.
+Rige a partir de su publicación.
+Jorge Eduardo Dengo Rosabal Gilberto Arnoldo Campos Cruz
+Eliecer Feinzaig Mintz Luis Diego Vargas Rodríguez
+Johana Obando Bonilla Kattia Cambronero Aguiluz
+Diputados y diputadas
+NOTAS: Este proyecto aún no tiene comisión asignada.
+El texto fue confrontado y revisado por el Departamento de Servicios Parlamentarios, para hacerle los ajustes formales requeridos por el SIL. (Fecha de subido al SIL: 30-11-2022).

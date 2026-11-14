@@ -1,0 +1,892 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+APROBACIÓN DE LA ADHESIÓN DE LA REPÚBLICA DE COSTA RICA AL
+ACUERDO DE ASOCIACIÓN DE ECONOMÍA DIGITAL (“DEPA”), AL
+PROTOCOLO AL ACUERDO DE ASOCIACIÓN DE ECONOMÍA DIGITAL Y
+A LA DECISIÓN DEL COMITÉ CONJUNTO DE L ACUERDO DE
+ASOCIACIÓN DE ECONOMÍA DIGITAL (“DEPA”) RELATIVA A LA
+ADHESIÓN DE LA REPÚBLICA DE COSTA RICA AL DEPA
+A LA CUAL SE ANEXAN LAS CONDICIONES DE
+ADHESIÓN DE LA REPÚBLICA DE COSTA RICA
+AL ACUERDO DE ASOCIACIÓN DE
+ECONOMÍA DIGITAL (“DEPA”)
+PODER EJECUTIVO
+EXPEDIENTE N.º 25.114
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+APROBACIÓN DE LA ADHESIÓN DE LA REPÚBLICA DE COSTA RICA AL
+ACUERDO DE ASOCIACIÓN DE ECONOMÍA DIGITAL (“DEPA”), AL
+PROTOCOLO AL ACUERDO DE ASOCIACIÓN DE ECONOMÍA DIGITAL Y
+A LA DECISIÓN DEL COMITÉ CONJUNTO DE L ACUERDO DE
+ASOCIACIÓN DE ECONOMÍA DIGITAL (“DEPA”) RELATIVA A LA
+ADHESIÓN DE LA REPÚBLICA DE COSTA RICA AL DEPA
+A LA CUAL SE ANEXAN LAS CONDICIONES DE
+ADHESIÓN DE LA REPÚBLICA DE COSTA RICA
+AL ACUERDO DE ASOCIACIÓN DE
+ECONOMÍA DIGITAL (“DEPA”)
+Expediente N.° 25.114
+ASAMBLEA LEGISLATIVA:
+I- Contexto global: la transformación digital y la necesidad de respuestas normativas
+En los últimos años, los avances impulsados por la llamada cuarta revolución industrial, combinados con factores sociales y económicos como los derivados de la pandemia de SARS-CoV-2 (COVID-19), han acelerado el proceso de digitalización en prácticamente todos los ámbitos de la vida moderna. Este fenómeno ha confirmado que la economía digital no es una proyección a largo plazo, sino una realidad presente, con impacto transversal en múltiples áreas de la economía, entre ellas, el comercio internacional.
+En este entorno global, la economía digital se ha convertido en un pilar clave para el desarrollo económico y social de los países. La rápida adopción de tecnologías —como la inteligencia artificial, el Internet de las cosas, el big data y el blockchain— ha transformado la forma en que interactúan consumidores, empresas y gobiernos, generando nuevas oportunidades de crecimiento, pero también desafíos regulatorios sin precedentes.
+De acuerdo con el OECD Digital Economy Outlook 2024 (Volumen I), el sector de las tecnologías de la información y la comunicación (TIC) registró un crecimiento promedio del 6,3% anual entre 2013 y 2023, aproximadamente tres veces más rápido que la economía general en los países de la OCDE analizados. Tan solo en 2023, este sector alcanzó una tasa de crecimiento promedio del 7,6%, con cinco países (Reino Unido, Bélgica, Alemania, Austria y Países Bajos) superando el 10% de crecimiento. Este auge se explica, en parte, por la expansión sostenida de la conectividad global: en 2023, la Unión Internacional de las Telecomunicaciones (UIT) reportó 5.400 millones de usuarios de Internet, frente a los 1.000 millones registrados en 2005.
+Frente a este escenario, los países han adoptado diversas estrategias para abordar los retos y oportunidades derivados de la digitalización. En materia comercial, se han impulsado tanto marcos regulatorios nacionales como enfoques multilaterales o regionales. Es precisamente por la necesidad de establecer reglas claras, coordinadas y flexibles para el comercio digital que surge el Acuerdo de Asociación de Economía Digital (en adelante DEPA, por sus siglas en inglés). El DEPA y el Protocolo al DEPA son una herramienta jurídica, plurilateral e innovadora, que atiende los retos de la economía digital global.
+Costa Rica, al igual que otros países, ha optado por fortalecer el marco nacional tomando en consideración las mejores prácticas internacionales, a la vez que, participa activamente en iniciativas a nivel internacional.
+II. ¿Qué es el DEPA y el Protocolo al DEPA? Principios, estructura y disciplinas clave
+El DEPA surgió como una iniciativa estratégica entre Nueva Zelanda, Chile y Singapur, quienes reconocieron la necesidad de actualizar las normas del comercio internacional e impulsaron la negociación de un tratado pionero para abordar las medidas que afectan el comercio en la economía digital. El DEPA se firmó en junio de 2020. En julio de 2023 se suscribió un Protocolo para ajustar sus disposiciones a nuevos retos del mercado global y, en 2024, se integró Corea del Sur, siendo el primer país en completar formalmente su proceso de adhesión.
+El objetivo principal del DEPA y del Protocolo al DEPA (en adelante el Acuerdo) es establecer reglas comunes que faciliten el comercio digital, potencien los beneficios del uso de tecnologías aplicadas al comercio y promuevan la cooperación internacional. Estas reglas se enmarcan en un acuerdo que ofrece herramientas normativas modernas, que buscan enfrentar los desafíos de un entorno digital en constante evolución y crear condiciones propicias para la innovación y la transformación digital.
+Un conjunto de principios rectores guía el contenido y la implementación como lo son: la promoción de una Internet abierta y global, la interoperabilidad normativa y la preservación de la capacidad regulatoria de los Estados, reconociendo que los intereses legítimos de política pública —como la protección de datos personales o la ciberseguridad— deben resguardarse adecuadamente.
+Mediante de estos instrumentos, los países Miembros se comprometen a:
+Facilitar el comercio de extremo a extremo sin fricciones, reduciendo cargas administrativas y promoviendo la interoperabilidad digital.
+Habilitar el flujo confiable de datos, reconociendo su rol como insumo esencial de la economía digital.
+Crear confianza en los sistemas digitales, con estándares que garanticen, entre otros aspectos, la protección de datos personales, la ciberseguridad y los derechos del consumidor.
+Ampliar las oportunidades de participación en el comercio, promoviendo un comercio digital más accesible para las PYMES, consumidores y poblaciones tradicionalmente excluidas.
+Cooperar para cerrar brechas, armonizar normas mediante el diálogo, el intercambiar mejores prácticas y colaborar a nivel técnico entre los países miembros.
+Actualmente, el Acuerdo está compuesto por 16 módulos, cada uno de los cuales establece disposiciones en temáticas estratégicas de la economía digital. Entre las más relevantes destacan:
+Facilitación del comercio digital: incorpora medidas para la simplificación de trámites, promoviendo procedimientos aduaneros más ágiles, lo que reduce costos y tiempos en las operaciones digitales.
+Protección y confianza en el entorno digital: establece reglas para la protección de datos personales, la ciberseguridad, y la protección de los consumidores en línea, medidas que buscan promover entornos digitales seguros, confiables y transparentes para los usuarios y empresas.
+Tecnologías emergentes: aborda áreas como la inteligencia artificial, promoviendo marcos éticos y regulatorios para su uso responsable.
+Identidades digitales y datos públicos abiertos: fomenta la interoperabilidad y el aprovechamiento de la información para nuevos modelos de negocio.
+Inclusión digital: dispone de mecanismos para fortalecer la participación de pequeños actores en la economía digital global, como las mujeres, pueblos indígenas y poblaciones rurales, mediante diálogo técnico y el intercambio de mejores prácticas.
+Reconocimiento del rol de las PYMES: los identifica como actores clave en la economía digital y contempla medidas para facilitar su incorporación al comercio electrónico en condiciones competitivas y con entornos de confianza.
+FinTech y pagos electrónicos: promueve la facilitación de las transacciones electrónicas, eliminando barreras de acceso a servicios digitales y ampliando la inclusión financiera.
+Cooperación institucional: incorpora mecanismos transversales para asegurar la implementación del Acuerdo, fomentar el intercambio de buenas prácticas, la colaboración técnica y el diálogo para procurar la evolución continua del Acuerdo.
+Es relevante destacar que el Acuerdo es un instrumento abierto y dinámico. Esta estructura permite incorporar no solo a nuevos miembros, sino también nuevos temas de manera ágil. A través de protocolos adicionales, los contenidos pueden evolucionar, respondiendo a las transformaciones tecnológicas y la dinámica de la economía digital, lo que permite que el Acuerdo se mantenga vigente y relevante.
+III. Importancia y beneficios para Costa Rica
+Costa Rica se ha consolidado como uno de los principales exportadores de servicios modernos en América Latina, con una oferta competitiva en tecnologías de información, servicios empresariales, ingeniería y soluciones digitales. En la última década, las exportaciones de servicios crecieron en promedio un 10% anual y dentro de este sector los servicios de informática, telecomunicaciones y otros servicios empresariales, concentraron el 56,4% del total exportado. En 2024, los servicios representaron el 74,2% del PIB y el 45 % de las exportaciones totales del país.
+Costa Rica se ubica entre los primeros 15 países en los índices de Restricción del Comercio de Servicios (STRI) y en el STRI Digital de la OCDE, colocándose por encima del promedio tanto de países miembros de la OCDE como de no miembros evaluados. Este posicionamiento es reflejo de pocas barreras regulatorias y buenas prácticas normativas en el comercio de servicios y de servicios digitales.
+La creciente importancia del comercio de servicios y la utilización de medios digitales para su comercialización en Costa Rica, así como el puesto que ocupa Costa Rica a nivel internacional como un país con pocas barreras regulatorias y buenas prácticas en materia de comercio de servicios y servicios digitales, refuerzan nuestra idoneidad para convertirnos en miembros del Acuerdo.
+Por su parte, este no solo representa una plataforma moderna para el comercio digital, sino también una oportunidad estratégica para que Costa Rica consolide su lugar como referente en la economía digital y coopere con otros países en la valoración y adopción de estándares que faciliten cada vez más este tipo de comercio. Específicamente, la participación en este acuerdo permitirá al país:
+Fortalecer su posicionamiento como centro digital en América Latina, al integrarse a una plataforma con altos estándares normativos y de cooperación.
+Impulsar aún más la atracción de inversión extranjera directa (IED), especialmente en sectores de alta tecnología, como Fintech, inteligencia artificial, educación digital y agrotecnología, al garantizar el cumplimiento de los altos estándares del Acuerdo.
+Fomentar un entorno digital más amigable e inclusivo, por medio de disposiciones que, por ejemplo, enfatizan en la importancia de incentivar la participación de las mujeres, poblaciones rurales, grupos socioeconómicos vulnerables, pueblos indígenas y PYMES en la economía digital.
+Acceder a conocimiento técnico, cooperar y participar en la discusión y definición de marcos regulatorios compartidos con economías líderes de la región Asia-Pacífico, reconocida por su dinamismo en innovación digital.
+Reforzar la seguridad jurídica, la transparencia y el acceso a la información para consumidores, empresas y autoridades del Estado.
+La capacidad del país para capitalizar estos beneficios se ve respaldada por la implementación progresiva de una política pública de transformación digital, que ha orientado los esfuerzos nacionales hacia el fortalecimiento de capacidades tecnológicas, la mejora de la infraestructura digital y la promoción de servicios basados en conocimiento.
+IV. Proceso de Adhesión de Costa Rica al DEPA y su Protocolo
+Costa Rica formalizó su solicitud de ingreso al DEPA el 23 de diciembre de 2022. A partir de esa fecha el país, mediante el Ministerio de Comercio Exterior (COMEX), en coordinación con el Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones (MICITT) y un equipo interinstitucional, llevó a cabo un riguroso proceso técnico para demostrar a los países miembros el cumplimiento de las disposiciones y de los estándares del DEPA.
+Durante 2023 y 2024, Costa Rica participó activamente en reuniones técnicas y procesos de evaluación con los países miembros. Este trabajo se desarrolló bajo la conducción del Grupo de Trabajo de Adhesión, conformado por los equipos técnicos de los países signatarios. Costa Rica presentó su marco regulatorio, política de transformación digital y normativa de comercio electrónico, así como las prácticas a nivel nacional en todas las áreas descritas en los módulos del Acuerdo, como facturación electrónica, protección al consumidor, protección de datos personales y acceso a servicios digitales.
+Como resultado, el 15 de enero de 2025, el país fue invitado a integrarse al Acuerdo, siendo el segundo país en completar su proceso de adhesión, después de Corea del Sur. Esta invitación se plasmó en la Decisión del Comité Conjunto del Acuerdo de Asociación de Economía Digital (“DEPA”) relativa a la Adhesión de Costa Rica al DEPA, en adelante la Decisión, adoptada el 16 de mayo de 2025, la cual se basó en la evaluación del Grupo de Trabajo para la Adhesión que concluyó que Costa Rica ha demostrado los medios por los que cumplirá las disposiciones en el DEPA y en el Protocolo del DEPA. Esta decisión reconoce el compromiso del país con la economía digital, su alineamiento con estándares internacionales y su capacidad institucional para implementar los compromisos del acuerdo.
+Además, la Decisión establece que, en el caso de Costa Rica, las decisiones o los acuerdos desarrollados en virtud del Artículo 12.2, incisos (a), (d) o (e) del texto del DEPA, serán, cuando proceda, equivalentes a los protocolos de menor rango a que se refiere el párrafo 3 del artículo 121.4 de la Constitución Política de Costa Rica.
+A la Decisión se anexan las Condiciones de Adhesión de la República de Costa Rica al Acuerdo de Asociación de Economía Digital (“DEPA”), en adelante las Condiciones de Adhesión, que detallan los términos bajo los cuales el país podrá convertirse en Parte del DEPA y del Protocolo al DEPA. Las Condiciones de Adhesión establecen que: (i) Costa Rica se adherirá tanto al DEPA como a su Protocolo; (ii) las obligaciones del DEPA y del Protocolo al DEPA que deban implementarse en un periodo de tiempo a partir de sus respectivas entradas en vigor, serán implementadas por el país desde su incorporación como Parte del DEPA; (iii) las Condiciones de Adhesión estarán abiertas a la aceptación de Costa Rica mediante el depósito de un Instrumento de Adhesión ante el Depositario del DEPA hasta el 16 de mayo de 2026 (hora de Nueva Zelanda) y (iv) Costa Rica se convertirá en Parte del DEPA y del Protocolo al DEPA ya sea, 60 días después de que Costa Rica haya depositado un instrumento de adhesión ante el Depositario indicando que acepta las Condiciones de Adhesión, o en la fecha en que todas las Partes hayan notificado al Depositario que han completado los respectivos procedimientos legales aplicables para la aprobación de las Condiciones de Adhesión, lo que ocurra más tarde.
+En virtud de lo anterior, reviste especial importancia que la Decisión, a la cual se anexan las Condiciones de Adhesión, sea aprobada conjuntamente con el texto del DEPA y de su Protocolo, ya que ello constituye un requisito indispensable para dotar de eficacia jurídica la adhesión de Costa Rica y dar paso a la implementación del Acuerdo.
+V. Conclusiones
+Costa Rica ha demostrado que cuenta con un entorno normativo y de política pública que refleja los principios y compromisos del Acuerdo, respaldado por una creciente participación en los flujos comerciales globales de servicios digitales. La consolidación de su oferta exportadora en la última década evidencia la capacidad del país para competir en el mercado digital global, particularmente en la región de Asia-Pacífico, una de las más dinámicas en materia tecnológica. En este contexto, el Acuerdo se presenta como una plataforma fundamental para fortalecer esa proyección internacional, al garantizar condiciones habilitadoras para la innovación, la inversión extranjera directa y el acceso a mercados estratégicos.
+El Acuerdo genera beneficios concretos para la economía costarricense, como la facilitación y simplificación del comercio digital, la transferencia de conocimiento, el acceso a mecanismos de cooperación y la creación de ecosistemas tecnológicos colaborativos con países líderes en la transformación digital. Al mismo tiempo, le permite a Costa Rica robustecer su capacidad institucional para anticipar y responder a futuras innovaciones tecnológicas y tendencias regulatorias, mediante su participación en un foro que promueve el desarrollo de estándares y buenas prácticas actualizadas.
+Además, al sentar las bases para un futuro donde la tecnología desempeña un papel central en el desarrollo económico y social del país, el Acuerdo contribuye a construir una economía más inclusiva. La digitalización de procesos, el uso ético de tecnologías emergentes y la integración de poblaciones vulnerables en cadenas de valor digitales, permiten no solo impulsar el crecimiento productivo, sino también ampliar oportunidades laborales y reducir brechas estructurales. Este enfoque posiciona a la tecnología no como un fin en sí mismo, sino como una herramienta al servicio del bienestar y el progreso de toda la población. Por esta razón, la adhesión al DEPA y al Protocolo al DEPA se alinea con la visión país en materia de transformación digital, fortaleciendo el compromiso institucional de Costa Rica con una economía más conectada, resiliente y centrada en las personas.
+El Acuerdo también refuerza la seguridad jurídica en áreas fundamentales como protección de datos personales, gobernanza digital, pagos electrónicos y protección al consumidor en el comercio electrónico. Estos aspectos son esenciales para construir confianza entre consumidores, empresas y las autoridades e instituciones del Estado.
+En virtud de lo anterior, por considerar que la adhesión de Costa Rica al DEPA, su Protocolo y a la Decisión del Comité Conjunto del DEPA relativa a la Adhesión de la República de Costa Rica al DEPA, a la cual se anexan las Condiciones de Adhesión de la República de Costa Rica al DEPA, constituye una decisión estratégica para el país, se somete el presente Proyecto de Ley de Aprobación de la Adhesión de la República de Costa Rica al Acuerdo de Asociación de Economía Digital (“DEPA”), al Protocolo al Acuerdo de Asociación de Economía Digital y a la Decisión del Comité Conjunto del Acuerdo de Asociación de Economía Digital (“DEPA”) relativa a la Adhesión de la República de Costa Rica al DEPA a la cual se anexan las Condiciones de Adhesión de la República de Costa Rica al Acuerdo de Asociación de Economía Digital (“DEPA”), al conocimiento y discusión de las señoras diputadas y los señores diputados, tomando en cuenta que esta adhesión representa un beneficio para el desarrollo económico sostenible, la transformación digital, la competitividad y el bienestar de todos y todas las costarricenses.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+APROBACIÓN DE LA ADHESIÓN DE LA REPÚBLICA DE COSTA RICA AL
+ACUERDO DE ASOCIACIÓN DE ECONOMÍA DIGITAL (“DEPA”), AL
+PROTOCOLO AL ACUERDO DE ASOCIACIÓN DE ECONOMÍA DIGITAL Y
+A LA DECISIÓN DEL COMITÉ CONJUNTO DE L ACUERDO DE
+ASOCIACIÓN DE ECONOMÍA DIGITAL (“DEPA”) RELATIVA A LA
+ADHESIÓN DE LA REPÚBLICA DE COSTA RICA AL DEPA
+A LA CUAL SE ANEXAN LAS CONDICIONES DE
+ADHESIÓN DE LA REPÚBLICA DE COSTA RICA
+AL ACUERDO DE ASOCIACIÓN DE
+ECONOMÍA DIGITAL (“DEPA”)
+ARTÍCULO ÚNICO- Apruébese en cada una de sus partes la adhesión de la República de Costa Rica al Acuerdo de Asociación de Economía Digital (“DEPA”), al Protocolo al Acuerdo de Asociación de Economía Digital y a la Decisión del Comité Conjunto del Acuerdo de Asociación de Economía Digital (“DEPA”) relativa a la Adhesión de la República de Costa Rica al DEPA a la cual se anexan las Condiciones de Adhesión de la República de Costa Rica al Acuerdo de Asociación de Economía Digital (“DEPA”), cuyo texto es el siguiente:
+Traducción oficial
+Yo, Ana Gabriela Castro Jiménez, Traductora Oficial del Ministerio de Relaciones Exteriores y Culto de la República de Costa Rica, nombrada por Acuerdo Ejecutivo número 022-2014 DJ-RE del 15 de enero del año 2014, publicado en La Gaceta (Diario Oficial) Número 36 del 20 de febrero del año 2014, certifico que en idioma español el documento por traducir, Acuerdo de Asociación de Economía Digital, el Protocolo al Acuerdo de Asociación de Economía Digital, la Decisión del Comité Conjunto del Acuerdo de Asociación De Economía Digital (“DEPA”) relativa a la Adhesión de la República de Costa Rica al DEPA y las Condiciones de Adhesión de la República de Costa Rica al Acuerdo de Asociación de Economía Digital (“DEPA”), así como las tres declaraciones certificadas de los documentos emitidas por las autoridades de Nueva Zelanda, dice lo siguiente:
+ACUERDO DE ASOCIACIÓN DE ECONOMÍA DIGITAL
+Las Partes de este Acuerdo, decididas a:
+CONFIRMAR la importancia de la economía digital y que el éxito económico sostenido depende de sus habilidades conjuntas para aprovechar los avances tecnológicos en orden a mejorar las empresas existentes, crear nuevos productos y mercados, y mejorar la vida cotidiana;
+RECONOCER el valor global de Internet y su arquitectura abierta como un facilitador de la economía digital y un impulsor de la innovación global;
+RECONOCER el rol de los estándares, en particular los estándares abiertos, en la facilitación de la interoperabilidad entre los sistemas digitales y la mejora de los productos y servicios de valor agregado;
+RECORDAR los Objetivos de Desarrollo Sostenible de la Agenda 2030 de Naciones Unidad para el Desarrollo Sostenible, en particular el Objetivo 8 y el Objetivo 9;
+CONFIRMAR la importancia de la economía digital para promover el crecimiento económico inclusivo;
+RECONOCER la necesidad de aprovechar los beneficios de las tecnologías avanzadas para todos;
+CONFIRMAR la necesidad de identificar la creciente variedad de obstáculos relacionados con el comercio en la economía digital y la necesidad de actualizar las reglas globales en respuesta a ello;
+CONFIRMAR que la economía digital está en evolución, por lo que este Acuerdo y sus reglas y cooperación también deberán continuar evolucionando;
+CONSIDERAR que la coordinación efectiva interna de políticas de economía digital puede contribuir aún más para alcanzar un crecimiento económico sustentable;
+RECONOCER su interdependencia en materias relacionadas con la economía digital y, como economías líderes en línea, su interés compartido en proteger la infraestructura crítica y garantizar un Internet seguro y confiable que apoye la innovación y el desarrollo económico y social;
+AFIRMAR un compromiso a la cooperación colaborativa en materia relativas a la economía digital;
+RECONOCER su derecho inherente a regular y decidir para preservar la flexibilidad de las Partes para establecer sus prioridades legislativas y regulatorias, salvaguardar el bienestar público, y proteger objetivos legítimos de política pública; y
+REAFIRMAR la importancia de promover la responsabilidad social corporativa, la identidad y diversidad cultural, la protección y la conservación del medioambiente, la igualdad de género, los derechos indígenas, los derechos laborales, el comercio inclusivo, el desarrollo sustentable y los conocimientos tradicionales, así como la importancia de preservar el derecho a regular por el interés público,
+HAN ACORDADO lo siguiente:
+MÓDULO 1
+DISPOSICIONES INICIALES Y DEFINICIONES GENERALES
+Artículo 1.1: Ámbito de Aplicación
+Este Acuerdo se aplicará a las medidas adoptadas o mantenidas por una Parte que afecten al comercio en la economía digital.
+Este Acuerdo no se aplicará:
+un servicio prestado en el ejercicio de la autoridad gubernamental;
+con excepción del Artículo 2.7 (Pagos Electrónicos), a los servicios financieros;
+con excepción del Artículo 8.3 (Contratación Pública), a la contratación pública; o
+con excepción del Artículo 9.5 (Datos de Gobierno Abierto), a la información en poder o procesada por una Parte o a nombre suyo, o a las medidas relacionadas con esa información, incluyendo las medidas relacionadas con su recopilación
+Artículo 1.2: Relación con Otros Acuerdos Internacionales
+Reconociendo la intención de las Partes de que este Acuerdo coexista con sus acuerdos internacionales existentes, cada Parte confirma:
+en relación con los acuerdos internacionales existentes en los que todas las Partes son parte, incluyendo el Acuerdo sobre la OMC, sus derechos y obligaciones existentes con respecto a las otras Partes; y
+en relación con los acuerdos internacionales existentes en los que esa Parte y al menos una de las otras Partes sean parte, sus derechos y obligaciones existentes con respecto a esa otra Parte o Partes, según sea el caso.
+Si una Parte considera que una disposición de este Acuerdo es incompatible con una disposición de otro acuerdo del cual esta Parte y al menos una otra Parte son partes, en caso de solicitud, las Partes pertinentes del otro acuerdo consultarán con miras a alcanzar una solución mutuamente satisfactoria. Este párrafo es sin perjuicio de los derechos y obligaciones de una Parte conforme al Módulo 14 (Solución de Controversias).1
+1 Para los efectos de la aplicación de este Acuerdo, las Partes acuerdan que el hecho de que un tratado disponga un trato más favorable a mercancías, servicios, inversiones o personas que el dispuesto de conformidad con este Acuerdo no significa que exista una incompatibilidad en el sentido del párrafo 2.
+Artículo 1.3: Definiciones Generales
+Para los efectos de este Acuerdo, a menos que se especifique algo diferente en este Acuerdo:
+Acuerdo significa el Acuerdo de Asociación de Economía Digital;
+Acuerdo sobre la OMC significa Acuerdo sobre la OMC significa el Acuerdo de Marrakech por el cual se establece la Organización Mundial del Comercio, hecho en Marrakech el 15 de abril de 1994;
+AGCS significa Acuerdo General sobre Comercio de Servicios contenido en el Anexo 1B del Acuerdo sobre la OMC;
+APEC significa Foro de Cooperación Económica Asia-Pacífico;
+arancel aduanero incluye cualquier arancel o cargo de cualquier tipo aplicado a o en relación con la importación de una mercancía, y cualquier forma de sobretasa o recargo aplicado en relación con tal importación, pero no incluye cualquier:
+cargo equivalente a un impuesto interno establecido de conformidad con el Artículo III:2 del GATT de 1994;
+derecho u otro cargo relacionado con la importación proporcional con el costo de los servicios prestados; o
+derecho antidumping o medida compensatoria;
+Comité Conjunto significa el comité conjunto establecido en el Módulo 12 (Comité Conjunto y Puntos de Contacto);
+días significa días calendario;
+empresa significa cualquier entidad constituida u organizada conforme al derecho aplicable, tenga o no fines de lucro, y sea de propiedad o control privado o gubernamental, incluidas cualquier sociedad, fideicomiso, participación, empresa de propietario único, empresa conjunta, asociación u organización similar;
+existente significa vigente en la fecha de entrada en vigor de este Acuerdo;
+GATT de 1994 significa Acuerdo General sobre Aranceles Aduaneros y Comercio de 1994 contenido en el Anexo 1A del Acuerdo sobre la OMC;
+información personal significa información, incluyendo los datos, sobre una persona física identificada o identificable;
+medida incluye cualquier ley, regulación, procedimiento, requisito o práctica;
+mercancías significa cualquier bien, producto, artículo o material;
+OMC significa la Organización Mundial del Comercio;
+Parte significa cualquier Estado o territorio aduanero separado para el cual este Acuerdo está en vigor;
+persona significa una persona natural o una empresa;
+persona de una Parte significa un nacional o una empresa de una Parte;
+PYME significa pequeñas y medianas empresas, incluidas las microempresas; y
+servicios financieros está definido en el subpárrafo 5(a) del Anexo sobre Servicios Financieros del AGCS.
+MÓDULO 2
+FACILITACIÓN DE LOS NEGOCIOS Y EL COMERCIO
+Artículo 2.1: Definiciones
+Para los efectos de este Módulo:
+CNUDMI significa la Comisión de las Naciones Unidas para el Derecho Mercantil Internacional
+documentos de administración comercial significa formularios emitidos o controlados por una Parte que deben ser completados por o para un importador o exportador en conexión con la importación o exportación de una mercancía;
+estándar abierto significa un estándar que se pone a disposición del público general, desarrollado o aprobado y mantenido vía un proceso impulsado por la colaboración y el consenso, para facilitar la interoperabilidad y el intercambio de datos entre diferentes productos o servicios y que está destinado para una adopción generalizada;
+facturación electrónica o e-invoicing significa la creación, intercambio y procesamiento automatizado de pagos entre proveedores y compradores usando un formato digital estructurado;
+pagos electrónicos significa la transferencia del pagador de un crédito pecuniario de una persona, que es aceptable para el beneficiario y es hecho a través de medios electrónicos;
+registro electrónico significa un registro generado, comunicado, recibido o almacenado por medios electrónicos en un sistema de información o por transmisión de un sistema de información a otro;
+ventanilla única significa un mecanismo que permite a las personas involucradas en una transacción comercial presentar electrónicamente datos y documentos en un único punto de entrada para cumplir con todos los requisitos regulatorios para operaciones de importación, exportación y tránsito.
+Artículo 2.2: Comercio sin papel
+Cada Parte pondrá a disposición del público, incluyendo a través de un proceso prescrito por esa Parte, versiones electrónicas de todos los documentos administrativos comerciales disponibles al público que existan.2
+2 Para mayor certeza, versiones electrónicas de los documentos administrativos comerciales incluye documentos administrativos comerciales provistos en un formato legible por máquina.
+Cada Parte proveerá versiones electrónicas de los documentos administrativos comerciales mencionados en el párrafo 1 en inglés o en cualquiera de los otros idiomas oficiales de la OMC, y procurará proveer dichas versiones electrónicas en un formato legible por máquina.
+Cada Parte aceptará versiones electrónicas de documentos administrativos comerciales como equivalentes legales de los documentos en papel, excepto cuando:
+hay un requerimiento nacional o internacional en contrario; o
+hacerlo reduciría la efectividad de la administración comercial.
+Tomando en consideración las obligaciones contenidas en el Acuerdo de Facilitación del Comercio de la OMC, cada Parte establecerá o mantendrá una ventanilla única que permita a las personas presentar documentación y datos para la importación, exportación o tránsito de mercancías a través de un único punto de entrada para las agencias o autoridades participantes.
+Las Partes procurarán establecer o mantener una interconexión fluida, confiable, de alta disponibilidad3 y segura de sus respectivas ventanillas únicas para facilitar el intercambio de datos relacionados con los documentos administrativos comerciales, que podrá incluir:
+certificados sanitarios y fitosanitarios;
+datos de importación y exportación; o
+cualesquiera otros documentos, según lo determinen conjuntamente las Partes y, al hacerlo, las Partes proveerán acceso público a una lista de dichos documentos y pondrán a disposición en línea esta lista de documentos.
+Las Partes reconocen la importancia de facilitar, cuando sea pertinente en cada jurisdicción, el intercambio de registros electrónicos usados en las actividades comerciales entre las empresas de las Partes.
+Las Partes procurarán desarrollar sistemas que apoyen el intercambio de:
+los datos relacionados con documentos de administración comercial mencionados en el párrafo 5 entre las autoridades competentes de cada Parte;4 y
+registros electrónicos usados en actividades comerciales entre las empresas de las Partes, según proceda en cada jurisdicción.
+3 Para mayor certeza, “alta disponibilidad” refiere a la habilidad de una ventanilla única de operar continuamente. Esto no prescribe un estándar específico de disponibilidad.
+4 Las Partes reconocen que los sistemas de intercambio de datos mencionados en este párrafo pueden aludir a la interconexión de las ventanillas únicas mencionado en el párrafo 5.
+Las Partes reconocen que los sistemas de intercambio de datos mencionados en el párrafo 7 deben ser compatibles e interoperables entre ellos. Con ese fin, las Partes reconocen el rol de los estándares reconocidos internacionalmente y, si están disponibles, estándares abiertos en el desarrollo y gobernanza de los sistemas de intercambio de datos.
+Las Partes cooperarán y colaborarán en nuevas iniciativas que promuevan y avancen en el uso y la adopción de los sistemas de intercambios de datos mencionados en el párrafo 7, incluyendo a través de, pero no limitado a:
+el intercambio de información, experiencias y mejores prácticas en el área de desarrollo y gobernanza de los sistemas de intercambio de datos; y
+la colaboración en proyectos piloto en el desarrollo y gobernanza de sistemas de intercambio de datos.
+Las Partes cooperarán bilateralmente y en foros internacionales para potenciar la aceptación de versiones electrónicas de documentos de administración comercial y registros electrónicos usados en actividades comerciales entre empresas.
+En el desarrollo de otras iniciativas que contemplen el uso del comercio sin papel, cada Parte procurará tomar en cuenta los métodos acordados en organizaciones internacionales pertinentes.
+Artículo 2.3: Marco de Transacciones Electrónicas Domésticas
+Cada Parte mantendrá un marco legal por el que se rigen las transacciones electrónicas consistente con los principios de:
+la Ley Modelo de la CNUDMI sobre Comercio Electrónico (1996); o
+la Convención de las Naciones Unidas sobre la Utilización de las Comunicaciones Electrónicas en los Contratos Internacionales, hecha en Nueva York, el 23 de noviembre de 2005.
+Cada Parte procurará adoptar la Ley Modelo de la CNUDMI sobre documentos transmisibles electrónicos (2017).
+Cada Parte procurará:
+evitar imponer cualquier carga regulatoria innecesaria a las transacciones electrónicas; y
+facilitar los insumos de personas interesadas en el desarrollo de su marco legal para transacciones electrónicas.
+Artículo 2.4: Logística
+Las Partes reconocen la importancia de una logística transfronteriza eficiente que ayude a disminuir los costos y mejore la velocidad y fiabilidad de las cadenas de suministro.
+Las Partes procurarán compartir mejores prácticas e información general relacionada con el sector logístico, incluyendo, pero no limitado, a lo siguiente:
+entregas de última milla, incluyendo soluciones a pedido y enrutamiento dinámico;
+el uso de vehículos eléctricos, controlados remotamente y autónomos;
+facilitar la disponibilidad de opciones transfronterizas para la entrega de mercancías, tales como casilleros federados; y
+nuevos modelos de entrega y de negocios para la logística.
+Artículo 2.5: Facturación Electrónica
+Las Partes reconocen la importancia del e-invoicing que incrementa la eficiencia, precisión y fiabilidad de las transacciones comerciales. Las Partes también reconocen los beneficios de asegurar que los sistemas usados para e-invoicing dentro de sus respectivas jurisdicciones sean interoperables con los sistemas usados para e-invoicing en las jurisdicciones de las otras Partes.
+Cada Parte asegurará que la implementación de medidas relacionadas al e-invoicing en su jurisdicción sea diseñada para apoyar la interoperabilidad transfronteriza. Para ese fin, cada Parte basará sus medidas relacionadas con e-invoicing en estándares, directrices o recomendaciones internacionales, en caso de existir.
+Las Partes reconocen la importancia económica de promover la adopción global de sistemas de e- invoicing interoperables. Para este fin, las Partes compartirán mejores prácticas y colaborarán en promocionar la adopción de sistemas interoperables para e-invoicing.
+Las Partes acuerdan cooperar y colaborar en iniciativas que promuevan, fomenten, apoyen o faciliten la adopción de e-invoicing para los negocios. Para este fin, las Partes procurarán:
+promover la existencia de infraestructura subyacente para apoyar el e-invoicing; y
+generar conocimiento de, y crear capacidad para, el e-invoicing.
+Artículo 2.6: Envíos Expresos
+Las Partes reconocen que el comercio electrónico juega un rol importante en el aumento del comercio. Con este fin, para facilitar el comercio de envíos expresos en el comercio electrónico, las Partes se asegurarán de que sus respectivos procedimientos aduaneros son aplicados de forma tal que sean predecibles, consistentes y transparentes.
+Cada Parte adoptará o mantendrá procedimientos aduaneros expeditos para envíos de entrega rápida, manteniendo a la vez un adecuado control y selección aduanero. Estos procedimientos deberán:
+proveer información necesaria para que el despacho de un envío expresos sea presentado y procesado antes de su arribo;
+permitir la presentación de información en un solo documento que cubra todas las mercancías contenidas en un envío expreso, tal como un manifiesto, a través de medios electrónicos, de ser posible;5
+en la medida de lo posible, proveer el despacho de ciertas mercancías con un mínimo de documentación;
+en circunstancias normales, proveer el despacho de envíos expresos dentro de seis horas después de la presentación de los documentos aduaneros necesarios, siempre que el envío haya arribado; y
+aplicarse a los envíos de cualquier peso o valor, reconociendo que una Parte podrá requerir procedimientos formales de entrada como condición para el despacho, incluyendo la declaración y documentación de respaldo, así como el pago de derechos aduaneros basado en el peso o valor de las mercancías.
+Si una Parte no otorga el trato previsto en los párrafos 2(a) al 2(e) a todos los envíos, esa Parte dispondrá un procedimiento aduanero separado6 y expedito que establezca ese trato para los envíos expresos.
+Cada Parte proveerá de un valor de carga de minimis o cantidad sujeta a derechos para la cual los derechos aduaneros no serán percibidos, aparte de las mercancías restringidas o controladas, tales como mercancías sujetas a licencias de importación o requerimientos similares. 7 Cada Parte revisará periódicamente el monto tomando en cuenta factores que pueda considerar pertinentes, tales como tasas de inflación, efecto en la facilitación del
+5 Para mayor certeza, se podrán requerir documentos adicionales como condición para el despacho.
+6 Para mayor certeza, “separado” no significa una instalación o vía específica.
+7 Sin perjuicio de este Artículo, una Parte podrá calcular derechos aduaneros, o podrá requerir documentos formales de entrada, para mercancías restringidas o controladas tales como mercancías sujetas a licencias de importación o requerimientos similares.
+comercio, impacto en la gestión de riesgo, costo administrativo de la recaudación de derechos comparado con el monto de estos, costo de las transacciones comerciales transfronterizas, impacto en las PYMEs, u otros factores relacionados con la recaudación de derechos aduaneros.
+Artículo 2.7: Pagos Electrónicos8
+Tomando en consideración el rápido crecimiento de los pagos electrónicos, en particular, aquellos provistos por nuevos proveedores de servicios de pago, las Partes acuerdan apoyar el desarrollo de pagos transfronterizos electrónicos eficientes, seguros y protegidos al fomentar la adopción y uso de estándares internacionalmente aceptados, promoviendo la interoperabilidad y la interconexión de las infraestructuras de pagos y alentando la innovación y competencia útil en el ecosistema de pagos.
+Con ese fin y de acuerdo con sus respectivas leyes y regulaciones, las Partes reconocen los siguientes principios:
+Las Partes procurarán poner sus respectivas regulaciones sobre pagos electrónicos, incluyendo aquellas concernientes a la autorización regulatoria, requerimientos de licencia, estándares procedimentales y técnicos, a disposición del público de manera oportuna.
+Las Partes procurarán tomar en consideración, para sistemas de pagos relevantes, estándares de pago internacionalmente aceptados para permitir mayor interoperabilidad entre sistemas de pagos.
+Las Partes procurarán promover el uso de la Interfaz de Programación de Aplicaciones (IPA) y de alentar a las instituciones financieras y proveedores de servicios de pagos de poner a disposición las IPAs de sus productos, servicios y transacciones financieras a terceros interesados cuando sea posible para facilitar una mayor interoperabilidad e innovación en el ecosistema de pagos electrónicos.
+Las Partes procurarán habilitar la autenticación y el conocimiento de cliente electrónico transfronterizos de individuos y negocios que utilicen identidad digital.
+Las Partes reconocen la importancia de sustentar la protección, eficiencia, confianza y seguridad en los sistemas de pagos electrónicos a través de la regulación. La implementación de la regulación debiese, cuando corresponda, ser proporcional a, y acorde con, los riesgos que supone la provisión de sistemas de pagos electrónicos.
+Las Partes coinciden en que las políticas debiesen promover la innovación y la competencia en igualdad de condiciones y reconocen la importancia de permitir la introducción nuevos productos y servicios de pago financieros y electrónicos por titulares y nuevos entrantes de una manera oportuna, tal como a través de la adopción de entornos de prueba regulatorios e industriales (regulatory and industry sandboxes).
+8 Para mayor certeza, nada en este Artículo se interpretará en el sentido de imponer a una Parte la obligación de modificar sus reglas domésticas sobre pagos, incluyendo, inter alia, la necesidad de obtener licencias o permisos o la autorización de solicitudes de acceso.
+MÓDULO 3
+TRATAMIENTO DE PRODUCTOS DIGITALES Y TEMAS RELACIONADOS
+Artículo 3.1: Definiciones
+Para los efectos de este Módulo:
+producto digital significa un programa de cómputo, texto, video, imagen, grabación de sonido u otro producto que esté codificado digitalmente, producido para la venta o distribución comercial y que puede ser transmitido electrónicamente;9,10 y
+transmisión electrónica o transmitido electrónicamente significa una transmisión realizada utilizando cualquier medio electromagnético, incluyendo medios fotónicos.
+Artículo 3.2: Derechos Aduaneros
+Ninguna Parte impondrá derechos aduaneros a las transmisiones electrónicas, incluyendo el contenido transmitido electrónicamente, entre una persona de una Parte y una persona de otra Parte.
+Para mayor certeza, el párrafo 1 no impedirá que una Parte imponga impuestos internos, tarifas u otras cargas sobre el contenido transmitido electrónicamente, siempre que dichos impuestos, tarifas o cargas se impongan de una manera compatible con este Acuerdo.
+Artículo 3.3: Trato No Discriminatorio de Productos Digitales
+Las partes afirman su nivel de compromisos respecto del trato no discriminatorio a los productos digitales, en particular, pero no exclusivamente:
+“1. Ninguna Parte otorgará un trato menos favorable a los productos digitales creados, producidos, publicados, contratados para, comisionados o puestos a disposición por primera vez en condiciones comerciales en el territorio de otra Parte, o a los productos digitales de los cuales el autor, intérprete, productor, desarrollador, o propietario sea una persona de otra Parte, que el que otorga a otros productos digitales similares.1
+9 Para mayor certeza, un producto digital no incluye la representación digitalizada de un instrumento financiero, incluyendo dinero.
+10 La definición de producto digital no debe entenderse que refleja la opinión de una Parte sobre si el comercio de productos digitales transmitidos electrónicamente debiera clasificarse como comercio de servicios o comercio de mercancías.
+Pie de página 1: Para mayor certeza, en la medida en que un producto digital de una no Parte es un “producto digital similar”, será calificado como "otro producto digital similar" para los efectos de este párrafo.
+El párrafo 1 no se aplicará en la medida de cualquier incompatibilidad con los derechos y obligaciones sobre Propiedad Intelectual que se encuentren contenidos en otros acuerdos en los que una Parte es parte.
+Las Partes entienden que este Artículo no se aplica a los subsidios o subvenciones otorgados por una Parte, incluidos los préstamos, garantías y seguros respaldados por el gobierno.
+Este Artículo no se aplicará a la radiodifusión.”
+Artículo 3.4: Productos de las Tecnologías de la Información y Comunicación que usan Criptografía
+Las Partes afirman su nivel de compromisos en relación con los Productos de las Tecnologías de la Información que usan Criptografía, en particular, pero no exclusivamente:
+“1. Esta sección se aplicará a los productos de tecnología de la información y comunicaciones (TIC) que utilizan criptografía.
+Pie de página 1: Para mayor certeza, a los efectos de la presente sección, un "producto" es una mercancía y no incluye un instrumento financiero.
+Para los efectos de esta sección:
+algoritmo criptográfico o cifra significa un procedimiento matemático o fórmula para
+combinar una clave con texto plano para crear un texto cifrado;
+clave significa un parámetro utilizado en conjunto con un algoritmo criptográfico que determina su funcionamiento de tal manera que una entidad con conocimiento de la clave puede reproducir o invertir la operación, mientras que una entidad sin conocimiento de la clave no puede;
+criptografía significa los principios, medios o métodos para la transformación de datos con el fin de ocultar su contenido de información, evitar su modificación no detectada o impedir su uso no autorizado; y se limita a la transformación de información usando uno o más parámetros secretos, por ejemplo, cripto variables, o gestión de clave asociada; y
+encriptación significa la conversión de datos (texto plano) a una forma que no se pueda entender fácilmente sin una subsecuente re-conversión (texto cifrado) mediante el uso de un algoritmo criptográfico.
+Con respecto a un producto que utiliza criptografía y que está diseñado para aplicaciones comerciales, ninguna Parte impondrá o mantendrá un reglamento técnico o procedimiento de evaluación de la conformidad que requiera que un fabricante o proveedor del producto, como condición de la fabricación, venta, distribución, importación o uso del producto:
+transfiera o proporcione acceso a una tecnología, proceso de producción u otra información particulares, por ejemplo, una clave privada u otro parámetro secreto, especificación algorítmica u otro detalle del diseño, que es propiedad del fabricante o proveedor y que se relaciona con la criptografía en el producto, con la Parte o con una persona en el territorio de la Parte;
+se asocie con una persona en su territorio; o
+utilice o integre un algoritmo criptográfico o cifra particular,
+salvo cuando la fabricación, venta, distribución, importación o uso del producto sea por o para el gobierno de dicha Parte.
+El párrafo 3 no se aplicará a:
+los requisitos que una Parte adopte o mantenga en relación con el acceso a las redes que son propiedad o están controladas por el gobierno de esa Parte, incluyendo las de los bancos centrales; o
+las medidas adoptadas por una Parte en virtud de la autoridad de supervisión, investigación o examinación relacionada con instituciones o mercados financieros.
+Para mayor certeza, esta sección no se interpretará para impedir que las autoridades de una Parte encargadas de aplicar la ley requieran a proveedores de servicio que usan encriptación que ellos controlan proporcionar, de conformidad con los procedimientos legales de esa Parte comunicaciones sin encriptar”.
+MÓDULO 4
+TEMAS DE DATOS
+Artículo 4.1: Definiciones
+Para los efectos de este Módulo:
+instalaciones informáticas significa servidores informáticos y dispositivos de almacenamiento para el procesamiento o almacenamiento de información para uso comercial.
+Artículo 4.2: Protección de la Información Personal
+Las Partes reconocen los beneficios económicos y sociales de la protección de la información personal de los participantes de la economía digital y la importancia de dicha protección en mejorar la confianza en la economía digital y el desarrollo del comercio.
+Para tal fin, cada Parte adoptará o mantendrá un marco legal que disponga la protección de la información personal de los usuarios del comercio electrónico y digital. En el desarrollo de su marco legal para la protección de la información personal, cada Parte deberá tomar en consideración los principios y directrices de los organismos internacionales pertinentes.11
+Las partes reconocen que los principios que sostienen un marco legal robusto para la protección de la información personal deberían incluir:
+limitación de recolección;
+calidad de datos;
+especificación de propósito;
+limitación de uso;
+salvaguardias de seguridad;
+transparencia;
+11 Para mayor certeza, una Parte podrá cumplir con la obligación de este párrafo adoptando o manteniendo medidas tales como leyes que abarquen de manera amplia la privacidad, información personal o protección de datos personales, leyes sectoriales específicas sobre protección de datos personales o privacidad, o leyes que dispongan la aplicación de compromisos voluntarios de empresas relacionados con la protección de datos personales o la privacidad.
+participación individual; y
+rendición de cuentas.
+Cada Parte adoptará prácticas no discriminatorias al proteger a los usuarios del comercio electrónico de vulneraciones a la protección de la información personal ocurridas dentro de su jurisdicción.
+Cada Parte publicará información sobre la protección de la información personal que proporcione a los usuarios del comercio electrónico, incluyendo cómo:
+los individuos pueden formular reclamaciones; y
+las empresas pueden cumplir con cualquier requisito legal.
+Reconociendo que las Partes podrán tomar diferentes enfoques legales para proteger la información personal, cada Parte perseguirá el desarrollo de mecanismos para promover la compatibilidad entre sus distintos regímenes de protección de información personal. Estos mecanismos podrán incluir:
+el reconocimiento de resultados regulatorios, sean acordados autónomamente o por mutuo acuerdo;
+marcos internacionales más amplios;
+cuando sea factible, un apropiado reconocimiento de protección comparable otorgada por sus respectivos marcos legales de sellos de confianza y sus marcos de certificación; u
+otras vías de transferencia de información personal entre las Partes.
+Las Partes intercambiarán información sobre cómo los mecanismos mencionados en el párrafo 6 se aplican a sus respectivas jurisdicciones y explorarán formas para extender estos u otros arreglos adecuados para promocionar la compatibilidad y la interoperabilidad entre ellos.
+Las Partes alentarán la adopción por parte de las empresas de sellos de confianza de protección de datos que ayuden a verificar su conformidad con estándares de protección de datos personales y con mejores prácticas.
+Las Partes intercambiarán información y compartirán experiencias sobre el uso de sellos de confianza de protección de datos.
+Las Partes procurarán reconocer mutuamente los sellos de confianza de protección de datos de la otras Partes como mecanismos válidos para facilitar las transferencias transfronterizas de información mientras se protege la información personal.
+Artículo 4.3: Transferencia Transfronteriza de Información por Medios Electrónicos
+Las Partes afirman su nivel de compromisos en relación con la transferencia transfronteriza de información a través de medios electrónicos, en particular, pero no exclusivamente:
+“1. Las Partes reconocen que cada Parte podrá tener sus propios requisitos regulatorios sobre la transferencia de información por medios electrónicos.
+Cada Parte permitirá la transferencia transfronteriza de información por medios electrónicos, incluyendo la información personal, cuando esta actividad sea para la realización de un negocio de una persona cubierta.
+Nada de lo dispuesto en este Artículo impedirá que una Parte adopte o mantenga medidas incompatibles con el párrafo 2 para alcanzar un objetivo legítimo de política pública, siempre que la medida:
+no se aplique de forma que constituya un medio de discriminación arbitraria o injustificable, o una restricción encubierta al comercio; y
+no imponga restricciones a las transferencias de información mayores a las que se
+requieren para alcanzar el objetivo.”
+Artículo 4.4: Ubicación de las Instalaciones Informáticas
+Las Partes afirman su nivel de compromisos en relación con la ubicación de las instalaciones informáticas, en particular, pero no exclusivamente:
+“1. Las Partes reconocen que cada Parte podrá tener sus propios requisitos regulatorios relativos al uso de instalaciones informáticas, incluyendo los requisitos que buscan asegurar la seguridad y confidencialidad de las comunicaciones.
+Ninguna Parte podrá exigir a una persona cubierta usar o ubicar las instalaciones informáticas en el territorio de esa Parte, como condición para la realización de negocios en ese territorio.
+Nada de lo dispuesto en este Artículo impedirá que una Parte adopte o mantenga medidas incompatibles con el párrafo 2 para alcanzar un objetivo legítimo de política pública, siempre que la medida:
+no se aplique de forma que constituya un medio de discriminación arbitrario o injustificable, o una restricción encubierta al comercio; y
+no imponga restricciones sobre el uso o ubicación de las instalaciones informáticas
+mayores a las que se requieren para alcanzar el objetivo”.
+MÓDULO 5
+AMBIENTE AMPLIO DE CONFIANZA
+Artículo 5.1: Cooperación en Ciberseguridad
+Las Partes comparten la visión de promover un comercio digital seguro para lograr la prosperidad global, y reconocen que la ciberseguridad sustenta la economía digital.
+Las Partes además reconocen la importancia de:
+desarrollar las capacidades de sus entidades nacionales responsables de la respuesta a incidentes de seguridad informática;
+utilizar los mecanismos de colaboración existentes para cooperar en la identificación y mitigación de intrusiones maliciosas o la diseminación de códigos maliciosos que afectan las redes electrónicas de las Partes; y
+desarrollar la fuerza laboral en el área de la ciberseguridad, a través de posibles iniciativas relacionadas con el reconocimiento mutuo de calificaciones, diversidad e igualdad.
+Artículo 5.2: Protección y Seguridad en línea
+Las Partes reconocen que un ambiente en línea seguro y protegido fortalece la economía digital.
+Las Partes reconocen la importancia de adoptar un enfoque que incluya la visión de múltiples partes interesadas para identificar los problemas de protección y seguridad en línea.
+Las Partes procurarán cooperar para avanzar en soluciones colaborativas a problemas globales que afecten la protección y seguridad en línea
+MÓDULO 6
+CONFIANZA DE CONSUMIDOR Y EMPRESA
+Artículo 6.1: Definiciones
+Para los efectos de este Módulo:
+mensaje electrónico comercial no solicitado significa un mensaje electrónico que se envía a una dirección electrónica con fines comerciales o publicitarios sin el consentimiento del receptor o a pesar del rechazo explícito del receptor, a través de un proveedor de servicio de acceso a Internet o, en la medida de lo previsto por las leyes y regulaciones de cada Parte, a través de otro servicio de telecomunicaciones.
+Artículo 6.2: Mensajes Electrónicos Comerciales No Solicitados
+Cada Parte adoptará o mantendrá medidas relativas a los mensajes electrónicos comerciales no solicitados que:
+requieran a los proveedores de mensajes electrónicos comerciales no solicitados, facilitar la capacidad de los receptores para prevenir la recepción continua de aquellos mensajes;
+requieran el consentimiento de los receptores, según se especifique de acuerdo con las leyes y regulaciones de cada Parte, para recibir mensajes electrónicos comerciales; o
+dispongan de otra forma la minimización de los mensajes electrónicos comerciales no solicitados.
+Cada Parte proporcionará recursos en contra de los proveedores de mensajes electrónicos comerciales no solicitados que no cumplan con las medidas adoptadas o mantenidas de conformidad con el párrafo 1.
+Las Partes procurarán cooperar en casos apropiados de interés mutuo relativos a la regulación de los mensajes electrónicos comerciales no solicitados.
+Artículo 6.3: Protección al Consumidor en Línea
+Las Partes reconocen la importancia de medidas transparentes y efectivas para proteger a los consumidores de prácticas comerciales fraudulentas, que induzcan a error y engañosas cuando participan del comercio electrónico.
+Las Partes reconocen la importancia de la cooperación entre sus respectivas agencias nacionales de protección al consumidor u otros organismos pertinentes en las actividades relacionadas con el comercio electrónico transfronterizo, con el fin de mejorar el bienestar del consumidor.
+Cada Parte adoptará o mantendrá leyes o regulaciones para prohibir prácticas comerciales fraudulentas, que induzcan a error y engañosas que causen daño, o que sea probable que causen daño, a los consumidores que participan en actividades comerciales en línea. Aquellas leyes o regulaciones podrán incluir derecho contractual o extracontractual y podrán ser de naturaleza civil o penal. “Prácticas comerciales fraudulentas, que induzcan a error o engañosas” incluyen:
+tergiversar o falsear información sobre las características físicas, precio, la idoneidad para su finalidad, cantidad o el origen de los bienes o servicios;
+publicitar el suministro de bienes o servicios sin tener intención de suministrarlos;
+no entregar productos o no prestar servicios a los consumidores después de haberles cobrado por ellos; o
+efectuar cobros o cargos en cuentas financieras, telefónicas o de otro tipo, pertenecientes a los consumidores sin autorización.
+Cada Parte adoptará o mantendrá leyes o regulaciones que:
+requieran, al momento del envío, que los bienes y servicios suministrados sean de una calidad aceptable y satisfactoria, consistente con las afirmaciones del proveedor respecto de la calidad de los bienes y servicios; y
+proporcionen a los consumidores un resarcimiento apropiado cuando no lo sean.
+Cada Parte pondrá a disposición del público y facilitará el acceso a sus leyes y regulaciones de protección al consumidor.
+Las Partes reconocen la importancia de mejorar el conocimiento sobre, y el acceso a, políticas y procedimientos relacionados con la protección al consumidor, incluyendo mecanismos de resarcimiento al consumidor, incluso para los consumidores de una Parte que realizan transacciones con proveedores de otra Parte.
+Las Partes promoverán, según sea apropiado y sujeto a las respectivas leyes y regulaciones de cada Parte, la cooperación en materias de interés mutuo relacionadas a prácticas comerciales que induzcan a error o engañosas, incluyendo en la aplicación de sus leyes de protección al consumidor, con respecto a actividades comerciales en línea.
+Las Partes procurarán explorar los beneficios de mecanismos que faciliten la solución de demandas relacionadas con transacciones de comercio electrónico, incluyendo los de solución de controversias alternativos.
+Artículo 6.4: Principios sobre el Acceso y el Uso del Internet
+Sujeto a las políticas, leyes y regulaciones aplicables, las Partes reconocen los beneficios de que sus consumidores tengan la capacidad de:
+acceder y usar los servicios y aplicaciones a elección del consumidor disponibles en Internet, sujeto a una administración razonable de la red12;
+conectar a Internet los dispositivos de usuario final de elección del consumidor, siempre que dichos dispositivos no dañen la red; y
+acceder a información sobre las prácticas de administración de redes del proveedor del servicio de acceso a Internet del consumidor.
+12 Las Partes reconocen que un proveedor de servicio de acceso a Internet que ofrece a sus suscriptores cierto contenido de manera exclusiva no estaría actuando de manera contraria a este principio.
+MÓDULO 7 IDENTIDAD DIGITAL
+Artículo 7.1: Identidad digital
+Reconociendo que la cooperación entre las Partes en identidad digital, individual o corporativa, incrementará la conectividad regional y global, y reconociendo que cada Parte pueda tener diferentes implementaciones y enfoques legales de identidad digital, cada Parte procurará promover la interoperabilidad entre sus respectivos regímenes de identidad digital. Esto podrá incluir:
+el establecimiento o mantención de marcos apropiados para fomentar la interoperabilidad técnica o estándares comunes entre la implementación de identidad digital de cada Parte;
+una protección comparable de la identidad digital otorgada por los respectivos marcos legales de cada Parte, o el reconocimiento de sus efectos legales y regulatorios, sean acordados autónomamente o por mutuo acuerdo;
+el establecimiento o mantención de marcos internacionales más amplios; y
+el intercambio de conocimientos y experiencias en mejores prácticas relacionadas a políticas y regulaciones de identidad digital, implementación técnica y estándares de seguridad, y en adopción por los usuarios.
+Para mayor certeza, nada de lo dispuesto en este Artículo impedirá que una Parte adopte o mantenga medidas incompatibles con el párrafo 1 para alcanzar un objetivo legítimo de política pública.
+MÓDULO 8
+TECNOLOGÍAS Y TENDENCIAS EMERGENTES
+Artículo 8.1: Cooperación Tecnológica Financiera
+Las Partes promoverán la cooperación entre la industria de tecnología financiera (FinTech) en las Partes. Las Partes reconocen que la cooperación efectiva con respecto a FinTech requerirá la participación de las empresas. Para este fin, las Partes:
+promoverán la cooperación entre empresas del sector FinTech;
+promoverán el desarrollo de soluciones FinTech para negocios o sectores financieros; y
+alentarán la colaboración en el talento para el emprendimiento o start-up entre las Partes en FinTech, de conformidad con las leyes y regulaciones de las respectivas Partes.
+Artículo 8.2: Inteligencia Artificial
+Las Partes reconocen que el uso y la adopción de tecnologías de Inteligencia Artificial (IA) se han expandido rápidamente en la economía digital.
+Las Partes reconocen la importancia económica y social de desarrollar marcos éticos y de gobernanza para el uso confiable, seguro y responsable de las tecnologías de IA. En vista de la naturaleza transfronteriza de la economía digital, las Partes reconocen además los beneficios de desarrollar el entendimiento mutuo y, en última instancia, asegurar que dichos marcos estén alineados internacionalmente, a fin de facilitar, en la medida de lo posible, la adopción y el uso de tecnologías de IA en las jurisdicciones respectivas de las Partes.
+Con este fin, las Partes se esforzarán por promover la adopción de marcos éticos y de gobernanza que apoyen el uso confiable, seguro y responsable de las tecnologías de IA (Marcos de Gobernanza de IA).
+Al adoptar los Marcos de Gobernanza de IA, las Partes se esforzarán por considerar los principios o directrices reconocidos internacionalmente, incluida la explicabilidad, la transparencia, la equidad y los valores centrados en el ser humano.
+Artículo 8.3: Contratación Pública
+Las Partes reconocen que la economía digital tendrá un impacto en la contratación pública y afirman la importancia de los mercados de contratación pública abiertos, justos y transparentes.
+Con este fin, las Partes llevarán a cabo actividades de cooperación en relación con el entendimiento acerca de cómo una mayor digitalización de los procesos de adquisición, y de los bienes y servicios impacta en los compromisos de contratación pública internacional existentes y futuros.
+Artículo 8.4: Cooperación en Política de Competencia
+Reconociendo que las Partes pueden beneficiarse al compartir sus experiencias en la aplicación de las leyes sobre competencia y en el desarrollo e implementación de políticas de competencia para abordar los desafíos que surgen de la economía digital, las Partes considerarán emprender actividades de cooperación técnica mutuamente acordadas, que incluyan:
+intercambiar información y experiencias sobre el desarrollo de políticas de competencia en los mercados digitales;
+compartir las mejores prácticas sobre promoción de la competencia en los mercados digitales; y
+proporcionar asesoramiento o capacitación, incluso mediante el intercambio de funcionarios, para ayudar a una Parte a desarrollar las capacidades necesarias para fortalecer el desarrollo de la política de competencia y la aplicación de las leyes sobre competencia en los mercados digitales.
+Las Partes cooperarán, según corresponda, en asuntos de aplicación de las leyes sobre competencia en los mercados digitales, incluso mediante notificación, consulta e intercambio de información.
+Las Partes cooperarán de manera compatible con sus respectivas leyes, regulaciones e intereses importantes, y dentro de sus recursos razonablemente disponibles.
+MÓDULO 9
+INNOVACIÓN Y LA ECONOMÍA DIGITAL
+Artículo 9.1: Definiciones
+Para los efectos de este Módulo:
+datos abiertos significa datos digitales que se ponen a disposición con las características técnicas y legales necesarias para que puedan ser utilizados, reutilizados y redistribuidos libremente. Esta definición sólo dice relación con la información mantenida o procesada por o en nombre de una Parte.
+Artículo 9.2: Objetivos
+Las Partes afirman la importancia de la innovación tecnológica, la creatividad y la transferencia y difusión de la tecnología, para beneficio mutuo de los productores y usuarios de conocimiento, como un medio para lograr el bienestar social y económico.
+Artículo 9.3: Dominio Público
+Las Partes reconocen la importancia de un dominio público abundante y accesible.
+Las Partes reconocen de igual manera la importancia de materiales informativos, tales como, bases de datos de acceso público de los derechos de propiedad intelectual registrados, que ayuden en la identificación de aquellas materias que han pasado a ser de dominio público.
+Artículo 9.4: Innovación de datos
+Las Partes reconocen que los flujos de datos transfronterizos y el intercambio de datos permiten la innovación basada en datos. Las Partes además reconocen que la innovación puede mejorarse dentro del contexto de los entornos de prueba regulatorios (regulatory data sandboxes) donde los datos, incluida la información personal,13 son compartidos entre las empresas de conformidad con las leyes y regulaciones respectivas de las Partes.
+Las Partes también reconocen que los mecanismos de intercambio de datos, como los marcos de intercambio de datos confiables y los acuerdos de licencia abiertos, facilitan el intercambio de datos y promueven su uso en el entorno digital para:
+promover la innovación y la creatividad;
+13 Para mayor certeza, esto se entiende sin perjuicio del Artículo 4.2 (Protección de la Información Personal).
+facilitar la difusión de información, conocimiento, tecnología, cultura y de las artes; y
+fomentar la competencia y los mercados abiertos y eficientes.
+Las Partes procurarán colaborar en proyectos y mecanismos de intercambio de datos, y en pruebas de conceptos para nuevos usos de datos, incluidos los entornos de prueba de datos (data sandboxes), para promover la innovación basada en datos.
+Artículo 9.5: Datos de Gobierno Abierto
+Las Partes reconocen que facilitar el acceso público y el uso de la información gubernamental puede fomentar el desarrollo económico y social, la competitividad y la innovación.
+En la medida en que una Parte ponga a disposición del público información gubernamental, incluidos los datos, procurará asegurar que la información sea puesta a disposición como datos abiertos.
+Las Partes procurarán cooperar para identificar las formas en que las Partes pueden ampliar el acceso y el uso de datos abiertos, con miras a mejorar y generar oportunidades de negocios.
+La cooperación conforme a este Artículo podrá incluir actividades tales como:
+identificar conjuntamente los sectores donde las series de datos abiertos, particularmente aquellos de valor global, puedan utilizarse para facilitar la transferencia de tecnología, la formación de talentos y la innovación, entre otros;
+alentar el desarrollo de nuevos productos y servicios basados en series de datos abiertos; y
+fomentar el uso y desarrollar modelos de licencia de datos abiertos en forma de licencias públicas estandarizadas disponibles en línea, lo que permitirá que cualquier persona pueda acceder, usar, modificar y compartir libremente los datos abiertos para cualquier propósito permitido por las leyes y regulaciones respectivas de las Partes, y que se basen en formatos de datos abiertos.
+MÓDULO 10
+COOPERACIÓN DE PEQUEÑAS Y MEDIANAS EMPRESAS
+Artículo 10.1: Principios Generales
+Las Partes reconocen el rol fundamental de las PYMEs en mantener el dinamismo y mejorar la competitividad de la economía digital.
+Las Partes reconocen el rol integral del sector privado en la cooperación de las PYMEs que será implementada conforme a este Módulo.
+Las Partes promoverán una cooperación cercana en la economía digital entre las PYMEs de las Partes y cooperarán en promover empleos y crecimiento para las PYMEs.
+Artículo 10.2: Cooperación para Mejorar las Oportunidades de Comercio e Inversión para las PYMEs en la Economía Digital
+Con miras a una cooperación más robusta entre las Partes para mejorar las oportunidades de comercio e inversión para las PYMEs en la economía digital, las Partes:
+continuarán la cooperación con las otras Partes para intercambiar información y mejores prácticas sobre el impulso a las herramientas y tecnologías digitales para mejorar el acceso de las PYMEs al capital y crédito, la participación de las PYMEs en oportunidades de contratación pública y otras áreas que podrían ayudar a las PYMEs a adaptarse a la economía digital; y
+alentarán la participación de las PYMEs de las Partes en plataformas que podrían ayudar a las PYMEs a conectarse con proveedores internacionales, compradores y otros potenciales socios comerciales.
+Artículo 10.3: Intercambio de Información
+Cada Parte establecerá o mantendrá sus propios sitios webs, libres y abiertos al público, los que contendrán la información relativa a este Acuerdo, incluyendo:
+el texto de este Acuerdo;
+un resumen de este Acuerdo; e
+información diseñada para PYMES que contenga:
+una descripción de las disposiciones de este Acuerdo que la Parte considere relevantes para las PYMEs; y
+cualquier información adicional que fuera de utilidad para las PYMEs interesadas en beneficiarse de las oportunidades otorgadas por este Acuerdo.
+Cada Parte incluirá en su sitio web, establecido o mantenido de conformidad con el párrafo 1, enlaces o información accesible a través transferencia electrónica automática a:
+los sitios web equivalentes de las otras Partes; y
+los sitios web de sus propias agencias de gobierno y otras entidades apropiadas que entreguen información que la Parte considere útil para cualquier persona interesada en la implementación de este Acuerdo.
+La información descrita en el párrafo 2(b) podrá incluir información relacionada a las siguientes áreas:
+regulaciones aduaneras, procedimientos o puntos de información;
+regulaciones relativas a flujo de datos y privacidad de los datos;
+innovación y entornos de prueba regulatorios (data regulatory sandboxes);
+regulaciones o procedimientos relativos a derechos de propiedad intelectual;
+reglamentos técnicos, normas, o procedimientos de evaluación de la conformidad relacionados con la economía digital;
+medidas sanitarias o fitosanitarias relativas a importación y exportación;
+programas de promoción del comercio;
+oportunidades de contratación pública; y
+programas de financiamiento para las PYMEs.
+Cada Parte revisará regularmente la información y enlaces en el sitio web referido en el párrafo 2 y en el párrafo 3 para garantizar que la información y enlaces se encuentren al día y sean precisos.
+En la medida de lo posible, cada Parte pondrá a disposición en inglés la información publicada de conformidad con este Artículo.
+Artículo 10.4: Diálogo Digital de PYMEs
+Las Partes convocarán un Diálogo Digital de PYMEs (el Diálogo). El Diálogo podrá incluir al sector privado, organizaciones no gubernamentales, expertos académicos y otras partes interesadas de cada Parte. Las Partes podrán colaborar con otras personas interesadas para convocar al Diálogo.
+El Diálogo promoverá los beneficios de este Acuerdo para las PYMEs de las Partes. El Diálogo también promoverá esfuerzos de colaboración relevantes e iniciativas entre las Partes que surjan de este Acuerdo.
+Para alentar la participación inclusiva de las partes interesadas de las Partes y aumentar el impacto de la difusión, las Partes podrán considerar organizar el Diálogo al margen, o como parte de plataformas y reuniones existentes en las cuales las Partes participan o son miembros de, incluyendo reuniones de APEC o la OMC.
+Las Partes podrán considerar usar los insumos técnicos o científicos pertinentes, u otra información que surja del Diálogo para los esfuerzos de implementación y ulterior modernización de este Acuerdo para el beneficio de las PYMEs de las Partes.
+MÓDULO 11
+INCLUSIÓN DIGITAL
+Artículo 11.1: Inclusión Digital
+Las Partes reconocen la importancia de la inclusión digital para garantizar que todas las personas y empresas tengan lo que necesiten para participar, contribuir y beneficiarse de la economía digital.
+Las Partes reconocen la importancia de ampliar y facilitar las oportunidades de la economía digital mediante la eliminación de barreras. Esto podrá incluir mejorar los vínculos culturales y de persona a persona, incluso entre los Pueblos Indígenas, y mejorar el acceso de las mujeres, las poblaciones rurales y los grupos socioeconómicos vulnerables.
+Con este fin, las Partes cooperarán en asuntos relacionados con la inclusión digital, incluida la participación de mujeres, poblaciones rurales, grupos socioeconómicos vulnerables y Pueblos Indígenas en la economía digital. La cooperación puede incluir:
+intercambiar experiencias y mejores prácticas, incluido el intercambio de expertos, con respecto a la inclusión digital;
+promover un crecimiento económico inclusivo y sostenible, para ayudar a garantizar que los beneficios de la economía digital se compartan más ampliamente;
+abordar las barreras para acceder a oportunidades de economía digital;
+desarrollar programas para promover la participación de todos los grupos en la economía digital;
+compartir métodos y procedimientos para la recopilación de datos desagregados, el uso de indicadores y el análisis de estadísticas relacionadas con la participación en la economía digital; y
+otras áreas acordadas conjuntamente por las Partes.
+Las actividades de cooperación relacionadas con la inclusión digital podrán llevarse a cabo a través de la coordinación, según corresponda, de las respectivas agencias, empresas, sindicatos, sociedad civil, instituciones académicas y organizaciones no gubernamentales de las Partes, entre otras.
+MÓDULO 12
+COMITÉ CONJUNTO Y PUNTOS DE CONTACTO
+Artículo 12.1: Establecimiento del Comité Conjunto
+Las Partes establecen un Comité Conjunto que consiste en representantes gubernamentales de cada Parte. Cada Parte será responsable de la composición de su delegación.
+Artículo 12.2: Funciones del Comité Conjunto
+El Comité Conjunto:
+considerará cualquier asunto relacionado con la implementación o funcionamiento de este Acuerdo, incluyendo el establecimiento de órganos subsidiarios y los términos de adhesión;
+considerará cualquier propuesta para enmendar o modificar este Acuerdo;
+considerará formas para mejorar aún más la asociación de economía digital entre las Partes;
+desarrollará arreglos para la implementación de este Acuerdo;14
+establecerá las Reglas de Procedimiento señaladas en el Módulo 14 (Solución de Controversias), y, cuando corresponda, modificar esas reglas; y
+adoptar cualquier otra acción que las Partes puedan acordar.
+Artículo 12.3: Adopción de Decisiones
+El Comité Conjunto adoptará decisiones en materias de sus funciones por consenso, salvo que se disponga algo diferente en este Acuerdo, o que las Partes decidan algo diferente.15 Salvo que se disponga algo diferente en este Acuerdo, se considerará que el Comité Conjunto o cualquier órgano subsidiario ha adoptado una decisión por consenso, si ninguna Parte presente en cualquier reunión en que se adopte una decisión objeta la decisión propuesta.
+14 En el caso de Chile, siempre que estos arreglos se adopten para cumplir con este Acuerdo, ellos deberán ser considerados, cuando corresponda, como acuerdos para la ejecución de un tratado de conformidad con el derecho chileno.
+15 Para mayor certeza, cualquier decisión sobre un procedimiento alternativo de adopción de decisiones por las Partes deberá ser adoptada por consenso.
+Artículo 12.4: Reglas de Procedimiento del Comité Conjunto
+El Comité Conjunto se reunirá dentro de un año a partir de la fecha de entrada en vigor de este Acuerdo y posteriormente según las Partes lo decidan, incluyendo cuando sea necesario para cumplir sus funciones de conformidad con el Artículo 12.2 (Funciones del Comité Conjunto). Las reuniones del Comité Conjunto serán presididas sucesivamente por cada Parte.
+La Parte que preside una sesión del Comité Conjunto proporcionará todo el apoyo administrativo necesario para dicha sesión, y notificará a las otras Partes de cualquier decisión del Comité Conjunto.
+Salvo que se disponga algo diferente en este Acuerdo, el Comité Conjunto y cualquier órgano subsidiario establecido de conformidad con este Acuerdo llevarán a cabo su trabajo a través de cualquier medio que sea adecuado, el cual podrá incluir correo electrónico o videoconferencia.
+El Comité Conjunto y cualquier órgano subsidiario establecido de conformidad con este Acuerdo podrán establecer reglas de procedimientos para la realización de su trabajo.
+Artículo 12.5: Cooperación e Implementación de este Acuerdo
+Las Partes cooperarán para facilitar la implementación de este Acuerdo y para maximizar los beneficios que surjan de él. Las actividades de cooperación considerarán las necesidades de cada Parte, y podrán incluir:
+intercambios de información, diálogos o reuniones entre funcionarios encargados de formular políticas en agencias regulatorias, agencias responsables para la gestión regulatoria o reguladores de las Partes;
+cooperación formal, tal como el reconocimiento mutuo, la equivalencia o la armonización; y
+otras actividades que las Partes puedan acordar.
+Las Partes podrán establecer los acuerdos detallados de actividades de cooperación en memoranda separada.
+En cada reunión del Comité Conjunto, cada Parte informará sobre sus planes para, y el avance orientado a, la implementación de este Acuerdo.
+Para mayor certeza, en relación con toda la cooperación de conformidad con este Acuerdo, las Partes se comprometen a proporcionar, dentro de los límites de sus propias capacidades y a través de sus propios medios, los recursos apropiados, incluyendo recursos financieros.
+Artículo 12.6: Puntos de Contacto
+Cada Parte designará un punto de contacto general para facilitar las comunicaciones entre las Partes sobre cualquier asunto cubierto por este Acuerdo, así como otros puntos de contacto según sea requerido en este Acuerdo.
+Salvo que se disponga algo diferente en este Acuerdo, cada Parte notificará por escrito a las otras Partes sus puntos de contacto designados a más tardar 60 días después de la fecha de entrada en vigor de este Acuerdo para esa Parte. Una Parte notificará sus puntos de contacto designados a otra Parte para la cual este Acuerdo entre en vigor en una fecha posterior, a más tardar 30 días después de la fecha de entrada en vigor de este Acuerdo para esa otra Parte.
+Cada Parte notificará a las otras Partes cualquier cambio en sus puntos de contacto designados.
+MÓDULO 13 TRANSPARENCIA
+Artículo 13.1: Definiciones
+Para los efectos de este Módulo:
+resolución administrativa de aplicación general significa una resolución administrativa o una interpretación que se aplica a todas las personas y situaciones de hecho y que es relevante para la implementación de este Acuerdo, pero no incluye:
+una determinación o resolución emitida en un procedimiento administrativo o cuasi judicial, que aplique a una persona, mercancía o servicio en particular de otra Parte en un caso específico; o
+una resolución que resuelve con respecto a un acto o práctica en particular.
+Artículo 13.2: Publicación
+Cada Parte se asegurará que sus leyes, regulaciones, procedimientos y resoluciones administrativas de aplicación general con respecto a cualquier asunto cubierto por este Acuerdo sean publicadas con prontitud, o sean puestas a disposición16 de otra manera, de tal manera que permita a las personas y Partes interesadas familiarizarse con ellas.
+Cuando sea posible, cada Parte deberá:
+publicar por adelantado cualquier medida referida en el párrafo 1 que proponga adoptar; y
+proporcionar, cuando corresponda, a las personas interesadas y a las otras Partes una oportunidad razonable para comentar sobre dichas medidas propuestas.
+Artículo 13.3: Procedimientos Administrativos
+Con miras a administrar de manera consistente, imparcial y razonable todas las medidas que afectan asuntos cubiertos por este Acuerdo, cada Parte asegurará en sus procedimientos administrativos en los que se apliquen las medidas referidas en el Artículo
+13.2.1 a personas, mercancías o servicios particulares de las otras Partes en casos específicos que:
+cuando sea posible, personas de otra Parte que son afectadas directamente por un procedimiento reciban un aviso razonable, de conformidad con sus
+16 Incluyendo a través del Internet o en formato impreso.
+procedimientos internos, de cuando un procedimiento es iniciado, incluyendo una descripción de la naturaleza del procedimiento, una declaración del fundamento legal conforme el cual se inicia el procedimiento y una descripción general de cualquier asunto en cuestión;
+a tales personas se les brinde una oportunidad razonable para presentar hechos y argumentos en apoyo a sus posiciones antes de cualquier acto administrativo final, cuando así lo permita el tiempo, la naturaleza del procedimiento y el interés público; y
+sus procedimientos estén de conformidad con sus leyes y regulaciones.
+Artículo 13.4: Revisión y Apelación
+Cada Parte, cuando sea justificado, establecerá o mantendrá tribunales judiciales, cuasi judiciales o administrativos, o procedimientos con el propósito de revisar y corregir prontamente un acto administrativo definitivo con respecto de asuntos cubiertos por este Acuerdo, distintos de aquellos adoptados prudencialmente. Tales tribunales serán imparciales e independientes de la oficina o autoridad encargada del cumplimiento administrativo y no tendrán ningún interés sustancial en el resultado del asunto.
+Cada Parte asegurará que, en cualquiera de tales tribunales o procedimientos referidos, las Partes tengan el derecho a:
+una oportunidad razonable para apoyar o defender sus respectivas posiciones; y
+una decisión basada en las pruebas y presentaciones que obren en el expediente o, en los casos que así lo requieran sus leyes y regulaciones, en el expediente compilado por la autoridad pertinente.
+Cada Parte se asegurará, sujeto a apelación o a revisión posterior según disponga su ordenamiento jurídico interno, que las decisiones referidas en el párrafo 2(b) serán implementadas por, y regirán la práctica de, las oficinas o autoridades con respecto al acto administrativo en cuestión.
+Artículo 13.5: Notificación y Suministro de Información
+Cuando una Parte considera que cualquier medida en proyecto o vigente puede afectar materialmente el funcionamiento de este Acuerdo o de otra forma afectar sustancialmente los intereses de otra Parte conforme a este Acuerdo, notificará a la otra Parte, en la medida de lo posible, de la medida en proyecto o vigente.
+A solicitud de otra Parte, una Parte proporcionará información y responderá a preguntas relacionadas con cualquier medida vigente o en proyecto, independientemente si esa otra Parte ha sido o no notificada previamente de esa medida.
+Cualquier notificación, solicitud o información bajo este Artículo será transmitida a las otras Partes a través de sus puntos de contacto.
+Cualquier notificación o información proporcionada conforme a este Artículo será sin perjuicio de si la medida es compatible con este Acuerdo.
+MÓDULO 14 SOLUCIÓN DE CONTROVERSIAS
+Artículo 14.1: Definiciones
+Para los efectos de este Módulo y sus Anexos,
+Parte consultante significa una Parte que solicita consultas conforme al Artículo 14C.1.1 (Consultas) o la Parte a la que se le ha hecho la solicitud de consultas;
+Parte contendiente significa una Parte reclamante o una Parte reclamada;
+Parte reclamada significa una Parte que ha sido demandada conforme al Artículo 14C.2 (Establecimiento de Tribunales Arbitrales);
+Parte reclamante significa una Parte que solicita el establecimiento de un tribunal arbitral conforme al Artículo 14C.2.1 (Establecimiento de Tribunales Arbitrales);
+Reglas de Procedimiento significa las reglas de procedimiento para la solución de controversias a través de arbitraje establecidas conforme al Artículo 12.2 (Funciones del Comité Conjunto); y
+tercera Parte significa una Parte, distinta de una Parte contendiente, que entrega una notificación escrita conforme al Artículo 14C.7 (Participación de una Tercera Parte).
+Artículo 14.2: Objetivo
+Las Partes procurarán en todo momento llegar a un acuerdo sobre la interpretación y la aplicación de este Tratado, y realizarán todos los esfuerzos, mediante cooperación y consultas, para alcanzar una solución mutuamente satisfactoria sobre cualquier asunto que pudiese afectar su funcionamiento.
+El objetivo de este Módulo es proporcionar un efectivo, eficiente y transparente proceso de consultas y solución de controversias entre las Partes en lo que respecta a sus derechos y obligaciones bajo este Acuerdo.
+Artículo 14.3: Ámbito de Aplicación
+Salvo lo dispuesto en el Anexo 14-A, este Módulo y sus Anexos se aplicarán:
+con respecto a la prevención o solución de todas las controversias entre las Partes relativas a la interpretación o aplicación de este Acuerdo; o
+cuando una Parte considere que una medida vigente o en proyecto de otra Parte es o sería incompatible con una obligación de este Acuerdo, o que otra Parte ha incumplido de alguna otra manera una obligación de este Acuerdo.
+Artículo 14.4: Buenos Oficios y Conciliación
+Las Partes, en cualquier momento, podrán acordar recurrir voluntariamente a un medio alternativo de solución de controversias tales como buenos oficios o conciliación.
+Los procedimientos que involucren buenos oficios o conciliación serán confidenciales y sin perjuicio de los derechos de las Partes en cualquier otro procedimiento.
+Las Partes que participan en los procedimientos conforme a este Artículo podrán suspender o terminar esos procedimientos en cualquier momento.
+Si las Partes contendientes lo acuerdan, los buenos oficios o la conciliación podrán continuar mientras que la resolución de la controversia procede ante un tribunal arbitral establecido conforme al Artículo 14C.2 (Establecimiento de Tribunales Arbitrales).
+Artículo 14.5: Mediación
+Los procedimientos para la solución de controversias a través de la mediación están contenidos en el Anexo 14-B.
+Artículo 14.6: Arbitraje
+Los procedimientos para la solución de controversias a través del arbitraje están contenidos en el Anexo 14-C.
+Las Reglas de Procedimiento serán establecidas por el Comité Conjunto de conformidad con el Artículo 12.2 (Funciones del Comité Conjunto).
+Artículo 14.7: Elección de Foro
+Si una controversia relativa a cualquier asunto surge conforme a este Acuerdo y conforme a otro acuerdo comercial internacional del cual las Partes contendientes sean parte, incluyendo el Acuerdo sobre OMC, la Parte reclamante podrá elegir el foro en el cual solucionar la controversia.
+Una vez que una Parte reclamante haya solicitado el establecimiento de, o haya referido un asunto a, un grupo especial u otro tribunal conforme a un acuerdo referido en el párrafo 1, el foro seleccionado será utilizado con exclusión de los otros foros.
+ANEXO 14-A – ÁMBITO DE APLICACIÓN DEL MÓDULO 14 (SOLUCIÓN DE CONTROVERSIAS)
+Artículo 14 A.1: Ámbito de Aplicación del Módulo 14 (Solución de Controversias)
+El Módulo 14 (Solución de Controversias), incluido el Anexo 14-B (Mecanismo de Mediación) y el Anexo 14-C (Mecanismo de Arbitraje), no se aplicará al:
+Artículo 3.3 (Trato No Discriminatorio de Productos Digitales);
+Artículo 3.4 (Productos de las Tecnologías de la Información y Comunicación que usan Criptografía);
+Artículo 4.3 (Transferencia Transfronteriza de Información por Medios Electrónicos); y
+Artículo 4.4 (Ubicación de Instalaciones Informáticas).
+ANEXO 14-B – MECANISMO DE MEDIACIÓN
+Artículo 14B.1: Solicitud de Información
+En cualquier momento, antes de inicio del procedimiento de mediación, cualquier Parte puede solicitar, por escrito, a cualquier otra Parte entregar información en relación con cualquier asunto descrito en el Artículo 14.3 (Ámbito de Aplicación).
+La Parte a la cual dicha solicitud se efectúa entregará, dentro de los 20 días siguientes a la recepción de la solicitud, una respuesta escrita que contenga sus comentarios a la información solicitada.
+Cuando la Parte a la que se le efectúa la solicitud considere que no le será posible responder dentro de los 20 días siguientes a la fecha de la recepción de la solicitud, notificará prontamente a la Parte solicitante, señalando las razones por el retraso y proporcionando una estimación del periodo más breve dentro del cual podrá proporcionar su respuesta.
+Cada Parte estará alentada a utilizar esta disposición antes de iniciar un procedimiento de mediación.
+Artículo 14B.2: Inicio del Procedimiento de Mediación
+Una Parte podrá, en cualquier momento, iniciar un procedimiento de mediación con cualquier otra Parte en relación con cualquier asunto descrito en el Artículo 14.3 (Ámbito de Aplicación).
+La Parte que efectúe la solicitud de mediación lo hará por escrito y señalará las razones para la solicitud, incluyendo la identificación de la medida u otro asunto que se trate y una indicación de los fundamentos jurídicos de la reclamación. La Parte solicitante circulará su solicitud de manera simultánea a las otras Partes a través de los puntos de contacto generales designados bajo el Artículo 12.6 (Puntos de Contacto).
+La Parte a la cual se le solicita la mediación otorgará amable consideración a la solicitud y, salvo que las Partes en la mediación hayan acordado otra cosa, responderá por escrito a la solicitud a más tardar 14 días después de la fecha de la recepción de la solicitud.17 Esa Parte circulará su respuesta de manera simultánea a las otras Partes a través de los puntos de contacto generales e iniciará la mediación de buena fe.
+A la recepción de la solicitud de mediación, la Parte a la que se le efectúa la solicitud podrá rechazar participar en la mediación.
+Un procedimiento de mediación no será iniciado para revisar una medida en proyecto.
+17 Para mayor certeza, si la Parte a la que se le solicita la mediación no responde dentro del plazo señalado en este párrafo, se entenderá que esa Parte ha recibido la solicitud siete días siguientes a la fecha en la cual la Parte que efectúa la solicitud para la mediación envía tal solicitud.
+Artículo 14B.3: Elección del Mediador
+Las Partes en la mediación procurarán acordar en un mediador dentro de los 10 días siguientes a partir del inicio del procedimiento de mediación.
+En caso de que las Partes en la mediación no puedan acordar en un mediador dentro del plazo establecido en el párrafo 1, cualquiera de las Partes podrá solicitar que la designación sea hecha por el Director General de la OMC dentro de un plazo ulterior de 15 días.
+Si el Director General de la OMC notifica a las Partes en la mediación que él o ella no están disponibles, o no selecciona al mediador dentro de los 15 días siguientes a la fecha de la solicitud referida en el párrafo 2, cualquier de las Partes podrá solicitar al Secretario General de la Corte Permanente de Arbitraje realizar la selección prontamente.
+Salvo que las Partes en la mediación acuerden algo diferente, el mediador no será nacional de, o estará empleado por, cualquiera de las Partes.
+El mediador cumplirá con las Normas de Conducta para el Entendimiento relativo a las Normas y Procedimientos por los que se rige la Solución de Diferencias (contenidas en el documento WT/DSB/RC/1 y cualquier enmienda posterior), mutatis mutandis.
+Artículo 14B.4: Reglas del Procedimiento de Mediación
+Dentro de los 10 días siguientes a la selección del mediador, la Parte que solicitó el procedimiento de mediación entregará al mediador y la otra Parte una descripción escrita detallada de sus preocupaciones, en particular el funcionamiento de la medida en cuestión y los fundamentos jurídicos de la reclamación.
+Dentro de los 20 días siguientes a la entrega de esta descripción, la otra Parte podrá proporcionar comentarios escritos. Cualquiera de las Partes podrá incluir cualquier información que considere pertinente en su descripción o comentarios.
+El mediador asistirá a las Partes en la mediación, de una manera imparcial y transparente, en otorgar claridad a la medida o a cualquier otro asunto descrito en el Artículo
+14.3 (Ámbito de Aplicación) y en que las Partes alcancen una solución mutuamente acordada. En particular, el mediador podrá organizar reuniones entre las Partes en la mediación, consultarles conjunta o individualmente, buscar la asistencia de, o consultar con, expertos relevantes y partes interesadas, y proporcionar cualquier asistencia adicional solicitada por las Partes en la mediación. El mediador consultará con las Partes en la mediación antes de buscar asistencia de, o consultar con, expertos relevantes y partes interesadas.
+El mediador podrá ofrecer su asesoramiento y proponer una solución para consideración de las Partes en la mediación. Las Partes en la mediación podrán aceptar o rechazar la solución propuesta, o acordar alguna solución diferente. El mediador no asesorará o comentará sobre la coherencia de la medida en cuestión con este Acuerdo.
+El procedimiento de mediación tendrá lugar en la capital de la Parte a la cual se le dirigió la solicitud de mediación referida en el Artículo 14B.2, o en otro lugar de mutuo acuerdo o por cualquier otro medio.
+Las Partes en la mediación se esforzarán para alcanzar una solución mutuamente acordada dentro de los 60 días siguientes a la selección del mediador. Mientras esté pendiente el acuerdo final, las Partes en la mediación podrán considerar posibles soluciones provisionales, particularmente si la medida se relaciona a mercancías perecederas o a mercancías o servicios temporales que rápidamente pierden su valor comercial.
+A solicitud de cualquiera de las Partes en la mediación, el mediador emitirá a las Partes un borrador de informe fáctico, estableciendo:
+un breve resumen de la medida en cuestión en el procedimiento de mediación;
+los procedimientos llevados a cabo; y
+cualquier solución mutuamente alcanzada como resultado del procedimiento de mediación, incluyendo posibles soluciones provisionales.
+El mediador otorgará 15 días a las Partes en la mediación para comentar el borrador de informe fáctico. Después de considerar los comentarios recibidos, el mediador entregará a las Partes en la mediación, dentro de 15 días, el informe final fáctico. El informe final fáctico no incluirá ninguna interpretación de este Acuerdo.
+El procedimiento de mediación podrá ser suspendido en cualquier momento por medio de notificación por escrito de cualquiera de las Partes en la mediación.
+El procedimiento de mediación será terminado:
+por la adopción de una solución mutuamente acordada por las Partes en la mediación, en la fecha de la adopción de esta;
+por mutuo acuerdo de las Partes en la mediación en cualquier etapa del procedimiento, en la fecha de ese acuerdo;
+por una declaración escrita del mediador, después de consultas con las Partes en la mediación, de que esfuerzos ulteriores en la mediación serán en vano, en la fecha de esa declaración;
+por una declaración escrita de la Parte a la mediación después de explorar soluciones mutuamente acordadas bajo el procedimiento de mediación y después de haber considerado cualquier asesoramiento y soluciones propuestas por el mediador, en la fecha de esa declaración; o
+por notificación escrita por cualquiera de las Partes en la mediación, en la fecha de esa notificación.
+Artículo 14B.5: Implementación de una Solución Mutuamente Acordada
+Cuando las Partes en la mediación hayan acordado una solución, cada Parte adoptará las medidas necesarias para implementar la solución mutuamente acordada dentro del plazo acordado.
+La Parte que implemente informará a la otra Parte en la mediación, por escrito, respecto de cualquier etapa o medida adoptada para implementar la solución mutuamente acordada.
+Artículo 14B.6: Límites de Tiempo
+Cualquier límite de tiempo señalado en este Anexo podrá ser modificado por mutuo acuerdo entre las Partes en la mediación.
+Artículo 14B.7: Confidencialidad
+Salvo que las Partes en la mediación acuerden algo diferente, todas las etapas del procedimiento de mediación, incluyendo cualquier asesoramiento o solución propuesta, son confidenciales. Cualquier Parte en la mediación podrá revelar al público el hecho de que la mediación está teniendo lugar.
+Artículo 14B.8: Costos
+Cada Parte en la mediación asumirá sus propios gastos derivados de la participación en el procedimiento de mediación.
+Las Partes en la mediación compartirán conjuntamente y por partes iguales los gastos derivados de asuntos organizacionales, incluyendo la remuneración y los gastos del mediador. La remuneración del mediador será hecha de conformidad con aquella prevista para el presidente del tribunal arbitral de acuerdo con las Reglas de Procedimiento.
+ANEXO 14-C – MECANISMO DE ARBITRAJE
+Artículo 14C.1: Consultas
+Cualquier Parte podrá solicitar consultas con cualquier otra Parte respecto de cualquier asunto descrito en el Artículo 14.3 (Ámbito de Aplicación). La Parte que haga la solicitud de consultas lo hará por escrito y establecerá las razones de la solicitud, incluyendo la identificación de la medida vigente o en proyecto18 u otro asunto en cuestión y una indicación de los fundamentos jurídicos de la reclamación. La Parte solicitante circulará la solicitud de manera simultánea a las otras Partes a través de los puntos de contacto generales designados conforme al Artículo 12.6 (Puntos de Contacto).
+La Parte a la que se haya hecho la solicitud de consultas responderá por escrito a la solicitud a más tardar siete días después de la fecha de la recepción de la solicitud, salvo que las Partes consultantes acuerden algo diferente.19 Esa Parte circulará su respuesta de manera simultánea a las otras Partes a través de los puntos de contacto generales y celebrará consultas de buena fe.
+Una Parte distinta de la Parte consultante que considere que tiene un interés sustancial en el asunto podrá participar en las consultas mediante una notificación escrita a las otras Partes a más tardar siete días después de la fecha en que se circule la solicitud de consultas. La Parte incluirá en su notificación una explicación de su interés sustancial en el asunto.
+Salvo que las Partes consultantes acuerden algo diferente, celebrarán consultas a más tardar:
+15 días después de la fecha de recepción de la solicitud para asuntos concernientes a mercancías perecederas; o
+30 días después de la fecha de recepción de la solicitud para todos los demás asuntos.
+Las consultas podrán realizarse en persona o a través de cualquier otro medio tecnológico disponible para las Partes consultantes. Si las consultas se realizan en persona, éstas se realizarán en la capital de la Parte a la que se le haya hecho la solicitud de consultas, salvo que las Partes consultantes acuerden algo diferente.
+Las Partes consultantes realizarán todos los esfuerzos para llegar a una solución mutuamente satisfactoria del asunto a través de las consultas conforme a este Artículo. Para este fin:
+cada Parte consultante proporcionará suficiente información para permitir un análisis completo de cómo la medida vigente o en proyecto podría afectar el funcionamiento y aplicación de este Acuerdo; y
+18 Las Partes, en el caso de una medida en proyecto, realizarán todos los esfuerzos para hacer la solicitud de consultas conforme esta disposición dentro de los 60 días siguientes a partir de la fecha de publicación de la medida propuesta, sin perjuicio del derecho a realizar dichas solicitudes en cualquier momento.
+19 Para mayor certeza, si la Parte a la que se hizo la solicitud de consultas no responde dentro del plazo especificado en este párrafo, se entenderá que ésta recibió la solicitud siete días siguientes a la fecha en la que la Parte que hizo la solicitud de consultas trasmitió esa solicitud.
+una Parte que participe en las consultas tratará cualquier información intercambiada en el curso de las consultas que se designe como confidencial de la misma forma que la Parte que proporciona la información.
+En las consultas conforme a este Artículo, una Parte consultante podrá solicitar que otra Parte consultante ponga a disposición al personal de sus autoridades gubernamentales o de otros organismos reguladores que tengan conocimiento especializado en la materia en cuestión.
+Las consultas serán confidenciales y sin perjuicio de los derechos de cualquier Parte en cualquier otro procedimiento.
+Artículo 14C.2: Establecimiento de Tribunales Arbitrales
+Una Parte que haya solicitado consultas conforme al Artículo 14C.1 podrá solicitar, por medio de una notificación escrita dirigida a la Parte reclamada, el establecimiento de un tribunal arbitral si las Partes consultantes no logran resolver el asunto dentro de:
+un plazo de 60 días siguientes a la fecha de recepción de la solicitud de consultas conforme al Artículo 14C.1;
+un plazo de 30 días siguientes a la fecha de recepción de la solicitud de consultas conforme al Artículo 14C.1 en un asunto relativo a mercancías perecederas; o
+cualquier otro plazo que las Partes consultantes puedan acordar.
+La Parte reclamante distribuirá la solicitud de manera simultánea a todas las Partes a través de los puntos de contacto designados conforme al Artículo 12.6 (Puntos de Contacto).
+La Parte reclamante incluirá en su solicitud para establecer un tribunal arbitral una identificación de la medida u otro asunto en cuestión y un breve resumen del fundamento jurídico de la reclamación que sea suficiente para presentar el problema claramente.
+Salvo que las Partes contendientes acuerden algo diferente, el tribunal arbitral se establecerá y realizará sus funciones de manera compatible con este Anexo.
+Salvo que las Partes contendientes acuerden algo diferente, el tribunal arbitral se compondrá de manera compatible con este Anexo y las Reglas de Procedimiento.
+Si un tribunal arbitral se ha establecido respecto a un asunto y otra Parte solicita el establecimiento de un tribunal arbitral respecto del mismo asunto, un único tribunal arbitral debería establecerse para examinar tales reclamaciones siempre que sea posible.
+Un tribunal arbitral no podrá establecerse para revisar una medida en proyecto.
+Artículo 14C.3: Términos de Referencia
+Salvo que las Partes contendientes acuerden algo diferente, a más tardar 20 días después de la fecha de entrega de la solicitud para el establecimiento de un tribunal arbitral, los términos de referencia serán:
+examinar, a la luz de las disposiciones pertinentes de este Acuerdo, el asunto al que se hace referencia en la solicitud de establecimiento de un tribunal arbitral conforme al Artículo 14C.2; y
+emitir conclusiones y determinaciones, y cualquier recomendación solicitada de manera conjunta, junto con sus razonamientos, como lo dispone el Artículo 14C.10.
+Artículo 14C.4: Composición de los Tribunales Arbitrales
+Un tribunal arbitral se compondrá de tres miembros.
+Salvo que las Partes contendientes acuerden algo diferente, éstas aplicarán los siguientes procedimientos para componer un tribunal arbitral:
+Dentro de un plazo de 20 días siguientes a la fecha de entrega de la solicitud para el establecimiento de un tribunal arbitral conforme al Artículo 14C.2, la Parte o Partes reclamantes, por un lado, y la Parte reclamada, por el otro, designarán cada una a un árbitro y se notificarán entre ellas de tales designaciones.
+Si la Parte o Partes reclamantes no logran designar un árbitro dentro del plazo especificado en el subpárrafo (a), el procedimiento de solución de controversias expirará al final de ese periodo.
+Para la designación del tercer árbitro, que servirá como el presidente, las Partes contendientes procurarán alcanzar un acuerdo sobre la designación del presidente.
+Si la Parte reclamada no logra designar un árbitro o si el presidente del tribunal arbitral no ha sido designado dentro de los 30 días siguientes a la fecha de entrega de la solicitud referida en el subpárrafo (a), a solicitud de cualquier Parte contendiente, las designaciones necesarias se realizarán por el Director General de la OMC dentro de los 30 días siguientes a la solicitud hecha al Director General.
+Si el Director General de la OMC notifica a las Partes contendientes que él o ella no está disponible, o no designa los árbitros faltantes dentro de los 30 días siguientes a la fecha de la solicitud referida en el subpárrafo (d), cualquiera de las Partes podrá solicitar al Secretario General de la Corte Permanente de Arbitraje que realice prontamente la designación faltante.
+Salvo que las Partes contendientes acuerden algo diferente, el presidente no será nacional de, o será empleado de, ninguna de las Partes contendientes o de una tercera Parte.
+Cada Parte contendiente procurará seleccionar árbitros que tengan conocimientos especializados o experiencia relevante al asunto objeto de la controversia.
+Si un árbitro seleccionado conforme al párrafo 2 no está disponible, la Parte reclamante, la Parte reclamada o las Partes contendientes, según sea el caso, seleccionarán otro árbitro a más tardar 20 días después de haber tenido conocimiento de que árbitro no está disponible, de conformidad con el mismo método de selección que fue utilizado para seleccionar al árbitro que no puede participar, salvo que las Partes contendientes acuerden algo diferente. El árbitro reemplazante tendrá todos los poderes y deberes que el árbitro original. El trabajo del tribunal arbitral será suspendido mientras esté pendiente la designación del árbitro reemplazante, y todos los plazos establecidos en este Anexo y en las Reglas de Procedimiento se extenderán por el plazo que el trabajo estuvo suspendido.
+Si una Parte contendiente considera que un árbitro se encuentra en violación de las Reglas de Conducta para el Entendimiento relativo a las Normas y Procedimientos por los que se rige la Solución de Diferencias referidas en el Artículo 14C.5.1(d), las Partes contendientes se consultarán y, si así lo acuerdan, el árbitro será removido y un nuevo árbitro será seleccionado de conformidad con este Artículo.
+Artículo 14C.5: Requisitos de los Árbitros
+Todos los árbitros:
+tendrán conocimientos especializados o experiencia en derecho, comercio internacional, economía digital, otros asuntos cubiertos por este Acuerdo o en la solución de controversias derivadas de acuerdos comerciales internacionales;
+serán electos estrictamente en función a su objetividad, confiabilidad y buen juicio;
+serán independientes de, y no tendrán vinculación con ni recibirán instrucciones de, ninguna Parte; y
+cumplirán con las Reglas de Conducta para el Entendimiento relativo a las Normas y Procedimientos por los que se rige la Solución de Diferencias (contenidas en el documento WT/DSB/RC/1 y cualquier enmienda posterior), mutatis mutandis.
+Un individuo no podrá servir como árbitro para una controversia en la que esa persona haya participado conforme al Artículo 14.4 (Buenos Oficios y Conciliación).
+Artículo 14C.6: Función de los Tribunales Arbitrales
+La función de un tribunal arbitral es hacer una evaluación objetiva del asunto que se le haya sometido, incluyendo un análisis de los hechos y la aplicabilidad y conformidad con este Acuerdo, y emitir las conclusiones, determinaciones y recomendaciones que se le pidan en sus términos de referencia y que sean necesarias para la solución de la controversia.
+Salvo que las Partes contendientes acuerden algo diferente, el tribunal arbitral realizará sus funciones y conducirá sus procedimientos de manera compatible con este Anexo y las Reglas de Procedimiento.
+El tribunal arbitral considerará este Acuerdo de conformidad con las reglas de interpretación conforme al derecho internacional tal como se reflejan en los Artículos 31 y 32 de la Convención de Viena sobre el Derecho de los Tratados (1969). Con respecto a cualquier disposición del Acuerdo sobre la OMC que se haya incorporado a este Acuerdo, el tribunal arbitral también considerará interpretaciones pertinentes en los informes de los grupos especiales y del Órgano de Apelación de la OMC adoptados por el Órgano de Solución de Diferencias de OMC. Las conclusiones, determinaciones y recomendaciones del tribunal arbitral no aumentarán o reducirán los derechos y obligaciones de las Partes conforme a este Acuerdo.
+Un tribunal arbitral tomará sus decisiones por consenso, salvo que, si un tribunal arbitral no puede llegar a un consenso, podrá tomar sus decisiones por mayoría de votos.
+Artículo 14C.7: Participación de una Tercera Parte
+Una Parte que no es una Parte contendiente y que considera que tiene un interés en el asunto ante el tribunal arbitral tendrá derecho, a la entrega de una notificación escrita a las Partes contendientes, a asistir a todas las audiencias, a presentar comunicaciones escritas, a presentar opiniones orales al tribunal arbitral y a recibir comunicaciones escritas de las Partes contendientes. La Parte presentará una notificación por escrito a más tardar 10 días después de la fecha de distribución de la solicitud para el establecimiento del tribunal arbitral conforme al Artículo 14C.2.
+Artículo 14C.8: Función de los Expertos
+A solicitud de una Parte contendiente, o por iniciativa propia, el tribunal arbitral podrá recabar la información y la asesoría técnica de cualquier persona u organismo que estime apropiado, siempre que las Partes contendientes así lo acuerden y sujeto a cualesquiera términos y condiciones acordados por las Partes contendientes. Las Partes contendientes tendrán una oportunidad para comentar sobre cualquier información o asesoría obtenida conforme a este Artículo.
+Artículo 14C.9: Suspensión o Terminación de los Procedimientos
+El tribunal arbitral podrá suspender su trabajo en cualquier momento a solicitud de la Parte reclamante o, si existe más de una Parte reclamante, a la solicitud conjunta de las Partes reclamantes, por un periodo que no exceda los 12 meses consecutivos. El tribunal arbitral suspenderá su trabajo en cualquier momento si las Partes contendientes así lo solicitan. En el caso de suspensión, los plazos establecidos en este Anexo y en las Reglas de Procedimiento se extenderán por el tiempo en que el trabajo se hubiese suspendido. Si el trabajo del tribunal arbitral se suspendiera por más de 12 meses consecutivos, los procedimientos del tribunal arbitral expirarán salvo que las Partes contendientes acuerden algo diferente.
+El tribunal arbitral terminará sus procedimientos si las Partes contendientes así lo solicitan.
+Artículo 14C.10: Informe Preliminar
+El tribunal arbitral redactará su informe sin la presencia de ninguna Parte.
+El tribunal arbitral fundará su informe en las disposiciones pertinentes de este Acuerdo, las comunicaciones y argumentos de las Partes contendientes y de cualquier tercera Parte. A solicitud conjunta de las Partes contendientes, el tribunal arbitral podrá emitir recomendaciones para la resolución de la controversia.
+El tribunal arbitral presentará a las Partes contendientes un informe preliminar a más tardar 150 días después de la fecha de designación del último árbitro. En casos de urgencia, incluyendo aquellos relacionados con mercancías perecederas, el tribunal arbitral procurará presentar el informe preliminar a las Partes contendientes a más tardar 120 días después de la fecha de designación del último árbitro.
+El informe preliminar contendrá:
+conclusiones de hecho;
+la determinación del tribunal arbitral en cuanto a si:
+la medida en cuestión es incompatible con las obligaciones en este Acuerdo; o
+una Parte ha incumplido de alguna otra manera con sus obligaciones en este Acuerdo;
+cualquier otra determinación solicitada en los términos de referencia;
+recomendaciones, si las Partes contendientes las han solicitado conjuntamente, para la resolución de la controversia; y
+los razonamientos de las conclusiones y determinaciones.
+En casos excepcionales, si el tribunal arbitral considera que no podrá emitir su informe preliminar dentro del plazo especificado en el párrafo 3, informará a las Partes contendientes por escrito las razones de la demora junto con una estimación de cuándo emitirá su informe. Cualquier demora no deberá exceder un plazo adicional de 30 días salvo que las Partes contendientes acuerden algo diferente.
+Los árbitros podrán presentar opiniones divergentes sobre asuntos en que no haya habido acuerdo unánime.
+Una Parte contendiente podrá presentar observaciones escritas al grupo especial sobre el informe preliminar a más tardar 15 días después de la presentación del informe o dentro de otro plazo que las Partes contendientes puedan acordar.
+Después de considerar las observaciones escritas de las Partes contendientes en el informe preliminar, el tribunal arbitral podrá modificar su informe y realizar cualquier examen ulterior que considere apropiado.
+Artículo 14C.11: Informe Final
+El tribunal arbitral presentará un informe final a las Partes contendientes, incluyendo cualesquiera opiniones divergentes sobre asuntos en que no haya habido acuerdo unánime, a más tardar 30 días después de la presentación del informe preliminar, salvo que las Partes contendientes acuerden algo diferente. Después de adoptar medidas para proteger la información confidencial y a más tardar a los 15 días siguientes a la presentación del informe final, las Partes contendientes divulgarán el informe final al público.
+Ningún tribunal arbitral podrá, ya sea en su informe preliminar o en su informe final, revelar la identidad de los árbitros que estén asociados con opiniones mayoritarias o minoritarias.
+Artículo 14C.12: Implementación del Informe Final
+Las Partes reconocen la importancia del pronto cumplimiento de las determinaciones formuladas por los tribunales arbitrales conforme al Artículo 14C.11 para lograr el objetivo de los procedimientos de solución de controversias de este Anexo, que es asegurar una solución positiva a las controversias.
+Si en su informe final el tribunal arbitral determina que:
+la medida en cuestión es incompatible con las obligaciones de una Parte en Acuerdo; o
+una Parte ha incumplido de alguna otra manera con sus obligaciones en este Acuerdo, la Parte reclamada eliminará, cuando sea posible, la disconformidad.
+A menos que las Partes contendientes acuerden algo diferente, la Parte reclamada tendrá un plazo razonable para eliminar la disconformidad si no es factible hacerlo inmediatamente.
+Las Partes contendientes procurarán acordar el plazo razonable. Si las Partes contendientes no logran acordar el plazo razonable dentro de un plazo de 45 días después de la presentación del informe final conforme al Artículo 14C.11, cualquiera de las Partes contendientes podrá, a más tardar 60 días después de la presentación del informe final conforme al Artículo 14C.11, remitir el asunto al presidente para que determine el plazo razonable a través de arbitraje.
+El presidente tomará en consideración como referencia que el plazo razonable no deberá exceder de 15 meses a partir de la presentación del informe final conforme al Artículo 14C.11. Sin embargo, ese plazo podrá ser más corto o largo, dependiendo de las circunstancias particulares.
+El presidente determinará el plazo razonable a más tardar 90 días después de la fecha de remisión al presidente conforme al párrafo 4.
+Las Partes contendientes podrán acordar variar los procedimientos establecidos en los párrafos 4 a 6 para la determinación del plazo razonable.
+Artículo 14C.13: No Implementación – Compensación y Suspensión de Beneficios
+La Parte reclamada entablará, si se lo solicita la Parte o Partes reclamantes, negociaciones con la Parte o Partes reclamantes a más tardar 15 días después de la recepción de esa solicitud, con miras a desarrollar una compensación mutuamente aceptable, si:
+la Parte reclamada ha notificado a la Parte o Partes reclamantes que no tiene la intención de eliminar la disconformidad; o
+después de la expiración del plazo razonable establecido de conformidad con el Artículo 14C.12, existe desacuerdo entre las Partes contendientes sobre si la Parte reclamada ha eliminado la disconformidad.
+Una Parte reclamante podrá suspender beneficios de conformidad con el párrafo 3 si esa Parte reclamante y la Parte reclamada:
+no han podido acordar una compensación dentro de un plazo de 30 días después del inicio del plazo fijado para establecer tal compensación; o
+han acordado una compensación, pero la Parte reclamante pertinente considera que la Parte reclamada no ha cumplido con los términos del acuerdo.
+Una Parte reclamante podrá, en cualquier momento después de que las condiciones establecidas en el párrafo 2 se cumplan en relación con esa Parte reclamante, notificar por escrito a la Parte reclamada su intención de suspender beneficios de efecto equivalente. La notificación especificará el nivel de beneficios que la Parte pretende suspender.20 La Parte reclamante podrá iniciar la suspensión de beneficios 30 días después de la fecha que resulte posterior entre la fecha que notifica conforme a este párrafo o la fecha en que el tribunal arbitral emite su determinación conforme al párrafo 5, según sea el caso.
+Al considerar los beneficios que han de suspenderse conforme al párrafo 3, la Parte reclamante aplicará los siguientes principios y procedimientos:
+debería buscar primero suspender los beneficios dentro de la misma materia en la cual el tribunal arbitral determinó la existencia de la disconformidad;
+si considera que no es factible o eficaz suspender beneficios en la misma materia y que las circunstancias sean lo suficientemente graves, podrá suspender beneficios en una materia diferente. En la notificación escrita referida en el párrafo 3, la Parte reclamante indicará las razones en las cuales se basó su decisión de suspender beneficios en una materia diferente; y
+20 Para mayor certeza, la frase “el nivel de beneficios que la Parte pretende suspender” se refiere al nivel de concesiones conforme a este Acuerdo, cuya suspensión una Parte reclamante considera que tendrá un efecto equivalente al de la disconformidad, cuya existencia fue determinada por el tribunal arbitral en su informe final emitido conforme al Artículo 14C.11.
+al aplicar los principios establecidos en los subpárrafos (a) y (b), tomará en cuenta:
+el comercio en la materia en la que el tribunal arbitral haya constatado la no conformidad, y la importancia de ese comercio para la Parte reclamante; y
+las consecuencias económicas más amplias de la suspensión de beneficios.
+Si la Parte reclamada considera que:
+el nivel de beneficios que pretende suspender es manifiestamente excesivo o la Parte reclamante no ha seguido los principios y procedimientos establecidos en el párrafo 4; o
+ha eliminado la disconformidad o la anulación o menoscabo que el tribunal arbitral ha determinado que existe,
+podrá, dentro de los 30 días siguientes a la fecha de entrega de la notificación escrita de la Parte reclamante conforme al párrafo 3, solicitar que el tribunal arbitral se vuelva a constituir para examinar el asunto. La Parte reclamada entregará su solicitud por escrito a la Parte reclamante. El tribunal arbitral se volverá a constituir tan pronto como sea posible después de la fecha de entrega de la solicitud y presentará su determinación a las Partes contendientes a más tardar 90 días después de su reconstitución para examinar una solicitud conforme al subpárrafo (a) o (b), o 120 días después de su reconstitución para una solicitud de conformidad con ambos subpárrafos (a) y (b). Si el tribunal arbitral determina que el nivel de beneficios que la Parte reclamante pretende suspender es manifiestamente excesivo, éste determinará el nivel de beneficios que considere de efecto equivalente.
+A menos que el tribunal arbitral haya determinado que la Parte reclamada ha eliminado la disconformidad, la Parte reclamante podrá suspender beneficios hasta el nivel que el tribunal arbitral ha determinado conforme al párrafo 5 o, si el tribunal arbitral no ha determinado el nivel, el nivel que la Parte reclamante ha propuesto suspender conforme al párrafo 3. Si el tribunal arbitral determina que la Parte reclamante no ha seguido los principios y procedimientos establecidos en el párrafo 4, el tribunal arbitral establecerá en su determinación en qué medida la Parte reclamante podrá suspender beneficios en la materia, a fin de asegurar el pleno cumplimiento con los principios y procedimientos establecidos en el párrafo 4. La Parte reclamante podrá suspender beneficios sólo en una manera consistente con la determinación del tribunal arbitral.
+La compensación y la suspensión de beneficios serán medidas temporales. Ninguna de estas medidas es preferida al pleno cumplimiento a través de la eliminación de la disconformidad. La compensación y la suspensión de beneficios sólo serán aplicados hasta que la Parte reclamada haya eliminado la disconformidad o hasta que una solución mutuamente satisfactoria sea alcanzada.
+Artículo 14C.14: Revisión del Cumplimiento
+Sin perjuicio de los procedimientos del Artículo 14C.13, si la Parte reclamada considera que ha eliminado la disconformidad constatada por el tribunal arbitral, podrá referir el asunto al tribunal arbitral mediante una notificación por escrito a la Parte o Partes reclamantes. El tribunal arbitral emitirá su informe sobre el asunto a más tardar 90 días después de la notificación por escrito presentada por la Parte reclamada.
+Si el tribunal arbitral determina que la Parte reclamada ha eliminado la disconformidad, la Parte o Partes reclamantes reestablecerán con prontitud cualquier beneficio suspendido conforme al Artículo 14C.13.
+MÓDULO 15 EXCEPCIONES
+Artículo 15.1: Excepciones Generales
+Para los efectos de este Acuerdo, el Artículo XX del GATT de 1994 y sus notas interpretativas se incorporan a, y forman parte de, este Acuerdo, mutatis mutandis.
+Las Partes entienden que las medidas a las que se refiere el Artículo XX(b) del GATT de 1994 incluyen medidas en materia ambiental necesarias para proteger la vida o la salud humana, animal o vegetal, y que el Artículo XX(g) del GATT de 1994 se aplica a medidas relacionadas con la conservación de recursos naturales agotables, vivos o no vivos.
+Para los efectos de este Acuerdo, el Artículo XIV del AGCS (incluyendo sus notas de pie de página) se incorporan a, y forman parte de, este Acuerdo, mutatis mutandis. Las Partes entienden que las medidas a las que se refiere el Artículo XIV(b) del AGCS incluyen medidas en materia ambiental necesarias para proteger la vida o la salud humana, animal o vegetal.
+Para los efectos de este Acuerdo, sujeto al requerimiento que dichas medidas no sean aplicadas en forma que constituya un medio de discriminación arbitrario o injustificable entre las Partes cuando prevalezcan las mismas condiciones, o una restricción encubierta al comercio, nada en este Acuerdo se interpretará en el sentido de impedir la adopción o cumplimiento por una Parte de las medidas necesarias para proteger patrimonios nacionales o sitios específicos de valor histórico o arqueológico, o para apoyar las artes creativas21 de valor nacional.
+Artículo 15.2: Excepciones de Seguridad
+Nada de lo dispuesto en este Acuerdo se interpretará en el sentido de:
+exigir a una Parte que proporcione o permita el acceso a cualquier información cuya divulgación considere contraria a sus intereses esenciales de seguridad; o
+impedir a una Parte que aplique medidas que considere necesarias para el cumplimiento de sus obligaciones con respecto al mantenimiento o restauración de la paz o la seguridad internacional, o para la protección de sus propios intereses esenciales de seguridad.
+21 “Artes creativas” incluye: las expresiones artísticas – incluyendo el teatro, la danza y la música – las artes visuales y la artesanía, la literatura, el cine y el video, las artes lingüísticas, contenidos creativos en línea, prácticas indígenas tradicionales y expresión cultural contemporánea, y media interactiva digital y trabajos de arte híbrido, incluyendo aquellos que utilizan nuevas tecnologías para trascender divisiones de forma de arte discretas. El término comprende aquellas actividades que dicen relación con la presentación, ejecución, interpretación de las artes; y el estudio y desarrollo tecnológico de estas formas de arte y actividades.
+Artículo 15.3: Tratado de Waitangi
+Siempre que dichas medidas no se utilicen como un medio de discriminación arbitraria o injustificada contra personas de las otras Partes o como una restricción encubierta al comercio de mercancías, al comercio de servicios y a la inversión, ninguna disposición de este Acuerdo impedirá la adopción por parte de Nueva Zelanda de las medidas que considere necesarias para otorgar un trato más favorable a los Maoríes en las materias cubiertas por este Acuerdo, incluyendo el cumplimiento de sus obligaciones conforme al Tratado de Waitangi.
+Las Partes acuerdan que la interpretación del Tratado de Waitangi, incluso con respecto a la naturaleza de los derechos y obligaciones que surjan del mismo, no estará sujeta a las disposiciones de solución de controversias de este Acuerdo. El Módulo 14 (Solución de Controversias) se aplicará de forma diferente a este Artículo. Un tribunal arbitral establecido conforme al Módulo 14 (Solución de Controversias) podrá ser solicitado para determinar únicamente si alguna medida referida en el párrafo 1 es incompatible con los derechos de una Parte conforme a este Acuerdo.
+Artículo 15.4: Excepción Prudencial y Excepción de Política Monetaria o Cambiaria22
+No obstante cualquier otra disposición de este Acuerdo, una Parte no estará impedida de adoptar o mantener medidas por razones prudenciales23, incluida la protección a inversionistas, depositantes, tenedores de pólizas o personas con las que una institución financiera o un proveedor de servicios financieros tenga contraída una obligación fiduciaria o para garantizar la integridad y estabilidad del sistema financiero. Si estas medidas no están conformes con las disposiciones de este Acuerdo, éstas no podrán utilizarse como medio para eludir los compromisos u obligaciones de la Parte conforme a dichas disposiciones.
+Nada de lo dispuesto en este Acuerdo se aplicará a las medidas no discriminatorias de aplicación general adoptadas por cualquier entidad pública en cumplimiento de políticas monetarias y de crédito conexas o políticas cambiarias.
+22 Para mayor certeza, respecto a las transferencias que estén vinculadas o relacionadas a disciplinas cubiertas por este Acuerdo, Chile se reserva el derecho del Banco Central de Chile de mantener o adoptar medidas de conformidad con la Ley 18.840, Ley Orgánica Constitucional del Banco Central de Chile, y el Decreto con Fuerza de Ley No 3 de 1997, Ley General de Bancos y la Ley 18.045, Ley de Mercado de Valores, a fin de velar por la estabilidad de la moneda y el normal funcionamiento de los pagos internos y externos. Dichas medidas incluyen, inter alia, el establecimiento de restricciones o limitaciones sobre pagos o transferencias corrientes (movimientos de capital) desde o hacia Chile, así como operaciones relacionadas con ellas, tales como la exigencia de que depósitos, inversiones o créditos desde o hacia un país extranjero queden sujetos a encaje.
+23 Las Partes entienden que el término “razones prudenciales” incluye el mantenimiento de la seguridad, solvencia, integridad o responsabilidad financiera de instituciones financieras individuales o de proveedores transfronterizos de servicios financieros, así como la seguridad y la integridad financiera y operativa de los sistemas de compensación y pago.
+No obstante el Artículo 2.7 (Pagos Electrónicos), una Parte podrá impedir o limitar las transferencias de una institución financiera o un proveedor transfronterizo de servicios financieros a, o en beneficio de, una filial de o persona relacionada con dicha institución o proveedor, a través de la aplicación equitativa, no discriminatoria y de buena fe de medidas relativas con el mantenimiento de la seguridad, solvencia, integridad o responsabilidad financiera de las instituciones financieras o de los proveedores transfronterizos de servicios financieros. Este párrafo no prejuzga cualquier otra disposición de este Acuerdo que permita a una Parte restringir transferencias.
+Para mayor certeza, nada de lo dispuesto en este Acuerdo se interpretará como un impedimento para que una Parte adopte o aplique las medidas necesarias para garantizar el cumplimiento de leyes o regulaciones que no sean incompatibles con este Acuerdo, incluyendo aquellas relativas a la prevención de prácticas que induzcan al error o fraudulentas o para hacer frente a los efectos de un incumplimiento de los contratos de servicios financieros, sujeto al requisito de que tales medidas no se apliquen de manera que constituyan un medio de discriminación arbitraria o injustificable entre las Partes o entre las Partes y no Partes donde prevalezcan condiciones similares, o una restricción encubierta a la inversión en instituciones financieras o al comercio transfronterizo de servicios financieros cubiertos por este Acuerdo.
+Artículo 15.5: Excepción Tributaria
+Para los efectos de este Artículo:
+autoridades designadas significa:
+para Chile, el Subsecretario de Hacienda;
+para Nueva Zelanda, el Comisionado de Rentas Internas (Commissioner of Inland Revenue) o un representante autorizado del Comisionado; y
+para Singapur, el Director de Política Tributaria, Ministerio de Hacienda (Chief Tax Policy Officer, Ministry of Finance),
+o cualquier sucesor de estas autoridades designadas según se notifique por escrito a las otras Partes.
+convenio tributario significa un convenio para evitar la doble tributación u otro acuerdo o arreglo internacional en materia tributaria; e
+impuestos y medidas tributarias incluyen impuestos al consumo, pero no incluyen:
+un “arancel aduanero” tal como se define en el Artículo 1.3 (Definiciones Generales); o
+las medidas listadas en los subpárrafos (b) y (c) de esa definición.
+Nada de lo dispuesto en este Acuerdo se aplicará a medidas tributarias.
+Nada de lo dispuesto en este Acuerdo afectará los derechos y obligaciones de cualquiera de las Partes de conformidad con cualquier convenio tributario. En caso de cualquier incompatibilidad entre este Acuerdo y cualquiera de dichos convenios tributarios, ese convenio prevalecerá en la medida de la incompatibilidad.
+En el caso de un convenio tributario entre dos o más Partes, si surge alguna diferencia sobre la existencia de alguna incompatibilidad entre este Acuerdo y el convenio tributario, la diferencia se remitirá a las autoridades designadas por las Partes en cuestión. Las autoridades designadas de aquellas Partes tendrán seis meses desde la fecha de remisión de la diferencia para hacer una determinación sobre la existencia y el grado de cualquier incompatibilidad. Si esas autoridades designadas lo acuerdan, el plazo podrá ser extendido hasta 12 meses desde la fecha de remisión de la diferencia. Ningún procedimiento relativo a la medida que originó la diferencia podrá iniciarse de conformidad con el Módulo 14 (Solución de Controversias) hasta el vencimiento del plazo de seis meses, o cualquier otro plazo que haya sido acordado por las autoridades designadas. Un tribunal arbitral establecido para conocer una controversia relacionada con una medida tributaria aceptará como vinculante la determinación hecha por las autoridades designadas de las Partes conforme a este párrafo.
+Artículo 15.6: Restricciones para Proteger la Balanza de Pagos
+Cuando una Parte se encuentre en graves dificultades financieras externas y de balanza de pagos, o amenazas a las mismas, podrá:
+en el caso del comercio de mercancías, de conformidad con el GATT de 1994 y el Entendimiento Relativo a las Disposiciones del Acuerdo General sobre Aranceles Aduaneros y Comercio de 1994 en Materia de Balanza de Pagos, adoptar medidas de restricción a las importaciones;
+en el caso del comercio de servicios, de conformidad con el AGCS, adoptar o mantener restricciones del comercio de servicios respecto de los que haya contraído compromisos, con inclusión de los pagos o transferencias por concepto de transacciones referentes a tales compromisos; y
+en el caso de inversiones, adoptar o mantener restricciones con respecto a transferencias de fondos relacionados con inversiones, incluyendo aquellas en cuenta de capital y en cuenta financiera.
+Las restricciones adoptadas o mantenidas conforme al párrafo 1(b) o el párrafo 1(c):
+serán compatibles con el Convenio Constitutivo del Fondo Monetario Internacional;
+evitarán un daño innecesario a los intereses comerciales, económicos y financieros de las otras Partes;
+no excederán de lo necesario para hacer frente a las circunstancias descritas en el párrafo 1;
+serán temporales y serán eliminadas progresivamente en la medida que las situaciones especificadas en el párrafo 1 mejore; y
+serán aplicadas sobre la base de trato nacional y de tal manera que las otras Partes sean tratadas no menos favorablemente que cualquier no Parte.
+En la determinación de la incidencia de tales restricciones, una Parte podrá dar prioridad a los sectores económicos que sean más necesarios para su desarrollo económico. Sin embargo, tales restricciones no serán adoptadas o mantenidas para los efectos de proteger a un sector en particular.
+Cualquier restricción adoptada o mantenida por una Parte conforme al párrafo 1, o cualesquiera cambios en ella, será notificada a las otras Partes dentro de los 30 días siguientes a la fecha en que dichas medidas fueron adoptadas.
+La Parte que adopte o mantenga restricciones conforme al párrafo 1 iniciará consultas con las otras Partes dentro de los 90 días siguientes a la fecha de notificación para revisar las medidas adoptadas o mantenidas por ella.
+MÓDULO 16
+DISPOSICIONES FINALES
+Artículo 16.1: Depositario
+Nueva Zelanda es designada en este acto como Depositario de este Acuerdo.
+El Depositario transmitirá copias certificadas de este Acuerdo y cualquier enmienda a este Acuerdo a todos los signatarios de este Acuerdo y Partes adherentes.
+El Depositario notificará a todos los signatarios de este Acuerdo y Partes adherentes de:
+cada ratificación, aceptación, aprobación o adhesión a este Acuerdo conforme al Artículo 16.2 y al Artículo 16.4;
+las respectivas fechas en que este Acuerdo entre en vigor conforme al Artículo
+16.2 y el Artículo 16.4; y
+cualquier notificación de denuncia recibida conforme al Artículo 16.5.
+Artículo 16.2: Entrada en Vigor
+Este Acuerdo entrará en vigor 90 días después de la fecha en la que al menos dos signatarios de este Acuerdo hayan notificado por escrito al Depositario la conclusión de sus procedimientos legales aplicables.
+Para cualquier signatario de este Acuerdo respecto del cual este Acuerdo no haya entrado en vigor conforme al párrafo 1, este Acuerdo entrará en vigor 90 días después de la fecha en que ese signatario de este Acuerdo haya notificado por escrito al Depositario la conclusión de sus procedimientos legales aplicables.
+Artículo 16.3: Enmiendas
+Las Partes podrán acordar, por escrito, enmendar este Acuerdo.
+Cuando así sea acordado por todas las Partes, y aprobado de conformidad con los procedimientos legales aplicables de cada Parte, una enmienda entrará en vigor 60 días después de la fecha en que la última Parte haya notificado por escrito al Depositario la aprobación de la enmienda de conformidad con sus procedimientos legales aplicables, o en alguna otra fecha que las Partes puedan acordar.
+Una enmienda constituirá parte integrante de este Acuerdo.
+Artículo 16.4: Adhesión
+Este Acuerdo está abierto a la adhesión en los términos a ser acordados entre las Partes, y aprobados de conformidad con los procedimientos legales aplicables de cada Parte.
+Si el Comité Conjunto, de conformidad con el Artículo 12.2(a) (Funciones del Comité Conjunto), adopta una decisión aprobando los términos para una adhesión e invitando a un candidato adherente a ser Parte, el Comité Conjunto especificará un plazo, que podrá estar sujeto a extensión por acuerdo de las Partes, durante el cual el candidato adherente podrá depositar un instrumento de adhesión con el Depositario indicando que acepta los términos para la adhesión.
+Un candidato adherente pasará a ser Parte de este Acuerdo, sujeto a los términos para la adhesión aprobados en la decisión del Comité Conjunto, ya sea:
+60 días después de la fecha en la que el candidato adherente deposite un instrumento de adhesión con el Depositario indicando que acepta los términos para la adhesión; o
+en la fecha en la que todas las Partes hayan notificado al Depositario que ellas han concluido sus respectivos procedimientos legales aplicables para la aprobación de los términos de la adhesión,
+lo que ocurra posteriormente.
+Artículo 16.5: Denuncia
+Cualquier Parte podrá denunciar este Acuerdo. Tal denuncia producirá sus efectos seis meses después de la fecha en que la notificación escrita de denuncia sea recibida por el Depositario. Si una Parte denuncia, este Acuerdo se mantendrá en vigor para las demás Partes.
+Artículo 16.6: Divulgación de Información
+Nada de lo dispuesto en este Acuerdo se interpretará en el sentido de requerir a una Parte proporcionar o permitir el acceso a información cuya divulgación sería contraria a su ordenamiento jurídico o impediría la aplicación de la ley, o de otra manera fuera contrario al interés público, o pudiera perjudicar los intereses comerciales legítimos de determinadas empresas, públicas o privadas.
+Artículo 16.7: Confidencialidad
+Salvo que se disponga algo diferente en este Acuerdo, cuando una Parte proporcione información a otra Parte de conformidad con este Acuerdo y designe la información como confidencial, la otra Parte mantendrá, sujeto a sus leyes y regulaciones, la confidencialidad de la información. Tal información será utilizada solo para los efectos especificados, y no será divulgada de otro modo sin el permiso específico de la Parte que proporciona la información, excepto cuando la divulgación de información sea para los efectos de cumplir con los requerimientos legales de una Parte, o para el propósito de procedimientos judiciales. Previo a divulgar la información para los efectos de cumplir con los requerimientos legales de una Parte, o para los efectos de procedimientos judiciales, la Parte que divulga consultará con la Parte que proporcionó la información.
+Artículo 16.8: Anexos y Notas a Pie de Página
+Los Anexos y notas a pie de página de este Acuerdo constituirán parte integrante de este Acuerdo.
+Artículo 16.9: Firma Electrónica
+Este Acuerdo podrá ser firmado electrónicamente por las Partes. Para mayor certeza, las Partes entienden que la suscripción electrónica de este Acuerdo tendrá el mismo valor y efectos jurídicos que el estampado de firmas manuscritas en tinta en los tratados conforme al derecho internacional.
+EN FE DE LO CUAL, los infrascritos, estando debidamente autorizados para ello por sus respectivos Gobiernos, han firmado este Acuerdo.
+HECHO este día 11 de junio del 2020 (GMT) en el idioma inglés.
+Por la República de Chile
+11/6/2020
+Honorable Teodoro Ribera Neumann Ministro de Relaciones Exteriores
+Por Nueva Zelanda
+11/6/2020
+Honorable David Parker
+Ministro de Comercio y Crecimiento de Exportaciones
+Por la República de Singapur
+11/6/2020
+Honorable Chan Chun Sing Ministro de Comercio e Industria
+Anexo I – ENTENDIMIENTO SOBRE ESTE ACUERDO
+Para mayor certeza, las Partes dejan constancia de su entendimiento de que los siguientes Artículos no crean ningún derecho u obligación entre las Partes de conformidad con este Acuerdo:
+Artículo 3.3: Trato No Discriminatorio de Productos Digitales;
+Artículo 3.4: Productos de las Tecnologías de la Información y Comunicación que usan Criptografía;
+Artículo 4.3: Transferencia Transfronteriza de Información por Medios Electrónicos; y
+Artículo 4.4: Ubicación de Instalaciones Informáticas.
+Protocolo al
+Acuerdo de Asociación de Economía Digital
+El Gobierno de la República de Chile, el Gobierno de Nueva Zelanda, y el Gobierno de la República de
+Singapur (en lo sucesivo denominados conjuntamente las “Partes” e individualmente “Parte”),
+RECORDANDO el Acuerdo de Asociación de Economía Digital (en lo sucesivo denominado el “Acuerdo”)
+suscrito entre la República de Chile, Nueva Zelanda, y la República de Singapur el 6 de Noviembre de 2020;
+BUSCANDO aumentar la certeza del Acuerdo;
+RECORDANDO que el Artículo 12.2 (Funciones del Comité Conjunto) del Acuerdo dispone que el Comité Conjunto establecido por las Partes considerará cualquier asunto relacionado con la implementación o funcionamiento del Acuerdo, y considerará cualquier propuesta para enmendar o modificar el Acuerdo, entre otras funciones; y
+BUSCANDO reflejar la decisión adoptada por el Comité Conjunto respecto a este Protocolo, de 24 de mayo de 2023,
+HAN ACORDADO LO SIGUIENTE:
+ARTÍCULO 1 – Artículo 1.1 (Ámbito de Aplicación) del Acuerdo
+El Artículo 1.1 (Ámbito de aplicación) del Acuerdo será sustituido por el siguiente:
+“Artículo 1.1: Ámbito de Aplicación y Disposiciones Generales
+Este Acuerdo se aplicará a las medidas adoptadas o mantenidas por una Parte que afecten el comercio en la economía digital.
+Este Acuerdo no se aplicará:
+a un servicio prestado en el ejercicio de la autoridad gubernamental;
+con excepción del Artículo 2.7 (Pagos Electrónicos), a los servicios financieros;
+con excepción del Artículo 8.3 (Contratación Pública), a la contratación pública; o
+con excepción del Artículo 9.5 (Datos de Gobierno Abierto), a la información en poder o procesada por una Parte o a nombre suyo, o a las medidas relacionadas con esa información, incluyendo las medidas relacionadas con su recopilación.
+El Artículo 3.3 (Trato No Discriminatorio de Productos Digitales), Artículo 3.4 (Productos de Tecnologías de la Información y Comunicación que usan Criptografía), Artículo 4.3 (Transferencia transfronteriza de información por medios electrónicos) y Artículo 4.4 (Ubicación de las Instalaciones Informáticas) no se aplicarán a las medidas adoptadas o mantenidas por una Parte que considere necesarias para la protección o promoción de los derechos, intereses, deberes y responsabilidades indígenasa respecto al comercio en la economía digitalb, siempre que dichas medidas no sean usadas como un
+2
+medio de discriminación arbitraria o injustificada contra personas de otra Parte o una restricción
+encubierta al comercio en la economía digital.”
+“a Para mayor certeza, para Nueva Zelanda, derechos, intereses, deberes y responsabilidades indígenas
+incluyen los relacionados a mātauranga Māori.”
+“b En el caso de Nueva Zelanda, las medidas referidas en este párrafo incluyen el cumplimiento de las obligaciones de Nueva Zelanda bajo el Te Tiriti o Waitangi/el Tratado de Waitangi. Las Partes acuerdan que la interpretación del Te Tiriti o Waitangi/el Tratado de Waitangi, incluyendo la naturaleza de los derechos y obligaciones derivados del mismo, no estarán sujetas a las disposiciones de solución de diferencias de este Acuerdo.”
+ARTÍCULO 2 – Artículo 3.1 (Definiciones) del Acuerdo
+El Artículo 3.1 (Definiciones) del Acuerdo será sustituido por el siguiente: “Artículo 3.1: Definiciones
+Para los efectos de este Módulo:
+producto digital significa un programa de cómputo, texto, video, imagen, grabación de sonido u otro producto que esté codificado digitalmente, producido para la venta o distribución comercial y que puede ser transmitido electrónicamente; 9, 10
+radiodifusión significa la transmisión de señales a través de cualquier tecnología de recepción y/o visualización y/o audio y/o señales visuales programadas por todo o parte del público local; y
+3
+transmisión electrónica o transmitido electrónicamente significa una transmisión hecha utilizando cualesquiera medios electromagnéticos, incluyendo medios fotónicos.”
+“9 Para mayor certeza, un producto digital no incluye la representación digitalizada de un
+instrumento financiero, incluyendo dinero.”
+“10 La definición de producto digital no debe entenderse que refleja la opinión de una Parte sobre si el comercio de productos digitales transmitidos electrónicamente debiera clasificarse como comercio de servicios o comercio de mercancías.”
+ARTÍCULO 3 – Artículo 3.3 (Trato No Discriminatorio de Productos Digitales) del Acuerdo
+El Artículo 3.3 (Trato No Discriminatorio de Productos Digitales) del Acuerdo será sustituido por el siguiente:
+“Artículo 3.3: Trato No-Discriminatorio de Productos Digitales
+Ninguna Parte otorgará un trato menos favorable a los productos digitales creados, producidos, publicados, contratados para, comisionados o puestos a disposición por primera vez en condiciones comerciales en el territorio de otra Parte, o a los productos digitales de los cuales el autor, intérprete, productor, desarrollador, o propietario sea una persona de otra Parte, que el que otorga a otros productos digitales similares.10bis
+4
+El párrafo 1 no se aplicará en la medida de cualquier incompatibilidad con los derechos y obligaciones sobre propiedad intelectual contenidos en otros acuerdos internacionales en que una Parte es parte.
+Las Partes entienden que este Artículo no se aplica a los subsidios o subvenciones otorgados por una Parte, incluidos los préstamos, garantías y seguros respaldados por el gobierno.
+Este Artículo no se aplicará a la radiodifusión.
+No obstante lo dispuesto en el párrafo 1, una Parte podrá adoptar o mantener cualquier medida que otorgue un trato diferenciado a los productos digitales de otra Parte o de una no Parte:
+en virtud de cualquier acuerdo internacional bilateral o multilateral vigente o firmado antes de la fecha de entrada en vigor del Protocolo del Acuerdo de Asociación para la Economía Digital firmado entre la República de Chile, Nueva Zelanda y la República de Singapur el 15 de julio de 2023 para la Parte que adopta o mantiene la medida; o
+como parte de un proceso más amplio de integración económica o liberalización del comercio en virtud de cualquier acuerdo contemplado en el subpárrafo (a).”
+“10bis Para mayor certeza, en la medida en que un producto digital de una no Parte es un “producto digital similar”, será calificado como "otro producto digital similar" para los efectos de este párrafo”.
+5
+ARTÍCULO 4 – Artículo 3.4 (Productos de Tecnología de la Información y Comunicación que utilizan Criptografía) del Acuerdo
+Artículo 3.4 (Productos de Tecnología de la Información y Comunicaciones que utilizan criptografía) del Acuerdo será sustituido por el siguiente:
+“Artículo 3.4: Productos de Tecnología de la Información y Comunicación que utilizan Criptografía
+Este Artículo aplicará a los productos de tecnología de la información y comunicaciones (TIC) que utilizan criptografía.10ter
+Para los efectos de este Artículo:
+algoritmo criptográfico o cifra significa un procedimiento matemático o fórmula para combinar una clave con texto plano para crear un texto cifrado;
+clave significa un parámetro utilizado en conjunto con un algoritmo criptográfico que determina su funcionamiento de tal manera que una entidad con conocimiento de la clave puede reproducir o invertir la operación, mientras que una entidad sin conocimiento de la clave no puede;
+criptografía significa los principios, medios o métodos para la transformación de datos con el fin de ocultar su contenido de información, evitar su modificación no detectada o impedir su uso no autorizado; y se limita a la transformación de información usando uno o más parámetros secretos, por ejemplo, cripto variables, o gestión de clave asociada; y
+encriptación significa la conversión de datos (texto plano) a una forma que no se pueda entender fácilmente sin una subsecuente re-conversión (texto cifrado) mediante el uso de un algoritmo criptográfico.
+6
+Con respecto a un producto que utiliza criptografía y que está diseñado para aplicaciones comerciales, ninguna Parte impondrá o mantendrá un reglamento técnico o procedimiento de evaluación de la conformidad que requiera que un fabricante o proveedor del producto, como condición de la fabricación, venta, distribución, importación o uso del producto:
+transfiera o proporcione acceso a una tecnología, proceso de producción u otra información particular, por ejemplo, una clave privada u otro parámetro secreto, especificación algorítmica u otro detalle del diseño, que es propiedad del fabricante o proveedor y que se relaciona con la criptografía en el producto, con la Parte o con una persona en el territorio de la Parte;
+se asocie con una persona en su territorio; o
+utilice o integre un algoritmo criptográfico o cifra particular,

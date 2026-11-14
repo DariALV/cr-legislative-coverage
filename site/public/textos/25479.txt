@@ -1,0 +1,47 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA LA ELIMINACIÓN DE CONTAMINACIÓN VISUAL POR CABLEADO
+MANUEL ESTEBAN MORALES DÍAZ
+DIPUTADO
+EXPEDIENTE N.º 25.479
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY PARA LA ELIMINACIÓN DE CONTAMINACIÓN VISUAL POR CABLEADO
+Expediente N.° 25.479
+ASAMBLEA LEGISLATIVA:
+El desarrollo acelerado de las telecomunicaciones en Costa Rica ha generado importantes beneficios en términos de conectividad, competitividad y acceso a la información; no obstante, dicho crecimiento ha estado acompañado de una expansión desordenada de la infraestructura aérea, particularmente del cableado instalado sobre postes en el espacio público. Esta situación ha derivado en la acumulación progresiva de redes en desuso, tendidos obsoletos y estructuras instaladas sin criterios adecuados de planificación, mantenimiento o retiro, configurando un problema estructural que trasciende lo meramente estético.
+La jurisprudencia constitucional, manifestada de forma reciente con la resolución n.º 08044 -2026 del expediente 25-037393-0007-CO, ha sido clara en reconocer que el derecho a un ambiente sano y ecológicamente equilibrado, consagrado en el artículo 50 de la Constitución Política, comprende también la protección del paisaje urbano como componente esencial de la calidad de vida.
+En ese sentido, se ha establecido que la acumulación desordenada, caótica y excesiva de cableado en la infraestructura pública constituye una forma de contaminación visual, en tanto altera el equilibrio del entorno, degrada la armonía del espacio urbano y puede generar riesgos a la integridad física de las personas.
+El problema no se limita a una afectación estética. La saturación de postes, la coexistencia de redes activas con tendidos en desuso, el “marañamiento” de cables y la instalación precaria de infraestructura generan condiciones de riesgo ante eventos climáticos, fallas estructurales o accidentes eléctricos. Esta realidad evidencia una gestión ineficiente del dominio público y una utilización inadecuada de recursos escasos, como lo es la infraestructura pasiva de telecomunicaciones.
+Asimismo, la experiencia nacional demuestra que la dispersión de competencias entre distintas instituciones, incluyendo autoridades regulatorias, operadores privados, administradores de infraestructura y gobiernos locales, ha dificultado una respuesta integral y eficaz. Si bien existen normas técnicas y regulatorias que facultan la remoción de elementos en desuso y promueven el uso eficiente de la infraestructura, la ausencia de un marco legal específico que establezca obligaciones claras, plazos perentorios y mecanismos efectivos de fiscalización ha propiciado la persistencia del problema.
+Los entes responsables de la infraestructura y regulación del sector tienen el deber de garantizar el uso eficiente de los recursos, supervisar el cumplimiento de las normas técnicas y exigir la remoción de aquellos elementos que se encuentren en condición de ociosidad o carezcan de justificación operativa. La permanencia de cableado en desuso no solo evidencia una falla en la fiscalización, sino que constituye una omisión con relevancia constitucional cuando afecta derechos fundamentales.
+A lo anterior debe añadirse que, si bien el ordenamiento jurídico vigente ya contempla disposiciones orientadas al uso eficiente de la infraestructura de telecomunicaciones, particularmente a través del Reglamento sobre el uso compartido de infraestructura para redes públicas, dicha regulación presenta límites propios de su naturaleza reglamentaria. En efecto, aunque estas disposiciones constituyen un avance importante en la racionalización del uso de la infraestructura, su alcance se circunscribe al ámbito técnico-operativo y depende, en gran medida, de la activación administrativa caso por caso, lo que ha demostrado ser insuficiente frente a la magnitud y persistencia del problema.
+En ese sentido, la experiencia evidencia que la existencia de potestades reglamentarias, aun cuando habilitan la intervención de la Superintendencia de Telecomunicaciones para ordenar la remoción de elementos en desuso, no garantiza por sí sola una actuación sistemática, uniforme ni oportuna por parte de los distintos actores involucrados. De ahí la necesidad de elevar estas obligaciones al rango legal, estableciendo mandatos claros, generales y vinculantes que trasciendan la discrecionalidad administrativa y aseguren su cumplimiento efectivo.
+La incorporación de esta materia en una ley formal no solo refuerza la seguridad jurídica, sino que permite articular de manera integral las responsabilidades, los plazos y los mecanismos de fiscalización, en consonancia con el deber constitucional de protección del ambiente y del espacio público, evitando que la gestión del cableado en desuso quede sujeta exclusivamente a instrumentos reglamentarios de alcance limitado.
+La iniciativa responde a la necesidad de garantizar ciudades más seguras, ordenadas y visualmente armónicas, en consonancia con los principios de sostenibilidad urbana, eficiencia administrativa y tutela del interés general. Asimismo, busca asegurar que el desarrollo tecnológico no se produzca en detrimento del entorno urbano ni de los derechos fundamentales de la población, sino bajo criterios de planificación, responsabilidad y respeto al espacio público.
+Con fundamento en todo lo anterior presentamos para el conocimiento de la Asamblea Legislativa el presente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA LA ELIMINACIÓN DE CONTAMINACIÓN VISUAL POR CABLEADO
+ARTÍCULO 1- Añádase un nuevo párrafo al artículo 77 de la Ley n.° 7593, del 05 de setiembre de 1996, cuyo texto sea el siguiente:
+Artículo 77- Derechos de paso y uso conjunto de infraestructuras físicas
+(...)
+Cuando los propietarios de la infraestructura que soporten redes públicas de telecomunicaciones tengan conocimiento sobre subutilización, desuso o uso no eficiente de los elementos de red en el espacio asignado a un operador y/o proveedor de servicios de telecomunicaciones, deberán notificar a estos, para que se realice la desinstalación y remoción de este tipo de elementos de red, salvo cuando exista una justificación válida para mantenerlos en la infraestructura. Para esto se deberá otorgar un plazo máximo de 2 meses.
+ARTÍCULO 2- Añádase un nuevo inciso al artículo 45 de la Ley n.° 8642, del 30 de junio de 2008, cuyo texto sea el siguiente:
+Artículo 45- Derechos de los usuarios finales de telecomunicaciones
+Los usuarios finales de los servicios de telecomunicaciones disponibles al público tendrán los siguientes derechos:
+(...)
+Nuevo inciso) Recibir un entorno urbano seguro, ordenado y libre de contaminación visual derivada de infraestructura de telecomunicaciones en desuso o instalada en contravención de las normas técnicas aplicables, así como a exigir de los operadores y proveedores de servicios el mantenimiento, ordenamiento y retiro oportuno del cableado y demás elementos de red que no se encuentren en operación o carezcan de justificación técnica.
+Asimismo, los usuarios tendrán derecho a que las autoridades competentes adopten medidas eficaces de fiscalización y coordinación interinstitucional para garantizar el uso eficiente de la infraestructura y la protección del espacio público, en resguardo de su seguridad, calidad de vida y del derecho a un ambiente sano y ecológicamente equilibrado.
+ARTÍCULO 3- Añádase un nuevo numeral, al inciso b), del artículo 67 de la Ley n.° 8642, del 30 de junio de 2008, cuyo texto sea el siguiente:
+Artículo 67- Clases de infracciones
+Las infracciones en materia de telecomunicaciones pueden ser muy graves o graves.
+(...)
+b) Son infracciones graves:
+(...)
+Nuevo inciso) Mantener en la infraestructura de telecomunicaciones, postes, ductos o cualquier otro soporte, elementos de red, cableado o equipos en desuso o sin operación activa, sin proceder a su retiro oportuno conforme a las disposiciones técnicas aplicables o a los requerimientos emitidos por las autoridades competentes.
+Rige a partir de su publicación.
+Manuel Esteban Morales Díaz
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 16-04-2026).

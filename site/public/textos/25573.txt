@@ -1,0 +1,168 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+REFORMA A LA LEY 7969 REGULADORA DEL SERVICIO PÚBLICO DE TRANSPORTE REMUNERADO DE PERSONAS EN VEHÍCULOS EN LA MODALIDAD DE TAXI PARA MEJORAR SU CALIDAD, PUNTUALIDAD Y SERVICIO
+LUZ MARY ALPÍZAR LOAIZA
+DIPUTADA
+EXPEDIENTE N.º 25.573
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+REFORMA A LA LEY 7969 REGULADORA DEL SERVICIO PÚBLICO DE TRANSPORTE REMUNERADO DE PERSONAS EN VEHÍCULOS EN LA MODALIDAD DE TAXI PARA MEJORAR SU CALIDAD, PUNTUALIDAD Y SERVICIO
+Expediente N.º 25.573
+ASAMBLEA LEGISLATIVA:
+I. Introducción
+El transporte público constituye uno de los pilares fundamentales para el desarrollo económico, social y ambiental de Costa Rica. No obstante, el modelo vigente ha sido construido de manera fragmentada a lo largo de varias décadas, mediante la promulgación de leyes sectoriales que regulan de forma aislada cada modalidad de transporte, tales como buses, taxis y transporte ferroviario.
+Desde la fundación de la Segunda República, el Estado ha velado, en su modelo socialdemócrata, por la creación de servicios públicos robustos y de calidad. Varios de estos fueron enfocados en garantizar el acceso a fuentes de desarrollo para la ciudadanía, para mejorar su estilo de vida, como educación, agua, energía eléctrica, energía fósil y salud. Cada uno de estos servicios fue respaldado con presupuesto, formación académica para su personal y voluntad política para ejecutar mejoras y asegurar una calidad en cada uno: menos en transporte público.
+Este enfoque ha derivado en un sistema desarticulado, caracterizado por la superposición de competencias institucionales, la ausencia de planificación integrada y una débil orientación hacia el usuario. En particular, la regulación del servicio de transporte remunerado de personas en la modalidad de taxi, establecida mediante la Ley n.º 7969, responde a un contexto histórico en el cual el servicio se concebía como una actividad individual, limitada territorialmente y sin integración con otros modos de transporte.
+Sin embargo, los desafíos actuales en materia de movilidad urbana, crecimiento poblacional, cambio climático y transformación tecnológica exigen una revisión profunda de este modelo.
+II. Problemática actual
+El modelo de transporte público en Costa Rica atraviesa una crisis estructural profunda. El transporte público, paradójicamente, se considera un “servicio público”, pero no se invierte ni se maneja como los otros que se han indicado con anterioridad. Según la OCDE, en Costa Rica “la red vial es de baja calidad, la infraestructura portuaria de la costa del Pacífico no tiene suficiente capacidad, el sistema ferroviario está subdesarrollado y las conexiones intermodales son débiles. Se necesitan grandes inversiones para mejorar la calidad de la infraestructura de transporte, la cual es esencial para conectar las regiones y las empresas con los mercados internacionales”.
+Asimismo, el sistema estructuralmente está colapsando. No se trata de una ruta específica ni de un operador en particular. Se trata del agotamiento de un sistema que no se ha modernizado al ritmo que el país exige. El más reciente Informe del Estado de la Nación confirma lo que miles de costarricenses ya sienten en la práctica: el transporte público no está mejorando, está retrocediendo:
+Entre 2018 y 2025, el número de operadores de autobús se redujo en más de un 24%, pasando de 240 a 182. Hoy más de 58 rutas han sido abandonadas, dejando comunidades enteras sin acceso digno a la movilidad.
+Más grave aún, la cantidad de pasajeros movilizados cayó en un 42%. No estamos hablando de una leve disminución: estamos hablando de casi la mitad de los usuarios que abandonaron el sistema.
+Pero el problema va mucho más allá de cifras. Y esta reducción no responde a un rediseño estratégico ni a una modernización planificada. Responde a la devolución de rutas por parte de empresas que ya no encuentran sostenibilidad en el modelo actual, como se ve en el siguiente cuadro.
+Mientras el transporte público pierde usuarios, el transporte privado se dispara:
+Hoy el país registra más de 1,2 millones de vehículos particulares y más de 630 mil motocicletas.
+En apenas 20 años, el parque vehicular se multiplicó más de dos veces. Y las proyecciones indican que esta tendencia continuará.
+Específicamente, cabe destacar las decenas de unidades de transporte viejas que presentan falta de mantenimiento adecuado y la poca inversión para que el usuario tenga herramientas adecuadas para organizar su tiempo y viaje con el servicio. Para ello, el Estado debe aplicar un sistema de fiabilidad del servicio de transporte público para poder identificar secciones que se puedan optimizar. Esto debe, además, ser acompañado con mejores reformas para exigir trazabilidad, desempeño y mejores condiciones para el servicio de taxis (especialmente los servicios de buses), porque un sistema que no se mide no puede mejorar.
+Y para el transporte público es necesario hacerlo. En parte porque, en general, la industria, en contraste con otros sectores, no es una de alta rentabilidad sin subsidios. Y por otra parte, diferentes estudios y mejores prácticas aplican el uso de datos mediante sistemas de información geográfica y simulaciones (incluso con datos antiguos archivados) para poder optimizar rutas, mejorar la latencia del servicio y minimizar las causales de afectaciones de servicios previo, durante y posterior al viaje. En la mayoría de los países con buenas prácticas de transporte público, lo anterior es ampliamente adoptado, y el país, lejos de aplicarlas y adoptarlas, ha carecido de interés en implementarlas.
+Por último, cabe destacar que el modelo de costo que se utiliza actualmente para el cálculo de tarifas y cánones se basa en un sistema a costo. Las tarifas se calculan por parte de la Autoridad Reguladora de los Servicios Públicos sumando todos los costos necesarios para dar el servicio y se dividen entre la cantidad de pasajeros que lo utilizan; de ahí que existan diferencias de tarifas entre una comunidad y otra.
+Por ende, cualquier mejora sustancial bajo el actual modelo (pago electrónico, buses eléctricos, reemplazo de unidades nuevas, sistemas de información geográfica, entre otros) está linealmente relacionada con el aumento de la tarifa fija de la ruta. Y como ya fue presentado, históricamente el gobierno no invierte, a través de subsidios, en transporte público para que la tarifa sea mucho más cómoda – salvo en el caso del sistema ferroviario - creando mayores presiones económicas en la ciudadanía, que claramente busca evitar su uso apenas presenta la oportunidad económica para hacerlo a través de un vehículo particular, o el uso de sistemas no regulados de transporte, dada su capacidad de adaptarse a las necesidades específicas de cada uno de los usuarios o clientes.
+III. Soluciones y objetivos de la reforma
+El presente proyecto busca resolver varias problemáticas aplicadas a esta situación de crisis. Dado que el ámbito presenta múltiples aristas, este proyecto de ley se decidió enfocar en 3 puntos específicos de mejora: modelo de cálculo de la tarifa de servicio y canon, sistemas de desempeño y calidad, y requerimientos necesarios de las unidades e infraestructura para poder hacer uso de las tecnologías adecuadas para su optimización, fiscalización y desempeño adecuado. Los subtemas de esas áreas de mejora son los siguientes, todos señalados por el Lanamme:
+Migrar del modelo de concesión por ruta calculado por costos operativos
+- Operadores remunerados por kilómetro recorrido y calidad del servicio, no por pasajero transportado.
+- Inclusión dentro del esquema tarifario de una utilidad que permita mantener el equilibrio económico y financiero del contrato público.
+Implementar pago electrónico universal e integración tarifaria real
+Acelerar la interoperabilidad total:
+- Una sola tarjeta o sistema digital para bus, tren y futuros modos.
+- Tarifa integrada con para transbordos intermodales o de bajo costo.
+Fortalecer los mecanismos de fiscalización técnica y transparencia de datos
+Hay que establecer:
+- Plataforma pública de datos abiertos sobre frecuencias, puntualidad y ocupación.
+- Auditorías técnicas y de ciudadanía periódicas obligatorias.
+- Indicadores de desempeño contractual vinculados a sanciones o incentivos.
+Modernizar el marco contractual y la seguridad jurídica
+Actualizar el esquema legal para:
+- Contratos de desempeño con metas claras.
+- Cláusulas de revisión periódica.
+- Mecanismos ágiles de intervención estatal en caso de incumplimiento.
+- Fortalecer la institucionalidad, para generar respuestas ágiles y oportunas a los cambios que se generen en la necesidad de transporte en sus distintas modalidades, favoreciendo la competitividad.
+Siendo ese el caso, se presenta la siguiente iniciativa de ley en busca aplicar las mejores prácticas en esos 3 ámbitos para poder mejorar y ampliar las modalidades y capacidades del transporte remunerado de personas en modalidad de taxis.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+REFORMA A LA LEY 7969 REGULADORA DEL SERVICIO PÚBLICO DE TRANSPORTE REMUNERADO DE PERSONAS EN VEHÍCULOS EN LA MODALIDAD DE TAXI PARA MEJORAR SU CALIDAD, PUNTUALIDAD Y SERVICIO
+ARTÍCULO 1- Reformas
+Refórmense los artículos 33 y 57 de la Ley n.º 7969, Ley Reguladora del Servicio Público de Transporte Remunerado de Personas en Vehículos en la Modalidad de Taxi, para que en adelante se lean de la siguiente manera:
+Artículo 33- Tabla de evaluación de ofertas
+La evaluación de ofertas deberá basarse en criterios técnicos orientados al desempeño futuro del servicio, incluyendo:
+Capacidad operativa y tecnológica del oferente (20%).
+Propuesta de cumplimiento de indicadores de calidad del servicio (20%).
+Implementación de sistemas tecnológicos de monitoreo y control (20%).
+Estrategias de sostenibilidad ambiental y plazos para su aplicación en la electrificación de su flotilla, en línea con los Objetivos de Desarrollo Sostenible de la Agenda 2030 de las Naciones Unidas (20%).
+Experiencia comprobada en operación eficiente de servicios de transporte (20%).
+Artículo 57- Fijación y aprobación tarifaria
+Las tarifas de los servicios públicos de transporte remunerado de personas, en cualquiera de sus modalidades, incluyendo taxi, autobús, ferrocarril, servicios especiales y futuras modalidades reguladas por ley, serán fijadas por la Autoridad Reguladora de los Servicios Públicos bajo principios de eficiencia operativa, calidad, sostenibilidad y accesibilidad.
+Para tales efectos, la metodología tarifaria deberá considerar, según la naturaleza de cada modalidad:
+Costos operativos eficientes por kilómetro.
+Cumplimiento de indicadores de desempeño, calidad y seguridad.
+Demanda real y demanda social del servicio.
+Factores de sostenibilidad ambiental y transición energética.
+Necesidades de inversión tecnológica y modernización de flota e infraestructura.
+Estructuras de subsidio, compensación o integración tarifaria cuando corresponda por medio de presupuesto del Consejo y cánones recolectados.
+Equidad territorial y accesibilidad universal.
+La Autoridad deberá desarrollar metodologías diferenciadas por modalidad, bajo un marco regulatorio homologado.
+ARTÍCULO 2- Adiciones
+Adiciónense los incisos m), n), ñ), o) y p) al artículo 1; los incisos d), e), f), g) y h) al artículo 4; un párrafo final al artículo 47; un párrafo al artículo 50; y un párrafo al artículo 59 de la Ley n.º 7969, Ley Reguladora del Servicio Público de Transporte Remunerado de Personas en Vehículos en la Modalidad de Taxi.
+Asimismo, adiciónese un nuevo capítulo XI denominado “Sistema de Evaluación de Calidad y Desempeño”, el cual se insertará en la estructura de la ley. En consecuencia, el capítulo XI actual y los capítulos, artículos y numeración subsiguientes se recorrerán en su orden.
+El texto de las adiciones dirá:
+Artículo 1- Definiciones
+Adiciónense los siguientes incisos:
+m) Indicadores de desempeño (KPIs): conjunto de métricas técnicas, operativas y de calidad utilizadas para evaluar el cumplimiento del servicio público de transporte remunerado de personas.
+n) Nivel de servicio: grado de cumplimiento de parámetros de calidad definidos reglamentariamente, tales como puntualidad, disponibilidad, regularidad operativa, seguridad y satisfacción del usuario.
+ñ) Sistema de monitoreo: plataforma tecnológica telemétrica que permite la recolección, procesamiento y análisis de datos operativos en tiempo real.
+o) Integración tecnológica: capacidad de los sistemas de transporte para interoperar mediante plataformas digitales, validación electrónica y sistemas de información.
+p) Pago electrónico: sistema de cobro automatizado mediante medios digitales interoperables.
+Artículo 4- Principios generales de operación
+Adiciónense los siguientes incisos:
+d) Principio de calidad del servicio: el servicio deberá prestarse bajo estándares medibles de calidad, definidos mediante indicadores de desempeño obligatorios.
+e) Principio de eficiencia operativa: la prestación del servicio deberá optimizar el uso de recursos, maximizando la relación entre costo y beneficio social.
+f) Principio de sostenibilidad: el sistema deberá promover el uso de tecnologías limpias y la reducción de emisiones contaminantes.
+g) Principio de transparencia: la información operativa y de desempeño del servicio será pública, accesible y verificable.
+h) Principio de accesibilidad universal.
+Artículo 47- Requisitos de los vehículos
+Adiciónese el siguiente párrafo:
+Todos los vehículos deberán contar obligatoriamente, conforme a las especificaciones técnicas que establezca el reglamento, con:
+Sistema de posicionamiento global (GPS) en tiempo real.
+Dispositivos de validación electrónica de pago.
+Sistemas de comunicación con la plataforma central de monitoreo.
+Condiciones tecnológicas que permitan la fiscalización remota del servicio, con observancia de la normativa sobre protección de datos personales y seguridad de la información.
+Diseño universal acorde a la Ley 7600, incluyendo como mínimo rampas o adaptaciones según modalidad, botones de asistencia y señalización accesible.
+Artículo 50- Capacitación
+Los programas de capacitación deberán incluir:
+Atención al usuario.
+Uso de tecnologías de operación y monitoreo.
+Seguridad vial avanzada.
+Protocolos de servicio y calidad.
+Artículo 59- Control de tarifas
+El control tarifario se realizará mediante sistemas tecnológicos que permitan:
+a) Trazabilidad de los viajes.
+b) Registro digital de transacciones.
+c) Auditoría en tiempo real por parte de la Administración.
+Capítulo XI
+Sistema de Evaluación de Calidad y Desempeño
+Artículo 61- Sistema de evaluación
+Créase el Sistema Nacional de Evaluación de Calidad y Desempeño del Transporte Público, de carácter obligatorio para todos los prestatarios de servicios públicos de transporte remunerado de personas, independientemente de su modalidad.
+Todo prestatario deberá implementar un Sistema de Gestión de Calidad del Servicio conforme a reglamento técnico, incluyendo protocolos operativos, mantenimiento, atención al usuario, gestión de riesgos, mejora continua y auditoría interna.
+Artículo 62- Indicadores obligatorios
+El sistema incluirá, como mínimo, indicadores en las siguientes categorías:
+a) Operación: puntualidad, frecuencia, cumplimiento de rutas.
+b) Servicio al usuario: tiempo de espera, nivel de ocupación, satisfacción.
+c) Eficiencia: costo por kilómetro, productividad del servicio.
+d) Seguridad: incidentes y condiciones del vehículo.
+e) Condición técnica y mantenimiento: disponibilidad mecánica, cumplimiento de mantenimiento preventivo, edad de flota, inspección técnica y confiabilidad operacional.
+f) Experiencia del usuario: limpieza, atención, información, gestión de reclamos y percepción del servicio.
+El reglamento técnico establecerá umbrales mínimos obligatorios por modalidad.
+Artículo 63- Monitoreo y fiscalización
+Los concesionarios estarán obligados a suministrar información en tiempo real mediante sistemas tecnológicos interoperables abiertos. Dentro del monitoreo y fiscalización del servicio, todo prestatario deberá reportar incidentes, accidentes, fallas técnicas y denuncias bajo formato estandarizado.
+Asimismo, el Consejo deberá velar que la infraestructura en los distintos puntos de paradas avaladas presente la tecnología adecuada para fiscalizar y medir los indicadores de desempeño de las respectivas rutas. Para dicha labor se destinará financiamiento por medio de los cánones indicados en esta ley para poder realizar la creación, adaptación, mantenimiento y mejoramiento de dicha infraestructura.
+Artículo 64- Evaluación periódica
+La Administración realizará evaluaciones periódicas del desempeño, cuyos resultados serán vinculantes para:
+Ajustes tarifarios.
+Aplicación de sanciones.
+Otorgamiento de incentivos.
+Renovación o prórrogas de las concesiones.
+Una de estas evaluaciones deberá ser una auditoría técnica externa obligatoria anual, acreditada por ente competente.
+Artículo 65- Incentivos y sanciones
+El incumplimiento de los indicadores de desempeño dará lugar a sanciones, mientras que su superación podrá generar incentivos económicos o administrativos. Se considerará reincidencia cuando un operador permanezca en categoría de desempeño deficiente o crítico durante dos o más períodos consecutivos de evaluación, lo cual agravará las sanciones aplicables.
+Las clasificaciones para el régimen de desempeño son las siguientes:
+Alto desempeño: cumplimiento de indicadores de desempeño igual o superior al 90%.
+Desempeño adecuado: cumplimiento de indicadores de desempeño entre el 75% y el 89%.
+Desempeño deficiente: cumplimiento de indicadores de desempeño entre el 60% y el 74%.
+Desempeño crítico: cumplimiento de indicadores de desempeño inferior al 60%.
+Régimen de incentivos
+Los operadores clasificados en la categoría de alto desempeño tendrán derecho a:
+Prioridad en procesos de renovación, prórroga o ampliación de concesiones.
+Acceso preferente a programas de financiamiento, modernización tecnológica o incentivos estatales acorde a las posibilidades financieras del Consejo.
+Régimen de cumplimiento base
+Los operadores en categoría de desempeño adecuado mantendrán:
+Las condiciones tarifarias ordinarias.
+La continuidad de la concesión sin beneficios adicionales.
+Régimen deficiente y sancionatorio progresivo
+Los operadores clasificados en desempeño deficiente o crítico estarán sujetos a las siguientes medidas:
+a) Desempeño deficiente:
+Amonestación formal.
+Obligación de presentar un plan de mejora en un plazo máximo de 30 días, con seguimiento mensual para validar las acciones correctivas implementadas por parte del ente rector.
+Ajustes tarifarios condicionados: cualquier ajuste positivo solicitado deberá destinar un porcentaje definido reglamentariamente al cumplimiento del plan correctivo.
+b) Desempeño crítico:
+Multas proporcionales al nivel de incumplimiento acorde a la Ley n.° 7593, del 9 de agosto 1996, Ley de la Autoridad Reguladora de los Servicios Públicos (Aresep).
+Intervención operativa temporal por parte de la Administración.
+Suspensión parcial o total de la concesión.
+Revocatoria de la concesión por motivo de reincidencia o cuando el incumplimiento configure alguna de las causales previstas en la Ley n.° 7593, del 9 de agosto 1996, Ley de la Autoridad Reguladora de los Servicios Públicos (Aresep).
+Artículo 66- Transparencia
+La información del desempeño del servicio será pública, accesible a los usuarios y anonimizada cuando contenga datos personales.
+TRANSITORIO I- Se otorga un plazo de dos años para que los concesionarios, el Consejo de Transporte Público, Aresep y demás autoridades competentes implementen las obligaciones tecnológicas, reglamentarias y operativas previstas en esta ley.
+Rige a partir de su publicación.
+Luz Mary Alpízar Loaiza
+Diputada
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 12-05-2026).

@@ -1,0 +1,618 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE CREACIÓN DEL SISTEMA NACIONAL DE EMPLEO
+GERALD BOGANTES RIVERA
+DIPUTADO
+EXPEDIENTE N.º 25.843
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY DE CREACIÓN DEL SISTEMA NACIONAL DE EMPLEO
+Expediente N.º 25.843
+ASAMBLEA LEGISLATIVA:
+El trabajo constituye uno de los principales medios para que las personas desarrollen sus capacidades, generen ingresos, alcancen autonomía económica y participen plenamente en la sociedad. El acceso a oportunidades laborales formales y de calidad incide directamente en la reducción de la pobreza, la movilidad social, la cohesión territorial, la productividad y la competitividad del país.
+La Constitución Política reconoce expresamente la responsabilidad del Estado en esta materia. Su artículo 72 establece la obligación de mantener un sistema técnico y permanente de protección para las personas desocupadas involuntariamente y de procurar su reintegración al trabajo mientras no exista un seguro de desocupación. Este mandato constitucional exige contar con mecanismos permanentes para orientar, formar, acompañar e integrar a las personas al mercado laboral y no puede entenderse satisfecho únicamente mediante medidas asistenciales de carácter temporal.
+La protección frente al desempleo requiere una intervención articulada. Las personas pueden enfrentar dificultades de acceso o permanencia laboral por razones educativas, productivas, territoriales, familiares, económicas, tecnológicas o sociales. De igual manera, las empresas pueden experimentar dificultades para identificar, atraer y conservar el talento humano que necesitan. En consecuencia, la respuesta estatal debe integrar información, orientación, formación, intermediación, servicios de apoyo, atención empresarial, seguimiento y conocimiento del mercado laboral.
+El presente proyecto pretende consolidar un marco jurídico permanente para la organización y articulación de los servicios de empleo, la definición de responsabilidades institucionales, la planificación de las acciones en materia de empleabilidad y talento humano, la atención de las personas y empresas usuarias y el fortalecimiento de los mecanismos de coordinación, seguimiento, evaluación, transparencia y rendición de cuentas.
+La iniciativa procura convertir la política de empleo en una política de Estado, capaz de adaptarse a la evolución del mercado laboral, a las transformaciones productivas y tecnológicas y a las necesidades de las distintas poblaciones y territorios. Busca ordenar, conectar y fortalecer los programas, servicios, conocimientos y recursos que posee el país.
+I. Fundamento constitucional, internacional e institucional
+La creación de un sistema permanente de empleo encuentra su principal sustento en el artículo 72 de la Constitución Política. Esta disposición establece un mandato claro de protección de las personas desocupadas involuntariamente y de promoción de su reintegración al trabajo. La obligación estatal comprende la adopción de medidas técnicas, continuas y organizadas, capaces de responder a los cambios del mercado laboral y a las condiciones particulares de quienes buscan empleo.
+Este fundamento se complementa con el derecho al trabajo y con el deber estatal de procurar condiciones que permitan a las personas acceder a una ocupación digna y útil. La política de empleo también se relaciona con los principios de igualdad, protección social, bienestar general, educación, desarrollo económico y adecuada distribución de las oportunidades.
+En el plano internacional, la Recomendación sobre el servicio del empleo, 1948, número 83, de la Organización Internacional del Trabajo, promueve que los Estados cuenten con servicios públicos y gratuitos de empleo, que cooperen con otras organizaciones públicas y privadas vinculadas con la materia y adopten medidas para ampliar su utilización y mejorar el desempeño de sus funciones.
+Estos servicios no deben limitarse a publicar vacantes. Su función comprende facilitar el ajuste entre oferta y demanda laboral, brindar información y orientación, promover la movilidad ocupacional, colaborar con los sistemas de formación y contribuir a la organización del mercado de trabajo.
+En el ámbito institucional, la Ley Orgánica del Ministerio de Trabajo y Seguridad Social asigna a esa cartera la dirección y el estudio de los asuntos relativos al trabajo y al bienestar social. Este fundamento sustenta su función rectora en materia de empleo y su papel en la coordinación de las políticas y servicios correspondientes.
+El Instituto Nacional de Aprendizaje, por su parte, tiene dentro de sus funciones legales la promoción y el desarrollo de la capacitación y formación profesional de las personas trabajadoras en los distintos sectores económicos. Su participación resulta esencial para reducir brechas de competencias y vincular la formación con las necesidades presentes y futuras del mercado de trabajo.
+Asimismo, la Ley de Planificación Nacional atribuye al Sistema Nacional de Planificación, funciones relacionadas con el análisis permanente de la economía, el desarrollo regional, los recursos humanos, la evolución social y el mejoramiento de la Administración Pública. Estas competencias justifican la incorporación de la empleabilidad y el talento humano a los procesos de planificación, evaluación y gestión basada en resultados.
+La intervención articulada de estas instituciones debe complementarse con las competencias del sistema educativo, las instituciones responsables de inclusión social, igualdad de género, discapacidad, desarrollo productivo, emprendimiento, estadística, gobiernos locales y demás actores públicos y sociales vinculados con el mercado laboral.
+II. Evolución de la institucionalidad de los servicios de empleo
+Costa Rica cuenta con una trayectoria institucional que ha evolucionado desde modelos concentrados en información e intermediación hacia una concepción más amplia de la empleabilidad.
+Mediante el Decreto Ejecutivo n.° 34936-MTSS, de 14 de noviembre de 2008, se creó el Sistema Nacional de Información, Orientación e Intermediación de Empleo, con el propósito de coordinar recursos institucionales, humanos y tecnológicos que facilitaran el encuentro entre las personas oferentes y las organizaciones demandantes de trabajo.
+Este antecedente permitió desarrollar plataformas, unidades de intermediación y mecanismos de cooperación. Sin embargo, la evolución del mercado laboral evidenció que la sola intermediación no resultaba suficiente. Las transformaciones productivas, tecnológicas y educativas demandaban una estructura capaz de integrar servicios de orientación, formación, atención de barreras, acompañamiento empresarial y permanencia laboral.
+Por esa razón, mediante el Decreto Ejecutivo n.° 41776-MTSS-MEP-Mideplán-MDHIS-MCM-MCSP, de 10 de junio de 2019, se creó el Sistema Nacional de Empleo. Este fue concebido para definir el ordenamiento, la lógica y la gobernanza de los servicios de empleo, integrarlos bajo un enfoque sistémico y responder tanto a las dinámicas del mercado laboral como a las necesidades de las personas desempleadas o empleadas que requerían conservar o mejorar su trabajo.
+El decreto dispuso que las instituciones públicas que brindaran servicios de empleo debían establecer mecanismos de integración al Sistema. También configuró una estructura de dirección política, coordinación técnica y operación de servicios.
+Como desarrollo de esa disposición, se formuló el Modelo de Gestión del Sistema Nacional de Empleo, que organiza los servicios bajo una lógica integrada, centrada en las personas y empresas usuarias y basada en la coordinación entre instituciones. El modelo reconoce que el desempleo y la subutilización de la fuerza de trabajo responden a causas que exceden las competencias de una única entidad, pero también sostiene que una adecuada articulación permite mejorar la empleabilidad, la movilidad social y la eficacia de las respuestas públicas.
+El Modelo de Gestión fue aprobado por el Consejo de Empleo en la sesión n.° I-2020, del 28 de agosto de 2020 y posteriormente por la Junta Directiva del Instituto Nacional de Aprendizaje mediante el acuerdo n.° JD-AC-252-2020, de 7 de setiembre de 2020.
+Este proceso demuestra que existe una institucionalidad en funcionamiento, una experiencia acumulada y una lógica de atención previamente desarrollada. No obstante, sus fundamentos se encuentran dispersos en decretos, acuerdos, modelos administrativos y convenios. La ausencia de una ley puede afectar la continuidad, estabilidad y exigibilidad de la coordinación institucional.
+La elevación del Sistema a rango legal procura consolidar sus elementos esenciales y garantizar su permanencia.
+III. Evolución reciente del mercado laboral
+La creación del Sistema Nacional de Empleo en 2019 y la formulación de la Estrategia Nacional de Empleabilidad y Talento Humano se produjeron en un contexto de importantes desafíos laborales.
+Según la Encuesta Continua de Empleo, durante el primer trimestre de 2023 había en Costa Rica 119 612 hombres y 129 167 mujeres en condición de desempleo, para una tasa nacional del 10,6%. En ese momento, esa tasa se encontraba considerablemente por encima del promedio de los países miembros de la OCDE.
+También existían diferencias significativas entre grupos poblacionales. Para el primer trimestre de 2023, la tasa de desempleo de las mujeres alcanzaba un 14,1%, mientras que entre las personas jóvenes de 15 a 24 años llegaba a un 27,8%. Estos datos evidenciaban que el desempleo no estaba afectando a la población de forma homogénea y que era necesario establecer mecanismos de priorización y atención diferenciada para tener un verdadero impacto.
+La situación ha mejorado en los últimos años. Según el INEC, para el trimestre octubre-diciembre de 2025, la tasa de desempleo nacional se estimó en un 6,3%, con aproximadamente 147 mil personas desempleadas. Sin embargo, la tasa neta de participación fue de un 54,5% y la informalidad afectó al 37,8% de la población ocupada. Cerca de 825 mil personas trabajaban en condiciones de informalidad.
+La reducción del desempleo abierto constituye un avance relevante, pero no elimina la necesidad de fortalecer los servicios de empleo. Una tasa menor puede coexistir con baja participación laboral, informalidad, desigualdades territoriales, desajustes de competencias y exclusión de grupos específicos.
+La OCDE ha señalado que la economía costarricense presenta un desempeño positivo, impulsado por una creciente especialización en manufactura y servicios de alto valor agregado. Sin embargo, también advierte que muchas personas trabajadoras, empresas y regiones todavía no se benefician plenamente de ese crecimiento, y que la escasez de habilidades constituye un reto crítico para la productividad y la capacidad del país para continuar atrayendo inversión.
+Esto refleja una realidad compleja, el país puede registrar simultáneamente personas en búsqueda de empleo y empresas con puestos difíciles de cubrir. El problema no es únicamente la cantidad de vacantes, sino la correspondencia entre las competencias, experiencia y condiciones de las personas y las necesidades de los sectores productivos.
+IV. Desempleo, pobreza y movilidad social
+El desempleo tiene una relación directa con la pobreza y la vulnerabilidad social. Según la Encuesta Nacional de Hogares de 2022, la tasa de desempleo era del 7,7% entre las personas no pobres, ascendía al 22,9% entre quienes se encontraban en pobreza no extrema y alcanzaba un 40,9% entre las personas en pobreza extrema.
+Las diferencias también eran evidentes en materia de ocupación. Entre las personas no pobres mayores de 15 años, un 55,1% tenía empleo; entre las personas en pobreza no extrema, la proporción descendía al 32,2% y entre aquellas en pobreza extrema, únicamente un 25,3% se encontraba ocupada.
+Estos datos permiten afirmar que la inserción laboral productiva y adecuadamente remunerada, constituye una de las vías más importantes para que las personas y los hogares superen la pobreza; sin embargo, son precisamente quienes se encuentran en mayor vulnerabilidad, quienes enfrentan más dificultades para ingresar al mercado laboral.
+Por ende, la política de empleo debe coordinarse con las políticas sociales. Las personas en pobreza pueden requerir, además de orientación o formación, apoyos económicos, servicios de cuidado, transporte, asistencia psicosocial, accesibilidad, acompañamiento y referencia hacia otros programas públicos.
+Cabe aclarar que esa articulación no supone que las instituciones de empleo sustituyan a las instituciones de protección social. Cada entidad mantiene sus competencias y recursos. El valor agregado del Sistema consiste en facilitar que la persona sea identificada, orientada y referida al servicio correspondiente y que exista continuidad en la atención.
+V. Brechas de género, cuidados y participación laboral
+Las mujeres enfrentan barreras particulares para ingresar y permanecer en el mercado de trabajo. Las responsabilidades domésticas y de cuidado no remunerado, las dificultades para acceder a servicios de cuido, las jornadas escolares, la segregación ocupacional y las prácticas discriminatorias inciden en su menor participación laboral.
+Los antecedentes del Sistema ya identificaban estas desigualdades. La Encuesta Nacional de Uso del Tiempo del año 2017 mostró que las mujeres dedicaban al trabajo doméstico y a los cuidados no remunerados aproximadamente 35 horas y 49 minutos semanales, frente a sólo 13 horas y 42 minutos de los hombres.
+Aunque esos datos corresponden a un antecedente histórico, la brecha continúa siendo un reto estructural. La OCDE indicó, en su Estudio Económico de 2025, que la participación de las mujeres en la fuerza laboral costarricense se encontraba alrededor de 27 puntos porcentuales por debajo de la participación masculina. También señaló que las responsabilidades domésticas y de cuidado limitan especialmente la participación de las mujeres de menores ingresos.
+Por ello, una política de empleo no puede considerar los servicios de cuido y otros apoyos como elementos completamente ajenos a la empleabilidad. En determinados casos (principalmente las mujeres), esos servicios son condiciones necesarias para que una persona pueda asistir a una formación, participar en una entrevista, aceptar un puesto o mantener una relación laboral.
+La participación de las instituciones competentes en igualdad y protección social permite que las políticas laborales reconozcan estas barreras y adopten respuestas diferenciadas, sin trasladar indebidamente competencias de una institución a otra.
+VI. Formación, competencias y necesidades del sector productivo
+La formación y capacitación son componentes centrales de la empleabilidad. No obstante, su efectividad depende de la pertinencia, calidad y correspondencia con las necesidades productivas.
+Los antecedentes de la Estrategia mostraron que una parte importante de las personas desempleadas tenía secundaria incompleta o niveles educativos inferiores. Al mismo tiempo, sectores empresariales reportaban dificultades para contratar personal con las habilidades requeridas.
+Según la Encuesta de Expectativas de Empleo de Manpower correspondiente al tercer trimestre de 2023, un 71% de las organizaciones empleadoras consultadas indicó tener dificultades para encontrar personal con las habilidades necesarias.
+Los resultados coinciden con el diagnóstico de la OCDE sobre escasez de habilidades y con la información contenida en la etapa diagnostica de la Eneth-CR sobre vacantes difíciles de cubrir y desajustes entre la demanda ocupacional y la oferta laboral.
+VII. La Eneth-CR como instrumento de planificación
+La Estrategia Nacional de Empleabilidad y Talento Humano 2023-2027 fue formulada para mejorar la empleabilidad de las personas, reducir la distancia entre oferta y demanda laboral, utilizar de mejor forma los recursos institucionales y contribuir a la productividad y competitividad.
+La Eneth-CR contiene un diagnóstico, población objetivo, objetivos, componentes, acciones, responsables, indicadores, financiamiento, gobernanza y mecanismos de seguimiento. Sus componentes comprenden inteligencia del mercado laboral, priorización de poblaciones, formación para el empleo, intermediación laboral, emprendimiento y autoempleo y condiciones transversales.
+Dentro de sus metas figura la atención de al menos 55 000 personas, mediante servicios de intermediación laboral en modalidad asistida o mixta, procurando que al menos la mitad sean mujeres. La Estrategia también contempla indicadores desagregados por condición de actividad, edad, sexo, discapacidad, situación socioeconómica, educación, migración y tipo de servicio.
+Estos elementos evidencian un avance hacia la gestión basada en resultados. Sin embargo, la permanencia de la Estrategia y de los mecanismos de seguimiento no debería depender únicamente de actos administrativos o de la voluntad de cada gobierno.
+VIII. Evaluación de la Estrategia Brete
+La Estrategia Nacional de Empleabilidad y Talento Humano (Eneth) incorpora el Plan de Monitoreo y Evaluación, mecanismos de seguimiento y espacios de coordinación orientados a revisar su ejecución, generar informes de avance y promover la mejora continua de los servicios. Estos elementos permiten dar seguimiento a las acciones previstas, pero su eficacia depende de la calidad del diseño, la disponibilidad de información, la claridad de las responsabilidades y la suficiencia de los recursos institucionales.
+En 2024, el Ministerio de Planificación Nacional y Política Económica (Mideplán) realizó una evaluación de diseño de la Eneth-Brete, de alcance nacional, carácter externo y finalidad formativa. La evaluación examinó principalmente el período 2023-2024, dentro del horizonte de implementación de la Estrategia hasta 2027 y tuvo, como pregunta central, determinar la calidad de su diseño y la forma en que los distintos actores participaron en su formulación. Por su naturaleza, el estudio no estuvo dirigido a medir los resultados finales ni los impactos de la intervención.
+Para realizar el análisis, Mideplán aplicó un índice de calidad del diseño compuesto por cuatro dimensiones con igual ponderación: planificación, información, gobernanza y recursos. La evaluación utilizó como técnica principal la revisión documental de la Estrategia, su Plan de Acción y los informes relacionados, complementada con entrevistas y una encuesta para profundizar en los procesos de participación, coordinación y disponibilidad de recursos. La información fue triangulada entre documentos, actores institucionales y evidencia disponible.
+El resultado general determinó que la Eneth-Brete es una intervención evaluable y que cuenta con una base de diseño sólida. Sus principales fortalezas se ubicaron en las dimensiones de gobernanza, planificación e información. La evaluación destacó que la Estrategia identifica el problema público y la población objetivo, establece objetivos, componentes, acciones estratégicas, indicadores, metas y responsables, y que contiene una estructura multinivel de coordinación que integra instancias político-estratégicas, operativas y de prestación de servicios. También, reconoció el carácter participativo de su formulación, mediante talleres multi-actor, sesiones bilaterales y espacios de diálogo con instituciones públicas, sectores empleador y trabajador, organizaciones y personas usuarias.
+En materia de planificación, la evaluación identificó como fortaleza la claridad general sobre las poblaciones objetivo y la problemática de empleabilidad. No obstante, señaló que el diagnóstico se encuentra disperso a lo largo del documento y que la relación causal entre el problema, sus causas, las acciones y los resultados esperados debería presentarse de manera más explícita. Asimismo, recomendó ajustar algunos indicadores para mejorar su calidad, diferenciar adecuadamente los niveles estratégicos y operativos, y facilitar la trazabilidad entre objetivos, actividades, productos y resultados.
+Respecto de la información, se determinó que la Estrategia cuenta con un documento oficial centralizado y con un Plan de Acción que incluye actividades, productos esperados, plazos, responsables y recursos proyectados. Sin embargo, la evaluación identificó oportunidades para fortalecer la estandarización, trazabilidad, actualización y comunicación pública de los avances, y recomendó la publicación de informes semestrales y anuales dirigidos tanto a las instituciones y socios estratégicos como a la ciudadanía.
+En la dimensión de gobernanza, la evaluación reconoció como fortalezas la definición de actores, roles, mecanismos de coordinación, mesas técnicas y niveles de actuación. A su vez, advirtió la necesidad de sistematizar la experiencia acumulada para garantizar su continuidad y facilitar su eventual consolidación como política pública de empleo. También señaló la importancia de mantener los espacios de coordinación desde el nivel estratégico nacional hasta los ámbitos regionales y locales.
+La dimensión de recursos fue identificada como la de mayor debilidad relativa. La evaluación observó que muchas acciones se apoyan en intervenciones institucionales existentes y en presupuestos previamente asignados, pero advirtió una tensión entre la amplitud de la Estrategia, los recursos disponibles y la capacidad efectiva para coordinar, ejecutar y dar seguimiento a todas sus acciones. En particular, destacó la sobrecarga de funciones del personal, la falta de tiempo efectivo para realizar labores de coordinación y reporte y la necesidad de delimitar con mayor precisión los mecanismos de gestión de los recursos económicos, humanos y operativos.
+Estos hallazgos son especialmente relevantes para la presente iniciativa. La evaluación demuestra que la Eneth-Brete no parte de una estructura improvisada, sino de un diseño institucional que reúne condiciones suficientes para ser implementado y evaluado. Al mismo tiempo, evidencia que su sostenibilidad requiere fortalecer la trazabilidad de la planificación, la calidad de los indicadores, la publicidad de los avances, la coordinación multinivel y la asignación de capacidades institucionales para el seguimiento.
+En consecuencia, el presente proyecto procura dar continuidad y mayor estabilidad a los esfuerzos existentes, mediante obligaciones permanentes de seguimiento, evaluación, generación y publicación de información y rendición de cuentas. Para ello, deberá distinguirse entre los recursos utilizados, las actividades ejecutadas, los productos generados, los resultados alcanzados y los impactos obtenidos. No basta con contabilizar personas registradas, cursos impartidos o vacantes publicadas; también es necesario conocer cuántas personas fueron orientadas, referidas, formadas y colocadas, cuánto tiempo permanecieron en el empleo, si el puesto obtenido fue formal y de calidad y si la intervención alcanzó efectivamente a las poblaciones y territorios prioritarios.
+La información deberá desagregarse conforme a variables relevantes para identificar desigualdades, valorar el alcance de las acciones y adoptar medidas correctivas. Asimismo, el seguimiento presupuestario y operativo deberá permitir relacionar los recursos utilizados con los productos y resultados obtenidos. De esta manera, la evaluación dejará de ser un ejercicio aislado y pasará a formar parte permanente de la gestión, la planificación y la toma de decisiones del Sistema Nacional de Empleo.
+IX. Cobertura territorial y participación local
+Las oportunidades de empleo, las barreras de acceso y las necesidades de talento humano no se distribuyen de manera uniforme en el territorio nacional. Las características de la estructura productiva, la concentración de empresas, la infraestructura disponible, la oferta educativa y formativa, las posibilidades de transporte, la conectividad y la distancia respecto de los centros urbanos influyen en las oportunidades reales de inserción y permanencia laboral de las personas. Por ello, una política nacional de empleo debe combinar objetivos comunes para todo el país con respuestas diferenciadas según las condiciones económicas, sociales y productivas de cada región y cantón.
+Los antecedentes que sustentaron la creación del Sistema Nacional de Empleo ya mostraban importantes diferencias territoriales. Según la Encuesta Continua de Empleo, correspondiente al cuarto trimestre de 2018, la tasa nacional de desempleo alcanzó un 12%; no obstante, algunas regiones ubicadas fuera de la Gran Área Metropolitana presentaban niveles superiores, entre ellas la Pacífico Central con un 16,6%; la Brunca con un 13,6%; la Chorotega con un 12,9% y la Huetar Caribe con un 12,1%.
+Estas cifras deben entenderse como un antecedente histórico y no como una descripción de la situación actual; sin embargo, permiten evidenciar que el desempleo, la disponibilidad de oportunidades productivas y el acceso a los servicios de empleo han tenido una expresión territorial diferenciada. También demuestran que la atención concentrada únicamente en el ámbito nacional o en la Gran Área Metropolitana resulta insuficiente para responder a la diversidad del mercado laboral costarricense.
+El enfoque territorial implica que la organización de los servicios parta del conocimiento de las actividades productivas, las ocupaciones demandadas, la oferta formativa, las barreras de movilidad y las características de las poblaciones de cada territorio. Esto permite orientar la capacitación hacia necesidades verificables, acercar los servicios de orientación e intermediación, apoyar la identificación de vacantes y formular acciones acordes con las condiciones de cada región.
+La participación de las municipalidades y de los concejos municipales de distrito resulta particularmente relevante debido a su cercanía con las comunidades, empresas, centros educativos y organizaciones locales. Los gobiernos locales pueden colaborar en la identificación de necesidades de talento humano, la divulgación de oportunidades, la organización de ferias de empleo, la vinculación con actores productivos y la articulación de las acciones de empleo con los planes de desarrollo cantonal. Esta intervención debe respetar la autonomía municipal y desarrollarse conforme a las capacidades, prioridades y recursos de cada gobierno local.
+El Modelo de Gestión del Sistema Nacional de Empleo reconoce la necesidad de una gobernanza multinivel y de una red territorial de servicios que acerque la atención a las personas y empresas. La lógica del modelo procura que los servicios nacionales se articulen con unidades regionales y locales, evitando que la ubicación geográfica determine por sí sola la posibilidad de acceder a orientación, formación o intermediación laboral.
+El enfoque territorial tampoco supone que todos los cantones deban reproducir una misma estructura administrativa. La respuesta puede organizarse mediante unidades presenciales, alianzas interinstitucionales, oficinas municipales, centros educativos, organizaciones acreditadas, plataformas digitales, atención telefónica u otros mecanismos que resulten adecuados para las condiciones del territorio. La finalidad es asegurar cobertura y continuidad, no imponer una única modalidad institucional.
+La atención presencial debe complementarse con medios virtuales y telefónicos que permitan ampliar la cobertura, reducir desplazamientos y facilitar el acceso a información y servicios. No obstante, la digitalización no puede convertirse en una nueva barrera para las personas con conectividad limitada, menores competencias digitales, discapacidad o dificultades para utilizar herramientas tecnológicas. Por esa razón, el Sistema debe mantener opciones asistidas, accesibles y multicanal, de manera que la incorporación de tecnología amplíe las posibilidades de atención en lugar de excluir a quienes requieren acompañamiento.
+En consecuencia, el enfoque territorial busca que la política de empleo responda a las particularidades de cada región, articule los recursos existentes y acerque los servicios a las personas y empresas. La coordinación nacional debe proporcionar estándares, información y orientación general, mientras que la prestación territorial debe conservar la flexibilidad necesaria para adaptarse a las realidades locales.
+X. Gratuidad y participación privada
+La gratuidad de los servicios de información, orientación e intermediación laboral para las personas que buscan empleo constituye un principio esencial de los servicios públicos de empleo. Una persona no debe pagar por conocer una vacante, recibir orientación, ser referida a una organización empleadora, participar en un proceso de selección o acceder a una colocación laboral.
+Este principio responde a la especial condición de quienes buscan trabajo. Exigir pagos por acceder a oportunidades laborales puede aumentar su vulnerabilidad, generar barreras para las personas con menores ingresos y favorecer prácticas abusivas. La gratuidad procura que el acceso a los servicios dependa de las necesidades y capacidades de la persona y no de su posibilidad económica de pagar por una intermediación.
+La Ley Orgánica del Ministerio de Trabajo y Seguridad Social contiene antecedentes relativos a la intervención estatal en la colocación de personas trabajadoras y a la regulación de las agencias privadas. Estas competencias deben interpretarse conjuntamente con los instrumentos internacionales ratificados por Costa Rica y con la evolución de las modalidades de intermediación laboral.
+Costa Rica ratificó el Convenio sobre las agencias retribuidas de colocación, 1949, número 96, de la Organización Internacional del Trabajo, y aceptó las disposiciones de su parte II. Este instrumento se encuentra vigente para el país y establece un marco dirigido a la supresión progresiva de las agencias retribuidas con fines lucrativos, la regulación de las demás agencias y la garantía de un servicio público gratuito de empleo. La aplicación de este marco jurídico ha incidido en las condiciones bajo las cuales pueden desarrollarse actividades privadas de colocación en el país y, de acuerdo con la información disponible, en la actualidad no se tiene conocimiento de agencias que operen bajo el modelo de intermediación lucrativa cuya supresión progresiva contempla el Convenio.
+El Convenio distingue entre agencias con fines lucrativos, agencias sin fines lucrativos que reciben algún tipo de remuneración y agencias no retribuidas. También establece que las agencias autorizadas deben estar sometidas a la vigilancia de la autoridad competente y que las agencias no retribuidas deben realizar sus operaciones gratuitamente. En consecuencia, la referencia a estas categorías responde a la clasificación establecida por el propio instrumento internacional y no implica afirmar que todas ellas se encuentren actualmente operando en Costa Rica.
+La Organización Internacional del Trabajo adoptó posteriormente el Convenio sobre las agencias de empleo privadas, 1997, número 181, que reconoce la función que pueden cumplir estas agencias dentro de mercados laborales regulados y establece medidas de protección para las personas trabajadoras. Sin embargo, Costa Rica no figura entre los Estados que han ratificado este Convenio, por lo que no forma parte actualmente de las obligaciones internacionales vigentes para el país. Puede utilizarse como referente comparado, pero no como norma vinculante. La falta de ratificación del Convenio sobre las agencias de empleo privadas, 1997, número 181, de la Organización Internacional del Trabajo, no provocó que en Costa Rica se habilitara nuevamente el funcionamiento de agencias privadas de colocación con fines lucrativos en los términos previstos por dicho instrumento, ni altera las obligaciones asumidas por el país en virtud del Convenio sobre las agencias retribuidas de colocación, 1949, número 96, de la Organización Internacional del Trabajo.
+En este contexto, el presente proyecto procura fortalecer y dar mayor estabilidad a los mecanismos de regulación, supervisión y control aplicables a la intermediación laboral, así como garantizar la gratuidad de estos servicios para las personas que buscan empleo, con el propósito de prevenir la reaparición de prácticas de cobro por colocación laboral y mantener las garantías desarrolladas en el ordenamiento jurídico nacional.
+La participación privada dentro del Sistema Nacional de Empleo debe analizarse a partir de este marco jurídico. El proyecto no pretende excluir la cooperación de empresas, organizaciones, centros educativos, entidades sin fines de lucro u otros actores capaces de contribuir a la prestación y ampliación de los servicios; sin embargo, su incorporación debe producirse bajo reglas claras de habilitación, supervisión, transparencia, accesibilidad, protección de datos y respeto a la gratuidad de la intermediación para las personas demandantes de empleo.
+La cooperación privada puede ampliar la cobertura territorial, aportar conocimiento sectorial, facilitar la identificación de vacantes, acercar los servicios a determinadas poblaciones y fortalecer la vinculación con el sector productivo; no obstante, esta colaboración no puede traducirse en la privatización de las responsabilidades estatales ni en el traslado de los costos de intermediación a quienes buscan empleo.
+La prohibición de cobro debe comprender tanto los pagos directos como los mecanismos indirectos. Por ello, es inaceptable y contrario al ordenamiento jurídico, condicionar el acceso a una vacante, referencia o proceso de selección a la compra de cursos, certificaciones, membresías, paquetes de orientación, evaluaciones u otros servicios complementarios. Asimismo, lo es efectuar deducciones posteriores del salario destinadas a pagar, directa o indirectamente, por la obtención del puesto de trabajo.
+Esto no impide que existan programas educativos, procesos de certificación de competencias u otros servicios que, conforme al ordenamiento jurídico, puedan tener un costo y en los cuales las personas desempleadas puedan decidir participar voluntariamente para fortalecer sus competencias y mejorar sus herramientas para la búsqueda de empleo. Estos servicios deben distinguirse claramente de aquellos pagos, cursos, certificaciones, evaluaciones u otras prestaciones que se exijan como requisito o condición previa para optar por una vacante o acceder a un proceso de intermediación laboral. Estas últimas prácticas se encuentran prohibidas en Costa Rica y el presente proyecto procura mantener y fortalecer dicha prohibición.
+La participación de entidades privadas también exige una adecuada protección de los datos personales. Las organizaciones que tengan acceso a perfiles, historiales laborales, información socioeconómica o datos sensibles deberán utilizarlos únicamente para las finalidades autorizadas, aplicar medidas de seguridad y abstenerse de comercializarlos, transferirlos o emplearlos con propósitos discriminatorios.
+Asimismo, deben existir mecanismos para prevenir vacantes falsas, cobros indebidos, discriminación, uso irregular de información y cualquier práctica que aproveche la necesidad de las personas en búsqueda de empleo. La incorporación al Sistema debe estar acompañada de procedimientos de supervisión, atención de denuncias y adopción de medidas correctivas, con respeto al debido proceso.
+En consecuencia, la participación privada puede constituir un instrumento útil para ampliar y especializar los servicios de empleo, siempre que se mantenga la dirección pública del Sistema, se respeten las competencias institucionales y se garantice que la búsqueda de empleo no se convierta en una actividad económicamente gravosa para las personas. La cooperación debe estar al servicio del interés público y de una intermediación accesible, transparente, segura y no discriminatoria.
+XI. Consideración final
+La experiencia acumulada demuestra que Costa Rica cuenta con una base institucional, técnica y operativa para organizar y prestar servicios relacionados con empleo, formación, inclusión, emprendimiento y desarrollo productivo; sin embargo, su continuidad y articulación dependen todavía, en buena medida, de decretos, acuerdos, convenios y decisiones administrativas.
+En ese contexto, la presente iniciativa procura consolidar estos avances mediante un marco legal que fortalezca la coordinación interinstitucional, asegure continuidad entre administraciones, defina responsabilidades generales, consolide la planificación, garantice la gratuidad de los servicios esenciales de intermediación, mejore el seguimiento y la evaluación, proteja la información, institucionalice la participación de los distintos sectores y amplíe la transparencia y la rendición de cuentas.
+La propuesta no pretende inmovilizar el Sistema en su configuración actual, sino establecer una arquitectura general y estable que pueda adaptarse, con fundamento técnico, a los cambios productivos, tecnológicos, sociales y territoriales, permitiendo la actualización de sus instrumentos operativos, modalidades de atención, protocolos y componentes sin afectar la permanencia de sus principios, objetivos y responsabilidades esenciales.
+La disminución reciente del desempleo no elimina los desafíos persistentes en materia de participación laboral, brechas de género, informalidad, desigualdades territoriales, pobreza, desajustes de competencias y dificultades empresariales para encontrar talento.
+Frente a esta realidad, el país requiere una política de Estado que coloque a las personas en el centro, atienda las necesidades de las empresas, utilice información confiable, articule a las instituciones y evalúe de forma permanente sus resultados.
+Por las razones expuestas, se somete a consideración de las señoras diputadas y los señores diputados el presente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE CREACIÓN DEL SISTEMA NACIONAL DE EMPLEO
+SECCIÓN I
+DISPOSICIONES GENERALES
+ARTÍCULO 1- Objeto de la ley
+La presente ley tiene por objeto crear y regular el Sistema Nacional de Empleo (SNE), establecer su organización, gobernanza y mecanismos de articulación, así como reconocer la Estrategia Nacional de Empleabilidad y Talento Humano de Costa Rica (Eneth-CR), como el instrumento de planificación de las acciones públicas dirigidas a mejorar la empleabilidad y desarrollar el talento humano.
+El SNE ordenará y articulará los servicios de empleo bajo un enfoque sistémico, territorial, inclusivo y centrado en las personas y empresas usuarias, de manera que respondan a las dinámicas del mercado laboral y a la relación entre la oferta y la demanda de trabajo y las necesidades de las personas que buscan empleo o que requieren conservarlo, mejorar sus condiciones laborales o fortalecer sus competencias.
+La Eneth-CR orientará las acciones del SNE dirigidas a mejorar la empleabilidad de las personas, especialmente de aquellas que se encuentren en condición de vulnerabilidad, exclusión o con mayores barreras de acceso al mercado laboral, facilitar su incorporación y permanencia en empleos formales y de calidad, y contribuir al incremento de la productividad y la competitividad del país mediante el desarrollo y aprovechamiento del talento humano.
+ARTÍCULO 2- Creación del Sistema Nacional de Empleo
+Créese el Sistema Nacional de Empleo con el objetivo de definir el ordenamiento, lógica y gobernanza que deben tener los servicios de empleo, de forma que estos se articulen e integren entre sí, en una lógica sistémica que responda tanto a las dinámicas del mercado laboral -articulando oferta y demanda- como a las necesidades de las personas en búsqueda de empleo o ya empleadas, para conservar su trabajo o mejorar sus condiciones laborales, priorizando aquellas que se encuentran en condición de vulnerabilidad.
+ARTÍCULO 3- Ámbito de aplicación
+Las disposiciones de esta ley serán de aplicación obligatoria para las instituciones de la Administración Pública central y descentralizada, dentro del ámbito de sus respectivas competencias y con respeto a los regímenes de autonomía constitucional o legal que les correspondan, que brinden o financien servicios relacionados con las siguientes materias:
+Información y orientación laboral.
+Formación y capacitación para el empleo.
+Certificación y reconocimiento de competencias.
+Intermediación, colocación y movilidad laboral.
+Inserción, reinserción y permanencia en el empleo.
+Emprendimiento y autoempleo.
+Servicios de apoyo para la empleabilidad.
+Prospección e inteligencia del mercado laboral.
+Desarrollo y fortalecimiento del talento humano.
+Inclusión laboral de personas en condición de vulnerabilidad.
+Las municipalidades, los concejos municipales de distrito, las instituciones educativas, las organizaciones privadas, los sectores empleador y trabajador, las organizaciones sociales y los organismos de cooperación podrán participar en el SNE mediante convenios y mecanismos establecidos en esta ley.
+ARTÍCULO 4- Definiciones
+Para los efectos de la presente ley, se entenderá por:
+Agencia Nacional de Empleo (ANE): instancia operativa para la gestión de servicios de empleo en esquema de ventanilla única.
+Centro de Operaciones Virtuales y Telefónicas: mecanismo operativo del Sistema Nacional de Empleo (SNE), administrado por la Agencia Nacional de Empleo, constituido como un espacio de atención no presencial de personas y empresas a través de herramientas telemáticas, que ofrecerá y gestionará servicios de empleo según los lineamientos del SNE.
+Consejo Nacional de Empleo: órgano colegiado de dirección política del SNE, conformado por los ministros rectores de los servicios que se incluyen dentro del SNE, así como por jerarcas de las principales instituciones ejecutoras de estos servicios.
+Empleabilidad: conjunto de competencias, cualificaciones, conocimientos, habilidades, experiencias, circunstancias y condiciones que permiten a una persona acceder a un empleo, conservarlo, mejorar sus condiciones laborales, progresar o adaptarse a los cambios del mercado de trabajo.
+Eneth-CR: instrumento nacional de planificación que define objetivos, acciones, responsables, metas, indicadores y recursos para mejorar la empleabilidad y desarrollar el talento humano.
+Intermediación laboral: conjunto de acciones dirigidas a facilitar el encuentro entre las personas que buscan empleo y las empresas u organizaciones que requieren talento humano.
+Manual de procedimientos: instrumento administrativo que define el conjunto de protocolos, trámites y cualquier otra acción necesaria para atender la gestión cotidiana de los diferentes servicios de empleo, en una lógica sistémica centralizada en la atención a personas y empresas de forma unificada y simplificada mediante el esquema de ventanilla única.
+Modelo de gestión: modelo que permite la implementación del SNE mediante la determinación sistémica y combinada de funciones, esquemas, estructuras, ordenamiento, protocolos y otros instrumentos de definición operativa que representan los componentes clave del SNE. Además, el modelo permite ver la existencia de una organización sinérgica de actores clave como un todo frente a la suma de sus partes, en el apoyo a la misión, objetivos y resultados.
+Persona usuaria: persona física que busca empleo, requiere mejorar su empleabilidad o desea conservar y/o mejorar sus condiciones laborales, así como la empresa u organización que requiere servicios de empleo o talento humano.
+Plataforma informática: instrumento o conjunto de instrumentos de carácter tecnológico para la gestión de servicios de empleo y atención de personas según el modelo de gestión del SNE.
+Políticas del Sistema Nacional de Empleo: conjunto de lineamientos, normas, protocolos, modelos y cualquier otro instrumento normativo o de orientación que, aprobado por el Consejo Nacional de Empleo, regule el SNE, así como la gestión y articulación de la oferta de servicios públicos de empleo.
+Políticas públicas de servicios de empleo: programas y servicios de empleo que las instituciones rectoras y/o ejecutoras, en el marco de sus competencias, generan para la atención de sus poblaciones meta.
+Red de unidades de empleo: conjunto de unidades de empleo públicas, privadas o público-privadas, coordinadas por la Agencia Nacional de Empleo.
+Secretaría Técnica: órgano colegiado asesor del Consejo Nacional de Empleo y encargado de la articulación técnica y estratégica del SNE.
+ñ) Servicios de empleo: oferta programática dirigida a personas y empresas, integrada por los servicios en materia de empleo y mercado laboral que se brindan a través del Estado, organizaciones privadas o mediante alianzas público-privadas. Dentro de estos se incluyen los siguientes:
+Servicios primarios: todo aquel servicio que sea destinado a potenciar competencias y cualificaciones transferibles que refuerzan la capacidad de las personas con miras a encontrar y conservar un trabajo formal y de calidad, que busquen la inclusión y/o la permanencia de las personas dentro del mercado laboral, tales como los servicios de orientación vocacional, orientación laboral, educación, formación, capacitación, intermediación e inserción laboral y/o acompañamiento empresarial, entre otros.
+Servicios de apoyo: servicios que sean necesarios y complementarios para que las personas y empresas puedan ser beneficiarias de los servicios primarios, o bien, para tener o conservar un empleo, tales como asistencia económica, becas, estipendios, red de cuido y desarrollo infantil, asistencia psicoemocional, interpretación de la lengua de señas costarricense, asistencia personal humana, productos de apoyo y materiales en formatos accesibles a personas con discapacidad o cualquier otro que sea parte de programas sociales, de salud pública o de género. Para el caso de las empresas, de igual forma, se podrán tomar como parte de estos servicios aquellos que pertenezcan al Sistema de Banca para el Desarrollo, Economía Social Solidaria y otros que promuevan el fortalecimiento de su competitividad.
+Unidad de empleo: mecanismo operativo del SNE, constituido como una ventanilla única en espacio físico o telemático de atención presencial o no presencial, coordinado por la Agencia Nacional de Empleo, para la atención de personas y empresas, situada cercano al domicilio de estas y que ofrecerá y gestionará servicios de empleo según los lineamientos del SNE.
+Estas unidades de empleo podrán ser tanto públicas como privadas, o público-privadas.
+Ventanilla única: modelo integrado de atención que permite acceder a distintos servicios de empleo mediante un único punto de ingreso, referencia y seguimiento.
+ARTÍCULO 5- Objetivos del Sistema Nacional de Empleo
+El SNE tendrá los siguientes objetivos:
+Promover la generación de política pública en materia de servicios de empleo.
+Definir la gobernanza que se le debe dar a los diferentes servicios de empleo, de forma que se propicie la coordinación y articulación interinstitucional y la eficiencia.
+Integrar la gestión de los servicios de empleo, de forma que estos respondan a las dinámicas del mercado laboral y tengan un enfoque de inclusión social e igualdad en todos los niveles.
+Incluir, en todas sus políticas, medidas que generen igualdad y equidad para que todas las poblaciones tengan una atención igualitaria en todos los niveles.
+Disponer de resultados e instrumentos de investigación que le permita tener realimentación para la toma de decisiones y orientación de los servicios de empleo con base en datos.
+Disponer de una plataforma informática única de información y gestión, que brinde soporte para la operación del SNE, genere datos precisos en tiempo real para la toma de decisiones y seguimiento, y permita la búsqueda gratuita y accesible de empleos y de capital humano.
+Facilitar la atención de las personas y empresas a través de una unidad de empleo que tenga la funcionalidad de ventanilla única de atención, que sea situada próxima a su ubicación geográfica, virtual o mediante cualquier otro mecanismo no presencial.
+ARTÍCULO 6- Principios rectores
+El SNE se regirá por los siguientes principios:
+Centralidad de la persona usuaria: los servicios y actuaciones del Sistema deberán diseñarse y prestarse a partir de las necesidades, capacidades, derechos y condiciones de las personas y empresas usuarias.
+Enfoque sistémico: los órganos, instituciones, programas, plataformas y servicios del SNE deberán actuar de manera articulada e interdependiente, procurando respuestas integrales a las necesidades del mercado laboral.
+Coordinación y articulación interinstitucional: las instituciones integrantes deberán coordinar sus competencias, recursos, programas y servicios, con el fin de evitar duplicidades y facilitar la continuidad de la atención.
+Universalidad y gratuidad: todas las personas podrán acceder a los servicios públicos de información, orientación e intermediación laboral, los cuales serán gratuitos para quienes busquen empleo, sin perjuicio de los mecanismos de priorización establecidos en esta ley.
+Derechos humanos, igualdad y no discriminación: los servicios deberán prestarse con respeto a la dignidad humana y sin discriminación por motivos de sexo, edad, discapacidad, condición socioeconómica, nacionalidad, origen étnico, condición migratoria, territorio o cualquier otra condición personal o social.
+Igualdad de género: las acciones del Sistema deberán contribuir a eliminar las desigualdades y barreras que limitan el acceso, la participación, la permanencia y el desarrollo laboral de las mujeres.
+Inclusión social: el Sistema priorizará la atención de las personas y poblaciones que enfrenten mayores condiciones de vulnerabilidad, exclusión o desventaja en el mercado laboral.
+Enfoque territorial: los servicios y acciones deberán considerar las características económicas, sociales, culturales, productivas y laborales de cada región y territorio.
+Participación y diálogo social: la formulación, ejecución y evaluación de las políticas y estrategias de empleo procurarán la participación de los sectores trabajador, empleador, público, académico, municipal y de la sociedad civil.
+Gestión basada en resultados: las actuaciones del Sistema deberán planificarse, ejecutarse y evaluarse mediante objetivos, metas, indicadores y resultados verificables.
+Desarrollo sostenible: las acciones del Sistema deberán contribuir al desarrollo económico, social y ambientalmente sostenible, a la productividad y a la generación de empleo decente y de calidad.
+ARTÍCULO 7- Modelo de gestión del SNE
+Para el cumplimiento de sus objetivos, el Sistema Nacional de Empleo contará con un modelo de gestión para la articulación de los servicios de empleo y la atención de personas y empresas usuarias. El SNE contará al menos con los siguientes componentes operativos mínimos:
+Registro y orientación: nivel de entrada en donde las personas y empresas interesadas puedan registrarse en el Sistema y recibir orientación e información sobre los programas y servicios asociados al SNE, con miras a su desarrollo laboral mediante la mejora de su perfil ocupacional o empresarial, según sus necesidades y perfil.
+Formación y capacitación: a partir de los resultados generados en la etapa de registro y orientación, las personas podrán acceder a servicios de capacitación y formación profesional para acortar brechas y fortalecer el perfil ocupacional en competencias, habilidades y conocimientos, según las necesidades laborales. Asimismo, las empresas podrán recibir servicios de capacitación para su personal contratado y de acompañamiento empresarial, que les permita ser más competitivas y mejorar su capacidad para contratar.
+Intermediación laboral y colocación: procesos y actividades que promueven la concordancia entre personas en búsqueda de empleo y contratantes que requieren personas para emplear, para lograr la contratación de las personas en empleos inclusivos y de calidad.
+Permanencia en el empleo: considera la generación de la información oportuna y el seguimiento a personas ya contratadas y empresas para la toma de decisiones relacionadas con la permanencia de las personas en el mercado laboral.
+SECCIÓN II
+GOBERNANZA DEL SISTEMA
+ARTÍCULO 8- Integración del Sistema Nacional de Empleo
+El SNE estará integrado por:
+El Ministerio de Trabajo y Seguridad Social (MTSS), como ente rector en materia de empleo.
+El Consejo Nacional de Empleo.
+La Secretaría Técnica del SNE.
+La Agencia Nacional de Empleo.
+La Red de Unidades de Empleo.
+Las instituciones públicas que presten o financien servicios de empleo.
+Las entidades públicas o privadas que se incorporen mediante convenio.
+ARTÍCULO 9- Rectoría del Sistema Nacional de Empleo
+El Ministerio de Trabajo y Seguridad Social ejercerá la rectoría del SNE y tendrá las siguientes funciones:
+Dirigir la política nacional en materia de empleo y servicios de empleo.
+Presidir el Consejo Nacional de Empleo.
+Promover la articulación interinstitucional e intersectorial.
+Velar por el cumplimiento de esta ley, la Eneth-CR y los acuerdos del Consejo Nacional de Empleo.
+Coordinar la integración de las instituciones y programas al SNE.
+Promover la cobertura territorial de los servicios.
+Coordinar los procesos de prospección e inteligencia del mercado laboral.
+Presentar los informes de resultados del Sistema.
+La rectoría se ejercerá sin perjuicio de las competencias legalmente atribuidas a las demás instituciones.
+ARTÍCULO 10- Consejo Nacional de Empleo
+Créese el Consejo Nacional de Empleo, como órgano superior del Sistema Nacional de Empleo y de política pública de articulación de los servicios asociados a dicho Sistema, el cual estará integrado por los siguientes integrantes con voz y voto:
+El jerarca del Ministerio de Trabajo y Seguridad Social (MTSS), quien presidirá el Consejo y contará con una persona suplente que deberá ocupar el viceministerio.
+El jerarca del Ministerio de Planificación Nacional y Política Económica (Mideplán), quien contará con una persona suplente que deberá ocupar el viceministerio.
+La Presidencia Ejecutiva del Instituto Nacional de Aprendizaje (INA), quien contará con una persona suplente que deberá ocupar el cargo de gerencia general o subgerencia.
+Tres representantes del sector empleador, quienes contarán con una persona suplente.
+Tres representantes del sector trabajador, quienes contarán con una persona suplente.
+Además, el Consejo Nacional de Empleo estará constituido por los siguientes integrantes con voz:
+El jerarca del Ministerio de Educación Pública (MEP), quien contará con una persona suplente que deberá ocupar el viceministerio.
+La ministra de la Condición de la Mujer y/o presidenta ejecutiva del Instituto Nacional de las Mujeres (Inamu), quien contará con una persona suplente.
+La presidencia ejecutiva del Instituto Mixto de Ayuda Social (IMAS), quien contará con una persona suplente.
+ARTÍCULO 11- Del nombramiento de miembros
+El Consejo Superior de Trabajo nombrará a las personas representantes de los sectores empleador y trabajador. Los nombramientos respectivos deberán concretarse en el plazo máximo de un mes a partir de la solicitud de designación por parte del MTSS y tendrán una duración de cuatro años, pudiendo ser prorrogables una única vez por plazos iguales, si así lo acordare el Consejo Superior de Trabajo.
+En caso de renuncia, fallecimiento, remoción o imposibilidad permanente, el Consejo Superior de Trabajo designará la sustitución por el resto del período correspondiente.
+ARTÍCULO 12- Funciones del Consejo Nacional de Empleo
+El Consejo Nacional de Empleo tendrá las siguientes funciones:
+Emitir y dar seguimiento al cumplimiento de las políticas del SNE.
+Dictar los lineamientos y acciones que regirán los servicios de empleo de acuerdo con los cambios en el mercado laboral.
+Coordinar con el Consejo Superior de Educación, la integración entre los programas de estudio de la Educación General Básica, la Educación Media Diversificada y los planes de la Educación Superior con la gestión de los servicios de empleo, de forma que estos respondan a las dinámicas del mercado laboral y tengan un enfoque de inclusión social e igualdad en todos los niveles.
+Establecer las poblaciones meta y priorizaciones que tendrá el SNE y, en particular, la Agencia Nacional de Empleo.
+Promover los programas de formación y capacitación para las personas atendidas a través del SNE, de acuerdo con las dinámicas del mercado laboral.
+Gestionar con entes, organismos y organizaciones nacionales e internacionales las asesorías requeridas para la eficiente operación del SNE, así como para la transferencia de experiencias en este campo, que contribuyan al reforzamiento de los procesos.
+Aprobar la utilización de resultados e instrumentos de investigación para la orientación de los servicios de empleo.
+Regular y normar el funcionamiento del SNE, aprobando como mínimo el modelo de gestión de servicios que este utilizará, así como los protocolos y procedimientos para la operación de este.
+Evaluar los resultados en la gestión de los servicios de empleo, de la Secretaría Técnica y la Agencia Nacional de Empleo.
+Aprobar los planes estratégicos de la Agencia Nacional de Empleo.
+Conocer los asuntos sometidos a su consideración por parte de la Secretaría Técnica.
+Invitar a representantes adicionales de otras instituciones a sus sesiones, cuando así lo considere necesario.
+Nombrar a representantes adicionales de otras instituciones en la Secretaría Técnica cuando así lo considere necesario. Estas personas serían integrantes con voz y voto dentro de ese órgano.
+Aprobar la Eneth-CR y su Plan de Acción, así como conocer sus informes de seguimiento y evaluación.
+ARTÍCULO 13- Secretaría Técnica
+El Consejo Nacional de Empleo contará con una Secretaría Técnica, como órgano colegiado de carácter técnico que estará conformado por los siguientes integrantes:
+La persona a cargo de la Dirección Nacional de Empleo del MTSS, quien presidirá y podrá contar con una persona como suplente.
+Una persona representante del MEP, quien podrá contar con una persona suplente.
+Una persona representante del Mideplán, quien podrá contar con una persona suplente.
+Una persona representante del Ministerio de Economía, Industria y Comercio (MEIC), quien podrá contar con una persona suplente.
+Una persona representante del Inamu, quien podrá contar con una persona suplente.
+La persona a cargo de la Subgerencia de Desarrollo Social del IMAS, quien podrá contar con una persona suplente.
+La persona a cargo de la Subgerencia Técnica del INA, quien podrá contar con una persona suplente.
+La persona a cargo de la Dirección Ejecutiva del Consejo Nacional de Personas con Discapacidad (Conapdis), quien podrá contar con una persona suplente.
+La persona a cargo de la Agencia Nacional de Empleo, quien tendrá voz y no tendrá voto, además podrá contar con una persona suplente.
+Una persona representante nombrada por el Consejo Nacional de Rectores (Conare), quien tendrá voz, no tendrá voto y podrá contar con una persona suplente que deberá ser miembro del Conare.
+Una persona representante nombrada por la Unión de Rectores de las Universidades Privadas (Unire), quien tendrá voz, no tendrá voto y contará con una persona suplente.
+Asimismo, los representantes de los sectores empleador y trabajador dentro del Consejo Nacional de Empleo podrán nombrar, cada uno, a una persona que asista en calidad de observadora a la Secretaría Técnica.
+ARTÍCULO 14- Funciones de la Secretaría Técnica
+La Secretaría Técnica tendrá las siguientes funciones:
+Proponer al Consejo Nacional de Empleo, para su aprobación, las directrices que regirán los servicios de empleo públicos y privados a nivel nacional.
+Elevar, ante el Consejo Nacional de Empleo, recomendaciones técnicas en materia de empleo para su conocimiento y aprobación según corresponda.
+Analizar modelos e instrumentos de investigación, tales como prospectiva, vigilancia y demanda ocupacional, para consideración del Consejo de Empleo y con el apoyo técnico de la Dirección Nacional de Empleo del MTSS.
+Elevar, ante el Consejo Nacional de Empleo, las propuestas de mejora para la orientación, articulación y evaluación de procesos asociados a la ejecución del SNE.
+Proponer programas y servicios al Consejo Nacional de Empleo, enfocados en las cuatro capas del SNE.
+Concertar, según las posibilidades de cada institución integrante de la Secretaría Técnica, la realización de investigaciones para el conocimiento de la dinámica del mercado laboral, permitiendo un conocimiento actualizado de este; tales como estudios prospectivos, de vigilancia estratégica, de demanda ocupacional, entre otros.
+Hacer las coordinaciones técnicas correspondientes entre las instituciones que componen la Secretaría Técnica y entre otras que esta decida, con el fin de articular los servicios de empleo.
+Propiciar acciones tendientes a fortalecer la participación de las unidades de empleo en la promoción de empleo de calidad y en la inserción laboral de las personas con especial énfasis en la inclusión social e igualdad de género.
+Conformar comisiones o equipos de trabajo, con el fin de atender asuntos o situaciones específicas derivadas o para el cumplimiento de metas.
+Monitorear el funcionamiento del SNE y de la Agencia Nacional de Empleo.
+Facilitar los medios que permitan la capacitación a las instituciones, organismos y sectores involucrados en el SNE.
+Definir los parámetros de inclusión, exclusión y funcionamiento de unidades de empleo dentro del SNE.
+Realizar consultas técnicas a las instituciones públicas, colegios profesionales, universidades, organizaciones y todos aquellos organismos vinculados con el mercado de trabajo.
+Comunicar acuerdos, lineamientos técnicos e instrucciones a la Agencia Nacional de Empleo, según sus propias disposiciones técnicas o las que así disponga el Consejo Nacional de Empleo.
+ñ) Cualquier otra que, en el marco de lo técnico, se requiera para la correcta operación del SNE.
+ARTÍCULO 15- De la presidencia de la Secretaría Técnica
+Son funciones y responsabilidades de quien preside la Secretaría Técnica las siguientes:
+Confeccionar el orden del día de las sesiones, teniendo en cuenta las peticiones de las demás personas integrantes de la Secretaría.
+Solicitar al Consejo Nacional de Empleo la inclusión de puntos de agenda y/o revisión de temas, cuando así la Secretaría Técnica lo acuerde.
+Convocar a las personas miembros a las sesiones ordinarias y extraordinarias y someter a aprobación las actas de la Secretaría.
+Abrir, presidir, suspender y levantar las sesiones de la Secretaría Técnica.
+Velar por la ejecución de los acuerdos, pudiendo delegarse el seguimiento de acuerdos específicos en otras personas integrantes del Consejo, si así lo acuerda la Secretaría Técnica.
+Autorizar con su firma las actas de la Secretaría Técnica.
+Representar a la Secretaría Técnica en los actos en que sea invitada o convocada.
+Ejercer voto de calidad cuando, después de una segunda votación, persista un empate.
+ARTÍCULO 16- Comisiones de trabajo
+La Secretaría Técnica podrá nombrar comisiones y equipos de trabajo para el apoyo a su gestión, las cuales estarán conformadas por las personas integrantes relacionadas con el tema, así como por personas asesoras internas o externas que se consideren pertinentes.
+ARTÍCULO 17- Funcionamiento del Consejo Nacional de Empleo y Secretaría Técnica
+Tanto el Consejo Nacional de Empleo como la Secretaría Técnica celebrarán cuatro sesiones ordinarias al año y podrán sesionar extraordinariamente cuando así lo acuerden sus miembros o lo convoque la presidencia de cada órgano. La participación en el Consejo no generará dietas ni remuneraciones adicionales.
+El cuórum para sesionar será la mayoría absoluta de las personas integrantes con derecho a voto debidamente nombradas. Los acuerdos se adoptarán por mayoría simple de las personas presentes con derecho a voto.
+El Consejo Nacional de Empleo y la Secretaría Técnica se regirán, supletoriamente, por las disposiciones contenidas en el capítulo tercero del título segundo de la Ley General de Administración Pública, Ley n.° 6227, del 02 de mayo de 1978, y sus reformas, referente a órganos colegiados en la Administración Pública.
+SECCIÓN III
+AGENCIA NACIONAL DE EMPLEO
+ARTÍCULO 18- Agencia Nacional de Empleo
+El Sistema Nacional de Empleo contará con una Agencia Nacional de Empleo (ANE), como instancia operativa adscrita al INA, que articula los servicios de empleo y la red de unidades de empleo.
+La ANE actuará de conformidad con los lineamientos del Consejo Nacional de Empleo y para todos los servicios de empleo. Estará conformada por un equipo técnico y administrativo que gestionará las relaciones interinstitucionales necesarias para la articulación de los servicios que se integran en las capas del SNE y serán ofertados y de acceso a la población a través de la red de unidades de empleo y del Centro de Operaciones Virtuales y Telefónicas (COV).
+El INA establecerá, conforme a los procedimientos administrativos vigentes, una instancia operativa dentro de su estructura organizativa, que fungirá como Agencia Nacional de Empleo, y deberá dotarla de los recursos técnicos, administrativos y financieros necesarios para el cumplimiento de sus funciones y su adecuada operación, de conformidad con la disponibilidad presupuestaria y el ordenamiento jurídico aplicable.
+La ANE deberá contar con su propia identidad de comunicación distinta a la del INA.
+ARTÍCULO 19- Funciones de la Agencia Nacional de Empleo
+Son funciones de la Agencia Nacional de Empleo las siguientes:
+Brindar informes periódicos, al Consejo Nacional de Empleo y a la Secretaría Técnica, sobre la cantidad de personas atendidas, gestión y efectividad de los servicios, habilitación de unidades de empleo y otros que resulten pertinentes para evaluar la eficacia de la ANE y el SNE.
+Coordinar la red de unidades de empleo y brindar soporte, asesoramiento y capacitación a esta.
+Fiscalizar y velar por el correcto funcionamiento de las unidades de empleo.
+Elaborar e implementar su plan operativo, según los lineamientos y objetivos estratégicos definidos por el Consejo Nacional de Empleo y la Secretaría Técnica.
+Elaborar los planes de habilitación de oficinas y unidades de empleo.
+Asesorar en la implementación de unidades de empleo.
+Desarrollar, dar mantenimiento y administrar la plataforma informática del SNE.
+Contar con un Centro de Operaciones Virtuales y Telefónicas (COV) que se encargue de ser el punto de contacto a nivel telefónico y/o virtual para la ANE y las unidades de empleo, dirigido a personas y empresas y que tenga la capacidad de gestionar la oferta de servicios tanto por vía telefónica como virtual u otros medios no presenciales. Para ello, podrá administrarlo a través de sus propios recursos, o bien, a través de convenio o contratación de servicios.
+Analizar datos oficiales sobre el mercado laboral que genere y/o sistematice el MTSS y/o la Secretaría Técnica.
+Proponer líneas de investigación al Consejo Nacional de Empleo tanto como a la Secretaría Técnica, sobre el mercado laboral en niveles de vigilancia estratégica, prospectiva, estudios de demanda ocupacional y cualquier otro pertinente.
+Desarrollar y/o coadyuvar con investigación complementaria sobre el mercado laboral, de acuerdo con los lineamientos que establezca el Consejo Nacional de Empleo.
+Articular, mediante los convenios respectivos, con los diversos institutos de formación y capacitación públicos y privados, lo concerniente a prestación de servicios de capacitación y formación profesional, de acuerdo con lineamientos establecidos tanto por el Consejo Nacional de Empleo como de la Secretaría Técnica. Se incluyen dentro de este apartado todos aquellos apoyos complementarios necesarios que promuevan la permanencia de las personas usuarias en dichos servicios: transferencias económicas; servicios de cuidados; apoyo psicosocial; servicios de orientación; servicios de acceso a la comunicación e información, entre otros servicios de apoyo.
+Monitorear los resultados y ejecución de los diferentes servicios de las capas del modelo de gestión del SNE.
+Realizar búsqueda activa de personas beneficiarias del SNE a través de actividades de promoción y del COV.
+ñ) Recibir recomendaciones de personas beneficiarias del SNE.
+Cualquier otra gestión que sea necesaria para garantizar la correcta ejecución de los lineamientos establecidos por el Consejo Nacional de Empleo y la Secretaría Técnica.
+SECCIÓN IV
+RED DE UNIDADES DE EMPLEO
+ARTÍCULO 20- Red de unidades de empleo
+La Agencia Nacional de Empleo tendrá presencia regional a través de la Red de Unidades de Empleo (RUE), entendida como el conjunto de todas las unidades de empleo, públicas, privadas, o público-privadas de las que se disponga.
+ARTÍCULO 21- Unidades de empleo
+Se establecen las Unidades de Empleo (UE) como ventanillas únicas de atención a personas y empresas, coordinadas por la Agencia Nacional de Empleo, las cuales ofrecen las capas de servicios del Sistema, sea de forma presencial, virtual o telefónica.
+Para que cada UE opere como parte de la Red, cada unidad deberá cumplir los requisitos establecidos en esta ley y su reglamento, obtener la habilitación correspondiente y formalizar su incorporación mediante convenio con el INA, en su condición de entidad administradora de la ANE, con conocimiento del MTSS como ente rector del SNE.
+ARTÍCULO 22- Modalidades de unidades de empleo
+Las unidades de empleo podrán operar bajo las siguientes modalidades:
+Sucursal de la Agencia de Empleo (SAE): ventana única de servicio de nivel avanzado, con la capacidad de gestionar la oferta de servicios de las cuatro capas del SNE. Asimismo, las SAE podrán ser tanto de carácter público, como privado o público-privado.
+Oficina de Empleo (OE): ventana de servicio de nivel básico que, presencial o virtualmente, ofrecerá servicios de registro, asignación de citas, intermediación e información general a las personas y empresas usuarias. Dentro de estas oficinas se incluyen las oficinas municipales de empleo, las oficinas de empleo o coordinación con la empresa de los colegios técnicos profesionales y cualquier otra que ofrezca los servicios a nivel básico, pudiendo ser tanto de carácter público, como privado o público-privado.
+Unidades de Empleo de carácter privado: las UE podrán ser privadas o público-privadas, toda vez que se ajusten a la legislación vigente.
+ARTÍCULO 23- Participación municipal
+Las municipalidades y los concejos municipales de distrito podrán integrarse a la RUE y colaborar en:
+La prestación territorial de servicios.
+La identificación de necesidades locales de talento humano.
+La vinculación con empresas, organizaciones y centros educativos.
+La elaboración de planes territoriales de empleo.
+La divulgación de oportunidades laborales y formativas.
+La realización de ferias de empleo y actividades de intermediación.
+La articulación de los servicios con los planes de desarrollo local.
+La participación de los gobiernos locales será voluntaria y se formalizará mediante convenio.
+El MTSS y la ANE podrán brindar asistencia técnica para la creación, fortalecimiento y operación de unidades municipales de empleo.
+SECCIÓN V
+PLATAFORMA INFORMÁTICA E INFORMACIÓN
+ARTÍCULO 24- Plataforma informática
+Se dispondrá de una plataforma informática del SNE, la cual se constituye en el instrumento o los instrumentos de carácter tecnológico para la gestión de servicios de empleo y atención a personas y empresas en las cuatro capas del SNE. Estará a cargo y será administrada por la Agencia Nacional de Empleo, la cual brindará acceso a las entidades públicas o privadas involucradas en el Sistema.
+La plataforma estará a cargo de la ANE y deberá permitir:
+El registro de personas y empresas.
+La publicación y gestión de vacantes.
+La intermediación laboral.
+La identificación de necesidades de formación.
+La referencia y seguimiento de las personas usuarias.
+La consulta de servicios y oportunidades.
+La generación de información e indicadores.
+La interoperabilidad con otros sistemas públicos.
+La prestación accesible de servicios digitales.
+La ANE brindará acceso a las entidades públicas o privadas incorporadas al SNE, de conformidad con sus funciones y perfiles de seguridad.
+ARTÍCULO 25- Centro de Operaciones Virtuales y Telefónicas
+La ANE deberá contar con un Centro de Operaciones Virtuales y Telefónicas (COV), el cual funcionará como un centro de llamadas telefónicas y de atención virtual u otros mecanismos no presenciales. Estará adscrito a la ANE y tendrá las siguientes funciones:
+Atender comunicaciones del público en general que desee información acerca de los servicios gestionados por la ANE y hacer búsqueda activa de personas según las prioridades del SNE.
+Realizar búsqueda activa de personas que sean posibles beneficiarias del SNE, a través de llamadas telefónicas.
+Ofrecer todos los servicios de las cuatro capas del modelo de gestión del SNE, a través de medios virtuales, telefónicos u otros mecanismos no presenciales.
+Realizar cualquier otra gestión necesaria para garantizar la correcta operación de los servicios no presenciales del SNE.
+ARTÍCULO 26- Protección de los datos personales
+Para tener acceso a la plataforma informática, las personas usuarias deberán aceptar un acuerdo de uso, confidencialidad y consentimiento informado de acuerdo con la Ley de Protección de la Persona Frente al Tratamiento de sus Datos Personales, Ley n.° 8968, del 07 de julio de 2011. Asimismo, la ANE será la responsable de determinar los niveles de seguridad y accesibilidad de acuerdo con los perfiles de usuarios que utilicen la plataforma.
+No podrá utilizarse la información para fines distintos de los autorizados legalmente o consentidos por su titular.
+ARTÍCULO 27- Responsabilidades de las entidades usuarias
+Las entidades usuarias de la plataforma informática del SNE tendrán las siguientes responsabilidades:
+Cumplir las directrices emanadas por el Consejo Nacional de Empleo.
+Cumplir los lineamientos emanados por la Secretaría Técnica y por la ANE.
+Aplicar los protocolos de comunicación definidos para los procesos y procedimientos del SNE.
+Alimentar la base de información de la oferta y la demanda de los servicios.
+Brindar orientación a la oferta y demanda que se registra en el Servicio.
+Velar por el buen uso de la plataforma electrónica y tomar las previsiones para el correcto manejo de la información contenida.
+ARTÍCULO 28- Administración de la plataforma
+La ANE, como administradora de la plataforma informática del SNE, tendrá las siguientes funciones:
+Cumplir los lineamientos aprobados por el Consejo Nacional de Empleo en relación con el funcionamiento de la plataforma informática del Sistema.
+Someter a consideración de la Secretaría Técnica los protocolos de comunicación, accesibilidad y seguridad necesarios entre las instituciones, ministerios y entidades participantes del SNE.
+Asesorar y capacitar a las instituciones involucradas en el SNE en el manejo de la plataforma informática del Sistema.
+Mantener actualizada la plataforma informática del SNE, a fin de darle sostenibilidad y permanencia.
+Sistematizar la información que genere la plataforma informática del SNE y emitir los reportes pertinentes a la Secretaría Técnica.
+Proponer los manuales de procedimientos para la operación de la plataforma informática del Sistema.
+Dar soporte a las personas usuarias de la plataforma informática del SNE.
+SECCIÓN VI
+ESTRATEGIA NACIONAL DE EMPLEABILIDAD Y TALENTO HUMANO
+ARTÍCULO 29- Estrategia Nacional de Empleabilidad y Talento Humano
+Se establece la Estrategia Nacional de Empleabilidad y Talento Humano de Costa Rica, denominada Eneth-CR, como el instrumento rector de planificación, articulación y orientación estratégica de las acciones del SNE.
+Le corresponderá al Poder Ejecutivo, bajo la coordinación del MTSS, en su condición de rector del sector trabajo y del SNE, proponer, dirigir, articular, implementar, evaluar y actualizar la Eneth-CR, con la participación del Consejo Nacional de Empleo y de las instituciones integrantes del Sistema.
+La Eneth-CR tendrá como objetivo general mejorar la empleabilidad de las personas, especialmente de aquellas en condición de exclusión o vulnerabilidad laboral, facilitar su acceso, permanencia y desarrollo en oportunidades laborales y económicas, fortalecer el talento humano, y contribuir al incremento de la productividad y competitividad del país.
+La Eneth-CR será aprobada por el Consejo Nacional de Empleo, oficializada mediante decreto ejecutivo e integrada al Sistema Nacional de Planificación como instrumento de mediano plazo.
+ARTÍCULO 30- Formulación participativa de la Estrategia
+La formulación y actualización de la Eneth-CR deberá realizarse mediante un proceso participativo, estructurado, verificable y territorialmente representativo.
+En dicho proceso deberán participar, según corresponda:
+Las instituciones integrantes del SNE.
+Los sectores empleador y trabajador.
+Las municipalidades y demás actores del desarrollo territorial.
+Las instituciones educativas y de formación profesional.
+Las universidades públicas y privadas.
+Las organizaciones sociales.
+Las organizaciones que representen a poblaciones en condición de exclusión o vulnerabilidad laboral.
+Las personas usuarias de los servicios de empleo.
+Los centros de investigación y organismos especializados.
+Otros actores vinculados con el empleo, la empleabilidad, el desarrollo productivo y el talento humano.
+El proceso deberá documentar las consultas realizadas, las observaciones recibidas y la forma en que fueron valoradas.
+ARTÍCULO 31- Contenido mínimo de la estrategia
+La Eneth-CR deberá contener, como mínimo:
+Un diagnóstico nacional, regional, territorial, sectorial y poblacional del mercado laboral.
+La identificación de las poblaciones objetivo y los mecanismos para su priorización.
+Los ejes estratégicos y lineamientos generales.
+El objetivo general y los objetivos específicos.
+Los componentes y ámbitos de intervención.
+Las acciones estratégicas y actividades prioritarias.
+Las instituciones responsables y corresponsables.
+Las metas e indicadores de cumplimiento, resultado e impacto.
+El cronograma general de ejecución.
+La estimación de los recursos requeridos y sus posibles fuentes de financiamiento.
+La estructura de gobernanza y los mecanismos de coordinación.
+Los mecanismos de participación y consulta.
+El modelo de seguimiento, evaluación y rendición de cuentas.
+La identificación y gestión de riesgos.
+ñ) Los mecanismos para la articulación nacional, regional, local y sectorial.
+Las medidas para asegurar la sostenibilidad de las acciones.
+ARTÍCULO 32- Componentes de la estrategia
+La Eneth-CR deberá desarrollar, al menos, los siguientes componentes:
+Inteligencia del mercado laboral.
+Identificación y priorización de poblaciones.
+Orientación laboral y gestión de perfiles ocupacionales.
+Formación, capacitación y certificación de competencias para el empleo.
+Intermediación laboral y colocación.
+Permanencia y desarrollo en el empleo.
+Emprendimiento y autoempleo.
+Atención de las empresas y gestión de sus necesidades de talento humano.
+Condiciones transversales y habilitantes para la empleabilidad.
+Desarrollo territorial y atención de las diferencias regionales.
+Innovación, transformación tecnológica y adaptación a los cambios productivos.
+El Consejo Nacional de Empleo podrá incorporar otros componentes cuando se produzcan cambios en las condiciones del mercado laboral, en las dinámicas productivas, en las necesidades de las personas o empresas usuarias o en las prioridades de desarrollo del país.
+ARTÍCULO 33- Plan de Acción de la Estrategia Nacional de Empleabilidad y Talento Humano
+La Eneth-CR se ejecutará mediante un Plan de Acción, formulado bajo la coordinación del MTSS y aprobado por el Consejo Nacional de Empleo, como instrumento operativo de planificación, cuya vigencia corresponderá al período de la Estrategia.
+El Plan de Acción deberá desarrollar de manera coherente los objetivos, lineamientos, componentes y prioridades establecidos en esta ley y en la Eneth-CR.
+El Plan deberá definir, como mínimo:
+Las acciones y actividades que deberán ejecutarse.
+Las metas e indicadores correspondientes.
+Los plazos de ejecución.
+Las instituciones responsables y corresponsables.
+Los mecanismos de coordinación nacional, regional, local y sectorial.
+Los recursos requeridos y sus fuentes de financiamiento.
+Los mecanismos de participación.
+Los medios de seguimiento, evaluación y rendición de cuentas.
+Los riesgos identificados y las medidas para su atención.
+Las medidas correctivas aplicables ante rezagos o incumplimientos.
+El Plan de Acción entrará en vigencia una vez aprobado por el Consejo Nacional de Empleo y publicado en el sitio electrónico del MTSS y en la plataforma del SNE.
+El Ministerio deberá garantizar su amplia difusión y comunicarlo formalmente a las instituciones responsables de su ejecución.
+ARTÍCULO 34- Incorporación en la planificación institucional
+Las instituciones públicas cuyas competencias se encuentren vinculadas con la ejecución de la Eneth-CR deberán incorporar, según corresponda, sus objetivos, metas, indicadores y acciones en los planes estratégicos, planes operativos institucionales y presupuestos respectivos.
+Las recomendaciones y prioridades establecidas en la Eneth-CR y en su Plan de Acción constituirán insumos técnicos para la planificación institucional y deberán ser valoradas por las instituciones competentes, de conformidad con sus atribuciones legales, capacidades operativas y disponibilidad presupuestaria.
+Cuando una institución determine que no resulta posible incorporar o ejecutar alguna acción que le haya sido asignada, deberá comunicarlo al MTSS y al Consejo Nacional de Empleo, mediante justificación técnica, jurídica o presupuestaria debidamente fundamentada.
+La comunicación deberá señalar las medidas alternativas, correctivas o de coordinación que se propongan para atender el objetivo correspondiente.
+ARTÍCULO 35- Coordinación para la implementación de la Estrategia
+La implementación de la Eneth-CR será coordinada por el MTSS, de acuerdo con las competencias de las instituciones y las instancias que integran el SNE.
+Las instituciones públicas que formulen o ejecuten políticas, programas, proyectos, servicios o iniciativas relacionadas con empleabilidad, formación, intermediación laboral, inclusión laboral, emprendimiento, desarrollo productivo o talento humano deberán coordinarlas con el MTSS y con las instancias correspondientes del SNE.
+La coordinación tendrá como finalidad:
+Articular las acciones institucionales.
+Evitar duplicidades.
+Facilitar la referencia y seguimiento de las personas usuarias.
+Ampliar la cobertura territorial y poblacional.
+Promover el uso eficiente de los recursos públicos.
+Unificar estándares e indicadores.
+Fortalecer el intercambio de información.
+Orientar los servicios hacia las necesidades del mercado laboral y de las personas usuarias.
+ARTÍCULO 36- Mesas técnicas
+Para ejecutar, coordinar y dar seguimiento a la Eneth-CR, la Secretaría Técnica, con autorización del Consejo de Empleo, podrá conformar mesas técnicas permanentes o temporales correspondientes a los componentes, objetivos o acciones prioritarias de la Estrategia.
+Cada mesa estará integrada por puntos focales técnicos de las instituciones responsables y corresponsables.
+Podrán incorporarse representantes de los sectores empleador y trabajador, las municipalidades, la academia, las instituciones educativas, los centros de investigación, las organizaciones sociales, las organizaciones de personas usuarias, el sector privado y los organismos de cooperación.
+Las mesas tendrán las siguientes funciones:
+Coordinar la ejecución de las acciones correspondientes.
+Distribuir responsabilidades operativas.
+Dar seguimiento a las metas, indicadores y cronogramas.
+Identificar riesgos, obstáculos y rezagos.
+Proponer medidas preventivas y correctivas.
+Facilitar el intercambio de información.
+Promover la coordinación nacional, regional, local y sectorial.
+Presentar informes y recomendaciones a la Secretaría Técnica y al Consejo Nacional de Empleo.
+Apoyar la formulación y actualización del Plan de Acción.
+La conformación de las mesas técnicas no generará dietas ni remuneraciones adicionales para sus integrantes.
+ARTÍCULO 37- Vigencia, actualización y ajustes de la Estrategia
+La Eneth-CR tendrá una vigencia mínima de diez años y deberá actualizarse durante al menos cada cuatro años.
+La actualización deberá procurar la continuidad de aquellas acciones que hayan demostrado resultados positivos y deberá sustentarse, como mínimo, en:
+Un diagnóstico actualizado del mercado laboral.
+Información sobre la oferta y demanda de talento humano.
+La identificación de brechas de competencias y cualificaciones.
+Las evaluaciones de la Estrategia y del Plan de Acción anteriores.
+La consulta a las instituciones públicas competentes.
+La participación de los sectores empleador y trabajador.
+La participación de las municipalidades, la academia, las organizaciones sociales y las personas usuarias.
+El análisis de las diferencias regionales, territoriales, sectoriales y poblacionales.
+La evolución tecnológica, productiva, demográfica, ambiental y social del país.
+La Eneth-CR y su Plan de Acción podrán ser objeto de ajustes parciales o actualizaciones extraordinarias, cuando sobrevengan circunstancias económicas, sanitarias, ambientales, sociales, institucionales, normativas, tecnológicas o de otra naturaleza que alteren significativamente las condiciones para su adecuada implementación.
+Los ajustes deberán fundamentarse técnicamente y seguir mecanismos de participación y coordinación equivalentes a los previstos para su formulación original.
+SECCIÓN VII
+INTEGRACIÓN, FINANCIAMIENTO Y COOPERACIÓN
+ARTÍCULO 38- Integración de los servicios públicos de empleo
+Las instituciones públicas que brinden servicios relacionados con empleo, empleabilidad, formación profesional, intermediación laboral, inclusión laboral, emprendimiento o desarrollo del talento humano deberán establecer mecanismos para integrarlos al SNE y atender los lineamientos emitidos por el Consejo Nacional de Empleo, dentro del ámbito de sus respectivas competencias.
+La creación, modificación sustancial o supresión de un servicio público de empleo deberá comunicarse al Consejo Nacional de Empleo, con el propósito de:
+Incorporarlo o actualizarlo en el inventario nacional de servicios.
+Coordinarlo con la oferta institucional existente.
+Integrarlo a la plataforma informática del Sistema, cuando corresponda.
+Prevenir duplicidades y fragmentación de los servicios.
+Facilitar la referencia y el seguimiento de las personas usuarias.
+Incorporarlo a los mecanismos de seguimiento y evaluación.
+Promover el uso eficiente de los recursos disponibles.
+La integración al Sistema Nacional de Empleo no implicará alteración de la personalidad jurídica, las competencias, la autonomía o las relaciones de jerarquía propias de cada institución.
+ARTÍCULO 39- Cooperación pública, privada, académica y social
+Las instituciones integrantes del SNE podrán suscribir convenios, cartas de entendimiento y otros instrumentos de cooperación y establecer alianzas con:
+Las municipalidades.
+Las instituciones educativas y de formación profesional.
+Las organizaciones empresariales.
+Las organizaciones de personas trabajadoras.
+Las organizaciones sociales y comunitarias.
+Los organismos internacionales.
+Las entidades de cooperación nacional e internacional.
+Las empresas privadas.
+Las universidades públicas y privadas.
+Los centros de investigación.
+Las organizaciones que representen poblaciones en condición de vulnerabilidad laboral.
+Las alianzas deberán dirigirse a ampliar la cobertura, mejorar la calidad y accesibilidad de los servicios, generar información, desarrollar talento humano, promover la inserción y permanencia laboral, apoyar el emprendimiento y autoempleo y fortalecer la productividad y competitividad del país.
+Los convenios y alianzas deberán respetar los principios de legalidad, transparencia, igualdad, protección de datos personales, rendición de cuentas y prevalencia del interés público.
+ARTÍCULO 40- Apoyo de las instituciones públicas
+Las dependencias del sector público podrán, de conformidad con sus competencias y en la medida de sus posibilidades jurídicas, técnicas, materiales y presupuestarias, apoyar el cumplimiento de los objetivos del SNE y de la Eneth-CR mediante:
+La asignación de recursos presupuestarios.
+La designación de personal técnico.
+El aporte de infraestructura, equipo o recursos tecnológicos.
+El intercambio de información.
+La participación en programas, proyectos y servicios conjuntos.
+La suscripción de convenios interinstitucionales.
+La prestación de asistencia técnica.
+Otros mecanismos legalmente habilitados.
+La colaboración deberá ejecutarse sin menoscabo de las competencias legales, obligaciones institucionales y autonomía administrativa que correspondan a cada entidad.
+ARTÍCULO 41- Financiamiento
+El SNE, la Eneth-CR y su Plan de Acción se financiarán, en primer término, con los recursos ordinarios asignados a las instituciones integrantes, las cuales deberán prever en sus procesos de planificación y presupuesto, los recursos necesarios para ejecutar las acciones que les correspondan.
+Podrán utilizarse, además:
+Los recursos destinados a programas de empleo, formación, intermediación laboral, inclusión social, emprendimiento y desarrollo productivo.
+Las transferencias autorizadas por ley.
+Los recursos derivados de convenios interinstitucionales.
+La cooperación técnica o financiera nacional e internacional.
+Los fondos no reembolsables.
+Las donaciones legalmente admisibles.
+Las alianzas público-privadas, cuando resulten jurídicamente procedentes.
+Otros recursos autorizados por el ordenamiento jurídico.
+Las instituciones deberán identificar, dentro de sus instrumentos de planificación y presupuesto, las acciones y recursos asociados con la implementación de la Eneth-CR y su Plan de Acción.
+SECCIÓN VIII
+SEGUIMIENTO, EVALUACIÓN, RENDICIÓN DE CUENTAS Y TRANSPARENCIA
+ARTÍCULO 42- Seguimiento y evaluación
+La Eneth-CR, su Plan de Acción y los servicios que integran el SNE estarán sujetos a procesos permanentes de seguimiento y evaluación.
+La Secretaría Técnica establecerá y administrará un sistema de indicadores, de conformidad con los lineamientos aprobados por el Consejo Nacional de Empleo.
+El sistema de seguimiento y evaluación deberá considerar, como mínimo:
+La cantidad de personas atendidas.
+La cobertura territorial y poblacional.
+El acceso a procesos de orientación, formación y capacitación.
+La cantidad de empresas atendidas.
+Las vacantes registradas y gestionadas.
+Las personas referidas, preseleccionadas y colocadas.
+La permanencia y desarrollo en el empleo.
+La variación de la condición laboral de las personas usuarias.
+La formalidad y calidad del empleo obtenido.
+Los resultados de las iniciativas de emprendimiento y autoempleo.
+La reducción de brechas laborales, territoriales y poblacionales.
+La satisfacción de las personas y empresas usuarias.
+La eficiencia y eficacia en la utilización de los recursos.
+El cumplimiento de las metas institucionales.
+ñ) El impacto de las acciones sobre la empleabilidad, la productividad y la competitividad.
+Los indicadores deberán desagregarse, cuando sea técnica y jurídicamente posible, por sexo, edad, discapacidad, condición socioeconómica, territorio, nivel educativo, condición migratoria y otras variables relevantes.
+El tratamiento de la información deberá respetar la normativa de protección de datos personales y confidencialidad estadística.
+ARTÍCULO 43- Informe anual
+El MTSS presentará y publicará un informe con los resultados del funcionamiento del SNE y de la ejecución de la Eneth-CR y su Plan de Acción en el informe anual de rendición de cuentas, que corresponda presentar ante la Asamblea Legislativa durante el mes de mayo, de conformidad con el artículo 144 de la Constitución Política y la Ley para Perfeccionar la Rendición de Cuentas, Ley n.° 9398, de 28 de septiembre de 2016, y sus reformas.
+El informe deberá contener, como mínimo:
+El avance en el cumplimiento de los objetivos y metas.
+Los resultados de los indicadores.
+La cantidad y características generales de las personas y empresas atendidas.
+Los resultados de colocación, permanencia y desarrollo laboral.
+La cobertura de la Red de Unidades de Empleo.
+El estado de ejecución de las acciones institucionales.
+Los recursos presupuestados y ejecutados.
+Las brechas, riesgos y dificultades identificadas.
+Los rezagos o incumplimientos institucionales reportados.
+Las medidas preventivas y correctivas adoptadas.
+Las recomendaciones para mejorar el Sistema y la Estrategia.
+Los resultados de las evaluaciones realizadas.
+El informe será de acceso público y deberá publicarse en el sitio web del MTSS y en la plataforma del SNE, dentro de los diez días hábiles siguientes a su presentación ante la Asamblea Legislativa.
+El Consejo de Empleo deberá conocer el informe antes de su presentación y podrá formular observaciones o recomendaciones, las cuales deberán ser valoradas por el MTSS para la elaboración de la versión final. Cuando estas no sean incorporadas, el Ministerio deberá dejar constancia de las razones que fundamenten dicha decisión. Las observaciones y recomendaciones formuladas por el Consejo, así como la valoración efectuada por el MTSS, deberán incorporarse como anexo al informe y publicarse juntamente con este.
+ARTÍCULO 44- Transparencia y acceso a la información
+El SNE deberá mantener disponible, actualizada y accesible, de forma pública y gratuita, de conformidad con lo establecido en la Ley Marco de Acceso a la Información Pública, Ley n.° 10554, de 23 de octubre de 2024, como mínimo, la siguiente información:
+La integración, funciones y acuerdos del Consejo Nacional de Empleo.
+El modelo de gestión del SNE.
+La Eneth-CR y su Plan de Acción.
+La ubicación y medios de contacto de las unidades de empleo habilitadas.
+El inventario de servicios disponibles.
+Los requisitos y procedimientos para acceder a los servicios.
+Los protocolos y estándares de atención.
+Las metas, indicadores y resultados.
+Los informes de seguimiento, evaluación y rendición de cuentas.
+Los estudios e informes sobre el mercado laboral.
+Los convenios y alianzas suscritos para la ejecución de la Estrategia.
+La información presupuestaria relacionada con la implementación de la Eneth-CR.
+La información deberá publicarse en formatos abiertos, accesibles, comprensibles y reutilizables, cuando corresponda, con observancia de los principios y disposiciones establecidos en la Ley n.° 10554, así como de las limitaciones y excepciones constitucionales y legales aplicables al acceso a la información pública.
+La publicación de información deberá respetar la legislación sobre protección de datos personales, confidencialidad estadística, secretos comerciales y demás información protegida por el ordenamiento jurídico.
+SECCIÓN IX
+DISPOSICIONES FINALES
+ARTÍCULO 45- Gratuidad de la intermediación laboral
+Los servicios públicos de información, registro, orientación, referencia e intermediación laboral brindados a las personas que buscan empleo serán gratuitos.
+Ninguna institución, entidad, unidad de empleo o prestador integrado al SNE podrá exigir, directa o indirectamente, pago alguno a una persona como condición para:
+Registrarse como demandante de empleo.
+Acceder a información sobre vacantes.
+Recibir orientación laboral.
+Ser referida o postulada a una vacante.
+Participar en un proceso de preselección o selección.
+Obtener una colocación laboral.
+La prohibición de cobro establecida en este artículo no será aplicable a los costos legalmente autorizados correspondientes a programas educativos, procesos de evaluación o certificación de competencias, ni a otros servicios distintos de la información, orientación e intermediación laboral.
+En ningún caso podrá condicionarse el acceso a una vacante o a un proceso de selección a la contratación o pago de esos servicios complementarios.
+TRANSITORIO l- El Poder Ejecutivo reglamentará la presente ley dentro del plazo de seis meses contado a partir de su publicación.
+TRANSITORIO ll- La Estrategia Nacional de Empleabilidad y Talento Humano de Costa Rica 2023-2027, declarada de interés público mediante el Decreto Ejecutivo n.° 44113-MTSS-PLAN, conservará su vigencia y será considerada, para todos los efectos, la primera estrategia emitida conforme a esta ley.
+Concluido su período de vigencia, el MTSS, con la participación del Consejo Nacional de Empleo, iniciará la formulación de la siguiente Eneth-CR, de conformidad con los procedimientos, contenidos, mecanismos de participación y demás disposiciones establecidas en la presente ley.
+TRANSITORIO lll- El Consejo Nacional de Empleo, la Secretaría Técnica, la ANE, el COV y la RUE, que se encuentren en funcionamiento al entrar en vigencia esta ley, continuarán operando sin interrupción.
+Deberán ajustar su organización y funcionamiento a esta ley dentro de los doce meses siguientes a su publicación.
+TRANSITORIO lV- Dentro de los seis meses siguientes a la entrada en vigencia de esta ley, todas las instituciones públicas que brinden servicios de empleo deberán remitir a la Secretaría Técnica un inventario de sus programas, servicios, plataformas, poblaciones atendidas, presupuestos e indicadores.
+La Secretaría Técnica utilizará esta información para proponer al Consejo Nacional de Empleo un plan de integración institucional y prevención de duplicidades.
+Rige a partir de su publicación.
+Gerald Bogantes Rivera
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 20-10-2026).

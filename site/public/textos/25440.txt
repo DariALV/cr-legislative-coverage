@@ -1,0 +1,458 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA EL APROVECHAMIENTO PESQUERO SOSTENIBLE Y ESTRATÉGICO DEL DOMO TÉRMICO DE COSTA RICA
+PEDRO ROJAS GUZMÁN
+DIPUTADO
+EXPEDIENTE N.º 25.440
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY PARA EL APROVECHAMIENTO PESQUERO SOSTENIBLE Y ESTRATÉGICO DEL DOMO TÉRMICO DE COSTA RICA
+Expediente N.º 25.440
+ASAMBLEA LEGISLATIVA:
+1- La transformación estructural del océano en el siglo XXI
+El sistema oceánico global atraviesa, en el siglo XXI, una transformación estructural acelerada, caracterizada por alteraciones físicas y biogeoquímicas que modifican de manera sostenida la temperatura, la circulación, la estratificación y la química del océano mundial.(1,2) A diferencia de fluctuaciones naturales observadas en escalas geológicas, la alteración actual responde principalmente a la acumulación antropogénica de gases de efecto invernadero y a la intensificación de procesos asociados al cambio climático.
+El calentamiento crónico de las aguas superficiales constituye uno de los fenómenos más documentados por la literatura científica internacional. (2) Este incremento térmico altera la profundidad de la termoclina, modifica la estabilidad de la columna de agua y afecta la disponibilidad de nutrientes en capas superficiales, generando cambios en la productividad primaria y secundaria. La consecuencia es una redistribución espacial de especies marinas y variaciones en biomasa explotable.
+A este calentamiento sostenido se suma la intensificación y mayor frecuencia de las olas de calor marinas, cuya duración y magnitud han aumentado significativamente desde la década de 1980.(3) Estos eventos extremos generan estrés fisiológico, mortalidad localizada y desplazamientos abruptos de poblaciones, afectando patrones migratorios y disponibilidad de recursos pesqueros.
+Investigaciones recientes basadas en más de 700.000 estimaciones de biomasa, correspondientes a casi 34.000 poblaciones de peces registradas entre 1993 y 2021, han demostrado que el calentamiento oceánico sostenido está asociado con descensos significativos en biomasa en múltiples regiones, particularmente en latitudes medias y altas del hemisferio norte.(1) Paralelamente, se observa un desplazamiento latitudinal de especies hacia zonas más frías o hacia regiones donde la productividad se mantiene relativamente estable.
+El océano no colapsa de forma homogénea, se reorganiza. Esta reorganización implica cambios en la distribución geográfica de especies, modificaciones en interacciones tróficas y alteraciones en tasas de reclutamiento. En consecuencia, la geografía económica de las pesquerías también se reconfigura, generando nuevas oportunidades y riesgos para los Estados ribereños.
+En este contexto, la gestión basada en ciencia, la adaptación dinámica a la variabilidad climática y la incorporación de indicadores ambientales operativos dejan de ser opciones técnicas para convertirse en obligaciones estructurales de política pública. El siglo XXI impone un nuevo paradigma: conservar la biomasa como activo estratégico, anticipar escenarios de variabilidad climática y estructurar marcos jurídicos capaces de responder en tiempo real a señales científicas verificables.
+La presente iniciativa legislativa parte del reconocimiento de esta transformación global y propone adaptar la política pesquera nacional a un océano en proceso de reorganización acelerada, donde la resiliencia ecológica constituye la base de la estabilidad productiva y del interés público superior.
+2. Crisis de biomasa y reconfiguración geográfica de las pesquerías en el siglo XXI
+La transformación estructural del océano tiene una consecuencia directa sobre la biomasa marina explotable y la distribución geográfica de las pesquerías comerciales. Estudios recientes han documentado que el calentamiento crónico del océano está asociado con descensos sostenidos en biomasa en múltiples regiones del hemisferio norte, particularmente en latitudes medias y altas.(4)
+El fenómeno no se limita a reducciones absolutas de biomasa. También implica desplazamientos latitudinales y longitudinales de especies hacia zonas más frías o hacia regiones donde la productividad primaria permanece relativamente estable.(5) Esta migración térmica modifica la disponibilidad espacial de recursos, altera patrones migratorios históricos y reconfigura la geografía económica de la pesca mundial.
+El Panel Intergubernamental sobre Cambio Climático ha señalado que el calentamiento, la acidificación y la desoxigenación del océano reducirán la biomasa global de peces y modificarán su distribución durante el presente siglo.(6) Estas alteraciones generan regiones de contracción y regiones de oportunidad relativa, dependiendo de las características oceanográficas locales.
+En regiones tradicionalmente productivas del hemisferio norte se observan tendencias de disminución en capturas potenciales asociadas al estrés térmico y a la alteración de ecosistemas.(4,6) En contraste, ciertas zonas tropicales y subtropicales con sistemas de surgencia activa podrían mantener o incluso reforzar su relevancia estratégica bajo escenarios de reorganización oceánica.(7)
+Este proceso implica una reconfiguración de ventajas comparativas entre Estados ribereños. Países cuya productividad pesquera dependía de condiciones oceanográficas históricamente estables enfrentan mayores niveles de incertidumbre, mientras que Estados con sistemas dinámicos de alta resiliencia pueden adquirir una posición estratégica creciente en el suministro global de proteína marina.
+La FAO ha señalado que más de 3.000 millones de personas dependen del pescado como fuente principal de proteína animal.(8) En un contexto de redistribución de biomasa, la seguridad alimentaria global estará cada vez más vinculada a la capacidad de gestión científica y adaptativa de los países con sistemas marinos altamente productivos.
+Asimismo, la dependencia de importaciones pesqueras por parte de grandes bloques económicos, como la Unión Europea, introduce una dimensión geopolítica adicional.(9) La combinación de disminución relativa de biomasa en algunas regiones y alta demanda sostenida genera presión sobre áreas productivas estratégicas.
+La política pesquera del siglo XXI debe incorporar análisis prospectivos, modelación climática y mecanismos de ajuste dinámico, frente a señales de reorganización ecosistémica. La crisis de biomasa no es únicamente un problema ambiental; es también un fenómeno económico y geopolítico que redefine el mapa global de la pesca.
+3. Caracterización oceanográfica profunda del Domo Térmico de Costa Rica
+El Domo Térmico de Costa Rica (figura 1) constituye uno de los sistemas oceanográficos más relevantes del Pacífico Oriental Tropical, reconocido por su dinámica de surgencia oceánica en mar abierto y su elevada productividad biológica.(10,11) Se trata de una región donde aguas subsuperficiales, frías y ricas en nutrientes, ascienden hacia capas superficiales, generando una termoclina somera y condiciones favorables para el desarrollo de fitoplancton.
+La formación del domo está asociada a la interacción entre los vientos alisios del noreste, la circulación regional del Pacífico Oriental y la dinámica de remolinos (eddies) ciclónicos que favorecen el afloramiento vertical de masas de agua profundas.(10,12) El desplazamiento divergente de las capas superficiales permite el ascenso de aguas enriquecidas en nitratos y fosfatos, lo cual estimula la productividad primaria y sostiene complejas cadenas tróficas.
+Desde el punto de vista físico, el domo presenta variabilidad estacional e interanual. Durante determinados periodos del año, la intensificación de los vientos y la configuración de corrientes regionales reducen la profundidad de la termoclina, incrementando la concentración de clorofila-a en superficie.(11) En contraste, eventos asociados al fenómeno El Niño-Oscilación del Sur (ENSO) pueden debilitar temporalmente la intensidad del afloramiento, alterando la estructura térmica y la disponibilidad de nutrientes.(13)
+Fig. 1. Domo Térmico de Costa Rica y zona de alta productividad biológica asociada al afloramiento submarino (upwelling) de Papagayo. (Imagen: https://marviva.net/wp-content/uploads/2022/07/Atlas-Domo-Termico-de-Costa-Rica.pdf).
+En términos biogeoquímicos, el domo se caracteriza por concentraciones relativamente elevadas de nutrientes, en comparación con áreas oceánicas circundantes.(12) Esta condición favorece la acumulación de biomasa zooplanctónica y la presencia de especies de alto nivel trófico, incluyendo grandes pelágicos como el atún aleta amarilla (Thunnus albacares), el pez espada y otras especies migratorias de importancia comercial.(14)
+Diversos estudios han reconocido al Domo Térmico como un hotspot biológico del Pacífico Oriental Tropical, no solo por su productividad primaria, sino por su función como zona de agregación y alimentación para especies altamente móviles.(11) Su dinámica contribuye a la conectividad ecológica regional y a la estabilidad de poblaciones migratorias que atraviesan amplias áreas del océano.
+Comparativamente, el domo comparte características con otros sistemas de surgencia reconocidos a escala global, como los sistemas costeros de Perú y California, aunque presenta particularidades asociadas a su ubicación oceánica abierta y su interacción con corrientes ecuatoriales y centroamericanas.(12) Esta singularidad le otorga un valor estratégico dentro de la zona económica exclusiva costarricense.
+La variabilidad climática creciente impone la necesidad de fortalecer el monitoreo continuo de indicadores clave, tales como temperatura superficial del mar, profundidad de la capa de mezcla, concentración de clorofila-a y niveles de oxígeno disuelto.(13) La sostenibilidad del potencial pesquero asociado al domo depende directamente de la capacidad institucional para interpretar y anticipar cambios en estos parámetros.
+El Domo Térmico no debe concebirse únicamente como un fenómeno oceanográfico, sino como un sistema ecológico estratégico cuya estabilidad física y biológica constituye la base material del potencial pesquero nacional en el Pacífico. La presente iniciativa legislativa reconoce su singularidad y establece la necesidad de una gestión especializada, adaptativa y científicamente fundamentada.
+4. Potencial biológico y pesquero estratégico del Domo Térmico de Costa Rica
+El Domo Térmico de Costa Rica no solo constituye un fenómeno oceanográfico singular, sino un sistema con alto potencial biológico y pesquero estratégico dentro del Pacífico Oriental Tropical.(15,16) La combinación de surgencia oceánica, disponibilidad sostenida de nutrientes y concentración de biomasa lo convierte en una zona de agregación clave para especies pelágicas de alto valor comercial.
+Las concentraciones elevadas de clorofila‑a registradas en el área evidencian una productividad primaria superior a la de zonas oceánicas circundantes, lo cual sostiene una abundante biomasa zooplanctónica y niveles tróficos superiores.(16) Esta condición favorece la presencia recurrente de especies como el atún aleta amarilla (Thunnus albacares), el atún patudo (Thunnus obesus), el dorado (Coryphaena hippurus) y el pez espada (Xiphias gladius), todas con alta demanda en mercados internacionales.(17) En el anexo técnico que se incluye al final de este documento se dan más detalles sobre las especies pesqueras de mayor potencial del Domo Térmico.
+De acuerdo con evaluaciones regionales de la Comisión Interamericana del Atún Tropical (Iattc), el Pacífico Oriental mantiene poblaciones significativas de túnidos que requieren gestión científica rigurosa para garantizar su sostenibilidad a largo plazo. (17) El domo, como zona de alimentación y agregación, cumple un papel relevante dentro de esa dinámica regional.
+Desde la perspectiva económica, la pesca asociada a especies pelágicas representa uno de los segmentos de mayor valor agregado potencial en la cadena pesquera nacional. El diferencial entre exportar materia prima sin procesamiento y desarrollar infraestructura de cadena de frío, transformación industrial y certificación internacional puede traducirse en un incremento sustancial del valor capturado por el país.
+La Unión Europea y otros mercados desarrollados mantienen una demanda sostenida de productos pesqueros certificados bajo estándares ambientales y de trazabilidad.(18) En ese contexto, Costa Rica posee ventajas comparativas significativas derivadas de su estabilidad institucional, su reputación ambiental y su marco jurídico orientado a la sostenibilidad.
+No obstante, el potencial pesquero del domo no puede interpretarse como licencia para incrementar indiscriminadamente el esfuerzo extractivo. La evidencia científica demuestra que la sobreexplotación puede comprometer la resiliencia de sistemas altamente productivos, si no se establecen reglas claras de control de captura y monitoreo continuo.(19) La conservación de la biomasa constituye la condición estructural para mantener el valor económico sostenido.
+El Domo Térmico debe concebirse, por tanto, como un activo estratégico nacional cuya gestión requiere equilibrio entre aprovechamiento racional, conservación ecosistémica y captura de valor agregado interno. La presente iniciativa legislativa propone estructurar ese equilibrio mediante un régimen especial que permita transformar productividad biológica en desarrollo económico sustentable, sin comprometer la resiliencia ecológica del sistema.
+5. Seguridad alimentaria, geopolítica y soberanía marítima en el contexto del Domo Térmico
+En el siglo XXI, la pesca dejó de ser únicamente una actividad económica sectorial para convertirse en un componente estratégico de la seguridad alimentaria y de la geopolítica internacional. Más de 3 200 millones de personas dependen del pescado como fuente principal de proteína animal y esta dependencia adquiere mayor relevancia en un contexto de crecimiento demográfico y presión sobre sistemas terrestres de producción de alimentos.(20)
+La redistribución de biomasa asociada al calentamiento oceánico, descrita en apartados anteriores, implica que determinadas regiones podrían experimentar disminuciones relativas en su productividad pesquera, mientras que otras adquieren mayor relevancia estratégica.(21) Este fenómeno genera una nueva geografía de la oferta global de proteína marina.
+Grandes bloques económicos, como la Unión Europea, presentan una alta dependencia de importaciones para satisfacer su demanda interna de productos pesqueros.(22) Esta condición introduce una dimensión geopolítica en la gestión de recursos marinos: los países con sistemas altamente productivos y gobernanza científica sólida adquieren un papel relevante en la estabilidad del suministro global.
+La Zona Económica Exclusiva de Costa Rica (figura 2), con aproximadamente 589 000 km², constituye un espacio de derechos soberanos exclusivos conforme al Derecho internacional del mar.(23) Tales derechos implican no solo facultad de aprovechamiento, sino responsabilidad de conservación y administración sostenible de los recursos vivos marinos.
+En este contexto, el Domo Térmico debe entenderse como un activo estratégico de soberanía marítima. Su adecuada gestión fortalece la posición del país en escenarios de negociación internacional, contribuye a la seguridad alimentaria regional y permite consolidar una imagen de proveedor responsable bajo estándares ambientales rigurosos.
+La lucha contra la pesca ilegal, no declarada y no reglamentada (IUU) constituye otro componente esencial de la soberanía pesquera.(24) La ausencia de controles efectivos puede erosionar la biomasa disponible, distorsionar mercados y debilitar la posición internacional del país. Por el contrario, la implementación de sistemas robustos de monitoreo y trazabilidad fortalece la credibilidad institucional y protege el interés nacional.
+Desde una perspectiva estratégica, la gestión del Domo Térmico integra tres dimensiones inseparables: seguridad alimentaria, desarrollo económico y soberanía marítima. La presente iniciativa legislativa reconoce que el aprovechamiento sostenible del recurso no solo impacta el sector pesquero, sino que incide en la estabilidad macroeconómica, el empleo costero y la proyección internacional de Costa Rica como nación ambientalmente responsable.
+La adopción de un régimen especial adaptativo, científicamente fundamentado y tecnológicamente supervisado, permite al Estado ejercer de manera plena sus derechos soberanos sobre la zona económica exclusiva, garantizando que el recurso marino contribuya al bienestar presente, sin comprometer la disponibilidad futura para las próximas generaciones.
+Fig. 2. Zona económica exclusiva de Costa Rica. El área marina de Costa Rica sobrepasa los 580 000 kilómetros cuadrados. (Imagen de “Geography of Costa Rica”, documento elaborado por Silvia Meléndez).
+6. Fundamento constitucional, deber de conservación y gestión científica del Estado
+La gestión del Domo Térmico de Costa Rica no constituye únicamente una decisión de política sectorial, sino el cumplimiento de un deber constitucional y jurídico del Estado costarricense. El artículo 50 de la Constitución Política establece la obligación de garantizar un ambiente sano y ecológicamente equilibrado, así como de promover el mayor bienestar de todos los habitantes.(25) Esta disposición ha sido interpretada reiteradamente por la Sala Constitucional, como un mandato activo de protección ambiental y gestión racional de los recursos naturales.
+En el ámbito del Derecho internacional, la Convención de las Naciones Unidas sobre el Derecho del Mar reconoce a los Estados ribereños derechos soberanos para la exploración, explotación, conservación y administración de los recursos naturales dentro de su zona económica exclusiva.(26) Tales derechos no son absolutos ni discrecionales; implican responsabilidad de asegurar que la explotación se realice bajo criterios de sostenibilidad y conservación.
+La jurisprudencia constitucional costarricense ha consolidado el principio de desarrollo sustentable como eje estructural del ordenamiento jurídico, estableciendo que la actividad económica debe armonizarse con la protección ambiental y la equidad intergeneracional. (27) En este sentido, la conservación de la biomasa marina no es una limitación al desarrollo, sino su condición habilitante.
+El principio precautorio, ampliamente reconocido en el derecho ambiental contemporáneo, exige que, ante la existencia de riesgo de daño grave o irreversible, la falta de certeza científica absoluta no sea utilizada como razón para postergar la adopción de medidas eficaces de protección.(28) En el contexto del Domo Térmico, este principio adquiere especial relevancia debido a la variabilidad climática creciente y a la posibilidad de impactos acumulativos derivados de la sobreexplotación.
+La obligación constitucional y convencional del Estado implica incorporar mecanismos de gestión científica permanente, monitoreo continuo e instrumentos técnicos vinculantes. La ausencia de reglas de control de captura basadas en evidencia podría comprometer la resiliencia ecológica del sistema y generar responsabilidad internacional por incumplimiento de deberes de conservación.
+Asimismo, el deber de conservación debe entenderse en clave intergeneracional. Las generaciones presentes no pueden agotar un recurso cuya regeneración depende de procesos ecológicos complejos y cuya estabilidad incide en la seguridad alimentaria futura. La biomasa marina constituye un patrimonio natural estratégico cuya administración exige visión de largo plazo.
+La presente iniciativa legislativa traduce estos principios constitucionales e internacionales en un régimen jurídico específico para el Domo Térmico, dotando al Estado de instrumentos normativos modernos que permiten ejercer de manera efectiva su deber de conservación, su potestad soberana de administración y su responsabilidad frente a la comunidad internacional.
+El fortalecimiento de la gobernanza científica, la transparencia de información y la adopción de reglas automáticas de ajuste frente a señales ambientales no representan una delegación indebida de potestades, sino la materialización técnica del mandato constitucional de protección ambiental y uso racional de los recursos naturales.
+7. Gestión adaptativa, reglas de control de captura y gobernanza científica vinculante
+La evidencia científica acumulada durante las últimas décadas demuestra que los modelos tradicionales de administración pesquera, basados exclusivamente en cuotas fijas o en promedios históricos de captura, resultan insuficientes frente a un océano sometido a variabilidad climática creciente.(29) La dinámica del Domo Térmico, influenciada por procesos estacionales e interanuales como el fenómeno ENSO, exige un esquema de gestión adaptativa capaz de responder en tiempo real a señales ambientales verificables.
+La gestión adaptativa implica que las decisiones regulatorias —cuotas de captura, días autorizados de pesca, delimitación de subzonas y artes permitidas— se ajusten en función de evaluaciones científicas actualizadas de biomasa explotable y de indicadores oceanográficos operativos.(30) Entre dichos indicadores se incluyen la temperatura superficial del mar, la profundidad de la termoclina, la concentración de clorofila-a y los niveles de oxígeno disuelto.
+Las Reglas de Control de Captura (Harvest Control Rules – HCR) constituyen instrumentos técnicos reconocidos internacionalmente para traducir señales biológicas y ambientales en decisiones automáticas de manejo.(31) Su aplicación reduce la discrecionalidad administrativa, fortalece la transparencia y mejora la previsibilidad para el sector productivo, al establecer umbrales previamente definidos que activan incrementos o reducciones proporcionales del esfuerzo pesquero.
+La literatura científica ha señalado que los sistemas pesqueros, que incorporan mecanismos de ajuste basados en evidencia, presentan mayores probabilidades de mantener poblaciones dentro de niveles biológicamente sostenibles.(32) En contraste, la demora en adoptar medidas correctivas frente a señales tempranas de reducción de biomasa puede conducir a pérdidas económicas significativas y a procesos de recuperación prolongados.
+La gobernanza científica vinculante constituye un elemento central del presente régimen especial. La creación de un comité científico permanente independiente, con capacidad técnica acreditada y acceso irrestricto a información de monitoreo, garantiza que las decisiones de manejo se fundamenten en evidencia y no en presiones coyunturales.(30) El carácter vinculante de sus recomendaciones asegura coherencia entre diagnóstico científico y acción administrativa.
+Asimismo, la implementación de sistemas de monitoreo electrónico obligatorio —incluyendo VMS, AIS y registro digital de capturas en tiempo real— permite generar bases de datos robustas para la evaluación continua del estado del recurso.(33) La trazabilidad integral fortalece la credibilidad internacional del país y constituye una herramienta eficaz contra la pesca ilegal, no declarada y no reglamentada.
+El enfoque adaptativo no busca restringir el desarrollo del sector pesquero, sino asegurar su estabilidad a largo plazo. La conservación de la biomasa como capital natural estratégico requiere reglas claras, automatismos técnicos y transparencia institucional. La presente iniciativa legislativa incorpora estos principios para transformar la productividad del Domo Térmico en desarrollo sustentable con respaldo científico permanente.
+En un escenario de reorganización oceánica global, la ventaja competitiva no dependerá únicamente de la abundancia natural del recurso, sino de la capacidad institucional para gestionarlo con rigor técnico. La adopción de reglas de control de captura y de gobernanza científica vinculante posiciona a Costa Rica como referente regional en manejo pesquero moderno y responsable.
+8. Valor agregado nacional, encadenamientos productivos y resiliencia económica
+El aprovechamiento del Domo Térmico no debe limitarse a la captura primaria del recurso, sino orientarse hacia la maximización del valor agregado nacional a lo largo de la cadena productiva.(34) La diferencia económica entre exportar producto sin procesamiento y desarrollar capacidades de transformación industrial, certificación, empaque especializado y logística de frío puede representar un incremento sustancial en el ingreso nacional por tonelada capturada.
+La literatura económica pesquera ha demostrado que los países que integran verticalmente su cadena productiva capturan mayores beneficios distributivos, generan empleo costero estable y fortalecen su resiliencia macroeconómica frente a fluctuaciones externas.(35) La agregación de valor interno contribuye a reducir vulnerabilidades asociadas a variaciones de precios internacionales de materias primas.
+En el caso de Costa Rica, el desarrollo de infraestructura de cadena de frío, plantas de procesamiento con estándares sanitarios internacionales y sistemas de certificación ambiental permite posicionar el producto pesquero en mercados premium con mayor disposición a pagar.(36) La reputación internacional del país en materia ambiental constituye una ventaja comparativa que puede traducirse en mejores condiciones comerciales.
+Asimismo, el fortalecimiento de encadenamientos productivos genera impactos positivos en sectores conexos como transporte marítimo, servicios portuarios, mantenimiento naval, tecnología de monitoreo y servicios científicos. La pesca gestionada bajo estándares rigurosos puede convertirse en un motor de desarrollo territorial para comunidades costeras, reduciendo desigualdades regionales.
+La resiliencia económica del sector pesquero depende, sin embargo, de la estabilidad biológica del recurso. Sin biomasa sostenible no existe base material para inversión productiva. Por ello, la agregación de valor debe estar subordinada a la conservación ecosistémica y a la aplicación estricta de reglas de control de captura.(37) La sostenibilidad ambiental constituye el fundamento de la sostenibilidad económica.
+En un contexto global de incertidumbre climática y reorganización oceánica, diversificar la estructura productiva y fortalecer sectores estratégicos vinculados a recursos renovables bien gestionados incrementa la capacidad de adaptación del país. El Domo Térmico, administrado bajo criterios científicos y tecnológicos modernos, puede constituir un pilar de resiliencia económica nacional.
+La presente iniciativa legislativa reconoce que el desarrollo pesquero sustentable no es incompatible con la conservación; por el contrario, depende de ella. La generación de valor agregado interno, combinada con gobernanza científica robusta y transparencia institucional, permite transformar productividad biológica en bienestar social de largo plazo.
+9. El Domo Térmico en el contexto del antropoceno y la reorganización oceánica global
+La humanidad atraviesa una etapa histórica caracterizada por una aceleración sin precedentes de los procesos climáticos y geoquímicos del planeta, fenómeno ampliamente descrito como Antropoceno.(38) La quema intensiva de combustibles fósiles en apenas dos siglos ha alterado balances energéticos que evolucionaron durante millones de años, generando un incremento sostenido de la temperatura media global y transformaciones profundas en los sistemas oceánicos.
+El océano absorbe más del 90 % del exceso de calor generado por el calentamiento global, lo cual produce expansión térmica, alteración de corrientes, cambios en la estratificación vertical y desplazamientos de hábitats marinos.(39) Esta acumulación de energía modifica patrones históricos de productividad y redistribuye biomasa a escala planetaria.
+Diversas investigaciones han documentado que el calentamiento crónico y la intensificación de eventos extremos, como las olas de calor marinas, están reconfigurando la estructura y funcionamiento de ecosistemas oceánicos.(40) En este contexto, la reorganización no implica necesariamente colapso inmediato, sino transformación espacial y funcional de sistemas marinos.
+El Pacífico Oriental Tropical, por su dinámica particular, puede convertirse en una región clave dentro de esta reorganización global.(41) Sistemas de surgencia como el Domo Térmico adquieren relevancia estratégica en la medida en que mantienen productividad relativamente alta frente a escenarios de variabilidad creciente.
+El concepto de resiliencia ecosistémica adquiere centralidad en el Antropoceno. La capacidad de un sistema para absorber perturbaciones sin perder su funcionalidad depende de la conservación de su biomasa, diversidad y estructura trófica.(42) La sobreexplotación en un contexto de reorganización climática puede reducir umbrales de estabilidad y comprometer procesos de recuperación.
+Desde una perspectiva intergeneracional, la gestión del Domo Térmico debe entenderse como una decisión estratégica en un periodo de transición planetaria. La reorganización oceánica global no es un fenómeno hipotético futuro, es un proceso en curso documentado por la literatura científica contemporánea. Frente a este escenario, la adopción de un régimen especial basado en ciencia, adaptabilidad y prudencia constituye una respuesta racional y responsable.
+La presente iniciativa legislativa reconoce que la abundancia relativa de determinados sistemas marinos no debe interpretarse como garantía permanente. En el Antropoceno, la ventaja competitiva de las naciones no dependerá únicamente de la dotación natural de recursos, sino de su capacidad para administrarlos con rigor técnico, visión de largo plazo y responsabilidad ética frente a la comunidad internacional.
+10. Necesidad de un régimen especial adaptativo y conclusión estratégica legislativa
+La convergencia entre transformación climática global, reorganización de biomasa marina, presión geopolítica sobre recursos estratégicos y responsabilidad constitucional del Estado exige la adopción de un régimen jurídico especializado para el Domo Térmico de Costa Rica.(43) Los instrumentos normativos tradicionales resultan insuficientes frente a sistemas ecológicos dinámicos cuya productividad depende de variables oceanográficas cambiantes y de alta sensibilidad climática.
+La evidencia científica demuestra que los sistemas pesqueros con reglas claras de control de captura, monitoreo permanente y gobernanza técnica independiente presentan mayores probabilidades de sostenibilidad biológica y estabilidad económica en el largo plazo.(44) La ausencia de mecanismos automáticos de ajuste, frente a señales tempranas de reducción de biomasa, puede generar sobreexplotación acumulativa y pérdida de resiliencia ecosistémica.
+En el contexto del Antropoceno, la administración de recursos marinos estratégicos no puede basarse únicamente en criterios de corto plazo o en presiones coyunturales. La gestión adaptativa con fundamento científico constituye un requisito estructural para garantizar la continuidad productiva del sistema y la protección del patrimonio natural nacional. (45)
+El establecimiento de un régimen especial para el Domo Térmico no implica una fragmentación del ordenamiento jurídico, sino una adecuación normativa coherente con la singularidad oceanográfica, biológica y estratégica del área.
+La delimitación técnica dinámica, la implementación de reglas de control de captura, el monitoreo electrónico obligatorio y la creación de un comité científico permanente con carácter vinculante representan herramientas modernas de administración responsable.
+Asimismo, la adopción de un régimen especializado fortalece la posición internacional de Costa Rica como Estado comprometido con la sostenibilidad, la transparencia y la gestión basada en evidencia. En mercados cada vez más exigentes en materia ambiental, la credibilidad institucional constituye un activo económico relevante. (46)
+La presente iniciativa legislativa consolida un modelo de desarrollo pesquero sustentable que integra conservación ecológica, valor agregado nacional, soberanía marítima y responsabilidad intergeneracional. Lejos de limitar el crecimiento, el régimen especial propuesto busca asegurar que la productividad del Domo Térmico se traduzca en bienestar social duradero sin comprometer la estabilidad ecológica del sistema.
+11. Capitalización inicial, control soberano del espacio marítimo y desarrollo territorial
+El aprovechamiento sostenible del Domo Térmico de Costa Rica requiere una fase inicial de inversión estratégica por parte del Estado costarricense. Esta inversión tiene como propósito crear las capacidades operativas, tecnológicas e institucionales necesarias para asegurar un control efectivo del espacio marítimo nacional, garantizar el uso sostenible de los recursos pesqueros y promover el desarrollo económico de las comunidades costeras vinculadas a esta región oceánica de extraordinaria productividad biológica.
+Durante décadas, una parte significativa de los recursos pesqueros asociados al Domo Térmico ha sido aprovechada por flotas extranjeras mediante esquemas de licencias o accesos temporales. Sin embargo, el país no ha desarrollado plenamente las capacidades logísticas, tecnológicas y de vigilancia necesarias para ejercer un control soberano robusto sobre este espacio marino estratégico. Esta situación ha limitado el potencial económico y social que podría derivarse de una gestión nacional más activa, ordenada y sostenible de este recurso natural.
+En este contexto, resulta necesario establecer un mecanismo de capitalización inicial que permita fortalecer las capacidades del Estado en tres ámbitos fundamentales.
+En primer lugar, el desarrollo de sistemas modernos de monitoreo, control y vigilancia marítima, incluyendo tecnologías de seguimiento satelital, radares costeros, embarcaciones de patrullaje y medios de apoyo aéreo que permitan garantizar la legalidad de las operaciones pesqueras dentro de la zona económica exclusiva del país y prevenir la pesca ilegal, no declarada y no reglamentada.
+En segundo lugar, se requiere impulsar infraestructura pesquera estratégica que permita que una mayor proporción del valor agregado asociado a los recursos del Domo Térmico se genere dentro del territorio nacional. Esto incluye el fortalecimiento de puertos pesqueros, centros de procesamiento, cadenas de frío, logística de transporte y facilidades para el desembarque y manejo sostenible de los recursos marinos. Desde este punto de vista, la infraestructura logística nacional, incluyendo el aeropuerto internacional Daniel Oduber en Liberia, Guanacaste, puede desempeñar un papel relevante para la exportación de productos pesqueros de alto valor.
+En tercer lugar, esta fase inicial de inversión debe orientarse al desarrollo territorial de las regiones costeras, particularmente en la provincia de Puntarenas (Golfo de Nicoya) y en otras comunidades vinculadas a la actividad pesquera en Guanacaste y el Pacífico Central. La creación de programas de capacitación, el apoyo a emprendimientos locales, el fortalecimiento de cooperativas pesqueras y el desarrollo de actividades económicas complementarias permitirá que los beneficios derivados del aprovechamiento sostenible del Domo Térmico se traduzcan en empleo, bienestar social y dinamización económica regional.
+Adicionalmente, el fortalecimiento de las capacidades nacionales para gestionar de manera sostenible los recursos del Domo Térmico contribuirá de forma directa a la seguridad alimentaria del país, al asegurar una fuente estratégica de proteínas marinas y fortalecer la resiliencia del sistema alimentario nacional, frente a las crecientes presiones climáticas y económicas globales.
+De esta manera, la capitalización inicial propuesta no debe entenderse como un gasto público ordinario, sino como una inversión estratégica destinada a consolidar el control soberano del espacio marítimo nacional, aumentar el valor agregado de la producción pesquera, fortalecer la seguridad alimentaria del país y promover un desarrollo territorial equilibrado en las regiones costeras de Costa Rica.
+En consecuencia, la aprobación de esta ley responde a una necesidad estructural del país: adaptar su política pesquera a un océano en transformación, ejercer plenamente sus derechos soberanos sobre la zona económica exclusiva y convertir la ciencia en el eje rector de la administración de un activo estratégico nacional.
+Es de gran relevancia recalcar que la presente iniciativa no busca incrementar indiscriminadamente la presión pesquera, sino asegurar que la productividad natural del Domo Térmico se gestione con rigor científico, de manera que Costa Rica pueda ejercer plenamente su soberanía marítima y transformar un activo natural estratégico en bienestar económico y social duradero.
+Glosario de Términos Técnicos
+Domo Térmico de Costa Rica: sistema oceanográfico caracterizado por la surgencia de aguas profundas frías y ricas en nutrientes, que genera alta productividad biológica en el Pacífico Oriental Tropical.
+Surgencia oceánica (Upwelling): proceso mediante el cual aguas profundas ricas en nutrientes ascienden hacia la superficie del océano, estimulando la productividad biológica.
+Termoclina: capa del océano donde la temperatura cambia rápidamente con la profundidad.
+Biomasa marina: cantidad total de organismos vivos presentes en una población o ecosistema marino.
+Biomasa explotable: porción de la biomasa que puede capturarse sin comprometer la regeneración natural de la especie.
+Gestión pesquera adaptativa: modelo de administración que ajusta decisiones de captura y esfuerzo pesquero con base en información científica actualizada.
+Indicadores oceanográficos: variables físicas, químicas o biológicas utilizadas para evaluar el estado del ecosistema marino.
+Regla de Control de Captura (HCR): mecanismo técnico que ajusta automáticamente cuotas o esfuerzo pesquero según indicadores científicos.
+Trazabilidad pesquera: sistema que permite rastrear el origen y recorrido del producto pesquero, desde su captura hasta el mercado.
+Pesca ilegal, no declarada y no reglamentada (IUU): actividad pesquera que viola leyes nacionales o acuerdos internacionales.
+Referencias de la exposición de motivos
+(1) Chaikin, S., González-Trujillo, J. D., & Araújo, M. B. (2026). Long-term warming reduces fish biomass, but heatwaves shift it. Nature Ecology & Evolution.
+(2) IPCC. (2022). Climate Change 2022: Impacts, Adaptation and Vulnerability. Cambridge University Press.
+(3) Oliver, E. C. J., et al. (2018). Longer and more frequent marine heatwaves over the past century. Nature Communications, 9, 1324.
+(4) Chaikin, S., González-Trujillo, J. D., & Araújo, M. B. (2026). Long-term warming reduces fish biomass, but heatwaves shift it. Nature Ecology & Evolution.
+(5) Pinsky, M. L., et al. (2013). Marine taxa track local climate velocities. Science, 341(6151), 1239–1242.
+(6) IPCC. (2022). Climate Change 2022: Impacts, Adaptation and Vulnerability. Cambridge University Press.
+(7) Chavez, F. P., et al. (2011). Marine ecosystems of the eastern tropical Pacific. Progress in Oceanography.
+(8) FAO. (2022). The State of World Fisheries and Aquaculture 2022.
+(9) European Commission. (2023). EU Fish Market Report 2023.
+(10) Fiedler, P. C. (2002). The annual cycle and biological effects of the Costa Rica Dome. Deep-Sea Research Part I, 49, 321–338.
+(11) Stukel, M. R., et al. (2016). The Costa Rica Dome: A physical–biological hotspot in the eastern tropical Pacific. Progress in Oceanography, 145, 122–144.
+(12) Chavez, F. P., et al. (2011). Marine ecosystems of the eastern tropical Pacific. Progress in Oceanography.
+(13) McPhaden, M. J. (2020). El Niño and La Niña: Causes and global consequences. Annual Review of Marine Science.
+(14) IATTC. (2022). Status of Tuna and Billfish Stocks in the Eastern Pacific Ocean.
+(15) Fiedler, P. C. (2002). The annual cycle and biological effects of the Costa Rica Dome. Deep-Sea Research Part I, 49, 321–338.
+(16) Stukel, M. R., et al. (2016). The Costa Rica Dome: A physical–biological hotspot in the eastern tropical Pacific. Progress in Oceanography, 145, 122–144.
+(17) IATTC. (2022). Status of Tuna and Billfish Stocks in the Eastern Pacific Ocean.
+(18) European Commission. (2023). EU Fish Market Report 2023.
+(19) Hilborn, R., et al. (2020). Effective fisheries management instrumental in improving fish stock status. Proceedings of the National Academy of Sciences.
+(20) FAO. (2022). The State of World Fisheries and Aquaculture 2022.
+(21) IPCC. (2022). Climate Change 2022: Impacts, Adaptation and Vulnerability. Cambridge University Press.
+(22) European Commission. (2023). EU Fish Market Report 2023.
+(23) Naciones Unidas. (1982). Convención de las Naciones Unidas sobre el Derecho del Mar.
+(24) European Commission. (2021). Regulation to prevent, deter and eliminate illegal, unreported and unregulated fishing.
+(25) Constitución Política de la República de Costa Rica, artículo 50.
+(26) Naciones Unidas. (1982). Convención de las Naciones Unidas sobre el Derecho del Mar.
+(27) Sala Constitucional de la República de Costa Rica. Jurisprudencia sobre desarrollo sostenible y ambiente sano.
+(28) Declaración de Río sobre el Medio Ambiente y el Desarrollo (1992), Principio 15.
+(29) IPCC. (2022). Climate Change 2022: Impacts, Adaptation and Vulnerability. Cambridge University Press.
+(30) FAO. (2020). Fisheries management and adaptive frameworks in changing oceans.
+(31) Hilborn, R., et al. (2020). Effective fisheries management instrumental in improving fish stock status. Proceedings of the National Academy of Sciences.
+(32) Costello, C., et al. (2016). Global fishery prospects under contrasting management regimes. Proceedings of the National Academy of Sciences.
+(33) European Commission. (2021). Regulation to prevent, deter and eliminate illegal, unreported and unregulated fishing.
+(34) FAO. (2022). The State of World Fisheries and Aquaculture 2022.
+(35) Costello, C., et al. (2016). Global fishery prospects under contrasting management regimes. Proceedings of the National Academy of Sciences.
+(36) European Commission. (2023). EU Fish Market Report 2023.
+(37) Hilborn, R., et al. (2020). Effective fisheries management instrumental in improving fish stock status. Proceedings of the National Academy of Sciences.
+(38) Steffen, W., et al. (2015). The trajectory of the Anthropocene: The Great Acceleration. The Anthropocene Review.
+(39) IPCC. (2022). Climate Change 2022: Impacts, Adaptation and Vulnerability. Cambridge University Press.
+(40) Oliver, E. C. J., et al. (2018). Longer and more frequent marine heatwaves over the past century. Nature Communications, 9, 1324.
+(41) Chavez, F. P., et al. (2011). Marine ecosystems of the eastern tropical Pacific. Progress in Oceanography.
+(42) Folke, C., et al. (2004). Regime shifts, resilience, and biodiversity in ecosystem management. Annual Review of Ecology, Evolution, and Systematics.
+(43) Naciones Unidas. (1982). Convención de las Naciones Unidas sobre el Derecho del Mar.
+(44) Hilborn, R., et al. (2020). Effective fisheries management instrumental in improving fish stock status. Proceedings of the National Academy of Sciences.
+(45) IPCC. (2022). Climate Change 2022: Impacts, Adaptation and Vulnerability. Cambridge University Press.
+(46) European Commission. (2023). EU Fish Market Report 2023.
+ANEXO TÉCNICO
+Principales Especies Pesqueras Asociadas al Domo Térmico de Costa Rica
+El presente anexo describe las principales especies marinas que pueden encontrarse asociadas al sistema oceanográfico del Domo Térmico de Costa Rica. El objetivo es proporcionar información clara y accesible sobre sus características biológicas, ciclos de reproducción, abundancia relativa y potencial económico, de forma que personas no especialistas puedan comprender la base ecológica del aprovechamiento pesquero sostenible en esta región.
+Atún Aleta Amarilla (Thunnus albacares)
+Características: pez pelágico de gran tamaño ampliamente distribuido en aguas tropicales y subtropicales.
+Puede alcanzar más de 2 metros de longitud y pesar más de 150 kg.
+Hábitat: prefiere aguas cálidas y suele concentrarse en zonas de alta productividad biológica como el Domo Térmico.
+Reproducción: presenta reproducción múltiple durante el año en aguas tropicales, con picos reproductivos asociados a condiciones favorables de temperatura y alimento.
+Abundancia: es una de las especies de atún más abundantes en el Pacífico Oriental Tropical.
+Potencial de mercado: alta demanda en mercados internacionales para consumo fresco, congelado y enlatado.
+Atún Patudo (Thunnus obesus)
+Características: especie de atún de gran tamaño conocida por su carne de alta calidad, especialmente valorada para consumo en sashimi.
+Hábitat: se encuentra en aguas tropicales y subtropicales y puede descender a mayores profundidades que otros túnidos.
+Reproducción: se reproduce durante gran parte del año en zonas tropicales, con alta fecundidad.
+Abundancia: moderada a alta en el Pacífico Oriental Tropical.
+Potencial de mercado: muy alto valor en mercados asiáticos y en segmentos premium de exportación.
+Dorado o Mahi‑Mahi (Coryphaena hippurus)
+Características: pez pelágico de rápido crecimiento que puede alcanzar más de un metro de longitud.
+Hábitat: se asocia a aguas cálidas y a zonas de productividad oceánica elevada.
+Reproducción: presenta ciclos reproductivos frecuentes durante el año, lo que contribuye a la rápida recuperación de sus poblaciones.
+Abundancia: relativamente alta en regiones tropicales productivas.
+Potencial de mercado: amplia demanda internacional para consumo fresco y congelado.
+Pez Espada (Xiphias gladius)
+Características: gran pez depredador caracterizado por su largo rostro en forma de espada.
+Hábitat: se distribuye en aguas tropicales y templadas y puede realizar migraciones verticales entre superficie y aguas profundas.
+Reproducción: se reproduce en aguas cálidas tropicales y subtropicales.
+Abundancia: moderada, con poblaciones monitoreadas internacionalmente.
+Potencial de mercado: muy alto valor comercial en mercados internacionales de pescado fresco.
+Atún Barrilete o Skipjack (Katsuwonus pelamis)
+Características: especie de atún más pequeña pero extremadamente abundante en aguas tropicales.
+Hábitat: se encuentra en cardúmenes grandes en aguas cálidas.
+Reproducción: alta tasa reproductiva y crecimiento rápido.
+Abundancia: muy abundante en el Pacífico Oriental Tropical.
+Potencial de mercado: base de la industria mundial del atún enlatado.
+Nota técnica 1
+Las especies descritas representan ejemplos de organismos pelágicos asociados a sistemas de alta productividad oceánica como el Domo Térmico. La sostenibilidad de su aprovechamiento depende del monitoreo científico permanente de la biomasa, la protección de individuos juveniles y reproductores, y la aplicación de reglas de control de captura basadas en evidencia.
+Nota técnica 2
+El presente proyecto de ley está respaldado por un documento técnico de respaldo que se presenta de forma separada.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA EL APROVECHAMIENTO PESQUERO SOSTENIBLE Y ESTRATÉGICO DEL DOMO TÉRMICO DE COSTA RICA
+CAPÍTULO I
+DISPOSICIONES GENERALES
+ARTÍCULO 1- Objeto de la ley
+La presente ley tiene por objeto establecer un régimen jurídico especial, adaptativo, científico y estratégico para la administración, conservación y aprovechamiento sostenible del Domo Térmico de Costa Rica y de las áreas oceánicas asociadas dentro de la Zona Económica Exclusiva del Pacífico costarricense.
+El régimen especial creado por esta ley se fundamenta en el deber constitucional de protección ambiental, en los derechos soberanos del Estado sobre los recursos vivos marinos y en la necesidad de garantizar la resiliencia ecológica, la estabilidad productiva y el interés público superior, en un contexto de variabilidad climática creciente.
+La administración del Domo Térmico deberá orientarse por el principio de sostenibilidad ecológica estructural, priorizando la conservación de la biomasa como capital natural estratégico del país.
+ARTÍCULO 2- Declaratoria de Interés Estratégico Nacional
+Declárese el Domo Térmico de Costa Rica como:
+Zona Marina de Interés Estratégico Nacional.
+Área prioritaria de gestión pesquera adaptativa basada en ciencia.
+Activo estratégico para la seguridad alimentaria, la soberanía marítima y el desarrollo económico sustentable del país.
+Esta declaratoria implica que cualquier actividad de aprovechamiento deberá subordinarse a la conservación de la resiliencia ecológica del sistema y al interés público superior definido por la presente ley.
+ARTÍCULO 3- Naturaleza Especial del Régimen Jurídico
+El régimen establecido en esta ley tiene carácter especial y prevalecerá, en lo relativo a la gestión adaptativa del Domo Térmico, sobre disposiciones generales de carácter pesquero que resulten incompatibles con sus principios rectores.
+La singularidad oceanográfica, biológica y estratégica del Domo Térmico justifica la adopción de normas diferenciadas, técnicas y dinámicas que permitan su administración, conforme a evidencia científica actualizada.
+ARTÍCULO 4- Principios rectores
+La gestión del Domo Térmico se regirá por los siguientes principios:
+Sostenibilidad ecológica estructural.
+Precaución científica.
+Gestión adaptativa basada en evidencia verificable.
+Resiliencia ecosistémica.
+Transparencia y trazabilidad integral.
+Equidad intergeneracional.
+Prioridad del interés nacional sobre cualquier aprovechamiento extractivo.
+Estos principios tendrán carácter interpretativo vinculante para toda autoridad administrativa y judicial que aplique la presente ley.
+ARTÍCULO 5- Ámbito de aplicación
+La presente ley será aplicable a todas las actividades pesqueras comerciales, industriales o semiindustriales realizadas dentro del área técnicamente delimitada como Domo Térmico y sus zonas de influencia dinámica, sin perjuicio de otras disposiciones ambientales, marítimas o internacionales vigentes.
+Las actividades de investigación científica, tránsito marítimo y otras actividades no extractivas deberán respetar las disposiciones de protección establecidas en esta ley cuando resulten pertinentes.
+ARTÍCULO 6- Competencia y responsabilidad institucional
+Corresponderá al Poder Ejecutivo, a través de las instituciones competentes en materia pesquera y ambiental, la implementación integral de la presente ley, bajo criterios de coordinación interinstitucional obligatoria.
+La autoridad administrativa deberá actuar conforme a las recomendaciones técnicas vinculantes emitidas por el Comité Científico Permanente del Domo Térmico, garantizando que las decisiones regulatorias se fundamenten en evidencia científica actualizada y en análisis de riesgo ecológico.
+El incumplimiento del deber de gestión científica y adaptativa podrá generar responsabilidad administrativa y, cuando corresponda, responsabilidad patrimonial del Estado conforme al ordenamiento jurídico vigente.
+CAPÍTULO II
+RÉGIMEN ESPECIAL DE GESTIÓN DEL DOMO TÉRMICO
+ARTÍCULO 7- Delimitación técnica dinámica del área
+El Domo Térmico de Costa Rica será delimitado mediante criterios oceanográficos, biológicos y climáticos verificables, definidos por el órgano técnico competente, con base en evidencia científica actualizada.
+La delimitación tendrá carácter dinámico y podrá ajustarse periódicamente en función de la variabilidad estacional, interanual o climática de largo plazo, mediante resolución técnica debidamente fundamentada y sustentada en datos del Sistema Nacional de Indicadores del Domo.
+La delimitación técnica deberá publicarse oficialmente y actualizarse cuando los indicadores ambientales superen umbrales previamente establecidos.
+ARTÍCULO 8- Zonificación adaptativa obligatoria
+El área delimitada como Domo Térmico estará sujeta a un sistema de zonificación adaptativa que podrá comprender:
+Subzonas de protección ecológica prioritaria.
+Subzonas de aprovechamiento regulado.
+Subzonas de investigación científica.
+Subzonas de restricción temporal por eventos térmicos o biológicos extraordinarios.
+La zonificación deberá revisarse al menos una vez por año y será de cumplimiento obligatorio para todas las embarcaciones autorizadas. La autoridad administrativa no podrá autorizar excepciones que contravengan las recomendaciones técnicas vinculantes.
+ARTÍCULO 9- Gestión adaptativa basada en indicadores científicos
+Las decisiones relativas a cuotas, esfuerzo pesquero, temporadas, artes permitidas y número de embarcaciones activas deberán fundamentarse exclusivamente en:
+Evaluaciones científicas actualizadas de biomasa explotable.
+Indicadores ambientales operativos, tales como temperatura superficial del mar, profundidad de la termoclina, concentración de clorofila-a y niveles de oxígeno disuelto.
+Análisis de riesgo ecológico acumulativo.
+La omisión de fundamentación técnica constituirá nulidad absoluta del acto administrativo correspondiente.
+ARTÍCULO 10- Regla de control de captura (HCR) de aplicación automática
+Se establece la obligación de implementar una regla de control de captura (Harvest Control Rule – HCR), que determine ajustes automáticos y proporcionales en:
+Cuotas máximas permisibles.
+Días efectivos de pesca.
+Número de embarcaciones autorizadas.
+Esfuerzo pesquero total permitido.
+Cuando los indicadores científicos evidencien reducción significativa de biomasa o señales de estrés ecosistémico, la reducción del esfuerzo será inmediata, proporcional y obligatoria, sin necesidad de acto discrecional adicional.
+La ampliación del esfuerzo pesquero solo procederá cuando evaluaciones multianuales demuestren recuperación estructural sostenible del recurso.
+ARTÍCULO 11- Protección de juveniles y áreas reproductivas
+Queda prohibida la captura dirigida de individuos por debajo de la talla mínima biológicamente establecida para cada especie regulada.
+La autoridad técnica deberá identificar y delimitar zonas de agregación reproductiva y establecer cierres estacionales obligatorios, cuando así lo indiquen los análisis científicos.
+Las infracciones a estas disposiciones tendrán carácter grave y darán lugar a las sanciones máximas previstas en la presente ley.
+ARTÍCULO 12- Prohibición de incremento oportunista del esfuerzo
+No se permitirá el incremento del esfuerzo pesquero basado exclusivamente en aumentos temporales de biomasa asociados a eventos ambientales transitorios, tales como anomalías térmicas favorables o concentraciones episódicas de especies.
+Toda ampliación de capacidad extractiva deberá sustentarse en análisis científicos de carácter multianual, que acrediten sostenibilidad estructural y ausencia de riesgo ecológico acumulativo.
+El incumplimiento de esta disposición será considerado falta grave y podrá implicar suspensión inmediata de licencias.
+CAPÍTULO III
+FLOTA NACIONAL ESTRATÉGICA, MONITOREO Y TRAZABILIDAD
+ARTÍCULO 13- Programa de Flota Nacional Estratégica
+Créese el Programa de Flota Nacional Estratégica del Domo Térmico, orientado a fortalecer la capacidad operativa nacional bajo estándares científicos, tecnológicos y ambientales de alto nivel.
+El Programa tendrá como objetivos:
+Modernizar progresivamente las embarcaciones nacionales.
+Priorizar artes de pesca selectivas de bajo impacto ecosistémico.
+Maximizar el valor agregado interno en la cadena productiva.
+Garantizar cumplimiento estricto de estándares internacionales contra la pesca ilegal, no declarada y no reglamentada (IUU).
+Reducir la huella ambiental y energética de las operaciones.
+El acceso al régimen especial del Domo estará condicionado a la incorporación progresiva al Programa de Flota Nacional Estratégica.
+ARTÍCULO 14- Criterios técnicos para autorización de embarcaciones
+Solo podrán operar dentro del área delimitada como Domo Térmico aquellas embarcaciones que cumplan con los siguientes requisitos mínimos:
+Licencia vigente y cumplimiento integral de normativa pesquera nacional.
+Sistema de Monitoreo Satelital (VMS) activo y en transmisión continua.
+Sistema de Identificación Automática (AIS) operativo.
+Equipamiento para monitoreo electrónico a bordo conforme a estándares definidos reglamentariamente.
+Registro digital obligatorio y en tiempo real de capturas.
+El incumplimiento de cualquiera de estos requisitos implicará suspensión inmediata de la autorización para operar en el área especial.
+ARTÍCULO 15- Monitoreo electrónico integral obligatorio
+Toda embarcación autorizada deberá contar con sistemas de monitoreo electrónico que permitan verificar:
+Actividades de pesca realizadas.
+Capturas efectuadas.
+Cumplimiento de zonas y cierres temporales.
+Manipulación de artes y especies.
+Los sistemas deberán operar de manera continua e ininterrumpida. La desactivación, alteración o interferencia deliberada constituirá infracción grave y dará lugar a sanciones máximas previstas en esta ley.
+ARTÍCULO 16- Observadores científicos y acceso a información
+Las embarcaciones autorizadas deberán admitir observadores científicos certificados, cuando así lo disponga la autoridad competente o el Comité Científico Permanente.
+La negativa injustificada a permitir observación o acceso a información técnica constituirá causal de suspensión inmediata de la licencia dentro del régimen especial.
+ARTÍCULO 17- Sistema Nacional de Trazabilidad Integral
+Establécese el Sistema Nacional de Trazabilidad Integral del Domo Térmico, el cual permitirá identificar cada lote capturado desde su extracción hasta su destino final, incluyendo procesamiento, transporte y exportación.
+La trazabilidad será obligatoria para todos los operadores autorizados y deberá cumplir estándares internacionales reconocidos para acceso a mercados de alta exigencia ambiental.
+La ausencia de trazabilidad verificable impedirá la comercialización del producto como proveniente del régimen especial del Domo.
+ARTÍCULO 18- Prioridad del valor agregado nacional
+El Estado promoverá que la mayor proporción posible del procesamiento, transformación y comercialización del producto capturado en el Domo Térmico se realice en territorio nacional.
+Podrán establecerse incentivos financieros, crediticios o fiscales condicionados al cumplimiento de estándares ambientales, tecnológicos y laborales, con el fin de fortalecer encadenamientos productivos internos.
+ARTÍCULO 19- Prohibición de operaciones IUU y responsabilidad del operador
+Queda estrictamente prohibida cualquier actividad de pesca ilegal, no declarada o no reglamentada dentro del área regulada por esta ley.
+Los operadores autorizados responderán objetivamente por infracciones cometidas por sus embarcaciones, sin perjuicio de las responsabilidades individuales que correspondan.
+La reincidencia en conductas IUU implicará inhabilitación definitiva para operar dentro del régimen especial del Domo Térmico.
+CAPÍTULO IV
+FONDO ESTRATÉGICO DEL DOMO TÉRMICO
+ARTÍCULO 20- Creación y naturaleza del Fondo Estratégico del Domo
+Créese el Fondo Estratégico del Domo Térmico de Costa Rica como un instrumento financiero de carácter público, especializado y con destino específico, orientado exclusivamente al fortalecimiento científico, tecnológico, ambiental y productivo del régimen especial establecido por esta ley.
+El Fondo tendrá naturaleza de patrimonio separado con contabilidad independiente y no podrá destinarse a fines distintos de los expresamente establecidos en la presente ley.
+Sus recursos se utilizarán prioritariamente para:
+Modernización tecnológica de la flota nacional estratégica.
+Desarrollo de infraestructura de cadena de frío y centros de procesamiento pesquero.
+Implementación de sistemas de monitoreo electrónico y trazabilidad pesquera.
+Fortalecimiento de capacidades de vigilancia marítima mediante radares, embarcaciones y medios de observación aérea o marítima.
+Programas de capacitación técnica, innovación productiva y apoyo a emprendimientos vinculados a la economía azul en municipios costeros.
+Programas de capacitación técnica y formación científica especializada.
+Una parte de los recursos del Fondo podrá destinarse a programas de desarrollo territorial sostenible en municipios costeros, incluyendo capacitación, emprendimientos productivos, innovación tecnológica y fortalecimiento de infraestructura vinculada al sector pesquero.
+Los recursos del Fondo no podrán ser trasladados, reasignados ni utilizados para cubrir déficit presupuestarios generales del Estado.
+ARTÍCULO 21- Capitalización inicial del Fondo Estratégico del Domo
+Con el fin de garantizar la implementación efectiva del régimen especial establecido en la presente ley, el Estado podrá realizar un aporte inicial extraordinario al Fondo Estratégico del Domo Térmico destinado a financiar inversiones estratégicas de puesta en marcha del sistema.
+El aporte podrá destinarse prioritariamente a: monitoreo científico y oceanográfico, infraestructura de vigilancia marítima, modernización de flota nacional estratégica y desarrollo de infraestructura pesquera de valor agregado.
+ARTÍCULO 22- Fuentes de financiamiento
+El Fondo Estratégico del Domo se financiará mediante:
+a) Canon por concesión o autorización de aprovechamiento dentro del régimen especial.
+b) Porcentaje específico sobre el valor de exportaciones provenientes del área regulada.
+c) Multas impuestas conforme al régimen sancionatorio de esta ley.
+d) Cooperación internacional, créditos verdes y financiamiento climático.
+e) Recursos asignados por el presupuesto nacional, cuando así lo disponga la ley de presupuesto correspondiente.
+El reglamento de esta ley definirá los porcentajes aplicables, criterios de cálculo y mecanismos de recaudación, garantizando transparencia y trazabilidad financiera.
+ARTÍCULO 23- Gobernanza, transparencia y control del Fondo
+El Fondo Estratégico del Domo será administrado bajo principios de transparencia, eficiencia, trazabilidad financiera y control público.
+Su gestión estará sujeta a:
+Auditoría interna permanente.
+Fiscalización de la Contraloría General de la República.
+Publicación anual de estados financieros auditados.
+Informe público anual de ejecución presupuestaria y resultados científicos alcanzados.
+La administración del Fondo deberá alinearse con las recomendaciones técnicas del Comité Científico Permanente, en lo relativo a prioridades de inversión científica y monitoreo.
+El incumplimiento de los principios de transparencia y destino específico dará lugar a las responsabilidades administrativas y penales correspondientes conforme al ordenamiento jurídico vigente.
+CAPÍTULO V
+RÉGIMEN SANCIONATORIO Y GOBERNANZA CIENTÍFICA
+ARTÍCULO 24- Infracciones
+Constituyen infracciones graves dentro del régimen especial del Domo Térmico:
+Pesca sin autorización válida dentro del área delimitada.
+Captura dirigida o incidental de individuos por debajo de la talla mínima establecida.
+Manipulación, desactivación o interferencia de sistemas de monitoreo electrónico.
+Declaración falsa, incompleta o alterada de capturas.
+Incumplimiento de zonificación dinámica o cierres temporales obligatorios.
+Obstaculización de labores de observación científica.
+Las infracciones serán clasificadas reglamentariamente según su gravedad, reincidencia y daño ecológico potencial.
+ARTÍCULO 25- Sanciones
+Las infracciones serán sancionadas con:
+Multas proporcionales al valor comercial de la captura involucrada.
+Suspensión temporal de la licencia para operar dentro del régimen especial.
+Inhabilitación definitiva en casos de reincidencia grave.
+Confiscación de producto, equipo o artes, cuando corresponda.
+Las sanciones deberán respetar los principios de proporcionalidad, razonabilidad y debido proceso administrativo.
+ARTÍCULO 26- Responsabilidad objetiva ambiental
+Los operadores autorizados responderán objetivamente por los daños ambientales generados en el área del Domo Térmico, independientemente de culpa o dolo, sin perjuicio de las acciones de repetición contra responsables individuales.
+La responsabilidad objetiva se fundamenta en el deber constitucional de conservación y en el principio de prevención ambiental.
+ARTÍCULO 27- Creación del Comité Científico Permanente del Domo Térmico
+Créese el Comité Científico Permanente del Domo Térmico de Costa Rica como órgano técnico independiente encargado de evaluar el estado del ecosistema, analizar indicadores ambientales y emitir recomendaciones científicas para la gestión adaptativa del régimen especial establecido en la presente ley, el cual estará integrado por:
+Un representante del Centro de Investigación en Ciencias del Mar y Limnología (Cimar) de la Universidad de Costa Rica.
+Un representante de la Escuela de Ciencias Biológicas o Programa de Biología Marina de la Universidad Nacional.
+Un representante del Instituto Tecnológico de Costa Rica, con experiencia en ciencias marinas o ambientales.
+Un representante de la Universidad Técnica Nacional, con experiencia en gestión pesquera o ciencias marinas.
+Un representante de la Academia Nacional de Ciencias de Costa Rica, con especialidad en oceanografía o biología marina.
+Un especialista internacional invitado cuando el Comité lo considere pertinente.
+Un representante del Estado costarricense con formación científica en oceanografía o biología marina.
+Funciones:
+Evaluar periódicamente el estado de la biomasa explotable en el área del Domo Térmico.
+Analizar indicadores oceanográficos y ambientales relevantes.
+Emitir recomendaciones técnicas sobre cuotas de captura y esfuerzo pesquero.
+Elaborar un informe anual del estado del Domo Térmico.
+Asesorar técnicamente a las autoridades responsables de la implementación de la ley.
+Principios de funcionamiento:
+El Comité actuará bajo principios de independencia científica, transparencia, acceso abierto a la información y toma de decisiones basada en evidencia científica.
+ARTÍCULO 28- Carácter vinculante de las recomendaciones técnicas
+Las recomendaciones técnicas emitidas por el Comité Científico Permanente serán vinculantes para la autoridad administrativa en lo relativo a:
+Ajustes de cuotas.
+Cierres temporales.
+Modificación de zonificación dinámica.
+Reducción o ampliación del esfuerzo pesquero conforme a evidencia multianual.
+La autoridad administrativa deberá formalizar dichas recomendaciones mediante acto motivado de ejecución inmediata.
+ARTÍCULO 29- Sistema Nacional de Indicadores del Domo
+Establécese el Sistema Nacional de Indicadores del Domo Térmico, el cual incluirá como mínimo:
+Temperatura superficial del mar.
+Profundidad de la termoclina y capa de mezcla.
+Concentración de clorofila-a.
+Niveles de oxígeno disuelto.
+Evaluaciones periódicas de biomasa por especie prioritaria.
+La información generada tendrá carácter público, salvo excepciones debidamente justificadas por razones de seguridad nacional.
+ARTÍCULO 30- Informe anual del estado del domo
+El Comité Científico Permanente deberá elaborar y publicar un informe anual del estado del domo, el cual contendrá evaluación de biomasa, variabilidad climática, cumplimiento normativo y recomendaciones de manejo.
+El informe será remitido a la Asamblea Legislativa, para conocimiento y control político.
+ARTÍCULO 31- Evaluación técnica externa
+Cada cinco años se realizará una evaluación técnica externa e independiente del régimen especial del Domo Térmico, con el fin de determinar su eficacia ecológica, económica e institucional.
+Los resultados deberán publicarse íntegramente.
+ARTÍCULO 32- Transparencia y acceso a la información
+Toda información científica, operativa y financiera generada bajo esta ley será de acceso público conforme a la normativa de transparencia vigente.
+La opacidad injustificada en la gestión del régimen especial constituirá falta administrativa grave.
+CAPÍTULO VI
+COORDINACIÓN INSTITUCIONAL Y ARMONIZACIÓN NORMATIVA
+ARTÍCULO 33- Coordinación interinstitucional obligatoria
+Las instituciones competentes en materia pesquera, ambiental, marítima, portuaria, aduanera y de comercio exterior deberán coordinar, de manera obligatoria y permanente, la implementación de la presente ley.
+La coordinación interinstitucional tendrá como finalidad asegurar coherencia normativa, intercambio oportuno de información, fiscalización efectiva y cumplimiento integral del régimen especial del Domo Térmico.
+El incumplimiento injustificado de los deberes de coordinación podrá generar responsabilidad administrativa conforme al ordenamiento jurídico vigente.
+ARTÍCULO 34- Armonización con la legislación pesquera y ambiental vigente
+Las disposiciones de esta ley se aplicarán sin perjuicio de lo establecido en la legislación pesquera, ambiental y marítima vigente.
+En caso de conflicto específico relativo a la gestión adaptativa del Domo Térmico, prevalecerán las disposiciones especiales contenidas en la presente ley, en virtud de su carácter técnico y especializado.
+La interpretación de esta ley deberá realizarse de conformidad con los principios rectores establecidos en el artículo 4 y con el deber constitucional de conservación ambiental.
+ARTÍCULO 35- Prioridad del interés público superior
+La gestión del Domo Térmico constituye actividad de interés público superior, orientada a la protección del patrimonio natural estratégico de la nación, la seguridad alimentaria y la estabilidad económica intergeneracional.
+Ningún interés particular podrá prevalecer sobre la conservación de la resiliencia ecológica del sistema, cuando exista riesgo científicamente fundado de afectación significativa a la biomasa explotable.
+ARTÍCULO 36- Reglamentación y entrada en vigor
+El Poder Ejecutivo deberá emitir el reglamento de la presente ley dentro del plazo máximo de seis meses, contado a partir de su publicación en el diario oficial La Gaceta.
+El reglamento deberá desarrollar aspectos técnicos operativos, criterios de cálculo, procedimientos administrativos y estándares tecnológicos, sin alterar el contenido sustantivo ni los principios vinculantes establecidos en esta ley.
+La presente ley entrará en vigor a partir de su publicación en el diario oficial La Gaceta.
+CAPÍTULO VIl
+DISPOSICIONES TRANSITORIAS
+TRANSITORIO I- Delimitación inicial y puesta en marcha del sistema científico
+Dentro de un plazo máximo de doce meses, contado a partir de la entrada en vigor de la presente ley, la autoridad competente deberá:
+Establecer la delimitación técnica inicial del Domo Térmico conforme a criterios oceanográficos verificables.
+Implementar formalmente el Sistema Nacional de Indicadores del Domo.
+Constituir e instalar el Comité Científico Permanente.
+Definir los umbrales técnicos iniciales para la activación de la Regla de Control de Captura.
+Mientras se implementan estos instrumentos, la autoridad administrativa aplicará el principio precautorio en la autorización de nuevas licencias o ampliaciones de esfuerzo.
+TRANSITORIO II- Adecuación tecnológica de embarcaciones
+Las embarcaciones que a la fecha de entrada en vigencia de la presente ley operen dentro del área que posteriormente sea delimitada como Domo Térmico dispondrán de un plazo máximo de dieciocho meses para adecuarse a los requisitos de monitoreo electrónico integral y trazabilidad establecidos en esta ley.
+Durante el período de adecuación, deberán demostrar avance progresivo en la implementación de los sistemas exigidos. La falta de cumplimiento al vencimiento del plazo implicará suspensión automática de la autorización para operar en el régimen especial.
+TRANSITORIO III- Ajuste progresivo del esfuerzo pesquero
+En caso de que las evaluaciones científicas iniciales determinen que el esfuerzo pesquero vigente supera niveles sostenibles, la autoridad competente implementará un Plan de ajuste progresivo, dentro de un plazo no mayor a veinticuatro meses, conforme a criterios técnicos y garantizando debido proceso administrativo.
+Dicho Plan podrá incluir reducción gradual de días de pesca, límites de captura o número de embarcaciones, procurando minimizar impactos socioeconómicos sin comprometer la sostenibilidad ecológica.
+TRANSITORIO IV- Reglamentación complementaria técnica
+El Poder Ejecutivo deberá emitir reglamentación técnica complementaria dentro del plazo establecido en el artículo 35, incluyendo protocolos de monitoreo electrónico, especificaciones tecnológicas mínimas y metodologías de evaluación de biomasa.
+La reglamentación no podrá reducir los estándares de protección establecidos en la presente ley.
+TRANSITORIO V- Evaluación inicial de impacto del régimen especial
+Dentro de los primeros tres años de implementación del régimen especial, el Comité Científico Permanente elaborará un informe de evaluación inicial que analice:
+Evolución de biomasa.
+Cumplimiento del sistema de monitoreo.
+Impactos económicos y sociales del régimen.
+Necesidad de ajustes normativos adicionales.
+Este informe será remitido a la Asamblea Legislativa y publicado íntegramente.
+Rige a partir de su publicación.
+Pedro Rojas Guzmán
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 19-03-2026).

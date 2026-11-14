@@ -1,0 +1,359 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA EL FORTALECIMIENTO DE LA RECTORÍA DEL MINISTERIO DE SALUD EN LA GESTIÓN Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS
+PODER EJECUTIVO
+EXPEDIENTE N.° 24.251
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+NOTA: A solicitud de la parte interesada, este Departamento no realizó la revisión de errores formales, materiales e idiomáticos que pueda tener este proyecto de ley.
+PROYECTO DE LEY
+LEY PARA EL FORTALECIMIENTO DE LA RECTORÍA DEL MINISTERIO DE SALUD EN LA GESTIÓN Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS
+Expediente N.º 24.251
+ASAMBLEA LEGISLATIVA:
+El artículo 50 de la Constitución Política consagra el derecho de todas las personas a un ambiente sano y ecológicamente equilibrado, siendo el deber del Estado garantizar, defender y preservar ese derecho. Así las cosas, la salud de la población es un bien de interés público tutelado por el Estado, por lo que es potestad del Ministerio de Salud velar por la salud de la población y de las condiciones sanitarias y ambientales, toda vez que es el ente Rector del Sistema Nacional de Salud, por lo que dirige y conduce a los actores sociales para el desarrollo de acciones que protejan y mejoren el estado de salud físico, mental y social de los habitantes mediante el ejercicio de la rectoría del Sistema Nacional de Salud, así mismo, es responsable de dictar la política nacional de salud, la formación, planificación y coordinación de todas las actividades públicas y privadas relativas a salud, así como la ejecución de aquellas actividades que le competen conforme a la ley.
+El presente proyecto de ley se plantea con la finalidad de adoptar medidas más sólidas y efectivas para la gestión integral de residuos en Costa Rica, debido a que la crisis en la gestión de residuos sólidos está alcanzando proporciones alarmantes debido a la falta de diversificación tecnológica, el cierre de rellenos sanitarios sin alternativas adecuadas, la excesiva tramitología en la gestión de permisos que generan retrasos en la ejecución de proyectos. Si no se toman medidas efectivas de manera inmediata, esta crisis podría agravarse aún más, comprometiendo la salud pública, el medio ambiente y la calidad de vida de las comunidades afectadas.
+La Ley General de Salud N.° 5395, establece la responsabilidad del Poder Ejecutivo a través del Ministerio de Salud de velar por la salud pública de todos los costarricenses tal y como se señala en el artículo 2:
+“Es función esencial del Estado velar por la salud de la población. Corresponde al Poder Ejecutivo por medio del Ministerio de Salubridad Pública, al cual se referirá abreviadamente la presente ley como "Ministerio", la definición de la política nacional de salud, la formación, planificación y coordinación de todas las actividades públicas y privadas relativas a salud, así como la ejecución de aquellas actividades que le competen conforme a la ley. Tendrá potestades para dictar reglamentos autónomos en estas materias.”
+A su vez, el artículo N.° 7 de la Ley para la Gestión Integral de Residuos N.° 8839 establece que el jerarca del Ministerio de Salud será el rector en materia de gestión integral de residuos, con potestades de dirección, monitoreo, evaluación y control, señala entre sus funciones las siguientes:
+“a) Formular y ejecutar la política nacional y el Plan Nacional de Gestión Integral de Residuos, así como evaluarlos y adaptarlos periódicamente en coordinación con el Ministerio de Ambiente, Energía y Telecomunicaciones y el Ministerio de Agricultura y Ganadería.
+b) Dictar los reglamentos, por tipo de residuo, que sean necesarios para la gestión integral de residuos.
+c) Verificar la aplicación de esta Ley y sus reglamentos.
+d) Desarrollar las herramientas y los reglamentos técnicos que sean necesarios para la gestión integral de residuos.
+e) Fomentar e implementar la coordinación interinstitucional para una gestión integral de los residuos, insertándola en una acción ambiental pública, para optimizar e integrar coherentemente los esfuerzos y los recursos de la Administración Pública Central y descentralizada en esa materia.
+f) Definir los indicadores de cumplimiento en materia de gestión integral de residuos.
+g) Evaluar en forma continua las políticas, los planes, los programas y los reglamentos técnicos asociados a la gestión integral de residuos.
+h) Identificar las oportunidades para alcanzar la gestión integral de residuos, fomentando tecnologías, inversiones y la réplica de modelos que demuestren ser eficaces y aplicables según las condiciones y las características de los residuos generados en el país.
+Administrar el Fondo para la gestión integral de residuos, que se crea en esta Ley.
+j) Establecer un sistema de información nacional sobre gestión integral de residuos que permita elaborar los inventarios e indicadores relacionados con la gestión integral de residuos que complementen el sistema de indicadores e índices de salud y ambientales nacionales.
+k) Promover incentivos para la gestión integral de residuos, dirigidos especialmente al fomento y la capacitación de microempresas, cooperativas y otras organizaciones y/o empresas sociales que trabajan en la recuperación y gestión de residuos.
+l) Vigilar para que, en el marco de aplicación de esta Ley, se respete la Ley N.º 8220, Protección al ciudadano del exceso de requisitos y trámites administrativos, de 4 de marzo de 2002, y sus reformas.”
+En el ejercicio de sus potestades como órgano rector, el Ministerio de Salud, mediante la Dirección de Protección Radiológica y Salud Ambiental, Unidad de Salud Ambiental, emitió un informe técnico acerca de la actual situación nacional de residuos sólidos urbanos en Costa Rica mediante oficio MS-DPRSA-USA-0180-2024, del cual se transcriben los siguientes elementos esenciales:
+Metodología:
+La recolección de datos se llevó a cabo mediante información presentada por gestores autorizados de residuos sólidos, Municipalidades, operadores de rellenos sanitarios, Direcciones Regionales del Ministerio de Salud garantizando la obtención de información precisa y representativa de la situación actual.
+Análisis de la situación:
+En este informe, se abordan los principales aspectos relacionados con la gestión de residuos sólidos ordinarios en el país. Se proporciona un resumen de los hallazgos, destacando áreas críticas, tendencias y oportunidades de mejora.
+Hallazgos:
+Generación de residuos sólidos ordinarios:
+El Ministerio de Salud inició la aplicación de encuestas a las municipalidades a partir del 2017 sobre residuos ordinarios. En esta sección se presenta la información obtenida de estas encuestas desde el 2017 hasta 2022, y aborda los residuos ordinarios generados, recolectados, recuperados, reciclados, utilizados para compostaje, los gestionados mediante co-procesamiento y la disposición final. Se presentarán datos generales del país.
+El crecimiento en la generación de residuos se debe a la rápida urbanización, al desarrollo económico y al crecimiento de la población. Por lo anterior, es de esperar que la generación de residuos crezca paulatinamente, si no se aplican medidas para consumo y producción responsable. En la tabla N.°1 puede observase este comportamiento en los residuos que se han generado en el país entre 2016 y 2022, por hogar y otros generadores, siendo que hubo 398 mil toneladas más en el 2022 con relación al 2016.
+TABLA N.°1
+Fu
+ente. Ministerio de
+Salud.
+Dato
+s en
+10
+3
+ton
+elada
+2016
+2017
+18
+20
+2019
+2020
+2021
+2022
+• Residuos domésticos
+1147
+898
+63
+10
+1071
+1182
+1327.2
+1280.18
+• Otros residuos municipales
+71
+369
+99
+3
+273
+278
+291.3
+335.59
+0
+200
+400
+600
+800
+1000
+1200
+1400
+Residuos Generados por Origen
+TABLA N.°1
+Fu
+ente. Ministerio de
+Salud.
+Dato
+s en
+10
+3
+ton
+elada
+2016
+2017
+18
+20
+2019
+2020
+2021
+2022
+• Residuos domésticos
+1147
+898
+63
+10
+1071
+1182
+1327.2
+1280.18
+• Otros residuos municipales
+71
+369
+99
+3
+273
+278
+291.3
+335.59
+0
+200
+400
+600
+800
+1000
+1200
+1400
+Residuos Generados por Origen
+Considerando el análisis que realizaron Madrigal y Alpízar (2023) para la CEPAL, en un escenario sin acciones, se proyectan tasas de generación que crecen al 1%. En los últimos años en Costa Rica las tasas de generación de residuos (kg/habitante/día) han crecido entre 7,5% y 10%. Es importante recordar que el crecimiento de la generación está supeditado al crecimiento de la economía y al ritmo de crecimiento de la población, por lo que se considera que un crecimiento lineal de 6% de la tasa podría ser previsto para un horizonte de tiempo de 10 años.
+Grafica N.°1
+Se observa la recuperación cambió su comportamiento de años anteriores al 2022, donde un porcentaje significativo de residuos ahora va a co-procesamiento; anteriormente, lo gestionado en ese tipo de valorización no superaba el 2%. Es importante indicar que los residuos que se envían a co-procesamiento provienen de sitios de disposición final en los que se está realizando separación (51073.00 Ton en 2022). El reciclaje, en términos porcentuales, decreció en relación con el 2017, actualmente, estos residuos se disponen en rellenos sanitarios en el mejor de los casos o quedan en otros sitios como lotes baldíos o cuerpos de agua.
+El compostaje ha variado, siendo que en 2019 tuvo un incremento significativo, pasando de un 8% de lo recuperado en 2018 a 60% en 2019. No obstante, para 2020 bajó a 48% y mantiene un comportamiento similar. Los residuos orgánicos representan un porcentaje alto en la composición de residuos municipales. Tomando como valor de referencia que el 53% de los residuos municipales ordinarios son orgánicos (Estado de la Nación, 2019), esto lleva a que sólo el 5% del total de residuos orgánicos generados en 2022 fue compostado.
+TABLA
+3
+Fu
+ente. Ministerio ferio de
+De Salud
+Dato
+Os en en
+10
+3
+t
+tonelada
+2016
+2017
+2018
+2019
+2020
+21
+20
+2022
+• Relleno sanitario
+988
+1044
+1296
+1162
+1223
+128
+2.05
+1323.99
+• Otros tipos de disposición
+156
+120
+105
+91
+145
+0.5
+18
+118.54
+0
+200
+400
+600
+800
+1000
+1200
+1400
+Cantidades designadas para disposición
+TABLA
+3
+Fu
+ente. Ministerio ferio de
+De Salud
+Dato
+Os en en
+10
+3
+t
+tonelada
+2016
+2017
+2018
+2019
+2020
+21
+20
+2022
+• Relleno sanitario
+988
+1044
+1296
+1162
+1223
+128
+2.05
+1323.99
+• Otros tipos de disposición
+156
+120
+105
+91
+145
+0.5
+18
+118.54
+0
+200
+400
+600
+800
+1000
+1200
+1400
+Cantidades designadas para disposición
+Grafica N.° 2
+Según la Ley N.° 8839, en su artículo 8, las municipalidades tienen la responsabilidad de la gestión integral de los residuos generados en su cantón y deben de garantizar que en su territorio se provea del servicio de recolección de residuos en forma selectiva, accesible, periódica y eficiente para todos los habitantes, así como de centros de recuperación de materiales, con especial énfasis en los de pequeña y mediana escala para la posterior valorización (Ley N.° 8839, 2010).
+Mapa N.° 1
+Fuente. ministerio de salud.
+Tecnologías existentes para residuos sólidos ordinarios:
+Durante un período de aproximadamente 20 años, Costa Rica ha experimentado una notable transición en la gestión de sus residuos sólidos, pasando del uso indiscriminado de vertederos a la disposición de la mayoría de sus residuos ordinarios en rellenos sanitarios. Este cambio se ha reflejado en el cierre de un total de 41 vertederos de un conjunto de 44, dejando en funcionamiento únicamente tres de ellos, los cuales se encuentran actualmente en proceso de clausura, uno de ellos mantenido abierto por orden judicial.
+Mapa N.° 2
+Fuente: Ministerio de Salud
+En la actualidad, se reporta la operación de 8 rellenos sanitarios distribuidos de la siguiente manera: tres ubicados dentro del Gran Área Metropolitana, dos en la Provincia de Limón, uno en el Cantón de Montes de Oro en la Provincia de Puntarenas, otro en el Cantón de San Carlos, y finalmente uno en la Provincia de Guanacaste. A continuación, se detallan los nombres y ubicaciones de estos rellenos sanitarios.
+Tabla N.° 4
+NOMBRE DEL SITIO
+PROVINCIA
+CANTÓN
+REGIÓN
+VIDA ÚTIL
+Relleno Sanitario Los Pinos, (Wpp Coriclean)
+Cartago
+Cartago
+Central
+0 meses*
+Parque de Tecnología Ambiental Uruka (EBI)
+San José
+San José
+Central
+3 a 5 meses
+Relleno Sanitario Los Laureles
+(Corporación Tecnológico Magallanes S.A)
+Limón
+Pococí
+Huetar Caribe
+5 años
+Parque Ecológico Industrial Tecnoambiente
+Puntarenas
+Montes de Oro
+Pacífico Central
+10.4 años
+Parque de Tecnología Ambiental Aczarrí (EBI)
+San José
+Aserrí
+Central
+11 años
+Relleno Sanitario San Carlos. (Municipal)
+Alajuela
+San Carlos
+Huetar Norte
+12 años
+Parque Tecnológico Ambiental Santa Cruz (Municipal)
+Guanacaste
+Santa Cruz
+Chorotega
+25 años
+Parque de Tecnología Ambiental Limón (EBI)
+Limón
+Limón
+Huetar Caribe
+30 años
+*Relleno sanitario sin permiso de funcionamiento y con orden de clausura, habilitado por orden de la sala constitucional.
+Como se detalla en la tabla N.°1, se identifican 2 rellenos sanitarios actualmente en funcionamiento que presentan una capacidad limitada o nula para recibir residuos sólidos ordinarios. Los residuos generados en el Gran Área Metropolitana (GAM), que constituyen el 80% del total de los residuos destinados a los rellenos sanitarios, son transportados a los sitios de disposición de Aczarrí, Tecnoambiente y Uruka. Con el cierre del relleno sanitario de Uruka, estos residuos deberán ser dirigidos hacia otras instalaciones debidamente autorizadas para su disposición.
+Mapa N.° 3
+Fuente: Ministerio de Salud
+Como se mencionó anteriormente, se ha observado un aumento en la adopción de prácticas de co-procesamiento o el uso de tecnologías térmicas para el tratamiento de residuos sólidos.
+Esto se debe a que los rellenos sanitarios Aczarrí y Uruka están llevando a cabo la separación de materiales antes de la disposición final en la celda.
+Áreas Críticas:
+La carencia de una variedad de tecnologías en la gestión de residuos, aparte de los rellenos sanitarios, restringe la extensión de su vida útil y dificulta el progreso hacia una gestión de residuos más integral y una economía circular más sostenible. La adopción de alternativas como el compostaje, la pirólisis o la digestión anaeróbica podría proporcionar soluciones viables para disminuir la cantidad de residuos destinados a vertederos y mejorar la eficacia en su manejo.
+Se debe realizar un análisis detallado con respecto a la creación de nuevo rellenos sanitarios como una medida a corto plazo, se recomienda considerar dentro de esta iniciativa las zonas más lejanas a los rellenos sanitarios existentes, como la zona sur y norte del país (ver MAPA N.° 3), donde el proyecto venga a contribuir con el manejo adecuado de los residuos ordinarios de la mayor cantidad de cantones, con otras tecnologías en complemento acordes al modelo de economía circular.
+Tecnologías para implementar:
+- Descripción de las tecnologías viables para el país: En general, los rellenos sanitarios siendo de las tecnologías más accesibles, ofrecen una forma segura y controlada de gestionar los residuos sólidos urbanos, minimizando los riesgos para la salud y el medio ambiente. Sin embargo, es importante destacar que se considera más deseable seguir reduciendo, reutilizando y reciclando los residuos en primer lugar, antes de recurrir a su disposición final en un relleno sanitario, es importante reducir el uso de rellenos sanitarios incorporando otras tecnologías de tratamiento de residuos sólidos en conjunto con los rellenos sanitarios. Algunas de las tecnologías para el tratamiento de residuos urbanos son las siguientes:
+- Incineración: Consiste en la destrucción térmica de los residuos mediante su oxidación completa, transformándolos en gases de combustión y productos sólidos (cenizas y escorias). Esta tecnología permite reducir el volumen de los residuos en un 90% y generar energía eléctrica o térmica a partir del calor liberado. Sin embargo, también tiene inconvenientes, como la emisión de gases contaminantes, la generación de residuos peligrosos (cenizas y escorias) que requieren un tratamiento específico, y la alta inversión y mantenimiento que requiere la planta incineradora.
+- Pirólisis: Consiste en la descomposición térmica de los residuos en ausencia de oxígeno, produciendo un gas combustible (gas de síntesis), un líquido (aceite pirolítico) y un químico a partir de los residuos, reduciendo su cantidad y toxicidad. Sin embargo, también tiene inconvenientes, como la necesidad de pretratar y clasificar los residuos para obtener una composición homogénea, la alta temperatura y presión que requiere el proceso, y la complejidad técnica y económica que implica la operación y el control de la planta.
+- Reciclaje: Consiste en la transformación de los residuos en nuevos materiales o productos, mediante procesos físicos, químicos o mecánicos. El reciclaje tiene múltiples beneficios, como: Reduce el volumen de residuos que llegan a disposición final, evitando la saturación de los rellenos sanitarios y la contaminación del medio ambiente, también reduce los impactos ambientales negativos asociados a la extracción, transporte y procesamiento de las materias primas, como la deforestación, la erosión, la pérdida de biodiversidad, hay un ahorra energía, maximización de recursos naturales no renovables o escasos, disminuye las emisiones de CO2 y contribuye a la mitigación del cambio climático, al evitar la combustión de combustibles fósiles y la liberación de gases de efecto invernadero y genera la creación de nuevos puestos de trabajo en el sector del reciclaje y fomenta la economía circular y la innovación.
+- Compostaje y la Digestión anaerobia: Consiste en la descomposición biológica controlada de los residuos orgánicos (restos de comida, poda, papel, etc.) por la acción de microorganismos aerobios (que necesitan oxígeno), produciendo un abono natural llamado compost. El compostaje tiene múltiples beneficios, como: Reducir el volumen y el peso de los residuos orgánicos, disminuyendo la cantidad de residuos que se envían a los rellenos sanitarios y la generación de lixiviados y gases contaminantes, recuperación de los nutrientes y la materia orgánica de los residuos, devolviéndolos al suelo y mejorando su fertilidad, estructura y capacidad de retención de agua, evita el uso de fertilizantes químicos sintéticos, que pueden tener efectos nocivos sobre el medio ambiente y la salud humana, como la contaminación del agua, la eutrofización, la acidificación, promueve la agricultura ecológica y sostenible y fomenta la educación ambiental y la participación ciudadana en la gestión de los residuos.
+- Gasificación: Consiste en la conversión térmica de los residuos en un gas combustible (gas de síntesis) y un residuo sólido (escoria), mediante la aplicación de calor y una cantidad limitada de oxígeno o aire. Aprovecha el potencial energético de los residuos, al obtener gas de síntesis que puede usarse como combustible para generar electricidad o calor. Genera un residuo sólido inerte (escoria), que puede usarse como material de construcción o relleno, o ser dispuesto en los rellenos sanitarios con menor impacto ambiental que los residuos originales.
+Dificultades de implementación:
+La resistencia de las comunidades y de los gobiernos locales hacia la creación de nuevos rellenos sanitarios y/o la adopción de otras tecnologías de gestión de residuos ha dado lugar a un estancamiento en la ejecución de proyectos clave en este ámbito. Esta oposición, impulsada por preocupaciones ambientales, de salud pública y de calidad de vida, ha generado obstáculos significativos para el avance en la gestión de residuos en el país. Como resultado, numerosas iniciativas se han visto afectadas por retrasos significativos, con algunos proyectos acumulando más de una década de intentos de ejecución sin éxito.
+Este prolongado proceso de planificación y aprobación no solo ralentiza la implementación de soluciones urgentemente necesarias para abordar la creciente crisis en la gestión de residuos sólidos, sino que también tiene un impacto negativo en la capacidad del país para hacer frente eficazmente a los desafíos ambientales y de salud asociados con la acumulación y la disposición inadecuada de residuos. Además, crea incertidumbre y falta de confianza en las autoridades y en los sistemas de gobernanza, lo que dificulta aún más la resolución de este problema.
+Inversión solo proveniente de la empresa privada lo que genera una problemática para la planificación de proyectos. Es fundamental encontrar un equilibrio entre el sector público y el privado, promoviendo la competencia, la transparencia y la rendición de cuentas para garantizar que los proyectos se ejecuten de manera eficiente, ética y en beneficio del interés público.
+Para superar esta situación, es fundamental adoptar un enfoque más inclusivo y participativo en la planificación y ejecución de proyectos de gestión de residuos, generando las condiciones en el país para facilitar el ingreso de tecnologías con la generación eléctrica, creando un órgano técnico especializado liderado por el Ministerio de Salud para la evaluación de tecnologías que se deseen desarrollar en el país según las necesidades regionales y la colaboración con entidades gubernamentales y organizaciones no gubernamentales.
+Principales conclusiones del oficio ms-dprsa-usa-0180-2024:
+a) Cantidad de Residuos Generados:
+La información recopilada a partir de las encuestas realizadas por el Ministerio de Salud entre 2017 y 2022 revela un crecimiento significativo en la generación de residuos ordinarios en Costa Rica. Este aumento se atribuye principalmente a la rápida urbanización, el desarrollo económico y el crecimiento demográfico del país. Sin embargo, es importante destacar que este crecimiento podría haber sido aún mayor de no haberse aplicado medidas para fomentar un consumo y una producción más responsables.
+Es relevante destacar los cambios en la gestión de residuos, especialmente en cuanto a la recuperación y el tratamiento de estos. Se observa un incremento significativo en la cantidad de residuos enviados al co-procesamiento, lo que indica un cambio positivo en la valorización de los residuos. Sin embargo, este cambio ha sido acompañado por una disminución en el reciclaje, lo que plantea la necesidad de revisar y fortalecer las estrategias de gestión de residuos para garantizar una mayor eficiencia en la recuperación y valorización de estos.
+El compostaje también ha experimentado variaciones en su práctica a lo largo de los años, con picos de incremento seguidos de fluctuaciones. A pesar de la importancia de los residuos orgánicos en la composición total de los residuos municipales, el porcentaje de estos residuos que se compostan sigue siendo bajo en comparación con el total generado, lo que sugiere la necesidad de promover y fortalecer el compostaje como una estrategia clave en la gestión de residuos orgánicos.
+En conclusión, los hallazgos presentados resaltan la importancia de adoptar medidas más sólidas y efectivas para la gestión integral de residuos en Costa Rica. Es fundamental que las municipalidades cumplan con su responsabilidad establecida por la Ley N.° 8839 y garanticen la provisión de servicios de recolección selectiva y eficiente, así como la implementación de centros de recuperación de materiales para la valorización adecuada de los residuos. La gestión de residuos no solo es crucial para preservar el medio ambiente y la salud pública, sino también para promover una economía circular más sostenible y resiliente en el país.
+b) Infraestructura de Gestión:
+El cierre de rellenos sanitarios sin contar con alternativas adecuadas está teniendo consecuencias significativas en la gestión de residuos, especialmente en áreas densamente pobladas como el GAM. La falta de opciones viables está llevando a una saturación de los sitios restantes, lo que representa un desafío considerable para las autoridades locales y las comunidades afectadas. Esta situación se agrava aún más en regiones como el sur del país, donde la escasez de instalaciones adecuadas obliga a recorrer largas distancias para la disposición final de los residuos.
+La necesidad de viajar distancias prolongadas para desechar los residuos no solo aumenta los costos operativos para las municipalidades y los servicios de recolección, sino que también conlleva un impacto ambiental significativo asociado al transporte de residuos a larga distancia. Además, esta situación puede resultar en un aumento de la contaminación del aire y las carreteras debido al tráfico constante de vehículos de transporte de residuos.
+En consecuencia, es fundamental abordar de manera urgente la falta de instalaciones adecuadas para la gestión de residuos en estas áreas, implementando medidas que permitan una disposición final adecuada y sostenible de los residuos, así como promover la reducción en la generación de residuos y el fomento de prácticas de reciclaje y reutilización. Esto no solo contribuirá a mitigar los impactos negativos en el medio ambiente y la salud pública, sino que también mejorará la eficiencia y la sostenibilidad en la gestión de residuos a nivel regional y nacional.
+En resumen, la crisis en la gestión de residuos sólidos en Costa Rica está alcanzando proporciones alarmantes debido a la falta de diversificación tecnológica, el cierre de rellenos sanitarios sin alternativas adecuadas, la oposición de los gobiernos locales que generan retrasos en la ejecución de proyectos. Si no se toman medidas efectivas de manera inmediata, esta crisis podría agravarse aún más, comprometiendo la salud pública, el medio ambiente y la calidad de vida de las comunidades afectadas.
+Es imperativo que las autoridades y la sociedad en su conjunto trabajen juntas para encontrar soluciones sostenibles y equitativas que aborden de manera integral el manejo de residuos y promuevan una economía circular y un desarrollo sostenible a largo plazo. La inacción frente a esta crisis solo intensificará sus impactos negativos y hará más difícil su resolución en el futuro.
+Es importante, resaltar que Costa Rica es miembro de la Organización para la Cooperación y Desarrollo Económico (OCDE); por lo que debe tomar acciones para el cumplimiento de un conjunto de instrumentos legales de dicha organización y en materia ambiental estos instrumentos legales promueven que los países miembros adopten normas y estándares internacionales, mejores prácticas y directrices de política que los orienten hacia prácticas de producción y consumo más sostenible, razón por la cual es necesario, que las definiciones, procedimientos, y requisitos en materia de manejo integral de residuos, sean congruentes con las definidas por la Organización para la Cooperación y el Desarrollo Económico (OCDE).
+Para tal efecto, es necesario que los procesos de gestión integral de los residuos sean una corresponsabilidad social, que implique la participación conjunta, coordinada y diferenciada de todos los productores, importadores, distribuidores, consumidores, gestores de residuos, tanto públicos como privados y que las autoridades competentes y las municipalidades tengan la obligación de informar a la población por medios idóneos sobre los riesgos e impactos a la salud y al ambiente asociados a la gestión integral de residuos. Asimismo, los generadores y gestores deberán estar obligados a informar a las autoridades públicas sobre los riesgos e impactos a la salud y al ambiente asociados a estos.
+De igual forma el Estado, las municipalidades y las demás instituciones públicas tienen el deber de garantizar y fomentar el derecho de todas las personas que habitan la República a participar en forma activa, consciente, informada y organizada en la toma de decisiones y acciones tendientes a proteger y mejorar el ambiente, trabajando de forma conjunta para encontrar soluciones sostenibles y equitativas que aborden de manera integral el manejo de residuos y promuevan una economía circular y un desarrollo sostenible a largo plazo.
+La responsabilidad atinente a la rectoría establecida en el artículo 7 de la ley N.° 8839, requiere de una mayor injerencia del Ministerio de Salud en la ejecución de acciones estratégicas referidas a la gestión inmediata de los residuos sólidos en el territorio nacional; en este sentido la autorización del uso de suelo para la instalación de estructuras dedicadas a la disposición final de residuos resulta una competencia inherente a la rectoría otorgada por la ley.
+Actualmente la ley de planificación urbana le delega la competencia del otorgamiento de licencias de uso de suelo a las municipalidades; sin embargo, esta facultad municipal ya cuenta con una serie de limitaciones reguladas en normativa que le otorga facultades específicas a entidades del poder ejecutivo, en este sentido, y como ejemplo, el plan regulador del territorio municipal, que determina los usos de suelo, es sometido a la revisión y aprobación previa del INVU y requieren el cumplimiento de trámites ante la Secretaría Técnica Ambiental del MINAE.
+Los usos de suelo, además, encuentran grandes limitaciones en las leyes que regulan el ambiente, la zona marítimo terrestre, los territorios indígenas, regulación por retiros en rutas nacionales, vías férreas, protección en mantos acuíferos, etc. De modo que no estamos en presencia de una facultad inherente a la autonomía propia de las municipalidades, sino a una materia en la cual las facultades municipales conviven con las potestades del ejecutivo para solventar de manera satisfactoria las necesidades del interés público.
+Al respecto la Sala Constitucional señaló en la sentencia 13577-2007 de las 14:40 horas del 19 de setiembre de 2007 lo siguiente: “Ahora bien, esa autonomía de las Municipalidades otorgadas por el Constituyente en el artículo 170 de la Norma Fundamental, si bien constituye formalmente un límite a las injerencias del Poder Ejecutivo, no puede entenderse que se trata de una autonomía plena o ilimitada, pues siempre se encuentra sujeta a ciertos límites, ya que la descentralización territorial del régimen municipal, no implica eliminación de las competencias asignadas a otros órganos y entes del Estado. Es por ello, que existen intereses locales cuya custodia corresponde a las Municipalidades y junto a ellos, coexisten otros cuya protección constitucional y legal es atribuida a otros órganos públicos, entre ellos el Poder Ejecutivo. Por tal razón, ha reconocido esta Sala que cuando el problema desborda la circunscripción territorial a la que están supeditados los gobiernos locales, las competencias pueden ser ejercidas por instituciones nacionales del Estado, pues el accionar de las primeras quedan integradas dentro de los lineamientos generales que se han trazado dentro del plan nacional de desarrollo, sin que ello signifique una violación a su autonomía.” (Lo destacado y subrayado no pertenece al original).
+De lo anterior podemos concluir que la autonomía municipal abarca únicamente aquellas atribuciones que pueden enmarcarse en el concepto de lo “local”, pues fuera de él, coexisten otras competencias que pueden ser ejercidas por los demás órganos del Estado dentro de la circunscripción territorial de las municipalidades.
+En la materia especifica de gestión de residuos, la Sala constitucional en su resolución 12974-13 anotó que en el manejo de desechos es indispensable la coordinación entre las entidades municipales y los demás órganos públicos, porque hay intereses locales que coexisten con los nacionales:
+“VI.-…resulta evidente que el manejo de residuos y los sistemas de disposición final tienen una vocación o connotación nacional o supra-local y no, eminentemente, o, exclusivamente, local, puesto que, se encuentran de por medio derechos fundamentales de las personas y esa problemática sanitaria no puede ser vista de forma aislada en un cantón específico como si se tratara de un compartimento estanco. A partir de lo expuesto, considera este Tribunal que las competencias encomendadas al Ministerio de Salud, como ente rector a nivel nacional en la materia de la gestión de residuos, no son inconstitucionales ni violentan la autonomía municipal, por cuanto, es una cuestión que le atañe a la colectividad nacional, sin demérito de las competencias que puedan tener, también, las corporaciones locales...”
+Por todas estas motivaciones expuestas y con el objetivo de mejorar la gestión de emisión de certificados de uso de la tierra para la instalación de estructuras dedicadas a la disposición final de residuos, y que dicha gestión corresponda al Ministerio de Salud y no a las municipalidades, sometemos ante las señoras y los señores diputados de la Asamblea Legislativa la siguiente iniciativa de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA EL FORTALECIMIENTO DE LA RECTORÍA DEL MINISTERIO DE SALUD EN LA GESTIÓN Y DISPOSICIÓN FINAL DE RESIDUOS SÓLIDOS
+ARTÍCULO 1- Adiciónese un párrafo quinto al artículo 88 de la Ley N.º 7794, Código Municipal, para que en adelante se lea de la siguiente manera:
+Artículo 88-
+[…]
+En el caso de otorgamiento de licencias municipales para actividades relativas a la disposición final de residuos, el Ministerio de Salud, a través de sus diferentes direcciones regionales, le notificará a la municipalidad correspondiente cuando se le haya otorgado el certificado de uso de la tierra al interesado para que esta pueda iniciar el trámite de otorgamiento de la licencia municipal respectiva.
+ARTÍCULO 2- Adiciónese un nuevo inciso m) al artículo 7 de la Ley N.º 8839, Ley para la Gestión Integral de Residuos, para que en adelante se lea de la siguiente manera:
+Artículo 7- Rectoría
+[…]
+m) Dictar las directrices y los reglamentos necesarios para la disposición final de residuos, los cuales deberán responder a los objetivos de esta Ley y su Reglamento.
+ARTÍ CULO 3- Refórmese el inciso b) del artículo 8 de la Ley N.º 8839, Ley para la Gestión Integral de Residuos, para que en adelante se lea de la siguiente manera:
+Artículo 8- Funciones de las municipalidades
+[…]
+b) Dictar los reglamentos en el cantón para la clasificación y recolección selectiva de residuos, los cuales deberán responder a los objetivos de esta Ley y su Reglamento.
+[…]
+ARTÍCULO 4- Adiciónese un artículo 28 bis a la Ley N.º 4240, Ley de Planificación Urbana, para que en adelante se lean de la siguiente manera:
+Artículo 28 bis- La emisión de certificados de uso de la tierra para la instalación de estructuras dedicadas a la disposición final de residuos corresponderá al Ministerio de Salud y no a las municipalidades.
+ARTÍCULO 5- Refórmese el inciso f) del artículo 16 de la Ley N.º 4240, Ley de Planificación Urbana, para que en adelante se lean de la siguiente manera:
+Artículo 16- De acuerdo con los objetivos que definan los propios y diversos organismos de gobierno y administración del Estado, el plan regulador local contendrá los siguientes elementos, sin tener que limitarse a ellos:
+[…]
+f) Los servicios públicos, con análisis y ubicación en forma general de los sistemas e instalaciones principales de cañerías, hidrantes, alcantarillados sanitarios y pluviales, recolección, zonas de amortiguamiento y disposición de basuras, así como cualquier otro de importancia análoga.
+[…]
+ARTÍCULO 6- Adiciónese un inciso j) al artículo 20 de la Ley N.º 4240, Ley de Planificación Urbana, para que en adelante se lean de la siguiente manera:
+Artículo 20- De consiguiente, esos reglamentos contendrán normas y condiciones para promover:
+[…]
+j) La buena disposición final de los residuos.
+[…]
+TRANSITORIO ÚNICO- El Ministerio de Salud y las municipalidades deberán en un período de doce meses realizar las gestiones correspondientes para actualizar la normativa que se pueda ver afectada con las modificaciones establecidas en la presente ley.
+Rige a partir de su publicación.
+RODRIGO CHAVES ROBLES
+Mary Denisse Munive Angermüller
+Ministra de Salud
+NOTAS: El expediente legislativo aún no tiene comisión asignada.
+El texto fue confrontado y revisado por el Departamento de Servicios Parlamentarios, para hacerle los ajustes formales requeridos por el SIL. (Fecha de subido al SIL: 17-04-2024).

@@ -1,0 +1,36 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+REFORMA DEL CÓDIGO DE COMERCIO Y DE LA LEY N.º 10.597, PARA GARANTIZAR EL REGISTRO GRATUITO Y EXPEDITO DEL CORREO ELECTRÓNICO SOCIETARIO
+CARLOS FELIPE GARCÍA MOLINA
+DIPUTADO
+EXPEDIENTE N.º 25.094
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+REFORMA DEL CÓDIGO DE COMERCIO Y DE LA LEY N.º 10.597, PARA GARANTIZAR EL REGISTRO GRATUITO Y EXPEDITO DEL CORREO ELECTRÓNICO SOCIETARIO
+Expediente N.º 25.094
+La Ley N.º 10.597, sancionada para modernizar y agilizar la actividad comercial, introdujo diversas medidas destinadas a simplificar los procesos societarios y promover la digitalización. Entre ellas, destaca la obligación de las sociedades mercantiles de incorporar el correo electrónico como medio oficial de notificación, con la finalidad de facilitar la comunicación con las autoridades y otros actores del sistema económico. No obstante, su aplicación práctica ha evidenciado dificultades interpretativas y costos innecesarios que contravienen el espíritu de la ley; en particular, el mandato contenido en su transitorio I. La contradicción radica en que, si bien la ley busca procedimientos sencillos y sin costos, la interpretación actual exige reformas en el pacto constitutivo mediante escritura pública, lo que dificulta y encarece su implementación.
+La Ley N.º 10.597 contempla, en su artículo primero, la obligación de incluir un correo electrónico en los registros societarios como medio oficial de notificación. Esta medida busca modernizar la comunicación, reducir costos y agilizar los procedimientos administrativos y judiciales. Sin embargo, en la práctica, los órganos encargados de su aplicación han interpretado que modificar el pacto social para incluir el correo electrónico requiere una reforma mediante escritura pública, lo cual conlleva costos notariales, trámites adicionales y dilaciones que contravienen el mandato del transitorio I.
+El transitorio I establece que las modificaciones o incorporaciones de los pactos sociales, en el marco de esta ley, deben realizarse de manera sencilla, ágil y sin costo. La contradicción entre la interpretación y la disposición transitoria genera obstáculos para que las sociedades ya constituidas puedan cumplir oportunamente con la norma, perpetuando costos y procedimientos complejos que afectan la eficiencia del sistema. Además, esta situación puede desalentar la adopción de herramientas digitales que resultan fundamentales en una economía moderna y en plena transformación tecnológica.
+Este escenario evidencia la necesidad de una revisión normativa que asegure que la implementación de la inclusión del correo electrónico sea efectiva, sencilla y sin costos indebidos. La estructura actual, que exige reforma en escritura pública para cambios en pactos sociales, no solo contraviene el espíritu de la ley, sino que también limita los beneficios que la digitalización puede aportar a las sociedades mercantiles y a la economía en general.
+Para resolver esta problemática, se propone modificar los artículos 18 y 19 del Código de Comercio, así como el transitorio I de la Ley N.º 10.597, con el fin de que la inclusión del correo electrónico pueda realizarse mediante mecanismos simplificados y sin necesidad de reformas notariales.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+REFORMA DEL CÓDIGO DE COMERCIO Y DE LA LEY N.º 10.597, PARA GARANTIZAR EL REGISTRO GRATUITO Y EXPEDITO DEL CORREO ELECTRÓNICO SOCIETARIO
+ARTÍCULO 1- Reforma del artículo 18 del Código de Comercio
+Se adiciona un párrafo final al inciso 10 del artículo 18 del Código de Comercio, el cual dirá:
+Artículo 18-
+(…)
+Para las sociedades ya constituidas antes de la entrada en vigor de esta disposición, la inclusión o modificación del correo electrónico podrá realizarse mediante declaración jurada del representante legal, presentada por medios electrónicos ante el Registro Nacional, sin necesidad de escritura pública, firma digital, ni protocolización de acta.
+ARTÍCULO 2- Reforma del artículo 19 del Código de Comercio.
+Se adiciona un párrafo final al artículo 19 del Código de Comercio, el cual dirá:
+Artículo 19-
+(…)
+No obstante lo anterior, la inclusión o modificación del correo electrónico como medio oficial de notificación podrá realizarse mediante una declaración electrónica del representante legal, conforme al procedimiento establecido por el Registro Nacional, sin requerir escritura pública ni protocolización ni firma digital.
+ARTÍCULO 3- Reforma del transitorio I de la Ley N.º 10597, del 5 de noviembre de 2024, para que se lea de la siguiente forma:
+Transitorio I- Las sociedades ya constituidas antes de la entrada en vigor de la presente ley deberán inscribir un correo electrónico para notificaciones en el Registro de Personas Jurídicas a más tardar el 4 de junio de 2026.
+Durante ese periodo, el Registro Nacional habilitará un mecanismo digital gratuito para que el representante legal inscriba o modifique dicho correo mediante declaración electrónica. Este procedimiento no requerirá firma digital, escritura pública, protocolización, timbres, edictos ni intervención notarial.
+Rige a partir de su publicación.
+Carlos Felipe García Molina
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 24-07-2025).

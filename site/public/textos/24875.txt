@@ -1,0 +1,65 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA REGULAR EL USO DE INTELIGENCIA ARTIFICIAL
+EN LOS PROCESOS ELECTORALES
+VANESSA DE PAUL CASTRO MORA
+CARLOS FELIPE GARCÍA MOLINA
+DIPUTADA Y DIPUTADO
+EXPEDIENTE N.º 24.875
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY PARA REGULAR EL USO DE INTELIGENCIA ARTIFICIAL
+EN LOS PROCESOS ELECTORALES
+Expediente N.° 24.875
+ASAMBLEA LEGISLATIVA:
+El desarrollo tecnológico y la inteligencia artificial (IA) han transformado la forma en que se comunica y difunde la información en el ámbito político. Si bien estas herramientas presentan oportunidades para mejorar la comunicación y el análisis de datos, también pueden comprometer la transparencia, la equidad y la confianza en los procesos democráticos.
+El uso de IA en campañas electorales y propaganda política debe enmarcarse en principios democráticos que garanticen la veracidad de la información y la protección de los derechos ciudadanos. La proliferación de contenido automatizado con gran realismo, incluyendo deepfakes y mensajes hipersegmentados sin regulación, plantea riesgos que deben abordarse.
+Por esta razón, hemos trabajado el presente proyecto junto a las autoridades del Tribunal Supremo de Elecciones, con el fin de contar con la experiencia de dicha institución en la elaboración de las normas electorales.
+A nivel internacional, diversas organizaciones han abordado la necesidad de regular el uso de la IA en contextos electorales para prevenir la manipulación de la información y garantizar procesos transparentes y democráticos.
+- Organización de las Naciones Unidas (ONU): el Pacto Internacional de Derechos Civiles y Políticos establece que toda persona tiene derecho a recibir información veraz y no manipulada, lo que es fundamental para la toma de decisiones en un proceso electoral.
+- Organización para la Cooperación y el Desarrollo Económicos (OCDE): ha emitido recomendaciones sobre el uso ético de la IA, destacando la importancia de la transparencia y la rendición de cuentas en la aplicación de estas tecnologías.
+- Unión Europea: a través de su Ley de Servicios Digitales y el Reglamento de IA se han establecido lineamientos sobre la identificación y regulación de contenidos generados por IA en el ámbito político, con el fin de prevenir la desinformación y la manipulación de la opinión pública.
+Estas referencias internacionales evidencian la importancia de contar con un marco normativo en Costa Rica que garantice un uso responsable de la IA en los procesos electorales, alineando la legislación nacional con los estándares y mejores prácticas a nivel global.
+Los objetivos principales del presente proyecto son:
+1- Fomentar la transparencia, obligando a etiquetar y advertir cuando el contenido haya sido generado mediante IA.
+2- Prevenir la manipulación y desinformación, mediante la prohibición del uso de IA para modificar imágenes, voces o datos personales sin consentimiento.
+3- Aplicar sanciones efectivas, diferenciando entre infracciones leves, graves y muy graves.
+4- Promover la cooperación interinstitucional, permitiendo que el Tribunal Supremo de Elecciones (TSE) establezca convenios con entidades especializadas para la supervisión del cumplimiento de la norma.
+La implementación de este proyecto de ley responde a la necesidad de regular el uso de la inteligencia artificial en los procesos electorales costarricenses, asegurando que su aplicación contribuya a fortalecer la democracia y no a debilitarla. La normativa propuesta permitirá prevenir la desinformación, evitar la manipulación de la opinión pública y garantizar que las campañas políticas se desarrollen en un marco de transparencia y equidad.
+Con la adopción de esta legislación, Costa Rica reafirma su compromiso con la protección de los derechos electorales y la modernización de sus normativas, en sintonía con los estándares internacionales en la materia.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA REGULAR EL USO DE INTELIGENCIA ARTIFICIAL
+EN LOS PROCESOS ELECTORALES
+ARTÍCULO 1- Adición del artículo 136 bis al Código Electoral, Ley N.º 8765
+Se adiciona un artículo 136 bis al Código Electoral, Ley N.º 8765,de 19 de agosto de 2009, que se leerá de la siguiente manera:
+Artículo 136 bis. Uso de inteligencia artificial en propaganda electoral
+1- Se permitirá el uso de sistemas de inteligencia artificial (IA) en la generación de contenido propagandístico dentro del marco de la normativa electoral y de transparencia establecida por el Tribunal Supremo de Elecciones.
+2- Cualquier contenido visual, auditivo o gráfico creado con IA y utilizado con fines de propaganda electoral deberá incluir una advertencia visual y/o auditiva claramente identificable, que informe a los electores sobre su origen.
+3- El Tribunal Supremo de Elecciones reglamentará la forma en que debe presentarse dicha advertencia y establecerá el procedimiento para su fiscalización.
+ARTÍCULO 2- Adición del artículo 136 ter al Código Electoral, Ley N.º 8765, del 19 de agosto del 2009
+Se adiciona un artículo 136 ter al Código Electoral, Ley N.º 8765, que se leerá de la siguiente manera:
+Artículo 136 ter. Prohibiciones sobre el uso de inteligencia artificial en procesos electorales
+Se prohíbe el uso de inteligencia artificial para:
+a) Crear, modificar o manipular, sin consentimiento del titular, la imagen, voz o cualquier otro rasgo vinculado a los derechos de la personalidad de cualquier persona física con fines político-electorales, incluyendo la generación de deepfakes o la alteración de declaraciones públicas, con el propósito de engañar al electorado.
+b) Utilizar perfiles automatizados o sistemas de inteligencia artificial para simular interacción humana con el presupuesto de enseñar al electorado, manipular tendencias de opinión o generar actividad coordinada inauténtica que afecte la equidad del concurso electoral.
+c) Utilizar los datos sobre las preferencias y pensamiento de personas, como estrategia de microfocalización publicitaria, para diseñar y dirigir contenidos propagandísticos específicos.
+d) Utilizar inteligencia artificial para generar contenido contra la confianza en la integridad del proceso electoral y en la imparcialidad de las autoridades electorales.
+ARTÍCULO 3- Multas por la difusión ilegal de propaganda y uso indebido de inteligencia artificial en campañas
+Se reforma el artículo 289 del Código Electoral, Ley N.° 8765, de 19 de agosto de 2009, para que en adelante se lea de la siguiente manera:
+Artículo 289. Multas por la difusión ilegal de propaganda y uso indebido de inteligencia artificial en campañas
+Se impondrá multa de diez a cincuenta salarios base según el daño causado:
+a) A las personas físicas o jurídicas públicas o privadas que incumplan lo establecido en los artículos 136, 136bis, 136ter, 138 y 140 de este Código, siempre y cuando la conducta no esté sancionada como delito en este mismo Código.
+(…).
+ARTÍCULO 4- Adición de un párrafo final al artículo 138 del Código Electoral, Ley N.º 8765
+Se adiciona un párrafo final al artículo 138 del Código Electoral, Ley N.º 8765, de 19 de agosto de 2009, que dirá:
+Los estudios de opinión y encuestas que utilicen inteligencia artificial en cualquiera de sus fases deberán advertirlo en la respectiva metodología y en la divulgación de sus resultados.
+El Tribunal Supremo de Elecciones establecerá los lineamientos técnicos para la presentación de esta información y verificará su cumplimiento.
+ARTÍCULO 5- Disposiciones finales
+1- Cooperación interinstitucional: el Tribunal Supremo de Elecciones podrá establecer convenios con entidades especializadas, universidades y organismos internacionales para garantizar la supervisión y cumplimiento de esta ley.
+2- Reglamentación: el Tribunal Supremo de Elecciones deberá emitir, en un plazo máximo de un mes a partir de la entrada en vigencia de esta ley, la reglamentación necesaria para su implementación.
+Rige a partir de su publicación.
+Vanessa de Paul Castro Mora Carlos Felipe García Molina
+Diputada y diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 11-03-2025).

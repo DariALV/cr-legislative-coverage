@@ -1,0 +1,736 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE PROTECCIÓN MARÍTIMA
+ALEXANDER BARRANTES CHACÓN
+DIPUTADO
+EXPEDIENTE N.º 25.420
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY DE PROTECCIÓN MARÍTIMA
+Expediente N.º 25.420
+ASAMBLEA LEGISLATIVA:
+Tras los trágicos acontecimientos de origen terrorista ocurridos en la ciudad de Nueva York el día 11 de septiembre de 2001 y el impacto que ocasionó en general sobre el transporte de personas y mercancías a nivel mundial, la Asamblea General de la Organización Marítima Internacional acordó ese mismo año, elaborar una serie de medidas en relación con la protección de los buques y de las instalaciones portuarias, que fueron insertadas dentro del cuerpo normativo que comprende el Convenio Internacional para la Seguridad de la Vida Humana en el mar, 1974 (conocido como Solas por sus siglas en inglés), por medio del capítulo XI-2 denominado “Medidas especiales para mejorar la protección marítima” y su respectivo Código de Protección de Buques e Instalaciones Portuarias (conocido por sus siglas en español como PBIP), que fueron adoptados mediante Resolución 2 de la Conferencia de los Gobiernos Contratantes adoptada el 12 de diciembre de 2002 y con entrada en vigor a partir del 01 de julio de 2004.
+Considerando que el transporte marítimo es calificado como el “alma del comercio mundial” y la “columna la principal arteria”, que mueve aproximadamente un 80% de las mercancías transportadas globalmente, el impacto económico y ambiental de una vulneración de la gestión de la protección de una instalación portuaria ocasionaría consecuencias de alcance y magnitud impredecibles para cualquier Estado.
+En virtud de lo anterior, Costa Rica a pesar de no disponer en el año 2004 del Convenio Internacional Solas, el cual necesariamente requería del complejo tratamiento legislativo para su incorporación al ordenamiento jurídico como norma superior, se tomó la decisión de avanzar en el proceso de incorporación de regulaciones que permitieran a corto plazo la implantación de las medidas adoptadas por la Organización Marítima Internacional, específicamente del Código PBIP.
+Dicha acción del Estado costarricense permitió que mediante el Decreto Ejecutivo n.° 31845-MOPT, del 16 de junio de 2004, se aprobara el “Reglamento para la Protección de los Buques y de las Instalaciones Portuarias”, cuya base se encontraba en el mismo Código PBIP generado desde la OMI, y que venía a regular los aspectos de protección indicados en la denominada interfaz buque puerto.
+A partir de ese momento, al contar con una norma que daba sustento a la implantación de las medidas de protección de las instalaciones portuarias (IP) y los buques, es que nuestros puertos fueron inmediatamente sometidos por la Dirección de Navegación y Seguridad Acuática de la División Marítimo Portuaria del Ministerio de Obras Públicas y Transportes (en la condición de autoridad designada) a todos los procedimientos de desarrollo y verificación de cumplimiento del PBIP, principalmente en los procesos de aprobación de las evaluaciones de protección de la IP, la aprobación de sus respectivos Planes de Protección, los proceso de auditoría y la emisión de las denominadas declaraciones de cumplimiento.
+Posteriormente, por medio de la Ley n.° 8708, del 26 de febrero de 2009, se logró la aprobación de la Adhesión al Convenio Internacional para la Seguridad de la Vida Humana en el Mar, sus protocolos y sus enmiendas (Solas 74), lo que vino a consolidar todos los procesos en materia de seguridad marítima, incluido por supuesto, la protección de las instalaciones y los buques, regulados en el capítulo XI-2.
+En el proceso de implantación del Reglamento PBIP supra, se detectaron algunas falencias o mejoras requeridas para lograr una aplicación efectiva de parte de las instituciones y usuarios de la norma, y ante una serie de recomendaciones emitidas por la Contraloría General de la República dentro de un proceso de fiscalización, se logró la redacción y emisión del “Manual para la aplicación del Código PBIP en Instalaciones Portuarias”, aprobado por el Decreto Ejecutivo n.° 38401-MOPT, del 25 de abril de 2014, instrumento que ha permitido una aplicación clara de las distintas regulaciones de protección, principalmente de nuestros puertos.
+Actualmente, Costa Rica dispone de siete instalaciones portuarias (IP) sometidas al procedimientos PBIP, que corresponden a: Gastón Kogan Kogan y Hernán Garrón Salazar operadas por la Junta de Administración Portuaria y de Desarrollo Económico de la Vertiente Atlántica, Muelle de Cruceros y Puerto de Golfito operados por el Instituto Costarricense de Puertos del Pacífico, la Terminal de Contenedores de Moín operada por la Concesionaria APM Terminals Moín S.A., Puerto Caldera operado por el Concesionario Sociedad Portuaria de Caldera S.A. y Puerto Punta Morales operado por la Liga Agrícola Industrial de la Caña de Azúcar, todos los anteriores que ejecutan labores de recepción y despacho de buques de carga y pasajeros, según corresponda, procedentes de puerto extranjero, lo que justifica la obligatoriedad de su aplicación y cumplimiento.
+A este contexto de aplicación en la infraestructura portuaria nacional de las normas de protección, debe necesariamente sumarse la condición actual del inminente proceso licitatorio para el desarrollo y operación de la Instalación Portuaria de Puerto Caldera, y otros posibles proyectos que podrían generarse, sobre los cuales debe preverse el efectivo cumplimiento de las obligaciones vigentes y aquellas que se pretenden promover por medio del presente proyecto de ley.
+A pesar de todo este desarrollo normativo y procesos de implantación que ha permitido dar cumplimiento a las condiciones generales de la protección de los puertos y en menor avance de los buques, la experiencia acumulada de la autoridad designada también ha reflejado la existencia de una importante laguna en materia coercitiva y sancionatoria, para procurar no solo que las instalaciones portuarias se sometan efectivamente a los procesos de parte del MOPT, sino que mantengan en el tiempo las acciones a las que se obligan cumplir, por ejemplo el debilitamiento o afectación total de los procedimientos de protección autorizados (controles en los puntos de acceso a las instalaciones portuarias, controles perimetrales, sistemas de vigilancia -cuerpo de seguridad interna-, sistemas de circuito cerrado de televisión, sistemas de iluminación y seguridad cibernética, entre otros).
+Lo anterior provoca que las instalaciones portuarias y además los buques, puedan colocarse en una posición de incumplimiento donde la propia Administración dispone de pocas o nulas capacidades para forzar la debida atención de las obligaciones PBIP, lo que deviene en la puesta en alto riesgo las operaciones portuarias, al encontrarse debilitados los procesos de protección señalados en el párrafo anterior, y de forma directa exponiendo la vida humana, la infraestructura, la carga y los buques.
+Aunado a lo anterior, dichos incumplimientos y debilidades en la efectiva implantación de los procesos PBIP, pueden afectar directamente al país ante la comunidad internacional, al catalogarse que nuestros puertos y procesos PBIP no son lo suficientemente estrictos y efectivos, catalogándose este tipo de condiciones como “puertos contaminados”, lo que obliga a los navieros o autoridades marítimas de otras naciones, a someter a los buques procedentes de Costa Rica, a una serie de inspecciones exhaustivas, provocando demoras en los procesos de carga y descarga o embarque y desembarque de personas, y los costos operativos de dicho atraso correrán por la naturaleza del negocio marítimo en el consumidor final.
+En virtud de todas las consideraciones expuestas en los párrafos anteriores, se presenta el proyecto denominado “Ley de Protección Marítima”, el cual permitirá reforzar el rol del Estado como ente controlador de forma efectiva, de las obligaciones adoptadas por el país con la aprobación de las normas indicadas, tanto de las instalaciones portuarias que operan nuestras costas, como de aquellos buques naciones e internacionales que le aplique que ingrese a dichas instalaciones portuarias.
+Entre las principales figuras que desarrolla el proyecto para proteger de forma efectiva nuestros puertos y mares, y que dan el cuerpo organizativo y normativo pertinente para su ejercicio oportuno, se encuentra la creación del Comité Nacional de Protección, que dará acceso a una coordinación nacional con los principales actores del sector marítimo portuario, con una descripción detallada de sus funciones para velar por el cumplimiento de las obligaciones supracitadas, todo lo anterior bajo un marco de confidencialidad, por cuanto, nos encontramos en la presencia de materia sensible al ponerse en conocimiento temas de seguridad, no solo portuaria sino que podría trascender a un tema de seguridad nacional. Este Comité Nacional se complementará con los denominados comités locales de protección portuaria, como órganos locales de coordinación que involucra igualmente los actores locales del sector.
+Además, el reforzamiento de las obligaciones tanto de la Administración en todas sus dimensiones y de los puertos, independientemente de su condición como administrador, operador o concesionario, y de los buques, generan mayor claridad de las distintas etapas del proceso PBIP, entre otros la evaluación de protección, el plan de protección, las obligaciones de los oficiales de protección, las auditorías, entre otros. Este reforzamiento incluye la creación del Tribunal Administrativo Marítimo Portuario, que brindará apoyo jurídico a los distintos procesos, no solamente relacionados con el tema PBIP, sino a otras funciones que podrán ejercer como tribunal especializado sobre las decisiones que tome la División Marítimo Portuaria del Ministerio de Obras Públicas y Transportes, no solo en el ejercicio de su rectoría, sino también en las competencias operativa de este.
+Finalmente, como los elementos novedosos y necesarios que permitirá la elevación del nivel de riesgo de verse sometido a consecuencias ante un incumplimiento de una instalación portuaria y/o un buque, es la generación del título IV sobre prohibiciones con sus respectivas consecuencias, desarrolladas en el título V del Régimen Sancionatorio, que van desde etapas de apercibimiento, hasta la aplicación de sanciones administrativas como la imposición de multas económicas, no solo dirigida a la institución o empresas, sino que se elevan hasta la disposición de responsables solidarios, que recae sobre los miembros de las juntas directivas tomadora de decisiones y hasta la revocación de la Declaración de Cumplimiento, que impediría continuar con la actividad. Además, la creación del Fondo Especial Seguridad y Protección Marítima, para lograr el financiamiento y sostenibilidad de las acciones que ejecuta esta Autoridad en materia de seguridad y protección marítima, que impactará positivamente la inversión en ambos temas, que incluirá además posibilidades de inversión en materia de seguridad marítima, salvamento marítimo, procesos de monitoreo de buques en nuestras aguas jurisdiccionales, entre otros, propias de nuestras competencias, a favor de la protección de la vida humana en el mar, como eje de nuestra actuación.
+Debido a lo expuesto, presentamos el presente proyecto de ley, el cual esperamos que cuente con el apoyo de las señoras diputadas y señores diputados.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE PROTECCIÓN MARÍTIMA
+TÍTULO I
+Disposiciones Generales
+CAPÍTULO I
+Objeto y Ámbito de Aplicación de la Ley
+ARTÍCULO 1- Objeto de la ley
+Esta ley tiene por objeto implementar las medidas de protección marítima contempladas en el capítulo XI-2 del “Convenio Internacional para la Seguridad de la Vida Humana en el Mar”, Ley n.° 8708, del 26 de febrero de 2009, y el Código de Protección de Buques e Instalaciones Portuarias.
+ARTÍCULO 2- Ámbito de aplicación
+La presente ley aplica a:
+Operadores portuarios públicos o privados y cualquier tipo de instalación portuaria ubicadas en territorio nacional que le aplique las condiciones del capítulo XI-2 de la Ley n.° 8708, que presten servicio a buques dedicados a viajes internacionales.
+Los siguientes tipos de buques de bandera nacional o extranjera, dedicados a viajes internacionales:
+Buques de pasaje, incluidas las naves de pasaje de gran velocidad.
+Buques de carga, incluidas las naves de gran velocidad, de arqueo igual o superior a 500 unidades de arqueo bruto.
+Las unidades móviles de perforación mar adentro.
+ARTÍCULO 3- Excepción
+Las disposiciones de la presente ley serán aplicables a las instalaciones portuarias que, aunque sean utilizadas fundamentalmente por buques que no estén dedicados a viajes internacionales, en ocasiones tengan que prestar servicio a buques que estén contemplados en el artículo anterior.
+ARTÍCULO 4- Normativa de aplicación supletoria
+A falta de disposición expresa en esta ley y sus reglamentos, se aplicará supletoriamente:
+Normativa marítima y portuaria vigente.
+Ley General de la Administración Pública, del 2 de mayo de 1978, y sus reformas; y el Código Procesal Contencioso-Administrativo, del 28 de abril de 2006, y sus reformas.
+Recomendaciones y resoluciones emitidas por la Organización Marítima Internacional.
+Usos y las costumbres marítimas internacionales.
+Se considera que esta lista no es taxativa e incluye cualquier otra normativa que según la jerarquía legal pueda ser considerada como norma supletoria importante.
+CAPÍTULO II
+Definiciones
+ARTÍCULO 5- Definiciones
+Para los efectos de la presente ley, se entenderá por:
+Auditoría: proceso de revisión y verificación objetiva y sistemática para establecer el grado de cumplimiento de las medidas de protección establecidas en la normativa vigente, tanto en buques como en instalaciones portuarias.
+Amenaza: posibilidad que un incidente de protección marítima ocurra.
+Arqueo bruto: es una función del volumen moldeado de todos los espacios cerrados del buque. Se debe entender como equivalente al concepto de tonelaje de registro bruto (TRB).
+Buque de pasaje: toda nave comercial que realiza navegación internacional que alberga al menos doce personas, y al menos una de ellas paga el viaje o travesía.
+Buques no Solas: aquellos buques cuyas condiciones estructurales o según el tipo de navegación, se excluyen de la aplicación del capítulo XI-2 del Convenio Internacional para la Seguridad de la Vida Humana en el Mar, Ley n.° 8708, del 26 de febrero de 2009.
+Código PBIP: Código Internacional para la Protección de los Buques y de las Instalaciones Portuarias, adoptado el 12 de diciembre de 2002 mediante la Resolución 2 de la Conferencia Diplomática sobre Protección Marítima, celebrada en Reino Unido, en diciembre del año 2002, y adoptado en Costa Rica mediante Decreto Ejecutivo 31845-MOPT del 16 de junio 2004.
+Compañía: propietario de un buque o cualquier otra organización o persona que asuma la responsabilidad de la operación del buque, por parte del propietario.
+Cumplimiento: observancia de una disposición establecida en el Plan de Protección aprobado por la autoridad designada.
+Declaración de Cumplimiento de la Instalación Portuaria (DCIP): documento expedido por la autoridad designada, mediante el cual avala que una instalación portuaria cumple satisfactoriamente con lo establecido en el Código PBIP y su respectivo Plan de Protección de la Instalación Portuaria.
+Declaración de Protección Marítima (DPM): acuerdo alcanzado entre un buque y una instalación portuaria, o de buque a buque en el que constan las condiciones para la ejecución de las operaciones de interfaz, y se especifican las medidas de protección que aplicará cada uno.
+Documentación de acceso restringido: documentos físicos o digitales que contengan información relacionados con la protección marítima.
+Documentos: son documentos los escritos, los impresos, los planos, los dibujos, los cuadros, las fotografías, las fotocopias, las radiografías, los discos, las grabaciones de audio y video, con soporte físico y digital relacionado con la protección marítima.
+Evaluación de Protección de la Instalación Portuaria: análisis de riesgo de todos los aspectos de las operaciones de la instalación portuaria para determinar qué elemento o elementos de éstas son más susceptibles y/o tiene más probabilidad de sufrir un ataque.
+Ejercicios: actividad desarrollada a efecto de observar y verificar que el personal con tareas de protección conoce y ejecuta los procedimientos y las tareas contenidas en el Plan de Protección de la Instalación Portuaria, que se le han asignado en todos los niveles de protección, e identificar cualquier deficiencia de protección que sea preciso subsanar. Dichos ejercicios deben efectuarse como mínimo cada tres meses a intervalos adecuados con arreglo a los tipos de operaciones de la instalación portuaria, los cambios del personal de la IP, el tipo de buque al que sirve la instalación portuaria y otras circunstancias de interés, teniendo en cuenta las orientaciones que se brindan en la parte B del Código PBIP.
+Instalación portuaria: área donde tiene lugar la interfaz buque-puerto. Esta incluye, según sea necesario, las zonas como los fondeaderos, atracaderos de espera y accesos desde el mar a los puertos y muelles de comercio exterior, y operados por operadores portuarias públicos o privados.
+Interfaz buque-puerto y buque-buque: interacción que tiene lugar cuando un buque se ve afectado directa e inmediatamente por actividades que involucran el movimiento de personas o mercancías o la provisión de servicios portuarios al buque o desde éste, o entre dos buques.
+Manual: manual elaborado por la Dirección de Navegación y Seguridad Acuática para la Aplicación del Código PBIP.
+Medidas correctivas: medidas para eliminar la causa de un incumplimiento detectado u otra situación no deseada.
+Medidas preventivas: medidas para eliminar la causa de un posible incumplimiento u otra posible situación no deseada.
+Oficial de protección del buque: persona a bordo del buque, responsable ante el capitán y designada por la compañía para responder por la protección del buque, incluidos la implantación y el mantenimiento del Plan de Protección del Buque, y para la coordinación con el oficial de la compañía para la protección marítima y con los oficiales de protección de las instalaciones portuarias.
+Oficial de la Compañía para la Protección Marítima (OCPM): persona designada por la compañía naviera para asegurar que se lleva a cabo una evaluación sobre la protección del buque y que el plan de protección del buque se desarrolla, se presenta para su aprobación, y posterior se implanta y se mantiene, y para la coordinación con los oficiales de protección de la instalación portuaria y con el oficial de protección del buque.
+Oficial de protección de la Instalación Portuaria: persona designada para asumir la responsabilidad de la elaboración, implantación, revisión y actualización del Plan de Protección de la Instalación Portuaria, y para la coordinación con los oficiales de protección de los buques y con los oficiales de protección de las compañías para la protección marítima.
+Operador portuario: entidad pública o privada que tiene a su cargo la administración y operación de una o varias instalaciones portuarias.
+Organización de protección reconocida (OPR): organización especializada en procesos de protección marítima en relación con las operaciones de los buques y de los puertos, autorizada para realizar Evaluaciones de Protección, elaboración de Plan de Protección de la Instalación, y capacitación del personal, una vez autorizada por la autoridad marítima.
+Plan de Protección del Buque: plan elaborado para asegurar la aplicación a bordo del buque de medidas destinadas a proteger a las personas que se encuentren a bordo, la carga, las unidades de transporte, las provisiones de a bordo o el buque de los riesgos de un suceso que afecte a la protección marítima.
+Plan de Protección de la Instalación Portuaria: plan elaborado para asegurar la aplicación de medidas destinadas a proteger la instalación portuaria y los buques en su interfaz, las personas, la carga, las unidades de transporte y las provisiones de los buques de los riesgos de un suceso que afecte la protección marítima.
+Prácticas: simulaciones a gran escala en donde se someten a prueba o se comprueba que el personal de protección tiene la debida suficiencia en las diversas tareas que se les asignen a todos los niveles de protección e identificar cualquier deficiencia de protección que sea preciso subsanarlas. Estas deben ejecutarse como mínimo una vez al año, pero sin que transcurran entre unas y otras más de dieciocho meses.
+Protección marítima: políticas, medidas y procedimientos para prevenir actos de terrorismo que ponen en peligro la integridad las personas, la carga, la seguridad de los buques e instalación portuaria.
+Refrendo: acto de visado efectuado por la autoridad designada, en el cual se certifica que, durante las verificaciones periódicas, se mantienen las condiciones iniciales que dieron origen a la expedición del DCIP. Este acto se realiza durante el tiempo de vigencia de una DCIP.
+Viaje internacional: viaje que tiene como destino o procedencia un puerto ubicado en un país extranjero.
+Zona restringida: espacio delimitado en la instalación portuaria y el buque donde se controla el acceso y se establecen medidas para la gestión del riesgo y su control en áreas marítimas, terrestres y aéreas.
+TÍTULO II
+Protección Marítima
+CAPÍTULO I
+Autoridad Designada en Materia de Protección Marítima
+ARTÍCULO 6– Autoridad Designada
+El Ministerio de Obras Públicas y Transportes, por medio de la Dirección de Navegación y Seguridad Acuática de la División Marítimo Portuaria, es la autoridad designada nacional responsable de implantar el capítulo XI-2 del Convenio Solas y el Código PBIP.
+ARTÍCULO 7- Funciones de la autoridad designada
+La autoridad designada tendrá las siguientes funciones:
+Inspeccionar, verificar, auditar y certificar los puertos nacionales y los buques de bandera costarricense en materia de protección marítima.
+Inspeccionar y verificar el cumplimiento de las obligaciones de protección marítima de los buques de bandera extranjera que arriban a los puertos nacionales.
+Revisar y aprobar la Evaluación de Protección de la Instalación Portuaria, los planes de protección de la instalación portuaria, así como sus modificaciones o enmiendas.
+Fomentar la cooperación con las administraciones locales, sector naviero-portuario y autoridades homologas designadas de otros países con la finalidad de detectar las amenazas a la protección marítima y adoptar medidas preventivas contra sucesos que afecten a la protección marítima de los buques o instalaciones portuarias utilizadas para el comercio internacional.
+Definir las responsabilidades de las administraciones locales y los sectores naviero y portuario a nivel nacional, con el objeto de garantizar la protección marítima.
+Elaborar y establecer una metodología para efectuar evaluaciones de la protección marítima a fin de contar con planes y procedimientos que permitan reaccionar a los cambios en los niveles de protección.
+Someter a prueba, la eficacia de los planes de protección de los buques y de las instalaciones portuarias que hayan aprobado; en el caso de los buques, que hayan sido aprobados en su nombre, y de las enmiendas a esos planes.
+Autorizar el cambio del nivel de protección a solicitud de la instalación portuaria o del buque.
+Aplicar los procedimientos y sanciones ante incumplimiento de las obligaciones de protección marítima.
+Implementar todas aquellas medidas que de conformidad con el Código PBIP y la normativa vigente, sean necesarias con el fin de procurar la protección marítima.
+Convocar las reuniones ordinarias y extraordinarias del Comité Nacional de Protección Marítima.
+ARTÍCULO 8- De la delegación de funciones relacionadas con la protección marítima
+La autoridad designada, podrá delegar en una organización de protección reconocida, a solicitud de la primera o de un operador portuario, exclusivamente para asesorar a la compañía o a la instalación portuaria en materia de protección, incluida la elaboración de:
+Evaluación de protección de los buques.
+Elaboración de planes de protección de buques.
+Evaluaciones de protección de las instalaciones portuarias.
+Elaboración de planes de protección de instalaciones portuarias.
+Capacitación de personal respecto de los planes elaborados por las organizaciones de protección reconocidas.
+ARTÍCULO 9- Autorización de operación de una organización de protección reconocida
+Una organización de protección reconocida deberá demostrar a la autoridad designada lo siguiente:
+Un conocimiento especializado de los aspectos pertinentes de la protección.
+Un conocimiento adecuado de las operaciones de los buques y los puertos, que incluirá conocimiento del proyecto y la construcción de buques, si ofrece servicios a los buques, y el proyecto y la construcción de puertos, si ofrece servicios a las instalaciones portuarias.
+Su capacidad para evaluar los riesgos más comunes en relación con la protección de las operaciones de los buques y las instalaciones portuarias, incluida la interfaz buque-puerto, y la forma de reducir al mínimo tales riesgos.
+Su capacidad para actualizar y perfeccionar los conocimientos especializados de su personal.
+Su capacidad para controlar que su personal sea en todo momento de confianza.
+Su capacidad para mantener las medidas apropiadas para evitar la divulgación no autorizada de material de acceso restringido sobre protección marítima.
+Su conocimiento de lo prescrito en el capítulo XI-2 del Convenio Solas y en la parte A del Código PBIP, así como de la legislación nacional e internacional pertinente y de las prescripciones sobre protección.
+Su conocimiento de las tendencias y amenazas actuales en relación con la protección.
+Sus conocimientos sobre el reconocimiento y la detección de armas y sustancias o dispositivos peligrosos.
+Sus conocimientos sobre el reconocimiento, sin carácter discriminatorio, de las características y pautas de comportamiento de las personas que puedan suponer una amenaza para la protección.
+Su conocimiento de las técnicas utilizadas para eludir las medidas de protección.
+Su conocimiento de los equipos y sistemas de protección y vigilancia, y de sus limitaciones operacionales.
+CAPÍTULO II
+Comité Nacional de Protección Marítima
+ARTÍCULO 10- Creación del Comité Nacional de Protección Marítima
+Se crea el Comité Nacional de Protección Marítima, en adelante Comité Nacional, el cual actuará bajo la coordinación de la autoridad designada, con el objetivo de establecer una coordinación eficaz en los puertos nacionales, que permita implementar las políticas y medidas de protección portuaria sobre las instalaciones portuarias y los buques, y regulados sus procedimientos de actuación en el Manual de Aplicación del Código PBIP en instalaciones portuarias vigente.
+ARTÍCULO 11- Integración del Comité Nacional
+El Comité Nacional estará integrado por los jerarcas o quien este designe en su representación de las siguientes instituciones o entidades:
+Ministerio de Obras Públicas y Transportes;
+Ministerio de la Presidencia;
+Ministerio de Seguridad Pública;
+Junta Administrativa Portuaria y de Desarrollo Económico de la Vertiente Atlántica;
+Instituto Costarricense de Puertos del Pacífico;
+Dirección General de Aduanas del Ministerio de Hacienda;
+Dirección General de Migración y Extranjería del Ministerio de Gobernación;
+Dirección de Navegación y Seguridad Acuática de la División Marítimo Portuaria;
+Organismo de Investigación Judicial; y
+Un representante de cada uno de los operadores portuarios, sean de instalaciones portuarias públicas, concesionadas o privadas.
+El(la) ministro(a) del MOPT o su representante debidamente designado, presidirá este Comité Nacional y podrá invitar a otras instituciones o dependencias, según lo considere oportuno.
+Los miembros del Comité Nacional no devengarán dieta alguna por su participación.
+Cualquier gasto de los miembros del Comité Nacional originado por el ejercicio de sus funciones, deberá ser cubierto por las instituciones que lo integran.
+El Comité Nacional nombrará un(a) secretario(a) de actas del Ministerio de Obras Públicas y Transportes.
+ARTÍCULO 12- Funciones del Comité Nacional de Protección Marítima
+El Comité Nacional tendrá las siguientes funciones:
+Elaborar un marco de políticas y estrategia nacional de protección marítima o contribuir a su elaboración.
+Promover el desarrollo de procedimientos y protocolos de colaboración y coordinación entre sus integrantes y otras entidades afectadas o interesadas en materias de protección de los buques y de las instalaciones portuarias, para brindar una respuesta efectiva a nivel nacional ante situaciones de riesgo o su materialización.
+Proponer sugerencias y recomendaciones para mejorar la protección del transporte marítimo, de los buques y de las instalaciones portuarias.
+Identificar riesgos y activar acciones de contingencia ante amenazas para la protección marítima.
+Elaborar criterios coordinados respecto del cumplimiento de obligaciones internacionales.
+Evaluar las consecuencias de los sucesos acaecidos que afecten la protección de los puertos a nivel nacional y los buques, para la emisión de políticas y regulaciones que permitan la mejora de los sistemas de protección marítima a nivel nacional.
+Mejorar la coordinación en la aplicación de los procedimientos y las medidas de protección.
+Facilitar la implantación de las medidas de protección marítima aplicables que se indican en el plan de protección de la instalación portuaria.
+Compartir las mejores prácticas y experiencias en la implantación de los planes de protección de las instalaciones portuarias.
+Implementar programas de toma de conciencia de la protección marítima y evaluar su efectividad.
+ARTÍCULO 13- De las sesiones
+Las sesiones del Comité Nacional se realizarán en cumplimiento con lo establecido en el capítulo tercero "De los Órganos Colegiados", del título segundo, del libro primero de la Ley n.° 6227, del 02 de mayo de 1978, Ley General de la Administración Pública.
+ARTÍCULO 14- Sesiones del Comité Nacional de Protección Portuaria
+El Comité Nacional sesionará de manera ordinaria al menos cada tres meses de cada año y de manera extraordinaria cuando alguno de sus miembros lo solicite a la autoridad designada.
+Durante el desarrollo de un evento de emergencia que afecte la protección marítima, se reunirá cuantas veces sean necesarias, con el objeto de formular recomendaciones que ayuden al fortalecimiento de las medidas de protección marítima, además de brindar una respuesta oportuna y efectiva al evento suscitado, con los recursos disponibles.
+El Comité Nacional de Protección Marítima podrá invitar a personas especializadas, a representantes de entidades públicas o privadas, para tratar temas relacionados con la aplicación de la normativa relacionada.
+ARTÍCULO 15- Información de acceso restringido
+Toda información relativa a la protección marítima, así como la documentación que dimane del Comité será de acceso restringido.
+ARTÍCULO 16- Compromiso de confidencialidad
+Todos los miembros del Comité Nacional de Protección Marítima deberán firmar un acuerdo de confidencialidad, de forma que el manejo de la información que se catalogue como de acceso restringido, solo pueda ser accedida y discutida entre los miembros y aquellas personas que el Comité Nacional autorice.
+El Comité Nacional se asegurará de que los miembros o participantes deban conocer las evaluaciones o planes de protección concretos de las distintas instalaciones portuarias, así mismo, deberán estar capacitados para implementar medidas que prevengan el acceso no autorizado a esa documentación.
+ARTÍCULO 17- Denegatoria o revocación de credenciales
+El Comité Nacional podrá denegar o revocar las credenciales de acreditación de los funcionarios o representantes autorizados en los siguientes casos:
+Condenatoria por un delito por un tribunal costarricense, que represente un riesgo a la protección marítima.
+Finalización de sus funciones en el cargo en la instancia que representa.
+Se determine la existencia declarada de un conflicto de intereses.
+Se encuentre sometido a un procedimiento o investigación administrativa o judicial que pueda afectar su gestión como funcionario público, o privada en el caso de los puertos operados por empresa privadas.
+CAPÍTULO III
+Comités Locales de Protección Marítima
+ARTÍCULO 18- Comités locales de protección marítima
+Las instalaciones portuarias nacionales, sean públicas o privadas, tendrán comités locales de protección marítima, en adelante comités locales, para la toma de decisiones en el ámbito de sus competencias, para el desarrollo de los procedimientos, lineamientos o directrices tendentes a la aplicación de las medidas de protección marítima en los puertos.
+ARTÍCULO 19- Integración de los comités locales
+Cada comité local estará integrado por:
+El capitán de puerto;
+Un representante de la autoridad portuaria local;
+Un representante del operador del puerto;
+El oficial de protección de la instalación portuaria;
+El oficial de la compañía para la protección marítima, en caso de que corresponda;
+Un representante de la Dirección General de Aduanas local;
+Un representante de la Dirección General de Migración y Extranjería local;
+Un representante de la Fuerza Pública más cercano al puerto; y
+Un representante del Organismo de Investigación Judicial local.
+Los integrantes de los comités locales podrán delegar su representación en personas idóneas en materia de protección marítima, también habrá un suplente idóneo, quien sustituirá al titular en sus ausencias.
+Los miembros de los comités locales no devengarán dieta alguna por su participación.
+Cualquier gasto de los miembros del comité local originado por el ejercicio de sus funciones, deberá ser cubierto por las entidades que representan.
+ARTÍCULO 20- Funciones de los comités locales
+Los comités locales tendrán las siguientes funciones:
+Ejecutar los procedimientos y protocolos de colaboración y coordinación entre los organismos participantes y el resto de las entidades afectadas o interesadas en materias de protección de los buques y de las instalaciones portuarias locales;
+Colaborar en la programación y el desarrollo de los ejercicios y prácticas de protección de las instalaciones portuarias y los buques;
+Identificar y tomar acciones sobre las amenazas que afecten la protección marítima en sus respectivos puertos;
+Compartir las mejores prácticas y experiencias en la implantación de los planes de protección de las instalaciones portuarias; y
+Desarrollar los programas de sensibilización sobre la importancia de la protección marítima en los puertos, y evaluar su efectividad.
+ARTÍCULO 21- De las sesiones
+Las sesiones de los miembros del comité local se realizarán en cumplimiento con lo establecido en el capítulo tercero "De los Órganos Colegiados", del título segundo, del libro primero de la Ley n.° 6227, del 02 de mayo de 1978, Ley General de la Administración Pública.
+ARTÍCULO 22- Sesiones de los comités locales
+Los comités locales sesionarán ordinariamente al menos una vez cada tres meses, pudiendo ser convocados por la autoridad designada en cualquier momento o por cualquiera de sus miembros, previa coordinación con la citada autoridad.
+En caso de un incidente que conlleve a elevar el nivel de protección del puerto o el buque, los integrantes del comité local deberán ponerse a disposición inmediata una vez recibida la comunicación.
+El Comité Local de Protección Marítima podrá invitar a personas especializadas, a representantes de entidades públicas o privadas, para tratar temas relacionados con la aplicación de la normativa relacionada.
+ARTÍCULO 23- Información de acceso restringido
+Toda información relativa a la protección marítima, así como la documentación que dimane del Comité, será de acceso restringido.
+ARTÍCULO 24- Compromiso de confidencialidad
+Todos los miembros de los comités locales deberán firmar un acuerdo de confidencialidad, de forma que el manejo de la información solo pueda ser accedida y discutida entre los miembros y aquellas personas que el comité local autorice, asimismo, implementarán medidas que prevengan el acceso no autorizado a la información o documentación en materia de protección marítima.
+CAPÍTULO IV
+Evaluación de Protección de la Instalación Portuaria
+ARTÍCULO 25- Evaluación de protección de la instalación portuaria
+La evaluación de protección de la instalación portuaria es un análisis del riesgo de todos los aspectos en las operaciones y condiciones de la instalación portuaria, para determinar qué elementos de éstos permitan la eventual o inminente vulnerabilidad; el enfoque que adopte está determinado por la necesidad de tomar decisiones basadas en riesgos, con el fin de definir aquellas medidas imprescindibles para mantener un nivel de protección aceptable en la instalación portuaria.
+En caso de que la instalación portuaria combine operaciones con buques a los que no se les aplique los alcances del capítulo XI-2 del “Convenio internacional para la seguridad de la vida humana en el mar”, Ley n.° 8708, del 26 de febrero de 2009, y las normas complementarias vigentes, deberá contemplar en las etapas de evaluación, elaboración del plan de protección e implementación, procedimientos y protocolos relacionados con los buques no Solas.
+ARTÍCULO 26- Obligatoriedad
+Las instalaciones portuarias presentarán a la autoridad designada una evaluación de protección de la instalación portuaria, la cual estará redactada en idioma español, para el correspondiente estudio, análisis y su eventual aprobación.
+En caso de que la evaluación de protección de la instalación portuaria no sea aprobada, la autoridad designada deberá indicar los aspectos de ampliación o mejora de la propuesta, para lo cual el solicitante dispondrá de un plazo de treinta días naturales para su nueva presentación.
+ARTÍCULO 27- Elaboración de la evaluación de la protección de la instalación portuaria por parte de una organización de protección reconocida
+La autoridad designada, a solicitud del operador portuario, podrá autorizar el uso de los servicios de una organización de protección reconocida, para que realice la evaluación de la protección de una determinada instalación portuaria situada en el territorio nacional, la cual deberá seguir el procedimiento de aprobación ordinaria.
+ARTÍCULO 28- Reglamentación
+La elaboración de la evaluación de protección de la instalación portuaria deberá ajustarse a lo establecido en el manual para la aplicación del Código PBIP.
+ARTÍCULO 29- Revisión de la evaluación de protección de la instalación portuaria
+La evaluación de protección de la instalación portuaria debe revisarse y actualizarse periódicamente o cuando se registren cambios en la instalación portuaria, o se haya producido cualquiera de las siguientes situaciones:
+Un suceso o amenaza que afecte la protección en la instalación portuaria;
+Un cambio en las operaciones de los buques que se realizan en la instalación portuaria;
+Un cambio de institución o empresa operadora de la instalación portuaria; y
+En ausencia de cambios importantes o sucesos, la evaluación de protección de la instalación portuaria se debe revisar al menos cada cinco años.
+CAPÍTULO V
+Plan de Protección de la Instalación Portuaria
+ARTÍCULO 30- Plan de protección de la instalación portuaria
+Cada instalación portuaria elaborará un plan de protección de la instalación portuaria adecuado con o sin interfaz buque-puerto, en aplicación de la normativa vigente, y deberá atender los resultados de la evaluación de protección de la instalación portuaria previamente realizada y aprobada por la autoridad designada.
+El plan de protección de la instalación portuaria podrá ser elaborado por una organización de protección reconocida para lo cual el operador portuario, deberá solicitarla autorización a la autoridad designada.
+ARTÍCULO 31- Zonas restringidas
+El plan de protección de la instalación portuaria deberá indicar las zonas restringidas designadas dentro de la instalación portuaria, especificando su extensión, los periodos en que será válida la restricción, y las medidas que habrán de adoptarse para controlar, por un lado, el acceso a esas zonas y, por otro, las actividades que se realicen en ellas.
+Las zonas restringidas tienen por objeto:
+Proteger a los pasajeros, el personal del buque, el personal de la instalación portuaria y los visitantes, incluidos los que se encuentren en ella en relación con un buque;
+Proteger la instalación portuaria;
+Proteger a los buques que utilicen la instalación portuaria o presten servicios en ella;
+Proteger los lugares y zonas vulnerables de la instalación portuaria;
+Proteger el equipo y los sistemas de protección y vigilancia; y
+Evitar la manipulación indebida de la carga y de las provisiones de los buques.
+ARTÍCULO 32- Tipo de zonas restringidas que debe considerarse
+Se consideran zonas restringidas las siguientes:
+Las zonas en tierra y las aguas contiguas al buque;
+Las zonas de embarco y desembarco y las zonas de espera y tramitación para los pasajeros y el personal de los buques, incluidos los puntos de registro;
+Las zonas de embarque, desembarque y almacenamiento de la carga y las provisiones de los buques;
+Los lugares en los que se guarde información importante desde el punto de vista de la protección marítima, como la relativa a la carga;
+Las zonas en las que se guarden mercancías peligrosas y sustancias potencialmente peligrosas;
+Las salas de control de los sistemas de ordenación del tráfico marítimo, las ayudas a la navegación y los edificios de control del puerto, incluidas las salas de control de los sistemas de protección y vigilancia en caso de que se encuentre dentro de la instalación portuaria;
+Las zonas en las que se almacene o está situado el equipo de protección y vigilancia;
+Las instalaciones esenciales radioeléctricas, de telecomunicaciones, de electricidad, de agua y de otros servicios públicos;
+El espacio aéreo que cubra las zonas en tierra y las aguas contiguas a la instalación portuaria donde se ejecute la interfaz buque-puerto; y
+Otros lugares de la instalación portuaria a los que deba restringirse el acceso de buques, vehículos y personas, conforme a la evaluación de protección de la instalación portuaria.
+ARTÍCULO 33- Niveles de protección
+El plan de protección de la instalación portuaria contemplará los tres niveles de protección que se definen en el capítulo dieciséis, parte A del Código de Protección de Buques e Instalaciones Portuarias, así como, procedimientos detallados que claramente definan las actividades de preparación, prevención y respuesta que tendrán lugar en cada nivel de amenaza, a cumplir por la organización o el personal que será responsable de llevar a cabo esas actividades.
+ARTÍCULO 34- Enmiendas al plan de protección de la instalación portuaria
+El oficial de protección de la instalación portuaria notificará a la autoridad designada sobre la intención de realizar una enmienda a su plan de protección de la instalación portuaria o de la contratación de una organización de protección reconocida para que realice la misma.
+ARTÍCULO 35- Aprobación del plan de protección de la instalación portuaria
+El plan de protección de la instalación portuaria deberá ser aprobado por la autoridad designada, quien dispondrá de un plazo de treinta días hábiles para su revisión y comunicación del resultado. En caso de requerirse ampliaciones o mejoras, deberán notificarse al operador portuario, quien dispondrá de un mes calendario para atender las observaciones emitidas y remitir nuevamente a la autoridad designada.
+ARTÍCULO 36- Implantación
+El plan de protección de la instalación portuaria, luego de ser aprobado por la autoridad designada, será entregado al oficial de protección de la instalación portuaria para su implantación en el plazo que les indique el documento de aprobación.
+ARTÍCULO 37- Auditorías internas
+Todo plan de protección de la instalación portuaria aprobado por la autoridad designada debe establecer procedimientos de auditorías internas, que deben cumplir todos los operadores de las instalaciones portuarias, para garantizar que el plan de protección de la instalación portuaria permanezca eficaz en el tiempo.
+ARTÍCULO 38- Revisión del plan de protección de la instalación portuaria
+la revisión de los plan de protección de la instalación portuaria es responsabilidad del oficial de protección de cada instalación portuaria, la cual se realizará anualmente o después de:
+la realización de un ejercicio o práctica importante;
+una amenaza o suceso que haya afectado la protección de la instalación portuaria;
+un cambio en la operación de la instalación portuaria o los buques que allí operan;
+un cambio de administrador u operador de la instalación portuaria;
+cuando una auditoría interna o externa, ordenada por la autoridad designada, haya puesto de manifiesto fallos en la organización, procedimientos y en la operación de protección marítima.
+ARTÍCULO 39- Resguardo de la documentación
+El plan de protección de la instalación portuaria se protegerá contra el acceso o divulgaciones no autorizadas, distribuidos de la siguiente manera, dos copias del plan de protección de la instalación portuaria impresos y en formato digital para el operador portuario y una copia impresa y en formato digital para la autoridad designada. La versión digital deberá estar protegida mediante procedimientos destinados a evitar que se borre, destruya o altere sin autorización.
+ARTÍCULO 40- Reglamentación
+Los requerimientos que deben cumplir los planes de protección de la instalación portuaria, así como, las auditorías internas a que deben someterse se normarán en el manual que se dicte sobre la materia.
+CAPÍTULO VI
+Auditorías Externas de Protección de la
+Instalación Portuaria
+ARTÍCULO 41- Auditoría externa
+Se entiende como auditoría externa en materia de protección marítima, la aplicada por la autoridad designada, como un proceso sistemático, independiente y documentado para obtener evidencias y evaluarlas objetivamente, a fin de determinar el cumplimiento de las condiciones y criterios establecidos en el Código Protección de Buques e Instalaciones Portuarias y el respectivo plan de protección de la instalación portuaria vigente. Estarán a cargo del equipo auditor PBIP, del Departamento de Seguridad y Protección, de la Dirección de Navegación y Seguridad Acuática adscrito a la División Marítima Portuaria del Ministerio de Obras Públicas y Transportes.
+ARTÍCULO 42- Condiciones de la auditoría externa
+Las auditorías externas estarán a cargo del equipo auditor de la autoridad designada, debiendo cumplir con los siguientes requisitos:
+El auditor líder presentará al equipo auditor, haciendo hincapié en la función que desarrollará cada uno en relación con el plan de auditoría externa;
+Las auditorías externas podrán realizarse de forma anunciada o no anunciada;
+Las auditorías externas son obligatorias para que una instalación portuaria pueda obtener su declaración de cumplimiento de la instalación portuaria, recertificación o refrenda anual, de conformidad con el Código de Protección de Buques e Instalaciones Portuarias, para comprobar que cumple con lo prescrito en el capítulo XI-2 del Convenio Solas;
+Las auditorías externas podrán realizarse en dos etapas, una durante el día y otra en horas nocturnas;
+Los auditores podrán hacerse acompañar por alguna autoridad de la instalación portuaria;
+En cualquier fase, el auditado debe notificar al equipo auditor cualquier preocupación respecto de la validez o interpretación de las conclusiones de la auditoría externa.
+ARTÍCULO 43- Objetivo del procedimiento de auditoría externa
+Los procedimientos de auditoría externa aplicados por parte del equipo auditor de la autoridad designada constituyen el medio para aprobar los planes de protección de la instalación portuaria o verificar que el plan de protección de la instalación portuaria cumple con los requerimientos establecidos en el Código de Protección de Buques e Instalaciones Portuarias, lo cual permitirá expedir, mantener, renovar o rechazar una Declaración de Cumplimiento de la Instalación Portuaria.
+ARTÍCULO 44- Alcances de la auditoría externa
+El equipo auditor debe definir las actividades a realizar y los alcances de cada proceso de auditoría externa, de manera que se logren los objetivos previamente establecidos. Asimismo, debe considerar las coordinaciones necesarias para el desarrollo del trabajo.
+Los alcances deberán ser comunicados al operador portuario con al menos tres días de anticipación, salvo en las denominadas auditorías de seguimiento, indicadas en la normativa vigente.
+ARTÍCULO 45- Auditorías de seguimiento
+En el transcurso del año, la instalación portuaria será objeto de auditorías de seguimiento que podrán ser o no anunciadas para verificar el apresto del personal y la efectividad de las medidas de protecciones implementadas en todo momento, aplicadas por la autoridad designada.
+ARTÍCULO 46- Del acceso previo a la información
+El equipo auditor podrá solicitar la información previa que se considere necesaria, la cual deberá ser examinada. Esta información podrá ser utilizada para la definición de los alcances pormenorizados de la auditoría externa.
+ARTÍCULO 47- Incumplimientos durante la auditoría externa
+Se consideran incumplimientos de auditorías externas:
+La no presencia del oficial de protección de la instalación portuaria titular o suplente en esta;
+El incumplimiento en la corrección de los hallazgos en el plazo brindado;
+No presentar la documentación solicitada;
+La no aplicación integral del plan de protección de la instalación portuaria.
+ARTÍCULO 48- Resultados de la auditoría externa
+Una vez recopilada y verificada la información durante la visita in situ, el equipo auditor debe reunirse para proceder a su evaluación, teniendo en cuenta los criterios de auditoría externa establecidos, con vistas a la generación de los hallazgos de la auditoría externa.
+ARTÍCULO 49- Clasificación de los hallazgos
+Estos hallazgos serán clasificados por la autoridad designada como conformidades o no conformidades, los cuales deberán estar apoyados por evidencias objetivas verificables, las no conformidades e incumplimientos se pueden subclasificar para dar prioridad a la acción correctiva en: leves, graves y muy graves conforme a la clasificación de faltas establecidas en la presente ley.
+ARTÍCULO 50- Criterio de aprobación
+El criterio de aprobación resultado de la auditoría externa se establece con relación al número de faltas (no conformidades) detectadas. El máximo número permisible de faltas para resolver favorablemente la auditoría externa, serán:
+1- No conformidades que se cataloguen como altas muy graves: ninguna;
+2- No conformidades que se cataloguen como faltas graves: ninguna; y
+3- No conformidades que se cataloguen como faltas leves: diez.
+ARTÍCULO 51- Del plan de medidas correctivas
+Una vez recibido el informe final de la auditoría externa, en caso de que corresponda, el operador portuario deberá presentar un plan de medidas correctivas a la autoridad designada, el cual deberá contemplar:
+1- El plan de medidas correctivas deberá proporcionar información pormenorizada de las acciones que haya que implementar, incluido el plazo para el comienzo y la finalización de cada acción.
+2- El auditado tendrá un plazo de treinta días hábiles prorrogables por una única vez por un plazo igual, a partir de la fecha de recepción del informe final de auditoría externa, para la presentación del plan de medidas correctivas. Autoridad designada.
+ARTÍCULO 52- De la emisión de la declaración de cumplimiento de la instalación portuaria
+Una vez superada la auditoría externa favorable y emitido el acto de aprobación de parte de la autoridad designada, está expedirá la respectiva declaración de cumplimiento de la instalación portuaria.
+La declaración de cumplimiento de la instalación portuaria dispondrá de una vigencia máxima de cinco años, la cual se podrá disminuir a un año, en caso de que el proceso de auditoría externa y el plan de medidas correctivas, requieran ser implementadas en un plazo que supere un mes calendario.
+La validez de la declaración de cumplimiento de la instalación portuaria quinquenal está condicionada a la aprobación de las auditorías externas anuales y tendientes al refrendo.
+CAPÍTULO VII
+Evaluación de Protección del Buque
+ARTÍCULO 53- Evaluación de protección del buque
+La evaluación de protección del buque es un análisis del riesgo de todos los aspectos de las operaciones y condiciones del buque, para determinar qué elemento o elementos de este son vulnerables; es parte integral y esencial del proceso de elaboración y actualización del plan de protección del buque.
+En caso de que el buque opere con buques a los que no se les aplique los alcances del capítulo XI-2 del “Convenio Internacional para la Seguridad de la Vida Humana en el Mar”, Ley n.° 8708, del 26 de febrero de 2009, y las normas complementarias vigentes, deberá contemplar en las etapas de evaluación, elaboración del plan de protección e implementación, procedimientos y protocolos relacionados con los Buques no Solas.
+ARTÍCULO 54- Obligatoriedad
+La compañía presentará a la autoridad designada una evaluación de protección del buque, la cual estará redactada en idioma español, para el correspondiente estudio, análisis y su eventual aprobación. Adicional al ejemplar en idioma español, se debe contar abordo con un ejemplar redactado en el idioma o idiomas de trabajo del buque.
+En caso de que la evaluación de protección del buque no sea aprobada, la autoridad designada deberá indicar los aspectos de ampliación o mejora de la propuesta, para lo cual el solicitante dispondrá de un plazo de treinta días calendario para su nueva presentación.
+ARTÍCULO 55- Elaboración de la evaluación de la protección del buque por parte de una organización de protección reconocida
+La autoridad designada, a solicitud de la compañía, podrá utilizar los servicios de una organización de protección reconocida autorizada por la autoridad marítima, para que realice la evaluación de protección del buque de un determinado buque de bandera costarricense, la cual deberá seguir el procedimiento de aprobación ordinario.
+ARTÍCULO 56- Reglamento
+La elaboración de la evaluación de protección del buque deberá ajustarse a lo establecido en el manual para la aplicación del Código PBIP vigente.
+ARTÍCULO 57- Revisión de la evaluación
+La evaluación de protección del buque debe revisarse y actualizarse cada cinco años o cuando se registren cambios sustanciales, o se haya producido cualquiera de las siguientes situaciones:
+Un suceso o amenaza que afecte la protección del buque;
+Un cambio en el tipo de operación del buque;
+Un cambio de la compañía o armador.
+CAPÍTULO VIII
+Plan de Protección del Buque
+ARTÍCULO 58- Plan de protección del buque
+Todo buque llevará abordo el plan de protección del buques aprobado por la autoridad designada, este deberá contemplar los tres niveles de protección.
+La compañía elaborará un plan de protección del buques, en aplicación de la normativa vigente, y deberá atender los resultados de la evaluación de protección del buque previamente realizada y aprobada por la autoridad designada.
+El plan de protección del buque podrá ser elaborado por una organización de protección reconocida autorizada por la autoridad marítima, para lo cual la compañía, deberá solicitar previamente el aval de esta autoridad. Autoridad designada.
+El contenido y procedimientos del plan de protección del buque deberá estar acorde a la normativa vigente.
+La compañía presentará a la autoridad designada un plan de protección del buque, la cual estará redactada en idioma español, para el correspondiente estudio, análisis y su eventual aprobación. Adicional al ejemplar en idioma español, se debe contar abordo con un ejemplar redactado en el idioma o idiomas de trabajo del buque.
+ARTÍCULO 59- Zonas restringidas del buque
+En el plan de protección del buque, deberán indicarse las zonas restringidas que se designarán a bordo, especificando su extensión, los periodos en que será válida la restricción y las medidas que habrán de adoptarse para controlar, por un lado, el acceso a estas zonas y, por otro, las actividades que se realicen en ellas.
+Las zonas restringidas tienen por objeto:
+Impedir el acceso no autorizado por vía marítima, terrestre o aérea;
+Proteger a los pasajeros, el personal del buque y el personal de las instalaciones portuarias u otras entidades cuya presencia a bordo esté autorizada;
+Proteger las zonas importantes para la protección dentro del buque; y
+Evitar la manipulación indebida de la carga y de las provisiones del buque.
+ARTÍCULO 60- Tipo de zonas restringidas que deben considerarse por el buque
+Las zonas restringidas de un buque serán:
+El puente de navegación, los espacios de categoría A para máquinas y otros puestos de control definidos en el capítulo XI-2 del Convenio Solas;
+Los espacios que contengan equipo o sistemas de protección y vigilancia, o sus mandos, y los mandos del sistema de alumbrado;
+Los espacios de los sistemas de ventilación y aire acondicionado y otros espacios similares;
+Los espacios con acceso a los tanques de agua potable, a las bombas o a los colectores;
+Los espacios que contengan mercancías peligrosas o sustancias potencialmente peligrosas;
+Los espacios de las bombas de carga y sus mandos;
+Los espacios de carga y los que contengan las provisiones del buque;
+Los alojamientos de la tripulación; y
+Toda otra zona a la que el oficial de la compañía para la protección marítima, habida cuenta de la evaluación de la protección del buque, estime necesario restringir el acceso con el fin de garantizar la protección del buque.
+ARTÍCULO 61- Niveles de protección
+El plan de protección del buque contemplará los tres niveles de protección que se definen en el Código PBIP, así como procedimientos detallados que claramente definan las actividades de preparación, prevención y respuesta que tendrán lugar en cada nivel de amenaza, a cumplir por la organización o el personal que será responsable de llevar a cabo esas actividades.
+ARTÍCULO 62- Enmiendas al plan de protección del buque
+La compañía o el armador notificará a la autoridad designada sobre la intención de realizar una enmienda a su plan de protección del buque o de la contratación de una organización de protección reconocida para que realice esta.
+ARTÍCULO 63- Aprobación del plan de protección del buque
+El plan de protección del buque deberá ser aprobado por la autoridad designada, quien dispondrá de un plazo de treinta días hábiles para su revisión y comunicación del resultado. En caso de requerirse ampliaciones o mejoras, deberán notificarse al oficial de protección de la compañía, quien dispondrá de un mes calendario para atender las observaciones emitidas y remitir nuevamente a la autoridad designada.
+ARTÍCULO 64- Implantación
+El plan de protección del buque, luego de ser aprobado por la autoridad designada, será entregado al oficial de protección del buque para su implantación en el plazo que les indique el documento de aprobación.
+ARTÍCULO 65- Auditorías internas
+Todo plan de protección del buque aprobado por la autoridad designada debe establecer procedimientos de auditorías internas, que deben cumplir todos oficiales de protección del buque, para garantizar que el plan de protección del buque permanezca eficaz en el tiempo.
+ARTÍCULO 66- Revisión del plan de protección del buque
+La revisión del plan de protección del buque es responsabilidad del oficial de la compañía para la protección marítima, la cual se realizará anualmente o después de:
+La realización de un ejercicio o práctica;
+Una amenaza o suceso que haya afectado la protección del buque;
+Un cambio en la operación del buque;
+Un cambio de armador o compañía del buque;
+Cuando una auditoría interna o externa, ordenada por la autoridad designada, haya puesto de manifiesto fallos en la organización, procedimientos y en la operación de protección.
+ARTÍCULO 67- Resguardo de la documentación
+El plan de protección del buque se protegerá contra el acceso o divulgaciones no autorizadas, distribuidos de la siguiente manera, dos copias del plan de protección del buque impresos y en formato digital de ellas una para la compañía y otra a bordo del buque; y una copia impresa y en formato digital para la autoridad designada. La versión digital deberá estar protegida mediante procedimientos destinados a evitar que se borre, destruya o altere sin autorización.
+ARTÍCULO 68- Reglamentación
+Los requerimientos que deben cumplir los plan de protección del buque, así como, las auditorías internas a que deben someterse a las regulaciones establecidas en el manual vigente.
+CAPÍTULO IX
+Auditorías Externas de Protección al Buque
+ARTÍCULO 69- Auditorías externas del buque
+Se entiende como auditoría externa en materia de protección marítima, la aplicada por la autoridad designada, como un proceso sistemático, independiente y documentado para obtener evidencias y evaluarlas objetivamente, a fin de determinar el cumplimiento de las condiciones y criterios establecidos en el Código de Protección de Buques e Instalaciones Portuarias y el plan de protección del buque vigente.
+ARTÍCULO 70- De la aplicación de la auditoría externa
+Las auditorías externas estarán a cargo del equipo de auditores de la autoridad designada, debiendo cumplir con los siguientes requisitos:
+El auditor líder presentará al equipo auditor, haciendo hincapié en la función que desarrollará cada uno en relación con el plan de auditoría externa;
+Las auditorías externas podrán realizarse de forma anunciada o no anunciada;
+Las auditorías externas son obligatorias para que un buque pueda obtener su certificado internacional del protección del buque en todas sus etapas, recertificación o refrenda anual, de conformidad con el Código PBIP, para comprobar que cumple con lo prescrito en el capítulo XI-2 del Convenio Solas;
+Los auditores externos podrán hacerse acompañar por alguna autoridad del buque;
+En cualquier fase, el auditado debe notificar al equipo auditor PBIP cualquier preocupación respecto de la validez o interpretación de las conclusiones de la auditoría externa.
+ARTÍCULO 71- Objetivo de la auditoría externa
+Los procedimientos de auditoría externa aplicados por parte del equipo auditor PBIP de la autoridad designada, constituyen el medio para verificar y aprobar los planes de protección del buque conforme a los requerimientos establecidos en el Código PBIP, lo cual permitirá expedir, mantener o renovar una declaración de cumplimiento del buque.
+ARTÍCULO 72- Alcances de la auditoría externa
+El equipo auditor PBIP debe definir las actividades a realizar y los alcances de cada proceso de auditoría externa, de manera que se logren los objetivos previamente establecidos. Asimismo, debe considerar las coordinaciones necesarias para el desarrollo del trabajo.
+Los alcances deberán ser comunicados a la compañía con al menos tres días de anticipación, salvo en las denominadas auditorías externas de seguimiento, indicadas en la normativa vigente.
+ARTÍCULO 73- Auditorías externas de seguimiento
+En el transcurso del año, el buque será objeto de auditorías externas de seguimiento que podrán ser o no anunciadas para verificar el apresto del personal y la efectividad de las medidas de protecciones implementadas en todo momento, aplicadas por la autoridad designada.
+ARTÍCULO 74- Del acceso previo a la información
+El equipo auditor podrá solicitar la información previa que se considere necesaria, la cual deberá ser examinada. Esta información podrá ser utilizada para la definición de los alcances pormenorizados de la auditoría externa.
+ARTÍCULO 75- Incumplimientos durante la auditoría externa
+Se consideran incumplimientos de auditorías externas:
+La no presencia del oficial de protección del buque en la misma;
+El incumplimiento en la corrección de los hallazgos en el plazo brindado; y
+No presentar la documentación solicitada.
+ARTÍCULO 76- Resultado de la auditoría externa
+Una vez recopilada y verificada la información durante la visita in situ, el equipo auditor PBIP debe reunirse para proceder a su evaluación, teniendo en cuenta los criterios de auditoria establecidos, con vistas a la generación de los hallazgos de la auditoría externa.
+ARTÍCULO 77- De la clasificación de los hallazgos
+Estos hallazgos serán clasificados como conformidades o no conformidades, los cuales deberán estar apoyados por sus correspondientes evidencias objetivas verificables, las no conformidades e incumplimientos se pueden subclasificar para dar prioridad a la acción correctiva en: leves, graves y muy graves conforme a la clasificación de faltas establecidas en la presente ley.
+ARTÍCULO 78- Criterio de aprobación
+El criterio de aprobación resultado de la auditoría externa se establece con relación al número de faltas (no conformidades) detectadas. El máximo número permisible de faltas para resolver favorablemente la auditoría externa, serán:
+No conformidades que se cataloguen como faltas muy graves: ninguna;
+No conformidades que se cataloguen como faltas graves: ninguna;
+No conformidades que se cataloguen como faltas leves: diez (10).
+ARTÍCULO 79- Del plan de medidas correctivas
+Una vez recibido el informe final de la auditoría externa, en caso de que corresponda, la compañía deberá presentar un plan de medidas correctivas, el cual deberá contemplar:
+Las medidas correctivas que deberán adoptarse en los plazos establecidos para cada una de ellas;
+Dicho plan deberá proporcionar información pormenorizada de las medidas que haya que adoptar, incluido el plazo para el comienzo y la finalización de cada medida;
+El auditado tendrá un plazo de treinta días hábiles prorrogables por una única vez por un plazo igual, a partir de la fecha de recepción del informe final de auditoría externa, para la presentación del plan de medidas correctivas.
+ARTÍCULO 80- Procedimiento
+Para efectos de la obtención del certificado internacional de protección del buque de bandera costarricense, se aplican los procedimientos básicos establecidos en el manual en cuanto a:
+Evaluación de riesgos y vulnerabilidades del buque y la respectiva aprobación de parte de la autoridad designada;
+Elaboración del plan de protección del buque a cargo del naviero propietario o armador que disponga de un contrato vigente de fletamento, que debe ser aprobado por la autoridad designada;
+Aplicación de una auditoría externa de parte de la autoridad designada;
+Para la elaboración de la evaluación y el plan de protección del buque, podrá utilizar los servicios de una organización de protección reconocida.
+ARTÍCULO 81- Validez
+El certificado internacional de protección del buque tendrá una validez que no exceda de cinco años, sujeto lo anterior a la aprobación de las auditorías externas anuales.
+ARTÍCULO 82- Costos
+Los costos operativos para la obtención del certificado internacional de protección del buque en todas sus etapas correrán a cargo de la compañía, en caso de que el buque se encuentre fuera del territorio costarricense.
+CAPÍTULO X
+Declaración de Protección Marítima (DPM)
+ARTÍCULO 83- Solicitud de la declaración de protección
+A petición de la instalación portuaria, el buque o ambos, podrá emitirse una declaración de protección marítima, la cual deberá ser firmada y fechada por los intervinientes, y en ella debe quedar constancia del cumplimiento de lo dispuesto en el capítulo XI-2 del Convenio Solas y Código PBIP, determinando: el periodo de vigencia de la declaración de protección marítima, medidas tomadas y el nivel o niveles de protección pertinentes.
+ARTÍCULO 84- Casos de emisión obligatoria de una declaración de protección marítima
+Se debe emitir obligatoriamente una declaración de protección marítima cuando existan una o más de las siguientes circunstancias:
+Cuando un buque funcione a un nivel de protección más elevado que la instalación portuaria o viceversa;
+Cuando una instalación portuaria esté funcionando en el nivel de protección 2 y la interfaz buque-puerto implique el traslado, carga o descarga de mercancías peligrosas, productos y sustancias potencialmente peligrosas;
+Cuando la instalación portuaria funcione en el nivel de protección 2 y la interfaz buque puerto implique el embarque o desembarque de pasajeros;
+Cuando la instalación portuaria funcione en el nivel de protección 3;
+Cuando uno de los últimos diez puertos de recalada de un buque, haya sido de un país que no esté en conformidad con el Código PBIP;
+Cuando un buque haya informado de un incidente o violación de protección antes de entrar a una instalación portuaria costarricense en sus últimos diez viajes;
+En cualquier otra que se establezca vía reglamentaria.
+En caso de que la instalación portuaria lo considere necesario podrá solicitar la declaración de protección marítima a los buques que solicitan atracar por primera vez en puertos costarricenses.
+ARTÍCULO 85- Declaración de protección marítima en caso de buques no Solas
+Los capitanes de los buques no contemplados por el código internacional para la protección de los buques y las instalaciones portuarias, código PBIP, y de los buques que enarbolen pabellón de un Estado que no sea parte del convenio Solas/74 ni del protocolo 1988, deberán, a requerimiento de la instalación portuaria, de otro buque, o cuando lo determine la autoridad designada, acordar y registrar una declaración de protección marítima, según las prescripciones del Código PBIP, para las operaciones de la interfaz buque-puerto y actividad buque-buque según corresponda.
+CAPÍTULO XI
+Del Manejo de la Documentación PBIP
+ARTÍCULO 86- De la información de protección de buques e instalaciones portuarias
+Se debe garantizar la protección de la información de acceso restringido contenida en la evaluación y en el plan sea en papel o en formato electrónico. La evaluación y el plan de protección podrá mantenerse en formato electrónico, en tal caso estará protegido mediante procedimientos destinados a evitar que se borre, destruya o altere sin autorización. Al mismo tiempo, se protegerá contra acceso o divulgación no autorizados.
+La información contenida en la evaluación de protección y el plan de protección, incluidos los documentos relacionados se deben considerar restringidos, por lo que su acceso debe limitarse a las personas expresamente asignadas según sus cargos y consignados en el plan de protección.
+El acceso a la información restringida de personas distintas a las indicadas en el párrafo anterior deberá ser autorizado por el representante de la compañía o la instalación portuaria y sus respectivos oficiales de protección, quienes igualmente se someterán a los acuerdos de confidencialidad estipulados en la presente ley. En tales casos se deberá notificar a la autoridad designada de dicho acceso.
+En el caso de la autoridad designada, podrá brindar acceso de información restringida en custodia a terceros, en amparo a una ley u orden judicial.
+TÍTULO III
+Oficiales de Protección Marítima
+CAPÍTULO ÚNICO
+De los Oficiales de Protección Marítima
+ARTÍCULO 87- Oficiales de Protección Marítima
+Para efectos de la atención permanente, las obligaciones y controles de protección, se establecen los siguientes tipos de oficiales:
+Oficial de protección de la instalación portuaria
+Oficial de protección del buque
+Oficial de la compañía para protección marítima
+Oficial de protección de la autoridad designada
+ARTÍCULO 88- De las funciones y habilitación de los oficiales de protección de la instalación, del buque y de la compañía
+El oficial de protección es la persona designada para asumir la responsabilidad de elaboración de la evaluación de protección, la elaboración, implementación, revisión y actualización del plan de protección respectivo, así como la coordinación con los otros tipos de oficiales indicados en el artículo anterior en la interfaz buque-puerto, así como todas aquellas funciones detalladas en el manual.
+El oficial de protección deberá disponer de las condiciones laborales para poder ejercer a cabalidad sus funciones, y no podrán asignársele funciones que contravengan o debiliten el debido ejercicio de los controles propios de protección marítima.
+Cumplida las exigencias normativas vigentes, la autoridad designada emitirá la disposición para la habilitación del oficial de protección.
+ARTÍCULO 89- De las funciones y habilitación de los oficiales de protección de la autoridad designada
+El oficial de protección de la autoridad designada es la persona encargada de vigilar y controlar el cumplimiento de los procedimientos y protocolos establecidos en los planes de protección de las instalaciones portuarias y los buques, así como, todas aquellas funciones detalladas en el manual vigente.
+La autoridad designada deberá disponer en forma permanente de al menos dos oficiales de protección de autoridad designada por cada instalación portuaria, para ejercer a cabalidad las funciones indicadas y los turnos establecidos.
+ARTÍCULO 90- De la inhabilitación
+Será motivo de inhabilitación del oficial de protección las siguientes causales:
+No contar con los cursos obligatorios para mantener vigente la habilitación.
+No mantener las condiciones exigidas para la habilitación establecidas en la normativa vigente.
+No renovar la habilitación como oficial de protección de parte del representante del puerto, del buque o de la compañía.
+TÍTULO IV
+Medidas de Control y Cumplimiento
+CAPÍTULO ÚNICO
+Del Ejercicio de los Controles
+ARTÍCULO 91- Responsable
+La autoridad designada es la responsable de ejercer medidas de control y cumplimiento del presente título y conforme al capítulo XI-2 del Convenio Solas y el Código PBIP.
+ARTÍCULO 92- Medidas de control y cumplimiento sobre los buques
+Las medidas de control y cumplimiento para buques que no cumplan o se disponga de algún indicio de posible incumplimiento según lo dispuesto en el capítulo XI-2 del Convenio solas y el Código de Protección de los Buques e Instalaciones Portuarias, otorga a la autoridad designada a aplicar una o más de las siguientes acciones:
+Inspección del buque;
+Retraso del buque;
+Detención del buque;
+Restricción de las operaciones de los buques;
+Denegación de entrada al puerto;
+Expulsión del puerto;
+Suspensión o revocación del certificado internacional de protección del buque aprobado por Costa Rica, lo que hace que la embarcación no sea elegible para operar en las aguas jurisdiccionales de nuestro país; y
+Las medidas de control y cumplimiento en virtud de lo dispuesto en este artículo pueden imponerse a un buque cuando ha hecho escala en una instalación o en un puerto que no mantiene las medidas de protección capítulo XI-2 del Convenio Solas y el Código PBIP para garantizar un nivel de protección adecuado viéndose comprometida la protección marítima.
+ARTÍCULO 93- Medidas de control y cumplimiento sobre las instalaciones portuarias
+Las medidas de control y cumplimiento para instalaciones portuarias que no cumplan o se disponga de algún indicio de posible incumplimiento según lo dispuesto en el Capítulo XI-2 del Convenio Solas y el Código de Protección de los Buques e Instalaciones Portuarias, otorga a la autoridad designada a aplicar una o más de las siguientes acciones:
+Restricciones en el acceso a las instalaciones;
+Condiciones en las operaciones de las instalaciones;
+Suspensión de las operaciones de las instalaciones;
+Suspensión o revocación de la Declaración de Cumplimiento de la Instalación Portuaria, lo que hace que la instalación portuaria no pueda operar.
+TÍTULO V
+Prohibiciones
+CAPÍTULO ÚNICO
+De las Faltas
+ARTÍCULO 94- Clasificación de las faltas
+Para efecto de la presente ley, se clasificarán las faltas como:
+Leves
+Graves
+Muy graves
+ARTÍCULO 95- Se considerarán como faltas leves de la instalación portuaria:
+Generales:
+Ausencia o fallos en cámaras de monitoreo. Cada cámara fuera de servicio se considerará como una falta leve.
+No cumplimiento con la ejecución de capacitaciones pertinentes a la protección.
+No cumplimiento con la ejecución y periodicidad de los ejercicios de protección.
+No cumplimiento con la ejecución y periodicidad de práctica de protección.
+No aplicación en procedimientos de mantenimiento, calibración y prueba de equipos de protección.
+No reportar los cambios en los procedimientos, equipos y/o en la planta física de la IP.
+Ausencia o deterioro de rotulación que impida su lectura o interpretación, atinente a la protección de la IP.
+Ausencia de registros de las actividades establecidas en el anexo registros del plan de protección.
+Todos aquellos incumplimientos de las obligaciones establecidas en el plan de protección aprobado por la autoridad designada, que no estén incluidos en la presente ley.
+Acceso peatonal:
+Ausencia o no uso adecuado de bitácoras.
+Ausencia o fallos en radio de comunicación.
+Ausencia o fallos en cámaras de monitoreo.
+Fallos en las barreras de protección (portón de ingreso, trompo de ingreso).
+Fallos en la iluminación en puesto de ingreso/egreso.
+Ausencia o fallos en la delimitación de flujos de ingreso/egreso a la instalación portuaria.
+Ausencia o deterioro de rotulación atinente a la protección.
+Acceso vehicular:
+Ausencia o no uso adecuado de bitácoras.
+Ausencia o fallos en cámaras de monitoreo.
+Fallos en las barreras de protección (portón de ingreso, agujas, entre otros).
+Fallos en la iluminación en puesto de ingreso/egreso.
+Ausencia o deterioro de rotulación atinente a la protección.
+Sala de monitoreo:
+Ausencia o deterioro de rotulación de zona restringida.
+Ausencia o no uso adecuado de bitácoras.
+Ausencia o fallos en monitores y pantallas de visualización.
+Ausencia o fallos en los sistemas de grabación.
+Ausencia o fallos en sistema de aire acondicionado.
+Utilización de dispositivos electrónicos personales.
+ARTÍCULO 96- Se considerarán como faltas graves de la instalación portuaria
+Generales:
+No cumplimiento en la ejecución de rondas.
+Fallos en la iluminación en patios, pantalla de atraque y zonas restringidas.
+Mal estado de malla perimetral conforme las condiciones autorizadas.
+Inadecuado control o mantenimiento en zonas de vegetación que debilitan el control de algunos sectores vulnerables en zonas PBIP.
+No uso de herramientas o sistemas de protección.
+Accesos no autorizados en el espacio aéreo restringido de la instalación portuaria.
+Accesos no autorizados en el espacio marítimo restringido de la instalación portuaria.
+No aplicación de procedimientos o fallos en materia de ciberseguridad.
+No aplicación de procedimientos a los buques catalogados “No Solas”.
+Ausencia o mal funcionamiento de las plantas de generación eléctricas.
+No disponer de un oficial de protección suplente habilitado.
+No implantación de auditorías internas establecidas en el plan de protección.
+Acceso peatonal:
+No verificación de la identificación de personas.
+No contar con medio para identificar a las personas. Permiso físico o digital de ingreso.
+No inspección o mal inspección de pertenencias.
+No inspección o mal inspección de personas.
+No desprenderse de objetos que impidan una verificación del rostro (sombrero, gorra, casco, anteojos, mascarillas, y otros que impidan dicho control).
+Ausencia o fallos en equipos para inspección no intrusivas (detector manual de metales, arco detector de metales, equipo de rayos x, entre otros).
+Mal uso en equipos para inspección no intrusivas (detector manual de metales, arco detector de metales, equipo de rayos x, entre otros).
+No contar con la cantidad de oficiales establecidos.
+Falta de conocimiento o familiarización en el Código PBIP por parte de los oficiales.
+Acceso vehicular:
+No identificación de personas.
+No identificación de vehículos.
+No contar con medio para identificar a las personas. Permiso físico o digital de ingreso.
+No contar con medio para identificar a los vehículos. Permiso físico o digital de ingreso.
+No contar con medio o dispositivo para realizar la elección de revisiones robustas o aleatorias.
+No inspección o mal inspección de pertenencias.
+No inspección o mal inspección de personas.
+No inspección o mal inspección de interior de vehículos.
+No inspección o mal inspección de vehículos de carga.
+No inspección de compartimento de motor, herramientas, zona de maletas, guantera, cajuelas, entre otras zonas en las que se puedan colocar elementos no autorizados.
+No inspección o mal aplicación de revisión de marchamos en contenedores.
+No inspección o mal aplicación de revisión de contenedores vacíos.
+No inspección o mal aplicación de revisión con espejo.
+Ausencia o fallos en radio de comunicación.
+No contar con la cantidad de oficiales establecidos.
+Sala de monitoreo:
+Ausencia o fallos en radio de comunicación.
+Ausencia o fallos en cámaras de monitoreo.
+No contar con la cantidad de oficiales establecidos.
+Fallos en las barreras de protección. Portón o puerta de ingreso a la sala de monitoreo.
+Ausencia o fallos en la aplicación de control de acceso a cuarto de servidores.
+ARTÍCULO 97- Se considerarán como faltas muy graves de la instalación portuaria
+Operar la IP sin contar con un plan de protección de la instalación portuaria aprobado por la autoridad designada;
+Operar la IP sin contar con una DCIP vigente; o
+No disponer de un oficial de protección titular habilitado.
+ARTÍCULO 98- Se considerarán como faltas leves del buque
+Se prohíbe:
+No cumplimiento con la ejecución de capacitaciones pertinentes a la protección;
+No cumplimiento con la ejecución y periodicidad de los ejercicios de protección;
+No cumplimiento con la ejecución y periodicidad de práctica de protección;
+No aplicación de procedimientos de mantenimiento, calibración y prueba de equipos de protección;
+No reportar los cambios en los procedimientos, equipos y/o en la operación del buque;
+Ausencia o deterioro de rotulación que impida su lectura o interpretación, atinente a la protección de la IP;
+Ausencia o deterioro de rotulación de zona restringida;
+Ausencia de registros de las actividades establecidas en el “anexo registros” del plan de protección del buque;
+Ausencia o no uso adecuado de bitácoras;
+Ausencia o fallos en radio de comunicación;
+Fallos en las barreras de protección;
+Ausencia o fallos en monitores y pantallas de visualización;
+Ausencia o fallos en cámaras de monitoreo. Cada cámara fuera de servicio se considerará como una falta leve;
+Ausencia o fallos en los sistemas de grabación del Centro de Circuito Cerrado de Televisión (CCTV);
+Ausencia o fallos en sistema de aire acondicionado;
+Utilización de dispositivos electrónicos personales en el Centro de Circuito Cerrado de Televisión (CCTV); y
+Todos aquellos incumplimientos de las obligaciones establecidas en el plan de protección aprobado por la autoridad designada, que no estén incluidos en la presente ley.
+ARTÍCULO 99- Se considerarán como faltas graves del buque:
+Divulgar información, en forma escrita o electrónica, en materia de protección marítima considerada sensible, confidencial y secreta; contenida en, pero no limitada a documentos tales como: evaluación de protección del buque, plan de protección del buque y los informes de auditoría en materia de protección marítima;
+No facilitar a la autoridad designada llevar a cabo las auditorías anuales o periódicas establecidas y de seguimiento al buque;
+No cumplimiento en la ejecución de rondas;
+Fallos en la iluminación;
+Mal estado en las barreras de protección del buque;
+No uso de herramientas o sistemas de protección;
+No aplicación de procedimientos o fallos en materia de ciberseguridad;
+No aplicación de procedimientos a los buques catalogados “No Solas;
+Ausencia o mal funcionamiento de los generadores y sus respaldos;
+No implantación de auditorías internas establecidas en el plan de protección;
+No verificación de la identificación de personas;
+No contar con medio para identificar a las personas. Permiso físico o digital de ingreso;
+No inspección o mal inspección de pertenencias;
+No inspección o mal inspección de personas;
+No desprenderse de objetos que impidan una verificación del rostro (sombrero, gorra, casco, anteojos, mascarillas, etc.);
+Ausencia o fallos en equipos para inspección no intrusivas (detector manual de metales, arco detector de metales, equipo de rayos x, entre otros);
+Mal uso en equipos para inspección no intrusivas (detector manual de metales, arco detector de metales, equipo de rayos x, entre otros);
+No contar con la cantidad de oficiales establecidos;
+Falta de conocimiento o familiarización en el Código PBIP por parte de los oficiales;
+Ausencia o fallos en radio de comunicación.
+ARTÍCULO 100- Se considerarán como faltas muy graves del buque:
+Operar el buque sin contar con un plan de protección del buque aprobado por la autoridad designada;
+Operar el buque sin contar con una CIPB vigente;
+No presentar a la autoridad designada las evaluaciones de protección del buque para su aprobación, revisión y actualización periódica, teniendo en cuenta los posibles cambios en las amenazas o los cambios de la operación del buque;
+No disponer de un oficial de protección titular habilitado.
+ARTÍCULO 101- Faltas en materia de protección marítima de las unidades móviles de perforación mar adentro
+Para efectos de la presente ley, se le aplican las establecidas para los buques.
+TÍTULO VI
+Régimen Sancionatorio
+CAPÍTULO I
+De las Sanciones para las Instalaciones Portuarias
+y los Buques de Bandera Costarricense
+ARTÍCULO 102- Competencia sancionatoria
+El MOPT, por intermedio de la autoridad designada, será la encargada de aplicar las sanciones administrativas; y verificar el efectivo cumplimiento de éstas de parte del incumpliente.
+Así mismo, llevará un registro de todas las sanciones declaradas en firme.
+ARTÍCULO 103- Apercibimientos
+Previo a la imposición de las sanciones administrativas, la autoridad designada en el caso de faltas leves o graves apercibirá dos veces por escrito a la instalación portuaria o al buque de las faltas que están cometiendo en aras que implementen las medidas correctivas para evitar la imposición de aquéllas.
+Cada apercibimiento deberá realizarse entre una y otra, en un plazo de diez días hábiles, transcurrido ese mismo plazo a partir del segundo.
+En el caso de faltas muy graves, se emitirá un único apercibimiento con un plazo único de cumplimiento de diez días hábiles.
+ARTÍCULO 104- Del plan correctivo
+Una vez notificado el apercibimiento, dentro del plazo otorgado la instalación portuaria o el buque deberá:
+En el caso de faltas leves, deberá presentar un plan correctivo de atención de las faltas señaladas, y su implantación deberá disponer de un cronograma de ejecución de forma que se cumpla antes de la siguientes auditoría anual externa de parte de la autoridad designada;
+En el caso de faltas graves, deberá presentar un plan correctivo de atención de las faltas señaladas, y su implantación deberá disponer de un cronograma de ejecución en un plazo de treinta días hábiles, lo cual podrá ser prorrogado a solicitud del interesado por una única vez;
+En el caso de las faltas muy graves, se debe emitir un acuerdo de compromiso de parte del representante de la instalación portuaria o el buque de ejecución inmediata donde defina las acciones de subsanación de las faltas identificadas, con un plazo máximo de implantación efectiva de treinta días hábiles.
+ARTÍCULO 105- Levantamiento de las actas de identificación de las faltas
+El acta en la que se consigne una irregularidad que acarree una infracción, según lo que dispone esta ley, será elaborada por los funcionarios de la autoridad designada debidamente acreditados; en presencia de dos testigos. El contenido del acta se determina en el manual regulará en el reglamento a la presente ley.
+ARTÍCULO 106- Sanciones administrativas
+Las sanciones administrativas que contempla la presente ley se aplicarán de la siguiente forma: la sección II a las instalaciones portuarias, la sección III a los buques y a las unidades móviles de perforación mar adentro.
+Las sanciones administrativas que se impongan se harán sin perjuicio de las que en sede judicial puedan determinarse, de acuerdo con el ordenamiento jurídico.
+ARTÍCULO 107- Suspensión de la Declaración de Cumplimiento de la Instalación Portuaria o del Certificado Internacional de Protección del Buque
+En el caso de desatención de los apercibimientos de las faltas determinadas sin causa fundamentada y la debida presentación del plan correctivo o acuerdo de compromiso dentro del plazo otorgado, provocará inmediatamente la suspensión de la Declaración de Cumplimiento o Certificado Internacional de Protección, según corresponda.
+ARTÍCULO 108- Cancelación de la Declaración de Cumplimiento de la Instalación Portuaria o del Certificado Internacional de Protección del Buque
+En el caso que la instalación portuaria o el buque incumpla con el plan correctivo o acuerdo de compromiso, se procederá con la cancelación de la Declaración de Cumplimiento de la Instalación Portuaria o del Certificado Internacional de Protección del Buque, según corresponda.
+Dicha condición será inmediatamente comunicada a las autoridades nacionales e internacionales competentes
+ARTÍCULO 109- Cierre de operaciones de la instalación portuaria
+En el caso de las instalaciones portuarias, la desatención del plan correctivo o del acuerdo de compromiso ante faltas graves, conllevará al cierre de operaciones del puerto, hasta tanto sea presentado nuevo plan o acuerdo de compromiso aprobado por la autoridad designada. Dicho plan o acuerdo deberá contemplar su efectiva ejecución dentro en un plazo máximo de treinta días hábiles.
+ARTÍCULO 110- Cese de operaciones del buque
+En el caso de los buques, la desatención del plan correctivo o del acuerdo de compromiso ante faltas graves, conllevará a la suspensión del certificado de navegabilidad e internacionales emitidos por la autoridad marítima, hasta tanto sea presentado nuevo plan o acuerdo de compromiso aprobado por la autoridad designada. Dicho plan o acuerdo deberá contemplar su efectiva ejecución dentro en un plazo máximo de treinta días hábiles.
+ARTÍCULO 111- Responsabilidad solidaria
+En caso de que se impongan sanciones a la instalación portuaria o el buque; los miembros de su junta directiva y/o representante legal serán responsables solidarios de las consecuencias económicas generadas por la aplicación de las sanciones, en el tanto se declare negligencia por omisión sobre actuaciones no ejecutadas en conocimiento de éstos, para lo cual deberán iniciarse los procedimientos administrativos internos para su determinación.
+Igualmente, la instalación portuaria o el buque, deberá determinar las responsabilidades administrativas y disciplinaria de sus funcionarios o empleados que provocaron la falta o faltas señaladas por la autoridad designada.
+CAPÍTULO II
+Sanciones Administrativas Aplicables
+a los Buques de Bandera Extranjera
+ARTÍCULO 112- Sanciones administrativas aplicables a los buques de bandera extranjera
+Las sanciones administrativas dispuestas en esta sección se aplicarán a los buques de bandera extranjera que incumplan las condiciones establecidas en la normativa vigente.
+ARTÍCULO 113- Sanciones administrativas aplicables a los buques de bandera extranjera:
+Se impondrá la detención del buque por veinticuatro horas del buque a aquellos buques que no notifiquen su ingreso a una instalación portuaria costarricense en un nivel de protección mayor a uno.
+Se impondrá la detención del buque por cuarenta y ocho horas a aquellos buques que ingresen a una instalación portuaria sin contar con un certificado internacional de protección del buque o declaración de cumplimiento vigente y aprobado por la autoridad designada del país de bandera, salvo que la misma se haya vencido con un plazo no mayor de tres meses y demuestre que ha permanecido navegando con anterioridad o que demuestre que se encuentra en ejecución el proceso de renovación.
+Se impondrá la detención del buque por veinticuatro horas, a aquellos buques que ingresen a una instalación portuaria sin contar con la designación formal del oficial de protección del buque, tiempo en el cual deberá gestionar formalmente la designación respectiva o enrolamiento correspondiente.
+Se impondrá la detención del buque por veinticuatro horas, a aquellos buques que ingresen a una instalación portuaria y no permitan el ingreso de la autoridad designada para la verificación de las condiciones de cumplimiento y obligaciones PBIP. Se podrá ampliar la sanción en caso de que en el plazo inicial no se cumpla con la posibilidad de acceso al buque.
+En todos los casos anteriores, durante la aplicación de la orden de retención del buque, no se podrán ejecutar las operaciones de carga o descarga, o embarque o desembarque de pasajeros, y todos los costos operativos de su estancia en puerto correrán por parte de la compañía o el buque.
+CAPÍTULO III
+De los Recursos
+ARTÍCULO 114- De los recursos
+Las sanciones impuestas dispondrán de recurso de apelación, que será resuelto por el Tribunal Administrativo Marítimo Portuario del ministro de obras públicas y transportes.
+El Recurso deberá presentarse dentro del plazo improrrogable de diez días hábiles, caso contrario se rechazará ad-portas sin dictado de resolución alguna.
+Para el desarrollo de la audiencia se aplicarán los procedimientos establecidos en la Ley n.º 6227, Ley General de la Administración Pública, del 2 de mayo de 1978, y sus reformas, el Código Procesal Contencioso-Administrativo, Ley n.º 8508, del 28 de abril de 2006, la presente ley y el Código Procesal Penal, Ley n.º 7594, del 10 de abril de 1996, en lo conducente a materia de contravenciones.
+TÍTULO VII
+Régimen Financiero
+CAPÍTULO ÚNICO
+Disposiciones generales
+ARTÍCULO 115- Autorización al sector público para realizar ayudas y donaciones
+Se autoriza a todas las instituciones públicas para que donen bienes inmuebles al MOPT o le transfieran la posesión por cualquier otro título, así como para que donen recursos económicos al Fondo Especial de Seguridad y Protección Marítimas, con el fin de implementar la presente ley.
+ARTÍCULO 116- Creación del Fondo
+Se crea el Fondo Especial de Seguridad y Protección Marítima, que será administrado por el MOPT. Los recursos del Fondo serán incorporados al presupuesto nacional de la república y el Ministerio de Hacienda los girará al MOPT, para que obligatoriamente se depositen en el programa presupuestario asignado a la Dirección de Navegación y Seguridad Acuática de la División Marítimo Portuaria, designado para la ejecución de esta ley, sin que puedan ser utilizados para otros fines del Estado.
+El ministro de obras públicas y transportes representará legalmente al Fondo Especial de Seguridad y Protección Marítima y tendrá la responsabilidad de velar por que la totalidad de los recursos captados se presupuesten y ejecuten, exclusivamente para el cumplimiento de las competencias y las funciones dispuestas en la presente ley.
+Los recursos del Fondo Especial de Seguridad y Protección Marítima serán administrados de conformidad con la ley de la Administración Financiera de la República y Presupuestos Públicos, y sus reformas, salvo disposición expresa de la presente ley.
+ARTÍCULO 117- Inclusiones al Fondo Especial Seguridad y Protección Marítima
+En el Fondo Especial de Seguridad y Protección Marítima, se depositarán:
+Por cada unidad de arqueo bruto del buque que ingrese a puerto nacional se cobrará 0.15 centavos de dólar estadounidenses.
+Las donaciones de recursos económicos que reciba de parte de las organizaciones gubernamentales y no gubernamentales, nacionales o extranjeras, las instituciones públicas o privadas o gobiernos cooperantes.
+Los límites al gasto relacionados con la ejecución presupuestaria deberán considerar, como mínimo, los gastos corrientes de operación de la Dirección de Navegación y Seguridad Acuática de la División Marítimo Portuaria, más los presupuestos de inversión de capital conforme a las proyecciones de recaudación que realice el MOPT, de manera que le sea posible cumplir con sus objetivos y metas para su operación anual, con los planes de inversión y con las funciones y competencias establecidas en la presente ley.
+TÍTULO VIII
+Tribunal Administativo Marítimo Portuario
+CAPÍTULO ÚNICO
+Disposiciones generales
+ARTÍCULO 118- Creación del Tribunal Administrativo Marítimo Portuario
+Créase el Tribunal Administrativo Marítimo Portuario, con sede en San José y competencia en todo el territorio nacional, como órgano de desconcentración máxima, adscrito al Ministerio de Obras Públicas y Transportes. Sus atribuciones serán exclusivas y contará con independencia funcional, administrativa y financiera. Sus fallos agotarán la vía administrativa y sus resoluciones serán de acatamiento estricto y obligatorio.
+ARTÍCULO 119- Competencia del Tribunal Administrativo Marítimo Portuario
+El Tribunal será competente para lo siguiente:
+Conocer y resolver, en sede administrativa, los recursos de apelación que se interpongan contra cualquier acto o resolución de la Dirección de Navegación y Seguridad Acuática, incluida en su condición de autoridad designada, de la Dirección de Obras Marítimo Portuarias y de la Dirección General de la División Marítimo Portuaria del Ministerio de Obras Públicas y Transportes.
+Establecer, en vía administrativa, las indemnizaciones que puedan originarse en relación con los daños producidos por violaciones de la legislación marítimo portuaria.
+ARTÍCULO 120- Integración
+El Tribunal estará integrado por tres miembros propietarios y tres suplentes, designados por el ministro de obras públicas y transportes.
+El nombramiento inicial de los miembros del tribunal corresponderá al Ministerio de Obras Públicas y Transporte previo concurso de antecedentes que promoverá el Ministerio. Los funcionarios podrán ser reelegidos siguiendo el mismo procedimiento. Para su remoción, deberán observarse igualmente las formalidades y disposiciones sustantivas establecidas en el ordenamiento jurídico.
+La retribución de los integrantes del Tribunal deberá ser equivalente al sueldo de los miembros de los tribunales superiores del Poder Judicial; la del resto del personal deberá equipararse, según el caso, a la de los cargos afines del personal de esos tribunales o de otros órganos del Poder Judicial donde se desempeñen cargos iguales o similares.
+ARTÍCULO 121- Requisitos de los miembros
+Para ser miembro del Tribunal, se requiere ser profesional con experiencia en materia marítima portuaria de al menos tres años. Los miembros propietarios y sus suplentes deberán ser abogados. Los propietarios deben trabajar tiempo completo y ser personas que, por sus antecedentes, títulos profesionales y reconocida competencia en la materia, sean garantía de imparcialidad y acierto en el desempeño de sus funciones.
+Anualmente, este Tribunal elegirá de su seno a un presidente, un vicepresidente y un secretario.
+El reglamento interno regulará los elementos necesarios para el desempeño adecuado y eficiente de sus labores.
+ARTÍCULO 122- De la Secretaría Administrativa
+El Tribunal contará con una persona encargada de los asuntos administrativos, que deberá disponer de un título profesional propio de esa materia y con una experiencia en el sector marítimo portuario de al menos dos años.
+ARTÍCULO 123- Del agotamiento de la vía administrativa
+Las resoluciones del Tribunal no tendrán más recursos y darán por agotada la vía administrativa.
+TÍTULO IX
+Disposiciones Transitorias
+TRANSITORIO ÚNICO- El Poder Ejecutivo reglamentará la presente ley dentro de los seis meses siguientes a su publicación en el diario oficial La Gaceta.
+Rige a partir de su publicación.
+Alexander Barrantes Chacón
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 09-03-2026).

@@ -1,0 +1,80 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+REFORMA DE LOS ARTÍCULOS 49 Y 67 Y ADICIÓN DE LOS ARTÍCULOS 43 BIS y 43 TER A LA LEY GENERAL DE TELECOMUNICACIONES, N.º 8642, DE 04 DE JUNIO DE 2008 Y SUS REFORMAS, PARA DAR ACCESO A LAS AUTORIDADES JUDICIALES A REGISTROS DE INFORMACIÓN EN ADMINISTRACIÓN DE LOS OPERADORES DE REDES DE TELECOMUNICACIONES Y DE PROVEEDORES DE SERVICIOS EN TELECOMUNICACIONES DISPONIBLES AL PÚBLICO
+LUIS DIEGO VARGAS RODRÍGUEZ
+OTROS SEÑORES DIPUTADOS Y
+SEÑORAS DIPUTADAS
+EXPEDIENTE N.° 24.170
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+REFORMA DE LOS ARTÍCULOS 49 Y 67 Y ADICIÓN DE LOS ARTÍCULOS 43 BIS y 43 TER A LA LEY GENERAL DE TELECOMUNICACIONES, N.º 8642, DE 04 DE JUNIO DE 2008 Y SUS REFORMAS, PARA DAR ACCESO A LAS AUTORIDADES JUDICIALES A REGISTROS DE INFORMACIÓN EN ADMINISTRACIÓN DE LOS OPERADORES DE REDES DE TELECOMUNICACIONES Y DE PROVEEDORES DE SERVICIOS EN TELECOMUNICACIONES DISPONIBLES AL PÚBLICO
+Expediente N.º 24.170
+ASAMBLEA LEGISLATIVA:
+Uno de los grandes desafíos de las autoridades judiciales, en los procesos de investigación, es enfrentar como reto el avance tecnológico. El desafío primordial es convertirlo en una herramienta para fortalecer los procesos de investigación científica. De ahí la importancia de aprobar el presente proyecto, que establece como obligación la entrega de los datos de tráfico, registros, de localización y demás relacionados con los usuarios finales y servicios que se prestan, así como la obligación de mantenerlos almacenados por un plazo de tres años desde la fecha en que fueron generados, por parte de los operadores de redes públicas de telecomunicaciones y de proveedores de servicios de telecomunicaciones disponibles al público.
+Es importante recalcar que las nuevas comunicaciones a través de internet y las tecnologías digitales constituyen un hito en la evolución mundial, por los múltiples beneficios que le proveen a la sociedad, mediante la diseminación de información, la inmediatez y la cercanía propiciada por la interacción entre los seres humanos y distintos ordenadores. Estos aspectos han venido a darle un giro a la forma en que se conciben las relaciones entre las personas, instituciones, compañías y los países, facilitando el acceso ilimitado a recursos de todo tipo, fortaleciendo la innovación, nuevas aplicaciones en el campo de servicios financieros, salud, educación, seguridad, entre otros. La tecnología hace que el mundo cambie todos los días y sus formas de comunicación.
+Alineados a la evolución tecnológica y al internet se encuentran los distintos riesgos, a los que se encuentran expuestas las personas, instituciones, empresas y entidades financieras o bancarias mediante prácticas ilícitas de fraude, que a través del uso de plataformas de telecomunicaciones les han permitido a distintos agentes (crimen organizado, terroristas, etc) poder identificar debilidades en los sistemas informáticos, en el internet y en las bases de datos y registros digitales, todo con el fin de ocasionar un daño económico (apropiación de dinero o acceso a cuentas bancarias), paralizar la operación o alterar la información (sabotaje), violentar datos personales de las personas, entre muchos otros.
+La transformación tecnológica digital está en la agenda de todas las sociedades. Las tecnologías emergentes como la Inteligencia Artificial, Machine Learning, Blockchain, Cloud, Big Data o IoT (Internet of Things), desempeñan un papel fundamental, proporcionando a los usuarios nuevas facilidades de comunicación, no solo de voz y video, sino de datos, en escenarios hoy como la telefonía celular y comunicación de voz IP. El avance acelerado hace que cada día más la sociedad tenga acceso ilimitado a estas nuevas tecnologías, las cuales son y seguirán siendo usadas entre las relaciones de los diferentes miembros de nuestra sociedad.
+Se debe tomar en cuenta que las nuevas herramientas digitales han sofisticado la materialización de los delitos tradicionales, donde para apropiarse un dinero ajeno ya no hace falta asaltar una entidad bancaria, sino el empleo fraudulento de plataformas de comunicación. Tales facilidades han hecho posible que, tanto la criminalidad común como la organizada, puedan cometer delitos con más tecnicidad y menos exposición física, generando desafíos para la investigación científica judicial.
+Inclusive, el mal uso de la tecnología ha permitido ataques cibernéticos transfronterizos, que hace pocos años parecieran imposibles, o enfrentar desde la fabricación y distribución de pornografía infantil por medios digitales, que hoy están a la mano de cualquier usuario digital.
+Los desarrollos tecnológicos han permitido que se generen grandes redes de contactos que no requieren tener acercamientos cara a cara, es solo una identidad digital que les permite comunicarse y organizarse para cometer actos ilícitos. En ese momento surge la necesidad de que la investigación judicial disponga con inmediatez de los datos de registros de los diferentes tipos de comunicación, tráfico, registros de localización y demás, relacionados con los usuarios finales y servicios, que sean tratados y suministrados por los operadores de redes públicas de telecomunicaciones (operadores) y los proveedores de servicios de telecomunicaciones disponibles al público (proveedores). Toda comunicación crea una huella digital, misma que se convierte en prueba importante para las investigaciones judiciales.
+La aparición de nuevas y aceleradas innovaciones en el campo de la inteligencia artificial obliga a nuestra sociedad a no quedarse atrás y exige a las autoridades judiciales la búsqueda metodológica de prueba digital, que en la mayoría de los casos la poseen los operadores de redes públicas de telecomunicaciones y proveedores de servicios de telecomunicaciones disponibles al público, con ocasión de la prestación de los diferentes servicios.
+El empleo a nivel mundial de la tecnología, por parte de la criminalidad, ha tomado un rol trascendental y ha sido ampliamente analizado y tratado por la Organización de las Naciones Unidas (ONU), la Unión Europea (UE) y la Organización de Estados Americanos (OEA), que mediante acciones, políticas y estrategias han dictado pautas a los países miembros, para la aprobación de normativa acorde con estas nuevas necesidades.
+Es así como el 23 de noviembre del año 2001 se suscribe, en la ciudad de Budapest, el Convenio sobre Ciberdelincuencia, el cual contempla diversos mecanismos desde la cooperación internacional, tratamiento de aspectos tecnológicos y nuevas conductas criminales. Lo anterior exhorta a fortalecer los distintos métodos de investigación científica, que requieren esta nueva gama de delitos y la normativa aplicable para tipificar las conductas delictivas, sirviendo a los países como fuente para implementarlo en los respectivos ordenamientos jurídicos. Costa Rica en atención a lo expuesto aprobó la Adhesión al Convenio sobre Ciberdelincuencia, en el mes de mayo del año 2017.
+Importante resaltar, en lo relacionado con el presente proyecto de ley, lo indicado en el artículo 20 del mencionado Convenio:
+“Obtención en tiempo real de datos informáticos
+Artículo 20- Obtención en tiempo real de datos de tráfico
+Cada Parte adoptará las medidas legislativas y de otro tipo que resulten necesarias para facultar a sus autoridades competentes a:
+a. obtener o grabar mediante la aplicación de medios técnicos existentes en su territorio, y
+b. obligar a un proveedor de servicios, dentro de los límites de su capacidad técnica:
+Obtener o grabar mediante la aplicación de medios técnicos existentes en su territorio, o
+A prestar a las autoridades competentes su asistencia y su asistencia para obtener o grabar, en tiempo real, los datos sobre el tráfico asociados a comunicaciones específicas transmitidas en su territorio por medio de un sistema informático.
+2- Cuando una Parte, en virtud de los principios consagrados en su ordenamiento jurídico interno, no pueda adoptar las medidas indicadas en el apartado 1. a), podrá, en su lugar, adoptar las medidas legislativas y de otro tipo que resulten necesarias para asegurar la obtención o la grabación en tiempo real de los datos sobre el tráfico asociados a determinadas comunicaciones transmitidas en su territorio mediante la aplicación de los medios técnicos existentes en el mismo.”
+La aprobación del presente proyecto no solo está en total concordancia con la legislación ya aprobada por este Congreso, sino que fortalece los compromisos internacionales a los que nuestro país se adhirió.
+El poder disponer de los insumos que generan los operadores y prestatarios de servicios de telecomunicaciones permitirá responder a las autoridades judiciales de forma eficiente y oportuna a las necesidades que requiere la investigación judicial, al atender delitos de alta urgencia como lo puede ser homicidios, secuestro, delitos sexuales y los asociados a la ciberdelincuencia.
+Hoy en día, a pesar de la buena voluntad de varios de los actuales operadores y proveedores de telecomunicaciones, es necesario estandarizar los criterios para una respuesta oportuna.
+Los procesos de investigación judicial no pueden estar sujetos a la diversidad de criterios de los operadores y proveedores para atender los requerimientos judiciales. La inmediatez de la prueba es esencial para la búsqueda de la verdad de los hechos investigados, en protección de la ciudadanía.
+Actualmente se presentan requerimientos judiciales a los operadores y proveedores de servicios de telecomunicaciones, que pasan meses sin ser atendidas. Se requiere una normativa que, en concordancia con la ya aprobada, establezca la obligatoriedad de la entrega y los tiempos de respaldo de la información.
+El presente proyecto busca establecer con claridad y certeza la obligatoriedad de la entrega de la información, las multas por el incumplimientos y los tiempos de almacenamiento que deben respetarse, tanto para los operadores y proveedores de servicios de telecomunicaciones, como para las autoridades judiciales.
+El poder disponer con inmediatez de los insumos que generan las comunicaciones digitales, en el campo de las telecomunicaciones, se convierte cada día más en herramientas esenciales e imprescindibles para combatir el crimen local y global.
+Por lo anteriormente expuesto, sometemos a conocimiento de la Asamblea Legislativa el siguiente proyecto de ley, para su estudio y aprobación por parte de las señoras diputadas y los señores diputados
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+REFORMA DE LOS ARTÍCULOS 49 Y 67 Y ADICIÓN DE LOS ARTÍCULOS 43 BIS y 43 TER A LA LEY GENERAL DE TELECOMUNICACIONES, N.º 8642, DE 04 DE JUNIO DE 2008 Y SUS REFORMAS, PARA DAR ACCESO A LAS AUTORIDADES JUDICIALES A REGISTROS DE INFORMACIÓN EN ADMINISTRACIÓN DE LOS OPERADORES DE REDES DE TELECOMUNICACIONES Y DE PROVEEDORES DE SERVICIOS EN TELECOMUNICACIONES DISPONIBLES AL PÚBLICO
+ARTÍCULO 1- Adiciónese un nuevo inciso 5) al artículo 49 de la Ley N.º 8642, Ley General de Telecomunicaciones, de 4 de junio de 2008 y sus reformas; y se corra la numeración de los demás incisos. El texto es el siguiente:
+Artículo 49- Obligaciones de los operadores y proveedores
+Los operadores de redes y proveedores de servicios de telecomunicaciones tendrán las siguientes obligaciones:
+(…)
+5) Cumplir con celeridad las órdenes judiciales que le sean notificadas.
+(…)
+ARTÍCULO 2- Adiciónese un nuevo subinciso 19) al inciso a) del artículo 67 de la Ley N.º 8642, Ley General de Telecomunicaciones, de 4 de junio de 2008, y sus reformas. El texto es el siguiente:
+Artículo 67- Clases de infracciones
+Las infracciones en materia de telecomunicaciones pueden ser muy graves o graves.
+Son infracciones muy graves:
+(…)
+19)- Incumplir el inciso 5) del artículo 49 de esta ley.
+(…)
+ARTÍCULO 3- Adiciónense los artículos 43 bis y 43 ter a la Ley N.º 8642, Ley General de Telecomunicaciones, del 04 de junio del 2008, y sus reformas, que se leerán de la siguiente manera:
+Artículo 43 bis- Información de datos de tráfico nacional e internacional, registros, localización y demás de interés para las autoridades judiciales
+El Ministerio Público podrá solicitar los datos de tráfico nacional e internacional, registros, de localización y geolocalización, direcciones IP (protocolo de internet por sus siglas en inglés) y demás relacionados con los usuarios finales y servicios, que sean tratados y suministrados por operadores de redes y proveedores de servicios de telecomunicaciones. Estos podrán ser solicitados en tiempo real.
+Se autoriza al Ministerio Público a delegar la solicitud en cuerpos de policía de investigación mientras se mantenga una supervisión de las solicitudes.
+Los operadores de redes y proveedores de servicios de telecomunicaciones deberán almacenar la información en sus servidores por un plazo de tres años, desde la fecha en que fueron generados. En caso de que el operador o proveedor no disponga de la tecnología para suministrar la información del párrafo anterior, se le brindará un año para que pueda hacer las modificaciones en los sistemas informáticos que poseen.
+Le corresponde a la Superintendencia de Telecomunicaciones (Sutel) velar por que los operadores y proveedores cumplan lo establecido en este artículo y lo que reglamentariamente se requiera para su efectivo cumplimiento.
+Artículo 43 ter- Comisión Interinstitucional para la mejora de las investigaciones judiciales
+Créase una comisión interinstitucional bajo la coordinación de un representante del Ministerio Público. Estará integrada por representantes del Organismo de Investigación Judicial (OIJ), de la Superintendencia de Telecomunicaciones (Sutel) y de los diferentes operadores de redes y proveedores de servicios de telecomunicaciones, a fin de buscar mecanismos que permitan agilizar las investigaciones penales.
+Esta comisión deberá reunirse al menos dos veces al año, para discutir las diferentes situaciones tecnológicas que afectan las investigaciones y propondrán las mejoras procedimentales y normativas necesarias para poder disponer de investigaciones criminales más eficientes y eficaces.
+En caso de que se requiera una modificación reglamentaria, la Sutel queda facultada para realizarla.
+Rige a partir de su publicación.
+Luis Diego Vargas Rodríguez
+Kattia Cambronero Aguiluz Johana Obando Bonilla
+Gilberto Arnoldo Campos Cruz José Pablo Sibaja Jiménez
+Carlos Felipe García Molina Monserrat Ruíz Guevara
+María Marta Padilla Bonilla Horacio Martín Alvarado Bogantes
+Alejandro José Pacheco Castro María Daniela Rojas Salas
+Rosalía Brown Young David Lorenzo Segura Gamboa
+Gerardo Fabricio Alvarado Muñoz Gilberth Adolfo Jiménez Siles
+Yonder Andrey Salas Durán Paulina María Ramírez Portuguez
+Antonio José Ortega Gutiérrez Alejandra Larios Trejos
+Diputados y diputadas
+NOTAS: El expediente legislativo aún no tiene comisión asignada.
+El texto fue confrontado y revisado por el Departamento de Servicios Parlamentarios, para hacerle los ajustes formales requeridos por el SIL. (Fecha de subido al SIL: 21-02-2024).

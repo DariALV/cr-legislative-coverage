@@ -1,0 +1,95 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+ADICIÓN DE UN CAPÍTULO PARA EL FORTALECIMIENTO DE LA TRAZABILIDAD DEL ORO AL CÓDIGO DE MINERÍA (LEY Nº 6797 DE 1982 Y SUS REFORMAS)
+LUZ MARY ALPÍZAR LOAIZA
+DIPUTADA
+EXPEDIENTE N.º 25.574
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+ADICIÓN DE UN CAPÍTULO PARA EL FORTALECIMIENTO DE LA TRAZABILIDAD DEL ORO AL CÓDIGO DE MINERÍA (LEY Nº 6797 DE 1982 Y SUS REFORMAS)
+Expediente N.º 25.574
+El oro, como recurso natural y activo financiero, constituye un bien de dominio público que le pertenece al Estado costarricense. La legislación vigente, sustentada en el Código de Minería y las reformas posteriores, establece que la extracción de este metal precioso está permitida únicamente en los cantones de Abangares, Osa y Golfito, y exclusivamente bajo modalidades artesanales y de pequeña escala, concebidas como un mecanismo de apoyo social para comunidades con bajos índices de desarrollo humano.
+No obstante, el modelo regulatorio actual, lejos de garantizar la explotación sostenible y el beneficio colectivo, ha degenerado en un sistema de control extremadamente frágil. La realidad operativa del mercado del oro en Costa Rica se ha construido sobre una premisa insostenible: la buena fe del exportador. Hoy, la única herramienta de verificación con la que cuenta el Estado para certificar el origen de miles de kilos de oro exportados es una declaración jurada firmada por la misma persona física o jurídica interesada en comercializar el metal avalada por el Decreto Ejecutivo 29300-Minae. Este mecanismo evita, en la práctica, la obligación de verificar la procedencia del mineral mediante sistemas de control efectivos.
+Esta fragilidad normativa no es una casualidad, sino la consecuencia directa de un debilitamiento progresivo del ordenamiento jurídico ambiental, advertido incluso por la jurisprudencia constitucional. Dicho debilitamiento ha permitido que un mercado de alto valor económico opere en una zona gris entre la legalidad formal y la ilegalidad material. Como lo señala la Oficina de las Naciones Unidas contra la Droga y el Delito (UNODC), "las organizaciones delictivas también obtienen beneficios mediante el control ilegal del acceso a las minas o la extorsión para obtener pagos por las operaciones mineras o siendo beneficiarias finales o de otro tipo de las empresas extractoras". Esta cita describe con precisión el escenario documentado en Costa Rica.
+La presente iniciativa de ley busca corregir esta desarticulación institucional, estableciendo un Sistema Nacional de Trazabilidad que dote al Estado de las herramientas tecnológicas y jurídicas para distinguir el oro legal del oro manchado por el crimen organizado y la devastación ambiental. Este proyecto se alinea con los más altos estándares internacionales, particularmente con la Guía de Debida Diligencia de la OCDE para cadenas de suministro responsables de minerales y con el Convenio de Minamata sobre el Mercurio, instrumentos que exigen a los Estados adoptar medidas de control y transparencia en la cadena de valor de los minerales.
+Problemática actual
+El mercado del oro costarricense atraviesa una crisis de gobernanza que se manifiesta en tres dimensiones críticas: la opacidad aduanera y comercial, el colapso de la capacidad fiscalizadora del Estado y el impacto socioambiental transfronterizo. Esta crisis no es un fenómeno aislado, sino el reflejo de una falla estructural en la cadena de suministro que los organismos internacionales han identificado como un vector de riesgo para la seguridad y la sostenibilidad.
+1. La falla del control basado en la "palabra de vendedor" y la violación del estándar OCDE
+Investigaciones periodísticas realizadas por La Voz de Guanacaste, Revista RAYA e Interferencia de Radios UCR han documentado de manera exhaustiva el vacío de control. Según los registros del Ministerio de Hacienda (Sistema TICA), entre 2017 y junio de 2025 se exportaron 9.135 kilos de oro con un valor declarado superior a los US$220,5 millones. El problema estructural radica en que, tal como lo señala la investigación: "Una declaración firmada únicamente por quien tiene interés en exportar... es la única herramienta de control... cuya veracidad el Estado no fiscaliza de manera material".
+Esta situación es precisamente la que la OCDE busca prevenir. La guía que presentan este órgano establece que las empresas deben implementar un "sistema de controles y transparencia" que puede consistir en "un sistema de cadena de custodia o de trazabilidad". La ausencia de dicho sistema en Costa Rica coloca al país en una situación de incumplimiento de facto de las expectativas de los mercados internacionales responsables, que exigen la aplicación de los cinco pasos de la debida diligencia OCDE.
+La evidencia empírica de la ilegalidad es irrefutable:
+Exportaciones sin respaldo institucional: el 10 de febrero de 2025 venció el transitorio X de la Ley 8904. A pesar de que la Dirección de Geología y Minas (DGM) aseguró oficialmente que no se aprobaron nuevas exportaciones posteriores a esa fecha, los registros únicos aduaneros (DUA) demuestran que entre marzo y junio de 2025 salieron del Aeropuerto Juan Santamaría 705 kilos de oro valorados en US$36,9 millones. Esto evidencia que el mercado opera de facto al margen de la supervisión estatal.
+Concentración y opacidad: más del 90% de las exportaciones están concentradas en un pequeño grupo de tres conglomerados empresariales. La opacidad sobre el origen del mineral es la norma, contraviniendo el paso 1 de la debida diligencia OCDE que exige "establecer un sistema de controles y transparencia sobre la cadena de suministro de minerales".
+2. El colapso de la fiscalización estatal: un técnico para 10,000 km²
+La capacidad institucional para fiscalizar este mercado es prácticamente nula. En respuesta a una consulta legislativa, el jefe de Control Minero de la DGM, Esteban Bonilla Elizondo, reconoció explícitamente la inviabilidad operativa actual: "El personal de la Dirección de Geología y Minas es muy limitado, siendo que solo hay un técnico para abarcar los 11 r (10.140 km²)... y darles seguimiento a las 80 concesiones mineras para ejercer control".
+Esta realidad operativa hace materialmente imposible que Costa Rica cumpla con el paso 2 de la Guía OCDE, que exige a las empresas y a los Estados "identificar y evaluar los riesgos en la cadena de suministro" mediante evaluaciones in situ y mapeo de la cadena de custodia. La UNODC es clara al respecto: "Los Estados deben asegurarse de que cuentan con la estructura institucional necesaria para regular con eficacia las cadenas de suministro de minerales".
+La investigación revela el modus operandi: el material rico en oro extraído ilegalmente en Crucitas es transportado hacia Abangares, donde es mezclado con material local para bajar su pureza (kilataje) y así ser "lavado" geográficamente. Este fenómeno es conocido en la literatura técnica como "fraudulenta representación del origen de los minerales", un riesgo específico que la OCDE identifica como una "bandera roja" (red flag) que debe disparar automáticamente una debida diligencia reforzada.
+3. La crisis ambiental y de salud pública: la ruta del cianuro y el mercurio
+El auge del oro ilegal ha traído consigo una catástrofe ambiental silenciosa. Los datos aduaneros analizados por La Voz de Guanacaste muestran un crecimiento exponencial en las importaciones de cianuro: se pasó de 62,1 toneladas en 2017 a 450 toneladas en 2024, un incremento del 600%. Este cianuro se utiliza en piletas artesanales construidas directamente sobre la tierra, sin membranas de protección.
+El uso de mercurio y cianuro en la minería ilegal no es solo un problema local, sino una preocupación global. La UNODC advierte que "quienes se dedican a ella suelen utilizar equipo, artefactos y sustancias químicas peligrosos para el medio ambiente, lo cual no solo pone en riesgo su propia salud, sino que también causa graves daños ambientales". Asimismo, el Convenio de Minamata, del cual Costa Rica es parte, obliga a los Estados a "adoptar medidas para reducir al mínimo su uso [del mercurio] y, cuando sea viable, ponerle fin".
+Todo ello mientras la pobreza en Guanacaste afecta al 27,6% de la población (ENAHO 2023), demostrando que la riqueza aurífera no permea en el desarrollo local, sino que financia estructuras paralelas de ilegalidad. Esta disociación entre la riqueza extraída y el bienestar social es una característica típica de lo que la UNODC denomina "delitos que afectan al medio ambiente" y que "privan a las comunidades locales de recursos vitales y limitan la capacidad de estas de acceder a ingresos legítimos".
+Con todo lo anterior expuesto, la presente reforma busca cerrar vacíos normativos, armonizar la legislación costarricense con estándares internacionales y garantizar que la protección del patrimonio mineral y ambiental del país no dependa únicamente de prohibiciones formales, sino de mecanismos penales efectivos, disuasorios y coherentes con la magnitud del daño causado por la minería ilegal contemporánea.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+ADICIÓN DE UN CAPÍTULO PARA EL FORTALECIMIENTO DE LA TRAZABILIDAD DEL ORO AL CÓDIGO DE MINERÍA (LEY Nº 6797 DE 1982 Y SUS REFORMAS)
+ARTÍCULO ÚNICO- Adiciónese un nuevo capítulo sobre el sistema nacional de trazabilidad del oro a la Ley n.º 6797, y sus reformas, para que se lea de la siguiente manera:
+CAPÍTULO IV
+SISTEMA NACIONAL DE TRAZABILIDAD DEL ORO
+Artículo 141- Definiciones para la trazabilidad
+Para efectos del presente capítulo se entenderá por:
+a) Oro: metal precioso extraído o importado dentro del territorio nacional, en cualquier forma, pureza o estado físico.
+b) Trazabilidad: capacidad de determinar y verificar el origen, la ruta geográfica, la cadena de custodia y la evolución física del oro a lo largo de toda su cadena de valor.
+c) Sistema Nacional de Trazabilidad del Oro: plataforma tecnológica que registra, integra, verifica y permite el seguimiento de la información del oro en todas las etapas de su cadena de valor.
+d) Cadena de custodia: secuencia de actores que han tenido posesión, control o intervención en el oro desde su extracción hasta su comercialización o exportación.
+e) Operadores autorizados: personas físicas o jurídicas habilitadas para participar en el mercado del oro conforme a esta ley.
+f) Debida diligencia reforzada: conjunto de procedimientos de identificación, verificación, monitoreo y gestión de riesgos sobre el origen y legalidad del oro.
+g) Datos de sostenibilidad (ESG): información relativa a impactos ambientales, sociales y de gobernanza asociados a la producción y comercialización del oro.
+Artículo 142- Creación del Sistema Nacional de Trazabilidad del Oro
+Créase el Sistema Nacional de Trazabilidad del Oro, administrado por el DGM en coordinación con el Ministerio de Hacienda y el Banco Central de Costa Rica. Este deberá contar con aspectos técnicos, así como mecanismos tecnológicos y administrativos que garanticen la integridad, veracidad, seguridad y confiabilidad de la información registrada. Para ello, este se financiará a través del canon minero, los royalties (regalías) recibidos por la venta de activos y las multas o decomisos que se hagan acorde al régimen sancionatorio de la presente ley.
+Artículo 143- Competencias institucionales
+Para lo establecido en este capítulo, los entes del sistema de trazabilidad se relacionarán de manera interinstitucional por medio de las siguientes competencias:
+a) El Minae, a través de la DGM, mantendrá la operatividad del sistema de trazabilidad del oro. Toda actividad relacionada con la extracción, transporte, procesamiento y comercialización del oro deberá registrarse electrónicamente en el sistema. El transporte del oro deberá contar con un documento de transporte y custodia que acompañará al oro dentro de la cadena de valor emitido por el sistema.
+b) El Ministerio de Hacienda fiscalizará los aspectos tributarios y de exportación. Esta en particular debe restringir a que ningún particular o empresa podrá exportar oro sin acreditar la procedencia legal y la autorización del Estado.
+c) El Banco Central de Costa Rica brindara las certificaciones, titularizaciones y precios de referencia internacional sobre el activo comercializado.
+Artículo 144- Alcance del sistema
+Dentro de los alcances del sistema, este deberá incorporar como mínimo:
+a) Procesos de verificación documental y material de la información suministrada por los operadores registrados.
+b) Auditorías 2 veces al año de manera ordinaria o extraordinarias realizadas por el DGM o por entidades debidamente autorizadas, conforme al reglamento de esta ley.
+c) Mecanismos de validación técnica mediante terceros independientes acreditados, cuando resulte procedente.
+d) Controles cruzados automatizados de información con bases de datos institucionales para detectar inconsistencias, riesgos o posibles irregularidades.
+Para los procesos de documentación y controles cruzados, el sistema deberá registrar como mínimo:
+a) Origen del oro (Sea su concesión minera o importación, el titular de esta y su registro correspondiente).
+b) Ubicación geográfica.
+c) Ruta de transporte.
+d) Cadena de custodia.
+e) Evolución física del mineral.
+El sistema consigo deberá incorporar mecanismos simplificados y acompañamiento para pequeños productores de minería artesanal, garantizando su acceso y formalización dentro del sistema de trazabilidad.
+Artículo 145- Autorización de operadores
+La Dirección de Geología y Minas establecerá los requisitos técnicos y legales para la autorización de operadores, incluyendo criterios de idoneidad, capacidad operativa y cumplimiento normativo.
+Artículo 146- Obligaciones de los operadores
+Los operadores deberán:
+a) Registrar todas las operaciones en el sistema.
+b) Verificar el origen legal del oro, especialmente aquellos que vienen de concesiones mineras.
+c) Mantener documentación completa de cadena de custodia.
+d) Cumplir con la normativa ambiental, fiscal y laboral.
+e) Aplicar procesos de debida diligencia reforzada.
+Artículo 147- Exportación
+La exportación de oro requerirá:
+a) Registro completo en el sistema de trazabilidad.
+b) Acreditación de origen legal.
+c) Autorización del DGM, Ministerio de Hacienda y el Banco Central.
+d) Cumplimiento de normativa fiscal, aduanera y comercial.
+DISPOSICIONES TRANSITORIAS
+TRANSITORIO I- Implementación
+El Sistema de Trazabilidad deberá estar operativo en un plazo de veinticuatro meses (24) meses.
+TRANSITORIO II- Adecuación
+Los operadores actuales dispondrán de veinte meses (20) meses para cumplir con esta ley.
+TRANSITORIO III- Minería artesanal
+Se establecerán mecanismos simplificados de incorporación para minería artesanal durante los primeros dieciocho (18) meses.
+TRANSITORIO IV- Reglamentación
+El Poder Ejecutivo reglamentará esta ley en un plazo de catorce (14) meses.
+Rige a partir de su publicación.
+Luz Mary Alpízar Loaiza
+Diputada
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 12-05-2026).

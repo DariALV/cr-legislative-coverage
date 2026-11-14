@@ -1,0 +1,415 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY NACIONAL DE SALUD MENTAL
+PAOLA VEGA RODRÍGUEZ
+EXPEDIENTE N.° 22.430
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY NACIONAL DE SALUD MENTAL
+Expediente N.° 22.430
+ASAMBLEA LEGISLATIVA:
+La salud mental de las y los habitantes de un país es la base para el bienestar y el efectivo funcionamiento individual y comunitario de una nación. Al reconocer que la salud es un estado de balance que incluye el propio ser de las personas, la sociedad y el ambiente, se le da un alto nivel de importancia a la búsqueda de un goce pleno de la vida y del desarrollo de la población. La Organización Mundial de la Salud (OMS) mediante la Estrategia y Plan de Acción sobre Salud Mental estiman que no hay salud física sin salud mental, de manera que es necesario que el abordaje del proceso de salud sea entendido no solamente desde la atención del daño, pero desde la salud pública.
+Actualmente no existe un solo concepto de salud mental; sin embargo, todas las definiciones cuentan con un grado de concordancia al establecer que la misma no es simplemente la ausencia de trastornos mentales, ya que esta es una condición necesaria pero no suficiente. Según la Política Nacional de Salud Mental la definición de este término es “un proceso de bienestar y desempeño personal y colectivo caracterizado por la autorrealización, la autoestima, la autonomía, la capacidad para responder a las demandas de la vida en diversos contextos: familiares, comunitarios, académicos, laborales y disfrutar de la vida en armonía con el ambiente”. Este concepto fue construido por la Comisión Nacional de Salud Mental en el año 2012 e integra también que la salud mental es un proceso que favorece “las relaciones intergeneracionales, el desarrollo de las competencias y capacidades intelectuales, emocionales sociales y productivas e incluye el ejercicio de derechos y deberes.”
+Es de gran importancia entender que la salud mental de las personas está determinada por factores personales, sociales, biológicos, ambientales, económicos y culturales que se pueden agrupar en tres temas:
+1. El desarrollo y el mantenimiento de comunidades saludables.
+2. La capacidad de cada persona para afrontar el mundo social a través de las destrezas de participación, tolerancia y responsabilidad mutua.
+3. La capacidad de cada persona para afrontar los sentimientos y pensamientos, el manejo de la propia vida y la resiliencia.
+Los objetivos de la promoción de la salud mental son propiciar estas cualidades y evitar lo opuesto a estas, de manera que las mejoras en las políticas públicas relacionadas a la salud mental resultarán en personas más saludables y potencialmente más productivas. Como expone la Política Nacional de Salud Mental 2021-2021 “invertir en Salud Mental implica prevenir situaciones de violencia social y familiar, delincuencia, matonismo y deserción escolar, lesión de los derechos humanos, conductas de discriminación y estigma”.
+Si bien es cierto, el país cuenta con normativa relativa al mejoramiento de la salud mental de la población, aún hacen falta esfuerzos en el área de fortalecimiento de la atención de esta. Expresamente, este proyecto de ley busca establecer los derechos que tienen las personas con trastornos mentales, la modalidad de abordaje de la salud mental y las potestades de la Secretaría Técnica de Salud Mental y otras instituciones relevantes en este ámbito. Todos estos aspectos deben normarse en un marco que priorice los derechos humanos de la población y se basen en el cumplimiento de las obligaciones previstas y compromisos derivados de la Declaración Universal de los Derechos Humanos, los Principios de Naciones Unidas para la Protección de los Enfermos Mentales y para el Mejoramiento de la Atención de Salud Mental, la Declaración de Caracas de la Organización Panamericana de la Salud y de la Organización Mundial de la Salud para la Reestructuración de la Atención Psiquiátrica dentro de los Sistemas Locales de Salud, y de los Principios de Brasilia para el Desarrollo de la Atención en Salud Mental en las Américas.
+Estado actual de la salud mental en Costa Rica
+Pese a que Costa Rica ha realizado grandes esfuerzos para mejorar la salud mental del país, lo cierto es que es necesaria la actualización de nuestro cuerpo normativo para la atención de los problemas que se presentan actualmente. De acuerdo con los datos brindados por la Coordinación Nacional de Psicología al Ministerio de Salud, en el período comprendido del año 2018 al año 2020 se dio un total de 835 754 consultas por trastornos mentales y del comportamiento. Es importante mencionar que, en las consultas realizadas, son las personas profesionales de salud mental (psicología, psiquiatría, trabajo social y enfermería en salud mental) quienes se encargan de realizar el diagnóstico de las personas usuarias del servicio.
+Para continuar con la contextualización del estado actual de la salud mental en el país, es necesario analizar la mortalidad por suicidios en Costa Rica. Según el Instituto Nacional de Estadística y Censos, mediante el Ministerio de Salud, solamente en el primer semestre del año 2020 se dieron 145 suicidios. El desglose de suicidios según año, edad y sexo se detallan en la siguiente tabla:
+Tabla 1
+Costa Rica: casos de suicidio según año y sexo
+2015-2020
+Año
+Número total
+Número por sexo
+Femenino
+Masculino
+2015
+315
+52
+263
+2016
+338
+52
+286
+2017
+317
+61
+256
+2018
+397
+78
+319
+2019
+383
+52
+384
+I Semestre 2020
+145
+26
+119
+Total
+1895
+321
+1627
+Fuente: elaboración propia con datos del sistema de consultas en línea de estadísticas de defunciones 2000-2020, INEC.
+La tabla anterior demuestra la importante diferencia entre la cantidad de casos de suicidio por sexo, de manera que los suicidios de personas de sexo masculino representan un 85,86% del total de casos registrados. Este dato resulta de gran relevancia al analizar que el acceso a la salud mental muchas veces es visto como una señal de debilidad, cuando en realidad esta debe ser concebida con la misma importancia que recibe la atención de salud física. Este fenómeno es el resultado de un patriarcado que le hace creer a los hombres que los trastornos mentales son algo que debe generar vergüenza y, por ende, deben ser escondidos para no mostrarse débiles. Por lo anterior, este proyecto de ley busca solventar esta problemática y generar una recepción más positiva respecto a la atención de la salud mental tanto para personas de sexo masculino, de sexo femenino o intersex.
+De igual manera, es importante analizar la distribución de los casos de suicidio por años y por región para comprender una de las problemáticas que atañen la salud mental en Costa Rica. Estos datos se evidencian en el siguiente cuadro, donde se muestra que la mayor cantidad de suicidios registrados en el país se dan en la región Central Sur (comprendida por los cantones de Acosta, Aserrí, Escazú, Alajuelita, Santa Ana, Mora, Puriscal, Turrubares y parte del cantón de Desamparados):
+Cuadro 1
+Costa Rica: casos de suicidio según región
+2015-2019
+Región
+2015
+2016
+2017
+2018
+2019
+Total
+Brunca
+30
+35
+26
+28
+37
+156
+Central Este
+25
+45
+24
+45
+43
+182
+Central Norte
+66
+60
+53
+80
+70
+329
+Central Sur
+89
+107
+98
+116
+104
+514
+Chorotega
+30
+36
+35
+46
+40
+187
+Huetar Caribe
+31
+19
+23
+28
+26
+127
+Huetar Norte
+17
+10
+13
+12
+20
+72
+Central Occidente
+15
+13
+19
+22
+18
+87
+Pacífico Central
+12
+14
+26
+20
+26
+98
+Total
+315
+339
+317
+397
+384
+1752
+Fuente: elaboración propia con datos del sistema de consultas en línea de estadísticas de defunciones 2000-2019, INEC.
+En este apartado es importante mencionar lo estipulado por la Organización Mundial de la Salud en su informe Promoción de la Salud Mental al decir que las tasas de mortalidad por suicidio ocultan la morbilidad más prevalente y potencialmente más modificable de las lesiones autoinfringidas. De igual manera, los datos expuestos pueden ser analizados de la mano con el número de profesionales en salud con los que cuenta la Caja Costarricense de Seguro Social, de manera que esta cantidad se relaciona con la calidad de atención que reciben las personas que necesitan atención psiquiátrica o psicológica. La información del personal de psiquiatría con la que cuenta la CCSS según región se ve desglosada en la siguiente tabla:
+Tabla 2
+Distribución de personal de psiquiatría en la CCSS
+2020
+Región
+Cantidad de psiquiatras
+Brunca
+7
+Central Norte
+7.5
+Central Sur
+4.5
+Chorotega
+3
+Huetar Norte
+1
+Huetar Atlántica
+3
+Pacífico Central
+3
+Subtotal Regional
+28.5
+Hospitales Nacionales y Especializados
+49.5
+Total
+78
+Fuente: elaboración propia con datos del Servicio de Psiquiatría de Hospital San Juan de Dios, 2020.
+De igual manera, mediante el oficio MS-DM-1516-2021, el Ministerio de Salud explica que la Caja Costarricense de Seguro Social cuenta con 104 áreas de Salud en el I y II Nivel de atención, de manera que en el I Nivel existe al menos una persona profesional de psicología o trabajo social; mientras que en el II Nivel:
+(…) se encuentran dotaciones de personal en Psicología, Trabajo Social, Psiquiatría y Enfermería en Salud Mental. Para este nivel, también cuenta con 13 equipos interdisciplinarios específicos para el abordaje de personas con trastornos mentales, del comportamiento y consumidoras de sustancias psicoactivas, los cuales brindan atención ambulatoria a personas de todo grupo etáreo; estos equipos están ubicados a lo largo del territorio nacional, privilegiando las zonas alejadas a la capital.
+Según los Indicadores demográficos regionales para el año 2013, Costa Rica contaba con una población total de 4 713 164 habitantes, de manera que si se toma este dato y se compara con la cantidad total de profesionales en psiquiatría que tiene la Caja Costarricense de Seguro Social, resulta en que por cada 60 425 habitantes hay una persona profesional en psiquiatría.
+Otros datos relevantes para tomar en cuenta fueron expuestos por el estudio Salud mental y relaciones con el entorno en tiempos de covid-19 realizado por la Universidad Estatal a Distancia, la Universidad Nacional, la Caja Costarricense de Seguro Social y el Ministerio de Salud. En este se registró la afectación psicológica de la población costarricense para octubre del año 2020, donde al menos 46,7% de las personas encuestadas manifestaban síntomas de ansiedad y un 61% síntomas de depresión. Al preguntar si las personas han tenido una mayor afectación en su salud mental por la pandemia del covid-19, aproximadamente 1.300.000 personas respondieron que sí ya que ahora se encuentran con una afectación crítica en este ámbito.
+Finalmente, este estudio concluye que “entre marzo y octubre de 2020 existe un aumento significativo en la presencia de síntomas relacionados con depresión (50% aumento absoluto) y ansiedad (33,5% aumento absoluto). El miedo a la covid -19 aumentó un 34,5% en términos absolutos en el período” y que los grupos más afectados son personas sin ingresos estables, personas desempleadas y sin estabilidad laboral, personas con bajo nivel educativo y mujeres. Estas conclusiones demuestran la necesidad de políticas públicas especializadas para las poblaciones más vulnerabilizadas del país, donde el accionar del Estado y el sistema público de salud y educación es primordial para estos grupos.
+Antecedentes normativos de la salud mental en Costa Rica
+El inicio histórico de la institucionalidad costarricense relacionada a la salud mental puede remontarse al año 1890 con la apertura del asilo Manuel Antonio Chapuí, mejor conocido como Hospital Nacional Psiquiátrico, bajo un paradigma de encierro y un modelo biologista. De la mano con lo anterior, no es sino hasta el año 1961 que se crea el primer departamento con servicio de psiquiatría en un hospital general a como lo es el Hospital Dr. Rafael Ángel Calderón Guardia.
+La década de los 70 también significó un gran avance en las acciones por parte del Estado costarricense a favor de la salud mental, de manera que es en este período cuando el Ministerio de Salud impulsa la investigación y la promoción de la salud mental a través de los programas nacionales de preparación psicológica para el parto y mediante el Programa de Evaluación y Estimulación del Desarrollo Integral del Niño(a) Menor de Seis Años. Esta misma década también trajo consigo la Ley N.°5349, Universalización del Seguro de Enfermedad y Maternidad, que oficializa la atención de las personas con trastornos mentales por parte de la Caja Costarricense de Seguro Social.
+En la década de 1980 las acciones en pro de la atención de los problemas relacionados a la salud mental aumentaron mediante el impulso de la prevención y la detección de los mismos en los niveles primarios de atención. Esto se logró a través de la capacitación de las personas médicas generales, técnicas de atención primaria, líderes comunales y personal de apoyo de los servicios básicos de salud. En el año 1986 nace la Ley N.° 7035 que, mediante el Instituto sobre el Alcoholismo y Farmacodependencia (IAFA), busca estudiar y prevenir el alcoholismo y la farmacodependencia.
+Es hasta los inicios de la década de 1990 que Costa Rica se inmersa en la normativa internacional relacionada a la salud mental mediante la firma de la Declaración de Caracas, normativa que insta a la reestructuración de la atención psiquiátrica mediante el cambio de las instituciones a un nuevo modelo comunitario con un nuevo paradigma de atención a la salud mental. Gracias a los compromisos asumidos por nuestro país es que se crea el Plan Nacional para la Reestructuración de la Psiquiatría y la Salud Mental en Costa Rica mediante el Decreto Ejecutivo N.º
+20665-S. Es gracias a estos esfuerzos que en 1991 el Hospital Nacional Psiquiátrico inicia un importante proceso de desinstitucionalización de personas con enfermedades mentales, logrando la disminución de camas de larga estancia. Respecto al funcionamiento de la institucionalidad en salud mental, en el año 2011 la señora ministra de Salud asigna un viceministerio encargado del tema de salud mental para trabajar en la Política Nacional de Salud Mental 2012-2021. De igual manera, en el año 2014, la vicepresidenta de la República, como parte de las acciones para atender de manera integral a las personas con problemas de salud mental, realiza el acto de cierre de la sección Asilar del Hospital Psiquiátrico. Estas acciones tuvieron como finalidad la inserción comunitaria de todas las personas mediante la reubicación de sus pacientes al Consejo Nacional de Personas con Discapacidad y el Consejo Nacional de la Persona Adulta Mayor.
+De igual manera, en ese mismo año, la Asamblea Legislativa de la República de Costa Rica emite la Ley N.° 9213 que crea la Secretaría Técnica de Salud Mental y se reglamenta por el Poder Ejecutivo mediante el Decreto N.°41282-S. Estos actos normativos significaron para el país una reconcepción de la institucionalidad alrededor de la salud mental donde, por primera vez en la historia del país, se creó un órgano permanente para la atención de este tema. Aun así, hace falta mucho para que Costa Rica se considere un país líder en la atención de la salud mental gracias a los estigmas y los preceptos alrededor de este tema han nublado las discusiones respecto al bienestar integral de la población.
+Normativa nacional vigente respecto a la salud mental
+A nivel del ordenamiento jurídico interno, Costa Rica entiende como una obligación del Estado de otorgar y facilitar todo tipo de tratamiento médico que se requiera para tratar enfermedades y promover la salud. La legislación costarricense es amplia en cuanto a la obligación estatal de atención a la salud, por lo que la atención a la salud mental no puede ser una excepción. El derecho a la salud mental es, entonces, un derecho fundamental de todo ser humano, debiendo el Estado garantizar la disponibilidad de servicios adecuados que prioricen su humanidad.
+Actualmente, el estado normativo en relación con la salud mental cuenta con vacíos legales respecto al funcionamiento del sistema nacional de salud mental y los centros de atención psiquiátrica. Para comprender los lineamientos establecidos en este tema, es importante remontarse a la Ley General de Salud, N.°5395, que establece:
+Artículo 9.-Todas las personas tienen derecho a la promoción de la salud física y salud mental, la prevención, la recuperación, la rehabilitación y el acceso a los servicios en los diferentes niveles de atención y escenarios, así como a la disponibilidad de tratamientos y medicamentos de probada calidad. La atención se realizará, principalmente, en el ámbito comunitario; para ello, se utilizarán los recursos asistenciales a nivel ambulatorio, los sistemas de hospitalización parcial y la atención a domicilio, y se considerarán de modo especial aquellos problemas de las personas menores de edad, las personas con discapacidad, los adultos mayores y las personas con depresión, suicidio, esquizofrenia, adicciones a las drogas y el alcohol, el matonismo escolar, el acoso laboral y el apoyo necesario al grupo familiar. El internamiento se utilizará solo en casos totalmente necesarios.
+De igual manera, este mismo cuerpo normativo establece en su artículo 29 que:
+Artículo 29.- Las personas con desórdenes mentales o del comportamiento severos, tales como la depresión, el suicidio, la esquizofrenia, las adicciones a las drogas y el alcohol, el matonismo escolar, el acoso laboral y el apoyo necesario al grupo familiar podrán someterse voluntariamente a un tratamiento especializado ambulatorio o de internamiento en los servicios de salud, y deberán hacerlo cuando lo ordene la autoridad competente, de conformidad con la legislación vigente.
+La Ley General de Salud amplía la concepción del sometimiento voluntario de tratamientos en servicios de salud mediante su artículo 31, donde estipula que las personas con desórdenes mentales o del comportamiento que se encuentren internadas de forma voluntaria podrán solicitar la salida del establecimiento cuando estas o sus familiares lo soliciten siempre y cuando no represente un riesgo para terceras personas. Posteriormente, esta ley menciona que corresponde al ministro de Salud promover la creación de grupos de apoyo comunales para las personas y sus familiares que se encuentren afectadas por su salud mental. Estos grupos de apoyo coordinarán con las juntas de salud, los ebais y las clínicas de la CCSS para su respectivo funcionamiento.
+Si bien es cierto, la Ley General de Salud es la encargada de delimitar la normativa relativa al sistema nacional de salud, es la Ley Orgánica del Ministerio de Salud que delimita los aspectos propios de organización y funcionamiento de su ente rector. Esta ley de N.° 5412, en su capítulo II, sección X, delimita los objetivos, naturaleza, funciones y la integración de la Secretaría Técnica de Salud Mental. Este órgano perteneciente al despacho del ministro de Salud y fue creada mediante la Ley N.° 9213 con el objetivo de “declarar de interés público las acciones de promoción, prevención, atención y rehabilitación de la Rectoría de la Producción Social de la Salud Mental”. De igual manera, esta ley adiciona un inciso c) al artículo 8 de la Ley N.°8718 que establece:
+Artículo 8.- […]
+c) De un tres por ciento (3%) a un tres coma diez por ciento (3,10%) para el Consejo Técnico de Asistencia Médico Social, destinado a financiar, exclusivamente, programas públicos de salud preventiva.
+Asimismo, de los recursos que perciba el Consejo Técnico de Asistencia Médico Social, según el párrafo anterior, se destinará un diez por ciento (10%) al financiamiento de los programas y actividades de promoción y prevención de la salud mental. Del porcentaje anterior queda excluido el pago de salarios.
+[…].
+El Poder Ejecutivo reglamentó esta ley mediante el decreto N.°41383-S y establece que la Secretaría Técnica de Salud Mental estará constituida por una Dirección Técnica, apoyada por un equipo técnico profesional y gestión administrativa (artículo 5). De igual manera, menciona que, para promover el desarrollo de una Política Nacional de Salud Mental, la Secretaría Técnica contará con un Consejo Nacional de Salud Mental, una Comisión Interinstitucional de Salud Mental, una Comisión Institucional de Salud Mental y un Sistema de Redes de Salud Mental Nacional, Regional y Local (artículo 10). Aunado a lo anterior, la Ley N. ° 9213 incluye una reforma a la Ley Orgánica del Ministerio de Salud y crea el Consejo Nacional de Salud Mental, un órgano de la Secretaría Técnica de Salud Mental. A continuación, se detalla la integración de la Secretaría Técnica de Salud Mental según la normativa vigente:
+Gráfico 1
+Organización de la Secretaría Técnica de Salud Mental
+2020
+Fuente: elaboración propia según el Decreto N.°41383-S y la Ley N.°5412.
+De igual manera, otras leyes como a Ley Fundamental de Educación, N.° 2160, la Ley 7600, y el Código de la Niñez y la Adolescencia, entre otras, contienen artículos relacionados con la protección de la salud mental de diversos sectores de la sociedad.
+Normativa internacional vigente respecto a la salud mental
+Respecto a los estándares técnicos internacionales y principios de política pública, se puede mencionar la Declaración de los Derechos Humanos y de la Salud Mental, proclamado por la Federación Mundial de Salud Mental en el año 1986.
+En segundo lugar se encuentra la Declaración de Caracas, firmada en 1990, adoptada como resolución por un grupo de personas legisladoras, personas profesionales en salud mental, personas líderes de derechos humanos y activistas que se reunieron por la Organización Panamericana de la Salud. Esta declaración pretende “promover los servicios de salud mental comunitarios e integrados, y sugiere una reestructuración de la atención psiquiátrica existente. Señala que los recursos, la atención y el tratamiento de las personas con discapacidad debe garantizar su dignidad y derechos humanos, proporcionar un tratamiento adecuado y racional, y destinar esfuerzos para mantener a las personas con trastornos mentales en sus comunidades.” Este proyecto de ley responde a las necesidades planteadas en la Declaración de Caracas y atiende la reestructuración de la atención psiquiátrica.
+En 1991 las Naciones Unidas emitió los Principios de Naciones Unidas para la Protección de Enfermos Mentales y el Mejoramiento de la Salud Mental donde establecen los estándares mínimos de derechos humanos para la atención y la práctica del campo en salud mental. Estos principios fueron utilizados como marco general en la legislación de países como Australia y México, que han incluido los Principios EM en sus leyes. Según la Organización Mundial de la Salud, estos “establecen estándares sobre el tratamiento y las condiciones de vida en instituciones de salud mental, y crean protecciones contra la detención arbitraria en esas instituciones. Estos principios se aplican en general a las personas con trastornos mentales, estén o no internadas en instituciones psiquiátricas, y a toda persona admitida en una institución psiquiátricas –haya sido o no diagnosticada como portadora de un trastorno mental.” Aún con las críticas recibidos a este cuerpo normativo, se puede considerar que los Principios EM delimitan – de manera general – el accionar de los países en temas de salud mental.
+Seguidamente, en 1993 se reiteró el compromiso internacional para la protección de los derechos humanos de las personas con discapacidades mentales y físicas mediante la firma de las Normas Uniformes para la Equiparación de Oportunidades para las Personas con Discapacidad. Este documento está compuesto por 22 reglas que buscan exigir la acción estatal en el establecimiento de requisitos para la igualdad de participación, las esferas para la igualdad en la participación de las personas con discapacidad y las medidas de implementación.
+Este documento se complementó en 1994 en la Conferencia Mundial sobre Necesidades Educativas Especiales, donde se adoptó la Declaración de Salamanca y Marco de Acción para las Necesidades Educativas Especiales, que consagró el derecho a la integración educativa de las y los niños con discapacidad mental. Gracias a esta, el Consejo Superior de Educación de Costa Rica adoptó posteriormente normativa en cumplimiento de la declaración.
+Finalmente, en el año 1996, la Organización Mundial de la Salud desarrolló los Diez principios básicos sobre legislación en atención en salud mental, como una interpretación de los Principios de Naciones Unidas para la Protección de Enfermos Mentales y el Mejoramiento de la Salud Mental anteriormente mencionados. Los principios son:
+1. Promoción de la salud mental y prevención de los trastornos mentales.
+2. Acceso a atención básica en salud mental.
+3. Evaluación de salud mental de conformidad con principios aceptados internacionalmente.
+4. Preferencia por el tipo menos restrictivo de atención en salud mental.
+5. Autodeterminación.
+6. Derecho a ser asistido en el ejercicio de la autodeterminación.
+7. Existencia de procedimientos de revisión.
+8. Mecanismo de revisión periódica automático.
+9. Cualificación del personal que toma decisiones.
+10. Respeto de los derechos y de la legalidad.
+Otros instrumentos de derechos humanos relacionados a las personas con trastornos mentales y su derecho al pleno disfrute y protección de sus derechos son: Declaración Universal de los Derechos Humanos de las Naciones Unidas; Pacto Internacional de Derechos Económicos, Sociales y Culturales; Pacto Internacional de Derechos Civiles y Políticos; Declaración Universal de Derechos Humanos y de los Pueblos; Declaración Americana de los Derechos y Deberes del Hombre; Convención Americana sobre Derechos Humanos; Convención Internacional sobre la Eliminación de todas las formas de Discriminación Racial; Convención sobre la Eliminación de todas las formas de Discriminación contra la Mujer; Convención Interamericana para la Eliminación de todas las Formas de Discriminación contra las Personas con Discapacidad. De igual manera, existen instrumentos respecto a la protección de las personas con trastornos mentales contra la tortura, los tratos y penas crueles, inhumanas y degradantes, a como lo son: Convención de las Naciones Unidas contra la Tortura y otros Tratos o Penas Crueles, Inhumanos o Degradantes y la Recomendación de la Comisión Interamericana de Derechos Humanos sobre la Promoción y Protección de los Derechos de las Personas con Discapacidad Mental.
+Por lo anterior, es que elevar la salud mental a un rango normativo significaría un gran avance en derechos humanos de una manera eficiente y eficaz, de acuerdo con las demandas y necesidades de diferentes grupos de la sociedad. La orientación de políticas públicas desde un enfoque humanista colaborará de manera positiva en la vida de las y los costarricenses mediante la intervención de los determinantes de la salud. Es mediante este proyecto de ley, en conjunto con los esfuerzos históricos realizados por el Ministerio de Salud, que se podrá lograr una reconceptualización de la salud mental en términos positivos para todas las personas.
+Para Giselle, en honor a su llanto amordazado.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY NACIONAL DE SALUD MENTAL
+TÍTULO I
+PARTE GENERAL
+CAPÍTULO I
+Disposiciones generales
+ARTÍCULO 1- Objetivos
+La presente ley tiene como objetivos:
+a) Asegurar el derecho a la protección de la salud mental de todas las personas y el pleno goce de los derechos humanos de aquellas con trastornos mentales.
+b) Regular el marco de atención en salud mental de modo que sea posible proporcionar el mejor cuidado, tratamiento y rehabilitación de acuerdo con los derechos humanos de todas las personas.
+c) Fortalecer el modelo de salud mental dirigido a la prevención, atención, rehabilitación y reinserción con enfoque comunitario mediante acciones interinstitucionales.
+d) Detallar los derechos de las personas usuarias de servicios de salud mental.
+e) Impulsar la inclusión plena y efectiva a la sociedad de las personas con trastornos mentales mediante la promoción, protección y garantía de sus derechos.
+ARTÍCULO 2- Principios que rigen la ley
+Esta ley se basa en los principios constitucionales de autonomía de la voluntad, dignidad humana, equidad, libertad, a tener una vida libre de violencia, a la dignidad de las personas, a la integridad física y la seguridad personal, así como el principio de no discriminación y la prohibición de tratos crueles, inhumanos y degradantes que el Estado se encuentra obligado a garantizar.
+ARTÍCULO 3- Interpretación del régimen jurídico de la ley
+Constituyen fuentes de interpretación de esta ley todos los instrumentos internacionales de derechos humanos vigentes en el país. De igual manera, el régimen jurídico relacionado a la salud mental de la población deberá interpretarse en la forma que garantice el cumplimiento de las obligaciones previstas y compromisos derivados de los Principios de Naciones Unidas para la Protección de los Enfermos Mentales y para el Mejoramiento de la Atención de Salud Mental, adoptado por la Asamblea General en su resolución 46/119 de 17 de diciembre de 1991. Asimismo, la Declaración de Caracas de la Organización Panamericana de la Salud y de la Organización Mundial de la Salud para la Reestructuración de la Atención Psiquiátrica dentro de los Sistemas Locales de Salud, de 14 de noviembre de 1990. Finalmente, también deben ser un instrumento de orientación los Principios de Brasilia para el Desarrollo de la Atención en Salud Mental en las Américas, de 9 de noviembre de 1990.
+ARTÍCULO 4- Ámbito de aplicación
+Los servicios y efectores de salud públicos y privados, cualquiera sea la forma jurídica que tengan, deben adecuarse a los principios establecidos en la presente ley. De igual manera, las municipalidades, la Caja Costarricense de Seguro Social, el Ministerio de Salud, el Ministerio de Educación Pública, el Ministerio de Desarrollo Humano e Inclusión Social y el Ministerio de Trabajo, según corresponda en esta ley.
+CAPÍTULO II
+Definiciones
+ARTÍCULO 5- Salud mental
+Para la aplicación de esta ley, se reconoce a la salud mental como un proceso de bienestar y desempeño personal y colectivo caracterizado por la autorrealización, la autoestima y la autonomía, cuya preservación y mejoramiento implica una dinámica de construcción social vinculada al cumplimiento de los derechos de toda persona.
+Se debe partir de la presunción de capacidad de las personas. La existencia de diagnóstico en el campo de la salud mental no autoriza en ningún caso a presumir riesgo de daño o incapacidad, lo que sólo puede deducirse a partir de una evaluación interdisciplinaria de cada situación particular en un momento determinado.
+En ningún caso puede hacerse un diagnóstico en el campo de la salud mental sobre la base exclusiva de:
+a) Status político, socio-económico, pertenencia a un grupo cultural, racial o religioso.
+b) Conflictos familiares, laborales, falta de conformidad o adecuación con valores morales, sociales, culturales, políticos o creencias religiosas prevalecientes en las comunidades.
+c) Sexualidad o identidad de género.
+d) La mera existencia de antecedentes de tratamiento u hospitalización.
+ARTÍCULO 6- Trastornos mentales
+Se entenderá el trastorno mental como una alteración sustancial del pensamiento, percepción, orientación, memoria o emociones, que afectan la conducta, el juicio, la capacidad para reconocer la realidad, las relaciones con terceros o la capacidad de una persona para enfrentar las exigencias de la vida.
+ARTÍCULO 7- Adicciones
+Las adicciones deben ser abordadas como parte integral de las políticas de salud mental. Las personas con uso problemático de drogas, legales e ilegales, tienen todos los derechos y garantías que se establecen en la presente ley en su relación con los servicios de salud.
+ARTÍCULO 8- Personas profesionales en salud mental
+Para fines de esta ley, se entenderán como personas profesionales en salud mental a todas las personas profesionales con título de grado en psicología, trabajo social, enfermería, terapia ocupacional y otras disciplinas o campos pertinentes.
+CAPÍTULO III
+Derechos de la población
+ARTÍCULO 9- Derechos de las personas con trastornos mentales
+El Estado reconoce a las personas con trastornos mentales los siguientes derechos:
+Derecho a recibir atención sanitaria, social, integral y humanizada, a partir del acceso gratuito, igualitario y equitativo a las prestaciones e insumos necesarios, con el objeto de asegurar la recuperación y preservación de su salud.
+b) Derecho a conocer y preservar su identidad, sus grupos de pertenencia, su genealogía y su historia.
+c) Derecho a recibir una atención basada en fundamentos científicos ajustados a principios éticos.
+d) Derecho a recibir tratamiento y a ser tratado con la alternativa terapéutica más conveniente, que menos restrinja sus derechos y libertades, promoviendo la integración familiar, laboral y comunitaria.
+e) Derecho a ser acompañado antes, durante y luego del tratamiento por sus familiares, otros afectos o a quien la persona con padecimiento mental designe.
+f) Derecho a recibir o rechazar asistencia o auxilio espiritual o religioso.
+g) Derecho del asistido, su abogado, un familiar, o allegado que éste designe, a acceder a sus antecedentes familiares, fichas e historias clínicas.
+h) Tomar, por sí o con la participación de familiares, allegados o representantes legales, decisiones relacionadas con su atención y tratamiento.
+i) Derecho a que, en el caso de internación involuntaria o voluntaria prolongada, las condiciones de esta sean supervisadas periódicamente por el Órgano de Revisión.
+j) Derecho a no ser identificada ni discriminada por un padecimiento mental actual o pasado, su status político o socio-económico, su cultura, raza o religión, sexualidad e identidad de género.
+k) Derecho a ser informada de manera adecuada y comprensible de los derechos que lo asisten, y de todo lo inherente a su salud y tratamiento, según las normas del consentimiento informado, incluyendo las alternativas para su atención, que en el caso de no ser comprendidas por el paciente se comunicarán a los familiares, tutores o representantes legales.
+l) Recibir información completa y comprensible inherente a su situación, a los derechos que la asisten y a los procedimientos terapéuticos incluyendo, en su caso, alternativas para su atención.
+m) Derecho a poder tomar decisiones relacionadas con su atención y su tratamiento dentro de sus posibilidades;
+n) Derecho a recibir un tratamiento personalizado en un ambiente apto con resguardo de su intimidad, siendo reconocido siempre como sujeto de derecho, con el pleno respeto de su vida privada y libertad de comunicación.
+ñ) Derecho a no ser objeto de investigaciones clínicas ni tratamientos experimentales sin un consentimiento fehaciente, siempre y cuando no se trate de una práctica considerada como tortura, cruel, inhumana o degradante.
+o) Derecho a que el padecimiento mental no sea considerado un estado inmodificable.
+p) Derecho a no ser sometido a trabajos forzados.
+q) Derecho a recibir una justa compensación por su tarea en caso de participar de actividades encuadradas como laborterapia o trabajos comunitarios, que impliquen producción de objetos, obras o servicios que luego sean comercializados.
+r) Derecho a la confidencialidad de la información sobre sí mismos y sí mismas, sobre su enfermedad y tratamiento, siempre y cuando su vida no esté en riesgo y la información sea necesaria para salvar su vida, exista una posibilidad significativa de daño a la persona involucrada o a otras, o cuando sea interés de interés a la seguridad pública.
+s) Derecho a la privacidad física según las posibilidades de cada centro médico.
+t) A designar una persona abogada en caso de ser internada involuntariamente y que puede oponerse a la misma mediante la solicitud de salida del centro de acuerdo con el artículo 28 de la presente ley.
+u) Solicitar cambio de profesionales o de equipo tratante.
+v) No ser objeto de investigaciones clínicas ni de tratamientos experimentales sin el consentimiento informado.
+ARTÍCULO 10- Atención primaria
+La atención en salud mental para personas con trastornos mentales debe ser provista por servicios de atención psicosocial, el servicio de atención primaria y, en particular, por el servicio médico psiquiátrico, que incluye tratamiento de emergencia, servicio ambulatorio, atención hospitalaria, hogares de rehabilitación, y atención comunitaria de salud.
+ARTÍCULO 11- Condiciones en las instituciones de salud mental
+A las personas pacientes internadas en las instituciones de salud mental se les debe garantizar protección contra los tratos crueles, inhumanos y degradantes. Específicamente, las instituciones de salud mental deben:
+a) Contar con un ambiente seguro e higiénico.
+b) Tener las condiciones sanitarias adecuadas.
+c) Incluir instalaciones para el ocio, la recreación, la educación y las prácticas religiosas.
+d) Garantizar la interacción con personas sin importar su género.
+e) Asegurar comunicación libre e irrestricta con el exterior del centro de acuerdo con la normativa vigente.
+ARTÍCULO 12- Derechos de las personas con discapacidad
+Las personas con discapacidad tienen derecho a recibir la información a través de medios y tecnologías adecuadas para su comprensión.
+ARTÍCULO 13- Derechos de las personas profesionales en salud
+Todas las personas trabajadoras integrantes de los equipos asistenciales tienen derecho a la capacitación permanente y a la protección de su salud integral, por lo cual los centros de salud mental deben tomar las medidas pertinentes.
+TÍTULO II
+RESPONSABILIDADES INSTITUCIONALES
+CAPÍTULO I
+Acceso a la Salud
+ARTÍCULO 14- Responsabilidad del Estado
+El Estado, comprendido por la administración central, los poderes de la república, el Tribunal Supremo de Elecciones, la administración descentralizada, institucional y territorial y las demás entidades de derecho público, deberán tomar las previsiones necesarias para hacer efectivos los derechos de las personas con trastornos mentales.
+De igual manera, el Estado y sus instituciones realizarán campañas de concienciación dirigidas a la población para promover la prevención de trastornos mentales y problemas de salud mental, informar sobre las características de los trastornos mentales y los derechos de las personas con estas condiciones.
+ARTÍCULO 15- Modalidad de abordaje de la salud mental
+Debe promoverse que la atención en salud mental de las y los pacientes esté a cargo de un equipo interdisciplinario integrado por profesionales, técnicos y otros trabajadores capacitados con la debida acreditación de la autoridad competente. Se incluyen las áreas de psicología, psiquiatría, trabajo social, enfermería, terapia ocupacional y otras disciplinas o campos pertinentes.
+El proceso de atención debe realizarse preferentemente fuera del ámbito de internación hospitalario y en el marco de un abordaje interdisciplinario e intersectorial, basado en los principios de la atención primaria de la salud y los derechos humanos. Se orientará al reforzamiento, restitución o promoción de los lazos sociales.
+ARTÍCULO 16- Ministerio de Salud
+El Ministerio de Salud, mediante el despacho ministerial, debe promover el desarrollo de estándares de habilitación y supervisión periódica de los servicios de salud mental públicos y privados.
+ARTÍCULO 17- Secretaría Técnica de Salud Mental
+La Secretaría Técnica de Salud Mental, en su calidad de rectora en salud mental, coordinará, promoverá y fiscalizará que las instituciones de salud mental cumplan en la atención de las necesidades de las personas con trastornos mentales.
+Este órgano debe promover que las autoridades de salud de cada jurisdicción, en coordinación con las áreas de educación, desarrollo social, trabajo y otras que correspondan, implementen acciones de inclusión social, laboral y de atención en salud mental comunitaria. Se debe promover el desarrollo de dispositivos tales como: consultas ambulatorias; servicios de inclusión social y laboral para personas después del alta institucional; atención domiciliaria supervisada y apoyo a las personas y grupos familiares y comunitarios; servicios para la promoción y prevención en salud mental, así como otras prestaciones tales como casas de convivencia, hospitales de día, cooperativas de trabajo, centros de capacitación socio-laboral, emprendimientos sociales, hogares y familias sustitutas.
+ARTÍCULO 18- Caja Costarricense de Seguro Social
+La Caja Costarricense de Seguro Social (CCSS), en cumplimiento de las facultades que le asigna la normativa y los principios sobre derechos de las personas con discapacidad, adoptará las medidas necesarias para la detección temprana de trastornos mentales desde el primer nivel de atención integral en salud, con el fin de emitir el diagnóstico y las referencias correspondientes a los niveles y servicios de atención requeridos, así como la coordinación interinstitucional con los centros de atención de la salud mental.
+ARTÍCULO 19- Municipalidades
+Las municipalidades deberán trabajar en la identificación de personas que por su condición de salud mental requieren ser referidas a los servicios comunitarios de apoya psicosocial o a las instituciones de salud mental correspondientes.
+ARTÍCULO 20- Trabajo interinstitucional
+Para asistir con la calidad y efectividad de la prestación de los servicios, la Caja Costarricense de Seguro Social (CCSS) y el Ministerio de Salud, mediante la Secretaría Técnica de Salud Mental, incorporarán en los programas de capacitación y actualización de las personas funcionarias y familiares de personas con trastornos mentales, contenidos sobre los trastornos correspondientes para mejorar la comprensión de la condición de esta población y las personas cuidadoras. La CCSS podrá solicitar el apoyo a diferentes entidades y organizaciones no gubernamentales, para cumplir con ese objetivo.
+CAPÍTULO II
+Acceso a la Educación y el Empleo
+ARTÍCULO 21- Ministerio de Educación
+El Ministerio de Educación Pública, en el ámbito de su competencia, es el ente responsable de garantizar el pleno y efectivo acceso a la educación a las personas con problemas de salud mental y/o trastornos mentales, que les permita potenciar y desarrollar sus capacidades individuales en atención a sus posibilidades de aprendizaje, desarrollo cognitivo, social y emocional, en todas las modalidades del sistema educativo nacional.
+ARTÍCULO 22- Comité de Apoyo Educativo
+El Comité de Apoyo Educativo, que funciona en todos los centros educativos y en todas las modalidades del sistema educativo nacional, incorporará, entre sus funciones, recomendar a la dirección de la institución los ajustes razonables metodológicos para la prevención de problemas de salud mental y el seguimiento que requieran las personas con trastornos de salud mental.
+ARTÍCULO 23- Trabajo interinstitucional
+La Secretaría Técnica de Salud Mental, en coordinación con el Ministerio de Educación, el Ministerio de Desarrollo Humano e Inclusión Social y el Ministerio de Trabajo deben desarrollar planes de prevención en salud mental y planes específicos de inserción socio-laboral para personas con padecimiento mental. Dichos planes, así como todo el desarrollo de la política en salud mental, deberán contener mecanismos claros y eficientes de participación comunitaria, en particular de organizaciones de usuarios y familiares de los servicios de salud mental.
+TÍTULO III
+INSTITUCIONES DE SALUD MENTAL
+CAPÍTULO ÚNICO
+Internaciones
+ARTÍCULO 24- Modalidad de abordaje de la internación
+La internación es considerada como un recurso terapéutico de carácter restrictivo y solo puede llevarse a cabo cuando aporte mayores beneficios que el resto de las intervenciones realizables en su entorno familiar, comunitario o social. Debe promoverse el mantenimiento de vínculos por parte de las personas pacientes con sus familiares y allegados, y con el entorno laboral y social, salvo en aquellas excepciones que por razones terapéuticas debidamente fundadas establezca el equipo de salud interviniente.
+Debe presumirse desde un inicio que todas las personas pacientes tienen discernimiento y deben agotarse los esfuerzos para permitir que una persona acepte voluntariamente el ingreso o el tratamiento, antes de adoptar procedimientos involuntarios según lo estipulado en el artículo 27.
+ARTÍCULO 25- Disposición de internación
+Toda disposición de internación, dentro de las primeras cuarenta y ocho horas de su solicitud, debe cumplir con los siguientes requisitos:
+a) Una evaluación de la persona con el trastorno mental, un diagnóstico interdisciplinario e integral de su condición y los motivos que justifican su internación, con la firma de al menos dos personas profesionales en salud mental de diferentes disciplinas, que no tengan relación de parentesco, amistad o vínculos económicos con la persona, uno de los cuales deberá ser psicólogo o médico psiquiatra, del centro donde se busca realizar la internación.
+b) Búsqueda de datos disponibles acerca de la identidad de la persona con un trastorno mental. En caso de desconocer su identidad, la institución que busca realizar la internación, en colaboración con el Ministerio Público, deberá solicitar las averiguaciones correspondientes.
+c) Consentimiento informado de la persona, de su representante legal o de la persona garante cuando corresponda. Solo se considera válido el consentimiento cuando se presta en estado de lucidez y con comprensión de la situación, y se considerará invalidado si durante el transcurso de la internación dicho estado se pierde según el artículo 22 de la presente ley. En tal caso deberá procederse como si se tratase de una internación involuntaria y una vez que la persona paciente posea el discernimiento necesario para otorgar consentimiento informado, este será un prerrequisito para el tratamiento.
+ARTÍCULO 26- Tiempo de internación
+El tiempo de internación debe ser lo más breve posible, en función de criterios terapéuticos interdisciplinarios. Tanto la evolución del paciente como cada una de las intervenciones del equipo interdisciplinario deben registrarse a diario en la historia clínica. En ningún caso la internación puede ser indicada o prolongada para compensar o resolver problemáticas sociales o de vivienda.
+ARTÍCULO 27- Internación voluntaria
+La persona internada bajo su consentimiento podrá en cualquier momento decidir por sí misma el abandono de la internación. En todos los casos en que las internaciones voluntarias se prolonguen por más de sesenta días corridos, el equipo de salud a cargo debe comunicarlo al Órgano de Revisión creado en el artículo 33 y a la persona jueza. La persona jueza debe evaluar, en un plazo no mayor cinco días de ser notificado, si la internación continúa teniendo carácter voluntario o si la misma debe pasar a considerarse involuntaria, con los requisitos y garantías establecidos para esta última situación.
+El consentimiento obtenido o mantenido con dolo o coerción, debidamente comprobado por autoridad judicial, o el incumplimiento de la obligación de informar establecida en la presente ley, harán pasible al profesional responsable y al director de la institución de las acciones civiles y penales que correspondan.
+ARTÍCULO 28- Internación involuntaria
+La internación involuntaria de una persona debe concebirse como recurso terapéutico excepcional en caso de que no sean posibles los abordajes ambulatorios, y solo podrá realizarse cuando la solicitud sea realizada por dos profesionales de diferentes disciplinas, que no tengan relación de parentesco, amistad o vínculos económicos con la persona, uno de los cuales deberá ser psicólogo o médico psiquiatra, a razón de la existencia de riesgo inminente para sí o para terceros. Para que proceda la internación involuntaria, además de los requisitos comunes a toda internación, debe hacerse constar:
+Dictamen profesional del servicio asistencial que realice la internación. Se debe determinar la situación de riesgo cierto e inminente a que hace referencia el primer párrafo de este artículo.
+b) Ausencia de otra alternativa eficaz para su tratamiento.
+c) Informe acerca de las instancias previas implementadas si las hubiera.
+ARTÍCULO 29- Procedimiento para las internaciones involuntarias
+La internación involuntaria debidamente fundada debe notificarse obligatoriamente en un plazo de diez horas a la persona jueza competente y al Órgano de Revisión creado en el artículo 33, debiendo agregarse como máximo a las cuarenta y ocho horas después de realizada la internación, todas las constancias previstas en el artículo 23. El juez en un plazo máximo tres días corridos de notificado debe:
+a) Autorizar, si evalúa que están dadas las causales previstas por esta ley.
+b) Requerir informes ampliatorios de las personas profesionales en salud mental firmantes o indicar peritajes externos.
+c) Denegar, en caso de evaluar que no existen los supuestos necesarios para la medida de internación involuntaria, en cuyo caso debe asegurar su dada de alta de forma inmediata.
+Habiendo autorizado la internación involuntaria, la persona jueza debe solicitar informes con una periodicidad no mayor a treinta días corridos a fin de reevaluar si persisten las razones para la continuidad de dicha medida, y podrá en cualquier momento disponer su inmediata liberación.
+Si transcurridos los primeros noventa días, y luego del tercer informe, continuase la internación involuntaria, el juez deberá pedir al Órgano de Revisión que designe un equipo interdisciplinario de profesionales en salud mental que no haya intervenido hasta el momento, y en lo posible independiente del servicio asistencial interviniente, a fin de obtener una nueva evaluación. En caso de diferencia de criterio, optará siempre por la que menos restrinja la libertad de la persona internada.
+ARTÍCULO 30- Procedimiento para la salida de pacientes
+El alta o permisos de salida de las personas pacientes son facultad del equipo de salud que no requiere autorización del juez. Este deberá ser informado si se tratase de una internación involuntaria, o voluntaria ya informada en los términos de la presente ley. El equipo de salud está obligado a dar de alta a la persona o transformar la internación en voluntaria, cumpliendo los requisitos establecidos en el artículo 23, apenas cesa la situación de riesgo inminente.
+ARTÍCULO 31- Denuncias
+A efectos de garantizar los derechos humanos de las personas pacientes en su relación con los servicios de salud mental, las personas integrantes, profesionales y no profesionales del equipo de salud son responsables de informar al Órgano de Revisión creado por la presente ley y a la persona jueza competente, sobre cualquier sospecha de irregularidad de trato indigno o inhumano a personas bajo tratamiento, o limitación indebida de su autonomía. Este procedimiento se podrá realizar bajo reserva de identidad y contará con las garantías debidas del resguardo a su fuente laboral y no será considerado como violación al secreto profesional.
+ARTÍCULO 32- Derivaciones
+Las derivaciones para tratamientos ambulatorios o de internación que se realicen fuera del ámbito comunitario donde vive la persona solo corresponden si se realizan en lugares donde esta cuente con mayor apoyo y contención social o familiar. Los traslados deben efectuarse con una persona acompañante del entorno familiar o afectivo de la persona paciente. Tanto el servicio o institución de procedencia como el servicio o institución de destino están obligados a informar dicha derivación al Órgano de Revisión, cuando no hubiese consentimiento de la persona paciente.
+TÍTULO IV
+Órgano de Revisión
+CAPÍTULO I
+Funcionamiento del Órgano de Revisión
+ARTÍCULO 33- Creación del Órgano de Revisión
+Se crea el Órgano de Revisión de las instituciones de salud mental en el ámbito del Ministerio de Salud con el objeto de proteger los derechos humanos de las personas usuarias de los servicios de salud mental.
+ARTÍCULO 34- Conformación
+El Órgano de Revisión de las instituciones de salud mental debe ser un órgano multidisciplinario y estará integrado por:
+a) La persona titular de la Dirección Técnica de Salud Mental.
+b) La persona titular del Sistema de Redes de Salud Mental.
+c) La persona titular de la Caja Costarricense de Seguro Social.
+d) La persona titular de las organizaciones no gubernamentales abocadas a la defensa de los derechos de las personas con problemas de salud mental.
+ARTÍCULO 35- Funciones
+Son funciones del Órgano de Revisión:
+a) Solicitar información a las instituciones públicas y privadas que permita evaluar las condiciones en que se realizan los tratamientos en personas con trastornos mentales.
+b) Supervisar de oficio o por denuncia de particulares las condiciones de internación por razones de salud mental, en el ámbito público y privado.
+c) Evaluar que las internaciones involuntarias se encuentren debidamente justificadas y no se prolonguen más del tiempo mínimo necesario, pudiendo realizar las denuncias pertinentes en caso de irregularidades y eventualmente, apelar las decisiones del juez.
+d) Controlar que las derivaciones que se realizan fuera del ámbito comunitario cumplan con los requisitos y condiciones establecidos en el artículo 32 de la presente ley.
+e) Informar a la Autoridad de Aplicación periódicamente sobre las evaluaciones realizadas y proponer las modificaciones pertinentes.
+f) Requerir la intervención judicial ante situaciones irregulares.
+g) Realizar recomendaciones a la Secretaría Técnica de Salud Mental.
+h) Realizar propuestas de modificación a la legislación en salud mental tendientes a garantizar los derechos humanos.
+i) Controlar el cumplimiento de la presente ley, en particular en lo atinente al resguardo de los derechos humanos de las personas usuarias del sistema nacional de salud mental.
+j) Velar por el cumplimiento de los derechos de las personas en procesos de declaración de inhabilidad y durante la vigencia de dichas sentencias.
+CAPÍTULO II
+Participación de las organizaciones no gubernamentales
+ARTÍCULO 36- Organizaciones no gubernamentales
+Las organizaciones no gubernamentales, conformadas con el fin y el objetivo de impulsar la inclusión, defensa e igualdad de oportunidades de las personas con problemas de salud mental quedarán facultadas para ejercer el control ciudadano sobre el cumplimiento de la normativa y al amparo del derecho de participación ciudadana, para lo que podrán:
+a) Realizar auditorías ciudadanas sobre competencias y servicios de las instituciones públicas con respecto al cumplimiento de la normativa que protege los derechos de las personas con trastornos mentales y elevar los informes a la Secretaría Técnica de Salud Mental;
+b) Tener representación en el Órgano de Revisión de las instituciones de salud mental creado en el artículo 33.
+TÍTULO V
+Disposiciones Complementarias
+CAPÍTULO I
+Modificaciones a la Normativa
+ARTÍCULO 37- Se reforman los artículos 29, 30 y 31 de la Ley General de Salud, N.° 5395 de 10 de octubre de 1973, y sus reformas, cuyos textos dirán:
+[...]
+Artículo 29- Las personas trastornos mentales o del comportamiento severos, tales como la depresión, el suicidio, la esquizofrenia, las adicciones a las drogas y el alcohol, el matonismo escolar, el acoso laboral y el apoyo necesario al grupo familiar podrán someterse voluntariamente a un tratamiento especializado ambulatorio o de internamiento en los servicios de salud, y deberán hacerlo cuando lo ordene la autoridad competente, de conformidad con la legislación vigente.
+Artículo 30- Cuando la internación de personas con trastornos mentales severos o deficiencias, toxicómanos y alcohólicos no es voluntaria ni judicial deberá ser comunicada por el director del establecimiento al juzgado de familia de su jurisdicción en forma inmediata y deberá cumplir con lo establecido en la Ley Nacional de Salud Mental.
+Artículo 31- Las personas con trastornos mentales o del comportamiento, con tentativa de suicidio, farmacodependientes o alcohólicas que se encuentren internadas de forma voluntaria podrán solicitar la salida del establecimiento de salud con alta exigida, a petición personal o de sus familiares, cuando la salida no represente peligro para su salud o la de terceros, de conformidad con la legislación vigente.
+[...]
+ARTÍCULO 38- Se reforman los incisos m) y n) del artículo 28 de la Ley Orgánica del Ministerio de Salud, N.° 5412 de 08 de noviembre de 1973, y sus reformas, cuyos textos dirán:
+[...]
+Artículo 28- Funciones
+La Secretaría Técnica de Salud Mental tendrá las siguientes funciones:
+[...]
+m) Coordinar, promover y fiscalizar que las instituciones de salud mental cumplan en la atención de las necesidades de las personas con trastornos mentales.
+n) Promover que las autoridades de salud de cada jurisdicción, en coordinación con las áreas de educación, desarrollo social, trabajo y otras que correspondan, implementen acciones de inclusión social, laboral y de atención en salud mental comunitaria, de conformidad con la legislación vigente.
+CAPÍTULO II
+Disposiciones Transitorias
+TRANSITORIO I- Dentro de un plazo máximo a los seis meses siguientes a la publicación de esta ley, el Poder Ejecutivo procederá a reglamentarla para garantizar su operatividad.
+TRANSITORIO II- La Caja Costarricense de Seguro Social (CCSS) contará con un plazo de dieciocho meses, después de la entrada en vigencia de esta ley, para iniciar con la capacitación establecida, según sus competencias.
+Paola Vega Rodríguez
+Diputada
+22 de marzo de 2021
+NOTAS: Este proyecto pasó a estudio e informe de la Comisión Permanente Especial de Derechos Humanos
+Este proyecto cumplió el trámite de revisión de errores formales, materiales.

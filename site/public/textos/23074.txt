@@ -1,0 +1,57 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+JUSTICIA EN LA BASE MÍNIMA CONTRIBUTIVA
+PARA INCENTIVAR EL EMPLEO
+PEDRO MIGUEL MUÑOZ FONSECA
+DIPUTADO
+EXPEDIENTE N.º 23.074
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+NOTA: A solicitud de la parte interesada, este Departamento no realizó la revisión de errores formales, materiales e idiomáticos que pueda tener este proyecto de ley.
+PROYECTO DE LEY
+JUSTICIA EN LA BASE MÍNIMA CONTRIBUTIVA
+PARA INCENTIVAR EL EMPLEO
+Expediente N.° 23.074
+ASAMBLEA LEGISLATIVA:
+El presente proyecto de ley tiene como finalidad incorporar a la Ley Constitutiva de la Caja Costarricense de Seguro Social (CCSS) Ley N.° 17 del 22 de octubre de 1943, otras excepciones a la base técnica para el cálculo del cobro de la cotización mínima contributiva o denominada también ingreso mínimo de referencia, que la institución utiliza para calcular el cobro a realizar por concepto de seguro de enfermedad y maternidad (SEM) y el seguro invalidez, vejez y muerte (IVM) de los trabajadores.
+Es importante recalcar que dicha base mínima contributiva es aprobada por la Junta Directiva de la institución. La mecánica de esa fijación consiste en establecer un monto salarial, con el cual aun cuando el patrono reporte una cifra real pero menor, la institución calculará las cuotas del seguro de enfermedad y maternidad (SEM) y el seguro invalidez, vejez y muerte (IVM) de dicho trabajador, por esta base mínima.
+El informe “Análisis de políticas fiscales de la OCDE, Costa Rica 2017” indicó sobre las cargas sociales en Costa Rica:
+“Por otra parte, las tasas de CSS son elevadas. Los empleados de Costa Rica deben contribuir un total del 9.34% de sus ingresos brutos mensuales. Son los empleadores quienes retienen sus contribuciones pero éstas –a diferencia de lo que sucede en la mayoría de los Estados miembros de la OCDE– no son deducibles de la base gravable del IRPF a pagarse sobre el empleo;1 en la práctica, el resultado es un aumento de la carga tributaria sobre los empleados. Además, los empleadores han de contribuir el 26.33% de los salarios de sus trabajadores, que pueden deducir como costos. Estas CSS sirven para cubrir la salud y las pensiones que se pagan a la Caja Costarricense del Seguro Social (CCSS), el seguro de desempleo, las asignaciones familiares y las pensiones complementarias, así como algunas contribuciones adicionales. Por último, a diferencia de los países de la OCDE, el Estado paga también una pequeña parte de las CSS (véase la tabla 3.1).
+Las altas CSS, sobre todo para los empleadores, hacen que una parte muy importante de la responsabilidad tributaria recaiga sobre las rentas del trabajo. La figura 3.4 compara la carga tributaria sobre los trabajadores individuales que perciben el salario promedio en los distintos países de la región de ALC. El valor promedio de esta carga sobre los empleados se mide en forma de una cuña fiscal promedio, que expresa todos los impuestos (IRPF, y las CSS de los empleados y los empleadores) como un porcentaje de los costos totales del trabajo (salario bruto más contribución del empleador). La cuña fiscal para un empleado costarricense promedio alcanzó el 28% en 2013, un valor bastante alto con respecto al promedio de la región de ALC (21.7%).
+(…)
+No obstante, la cuña fiscal promedio es muy regresiva en el segmento inferior de la distribución de renta. Costa Rica impone una cantidad mínima de CSS así los ingresos reales estén por debajo de este mínimo. Para trabajadores que perciben menos de CRC 228 530 al mes (en torno al 50% del salario promedio en 2016), las contribuciones a la CCSS se calculan sobre el umbral de este valor de ingresos, con independencia de las ganancias reales de dichos trabajadores. Para otros tipos de contribuciones, se calculan a partir de las ganancias reales. Esta contribución mínima hace que las CSS sean regresivas para los ingresos por debajo del umbral mínimo, con lo cual la tasa de contribución promedio resulta más elevada para los trabajadores de ingresos bajos. En concreto, los trabajadores empleados a tiempo parcial pueden estar sujetos a cargas contributivas muy altas en relación con sus ingresos. Por ejemplo, los empleados que perciben el 10% del salario promedio tienen una cuña fiscal promedio del 68%; es decir, su sueldo neto es únicamente el 32% de lo que le cuestan a su empleador (véase la figura 3.5). Esta contribución mínima es altamente distorsionadora, dado que desalienta a los trabajadores de bajos ingresos, sobre todo a los empleados bajo un esquema de tiempo parcial, a incorporarse al sector formal de la economía.
+La base mínima de contribución, que hace regresiva la cuña fiscal promedio en el segmento inferior de la distribución de ingresos, se ha incrementado en los últimos años. Desde 2014, la base mínima de contribución se ha fijado como un porcentaje del salario mínimo y aumentará con el tiempo hasta situarse en el 100% del mismo en octubre de 2019. Al elevar dicha base sin reforzar el cumplimiento de la legislación sobre el salario mínimo ni permitir variaciones en la base mínima según las horas trabajadas, se reducirá todavía más el incentivo para acceder al empleo formal, con consecuencias negativas para los trabajadores y para las finanzas públicas (OCDE, pendiente de publicación).
+(…)
+En general, las altas CSS fomentan la economía sumergida o informal. Los elevados impuestos sobre las rentas percibidas por el trabajo de las personas físicas en el sector formal de la economía pueden incentivar a los trabajadores de productividad baja a formar parte del sector informal de la economía o al desempleo. Estas contribuciones aumentan el costo del empleo y reducen los ingresos después de impuestos. Cuanto mayor sea la diferencia entre los costos laborales en el sector formal y las deducciones sobre el salario después de impuestos, más altos serán los incentivos para que empleadores y empleados eludan los impuestos, y se mantengan en el sector informal de la economía o pasen a integrarse en él. A su vez, los altos niveles de dicho sector influyen negativamente en la productividad, el crecimiento y la confianza en las instituciones gubernamentales.”
+Considerando todo lo anterior, sometemos a consideración de las señoras y los señores diputados, el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+JUSTICIA EN LA BASE MÍNIMA CONTRIBUTIVA
+PARA INCENTIVAR EL EMPLEO
+ARTÍCULO 1- Adiciónese un nuevo artículo, con el número 3 bis, a la Ley N.º 17 de 22 de octubre de 1943, Ley Constitutiva de la Caja Costarricense de Seguro Social, el cual dirá así:
+Artículo 3 bis- De la cotización mínima
+El monto del salario o ingreso que se anota en la planilla no podrá ser inferior al ingreso de referencia mínimo considerado en la escala contributiva de los trabajadores independientes afiliados individualmente.
+Conforme se establezcan modificaciones en dicha escala, se realizarán los aumentos en las cotizaciones, previa comunicación a los patronos y a los trabajadores, por los medios de comunicación más convenientes.
+Las excepciones al pago de la cuota mínima son las siguientes:
+1- Cesantías o ingreso de nuevos trabajadores ocurridos en períodos intermedios del mes.
+2- Reportes de incapacidades o permisos sin goce de salario que abarcan más de 15 días.
+3- Trabajo simultáneo con varios patronos o con patrono y seguro independiente percibiendo salarios e ingresos inferiores con todos o algunos de ellos.
+4- Al amparo del artículo 164 y especificados en el artículo 31 del Código de Trabajo, los salarios devengados por los trabajadores que surjan por contrato o acuerdo con el patrono bajo las siguientes modalidades:
+a) Contratos a tiempo fijo o plazo determinado - no permanente
+b) Contratos por obra determinada.
+Los salarios de las modalidades descritas en este inciso, podrán cancelarse conforme a las unidades de pago acordadas con el patrono y que se estipulan en el artículo 164 del Código de Trabajo, a saber:
+a) Mes,
+b) Quincenas,
+c) Semanas,
+d) Días,
+e) Horas,
+f) Por pieza,
+g) Por tarea o a destajo
+5- Tratándose de contratos por tiempo indeterminado, el patrono deberá asegurar a los trabajadores por el tiempo real contratado, a saber: tiempo completo, medio tiempo, un cuarto de tiempo, días u horas.”
+ARTÍCULO 2- Queda derogado el artículo 63 del Reglamento del Seguro de Salud, así como los decretos, otros reglamentos y demás disposiciones legales que se opongan a la presente ley.
+Rige a partir de su publicación.
+Pedro Miguel Muñoz Fonseca
+Diputado
+13 de mayo de 2022
+NOTAS: Este proyecto aún no tiene comisión asignada.
+El Departamento de Servicios Parlamentarios ajustó el texto de este proyecto a los requerimientos de estructura.

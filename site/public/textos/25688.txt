@@ -1,0 +1,168 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY TASER PARA LAS FUERZAS POLICIALES
+KATTYA ALEJANDRA MORA MONTOYA
+OTRAS SEÑORAS DIPUTADAS
+Y SEÑORES DIPUTADOS
+EXPEDIENTE N.º 25.688
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY TASER PARA LAS FUERZAS POLICIALES
+Expediente N.º 25.688
+ASAMBLEA LEGISLATIVA:
+El artículo Verificación de la veracidad de las declaraciones sobre la seguridad de las pistolas de electrochoque policiales: ¿Qué sabemos sobre las Taser y es cierto o falso? de Karolina Kocurkova y Martin Hrinko y publicado en 2024 en Internal Security, en el cual se hizo una revisión sistemática con la finalidad de verificar la certeza de 12 afirmaciones controvertidas sobre la seguridad y eficacia del arma Taser utilizando la lógica proposicional y evidencia científica.
+Los autores indicados analizaron bases de datos científicas internacionales (como Web of Science y Scopus), seleccionando 47 artículos relevantes de una búsqueda inicial de más de 7000 y como conclusión general se llegó a que el Taser se clasifica como un dispositivo “parcialmente seguro”, ya que solo 4 de las 12 afirmaciones (33.3%) analizadas resultaron ser verdaderas según la evidencia científica disponible.
+Las afirmaciones sobre el arma Taser que fueron determinadas como verdaderas a partir de la evidencia científica fueron las siguientes:
+Uso global: se utiliza ampliamente por fuerzas de seguridad en más de 100 países.
+Nivel de fuerza: es un nivel superior de fuerza policial, legítimo solo en situaciones de alto peligro.
+Riesgos modificables por entrenamiento: los riesgos de salud más serios (como lesiones por caídas o impactos en zonas sensibles) pueden mitigarse mediante una formación adecuada del sujeto que la use.
+Estándares eléctricos: cumple con los límites de seguridad eléctrica establecidos internacionalmente.
+Mientras que lo que se llegó a la conclusión del Taser, igualmente con base a la evidencia científica disponible, de que es falso, fue lo siguiente:
+No letalidad: no se puede afirmar que sea una tecnología que “no puede causar la muerte”, aunque la causalidad directa sea difícil de aislar de otros factores (drogas, enfermedades previas).
+Exposición acumulativa: la exposición repetida o prolongada sí es peligrosa, especialmente para poblaciones vulnerables.
+Fibrilación ventricular: aunque el riesgo es bajo (estimado en 1 por cada 3 millones de usos), existe la posibilidad teórica si los dardos impactan muy cerca del corazón en personas muy delgadas.
+Marcapasos: existe un riesgo teórico de interferencia electromagnética que podría causar fallos en dispositivos cardíacos implantados.
+Efectividad coercitiva: no siempre muestra una “alta efectividad”; se reportan tasas de fallo en el campo de entre el 15% y el 47%.
+Efecto de escalada: la sola presencia del arma puede provocar agresividad en los sujetos (el llamado “efecto arma”).
+Riesgo de incendio: el dispositivo sí tiene la capacidad de iniciar fuegos o explosiones en presencia de vapores inflamables (como gasolina) o ciertos gases de defensa.
+Por su parte, una afirmación que no se logró desmentir ni verificar fueron los riesgos latentes a raíz del arma Taser, debido a que no hay evidencia científica suficiente para confirmar o negar la existencia de efectos adversos permanentes o retardados a largo plazo como repercusión de dicha arma no letal.
+No obstante, importante que el estudio llega a la conclusión general de que el arma Taser constituye una herramienta irremplazable, debido a que a pesar de los riesgos, se considera una herramienta esencial para la policía moderna, ya que es preferible al uso de armas de fuego en muchas situaciones críticas.
+Se hacen una serie de recomendaciones en ese artículo científico también, que son la necesidad de mantener un principio de precaución sobre las Taser, a causa de la falta de datos sobre grupos vulnerables, por lo que se recomienda aplicar este y no ignorar los posibles riesgos para la salud derivados de su uso. Así como lo imperativo que es mejorar los sistemas de registro de incidentes reales para reducir la incertidumbre científica y fortalecer la confianza pública en el uso de la fuerza en el marco del empleo de Taser en la función policial.
+Siguiendo con el tema, se tiene el artículo Derechos Humanos y Uso Progresivo de la Fuerza, en que se analiza cómo las innovaciones tecnológicas, específicamente los dispositivos de condução de energia (DCE), como la pistola Taser, sirven como herramientas para proteger los derechos fundamentales dentro de la seguridad pública.
+Y es que en ese texto se habla de la Doctrina del Uso Progresivo de la Fuerza, que consiste en la selección adecuada de opciones de fuerza por parte del policía, en respuesta al nivel de sumisión o resistencia del sospechoso; estableciendo una progresión que va desde la presencia física y la verbalización, pasando por técnicas de contacto y sumisión, hasta llegar a las tácticas defensivas y, en última instancia, al uso de la fuerza letal. Destacando eso sí, que el Estado posee el monopolio de la “violencia legítima” para garantizar la paz social, pero su uso debe ser siempre legal, ético, necesario y proporcional.
+Y es que siguiendo con el artículo mencionado realizado por Jorge Amaral dos Santos y Patrícia Messa Urrutigaray, publicado en 2012 en la Revista Brasileira de Direito, se tiene un marco internacional que sustenta el uso de la Taser porque el Código de Conducta (1979) y los Principios Básicos sobre el Empleo de la Fuerza (1990) de la ONU, exigen que los funcionarios recurran a medios no violentos siempre que sea posible y utilicen la fuerza solo como medida extrema y con moderación.
+Y es que como bien mencionan esos autores del párrafo precedente, a diferencia de otros dispositivos, la Taser no se basa en el dolor, sino en la incapacidad electro-muscular (NMI), pues emite impulsos eléctricos que “engañan” al cerebro al imitar las ondas cerebrales, tomando el control de los nervios motores y bloqueando movimientos voluntarios. El dispositivo dispara dos dardos con un alcance de 10 metros que emiten una descarga de 50000 voltios; empero, aunque el voltaje es alto, el amperaje es extremadamente bajo (0.004 amperios), lo que la hace menos dañina para el organismo que un enchufe doméstico común. Resalta que la descarga estándar dura 5 segundos, aunque el agente puede controlarla; no obstante, no se recomiendan tiempos prolongados.
+En cuanto a rendición de cuentas y transparencia el arma Taser es muy positiva porque almacena la fecha, hora, minuto y segundo de los últimos disparos (entre 585 y 1500, según el modelo) para fines de auditoría y, al disparar, la pistola expele confetis de colores que contienen el número de serie del cartucho, permitiendo identificar qué agente realizó el disparo en la escena.
+A pesar de lo precedente el artículo destaca que, aunque es “no letal”, se reconoce informes de Amnistía Internacional sobre muertes (más de 330 en EE. UU. desde 2001), frecuentemente asociadas al uso de drogas por parte de las víctimas. Es de importancia también el entrenamiento, ya que el preparo del agente es crucial para medir la necesidad de la descarga y evitar daños cardiacos innecesarios. Sin embargo, como conclusión general de este producto científico se determina que la Taser llena una “laguna” táctica porque se utiliza cuando la fuerza física es ineficaz y el arma de fuego es desproporcionada; siendo una tecnología que ayuda a evitar tragedias y heridas innecesarias que han ocurrido históricamente por el uso desproporcionado de armas letales.
+Una tesis de fin de grado titulada Discusión pública sobre el empleo del Táser como arma de inmovilización eléctrica elaborada por Sergio García Tortosa (agente de la Policía Local de Valencia) para la Universidad Miguel Hernández también estudió a las armas Taser y señaló como resultados lo siguiente:
+Objetivo y contexto de la investigación
+El estudio analiza la problemática del uso de la pistola Táser, posicionándola como una herramienta de gran utilidad que ocupa un punto intermedio entre las armas ligeras (porras, sprays) —que a veces carecen de poder de persuasión— y las armas de fuego, cuyas consecuencias pueden ser letales. El autor aporta su experiencia en Valencia, donde en 2023 se registraron 154 agentes heridos y donde, de 641 detenciones violentas, en 46 casos el Táser se usó de forma preventiva (solo apuntando) y solo en 2 ocasiones se llegó a disparar, lo que demuestra su alto poder disuasorio.
+Naturaleza técnica y funcionamiento
+Tecnología diferenciada: a diferencia de las defensas eléctricas convencionales que solo causan dolor (sistema sensorial), el Táser utiliza la Incapacidad Electro-Muscular (NMI) para tomar el control de los nervios motores y bloquear movimientos voluntarios.
+Especificaciones: emite pulsos de alto voltaje (50000 voltios) pero muy bajo amperaje (2.1 miliamperios), lo que el autor define como un nivel de energía “seguro” en comparación con otros dispositivos.
+Transparencia y control: el dispositivo (modelo X26) incorpora mecanismos de rendición de cuentas: registros de fecha, hora, duración de descarga, temperatura y batería. Además, al dispararse, libera AFIDs (confeti con el número de serie del cartucho) para identificar al autor del disparo.
+Efectos fisiológicos y seguridad médica
+Efectos Inmediatos: el sujeto suele caer al suelo, presenta contracciones involuntarias y puede sentir aturdimiento o vértigo temporal.
+Evidencia científica: se cita un estudio del National Institute of Justice (EE. UU.) sobre 962 casos reales, donde el 99.7% de los individuos no sufrió lesiones o solo tuvo daños leves (rozaduras o punciones de los dardos).
+Riesgos indirectos: las lesiones suelen deberse a la caída al suelo. Se advierte sobre el riesgo de deflagración si se ha usado previamente aerosol de pimienta inflamable y el peligro de fibrilación en casos de “delirium agitado” (asociado al consumo de cocaína y alcohol) o patologías cardíacas previas.
+Perspectivas de política criminológica
+El autor analiza cómo distintas ideologías ven el uso del Táser:
+Conservadora (ej. EE. UU.): se enfoca en la función coactiva y el mantenimiento del orden. EE. UU. es pionero por su alto índice de criminalidad y población armada.
+Liberal (ej. Reino Unido, Países Bajos): enfoque en la disuasión y el respeto a los derechos individuales, con protocolos estrictos y rendición de cuentas.
+Socialdemócrata (ej. Escandinavia): utilidad preventiva y centrada en la rehabilitación y prevención del delito.
+Comunitaria (ej. Canadá): uso muy restringido y basado en la transparencia y el diálogo con la comunidad.
+Análisis de casos y entrevistas
+El estudio recopila 14 casos reales, clasificándolos en categorías como defensa policial, resistencia a la autoridad o actuación improcedente (como un caso en Puerto Rico contra manifestantes). Las entrevistas a expertos y ciudadanos revelan:
+Formadores policiales: destacan la “seguridad jurídica” que aporta la cámara incorporada al Táser, que graba la intervención.
+Mandos policiales: reportan un descenso en las bajas laborales por agresiones tras la implantación del arma.
+Voces ciudadanas y delincuentes: mientras algunos vecinos dudan de su eficacia ante toxicómanos en crisis, se admite que el dispositivo genera “respeto”, aunque la necesidad de droga puede anular el miedo a la descarga.
+Balance final (análisis DAFO)
+Fortalezas y oportunidades: salva vidas al evitar el uso de armas de fuego, reduce lesiones en policías y detenidos, alta capacidad de disuasión.
+Debilidades y amenazas: elevado coste unitario (1520 €), requiere formación avanzada, riesgo de mala fama por usos abusivos o falta de formación.
+Tal como se ve en lo que arrojó ese trabajo de fin de grado, el balance a favor del uso del arma Taser es positivo, siendo que son más los pros que los contras de esta para uso policial, que es el uso que se estaba estudiando.
+Por todo lo anterior y siendo que son más los pros que los contras respecto al uso de la Taser en fuerzas policiales, surge este proyecto de ley orientado a incentivar reguladamente el uso de armas Taser en los cuerpos policiales costarricenses, a fin de generar un medio para que nuestros policías, sin poner en riesgo su vida, logren inmovilizar de forma más sencilla, a sujetos que lo ameriten, en el marco de su rol en pro de la seguridad y el orden público.
+Destaca que, también, con esto que se pretende implementar, la vida de los reprimidos por la policía se va a ver resguardada de mejor manera, dado que al los policías tener una opción intermedia entre opciones letales como el arma de fuego, y otras con escaso poder disuasorio, como los bastones, van a poder recurrir a armas no letales como las Taser que no les van a generar un perjuicio grave en su vida, aunque sí consiguiendo su inmovilización para casos que lo ameriten, siempre en respeto a lo que nuestra Carta Magna, tratados internacionales y normativa legal y reglamentaria dictan en pro de una respuesta proporcional de la policía contra las personas. Por otra parte, el uso que se busca no es indiscriminado, y es por eso que también parte de lo que busca esta iniciativa es regular el uso de la Taser, a fin de palear los contras que esta tiene.
+Y es que como se destaca en documentos investigativos de asesoría técnica parlamentaria chilena de 2023 y 2024, elaborados por Juan Pablo Jarufe Bader y Jana Abujatum S., en diversas naciones se ha regulado el uso de armas Taser para empleos varios:
+Por ejemplo, en el marco regulatorio chileno respecto a las armas de electrochoque, como las Taser se tiene que:
+Origen y funcionamiento: fueron creadas en 1974 por Jack Crover con el fin de inmovilizar temporalmente mediante descargas de 7 vatios. Existen dos modalidades: por contacto directo con electrodos o mediante el disparo de dardos unidos por cables.
+Control y normativa: la Dirección General de Movilización Nacional (DGMN) es el ente encargado de controlar estos dispositivos bajo la Ley 17798. Se definen técnicamente como dispositivos industriales para incapacitar temporalmente, con dimensiones máximas de 20 cm de largo y 200 cm³ de volumen.
+Usuarios autorizados:
+Fuerzas de orden: el personal activo de las Fuerzas Armadas, Carabineros y la PDI (incluyendo aspirantes de tercer año) no requiere permiso de porte para estas armas de defensa personal.
+Gendarmería: aunque su reglamento menciona explícitamente armas de fuego, el director nacional puede autorizar otros armamentos, según las necesidades del servicio, como en casos de fugas o motines.
+Seguridad privada: se autoriza su uso exclusivamente para vigilantes privados (con uniforme y en horario laboral), excluyendo a guardias, nocheros o porteros. El departamento OS-10 de Carabineros analiza estas solicitudes caso a caso.
+En el caso de normativa relacionada con las armas Taser en Alemania, Colombia, España y Estados Unidos, se resalta su uso por policías y seguridad privada:
+Alemania: están sujetas a la Ley de Armas y su posesión está prohibida para la población general. La policía las usa progresivamente como medio disuasivo. Los vigilantes privados solo pueden usarlas en casos excepcionales (como transporte de valores o protección de sitios sensibles), previa prueba de conocimientos.
+Colombia: el Decreto 1563 de 2022 regula sus características técnicas (voltaje entre 1200V y 50000V). Los policías deben completar un curso de 40 horas y 20 horas de práctica para usarlas. Se permite su uso en seguridad privada bajo autorización de la Superintendencia respectiva.
+España: son de exclusivo uso policial (Guardia Civil, Policía Nacional, Mossos d'Esquadra y policías locales). La Guardia Civil las incorporó para asegurar la trazabilidad de sus actuaciones mediante registros. Las empresas de seguridad privada pueden poseerlas solo con autorización de la Guardia Civil y deben custodiarlas en locales seguros.
+Estados Unidos: existen directrices desde 2005 (actualizadas en 2016) para mitigar riesgos de salud. La mayoría de los estados no restringe su uso en seguridad privada, aunque algunos exigen permisos para porte oculto (ej. Alaska) o revisión de antecedentes (ej. Maryland). Connecticut por ejemplo se destaca como el único estado que autoriza el uso de pistolas Taser solo a dueños de casa para autodefensa.
+Siguiendo con la misma fuente, en el caso de las naciones de Argentina, Australia y Corea del Sur:
+Argentina: se consideran armas civiles si producen efectos pasajeros. Las fuerzas federales pueden usarlas en legítima defensa o para impedir delitos cuando otros medios fallan. En Buenos Aires, se utilizan en lugares estratégicos como el “subte”. Los detectives privados tienen prohibido portar armas.
+Australia (Nueva Gales del Sur): se consideran una “opción táctica alternativa” de menor letalidad, pero no reemplazan a las armas de fuego. Está estrictamente prohibido su uso contra sujetos pasivos, mujeres embarazadas, adultos mayores, niños, personas discapacitadas o sujetos esposados, salvo circunstancias excepcionales.
+Corea del Sur: la policía puede usarlas ante resistencia en arrestos, bajo supervisión del Ministerio del Interior y Seguridad, que inspecciona los permisos y el almacenamiento.
+¿Qué sucede en Costa Rica? cualquier dispositivo de pulsos eléctricos o electromagnéticos que provoque daños irreversibles está estrictamente prohibido, aunque no se detalla explícitamente el estatus de los dispositivos de electrochoque que no causan daños permanentes como son los Taser, a pesar de que los sujeta al control del Ministerio de Seguridad Pública como parte de su potestad de fiscalización y por estar dentro del concepto de armas.
+En 2021, el entonces director general de Fuerza Pública, Daniel Calderón, tuvo la intención de traer armas de electrochoque como son las Taser, para uso policial, por ser una opción viable para las labores policiales. De hecho, hasta se sacó presupuesto para hacer la compra y se analizó técnicamente su viabilidad con base a diversos criterios; no obstante, al final no se materializó el proyecto y al día de hoy no se ha dotado a los policías de esta opción tan positiva, como se vio antes, y en la cual otras fuerzas policiales han logrado avanzar para beneficio de policías y las personas en general.
+También, es de interés dejar en claro que con esta iniciativa lo que se busca es habilitar el uso de estas armas de fuerza media a través de una regulación robusta, siendo que no es de interés comprometer recursos públicos. Cada entidad policial implementará esta ley de conformidad con su disponibilidad presupuestaria y de forma progresiva.
+Con fundamento en lo expuesto antes someto a consideración de los señores diputados el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY TASER PARA LAS FUERZAS POLICIALES
+CAPÍTULO I
+Disposiciones Generales
+ARTÍCULO 1- Objeto
+La presente ley tiene por objeto autorizar y regular el uso de dispositivos de conducción eléctrica, conocidos comercialmente como armas Taser, por parte de los cuerpos policiales costarricenses que hayan sido instruidos para su empleo, pertenecientes al sector público centralizado y descentralizado, como una herramienta de fuerza intermedia destinada a facilitar las funciones propias de la labor policial, protegiendo la vida e integridad física de los funcionarios policiales, de las personas intervenidas y de terceros, bajo los principios de legalidad, necesidad, proporcionalidad, razonabilidad y rendición de cuentas.
+ARTÍCULO 2- Dispositivos de conducción eléctrica
+Para efectos de esta ley se entenderá por dispositivos de conducción eléctrica aquellas armas de menor letalidad diseñadas para incapacitar temporalmente a una persona mediante impulsos eléctricos controlados. Estas no sustituirán las armas de fuego ni los demás medios policiales autorizados para las funciones propias del cargo, sino que constituirán una alternativa intermedia dentro de la escala de uso progresivo de la fuerza.
+CAPÍTULO II
+Autorización y Condiciones de Uso
+ARTÍCULO 3- Autorización
+Se autoriza a los cuerpos policiales del sector público centralizado y descentralizado a adquirir, portar y utilizar dispositivos de conducción eléctrica para el cumplimiento de sus funciones constitucionales, legales y reglamentarias.
+ARTÍCULO 4- Supuestos de uso
+Los dispositivos de conducción eléctrica podrán utilizarse únicamente por parte de los funcionarios policiales que hayan sido instruidos para su empleo, cuando sea estrictamente necesario y durante el cumplimiento de sus deberes. Dichos dispositivos serán empleados cuando resulten insuficientes otros medios, para los siguientes fines:
+a) Neutralizar una amenaza activa contra la vida o integridad física de personas.
+b) Controlar individuos violentos que opongan resistencia activa o agresiva o que sugieran ataques en contra de los funcionarios policiales o terceras personas.
+c) Evitar lesiones graves al funcionario policial, al propio sujeto intervenido o a terceros.
+d) Impedir la comisión inmediata de un delito cuando otros medios menos lesivos resulten insuficientes.
+Los oficiales de policía utilizarán los dispositivos de conducción eléctrica conforme al uso progresivo de la fuerza según se determine en el reglamento de la presente ley, debiendo determinarse el nivel de resistencia o falta de cumplimiento ante la autoridad policial ya sea verbal, de acción u omisión, a partir del cual se autoriza el uso del dispositivo de conducción eléctrica.
+ARTÍCULO 5- Prohibiciones
+Se prohíbe el uso de dispositivos de conducción eléctrica:
+a) Como mecanismo de castigo o tortura.
+b) Sobre personas sometidas y que no representen amenaza actual.
+c) De forma reiterada o prolongada sin justificación operativa.
+d) Contra personas esposadas o inmovilizadas, salvo que exista peligro real e inmediato para la vida o integridad de terceros.
+e) En ambientes donde se conozca que existan materiales altamente inflamables.
+f) Contra personas que se encuentren cerca de cuerpos de agua, o parcialmente sumergidos.
+ARTÍCULO 6- Grupos vulnerables
+El uso sobre mujeres embarazadas, personas adultas mayores, menores de edad, personas con discapacidad visible o personas que aparenten sufrir una condición médica grave deberá evitarse siempre que existan alternativas razonables, salvo que la amenaza haga indispensable su utilización.
+CAPÍTULO III
+Capacitación
+ARTÍCULO 7- Capacitación obligatoria
+Todo funcionario policial autorizado para portar o utilizar un dispositivo de conducción eléctrica deberá aprobar previamente un programa de formación teórica y práctica, impartido o avalado por la institución para la cual preste sus servicios.
+La capacitación deberá ajustarse a los lineamientos mínimos establecidos reglamentariamente y será requisito indispensable para la autorización de porte y uso de dichos dispositivos.
+ARTÍCULO 8- Contenido mínimo
+La capacitación deberá comprender al menos:
+a) Derechos humanos.
+b) Uso progresivo de la fuerza.
+c) Funcionamiento técnico del dispositivo.
+d) Riesgos médicos asociados.
+e) Primeros auxilios.
+f) Manejo de situaciones de crisis.
+g) Manejo de situaciones en las que el uso del dispositivo pueda provocar la muerte o lesión grave.
+h) Casos de personas con deterioro cognitivo debido al consumo de alcohol y/o drogas.
+i) Casos de personas con enfermedades mentales preexistentes.
+j) Elaboración de informes y rendición de cuentas.
+CAPÍTULO IV
+Control y Rendición de Cuentas
+ARTÍCULO 9- Registro de uso
+Todo uso de un dispositivo de conducción eléctrica deberá documentarse mediante un informe oficial que detalle:
+a) Fecha, hora y lugar.
+b) Registro de audio y/o video captado por cámaras corporales policiales o cámaras instaladas en vehículos policiales, cuando estén disponibles.
+c) Circunstancias que motivaron su empleo.
+d) Número de descargas efectuadas.
+e) Duración de las descargas.
+f) Consecuencias observadas.
+ARTÍCULO 10- Atención médica
+Toda persona alcanzada por una descarga deberá recibir valoración y atención médica cuando las circunstancias lo ameriten.
+ARTÍCULO 11- Sistemas de auditoría
+Los dispositivos adquiridos deberán contar con sistemas electrónicos de registro de uso que permitan verificar fecha, hora, duración y demás datos relevantes de cada activación.
+ARTÍCULO 12- Custodia, inventario y mantenimiento de los dispositivos de conducción eléctrica
+Los cuerpos policiales autorizados para adquirir y utilizar dispositivos de conducción eléctrica deberán establecer mecanismos de control, custodia y supervisión sobre dichos equipos, conforme a las siguientes disposiciones:
+a) Todo dispositivo deberá estar debidamente identificado mediante número de serie y registrado en un inventario institucional actualizado.
+b) La institución deberá designar las dependencias o funcionarios responsables de la custodia, entrega, recepción y control de los dispositivos y sus accesorios.
+c) La entrega de cada dispositivo a un funcionario policial deberá quedar documentada mediante registros físicos o electrónicos que permitan determinar la identidad del usuario, la fecha, la hora y el período de asignación.
+d) Los dispositivos deberán someterse periódicamente a inspecciones técnicas, pruebas de funcionamiento y mantenimiento preventivo o correctivo, de conformidad con las especificaciones del fabricante y los protocolos institucionales.
+e) Todo daño, pérdida, extravío, sustracción, alteración o mal funcionamiento deberá ser reportado inmediatamente y documentado en los registros institucionales correspondientes.
+f) Los dispositivos que no se encuentren en servicio deberán mantenerse en instalaciones seguras que impidan su acceso, utilización o manipulación por personas no autorizadas.
+g) El incumplimiento de las obligaciones de custodia, inventario, control o mantenimiento dará lugar a las responsabilidades administrativas, civiles o penales que correspondan.
+CAPÍTULO V
+Responsabilidad
+ARTÍCULO 13- Uso indebido
+El uso de dispositivos de conducción eléctrica en contravención de esta ley dará lugar a responsabilidad administrativa, civil y penal, según corresponda.
+TRANSITORIO ÚNICO- La implementación de la capacitación, adquisición y utilización de dispositivos de conducción eléctrica de conformidad con lo esgrimido en esta ley se realizará de forma progresiva y conforme a la disponibilidad presupuestaria de cada institución con competencias policiales, la cual deberá garantizarse, sin menoscabo de los grados de autonomía previstos en el ordenamiento jurídico.
+Rige a partir de su publicación.
+Kattya Alejandra Mora Montoya
+Kattia Calvo Cruz Nogui Acosta Jaen
+Gonzalo Alberto Ramírez Zamora Fernando Obaldia Alvarez
+Juan Manuel Quesada Espinoza Daniel Asdrubal Siezar Cardenas
+Diputadas y diputados
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 05-08-2026).

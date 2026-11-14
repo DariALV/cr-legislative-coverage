@@ -1,0 +1,489 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY GENERAL DEL CAPITAL NATURAL ESTRATÉGICO Y DE LOS ACTIVOS DIGITALES (TOKENIZACION) PARA LA CONSERVACIÓN Y REFORMAS AL CÓDIGO DE MINERÍA, LEY N.°6797, DE 4 DE OCTUBRE DE 1982
+DIANA MURILLO MURILLO
+Y OTROS SEÑORES DIPUTADOS
+Y SEÑORAS DIPUTADAS
+EXPEDIENTE N. º25.894
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY GENERAL DEL CAPITAL NATURAL ESTRATÉGICO Y DE LOS ACTIVOS DIGITALES (TOKENIZACION) PARA LA CONSERVACIÓN Y REFORMAS AL CÓDIGO DE MINERÍA, LEY N.°6797, DE 4 DE OCTUBRE DE 1982
+Expediente N. º25.894
+ASAMBLEA LEGISLATIVA:
+Costa Rica se encuentra ante una encrucijada histórica. En un mundo que avanza aceleradamente hacia la digitalización de los mercados financieros y la representación digital de activos del mundo real, el país tiene la oportunidad de convertirse en un referente latinoamericano de innovación regulatoria con responsabilidad ambiental.
+El presente proyecto de ley nace de esa convicción.
+La tokenización de activos, es decir, la representación digital de bienes físicos mediante certificados criptográficos registrados en redes de cadena de bloques (blockchain); ha dejado de ser un experimento académico para convertirse en la dirección que están tomando las instituciones financieras más grandes del planeta. BlackRock, el mayor gestor de activos del mundo con USD $14 billones administrados, lanzó en 2024 su fondo tokenizado BUIDL, que ya supera los USD $2.500 millones. La tokenización está destinada a transformar la infraestructura financiera y la minería global.
+CONTEXTO GENERAL Y DIAGNÓSTICO DEL PROBLEMA
+Según datos de CoinGecko con corte a abril de 2026, el valor total de activos del mundo real tokenizados, excluidas las monedas estables, supera los USD $30.200 millones, con un crecimiento del 420% en tan solo dieciséis meses. Las proyecciones de McKinsey & Company ubican este mercado en USD $2 billones para el año 2030. El Banco de Pagos Internacionales (BIS), el Fondo Monetario Internacional (FMI) y el Banco Mundial han reconocido públicamente que la tokenización de activos reales es una evolución estructural, no especulativa, de los mercados de minerales y financieros.
+La presente iniciativa trasciende la creación de un mecanismo tecnológico de tokenización de recursos naturales. Su verdadero propósito es establecer un nuevo modelo de política pública para la valorización económica del patrimonio natural del Estado mediante mecanismos no extractivos, compatibles con la conservación ambiental, la estabilidad financiera y el desarrollo sostenible.
+En este sentido, el proyecto propone una transición desde un modelo tradicional centrado en la explotación física hacia una arquitectura de conservación geológica verificable. Bajo este enfoque, los recursos minerales permanecen en todo momento como bienes de dominio público, inalienables e imprescriptibles. La digitalización no crea propiedad sobre el recurso natural: sirve para registrar, financiar y monitorear derechos u obligaciones separados, vinculados con la abstención extractiva, la restauración y otros resultados ambientales o territoriales verificables.
+La iniciativa se alinea con las tendencias internacionales impulsadas por organismos como la Organización para la Cooperación y el Desarrollo Económicos (OCDE), el Banco Mundial y las Naciones Unidas, que promueven la incorporación del capital natural dentro de los sistemas de contabilidad económica y el desarrollo de instrumentos financieros sostenibles que permitan canalizar inversión hacia la conservación de los recursos naturales.
+Igualmente, se incorporan criterios de equidad territorial mediante la distribución de los beneficios económicos hacia el Estado, los gobiernos locales, las comunidades vinculadas con las áreas de conservación, la investigación científica y los programas de protección ambiental, procurando que los recursos generados contribuyan al desarrollo regional y a la reducción de las desigualdades territoriales.
+Finalmente, el proyecto posiciona a Costa Rica como un potencial referente internacional en la convergencia entre innovación financiera, protección ambiental y gestión sostenible del patrimonio natural. Más que regular una tecnología emergente, la ley propone un nuevo instrumento de política pública para diversificar las fuentes de financiamiento del Estado, fortalecer la conservación del patrimonio natural y consolidar el liderazgo del país en materia de desarrollo sostenible e innovación regulatoria.
+ANÁLISIS DE POLÍTICAS COMPARADAS E INTERNACIONALES
+En materia de tokenización de activos reales, múltiples jurisdicciones de primer nivel ya cuentan con marcos operativos que sirven de referencia internacional:
+Jurisdicción
+Marco legal
+Vigencia
+Alcance principal
+Unión Europea
+Reglamento MiCA
+Dic. 2024
+Tokens referenciados a activos (ART)
+Suiza
+Ley DLT
+Feb. 2021
+Valores y activos tokenizados
+Singapur
+MAS / Project Guardian
+2022-presente
+Tokenización institucional
+Hong Kong
+Stablecoins Ordinance
+Ago. 2025
+Licenciamiento formal
+Estados Unidos
+GENIUS Act
+Jul. 2026
+Tokens respaldados por activos
+El Salvador
+Ley de Activos Digitales
+2021-presente
+Tether Gold (XAUT) registrado
+Reino Unido
+FCA Token Framework
+2024
+Propiedad fraccionaria de activos
+Costa Rica ya está comprometida con el marco CARF de la OCDE para el intercambio de información de activos cripto a partir de 2028. El siguiente paso natural y coherente es legislar la emisión y supervisión de tokens de activos reales, no solo su reporte. Hacerlo ahora, antes de que la ventana de oportunidad se cierre, es una decisión estratégica de primer orden.
+En el sector bancario, entidades de la talla de HSBC (Gold Token, con respaldo en bóvedas propias), AMINA Bank de Suiza (donde 1 token = 1 gramo de oro físico bajo regulación FINMA) y OCBC de Singapur (GOLDX) ya operan productos de oro tokenizado con plena supervisión regulatoria. Estos antecedentes demuestran que el modelo es técnicamente viable, institucional y regulatoriamente sólido.
+JUSTIFICACIÓN DEL PROYECTO DE LEY
+El presente proyecto crea un régimen de conservación geológica no extractiva y de financiamiento digital o bursátil de inventarios geológicos de dominio público. La arquitectura propuesta distingue entre el mineral in situ, que permanece bajo dominio estatal, y los instrumentos jurídicos o financieros que pueden registrar o financiar obligaciones de conservación, restauración y resultados verificables.
+Reserva Geológica No Explotable: régimen aplicable, cuando corresponda, a un permiso o concesión minera vigente que se somete voluntariamente a restricciones de no extracción, sin que la declaratoria reviva derechos extinguidos, anulados o caducos ni cree expectativas privadas sobre minerales de dominio público.
+Bóveda Geológica Pública: categoría de derecho público que delimita un inventario geológico sometido a no extracción, restauración, monitoreo y control territorial. Su protección se hace oponible mediante la ley, la resolución de declaratoria y las anotaciones registrales de no perturbación que procedan sobre la superficie, sin constituir derechos reales privados sobre el subsuelo.
+Token de Bloque de Georeserva: registro digital trazable que identifica un bloque de inventario geológico de conservación y, cuando corresponda, incorpora o referencia los derechos definidos en el instrumento jurídico de emisión. El token no representa propiedad, garantía, entrega, redención ni derecho de extracción sobre el mineral.
+Sistema Nacional de Conservación Geológica y Registro Digital: infraestructura pública de registro e interoperabilidad que conecta la información geológica, ambiental y financiera. La supervisión se distribuye según competencia: MINAE y la Dirección de Geología y Minas en materia geológica y de conservación; SETENA en evaluación y monitoreo ambiental; SUGEVAL y CONASSIF en valores y oferta pública; BCCR en pagos, liquidación y estabilidad financiera; SUGEF/UIF en prevención de legitimación de capitales; y las demás instituciones conforme a sus competencias legales.
+La arquitectura jurídica descansa en una separación estricta entre el activo natural y el derecho financiero. El recurso natural puede servir como referencia geológica, límite prudencial de emisión o índice parcial, pero no como propiedad privada, garantía ejecutable, activo de redención ni remedio de insolvencia del inversionista. Los derechos económicos deben recaer frente al emisor, un patrimonio autónomo o flujos reales previamente definidos.
+Los instrumentos digitales o valores que se emitan deberán ajustarse a la legislación costarricense aplicable según su sustancia económica. La acreditación o licencia extranjera podrá ser un elemento complementario de idoneidad, pero no sustituirá la autorización nacional que corresponda. Los recursos públicos, cánones, tributos o ingresos de titularidad estatal deberán ingresar y administrarse conforme a las reglas de la Caja Única, presupuesto y control público.
+OBJETIVOS Y EFECTOS ESPERADOS
+Establecer un Marco Regulatorio para el Capital Natural: Crear un marco jurídico moderno que permita la conservación, protección, restauración, certificación, registro y financiamiento no extractivo del capital natural de Costa Rica.
+Erradicación de la Minería Ilegal y Protección Territorial: Fortalecer la presencia estatal en zonas vulnerables como Crucitas mediante Bóvedas Geológicas Públicas, impidiendo la extracción ilegal con mercurio y protegiendo los recursos hídricos y ecosistémicos.
+Supervisión Multidisciplinaria Integrada: Coordinar de manera efectiva a las autoridades ambientales (MINAE, DGM, SETENA), financieras (SUGEVAL, CONASSIF, BCCR, SUGEF) y de seguridad (Fuerza Pública, Guardacostas) para garantizar la integridad técnica y la prevención de legitimación de capitales (AML/CFT).
+Trazabilidad e Integridad de la Información: Implementar el Sistema Nacional de Información y Registro de Activos Naturales de Conservación sobre tecnología de registro distribuido (DLT/blockchain) para asegurar la transparencia, auditabilidad y no doble conteo de beneficios ambientales.
+¿CUÁL ES EL IMPACTO ESPERADO?
+El proyecto puede generar ingresos para el Estado y movilizar recursos hacia la conservación, siempre que cada flujo cuente con una fuente jurídica y financiera identificada, sea presupuestariamente transparente y no dependa exclusivamente de la apreciación especulativa del mineral preservado. Entre las fuentes posibles se contemplan:
+Cánones o tasas legalmente establecidos sobre emisiones o servicios autorizados (Canon General del 10% y Canon Especial Aurífero del 8%), calculados sobre bases verificables de colocación y administrados bajo la Caja Única de la República.
+Destino específico de recursos públicos: En emisiones auríferas, un 40% se destina a monitoreo, restauración, agua y seguridad; 30% a desarrollo territorial municipal; 20% al presupuesto nacional; y 10% a investigación geológica y ambiental.
+Tributación aplicable a las operaciones realizadas, conforme a la legislación tributaria vigente y sin crear por reglamento nuevos hechos generadores o tarifas.
+Tasas de supervisión o licenciamiento destinadas a cubrir costos regulatorios de las autoridades competentes dentro de sus respectivos ámbitos.
+Atracción de Inversión Extranjera Directa (IED): atracción de empresas de custodia, auditoría, tecnología blockchain y cumplimiento normativo que establezcan operaciones en el país.
+Generación de Empleo de Alto Valor: creación de puestos cualificados en servicios legales especializados, auditoría de reservas, tecnología distribuida y cumplimiento normativo AML/KYC.
+Posicionamiento Internacional y Liderazgo Regional: Ningún país latinoamericano dispone aún de un marco legal integral para la tokenización de recursos naturales. Panamá, Bermudas, Islas Vírgenes Británicas y otros centros financieros regionales aún no han legislado este nicho. Costa Rica tiene una ventaja competitiva real para ser el primero.
+En virtud de lo anterior, se somete al conocimiento y aprobación de la Asamblea Legislativa el presente proyecto de ley “LEY GENERAL DEL CAPITAL NATURAL ESTRATÉGICO Y DE LOS ACTIVOS DIGITALES (TOKENIZACION) PARA LA CONSERVACIÓN Y REFORMAS AL CÓDIGO DE MINERÍA, LEY N.° 6797, DE 4 DE OCTUBRE DE 1982”, por considerarse beneficioso para el país.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA DECRETA:
+LEY GENERAL DEL CAPITAL NATURAL ESTRATÉGICO Y DE LOS ACTIVOS DIGITALES (TOKENIZACION) PARA LA CONSERVACIÓN Y REFORMAS AL CÓDIGO DE MINERÍA, LEY N.°6797, DE 4 DE OCTUBRE DE 1982
+Capítulo I
+Disposiciones generales
+Artículo 1.- Objeto
+La presente ley tiene por objeto establecer el marco jurídico para la conservación, protección, restauración, certificación, registro, financiamiento y valorización sostenible y no extractiva de los componentes del capital natural estratégico de Costa Rica, mediante instrumentos jurídicos, económicos y digitales sujetas a verificación técnica, supervisión pública y control ambiental.
+Para los efectos de esta ley, podrán comprenderse, conforme a los regímenes jurídicos especiales aplicables, los inventarios geológicos y minerales, la biodiversidad, los ecosistemas, los servicios de protección hídrica, el almacenamiento y la captura de carbono, la restauración ecológica y otros servicios ecosistémicos susceptibles de medición, certificación y financiamiento.
+La presente ley no modifica los regímenes de titularidad, dominio público, protección, aprovechamiento o acceso establecidos por el ordenamiento jurídico para cada categoría de recurso natural.
+La digitalización o tokenización tendrá carácter exclusivamente instrumental y no constituirá, por sí misma, título de propiedad, concesión, autorización de aprovechamiento, garantía real o derecho de disposición sobre recursos naturales.
+Los derechos económicos derivados de instrumentos de conservación deberán recaer exclusivamente sobre obligaciones contractuales, prestaciones ambientales verificables, patrimonios autónomos o flujos financieros legalmente constituidos.
+En toda interpretación y aplicación de esta ley prevalecerán la protección del ambiente, el interés público, la soberanía estatal sobre los bienes demaniales, la seguridad jurídica, la sostenibilidad fiscal y los derechos constitucionales de las personas y comunidades involucradas.
+Artículo 2.- Ámbito de aplicación
+El ámbito de aplicación comprenderá, según los criterios de elegibilidad y los regímenes específicos que se establezcan, el patrimonio geológico y mineral, la biodiversidad, los ecosistemas, los servicios de protección hídrica, la restauración ecológica, el carbono y otros componentes del capital natural que puedan ser objeto de registro, certificación, financiamiento o valorización conforme al ordenamiento jurídico.
+La presente ley es de aplicación obligatoria para:
+Las entidades autorizadas, registradas o supervisadas para la emisión, administración, custodia, oferta, colocación o negociación de instrumentos digitales de conservación, según la naturaleza jurídica del producto y la competencia de cada autoridad.
+Las instituciones y autoridades públicas con competencia en materia minera, ambiental, financiera y de supervisión de activos digitales.
+Las personas adquirentes, patrocinadoras, inversionistas o tenedoras de instrumentos digitales de conservación, nacionales o extranjeras, según corresponda a la naturaleza financiera o no financiera del instrumento.
+Artículo 2 bis.- Respeto a los regímenes jurídicos especiales
+La aplicación de esta ley se realizará sin perjuicio de los regímenes jurídicos especiales de protección, titularidad, acceso, uso y aprovechamiento de los recursos naturales establecidos en la Constitución Política, el Código de Minería, la Ley Orgánica del Ambiente, la Ley de Biodiversidad, la Ley Forestal, la Ley de Aguas y demás legislación aplicable.
+La emisión, registro, certificación, transferencia o negociación de instrumentos de conservación no conferirá por sí misma derechos de acceso, uso, extracción, apropiación, aprovechamiento o disposición sobre recursos naturales ni sobre conocimientos tradicionales asociados.
+Cuando los instrumentos comprendan recursos genéticos o bioquímicos, conocimientos tradicionales o derechos colectivos de pueblos indígenas, deberán respetarse las competencias institucionales, autorizaciones, procedimientos de consulta y consentimiento, y mecanismos de distribución de beneficios exigidos por el ordenamiento jurídico.
+Ninguna disposición de esta ley podrá interpretarse como autorización para disminuir los niveles de protección ambiental legalmente establecidos.
+Artículo 3.- Definiciones
+Para la correcta aplicación e interpretación de la presente ley, se establecen las siguientes definiciones:
+Activo Digital de Conservación Geológica (ADCG): representación o registro digital autorizado por esta ley que identifica un instrumento, derecho u obligación vinculada con la conservación geológica. El ADCG no representa el mineral como propiedad privada ni confiere derecho de extracción, entrega, redención o garantía sobre el recurso in situ.
+Verificación del Inventario Geológico de Conservación: evaluación técnica independiente del mineral in situ dentro de un área delimitada, realizada por una persona calificada conforme a estándares geológicos internacionales reconocidos por la Dirección de Geología y Minas. Su finalidad es determinar existencia, extensión, características y grado de certidumbre del inventario sometido a no extracción; no convierte el inventario en garantía ni en reserva explotable para efectos financieros.
+Tecnología de registro distribuido (DLT o blockchain): infraestructura tecnológica que permite registrar transacciones o estados de forma trazable y verificable. Su utilización no altera la naturaleza jurídica de los derechos registrados ni prevalece sobre la ley, el reglamento o el instrumento jurídico de emisión.
+Bóveda Geológica Pública (BGP): categoría de derecho público declarada por el Ministerio de Ambiente y Energía sobre un área tridimensional de inventario geológico de conservación sometida a no extracción, restauración, monitoreo y control territorial. La BGP no transfiere el subsuelo ni crea derechos reales privados sobre los minerales.
+Una Bóveda Geológica Pública podrá comprender áreas de dominio mineral estatal sin concesión vigente o áreas comprendidas en permisos o concesiones válidos que se incorporen al régimen conforme a esta ley. La declaratoria no revivirá derechos mineros extinguidos, anulados, caducos o cancelados.
+Contrato inteligente (smart contract): código informático que automatiza operaciones previamente definidas en un instrumento jurídico. El texto legal y contractual prevalecerá sobre el código. Todo contrato inteligente utilizado bajo esta ley deberá contar con mecanismos auditables de validación, pausa, corrección, recuperación y resolución de incidencias.
+Entidad Emisora Certificada (EEC): persona jurídica autorizada o registrada por la autoridad costarricense competente, de acuerdo con la naturaleza del instrumento que emita o administre, para realizar las funciones previstas en esta ley. La autorización extranjera podrá acreditarse como antecedente de idoneidad, pero no sustituirá la autorización nacional exigible.
+Reserva Geológica No Explotable (RGNE): régimen especial aplicable a un permiso o concesión minera vigente que, de forma voluntaria y mediante resolución firme, somete total o parcialmente un área a no extracción y conservación geológica. Este régimen no crea nuevos derechos mineros ni convalida o revive derechos extinguidos.
+Token de Bloque de Georeserva (TBG): registro digital único y trazable asociado a una porción delimitada de un inventario geológico de conservación. El TBG identifica o incorpora únicamente los derechos establecidos en el instrumento jurídico de emisión y no equivale a una fracción de propiedad del mineral ni permite su redención física.
+Valorización no extractiva: conjunto de mecanismos jurídicos, ambientales y financieros que remuneran o financian la abstención extractiva, la conservación geológica, la restauración y resultados ecosistémicos verificables. Puede utilizar el inventario geológico como referencia, límite prudencial o índice parcial, pero no como garantía ejecutable ni como fuente automática de pago.
+Verificador Geológico Independiente (VGI): persona física o jurídica con profesionales calificados, independencia y experiencia demostrable, reconocida conforme a la normativa técnica de la Dirección de Geología y Minas para emitir reportes compatibles con estándares tales como NI 43-101, JORC, S-K 1300 u otros equivalentes.
+Precio de referencia del oro: precio internacional objetivo y verificable que, cuando el instrumento financiero lo autorice expresamente, podrá utilizarse únicamente como índice parcial, dato de divulgación o parámetro prudencial, sin convertir el oro in situ en garantía ni activo redimible.
+Inventario Geológico de Conservación (IGC): estimación técnica, trazable y periódicamente actualizada del mineral in situ comprendido en una Bóveda Geológica Pública y sometido a no extracción. Su cuantificación no equivale a un derecho de explotación ni a una garantía financiera.
+Servicio de Conservación Geológica: prestación ambiental remunerable consistente en mantener un inventario geológico bajo no extracción y cumplir resultados verificables de permanencia, restauración, protección de agua y biodiversidad, control de daño, seguridad y monitoreo, conforme a metodologías aprobadas.
+Certificado Digital de Conservación Geológica (CDCG): instrumento digital no financiero que acredita patrocinio, contribución o participación en actividades de conservación geológica y que no promete rendimiento, reembolso, mercado secundario organizado ni exposición económica al precio del recurso natural.
+Valor Digital de Conservación Geológica (VDCG): derecho patrimonial representado digitalmente que, por captar recursos del público, ser transferible, negociable o incorporar una promesa de pago o rendimiento, se somete a la legislación del mercado de valores, a SUGEVAL y a CONASSIF según corresponda.
+Oráculo: mecanismo técnico y procedimental que introduce al sistema digital información proveniente del mundo físico o de registros oficiales. Los oráculos deberán contar con fuentes identificables, validación humana, trazabilidad, auditoría y procedimientos de corrección de errores.
+Anotación Registral de Conservación Geológica y No Perturbación: asiento registral de naturaleza pública aplicable a la superficie o a los derechos registrables vinculados al área de una Bóveda Geológica Pública, destinado a hacer oponibles las restricciones de uso necesarias para su conservación, sin transferir ni gravar el dominio estatal sobre los minerales.
+Artículo 4.- Principios rectores
+Son principios rectores de esta ley los siguientes:
+Soberanía estatal sobre los recursos minerales: ningún instrumento digital o financiero conferirá propiedad, posesión, usufructo, explotación, uso, garantía, entrega, redención física ni remedio de insolvencia sobre el subsuelo o los recursos minerales.
+Conservación y valorización no extractiva verificable: la generación de valor deberá vincularse con obligaciones o resultados medibles de no extracción, restauración, agua, biodiversidad, seguridad, monitoreo y desarrollo territorial, sin sustituir obligaciones ambientales o judiciales preexistentes.
+Transparencia, auditabilidad y corrección: las emisiones y transferencias deberán constar en registros auditables. La inmutabilidad tecnológica no impedirá la corrección jurídica de errores mediante procedimientos autorizados, dejando trazabilidad de toda modificación.
+Trazabilidad y prevención de legitimación de capitales: se aplicarán controles AML/CFT, identificación del beneficiario final y KYC conforme a la normativa competente. La identificación personal se mantendrá fuera de cadena cuando sea necesario para proteger datos personales, utilizando referencias o pruebas criptográficas adecuadas.
+Protección de la persona inversionista y sustancia sobre forma: todo instrumento que capte recursos del público, incorpore un derecho patrimonial transferible o prometa pagos o rendimientos se someterá al régimen financiero aplicable, con información completa sobre riesgos, fuente de pago, liquidez e insolvencia. No existirá derecho de redención contra el mineral.
+Proporcionalidad regulatoria: la supervisión y los requisitos prudenciales se adecuarán a la naturaleza, escala y riesgo de cada instrumento, sin disminuir las competencias legales de las autoridades financieras, ambientales, tributarias o de control.
+Compatibilidad internacional y neutralidad tecnológica: el marco regulatorio procurará interoperabilidad con estándares reconocidos sin importar estructuras extranjeras incompatibles con el dominio público mineral costarricense.
+Adicionalidad, permanencia y no doble conteo: los beneficios ambientales comercializados o remunerados deberán ser adicionales a obligaciones legales mínimas, mantenerse por el plazo comprometido y evitar la doble contabilización.
+Prevalencia jurídica: la ley, los reglamentos, las resoluciones administrativas y los documentos de emisión prevalecerán sobre el código informático, los metadatos o cualquier ejecución automatizada.
+Prevención, precaución y no regresión ambiental: La aplicación de esta ley deberá respetar los principios de prevención, precaución, progresividad y no regresión en materia ambiental. Ningún instrumento de valorización podrá justificar una disminución de los niveles de protección exigidos por el ordenamiento jurídico.
+Prevalencia de las obligaciones ambientales: La creación, emisión, negociación, cancelación o vencimiento de instrumentos digitales no suspenderá, reducirá ni extinguirá obligaciones legales, administrativas o judiciales de prevención, mitigación, restauración, reparación o compensación ambiental.
+Prohibición de privatización indirecta: Ningún instrumento de conservación podrá utilizarse para transferir, gravar o comprometer bienes de dominio público, atribuir derechos de explotación futura sobre ellos o generar control privado sobre decisiones públicas de conservación, gestión o aprovechamiento de recursos naturales.
+Capítulo II
+Del Régimen de Reservas Geológicas No Explotables y Bóvedas Geológicas Públicas
+Artículo 5.- Modalidades de incorporación y criterios de elegibilidad
+Podrán incorporarse al régimen de Bóveda Geológica Pública: a) áreas de dominio mineral estatal sin concesión vigente que el Estado determine aptas para conservación geológica; y b) áreas comprendidas en permisos o concesiones mineras válidos cuyos titulares soliciten voluntariamente su sometimiento al régimen de Reserva Geológica No Explotable. La incorporación no será automática y requerirá elegibilidad geológica, ambiental, territorial, jurídica y financiera.
+La elegibilidad deberá sustentarse, como mínimo, en los siguientes criterios:
+existencia y delimitación tridimensional de un Inventario Geológico de Conservación verificado por la Dirección de Geología y Minas;
+compatibilidad ambiental del régimen de no extracción, línea base y determinaciones de SETENA cuando correspondan;
+necesidades de restauración, protección de agua, bosque, salud, seguridad y control de minería ilegal;
+participación de las comunidades, municipalidades y demás actores territoriales afectados;
+situación jurídica del área, incluidos procesos judiciales, obligaciones administrativas y derechos superficiales;
+existencia de un plan de conservación y, si se prevé financiamiento, identificación preliminar de la fuente de pago, el emisor, el supervisor y los riesgos relevantes.
+La declaratoria no podrá utilizarse para reactivar concesiones anuladas, extinguidas, caducas o canceladas, ni para reconocer expectativas privadas sobre recursos minerales que permanezcan bajo dominio estatal.
+Los titulares de permisos o concesiones válidos podrán solicitar voluntariamente la incorporación de parte o la totalidad del área, siempre que renuncien al ejercicio de facultades extractivas sobre el perímetro incorporado durante la vigencia de la declaratoria.
+La incorporación producirá efectos únicamente a partir de la firmeza de la resolución administrativa, la inscripción en el Registro Nacional de Bóvedas Geológicas Públicas y, cuando corresponda, la anotación registral de conservación y no perturbación.
+Artículo 6.- Requisitos para la declaratoria de Bóveda Geológica Pública
+La solicitud o expediente de declaratoria deberá contener, como mínimo:
+Identificación precisa del área mediante coordenadas geoespaciales tridimensionales en el sistema oficial del Instituto Geográfico Nacional.
+Informe de Inventario Geológico de Conservación elaborado por un Verificador Geológico Independiente y validado técnicamente por la Dirección de Geología y Minas, conforme a estándares internacionales reconocidos.
+Compromiso jurídico de no extracción y, cuando exista un permiso o concesión vigente, renuncia expresa al ejercicio de las facultades extractivas sobre el área incorporada durante la vigencia de la declaratoria.
+Línea base ambiental y determinación de las medidas de no perturbación, restauración y monitoreo; las actividades invasivas, accesos, remediación o instalación de sensores quedarán sujetas a la evaluación ambiental que corresponda.
+Plan territorial de conservación con indicadores de agua, bosque, biodiversidad, salud, seguridad, reducción de daño y control de minería ilegal, así como mecanismos de participación comunitaria.
+Propuesta de instrumento de financiamiento, cuando exista, que identifique el emisor o patrimonio autónomo, la fuente de pago, el vencimiento, el régimen de insolvencia, el supervisor financiero y los riesgos principales.
+Propuesta de Anotación Registral de Conservación Geológica y No Perturbación u otros instrumentos registrables sobre la superficie que resulten necesarios, sin afectar el dominio estatal del subsuelo.
+Acreditación del estado jurídico del área y, cuando exista un permiso o concesión, certificación de su vigencia y de la ausencia de impedimentos incompatibles con la declaratoria.
+Artículo 7.- Procedimiento de elegibilidad y declaratoria
+Recibido el expediente completo, el Ministerio de Ambiente y Energía coordinará el procedimiento de elegibilidad. La Dirección de Geología y Minas rendirá el criterio geológico; SETENA determinará la evaluación ambiental exigible y verificará la línea base y las medidas de no perturbación; y las demás autoridades emitirán los criterios que correspondan dentro de sus competencias.
+Previo a resolver la declaratoria de una Bóveda Geológica Pública, el Ministerio de Ambiente y Energía garantizará un procedimiento de información y participación pública efectiva, que comprenderá como mínimo:
+La publicación de la solicitud de declaratoria y de sus estudios técnicos, ambientales y territoriales, con las excepciones legalmente justificadas por protección de datos personales, seguridad o información confidencial.
+La notificación a las personas propietarias y titulares de derechos reales sobre inmuebles que puedan resultar directamente afectados.
+La concesión de un plazo no inferior a treinta días hábiles para presentar observaciones, estudios u oposiciones.
+La realización de una audiencia pública cuando la naturaleza, magnitud o efectos territoriales de la declaratoria lo justifiquen.
+La consulta a las municipalidades y demás instituciones con competencias sobre el territorio involucrado.
+El respeto a los procedimientos de consulta de los pueblos indígenas cuando resulten legalmente exigibles.
+La resolución administrativa deberá responder de manera motivada las observaciones sustanciales recibidas y especificar los mecanismos de impugnación correspondientes, conforme al ordenamiento jurídico.
+La resolución fundada deberá delimitar tridimensionalmente la Bóveda Geológica Pública, identificar el Inventario Geológico de Conservación, establecer el plazo y condiciones de no extracción, las obligaciones de restauración y monitoreo, las restricciones superficiales necesarias y los indicadores de desempeño.
+No podrá emitirse ni ofrecerse al público ningún instrumento digital o financiero asociado al área antes de que la declaratoria esté firme, se encuentre inscrita en el registro correspondiente y se hayan obtenido las autorizaciones financieras aplicables.
+Artículo 8.- Obligaciones de conservación y custodia territorial
+La persona titular de un permiso o concesión incorporado al régimen y, en las áreas sin concesión, las autoridades públicas responsables, deberán cumplir las siguientes obligaciones, según corresponda:
+Abstenerse de toda actividad extractiva o de perturbación incompatible con la declaratoria.
+Ejecutar las medidas de integridad territorial, restauración, seguridad y control de minería ilegal establecidas en el plan aprobado, en coordinación con las autoridades competentes.
+Facilitar las inspecciones geológicas y ambientales del MINAE, la Dirección de Geología y Minas y SETENA. Las autoridades financieras accederán a la información financiera y tecnológica dentro de sus competencias, sin asumir funciones de inspección geológica.
+Actualizar el Inventario Geológico de Conservación con la periodicidad técnica fijada por la Dirección de Geología y Minas o cuando existan cambios materiales en la información geológica.
+Reportar de inmediato al MINAE cualquier extracción ilegal, alteración material del área o incumplimiento de los indicadores de conservación del que tenga conocimiento.
+Publicar, en formatos de datos abiertos compatibles con la protección de datos personales y la seguridad territorial, los resultados de monitoreo y verificación exigidos por la declaratoria.
+Artículo 9.- Naturaleza jurídica y efectos de la Bóveda Geológica Pública
+La Bóveda Geológica Pública es una categoría de derecho público que somete un área tridimensional de inventario geológico a un régimen especial de no extracción, conservación, restauración y monitoreo. Su declaratoria no constituye ni transfiere propiedad, concesión, gravamen o derecho real privado sobre el subsuelo.
+Prohibición de toda actividad extractiva o de perturbación incompatible con la declaratoria, en los términos y plazo fijados por la ley y la resolución respectiva.
+Elegibilidad para estructurar instrumentos de conservación o financiamiento, sin que la declaratoria constituya por sí sola autorización de oferta, emisión o captación de recursos.
+Inscripción en el Registro Nacional de Bóvedas Geológicas Públicas y, cuando corresponda, en el Registro Nacional mediante la Anotación Registral de Conservación Geológica y No Perturbación.
+Obligación de monitoreo geológico, ambiental y territorial conforme a la distribución de competencias establecida en esta ley.
+Prohibición de utilizar el mineral como garantía ejecutable, activo de redención, mecanismo de entrega o remedio de insolvencia de cualquier tenedor o acreedor.
+Los remedios por incumplimientos financieros serán exclusivamente los previstos frente al emisor, patrimonio autónomo o fuente de pago, sin acción real contra el mineral in situ.
+Artículo 10.- Oponibilidad registral y separación patrimonial
+Una vez firme la declaratoria de Bóveda Geológica Pública, las restricciones de uso superficial necesarias para asegurar la no perturbación deberán formalizarse mediante los instrumentos registrales o administrativos previstos en esta ley, sin que ello implique transferir, custodiar privadamente o gravar los minerales de dominio público.
+Anotación Registral de Conservación Geológica y No Perturbación sobre la finca o derecho superficial afectado, cuando resulte jurídicamente procedente.
+Servidumbres, limitaciones públicas u otros instrumentos sobre la superficie estrictamente necesarios para el acceso, monitoreo, restauración o seguridad, respetando los derechos de terceros y la legislación aplicable.
+Fideicomisos o patrimonios autónomos únicamente para administrar flujos financieros, garantías del emisor, pagos por resultados o recursos de restauración; en ningún caso podrán ser titulares, custodios o beneficiarios de propiedad sobre el subsuelo o el mineral in situ.
+Capítulo III
+Mercado Nacional de Activos
+Artículo 11.- Creación y naturaleza jurídica del Mercado Nacional de Activos Naturales
+Créase el Mercado Nacional de Activos Naturales como un sistema de registro, certificación, información, trazabilidad y articulación de mecanismos de financiamiento vinculados con la conservación, restauración y valorización sostenible del capital natural.
+El Mercado Nacional de Activos Naturales constituirá un mecanismo de coordinación y transparencia y no tendrá, por su sola creación, naturaleza de bolsa de valores, mercado bursátil autorizado, intermediario financiero ni entidad de compensación o liquidación.
+La negociación de instrumentos que, conforme a su naturaleza jurídica y económica, constituyan valores o sean objeto de oferta pública estará sometida a la Ley Reguladora del Mercado de Valores, Ley N.° 7732, sus reformas y la normativa emitida por las autoridades competentes.
+La incorporación de un certificado ambiental al sistema no lo convertirá automáticamente en un valor negociable ni constituirá autorización para efectuar oferta pública o intermediación financiera.
+El Ministerio de Ambiente y Energía coordinará el componente ambiental y de información del sistema, sin asumir competencias de supervisión financiera atribuidas a otras instituciones por ley.
+La implementación del sistema deberá utilizar, preferentemente, las infraestructuras públicas existentes, mediante mecanismos de interoperabilidad y coordinación institucional, procurando evitar duplicaciones de funciones y costos administrativos.
+Artículo 11 bis.- Sistema Nacional de Información y Registro de Activos Naturales de Conservación
+Créase el Sistema Nacional de Información y Registro de Activos Naturales de Conservación como mecanismo público de interoperabilidad entre las plataformas ambientales, geológicas, registrales y financieras legalmente establecidas.
+El sistema será coordinado por el Ministerio de Ambiente y Energía y permitirá la identificación, trazabilidad y verificación de los instrumentos de conservación reconocidos conforme a esta ley.
+El sistema deberá garantizar:
+Identificación única de los instrumentos registrados.
+Acceso público a la información ambiental legalmente disponible.
+Interoperabilidad con registros y sistemas administrados por instituciones públicas competentes.
+Prevención de duplicidades en la certificación y contabilización de beneficios ambientales.
+Seguridad informática, protección de datos personales, mecanismos de auditoría y corrección de errores.
+Identificación de las entidades responsables de la emisión y verificación de cada instrumento.
+La implementación de este sistema no alterará las competencias registrales, ambientales, financieras ni de fiscalización establecidas por el ordenamiento jurídico.
+El sistema deberá utilizar preferentemente infraestructura pública existente, procurando evitar duplicación de funciones y costos.
+Artículo 12. Instrumentos elegibles.
+Podrán incorporarse al mercado, de conformidad con los requisitos técnicos y jurídicos que se establezcan reglamentariamente, los siguientes instrumentos:
+Certificados de Conservación.
+Valores Digitales vinculados con el capital natural.
+Bonos de Conservación.
+Créditos de Biodiversidad.
+Créditos de Restauración Ecológica.
+Instrumentos digitales vinculados con la conservación geológica, la protección hídrica, el carbono y otros servicios ecosistémicos reconocidos por el ordenamiento jurídico.
+La inclusión de un instrumento requerirá la identificación de su naturaleza jurídica, los derechos que representa, las obligaciones de su emisor, los riesgos asociados y los mecanismos de verificación aplicables.
+Los certificados y créditos ambientales solamente podrán emitirse cuando exista una metodología técnica aprobada por la autoridad ambiental competente que permita verificar la existencia del beneficio, su adicionalidad cuando corresponda, permanencia, trazabilidad y ausencia de doble contabilización.
+Los instrumentos deberán identificar a la persona o entidad jurídicamente legitimada para generar y disponer del beneficio ambiental, así como las obligaciones de conservación asumidas, su duración, los mecanismos de seguimiento, la distribución de beneficios y las consecuencias de su incumplimiento.
+No podrán comercializarse como beneficios ambientales adicionales aquellas actuaciones que constituyan exclusivamente el cumplimiento de obligaciones legales o judiciales preexistentes, salvo habilitación legal expresa y siempre que no se incurra en doble contabilización ni se desnaturalice la obligación original.
+Artículo 13. Supervisión y coordinación institucional.
+El funcionamiento del mercado se sujetará a las competencias legalmente atribuidas a las autoridades ambientales, financieras, tributarias y de protección al consumidor.
+La Superintendencia General de Valores ejercerá las competencias de autorización, regulación y supervisión que correspondan respecto de los valores, emisores, intermediarios y actividades sometidos a su ámbito legal. La inclusión de certificados u otros instrumentos ambientales no implicará, por sí misma, su reconocimiento como valores negociables.
+El Ministerio de Ambiente y Energía, en coordinación con las instituciones competentes, establecerá los criterios de elegibilidad, medición, verificación y seguimiento ambiental de los instrumentos.
+Artículo 14. Transparencia e integridad ambiental.
+Los instrumentos incorporados al mercado deberán contar con información pública suficiente sobre su origen, metodología de valoración, línea base ambiental, titularidad o legitimación del emisor, derechos asociados, riesgos, auditorías y resultados verificables.
+Se establecerán mecanismos para prevenir el fraude, la doble contabilización de beneficios ambientales, la publicidad engañosa y la emisión de instrumentos sin respaldo jurídico o técnico suficiente.
+Artículo 15. Protección del patrimonio público.
+La incorporación de activos o instrumentos al mercado no podrá interpretarse como transferencia de propiedad sobre bienes de dominio público, recursos naturales o derechos sujetos a regímenes especiales de protección.
+La emisión y negociación de instrumentos digitales no sustituirá las autorizaciones ambientales ni conferirá derechos de extracción, aprovechamiento o disposición que no hayan sido otorgados expresamente conforme al ordenamiento jurídico.
+Artículo 16. Implementación gradual.
+El Poder Ejecutivo promoverá la implementación gradual del mercado mediante estudios de viabilidad, proyectos piloto, evaluación de riesgos y mecanismos de consulta pública.
+La puesta en operación de cada categoría de instrumentos estará condicionada a la existencia de metodologías verificables, reglas jurídicas claras, mecanismos de supervisión y salvaguardas ambientales y financieras adecuadas.
+Artículo 16 bis.- Preservación de las potestades públicas
+La emisión, adquisición, negociación o tenencia de instrumentos regulados por esta ley no limitará el ejercicio legítimo de las potestades constitucionales y legales del Estado en materia ambiental, sanitaria, territorial, tributaria, financiera o de protección del interés público.
+Ningún instrumento podrá interpretarse como garantía de inmutabilidad del marco normativo o de mantenimiento indefinido de determinadas condiciones regulatorias.
+Las modificaciones normativas o decisiones administrativas legítimas no conferirán, por sí mismas, derechos de propiedad, explotación, extracción o ejecución sobre recursos naturales de dominio público.
+Lo anterior se entenderá sin perjuicio de las obligaciones contractuales válidamente constituidas, los derechos adquiridos, los regímenes de responsabilidad patrimonial aplicables y los compromisos internacionales asumidos por la República.
+Artículo 16 ter.- Participación territorial y distribución equitativa de beneficios
+Los programas e instrumentos de conservación que generen ingresos económicos deberán contemplar mecanismos transparentes de participación territorial y distribución de beneficios, conforme a la naturaleza jurídica de los recursos, los derechos involucrados y la legislación aplicable.
+Cuando los instrumentos se originen en actividades realizadas sobre propiedades privadas o territorios sujetos a derechos colectivos, deberá acreditarse la legitimación jurídica necesaria para desarrollar dichas actividades y disponer de los beneficios correspondientes.
+En los casos que involucren pueblos indígenas, deberán respetarse los derechos colectivos, los procedimientos de consulta y consentimiento legalmente exigibles y las garantías reconocidas por los instrumentos internacionales aplicables.
+Los instrumentos no podrán atribuir a terceros derechos de aprovechamiento sobre recursos naturales ni conocimientos tradicionales sin las autorizaciones legalmente requeridas.
+Los criterios de distribución de beneficios deberán establecerse previamente, constar en instrumentos jurídicos verificables y ser objeto de información pública en los términos permitidos por la ley.
+Capítulo IV
+Entidades Emisoras Certificadas
+Artículo 17.- Autorización y requisitos de las Entidades Emisoras Certificadas
+Podrán actuar como Entidades Emisoras Certificadas las personas jurídicas nacionales o extranjeras que obtengan la autorización o inscripción costarricense que corresponda a la naturaleza de su actividad. Si el instrumento constituye valor u oferta pública, la autorización corresponderá a SUGEVAL bajo la normativa de CONASSIF; si presta servicios sujetos a regulación AML/CFT o de activos virtuales, deberá cumplir las exigencias de SUGEF/UIF. La participación del BCCR se limitará a sus competencias legales en pagos, liquidación y estabilidad financiera.
+Solvencia y capital suficientes y proporcionales al riesgo, determinados por la autoridad supervisora competente según el tipo de actividad.
+Autorización costarricense cuando sea exigible. Las licencias o registros extranjeros podrán utilizarse como antecedentes de idoneidad y cumplimiento, pero no sustituyen la autorización nacional.
+Programa de cumplimiento AML/CFT, KYC, beneficiario final y gestión de riesgos aprobado o supervisado por la autoridad competente.
+Sistemas tecnológicos, contratos inteligentes, oráculos y procedimientos de custodia auditados, con ciberseguridad, continuidad operativa, recuperación de claves, pausa y corrección de errores.
+Mecanismos de segregación de activos y flujos, conciliación y depósito de recursos públicos conforme a la Caja Única y las instrucciones de Hacienda/Tesorería; la automatización mediante smart contract no sustituirá los controles contables y presupuestarios.
+Pólizas, garantías o patrimonio separado suficientes para responder por obligaciones propias frente a tenedores, sin utilizar el mineral in situ como garantía o colateral.
+Políticas de protección de datos personales, gobernanza, conflictos de interés, revelación de riesgos, insolvencia y atención de reclamos, según la regulación aplicable.
+Garantías de cumplimiento ambiental: Cuando la emisión esté vinculada con obligaciones de conservación, restauración, monitoreo o protección territorial asumidas por el emisor, este deberá constituir las garantías financieras, pólizas o mecanismos de respaldo que resulten exigibles según la legislación aplicable y los riesgos técnicamente determinados por la autoridad competente.
+Estas garantías serán independientes de las destinadas a responder por obligaciones financieras frente a las personas inversionistas y no sustituirán las garantías ambientales previamente exigibles.
+Artículo 18.- Prohibiciones para las Entidades Emisoras Certificadas
+Las Entidades Emisoras Certificadas tienen expresamente prohibido:
+Emitir instrumentos por encima de los límites de emisión y coeficientes prudenciales autorizados respecto del Inventario Geológico de Conservación o de las fuentes de pago.
+Conferir propiedad, explotación, posesión, usufructo, garantía, entrega, redención o cualquier derecho real o remedio de insolvencia sobre el subsuelo o los minerales.
+Realizar oferta pública, intermediación financiera, custodia o prestación de servicios regulados sin la autorización correspondiente.
+Omitir, desviar o retardar el ingreso de cánones, tributos u otros recursos públicos a la Caja Única o al destino legalmente autorizado.
+Proporcionar información falsa, incompleta o engañosa sobre geología, desempeño ambiental, fuentes de pago, riesgos, liquidez, tecnología o situación del emisor.
+Utilizar expresiones como «oro respaldado», «equivalente a oro», «redimible en oro» o similares cuando puedan inducir a creer que el mineral in situ constituye garantía, propiedad o derecho de entrega.
+Estructurar el instrumento de modo que acreedores o tenedores puedan ejecutar, apropiarse, custodiar privadamente o exigir la extracción del mineral de dominio público.
+Emitir, colocar, promocionar o negociar instrumentos que prometan rendimientos sustentados exclusivamente en estimaciones del valor comercial futuro de recursos naturales cuya extracción o aprovechamiento no esté jurídicamente autorizado, sin identificar fuentes de pago reales, exigibles y financieramente verificables.
+Queda prohibido presentar el valor estimado de recursos naturales de dominio público como garantía patrimonial ejecutable o fuente automática de cumplimiento de obligaciones financieras.
+Capítulo V
+De los instrumentos digitales y financieros de conservación geológica
+Artículo 19.- Naturaleza jurídica y regla de sustancia sobre forma
+El Token de Bloque de Georeserva (TBG) es un mecanismo de representación y registro digital asociado a un Inventario Geológico de Conservación. No constituye por sí mismo una categoría jurídica autónoma ni reemplaza el derecho subyacente.
+La naturaleza del instrumento se determinará por su contenido económico: si capta recursos del público, incorpora un derecho patrimonial transferible, promete pagos o rendimiento o se negocia en un mercado organizado, se someterá al régimen del mercado de valores y a la supervisión de SUGEVAL y CONASSIF.
+El TBG, por sí solo, no confiere derechos sobre el mineral. Los derechos de la persona tenedora serán únicamente los previstos en el certificado, valor, bono, contrato o instrumento jurídico de emisión.
+Un Certificado Digital de Conservación Geológica podrá acreditar patrocinio o contribución ambiental, sin rendimiento, reembolso ni mercado secundario organizado.
+Un Valor Digital de Conservación Geológica incorporará derechos patrimoniales frente al emisor o patrimonio autónomo y deberá identificar fuente de pago, plazo, riesgos, régimen de insolvencia y supervisor.
+Un bono soberano digital o contrato soberano de conservación y abstención extractiva podrá utilizar el inventario geológico como índice parcial o límite prudencial, pero sus pagos deberán realizarse en moneda o mediante flujos legalmente autorizados.
+Todo remedio por incumplimiento financiero se ejercerá frente al emisor, patrimonio autónomo o fuente de pago prevista en el instrumento, sin recurso real o de ejecución contra el mineral.
+Artículo 20.- Características
+Todo TBG o registro digital asociado a un instrumento de conservación deberá contener, como mínimo, los siguientes metadatos o referencias verificables:
+Identificador único e irrepetible del bloque geoespacial (coordenadas tridimensionales precisas en el sistema IGN).
+Referencia a la Bóveda Geológica Pública correspondiente y número de inscripción en el Registro Nacional de Bóvedas Geológicas Públicas.
+Tipo de mineral comprendido en el Inventario Geológico de Conservación, cantidad estimada, categoría de certidumbre y estándar de verificación aplicado, con advertencia de que no constituye garantía ni derecho de extracción.
+Identificación de la EEC o entidad responsable, del Verificador Geológico Independiente y de las autoridades supervisoras competentes.
+Fecha de emisión y fecha de vigencia de la verificación geológica y ambiental pertinente; dicha verificación limita la información disponible, pero no «respalda» el token como colateral.
+Restricciones jurídicas y tecnológicas, incluida la prohibición de derechos extractivos, garantía, redención o entrega del mineral.
+Historial de emisión, transferencias, cancelaciones y correcciones que deba ser trazable conforme a la normativa aplicable.
+Identificación y versión del documento jurídico de emisión, con huella digital o mecanismo equivalente que permita verificar su integridad.
+Fuente de pago, plazo, régimen de insolvencia y fórmula de cálculo de pagos o rendimientos, cuando existan.
+Indicadores ambientales y territoriales relevantes, fuentes de datos, oráculos utilizados y fecha de la última verificación independiente.
+Artículo 21- Categorías de instrumentos de conservación geológica
+La presente ley reconoce, sin perjuicio de otras figuras legalmente permitidas, las siguientes categorías: Certificado Digital de Conservación Geológica, de naturaleza no financiera; Valor Digital de Conservación Geológica, sujeto al régimen del mercado de valores cuando corresponda; bono soberano digital de conservación geológica; y contrato soberano de conservación y abstención extractiva.
+La cadena de bloques registra el derecho; la ley y el instrumento jurídico crean y delimitan el derecho. Ninguna categoría podrá utilizar el mineral de dominio público como propiedad privada, garantía, activo de redención o remedio de insolvencia.
+La emisión constituirá deuda pública únicamente cuando, por su estructura y emisor, así resulte de la legislación financiera y presupuestaria aplicable; la denominación «token» no alterará esa clasificación.
+Artículo 21 bis.- Fuentes de pago y generación de valor económico
+Los pagos, rendimientos o beneficios económicos de los instrumentos regulados deberán apoyarse en flujos reales, jurídicamente identificados y verificables. Podrán provenir, individual o conjuntamente, de:
+pagos por servicios de conservación geológica o programas análogos legalmente habilitados;
+créditos o certificados ambientales válidamente generados, con adicionalidad, permanencia, no doble conteo y verificación independiente;
+cooperación internacional, aportes privados, pagos por resultados o financiamiento climático;
+titularización de flujos, valores temáticos, ingresos presupuestados u otros mecanismos financieros autorizados;
+ingresos derivados de usos sostenibles compatibles del territorio, cuando estén legal y ambientalmente autorizados.
+El mero reconocimiento de mercado del mineral preservado o la variación del precio internacional del oro no constituirán, por sí solos, una fuente exigible de pago.
+La emisión de instrumentos que puedan constituir deuda pública, generar obligaciones contingentes para el Estado o comprometer recursos presupuestarios futuros requerirá, previamente, una evaluación de sostenibilidad fiscal, identificación de riesgos y cumplimiento de las autorizaciones previstas por el ordenamiento jurídico.
+La autorización administrativa para la creación o registro de un instrumento de conservación no constituirá garantía soberana ni compromiso de respaldo financiero estatal de emisiones privadas.
+Las obligaciones de pago de entidades públicas deberán respetar las normas constitucionales, presupuestarias y de endeudamiento que resulten aplicables.
+Artículo 21 ter.- Derechos de las personas tenedoras
+Según la naturaleza y documentos de cada instrumento, la persona tenedora tendrá derecho a:
+Recibir únicamente los pagos o beneficios expresamente previstos y financiados por la fuente de pago identificada.
+Recibir información periódica sobre inventario geológico, auditorías, emisiones, fuente de pago, desempeño financiero, resultados ambientales y riesgos materiales.
+Transferir o negociar el instrumento únicamente en los mercados y bajo las restricciones permitidas por la normativa aplicable.
+Acceder a mecanismos de atención de reclamos, resolución de controversias y protección de inversionistas conforme a la autoridad competente.
+Participar en los procesos de información o consulta previstos en los documentos de emisión para modificaciones que afecten sus derechos.
+En ningún caso estos derechos comprenderán propiedad, posesión, explotación, entrega, redención, garantía o ejecución contra el mineral in situ.
+Artículo 21 quater.- Insolvencia, liquidación y separación patrimonial
+En caso de liquidación, disolución o insolvencia de una EEC o de un vehículo de emisión:
+El mineral y el Inventario Geológico de Conservación permanecerán bajo dominio exclusivo del Estado y fuera de la masa de insolvencia.
+Los derechos de las personas tenedoras se regirán por el instrumento jurídico de emisión y la normativa de insolvencia aplicable; la mera existencia del token no garantiza continuidad, pago o valor.
+La designación de administradores, interventores o liquidadores corresponderá a la autoridad financiera o judicial competente, no al BCCR salvo habilitación legal expresa.
+Los contratos inteligentes podrán ser pausados, corregidos o migrados cuando lo ordene la autoridad competente o lo exijan la protección de inversionistas, la ciberseguridad o la continuidad operativa.
+Los registros deberán preservar trazabilidad e integridad, permitiendo correcciones jurídicamente autorizadas con constancia de la modificación.
+Los derechos económicos se atenderán con cargo al patrimonio o fuentes de pago válidamente segregados para la emisión, cuando existan, y conforme a la prelación legal aplicable.
+Ningún tenedor, acreedor, custodio, fiduciario o administrador podrá reclamar derechos sobre el mineral de dominio público.
+Artículo 21 sexies.- Contratos inteligentes, oráculos y ciberseguridad
+Los contratos inteligentes serán herramientas de ejecución y registro. En caso de divergencia prevalecerán la ley, el reglamento, la resolución administrativa y los documentos jurídicos de emisión.
+Los oráculos deberán utilizar fuentes oficiales o verificables, contar con validación humana, trazabilidad, controles de integridad y procedimientos de sustitución o corrección. No podrán producir automáticamente una consecuencia jurídica irreversible sin un mecanismo de revisión cuando exista un error material o controversia.
+Las EEC, custodios y operadores deberán aplicar auditorías de código, ciberseguridad, continuidad operativa, recuperación de claves, segregación de funciones, gestión de incidentes y protección de datos personales conforme a la regulación aplicable.
+Artículo 22.- Régimen tributario
+Los ingresos derivados de la emisión, colocación o negociación de instrumentos regulados por esta ley se someterán al régimen tributario vigente y a las siguientes reglas especiales, sin perjuicio de las competencias del Ministerio de Hacienda:
+Canon general de emisión de instrumentos financieros de conservación
+Las entidades emisoras que realicen la primera colocación onerosa de valores digitales de conservación sujetos al régimen general de esta ley estarán obligadas al pago de un canon equivalente al diez por ciento (10%) de los ingresos brutos efectivamente percibidos por dicha colocación.
+El sujeto obligado será la entidad emisora. La obligación se generará con la percepción efectiva de los ingresos provenientes de la colocación y se liquidará sobre los montos efectivamente recibidos, sin incluir el valor teórico de recursos naturales, inventarios geológicos o beneficios ambientales no comercializados.
+No estarán sujetos a este canon los certificados digitales no financieros que acrediten exclusivamente donaciones, patrocinios o contribuciones de conservación sin derecho patrimonial, reembolso ni promesa de rendimiento.
+Los instrumentos sometidos al canon especial del régimen aurífero estarán sujetos únicamente a dicho canon especial y no al canon general regulado en este inciso.
+La liquidación, recaudación, fiscalización, destino y régimen de impugnación se regirán por las disposiciones legales aplicables. El reglamento únicamente podrá desarrollar aspectos instrumentales y procedimentales, sin modificar el sujeto obligado, el hecho generador, la base imponible ni la tarifa legalmente establecida.
+Impuesto sobre transacciones secundarias:
+Las operaciones en mercados secundarios estarán sujetas a los tributos que correspondan conforme a la legislación tributaria vigente, atendiendo a la naturaleza jurídica del instrumento y de la renta o ganancia generada.
+Tasa de licenciamiento anual:
+Las tasas de supervisión o licenciamiento que procedan serán establecidas y recaudadas por la autoridad competente dentro de su habilitación legal y se destinarán a cubrir costos regulatorios conforme al ordenamiento; no corresponderán automáticamente al BCCR.
+Capítulo VI
+Régimen especial para la conservación geológica del oro y sus instrumentos digitales
+Artículo 23.- Objeto del régimen especial
+El presente capítulo establece reglas especiales para Bóvedas Geológicas Públicas que contengan inventarios auríferos, con el fin de asegurar verificación geológica independiente, límites prudenciales de emisión, divulgación reforzada y protección frente a cualquier interpretación del oro in situ como propiedad, garantía, entrega o redención.
+Las disposiciones de este capítulo complementarán las reglas generales y no desplazarán la legislación del mercado de valores, financiera, ambiental, tributaria, presupuestaria, registral o de prevención de legitimación de capitales que resulte aplicable.
+Artículo 24.- Verificación del Inventario Geológico de Conservación aurífero
+Toda emisión o registro digital asociado a inventario aurífero requerirá un informe de Inventario Geológico de Conservación elaborado por un Verificador Geológico Independiente y validado por la Dirección de Geología y Minas conforme a estándares internacionales reconocidos, tales como NI 43-101, JORC, S-K 1300 u otros equivalentes. El informe deberá indicar:
+Existencia, extensión, geometría y categoría de certidumbre del inventario aurífero, evitando presentarlo como reserva explotable cuando la extracción esté excluida.
+Ley o contenido aurífero, metodología de estimación y cantidad técnica estimada, expresada en unidades apropiadas únicamente para fines geológicos y prudenciales.
+Estado de no extracción, alteraciones detectadas y resultados de monitoreo desde la declaratoria.
+Métodos técnicos utilizados, limitaciones del modelo, calidad de datos, fecha de corte y nombre y responsabilidad profesional del verificador.
+La vigencia y periodicidad de actualización serán fijadas por la Dirección de Geología y Minas según riesgo e incertidumbre. Los límites de emisión deberán aplicar un coeficiente prudencial inferior al inventario técnicamente verificado; dicho coeficiente no transforma el inventario en colateral ni establece una obligación de entrega de oro.
+Artículo 25.- Prohibición de sobreemisión y límites prudenciales
+El contrato inteligente y los documentos de emisión deberán incorporar el límite máximo autorizado conforme al Inventario Geológico de Conservación y al coeficiente prudencial aplicable. Ninguna modificación podrá ejecutarse sin actualización técnica, validación de la Dirección de Geología y Minas y, cuando el instrumento sea un valor, aprobación o no objeción de la autoridad financiera competente.
+La EEC deberá publicar información actualizada sobre unidades emitidas y en circulación, límite prudencial, inventario geológico de referencia, fecha y alcance de la última verificación, fuente de pago y advertencia expresa de que el oro in situ no «respalda» el instrumento como garantía ejecutable.
+Artículo 26.- Divulgaciones obligatorias
+Previo a cualquier adquisición de un valor digital asociado a inventario aurífero, la EEC deberá entregar la información exigida por SUGEVAL y, como mínimo, una ficha clara que contenga:
+Descripción del área geológica, coordenadas, superficie y estado jurídico de la Bóveda Geológica Pública.
+Resumen del Inventario Geológico de Conservación, nivel de certidumbre, metodología, limitaciones y fecha de actualización.
+Declaración expresa de que el instrumento no confiere propiedad, explotación, posesión, usufructo, garantía, entrega ni redención sobre el subsuelo o el oro in situ.
+Riesgos geológicos, regulatorios, ambientales, de iliquidez, contraparte, insolvencia, mercado, ciberseguridad, oráculos y greenwashing, así como riesgo de que el precio del instrumento no siga el precio internacional del oro.
+Identificación del emisor, patrimonio autónomo, custodios, verificadores, fuente de pago, régimen de insolvencia, mecanismos de reclamo y autoridades supervisoras.
+Información sobre cánones, tributos, comisiones, destino de recursos y costos totales para la persona inversionista.
+Descripción de los contratos inteligentes y oráculos relevantes, incluidos los mecanismos de pausa, corrección, actualización y validación humana.
+Indicadores y metodología utilizados para demostrar adicionalidad, permanencia, no doble conteo y resultados de conservación cuando el instrumento formule afirmaciones ambientales.
+Artículo 27.- Canon especial y destino público de recursos
+La primera colocación de valores digitales asociados a inventario aurífero estará sujeta, cuando así corresponda, a un canon especial equivalente al ocho por ciento (8%) de los ingresos brutos efectivamente captados en la colocación. El canon no se calculará multiplicando el precio del oro por el inventario geológico preservado.
+Los recursos ingresarán a la Caja Única y su asignación se realizará mediante el presupuesto de la República y los mecanismos legalmente autorizados, procurando los siguientes destinos:
+Un cuarenta por ciento (40%) para programas de monitoreo, restauración, agua, salud, seguridad y control territorial de las Bóvedas Geológicas Públicas.
+Un treinta por ciento (30%) para programas de desarrollo territorial ejecutados con participación de las municipalidades y comunidades vinculadas al área.
+Un veinte por ciento (20%) para el presupuesto nacional, sin perjuicio de las reglas fiscales aplicables.
+Un diez por ciento (10%) para investigación geológica, ambiental y tecnológica, verificación independiente y mejora de los sistemas públicos de información.
+El canon especial regulado en este artículo sustituirá, para las emisiones comprendidas en su ámbito de aplicación, al canon general establecido en el artículo 22 de esta ley. Ambos cánones no podrán aplicarse acumulativamente a una misma primera colocación.
+La aplicación de este régimen especial no eximirá del cumplimiento de los demás tributos establecidos por la legislación vigente, salvo disposición legal expresa en contrario.
+Artículo 28.- Incentivos a la transparencia y calidad de la información
+La reglamentación podrá establecer incentivos regulatorios proporcionales para entidades que actualicen anticipadamente la información geológica y ambiental, mejoren la calidad de los datos, reduzcan incertidumbre y fortalezcan el monitoreo, siempre que tales incentivos no dependan de aumentar el volumen estimado del mineral ni disminuyan requisitos de protección al inversionista.
+Artículo 29.- Incompatibilidad con la explotación física y límites de la obligación
+Mientras se encuentre vigente una Bóveda Geológica Pública, no podrán otorgarse ni ejercerse permisos, concesiones o actividades de explotación física sobre el área delimitada, salvo las actividades de monitoreo o restauración expresamente La restricción de no extracción será oponible a terceros durante la vigencia de la declaratoria y no podrá levantarse mediante actos administrativos contrarios al ordenamiento jurídico.
+La modificación, reducción o levantamiento de una Bóveda Geológica Pública requerirá resolución debidamente motivada, evaluación técnica y ambiental actualizada, participación pública y demostración de compatibilidad con las disposiciones legales de protección ambiental aplicables.
+La terminación, vencimiento, cancelación o liquidación de instrumentos digitales o financieros asociados a una Bóveda Geológica Pública no producirá, por sí misma, la extinción de su régimen de conservación.
+La modificación del régimen deberá respetar los principios de prevención, precaución, progresividad y no regresión ambiental, así como las obligaciones de restauración y reparación exigibles.
+Ningún contrato o instrumento financiero podrá impedir el ejercicio legítimo de potestades legislativas o regulatorias futuras, sin perjuicio de las responsabilidades patrimoniales y obligaciones válidamente constituidas conforme al ordenamiento jurídico.
+Artículo 30.- Protección territorial y respuesta frente a minería ilegal
+Corresponde al MINAE, con apoyo de la Fuerza Pública, Guardacostas cuando corresponda, municipalidades y demás autoridades competentes, coordinar la protección territorial de las Bóvedas Geológicas Públicas. Los programas financiados con recursos de esta ley deberán priorizar seguridad, restauración, calidad de agua, reducción de mercurio, monitoreo y alternativas productivas compatibles.
+La extracción ilegal en una Bóveda Geológica Pública dará lugar a las responsabilidades administrativas, civiles y penales previstas en el ordenamiento. La respuesta deberá priorizar además la restauración del daño y la protección de las personas y comunidades afectadas.
+Capítulo VII
+Reformas al Código de Minería
+Artículo 31.- Adición de un párrafo al artículo 1 del Código de Minería
+Adiciónese un párrafo final al artículo 1 del Código de Minería, Ley N.° 6797, de 4 de octubre de 1982, y sus reformas, cuyo texto será el siguiente:
+"El Estado podrá establecer, conforme a la legislación especial aplicable, regímenes de conservación geológica no extractiva y Bóvedas Geológicas Públicas sobre inventarios geológicos de dominio estatal, con fines de protección ambiental, restauración, monitoreo, investigación y financiamiento de actividades de conservación. Tales regímenes no conferirán derechos privados de propiedad, extracción, entrega, redención o garantía sobre los minerales in situ, ni constituirán excepción a las prohibiciones, limitaciones y condiciones ambientales y mineras establecidas en este Código y sus reformas."
+Artículo 32.- Adición de definiciones al artículo 2 del Código de Minería
+Se adicionan las siguientes definiciones al artículo 2 del Código de Minería, ley N°6797 del 04 de octubre de 1982, el cual se leerá de la siguiente manera:
+Artículo 2º-La explotación de sustancias minerales podrá hacerse en canteras, cauces de dominio público, placeres, lavaderos y minas; en todos los casos se regirá por las disposiciones de este Código y su Reglamento.
+Definiciones:
+[…]
+Reserva Geológica No Explotable: régimen voluntario aplicable a un permiso o concesión vigente que somete un área delimitada a no extracción y conservación geológica, sin crear nuevos derechos ni revivir derechos extinguidos.
+Bóveda Geológica Pública: categoría de derecho público declarada por el MINAE sobre un área tridimensional de Inventario Geológico de Conservación sometida a no extracción, restauración, monitoreo y control territorial.
+Valorización no extractiva: mecanismos de financiamiento o remuneración de la abstención extractiva, la conservación geológica y resultados ambientales verificables, sin remoción física del mineral y sin convertirlo en propiedad privada, garantía ejecutable o activo redimible.
+Inventario Geológico de Conservación: estimación técnica del mineral in situ sometido a no extracción, utilizada para delimitación, información y límites prudenciales, sin carácter de garantía o reserva explotable para efectos financieros.
+Artículo 33.- Adición de un párrafo final al artículo 8 del Código de Minería
+Se adiciona un párrafo final al artículo 8 del Código de Minería, ley N°6797 del 04 de octubre de 1982, el cual se leerá de la siguiente manera:
+Artículo 8.-
+[…]
+El titular de un permiso o concesión minera vigente podrá solicitar al MINAE la incorporación voluntaria de parte o la totalidad del área a una Bóveda Geológica Pública, siempre que se cumplan los requisitos geológicos, ambientales y territoriales establecidos por ley y se renuncie al ejercicio de facultades extractivas sobre el perímetro incorporado durante la vigencia de la declaratoria. La resolución no revivirá derechos extinguidos ni afectará el dominio estatal sobre el mineral.
+Artículo 34.- Adición de un artículo 34 bis al Código de Minería
+Se adiciona un artículo 34 bis al Código de Minería, ley N°6797 del 04 de octubre de 1982, el cual se leerá de la siguiente manera:
+Artículo 34 bis.- En las áreas declaradas como Reserva Geológica No Explotable o Bóveda Geológica Pública quedará prohibida toda labor de reconocimiento invasivo, exploración material, explotación, extracción, remoción, procesamiento o beneficio físico del mineral. Solo podrán autorizarse actividades no extractivas estrictamente necesarias para monitoreo, restauración, seguridad o actualización técnica, sujetas a la evaluación ambiental correspondiente. Los mecanismos de certificación, registro o financiamiento no conferirán derechos reales, garantías, entrega, redención ni remedios de insolvencia sobre el subsuelo o el mineral in situ.
+Capítulo VIII
+Disposiciones finales
+Artículo 35.- Registro Nacional de Bóvedas Geológicas Públicas
+El MINAE creará y mantendrá el Registro Nacional de Bóvedas Geológicas Públicas (RNBGP), de acceso público y coordinado con el Registro Nacional y los sistemas de información ambiental y financiera. Para cada bóveda contendrá, como mínimo:
+Número de resolución de declaratoria y fecha.
+Situación jurídica del área, identificación de permisos o concesiones vigentes si existieren, y datos de los titulares o propietarios superficiales relevantes.
+Coordenadas geoespaciales tridimensionales del área.
+Tipo de mineral y síntesis del Inventario Geológico de Conservación vigente, estándar aplicado, fecha y grado de certidumbre.
+Estado de la declaratoria, restricciones vigentes, línea base ambiental, obligaciones de restauración y fecha de la última inspección.
+Instrumentos de conservación o financiamiento asociados, EEC responsables y autoridades financieras competentes, cuando existan.
+Número de unidades digitales emitidas y en circulación, límites prudenciales, fuente de pago, documentos de emisión y enlaces a los registros financieros correspondientes, cuando sean de acceso público.
+Indicadores de conservación, resultados de monitoreo, verificadores independientes y metodología utilizada para evitar doble conteo de beneficios ambientales.
+Artículo 36.- Protección de datos personales y arquitectura de identidad
+El tratamiento de datos personales derivado del SNCGRD, los registros de bóvedas y los registros financieros se ajustará a la Ley N.° 8968 y demás normativa aplicable. Los datos de identidad, beneficiario final y KYC deberán mantenerse preferentemente fuera de cadenas públicas, utilizando pseudonimización, identificadores o pruebas criptográficas cuando sea técnicamente posible. La información pública se limitará a lo necesario para transparencia, supervisión y cumplimiento, bajo fiscalización de PRODHAB y las autoridades competentes.
+Artículo 37.- Inspecciones y verificación independiente
+El MINAE y la Dirección de Geología y Minas, con participación de SETENA cuando corresponda, realizarán inspecciones periódicas para verificar la no extracción , integridad geológica, medidas de restauración y cumplimiento de indicadores. La frecuencia se definirá según riesgo y no podrá ser inferior a una inspección anual para bóvedas con emisiones financieras vigentes. Los resultados se publicarán en el RNBGP, resguardando datos sensibles de seguridad.
+Artículo 38.- Infracciones y sanciones administrativas
+Constituyen infracciones a la presente ley, sin perjuicio de las responsabilidades civiles o penales que correspondan, las conductas siguientes:
+Infracciones muy graves:
+Emitir o colocar instrumentos digitales de conservación sin la autorización legalmente exigible cuando su obtención resulte obligatoria.
+Emitir instrumentos que confieran, directa o indirectamente, derechos de propiedad, extracción, redención o garantía sobre recursos naturales de dominio público, en contravención de esta ley.
+Alterar dolosamente o presentar información materialmente falsa sobre inventarios geológicos, beneficios ambientales, fuentes de pago o resultados de verificación.
+Realizar emisiones que excedan deliberadamente los límites financieros o técnicos autorizados.
+Utilizar recursos públicos captados conforme a esta ley para finalidades distintas de las legalmente establecidas, cuando la conducta no se encuentre sancionada por otro régimen especial aplicable.
+Incumplir deliberadamente medidas firmes de conservación o restauración impuestas conforme a esta ley, ocasionando un daño ambiental grave.
+Infracciones graves:
+Incumplir obligaciones sustanciales de información, verificación, trazabilidad o divulgación de riesgos.
+Obstaculizar injustificadamente las inspecciones legalmente ordenadas por la autoridad competente.
+Incumplir medidas correctivas impuestas mediante resolución administrativa firme.
+Omitir la actualización de información ambiental o financiera esencial para determinar la validez o continuidad de instrumentos emitidos.
+Realizar publicidad materialmente engañosa sobre los beneficios ambientales o la naturaleza jurídica de los instrumentos.
+Infracciones leves:
+Incumplir injustificadamente los plazos de presentación de reportes administrativos que no involucren información sustancial.
+Mantener desactualizados datos accesorios de registro sin afectar los derechos de terceros ni comprometer la verificación ambiental o financiera.
+Incumplir obligaciones formales de información que no constituyan infracciones graves o muy graves.
+Sanciones:
+Las infracciones leves podrán sancionarse con apercibimiento escrito o multa de uno a cinco salarios base.
+Las infracciones graves podrán sancionarse con multa de seis a cincuenta salarios base y, cuando legalmente proceda, suspensión temporal de la autorización vinculada con la actividad infractora.
+Las infracciones muy graves podrán sancionarse con multa de cincuenta y uno a doscientos salarios base y, cuando legalmente proceda, suspensión o cancelación de la autorización administrativa vinculada con la actividad infractora.
+Para efectos de este artículo se utilizará el salario base definido en el artículo 2 de la Ley N.° 7337, de 5 de mayo de 1993, y sus reformas.
+Las sanciones serán impuestas mediante procedimiento administrativo que garantice el debido proceso, derecho de defensa, acceso al expediente, presentación de pruebas, resolución motivada y recursos legalmente procedentes.
+Corresponderá al Ministerio de Ambiente y Energía conocer de las infracciones específicamente ambientales y geológicas tipificadas en esta ley, mediante el órgano legalmente competente. Las infracciones relacionadas con oferta pública de valores, intermediación, servicios financieros o prevención de legitimación de capitales se someterán a los regímenes sancionatorios especiales y autoridades competentes establecidos por la legislación financiera.
+No podrá imponerse doble sanción administrativa por los mismos hechos, sujeto responsable y fundamento jurídico cuando ello resulte contrario al principio non bis in idem.
+La graduación de las sanciones atenderá la gravedad de la conducta, la intencionalidad, el beneficio económico obtenido, el daño ocasionado, la reincidencia, las medidas de reparación y la proporcionalidad de la sanción.
+La aplicación de sanciones no extinguirá las obligaciones de restauración, reparación ni cumplimiento contractual que legalmente correspondan.
+Artículo 38 bis.- Responsabilidad por daño ambiental y continuidad de las obligaciones de restauración
+La declaración, administración, financiamiento o certificación de un área de conservación no extinguirá ni modificará las responsabilidades ambientales, administrativas, civiles o penales derivadas de daños ocasionados con anterioridad o durante la vigencia del régimen.
+Las personas físicas o jurídicas responsables de daños ambientales estarán obligadas a su reparación conforme al ordenamiento jurídico, independientemente de la existencia de instrumentos digitales asociados al área.
+Las entidades emisoras, verificadores, operadores y administradores responderán por los incumplimientos y daños que les sean jurídicamente imputables, conforme a sus obligaciones legales y contractuales y a los respectivos regímenes de responsabilidad.
+La insolvencia, liquidación, disolución o cancelación de una entidad emisora no extinguirá las obligaciones ambientales preexistentes ni afectará las acciones legales correspondientes contra las personas responsables.
+La autoridad ambiental competente podrá exigir garantías de cumplimiento, planes de restauración y mecanismos de seguimiento cuando legalmente procedan, en función del riesgo y de las obligaciones asumidas.
+En ningún caso los recursos destinados a la restauración ambiental podrán utilizarse para satisfacer obligaciones financieras privadas en perjuicio de las obligaciones de reparación legalmente exigibles, sin perjuicio de los derechos y prelaciones que establezca el ordenamiento.
+Artículo 39: Salvaguarda constitucional, ambiental y patrimonial
+La interpretación y aplicación de esta ley deberá realizarse de conformidad con la Constitución Política, los tratados internacionales vigentes y la legislación especial de protección de los recursos naturales.
+Ninguna disposición podrá interpretarse como autorización tácita para desarrollar actividades extractivas prohibidas, disminuir los niveles de protección ambiental, transferir bienes de dominio público, constituir derechos reales privados sobre ellos o eximir del cumplimiento de obligaciones de reparación y restauración ambiental.
+Las disposiciones relativas a instrumentos financieros y digitales no conferirán autorizaciones de aprovechamiento de recursos naturales ni sustituirán los procedimientos y permisos legalmente exigibles.
+En caso de concurrencia normativa, deberán aplicarse los regímenes especiales correspondientes según la naturaleza del recurso, del derecho y de la actividad regulada, respetando los principios constitucionales de legalidad y protección ambiental.
+DISPOSICIONES TRANSITORIAS
+Transitorio I.- El Poder Ejecutivo deberá reglamentar la presente ley en un plazo máximo de doce meses. MINAE, Hacienda, BCCR, CONASSIF, SUGEVAL, SUGEF y las demás autoridades deberán emitir, dentro de sus competencias legales, la normativa técnica complementaria necesaria, sin transferir o ampliar competencias mediante reglamento.
+Transitorio I.- Dentro de los doce meses siguientes a la publicación del reglamento, el MINAE deberá habilitar el procedimiento de elegibilidad, el Registro Nacional de Bóvedas Geológicas Públicas y los estándares técnicos de Inventario Geológico de Conservación. Los titulares de permisos o concesiones mineras vigentes podrán solicitar voluntariamente su incorporación al régimen conforme a esta ley.
+Transitorio II.- A los tres años de la primera emisión financiera realizada al amparo de esta ley, el MINAE, Hacienda, BCCR, SUGEVAL, SUGEF y las demás instituciones competentes elaborarán un informe público de evaluación sobre conservación, restauración, control territorial, desempeño financiero, protección de inversionistas, ingresos públicos, incidentes tecnológicos y cumplimiento AML/CFT.
+El informe será remitido a la Asamblea Legislativa y a la Contraloría General de la República.
+Transitorio III.- Programa piloto de conservación y restauración en Crucitas
+El Poder Ejecutivo podrá desarrollar un programa piloto de conservación geológica no extractiva y restauración ambiental en el área de Crucitas, distrito de Cutris, cantón de San Carlos, sujeto a las siguientes condiciones:
+La realización de un diagnóstico actualizado de la situación ambiental, geológica, jurídica y territorial del área.
+La identificación y respeto de las resoluciones judiciales y administrativas firmes y de las obligaciones de reparación o restauración ambiental exigibles.
+La ausencia de reconocimiento, rehabilitación o compensación de derechos derivados exclusivamente de concesiones mineras anuladas, caducas, canceladas o extinguidas, sin perjuicio de derechos patrimoniales válidamente adquiridos por causas independientes.
+La ejecución de un procedimiento de información y participación de comunidades locales, municipalidades, propietarios y demás personas interesadas.
+La elaboración de un plan de conservación, restauración, monitoreo y seguridad territorial con indicadores públicos y verificables.
+La identificación previa de las fuentes de financiamiento, entidades responsables, riesgos fiscales y mecanismos de supervisión.
+La obtención de las autorizaciones ambientales y financieras legalmente exigibles antes de realizar actividades u ofrecer instrumentos al público.
+El programa piloto no autorizará actividades extractivas prohibidas ni podrá utilizarse para sustituir el cumplimiento de obligaciones judiciales o administrativas preexistentes.
+El MINAE publicará informes periódicos de ejecución, resultados ambientales, utilización de recursos y cumplimiento de obligaciones, respetando las restricciones legales de información que correspondan.
+Rige a partir de su publicación.
+DIANA MURILLO MURILLO
+Diputada

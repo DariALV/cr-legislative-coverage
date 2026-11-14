@@ -1,0 +1,206 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+REFORMA DE LOS ARTÍCULOS 3, 6, 27, 34, 36 Y 37 DE LA LEY NACIONAL
+DE SANGRE, LEY 10649 DEL 26 DE FEBRERO DE 2025.
+LEY PARA GARANTIZAR LA TRAZABILIDAD
+Y SEGURIDAD TRANSFUSIONAL
+EN LA DONACIÓN DE SANGRE
+JOHNATAN JESÚS ACUÑA SOTO
+ANDRÉS ARIEL ROBLES BARRANTES
+DIPUTADOS
+EXPEDIENTE N.º 25.486
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+REFORMA DE LOS ARTÍCULOS 3, 6, 27, 34, 36 Y 37 DE LA LEY NACIONAL
+DE SANGRE, LEY 10649 DEL 26 DE FEBRERO DE 2025.
+LEY PARA GARANTIZAR LA TRAZABILIDAD
+Y SEGURIDAD TRANSFUSIONAL
+EN LA DONACIÓN DE SANGRE
+Expediente N.° 25.486
+ASAMBLEA LEGISLATIVA:
+Esta iniciativa de ley pretende reformar los artículos 3, 6, 27, 34, 36 y 37 de la Ley Nacional de Sangre, con la finalidad fortalecer la trazabilidad de cada unidad de sangre desde la donación hasta la transfusión. Asimismo, ajusta los tipos penales a la realidad científica actual, que imposibilita eliminar el riesgo de transmisión de enfermedades a través de transfusiones, a pesar de que el profesional cumpla con su deber de cuidado, aplicando todos los protocolos y técnicas existentes para evitar el contagio.
+Existe un intervalo de tiempo que transcurre entre el momento en que un individuo se infecta con un patógeno y el momento en que su sistema inmunitario produce anticuerpos detectables, o la carga viral alcanza un nivel suficiente para ser identificada por las pruebas de laboratorio disponibles. A este espacio se le conoce como “periodo de ventana. Durante este período crítico, que puede variar desde unos pocos días hasta varios meses dependiendo del virus, la persona es infecciosa y su sangre puede transmitir el patógeno, pero las pruebas de detección estándar arrojarán un resultado negativo.
+El periodo de ventana se presenta por ejemplo en las infecciones de transmisión sanguínea (ITS) como la Hepatitis B (VHB), la Hepatitis C (VHC) y el Virus de la Inmunodeficiencia Humana (VIH), que son enfermedades virales que pueden transmitirse a través de transfusiones de sangre. El VHB es un virus que ataca el hígado y puede causar una infección aguda o crónica, llevando a cirrosis o cáncer. El VHC es la causa más común de hepatitis crónica en el mundo, y también afecta al hígado, pudiendo ser asintomática durante décadas antes de provocar daño grave. El VIH es un retrovirus que debilita el sistema inmunitario, volviendo al cuerpo vulnerable a infecciones y enfermedades graves.
+La transmisión de estos patógenos a través de transfusiones es un riesgo conocido, aunque extremadamente bajo, que la medicina moderna ha buscado mitigar a través de rigurosos protocolos de selección de donantes y pruebas de laboratorio. Sin embargo, a pesar de los avances tecnológicos, un riesgo residual persiste debido a una limitación biológica fundamental: el período de ventana.
+Esta realidad biológica significa que es científicamente imposible eliminar el riesgo de transmisión a través de transfusiones. El personal del banco de sangre puede seguir de manera impecable todos los procedimientos de selección y prueba, e incluso así, un donante que se encuentra en esta fase de la infección dará negativo, y su sangre, si es liberada para su uso, puede causar un daño al receptor. La jurisprudencia comparada ha reconocido que la imputación de un contagio exige que este haya sido debido a un "riesgo no permitido". Sin embargo, los riesgos que son "objetivamente imprevisibles" u "objetivamente inevitables" no encajan en esta categoría.
+Según algunos datos de prevalencias de infecciones asociadas a la trasfusiones de hemocomponentes de países que tienen un sistema completo de hemovigilancia y se exponen los periodos de ventana que existen según técnicas utilizadas (Costa Rica utiliza solo serológicas), existen enfermedades que hacen imposible asegurar que la sangre no esté contaminada al momento de la donación o la transfusión.
+Comparación de Períodos de Ventana Típicos para Patógenos Sanguíneos
+Patógeno
+Pruebas Serológicas (ELISA 3ª Gen)
+NAT en Minipool (MP-NAT)
+NAT en Donación Individual (ID-NAT)
+VIH
+22 días
+9 a 11 días
+5 a 6 días
+VHC
+70 días
+8 a 10 días menos que ELISA
+4 a 5 días
+VHB
+50 a 60 días
+25 a 30 días
+N/A
+La tabla evidencia que la progresión de la ciencia médica ha sido fundamental para minimizar la vulnerabilidad del período de ventana. Las pruebas moleculares, al detectar la presencia del virus antes de que el cuerpo desarrolle una respuesta de anticuerpos, han redefinido los estándares de seguridad en la donación de sangre.
+Sin embargo, a pesar de la mejora en las pruebas, el riesgo no es cero:
+HIV: estudios indican una transmisión residual entre 0.14 a 1.1 casos por millón de unidades en Europa, y aproximadamente 1 en 1.5 millones en EE. UU. PMCLippincott JournalsVerywell HealthWikipedia.
+HCV: riesgo estimado alrededor de 1 por 2 millones de unidades Lippincott JournalsWikipedia.
+HBV: residual varía entre 0.75 por millón en Australia hasta 200 por millón en lugares de alta prevalencia como Hong Kong PMC.
+En China, el riesgo residual de infección por HIV con ELISA de tercera generación fue estimado en ~5.4 casos por millón de donaciones Centro Biotecnología.
+A nivel global, la prevalencia de TTIs en donaciones es notablemente mayor en países de ingresos bajos o medios: por ejemplo, en algunos países de África, la seroprevalencia alcanza HBV 2.81 %, HCV 1.00 % y HIV 0.70 % en las donaciones Organización Mundial de la Salud.
+Estadísticas globales de infecciones y transfusiones
+Prevalencia general
+HIV: aproximadamente 39.9 millones de personas viviendo con VIH en 2023.
+Hepatitis B: en 2019, 296 millones de personas con HBV crónica; cerca de 820,000 muertes.
+Hepatitis C: aproximadamente 50 millones infectados en el mundo, con 1.5 millones de nuevas infecciones anuales; hepatitis B y C causan alrededor de 1.1 millones de muertes cada año.
+Donaciones y TTIs
+En Yemen, entre donantes: HCV 2 %, HIV 0.2 %, sífilis 2.4 %, malaria 0.7 % PMC.
+En Etiopía: HBV 5.2 %, HIV 2.83 %, HCV 0.93 %, sífilis 1.5 % BioMed Central.
+En Angola: HBV 50.2 %, sífilis 20 %, HIV 7 %, HCV 5.1 % entre donantes PubMed.
+En Nigeria, la incidencia de TTIs llegó al 17 %, especialmente HBV BioMed Central.
+En Canadá, el riesgo residual estimado de donar sangre con VIH no detectado es 1 en 12.9 millones Reddit.
+Prevalencia de Infecciones en Donantes de Sangre
+La prevalencia se refiere a la proporción de personas infectadas en una población de donantes en un momento dado. La Organización Mundial de la Salud (OMS) reporta que esta prevalencia varía significativamente entre países de ingresos altos y de ingresos bajos, lo que refleja la disparidad en la disponibilidad de sangre y las estrategias de seguridad.
+Según los datos de la OMS, la prevalencia mediana de infecciones en donaciones de sangre por cada 100,000 donantes se distribuye de la siguiente manera, dependiendo del nivel de ingresos del país:
+Nivel de Ingresos del País
+VIH (Virus de Inmunodeficiencia Humana)
+VHB (Virus de Hepatitis B)
+VHC (Virus de Hepatitis C)
+Sífilis
+Altos Ingresos
+0.002%
+0.02%
+0.007%
+0.02%
+Ingresos Medios-Altos
+0.10%
+0.29%
+0.19%
+0.35%
+Ingresos Medios-Bajos
+0.19%
+1.70%
+0.38%
+0.69%
+Bajos Ingresos
+0.70%
+2.81%
+1.00%
+0.90%
+Fuente: Adaptado del Informe de la OMS.
+En América Latina, estudios específicos también han mostrado estas variaciones. Por ejemplo, una investigación en Perú entre 2018 y 2021 encontró una frecuencia de seropositividad para enfermedades infecciosas transmisibles del 2.4%. Otro estudio en un hospital de México reportó una seroprevalencia de 0.27% para VHC y 0.04% para VHB.
+Así las cosas, el riesgo de que un paciente se contamine con un hemocomponente proviene principalmente del período de ventana, que es el tiempo entre la infección de un donante y el momento en que la infección es detectable por las pruebas de laboratorio. A pesar de que las pruebas de alta sensibilidad como la Detección de Ácidos Nucleicos (NAT) han acortado este período de manera notable, el riesgo residual, aunque mínimo, persiste.
+La tecnología NAT ha sido fundamental para reducir el riesgo, al detectar el material genético del virus antes de que se produzcan los anticuerpos. La implementación de esta tecnología ha reducido el riesgo residual de transmisión a través de transfusiones a los siguientes niveles:
+- Riesgo de transmisión del VIH: Se ha estimado en 1.9 por cada millón de donaciones.
+- Riesgo de transmisión del VHC: Se estima en 1.86 por cada millón de donaciones. El riesgo actual en países como Estados Unidos y Canadá es de 1 en 2.3 a 3 millones de transfusiones.
+- Riesgo de transmisión del VHB: Se ha estimado en 8.5 por cada millón de donaciones.
+Estos datos representan un avance monumental en la seguridad transfusional. En contraste, antes de la disponibilidad de las pruebas de cribado en 1989, la tasa de infección por hepatitis C post-transfusional en España era del 9.6% de los receptores.
+En este orden de ideas, la penalización en la legislación nacional en la materia, debe basarse en la desconexión entre la causa del daño (el virus indetectable) y la supuesta culpabilidad del profesional (su falta de diligencia). El daño al paciente no fue el resultado de una acción negligente o de una omisión por parte del profesional, sino de una contingencia biológica sobre la cual no tenía control. El profesional actuó con la diligencia debida, pero la naturaleza del virus se manifestó de una manera que la tecnología actual no podía prever ni evitar.
+El concepto de "Cultura Justa" es un pilar fundamental en la seguridad del paciente, cuyo propósito es promover un entorno de aprendizaje y colaboración en el que los profesionales pueden informar de errores y casi-fallas sin temor a represalias. Un entorno de seguridad bien gestionado y de alta confiabilidad se centra en las señales de alerta temprana y en la mejora continua, reconociendo que el "mayor impedimento para la prevención de errores en la industria médica es que castigamos a las personas por cometer errores". Al responsabilizar a los individuos con penas privativas de libertad por resultados inevitables de un riesgo sistémico, se genera una "cultura del miedo". Este miedo inhibe el reporte de incidentes, lo que a su vez impide que las instituciones identifiquen las debilidades del sistema, perpetuando los riesgos y socavando la seguridad pública. Por el contrario, un entorno no punitivo, que fomenta la confianza y el diálogo, permite el análisis objetivo de las causas subyacentes de los incidentes y la implementación de acciones correctivas significativas para prevenirlos en el futuro.
+La Cultura Justa introduce una distinción crucial entre tres categorías de conducta humana para determinar la responsabilidad, lo que proporciona un marco para analizar el evento sin recurrir a una reacción emocional basada en el resultado.
+- Error Humano: Se define como una acción inadvertida, un desliz, un lapso o una equivocación no intencional. Este tipo de error se maneja con la compasión, capacitación y la reestructuración del sistema para prevenirlo en el futuro.
+- Conducta de Riesgo: Se trata de una elección consciente de desviarse de un protocolo porque el individuo no percibe completamente el riesgo o considera que el beneficio de la acción (por ejemplo, ahorrar tiempo) es mayor que el riesgo percibido. En este caso, la respuesta de la gerencia debe ser entender por qué la persona se involucró en ese comportamiento de riesgo y rediseñar el sistema para hacer que el riesgo sea más evidente.
+- Conducta Temeraria: Es el único tipo de conducta que merece castigo. La temeridad implica un desprecio consciente, deliberado e injustificado por un riesgo sustancial que el profesional debería haber conocido.
+Distinción de Conductas en el Marco de la Cultura Justa
+Categoría
+Descripción
+Respuesta Apropiada
+Ejemplo en Medicina Transfusional
+Error Humano
+Desliz o equivocación no intencional.
+Se debe manejar con capacitación, rediseño de procesos y apoyo. No es punible.
+Un técnico etiqueta accidentalmente una unidad con un ID incorrecto debido a una distracción.
+Conducta de Riesgo
+Elección consciente de tomar un atajo o desviarse de un protocolo.
+Se debe abordar mediante la educación para hacer el riesgo más evidente. No es punible.
+Un miembro del personal omite la segunda verificación de identidad del paciente antes de la transfusión para ahorrar tiempo.
+Conducta Temeraria
+Desprecio consciente y grave por un riesgo.
+La única conducta que merece castigo disciplinario o penal.
+Un profesional utiliza una unidad de sangre a pesar de saber que la prueba de patógenos dio un resultado no concluyente o defectuoso.
+El evento causado por el período de ventana no se ajusta a la definición de conducta temeraria. No hubo un desprecio consciente por un riesgo conocido; por el contrario, el profesional y la institución siguieron todos los protocolos para mitigar los riesgos, y el resultado fue la materialización de un riesgo inherente y no detectable. Por lo tanto, la aplicación de una pena privativa de libertad resultaría desproporcionada y contraria a los principios de seguridad del paciente.
+Así las cosas, Costa Rica en lugar de penalizar a las personas profesionales de la salud que realizan su trabajo con la mayor responsabilidad y eficiencia, se deben fortalecer la hemovigilancia. Esta constituye un sistema organizado para la detección, registro y análisis de la información relacionada con todos los efectos adversos e incidentes de la donación y la transfusión de sangre. Este sistema opera bajo los principios de confidencialidad y no punibilidad, que son fundamentales para su eficacia. El compromiso de estos programas es institucional y no busca culpables, sino identificar debilidades en los procesos para implementar medidas correctivas y preventivas.
+En Colombia, el Manual de Hemovigilancia establece explícitamente que el programa es no punible y está dirigido a la formación en los procesos que abarca la cadena transfusional. El sistema no está diseñado para el castigo, sino para el aprendizaje y la mejora de la calidad. La adopción de estos sistemas no solo mejora la seguridad del paciente, sino que también tiene el beneficio de disminución de las acciones judiciales al demostrar un compromiso proactivo con la calidad y la seguridad.
+La trazabilidad es la capacidad de identificar al receptor de cada componente sanguíneo y, a la inversa, a todos los donantes que intervinieron en una transfusión. En un caso de transfusión, una documentación rigurosa y completa de la trazabilidad es fundamental para demostrar la diligencia debida del personal. Un registro impecable de cada paso del proceso, desde la recolección de la sangre hasta su transfusión, incluyendo la firma, la fecha y la hora, deberá determinar con meridiana claridad la responsabilidad o no de la persona trabajadora de la salud encargada, así como las debilidades en los procesos que deberán mejorarse.
+Por el contrario, cualquier inconsistencia o vacío en la documentación podría ser utilizado para cuestionar la integridad del proceso. Por lo tanto, el sistema de trazabilidad no es un factor incriminatorio, sino la prueba más sólida de que la institución y su personal siguieron los protocolos establecidos. Si los registros de trazabilidad demuestran que se cumplió con cada paso, la responsabilidad por el daño no puede recaer en el profesional individual, sino que se debe entender como la manifestación de un riesgo inherente al proceso.
+El Enfoque Colombiano: Del Deber de Solidaridad a la No Punibilidad
+La legislación colombiana, a través del Decreto 1571 de 1993, establece la donación de sangre como un deber de solidaridad social que, por ningún motivo, podrá ser remunerado. En cuanto a la responsabilidad, la jurisprudencia colombiana exige al demandante probar la culpa del médico y la relación de causalidad entre el comportamiento y el daño, sin que la simple ausencia de un resultado curativo sea suficiente. Más importante aún, el manual de hemovigilancia de Colombia establece la no punibilidad como uno de sus principios rectores, dejando claro que el programa no busca culpables, sino que se enfoca en el aprendizaje y la mejora de la calidad. Este enfoque demuestra una tendencia en la región a priorizar la seguridad del paciente mediante la mejora de los sistemas en lugar del castigo individual.
+El Modelo del Reino Unido: Responsabilidad Corporativa y Trazabilidad a Largo Plazo
+El Reino Unido ha adoptado una perspectiva que se aleja aún más del castigo penal individual. El Blood Safety and Quality Regulations 2005 establece la obligación legal de los bancos de sangre y hospitales de retener los datos de trazabilidad por un mínimo de 30 años desde la donación o transfusión. Este requisito demuestra un enfoque legal en la responsabilidad a largo plazo y la capacidad para investigar incidentes, en lugar de un castigo inmediato.
+El modelo del Reino Unido también cuenta con la figura del Corporate Manslaughter (homicidio corporativo), que sanciona a las organizaciones, no a los individuos, por fallas graves en la gestión de la salud y la seguridad que resultan en una fatalidad. Esta legislación reconoce que los errores en sistemas complejos como los hospitales suelen ser el resultado de fallas sistémicas, no de las acciones de un solo individuo. Finalmente, en casos de negligencia médica, el sistema legal del Reino Unido prioriza la compensación civil para el paciente por los daños sufridos, con el objetivo de resarcir el perjuicio, en lugar de la persecución penal del profesional.
+Comparación de Requisitos de Trazabilidad y Plazos de Retención
+Jurisdicción
+Requisitos de Trazabilidad
+Plazo de Retención de Datos
+Costa Rica
+Ley General de Salud establece requisitos para bancos de sangre. La trazabilidad no se especifica con detalle.
+No se mencionan plazos específicos en los documentos revisados.
+Colombia
+Se exige el registro de información del donante y del receptor, con trazabilidad.
+El manual de hemovigilancia se enfoca en el análisis de datos más que en un plazo legal específico de retención.
+Reino Unido
+Se exige un registro exhaustivo de la identificación del donante, la unidad, el componente y el receptor.
+Mínimo de 30 años para datos de trazabilidad.
+En nuestro país la estrategia de defensa debe centrarse en el argumento de que el daño fue un error invencible y no el resultado de una conducta punible, se debe presentar un sistema de trazabilidad completo de la unidad de sangre en cuestión. Al igual que una cadena de custodia forense, los registros detallados de cada paso, desde la recolección hasta la transfusión, servirán como prueba documental de que el personal siguió los protocolos de manera estricta. Adicionalmente, se debe aportar evidencia de que la institución cuenta con un sistema de hemovigilancia en funcionamiento, el cual no se cuenta actualmente, que reporte y analice eventos adversos, y que implemente medidas de mejora. Esto no solo demuestra el compromiso de la institución con la seguridad, sino que también refuerza el argumento de que opera bajo los principios de una Cultura Justa.
+De conformidad con la evidencia científica disponible, la probabilidad de transmitir una infección no solo depende de las pruebas de laboratorio, sino también de otros factores, como la prevalencia de la infección en la población de donantes y la fiabilidad de las entrevistas de selección del donante. Por esta razón, la seguridad en la transfusión es un esfuerzo integral que incluye la selección rigurosa de donantes, el uso de tecnología de vanguardia y un seguimiento continuo a través de los sistemas de hemovigilancia, por lo que no debe centrarse en el castigo a las personas profesionales en salud.
+Así las cosas, las diputadas y diputados firmantes de esta iniciativa, proponemos reformar la novedosa Ley de Sangre, que reconocemos fue un avance fundamental en la materia pero que contiene normas que deben ajustarse a la realidad científica actual.
+Por estas razones, proponemos reformar los artículos 3 y 6 de la Ley en cuestión, con la finalidad de establecer un mínimo de tiempo conservar los registros de trazabilidad de cada unidad de sangre y sus componentes, esto contribuye a la trazabilidad para poder determinar con mayor exactitud la responsabilidad de los establecimientos y las personas profesionales de la salud encargadas del procedimiento. Asimismo, se propone reformar el artículo 27 ídem con la finalidad de garantizar que el sistema de hemovigilancia tenga la finalidad de detectar los eventos adversos para implementar medidas de mejora, más que para penalizar personas trabajadoras.
+En este mismo sentido, se reforman los delitos culposos y dolosos para que sean contestes con la propuesta, en el tanto resulta imposible eliminar el riesgo de transmisión a través de transfusiones. Bajo la lógica de un sistema de mejora en los procedimientos de hemovigilancia es que se propone reducir las penas privativas de libertad y aumentar las sanciones a las organizaciones por fallas graves en la gestión de la salud y la seguridad, tal y como sucede en otros ordenamientos jurídicos como Colombia y Reino Unido. Este aumento radica en el cumplimiento de principios de salud pública, trazabilidad y seguridad transfusional. La sangre donada es un bien público que debe ser regulado por el Estado para garantizar su acceso en condiciones de equidad, seguridad y humanidad. Cualquier conducta que comprometa la calidad, trazabilidad o seguridad de la sangre debe ser sancionada con firmeza, dada su naturaleza crítica para la vida humana. Las faltas graves y muy graves pueden derivar en transfusiones inseguras, lo que representa un riesgo de morbilidad, mortalidad y pérdida de confianza en el sistema de salud.
+Es decir, cualquier sistema de transfusión de sangre que pretenda funcionar eficazmente, requiere un régimen sancionatorio robusto que disuada el incumplimiento y garantice la trazabilidad de cada unidad de sangre desde la donación hasta la transfusión.
+En virtud de las consideraciones expuestas, sometemos a conocimiento de la Asamblea Legislativa el siguiente proyecto de ley para su estudio y aprobación por parte de los señores y señoras diputadas.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+REFORMA DE LOS ARTÍCULOS 3, 6, 27, 34, 36 Y 37 DE LA LEY NACIONAL
+DE SANGRE, LEY 10649 DEL 26 DE FEBRERO DE 2025.
+LEY PARA GARANTIZAR LA TRAZABILIDAD
+Y SEGURIDAD TRANSFUSIONAL
+EN LA DONACIÓN DE SANGRE
+ARTÍCULO 1- Se reforman los artículos 3, 6, 27, 34, 36 y 37 de la Ley Nacional de Sangre, Ley 10.649 del 26 de febrero de 2025, para que en delante de lean:
+Artículo 3- Obtención de la sangre y sus componentes
+La obtención de sangre humana y sus hemocomponentes deberá realizarse bajo la tutela de un banco de sangre. Dicho establecimiento deberá ejercer control sobre la calidad y los procesos que apliquen, con el objeto de procurar garantizar la inocuidad de la sangre, sus componentes y sus derivados, en cumplimiento de toda la legislación aplicable, especialmente de la Ley 5395, Ley General de Salud, de 30 de octubre de 1973, y La Ley 9797, Ley General sobre VIH-Sida, de 2 de diciembre de 2019.
+Los bancos de sangre deberán conservar los registros de trazabilidad de cada unidad de sangre y sus componentes por un período mínimo de treinta (30) años. Esta trazabilidad deberá permitir identificar el origen, procesamiento, almacenamiento, distribución y destino final de cada unidad, conforme a los estándares internacionales de seguridad transfusional.
+Artículo 6- Autoridad sanitaria responsable
+El Ministerio de Salud será la autoridad responsable de velar por el cumplimiento de esta ley, en todos los establecimientos públicos y privados, y buscará garantizar la preservación de la salud de los donantes, la máxima protección de los receptores y del personal de salud. Además, establecerá los requisitos mínimos para la trazabilidad de la sangre y sus componentes, incluyendo la conservación de registros por un período no menor a treinta (30) años.
+Para ello, promulgará, al amparo de esta ley, los reglamentos, las directrices y los protocolos que considere necesarios para garantizar su adecuado funcionamiento.
+Artículo 27- Hemovigilancia
+Todo proceso transfusional deberá seguir los procedimientos de hemovigilancia que se establezcan en las normas técnicas y deberán garantizar que el Banco de Sangre cuente con un sistema que reporte y analice los eventos adversos con la finalidad de implementar medidas de mejora. Este proceso debe ser coordinado por el Ministerio de Salud y ejecutado a través de los comités de medicina transfusional de cada centro de salud y establecimiento que integre la Red Nacional de Bancos de Sangre y Servicios Transfusionales.
+Artículo 34- Sanciones
+El Ministerio de Salud será la autoridad competente para establecer las siguientes sanciones a los establecimientos de la salud públicos o privados, por el incumplimiento de la presente ley y sus normas reglamentarias:
+1- Faltas leves: Son aquellas que constituyen incumplimientos menores a disposiciones técnicas o administrativas sin riesgo directo para la salud de los usuarios.
+Sanciones:
+1.1. Apercibimiento escrito y capacitación obligatoria en el área correspondiente.
+2- Faltas graves: Son aquellas que implican incumplimientos que ponen en riesgo la seguridad del donante, receptor o del producto sanguíneo, sin causar daño efectivo.
+Sanciones:
+2.1. Multa de 25 a 50 salarios base.
+Suspensión temporal de actividades por hasta 3 meses.
+3- Faltas muy graves: Son aquellas que causan daño efectivo a la salud o vida de las personas, o que impliquen fraude, falsificación de registros, negligencia grave, o reincidencia en faltas graves.
+Sanciones:
+3.1. Multa de 40 a 60 salarios base.
+3.2. Suspensión de actividades por hasta 6 meses.
+3.3. Revocación de licencias o clausura definitiva del establecimiento.
+Para efectos de esta ley se aplicará la definición de salario base establecida en el artículo 2 de la Ley 7337, de 5 de mayo de 1993.
+Lo anterior sin la exclusión de las responsabilidades disciplinarias, administrativas, civiles y penales aplicables tanto a los trabajadores de la salud como a los establecimientos, públicos o privados, y sus representantes, según corresponda.
+Artículo 34 (bis)- Otras sanciones
+Además de la clasificación anterior, se considerarán faltas graves y muy graves las siguientes:
+Se considerarán faltas graves las siguientes:
+a) Al sujeto o establecimiento público o privado que ofrezca una compensación económica o en especie, a cambio de recibir o donar sangre o sus hemocomponentes.
+b) El laboratorio clínico, farmacias y cualquier otro establecimiento o persona física que almacene o disponga de hemocomponentes sin autorización.
+Se considerarán faltas muy graves las siguientes:
+a) El establecimiento que funcione sin contar con la debida autorización.
+b) A quien realice una transfusión de sangre sin cumplir con los procedimientos técnicos establecidos por el Ministerio de Salud.
+Lo anterior sin la exclusión de las responsabilidades disciplinarias, administrativas, civiles y penales aplicables tanto al sujeto como al establecimiento y sus representantes, según corresponda.
+La reincidencia en faltas graves o muy graves será considerada agravante y duplicará la sanción correspondiente. En caso de reincidencia muy grave, se aplicará la inhabilitación definitiva del responsable.
+El Ministerio de Salud podrá ordenar la suspensión preventiva de actividades ante indicios razonables de una falta muy grave, mientras se realiza la investigación correspondiente.
+Artículo 36- Actuación culposa del trabajador de salud
+Se impondrá de tres meses a dos años de prisión, al trabajador de la salud público o privado que, faltando al debido deber de cuidado y responsabilidad, realice a una persona una transfusión de sangre o sus hemoderivados infectada por una enfermedad transmisible por transfusión y resultare infectada.
+Quedan facultados los jueces para imponer, además de las penas consignadas en cada caso, la pena de inhabilitación absoluta o especial en el tanto estimen pertinente, de acuerdo con la gravedad del hecho y dentro de los límites fijados para esta pena.
+Artículo 37- Actuación dolosa del trabajador de salud
+Se impondrá prisión de uno a siete años al trabajador de la salud público o privado que, conociendo que el producto por transfundir o el artículo por utilizar está infectado por una enfermedad transmisible por transfusión, lo utilice en una persona y esta resulte infectada.
+Quedan facultados los jueces para imponer, además de las penas consignadas en cada caso, la pena de inhabilitación absoluta o especial en el tanto estimen pertinente, de acuerdo con la gravedad del hecho y dentro de los límites fijados para esta pena.
+TRANSITORIO I- A partir de la entrada en vigencia de la presente ley, El Ministerio de Salud deberá en un plazo de 3 meses, promulgar la reglamentación respectiva que establezca los requisitos mínimos de trazabilidad para la conservación de los registros según el plazo establecido en el artículo 6 que se reforma en la presente ley.
+TRANSITORIO II- A partir de la entrada en vigencia de la presente ley, los Bancos de Sangre tendrán un plazo de 6 meses para adaptar sus sistemas de hemovigilancia a los requerimientos establecidos en el artículo 27 que se reforma en la presente ley.
+Rige a partir de su publicación.
+Johnatan Jesús Acuña Soto Andrés Ariel Robles Barrantes
+Diputados
+NOTA: Este proyecto cumplió el trámite de revisión de forma en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 13-04-2026).

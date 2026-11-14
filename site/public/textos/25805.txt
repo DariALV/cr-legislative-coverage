@@ -1,0 +1,81 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE PROTECCIÓN Y EDAD MÍNIMA PARA
+EL ACCESO A REDES SOCIALES
+EDER HERNÁNDEZ ULLOA
+OTRO SEÑOR DIPUTADO
+Y SEÑORA DIPUTADA
+EXPEDIENTE N.º 25.805
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY DE PROTECCIÓN Y EDAD MÍNIMA PARA
+EL ACCESO A REDES SOCIALES
+Expediente N.º 25.805
+ASAMBLEA LEGISLATIVA:
+Las redes sociales forman parte cotidiana de la comunicación y la interacción social. No obstante, el acceso de personas menores de edad a estas plataformas incrementa el riesgo de daños como el acoso y el ciberbullying, la exposición a contenidos nocivos, y otras formas de manipulación y captación indebida en entornos digitales. Este riesgo se intensifica cuando las plataformas permiten interacción directa entre usuarios y facilitan la creación de perfiles sin mecanismos efectivos de verificación de edad.
+El presente proyecto de ley propone una medida preventiva para reducir tales riesgos: establecer una edad mínima de 15 años para el acceso y la creación de cuentas en plataformas de redes sociales con restricción de edad. La finalidad no es solo fijar un límite etario, sino exigir a los proveedores que adopten medidas razonables y efectivas para impedir que personas menores de quince años logren crear o utilizar cuentas.
+En cuanto a la implementación, se dispone que las obligaciones de verificación deben ser proporcionales al riesgo, técnicamente viables y adecuadas para reducir de manera efectiva el acceso de menores. Asimismo, se incluyen reglas sobre corrección de errores, de forma que los mecanismos de control cuenten con procedimientos para atender casos en que la verificación sea incorrecta.
+La iniciativa incorpora también un enfoque de protección de derechos, al establecer un marco de minimización y limitación de la información: el proveedor no podrá recopilar datos personales más allá de lo estrictamente necesario para cumplir la verificación de edad. Como regla general, se evita que el mecanismo de control se base como principal en documentación gubernamental, privilegiando alternativas como verificación no documentaria o confirmaciones por terceros cuando existan y sean adecuadas, con excepciones justificadas y reforzadas en privacidad.
+Finalmente, el proyecto define competencias claras: El Patronato Nacional de la Infancia (PANI) como órgano rector en materia de niñez y adolescencia, con el acompañamiento y coordinación con el Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones (Micitt) supervisan el cumplimiento y pueden requerir información, realizar inspecciones, ordenar medidas correctivas y aplicar sanciones administrativas; mientras que Prodhab se encarga específicamente de la protección de datos personales, su minimización, seguridad, conservación y derechos de las personas usuarias. Se establecen además plazos de transición gradual para la adecuación tecnológica y operativa, garantizando que la protección sea progresiva pero oportuna.
+Por todo lo anterior, este proyecto de ley busca fortalecer la seguridad digital en Costa Rica, reducir la vulnerabilidad de las personas menores de edad en entornos de interacción social en línea y asegurar que el cumplimiento de la edad mínima se realice con garantías efectivas de privacidad y seguridad.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE PROTECCIÓN Y EDAD MÍNIMA PARA
+EL ACCESO A REDES SOCIALES
+ARTÍCULO 1- Objeto
+La presente ley tiene por objeto reducir el riesgo de daño a las personas menores de edad, asociado al uso de plataformas de redes sociales, mediante la imposición de 15 años como edad mínima para la creación de cuentas en dichas redes y el establecimiento de obligaciones para los proveedores, respecto de:
+Impedir cuentas de personas menores de edad,
+Minimización de datos, y
+Protección de privacidad, bajo supervisión de la autoridad competente prevista en esta ley.
+ARTÍCULO 2- Definiciones
+Para los fines de esta ley se entenderá por:
+a) Plataforma de redes sociales con restricción de edad: todo servicio o aplicación digital que, como propósito exclusivo o entre sus propósitos relevantes, permita la interacción social en línea entre usuarios finales e incluya funcionalidades que posibiliten que los usuarios se vinculen o interactúen, y publiquen o compartan contenido dentro del servicio. Se excluyen plataformas de mensajería y juegos.
+b) Interacción social en línea: cualquier forma de interacción entre usuarios en el entorno digital habilitada por la plataforma para compartir o intercambiar contenido con fines sociales.
+c) Proveedor: persona física o jurídica que ofrece, opera o controla la plataforma de redes sociales con restricción de edad que sea accesible en Costa Rica.
+d) Persona con restricción de edad: persona menor de quince (15) años.
+e) Autoridad competente (supervisión): el Patronato Nacional de la Infancia como órgano rector en materia de niñez y adolescencia, con el acompañamiento y coordinación con el Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones, conforme a esta ley.
+f) Autoridad de protección de datos: la institución Prodhab, conforme a esta ley.
+ARTÍCULO 3- Edad mínima
+Se establece como edad mínima de acceso y creación de cuentas en plataformas de redes sociales con restricción de edad la de quince (15) años.
+ARTÍCULO 4- Obligación de adoptar medidas razonables para impedir cuentas de personas menores de edad.
+El proveedor de una plataforma de redes sociales con restricción de edad deberá adoptar medidas razonables para impedir que personas con restricción de edad tengan cuentas en la plataforma.
+Se entenderá por medidas razonables aquellas que sean proporcionales al riesgo, técnicamente viables y adecuadas para reducir de manera efectiva el acceso o creación de cuentas por personas menores de edad, incluyendo mecanismos de verificación o mitigación de cumplimiento de edad y procedimientos para corrección de errores.
+ARTÍCULO 5- Minimización y limitación de la información
+El proveedor no podrá recopilar información personal para fines de cumplimiento de la obligación establecida en el artículo 4, más allá de lo estrictamente necesario.
+En el marco reglamentario se definirán categorías de información permitida y condiciones de conservación limitada, procurando el enfoque de minimización, limitación de acceso interno y seguridad.
+ARTÍCULO 6- Restricción general sobre documentación gubernamental
+Como regla general, el proveedor no deberá requerir ni recopilar documentos de identificación expedidos por autoridades gubernamentales como medio principal para cumplir la obligación del artículo 4.
+El proveedor deberá privilegiar alternativas que resulten razonables, tales como verificación no documentaria, confirmaciones por terceros cuando existan y sean adecuadas, o mecanismos técnicos equivalentes, asegurando proporcionalidad y el menor impacto posible sobre la privacidad.
+ARTÍCULO 7- Privacidad y seguridad
+El proveedor deberá implementar medidas de protección de privacidad y seguridad adecuadas al riesgo, incluyendo controles de acceso, confidencialidad e integridad de la información utilizada para cumplimiento, trazabilidad razonable y procedimientos para atender reclamos y correcciones.
+ARTÍCULO 8- Aplicación a cuentas existentes
+La obligación establecida en esta ley se aplicará también a cuentas existentes, conforme a un régimen transitorio gradual que establecerá el reglamento a la presente ley.
+ARTÍCULO 9- Lineamientos
+El Patronato Nacional de la Infancia y el Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones, serán las autoridades competentes para emitir los lineamientos que orienten el cumplimiento, incluyendo criterios para definir “medidas razonables”, buenas prácticas de verificación o mitigación de edad y procedimientos de reporte y atención.
+ARTÍCULO 10- Supervisión e inspección
+Corresponderá al Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones:
+a) requerir información y documentación de cumplimiento al proveedor;
+b) realizar inspecciones o auditorías;
+c) ordenar medidas correctivas;
+d) imponer sanciones administrativas conforme a esta ley y su reglamento; y
+e) establecer procedimientos para la atención de reportes de incumplimiento.
+ARTÍCULO 11- Protección de datos (Prodhab)
+Toda materia relacionada con el tratamiento de datos personales, licitud, minimización, seguridad, conservación, derechos de las personas usuarias y su fiscalización específica corresponderá a la Agencia de Protección de Datos de los Habitantes, sin perjuicio de las competencias del Patronato Nacional de la Infancia sobre la obligación de edad mínima y las medidas establecidas en esta ley.
+ARTÍCULO 12- Sanciones al proveedor
+El incumplimiento comprobado de las obligaciones de esta ley dará lugar a sanciones administrativas graduadas según gravedad, reincidencia, perjuicio causado, cooperación del proveedor y alcance del incumplimiento. Se establecen como referencia:
+Multa hasta 10 salarios base mensuales, según el artículo 2 de la Ley n.º 7337, que crea concepto salario base para delitos especiales del Código Penal, del 5 de mayo de 1993. La multa aplicará para cada caso leve o primera infracción con corrección oportuna.
+Multa hasta 20 salarios base mensuales, según el artículo 2 de la Ley n.º 7337, que crea concepto salario base para delitos especiales del Código Penal, del 5 de mayo de 1993. La multa aplicará para cada caso relevante o reincidencia.
+Multa hasta 30 salarios base mensuales, según el artículo 2 de la Ley n.º 7337, que crea concepto salario base para delitos especiales del Código Penal, del 5 de mayo de 1993. La multa aplicará para cada caso grave o reiterados o cuando exista afectación significativa.
+Adicionalmente, el Patronato Nacional de la Infancia con el acompañamiento y coordinación con el Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones, ordenarán la adopción de medidas correctivas y plazos de cumplimiento, así como otras medidas proporcionales necesarias para lograr el efectivo cese del incumplimiento.
+ARTÍCULO 13- Impuesto a proveedores
+Creación. Se establece un impuesto a cargo de las empresas propietarias de las redes sociales, que naveguen en nuestro internet y en las que puedan registrarse los costarricenses. El hecho generador de este impuesto será la libre navegación de las redes sociales en el país. El impuesto será por el período fiscal de un año, comprendido entre el 1º de enero y el 31 de diciembre de ese mismo año. El impuesto se devengará el primero de enero de cada año. La tarifa anual del presupuesto será de 100 salarios base mensuales, según el artículo 2 de la Ley n.º 7337, que crea concepto salario base para delitos especiales del Código Penal, del 5 de mayo de 1993. El impuesto se pagará directamente mediante los medios, la forma y las condiciones establecidos al efecto por la Dirección General de Tributación, dentro de los primeros treinta días naturales siguientes al 1º de enero de cada año. El incumplimiento del pago de este impuesto dará lugar al bloqueo de la red social.
+ARTÍCULO 14- Reglamentación
+El Poder Ejecutivo reglamentará la presente ley en un plazo de 6 meses, contados a partir de su publicación, con participación del Patronato Nacional de la Infancia, el Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones y la Agencia de Protección de Datos de los Habitantes.
+ARTÍCULO 15- Derogatorias
+Deróguense las disposiciones contrarias a la presente ley.
+Rige doce meses posteriores a su publicación.
+Eder Hernández Ulloa
+Diana Murillo Murillo Marco Francisco Badilla Chavarria
+Diputados y diputada
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 30-09-2026).

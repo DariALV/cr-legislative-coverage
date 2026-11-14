@@ -1,0 +1,754 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE IMPUESTO SOBRE LA RENTA
+PODER EJECUTIVO
+EXPEDIENTE N.° 23.760
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+NOTA: A solicitud de la parte interesada, este Departamento no realizó la revisión de errores formales, materiales e idiomáticos que pueda tener este proyecto de ley.
+PROYECTO DE LEY
+LEY DE IMPUESTO SOBRE LA RENTA
+Expediente N.° 23.760
+ASAMBLEA LEGISLATIVA:
+Conforme al mandato supremo consagrado en el artículo 50 de la Constitución Política, el Estado procurará el mayor bienestar a todos los habitantes del país, a través, primordialmente, de la organización y estimulación de la producción, así como del más adecuado reparto de la riqueza. La consecución del bienestar de la población pasa por solventar las múltiples necesidades sociales, para lo cual se requiere, incuestionablemente, de una institucionalidad fuerte y con sólidas bases democráticas, diseñada y concebida para alcanzar los distintos fines y objetivos definidos por el ordenamiento jurídico.
+Tal y como lo ha reconocido la Sala Constitucional, independientemente del sistema político por el que haya optado un país, ni el Estado ni el mercado podrían por sí solos satisfacer las necesidades sociales, de ahí que, sin importar el tamaño del Estado o del mercado, se ha considerado fundamental que la ciudadanía colabore con el financiamiento de los gastos en que debe incurrir el Estado para su debido funcionamiento, para así brindar el apoyo requerido por la población.
+En definitiva, la capacidad estatal para proveer servicios públicos a sus habitantes está en función de que el Estado cuente con recursos suficientes para su respectivo financiamiento, para lo cual es indispensable contar con un sistema tributario que garantice que cada ciudadano contribuya con el sostenimiento de las cargas públicas de acuerdo con su capacidad económica, tal cual se desprende de los artículos 18 y 33 de la Carta Magna, lográndose la redistribución de la riqueza.
+El Estado cuenta con dos principales fuentes para financiar el gasto público, que son los ingresos y el endeudamiento público. Dentro de los ingresos del Gobierno Central, cobran especial importancia los ingresos tributarios que, al cierre del 2022, representaron 86% de los ingresos totales y se derivan de los tributos legalmente establecidos, incluyendo impuestos, tasas y contribuciones especiales. En este sentido, la Organización para la Cooperación y el Desarrollo Económico (OCDE) muestra en su informe “Estadísticas de Impuestos 2022. El Impacto del COVID-19 sobre los ingresos tributarios de la OCDE” que la carga tributaria de Costa Rica es comparativamente baja, existiendo margen para su crecimiento.
+Gráfico 1. Ingresos tributarios del Gobierno Central en 2021, % del PIB
+Fuente: Ministerio de Hacienda con datos de la OCDE.
+Ahora bien, en términos de impuestos, el objetivo estatal debe ser contar con una estructura tributaria en la que tengan un mayor peso los impuestos directos, que son aquellos que recaen sobre los ingresos y el patrimonio de las personas, a diferencia de los impuestos indirectos, los cuales, como su nombre lo sugiere, gravan el consumo como manifestación de capacidad económica. Por definición, a mayor peso de los impuestos directos, más progresivo es el sistema tributario, pues la obtención de ingresos y la acumulación patrimonial son manifestaciones de riqueza asociadas a condiciones personales, con lo que se garantiza que quienes tengan más recursos soporten una carga mayor, a diferencia de lo que sucede con los impuestos indirectos, que no toman en consideración estas circunstancias.
+En Costa Rica, históricamente, los impuestos directos han representado 45% de la recaudación total, mientras que los impuestos indirectos alcanzan 55%, lo que denota una importante dependencia en estos últimos, como lo son el impuesto sobre el valor agregado y el impuesto único sobre los combustibles, así como un claro espacio de mejora en términos de imposición directa, sobre todo en lo que respecta al gravamen sobre las rentas.
+La actual Ley del Impuesto sobre la Renta (Ley N.° 7092) data de 1988 y obedece a un modelo de imposición sobre la renta superado, el cual se basa en un concepto de “renta producto”, es de carácter cedular y sigue el criterio de territorialidad, lo que impide gravar en todo su potencial la capacidad económica de las personas que obtengan ingresos gravables, afectándose así la progresividad del impuesto y su respectiva redistribución a favor de la ciudadanía y de los programas sociales.
+Como se indicó, en Costa Rica, la imposición sobre la renta se basa en cada fuente productora de ingresos, como lo es el trabajo personal dependiente, el desarrollo de una actividad económica y la inversión de capital, entre otros supuestos. A su vez, esto conlleva el establecimiento de distintos impuestos o cédulas contenidos en la Ley del Impuesto sobre la Renta, como es el caso del impuesto sobre las utilidades, el impuesto único sobre las rentas del trabajo personal dependiente, jubilaciones o pensiones, el impuesto sobre rentas de capital y ganancias y el impuesto sobre remesas al exterior. Todos estos impuestos operan de manera independiente, con lo cual no existe una única base impositiva que permita medir y gravar con precisión la capacidad económica de las personas.
+Ante esta desafortunada situación, a través de los últimos años se han emprendido diversos esfuerzos para reformar la Ley del Impuesto sobre la Renta. Por ejemplo, en abril de 2002 se presentó el proyecto de ley 14.644, denominado “Ordenamiento Fiscal”, en el cual se planteó la transición de un modelo cedular hacia un esquema de renta global. Luego, en octubre de 2003, se presentó a la corriente legislativa el proyecto de ley 15.461, denominado “Pacto Fiscal y Reforma Fiscal Estructural”, que también incluía una reformulación total y profunda del impuesto sobre la renta. El texto de esta iniciativa, aprobado en primer debate en 2005, no pudo continuar su trámite legislativo, ya que la Sala Constitucional indicó que el trámite para su aprobación era inconstitucional por vicios en su procedimiento, motivo por el cual el proyecto no fue aprobado en segundo debate. La misma suerte corrió el proyecto de ley 18.261, denominado “Solidaridad Tributaria”, que proponía la misma ruta en materia de imposición sobre la renta.
+Así, fue hasta el año 2018, con la aprobación de la Ley de Fortalecimiento de las Finanzas Públicas (Ley N.° 9635) que se aprobaron ciertas reformas parciales a la Ley del Impuesto sobre la Renta, las cuales, pese a jugar un rol importante en el crecimiento de la recaudación tributaria, no representan un cambio en los pilares sobre los que se cimienta el sistema de imposición sobre la renta costarricense, ni permiten ir en dirección hacia la consolidación de un sistema tributario progresivo.
+El presente proyecto se enmarca en el interés y la necesidad de adoptar un sistema de imposición sobre la renta moderno, que sea más equitativo desde la perspectiva tributaria, para de este modo cumplir con el mandato constitucional de velar por una adecuada contribución con las cargas públicas y garantizar el bienestar social. Al mismo tiempo, se propone un sistema de imposición sobre la renta más simple y claro, con el fin de promover el cumplimiento voluntario de las obligaciones fiscales, mediante la disminución de la cantidad de declaraciones y gestiones que deben realizar los contribuyentes año a año bajo el esquema actual.
+El nuevo sistema se basa en un concepto de “renta ingreso” y se enfoca en las personas que perciben las rentas, ante lo cual se adoptan impuestos personales de carácter global, que recaen sobre el incremento patrimonial correspondiente al periodo impositivo respectivo, tomando en consideración los ingresos por la puesta en marcha de factores productivos (capital y trabajo) por parte del contribuyente y los aumentos patrimoniales atribuibles a factores externos a su actividad.
+Este cambio es de suma importancia, pues el sistema cedular vigente crea desequilibrios en cuando a la equidad horizontal y vertical del sistema tributario. Desde la óptica de la equidad horizontal, se generan diferencias en el tratamiento aplicable a aquellos contribuyentes dependiendo del origen de sus rentas, como se da, por ejemplo, con los profesionales independientes y asalariados, para quienes aplican reglas considerablemente distintas a pesar de que ambos presten servicios personales. Similar situación se da con la equidad vertical (a mayor nivel de ingresos, mayor es la proporción de impuestos que se pagan), ya que no es posible visualizar la verdadera capacidad económica de cada contribuyente, derivada de las rentas obtenidas de diversas fuentes, ni la consecuente contribución tributaria.
+Adicionalmente, con el objeto de evitar que el sistema tributario costarricense se preste para el uso de esquemas multinacionales abusivos que deriven en una doble no imposición, en la erosión de las bases imponibles o en competencia fiscal perniciosa, se modifica el criterio de sujeción que se ha seguido en Costa Rica, manteniéndose el criterio de territorialidad para definir la mayor parte de las rentas gravables en el país, pero ampliándose para las rentas del capital y ganancias del capital, que estarán sujetas a imposición con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador.
+Este cambio propuesto, cabe destacar, ha sido sugerido por el Fondo Monetario Internacional luego de una reciente revisión integral del sistema de imposición sobre la renta costarricense. Además, el gravamen de las rentas pasivas (rentas de capital y ganancias de capital) extraterritoriales va en línea con la solución propuesta por la Unión Europea para enmendar el régimen de exención de rentas extraterritoriales que tiene el país, que, en su criterio, se presta para que surjan situaciones de doble no imposición, producto de lo cual se incluyó a Costa Rica en la lista de países no cooperantes en temas tributarios de la Unión Europea, conocida como “lista negra”.
+La reforma estructural del sistema de imposición sobre la renta requiere que se promulgue una nueva Ley del Impuesto sobre la Renta y que se derogue en su totalidad la ley actual. Bajo este entendido, en el nuevo texto legislativo se incluyen tres impuestos: i) el Impuesto sobre la Renta de las Personas Físicas, ii) el Impuesto sobre la Renta de las Personas Jurídicas y iii) el Impuesto sobre la Renta de los No Residentes, cuyos aspectos principales se explican de seguido.
+Impuesto sobre la Renta de las Personas Físicas (IRPF)
+El Impuesto sobre la Renta de las Personas Físicas constituye uno de los pilares estructurales de cualquier sistema tributario. Este es un impuesto personal y directo que grava la renta de las personas físicas de acuerdo con su naturaleza y tomando en cuenta sus circunstancias personales y familiares, a diferencia de lo que sucede hoy en día, que una misma persona puede estar sujeta a distintos impuestos que gravan las rentas que esta obtiene.
+En términos generales, este impuesto grava las rentas de fuente costarricense derivadas del trabajo personal dependiente, de jubilaciones y pensiones y del ejercicio de actividades económicas, tanto de carácter empresarial o profesional; así como las rentas pasivas generadas en el territorio nacional como fuera de este, incluyendo las rentas del capital y las ganancias del capital.
+Los contribuyentes de este impuesto serán aquellas personas físicas que tengan su residencia fiscal en el país, lo que por lo general estará ligado a que la persona esté presente en el territorio nacional por un lapso de tiempo igual o superior a 183 días del periodo impositivo, sin importar su nacionalidad.
+En cuanto al periodo impositivo, este corresponderá a un año natural, es decir, de del primer día de enero al último de diciembre de cada año. Así, se pasará a medir la capacidad económica y a gravar el incremento patrimonial que la persona haya tenido a lo largo del periodo impositivo, producto de las diversas rentas percibidas.
+Ahora bien, para efectos de la determinación del impuesto y teniendo en cuenta su carácter global, estaríamos ante una integración de todas las rentas gravables en una sola base imponible. Sin embargo, dado el efecto que esto podría tener en las rentas pasivas, que pueden moverse de un sitio a otro con mayor facilidad, así como para evitar un gravamen excesivo, sobre todo en comparación con otros países de la región, se propone bifurcar la base imponible de las personas físicas en dos:
+una base general, en la cual se integrarán las rentas del trabajo personal dependiente, jubilaciones y pensiones, las rentas derivadas del desarrollo de una actividad económica y los rendimientos del capital inmobiliario; y
+una base especial, en la que se agruparán las rentas del capital mobiliario y las ganancias del capital.
+Para determinar la base imponible general, las personas deberán computar sus rentas íntegras según su naturaleza y de estas podrán deducir aquellos costos y gastos establecidos por ley. Las rentas netas resultantes de estas operaciones se integrarán y compensarán para conformar la base imponible general.
+Posteriormente, con el fin de garantizar la progresividad del sistema, esta base imponible general será ajustada por el mínimo vital. Este se establece en la suma de ₡10.104.000,00 anuales, con lo cual se elimina la distorsión existente actualmente entre asalariados y profesionales independientes, cuya base exenta es bastante menor a la de los primeros. Se ha optado por este mínimo vital para no afectar a los asalariados que hoy se benefician de una base exenta mensual relativamente alta, extendiendo el tratamiento a todas las personas físicas. Este mínimo vital será actualizado anualmente con base en las variaciones de los índices de precios al consumidor que determine el Instituto Nacional de Estadística y Censos (INEC).
+Una vez ajustada la base imponible general, se aplicará sobre este rubro una tarifa progresiva que va desde 10% hasta 30%, dependiendo del tramo en que se ubique la persona física, lo que dará como resultado la cuota tributaria general.
+El cálculo de la base imponible especial se realizará integrando las rentas del capital mobiliario, sobre las cuales se pueden deducir ciertos gastos, y las ganancias y pérdidas del capital del periodo. Sobre esta base especial se aplicará un tipo impositivo proporcional del 15%, ante lo cual se obtendrá la cuota tributaria especial.
+Por su parte, la cuota tributaria íntegra será el resultado de sumar la cuota tributaria general y la cuota tributaria especial. Dicho importe podrá ser disminuido por el monto correspondiente a los pagos parciales y a retenciones, así como por la deducción por doble imposición jurídica internacional, en caso de que corresponda, para así llegar a la deuda tributaria que deberán cancelar los contribuyentes.
+En términos de la gestión de este impuesto, se amplía el deber de las personas físicas contribuyentes de presentar una declaración anual ante la Administración Tributaria y de efectuar el pago de la deuda tributaria en el mismo acto. Asimismo, se posibilita a la Administración Tributaria para que realice liquidaciones previas del impuesto y disponga la devolución de oficio en aquellos casos en que los pagos a cuenta excedan la cuota tributaria íntegra.
+Finalmente, se mantiene el régimen de tributación simplificada como una alternativa para aquellos pequeños contribuyentes, tanto personas físicas como jurídicas, que, cumpliendo con ciertos requisitos de ingreso, puedan aplicar una serie de normas simplificadas para el cumplimiento de sus obligaciones tributarias.
+Impuesto sobre la Renta de las Personas Jurídicas (IRPJ)
+Bajo una lógica muy similar, se establece el IRPJ como un impuesto que grava las rentas obtenidas por personas jurídicas y demás entidades, con o sin personalidad jurídica, que sean residentes para efectos fiscales en el país. En este caso, el gravamen recae sobre las rentas de fuente costarricense que perciban las personas jurídicas, incluyendo aquellas derivadas del ejercicio de una actividad económica, así como las rentas de capital y ganancias de capital. En estos últimos casos, por tratarse de rentas pasivas, se promueve que también estén sujetas a imposición los rendimientos extraterritoriales. Se contemplan además como gravables los ingresos por diferencias cambiarias originadas por operaciones en moneda extranjera.
+En lo que respecta al periodo impositivo, este se mantiene acorde al año natural, con lo que se pretende aplicar el impuesto sobre los incrementos patrimoniales que haya experimentado el contribuyente sobre el periodo.
+A diferencia de lo expuesto en el IRPF, para este impuesto sí se establece una única base imponible, la cual es el resultado de integrar y compensar todas las rentas obtenidas por la entidad contribuyente durante el periodo de impuesto, disminuidas por los costos y gastos deducibles, siempre que estos sean útiles, necesarios y pertinentes para la generación de ingresos gravables con este impuesto.
+Para calcular la cuota tributaria íntegra, se aplicará sobre la base imponible un tipo único proporcional del 30%, con independencia de los ingresos brutos que haya tenido la persona jurídica durante el ejercicio fiscal, uniformándose así el tratamiento para este tipo de contribuyentes y eliminándose el enanismo fiscal que se ha dado en la actualidad, originado por la escala progresiva dispuesta para personas jurídicas cuya renta bruta sea inferior a la suma establecida en la misma Ley del Impuesto sobre la Renta.
+Sobre este punto particular, conviene traer a colación lo dispuesto por el Fondo Monetario Internacional en el informe de asistencia técnica denominado “Mejorando la Equidad y Eficiencia del Sistema Tributario: Impuesto sobre la renta, feebates ambientales e incentivos para mayor equidad de género” de octubre 2022:
+“La tributación progresiva de PJs no es recomendable. Al tratarse de una construcción legal, las PJs pueden crearse, dividirse o eliminarse mediante un trámite administrativo. La existencia de una tarifa progresiva ofrece la posibilidad que las PJs se subdividan para cumplir con los criterios de elegibilidad que le dan derecho a tributar por tasas más favorables. Previo a la reforma de 2018, que instauró tasas marginales progresivas, el ISU estaba configurado de tal forma que toda la renta neta pasaba a tributar a una tasa más alta al superar un nivel de ingreso determinado. Esto propició que muchas empresas se mantuvieran artificialmente por debajo del umbral o que al cruzar el umbral comenzaran a presentar una disminución promedio del 70 por ciento de la renta neta en sus declaraciones (Bachas y Soto, 2016). Si bien la reforma atenuó los incentivos para la subdeclaración, permanecer pequeñas o dividirse artificialmente, no los eliminó. Por ello, lo recomendable es utilizar el impuesto que recae sobre la persona física cuando el objetivo es lograr una mayor progresividad.”
+Al igual que en el IRPF, para la determinación de la deuda tributaria líquida, se permitirá la deducción de los pagos parciales y de las retenciones efectuadas a lo largo del periodo, así como del impuesto pagado en el exterior, cuando corresponda, para así mitigar el efecto de la doble imposición jurídica internacional. Además, se mantiene el tratamiento tributario preferencial para las micro y pequeñas empresas inscritas ante el Ministerio de Economía, Industria y Comercio (MEIC) o ante el Ministerio de Agricultura y Ganadería (MAG), de modo que en su primer año de operaciones no paguen impuesto alguno y en los siguientes dos años sea de 25% y 50% de la cuota tributaria, respectivamente.
+Dentro de este impuesto, se encuentran también comprendidas las disposiciones que regulan ciertos aspectos de fiscalidad internacional que han sido incorporados a la normativa nacional, como lo son las disposiciones en materia de precios de transferencia, la no deducibilidad de los gastos incurridos en operaciones con jurisdicciones no cooperantes y derivados de asimetrías híbridas, así como la limitación de deducibilidad de intereses.
+Impuesto sobre la Renta de los No Residentes
+Finalmente, con respecto a los no residentes, sean personas físicas o jurídicas, se abandona el esquema obsoleto del impuesto sobre remesas al exterior y, en su lugar, se propone un impuesto que recaiga, de manera general, sobre las rentas de fuente costarricense que obtengan estos contribuyentes.
+Dentro de las rentas consideradas como rentas de fuente costarricense, se incluyen aquellos rendimientos derivados del trabajo personal dependiente y de pensiones, además de los provenientes del ejercicio de actividades económicas, con o sin mediación de establecimiento permanente, las rentas de capital y las ganancias y pérdidas de capital.
+Como novedad, se incluye un tratamiento diferenciado para los no residentes que operen en el país por medio de un establecimiento permanente, es decir, a través de un sitio o lugar fijo de negocios en el que se desarrolle, total o parcialmente, su actividad económica, quienes tributarán bajo las reglas del impuesto sobre la renta de personas físicas o de personas jurídicas, según corresponda.
+Por su parte, para aquellos no residentes que operen en el país sin que medie un establecimiento permanente y obtengan rentas por el desarrollo de una actividad económica en el país, así como cualquier otra renta de fuente costarricense que esté gravada con este impuesto, se establece un tipo proporcional único del 15% que aplicará sobre el monto bruto correspondiente a la respectiva renta, con lo cual se elimina la diversidad de tarifas que existe en la actualidad, simplificándose el sistema tributario.
+En cuanto al cumplimiento tributario, se dispone, como regla general, que las rentas percibidas por contribuyentes no residentes estarán sujetas a retención en la fuente, salvo aquellos casos en que esto no sea posible, ante lo cual se establece su deber de presentar la declaración tributaria y pagar el impuesto respectivo.
+A partir de este repaso de los principales elementos de cada uno de los tres impuestos que conforman la nueva Ley del Impuesto sobre la Renta, queda claro que son la base para construir un sistema tributario progresivo, justo y equitativo, a través del cual cada quien pague según su capacidad contributiva, poniéndose fin a las diferencias y distorsiones ocasionadas en la imposición sobre la renta basada en el origen de las rentas percibidas por los contribuyentes.
+La presente iniciativa legislativa, a diferencia de las anteriormente puestas en conocimiento de la Asamblea Legislativa, no tiene la vocación de aumentar la recaudación tributaria ni de crear nuevos impuestos, sino que se enfoca en diseñar un sistema de imposición sobre la renta enfocado en la capacidad económica de las personas, a partir de lo cual ciertos contribuyentes podrían pasar a aportar más al Fisco, mientras que otros sentirán un alivio en su carga tributaria, sin que ello se derive de la adopción de nuevos gravámenes sobre las rentas.
+Las estimaciones del Ministerio de Hacienda apuntan a que la implementación de este nuevo enfoque tributario traería beneficios distributivos y de progresividad. La distribución de ingresos, medida a través del índice de Gini, experimentaría una mejora al pasar de 0,50536 a 0,50508. El índice de Gini es una medida de la distribución del ingreso entre individuos. Este indicador toma valores entre 0 (equidad perfecta de la distribución) y 1 (inequidad perfecta de la distribución), así, entre más cercano a 0 sea el índice de Gini, más equitativa es la distribución de ingresos. Paralelamente, la progresividad del sistema tributario aumentaría, según lo señala el índice de Kakwani, índice que mide la progresividad de una intervención de política económica,,. Ese indicador estaría mostrando un incremento al pasar de 0,04244 a 0,04391, es decir, una mejora del 3,5%.
+En definitiva, la adopción de un esquema de imposición sobre la renta que incida en la progresividad del sistema tributario no solo traería beneficios en términos fiscales, sino que también tendría un impacto en el crecimiento económico. En este sentido, se ha sugerido que una mayor progresividad estaría asociada con una mayor propensión al pago de impuestos, lo cual estaría relacionado con la percepción de justicia tributaria por parte de los contribuyentes. A nivel macroeconómico, los sistemas tributarios progresivos les permiten a los hacedores de política económica tener un mayor espacio fiscal para generar políticas contracíclicas, en favor de la estabilidad económica. Similarmente, otros estudios muestran cómo los impuestos directos y las transferencias condicionadas pueden ayudar a reducir la inequidad y la pobreza, siempre y cuando el gasto social sea eficiente y bien focalizado,, motivo suficiente para promover un giro radical en el modelo de imposición sobre la renta aplicable en Costa Rica.
+En virtud de todo lo anterior y con el objetivo de que el país pueda contar con un nuevo sistema de imposición sobre la renta, que sea progresivo y equitativo desde la perspectiva tributaria, se somete a consideración de la Asamblea Legislativa el siguiente proyecto de ley denominado “LEY DE IMPUESTO SOBRE LA RENTA”, para su consideración y aprobación definitiva.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE IMPUESTO SOBRE LA RENTA
+TÍTULO PRIMERO
+IMPUESTO SOBRE LA RENTA DE PERSONAS FÍSICAS (IRPF)
+CAPÍTULO PRELIMINAR
+Naturaleza, objeto y ámbito de aplicación
+ARTÍCULO 1- Naturaleza del impuesto
+El Impuesto sobre la Renta de las Personas Físicas es un tributo de carácter personal y directo que grava la renta de las personas físicas de acuerdo con su naturaleza y sus circunstancias personales y familiares, según los principios de igualdad, generalidad y progresividad y lo establecido en esta Ley.
+ARTÍCULO 2- Objeto del impuesto
+El objeto de este impuesto es la renta del contribuyente, entendida como la totalidad de sus rendimientos derivados del trabajo personal dependiente, pensiones y jubilaciones, del ejercicio de actividades económicas y del capital, así como las ganancias y pérdidas de capital, según lo dispuesto en el artículo 5 de esta Ley.
+ARTÍCULO 3- Ámbito de aplicación
+El impuesto sobre la renta de las personas físicas se aplicará en todo el territorio de la República de Costa Rica, el cual se entenderá de conformidad con el artículo 5 de la Constitución Política.
+ARTÍCULO 4- Tratados y Convenios
+Lo establecido en la presente Ley se aplica sin perjuicio de lo dispuesto en los tratados y convenios internacionales que hayan pasado o pasen en el futuro a formar parte del ordenamiento interno, de conformidad con la Constitución Política de Costa Rica.
+CAPÍTULO I
+Sujeción al impuesto
+SECCIÓN I
+Hecho generador
+ARTÍCULO 5- Hecho generador
+El hecho generador de este impuesto corresponde a la obtención de renta gravable por parte del contribuyente. La renta gravable la componen:
+1- Las siguientes rentas de fuente costarricense:
+a) Las rentas del trabajo obtenidas como producto de la prestación de servicios personales en relación de dependencia, ya sea que estos sean prestados desde el territorio nacional o a favor de un patrono que desarrolle una actividad económica en el país.
+b) Las pensiones y jubilaciones derivadas de cualquier régimen de pensiones costarricense.
+c) Las rentas derivadas del desarrollo, desde el territorio nacional, de una actividad económica de carácter empresarial o profesional, incluyendo las provenientes de las operaciones de exportación de bienes y servicios realizadas desde el territorio nacional, que se obtengan durante el periodo impositivo, de acuerdo con esta Ley.
+2- Las rentas del capital y las ganancias y pérdidas de capital que provengan de bienes o derechos cuya titularidad corresponda al contribuyente, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador.
+3- Las diferencias cambiarias originadas por operaciones en moneda extranjera, con arreglo a lo dispuesto en el artículo 101 de esta Ley.
+ARTÍCULO 6- No sujeciones
+Entre otros supuestos en los que no se configure el hecho generador del impuesto, se entenderán como no sujetas las siguientes rentas:
+1- Las subvenciones otorgadas por el Estado y sus instituciones, así como por organismos internacionales, para satisfacer necesidades de salud, vivienda, alimentación y educación, incluidas las sumas recibidas en concepto de pensiones de los regímenes de gracia, parálisis cerebral y no contributivo de la Caja Costarricense de Seguro Social.
+2- Las subvenciones otorgadas por el Estado y sus instituciones, así como por organismos internacionales, para el desarrollo, promoción y fomento del sector agropecuario y los fondos de compensación de precios para productores agropecuarios.
+3- Los pagos por servicios ambientales conforme la Ley Forestal Nº 7575 del 13 de febrero de 1996.
+4- Las rentas del trabajo personal dependiente percibidas por trabajadores que sean residentes fiscales en el extranjero, en el tanto los servicios prestados desde el territorio nacional se disfruten o consuman fuera del país.
+5- Las rentas derivadas de herencias, legados y donaciones.
+6- Los ingresos derivados de becas y beneficios de estudio, incluida la manutención, otorgadas para cursar estudios de educación primaria, media, técnica o superior, siempre y cuando estas becas sean otorgadas por entidades públicas o privadas, incluidas fundaciones, organismos internacionales e instituciones de educación, domiciliadas en Costa Rica o en el extranjero, reconocidas por las autoridades competentes.
+7- El ingreso que se perciba por una persona física por concepto de pensiones alimenticias y las anualidades para alimentación percibidas de los ascendientes o descendientes, del cónyuge, o del o de la conviviente de hecho cuya unión libre sea pública, notoria, única y estable por más de tres años, en caso de separación o divorcio, en virtud de una decisión judicial, establecidas de conformidad con el Código de Familia, Ley N.° 5476 del 2 de diciembre de 1973 y sus reformas.
+8- Las indemnizaciones percibidas como consecuencia de responsabilidad civil por daños materiales a las cosas o por daños físicos o psíquicos a personas, en la cuantía legal o judicialmente reconocida, así como las indemnizaciones de contratos de seguros por idéntico tipo de daños.
+ARTÍCULO 7- Exenciones
+1- Se encuentran exentas del pago del impuesto sobre la renta de las personas físicas las siguientes rentas:
+a) Las prestaciones e indemnizaciones que se perciban de acuerdo con las disposiciones del Código de Trabajo, Ley N.° 2 del 27 de agosto de 1943 y sus reformas, así como de la Ley de Asociaciones Solidaristas N.° 6970 del 7 de noviembre de 1984 y sus reformas.
+b) Las prestaciones reconocidas por los sistemas públicos y obligatorios de seguridad social de la Caja Costarricense de Seguro Social y el Instituto Nacional de Seguros, provenientes de los subsidios por enfermedad y maternidad y las indemnizaciones por riesgos del trabajo.
+c) El aguinaldo, hasta por la suma que no exceda la doceava parte de los salarios ordinarios y extraordinarios devengados en el año o la proporción correspondiente al lapso menor que se hubiere trabajado.
+d) El monto correspondiente al salario escolar.
+e) Las remuneraciones que los gobiernos extranjeros paguen a sus representantes diplomáticos, agentes consulares y oficiales acreditados en el país, y, en general, todos los ingresos que estos funcionarios perciban de sus respectivos gobiernos, siempre que exista reciprocidad en las remuneraciones que los organismos internacionales, a los cuales esté adherida Costa Rica, paguen a sus funcionarios extranjeros domiciliados en el país, en razón de sus funciones.
+f) Las rentas vitalicias, permanentes o programadas, obtenidas por el afiliado o por el beneficiario del Régimen Obligatorio de Pensiones Complementarias (ROPC) o del Régimen Voluntario de Pensiones Complementarias (RVPC).
+Por beneficios del ROPC y del RVPC se entenderán las pensiones derivadas de las modalidades establecidas en la Ley de Protección al Trabajador N.° 7983 del 16 de febrero de 2000 y sus reformas, o las autorizadas por el Consejo Nacional de Supervisión del Sistema Financiero (CONASSIF) que sean elegidas por el afiliado.
+Por beneficiario se entenderá aquella persona física que, de acuerdo con las normas del régimen básico al que haya pertenecido el afiliado o pensionado fallecido, exista un derecho a las prestaciones de sobrevivencia.
+g) La devolución del capital y la entrega de los rendimientos procedentes del Fondo de Capitalización Laboral y los otros fondos establecidos en el párrafo primero del artículo 8 de la Ley de Protección al Trabajador N.° 7983 de 16 de febrero de 2000 y sus reformas.
+h) Las ganancias de capital obtenidas por la transmisión de la vivienda habitual del contribuyente.
+i) Las ganancias de capital derivadas de la enajenación ocasional de cualquier bien mueble o derecho, no sujetos a inscripción en un registro público, a excepción de títulos valores, obras de arte, objetos de colección, joyas y piedras o metales preciosos, cuyo valor de transmisión sea superior a diez salarios base. Esta exención no aplicará respecto de las ganancias que se manifiesten en la venta de vehículos, embarcaciones y aeronaves.
+2- Las exoneraciones acá enlistadas implican la dispensa del cumplimiento de la obligación tributaria material, pero no del cumplimiento de los deberes formales establecidos por la presente ley o en otras leyes especiales.
+3- Este beneficio fiscal estará condicionado al cumplimiento de los requisitos exigidos en la normativa aplicable.
+4- Cuando se incumplan los requisitos exigidos para disfrutar de la exención o se determine su abuso, ya sea por reconocimiento expreso del contribuyente o por medio de un procedimiento de control tributario, se producirá la pérdida del beneficio fiscal, ante lo cual el contribuyente deberá pagar el impuesto según corresponda, más los intereses respectivos y las multas que proceda.
+SECCIÓN II
+Contribuyentes
+ARTÍCULO 8- Contribuyentes
+1- Son contribuyentes de este impuesto:
+a) Las personas físicas que tengan su residencia habitual en el país y que obtengan alguna de las rentas establecidas en este Título.
+b) Las personas físicas que tengan su residencia habitual en territorio extranjero y que obtengan alguna de las rentas establecidas en este Título.
+2- No perderán la condición de contribuyentes de este impuesto las personas físicas de nacionalidad costarricense que acrediten su nueva residencia fiscal en un país calificado como jurisdicción no cooperante, salvo que se demuestre, por el procedimiento que la Administración Tributaria determine vía resolución de alcance general, que su permanencia en tal jurisdicción ha sido igual o superior a ciento ochenta y tres días naturales durante el periodo impositivo.
+ARTÍCULO 9- Residencia habitual en el país
+1- Se entenderá que las personas físicas tienen su residencia habitual en el país cuando se cumpla cualquiera de las siguientes circunstancias:
+a) Que permanezcan de manera continua o discontinua en el país al menos ciento ochenta y tres días naturales, incluyendo los días de entrada y salida del país, durante el periodo impositivo.
+Para determinar dicho período de permanencia en el territorio costarricense, se computarán las ausencias esporádicas, siguiendo los parámetros que se disponga por vía reglamentaria, salvo que el contribuyente acredite, mediante el correspondiente certificado de residencia expedido por las autoridades fiscales, su condición de residente fiscal en otro país.
+Con el fin de verificar la permanencia continua o discontinua de personas físicas en el territorio costarricense, incluyendo las ausencias esporádicas, deberá utilizarse como referencia el detalle de movimientos migratorios registrados por la Dirección General de Migración y Extranjería.
+b) Que se ubique en Costa Rica el núcleo principal o la base de sus actividades o intereses económicos, de forma directa o indirecta.
+Se presumirá, salvo prueba en contrario, que el contribuyente tiene su residencia habitual en el territorio costarricense cuando, de acuerdo con los criterios anteriores, resida habitualmente en Costa Rica el cónyuge no separado legalmente, o el o la conviviente de hecho cuya unión libre sea pública, notoria, única y estable, por más de tres años, o los hijos menores de edad que dependan de aquél.
+2- No se considerarán contribuyentes de este impuesto, a título de reciprocidad, las personas físicas que tengan su residencia habitual en Costa Rica, cuando esta circunstancia fuera consecuencia de alguno de los supuestos establecidos en el artículo siguiente y no proceda la aplicación de normas específicas derivadas de los tratados internacionales en los que Costa Rica sea parte.
+ARTÍCULO 10- Residencia habitual en el extranjero
+1- Para efectos de esta Ley, se considerarán contribuyentes las personas físicas de nacionalidad costarricense, su cónyuge no separado legalmente, el o la conviviente de hecho cuya unión libre sea pública, notoria, única y estable, por más de tres años y sus hijos menores de edad, que tuviesen su residencia habitual en el extranjero por alguna de las siguientes circunstancias:
+a) Miembros de misiones diplomáticas costarricenses, comprendiendo tanto al jefe de la misión, como a los miembros del personal diplomático, administrativo, técnico o de servicios de la misión.
+b) Miembros de las oficinas consulares costarricenses, comprendiendo tanto al jefe de estas como al funcionario o personal de servicios adscritos a tales oficinas, con excepción de los vicecónsules honorarios o agentes consulares honorarios y del personal dependiente de ellos.
+c) Titulares de cargo o empleo oficial del Estado costarricense como miembros de las delegaciones y representaciones permanentes acreditadas ante organismos internacionales o que formen parte de delegaciones o misiones de observadores en el extranjero.
+d) Funcionarios activos que ejerzan en el extranjero cargo o empleo oficial que no tenga carácter diplomático o consular.
+2- No será de aplicación lo dispuesto en este artículo cuando:
+a) Las personas físicas a que se refiere esta disposición no sean funcionarios públicos activos o titulares de cargo o empleo oficial y tuvieran su residencia habitual en el extranjero con anterioridad a la adquisición de cualquiera de las condiciones enumeradas en los incisos anteriores.
+b) El cónyuge no separado legalmente, el o la conviviente de hecho cuya unión libre sea pública, notoria, única y estable, por más de tres años o sus hijos menores de edad, tuvieran su residencia habitual en el extranjero con anterioridad a la adquisición por parte del cónyuge, el o la conviviente de hecho, el padre o la madre, de las condiciones enumeradas en el apartado 1 del artículo anterior.
+ARTÍCULO 11- Individualización de rentas
+1- La renta se entenderá obtenida por los contribuyentes en función del origen o fuente de aquella.
+2- Las rentas del trabajo personal dependiente, así como las provenientes de jubilaciones o pensiones, se atribuirán exclusivamente a quien haya generado el derecho a su percepción.
+3- Las rentas del capital se atribuirán a los contribuyentes que sean titulares de los elementos patrimoniales, bienes o derechos, de que provengan dichas rentas según las normas sobre titularidad jurídica aplicables en cada caso y en función de las pruebas aportadas por aquellos o descubiertas por la Administración.
+Cuando no resulte debidamente acreditada la titularidad de los bienes o derechos, la Administración Tributaria tendrá derecho a considerar como titular a quien figure como tal en cualquier registro de carácter público.
+4- Las rentas derivadas del desarrollo de actividades económicas se considerarán obtenidas por quienes realicen de forma habitual, personal y directa, la ordenación por cuenta propia de los medios de producción y los recursos humanos afectos a la actividad.
+Se presumirá, salvo prueba en contrario, que dichos requisitos concurren en quienes figuren como titulares de las actividades económicas.
+5- Las ganancias y pérdidas de capital se considerarán obtenidas por los contribuyentes que sean titulares de los bienes, derechos y demás elementos patrimoniales de que provengan según las normas sobre titularidad jurídica establecidas para las rentas del capital en el apartado 3 anterior.
+6- Los incrementos patrimoniales no justificados se atribuirán en función de la titularidad de los bienes o derechos en que se manifiesten.
+SECCIÓN III
+Periodo impositivo, devengo e imputación temporal
+ARTÍCULO 12- Periodo impositivo
+1- El periodo impositivo corresponde a un año natural, contado a partir del primero de enero y hasta el treinta y uno de diciembre de cada año.
+2- El período impositivo será inferior al año natural cuando se produzca el fallecimiento del contribuyente, en cuyo caso el período impositivo se entenderá terminado y se devengará el impuesto en la fecha del fallecimiento.
+3- La Administración Tributaria podrá establecer, con carácter general y cuando se justifique por rama de actividad, periodos impositivos con fechas de inicio y de cierre distintas a la indicada en el apartado 1 anterior, sin que ello perjudique los intereses fiscales.
+4- En ningún caso el período impositivo excederá los doce meses.
+ARTÍCULO 13- Devengo del impuesto
+El impuesto se devengará el último día del período impositivo, salvo en el caso de lo dispuesto en el apartado 2 del artículo anterior.
+ARTÍCULO 14- Imputación temporal
+1- Los ingresos y gastos que determinan la renta a incluir en la base del impuesto se imputarán al período impositivo que corresponda, de acuerdo con los siguientes criterios:
+a) Las rentas del trabajo personal dependiente, así como las derivadas de jubilaciones y pensiones y las rentas del capital, se imputarán al período impositivo en que sean exigibles por su perceptor.
+b) Las rentas provenientes de actividades económicas se imputarán conforme al principio contable de devengo, con independencia de la fecha de su pago o de su cobro.
+c) Las ganancias y pérdidas de capital se imputarán al período impositivo en que tenga lugar la alteración patrimonial.
+2- En caso de que el contribuyente pierda su condición por cambio de residencia, todas las rentas pendientes de imputación deberán integrarse en la base imponible correspondiente al último período impositivo que deba declararse por este impuesto, según se disponga reglamentariamente, practicándose, en su caso, una autoliquidación complementaria, sin intereses ni multa alguna.
+3- En el caso de fallecimiento del contribuyente todas las rentas pendientes de imputación deberán integrarse en la base imponible del último período impositivo que deba declararse.
+4- Para efectos de su registro e imputación al periodo respectivo, las operaciones deberán estar respaldadas por comprobantes electrónicos que cumplan con los requisitos y las condiciones establecidas por la Administración Tributaria.
+CAPÍTULO II
+Determinación de la renta sometida a gravamen
+ARTÍCULO 15- Determinación de la base imponible
+1- La base imponible del impuesto estará constituida por el importe de la renta del contribuyente y se determinará aplicando los métodos previstos en el artículo 125 del Código de Normas y Procedimientos Tributarios, Ley N° 4755 del 3 de mayo de 1971 y sus reformas.
+2- Para la cuantificación de la base imponible se procederá, en los términos previstos en esta Ley, por el siguiente orden:
+a) Las rentas se calificarán y cuantificarán según su origen. Los rendimientos netos se obtendrán por diferencia entre los ingresos computables y los gastos deducibles. Las ganancias y pérdidas de capital se determinarán, con carácter general, por la diferencia entre los valores de transmisión y de adquisición.
+b) Se procederá a la integración y compensación de las diferentes rentas según su origen y su clasificación.
+c) El resultado de estas operaciones dará lugar a la base imponible general y especial.
+3- No se someterán a tributación las rentas inferiores o iguales al importe del mínimo vital aplicable para cada periodo impositivo.
+SECCIÓN I
+Definición y determinación de las rentas gravables
+SUB SECCIÓN I
+Rentas del trabajo personal dependiente, pensiones y jubilaciones
+ARTÍCULO 16- Rentas íntegras del trabajo personal dependiente, pensiones y jubilaciones
+1- Se considerarán rentas íntegras del trabajo personal dependiente, todas las contraprestaciones o ingresos, cualquiera que sea su denominación o naturaleza, en dinero o en especie, que deriven, directa o indirectamente, del trabajo personal o de la relación laboral o estatutaria, ya sea que los servicios sean prestados desde el territorio nacional o a favor de un patrono que desarrolle una actividad económica en el país, y en el tanto no tengan el carácter de rentas derivadas del desarrollo de actividades económicas.
+Se incluirán, entre otras, las siguientes:
+a) Sueldos, sobresueldos, salarios, premios, bonificaciones, gratificaciones, comisiones, pagos por horas extraordinarias de trabajo y demás regalías, que paguen los patronos a sus empleados por la prestación de servicios personales en el marco de la relación de dependencia.
+b) Atribuciones en especie que se realicen bajo la relación de dependencia.
+c) Cualesquiera otros ingresos o beneficios similares a los mencionados en los incisos anteriores.
+2- También se consideran rentas íntegras del trabajo, aunque no respondieran a las características del apartado anterior y no provengan del trabajo personal dependiente, las siguientes:
+a) Las pensiones percibidas de los regímenes públicos y obligatorios de seguridad social, así como de los regímenes privados, de aquellos que sean voluntarios y demás prestaciones por situaciones de incapacidad, jubilación, accidente, enfermedad, viudez, orfandad o similares.
+b) Las dietas, gratificaciones y demás participaciones que reciban los ejecutivos, directores, consejeros y miembros de sociedades mercantiles y otros entes jurídicos de similar naturaleza.
+c) Las retribuciones, en dinero o en especie, tales como dietas u otros, que se paguen o acrediten, por razón de su cargo, a los representantes nombrados en cargos de elección popular y a miembros de otras instituciones públicas.
+d) Las retribuciones percibidas por personas físicas que laboren en actividades humanitarias o de asistencia social promovidas por las organizaciones no gubernamentales o por otras entidades sin ánimo de lucro, salvo las cantidades que se paguen para cubrir determinados gastos y que se conceptualicen como viáticos, según se determine reglamentariamente.
+ARTÍCULO 17- Deducciones relativas a las rentas del trabajo personal dependiente, pensiones y jubilaciones
+En lo que respecta a las rentas del trabajo personal dependiente, jubilaciones y pensiones, tendrán la consideración de gastos deducibles, exclusivamente, los siguientes:
+1- Las contribuciones al Régimen Voluntario de Pensiones Complementarias (RVPC), con un límite máximo de deducibilidad del diez por ciento (10%) sobre el monto percibido conforme al apartado 1 inciso a) del artículo anterior.
+2- Las cuotas satisfechas a colegios profesionales, siempre y cuando la afiliación tenga carácter obligatorio para el ejercicio de la profesión.
+3- Los gastos de defensa jurídica derivados directamente de litigios suscitados en la relación del contribuyente en razón de sus funciones. Si los importes que, habiendo sido deducidos se recuperaren posteriormente, deberán integrarse en la base imponible del periodo impositivo en que ocurriere la recuperación.
+El contribuyente deberá estar en capacidad de demostrar que los gastos anteriores en los que haya incurrido sean útiles, necesarios y pertinentes para producir las respectivas rentas del trabajo personal dependiente o las derivadas de jubilaciones y pensiones; así como contar con los comprobantes electrónicos de respaldo que cumplan con los requisitos establecidos por la Administración Tributaria.
+ARTÍCULO 18 Rentas netas del trabajo personal dependiente, pensiones y jubilaciones
+Las rentas netas del trabajo personal dependiente, pensiones y jubilaciones, será el resultado de disminuir las rentas íntegras descritas en el artículo 16 de esta Ley en el importe de los gastos deducibles aplicables en cada caso, según lo dispuesto en el artículo 17 anterior.
+SUB SECCIÓN II
+Rentas del capital
+ARTÍCULO 19- Definición de rentas del capital
+1- Se considerarán rentas íntegras del capital la totalidad de las utilidades o contraprestaciones, cualquiera que sea su denominación o naturaleza, dinerarias o en especie, que provengan, directa o indirectamente, de elementos patrimoniales, bienes o derechos, cuya titularidad corresponda al contribuyente y no estén afectos a actividades económicas realizadas por este.
+2- En todo caso, se incluirán como rentas del capital:
+a) Las provenientes de los bienes inmuebles que no estén afectos a actividades económicas realizadas por el contribuyente.
+b) Las que provengan del capital mobiliario y, en general, de los restantes bienes o derechos de que sea titular el contribuyente, que no se encuentren afectos a actividades económicas realizadas por este.
+c) Las provenientes de diferencias cambiarias originadas por operaciones en moneda extranjera, que no se deriven de bienes o derechos afectos a las actividades económicas realizadas por el contribuyente.
+ARTÍCULO 20- Rentas íntegras del capital inmobiliario
+1- Tendrán la consideración de rentas del capital inmobiliario, procedentes de la titularidad de bienes inmuebles, rurales y urbanos, o de derechos reales que recaigan sobre ellos, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador, todas las que se deriven del arrendamiento, subarrendamiento, continuo u ocasional, o de la constitución o cesión de derechos o facultades de uso o goce de bienes inmuebles, cualquiera que sea su denominación o naturaleza.
+2- Se entenderá que las rentas provenientes del arrendamiento de inmuebles no son rentas del capital inmobiliario cuando estas provengan del desarrollo de una actividad económica en los términos descritos en el apartado 2 del artículo 25 de esta Ley.
+3- Se computará como renta íntegra el importe que por todos los conceptos deba satisfacer el adquirente, cesionario, arrendatario o subarrendatario, incluido, en su caso, el correspondiente a todos aquellos bienes cedidos con el inmueble y excluido el Impuesto sobre el Valor Agregado.
+ARTÍCULO 21- Deducciones relativas a las rentas del capital inmobiliario
+En lo que respecta a las rentas del capital inmobiliario, tendrán la consideración de gastos deducibles los que sean gastos necesarios para la obtención de tales rentas de capital.
+Para estos efectos, se considerarán gastos necesarios para la obtención de tales rentas, exclusivamente, los siguientes:
+1- Los intereses y demás gastos de financiación de los capitales ajenos invertidos en la adquisición o mejora del bien, derecho o facultad de uso y disfrute del que procedan las rentas, y demás gastos de financiación, así como los gastos de reparación y conservación del inmueble.
+El importe total a deducir por estos gastos no podrá exceder, para cada bien o derecho, la cuantía de las rentas íntegras del capital inmobiliario obtenidas durante el respectivo periodo impositivo. El exceso se podrá deducir en los cuatro años siguientes de acuerdo con el límite señalado en este inciso.
+2- Las cantidades devengadas por terceros como consecuencia de servicios contratados en relación con la adquisición o mejora del bien, derecho o facultad de uso y disfrute del que procedan las rentas.
+ARTÍCULO 22- Rentas íntegras del capital mobiliario
+Tendrán la consideración de rentas íntegras del capital mobiliario las siguientes:
+1- Las rentas obtenidas producto de la participación en fondos propios de cualquier tipo de entidad, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador, incluyendo los rendimientos de este tipo obtenidos por personas físicas residentes que sean socios, de manera directa o indirecta, de empresas en régimen de zona franca.
+Quedan incluidas dentro de esta categoría, entre otras, las siguientes rentas, dinerarias o en especie:
+a) Los dividendos, beneficios asimilables a estos, excedentes, y demás retribuciones obtenidas por participaciones en cualquier tipo de entidad, con independencia del origen de la transacción mediante la cual se adquirieron los derechos, títulos valores o los valores generadores de esas rentas.
+b) Las rentas procedentes de cualquier clase de elementos patrimoniales, que, estatutariamente o por decisión de los órganos sociales, faculten para participar en los beneficios, ventas, operaciones, ingresos o conceptos análogos de una entidad por causa distinta de la remuneración del trabajo personal dependiente.
+c) Las rentas que se deriven de la constitución o cesión de derechos o facultades de uso o disfrute, cualquiera que sea su denominación o naturaleza, sobre los valores o participaciones que representen la participación en los fondos propios de la entidad.
+d) Cualquier otra utilidad, excedente, beneficio, participación o similar, distinta de las anteriores, procedente de una entidad por la condición de socio, accionista, asociado, partícipe o similar, incluyendo los que procedan de cooperativas y asociaciones solidaristas.
+2- Las rentas obtenidas por la cesión a terceros de capitales propios, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador.
+Tendrán esta consideración las contraprestaciones de todo tipo, cualquiera que sea su denominación o naturaleza, dinerarias o en especie, como lo son los intereses y cualquier otra forma de retribución pactada como remuneración por tal cesión, así como las derivadas de la transmisión, reembolso, amortización, canje o conversión de cualquier clase de elementos patrimoniales representativos de la captación y utilización de capitales ajenos.
+Quedan incluidas dentro de esta categoría, entre otras, las siguientes rentas:
+a) Las rentas procedentes de cualquier instrumento de giro, incluso las originadas por operaciones comerciales, a partir del momento en que se endose o transmita, salvo que el endoso o cesión se haga como pago de un crédito de proveedores.
+b) Las rentas derivadas de operaciones de cesión temporal de activos financieros con pacto de recompra o reportos. Como valor de canje o conversión de estos reportos se tomará el que corresponda a los valores que se reciban. Asimismo, las rentas provenientes de negociaciones bajo la modalidad de préstamo de valores y similares.
+c) Las rentas vitalicias, permanentes o programadas, obtenidas por el afiliado o por el beneficiario del Régimen Obligatorio de Pensiones Complementarias (ROPC) o del Régimen Voluntario de Pensiones Complementarias (RVPC), según lo dispuesto en la Ley de Protección al Trabajador N.° 7983 del 16 de febrero de 2000 y sus reformas, o las autorizadas por el Consejo Nacional de Supervisión del Sistema Financiero (CONASSIF) que sean elegidas por el afiliado.
+d) Los beneficios que obtiene el afiliado cuando se le acredita o paguen los fondos correspondientes al Fondo de Capitalización Laboral (FCL), constituido conforme a la Ley de Protección al Trabajador, Ley N.° 7983 del 16 de febrero de 2000 y sus reformas.
+3- Cualesquiera otras rentas del capital mobiliario, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador, entre los que se incluyen:
+a) Las procedentes de la propiedad intelectual cuando el contribuyente no sea el autor y las procedentes de la propiedad industrial que no se encuentre afecta a actividades económicas realizadas por el contribuyente.
+b) Las procedentes del arrendamiento, subarrendamiento, o derecho de uso de bienes muebles, negocios o establecimientos mercantiles, así como de bienes intangibles, que no constituyan actividades económicas.
+c) Los rendimientos obtenidos producto de las transacciones efectuadas para captar recursos del mercado financiero bursátil, con independencia del lugar donde se hubiesen producido y la residencia del pagador.
+ARTÍCULO 23- Deducciones relativas a las rentas del capital mobiliario
+Para la determinación del rendimiento neto, se deducirán de las rentas íntegras exclusivamente los gastos de administración y depósito de valores negociables.
+A estos efectos, se considerarán como gastos de administración y depósito aquellos importes que repercutan las empresas de servicios de inversión, entidades de crédito u otras entidades financieras del mercado de valores, que tengan por finalidad retribuir la prestación derivada de la realización por cuenta de sus titulares del servicio de depósito de valores representados en forma de títulos o de la administración de valores representados en anotaciones en cuenta.
+No serán deducibles las cuantías que supongan la contraprestación de una gestión discrecional e individualizada de carteras de inversión, en donde se produzca una disposición de las inversiones efectuadas por cuenta de los titulares con arreglo a los mandatos conferidos por estos.
+ARTÍCULO 24- Rentas netas del capital inmobiliario y mobiliario
+1- Las rentas netas del capital inmobiliario serán el resultado de disminuir las rentas íntegras descritas en el artículo 20 de esta Ley en el importe de los gastos deducibles aplicables conforme a lo dispuesto en el artículo 21 anterior.
+2- Las rentas netas del capital mobiliario serán el resultado de disminuir las rentas íntegras descritas en el artículo 22 de esta Ley en el importe de los gastos deducibles aplicables conforme a lo dispuesto en el artículo 23 anterior.
+SUB SECCIÓN III
+Rentas de actividades económicas
+ARTÍCULO 25- Rentas íntegras de actividades económicas
+1- Se considerarán rentas íntegras de actividades económicas aquellas que, procediendo del trabajo personal y del capital conjuntamente, o de uno solo de estos factores, supongan por parte del contribuyente la ordenación por cuenta propia de medios de producción y de recursos humanos o de uno de ambos, con la finalidad de intervenir en el mercado de bienes o servicios.
+La actividad económica podrá desarrollarse de forma permanente u ocasional, mediante un establecimiento fijo o sin él, por medios digitales, en forma ambulante o estacionaria.
+En particular, tienen esta consideración las rentas derivadas de las actividades extractivas, de fabricación, de comercio o de prestación de servicios, incluidas las de artesanía, agrícolas, forestales, ganaderas, pesqueras, de construcción, mineras, y el ejercicio de profesiones liberales, artísticas y deportivas.
+2- A efectos de lo dispuesto en el apartado anterior, se entenderá que el arrendamiento de inmuebles se realiza como actividad económica únicamente cuando para la ordenación de esta se utilice, al menos, una persona empleada con contrato laboral.
+ARTÍCULO 26- Elementos patrimoniales afectos
+1- Se considerarán elementos patrimoniales afectos a una actividad económica:
+a) Los bienes inmuebles en los que se desarrolla la actividad del contribuyente.
+b) Los bienes destinados a los servicios económicos del personal al servicio de la actividad. No se consideran afectos los bienes de esparcimiento y recreo o, en general, de uso particular del titular de la actividad económica.
+c) Cualesquiera otros elementos patrimoniales que sean necesarios para la obtención de las respectivas rentas. En ningún caso tendrán esta consideración los activos representativos de la participación en fondos propios de una entidad y de la cesión de capitales a terceros.
+2- Cuando se trate de elementos patrimoniales que sirvan solo parcialmente al objeto de la actividad económica, la afectación se entenderá limitada a aquella parte de los mismos que realmente se utilice en la actividad de que se trate. En ningún caso serán susceptibles de afectación parcial elementos patrimoniales indivisibles.
+Reglamentariamente se determinarán las condiciones en las que determinados elementos patrimoniales puedan considerarse afectos a una actividad económica, pese a su utilización para necesidades privadas de forma accesoria y notoriamente irrelevante.
+ARTÍCULO 27- Deducciones relativas a las rentas de actividades económicas
+1- En lo que respecta a las rentas derivadas del desarrollo de actividades económicas, tendrán la consideración de gastos fiscalmente deducibles aquellos costos y gastos que el contribuyente esté en capacidad de demostrar que son útiles, necesarios y pertinentes para producir las rentas actuales o potenciales gravadas con este impuesto, o para conservar los activos utilizados en su generación, así como las demás erogaciones cuya deducibilidad haya sido expresamente autorizada por ley.
+2- En todo caso, las operaciones deberán estar respaldadas en comprobantes electrónicos que cumplan con los requisitos establecidos por la Administración Tributaria y registrados en la contabilidad, según corresponda.
+3- Cuando los costos, gastos o erogaciones autorizados se efectúen para producir indistintamente rentas gravadas, exentas o no sujetas, se deberá deducir únicamente la proporción que razonablemente corresponda a las rentas gravadas.
+4- Entre otros y en el tanto se cumpla con las condiciones del apartado 1 de este artículo, serán deducibles las erogaciones indicadas en el artículo 86 de esta Ley, así como los siguientes gastos:
+a) Las contribuciones efectuadas al Régimen Voluntario de Pensiones Complementarias, que tendrán como límite máximo de deducibilidad del diez por ciento (10%) sobre el monto percibido conforme al apartado 1 del artículo 25 de esta Ley.
+b) Las cuotas satisfechas a colegios profesionales, cuando la afiliación tenga carácter obligatorio para el ejercicio de la profesión.
+5- No tendrán la consideración de gastos deducibles las erogaciones señaladas en el artículo 87 del Título II de esta Ley.
+ARTÍCULO 28- Renta neta de actividades económicas
+1- La renta neta de las actividades económicas se determinará según las normas del Impuesto sobre la Renta de Personas Jurídicas, contenido en el Título II de esta Ley, sin perjuicio de las reglas especiales contenidas en este artículo.
+Para determinar el importe neto de los ingresos totales provenientes de la actividad económica se tendrá en cuenta el conjunto de actividades económicas ejercidas por el contribuyente.
+2- Para la determinación de la renta neta proveniente del desarrollo de actividades económicas no se incluirán las ganancias o pérdidas de capital derivadas de los elementos patrimoniales afectos a las mismas, que se cuantificarán conforme a lo previsto en la Sub Sección IV de este Capítulo.
+3- La afectación de elementos patrimoniales o la desafectación de activos fijos por el contribuyente no constituirá alteración patrimonial, siempre que los bienes o derechos continúen formando parte de su patrimonio.
+4- Se atenderá al valor normal en el mercado de los bienes o servicios objeto de la actividad, que el contribuyente ceda o preste a terceros de forma gratuita o destine al uso o consumo propio.
+Asimismo, cuando medie contraprestación y esta sea notoriamente inferior al valor normal en el mercado de los bienes y servicios, se observará este último.
+SUB SECCIÓN IV
+Ganancias y pérdidas de capital
+ARTÍCULO 29- Definición de ganancias y pérdidas de capital
+1- Son rentas sujetas a este impuesto, aquellas ganancias y pérdidas de capital, provenientes de variaciones en el valor del patrimonio del contribuyente, que surjan con ocasión de cualquier alteración en la composición de aquel, incluidas las derivadas de la venta de participaciones en fondos de inversión.
+2- Se estimará que no existe alteración en la composición del patrimonio en:
+a) Los supuestos de localización de derechos.
+b) Los supuestos de división de la cosa común.
+c) La distribución de bienes gananciales, como consecuencia de la extinción del vínculo entre los cónyuges, de conformidad con las disposiciones contenidas en el Código de Familia, Ley N.º 5476 de 21 de diciembre de 1973 y sus reformas.
+d) En los supuestos del aporte a un fideicomiso de garantía y testamentario.
+En ningún caso estos supuestos darán lugar a la actualización de los valores de los bienes o derechos recibidos.
+3- Se estimará que no existe ganancia o pérdida de capital en los siguientes supuestos:
+a) En las reducciones de capital. Cuando la reducción de capital tenga por finalidad la devolución de aportaciones, se considerará renta del capital mobiliario la parte correspondiente a utilidades acumuladas, no distribuidas previamente.
+b) En las transmisiones gratuitas por causa de muerte del contribuyente, desde el punto de vista de su sucesión y de sus herederos.
+4- No se computarán como pérdidas de capital:
+a) Las no justificadas.
+b) Las debidas al consumo.
+c) Las debidas a donaciones u obsequios.
+d) Las debidas a pérdidas en juegos de azar.
+ARTÍCULO 30- Importe de las ganancias o pérdidas de capital. Norma general.
+El importe de las ganancias o pérdidas de capital será:
+1- En el supuesto de transmisión onerosa, la diferencia entre los valores de transmisión y adquisición de los elementos patrimoniales.
+2- En los demás supuestos, el valor de mercado de los elementos patrimoniales que pasen a formar parte del patrimonio del contribuyente.
+A tales efectos, se entenderá como elemento patrimonial, cada uno de los bienes y derechos de contenido económico cuya titularidad le corresponda al contribuyente.
+ARTÍCULO 31- Transmisiones a título oneroso
+1- El valor de adquisición estará formado por la suma de lo siguiente:
+a) El importe real por el que dicha adquisición se haya efectuado.
+b) El costo de las inversiones y mejoras efectuadas en los bienes adquiridos y los gastos y tributos inherentes a la adquisición, excluidos los intereses de la financiación ajena, que hayan sido satisfechos por el adquirente.
+c) Tratándose de intangibles que no cuenten con un valor de adquisición, se entenderá por valor de adquisición el valor en libros.
+El valor de adquisición referido se actualizará, según se establezca por vía reglamentaria, con base en las variaciones de los índices de precios al consumidor que determine el Instituto Nacional de Estadística y Censos (INEC), atendiendo al año en que se hayan satisfecho, el importe real o las inversiones y mejoras.
+2- El valor de transmisión será el importe real por el que la enajenación se haya efectuado. De este valor se deducirán los gastos y los tributos referidos en el subinciso b) del inciso 1) de este artículo, en cuanto estén a cargo del transmitente.
+Por importe real del valor de enajenación se tomará el efectivamente satisfecho, siempre que, tratándose de bienes inmuebles, no resulte inferior al que se determine con la utilización de las plataformas de valores de terrenos por zonas homogéneas y el Manual de Valores Base Unitarios por Tipología Constructiva, elaborados por la Dirección General de Tributación para la gestión del Impuesto sobre Bienes Inmuebles, según lo dispuesto en la Ley del Impuesto sobre Bienes Inmuebles Nº 7509 del 09 de mayo de 1995 y sus reformas, vigentes en el periodo en que se transmitió el bien, en cuyo caso este prevalecerá.
+ARTÍCULO 32- Transmisiones a título gratuito
+Cuando la adquisición o la transmisión hubiere sido a título gratuito se aplicarán las reglas del artículo anterior, tomando por importe real de los valores respectivos aquellos que resulten de la aplicación del valor real o precio normal de mercado.
+ARTÍCULO 33- Normas específicas de valoración
+1- Sin perjuicio de la aplicación de las normas generales indicadas en el artículo anterior, cuando la alteración en el valor del patrimonio proceda:
+a) De la transmisión, a título oneroso, de valores o participaciones admitidas a negociación en un mercado organizado y reconocido por las autoridades de Costa Rica, la ganancia o la pérdida se computará por la diferencia entre su valor de adquisición y el valor de transmisión, determinado por su cotización en dichos mercados en la fecha en que se produzca aquella o por el precio pactado, cuando sea superior a la cotización. Para la determinación del valor de adquisición, se deducirá el importe obtenido por la transmisión de los derechos de suscripción.
+b) De la transmisión, a título oneroso, de valores o participaciones no admitidas a negociación en mercados de valores regulados oficialmente y representativas de la participación en fondos propios de sociedades o entidades, la ganancia o pérdida se computará por la diferencia entre el valor de adquisición, que para estos efectos incluye el monto de los aportes patrimoniales realizados, siempre y cuando se reflejen contablemente, y el valor de transmisión.
+Salvo prueba de que el importe efectivamente satisfecho se corresponde con el que habrían convenido partes independientes en condiciones normales de mercado, el valor de transmisión no podrá ser inferior al mayor de los dos siguientes:
+i) La cifra resultante del balance correspondiente al último periodo impositivo anterior a la fecha de devengo del impuesto.
+ii) El que resulte de capitalizar al veinte por ciento (20%) el promedio de los resultados de los tres periodos impositivos cerrados con anterioridad a la fecha de devengo del impuesto. Para este último efecto, se computarán como beneficios los dividendos distribuidos, así como las asignaciones a reservas, excluidas las de regularización o de actualización de balances.
+El valor de transmisión así calculado se tendrá en cuenta para determinar el valor de adquisición de los valores o las participaciones que correspondan al adquirente.
+El importe obtenido por la transmisión de derechos de suscripción procedentes de estos valores o participaciones tendrá, para el transmitente, la consideración de ganancia de capital en el periodo impositivo en que la citada transmisión se produzca.
+Para los efectos del cálculo del valor de adquisición de acciones o participaciones, tanto si corresponden a entidades mencionadas en este numeral o no, cuando se trate de valores que parcialmente se hayan recibido como representativos de utilidades reinvertidas, su valor de adquisición será el importe realmente satisfecho por el contribuyente. Cuando se trate de acciones que totalmente se hayan recibido como representativas de utilidades reinvertidas, el valor de adquisición, tanto de estas como de aquellas de las que proceden, resultará de repartir el costo total entre el número de títulos, tanto los antiguos como los distribuidos en representación de las utilidades reinvertidas correspondientes.
+c) De aportaciones no dinerarias a sociedades, la ganancia o pérdida se determinará por la diferencia entre el valor de adquisición de los bienes o derechos aportados y la cantidad mayor de las siguientes:
+i) El valor nominal de las acciones o participaciones sociales recibidas por la aportación o, en su caso, la parte correspondiente de dicho valor. A este valor se le añadirá el importe de las primas de emisión.
+ii) El valor de cotización de los títulos recibidos en la fecha de formalización de la aportación o el día inmediato anterior.
+iii) El valor de mercado del bien o el derecho aportado.
+El valor de transmisión así calculado se tendrá en cuenta para determinar el valor de adquisición de los títulos recibidos a consecuencia de la aportación no dineraria.
+d) De la permuta de bienes o derechos, la ganancia o pérdida de capital se determinará por la diferencia entre el valor de adquisición del bien o derecho que se cede y el mayor de los dos siguientes:
+i) El valor de mercado del bien o el derecho entregado.
+ii) El valor de mercado del bien o el derecho recibido a cambio.
+2- Reglamentariamente, se determinarán aspectos específicos de estas reglas que faciliten o clarifiquen el cálculo de la ganancia.
+ARTÍCULO 34- Incrementos patrimoniales no justificados
+1- Tendrán la consideración de incrementos patrimoniales no justificados los bienes o derechos cuya tenencia, declaración o adquisición no se corresponda con la renta o patrimonio declarados por el contribuyente, así como la inclusión de deudas inexistentes en cualquier declaración por este impuesto, o su registro en los libros o registros oficiales.
+2- Los incrementos patrimoniales no justificados se integrarán en la base imponible general del periodo impositivo respecto del que se descubran, salvo que el contribuyente pruebe suficientemente que ha sido titular de los bienes o derechos correspondientes desde una fecha anterior a la del periodo de prescripción.
+SECCIÓN II
+Clases de renta
+ARTÍCULO 35- Clases de renta
+A efectos del cálculo de este impuesto, las rentas del contribuyente se clasificarán, según proceda, como renta general o como renta especial.
+ARTÍCULO 36- Renta general
+Conformarán la renta general las rentas y las ganancias y pérdidas de capital que no tengan la consideración de renta especial, según el artículo siguiente.
+ARTÍCULO 37- Renta especial
+Constituyen la renta especial:
+1- Las rentas del capital mobiliario previstas en los apartados 1, 2 y 3 del artículo 22 de esta Ley.
+2- Las ganancias y pérdidas de capital que se pongan de manifiesto con ocasión de transmisiones de elementos patrimoniales.
+SECCIÓN III
+Integración y compensación de rentas
+ARTÍCULO 38- Integración y compensación de rentas
+1- Para el cálculo de la base imponible, las cuantías positivas o negativas de las rentas netas del contribuyente, determinadas conforme a los artículos 18, 24 y 28, así como las ganancias o pérdidas de capital del respectivo periodo, se integrarán y compensarán de acuerdo con lo previsto en esta Ley.
+2- Dependiendo de la clasificación de la renta, la base imponible se dividirá en dos partes:
+a) La base imponible general.
+b) La base imponible especial.
+ARTÍCULO 39- Integración y compensación de rentas en la base imponible general
+1- La base imponible general será el resultado de sumar los saldos resultantes de integrar y compensar entre sí, sin limitación alguna, en cada período impositivo, las rentas derivadas del trabajo personal dependiente, jubilaciones y pensiones, las rentas del capital inmobiliario y las provenientes del desarrollo de una actividad económica de carácter empresarial o profesional.
+2- Si el resultado de la integración y compensación a que se refiere este párrafo arrojase un saldo negativo, su importe se compensará en los cuatro periodos impositivos inmediatos siguientes.
+3- La compensación deberá efectuarse en la cuantía máxima que permita cada uno de los ejercicios siguientes y sin que pueda practicarse fuera del plazo de cuatro años mediante la acumulación de pérdidas de ejercicios posteriores.
+ARTÍCULO 40- Integración y compensación de rentas en la base imponible especial
+1- La base imponible especial será el resultado de sumar los saldos resultantes de integrar, en cada período impositivo, las rentas netas del capital mobiliario y las ganancias de capital.
+2- De previo a la integración de tales rentas, el contribuyente podrá compensar las ganancias de capital exclusivamente con las pérdidas de capital. En caso de que esta compensación arrojase un saldo negativo, su importe se compensará con las ganancias de capital obtenidas en los cuatro periodos impositivos inmediatos siguientes.
+3- La compensación deberá efectuarse en la cuantía máxima que permita cada uno de los ejercicios siguientes y sin que pueda practicarse fuera del plazo de cuatro años mediante la acumulación de pérdidas de ejercicios posteriores.
+CAPÍTULO III
+Adecuación de la base imponible por circunstancias personales y familiares
+ARTÍCULO 41- Mínimo vital
+1- El mínimo vital de cada contribuyente se aplicará como una reducción a la base imponible general y estará conformado por la suma del mínimo del contribuyente y del mínimo por dependientes.
+Este rubro constituye la parte de la base imponible que, por destinarse a satisfacer las necesidades básicas personales y familiares del contribuyente, no se somete a tributación por este impuesto.
+2- Cuando el mínimo vital supere el monto correspondiente a la base imponible general, podrá reducirse el remanente de la base imponible especial, si la hubiere.
+3- Cuando no exista base imponible general, el mínimo vital del contribuyente podrá reducir este importe exclusivamente de la base imponible especial, si la hubiere.
+ARTÍCULO 42- Mínimo del contribuyente.
+1- El mínimo del contribuyente será, con carácter general, de ₡10.104.000,00 anuales.
+2- El mínimo del contribuyente será actualizado anualmente por el Poder Ejecutivo, con fundamento en la variación experimentada por el Índice de Precios al Consumidor que determine el Instituto Nacional de Estadística y Censos (INEC).
+ARTÍCULO 43- Mínimo por dependientes
+Adicional al mínimo del contribuyente establecido en el artículo anterior, el mínimo por dependientes será:
+1- Por el cónyuge o el o la conviviente de hecho cuya unión sea pública, notoria, única y estable y por más de tres años, la suma de ₡43.400,00.
+En el caso que ambos cónyuges o convivientes sean contribuyentes de este impuesto, este importe no podrá ser deducido de la base imponible.
+2- Por cada descendiente soltero hasta el segundo grado de consanguinidad, que conviva dentro del núcleo familiar, la suma de ₡31.000,00, siempre que el descendiente se encuentre en alguna de las siguientes condiciones:
+a) Sea un menor de edad.
+b) Se encuentre imposibilitado para proveerse su propio sustento debido a alguna incapacidad física o mental.
+c) Esté realizando estudios, siempre que no fuere mayor de veinticinco años.
+Las reducciones indicadas en este inciso, también son aplicables para aquellos casos en que exista la obligación legal de manutención, de conformidad con la legislación civil y de familia, aun cuando no se dé el grado de consanguinidad indicado.
+Cuando dos o más contribuyentes tengan derecho a la aplicación del mínimo por descendientes, su importe podrá ser aplicado en su totalidad solo por uno de ellos.
+3- La determinación de las circunstancias personales y familiares que deban tenerse en cuenta a efectos de lo establecido en los apartados anteriores se realizará atendiendo a la situación existente en la fecha de devengo del impuesto.
+No obstante, cuando tales circunstancias no hayan prevalecido durante el periodo impositivo completo, las reducciones a que se refieren los apartados anteriores se aplicarán en forma proporcional al tiempo en el que se hayan presentado, siguiendo los parámetros que se establezca por vía reglamentaria.
+4- El mínimo por dependientes será actualizado anualmente por el Poder Ejecutivo, con fundamento en la variación experimentada por el Índice de Precios al Consumidor que determine el Instituto Nacional de Estadística y Censos (INEC).
+CAPÍTULO IV
+Cálculo del impuesto
+SECCIÓN I
+Tarifa aplicable sobre la base imponible general
+ARTÍCULO 44- Tarifa aplicable sobre la base imponible general ajustada
+1- A la base imponible general ajustada por la reducción del mínimo vital dispuesto en el artículo 41 de esta Ley, que exceda el importe del mínimo vital respectivo, se le aplicará la siguiente escala:
+Tramos
+Tipo impositivo
+Sobre el exceso de
+Hasta
+₡0,00
+₡4.728.000,00
+10%
+₡4.728.000,00
+₡11.496.000,00
+15%
+₡11.496.000,00
+₡19.896.000,00
+20%
+₡19.896.000,00
+₡37.896.000,00
+25%
+₡37.896.000,00
+En adelante
+30%
+2- Los tramos de esta escala se actualizarán anualmente con base en las variaciones de los índices de precios al consumidor que determine el Instituto Nacional de Estadística y Censos (INEC).
+SECCIÓN II
+Tipo aplicable sobre la base imponible especial
+ARTÍCULO 45- Tipo aplicable sobre la base imponible especial
+1- A la base imponible especial a que se refiere el artículo 37 de esta Ley se le aplicará el tipo impositivo único del 15%.
+2- En el caso de las ganancias de capital derivadas de los bienes y derechos adquiridos con anterioridad al 1 de julio de 2019, el contribuyente podrá optar por pagar el impuesto correspondiente a aplicar una tarifa del 2,25% sobre el precio de venta o enajenación del bien o derecho.
+SECCIÓN III
+Cálculo de la deuda tributaria
+ARTÍCULO 46- Determinación de la cuota tributaria íntegra
+La cuota tributaria íntegra será la suma de las cantidades resultantes de aplicar la tarifa respectiva sobre la base imponible general o el tipo impositivo correspondiente sobre la base imponible especial, ajustadas por el mínimo vital, según corresponda.
+ARTÍCULO 47- Deducciones aplicables sobre la cuota tributaria íntegra
+Sobre la cuota tributaria íntegra serán aplicables las siguientes deducciones:
+1- Los pagos parciales realizados según lo dispuesto en el artículo 52 de esta Ley.
+2- Las retenciones en la fuente efectuadas conforme al artículo 53 de esta Ley.
+3- Las retenciones de este impuesto practicadas por la Administración Tributaria según lo dispuesto en el artículo 103 inciso d) del Código de Normas y Procedimientos Tributarios.
+4- La deducción por doble imposición jurídica internacional.
+a) Cuando entre las rentas del contribuyente figuren rentas positivas del capital o ganancias del capital, obtenidas y gravadas en el extranjero, podrá deducirse el importe efectivo de lo satisfecho sobre dichas rentas en el extranjero por razón de un impuesto de naturaleza idéntica o análoga a este impuesto o al Impuesto sobre la Renta de No Residentes, en el tanto tal importe sea igual o inferior al monto que correspondería pagar en Costa Rica sobre dichos rendimientos.
+b) En caso de que el importe efectivo del impuesto pagado en el extranjero sobre dichas rentas de capital o ganancias de capital fuese superior al monto que correspondería pagar en Costa Rica, el contribuyente podrá deducirse, como máximo, el monto equivalente a este último importe.
+ARTÍCULO 48- Determinación de la deuda tributaria líquida
+1- La deuda tributaria líquida será el resultado de disminuir la cuota tributaria íntegra en el importe correspondiente a las deducciones descritas en el artículo 47 de esta Ley, según corresponda.
+2- El resultado de las operaciones a que se refiere el apartado anterior no podrá ser negativo, por lo que no se generará saldo alguno a favor del contribuyente.
+CAPÍTULO V
+Gestión del impuesto
+SECCIÓN I
+Declaración y pago
+ARTÍCULO 49- Obligación de declarar
+1- Los contribuyentes de este impuesto deberán presentar, por los medios que determine la Administración Tributaria, la declaración del periodo impositivo dentro de los siguientes dos meses y quince días naturales posteriores al término del periodo respectivo, exista o no deuda tributaria líquida.
+2- La obligación descrita en el párrafo anterior también será aplicable para aquellos contribuyentes que estén exentos del pago de este impuesto, quienes deberán presentar su declaración de manera anual.
+3- Están excluidos de la obligación de declarar los contribuyentes que obtengan rentas provenientes exclusivamente del trabajo personal dependiente, según se definen en esta Ley, siempre y cuando la suma recibida fuera inferior al importe indicado en el apartado 1 del artículo 41 de esta Ley.
+ARTÍCULO 50- Autoliquidación y pago
+Al momento de confeccionar su declaración, los contribuyentes de este impuesto deberán autoliquidar la deuda tributaria correspondiente y pagarla de manera simultánea, en el lugar y forma que determine la Administración Tributaria.
+SECCIÓN II
+Pagos a cuenta
+ARTÍCULO 51- Obligación de practicar pagos a cuenta
+1- A los efectos de este impuesto, los pagos a cuenta que, en todo caso, tendrán la consideración de deuda tributaria, podrán consistir en:
+a) Pagos parciales del impuesto.
+b) Retenciones sobre retribuciones dinerarias.
+2- Cuando satisfagan o abonen rentas sujetas a este impuesto o al impuesto sobre la renta de personas jurídicas, según lo dispuesto en los artículos 53 y 106 de esta Ley, están obligadas a actuar como agentes de retención y a ingresar su importe al Fisco, en las cantidades, los casos y la forma que se establezca reglamentariamente, todas aquellas personas físicas que tuvieren una actividad económica, empresarial o profesional, personas jurídicas y demás entidades similares, sujetas, exentas o no sujetas a imposición sobre la renta, públicas o privadas, incluidos el Estado, los bancos del Sistema Bancario Nacional, las instituciones autónomas o semiautónomas, descentralizadas, las municipalidades, demás instituciones y asociaciones.
+3- Estarán sujetos a las mismas obligaciones las personas físicas, jurídicas y demás entidades no residentes en territorio costarricense, que operen en este mediante un establecimiento permanente, o sin establecimiento permanente, respecto a las rentas del trabajo que satisfagan, así como respecto de otras rentas sometidas a retención que constituyan gasto deducible para la obtención de las rentas a que se refiere el Impuesto sobre la Renta de No Residentes.
+4- Cuando una entidad, residente o no residente, satisfaga o pague rentas del trabajo a contribuyentes que presten sus servicios a una entidad residente vinculada con aquella o a un establecimiento permanente radicado en el territorio costarricense, la entidad o el establecimiento permanente para el que preste sus servicios el contribuyente deberá efectuar la retención respectiva.
+5- En todo caso, los sujetos obligados a retener asumirán la obligación de efectuar el ingreso al Fisco, sin que el incumplimiento de aquella obligación pueda excusarles de esta.
+6- El perceptor de rentas sobre las que deba efectuarse la retención de este impuesto computará aquellas por la contraprestación total devengada.
+7- Los contribuyentes que ejerzan actividades económicas de carácter empresarial o profesional estarán obligados a efectuar pagos parciales a cuenta del impuesto, autoliquidando e ingresando su importe de conformidad con lo previsto en el artículo siguiente de esta Ley.
+Reglamentariamente se podrá exceptuar de esta obligación a aquellos contribuyentes cuyos ingresos hayan estado sujetos a cierta retención en el porcentaje que se fije al efecto.
+8- Cuando el contribuyente adquiera su condición por cambio de residencia, tendrán la consideración de pagos a cuenta de este impuesto las retenciones del Impuesto sobre la Renta de No Residentes practicadas durante el período impositivo en que se produzca el cambio de residencia.
+9- Cuando en virtud de resolución judicial o administrativa se deba satisfacer una renta sujeta a retención de este impuesto, el pagador deberá practicar la misma sobre la cantidad total que haya sido obligado a satisfacer y deberá ingresar su importe al Fisco, de acuerdo con lo previsto en este artículo.
+ARTÍCULO 52- Pagos parciales del impuesto
+1- Los contribuyentes a que se refiere el artículo 8 de esta Ley, que obtengan rentas por el desarrollo de una actividad económica, empresarial o profesional, ya sea de manera exclusiva o en conjunto con otras rentas gravadas con este impuesto, están obligados a efectuar pagos parciales a cuenta del impuesto de cada período impositivo, conforme con las reglas siguientes:
+a) Servirá de base para el cálculo de las cuotas de pagos parciales el impuesto determinado en el periodo impositivo inmediato anterior, o el promedio aritmético de las cuotas tributarias íntegras determinadas para los tres últimos períodos impositivos, el que fuere mayor.
+En el caso de contribuyentes que por cualquier circunstancia no hubieren declarado en los tres períodos impositivos anteriores, la base para calcular las cuotas de los pagos parciales se determinará utilizando las declaraciones que hubieren presentado y, si fuere la primera, mediante estimación fundada que al efecto deberá proporcionar a la Administración Tributaria el contribuyente, en caso de requerirse. Si no se presentare, la Administración Tributaria establecerá de oficio la cuota respectiva.
+b) Determinado el monto del pago parcial, el setenta y cinco por ciento (75%) de ese monto deberá fraccionarse en tres cuotas iguales, las que deberán pagarse sucesivamente a más tardar el último día hábil de los meses de junio, setiembre y diciembre de cada año.
+c) De la cuota tributaria íntegra que se liquide al presentar la declaración de este impuesto, deberán deducirse los pagos parciales que corresponda a ese período impositivo. El saldo resultante deberá pagarse dentro de los dos meses y quince días naturales siguientes al término del período impositivo respectivo.
+2- La Administración Tributaria podrá rectificar las cuotas de los pagos parciales, cuando el contribuyente lo solicite por escrito ante esa dependencia al menos un mes antes de la fecha de su vencimiento y demuestre, satisfactoriamente, que la base del cálculo está afectada por ingresos extraordinarios o cuando se prevean pérdidas para el período impositivo del que se trate.
+ARTÍCULO 53- Retenciones en la fuente
+1- A los efectos de este impuesto, se aplicarán retenciones en la fuente en los siguientes casos:
+a) En relación con las rentas del trabajo personal dependiente, jubilaciones y pensiones, las retenciones no podrán superar un 15% sobre la retribución pagada mensualmente.
+Esta retención será aplicable incluso para aquellos contribuyentes que obtengan rentas del trabajo personal dependiente, así como otras rentas sujetas a este impuesto y deban realizar pagos parciales, en cuyo caso las retenciones mensuales podrán deducirse de la cuota del pago parcial trimestral respectivo.
+Si el beneficiario fuere una persona no residente en Costa Rica, sobre el monto pagado o acreditado por este concepto se retendrán las sumas que corresponda por concepto de Impuesto sobre la Renta de los No Residentes, de acuerdo con lo establecido en esta Ley.
+En estos casos, el patrono o pagador de tales rentas será el responsable de calcular y realizar la retención mensual que corresponda a cada uno de los beneficiarios de las rentas, así como de declarar e ingresar el impuesto respectivo a favor del Fisco.
+No procederá aplicar la retención descrita en este apartado cuando las rentas mensuales del trabajo personal dependiente, jubilación o pensión, no superen un doceavo del mínimo vital establecido para este impuesto.
+Cuando existan varios pagadores de rentas del trabajo a favor de un mismo contribuyente, cada uno deberá aplicar la retención respectiva, con la salvedad descrita en el párrafo anterior.
+b) Con respecto a las dietas, provengan estas o no de una relación laboral dependiente, gratificaciones y otras prestaciones por servicios personales, con ocasión del trabajo en relación de dependencia, las retenciones no podrán superar un 15% sobre el importe percibido por el contribuyente.
+Esta retención será aplicable incluso para aquellos contribuyentes que obtengan este tipo de rentas, así como otras rentas sujetas a este impuesto y deban realizar pagos parciales, en cuyo caso las retenciones podrán deducirse de la cuota del pago parcial trimestral respectivo.
+Si el beneficiario fuere una persona no residente en Costa Rica, sobre el monto pagado o acreditado por este concepto se retendrán las sumas que corresponda por concepto de Impuesto sobre la Renta de los No Residentes, de acuerdo con lo establecido en esta Ley.
+En estos casos, el patrono o pagador de tales rentas será el responsable de calcular y realizar la retención que corresponda a cada uno de los beneficiarios de las rentas, así como de declarar e ingresar el impuesto respectivo a favor del Fisco.
+c) En relación con las rentas del capital mobiliario, las retenciones serán del 15% sobre el rendimiento íntegro percibido por el contribuyente.
+Esta retención será aplicable incluso para aquellos contribuyentes que obtengan este tipo de rentas, así como otras rentas sujetas a este impuesto y deban realizar pagos parciales, en cuyo caso las retenciones podrán deducirse de la cuota del pago parcial trimestral respectivo.
+En estos casos, el pagador de estas rentas será el responsable de calcular y realizar la retención que corresponda, así como de declarar e ingresar el monto respectivo a favor del Fisco.
+d) En cuanto a las rentas obtenidas por el contribuyente como producto de una contratación con el Estado, sus instituciones, autónomas o semiautónomas, las municipalidades, las empresas públicas y otros entes públicos, producto de licitaciones públicas o privadas, contrataciones, negocios u otras operaciones realizadas, las retenciones serán del 3% sobre el importe íntegro pagado a su favor.
+Esta retención podrá deducirse de la cuota del pago parcial trimestral respectivo.
+2- Las retenciones previamente enlistadas serán tomadas en consideración como pagos a cuenta por parte del contribuyente para efectos de la determinación de la deuda tributaria líquida, salvo que se hayan deducido del respectivo pago parcial trimestral, de conformidad con lo dispuesto en el apartado anterior.
+3- Reglamentariamente podrán establecerse supuestos de rentas sobre las cuales no procede la retención del impuesto.
+SECCIÓN III
+Liquidaciones previas y devolución de oficio
+ARTÍCULO 54- Liquidación previa
+1- Los órganos de gestión tributaria podrán realizar la liquidación previa que proceda de conformidad con lo dispuesto en el Código de Normas y Procedimientos Tributarios.
+2- Lo dispuesto en el apartado anterior se entenderá sin perjuicio de la posterior comprobación e investigación que pueda realizar la Administración Tributaria.
+3- A los contribuyentes no obligados a declarar, por cumplir con lo dispuesto en el apartado 3 del artículo 49 de esta Ley, la Administración Tributaria no podrá realizarles liquidaciones previas o definitivas por este impuesto, por la diferencia que pudiera producirse entre las retenciones y otros pagos a cuenta y la deuda tributaria líquida que les correspondería de estar obligados a autoliquidar el impuesto.
+ARTÍCULO 55- Devolución de oficio a contribuyentes obligados a declarar
+1- Cuando la suma de las retenciones y pagos parciales de este impuesto sea superior al importe de la cuota tributaria íntegra resultante de la autoliquidación, la Administración Tributaria procederá, en su caso, a practicar liquidación previa dentro de los tres meses siguientes al término del plazo establecido para la presentación de la declaración.
+Cuando la declaración hubiera sido presentada fuera de plazo, los meses a que se refiere el párrafo anterior se computarán desde la fecha de su presentación.
+2- Cuando la cuota tributaria resultante de la autoliquidación o, en su caso, de la liquidación previa, sea inferior a la suma de las cantidades efectivamente retenidas y de los pagos a cuenta realizados, la Administración procederá a devolver de oficio el exceso sobre la citada cuota, sin perjuicio de la práctica de las posteriores liquidaciones, previas o definitivas, que procedan.
+3- Si la liquidación previa no se hubiera practicado en el plazo establecido en el apartado 1 anterior, la Administración procederá a devolver de oficio el exceso sobre la cuota tributaria íntegra autoliquidada, sin perjuicio de la práctica de las liquidaciones provisionales o definitivas ulteriores que pudieran resultar procedentes.
+4- Transcurrido el plazo establecido en el apartado 1 de este artículo sin que se haya ordenado el pago de la devolución por causa no imputable al contribuyente, se aplicará a la cantidad pendiente de devolución el interés de demora desde el día siguiente al del término de dicho plazo y hasta la fecha en la que se ordene su pago, cuando el contribuyente así lo reclame.
+5- Mediante resolución de alcance general, la Administración Tributaria determinará el procedimiento y la forma de pago de la devolución de oficio a que se refiere el presente artículo.
+SECCIÓN IV
+Otras disposiciones
+ARTÍCULO 56- Obligaciones formales de los contribuyentes
+1- Los contribuyentes de este impuesto estarán obligados a conservar, durante el plazo mínimo de cinco años, los justificantes y documentos acreditativos de las operaciones, rentas, gastos, ingresos, reducciones y deducciones de cualquier tipo que deban constar en sus declaraciones.
+2- A efectos de esta Ley, los contribuyentes que desarrollen actividades económicas de carácter empresarial o profesional cuya renta se determine en régimen de base cierta estarán obligados a llevar contabilidad ajustada a lo dispuesto en las Normas Internacionales de Información Financiera (NIIF).
+Reglamentariamente podrá excluirse de esta obligación a los contribuyentes cuya actividad empresarial sea de pequeña cuantía o a los contribuyentes que desarrollen determinadas actividades económicas.
+3- Los contribuyentes de este impuesto estarán obligados a emitir comprobantes electrónicos que cumplan con los requisitos y las condiciones establecidas por la Administración Tributaria por todas las operaciones que realicen, así como a solicitarlos a sus proveedores y a llevar los libros o registros obligatorios en la forma que se determine reglamentariamente.
+ARTÍCULO 57- Obligaciones formales de los agentes de retención
+1- El sujeto obligado a practicar retenciones deberá ingresar el Fisco, dentro de los primeros quince días naturales del mes siguiente a la fecha en que se efectuaron, las cantidades retenidas o pagos a cuenta realizados.
+2- El sujeto obligado a retener y practicar pagos a cuenta estará obligado a conservar la documentación correspondiente y a expedir, en las condiciones que reglamentariamente se determinen, la certificación acreditativa de las retenciones o ingresos a cuenta efectuados.
+3- Los modelos de declaración correspondientes serán los que disponga la Administración Tributaria para tal efecto.
+ARTÍCULO 58- Administración y fiscalización del impuesto
+La administración y fiscalización del impuesto contenido en este Título corresponde a la Dirección General de la Tributación.
+CAPÍTULO VI
+Régimen de Tributación Simplificada
+ARTÍCULO 59- Definición
+1- Para los efectos de este impuesto, así como del Impuesto sobre la Renta de Personas Jurídicas, podrá establecerse, reglamentariamente, un régimen simplificado de estimación objetiva de rentas para determinadas actividades económicas de reducida dimensión.
+2- Este régimen de tributación simplificada tendrá como objetivo facilitar el cumplimiento voluntario de los contribuyentes con actividades de reducida dimensión, mediante la simplificación de los requisitos formales y de registro que se exijan y mediante la mejora de la gestión y el control administrativo sobre esos contribuyentes, promoviendo así la disminución de la actividad económica informal.
+3- El ingreso y eventual renuncia de los contribuyentes a este régimen tendrá carácter voluntario por parte de aquellos contribuyentes que se encuentren en los grupos o ramas de actividad económica definidos por la Administración Tributaria.
+ARTÍCULO 60- Estimación de la base imponible
+1- Para estimar la base imponible de los diferentes sectores de las actividades económicas en que se ubiquen contribuyentes de reducida dimensión, se establecerán modelos de estimación objetiva, mediante determinadas variables.
+2- Para esos efectos, la Administración Tributaria realizará, de oficio, los estudios pertinentes para establecer el régimen de tributación simplificada en estimación objetiva, considerando, entre otros, los elementos que a continuación se indican, pudiendo utilizarse uno o más de ellos para el cálculo de la base imponible:
+a) Tipo de actividad.
+b) Capitales promedios invertidos en la actividad de que se trate. En ningún caso, el régimen se autorizará cuando el capital invertido sea superior al promedio determinado en la actividad o el grupo estudiado.
+c) Monto de compras efectuadas. En ningún caso, el régimen se autorizará cuando las compras efectuadas sean superiores al promedio determinado para la actividad o el grupo estudiado o la proporción mensual correspondiente.
+d) Costos y gastos de producción o fabricación promedio, en el caso de productores y fabricantes. En ningún caso, el régimen se autorizará cuando los rubros indicados sean superiores al promedio determinado para la actividad o el grupo estudiado o la proporción mensual correspondiente.
+e) Renta bruta promedio de la actividad estudiada.
+f) Número de empleados y monto de salarios pagados.
+g) Cualesquiera otros estudios que se considere necesario realizar por la índole de la actividad.
+3- La cuantificación de los rubros a que se refieren los sub incisos anteriores, excepto el a), se fijará mediante Decreto Ejecutivo que deberá emitirse para el grupo o la rama de actividad correspondiente. El Poder Ejecutivo queda facultado para modificar los montos y los conceptos a que se refieren los citados incisos, con base en los estudios que, al efecto, realice la Administración Tributaria y las variaciones de los índices de precios al consumidor que determine el Instituto Nacional de Estadística y Censos.
+ARTÍCULO 61- Tipo impositivo y cálculo del impuesto
+El impuesto que pagarán los contribuyentes que se acojan al régimen de tributación simplificada se calculará aplicando, a la variable correspondiente según la actividad de que se trate, la cual deberá establecerse conforme a los lineamientos señalados en el artículo anterior, el factor resultante de aplicar al rendimiento neto obtenido para la actividad o el grupo estudiado, un diez por ciento (10%) a título del respectivo impuesto establecido en esta Ley.
+ARTÍCULO 62- Presentación de la declaración
+Los contribuyentes que se acojan a este régimen deberán presentar, por los medios que determine la Administración Tributaria, la declaración correspondiente al trimestre inmediato anterior, dentro de los primeros quince días naturales siguientes al trimestre respectivo, es decir, en los primeros quince días naturales de enero, abril, julio y octubre de cada año.
+ARTÍCULO 63- Fecha de pago
+El impuesto resultante de aplicar lo dispuesto en el artículo 61 de esta Ley deberá cancelarse simultáneamente con la presentación de la declaración del periodo que corresponda.
+ARTÍCULO 64- Obligatoriedad de emitir comprobantes electrónicos
+Los contribuyentes acogidos a este régimen simplificado estarán obligados a emitir comprobantes electrónicos que cumplan con los requisitos y las condiciones establecidas por la Administración Tributaria, cuando así lo solicite el comprador. A su vez, todas las compras que realicen los contribuyentes acogidos a este régimen deberán estar respaldadas por los respectivos comprobantes electrónicos.
+ARTÍCULO 65- Registros contables
+Para efectos fiscales, sin perjuicio de lo dispuesto en otras leyes y como excepción de lo establecido en esta Ley en materia de registros contables, los contribuyentes que se acojan al régimen de tributación simplificada únicamente estarán obligados a llevar un registro auxiliar, en el que consignarán los detalles requeridos por la Administración Tributaria al establecer el régimen para el grupo o la rama de actividad de que se trate.
+ARTÍCULO 66- Eliminación de pagos parciales
+Los contribuyentes acogidos a este régimen no estarán obligados a efectuar los pagos parciales a que se refiere el artículo 52 de esta Ley.
+ARTÍCULO 67- Facultad de reclasificación
+1- Los contribuyentes que se acojan al régimen de tributación simplificada podrán trasladarse voluntariamente, en cualquier momento, al régimen general, sin necesidad de contar con una autorización o pronunciamiento previo de la Administración Tributaria. Dicho traslado regirá a partir del siguiente período impositivo anual establecido para en los artículos 12 y 81 de esta Ley.
+2- Tal reclasificación será obligatoria si se presenta cualquier variante en los elementos tomados en cuenta para acceder al régimen, que pueda tener como efecto el incumplimiento de los requisitos de este, en cuyo caso se deberá proceder con el traslado voluntario al régimen general en el momento en que tales requisitos dejen de cumplirse.
+En este caso, los contribuyentes tendrán el derecho de que se les reconozca, como gasto deducible, el impuesto pagado sobre las existencias que mantengan en inventario, lo cual deberán probar ante la Administración Tributaria mediante el procedimiento que esta defina por medio de resolución de alcance general.
+3- Asimismo, la Administración Tributaria queda facultada para reclasificar, de oficio, al contribuyente del régimen simplificado al régimen general, cuando determine el incumplimiento de los requisitos del régimen especial, sea desde el inicio, o por variaciones en la situación del contribuyente que impliquen incumplimiento de los requisitos del régimen. En tal caso, no procederá aplicar el gasto deducible por existencias en inventarios.
+Además, se aplicarán todas las sanciones que puedan corresponder por incumplimientos en el régimen general y el contribuyente deberá pagar cualquier diferencia que se llegue a establecer entre el tributo cancelado mediante el régimen simplificado y el que le corresponda pagar por el régimen general, desde la fecha en que dejaron de cumplirse los requisitos del régimen.
+ARTÍCULO 68- No deducción de créditos fiscales
+Por la naturaleza de los regímenes simplificados de tributación, no se permite aplicar deducciones a la cuota tributaria determinada según las estipulaciones de esta Ley.
+TÍTULO SEGUNDO
+IMPUESTO SOBRE LA RENTA DE PERSONAS JURÍDICAS (IRPJ)
+CAPÍTULO PRELIMINAR
+Naturaleza, objeto y ámbito de aplicación
+ARTÍCULO 69- Naturaleza del impuesto
+El Impuesto sobre la Renta de las Personas Jurídicas es un tributo de carácter directo y naturaleza personal que grava la renta de las personas jurídicas, demás entidades jurídicas y entes colectivos sin personalidad jurídica, conforme a lo establecido en esta Ley.
+ARTÍCULO 70- Objeto del impuesto
+El objeto de este impuesto es la renta del contribuyente, entendida como la totalidad de sus rendimientos derivados del ejercicio de actividades económicas y del capital, así como las ganancias y pérdidas de capital, según lo dispuesto en el artículo 73 de esta Ley.
+ARTÍCULO 71- Ámbito de aplicación
+El Impuesto sobre la Renta de las Personas Jurídicas se aplicará en todo el territorio de la República de Costa Rica, el cual se entenderá según el artículo 5 de la Constitución Política.
+ARTÍCULO 72- Tratados y Convenios
+Lo establecido en la presente Ley se aplica sin perjuicio de lo dispuesto en los tratados y convenios internacionales que hayan pasado o pasen en el futuro a formar parte del ordenamiento interno, de conformidad con la Constitución Política de Costa Rica.
+CAPÍTULO I
+Sujeción al impuesto
+SECCIÓN I
+Hecho generador
+ARTÍCULO 73- Hecho generador
+Constituye el hecho generador de este impuesto la obtención de renta por parte del contribuyente.
+La renta gravable la componen:
+1- Las rentas de fuente costarricense derivadas del desarrollo en el territorio nacional de una actividad económica de carácter empresarial.
+Para los efectos de lo dispuesto en el párrafo anterior, se entenderá que son rentas de fuente costarricense:
+a) Aquellas generadas en el territorio nacional, provenientes de servicios prestados, bienes situados o capitales utilizados, que se obtengan durante el periodo impositivo, de acuerdo con esta Ley.
+b) Las provenientes de las operaciones de exportación de bienes y servicios realizadas desde el territorio nacional, que se obtengan durante el periodo impositivo, de acuerdo con esta Ley.
+2- Las rentas del capital y las ganancias y pérdidas de capital que provengan de bienes cuya titularidad corresponda al contribuyente, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador.
+A estos efectos, la determinación de las rentas del capital y de las ganancias y pérdidas del capital deberá realizarse conforme a lo dispuesto en los artículos 19, 20 y 22 de esta Ley.
+3- Las diferencias cambiarias originadas por operaciones en moneda extranjera, con arreglo a lo dispuesto en el artículo 101 de esta Ley.
+ARTÍCULO 74- Concepto de actividad económica
+1.- Se entenderá por actividad económica aquella actividad de carácter empresarial consistente en la ordenación, por cuenta propia, de los factores de producción y de recursos humanos o de uno de ellos, con la intención de intervenir en el mercado de bienes y servicios.
+En particular, tienen esta consideración las rentas derivadas de las actividades extractivas, de fabricación, de comercio o de prestación de servicios, incluidas las de artesanía, agrícolas, forestales, ganaderas, pesqueras, de construcción, mineras, y el ejercicio de profesiones liberales, artísticas y deportivas.
+La actividad económica podrá desarrollarse de forma permanente u ocasional, y mediante un establecimiento fijo o sin él, por medios digitales, en forma ambulante o estacionaria.
+2- En el caso de arrendamiento de bienes inmuebles, se entenderá que existe actividad económica, únicamente, cuando para el desarrollo de tal actividad se utilice, al menos, una persona empleada con contrato laboral.
+ARTÍCULO 75- No sujeciones
+Entre otros supuestos en los que no se configura el hecho generador del impuesto, se entenderán como no sujetas las siguientes rentas:
+1- Las percibidas por la Administración Central del Estado, los Poderes Legislativo y Judicial, el Tribunal Supremo de Elecciones, las municipalidades y las universidades estatales.
+2- Las percibidas por la Caja Costarricense de Seguro Social.
+3- Las percibidas por la Administración descentralizada y las demás entidades de Derecho Público, salvo las indicadas en el artículo 1 de la Ley de Sujeción de Instituciones Estatales al Pago de Impuesto sobre la Renta N.° 7722 del 9 de diciembre de 1997.
+4- Los ingresos obtenidos por instituciones religiosas, cualquiera que sea su credo, para el mantenimiento del culto y por los servicios de asistencia social que presten sin fines de lucro.
+5- Las percibidas por los partidos políticos, en el tanto se trate de operaciones realizadas para el cumplimiento de sus objetivos.
+6- Los pagos por servicios ambientales conforme la Ley Forestal N.º 7575 del 13 de febrero de 1996.
+7- Las subvenciones otorgadas por el Estado, sus instituciones y organismos internacionales, para el desarrollo, promoción y fomento del sector agropecuario y los fondos de compensación de precios para productores agropecuarios.
+ARTÍCULO 76- Exenciones
+1- Se encuentran exentas del pago del Impuesto sobre la Renta de las Personas Jurídicas los siguientes supuestos:
+a) Las rentas obtenidas por organizaciones sindicales, fundaciones y asociaciones, estas últimas declaradas de utilidad pública por el Poder Ejecutivo, siempre y cuando tales ingresos, así como su patrimonio, se destinen en su totalidad y exclusivamente, a fines públicos o de beneficencia y que, en ningún caso, se distribuyan directa o indirectamente entre sus integrantes.
+b) Las rentas obtenidas por los centros agrícolas cantonales creados mediante la Ley N° 4521 del 26 de diciembre de 1969, así como por las asociaciones civiles que agremien a pequeños o medianos productores agropecuarios de bienes y servicios, cuyo fin sea brindarles asistencia técnica y facilitarles la adquisición de insumos agropecuarios a bajo costo, buscar alternativas de producción, comercialización y tecnología, siempre y cuando no tengan fines de lucro y comercialicen, únicamente, insumos agropecuarios. Además, los ingresos que se obtengan, así como su patrimonio, deberán destinarse exclusivamente para los fines de su creación y, en ningún caso, podrán distribuirse directa o indirectamente entre sus integrantes.
+c) Las rentas obtenidas por las asociaciones solidaristas debidamente constituidas de conformidad con la Ley de Asociaciones Solidaristas Nº 6970 del 07 de noviembre de 1984 y sus reformas, en el tanto se trate de rentas provenientes de operaciones realizadas con sus asociados.
+d) Las rentas percibidas por Asociaciones Administradoras de Sistemas de Acueductos y Alcantarillados Comunales (ASADAS).
+e) Las rentas obtenidas por la Sociedad de Seguros de Vida del Magisterio Nacional, la Caja de Ahorro y Préstamos de la Asociación Nacional de Educadores y la Corporación de Servicios Múltiples del Magisterio Nacional.
+f) Las rentas obtenidas por las juntas de educación y las juntas administrativas de las instituciones públicas de enseñanza.
+g) Las rentas obtenidas por el Hospicio de Huérfanos de San José.
+h) Las rentas obtenidas por las empresas acogidas al Régimen de Zonas Francas, de conformidad con el artículo 20 inciso g) de la Ley N.º 7210 del 23 de noviembre de 1990 y sus reformas.
+i) Las rentas obtenidas por Escuela de Agricultura de la Región Tropical Húmeda (EARTH), así como los rendimientos provenientes de las inversiones que realice el fideicomiso sin fines de lucro creado mediante el artículo 6 de la Ley de Creación de la Escuela de Agricultura de la Región Tropical Húmeda (EARTH) N.° 7044 del 29 de setiembre de 1986.
+j) Los rendimientos, en moneda nacional o extranjera, derivados de inversiones que realizan las entidades autorizadas que administran el Régimen Obligatorio de Pensiones Complementarias (ROPC), el Régimen Voluntario de Pensiones Complementarias (RVPC) y el Fondo de Capitalización Laboral (FCL).
+k) Las rentas y las ganancias de capital obtenidas por los fondos de pensiones y planes de beneficios y por el Fondo de Capitalización Laboral, referidos en el artículo 2 de la Ley de Protección al Trabajador N.° 7983 del 16 de febrero de 2000; así como las rentas y las ganancias de capital obtenidas por los regímenes de pensiones especiales, referidos en el artículo 75 de la misma Ley. Los sistemas de pensiones, sus beneficios, prestaciones y el Fondo de Capitalización Laboral, establecidos de conformidad con la Ley de Protección al Trabajador N.° 7983 de 16 de febrero de 2000, mantendrán el tratamiento fiscal existente con anterioridad a la entrada en vigencia de esta Ley.
+l) Las rentas y las ganancias de capital obtenidas por el Sistema de Pensiones y Jubilaciones del Magisterio Nacional, regulado mediante la Ley de Reforma Integral del Sistema de Pensiones y Jubilaciones del Magisterio Nacional N.° 7531 de 10 de julio de 1995.
+m) Las rentas y las ganancias de capital derivadas de las participaciones de los fondos de inversión, contemplados en la Ley Reguladora del Mercado de Valores N.° 7732 del 17 de diciembre de 1997, en la parte correspondiente a rentas y ganancias de capital por las que los fondos de inversión han tributado.
+n) Los intereses provenientes de títulos valores emitidos por el Estado en el exterior, al amparo de una ley especial que lo autorice para emitir y colocar títulos valores en el mercado internacional.
+o) Los dividendos obtenidos en forma de acciones nominativas o en cuotas sociales de la propia sociedad que los paga, sin perjuicio de la tributación que le pueda corresponder a la posterior enajenación de estas.
+p) La obtención de dividendos cuando la entidad que los percibe sea una sociedad de capital residente para efectos fiscales en Costa Rica, en el tanto esta última desarrolle una actividad económica sujeta a este impuesto, o bien, se trate de una sociedad controladora de un grupo o conglomerado financiero regulado por una superintendencia adscrita al Consejo Nacional de Supervisión del Sistema Financiero (CONASSIF).
+q) La obtención de dividendos por parte de sociedades de capital que figuren como socias de una entidad patrimonial que haya cancelado el impuesto sobre la primera distribución de dividendos.
+r) Las herencias, los legados y las donaciones respecto de sus perceptores.
+2- Las exoneraciones acá enlistadas implican la dispensa del cumplimiento de la obligación tributaria material, pero no del cumplimiento de los deberes formales establecidos por la presente ley o en otras leyes especiales.
+3- Este beneficio fiscal estará condicionado al cumplimiento de los requisitos exigidos en la normativa aplicable.
+4- Cuando se incumplan los requisitos exigidos para disfrutar de la exención o se determine su abuso, ya sea por reconocimiento expreso del contribuyente o por medio de un procedimiento de control tributario, se producirá la pérdida del beneficio fiscal, ante lo cual el contribuyente deberá pagar el impuesto según corresponda, más los intereses respectivos y las multas que proceda.
+SECCIÓN II
+Contribuyentes
+ARTÍCULO 77- Contribuyentes
+1- Serán contribuyentes del impuesto, cuando tengan su residencia fiscal en territorio costarricense:
+i) Las personas jurídicas legalmente constituidas en el país, incluidas las empresas individuales de responsabilidad limitada y todo tipo de sociedades mercantiles y civiles.
+ii) Las empresas del Estado y demás entidades públicas comprendidas en el artículo 1 de la Ley de Sujeción de Instituciones Estatales al Pago de Impuesto sobre la Renta N.° 7722 del 09 de diciembre de 1997.
+iii) Los fondos de inversión contemplados en la Ley Reguladora del Mercado de Valores N.° 7732 del 17 de diciembre de 1997.
+iv) Las entidades o colectividades carentes de personalidad jurídica que constituyan una unidad económica, dispongan de patrimonio y tengan autonomía funcional.
+v) Los establecimientos permanentes de entidades no residentes en el país.
+vi) Las cuentas en participación.
+vii) Las sucesiones mientras permanezcan indivisas.
+viii) Los fideicomisos, públicos o privados, así como los encargos y comisiones de confianza.
+ix) Todas aquellas personas jurídicas, entidades jurídicas y demás entes colectivos sin personalidad jurídica que no estén expresamente incluidos en los incisos anteriores, siempre que obtengan rentas gravables con este impuesto.
+2- Los contribuyentes de este impuesto enlistados en el apartado anterior se designarán abreviada e indistintamente como personas jurídicas o entidades a lo largo de esta Ley.
+ARTÍCULO 78- Concepto de establecimiento permanente
+1- Para los efectos de este impuesto, se considera establecimiento permanente, cualquier sitio o lugar fijo de negocios en el que se desarrolle, total o parcialmente, la actividad económica de la persona no residente para efectos fiscales en el país.
+2- Se considerarán establecimientos permanentes:
+a) Los centros administrativos.
+b) Las sucursales.
+c) Las agencias.
+d) Las oficinas.
+e) Las fábricas.
+f) Los talleres.
+g) Las minas, canteras y cualquier otro lugar de extracción de recursos naturales.
+h) Las obras, una construcción o un proyecto de instalación o montaje o actividades de inspección relacionadas con ellos, pero solo cuando tales obras, proyecto o actividades continúen durante un periodo o periodos que sumen o excedan en total más de ciento ochenta y tres días, en cualquier periodo de doce meses que empiece o termine durante el periodo impositivo considerado.
+i) La prestación de servicios por una empresa, incluidos los servicios de consultores, por intermedio de sus empleados o de otro personal contratado por la empresa para ese fin, pero solo en el caso de que las actividades de esa naturaleza prosigan, en relación con el mismo proyecto o con un proyecto conexo, durante un periodo o periodos que sumen o excedan en total más de ciento ochenta y tres días, en cualquier periodo de doce meses que empiece o termine durante el periodo impositivo considerado.
+3- Con el único propósito de determinar si se ha superado el plazo de ciento ochenta y tres días que se indica en los incisos h) e i) anteriores, se considerará lo siguiente:
+a) Cuando una empresa no residente preste servicios o realice actividades en Costa Rica en un lugar donde se realizan obras o proyectos de construcción o de instalación, y esos servicios o actividades se llevan a cabo durante periodos que no superan el plazo de ciento ochenta y tres días, y
+b) Una o varias empresas asociadas con la primera empresa lleven a cabo servicios al mismo cliente o actividades en el mismo lugar donde se prestan servicios, o realicen obras o proyectos de construcción o de instalación (en relación con el mismo proyecto o con un proyecto conexo), durante periodos de tiempo adicionales;
+Esos periodos adicionales se sumarán al periodo en el cual la primera empresa prestó servicios o llevó a cabo actividades en ese lugar donde se realizan obras o proyectos de construcción o de instalación.
+4- Cuando una persona actúe en Costa Rica por cuenta de una persona no residente, salvo que fuese como agente independiente, se considerará que tal persona no residente tiene un establecimiento permanente en Costa Rica respecto de las actividades que se realice a su favor, si la persona que actúa en su nombre cumple con alguno de los siguientes supuestos:
+a) Ostenta y ejerce habitualmente en Costa Rica poderes que la faculten para concluir contratos en nombre de la persona no residente;
+b) No ostenta dichos poderes, pero mantiene habitualmente en Costa Rica un depósito de bienes o mercancías desde el cual realiza regularmente entregas de bienes o mercancías en nombre de la empresa.
+5- No se considera que una persona no residente tiene un establecimiento permanente en Costa Rica por el mero hecho de que realice allí sus actividades por medio de un corredor, un comisionista general o cualquier otro agente independiente, siempre que dichas personas actúen dentro del marco ordinario de su actividad.
+No obstante, cuando las actividades de tales agentes se realicen exclusivamente, o casi exclusivamente, por cuenta de dicha persona no residente, y las condiciones aceptadas o impuestas entre esta y el agente en sus relaciones comerciales y financieras difieran de las que se darían entre partes independientes, ese agente no se considerará un agente independiente de acuerdo con el sentido de esta disposición.
+ARTÍCULO 79- Concepto de entidad patrimonial
+A efectos de lo previsto en esta Ley, se entenderá por entidad patrimonial aquella que solamente posea bienes muebles o inmuebles a su nombre y que no realice una actividad económica, ni perciba rentas derivadas de tales bienes, salvo por las ganancias de capital que podrían surgir como producto de su eventual enajenación.
+ARTÍCULO 80- Residencia fiscal en el país
+1- Se considerarán residentes en territorio costarricense las entidades en las que concurra alguno de los siguientes supuestos:
+a) Que se hubieran constituido conforme a la legislación costarricense.
+b) Que tengan su domicilio social en territorio costarricense.
+c) Que tengan su sede de dirección efectiva en territorio costarricense.
+A estos efectos, se entenderá que una entidad tiene su sede de dirección efectiva en territorio costarricense cuando en este radique la dirección y control del conjunto de sus actividades.
+2- La Administración Tributaria podrá presumir que una entidad radicada en algún país o jurisdicción no cooperante tiene su residencia en territorio costarricense cuando sus activos principales, directa o indirectamente, consistan en bienes situados o derechos que se cumplan o ejerciten en territorio costarricense, o cuando su actividad principal se desarrolle en este, salvo que dicha entidad acredite, cumpliendo el procedimiento que sea establecido vía reglamentaria, que su dirección y gestión efectiva tienen lugar en aquel país o territorio, así como que la constitución y operativa de la entidad responde a motivos económicos válidos y razones empresariales sustantivas distintas de la gestión de valores u otros activos.
+SECCIÓN III
+Periodo impositivo, devengo e imputación temporal
+artículo 81- Periodo impositivo
+1- El periodo impositivo de este impuesto corresponde a un año natural, contado a partir del primero de enero y hasta el treinta y uno de diciembre de cada año.
+2- No obstante, la Administración Tributaria podrá establecer, mediante resolución de alcance general, períodos impositivos especiales, por rama de actividad y para casos de subsidiarias, sucursales y agencias de empresas no residentes en Costa Rica.
+3- En cualquier caso, el período impositivo se considerará concluido cuando:
+a) La entidad se extinga.
+b) Tenga lugar un cambio de residencia fiscal de la entidad residente en territorio costarricense.
+c) Se produzca la transformación de la forma jurídica de la entidad y ello determine la no sujeción a este impuesto de la entidad resultante.
+d) Se produzca la transformación de la forma societaria de la entidad, o la modificación de su estatuto o de su régimen jurídico, y ello determine la modificación de su tipo de gravamen.
+En todos los supuestos anteriores, la entidad contará con un plazo de 30 días naturales para presentar su declaración de cierre y autoliquidar y pagar el impuesto respectivo.
+4- En ningún caso el período impositivo excederá los doce meses.
+ARTÍCULO 82- Devengo del impuesto
+El impuesto se devengará el último día del período impositivo, salvo lo dispuesto en el apartado 3 del artículo anterior, en cuyo caso el devengo corresponderá al momento en que se tenga por concluido el periodo impositivo.
+ARTÍCULO 83- Imputación temporal de ingresos y gastos
+1- Los ingresos y gastos derivados de las transacciones o hechos económicos que determinan la renta a incluir en la base imponible se imputarán al período impositivo que corresponda, conforme al principio contable de devengo, con independencia de la fecha de su pago o de su cobro, respetando la debida correlación entre unos y otros.
+2- Las ganancias y pérdidas de capital se imputarán al período impositivo en que tenga lugar la alteración patrimonial.
+3- En caso de que el contribuyente pierda su condición por cambio de residencia, todas las rentas pendientes de imputación deberán integrarse en la base imponible correspondiente al último período impositivo que deba declararse por este impuesto, según se disponga reglamentariamente, practicándose, en su caso, una autoliquidación complementaria, sin intereses ni multa alguna.
+4- Para efectos de su registro e imputación al periodo respectivo, las operaciones deberán estar respaldadas por comprobantes electrónicos que cumplan con los requisitos y las condiciones establecidas por la Administración Tributaria.
+CAPÍTULO II
+Determinación de la base imponible
+ARTÍCULO 84- Determinación de la base imponible
+1- La base imponible del impuesto estará constituida por el importe de la renta íntegra obtenida en el período impositivo, disminuida por los gastos deducibles y demás deducciones autorizadas por ley del respectivo período y por la compensación de bases imponibles negativas.
+2- Para la cuantificación de la base imponible se procederá, en los términos previstos en esta Ley, por el siguiente orden:
+a) La renta íntegra se calculará sumando los diversos tipos de rentas obtenidas en el periodo impositivo y descritos en el artículo 85 de esta Ley, incluyendo las ganancias de capital.
+b) La renta íntegra del periodo impositivo, excluyendo las ganancias de capital, será disminuida por los gastos deducibles y demás deducciones autorizadas por ley.
+c) El resultado de estas operaciones dará lugar a la base imponible.
+3- La base imponible se determinará aplicando los métodos previstos en el artículo 125 del Código de Normas y Procedimientos Tributarios, Ley N.° 4755 del 03 de mayo de 1971 y sus reformas.
+SECCIÓN I
+Definición y determinación de la renta íntegra
+ARTÍCULO 85- Renta íntegra
+Conforme a lo dispuesto en el artículo 73 de esta Ley, la renta íntegra del contribuyente estará conformada por:
+1- Las rentas de fuente costarricense derivadas del desarrollo en el territorio nacional de actividades económicas de carácter empresarial, definidas según el artículo 73 de esta Ley.
+2- Las rentas provenientes de las operaciones de exportación de bienes y servicios realizadas desde el territorio nacional, que se obtengan durante el periodo impositivo.
+3- Las rentas del capital y las ganancias de capital que provengan de bienes cuya titularidad corresponda al contribuyente, con independencia del lugar donde se hubiesen producido y cualquiera que sea la residencia del pagador, definidas según los artículos 19, 20, 22 y 29 de esta Ley, e incluyendo los rendimientos de este tipo obtenidos por personas jurídicas residentes que sean socios, de manera directa o indirecta, de empresas en régimen de zona franca.
+Las ganancias y pérdidas de capital del periodo deberán determinarse, con carácter general, por la diferencia entre los valores de transmisión y de adquisición, según lo dispuesto en la Sub Sección IV de la Sección I del Capítulo II del Título I de esta Ley.
+4- También formarán parte de la renta íntegra las diferencias cambiarias originadas en operaciones en moneda extranjera según lo dispuesto en el artículo 101 de esta Ley.
+SECCIÓN II
+Gastos deducibles y no deducibles
+ARTÍCULO 86- Gastos deducibles
+1- Como regla general, tendrán la consideración de gastos fiscalmente deducibles los costos y gastos que sean útiles, necesarios y pertinentes para producir las rentas actuales o potenciales gravadas con este impuesto o para conservar los activos utilizados en su generación, así como las demás erogaciones expresamente autorizadas por Ley, respaldadas por comprobantes electrónicos que cumplan con los requisitos establecidos por la Administración Tributaria y registrados en la contabilidad, según corresponda.
+2- Entre otros y en el tanto se cumpla con las condiciones del apartado anterior, se considerarán como deducibles los siguientes:
+a) Los gastos preoperativos y de organización de las entidades. Estos gastos podrán deducirse en el período impositivo en que se paguen o acrediten, o podrán acumularse, en cuyo caso, se podrán deducir en los cuatro períodos impositivos consecutivos siguientes a partir de la fecha de inicio de su actividad económica, hasta agotar el saldo.
+Se considerarán gastos preoperativos y de organización todos los costos y gastos necesarios para iniciar la producción de rentas gravables que, de acuerdo con esta Ley, sean deducibles.
+En cuanto a los gastos de organización de las entidades, no serán deducibles aquellos que, por su naturaleza, deban amortizarse o depreciarse, tales como las inversiones en general, ni el valor de los activos depreciables, activos intangibles o las pérdidas de capital.
+b) Los gastos de investigación y desarrollo, en la misma forma dispuesta en el inciso anterior para los gastos preoperativos y de organización.
+c) El costo de los bienes y servicios vendidos, tales como la adquisición de bienes y servicios objeto de la actividad de la empresa, las materias primas, partes, piezas y servicios para producir los bienes y servicios vendidos, los combustibles, la fuerza motriz y los lubricantes y similares, los gastos de las explotaciones agropecuarias, y demás necesarios para producir la renta.
+d) Los sueldos, los sobresueldos, los salarios, las dietas, las bonificaciones, las gratificaciones, las regalías, los aguinaldos, y cualquier otra remuneración por servicios personales efectivamente prestados, siempre y cuando proceda y se hayan hecho las retenciones establecidas por ley.
+El incumplimiento con las retenciones previstas en esta Ley, con las obligaciones de la seguridad social, o con ambas, sobre los rubros a que se refiere el párrafo anterior, implica que tales rubros no podrán ser deducidos de la renta íntegra. No obstante, cuando el incumplimiento se subsane en fecha posterior al período impositivo en que se realizó la deducción, se tendrá como válida la deducción efectuada en ese período impositivo, quedando a salvo el derecho del contribuyente de rectificar la declaración respectiva, por las partidas deducibles satisfechas con posterioridad y que no haya rebajado antes y sin perjuicio de las sanciones aplicables.
+Además, podrá deducirse una cantidad igual adicional a la que se pague por los conceptos mencionados en los párrafos anteriores de este artículo por la contratación de personas con discapacidad a quienes se les dificulte tener un puesto competitivo, así como los costos incurridos por el contribuyente en las adecuaciones a los puestos de trabajo y en las adaptaciones al entorno en el sitio de labores, de acuerdo con los requisitos, las condiciones y normas que se fijen vía reglamentaria.
+e) Las cuotas patronales que se establezcan en la legislación aplicable.
+f) Las indemnizaciones y las prestaciones establecidas en el Código de Trabajo y los aportes patronales a la seguridad social.
+g) Las remuneraciones, sueldos, comisiones, honorarios o dietas, gastos de transporte y comunicaciones, alimentación, que se paguen o acrediten a miembros de directorios, de consejos o de otros órganos directivos, así como a otras personas que le brinden servicios relacionados con la actividad económica, que actúen en el extranjero o sean no residentes, en el tanto se hubiere realizado la retención respectiva.
+h) Los gastos de representación y similares en que se incurra dentro o fuera del país, los viáticos que se asignen o se paguen a dueños, socios, miembros de directorios u otros organismos directivos o a funcionarios o empleados del contribuyente, con o sin relación de dependencia.
+i) Los gastos incurridos por el contribuyente en relación con la actualización laboral o educación continua de su personal, incluyendo los costos de matrícula, material didáctico y demás aranceles en que se incurra por tal concepto, siempre que sean esenciales para generar renta gravable.
+j) Los gastos de publicidad y de promoción, incurridos dentro como fuera del país, en el tanto sean necesarios para la producción de renta gravable.
+k) Las primas del seguro de cosechas o de seguros contra incendio, robo, hurto, terremoto u otros riesgos, contratados con el Instituto Nacional de Seguros o con otras instituciones aseguradoras autorizadas.
+l) Los intereses y otros gastos financieros, pagados o incurridos por el contribuyente durante el periodo impositivo, en el tanto estén directamente relacionados con el manejo de su negocio y con la obtención de rentas gravables, excepto los que deban capitalizarse contablemente.
+En todo caso, el contribuyente deberá estar en capacidad de demostrar a la Administración Tributaria el uso de los préstamos cuyos intereses pretende deducir, a fin de establecer la vinculación con la generación de la renta gravable, cuando aquella así lo requiera, dentro de un procedimiento de comprobación del cumplimiento tributario.
+Sin perjuicio de los supuestos previstos en los párrafos anteriores, no serán deducibles los intereses y demás gastos financieros cuando medien circunstancias que revelen una desconexión entre estos y la renta gravable del periodo respectivo.
+Tampoco serán deducibles, por considerarlos asimilables a dividendos o participaciones sociales, los intereses y otros gastos financieros pagados a favor de socios de sociedades de responsabilidad limitada.
+m) Sin perjuicio de las excepciones dispuestas en el último párrafo de este apartado, podrán deducirse los saldos en descubierto de los créditos concedidos por el contribuyente, relacionados con el giro normal de su actividad, cuando en el momento del devengo del impuesto concurra alguna de las siguientes circunstancias:
+i) Que hubieren transcurrido más de seis meses desde el vencimiento de la fecha convenida para su pago, sin que éste se hubiere hecho, a pesar de las gestiones realizadas para su cobro. Tales gestiones deberán demostrarse por cualesquiera de los medios aceptados en derecho, cuando así lo requiera la Administración Tributaria dentro de un procedimiento de comprobación del cumplimiento de las obligaciones tributarias.
+ii) Que el deudor esté declarado en situación de concurso, conforme a las disposiciones de la Ley Concursal N.° 9957 del 14 de abril de 2021.
+iii) Que el deudor esté procesado por los delitos de estelionato, fraude de simulación respecto de la transacción que respalda el crédito, o por alguno de los delitos tipificados en los artículos 238, 239, 240 o 241 de la Sección I del Título VIII del Código Penal Ley N.° 4573 del 04 de mayo de 1970.
+iv) Que las obligaciones hayan sido reclamadas judicialmente o sean objeto de un proceso judicial o arbitral de cuya solución dependa su cobro.
+Si ocurriese la recuperación, total o parcial, de un crédito que hubiere sido deducido por cumplir con alguno de los requisitos dispuestos en el párrafo precedente, su importe deberá incluirse como ingreso gravable en el período impositivo en que ocurra la recuperación.
+No procederá la deducción de saldos en descubierto, cuando se trate de:
+i) Créditos que disfruten de garantía real, en la parte garantizada.
+ii) Créditos afianzados por entidades de crédito o sociedades de garantía recíproca o cubiertos por un contrato de seguro de crédito o de caución, en la parte afianzada o asegurada.
+iii) Créditos entre personas o entidades vinculadas definidas en concordancia con el artículo 97 de esta Ley.
+iv) Créditos adeudados o afianzados por entes públicos.
+n) La depreciación efectiva para compensar el desgaste, el deterioro o la obsolescencia económica, funcional o tecnológica de los bienes tangibles productores de rentas gravadas, por la realización de una actividad económica, propiedad del contribuyente, así como de las mejoras con carácter permanente.
+La Administración Tributaria, a solicitud del contribuyente, podrá autorizar métodos especiales de depreciación técnicamente aceptables, para casos debidamente justificados. Asimismo, podrá autorizar, por resolución general, métodos de depreciación acelerada sobre activos nuevos, adquiridos por empresas dedicadas a actividades que requieran constante modernización tecnológica, mayor capacidad instalada de producción y procesos de reconversión productiva, a efecto de mantener y fortalecer sus ventajas comparativas.
+Se permite la amortización de los activos intangibles que se requieran para la obtención de las rentas gravadas con este impuesto. El valor de la patente de invención propiedad del contribuyente, podrá amortizarse con base en el tiempo de su vigencia.
+Por vía reglamentaria se determinarán los porcentajes máximos que prudencialmente puedan fijarse por concepto de depreciación o amortización o los plazos de vida útil de los bienes, tomando en consideración la naturaleza de los bienes y la actividad económica en la cual estos son utilizados.
+Cuando se trate de semovientes dedicados a la producción de leche y cría, así como de determinados cultivos, podrán concederse depreciaciones o amortizaciones, conforme se establezca en el reglamento de esta Ley.
+Los cultivos que, por su ciclo de eficiencia productiva, no puedan catalogarse como permanentes a juicio de la Administración Tributaria, de común acuerdo con el Ministerio de Agricultura y Ganadería, podrán ser amortizados en un número de años que tenga relación directa con su ciclo productivo.
+o) La parte proporcional por concepto de agotamiento de los bienes explotables de recursos naturales no renovables, incluidos los gastos efectuados para obtener la concesión, cuando corresponda. Esta deducción deberá relacionarse con el costo del bien y con la vida útil estimada, según la naturaleza de las explotaciones y de la actividad y de acuerdo con las normas que sobre el particular se contemplen en el reglamento de esta Ley.
+Para su otorgamiento el contribuyente deberá acreditar que en el ejercicio de su actividad ha cumplido con sus obligaciones relativas a la protección del medio ambiente contenidas en la legislación nacional y el contrato de concesión respectivo, así como con las medidas requeridas por la Secretaría Técnica Nacional Ambiental (SETENA) para la mitigación del impacto ambiental de las explotaciones. En ningún caso el total de las deducciones por concepto de agotamiento de recursos naturales no renovables podrá sobrepasar el valor de la adquisición del bien. En este apartado quedan comprendidas las explotaciones de minas y canteras, y de depósitos de petróleo, de gas y de cualesquiera otros recursos naturales no renovables.
+p) Las pérdidas por destrucción de bienes por incendio, por delitos en perjuicio de la empresa, debidamente comprobadas y en la parte no cubierta por los seguros.
+q) Las donaciones debidamente comprobadas y otorgadas, durante el período impositivo respectivo, al Estado, a sus instituciones autónomas y semiautónomas, a las corporaciones municipales, a las universidades estatales, a la Junta de Protección Social (JPS), a las juntas de educación y a las juntas administrativas de las instituciones públicas de enseñanza del Ministerio de Educación Pública (MEP), a las instituciones docentes del Estado, a la Cruz Roja Costarricense y a otras instituciones, como asociaciones o fundaciones para obras de bien social, científicas o culturales, así como las donaciones realizadas a favor de las asociaciones civiles y deportivas declaradas de utilidad pública por el Poder Ejecutivo, al amparo del artículo 32 de la Ley de Asociaciones Nº 218 del 08 de agosto de 1939, o de los comités nombrados oficialmente por el Instituto Costarricense del Deporte y la Recreación (ICODER), en las zonas definidas como rurales según el reglamento de esta Ley, así como otros entes autorizados por ley especial para recibir donaciones deducibles del impuesto regulado en esta Ley. Para estos efectos, el donatario necesariamente deberá cumplir con un fin relativo a obras de bien social, científico o cultural.
+Las deducciones señaladas en este inciso no podrán exceder del diez por ciento (10%) de la renta íntegra del donante, sin tomar en cuenta la donación. Las donaciones en especie se valorarán a su valor de mercado.
+La Administración Tributaria tendrá amplia facultad en cuanto a la apreciación y calificación de la legitimidad y veracidad de las donaciones a que se refiere este inciso. Vía reglamentaria se contemplarán las condiciones y los controles que deberán establecerse en el caso de estas donaciones, tanto para el donante como para el receptor.
+r) Las deducciones contempladas en la Ley de Fomento de la Producción Agropecuaria N.° 7064 del 29 de abril de 1987.
+s) La contribución que de conformidad con el inciso a) del artículo 20 de la Ley N.° 6041 del 18 de enero de 1977 y sus reformas, deben efectuar los bancos para el financiamiento de la Comisión Nacional de Préstamos para Educación (CONAPE) y del Instituto de Fomento Cooperativo (INFOCOOP), según el artículo 12 inciso 2 subinciso b) de la Ley Orgánica del Sistema Bancario Nacional N.º 1644 del 26 de setiembre de 1953.
+t) Las reservas de inversión o fondos de desarrollo, debidamente aprobados por la Autoridad Reguladora de los Servicios Públicos, en el caso de las entidades prestadoras de servicios públicos.
+u) Tratándose de entidades financieras supervisadas por las superintendencias adscritas al Consejo Nacional de Supervisión del Sistema Financiero (CONASSIF), las sumas para constituir estimaciones, reservas o provisiones autorizadas por los órganos de supervisión o que deban mantener, obligatoriamente, dichas entidades en cumplimiento de las disposiciones emitidas y de conformidad con los límites técnicos establecidos, en ambos casos, por los órganos de supervisión. Dichas reservas serán debidamente individualizadas en los libros y los balances de las entidades. Las superintendencias y el CONASSIF deberán consultar con el Ministerio de Hacienda la regulación que se emita que tenga incidencia tributaria.
+v) La contribución al Fondo de Garantía de Depósitos, así como las contribuciones a otros fondos de garantía de depósitos especiales, previstos en el artículo 5 de la Ley N.° 9816 del 11 de febrero de 2020 de Creación del fondo de Garantía de Depósito y de mecanismos de resolución de los intermediarios financieros. Tanto el gasto por el encaje mínimo legal y por la reserva de liquidez trasladados al Fondo de Garantía de Depósitos, así como las contribuciones a otros fondos de garantía de depósitos especiales, previstos en el artículo 5 de la Ley Creación del Fondo de Garantía de Depósito y de Mecanismos de Resolución de los Intermediarios Financieros N.° 9816 del 11 de febrero de 2020. La recuperación que por estos conceptos se logre serán partidas deducibles o gravadas con este impuesto, según corresponda.
+w) Las bases imponibles negativas que hayan sido objeto de autoliquidación, las cuales podrán ser compensadas con las rentas positivas de los cuatro períodos impositivos siguientes. El importe total a deducir no podrá exceder la cuantía de las rentas positivas, distintas de las ganancias de capital, obtenidas durante el respectivo periodo impositivo.
+x) Las diferencias negativas que surgieran de la valuación de operaciones en moneda extranjera a las que se refiere el artículo 101 de esta Ley.
+y) Las mejoras que realice la entidad propietaria, poseedora o titular de derechos reales sobre bienes inmuebles declarados de interés histórico-arquitectónico.
+z) Los impuestos, con las excepciones contenidas en el artículo 87 de esta Ley, las tasas, el Timbre de Educación y Cultura, el impuesto de patentes municipales, que afecten los bienes, servicios y negociaciones del giro habitual de la empresa. En el caso del Impuesto sobre el Valor Agregado soportado en la adquisición de bienes y servicios, será deducible la porción a la que el contribuyente no tenga derecho a crédito fiscal, según lo dispuesto en la Ley del Impuesto sobre el Valor Agregado y su reglamento.
+aa) El pago del impuesto sobre bienes inmuebles y demás cargas municipales, tales como el alumbrado público, recolección de basura y mantenimiento de parques y ornato, respecto a los bienes inmuebles que el contribuyente tenga a su nombre.
+bb) Los gastos generados en el exterior debidamente comprobados, siempre que cumplan con las reglas generales de deducibilidad, y que se encuentren respaldados y asociados a la realización de una actividad económica o a la obtención de rentas de capital o ganancias de capital gravadas con este impuesto.
+cc) Los obligados tributarios inscritos en el régimen especial agropecuario podrán deducir hasta un cinco por ciento (5%) de la renta de la actividad agropecuaria, por concepto de servicios agropecuarios prestados por jornaleros agropecuarios; así como las compras respaldadas con un “comprobante para efectos del régimen especial agropecuario” y de manera objetiva los gastos por recolección de café, corta y alza de caña, en cuyo caso deberán respaldar dichas operaciones según lo establecido en el Reglamento de dicho régimen, al igual que la adquisición de ganado en pie que realicen los obligados tributarios de dicho régimen en las subastas, respaldado por la facturación de liquidación en subastas.
+3- Para que puedan deducirse los gastos causados y no pagados en el periodo impositivo, será indispensable que hayan sido contabilizados en una cuenta especial, de manera que cuando se paguen efectivamente se imputen a dicha cuenta. No se aceptará la deducción de gastos pagados si en un periodo anterior se hubieren deducido esos mismos gastos como simplemente causados.
+4- Cuando los costos, gastos o erogaciones autorizados se efectúen para producir indistintamente rentas gravadas, exentas o no sujetas, se deberá deducir únicamente la proporción que razonablemente corresponda a las rentas gravadas. Las entidades sujetas a la vigilancia e inspección de las superintendencias adscritas al Consejo Nacional de Supervisión del Sistema Financiero (CONASSIF) no estarán sujetas a las disposiciones sobre deducción proporcional de gastos.
+5) La Administración Tributaria se encuentra facultada para establecer, mediante resolución de alcance general, por lo menos con un mes de anticipación a su vigencia, topes a la deducibilidad de los gastos y costos que se paguen en efectivo, de manera que ningún gasto o costo mayor a tres salarios base sea deducible de la base imponible de este impuesto si su pago, en el momento en que se realice, no está respaldado con un registro bancario de tal transacción; definiéndose vía resolución igualmente, las excepciones a tales limitaciones.
+6) La Administración Tributaria está facultada para declarar, dentro de los procedimientos de comprobación del cumplimiento de las obligaciones tributarias que realice, la improcedencia total o parcial de los gastos anteriores, cuando, de forma motivada, los considere excesivos o improcedentes o no los considere indispensables para obtener rentas gravables.
+ARTÍCULO 87- Gastos no deducibles
+No tendrán la consideración de gastos fiscalmente deducibles:
+a) Los gastos que no tengan una relación directa con el negocio, actividad u operación que dé lugar a la obtención de rentas gravadas con este impuesto.
+b) Los gastos que no se encuentren respaldados mediante comprobantes electrónicos que cumplan con los requisitos establecidos por la Administración Tributaria, ni aquellos que no se encuentren debidamente registrados en la contabilidad, si ello fuera procedente, o en los registros respectivos.
+c) Los gastos imputables exclusivamente a rentas exentas o no sujetas. Se deducirán de forma proporcional los gastos que se utilicen indistintamente para obtener rentas gravadas, exentas y no sujetas.
+d) El valor de las mejoras permanentes hechas a los activos y construcciones y, en general, de todas aquellas erogaciones capitalizables, incluidas las inversiones, sin perjuicio de las depreciaciones que procedan sobre tales mejoras conforme a esta Ley.
+e) El impuesto sobre la renta de personas físicas, jurídicas y no residentes, el impuesto al valor agregado, el impuesto a las personas jurídicas, el impuesto selectivo de consumo y los impuestos específicos de consumo y las tasas especiales que sobre estos se fijen, cuando las personas sean contribuyentes de tales impuestos, al igual que los recargos, multas e intereses pagados sobre cualquier tributo o por facilidades de pago concedidas sobre deudas tributarias.
+f) Las multas y sanciones administrativas y penales, así como los intereses previstos en el Código de Normas y Procedimientos Tributarios.
+g) Los gastos e inversiones de recreo para el personal de las empresas.
+h) Las liberalidades, obsequios y regalías con respecto al personal, socios, o parientes consanguíneos o afines a estos.
+i) Los gastos respecto de los cuales proceda legalmente la realización de una retención, sea a cuenta o definitiva, y esta no se haya practicado o ingresado.

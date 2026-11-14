@@ -1,0 +1,89 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA ESTABLECER EL PAGO ELECTRÓNICO EN EL
+TRANSPORTE PÚBLICO REMUNERADO DE PERSONAS
+JONATHAN PRENDAS RODRÍGUEZ
+DIPUTADO
+EXPEDIENTE N.° 21.674
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+NOTA: A solicitud del proponente, este Departamento no realizó la revisión de errores formales, materiales e idiomáticos que pueda tener este proyecto de ley.
+PROYECTO DE LEY
+LEY PARA ESTABLECER EL PAGO ELECTRÓNICO EN EL
+TRANSPORTE PÚBLICO REMUNERADO DE PERSONAS
+Expediente N.° 21.674
+ASAMBLEA LEGISLATIVA:
+Los sistemas de pago electrónico constituyen una pieza básica para la actividad económica y financiera de un país porque movilizan los activos en una economía de manera más veloz, segura y controlada. Sobre todo aplicado en el servicio de transporte público, según investigaciones llevadas a cabo revelaron que la adopción de mecanismos de pago basados en el uso de tecnologías abiertas, es la tendencia que se viene imponiendo como solución predominante en los sistemas de transporte de los países desarrollados. Por ello es interesante analizar por un lado el contexto de este sistema de pago, y por otro lado la evolución de los mismos a lo largo de los últimos años.
+Es que el servicio de transporte público es de vital importancia para la movilidad en las ciudades, constituyendo el medio de transporte con menores costos para sus usuarios, además de determinar el acceso de los individuos, especialmente aquellos con bajos ingresos, a los diferentes espacios de la ciudad estableciendo una relación directa entre transporte, equidad y desarrollo económico urbano.
+En España, por ejemplo, se vivió la creación de un verdadero sistema de transporte público y de la llamada “integración modal”. Desde la creación de una fisonomía de ciudad a consecuencia del desarrollo económico de los años sesenta, pasando por una progresiva puesta en servicio de la línea de Metro Circular, línea 6, a partir de 1979, hasta llegar a un ambicioso programa de inversiones en infraestructuras y en mejora de vehículos e instalaciones, nuevas tecnologías donde se implanta el sistema de pago electrónico, que a día de hoy se puede verificar el éxito del transporte en Madrid.
+En un sistema de pago electrónico de pasajes se pueden identificar diferentes objetivos entre los cuales se encuentran principalmente:
+“1) Permitir un rápido y cómodo acceso por parte del usuario al servicio de transporte, sin aumentar el tiempo y el costo de operación. 2) Mejorar el control del expendio de pasajes como el control de la gestión de la empresa, ya que el procesamiento de la información, es registrada en el sistema. 3) Proporcionar mayor seguridad al proceso de recaudo y 4) permitir la integración de las tarifas entre distintos medios u operadores del sistema de transporte.”
+Además, la implementación de tarjetas inteligentes permite mejorar la seguridad de los usuarios, un claro ejemplo es que con el uso de esta tecnología el operador tiene conocimiento de la ubicación de los usuarios, además de información personal de los mismos y esto se puede utilizar para investigaciones futuras.
+Sobre la experiencia del sistema de pago electrónico en diferentes países se puede decir que esta permite realizar diferentes estudios donde se analiza el uso de tarjetas inteligentes y el impacto en el transporte público, considerando los siguientes niveles:
+1- Estudios a nivel estratégico: en donde se analiza la red a largo plazo, análisis de comportamiento de los clientes y la previsión de la demanda.
+2- A nivel táctico: ajustes de horario y los patrones de viaje individual.
+3- A nivel operativo: indicadores de oferta y demanda, así como para las operaciones del sistema de tarjeta inteligente.
+Dentro de los beneficios de este sistema de pago electrónico son:
+“(...)
+Los sistemas de recolección de dinero están diseñados para ayudar en la gestión de las operaciones de dinero a través de la tecnología, las cuales ayudan en la racionalización del tráfico y el movimiento a través de la recopilación de datos que pueden ser utilizados para hacer los cambios operacionales.
+Los sistemas integrados de transporte reúnen y analizan grandes volúmenes de datos sobre el tráfico, pueden realizar las respectivas clasificaciones de vehículos a utilizar, las velocidades a las que pueden desplazarse los vehículos y las tarifas previstas y el sistema de pago más apropiado.
+La capacidad que tengan las bases de datos y el informe que pueda permitir una mejor gestión en el sistema de seguridad, eficiencia y costos, garantizara el máximo de ingresos.
+El mejoramiento en la automatización durante la transmisión de los datos al sistema de gestión de la integración tarifaria, permite que dichos sistemas sean aún más fiables, con bajos costos transaccionales, además de presentar trazabilidad, siendo el paso más importante en la consecución de los títulos o el sistema de recaudo.
+El objetivo primordial de los indicadores en los sistemas de transporte es la cobertura de las necesidades esenciales, es lograr en términos de los pasajeros que aquellos definidos como estratégicos en nuestro caso horarios de mayor congestionamiento u “hora pico”, se tengan los mejores niveles de servicio”.
+A nivel nacional la implementación de un sistema de cobro electrónico puede brindar además de los beneficios previamente expuestos tales como una mayor eficiencia, mejor servicio, controles y demás; vendría a colaborar a bajar los altos índices de asaltos en el transporte público, sobre todo en el sector de autobuses. Según datos estadísticos de la Policía Judicial si se toma en cuenta que se cometieron 168 asaltos que se presentaron entre el 10 de enero del 2015 y el 13 de agosto del 2017. De manera que como medida preventiva la implementación del cobro electrónico ayudaría a combatir el hampa, tomando en cuenta que los conductores no andarían dinero en efectivo en las unidades.
+Solo dentro del Gran Área Metropolitana (GAM) circulan 7.946.935 de pasajeros anualmente, quienes se verían beneficiados con este sistema y un total 576 rutas.
+Gráfico No. 1
+Fuente: OIJ. Tomado de: Jiménez, Eillyn. 30 septiembre 2017. Ocho de cada diez asaltos en autobuses ocurren de noche. La Nación. Disponible en: https://www.nacion.com/sucesos/crimenes/ocho-de-cada-diez-asaltos-en-autobuses-ocurren-de-noche/AMQZZ2372FHMVMM4XGUNDHK2VY/story/
+Por otro lado, el servicio de tren en Costa Rica podría verse beneficiado logrando una mayor captación de ingresos por pasajes, dado que según un estudio publicado por ARESEP “detectó una diferencia entre el número de pasajeros que reporta el Incofer y la demanda cuantificada, el cual es del 26,8%. Esto significa que esa Institución está dejando de percibir ingresos por los usuarios que no pagan el pasaje.”
+Ante esta situación, la ARESEP y el Incofer buscan medidas de mitigación, ante esta situación es surge como una solución al problema el implementar el pago electrónico.
+Este sistema de pago electrónico necesita de una plataforma para lograr funcionar, en este aspecto el Banco Central de Costa Rica ya cuenta con una plataforma para este sistema: “El Sistema Nacional de Pagos Electrónicos (SINPE) es una plataforma tecnológica desarrollada y administrada por el Banco Central de Costa Rica”, la cual permite transferencias de Fondos a Terceros, Créditos Directos, Débitos Directos y otros que permiten mayores opciones para movilizar los fondos de una entidad financiera hacia otra.
+En virtud de lo anterior, dentro de la competencia del Banco Central está un Reglamento para el Sistema de Pago Electrónico el cual busca garantizar condiciones de diseño y funcionamiento que ofrezcan a los ciudadanos una propuesta de valor segura y eficiente, necesaria para facilitarles la cancelación de los pasajes en un ambiente óptimo de servicio. Dicho Reglamento ya existe desde el 2018, pero carece de una puerta jurídica para que el servicio pueda entrar en vigor. Con base a lo antes mencionado y lo estipulado en el artículo 2 incisos c) y d) y el artículo 3 incisos e) y k) de la Ley Orgánica del Banco Central de Costa Rica, Ley N°7558 el Banco Central de Costa Rica es el órgano competente para la Sistematización de Pagos.
+La Ley N° 9416, Ley para Mejorar la Lucha contra el Fraude Fiscal en su artículo 4 establece la obligatoriedad para que todas las personas físicas con actividad lucrativa que presten servicios al público acepten como medio de pago alternativo las tarjetas de crédito o débito, así como cualquier otro mecanismo electrónico o no.
+Además de lo indicado anteriormente, el capítulo IX de la Ley N° 9635, Ley de Fortalecimiento de las Finanzas Públicas, en su artículo 45 adiciona un artículo 85 bis a la Ley N° 4755, Código de Normas y Procedimientos Tributarios, de 3 de mayo de 1971 referente a la infracción administrativa que se sancionará con una multa equivalente a un salario base por la no aceptación de medios alternativos de pago, entre estos las tarjetas de crédito o débito u otros mecanismos de pago, electrónico o no, garantizados por una institución financiera.
+La utilización de un sistema de pago electrónico en autobuses y trenes tiene amplias ventajas como la eliminación del efectivo la cual como efecto secundario desestimularía los asaltos a buses y a la vez agilizaría el servicio de pago a los usuarios de buses y trenes. Por lo que esta iniciativa se asume como una política de Estado en términos de modernización, seguridad, eficiencia, práctico, control, transparencia, entre otros.
+Por los motivos anteriormente expuestos y con el fin de que el sistema de pago electrónico sea una realidad en nuestro país, además de brindarle seguridad jurídica para que este proyecto sea desarrollado de manera pronta y expedita, se somete a consideración de la Asamblea Legislativa el presente proyecto de ley. “Ley para Establecer el Pago Electrónico en el Transporte Público Remunerado de Personas”.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA ESTABLECER EL PAGO ELECTRÓNICO EN EL
+TRANSPORTE PÚBLICO REMUNERADO DE PERSONAS
+TÍTULO I
+DISPOSICIONES GENERALES
+ARTÍCULO 1- La presente ley tiene por objeto la regulación del pago electrónico en el transporte público remunerado de personas en el país.
+ARTÍCULO 2- A efectos de la presente ley se entenderá por el sistema de pago electrónico la creación de aquellos mecanismos para permitir el pago de las tarifas correspondientes del transporte público remunerado de personas a través de tarjetas de débito, crédito o cualquier otro mecanismo que faculte el pago sin la utilización de dinero en efectivo.
+ARTÍCULO 3- El sistema de pago electrónico en el transporte público remunerado de personas, de acuerdo al ámbito de aplicación del artículo 4 de la presente ley, al menos, tendrá las siguientes características:
+a) El sistema de pago electrónico deber ser universal, es decir un único sistema para todos los servicios públicos.
+b) Debe ser accesible para los usuarios que presenten alguna discapacidad y para los adultos mayores.
+c) El sistema de pago electrónico debe tener absoluta disponibilidad mientras el servicio se encuentre en uso por parte de los usuarios.
+d) Debe ser un sistema seguro para el usuario y para el recaudador garantizando la recaudación tarifaria de forma correcta dependiendo de la necesidad del usuario.
+ARTÍCULO 4- El ámbito de aplicación de esta norma respecto a la implementación del pago electrónico en el transporte público remunerado de personas se refiere a las modalidades de autobuses y ferrocarriles.
+ARTÍCULO 5- Se crea la Comisión de Pago Electrónico en Transporte Público, en adelante (CPETP) como comisión intersectorial. La CPETP se encargará de coordinar los lineamientos generales e implementar el pago electrónico en el Transporte Público remunerado de personas según las condiciones señaladas en esta ley.
+ARTÍCULO 6- La CPETP estará integrada por:
+a) Un representante del Banco Central de Costa Rica de la Dirección de División Sistema de Pagos.
+b) Un representante del Ministerio de Obras Públicas y Transportes (MOPT).
+c) Un representante del Consejo Transporte Público (CTP).
+d) Un representante del Instituto Costarricense de Ferrocarriles (INCOFER).
+e) Un representante del Ministerio de Ciencia, Tecnología y Telecomunicaciones (MICITT).
+f) Un representante de la Autoridad Reguladora de los Servicios Públicos (ARESEP).
+g) El presidente o representante de cada cámara de autobuseros.
+Cada institución u organización nombrará a un representante y un suplente, en caso de ausencia de la primera, para conformarla, con el objeto de asegurar su integración y funcionamiento.
+La Comisión será coordinada por el representante del Banco Central de Costa Rica, de la Dirección de División Sistema de Pagos quien la presidirá. Quienes integren esta Comisión desempeñarán sus cargos sin percibir dietas, ni salarios adicionales ni honorario, por lo que su desempeño será de forma ad honórem.
+Para el caso de los representantes según el inciso g) las cámaras de autobuseros designarán a sus representantes y los recomendarán a la comisión citada.
+ARTÍCULO 7- La Comisión de Pago Electrónico en Transporte Público (CPETP) sesionará una vez al mes como mínimo y no devengará dietas, sus sesiones tendrán por objetivo la coordinación intersectorial para la implementación y aplicación del sistema de pago electrónico en el Transporte Público remunerado de personas.
+ARTÍCULO 8- Las funciones de la presente Comisión encargada del pago electrónico serán:
+a) Desarrollar los lineamientos generales del esquema operativo para la implementación del pago electrónico en el transporte público remunerado de personas según las condiciones y el ámbito de aplicación de esta norma.
+b) Realizar recomendaciones al Banco Central de Costa Rica (BCCR), Consejo de Transporte Público (CTP) y Autoridad Reguladora de Servicios Públicos (ARESEP), para la implementación del pago electrónico del transporte público remunerado de personas desde la perspectiva de su implementación en los procesos de índole legal, tecnológica, reglamentaria operativa, procedimental y estrategias del método de pago electrónico.
+c) Informar a las empresas del sector de transporte público a través de las páginas oficiales de las asociaciones y cámaras correspondientes sobre los acuerdos tomados en la Comisión y los avances del pago electrónico, al menos, una vez al mes.
+d) Establecer las recomendaciones en cuanto a los mecanismos de contingencia necesarios sobre la puesta en marcha del pago electrónico.
+e) Diseñar un sistema de pago electrónico con sus respectivos convenios y protocolización adecuada para que este cumpla con las necesidades del usuario y permita la efectiva recaudación tarifaria.
+ARTÍCULO 9- Le corresponderá al Ministerio de Obras Públicas y Transportes implementar el sistema de pago electrónico en el transporte público remunerado de personas y velar de forma permanente por la regulación de este, para dicho control el MOPT deberá hacerse acompañar de los criterios del Banco Central de Costa Rica, específicamente de la Dirección de División Sistema de Pagos, como ente encargado de los métodos de pago electrónico nacionales, y de la ARESEP, como ente regulador tarifario del Transporte Público Nacional, quiénes también regularán el control del volumen de pasajeros en el Sistema de Transporte remunerado de personas, esto último en conjunto con los operadores quienes deberán emitir reporte mensual electrónico de dicho control a la ARESEP.
+TÍTULO II
+DISPOSICIONES TRANSITORIAS
+TRANSITORIO I- El Poder Ejecutivo tendrá un período de dos meses para reglamentar la presente Ley.
+TRANSITORIO II- El Ministerio de Obras Públicas y Transportes junto con el Banco Central de Costa Rica y la Autoridad Reguladora de los Servicios Públicos tendrán un plazo de tres meses para implementar el sistema de pago electrónico según lo dispuesto en el artículo 3 de la presente ley.
+TRANSITORIO III- La Dirección General de Tributación tendrá seis meses después de implementado el sistema de pago electrónico según lo dispuesto en el artículo 4 de la presente ley para cumplir con la aplicación de las sanción dispuesta en el artículo 85 bis de la Ley N°4755, Código de Normas y Procedimientos Tributarios (Código Tributario), del 03 de mayo de 1971 y sus reformas, ante el incumplimiento de lo establecido en el artículo 4 de la Ley N°9416, Ley para Mejorar la Lucha Contra el Fraude Fiscal, del 30 de diciembre del 2016 y sus reformas.
+Rige a partir de su publicación.
+Jonathan Prendas Rodríguez
+Diputado
+11 de noviembre de 2019
+NOTAS: Este proyecto pasó a estudio e informe de la Comisión Permanente Ordinaria de Asuntos Económicos.
+El Departamento de Servicios Parlamentarios ajustó el texto de este proyecto a los requerimientos de estructura.

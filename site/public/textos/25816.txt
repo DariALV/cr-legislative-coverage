@@ -1,0 +1,197 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DEL RÉGIMEN ESPECIAL DE LAS PERSONAS TRABAJADORAS INDEPENDIENTES
+ÁLVARO RAMÍREZ BOGANTES
+DIPUTADO
+EXPEDIENTE N.º 25.816
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY DEL RÉGIMEN ESPECIAL DE LAS PERSONAS TRABAJADORAS INDEPENDIENTES
+Expediente N.º 25.816
+ASAMBLEA LEGISLATIVA:
+El presente proyecto de ley tiene el objetivo de crear un régimen jurídico para las personas trabajadoras independientes, fomentando la formalidad, el acceso a la seguridad social ante contingencias sociales, la simplificación de trámites y la garantía del acceso al bienestar social para esta población. Lo anterior con fundamento en las siguientes premisas:
+El imperativo de la formalización ante la crisis de informalidad
+La transformación estructural de los mercados de trabajo en el siglo XXI ha desplazado el eje de la relación laboral tradicional hacia la autonomía. Sin embargo, en Costa Rica, este cambio ha venido acompañado de una brecha de desprotección alarmante. Según los datos más recientes del Instituto Nacional de Estadística y Censos (INEC) al cierre de 2025 y los primeros reportes de 2026, la informalidad en el sector independiente ha alcanzado niveles críticos que amenazan la sostenibilidad de nuestro modelo de bienestar.
+Al cierre de 2025, se estimaba que el 83,5 por ciento de las personas ocupadas independientes se encontraban en condiciones de informalidad, cifra que se eleva dramáticamente al 88,6% si se analiza específicamente a quienes trabajan por cuenta propia, es decir, sin emplear a terceros. En contraste, el sector asalariado presenta apenas un 22,0% de informalidad. Esta asimetría revela que la persona trabajadora independiente es hoy el rostro de la precariedad en Costa Rica: de las 825.000 personas en puestos de trabajo informales en el país, 457.000 (más del 55%) operan de manera independiente.
+Perfil de la vulnerabilidad y la exclusión del sector
+La informalidad no afecta a todos por igual, lo que profundiza las desigualdades estructurales. Los datos del INEC muestran que la falta de protección social se ensaña con la población de menor nivel educativo (62,5% de informalidad en primaria incompleta frente al 14,7% en universitarios), con las personas de 60 años o más (60,7%) y con los habitantes de zonas rurales (45,9% frente al 32,3% en zonas urbanas).
+Históricamente, estas personas han constituido un grupo injustamente apartado de la formulación de las políticas públicas. Mientras que para el asalariado el ingreso es fijo y existe un patrono que gestiona la carga administrativa y asume parte de la cotización, la persona trabajadora independiente asume el pago completo a la seguridad social, carga con todos los riesgos personales y económicos de su actividad, enfrenta ingresos variables e inestables y debe lidiar con un aparato burocrático que presume sus ingresos y lo tiende a tratar con desconfianza estructural.
+Morosidad, círculo vicioso y la necesidad de un nuevo trato administrativo
+El modelo actual de seguridad social costarricense, si bien exhibe una de las tasas de cobertura más elevadas de trabajo independiente en la región de América Latina, no ha logrado integrar plenamente a este colectivo y está lejos de lograrlo. Pese a los altos índices de afiliación que maneja la CCSS, se estima que alrededor del 43% de las personas trabajadoras independientes registradas ante la institución se encuentran en morosidad. Esta cifra no responde a una irresponsabilidad masiva, sino a un fenómeno más complejo que incluye varios elementos: de un lado, la complejidad del sector, vinculada con su heterogeneidad y diferenciación en su capacidad de pago de impuestos y cotizaciones a la seguridad social originada en la precariedad laboral de un importante sector del trabajo por cuenta propia; por otra parte, la falta de reconocimiento pleno de la realidad del trabajador independiente por parte de la administración; y el oportunismo en la afiliación (“riesgo moral” en el aseguramiento) pues con mucha frecuencia la persona no afiliada o morosa, o sus familiares dependientes, deben enfrentar problemas de salud y requieren cobertura inmediata del seguro social para acceder a tratamientos altamente costosos, sin haber cotizado previamente. A nivel del sistema de seguridad social, el resultado de este fenómeno es una "trampa de deuda" donde los intereses y multas, junto con la compleja burocracia, terminan alejando a la persona trabajadora independiente de su posibilidad de formalización.
+Para romper este círculo vicioso, es imperativo que la formalización no sea un calvario burocrático. Esta ley introduce la inscripción única e interoperabilidad mediante el Registro Único Tributario (RUT). El Estado debe funcionar como una unidad: que el acto de inscripción ante la administración tributaria active automáticamente el aseguramiento en la CCSS, utilizando la tecnología y plataformas móviles para que las personas en puestos de trabajo informales transiten hacia la formalidad de forma sencilla y en tiempo real.
+Nuevas realidades: la persona trabajadora autónoma económicamente dependiente (TAED) y la protección patrimonial
+El proyecto reconoce también figuras jurídicas ignoradas en nuestro ordenamiento, como el TAED. Existen miles de personas que, manteniendo su autonomía, dependen económicamente de un solo cliente. Al no ser ni asalariados ni empresarios plenos, quedan en un limbo de vulnerabilidad que este proyecto regula para otorgarles protección contractual y seguridad jurídica sin desvirtuar su naturaleza autónoma.
+Aunado a esto, el miedo al riesgo patrimonial es una barrera crítica. Históricamente, ante un revés económico, la persona trabajadora independiente ha puesto en riesgo su vivienda familiar. Esta ley introduce el concepto de patrimonio de afectación, permitiendo separar los activos productivos del hogar principal. Así, la protección social no es solo prestacional, sino que garantiza que emprender no signifique la pérdida del techo familiar.
+Experiencias comparadas internacionales y tendencias globales
+Diversos países han avanzado durante las últimas décadas hacia modelos regulatorios diferenciados para las personas trabajadoras independientes y microemprendedoras, reconociendo que el diseño institucional aplicable al empleo asalariado tradicional no siempre resulta compatible con la realidad del trabajo autónomo.
+En América Latina destacan particularmente las experiencias de Brasil, Uruguay y Argentina en materia de monotributo y regímenes simplificados de incorporación a la formalidad. El modelo brasileño del “microempreendedor individual” (MEI) permitió incorporar a millones de personas al sistema tributario y de seguridad social mediante cuotas simplificadas y procedimientos digitales de bajo costo. De forma similar, Uruguay implementó esquemas de tributación simplificada con componentes integrados de seguridad social, mientras que Argentina desarrolló mecanismos de monotributo destinados a pequeños contribuyentes y trabajadores autónomos de reducida capacidad económica.
+En el ámbito europeo, países como España e Italia han desarrollado figuras específicas para trabajadores autónomos económicamente dependientes, reconociendo situaciones donde, pese a no existir subordinación laboral clásica, sí se configura una relación de dependencia económica significativa que requiere niveles especiales de protección jurídica.
+Asimismo, organismos internacionales como la Organización Internacional del Trabajo (OIT), la Organización para la Cooperación y el Desarrollo Económicos (OCDE) y la Comisión Económica para América Latina y el Caribe (Cepal) han insistido en la necesidad de que los Estados modernicen sus marcos regulatorios para responder a las nuevas formas de trabajo y garantizar pisos mínimos de protección social universal.
+Costa Rica no puede permanecer ajena a estas transformaciones globales. La presente iniciativa recoge las mejores prácticas internacionales, pero las adapta a las particularidades institucionales, constitucionales y financieras del modelo costarricense de seguridad social y administración tributaria.
+Objetivos de esta iniciativa
+Este proyecto constituye un esfuerzo pionero para regular de manera sistemática y unitaria el trabajo independiente o autónomo o por cuenta propia en Costa Rica, y se nutre de experiencias internacionales de países que ya han transitado esta vía. Sus objetivos principales son:
+Justicia contributiva: transitar de un esquema de ingresos presuntos hacia el ingreso neto real, reconociendo la naturaleza variable e intermitente de los ingresos de este sector.
+Protección del patrimonio: establecer una separación automática para que las deudas derivadas de la actividad económica no pongan en riesgo la vivienda familiar ni bienes de uso personal.
+Equiparación prestacional: fijar los mismos beneficios y requisitos que los asalariados en los seguros de la CCSS y el Seguro de Riesgos del Trabajo del INS.
+Fomento local y simplificación: readecuar las normativas municipales para eliminar barreras al pequeño emprendedor, y creación del régimen de monotributo para unificar impuestos y cargas sociales en un solo pago fijo para actividades de subsistencia.
+Incentivos dirigidos: fomentar el emprendimiento en jóvenes, mujeres y el envejecimiento activo de personas adultas mayores mediante exenciones y cuotas consolidadas iniciales.
+Gobernanza democrática: saldar la deuda de representación garantizando que las personas trabajadoras independientes tengan voz propia en la Junta Directiva de la CCSS, para así fortalecer el tripartismo y la democracia institucional.
+Reforzar el financiamiento: dotar al sistema de seguridad social de recursos frescos y estables mediante la formalización de quienes hoy se encuentran fuera del sistema tributario y de la seguridad social.
+Transparencia: imponer a los colegios profesionales el deber de informar sobre el ejercicio liberal de sus agremiados para asegurar su participación equitativa y solidaria en el sistema.
+Por las razones expuestas, se somete a consideración de la Asamblea Legislativa el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DEL RÉGIMEN ESPECIAL DE LAS PERSONAS TRABAJADORAS INDEPENDIENTES
+CAPÍTULO I
+Disposiciones Generales
+ARTÍCULO 1- Objeto
+La presente ley tiene por objeto establecer un marco jurídico unificado para el reconocimiento, fomento, protección y formalización de las personas trabajadoras independientes, garantizando justicia contributiva, la simplificación de trámites y la equiparación de su protección social.
+ARTÍCULO 2- Orden público
+Esta ley es de orden público e interés social.
+ARTÍCULO 3- Definiciones
+Para la correcta interpretación y aplicación de la presente ley, se establecen las siguientes definiciones:
+Persona trabajadora independiente: persona física que realiza de forma habitual, personal, directa y autónoma una actividad económica lucrativa de tipo empresarial, cuyos ingresos dependen directamente de los beneficios derivados de los bienes y servicios que produce, sin subordinación, y asumiendo el riesgo de su actividad, sola, de forma unipersonal o familiar y contratando o no a terceros. Se presume la autonomía cuando la persona dispone de su propia organización de medios de producción y asume el riesgo de pérdida o beneficio de forma íntegra. La categoría de personas trabajadoras independientes comprende: por un lado, a las personas trabajadoras “por cuenta propia” o “autónomas” que trabajan solas o con socios en su propia empresa y que no contratan empleados de forma permanente y pueden tener ayuda familiar no remunerada; comprende además a quienes trabajan en su propia empresa y sí contratan personal de manera permanente y remunerada.
+Persona trabajadora independiente de subsistencia: persona trabajadora independiente que realiza actividades económicas de baja escala y reducida capacidad contributiva, generalmente de carácter personal o familiar, orientadas primordialmente a garantizar la satisfacción de necesidades básicas de subsistencia propia o de su núcleo familiar, cuyos ingresos no superan los umbrales que definan reglamentariamente la Administración Tributaria y la Caja Costarricense de Seguro Social (CCSS), para efectos del régimen del microemprendedor (Monotributo). Esta categoría se caracteriza por la ausencia de contratación permanente de personal asalariado y por una limitada acumulación de capital productivo.
+Prestaciones de la seguridad social: conjunto de beneficios, servicios, coberturas, subsidios y derechos económicos o asistenciales otorgados por los regímenes de seguridad social administrados por la Caja Costarricense de Seguro Social (CCSS), el Instituto Nacional de Seguros (INS) u otras entidades competentes, destinados a proteger a las personas frente a contingencias sociales, incluyendo, entre otras, atención médica, incapacidades, maternidad, pensiones, riesgos del trabajo, invalidez, vejez y muerte.
+Contingencias sociales: acontecimientos, situaciones o riesgos que afectan la capacidad de generación de ingresos, la salud, integridad física, autonomía o bienestar de las personas y que justifican la intervención protectora del sistema de seguridad social, tales como enfermedad, maternidad, accidente, discapacidad, desempleo involuntario, riesgos del trabajo, invalidez, vejez o muerte.
+Cliente principal: aquel que represente un mínimo del setenta y cinco por ciento (75%) del total de los ingresos regulares de las personas trabajadoras independientes.
+Oportunismo en la afiliación: conducta consistente en incorporarse, reincorporarse o regularizar la afiliación al sistema de seguridad social de manera estratégica o temporal, principalmente con el propósito inmediato de acceder a prestaciones o servicios de alto costo ante la ocurrencia inminente o actual de una contingencia social, sin una contribución previa, regular y proporcional al financiamiento solidario del sistema.
+ARTÍCULO 4- Ámbito de aplicación
+Esta ley aplica a todas las personas físicas, nacionales o extranjeras con residencia legal en el país, que generan ingresos en el territorio nacional mediante actividades lucrativas autónomas, incluyendo profesionales liberales, microemprendimientos y personas trabajadoras independientes de subsistencia.
+CAPÍTULO II
+De la Formalización e Inscripción Única
+ARTÍCULO 5- Ventanilla única digital a través del Registro Único Tributario (RUT)
+El Registro Único Tributario (RUT) del Ministerio de Hacienda actuará como la ventanilla única digital para la formalización de las personas trabajadoras independientes.
+La inscripción en este registro surtirá efectos simultáneos para:
+a) El registro fiscal ante la Administración Tributaria.
+b) El registro y afiliación obligatoria a los seguros administrados por la Caja Costarricense de Seguro Social (CCSS).
+c) El registro ante el Sistema de Banca para el Desarrollo (SBD), cuando así lo solicite el interesado.
+ARTÍCULO 6- Acto de inscripción única e interoperabilidad
+El acto de inscripción en el Registro Único Tributario (RUT) será único y suficiente para iniciar la relación jurídico-tributaria y el aseguramiento ante la Caja Costarricense de Seguro Social (CCSS).
+El Ministerio de Hacienda y la Caja Costarricense de Seguro Social (CCSS) garantizarán la interoperabilidad técnica de sus sistemas de información, de modo que los datos ingresados se transmitan en tiempo real entre ambas instituciones, creando automáticamente el perfil del trabajador en la base de datos de la CCSS. El sistema generará una identificación y un registro compartido que será válido ante todas las instituciones públicas.
+Si transcurridos diez días hábiles desde la inscripción en el RUT, la CCSS no ha generado el número de asegurado y completado los trámites necesarios de inscripción, la persona trabajadora se considerará formalmente inscrita para efectos de cobertura del aseguramiento.
+ARTÍCULO 7- Autogestión y actualización de datos
+La Administración Tributaria, en coordinación con la Caja Costarricense de Seguro Social, habilitará en la plataforma digital del Registro Único Tributario (RUT) los módulos necesarios para que la persona trabajadora independiente pueda:
+a) Inscribirse, modificar sus datos o desinscribirse.
+b) Reportar, de forma mensual, trimestral, semestral o anual, según el régimen aplicable, el ajuste de sus ingresos brutos y netos conforme a la estacionalidad de su actividad.
+c) Recibir notificaciones y estados de cuenta unificados sobre sus obligaciones contributivas y de seguridad social.
+CAPÍTULO III
+Derechos, Deberes y Protección Patrimonial
+ARTÍCULO 8- Derechos individuales
+Toda persona trabajadora independiente goza de los derechos al trabajo y libre elección de oficio, libertad de iniciativa económica, libre competencia, asociatividad gremial y acceso a prestaciones de seguridad social suficientes ante las diferentes contingencias sociales.
+ARTÍCULO 9- Deberes
+Son obligaciones de las personas bajo este régimen:
+a) Gestionar su afiliación formal al régimen en la ventanilla única a través del Registro Único Tributario (RUT) del Ministerio de Hacienda.
+b) Declarar sus ingresos de forma veraz y precisa ante la Administración Tributaria.
+c) Cumplir con el pago oportuno de sus cotizaciones a la seguridad social y tributos establecidos legalmente.
+ARTÍCULO 10- Separación y protección del patrimonio
+Se establece la separación entre el patrimonio profesional o laboral (activos productivos) y el patrimonio personal y familiar de la persona trabajadora independiente, en todos los ámbitos económicos.
+La residencia principal y los bienes de uso familiar son inembargables por acreedores derivados de la actividad económica por cuenta propia, salvo renuncia expresa, o deudas de carácter público con la seguridad social y/o la administración tributaria. A tales efectos, la persona trabajadora independiente podrá constituir un patrimonio de afectación sobre su residencia principal mediante declaración ante el Registro Nacional, el cual será inembargable por obligaciones derivadas exclusivamente de su actividad lucrativa autónoma.
+El reglamento regulará los requisitos, formalidades y mecanismos de coordinación con el régimen de patrimonio familiar previsto en el Código de Familia, a fin de evitar duplicidades y garantizar la efectiva protección.
+ARTÍCULO 11- Trabajador Autónomo Económicamente Dependiente (TAED)
+Se reconoce la figura del trabajador autónomo económicamente dependiente (TAED) para quienes realizan trabajo por cuenta propia y perciban regularmente al menos el setenta y cinco por ciento (75%) de sus ingresos de un solo cliente, pero mantienen su autonomía organizativa, quienes gozarán de derechos de protección y obligaciones específicas que definirán los reglamentos.
+La relación entre el Trabajador Autónomo Económicamente Dependiente (TAED) y su cliente principal deberá formalizarse mediante un contrato por escrito. Éste deberá especificar el objeto del servicio, la jornada, el régimen de descanso o interrupción anual de la actividad y las condiciones económicas.
+El cliente principal estará obligado a:
+a) Asumir la responsabilidad contractual y garantizar el pago de los servicios según los plazos acordados.
+b) Proveer condiciones de seguridad y salud en el trabajo adecuadas cuando la actividad se desarrolle en las instalaciones del cliente.
+c) Cubrir las indemnizaciones correspondientes en caso de rescisión unilateral o injustificada del contrato por parte del cliente, conforme a lo que determine el reglamento.
+El Trabajador Autónomo Económicamente Dependiente (TAED) no podrá tener personas trabajadoras a su cargo ni subcontratar la actividad con terceros.
+El incumplimiento de estos requisitos desvirtuará la figura, aplicándose las sanciones correspondientes por simulación de relación laboral.
+Cuando, conforme al principio de primacía de la realidad, se determine la existencia de subordinación jurídica, técnica u organizativa, la relación deberá ser calificada como laboral y se regirá por las disposiciones del Código de Trabajo de Costa Rica y demás normativa laboral aplicable.
+El reglamento establecerá el modelo de contrato tipo, los parámetros para el cálculo de las indemnizaciones y los procedimientos administrativos y judiciales aplicables para la recalificación de la relación.
+CAPÍTULO IV
+Régimen de Seguridad Social
+ARTÍCULO 12- Equiparación de derechos y requisitos
+Se garantiza la equiparación de los requisitos de acceso y de los beneficios prestacionales de las personas trabajadoras independientes con respecto a las personas asalariadas.
+La Caja Costarricense de Seguro Social (CCSS) deberá asegurar que los trabajadores independientes gocen de los mismos derechos en términos de seguro de salud, prestaciones por enfermedad, maternidad y pensiones, eliminando cualquier inequidad histórica en el otorgamiento de estos servicios.
+La equiparación de requisitos de acceso a las prestaciones podrá adecuarse, sin embargo, a las características específicas del trabajo por cuenta propia para prevenir el oportunismo en la afiliación y abuso en el uso de los servicios, previniendo así el riesgo moral en el aseguramiento.
+ARTÍCULO 13- Determinación de las cotizaciones sobre el ingreso neto real
+La base de cotización para la Caja Costarricense de Seguro Social (CCSS) será el ingreso neto real, determinado por los ingresos brutos, menos los gastos necesarios, razonables y congruentes para la operación, incluyendo el pago del impuesto sobre la renta y otras cargas tributarias.
+La CCSS podrá aplicar coeficientes de gastos presuntos por actividad para simplificar el cálculo. Las bases mínimas contributivas definidas para cada ramo de seguro se calcularán sobre el ingreso neto reportado en la declaración del impuesto sobre la renta del periodo fiscal anterior, con ajustes trimestrales opcionales.
+ARTÍCULO 14- Escalas progresivas
+La Caja Costarricense de Seguro Social (CCSS) establecerá esquemas contributivos progresivos que garanticen la sostenibilidad financiera del sistema y la equidad en la carga para personas microemprendedoras de bajos ingresos y de subsistencia. La Junta Directiva institucional podrá fijar un techo absoluto de cotización mensual sobre un ingreso neto máximo generado.
+ARTÍCULO 15- Prescripción de deudas
+En el caso de los trabajadores independientes, las condiciones para la prescripción de sus deudas con la Caja Costarricense de Seguro Social (CCSS) están sujetas a lo establecido por el artículo 2 de la Ley del Trabajador Independiente, n.°10363, del 3 de mayo de 2023.
+ARTÍCULO 16- Digitalización y autogestión (plataforma móvil)
+La Caja Costarricense de Seguro Social (CCSS) y el Ministerio de Hacienda deberán implementar y mantener una plataforma tecnológica, incluyendo el acceso a través de la telefonía móvil, que permita a la persona trabajadora independiente realizar de forma autogestionada su afiliación, ajuste de ingresos según estacionalidad, pagos, convenios de pago automáticos y recepción de notificaciones.
+ARTÍCULO 17- Participación en la Junta Directiva de la CCSS
+Las personas trabajadoras independientes estarán representadas en la Junta Directiva de la Caja Costarricense de Seguro Social (CCSS), con un representante como parte del sector patronal. Las organizaciones sociales, asociaciones o cámaras de trabajadores independientes debidamente constituidas e inscritas, con al menos tres años de constitución, podrán elegir y proponer a su representante.
+CAPÍTULO V
+Régimen Tributario y Simplificación
+ARTÍCULO 18- Categorías tributarias
+Para efectos tributarios, las personas trabajadoras independientes se clasificarán en:
+a) Régimen general, de conformidad con lo establecido por la Ley del Impuesto sobre la Renta, n.° 7092, del 21 de abril de 1988.
+b) Régimen de profesiones liberales.
+c) Régimen del microemprendedor (monotributo), de conformidad con lo establecido por la presente ley.
+ARTÍCULO 19- Del monotributo
+Se crea el monotributo como un sistema unificado de pago mensual para microemprendedores en actividades de subsistencia que trabajan por cuenta propia, solos o con ayuda familiar no remunerada, que no contratan terceros, y con ingresos inferiores al umbral definido por la administración tributaria y la Caja Costarricense de Seguro Social (CCSS).
+Este pago único agrupa el impuesto sobre la renta y las contribuciones a la seguridad social para las coberturas de salud, pensiones y riesgos del trabajo. Su recaudación y determinación de procedimientos administrativos estará a cargo de la Caja Costarricense de Seguro Social, quien, a través del Sistema Centralizado de Recaudación, Sicere, distribuirá la aportación entre los diferentes regímenes de seguro social y trasladará a la Tesorería Nacional la fracción correspondiente al pago de impuestos.
+Quedan excluidos los profesionales liberales y quienes opten expresamente por el régimen general.
+CAPÍTULO VI
+Incentivos y Fomento
+ARTÍCULO 20- Acceso a Banca de Desarrollo y apoyo a la formalización
+Las personas trabajadoras independientes formalizadas bajo este régimen tendrán acceso preferencial a crédito y condiciones de financiamiento diferenciadas en el Sistema de Banca para el Desarrollo, sin que los activos personales protegidos en el artículo 10 de esta ley puedan ser exigidos como garantía colateral.
+Tendrán acceso también a los beneficios sociales y prestaciones de las instituciones del sector público que puedan contribuir a su formalización, incluyendo los programas pertinentes del Ministerio de Trabajo y Seguridad Social, el Instituto Nacional de Aprendizaje (INA), el Instituto Mixto de Ayuda Social (IMAS), el Fondo de Desarrollo Social y Asignaciones Familiares (Fodesaf), el Instituto Costarricense de Turismos (ICT), entre otras, en las condiciones que defina el reglamento.
+ARTÍCULO 21- Incentivos para jóvenes y mujeres
+Las personas menores de 35 años y las mujeres que se inscriban por primera vez como personas trabajadoras independientes gozarán de los siguientes beneficios durante los primeros veinticuatro (24) meses de actividad:
+a) Exención total del impuesto sobre la renta.
+b) Tarifa de consolidación: pago del cincuenta por ciento (50%) de la cuota escalonada de la Caja Costarricense de Seguro Social (CCSS) que les corresponda, sin reducción de beneficios prestacionales; el Estado asumirá el diferencial de la cotización.
+c) Base mínima contributiva (BMC) favorable: aplicación de la BMC más baja del sistema durante este periodo.
+ARTÍCULO 22- Incentivos para personas adultas mayores
+Las personas con edad por encima de la edad normal de retiro que establezca la Caja Costarricense de Seguro Social, que se encuentren realizando actividades económicas de manera independiente y debidamente inscritas, gozarán de los siguientes beneficios con el fin de fomentar su autonomía económica y garantizar y complementar sus prestaciones de protección social:
+a) Tarifa de consolidación diferenciada: pago del cincuenta por ciento (50%) de la cuota escalonada de la Caja Costarricense de Seguro Social (CCSS) que les corresponda. El Estado asumirá el diferencial de la cotización para asegurar que no exista una reducción en sus beneficios prestacionales de seguro social. En caso de ser pensionada, la persona adulta mayor deberá definir si desea cotizar al régimen de Invalidez, Vejez y Muerte, o solamente al seguro de salud.
+b) Base mínima contributiva (BMC) ajustada y reducida: aplicación permanente de la BMC más baja del sistema.
+c) Exención en el impuesto sobre la renta: exención total del impuesto sobre la renta sobre los ingresos netos provenientes exclusivamente de su actividad independiente, siempre que estos no superen el equivalente a diez salarios base. Si supera este umbral, aplicará una exención del cincuenta por ciento (50%) sobre los excedentes.
+d) Prioridad en programas de formalización: acceso preferente a programas de formación profesional, alfabetización digital y asesoría administrativa gratuita brindados por las instituciones del Estado, con el fin de reducir las barreras de gestión de sus emprendimientos y facilitar su tránsito a la formalización.
+e) Compatibilidad de ingresos: el ejercicio de la actividad independiente bajo este régimen será plenamente compatible con el goce de una pensión acreditada por los regímenes contributivos de base.
+ARTÍCULO 23- Adecuación de planes reguladores municipales
+Se autoriza a las administraciones municipales de todo el territorio nacional uniformar y adecuar sus planes reguladores y normativas de patentes a la realidad socioeconómica de las personas trabajadoras independientes y microemprendedores en general.
+Estas reformas tendrán los siguientes objetivos:
+a) Simplificar y reducir la burocracia para la obtención de licencias de funcionamiento de bajo riesgo.
+b) Permitir el uso de la vivienda como local de ejecución de actividades profesionales o comerciales de pequeña escala, siempre que no alteren la convivencia vecinal y pongan en riesgo la salud colectiva.
+c) Establecer tasas diferenciadas y trámites expeditos que promuevan la formalización a nivel local sin constituir una carga desproporcionada.
+CAPÍTULO VII
+Cooperación Interinstitucional
+ARTÍCULO 24- Obligación de reporte de colegios profesionales
+Los colegios profesionales están obligados a remitir anualmente, en el mes de enero, a la Caja Costarricense de Seguro Social (CCSS) y al Ministerio de Hacienda la lista de sus agremiados habilitados o activos para el ejercicio liberal de la profesión. El incumplimiento de esta obligación se sancionará según lo disponga el reglamento.
+Dicha lista deberá contener, como mínimo:
+Nombre completo
+Número de cédula o identificación
+Número de colegiado
+Fecha de nacimiento
+Fecha de incorporación al colegio respectivo
+Estado de colegiatura (activo o inactivo)
+El incumplimiento de esta obligación se sancionará según lo disponga el reglamento.
+ARTÍCULO 25- Homologación de jurisprudencia y sentencias judiciales
+La Caja Costarricense de Seguro Social (CCSS) aplicará el principio de extensión de jurisprudencia a terceros y homologará la jurisprudencia y las sentencias judiciales emitidas por los tribunales laborales y constitucionales, en un plazo no mayor de 30 días, cuando se acumulen al menos tres sentencias en el mismo sentido, garantizando la seguridad jurídica, la equidad en el trato y la no discriminación de las personas trabajadoras independientes respecto a otros regímenes.
+CAPÍTULO VIII
+Reformas a Otras Leyes
+ARTÍCULO 26- Adición de un párrafo final al artículo 3 de la Ley Constitutiva de la Caja Costarricense de Seguro Social, Ley n.º 17, del 22 de octubre de 1943.
+Se adiciona un párrafo final al artículo 3 de la Ley Constitutiva de la Caja Costarricense de Seguro Social, Ley n.° 17, del 22 de octubre de 1943. El texto se leerá de la siguiente manera:
+Artículo 3-
+[...]
+Las cotizaciones de los trabajadores independientes se calcularán sobre el ingreso neto real. La Junta Directiva definirá reglamentariamente modelos de justicia contributiva con escalas progresivas aplicables a las distintas categorías de trabajadores independientes, reconociendo la naturaleza variable e intermitente de los ingresos del trabajador independiente.
+ARTÍCULO 27- Modificación del inciso b) del numeral 2 del artículo 6 de la Ley Constitutiva de la Caja Costarricense de Seguro Social, Ley n.º 17, del 22 de octubre de 1943.
+Se modifica el inciso b) del numeral 2 del artículo 6 de la Ley Constitutiva de la Caja Costarricense de Seguro Social, Ley n.° 17, del 22 de octubre de 1943. El texto será el siguiente:
+[…]
+b) Tres representantes del sector patronal, incluyendo las personas trabajadoras independientes.
+[…].
+ARTÍCULO 28- Adición de un párrafo final al inciso c) del artículo 15 de la Ley del Impuesto sobre la Renta, n.° 7092, del 21 de abril de 1988.
+Se adiciona un párrafo final al inciso c) del artículo 15 de la Ley del Impuesto sobre la Renta, n. °7092, del 21 de abril de 1988. El texto se leerá de la siguiente manera:
+Artículo 15- Tarifa del impuesto
+A la renta imponible se le aplicarán las tarifas que a continuación se establecen. El producto así obtenido constituirá el impuesto a cargo de las personas a que se refiere el artículo 20 de esta ley.
+[...]
+c) A las personas físicas con actividades lucrativas se les aplicará la siguiente escala de tarifas sobre la renta imponible:
+[…]
+Las personas físicas acogidas a los incentivos de primer emprendimiento del artículo 21 y a los incentivos para personas adultas mayores del artículo 22 de la Ley del Régimen Especial de las Personas Trabajadoras Independientes estarán exentas de este impuesto por el plazo ahí definido. Para las personas trabajadoras independientes que se acojan al régimen del microemprendedor (Monotributo), el impuesto sobre la renta se cancelará mediante una cuota fija unificada junto a sus cargas sociales, según las tablas que defina el Ministerio de Hacienda en coordinación con la Caja Costarricense de Seguro Social.
+CAPÍTULO IX
+Disposiciones Finales y Transitorias
+ARTÍCULO 29- Reglamentación
+El Poder Ejecutivo reglamentará la presente ley en un plazo máximo de doce (12) meses posteriores a su publicación.
+TRANSITORIO I- El Ministerio de Hacienda y la Caja Costarricense de Seguro Social (CCSS) deberán emitir la reglamentación técnica y las tablas de categorización del régimen de monotributo en un plazo no mayor a seis (6) meses.
+TRANSITORIO II- El Ministerio de Hacienda y la Caja Costarricense de Seguro Social (CCSS) dispondrán de doce (12) meses, contados a partir de la publicación de esta ley, para adecuar sus plataformas tecnológicas y garantizar la interoperabilidad y el intercambio de información en tiempo real, utilizando el Registro Único Tributario (RUT) como ventanilla única para las personas trabajadoras independientes.
+Rige a partir de su publicación.
+Álvaro Ramírez Bogantes
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 05-10-2026).

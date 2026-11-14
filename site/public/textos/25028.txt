@@ -1,0 +1,208 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA LA GOBERNANZA MARINA DEMOCRÁTICA EN COSTA RICA
+CYNTHIA MARITZA CÓRDOBA SERRANO
+Y OTRA SEÑORA DIPUTADA
+EXPEDIENTE N.º 25.028
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+PROYECTO DE LEY
+LEY PARA LA GOBERNANZA MARINA DEMOCRÁTICA EN COSTA RICA
+Expediente N.º 25.028
+ASAMBLEA LEGISLATIVA:
+Costa Rica posee un territorio de 51 100 km² de superficie terrestre y 589 662 km² de mar territorial y zona económica exclusiva. Sin embargo, tal como indica la Política Nacional del Mar Costa Rica 2013 - 2028, el área marina supera en más de diez veces su superficie terrestre. Asimismo, el país posee gran diversidad de ecosistemas marinos y costeros: arrecifes coralinos y rocosos, manglares, fondos lodosos, zonas rocosas, playas, acantilados, praderas de pastos marinos, un fiordo tropical, áreas de surgencia, una zona de afloramiento costero estacional, un domo térmico, una fosa oceánica de más de 4 000 m de profundidad, una dorsal oceánica (el Coco), islas costeras, una isla oceánica y ventanas hidrotermales, entre otros (Sinac/Minaet, 2018 informe Grúas II: Propuesta de ordenamiento territorial para la conservación de la biodiversidad).
+El Estado costarricense, mediante diversas leyes e intervenciones públicas como políticas, programas, planes y proyectos, ha abordado atención a las diversas necesidades y/o problemáticas que surgen en torno a la gestión integral de las áreas marinas en la cual además, convergen una diversidad de instituciones de acuerdo con sus competencias de protección, control, uso y extracción de recursos marinos, tales como: el Ministerio de Ambiente y Energía por medio del Sistema Nacional de Áreas de Conservación, el Instituto Costarricense de Pesca y Acuicultura, y el Servicio Nacional de Guardacostas, entre otras que se ven involucradas.
+A pesar de los esfuerzos realizados por el Poder Ejecutivo mediante la publicación del Decreto Ejecutivo de Creación y Funcionamiento del Consejo Nacional de Desarrollo del Mar, N.º 37212-Minaet-MAG-SP-MOPT de 2012, el diseño de la Política Nacional del Mar Costa Rica 2013-2028 y más recientemente en el 2019 mediante el Decreto Ejecutivo N.º 41775-MP-MSP-MAG-Minae-MOPT-TUR “Creación del mecanismo de gobernanza de los espacios marinos sometidos a la Jurisdicción del Estado Costarricense”, no han resultado ser efectivos, ya que aún no se cuenta con una adecuada gestión de los espacios marino costeros, debido a que han sido instrumentos de carácter colaborativos entre instituciones. Por lo tanto, mediante esta ley se pretende generar seguridad jurídica y formalizar la gobernanza marina para su efectiva implementación, asignación de roles y de las competencias institucionales.
+Para abordar esta propuesta se tomó como línea base dicho Decreto Ejecutivo N.º 41775-MP-MSP-MAG-Minae-MOPT-TUR, el cual se establece como instrumento que promueve la coordinación interinstitucional para la gestión y el manejo participativo de los recursos marinos con el fin de aprovechar de manera sostenible los servicios ecosistémicos y garantizar la participación activa y efectiva de la sociedad en la gestión integral del mar, mediante la zonificación de las aguas jurisdiccionales costarricenses y el establecimiento de órganos regionales de participación ciudadana formal.
+La evolución de la gobernanza marina en Costa Rica ha implicado una transición significativa de estructuras consultivas a órganos de mayor jerarquía y capacidad decisoria. Este cambio se fundamenta en el Decreto Ejecutivo N.º 37735-PLAN, que regula el Sistema Nacional de Planificación, estableciendo una jerarquía de órganos colegiados como consejos, comités y subcomités, con el objetivo de fortalecer la articulación interinstitucional y la participación ciudadana en la planificación nacional.
+En este contexto, la creación del Consejo de Gobernanza Marina representa un avance hacia una estructura de alto nivel, compuesta por jerarcas de instituciones clave. Esta configuración permite una coordinación más efectiva en la gestión de los espacios marinos, facilitando la implementación de políticas integradas y sostenibles.
+Así, el paso de comités a consejos no solo refleja un cambio en la nomenclatura, sino una transformación en la capacidad de decisión y en el compromiso institucional con la sostenibilidad marina.
+JUSTIFICACIÓN
+Según la OECD en su estudio “The Ocean Economy to 2050” (versión disponible en inglés y francés), si el océano fuera un país, la economía oceánica sería la quinta más grande del mundo, contribuye entre el 3% y el 4% del PIB global y entre el 3.5% y 4.7% del empleo mundial (1995–2020).
+Su crecimiento sostenido en los últimos 25 años no está garantizado a futuro, debido a presiones crecientes como el cambio climático, pérdida de biodiversidad y gobernanza deficiente. Dicho estudio brinda las siguientes recomendaciones clave hacia el 2050 en la economía oceánica, las cuales se enfocan en:
+Mejorar la gobernanza oceánica y reforzar la planificación espacial marina, ya que pocos países han desarrollado estrategias integrales e implementar decisiones basadas en evidencia científica, así como establecer mediciones armonizadas y estadísticas coherentes para políticas eficaces.
+Eliminar subsidios perjudiciales, en particular, subsidios a la pesca que fomentan la sobreexplotación y degradación del ecosistema.
+Fomentar la transición energética y promover energías limpias y renovables en actividades oceánicas (eólica marina, hidrógeno, etc.) que contribuyan a reducir la dependencia de combustibles fósiles en la economía oceánica (que hoy domina el sector).
+Aprovechar la tecnología y digitalización e incentivar el uso de tecnologías digitales para monitoreo, logística marítima y pesca sostenible, así como fomentar la innovación oceánica basada en ciencia y tecnología.
+Expandir el conocimiento del océano, ya que solo un 25% del fondo oceánico está cartografiado y esto requiere mayor inversión en investigación y exploración de alta mar.
+Desarrollar escenarios futuros, en el cual el informe expone dos escenarios hasta 2050: (i) transición energética acelerada: mayor sostenibilidad, pero crecimiento más lento; y (ii) transición estancada: crecimiento limitado y posible contracción del sector oceánico.
+A nivel nacional, el Informe del Estado de la Nación 2024 sobre “Gobernanza e institucionalidad para la gestión del territorio, la conservación y el uso de los recursos marino-costeros en Costa Rica” señala una serie de hallazgos relevantes sobre el estado actual de la gobernanza marina en el país e indica:
+Avances en conservación marina, pero con rezagos en sostenibilidad: Costa Rica ha ampliado significativamente su cobertura marina protegida (más de cinco veces en décadas recientes). Sin embargo, existe escasa información sistemática sobre el estado de los ecosistemas marinos y el uso sostenible de sus recursos, lo que limita la toma de decisiones efectivas.
+Fragmentación institucional y debilidad en la gobernanza: hay múltiples instituciones con funciones superpuestas y poca coordinación, y la ausencia de una rectoría clara y liderazgo político en el ámbito marino-costero ha afectado la gestión integrada.
+El modelo institucional se ha transformado en las últimas décadas, pero persisten vacíos legales, obsolescencia normativa y baja articulación interinstitucional.
+Problemas estructurales en el manejo pesquero: Incopesca, la principal entidad pesquera, carece de recursos técnicos, financieros y científicos suficientes y ha sido objeto de críticas por su enfoque productivista y por influencias del propio sector regulado. Existen altos niveles de pesca ilegal, sobrepesca, uso de métodos no selectivos y conflictos entre pesca artesanal e industrial.
+Fuerte conflictividad socioambiental: se documenta una intensa protesta social relacionada con la gestión marina y pesquera entre 1992 y 2023, en donde los conflictos giran en torno a licencias de pesca, acceso a recursos, participación en toma de decisiones y políticas de conservación restrictivas.
+Participación de la sociedad civil organizada: grupos sociales costeros han desarrollado formas de acción colectiva y participación local en modelos como Áreas Marinas de Pesca Responsable (AMPR), sin embargo, existen tensiones entre coaliciones de conservación (ONG, ambientalistas) y coaliciones de aprovechamiento sostenible (pescadores, cámaras, sector productivo).
+Modelos institucionales emergentes aún en construcción: se han creado figuras como las unidades de gobernanza marina (UGM) y la Comisión para la Gobernanza Marina (CGM) para promover una gestión integrada, pero su implementación ha sido parcial e interrumpida por cambios políticos.
+En la administración 2022-2026 se eliminó el Viceministerio de Aguas y Mares y se paralizó la Comisión de Gobernanza Marina, lo que debilitó los esfuerzos de coordinación.
+En conclusión, aunque Costa Rica ha avanzado en conservación marina, se mantienen debilidades estructurales en gobernanza, institucionalidad, control y participación social, lo que impide una gestión efectiva y sostenible de los recursos marino-costeros. Por este motivo, se requieren reformas institucionales, fortalecimiento de capacidades, planificación territorial marina e inclusión de la sociedad civil como actores clave en la toma de decisiones.
+PROPUESTA PROYECTO
+La presente Ley para la Gobernanza Marina Democrática en Costa Rica se funda en el reconocimiento del derecho humano a un ambiente sano, limpio y ecológicamente equilibrado, conforme al artículo 50 de la Constitución Política de la República de Costa Rica. Este derecho ha sido ratificado y desarrollado por el sistema internacional de derechos humanos, en particular por la Corte Interamericana de Derechos Humanos en su Opinión Consultiva OC-23/17, que reconoce el ambiente como un derecho autónomo, esencial para el ejercicio de otros derechos fundamentales como la vida, la salud, la alimentación, el agua y la cultura.
+Asimismo, se incorpora lo dispuesto por la Resolución 76/300 de la Asamblea General de las Naciones Unidas (2022), que reconoce universalmente el derecho a un ambiente limpio, saludable y sostenible. Este reconocimiento impone obligaciones concretas al Estado costarricense: prevenir daños ambientales significativos, garantizar el acceso a la información ambiental, asegurar la participación pública en la toma de decisiones ambientales y facilitar el acceso a la justicia en asuntos ambientales.
+La gobernanza marina democrática, que esta ley propone, se concibe como un mecanismo para garantizar estos derechos, particularmente para las comunidades costeras, los pueblos indígenas y las poblaciones afrodescendientes que mantienen vínculos históricos, culturales y económicos con los espacios marino-costeros. Se reconoce la legitimidad de sus conocimientos tradicionales y su derecho a participar de manera activa, libre, informada y efectiva en la toma de decisiones sobre los recursos y territorios marinos, conforme a lo dispuesto por el Convenio 169 de la OIT, ratificado por Costa Rica mediante la Ley N.º 7316.
+Esta ley, al estructurar un modelo de gobernanza participativa e inclusiva, crea canales formales para la protección de derechos colectivos e individuales, mediante: (i) la integración efectiva de actores locales en los comités marinos locales, (ii) el acceso equitativo a los beneficios derivados del uso sostenible del mar y (iii) la aplicación del principio de no regresividad en la protección ambiental. Así, la gobernanza marina democrática se constituye en una vía concreta para el cumplimiento de los compromisos del Estado costarricense en materia de derechos humanos, justicia ambiental y equidad territorial.
+La gobernanza marina democrática en Costa Rica debe basarse en el respeto a los derechos humanos, entre estos los de las comunidades costeras que dependen del mar para su subsistencia, cultura y economía. La legislación en esta materia debe asegurar su participación, acceso equitativo a los recursos y protección de sus medios de vida. La Corte Interamericana de Derechos Humanos ha reconocido el derecho a un ambiente sano como autónomo y esencial para el ejercicio de otros derechos, como la salud, el trabajo, la alimentación y la identidad cultural. Así, la normativa marina debe articularse con los derechos económicos, sociales, culturales y ambientales, garantizando justicia ambiental y mecanismos efectivos de consulta, información y reparación.
+VINCULACIÓN CON LOS OBJETIVOS DE DESARROLLO SOSTENIBLE (ODS)
+La Ley para la Gobernanza Marina Democrática en Costa Rica contribuye al cumplimiento de los Objetivos de Desarrollo Sostenible (ODS) de la Agenda 2030, al establecer un marco jurídico e institucional que operativiza dichos compromisos internacionales en el ámbito marino-costero nacional.
+Esta ley articula los ODS en la arquitectura del Sistema Nacional de Gobernanza Marina, en sus principios rectores, en la participación ciudadana y en los instrumentos de planificación y monitoreo definidos en su texto. En particular, la presente iniciativa incide en los siguientes objetivos:
+ODS 14: vida submarina. La ley impulsa la conservación y uso sostenible de los ecosistemas marinos mediante el ordenamiento espacial marino, la zonificación participativa, la regulación del uso de los recursos, la economía azul y el fortalecimiento de la investigación científica.
+ODS 13: acción por el clima. Se establece un enfoque de adaptación basada en ecosistemas, resiliencia de comunidades costeras frente al cambio climático y creación de un sistema de monitoreo climático marino.
+ODS 16: paz, justicia e instituciones sólidas. La creación de órganos colegiados como el Consejo de Gobernanza Marina y los Comités Marinos Locales asegura la transparencia, la participación informada y la rendición de cuentas en la gestión de los recursos marinos.
+ODS 1: fin de la pobreza y ODS 10: reducción de las desigualdades. La ley promueve la redistribución justa de beneficios del uso del mar, el acceso a medios de vida sostenibles y mecanismos inclusivos para las comunidades más vulnerables, que siempre han sido las de las zonas costeras en Costa Rica.
+ODS 5: igualdad de género. Se promueve la participación de las mujeres en la toma de decisiones vinculadas al mar, el reconocimiento de su papel en la conservación y el aprovechamiento sostenible, y su acceso a beneficios derivados de la economía azul.
+De este modo, la gobernanza marina democrática no solo responde a un enfoque técnico o ambiental, sino que se configura como una política pública transversal que integra compromisos internacionales de derechos humanos y desarrollo sostenible. La implementación de esta ley permitirá avanzar hacia un modelo de gestión marina más justo, resiliente y equitativo, alineado con la Agenda 2030 y con la visión de un Estado costarricense que prioriza la vida, el bienestar colectivo y el equilibrio ecológico en su territorio marino.
+Considerando los argumentos expuestos, esta iniciativa de ley se erige como una ley marco para la gobernanza marina democrática en Costa Rica. El país enfrenta la imperiosa necesidad de una transformación profunda en múltiples ámbitos y este proceso debe comenzar por uno de sus pilares fundamentales: los océanos. Tomando en cuenta que el territorio marítimo costarricense representa más del 90% de su extensión total, es esencial establecer un marco jurídico robusto que promueva la coordinación interinstitucional, la participación ciudadana efectiva y la sostenibilidad en la gestión de los recursos marinos. Con esta legislación se busca consolidar un modelo de gobernanza que garantice la conservación de la biodiversidad marina, el uso sostenible de los recursos y el bienestar de las comunidades costeras, alineándose con los compromisos internacionales adquiridos por el país en materia ambiental y de derechos humanos.
+Aprobar una de ley de gobernanza marina es una decisión necesaria que marcará un antes y un después en cómo nos relacionamos con nuestros océanos.
+Nuestro país se ha ganado, mundialmente, la fama de líder en sostenibilidad, por eso, debemos dar este paso y consolidar la imagen de Costa Rica. Es una inversión país que toma en cuenta a todos los actores —instituciones públicas, sector pesquero, comunidades costeras, academia, sector privado y sociedad civil— bajo un marco claro, participativo y transparente.
+El proyecto de ley en discusión fortalecerá la capacidad del país para conservar sus ecosistemas marinos, pero, además, generará réditos económicos, sociales y ambientales a corto, mediano y largo plazo. Con esta propuesta fomentaremos la innovación y la economía azul, mejoraremos la seguridad jurídica para la inversión sostenible y, sobre todo, garantizaremos la salud de los mares como fuente de vida, alimento, cultura y resiliencia ante el cambio climático.
+Por las razones antes expuestas, se somete a consideración de las señoras y los señores diputados el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA LA GOBERNANZA MARINA DEMOCRÁTICA EN COSTA RICA
+TÍTULO I
+DISPOSICIONES GENERALES: OBJETO, ÁMBITO DE APLICACIÓN Y PRINCIPIOS
+ARTÍCULO 1- Objeto de la ley. La presente ley tiene por objeto establecer el marco jurídico para la gobernanza marina democrática en Costa Rica, mediante la creación, fortalecimiento e implementación de mecanismos de coordinación interinstitucional y monitoreo que garanticen la conservación, uso sostenible y distribución justa y equitativa de los beneficios derivados de los recursos marinos y costeros.
+ARTÍCULO 2- Ámbito de aplicación. Esta ley se aplicará en todo el territorio marítimo de la República de Costa Rica, incluyendo el mar territorial, la plataforma continental, la zona económica exclusiva y las áreas marino-costeras, conforme a los límites establecidos en la Constitución Política y los tratados internacionales ratificados por Costa Rica.
+ARTÍCULO 3- Principios. La aplicación e interpretación de esta ley se regirá por los siguientes principios:
+Uso sostenible: el aprovechamiento de los recursos marinos debe garantizar su disponibilidad para las generaciones presentes y futuras.
+Precautorio: cuando exista peligro de daño grave o irreversible al ambiente marino, la falta de certeza científica absoluta no deberá utilizarse como razón para postergar la adopción de medidas eficaces para prevenir la degradación del ambiente.
+Enfoque ecosistémico: reconoce que los recursos naturales, los usuarios y el modo de gobernanza interactúan entre sí, afectando al sistema como un todo, por lo que considera la integralidad e interdependencia de las dimensiones ecológica, social, de género e institucional, para garantizar la sostenibilidad de los servicios ambientales en los marinos y costeros.
+Participación ciudadana: la gestión integral de los espacios marinos es una competencia indelegable del Estado y sus instituciones; su éxito requiere el involucramiento activo y efectivo de la sociedad. Este involucramiento debe ser sistemático, informado, consultado y responsable, tanto en la implementación de acciones, como en la rendición de cuentas y evaluación. Este principio ofrece la oportunidad para que los interesados puedan ofrecer sus puntos de vista, y participar en el diseño e implementación de acciones para la gestión sostenible de los mares. El Estado deberá reconocer el conocimiento tradicional de las comunidades y colectivos de la sociedad civil como un complemento valioso al conocimiento técnico y científico en relación con la protección del ambiente.
+Transparencia: los procesos de toma de decisiones, asignación de recursos y rendición de cuentas relacionados con la gobernanza marina serán accesibles al público.
+Equidad: se promoverá una distribución justa de los beneficios derivados del uso sostenible de los recursos marinos.
+Coordinación interinstitucional: las instituciones públicas trabajarán de manera articulada y coordinada para la efectiva implementación de políticas y acciones en materia de gobernanza marina.
+Coherencia política: las políticas públicas relacionadas con el ambiente marino y costero serán coherentes entre sí y con los compromisos internacionales adquiridos por el país.
+Economía azul: se garantizará el uso sostenible de los recursos marinos en los procesos de fomento del desarrollo económico, el cual deberá adicionalmente ser basado en el uso sostenible de los recursos marinos, generar empleo, reducir la pobreza y fortalecer la seguridad alimentaria.
+Mitigación y adaptación al cambio climático: se implementarán medidas para reducir la vulnerabilidad de los ecosistemas marinos y las comunidades costeras frente a los efectos del cambio climático.
+Desarrollo sostenible democrático: el Estado garantizará el aprovechamiento de los recursos para las presentes y futuras generaciones, asegurando que el acceso a los recursos y riqueza generada por las actividades económicas relacionadas con la pesca se distribuya equitativamente en la sociedad, de modo que alcance al mayor número de personas y permita el progreso solidario de las familias que componen ese sector social y productivo.
+Principio de objetivación: las decisiones en materia de gestión de los recursos y los ecosistemas marinos y costeros estarán fundamentadas con la mejor información científica disponible, aplicando el principio precautorio cuando la información sea insuficiente.
+Gobernanza compartida: asegura que el manejo de los espacios marinos, los espacios de aguas continentales y los recursos hidrobiológicos, se dará de forma compartida y consensuada entre el Sistema Nacional de Gobernanza Marina y las comunidades costeras que tengan una relación directa con esos espacios, en un marco de sostenibilidad ambiental y social.
+TÍTULO II
+SISTEMA NACIONAL DE GOBERNANZA MARINA
+CAPÍTULO I
+ESTRUCTURA ORGANIZATIVA
+ARTÍCULO 4- Sistema Nacional de Gobernanza Marina. Se crea el Sistema Nacional de Gobernanza Marina como el mecanismo de coordinación interinstitucional responsable de articular y armonizar las políticas, planes, programas y acciones para la gestión sostenible de los recursos marinos y costeros del país.
+ARTÍCULO 5- Integración del Sistema Nacional de Gobernanza Marina. El Sistema Nacional de Gobernanza Marina estará integrado por:
+El Consejo de Gobernanza Marina.
+La Secretaría Ejecutiva de Gobernanza Marina.
+Los comités marinos locales.
+CAPÍTULO II
+CONSEJO DE GOBERNANZA MARINA
+ARTÍCULO 6- Consejo de Gobernanza Marina. Se crea el Consejo de Gobernanza Marina, como el órgano deliberativo y de consulta de máximo nivel decisorio del Sistema y estará integrado por:
+El ministro/a de la Presidencia o la persona que este designe con voz, pero sin voto para apoyar en la coordinación de las decisiones tomadas.
+El ministro/a de Ambiente y Energía o, en su representación, el viceministro/a que tenga a su cargo los temas de recursos marinos e hídricos, quien lo coordinará.
+El ministro/a de Agricultura y Ganadería o, en su representación, quien ostente la Presidencia Ejecutiva del Incopesca.
+El ministro/a de Obras Públicas y Transportes o, en su representación, el viceministro/a que tenga a su cargo la Dirección Marítimo-Portuaria.
+La persona que presida el Instituto Costarricense de Turismo o su gerente general.
+El ministro/a de Seguridad Pública o, en su representación, quien ostente la dirección del Servicio Nacional de Guardacostas.
+Para cumplir con sus fines, el Consejo podrá convocar la participación de cualquier otro ministro/a, asesor/a, consejero/a presidencial o jerarca de entes descentralizados o empresas públicas.
+Dicho órgano deberá reunirse dos veces al año de manera ordinaria y extraordinariamente cuando se requiera.
+El quórum y sus convocatorias se regirán según estipula el artículo 52 y 53 de la Ley General de Administración Pública, N.º 6227, y sus reformas.
+ARTÍCULO 7- Funciones del Consejo de Gobernanza Marina. El Consejo de Gobernanza Marina tendrá las siguientes funciones:
+Desarrollar una visión país para los mares que asegure el aprovechamiento sostenible de los recursos marinos, el desarrollo económico del país y garantice mares limpios, sanos y resilientes.
+Elaborar políticas para impulsar el ordenamiento espacial marino y la economía azul para la gestión sostenible del espacio, recursos y usos en el mar.
+Articular, integrar y conciliar las políticas e instrumentos de planificación emitidos en materia marina, impulsando su implementación a través de las instituciones rectoras.
+Implementar, evaluar, revisar y actualizar periódicamente la Política Nacional del Mar, la Estrategia Nacional para la Gestión Integrada de los Recursos Marinos y Costero, Estrategia Nacional de Control y Vigilancia Marina y cualquier otra estrategia vinculante con el sector marino.
+Establecer mecanismos de coordinación para fortalecer la vigilancia de nuestros mares, en forma tal que se garantice la seguridad de la vida humana en el mar y el aprovechamiento sostenible de los recursos marinos y costeros.
+Fomentar la coordinación para la implementación de acciones interinstitucionales dirigidas a una gestión sostenible de los recursos marinos y costeros.
+Promover la armonización de la política nacional con los compromisos internacionales en materia de gobernanza marina.
+Constituir grupos de trabajo bajo la figura de comisiones técnicas con el fin de coordinar y ejecutar procesos integrales para el desarrollo sostenible de un área geográfica específica, que requiera de una especial atención, por su ligamen a aspectos marinos y costeros.
+Oficializar la delimitación geográfica de las unidades de gobernanza marina y la estructura de participación de los comités marinos locales.
+Aprobar los procesos y las medidas de ordenamiento espacial marino promulgadas mediante procesos altamente técnicos y participativos desarrollados a lo interno de las unidades de gobernanza marina.
+Cualquier otra que se establezca de común acuerdo por el Consejo.
+Las demás que le asigne esta ley y su reglamento.
+ARTÍCULO 8- Secretaría Ejecutiva. La Secretaría Ejecutiva del Consejo le corresponderá a la Secretaría de Planificación Sectorial de Ambiente, Energía, Mares (Seplasa) del Ministerio de Ambiente y Energía.
+ARTÍCULO 9- Funciones de la Secretaría Ejecutiva. La Secretaría Ejecutiva del Consejo tendrá las siguientes funciones:
+Preparar el orden del día del Consejo de Gobernanza Marina.
+Confeccionar las minutas del Consejo de Gobernanza Marina.
+Ser secretario de actas del Consejo de Gobernanza Marina y sus subcomisiones.
+Dar seguimiento a los acuerdos tomados en el Consejo de Gobernanza Marina.
+Coordinar con las instituciones vinculantes la ejecución de los instrumentos de política y proyectos que defina el Consejo de Gobernanza Marina.
+Buscar y apoyar con insumos para el Consejo relacionados con la agenda interinstitucional de desarrollo marino.
+Apoyar en la coordinación de la constitución de grupos de trabajo en áreas geográficas específicas, que requiera de una especial atención, por su ligamen a aspectos marinos y costeros.
+Fungir como vínculo de información y coordinación con del Consejo de Gobernanza Marina y los comités marinos locales.
+Cualquier otra que sea designada por el Consejo de Gobernanza Marina.
+Dar seguimiento a los comités marinos locales de los acuerdos tomados.
+Convocar y dar seguimiento a los acuerdos que se tomen en las comisiones técnicas de los principales temas abarcados por el Consejo de Gobernanza Marina.
+CAPÍTULO III
+UNIDADES DE GOBERNANZA MARINA
+ARTÍCULO 10- Creación. Se crean las unidades de gobernanza marina, como modelo de gestión y gobernanza del espacio marino en las cuales coexistirán diferentes regímenes jurídicos y actividades económicas, tanto de aprovechamiento sostenible como de conservación y restauración para la conservación de los recursos marinos comprendidos dentro de la misma, considerando variables ambientales, sociales y económicas incluida la variable climática.
+ARTÍCULO 11- Objetivo. El principal objetivo de las unidades de gobernanza marina es lograr la coordinación de las acciones que realizan las diferentes instituciones estatales y los usuarios del mar para alcanzar el uso sostenible de los recursos y ecosistemas en estos espacios marinos, bajo los lineamientos y políticas nacionales.
+Esto deberá llevarse a cabo en coordinación con los entes públicos y privados competentes, según lo estipulado en la legislación vigente; en los instrumentos vigentes de ordenamiento territorial y ordenamiento espacial marino en la unidad de gobernanza marina y el Plan Director Marino respectivo.
+ARTÍCULO 12- Plan Director Marino. El Plan Director Marino es el documento oficial de planificación y gestión de las unidades de gobernanza marina, el cual está basado en procesos participativos y criterios técnicos y científicos, que orientan las acciones con el propósito de aprovechar, conservar y gestionar los recursos marinos, costeros y oceánicos.
+El plan será desarrollado por el comité marino de cada unidad de gobernanza marina y deberá ser aprobado por el Consejo para la Gobernanza Marina para su implementación.
+ARTÍCULO 13- De las competencias institucionales. Las instituciones competentes ejercerán las funciones legalmente establecidas en lo concerniente a la administración, manejo y aprovechamiento de los recursos marinos, costeros y oceánicos de las unidades de gobernanza marina.
+El diseño y contenido del Plan Director Marino de cada unidad de gobernanza marina deberá respetar las competencias legalmente estipuladas, y los instrumentos de ordenamiento terrestre o de ordenamiento espacial marino vigentes.
+CAPÍTULO IV
+COMITÉS MARINOS LOCALES
+ARTÍCULO 14- Comité Marino Local. Se crea el Comité Marino Local, el cual será el órgano de participación formal encargado de proponer, apoyar y dar seguimiento a la elaboración y ejecución del Plan Director Marino y Reglamento Operativo de su respectiva unidad de gobernanza marina. La figura de los comités marinos locales será creada mediante acuerdo emitido por el Consejo de Gobernanza Marina, el cual también tendrá a su cargo la aprobación final del Reglamento Operativo y Plan Director Marino de cada unidad de gobernanza marina que sea elevado por los comités marinos locales a través de la Secretaría Ejecutiva y previa revisión técnica con por la subcomisión creada al efecto.
+El comité marino local tendrá la responsabilidad de asegurar, dentro de dicho proceso, la adecuada participación de las comunidades involucradas y de todos los usuarios del mar, en estricto apego a las disposiciones establecidas en la legislación vigente, con especial atención a los instrumentos de ordenamiento territorial y ordenamiento espacial marino vigentes en cada localidad.
+Los comités marinos podrán crear mesas de trabajo específicas por área temática o para resolver problemáticas puntuales para la gestión sostenible de los recursos marinos.
+ARTÍCULO 15- Integración. Los comités marinos se promueve que estén integrados por las siguientes representaciones, con su respectiva designación en carácter de titular y suplente:
+Representante del Sistema Nacional de Áreas de Conservación.
+Representante del Instituto Costarricense de Pesca y Acuicultura.
+Representante del Servicio Nacional de Guardacostas.
+Representante de Capitanía de Puertos.
+Representante del Instituto Costarricense de Turismo.
+Representante de la Cámara de Turismo.
+Representante del gobierno local de la zona.
+Representante de ONG.
+Representante de universidades o centros académicos.
+Representante de pesca de pequeña escala.
+Representante de los pescadores de mediana escala.
+Representante de los pescadores de avanzada.
+Representante de los pescadores semiindustriales.
+Representante de los pescadores turísticos y/o deportivo.
+ñ) Representante de molusqueros.
+Estas representaciones se integrarán en la medida en que las instituciones estén presentes en la zona y de acuerdo con su vinculación con la actividad que se desarrolle. El proceso de convocatoria para la conformación de estas representaciones se definirá a nivel de reglamento.
+Las instituciones públicas que conforman este comité trabajarán de manera coordinada y respetando sus competencias, con el propósito de tutelar los recursos marinos, costeros y oceánicos presentes en cada unidad de gobernanza marina, excluyendo a las especies de interés pesquero o acuícola y tomarán en consideración lo establecido en el Plan Director Marino.
+Dentro de estos comités se promoverá la participación de las mujeres, según lo establecido en la legislación nacional.
+ARTÍCULO 16- Funciones de los comités marinos locales. Las funciones específicas y el ámbito territorial del Comité se establecerán en el acuerdo de creación respectivo. Las funciones generales de los comités son:
+Promover la participación de los ciudadanos en la toma de decisiones locales, facilitando la comunicación entre la población y las autoridades.
+Identificar y proponer soluciones a problemas locales, trabajando para mejorar la calidad de vida de la comunidad.
+Establecer mecanismos de diálogo y colaboración entre diferentes actores locales para alcanzar metas comunes.
+Desarrollar planes de acción locales, planificando y ejecutando proyectos para el desarrollo comunitario.
+Coadyuvar a las instituciones del Estado en la implementación de las estrategias y acciones necesarias para la adecuada vigilancia, control y monitoreo de su respectiva área de acción.
+Participar activamente en el proceso de creación de las políticas de ordenamiento espacial marino correspondientes a su área de trabajo.
+Cada comité marino local establecerá su propio reglamento, el cual será sometido, ante el Consejo de Gobernanza Marina para su aprobación final.
+CAPÍTULO V
+MECANISMOS DE PARTICIPACIÓN CIUDADANA
+ARTÍCULO 17- Derecho a la participación en la gobernanza marina. Se reconoce el derecho de todas las personas a participar en los procesos de toma de decisiones relacionados con la gobernanza marina. El Estado garantizará esta participación a través de los mecanismos establecidos en esta ley y su reglamento.
+ARTÍCULO 18- Audiencias públicas. El Consejo de Gobernanza Marina deberá realizar audiencias públicas para la discusión de políticas, planes y programas de gobernanza marina. La convocatoria a estas audiencias deberá realizarse con al menos quince días hábiles de anticipación, a través de medios de comunicación de alcance nacional o regional, según corresponda, presencial o virtual.
+TÍTULO III
+INSTRUMENTOS DE POLÍTICA PÚBLICA
+ARTÍCULO 19- Política Nacional del Mar. El Poder Ejecutivo, a través de la Comisión de Gobernanza Marina, formulará y aprobará la Política Nacional del Mar, como el instrumento rector que establece los lineamientos, objetivos y metas para la gestión sostenible de los recursos marinos y costeros del país.
+La Política tendrá una vigencia de diez años deberá ser evaluada y actualizada periódicamente. Su implementación se realizará mediante planes quinquenales de acción.
+ARTÍCULO 20- Estrategia Nacional para la Gestión Integrada de los Recursos Marinos y Costeros. Se establece la Estrategia Nacional para la Gestión Integrada de los Recursos Marinos y Costeros con el fin de garantizar la gestión integrada de la zona costera y de los recursos marinos costeros del país, especialmente enfocada en armonizar los usos y los impactos acumulados entre las actividades terrestres y marítimas, mediante la adopción de lineamientos estratégicos y políticas para orientar el accionar de las entidades públicas involucradas, así como de los otros actores de orden público y privado.
+ARTÍCULO 21- Estrategia Nacional de Control y Vigilancia Marina. Se establece la Estrategia Nacional de Control y Vigilancia Marina con el fin de asegurar el control y vigilancia del espacio marítimo y costero a través de una amplia coordinación interinstitucional liderada por el Servicio Nacional de Guardacostas, mediante la adopción de lineamientos estratégicos y políticas para orientar el accionar de las entidades públicas involucradas, así como de los otros actores de orden público y privado.
+ARTÍCULO 22- Plan Nacional de Ordenamiento Espacial Marino. Se establece el Plan Nacional de Ordenamiento Espacial Marino como el instrumento de planificación para la zonificación y ordenamiento de los usos y actividades en el espacio marino del país, con el fin de minimizar conflictos entre usuarios y garantizar la sostenibilidad de los ecosistemas marinos.
+ARTÍCULO 23- Contenido mínimo de los instrumentos de política pública a cargo del Sistema Nacional de Gobernanza Marina. Las políticas públicas relacionadas a la gobernanza marina, y emitidas en el marco de esta ley, deberán contener, al menos:
+Diagnóstico del estado de la situación y de los recursos marinos y costeros.
+Objetivos, metas e indicadores a corto, mediano y largo plazo.
+Estrategias y líneas de acción para los diferentes sectores vinculados.
+Mecanismos de coordinación interinstitucional y participación ciudadana.
+Evaluación de costos y estrategia de financiamiento.
+Indicadores de monitoreo, evaluación y rendición de cuentas.
+Alineamiento con el marco legal, compromisos macro y de convenciones internacionales.
+Definición de responsable.
+TÍTULO IV
+COORDINACIÓN INTERINSTITUCIONAL
+CAPÍTULO I
+MECANISMOS DE COORDINACIÓN INTERINSTITUCIONAL
+ARTÍCULO 24- Coordinación de competencias. Las instituciones públicas con competencias en materia de gobernanza marina deberán coordinar sus acciones a través de la Secretaría Ejecutiva del Consejo de Gobernanza Marina, respetando las competencias legales de cada entidad, pero garantizando la coherencia y complementariedad de sus acciones.
+ARTÍCULO 25- Convenios interinstitucionales. Las instituciones públicas podrán celebrar convenios de cooperación interinstitucional para la implementación conjunta de acciones en materia de gobernanza marina. Estos convenios deberán ser comunicados a la Secretaría Ejecutiva para su registro y seguimiento.
+ARTÍCULO 26- Planificación interinstitucional. Las instituciones públicas con competencias en materia de gobernanza marina deberán incluir en sus planes operativos anuales las acciones correspondientes a la implementación de la Política Nacional del Mar que sean de su competencia.
+La Secretaría Ejecutiva, en coordinación con el Ministerio de Planificación Nacional y Política Económica, establecerá los lineamientos para la incorporación de la gobernanza marina en los instrumentos de planificación institucional.
+ARTÍCULO 27- Sistemas de información integrados. Las instituciones públicas con competencias en materia de gobernanza marina deberán compartir la información relevante y adoptar protocolos comunes para la recolección, procesamiento y análisis de datos e indicadores sobre los recursos marinos y costeros del país. Podrá integrar información generada por las diferentes instituciones públicas, universidades y centros de investigación y deberá garantizar el acceso público a la información.
+ARTÍCULO 28- La Secretaría Técnica Nacional Ambiental (Setena) deberá incluir dentro de sus criterios de aprobación de los planes reguladores esta vinculación como un criterio adicional a considerar en sus índices de fragilidad ambiental (IFAS).
+ARTÍCULO 29- Todas las instituciones que formen parte del Sistema Nacional de Gobernanza Marina estarán obligadas a velar por el cumplimiento efectivo de los acuerdos y mandatos emitidos por el Consejo y demás instancias del sistema de gobernanza marina, garantizando en el ámbito de sus competencias la asignación oportuna y suficiente de los recursos financieros, técnicos y humanos necesarios para su ejecución. Asimismo, deberán coordinar con las autoridades competentes para asegurar la sostenibilidad financiera de las acciones acordadas.
+TÍTULO V
+DISPOSICIONES FINALES
+TRANSITORIO I- El Poder Ejecutivo reglamentará esta ley en un plazo no mayor a doce meses a partir de su publicación.
+TRANSITORIO II- El Consejo de Gobernanza Marina deberá instalarse en un plazo no mayor a doce meses a partir de la entrada en vigencia de esta ley.
+TRANSITORIO III- La Política Nacional del Mar en vigencia deberá ser evaluada y reformulada en un plazo no mayor a doce meses a partir de la instalación del Consejo de Gobernanza Marina.
+TRANSITORIO IV- Los instrumentos de política pública relacionados a ordenamiento espacial marino, deberá ser aprobado en un plazo no mayor a veinticuatro meses a partir de la entrada en vigor de esta ley.
+Rige a partir de su publicación.
+Cynthia Maritza Córdoba Serrano María Marta Padilla Bonilla
+Diputadas
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales e idiomáticos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 11-06-2025).

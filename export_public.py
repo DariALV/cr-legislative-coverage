@@ -2,7 +2,8 @@
 Exports the public data of the site (site/src/data/) from the private database and the Jev corpus run.
 
   python export_public.py [--database databases/private_corpus.db] [--jev-dir results/jev/corpus]
-                          [--out site/src/data]
+                          [--out site/src/data] [--texts-dir raw/text/asamblea/bills]
+                          [--texts-out site/public/textos]
 
 Writes bills.json, bills/<number>.json, news.json, outlets.json and stats/factions.json, following the
 contract in site/src/lib/types.ts. Values are kept as they are in the database, except the controlled
@@ -16,6 +17,9 @@ What is published:
   bills   the ones with a published link, or with activity in the data period (filed, a step or a vote)
   votes   every vote of the published bills, whatever its date. Motions are published as a summary
           (count by kind of motion and result), because a single bill can have thousands of them
+  texts   the base text of each published bill (the one it was filed with, an official public document),
+          as site/public/textos/<number>.txt, one line per paragraph. Texts longer than TEXT_MAX_CHARS
+          (budgets and their tables, mostly) are cut at a paragraph
 """
 import argparse
 import csv
@@ -39,6 +43,8 @@ VOTE_KIND_LABELS = {"plenary": "Plenario", "full_committee": "Comisión con pote
 # Votes whose name starts like this are motions; the rest are steps of the procedure (debates, waivers...).
 MOTION_PREFIX = "Moción"
 MOTION_RESULT_FIELDS = {"Aprobado": "approved", "Rechazado": "rejected"}   # annulled and tied go to "other"
+# Base texts longer than this are cut: the page reads them in a scroll box, and the long ones are tables.
+TEXT_MAX_CHARS = 150_000
 LINK_FROM_OUTLET = "enlace"
 LINK_FROM_MODEL = "modelo"
 OUTLET_NAMES = {"crhoy": "CRHoy", "delfino": "Delfino", "elmundo": "El Mundo CR", "nacion": "La Nación",
@@ -85,12 +91,27 @@ def grouped(con: sqlite3.Connection, query: str) -> dict[int, list[tuple]]:
   return groups
 
 
+def export_text(number: int, texts_dir: Path, texts_out: Path) -> dict:
+  """Copies the bill's base text to the site, cut if too long. Returns what the bill page needs to know."""
+  source = texts_dir / f"{number}.txt"
+  text = source.read_text(encoding = "utf-8").strip() if source.exists() else ""
+  if not text:
+    return {"available": False, "truncated": False, "words": 0}
+  words = len(text.split())
+  truncated = len(text) > TEXT_MAX_CHARS
+  if truncated:
+    text = text[:text.rfind("\n", 0, TEXT_MAX_CHARS)]
+  texts_out.mkdir(parents = True, exist_ok = True)
+  (texts_out / f"{number}.txt").write_text(text + "\n", encoding = "utf-8")
+  return {"available": True, "truncated": truncated, "words": words}
+
+
 def write_json(path: Path, data) -> None:
   path.parent.mkdir(parents = True, exist_ok = True)
   path.write_text(json.dumps(data, ensure_ascii = False, separators = (",", ":")), encoding = "utf-8")
 
 
-def export(database: Path, jev_dir: Path, out: Path) -> None:
+def export(database: Path, jev_dir: Path, out: Path, texts_dir: Path, texts_out: Path) -> None:
   con = sqlite3.connect(f"file:{database}?mode=ro", uri = True)
   links = substantive_links(jev_dir)
   outlet_links = {(news_id, bill) for news_id, bill in con.execute(
@@ -135,6 +156,10 @@ def export(database: Path, jev_dir: Path, out: Path) -> None:
   summaries, faction_counts, faction_deputies = [], defaultdict(Counter), defaultdict(set)
   votes_exported = motions_exported = 0
   shutil.rmtree(out / "bills", ignore_errors = True)
+  shutil.rmtree(texts_out, ignore_errors = True)
+  if not texts_dir.is_dir():
+    print(f"warning: {texts_dir} not found, no bill texts are exported")
+  texts = Counter()
   for number, name, file_type, date_proposed, law_number, status in con.execute(
       "SELECT number, name, file_type, date_proposed, law_number, status FROM bills ORDER BY number DESC"):
     if number not in published:
@@ -167,12 +192,16 @@ def export(database: Path, jev_dir: Path, out: Path) -> None:
                "news_count": len(bill_news), "votes_count": len(bill_votes),
                "motions_count": sum(m["approved"] + m["rejected"] + m["other"] for m in motions.values())}
     summaries.append(summary)
+    text = export_text(number, texts_dir, texts_out)
+    texts["available"] += text["available"]
+    texts["truncated"] += text["truncated"]
     write_json(out / "bills" / f"{number}.json", {
       "bill": summary, "proponents": bill_proponents,
       "steps": [{"organ": s[0], "description": s[1], "date_start": s[2], "date_end": s[3]}
                 for s in steps.get(number, [])],
       "votes": bill_votes,
       "motions": sorted(motions.values(), key = lambda m: -(m["approved"] + m["rejected"] + m["other"])),
+      "text": text,
       "news": bill_news})
 
   write_json(out / "bills.json", summaries)
@@ -193,7 +222,9 @@ def export(database: Path, jev_dir: Path, out: Path) -> None:
   print(f"news: {len(news)}")
   print(f"bills: {len(summaries)} ({covered} with coverage, {len(summaries) - covered} with activity only)")
   print(f"votes: {votes_exported} in detail, {motions_exported} motions summarized")
-  print(f"written to {out}")
+  print(f"texts: {texts['available']} ({texts['truncated']} cut at {TEXT_MAX_CHARS} characters), "
+        f"{len(summaries) - texts['available']} bills without text")
+  print(f"written to {out} and {texts_out}")
 
 
 if __name__ == "__main__":
@@ -204,5 +235,9 @@ if __name__ == "__main__":
   parser.add_argument("--jev-dir", type = Path, default = Path("results/jev/corpus"),
                       help = "folder with gate.csv and details.csv of the Jev corpus run")
   parser.add_argument("--out", type = Path, default = Path("site/src/data"), help = "output folder")
+  parser.add_argument("--texts-dir", type = Path, default = Path(Config.RAW_TEXT_DIR) / "asamblea" / "bills",
+                      help = "folder with the base text of each bill, <number>.txt")
+  parser.add_argument("--texts-out", type = Path, default = Path("site/public/textos"),
+                      help = "output folder of the bill texts")
   arguments = parser.parse_args()
-  export(arguments.database, arguments.jev_dir, arguments.out)
+  export(arguments.database, arguments.jev_dir, arguments.out, arguments.texts_dir, arguments.texts_out)

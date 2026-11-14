@@ -1,0 +1,176 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA LA MODERNIZACIÓN Y DIGITALIZACIÓN DE LAS
+CÉDULAS HIPOTECARIAS
+OSVALDO ARTAVIA CARBALLO
+DIPUTADO
+EXPEDIENTE N.º 25.745
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY PARA LA MODERNIZACIÓN Y DIGITALIZACIÓN DE LAS
+CÉDULAS HIPOTECARIAS
+Expediente N.º 25.745
+ASAMBLEA LEGISLATIVA:
+La presente iniciativa de ley tiene como objetivo modernizar y digitalizar el régimen jurídico de las cédulas hipotecarias regulado en nuestro Código Civil y Código de Comercio, mediante su adaptación al entorno electrónico y tecnológico actual, permitiendo su emisión, circulación, endoso, cancelación y ejecución, en formato digital, con plena validez y eficacia jurídica.
+Asimismo, procura fortalecer la seguridad jurídica, la trazabilidad y la publicidad registral de estos títulos, promoviendo mecanismos más ágiles, seguros y eficientes para la gestión y circulación del crédito hipotecario dentro del tráfico jurídico y financiero nacional.
+Antecedente normativo:
+La presente propuesta toma como base normativa y tecnológica la Ley n.° 10069, Ley sobre Letra de Cambio y Pagaré Electrónicos, así como la Ley n.° 8454, Ley de Certificados, Firmas Digitales y Documentos Electrónicos, con el propósito de garantizar la seguridad jurídica, autenticidad, integridad, trazabilidad y eficacia probatoria de las cédulas hipotecarias emitidas en formato electrónico.
+La Ley n.° 10069, vigente desde diciembre de 2021, tuvo como finalidad modernizar el régimen jurídico de determinados títulos valores mediante su desmaterialización y electronificación, permitiendo su emisión, circulación, anotación en cuenta y ejecución por medios electrónicos, dentro de plataformas tecnológicas seguras y centralizadas. Dicha normativa reconoce plena equivalencia funcional entre los títulos valores electrónicos y sus versiones emitidas en soporte físico, consolidando así un modelo jurídico compatible con los procesos actuales de transformación digital del sistema financiero y documental costarricense.
+En ese sentido, la citada ley permite que las letras de cambio y los pagarés sean emitidos, firmados, transmitidos, ejecutados y cancelados electrónicamente, mediante mecanismos que garantizan la identificación inequívoca de las partes, la autenticidad del documento, la integridad de su contenido y la trazabilidad de las operaciones realizadas sobre el título valor.
+Si bien la Ley n.° 10069 no regula directamente las cédulas hipotecarias, sí constituye un antecedente legislativo relevante en materia de digitalización de títulos valores y desmaterialización documental, estableciendo principios y mecanismos jurídicos plenamente compatibles con la presente iniciativa. Por ello, la propuesta retoma aspectos relacionados con la emisión electrónica, circulación digital, endoso, ejecución, cancelación y legitimación de títulos valores electrónicos, adaptándolos a la naturaleza jurídica particular de las cédulas hipotecarias reguladas en el Código Civil.
+Asimismo, la propuesta encuentra fundamento en la Ley n.° 8454, la cual reconoce la validez jurídica y eficacia probatoria de los documentos electrónicos y de la firma digital certificada, estableciendo el principio de equivalencia funcional respecto de los documentos físicos. En consecuencia, las cédulas hipotecarias electrónicas emitidas al amparo de esta iniciativa contarán con las mismas garantías legales, fuerza ejecutiva y efectos jurídicos que actualmente poseen las cédulas hipotecarias emitidas en soporte material, siempre que las partes intervinientes se identifiquen mediante certificados de firma digital avanzada emitidos conforme al ordenamiento jurídico costarricense.
+Utilización actual de las cédulas hipotecarias y su necesidad de modernización:
+A pesar de tratarse de una figura jurídica tradicional regulada en el Código Civil costarricense, las cédulas hipotecarias continúan siendo utilizadas dentro del tráfico jurídico y financiero nacional. Según datos del Registro Inmobiliario del Registro Nacional, durante el período comprendido entre enero de 2020 y agosto de 2025, se aplicó el código registral HK2 —correspondiente a cédulas hipotecarias— en un total de 2413 fincas inscritas y el código registral de cancelación de cédulas hipotecarias – en un total de 1218 casos.
+Lo anterior evidencia que las cédulas hipotecarias mantienen plena vigencia práctica como instrumento de garantía y circulación del crédito. Sin embargo, su regulación actual responde a un modelo concebido para títulos emitidos exclusivamente en soporte físico, lo cual resulta insuficiente frente a los procesos contemporáneos de digitalización documental, interoperabilidad institucional y modernización tecnológica del sistema registral y financiero.
+La utilización de títulos físicos genera riesgos asociados a pérdida, deterioro, falsificación, destrucción material y problemas de custodia, además de mayores costos operativos y judiciales, particularmente en trámites de reposición, circulación y ejecución de garantías. Asimismo, limita la trazabilidad integral del historial de tenencia del título y dificulta la automatización e interoperabilidad de los procesos registrales y financieros.
+En este contexto, la modernización y digitalización de las cédulas hipotecarias constituye una evolución natural del sistema jurídico registral costarricense, acorde con los principios de seguridad jurídica, equivalencia funcional del documento electrónico, eficiencia administrativa y transformación digital del Estado.
+La implementación de cédulas hipotecarias electrónicas permitirá fortalecer la autenticidad, integridad, publicidad y trazabilidad del título, mediante el uso de firma digital avanzada y plataformas electrónicas seguras, facilitando además la circulación del crédito hipotecario y reduciendo significativamente los costos transaccionales asociados al modelo físico tradicional.
+Reformas normativas:
+Las cédulas hipotecarias se encuentran reguladas actualmente en los artículos 426 al 440 del capítulo II, De las Cédulas Hipotecarias, del Código Civil, constituyendo títulos valores garantizados mediante hipoteca sobre bienes inmuebles. Su naturaleza jurídica ha permitido históricamente la circulación del crédito hipotecario mediante el endoso y transmisión del título, sin necesidad de modificar registralmente la titularidad del gravamen hipotecario.
+La presente iniciativa propone reformar el régimen tradicional de las cédulas hipotecarias dispuesto en el Código Civil y en el Código Procesal Civil, particularmente en los artículos 426 al 440 del Código Civil y el artículo 166 del Código Procesal Civil, incorporando expresamente la posibilidad de emisión, circulación, legitimación, ejecución y cancelación electrónica de las cédulas hipotecarias, sin alterar la naturaleza jurídica sustancial de esta figura crediticia y registral. Para ello, se mantiene el requisito formal de que toda hipoteca de cédulas deba constituirse mediante escritura pública e inscribirse en el Registro Inmobiliario, preservándose los principios registrales de legalidad, publicidad y seguridad jurídica que caracterizan al sistema inmobiliario costarricense.
+La principal innovación de la reforma consiste en permitir que las cédulas hipotecarias sean emitidas electrónicamente por el Registro Inmobiliario, mediante un sistema tecnológico seguro, validado e interoperable, que garantice la autenticidad, integridad, disponibilidad y trazabilidad del título electrónico. Asimismo, se incorporan mecanismos de circulación mediante endoso electrónico, utilización obligatoria de firma digital avanzada, cancelación digital y reconocimiento expreso de fuerza ejecutiva a las cédulas hipotecarias electrónicas, permitiendo su ejecución judicial en igualdad de condiciones respecto de aquellas emitidas en soporte físico.
+Con ello, se pretende adecuar el régimen jurídico de las cédulas hipotecarias a los principios de equivalencia funcional del documento electrónico, modernización administrativa y transformación digital del Estado, promoviendo un sistema más ágil, seguro y eficiente para la circulación del crédito hipotecario y la gestión de garantías reales en Costa Rica.
+Base legal:
+La presente iniciativa encuentra sustento jurídico principalmente en las siguientes disposiciones normativas:
+Ley n.° 10069, Ley sobre Letra de Cambio y Pagaré Electrónicos, la cual introduce en el ordenamiento jurídico costarricense el régimen de títulos valores electrónicos y el principio de desmaterialización documental.
+Ley n.° 8454, Ley de Certificados, Firmas Digitales y Documentos Electrónicos, que reconoce la equivalencia funcional y eficacia jurídica de los documentos electrónicos y de la firma digital certificada.
+Código Civil, particularmente los artículos 426 al 440, que regulan el régimen jurídico de las cédulas hipotecarias.
+Código Procesal Civil, artículo 166, en cuanto reconoce la fuerza ejecutiva y los mecanismos de ejecución judicial aplicables a títulos con garantía hipotecaria.
+Aspectos clave de la reforma:
+La propuesta incorpora una serie de modificaciones dirigidas a modernizar integralmente el régimen de las cédulas hipotecarias, entre las cuales destacan las siguientes:
+Se establece expresamente la posibilidad de emitir cédulas hipotecarias en formato electrónico.
+Se regulan los requisitos jurídicos y técnicos mínimos que deberán cumplir las plataformas electrónicas autorizadas para su emisión y circulación.
+Se reconoce la plena validez jurídica, eficacia probatoria y fuerza ejecutiva de las cédulas hipotecarias electrónicas.
+Se habilita su circulación mediante mecanismos de endoso electrónico, garantizando la trazabilidad e identificación de las personas titulares.
+Se incorpora el uso obligatorio de firma digital avanzada como mecanismo de autenticación y legitimación electrónica.
+Se regula la cancelación digital del título y su interoperabilidad con los sistemas del Registro Inmobiliario.
+Se fortalece la seguridad jurídica mediante sistemas electrónicos seguros y mecanismos de validación tecnológica compatibles con la normativa nacional sobre documentos electrónicos.
+Beneficios esperados:
+La aprobación de esta iniciativa permitirá generar importantes beneficios para el sistema registral, financiero y judicial costarricense, entre ellos:
+Reducción significativa de costos operativos, notariales, administrativos y de custodia documental.
+Disminución en los tiempos de emisión, circulación y ejecución de las cédulas hipotecarias.
+Mayor transparencia, trazabilidad y control sobre la titularidad y circulación del crédito hipotecario.
+Fortalecimiento de la seguridad jurídica y reducción de riesgos asociados a pérdida, deterioro o falsificación de títulos físicos.
+Impulso a mecanismos modernos de financiamiento y circulación del crédito hipotecario digital.
+Mejora en la eficiencia de los procesos judiciales de ejecución de garantías hipotecarias.
+Reducción de cargas administrativas y descongestionamiento judicial en procesos relacionados con reposición, cancelación o reconstrucción de títulos físicos.
+Modernización tecnológica e interoperabilidad entre el Registro Nacional y otros actores del sistema financiero y jurídico.
+Principales innovaciones de la iniciativa:
+Entre las principales innovaciones incorporadas en el proyecto destacan:
+La emisión y circulación de cédulas hipotecarias mediante medios completamente digitales.
+La utilización obligatoria de firma digital avanzada para garantizar autenticidad e integridad documental.
+La interoperabilidad tecnológica con el Registro Inmobiliario y plataformas electrónicas autorizadas.
+El reconocimiento expreso del valor ejecutivo del título electrónico.
+La regulación del endoso, transmisión y cancelación digital de las cédulas hipotecarias.
+La implementación de mecanismos electrónicos de trazabilidad y control sobre la circulación del título valor.
+La adaptación del régimen jurídico hipotecario costarricense a los principios de transformación digital y equivalencia funcional documental.
+Implementación gradual del sistema de cédulas hipotecarias electrónicas:
+Se instaura un plazo de seis meses para la emisión del reglamento y un plazo de doce meses para la entrada en vigencia de la ley y la puesta en funcionamiento del sistema electrónico de cédulas hipotecarias, atendiendo a la complejidad jurídica, tecnológica y operativa que implica la implementación de este nuevo modelo de circulación y publicidad de derechos reales de garantía.
+La reglamentación dentro de los primeros seis meses permitirá definir oportunamente los aspectos técnicos, operativos, de seguridad informática, interoperabilidad institucional, trazabilidad, custodia electrónica, autenticación, firma digital y publicidad registral requeridos para la adecuada ejecución de la ley, brindando certeza jurídica a los distintos actores que participarán en el sistema.
+Por su parte, el plazo de doce meses para la entrada en vigencia de la ley resulta necesario para que el Registro Nacional pueda desarrollar, adquirir, adaptar, integrar, probar y poner en producción las plataformas tecnológicas requeridas para la emisión, registro, circulación, endoso, consulta y cancelación de las cédulas hipotecarias electrónicas, así como para ejecutar los procesos de capacitación, adecuación institucional, interoperabilidad con otras entidades públicas y validación de los mecanismos de seguridad y continuidad operativa.
+La diferenciación de ambos plazos permite que el marco reglamentario se encuentre definido con antelación suficiente al inicio de operaciones del sistema, garantizando que el proceso de implementación tecnológica se realice bajo parámetros previamente establecidos y reduciendo los riesgos jurídicos, operativos y tecnológicos asociados a la puesta en marcha de un sistema que soportará la circulación electrónica de títulos garantizados con derechos reales inscritos.
+De esta forma, se procura una transición ordenada entre el régimen actual y el nuevo modelo electrónico, asegurando que la ley entre en vigencia únicamente cuando existan las condiciones normativas, técnicas y operativas necesarias para su efectiva aplicación.
+Consideraciones finales:
+La presente iniciativa legislativa procura modernizar el régimen jurídico de las cédulas hipotecarias mediante su adaptación al entorno digital, incorporando mecanismos electrónicos para su emisión, circulación, endoso, cancelación y ejecución, con plena validez y eficacia jurídica. Con ello, se fortalecen la seguridad jurídica, la trazabilidad de los títulos y la eficiencia en la gestión y circulación del crédito hipotecario dentro del tráfico jurídico y financiero nacional.
+Asimismo, la propuesta se alinea con los procesos de transformación digital impulsados por el Estado costarricense y con los principios de equivalencia funcional del documento electrónico, interoperabilidad institucional y simplificación administrativa, permitiendo que el Registro Nacional continúe evolucionando hacia modelos registrales más ágiles, seguros y técnicamente modernos, acordes con las necesidades actuales del país.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA LA MODERNIZACIÓN Y DIGITALIZACIÓN DE LAS
+CÉDULAS HIPOTECARIAS
+ARTÍCULO 1- Objeto de la ley
+La presente ley regula la emisión, circulación, ejecución y cancelación de las cédulas hipotecarias electrónicas, como títulos valores electrónicos representativos de un crédito garantizado con cédula hipotecaria.
+ARTÍCULO 2- Ámbito de aplicación
+Esta ley será aplicable a las cédulas hipotecarias emitidas en forma electrónica, siempre que las partes se identifiquen con su respectivo certificado de firma digital avanzada.
+ARTÍCULO 3- Definiciones
+Para efectos de esta ley se entenderá por:
+a) Cédula Hipotecaria Electrónica (CHE): título valor electrónico representativo de una obligación garantizada con una cédula hipotecaria, emitido conforme a esta ley.
+b) Documento electrónico: cualquier manifestación con carácter representativo o declarativo, expresada o transmitida por un medio electrónico o informático.
+c) Firma digital: conjunto de datos adjunto o lógicamente asociado a un documento electrónico, que permita verificar su integridad, así como identificar en forma unívoca y vincular jurídicamente al autor con el documento electrónico.
+d) Firma digital certificada: firma digital basada en un certificado digital emitido por un certificador autorizado, conforme a la Ley n.° 8454.
+e) Sistema electrónico autorizado: plataforma tecnológica certificada conforme a la Ley n.° 8454, mediante la cual se inscriben cédulas hipotecarias electrónicas, lo que incluye su desmaterialización, emisión, custodia, administración, endoso, circulación, afectación, gravamen, embargo y cualquier acto cambiario; el cual será administrado por el Registro Inmobiliario.
+CAPÍTULO II
+Emisión de la Cédula Hipotecaria Electrónica
+ARTÍCULO 4- Requisitos de emisión de la CHE
+La CHE deberá:
+a) Emitirse por medio de un sistema electrónico autorizado.
+b) Contener los requisitos establecidos en el artículo 426 del Código Civil.
+c) Cumplir con los requisitos establecidos por las leyes vigentes asociadas a la emisión de documentos electrónicos y firma digital.
+d) Estar firmada digitalmente por el emisor.
+ARTÍCULO 5- Legítimo tenedor de la CHE
+Para efectos de la CHE, será legítimo tenedor quien aparezca como tal en el sistema electrónico autorizado.
+ARTÍCULO 6- Efecto jurídico de la emisión de la CHE
+La desmaterialización, emisión, custodia, administración, endoso, circulación, afectación, gravamen, embargo y cualquier acto cambiario de la CHE se perfeccionará en el sistema electrónico autorizado.
+La inscripción de la CHE asigna la titularidad y legitimación electrónica a favor del tenedor de este, facultando a este el ejercicio de los mismos derechos y facultades que el tenedor de un título en soporte físico puede ejercer sobre el título.
+ARTÍCULO 7- Representación única de la CHE
+La obligación garantizada por una cédula hipotecaria solo podrá ser representado por una CHE, la cual será indivisible y circulará en su totalidad, mediante endosos que deberán dejarse constar en sistema electrónico autorizado.
+ARTÍCULO 8- Inscripción en el Registro Inmobiliario
+El asiento registral del bien inmueble que garantiza la CHE deberá inscribirse conforme al procedimiento ordinario que aplica el Registro Inmobiliario, consignándose en el asiento el identificador único de la cédula hipotecaria electrónica emitida.
+CAPÍTULO III
+Circulación, Transferencia y Cancelación
+ARTÍCULO 9- Transferencia
+La CHE será transmisible mediante endoso electrónico a través del sistema electrónico autorizado, con firma digital del endosante, debiendo el acreedor ingresar en el sistema y hacer constar el endoso.
+ARTÍCULO 10- Cancelación
+La cancelación de la CHE procede:
+a) Por comparecencia en escritura pública del tenedor de la CHE, para lo cual la persona registradora deberá verificar en el sistema electrónico autorizado, la legitimación del tenedor de la cédula hipotecaria que se solicita cancelar.
+b) Por orden judicial.
+c) Por protocolización notarial en caso de ejecución hipotecaria.
+CAPÍTULO IV
+Ejecución y Procedimiento Judicial
+ARTÍCULO 11- Eficacia ejecutiva
+La CHE tendrá fuerza ejecutiva conforme a la legislación civil, comercial y procesal aplicable.
+El sistema electrónico autorizado deberá permitir la emisión de certificaciones electrónicas del historial de tenencia y legitimación. Tal certificación legitima a su titular para el ejercicio de los derechos representados en el título y tendrá carácter de título ejecutivo para efectos de su cobro. La certificación no podrá circular ni servirá para ceder o transferir ningún derecho sobre los títulos.
+ARTÍCULO 12- Ejecución judicial
+Para la ejecución judicial de una CHE, el acreedor deberá presentar una certificación de la cédula electrónica acompañada del historial de endosos, emitida por el sistema electrónico autorizado.
+ARTÍCULO 13- Convenios para la consulta de documentos electrónicos
+El Poder Judicial podrá suscribir convenios con el Registro Nacional, para que aquel pueda consultar los documentos electrónicos de certificación referidos en los procesos judiciales que les sean presentados para su conocimiento.
+CAPÍTULO V
+Reformas
+ARTÍCULO 14- Reformas del Código Civil
+Refórmense los artículos 426 al 440 del capítulo II: De las cédulas hipotecarias, del Código Civil, Ley n.° 30, del 10 de abril de 1885, en las siguientes disposiciones:
+CAPÍTULO II
+De las cédulas hipotecarias electrónicas
+Artículo 426- Puede constituirse hipoteca para responder a un crédito representado por cédulas hipotecarias electrónicas, sin que nadie, ni aun el dueño del inmueble hipotecado, quede obligado personalmente al pago de la deuda. A esta clase de hipotecas son aplicables las disposiciones sobre hipoteca constituida para garantizar una obligación personal, con las modificaciones que se contienen en los siguientes artículos.
+Artículo 427- Solo podrá constituirse la hipoteca de cédulas hipotecarias electrónicas sobre inmuebles que no estén gravados con hipoteca común anterior, pero la hipoteca de cédulas no impide la constitución de otras hipotecas de la misma clase para obtener cédulas de segundo o ulterior orden, ni la constitución posterior de hipotecas comunes.
+Artículo 428- La hipoteca común podrá ser sustituida por una hipoteca de cédulas electrónicas, siempre que exista acuerdo entre deudor y acreedor, y que la anterior sea debidamente cancelada al constituirse la nueva.
+Artículo 429- Toda hipoteca de cédulas electrónicas se constituirá mediante escritura pública, y deberá inscribirse en el Registro Inmobiliario. Una vez inscritas, se generará electrónicamente la correspondiente cédula hipotecaria electrónica, mediante un sistema electrónico seguro y validado, y se incorporarán a una base registral electrónica accesible para las partes.
+Artículo 430- Las cédulas pueden emitirse en moneda nacional o extranjera. Las cédulas serán de un valor nominal que sea múltiplo de cien unidades monetarias.
+Todas las cédulas deben estar firmadas digitalmente por el emisor y expresarán:
+Identificación del inmueble hipotecado, que no podrá ser más de uno.
+Identificación del tenedor legitimado conforme al sistema electrónico autorizado.
+Fecha y el lugar del vencimiento.
+Información sobre los intereses.
+Siempre que la cédula hipotecaria devengue intereses esta deberá descontarse o pagarse del principal, al vencimiento de la obligación.
+Artículo 431- La cédula hipotecaria electrónica tiene la misma fuerza y valor probatorio que el testimonio de escritura pública. Puede cederse por endoso electrónico con firma digital, debiendo constar en el sistema electrónico que disponga el Registro Inmobiliario. Su cesión será válida desde el momento en que se registre en dicho sistema. El endoso de cédulas no constituye en responsabilidad al endosante.
+Artículo 432- El titular registrado de la cédula hipotecaria electrónica será considerado su legítimo propietario, salvo prueba en contrario. La cesión electrónica se reputará auténtica mientras no se impugne por los medios legales correspondientes.
+Artículo 433- No se requiere acreedor al momento de constituirse la hipoteca de cédulas electrónicas, pudiendo emitirse a nombre del propietario del inmueble, quien podrá cederlas a terceros incluso después del vencimiento.
+Artículo 434- En toda hipoteca de cédulas electrónicas se tendrán por renunciados los trámites del juicio ejecutivo, y la base para el remate de la finca hipotecada será el valor de la primera cédula hipotecaria.
+Quien tuviere el derecho de pedir el remate, podrá hacerlo con base de la cédula o cédulas en su poder, independientemente de las que se encuentren en el de otras personas. Cuando el comprador deba recibir la finca libre de gravámenes, se pagará íntegramente al ejecutante su crédito si el monto del remate alcanzare a cubrir toda la emisión de cédulas; en el caso contrario, se la pagará en proporción su crédito. En uno y otro caso, el resto del precio quedará depositado para responder al pago de las cédulas no presentadas en la ejecución, y se procederá a la cancelación del gravamen en el Registro.
+Artículo 435- La hipoteca de cédulas electrónicas garantiza, además del capital, los intereses corrientes, los de demora y gastos de ejecución, conforme se detalle en el título electrónico.
+Artículo 436- En el caso de que la finca se desmejore hasta ser insuficiente para cubrir el valor de la hipoteca o hipotecas a que ella responde, cualquier tenedor de cédulas puede pedir la venta, aunque el plazo no esté vencido, y con el precio de ella se hará el pago con el descuento señalado por la ley para los pagos adelantados.
+Artículo 437- Si el poseedor de la finca no la cuida y atiende como es debido y por ello queda expuesta a desmerecer hasta el punto de volverse insuficiente para cubrir la obligación por la cual responda la o las cédulas hipotecarias electrónicas, cualquier dueño de cédulas puede pedir que se quite al poseedor la administración de la finca y se dé a otra persona.
+Artículo 438- Cuando la venta o administración a que se refieren los dos artículos anteriores se solicite por el dueño de cédula de un orden inferior, lo que se acuerde o resuelva no podrá perjudicar en nada las cédulas de una hipoteca anterior.
+Artículo 439- La cancelación de hipoteca de cédulas electrónicas se realizará:
+a) Por medio de escritura pública, en la que comparezca el tenedor legítimo.
+b) Por protocolización notarial en caso de ejecución hipotecaria.
+c) Por orden judicial.
+d) Por cualquier otra causa de extinción de la obligación principal reconocida por el ordenamiento jurídico.
+La cancelación se anotará en el sistema electrónico del Registro Nacional, sin requerirse la presentación de un documento físico.
+Artículo 440- Si la deuda no devengare intereses, el poseedor de la finca puede obtener en cualquier tiempo, antes del plazo, la cancelación de la hipoteca de cédulas electrónicas, consignando el valor íntegro de estas.
+ARTÍCULO 15- Reforma del Código Procesal Civil
+Refórmese el artículo 166 del Código Procesal Civil, Ley n.° 9342, del 3 de febrero del 2016, en las siguientes disposiciones:
+Artículo 166- Títulos. Las hipotecas comunes y de cédula, así como la prenda debidamente inscrita, constituyen títulos de ejecución con renuncia de trámites para hacer efectivo el privilegio sobre lo gravado o, en su caso, sobre la suma del seguro, así como para hacer efectivas todas las garantías personales, las cuales se entenderán limitadas al saldo en descubierto.
+Las hipotecas y las prendas que por disposición legal no requieran inscripción tienen la misma eficacia. Para estos efectos, constituyen documentos idóneos, las certificaciones de la cédula electrónica emitida por el Registro Nacional, las certificaciones de las escrituras de las hipotecas comunes y las prendas inscritas, siempre que en ellas conste que las inscripciones no están canceladas o modificadas por otro asiento.
+CAPÍTULO VI
+DISPOSICIONES FINALES
+ARTÍCULO 16- Supletoriedad normativa
+En lo no previsto por esta ley, serán aplicables supletoriamente el Código Civil, el Código de Comercio, la Ley n.° 10069, sobre Letra de Cambio y Pagaré Electrónicos, y la Ley n.° 8454, sobre Certificados, Firmas Digitales y Documentos Electrónicos.
+ARTÍCULO 17- Reglamentación
+El Poder Ejecutivo, por medio del Ministerio de Justicia y Paz, en coordinación con el Registro Nacional, reglamentará la presente ley dentro del plazo máximo de seis meses contado a partir de su publicación.
+TRANSITORIO ÚNICO- El Registro Nacional deberá desarrollar, implementar y poner en funcionamiento el sistema electrónico para la emisión, registro, custodia, circulación, endoso, cancelación y consulta de las cédulas hipotecarias electrónicas dentro del plazo máximo de doce meses contado a partir de la publicación de la presente ley.
+Durante dicho plazo podrán continuar emitiéndose y circulando cédulas hipotecarias en soporte físico conforme a la legislación vigente. Una vez entrada en vigencia esta ley, las nuevas cédulas hipotecarias deberán emitirse exclusivamente en formato electrónico.
+El Registro Nacional podrá realizar durante el período de implementación las pruebas, validaciones, interoperabilidades, desarrollos tecnológicos, adecuaciones operativas y demás actuaciones necesarias para garantizar el correcto funcionamiento del sistema.
+Rige doce meses después de su publicación en el diario oficial La Gaceta.
+Osvaldo Artavia Carballo
+Diputado
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 01-09-2026).

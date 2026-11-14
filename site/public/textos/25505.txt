@@ -1,0 +1,53 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+ADICIÓN DE LOS ARTÍCULOS 49, 49 BIS Y 50 A LA LEY DE PROCEDIMIENTOS DE OBSERVANCIA DE LOS DERECHOS DE PROPIEDAD INTELECTUAL, LEY 8039,
+SOBRE DELITOS CONTRA DERECHOS DE INFORMACION NO DIVULGADA
+PODER EJECUTIVO
+EXPEDIENTE N.º 25.505
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+ADICIÓN DE LOS ARTÍCULOS 49, 49 BIS Y 50 A LA LEY DE PROCEDIMIENTOS DE OBSERVANCIA DE LOS DERECHOS DE PROPIEDAD INTELECTUAL, LEY 8039,
+SOBRE DELITOS CONTRA DERECHOS DE INFORMACION NO DIVULGADA
+Expediente N.° 25.505
+ASAMBLEA LEGISLATIVA:
+Los secretos industriales engloban toda información comercial confidencial que otorgue a una empresa una ventaja competitiva y sea desconocida para otros. Los secretos comerciales pueden abarcar información técnica, así como aquella relacionada con estrategias comerciales, de manera que son un elemento fundamental en la competitividad y éxito de las empresas.
+En Costa Rica, la Ley de Información No Divulgada, Ley 7978 del 4 de enero de 2000 y sus reformas, tiene como objetivo proteger la información no divulgada relacionada con los secretos comerciales e industriales, así como contribuir a promover la innovación tecnológica y la transferencia y difusión de la tecnología, en beneficio recíproco de productores y usuarios, de los conocimientos tecnológicos, de modo que favorezcan el bienestar socioeconómico, así como el equilibrio de derechos y obligaciones.
+Conforme con la referida Ley, se protege la información no divulgada referente a los secretos comerciales e industriales que guarde, con carácter confidencial, una persona física o jurídica para impedir que información legítimamente bajo su control sea divulgada a terceros, adquirida o utilizada sin su consentimiento por terceros, de manera contraria a los usos comerciales honestos.
+La indicada información goza de protección siempre y cuando sea secreta, esté legalmente bajo el control de una persona que haya adoptado medidas razonables y proporcionales para mantenerla secreta y tenga un valor comercial por su carácter de secreta.
+Igualmente el artículo 2 de la Ley 7975, indica que la información que se considere como no divulgada deberá constar en documentos, medios electrónicos o magnéticos, discos ópticos, microfilmes, películas u otros elementos similares.
+En la actualidad, es posible que los secretos industriales estén almacenados en medios digitales y protegidos en sistemas informáticos, de manera que se ven afectados a la vulnerabilidad de estos.
+Mediante la ley “MODIFICACIÓN DE VARIOS ARTÍCULOS DE LA LEY DE PROCEDIMIENTOS DE OBSERVANCIA DE LOS DERECHOS DE PROPIEDAD INTELECTUAL, N.° 8039”, Ley 8656 del 18 de julio del 2008 se derogaron los artículos 48 y 50 de la Ley 8039, que sancionaban la divulgación de secretos comerciales e industriales, así como la obtención de información no divulgada por medios ilícitos.
+El contexto actual hace necesario incorporar sanciones penales para quienes accedan, se apropien o divulguen ilícitamente secretos industriales a través de sistemas informáticos. Las sanciones actúan como elemento disuasorio en un contexto donde las amenazas en el entorno digital son un riesgo real y pueden vulnerar los secretos comerciales.
+Es por ello que se considera pertinente reformar la Ley de Procedimientos de Observancia de los Derechos de Propiedad Intelectual, con la finalidad de incorporar sanciones penales que atiendan las siguientes supuestos: i) el acceso no autorizado y doloso a un secreto industrial mantenido contenido en un sistema informático; ii) la apropiación indebida, no autorizada y dolosa de un secreto industrial, incluso por medio de un sistema informático; y iii) la divulgación fraudulenta o no autorizada y dolosa de un secreto industrial, incluso por medio de un sistema informático.
+El presente proyecto de ley tiene como finalidad reforzar la protección de los secretos industriales mediante la incorporación de sanciones específicas en la Ley de Procedimientos de Observancia, concretamente en los artículos 49, 49 bis y 50 de la Sección II referente a los delitos contra la información no divulgada.
+La creciente dependencia de los sistemas informáticos para el almacenamiento y manejo de información sensible conlleva la imperante necesidad de contar con un marco legal sólido que desincentive y sancione efectivamente las actividades ilícitas relacionadas con los secretos industriales. Se busca llenar vacíos normativos, con la finalidad de fortalecer la protección de los derechos de propiedad intelectual, ofreciendo una herramienta para la persecución y sanción de delitos relacionados con secretos industriales.
+La sanción de conductas que vulneren los secretos comerciales, responde a los desafíos actuales y fortalece la protección de activos intangibles, propiciando la seguridad jurídica.
+En virtud de lo anterior, se somete al conocimiento y aprobación de la Asamblea Legislativa el proyecto de ley “ADICIÓN DE LOS ARTÍCULOS 49, 49 BIS Y 50 A LA LEY DE PROCEDIMIENTOS DE OBSERVANCIA DE LOS DERECHOS DE PROPIEDAD INTELECTUAL, LEY 8039 SOBRE DELITOS CONTRA DERECHOS DE INFORMACION NO DIVULGADA”, para su respectiva aprobación legislativa.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+ADICIÓN DE LOS ARTÍCULOS 49, 49 BIS Y 50 A LA LEY DE PROCEDIMIENTOS DE OBSERVANCIA DE LOS DERECHOS DE PROPIEDAD INTELECTUAL, LEY 8039,
+SOBRE DELITOS CONTRA DERECHOS DE INFORMACION NO DIVULGADA
+ARTÍCULO ÚNICO- Se adicionan los artículos 49, 49 bis y 50 a la “Ley de Procedimientos de Observancia”, Ley No. 8039 del 27 de octubre de 2000, se leerán de la siguiente manera:
+Artículo 49- Acceso y divulgación de secretos comerciales o industriales
+Será sancionado con prisión de uno a cinco años quien divulgue, sin autorización del titular de secretos comerciales o industriales, información confidencial conocida por razón de su oficio, empleo, relación contractual o profesión, de modo que pueda causar perjuicio al titular.
+Asimismo, será sancionado con la pena prevista en el párrafo anterior al que sin consentimiento de su legítimo poseedor accediere a un secreto comercial mediante intromisión indebida con el propósito de revelarlo o aprovecharse económicamente de él.
+Para efectos de lo dispuesto en el párrafo anterior, se entenderá por intromisión:
+El ingreso a dependencias de la empresa o captación visual o sonora mediante dispositivos técnicos de lo que tuviere lugar al interior de las dependencias de la empresa, siempre que ello no fuere perceptible desde su exterior sin la utilización de dispositivos técnicos como los empleados en la captación o sin recurrir a escalamiento o algún modo de vencimiento de un obstáculo a la percepción.
+La captación visual o sonora mediante dispositivos técnicos del contenido de la comunicación que dos o más personas mantuvieren de la ejecución de una acción o del desarrollo de una situación por parte de una persona cuando los involucrados tuvieren una expectativa legítima de no estar siendo vistos, escuchados, filmados o grabados, manifestada en las circunstancias de la comunicación, la acción o la situación y que ésta concerniere a la empresa.
+El acceso a un sistema informático sin autorización o excediendo los límites de la autorización concedida, mediante la superación de barreras técnicas o medidas tecnológicas de seguridad.
+La pena señalada en el párrafo primero se impondrá también al que sin el consentimiento de su legítimo poseedor reprodujere la fijación en cualquier formato de información constitutiva de un secreto comercial con el propósito de revelarlo o aprovecharse económicamente de él.
+Asimismo, será sancionado con la misma pena al que habiendo realizado cualquiera de las conductas previstas en los incisos anteriores, sin el consentimiento de su legítimo poseedor, revele el secreto comercial o consienta que un tercero acceda a él.
+Para los efectos del presente artículo, así como de los subsiguientes de la sección II titulada “Delitos contra derechos de información no divulgada” de la “Ley de Procedimientos de Observancia”, Ley No. 8039 del 27 de octubre de 2000, se entenderán por, “secreto comercial o industrial e información no divulgada,” las definiciones contenidas en la “Ley de Información no divulgada”, Ley N.º 7975 de 4 de enero de 2000.
+Artículo 49 bis- Revelación de información no divulgada por funcionario público
+El funcionario público que, con ocasión o en ejercicio de su cargo, revele, divulgue o utilice indebidamente información no divulgada a la que haya tenido acceso, será sancionado con pena privativa de libertad de acuerdo a lo dispuesto en el artículo 49 de la presente ley.
+Además, se le impondrá la pena de inhabilitación para el ejercicio de cargos u oficios públicos por un período de uno a tres años.
+Artículo 50- Revelación indebida de secreto comercial
+Será sancionado con pena de prisión de uno a cinco años el que, sin el consentimiento de su legítimo poseedor, revele o permita que un tercero acceda a un secreto comercial al que haya tenido acceso en cualquiera de las siguientes circunstancias:
+1. Bajo un deber de confidencialidad con ocasión del ejercicio de un cargo o una función pública o de una profesión cuyo título se encontrare legalmente reconocido y siempre que el deber de confidencialidad profesional estuviere fundado en la ley o en un reglamento, o en las reglas que definen su ejercicio.
+2. En razón o a consecuencia de una relación contractual o laboral con la empresa afectada o con otra que le haya prestado servicios.
+Rige a partir de su publicación.
+Rodrigo Chaves Robles
+Gerald Campos Valverde
+Ministro de Justicia y Paz
+NOTA: Este proyecto cumplió el trámite de revisión de forma en el Departamento de Servicios Parlamentarios. (Fecha de publicación en el SIL: 21-04-2026)

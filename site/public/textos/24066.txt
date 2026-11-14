@@ -1,0 +1,107 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY DE CREACIÓN DE LA PLATAFORMA DIGITAL DE TRANSPORTE
+PÚBLICO REMUNERADO DE PERSONAS EN LA MODALIDAD DE
+TAXI. REFORMA DE LOS ARTÍCULOS 1, 7 Y ADICIÓN DE
+UN NUEVO CAPÍTULO XI A LA LEY REGULADORA
+DEL SERVICIO PÚBLICO DE TRANSPORTE
+REMUNERADO DE PERSONAS EN
+VEHÍCULOS EN LA MODALIDAD
+DE TAXI, LEY N.° 7969 DEL
+22 DE DICIEMBRE
+DE 1999.
+SOFÍA ALEJANDRA GUILLÉN PÉREZ
+OTRAS SEÑORAS DIPUTADAS
+Y SEÑORES DIPUTADOS
+EXPEDIENTE N.° 24.066
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+UNIDAD DE PROYECTOS, EXPEDIENTES Y LEYES
+NOTA: A solicitud de la parte interesada, este Departamento no realizó la revisión de errores formales, materiales e idiomáticos que pueda tener este proyecto
+PROYECTO DE LEY
+LEY DE CREACIÓN DE LA PLATAFORMA DIGITAL DE TRANSPORTE
+PÚBLICO REMUNERADO DE PERSONAS EN LA MODALIDAD DE
+TAXI. REFORMA DE LOS ARTÍCULOS 1, 7 Y ADICIÓN DE
+UN NUEVO CAPÍTULO XI A LA LEY REGULADORA
+DEL SERVICIO PÚBLICO DE TRANSPORTE
+REMUNERADO DE PERSONAS EN
+VEHÍCULOS EN LA MODALIDAD
+DE TAXI, LEY N.° 7969 DEL
+22 DE DICIEMBRE
+DE 1999.
+Expediente N.° 24.066
+ASAMBLEA LEGISLATIVA:
+Este Proyecto de Ley se contextualiza en el avance digital y el desarrollo de las economías de plataforma mediante las plataformas digitales de trabajo, en la prestación de servicios, como lo es el transporte remunerado de personas. De acuerdo con la Organización Internacional del Trabajo (OIT, 2019), las plataformas digitales de trabajo son los servicios digitales (sitios web o aplicaciones informáticas) que logran la externalización de tareas específicas del trabajo, las cuales a su vez brindan la infraestructura técnica para que los solicitantes del servicio den a conocer tales tareas por medio de ofertas públicas entre un gran número de trabajadores potenciales y establecer una relación laboral en las condiciones que ambas partes pacten.
+En este sentido, las plataformas digitales de trabajo, actúan como una herramienta de soporte y apoyo a tareas que se realizan de manera individual o de manera grupal. Se conocen dos grandes grupos de plataformas de trabajo (ver figura 1): 1) las basadas en micro-tareas o tareas creativas en concurso o directamente a personas a través de plataformas digitales de trabajadores independientes que laboran contra pedido. 2) las plataformas de trabajo basadas en la ubicación, en las cuales, la mayoría de las tareas se asignan a individuos concretos (por ejemplo, transporte, entregas y servicios para el hogar), estos son trabajos donde la entrega es análoga. (OIT, 2019).
+Figura I.
+Plataformas de trabajo digitales de taxis
+Fuente: Tomado de Ruiz-Mejías (2022).
+El trabajo en plataformas experimentó un aumento, especialmente después de la pandemia ocasionada por el virus SARS-CoV-2. En este contexto son cada vez más personas las que encuentran en la economía de plataformas; una oportunidad de generar ingresos o complementarlos, ya sea trabajando desde su casa o combinando horarios en una “jornada flexible” en combinación con otros trabajos o mezclando jornadas laborales.
+No obstante, hay que tener presente que estas nuevas formas de trabajo, y la flexibilización que con ellas se experimenta, generan a la luz de la materia laboral, nuevas problemáticas o acentúa muchas veces las ya existentes. Por ejemplo, el hecho de que los trabajadores se insertan en empleos, cada vez más precarios sin jubilación, sin licencias, sin condiciones y medio ambiente de trabajo adecuadas, sin salario mínimo ni vacaciones (Partenio, 2020).
+Asimismo, la dificultad para la sindicalización, por la limitante del trabajo remoto, las jornadas extenuantes, la poca o nula cobertura de seguro social, poca regulación en materia de riesgos laborales, entre otros. Aun así, se entiende que la economía de plataformas es algo inevitable y cada día avanza más rápido. Pero también es innegable, que a lo largo de la historia y a nivel mundial, existe legislación que regula estas plataformas de trabajo, específicamente las orientadas al transporte remunerado de personas. Como antecedente nacional de la relación laboral con estas plataformas existentes, es preciso hacer mención de la sentencia de primera instancia N.° 2023000212 del juzgado de trabajo del iii circuito judicial de San José, dado a las quince horas treinta y cuatro minutos del veintisiete de marzo de dos mil veintitrés, la cual señala que sí había una relación laboral, por cuanto hubo antecedentes de subordinación en la relación que, mantenía el chofer y la plataforma o centro de soporte ubicado en el país.
+La sentencia mencionada en el párrafo anterior, declara que se cumple subordinación en cuanto, fue evidente que el chofer de transporte de personas, fue sometido a órdenes y directrices por parte de Uber, mencionando los siguientes argumentos:
+(…) eso sí, dada la particularidad del servicio y de la forma de organización del mismo, la subordinación evidenció elementos especiales y diferentes, a aquella que se presenta en las relaciones laborales tradicionales. En primer lugar, tal y como se señaló en líneas anteriores el actor debió aceptar o suscribir un contrato digital, no físico, como comúnmente sucede, documento que le fue presentado por la propia aplicación y del cual no tuvo oportunidad alguna de negociación, constituyendo un instrumento de constituyendo un instrumento de adhesión, cuyas condiciones (impuestas por Uber) debía aceptar para poder prestar el servicio. Por otra parte, el actor fue enfático en señalar que era la aplicación la que le asignaba los viajes, la ruta a seguir, así como el valor de los mismos.
+(...) Uber le exigía mantener su vehículo limpio, en buen estado, que no podía sobrepasar los 10 años de antigüedad, en un inicio de la relación le exigían ofrecer galletas, agua y confites a los pasajeros, durante la pandemia le exigían tomarse una foto portando mascarilla, además de tener alcohol en gel a disposición de los usuarios. También señaló que, si se negaba a realizar tres viajes seguidos, la aplicación lo desconectaba por determinado lapso temporal, lo que se asemeja a la imposición de una sanción disciplinaria. Todo lo anterior evidencia subordinación, pues Uber, por medio de la plataforma era la única facultada para imponer las condiciones bajo las cuales se prestaba el servicio. (…) La única libertad (y relativa), que la suscrita observa, en la prestación del servicio, lo es en relación con la jornada y el horario.
+En Costa Rica, la regulación existente sobre el transporte público remunerado en modalidad de Taxi, no es compatible con las demandas sociales, tanto de consumidores como del gremio de taxistas, que ven como necesidad que el Consejo de Transporte Público, genere y establezca una plataforma de trabajo digital exclusiva para el transporte público de personas en modalidad de taxi, que pueda conectar a los usuarios y taxistas de forma segura, oportuna, tecnológica y eficiente. De acuerdo con evidencia que aporta Matarrita -Lorente y Espinoza-González (2021) los taxistas rojos como transportistas públicos, históricamente desde la llegada de las plataformas, se han visto desprotegidos y expuestos a una competencia directa, no igualitaria, tanto por la existencia de la plataforma como el componente tarifario.
+En este mismo sentido, se han realizado algunos esfuerzos como la plataforma BATSË, lanzada en el año 2021, y aunque la necesidad de la plataforma y la obligatoriedad del CTP en el establecimiento de la misma es necesaria, aun no queda esta “obligatoriedad” explicita en la legislación actual.
+Cabe recordar que dentro del gremio de taxistas ha crecido el malestar ante la aprobación de la Ley N.° 21.924, que establece medidas tales como transportar mascotas, o que integren parte de las plataformas de transporte conocidas como DiDi, Uber, entre otros. Esta ley, en su versión original que se tramitó mediante expediente legislativo N.° 21.924, incluía originalmente una disposición para que el CTP montara una aplicación que permitiera a taxistas competir mejor con las plataformas, algo que el gremio ha requerido y ha exigido, además de su correspondiente capacitación en su uso. Este espíritu es el que se busca quede plasmado en este proyecto, como obligación del CTP con los transportistas.
+De acuerdo con Matarrita-Lorente y Espinoza-González (2021) la calidad en el transporte público en Costa Rica, se rige por la adopción de normas de calidad según las mejores prácticas aplicables. La primera norma aprobada es la INTE G20:2020, la cual tiene que ver con el Transporte público de personas. Esta norma está directamente relacionada con la calidad de servicio, objetivo y mediciones, la cual describe los criterios de calidad aplicables (servicio ofertado, accesibilidad, información, tiempo, atención al usuario, comodidad, seguridad e impacto medioambiental) y los mecanismos de evaluación. Por ende, también una plataforma de este tipo, representa una mejora para el usuario o consumidor, ya que puede optar de forma más directa a un servicio de transporte, monitorear el viaje, utilizar un pago electrónico, entre otros.
+La segunda norma aprobada es la INTE G21:2020 Transporte público de pasajeros. Requisitos básicos y recomendaciones para los sistemas de medición de la calidad de servicio producida, que describe las buenas prácticas dirigidas a los prestadores para una correcta implementación de la calidad de servicio. El establecimiento de una plataforma digital que conecte a usuarios con taxis, aportaría gran valor agregado a esta norma, y también permitiría un mayor acceso de los conductores a usuarios que demandan el servicio. Además, se contribuiría con el establecimiento de armonía y competencia sana entre los diferentes oferentes de transporte remunerado de personas.
+Es por lo anterior que este proyecto busca explicitar esta obligatoriedad, para que el CTP con apoyo de una comisión especializada, establezca, apoye, soporte y ofrezca una plataforma con altos estándares de calidad, que, garantice conectar a usuarios y taxistas, con el fin de mejorar la competitividad de los mismos, garantizar los derechos de las personas usuarias de servicios públicos y equiparar de cierta forma las condiciones de estos trabajadores y los transportistas privados de personas que, lo hacen con plataformas de empresas trasnacionales como por ejemplo: Uber y DiDi.
+En virtud de las consideraciones expuestas, sometemos a conocimiento de la Asamblea Legislativa el siguiente proyecto de ley para su estudio y aprobación por parte de los señores y señoras diputadas.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY DE CREACIÓN DE LA PLATAFORMA DIGITAL DE TRANSPORTE
+PÚBLICO REMUNERADO DE PERSONAS EN LA MODALIDAD DE
+TAXI. REFORMA DE LOS ARTÍCULOS 1, 7 Y ADICIÓN DE
+UN NUEVO CAPÍTULO XI A LA LEY REGULADORA
+DEL SERVICIO PÚBLICO DE TRANSPORTE
+REMUNERADO DE PERSONAS EN
+VEHÍCULOS EN LA MODALIDAD
+DE TAXI, LEY N.° 7969 DEL
+22 DE DICIEMBRE
+DE 1999.
+ARTÍCULO 1- Se adicionan los incisos m), n) y ñ) al artículo 1 de la Ley Reguladora del Servicio Público de Transporte Remunerado de Personas en Vehículos en la modalidad de Taxi, Ley N.° 7969 del 22 de diciembre de 1999. En adelante se leerá:
+ARTÍCULO 1- Definiciones
+Para efectos de la aplicación y hermenéutica de la presente ley, se definen los siguientes términos:
+(…)
+m)- Comisión: Comisión de plataforma digital del Consejo de Transporte Público.
+n)- Usuario de plataforma digital de transporte público remunerado en modalidad taxi: Personas que demandan el servicio de transporte público mediante el uso de una plataforma digital.
+ñ)- Plataforma digital de transporte público remunerado de personas en modalidad taxi: Aplicación digital que busca poner en contacto a las personas concesionarias del transporte público remunerado de personas en modalidad taxi, con usuarios del servicio, en un área geográfica determinada.
+ARTÍCULO 2- Se reforman los incisos a), e) y se agrega un nuevo inciso h) al artículo 7 de la Ley Reguladora del Servicio Público de Transporte Remunerado de Personas en Vehículos en la modalidad de Taxi, Ley N.° 7969 de 22 de diciembre de 1999, ajustando la secuencia alfabética. En adelante se leerá.
+ARTÍCULO 7- Atribuciones del Consejo.
+El Consejo, en el ejercicio de sus competencias, tendrá las siguientes atribuciones:
+a)- Coordinar la aplicación correcta de las políticas de transporte público, su planeamiento, la revisión técnica, el otorgamiento y la administración de las concesiones, plataformas digitales, así como la regulación de los permisos que legalmente procedan.
+[…]
+e)- Velar porque la actividad del transporte público, su planeamiento, la revisión técnica, la administración, y el otorgamiento de concesiones, sus sistemas operacionales, incluidas las plataformas digitales y el equipamiento requerido, sean acordes con los sistemas tecnológicos más modernos para velar por la calidad de los servicios requeridos por el desarrollo del transporte público nacional e internacional.
+[…]
+h)- Establecer una plataforma digital para el transporte público remunerado de personas en modalidad taxi, que conecte a los distintos usuarios de la plataforma digital con las personas concesionarias del transporte público remunerado de personas.
+[…].
+ARTÍCULO 3- Se adiciona un nuevo Capítulo XI y los artículos 61bis, 62bis, 63bis y 64bis a la Ley Reguladora del Servicio Público de Transporte Remunerado de Personas en Vehículos en la modalidad de Taxi, Ley N.° 7969 de 22 de diciembre de 1999. En adelante se leerá:
+(….)
+CAPÍTULO XI
+Creación de la plataforma digital para el transporte público remunerado de personas en modalidad de taxi
+Artículo 61bis- Se crea la Comisión de Plataforma Digital del Consejo de Transporte Público, la cual estará integrada por las siguientes personas:
+Un representante del Consejo de Transporte Público
+Un representante del Tribunal Administrativo de Transporte.
+Una persona funcionaria del Ministerio de Ciencia, Innovación, Tecnología y Telecomunicaciones
+Tres representaciones de personas concesionarias del servicio de transporte público remunerado de personas en modalidad taxi.
+Artículo 61ter- Funcionamiento de la Comisión de Plataforma Digital del Consejo de Transporte Público:
+La comisión sesionará cuando lo considere pertinente por acuerdo, con un quorum de mayoría equivalente a la mitad más uno. No percibirá dietas, recargos, ni pagos adicionales.
+Artículo 61 quater- Costos de operación de la plataforma digital de transporte remunerado de personas en modalidad taxi:
+El costo operacional será asumido en su totalidad por el Consejo Nacional de Transporte Público, con recursos de su presupuesto. No podrá de ninguna manera representar algún costo en la tarifa establecida para el usuario de transporte remunerado de personas en modalidad taxi.
+Artículo 61 quinquies- Esta comisión tendrá las siguientes funciones:
+Definir el reglamento para el funcionamiento de la plataforma digital para el transporte público remunerado de personas en modalidad de taxi.
+Diseñar los términos de referencia para la realización de la plataforma.
+Establecer los requerimientos técnicos básicos de la plataforma.
+Diseñar la propuesta de mecanismos de capacitación y actualización sobre el uso de la plataforma.
+Coordinar con las instancias pertinentes temas relacionados con el soporte, mantenimiento, resguardo de los datos, establecimiento de tarifas entre otros elementos, que se determinen para el adecuado funcionamiento de la plataforma digital de transporte no remunerado de personas en modalidad taxi.
+Entregar un informe anual sobre el desempeño de la plataforma al Consejo Nacional de Transporte Público.
+(…)
+TRANSITORIO ÚNICO- El CTP, en el plazo de un año contado a partir de la publicación de esta Ley, deberá hacer el efectivo funcionamiento de la plataforma digital de transporte remunerado de persona en modalidad taxi.
+Rige a partir de su publicación.
+Sofía Alejandra Guillén Pérez Rocío Alfaro Molina
+Antonio José Ortega Gutiérrez Priscilla Vindas Alfaro
+Johnatan Jesús Acuña Soto Andrés Ariel Robles Barrantes
+Diputadas y diputados
+NOTAS: El expediente legislativo aún no tiene comisión asignada.
+El texto fue confrontado y revisado por el Departamento de Servicios Parlamentarios, para hacerle los ajustes formales requeridos por el SIL. (Fecha de subido al SIL: 08-12-2023).

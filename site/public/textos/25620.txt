@@ -1,0 +1,176 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA LA DIVERSIFICACIÓN SOSTENIBLE DE LA PESCA ARTESANAL Y SU INTEGRACIÓN AL TURISMO
+JOSÉ MARÍA VILLALTA FLÓREZ ESTRADA
+OTROS SEÑORES DIPUTADOS
+Y SEÑORAS DIPUTADAS
+EXPEDIENTE N.º 25.620
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY PARA LA DIVERSIFICACIÓN SOSTENIBLE DE LA PESCA ARTESANAL Y SU INTEGRACIÓN AL TURISMO
+Expediente N.º 25.620
+ASAMBLEA LEGISLATIVA:
+Costa Rica ejerce soberanía sobre 600.000 km² de aguas jurisdiccionales —territorio marino que supera en diez veces al territorio continental—. En ese espacio, la pesca artesanal y de mediana escala posee un potencial turístico concreto y documentado: existe una demanda nacional e internacional de experiencias vinculadas a la pesca artesanal vivencial, sustentada en el valor que el turista atribuye al conocimiento acumulado del pescador sobre el mar, las especies y las prácticas tradicionales de extracción. Se trata de un segmento turístico diferenciado del turismo de pesca deportiva de gran escala, orientado a la autenticidad de la experiencia y a la vinculación directa con las comunidades pesqueras costeras. Sin embargo, el ordenamiento jurídico vigente no ofrece al titular de una licencia de pesca comercial herramientas jurídicas propias para atender esa demanda. El único instrumento legal de turismo pesquero que contempla la legislación costarricense —la licencia de pesca turística del artículo 79 de la Ley n.º 8436, Ley de Pesca y Acuicultura, del 1 de marzo de 2005— está concebido para embarcaciones dedicadas exclusiva y permanentemente al turismo de gran escala, sin posibilidad de coexistencia con la actividad pesquera comercial. La presente ley crea la figura jurídica que el ordenamiento no contempla: una habilitación turística complementaria que no exige al titular de la licencia de pesca abandonar su actividad extractiva ni su título habilitante preexistente.
+Los datos del propio Incopesca revelan la dimensión del sector que esta ley busca beneficiar. Según el cuadro 4 del Plan Nacional de Desarrollo Pesquero y Acuícola 2025-2030, a abril de 2024 había 3.371 embarcaciones con licencia de operación, distribuidas en las siguientes categorías:
+Categoría de pesca
+Pacífico
+Caribe
+Total
+% Flota
+Habilitada por esta ley
+Comercial de pequeña escala
+1.549
+196
+1.745
+51,8%
+Sí ✓
+Comercial avanzada
+283
+7
+290
+8,6%
+—
+Comercial de mediana escala
+53
+6
+59
+1,8%
+Sí ✓
+Turística
+729
+47
+776
+23,0%
+Ya es turística
+Deportiva
+356
+2
+358
+10,6%
+—
+De investigación
+131
+9
+140
+4,2%
+—
+Semi-industrial
+3
+0
+3
+0,1%
+—
+TOTAL FLOTA NACIONAL
+3.104
+267
+3.371
+100%
+1.804 (53,6%)
+Fuente: Incopesca, cuadro 4, Plan Nacional de Desarrollo Pesquero y Acuícola 2025-2030, datos a abril de 2024. Las modalidades resaltadas en azul corresponden a las dos categorías habilitadas por esta ley para el ejercicio de la actividad turística complementaria.
+Las dos modalidades habilitadas —pequeña escala y mediana escala— suman 1.804 embarcaciones, equivalentes al 53,6% de toda la flota nacional. El registro de licencias de pesca comercial está cerrado: no se otorgan nuevas licencias. En consecuencia, el universo de beneficiarios de esta ley es fijo y conocido, y la reforma no generará expansión del esfuerzo pesquero. Lo que esta ley hace es diversificar los ingresos de las embarcaciones ya existentes, sin incrementar la presión extractiva sobre los recursos pesqueros.
+El Plan Nacional del Incopesca revela una paradoja estructural que esta ley busca corregir. La flota de pequeña escala concentra el 51,8% de todas las embarcaciones —la mayoría absoluta de la flota nacional— pero genera únicamente el 9,5% del volumen total de captura (Incopesca, 2025). La flota de mediana escala enfrenta una situación similar: apenas el 1,8% de las embarcaciones, ingresos extractivos limitados y pocas alternativas dentro del marco normativo vigente. Para ambas modalidades, la diversificación hacia el turismo pesquero vivencial no es una opción accesoria sino una vía realista de mejora de ingresos disponible sin abandonar la actividad pesquera.
+Para el año 2024, el Incopesca registraba un total de 6.630 personas beneficiarias directas de la actividad pesquera, distribuidas de la siguiente manera:
+Categoría
+Beneficiarios
+Participación
+Pequeña escala
+3.912
+59,0%
+Mediana escala
+1.061
+16,0%
+Turística y deportiva
+1.253
+18,9%
+Avanzada y semi-industrial
+358
+5,4%
+TOTAL
+6.630
+100%
+Fuente: Incopesca, cuadro 5, Plan Nacional de Desarrollo Pesquero y Acuícola 2025-2030, pág. 27.
+Las modalidades que esta ley habilita —pequeña escala y mediana escala— concentran el 75% de los beneficiarios directos del sector pesquero. Adicionalmente, la cadena de comercialización involucra a 4.190 operadores con permisos vigentes, distribuidos de la siguiente manera:
+Tipo de operador
+Permisos vigentes
+Participación
+Pescaderías
+1.840
+44,0%
+Transportistas
+1.764
+42,1%
+Plantas de proceso
+430
+10,3%
+Centros de acopio
+156
+3,7%
+TOTAL
+4.190
+100%
+Fuente: Incopesca, cuadro 5, Plan Nacional de Desarrollo Pesquero y Acuícola 2025-2030, pág. 27.
+La centralidad de la pesca artesanal en la economía costera costarricense no es un fenómeno reciente. En el período 1990-2009, excluyendo la pesquería atunera por cerqueros, el 81,41% del total de registros de pesca cuantificados por el Incopesca correspondió a la flota artesanal (Moreno, R., Alfaro, M. & Jiménez, M., 2018). Esa presencia histórica se traduce hoy en una dependencia económica extensa y concentrada: el sector pesquero genera aproximadamente 14.800 empleos directos en operaciones de captura y 3.216 empleos adicionales en plantas de proceso, pescaderías y comercialización —cerca de 18.000 empleos en total—, y en algunas comunidades costeras hasta el 60% de la población depende directamente de los recursos marino-costeros para su sustento (FAO Costa Rica/Incopesca, 2018). El problema no es la ausencia de actividad económica: es que esa actividad depende casi exclusivamente de la captura extractiva, sin instrumentos jurídicos que permitan al pescador diversificar sus ingresos desde la misma embarcación que ya posee y ya conoce. Esa es precisamente la brecha que esta ley viene a cerrar.
+La vulnerabilidad económica del sector tiene además una dimensión climática. El mismo estudio de Moreno et al. (2018) determinó, mediante el análisis de la relación entre las variaciones de producción pesquera y la temperatura superficial del mar, que los ingresos del sector artesanal son hasta un 53% más altos en eventos climáticos fríos que en años de El Niño-Oscilación del Sur (ENOS). Un pescador artesanal no elige el clima. Sus ingresos suben o bajan por factores que están completamente fuera de su control. La diversificación hacia el turismo pesquero vivencial —cuya demanda no depende de las capturas ni de la temperatura del mar— es la única forma de romper esa dependencia sin abandonar el oficio. Esta ley crea el instrumento jurídico para hacerlo.
+A la vulnerabilidad climática se suma la carga administrativa que enfrentan los titulares de licencias de pesca. El Informe Estado de la Nación en Desarrollo Humano Sostenible 2024 documenta que la desconexión entre la institucionalidad estatal y las comunidades costeras genera que dicha institucionalidad constituya, para estas comunidades, "un espacio de trabas y contradicciones que les impide salir adelante y preservar su medio principal de vida: el mar. La tramitología anual para tener sus permisos es muy extensa, engorrosa y cara. Cada año se solicitan más requisitos y los costos aumentan para las y los pescadores. Por ejemplo, refieren que Incopesca otorga licencias distintas para cada tipo de pesca y para cada actividad económica que se desarrolle en el mar, entonces quienes pescan con cuerda y con caña requieren dos licencias distintas, además del permiso para pesca artesanal." (Programa Estado de la Nación, 2024). La presente ley no agrava esa carga: crea una habilitación turística complementaria como acto administrativo autónomo que coexiste con la licencia de pesca preexistente, sin añadir un nuevo trámite anual ni modificar las condiciones de la licencia vigente.
+En contraste con la situación descrita, el turismo de pesca deportiva constituye uno de los segmentos turísticos de mayor valor económico para Costa Rica. Según la Federación Costarricense de Pesca Turística (Fecop), la actividad aporta más de $520 millones anuales a la economía nacional —cifra que estimaciones más recientes de la misma organización elevan a más de $1.000 millones considerando el encadenamiento con el sector de recursos marino-costeros—, representa el 13% de los ingresos turísticos del país y genera 33.000 empleos, de los cuales 13.000 son directos (Fecop, 2025). El ICT estima que aproximadamente 150.000 turistas extranjeros visitan Costa Rica anualmente con la pesca como actividad principal y que cada uno permanece en promedio doce días en el país, con un gasto promedio de $5.947 por viaje (ICT, 2022, citado por La Nación). Frente a esos números, la pesca extractiva de pequeña y mediana escala aporta el 0,06% del PIB nacional. Ambos sectores operan en los mismos mares: la diferencia está en que uno tiene instrumentos jurídicos para capturar valor turístico y el otro no.
+La brecha entre el aporte extractivo de la pesca y su potencial turístico queda ilustrada por el siguiente contraste: el Plan Nacional de Desarrollo Pesquero y Acuícola 2025-2030 del Incopesca consigna que en 2021 la pesca y la acuicultura en su conjunto generaron un valor equivalente al 0,06% del PIB nacional —₡17.532 millones la pesca y ₡4.689 millones la acuicultura, según datos del Banco Central procesados por la Secretaría Ejecutiva de Planificación Sectorial Agropecuaria (Sepsa)—, mientras que el turismo de pesca deportiva y recreativa genera por sí solo estimaciones superiores a los $500 millones anuales (Incopesca, 2025).
+El diagnóstico institucional más reciente del sector confirma que los obstáculos que esta ley busca resolver no son coyunturales sino estructurales. El Plan Nacional de Desarrollo Pesquero y Acuícola 2025-2030, elaborado por el Incopesca con participación de comunidades pesqueras, organizaciones del sector, academia e instituciones del sector agropecuario, establece con precisión el problema central: "La actividad pesquera constituye la principal fuente de ingresos para miles de personas en las comunidades costeras, aunque estas enfrentan desafíos relacionados con la limitada diversificación de ingresos y el acceso a mercados". El mismo Plan identifica entre las limitaciones estructurales del sector "la necesidad de actualizar la legislación vigente para adecuarla a las realidades actuales", e identifica expresamente "la promoción de Costa Rica como destino para la pesca deportiva y la comercialización de productos marinos sostenibles" como una de las oportunidades estratégicas para incrementar los ingresos del sector.
+Este proyecto de ley responde directamente a los tres componentes de ese diagnóstico: diversifica los ingresos del pescador artesanal y de mediana escala habilitando su acceso al mercado turístico, actualiza el marco normativo que hoy lo excluye de ese mercado, y provee el instrumento jurídico concreto para que la oportunidad que el propio Incopesca identifica se traduzca en beneficios reales para las comunidades costeras.
+Este diagnóstico es consistente con los hallazgos del Parlamento Cívico Ambiental, órgano adscrito a la Dirección de Participación Ciudadana de la Asamblea Legislativa, que en enero de 2024 convocó un Encuentro Técnico sobre Pesca Sostenible con biólogos pesqueros, investigadores marinos, representantes de organizaciones conservacionistas y expertos en cambio climático. El biólogo pesquero Moisés Mug, director de Ciencias de la Federación Costarricense de Pesca Turística y con más de cuarenta años de experiencia en el sector, sintetizó la situación en los siguientes términos: "Costa Rica desde hace mucho tiempo pasó el punto máximo de aprovechamiento sostenible, tanto en términos ecosistémicos como económicos. Estamos en un punto de subsidios, sin conservación del ecosistema, con empleos de mala calidad, sobrepasando la reproductividad biológica del recurso" (Mug, M., 2024).
+Dado que el registro de licencias de pesca comercial está cerrado y no puede expandirse el esfuerzo pesquero, el Encuentro Técnico identificó como cuarta recomendación clave de política pública la "diversificación productiva en comunidades costeras, promoviendo el ecoturismo y la pesca responsable", y como quinta recomendación "promover alternativas económicas sostenibles para reducir la dependencia exclusiva de la pesca extractiva" (Martínez Fernández & Valverde, 2025).
+Las proyecciones científicas sobre el impacto del cambio climático refuerzan la urgencia de actuar. La investigadora Tayler McLellan Clarke, PhD, especializada en modelaje del impacto climático sobre pesquerías, proyectó para Costa Rica una reducción del 15% en los ingresos asociados a la pesca en el océano Pacífico y del 30% en el Mar Caribe para el año 2050. Centroamérica es, además, una región con alto potencial de conflicto en sus pesquerías debido a la limitada extensión de las zonas económicas exclusivas y a la alta movilidad de los recursos pesqueros conforme se desplacen por efecto del cambio climático (Clarke, T.M., 2024.). En ese escenario de contracción proyectada, la diversificación hacia actividades turísticas complementarias que no incrementan el esfuerzo extractivo constituye tanto una medida de adaptación económica como un instrumento de resiliencia climática para las comunidades costeras.
+La reforma tiene también una dimensión de equidad de género que no puede ignorarse. Según los registros del Incopesca para 2024, solo el 25% de las licencias de pesca de pequeña escala está en manos de mujeres, y en la pesca turística ese porcentaje cae al 7% (Incopesca, 2025). Las mujeres de las comunidades costeras están presentes en el sector pesquero —procesan, comercializan, organizan, sostienen—, pero el marco jurídico vigente las excluye del único segmento turístico que podría mejorar sus ingresos sin abandonar su comunidad ni su oficio. Al eliminar el requisito de organización asociativa para el turismo pesquero vivencial, esta ley abre ese acceso a la mujer pescadora individual que hoy no puede formalizarlo.
+Si bien el ordenamiento jurídico costarricense no establece una prohibición expresa del ejercicio combinado de actividades pesqueras comerciales y actividades turísticas desde una misma embarcación, la ausencia de una habilitación administrativa expresa, completa y con respaldo legal suficiente para dicha actividad genera un estado de indeterminación normativa que produce efectos prácticos equivalentes a una prohibición: el titular de una licencia de pesca no puede formalizar la actividad complementaria, no accede a los beneficios del régimen de turismo rural comunitario y queda expuesto a sanciones administrativas por parte de hasta tres instituciones con competencias diferenciadas sobre la materia. El análisis del marco normativo vigente permite identificar seis obstáculos jurídicos que, en su concurrencia, explican por qué la actividad dual pesca-turismo es inviable en el ordenamiento actual.
+El primer obstáculo deriva directamente de la definición legal de la licencia de pesca. El artículo 2, inciso 20 de la Ley n.° 8436, Ley de Pesca y Acuicultura, del 1 de marzo de 2005 define la licencia como el acto mediante el cual el Incopesca habilita 'la extracción y el aprovechamiento sostenible de recursos marinos, pesqueros e hidrobiológicos'. El objeto del acto habilitante es estrictamente extractivo: no cubre el transporte de turistas ni la prestación de servicios recreativos. En consecuencia, el titular que presta servicios turísticos amparado únicamente en su licencia pesquera actúa al margen de su título habilitante, lo que lo expone a sanciones administrativas del Incopesca por ejercer actividad no amparada por su habilitación.
+El segundo obstáculo surge del propio régimen de la pesca turística. El artículo 79 de la misma ley define la pesca turística como actividad realizada con 'propósitos exclusivamente turísticos, llevados a cabo en forma permanente'. Estos calificativos hacen que la figura sea jurídicamente incompatible con el ejercicio simultáneo o alternativo de la pesca comercial: para obtener la licencia turística del artículo 79, el pescador comercial debería abandonar su licencia de pesca, o arriesgarse a perderla cuando el Incopesca verifique anualmente que 'la embarcación esté siendo utilizada para tal propósito'. La figura del artículo 79 está diseñada para embarcaciones de gran escala dedicadas permanentemente al turismo; no ofrece solución para el pescador artesanal que quiere complementar su actividad sin renunciar a ella.
+El tercer obstáculo radica en las insuficiencias del único antecedente reglamentario. El artículo 63 del Decreto Ejecutivo n.º 36782-MINAET-MAG-MOPT-TUR-SP-S-MTSS, Reglamento a la Ley de Pesca y Acuicultura n.º 8436, del 24 de mayo de 2011, autorizó la realización conjunta de pesca en pequeña escala y turismo, pero adolece de deficiencias que lo hacen jurídicamente insuficiente: sus requisitos no están claros y carece del respaldo legal necesario para ampliar el objeto de una licencia cuyo contenido está definido por ley, haciéndolo susceptible de impugnación.
+El cuarto obstáculo proviene de Ley n.º 8724, Ley de Fomento del Turismo Rural Comunitario, del 17 de julio de 2009. Si bien esta ley reconoce la pesca turística de pequeña escala como actividad de turismo rural comunitario, su párrafo final reserva el acceso a todos los beneficios del régimen a las asociaciones y cooperativas, excluyendo a las personas físicas individuales —que son la forma organizativa predominante entre los pescadores artesanales—. Adicionalmente, el inciso f) limita la actividad a 'embarcaciones pequeñas o de pesca artesanal', dejando fuera las 59 embarcaciones de mediana escala. El resultado es que el pescador artesanal individual no puede obtener la declaratoria turística del ICT y no puede incorporarse a los programas institucionales de promoción turística.
+El quinto obstáculo concierne específicamente a la comercialización del producto al turista. La actividad de turismo pesquero vivencial —en la que el turista acompaña la faena y adquiere o consume el producto capturado— no encaja en ninguna figura jurídica vigente. El artículo 74 de la Ley n.º 8436, aplicable por analogía a la pesca turística mediante el artículo 79 de la misma ley, dispone que las capturas obtenidas se destinarán únicamente a la taxidermia o al consumo de quienes las realicen, excluyendo toda comercialización. La venta directa al turista de las especies capturadas no está habilitada en ningún otro instrumento legal vigente.
+El sexto y último obstáculo es de naturaleza procedimental. La formalización de la actividad dual requiere actuaciones ante el Incopesca, el ICT y el MOPT por separado, sin procedimiento conjunto, sin ventanilla única y sin plazo máximo exigible para la resolución integral de la solicitud. La concurrencia de competencias institucionales sin mecanismo de articulación opera, en la práctica, como una barrera de acceso que resulta especialmente gravosa para los titulares con menor capacidad administrativa y financiera. La combinación de estos seis obstáculos produce un resultado que el propio Incopesca reconoce en su Plan Nacional 2025-2030: los titulares de licencias de pesca comercial enfrentan una 'limitada diversificación de ingresos y acceso a mercados' que esta ley está llamada a corregir.
+La presente ley reforma la Ley de Pesca y Acuicultura, n.º 8436, del 1 de marzo de 2005 y la Ley n.º 8724, Ley de Fomento del Turismo Rural Comunitario, del 17 de julio de 2009, con el objeto de crear el instrumento jurídico de articulación entre el régimen pesquero y el régimen turístico que el ordenamiento vigente no contempla. La reforma no altera ninguno de los dos modelos preexistentes: establece, con precisión y con plenas garantías para el titular, la figura jurídica que permite el ejercicio complementario de ambas actividades.
+En cuanto al obstáculo de la definición legal de la licencia, el nuevo inciso 20 bis del artículo 2 de la Ley n.º 8436 define la licencia de pesca con habilitación turística complementaria como modalidad específica de la licencia de pesca, dotándola de nombre propio y respaldo en el glosario legal. El artículo 79 bis desarrolla su régimen completo, con objeto propio y diferenciado al de la licencia de pesca comercial, dotada de rango legal y contenido sustantivo propio. La coexistencia de ambos instrumentos habilitantes sobre una misma embarcación queda respaldada en rango de ley, eliminando la indeterminación normativa vigente. La garantía central de la reforma —también establecida en el artículo 79 bis— es expresa, clara e irrenunciable: el otorgamiento de la habilitación turística no modifica, suspende ni extingue la licencia de pesca preexistente del titular, cualquiera que sea su modalidad. La cancelación de la habilitación turística tampoco afecta la licencia de pesca. En ningún caso la existencia simultánea de ambas habilitaciones podrá ser interpretada como causal de extinción de ninguna de ellas por el Incopesca, el ICT, el MOPT ni ninguna otra autoridad. La habilitación turística es un instrumento complementario, nunca sustitutivo.
+En cuanto al obstáculo reglamentario, la figura ya no depende del artículo 63 del Reglamento n.º 36782 —cuyo procedimiento nunca fue publicado— sino de la ley misma, que crea el procedimiento con plazos improrrogables y vinculantes. El ámbito de aplicación se extiende a las dos modalidades relevantes: pequeña escala y mediana escala.
+En cuanto al obstáculo de la Ley n.º 8724, la reforma opera en tres frentes. El inciso f) del artículo 4 amplía el turismo pesquero vivencial a embarcaciones de mediana escala y le da un contenido sustantivo propio que va más allá de la simple práctica de pesca deportiva. El párrafo final del mismo artículo habilita expresamente a las personas físicas individuales para esta modalidad, eliminando el requisito de organización asociativa que hoy excluye a la gran mayoría de los pescadores artesanales. Y el nuevo inciso m) del artículo 6 convierte al ICT en actor activo del proceso: le impone la obligación de coordinar con el Incopesca la tramitación conjunta de la habilitación e incorporar a los titulares en sus registros y programas de promoción turística, cerrando así el circuito institucional que hoy no existe.
+En cuanto al obstáculo de la comercialización, el propio artículo 79 bis habilita expresamente la venta directa al turista del producto capturado durante la actividad turística, así como su destino a establecimientos de alimentación donde los turistas puedan consumirlo, dentro del cupo pesquero autorizado y con las salvaguardas sanitarias aplicables. La única excepción son las especies de interés turístico-deportivo declaradas por la Junta Directiva del Incopesca, respecto de las cuales únicamente se autoriza la captura con liberación inmediata. La trazabilidad se garantiza mediante la bitácora dual también prevista en el artículo 79 bis, que registra por separado la actividad extractiva y la turística en cada salida de la embarcación.
+Por las razones de mérito expuestas, los suscritos diputados y diputadas sometemos a la consideración de las señoras y los señores diputados de la Asamblea Legislativa el siguiente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA LA DIVERSIFICACIÓN SOSTENIBLE DE LA PESCA ARTESANAL Y SU INTEGRACIÓN AL TURISMO
+ARTÍCULO 1- Se adiciona un inciso 20 bis al artículo 2; se adiciona un inciso r) al artículo 3; se reforma el artículo 79; se adiciona un artículo 79 ter y se adiciona un inciso j) al artículo 112 de la Ley n.º 8436, Ley de Pesca y Acuicultura, del 1 de marzo de 2005, y sus reformas, para que se lean de la siguiente manera:
+Artículo 2- Para los efectos de la presente ley, se definen los siguientes términos:
+(…)
+20 bis- Licencia de pesca con habilitación turística complementaria: modalidad de la licencia de pesca mediante la cual el Incopesca, en coordinación con el Instituto Costarricense de Turismo (ICT) habilita al titular para ejercer actividades turísticas desde la misma embarcación de forma complementaria y sin sustitución de la actividad pesquera preexistente.
+Artículo 3- El Estado elaborará el Plan de Desarrollo Pesquero y Acuícola, basado en las siguientes disposiciones:
+(…)
+r) La promoción de la diversificación de ingresos de las personas pescadoras artesanales, de pequeña escala y de mediana escala mediante la integración de actividades turísticas complementarias, como instrumento de resiliencia económica del sector, de reducción de la pobreza en las comunidades costeras y de aprovechamiento sostenible de los recursos marino-costeros, en cumplimiento de los compromisos internacionales asumidos por Costa Rica en materia de pesca artesanal y desarrollo sostenible.
+Artículo 79- Entiéndese como pesca turística la actividad pesquera que realizan personas físicas, nacionales o extranjeras, con el fin de capturar, con un aparejo de pesca personal apropiado para el efecto, recursos acuáticos pesqueros en aguas continentales, jurisdiccionales o en la zona económica exclusiva, con fines comerciales y propósitos exclusivamente turísticos, llevados a cabo en forma permanente; asimismo, a la pesca turística le serán aplicables, por analogía, las disposiciones establecidas en los artículos 69 a 76 de la presente ley.
+Las embarcaciones dedicadas a esta actividad deberán estar registradas en el ICT y contarán con una licencia especial otorgada por el Incopesca para este propósito. Dicha licencia podrá ser prorrogada mediante autorización del Incopesca, previo estudio y revisión anual, a fin de determinar que la embarcación esté siendo utilizada para tal propósito.
+Además, el Incopesca establecerá diferentes tipos de carnés de pesca turística, los cuales serán utilizados en todo el territorio nacional, tomando en consideración el tiempo de su uso.
+El Incopesca fomentará la práctica y el desarrollo de la pesca turística, en coordinación con el ICT y los demás sectores interesados. También velará porque su personal reciba la capacitación necesaria para el cumplimiento de los fines propuestos; impulsará la práctica de liberar las especies capturadas vivas y establecerá pautas y normas que garanticen la sostenibilidad de las especies prioritarias para esta actividad.
+El titular de una licencia comercial de pequeña o de mediana escala podrá solicitar al Incopesca, de conformidad con el artículo 79 bis de esta ley, una habilitación turística complementaria sobre la misma embarcación registrada bajo su licencia pesquera. Esta habilitación no altera, suspende ni extingue la licencia de pesca preexistente, ni podrá ser invocada como causal de su extinción o modificación por ninguna autoridad.
+Artículo 79 ter- Habilitación turística complementaria de pesca
+El Incopesca, en coordinación con el Instituto Costarricense de Turismo (ICT), otorgará la habilitación turística complementaria de pesca al titular de licencia comercial de pequeña o de mediana escala que así lo solicite, para ofrecer servicios turísticos desde la misma embarcación registrada bajo su licencia pesquera, de forma complementaria y sin sustitución de la actividad pesquera preexistente.
+Los servicios turísticos habilitados comprenden la guía de turistas para la práctica y observación de la pesca, la demostración vivencial del proceso pesquero desde la captura hasta la comercialización o el consumo del producto, el cabotaje turístico de pequeña escala y cualquier otra actividad turística compatible con la naturaleza de la embarcación y con los requisitos de seguridad establecidos por el MOPT. El titular podrá comercializar directamente al turista el producto capturado dentro del cupo pesquero autorizado bajo su licencia de pesca vigente, con excepción de las especies de interés exclusivamente turístico-deportivo, respecto de las cuales solo se autoriza captura con liberación inmediata.
+El titular deberá llevar una bitácora de viaje dual que registre si cada salida tiene carácter pesquero, turístico, o ambos. El Incopesca y el ICT tendrán acceso a esta bitácora para fines de fiscalización. Durante los períodos de veda se suspende únicamente la extracción pesquera activa; las actividades de observación y demostración vivencial sin extracción comercial podrán ejercerse sin restricción.
+Artículo 112- El Incopesca podrá autorizar la realización de las siguientes actividades:
+(…)
+j) El otorgamiento de la habilitación turística complementaria de pesca a los titulares de licencia comercial de pequeña o de mediana escala, en coordinación con el Instituto Costarricense de Turismo.
+ARTÍCULO 2- Se reforma el inciso f) del artículo 4; se reforma el párrafo final del artículo 4; y se adiciona un inciso m) al artículo 6 de la Ley n.º 8724, Ley de Fomento del Turismo Rural Comunitario, del 17 de julio de 2009, y sus reformas, para que se lean de la siguiente manera:
+Artículo 4-
+(…)
+f) Pesca turística de pequeña escala: actividad turística realizada en embarcaciones de pesca artesanal, de pequeña escala o de mediana escala, que consiste en el transporte y guía de turistas para la práctica y observación de la pesca en aguas marinas o continentales, la vivencia del proceso pesquero desde la faena hasta la comercialización o el consumo del producto capturado, y la apreciación de las costumbres y tradiciones de las comunidades pesqueras costeras y rurales.
+Esta actividad podrá ser realizada por el titular de una licencia de pesca con habilitación turística complementaria, quien podrá ofrecer al turista el producto capturado para su consumo o adquisición directa dentro del cupo pesquero autorizado bajo su licencia de pesca vigente y con cumplimiento de las normas sanitarias aplicables, con excepción de las especies declaradas de interés exclusivamente turístico-deportivo, respecto de las cuales solo se autoriza captura con liberación inmediata.
+Lo anterior, sin perjuicio de las competencias establecidas en la legislación vigente a favor del Instituto Costarricense de Pesca y Acuicultura (Incopesca).
+(…)
+Las actividades enunciadas en este artículo deberán ser realizadas por las asociaciones u organizaciones indicadas en el artículo 1 de esta ley, con excepción de las relativas a pesca turística de pequeña escala que podrán ser realizadas también por personas físicas individuales titulares de una licencia de pesca con habilitación turística complementaria.
+Artículo 6-
+(…)
+m) Coordinar con el Instituto Costarricense de Pesca y Acuicultura el otorgamiento de la habilitación turística complementaria de pesca, emitir la declaratoria turística e incorporar a los titulares de dicha habilitación en los registros, programas de capacitación y campañas de promoción institucionales.
+Rige a partir de su publicación.
+José María Villalta Flórez Estrada
+María Eugenia Román Mora Sigrid Violeta Segura Artavia
+Edgardo Vinicio Araya Sibaja Vianey Briyith Mora Vega
+Antonio Trejos Mazariegos Joselyn Fabiola Sáenz Núñez
+Diputados y diputadas
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 18-06-2026).

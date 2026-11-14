@@ -1,0 +1,574 @@
+ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+PROYECTO DE LEY
+LEY PARA LA MODERNIZACIÓN DEL GOBIERNO JUDICIAL Y LA REORGANIZACIÓN DE COMPETENCIAS ADMINISTRATIVAS DEL PODER JUDICIAL
+MARTA EUGENIA ESQUIVEL RODRÍGUEZ
+DIPUTADA
+EXPEDIENTE N.º 25.687
+DEPARTAMENTO DE SERVICIOS PARLAMENTARIOS
+ÁREA DE PROCESOS LEGISLATIVOS
+PROYECTO DE LEY
+LEY PARA LA MODERNIZACIÓN DEL GOBIERNO JUDICIAL Y LA REORGANIZACIÓN DE COMPETENCIAS ADMINISTRATIVAS DEL PODER JUDICIAL
+Expediente N.º 25.687
+ASAMBLEA LEGISLATIVA:
+La evolución de los sistemas judiciales contemporáneos evidencia una tendencia progresiva hacia la separación entre las funciones jurisdiccionales y las funciones administrativas dentro de los poderes judiciales. Los modelos modernos de gobernanza judicial concentran a las altas cortes en la interpretación del derecho, la garantía de la independencia judicial y la unificación jurisprudencial, mientras órganos técnicos especializados asumen la administración institucional.
+Costa Rica mantiene actualmente un modelo altamente centralizado en la Corte Suprema de Justicia, donde las magistraturas ejercen simultáneamente funciones jurisdiccionales, administrativas, disciplinarias y operativas. Si bien este esquema respondió históricamente a necesidades de consolidación institucional, la evolución del Poder Judicial durante las últimas décadas ha incrementado significativamente la complejidad de la gestión administrativa, tecnológica, financiera y de talento humano, haciendo recomendable revisar la distribución funcional de competencias.
+La presente iniciativa impulsa la reforma de varios artículos de la Ley Orgánica del Poder Judicial, a fin de trascender de un modelo de concentración administrativo-jurisdiccional hacia un modelo moderno de especialización funcional, donde las magistraturas concentren su labor en impartir justicia y los órganos técnicos especializados asuman la administración institucional.
+La modernización del Poder Judicial no implica debilitar la justicia, sino fortalecerla mediante la especialización funcional, la profesionalización administrativa y la concentración de las magistraturas en su verdadera misión constitucional: impartir justicia.
+I. OBJETIVOS DE LA REFORMA
+1. Fortalecer la función jurisdiccional de la Corte Suprema de Justicia
+La reforma busca devolver a las magistraturas su función constitucional esencial: impartir justicia, garantizar la supremacía del orden jurídico y asegurar la uniformidad jurisprudencial. La iniciativa pretende reducir la sobrecarga administrativa que actualmente absorbe parte importante de la capacidad institucional de Corte Plena.
+2. Profesionalizar la administración del Poder Judicial
+La complejidad contemporánea de la Administración Pública exige capacidades especializadas en planificación estratégica, contratación administrativa, infraestructura tecnológica, gestión financiera y transformación digital. La reforma propone que dichas funciones sean asumidas por órganos técnicos especializados.
+3. Modernizar el modelo de gobernanza judicial
+La iniciativa promueve un modelo institucional sustentado en especialización funcional, eficiencia operativa, desconcentración administrativa y fortalecimiento técnico del Consejo Superior del Poder Judicial.
+4. Fortalecer la transparencia y la rendición de cuentas
+La separación entre funciones jurisdiccionales y administrativas permitirá delimitar responsabilidades, fortalecer controles internos y mejorar la trazabilidad institucional en la toma de decisiones administrativas.
+5. Optimizar la eficiencia institucional
+La ciudadanía demanda un Poder Judicial ágil y eficiente. La reforma impulsa la simplificación de estructuras de decisión y una administración profesionalizada orientada a resultados.
+6. Garantizar el equilibrio entre independencia judicial y gestión administrativa
+La propuesta mantiene intacta la independencia judicial, la autonomía presupuestaria y la supremacía jurisdiccional de la Corte Suprema, redefiniendo únicamente la distribución de competencias administrativas.
+II. EVOLUCIÓN DEL MODELO DE ADMINISTRACIÓN JUDICIAL (2008–2026)
+Año
+Cambio relevante
+Base legal / reglamentaria
+Artículo o referencia
+Impacto institucional
+2008
+Fortalecimiento progresivo del Consejo Superior
+Ley Orgánica del Poder Judicial
+Arts. 81–84 LOPJ
+Consolidación del Consejo Superior como órgano de administración y supervisión institucional. Inicio de desconcentración administrativa parcial.
+2009–2013
+Expansión del expediente electrónico y modernización tecnológica judicial
+Ley n.° 8454 y reglamentos internos
+Ley 8454; acuerdos de Corte Plena y Consejo Superior
+Incremento de complejidad tecnológica y necesidad de estructuras técnicas permanentes.
+2013
+Consolidación de plataformas digitales judiciales
+Reglamento sobre Expediente Judicial Electrónico
+Acuerdos administrativos de Corte Plena
+Mayor dependencia institucional de sistemas tecnológicos y administración especializada.
+2014–2016
+Crecimiento operativo y presupuestario del Poder Judicial
+Normativa presupuestaria y planificación judicial
+Art. 177 Constitución Política
+Incremento de cargas administrativas y financieras.
+2017
+Fortalecimiento de políticas de control interno y transparencia
+Ley General de Control Interno, n.° 8292
+Arts. 7 y 10
+Necesidad de profesionalización administrativa.
+2018
+Reforma fiscal y nuevas reglas presupuestarias
+Ley n.° 9635
+Título IV – Regla Fiscal
+Incremento de exigencias presupuestarias y control financiero.
+2020
+Transformación acelerada por pandemia Covid-19
+Circulares y normativa de emergencia sanitaria
+Acuerdos administrativos extraordinarios
+Digitalización acelerada de procesos judiciales.
+2021–2023
+Expansión de infraestructura tecnológica judicial
+Planes estratégicos institucionales
+Plan Estratégico del Poder Judicial
+Mayor complejidad tecnológica y administrativa.
+2024–2026
+Debate nacional sobre gobernanza judicial
+Propuestas de reforma legal y constitucional
+Debate legislativo y técnico
+Necesidad de redefinir competencias administrativas y jurisdiccionales.
+Fuente: Elaboración propia.
+La evolución institucional del Poder Judicial durante las últimas décadas evidencia una transformación profunda en la complejidad de su funcionamiento administrativo, operativo y tecnológico. La incorporación progresiva del expediente judicial electrónico, la expansión de plataformas digitales, el fortalecimiento de los sistemas de control interno, las nuevas exigencias presupuestarias derivadas de la reforma fiscal y los procesos acelerados de digitalización posteriores a la pandemia de Covid-19 han convertido al Poder Judicial en una organización pública altamente compleja desde el punto de vista gerencial y técnico.
+No obstante, pese a esta transformación estructural, el modelo de gobierno judicial costarricense continúa descansando sobre un esquema de concentración administrativa en órganos jurisdiccionales, particularmente en la Corte Suprema de Justicia y en Corte Plena. Este modelo responde a una realidad institucional distinta, propia de una etapa histórica en la que las exigencias operativas, tecnológicas y administrativas eran considerablemente menores. En consecuencia, las magistraturas han debido asumir crecientemente funciones administrativas, operativas y disciplinarias que exceden la naturaleza esencial de la función jurisdiccional.
+La presente reforma plantea la necesidad de adecuar la estructura de gobernanza judicial a las demandas institucionales del siglo XXI, mediante un modelo basado en la especialización funcional y la profesionalización administrativa. Bajo este enfoque, las magistraturas concentrarán prioritariamente su labor en impartir justicia, garantizar la uniformidad jurisprudencial y resguardar la independencia judicial, mientras que las funciones administrativas y operativas serán ejercidas por órganos técnicos especializados, particularmente por un Consejo Superior fortalecido, capaz de responder con mayor eficiencia, continuidad y capacidad técnica a los desafíos contemporáneos de la administración pública judicial.
+III. CAMBIO DE PARADIGMA INSTITUCIONAL
+El cambio de paradigma institucional propuesto representa una transformación orientada a fortalecer la capacidad estratégica del Poder Judicial frente a los desafíos contemporáneos de la Administración Pública. La creciente complejidad operativa, tecnológica y presupuestaria de la institución exige estructuras de gestión más especializadas, ágiles y técnicamente preparadas para garantizar continuidad administrativa, planificación eficiente y capacidad de respuesta institucional. La especialización funcional permite construir un modelo más moderno de gobernanza judicial, alineado con estándares internacionales de eficiencia, transparencia y profesionalización.
+Asimismo, la redefinición de competencias contribuye a consolidar un equilibrio más adecuado entre la función jurisdiccional y la gestión administrativa. Al reducir la participación de las magistraturas en tareas operativas y administrativas ordinarias, se fortalece la capacidad institucional de la Corte Suprema para concentrarse en las labores de dirección jurídica, unificación jurisprudencial y tutela de la independencia judicial. Paralelamente, el fortalecimiento del Consejo Superior como órgano técnico especializado favorece una administración más profesional, estable y basada en criterios objetivos de gestión pública.
+Tema
+Modelo actual
+Modelo propuesto
+Gobierno judicial
+Concentrado en magistrados
+Órgano técnico especializado
+Función de magistrados
+Jurisdiccional + administrativa
+Principalmente jurisdiccional
+Nombramientos
+Amplios
+Limitados a cargos estratégicos
+Gestión operativa
+Intervención de Corte Plena
+Consejo Superior especializado
+Comisiones administrativas
+Magistrados participan
+Eliminadas para magistrados
+IV. REDISTRIBUCIÓN FUNCIONAL DE COMPETENCIAS
+La presente reforma no elimina funciones esenciales del Poder Judicial, sino que redefine y redistribuye determinadas competencias administrativas, operativas y disciplinarias, trasladándolas desde órganos jurisdiccionales hacia órganos técnicos especializados.
+La iniciativa mantiene plenamente las competencias jurisdiccionales, constitucionales y de dirección superior de la Corte Suprema de Justicia, pero redefine el ejercicio de funciones administrativas que, por su naturaleza técnica y operativa, pueden ser ejercidas de forma más eficiente y especializada por el Consejo Superior del Poder Judicial.
+Función actual
+Situación actual
+Órgano que asumiría
+Justificación técnica
+Administración operativa
+Participación de Corte Plena
+Consejo Superior
+Especialización técnica
+Gestión financiera
+Participación de magistrados
+Consejo Superior
+Profesionalización financiera
+Recursos humanos
+Competencia parcialmente concentrada
+Consejo Superior
+Gestión técnica
+Disciplina ordinaria
+Corte conoce procesos
+Consejo Superior
+Separación funcional
+Transformación digital
+Supervisión dispersa
+Órganos técnicos especializados
+Modernización tecnológica
+V. COMPETENCIAS QUE CONSERVA LA CORTE SUPREMA
+La iniciativa preserva en la Corte Suprema las competencias vinculadas con la dirección superior de la política judicial, la disciplina sobre magistrados y la representación institucional del Poder Judicial. De esta forma, se mantiene el liderazgo constitucional de la Corte, al tiempo que se trasladan las funciones administrativas y operativas a órganos técnicos especializados capaces de ejercerlas con mayor eficiencia y profesionalización.
+La reforma plantea un modelo de especialización funcional en el cual cada órgano ejerce competencias acordes con su naturaleza constitucional y técnica. Bajo este enfoque, la Corte Suprema fortalece su rol jurisdiccional y de dirección estratégica, mientras el Consejo Superior asume la administración institucional, financiera y operativa del Poder Judicial, conforme a principios modernos de gobernanza pública.
+Competencia
+Estado en la reforma
+Función jurisdiccional superior
+Se mantiene íntegra
+Unificación jurisprudencial
+Se fortalece
+Dirección superior de política judicial
+Se mantiene
+Independencia judicial
+Se fortalece
+Disciplina sobre magistrados
+Se mantiene
+Representación institucional
+Se mantiene
+La presente iniciativa no pretende disminuir las competencias constitucionales de la Corte Suprema de Justicia ni afectar la independencia del Poder Judicial. Su finalidad consiste en redistribuir determinadas competencias administrativas cuya regulación ha sido desarrollada por el legislador mediante la Ley Orgánica del Poder Judicial, con el propósito de que la Corte concentre sus esfuerzos en el ejercicio de la función jurisdiccional y de dirección estratégica del Poder Judicial, mientras que la administración ordinaria sea ejercida por órganos especializados.
+Asimismo, ha sido diseñada respetando plenamente el modelo de organización del Poder Judicial previsto en la Constitución Política y, particularmente, los principios de independencia judicial, separación de poderes y autonomía funcional que caracterizan al Estado social y democrático de derecho.
+El artículo 152 de la Constitución Política establece que el Poder Judicial se ejerce por la Corte Suprema de Justicia y por los demás tribunales que determine la ley. De igual forma, la Constitución reconoce la independencia funcional de los jueces en el ejercicio de la potestad jurisdiccional, garantía indispensable para la tutela efectiva de los derechos fundamentales y el adecuado funcionamiento del sistema democrático.
+Sin embargo, dicha independencia debe entenderse referida principalmente al ejercicio de la función jurisdiccional, es decir, a la potestad de administrar justicia con absoluta libertad frente a presiones externas o internas. No implica, por sí misma, que todas las funciones administrativas del Poder Judicial deban permanecer concentradas en un mismo órgano de gobierno.
+La Constitución Política no establece un modelo rígido de administración interna del Poder Judicial ni atribuye expresamente a la Corte Suprema la totalidad de las competencias administrativas, presupuestarias, de gestión del talento humano o de administración operativa que actualmente ejerce por disposición legal.
+En consecuencia, el legislador conserva un margen de configuración normativa para distribuir racionalmente dichas competencias entre los distintos órganos del Poder Judicial, siempre que ello no afecte la independencia de la función jurisdiccional ni menoscabe la autonomía institucional del Poder Judicial.
+Precisamente ese es el propósito de esta iniciativa.
+El proyecto no modifica la integración de la Corte Suprema de Justicia, no altera las competencias jurisdiccionales de las Salas, no limita la independencia de los jueces, no reduce la autonomía presupuestaria del Poder Judicial y tampoco introduce mecanismos de injerencia política sobre las decisiones judiciales.
+Lo que propone es una reorganización administrativa basada en el principio de especialización funcional, mediante la cual las magistraturas concentren sus esfuerzos en la función constitucional para la cual fueron designadas: impartir justicia.
+Paralelamente, las funciones administrativas ordinarias se trasladan a órganos especializados cuya naturaleza técnica resulta más adecuada para la gestión institucional, fortaleciendo así la eficiencia administrativa, la planificación estratégica, la transparencia y la rendición de cuentas.
+Esta separación entre funciones jurisdiccionales y funciones administrativas constituye una práctica ampliamente desarrollada en sistemas judiciales modernos y responde a recomendaciones formuladas por organismos internacionales especializados en gobernanza pública, entre ellos la Organización para la Cooperación y el Desarrollo Económicos (OCDE), que ha señalado la importancia de fortalecer las capacidades de gestión de los poderes judiciales mediante estructuras administrativas especializadas que permitan optimizar la utilización de los recursos públicos sin comprometer la independencia judicial.
+Asimismo, el Banco Interamericano de Desarrollo ha destacado que la profesionalización de la administración judicial constituye un elemento esencial para mejorar la calidad del servicio público de justicia, reducir la mora judicial y fortalecer la confianza ciudadana en las instituciones.
+La reforma propuesta responde precisamente a ese objetivo: fortalecer el Poder Judicial mediante una distribución más eficiente de sus competencias internas, permitiendo que cada órgano concentre su actuación en aquellas funciones para las cuales posee mejores capacidades técnicas e institucionales.
+Debe enfatizarse que esta redistribución competencial no implica una disminución de las atribuciones constitucionales de la Corte Suprema de Justicia, sino una redefinición legal de aquellas funciones administrativas cuya asignación corresponde al legislador ordinario.
+Por el contrario, al liberar a la Corte de un importante volumen de decisiones administrativas cotidianas, la reforma fortalece su capacidad para ejercer con mayor dedicación las funciones jurisdiccionales, de unificación de jurisprudencia, dirección estratégica del Poder Judicial y garantía de la independencia judicial.
+En ese sentido, el proyecto desarrolla los principios constitucionales de eficiencia administrativa, buena administración, especialización funcional y utilización racional de los recursos públicos, procurando un equilibrio adecuado entre la autonomía institucional del Poder Judicial y la necesidad de modernizar sus estructuras de gestión conforme a las mejores prácticas internacionales.
+Finalmente, esta propuesta parte del convencimiento de que fortalecer la independencia judicial no significa conservar inalterables todas las estructuras administrativas existentes, sino asegurar que la organización interna del Poder Judicial permita a las magistraturas ejercer plenamente su función constitucional, apoyadas por una administración moderna, profesional, especializada y orientada a resultados.
+VI. LEGISLACIÓN COMPARADA
+La experiencia comparada demuestra que los sistemas judiciales modernos han evolucionado hacia modelos de administración especializada, en los cuales las altas cortes concentran su labor en la función jurisdiccional y los órganos técnicos asumen la gestión administrativa, operativa y disciplinaria. Este enfoque permite fortalecer simultáneamente la independencia judicial, la eficiencia institucional y la profesionalización de la administración pública judicial.
+Países como España, Italia, Francia y Colombia han desarrollado estructuras de gobernanza judicial basadas en la separación funcional entre quienes imparten justicia y quienes administran institucionalmente el sistema judicial. Estas reformas han permitido reducir la concentración administrativa en las altas cortes, mejorar la capacidad técnica de gestión y fortalecer los mecanismos de control, planificación y modernización institucional.
+La propuesta costarricense se enmarca dentro de esta evolución internacional hacia modelos más técnicos y especializados de administración judicial. El fortalecimiento del Consejo Superior como órgano técnico de gestión institucional busca adecuar la estructura del Poder Judicial a las exigencias contemporáneas de transparencia, eficiencia y modernización, manteniendo intacta la función jurisdiccional y el liderazgo constitucional de la Corte Suprema de Justicia.
+País
+Órgano judicial
+Función Corte Suprema
+Administración judicial
+Elemento relevante
+España
+CGPJ
+Jurisdiccional
+Administración técnica
+Separación funcional
+Italia
+Consiglio Superiore
+Jurisdiccional
+Consejo especializado
+Profesionalización
+Francia
+Conseil Supérieur
+Jurisprudencia
+Gestión técnica
+Especialización
+Colombia
+Consejo Superior de la Judicatura
+Jurisdiccional
+Consejo administra disciplina
+Separación de funciones
+Costa Rica (propuesta)
+Consejo Superior fortalecido
+Predominio jurisdiccional
+Administración especializada
+Modernización institucional
+Fuente: Elaboración propia
+VII. CUADRO COMPARATIVO DE REFORMA PROPUESTA
+En el siguiente cuadro comparativo se evidencia una transformación profunda en la concepción del gobierno judicial costarricense. La propuesta de reforma busca superar el modelo tradicional de concentración de competencias administrativas y jurisdiccionales en la Corte Suprema de Justicia, para avanzar hacia un esquema de especialización funcional. Bajo este enfoque, las magistraturas concentrarían prioritariamente su labor en impartir justicia, fortalecer la uniformidad jurisprudencial y ejercer la dirección superior del sistema judicial, mientras que las funciones administrativas y operativas serían asumidas por órganos técnicos especializados.
+Uno de los elementos centrales de la reforma es la redefinición de competencias en materia de nombramientos, régimen disciplinario y administración institucional. Actualmente, Corte Plena participa de forma amplia en decisiones administrativas y disciplinarias que generan una importante carga operativa sobre las magistraturas. La propuesta pretende reasignar estas funciones ordinarias al Consejo Superior del Poder Judicial, fortaleciendo su carácter técnico y profesional. Esto permitiría una gestión más eficiente, especializada y continua de la administración judicial, sin afectar la independencia ni la autoridad constitucional de la Corte Suprema.
+Asimismo, la reforma refleja una tendencia presente en los sistemas judiciales modernos, donde existe una clara separación entre quienes ejercen funciones jurisdiccionales y quienes administran institucionalmente el aparato judicial. La especialización administrativa propuesta busca mejorar la eficiencia operativa, fortalecer los mecanismos de transparencia y optimizar la capacidad de respuesta institucional del Poder Judicial frente a los desafíos contemporáneos de gestión pública, transformación digital y modernización tecnológica.
+Reforma a la Ley Orgánica del Poder Judicial
+Norma
+Artículo / disposición
+Tema reformado
+Situación actual
+Propuesta de reforma
+Finalidad
+LOPJ
+Art. 49
+Naturaleza funcional de la Corte
+Corte mantiene funciones jurisdiccionales y administrativas.
+Corte concentrada en función jurisdiccional y estratégica.
+Separar jurisdicción de administración
+LOPJ
+Art. 59
+Competencias de Corte Plena
+Corte participa en administración y disciplina.
+Corte conserva únicamente funciones estratégicas.
+Redefinir Corte como órgano estratégico
+LOPJ
+Art. 59 inciso 9
+Nombramientos superiores
+Corte nombra diversos cargos.
+Nombramientos mediante ternas técnicas del Consejo.
+Transparentar nombramientos
+LOPJ
+Art. 59
+Nombramientos judiciales
+Corte participa en jueces 4 y 5.
+Consejo Superior asume nombramientos ordinarios.
+Eliminar carga administrativa
+LOPJ
+Art. 59 inciso 11
+Avocamiento
+Corte puede avocar asuntos administrativos.
+Se limita avocamiento administrativo.
+Fortalecer autonomía del Consejo
+LOPJ
+Art. 59 inciso 12
+Régimen disciplinario
+Corte conoce disciplina amplia.
+Corte solo conoce altos cargos.
+Separación disciplinaria
+LOPJ
+Art. 59 inciso 17
+Comisiones
+Magistrados integran comisiones.
+Se elimina participación administrativa.
+Concentración jurisdiccional
+LOPJ
+Art. 81
+Consejo Superior
+Competencias administrativas parciales.
+Consejo asume administración integral.
+Profesionalización administrativa
+LOPJ
+Art. 82
+Presupuesto
+Corte mantiene intervención operativa.
+Consejo ejecuta presupuesto.
+Gestión financiera técnica
+LOPJ
+Art. 83
+Vía administrativa
+Corte puede avocar decisiones.
+Consejo agota vía administrativa.
+Blindar decisiones técnicas
+LOPJ
+Art. 84
+Dependencias
+Modelo mixto administrativo.
+Consejo dirige dependencias administrativas.
+Centralización técnica
+LOPJ
+Art. 182
+Disciplina superior
+Corte conoce disciplina amplia.
+Consejo asume disciplina ordinaria.
+Separar competencias
+LOPJ
+Art. 183
+Disciplina superior
+Corte conoce faltas de órganos superiores.
+Se delimita competencia disciplinaria.
+Orden funcional
+LOPJ
+Art. 184
+Inspección Judicial
+Inspección investiga y resuelve.
+Inspección será órgano instructor.
+Separar investigación y sanción
+LOPJ
+Art. 185
+Disciplina menor
+Jefaturas sancionan faltas leves.
+Se mantiene con controles.
+Orden disciplinario
+LOPJ
+Art. 186
+Inspectores
+Funciones mixtas.
+Órgano técnico especializado.
+Profesionalizar inspección
+LOPJ
+Art. 187
+Inspectores auxiliares
+Organización definida por Corte.
+Consejo organiza operación.
+Traslado administrativo
+LOPJ
+Art. 188
+Funciones inspectores
+Vigilancia tradicional.
+Modernización técnica e indicadores.
+Modernización disciplinaria
+LOPJ
+Art. 189
+Comunicación institucional
+Inspección informa a Corte.
+Inspección informa al Consejo.
+Alinear modelo funcional
+LOPJ
+Art. 197
+Procedimiento disciplinario
+Regulación general.
+Se refuerza debido proceso.
+Garantías disciplinarias
+LOPJ
+Art. 198
+Asignación de quejas
+Asignación a inspector.
+Inspector instructor remite al Consejo.
+Nuevo esquema disciplinario
+LOPJ
+Art. 199
+Quejas jurisdiccionales
+Retardos graves se elevan a Corte.
+Consejo resuelve disciplina ordinaria.
+Proteger independencia judicial
+Proyecto
+Transitorio I
+Estudio remunerativo
+No existe revisión funcional.
+Estudio técnico integral obligatorio.
+Adecuación funcional remunerativa
+Proyecto
+Transitorio II
+Adecuación remunerativa
+Modelo salarial histórico.
+Revisión progresiva de incentivos.
+Correspondencia función-remuneración
+Fuente: Elaboración propia
+En ese contexto, resulta necesario fortalecer al Consejo Superior como órgano técnico especializado en administración judicial, permitiendo que la gestión institucional sea ejercida con criterios de profesionalización, continuidad administrativa, eficiencia operativa y evaluación por resultados. La administración pública moderna demanda órganos especializados capaces de desarrollar procesos permanentes de planificación estratégica, supervisión administrativa, control presupuestario, modernización tecnológica y evaluación institucional, bajo estándares técnicos y no predominantemente jurisdiccionales.
+Como se ha mencionado, el traslado de funciones administrativas al Consejo Superior responde además a principios modernos de separación funcional presentes en múltiples sistemas judiciales comparados. La experiencia internacional demuestra que la especialización administrativa contribuye a mejorar la eficiencia institucional, reducir la sobrecarga operativa de las altas cortes, fortalecer la transparencia en la toma de decisiones y optimizar la capacidad de respuesta de los sistemas judiciales frente a los desafíos contemporáneos.
+Asimismo, la concentración simultánea de funciones jurisdiccionales, administrativas y disciplinarias en un mismo órgano puede generar distorsiones operativas, ralentización en la toma de decisiones y una utilización ineficiente de las capacidades institucionales de las magistraturas. La reforma propone un modelo más equilibrado, donde cada órgano ejerza competencias acordes con su naturaleza constitucional y técnica.
+Bajo este nuevo esquema, la Corte Suprema de Justicia conservará plenamente:
+La función jurisdiccional superior,
+La unificación jurisprudencial,
+La dirección estratégica del sistema judicial,
+La disciplina sobre magistrados,
+La representación institucional del Poder Judicial.
+Por su parte, el Consejo Superior asumirá de forma integral la administración operativa, financiera, tecnológica y de recursos humanos, así como el régimen disciplinario ordinario y las funciones administrativas necesarias para garantizar el funcionamiento eficiente de la institución.
+Se impulsa una modernización estructural del gobierno judicial costarricense, basada en la especialización funcional, la profesionalización administrativa y el fortalecimiento simultáneo de la independencia judicial y la eficiencia institucional.
+La reforma no traslada la justicia fuera de la Corte Suprema; traslada la administración ordinaria hacia órganos técnicos especializados para que la Corte pueda concentrarse plenamente en impartir justicia.
+VIII. ADECUACIÓN FUNCIONAL Y RAZONABILIDAD REMUNERATIVA
+La redefinición funcional propuesta en la presente iniciativa implica necesariamente una revisión progresiva de las estructuras organizacionales y remunerativas vinculadas históricamente al ejercicio de funciones administrativas, disciplinarias y operativas por parte de las magistraturas y órganos superiores del Poder Judicial.
+El traslado progresivo de competencias administrativas, operativas y disciplinarias ordinarias hacia el Consejo Superior del Poder Judicial exige garantizar correspondencia entre las funciones efectivamente ejercidas por cada órgano institucional y los componentes organizacionales y remunerativos asociados a dichas responsabilidades.
+En consecuencia, los transitorios contenidos en la presente iniciativa establecen mecanismos de revisión técnica y adecuación progresiva de la estructura remunerativa institucional.
+La reforma no pretende afectar arbitrariamente derechos adquiridos ni comprometer la independencia judicial. Su finalidad consiste en adecuar progresivamente el modelo organizacional y funcional del Poder Judicial a una estructura moderna de gobernanza pública, donde exista coherencia entre:
+Las competencias efectivamente ejercidas,
+Las responsabilidades institucionales,
+Los mecanismos de organización y remuneración pública.
+La adecuación funcional y remunerativa prevista en los transitorios constituye, por tanto, una consecuencia lógica y necesaria del nuevo modelo de distribución de competencias establecido en la presente ley.
+Por las razones anteriormente expuestas, se somete a consideración de las diputaciones el presente proyecto de ley.
+LA ASAMBLEA LEGISLATIVA DE LA REPÚBLICA DE COSTA RICA
+DECRETA:
+LEY PARA LA MODERNIZACIÓN DEL GOBIERNO JUDICIAL Y LA REORGANIZACIÓN DE COMPETENCIAS ADMINISTRATIVAS DEL PODER JUDICIAL
+ARTÍCULO ÚNICO- Refórmense los artículos 49, 59, 81, 82, 83, 84, 182, 183, 184, 185, 186, 187, 188, 189, 197, 198, 199 de la Ley Orgánica del Poder Judicial y adiciónese dos transitorios que en adelante se leerán de la siguiente manera:
+Artículo 49- La Corte Suprema de Justicia se compone de tres Salas de Casación: Primera, Segunda y Tercera y la Sala Constitucional, integradas por cinco magistrados, con excepción de la última que lo será con siete. En la Sala en que se desempeña el presidente de la Corte, cuando las circunstancias lo requieran, a juicio suyo, podrá haber un magistrado suplente de tiempo completo que lo sustituirá mientras no ejerza el cargo, en todos los casos en que no concurra a conocer de los asuntos propios de su Sala. Dicho magistrado suplente no integrará la Corte Plena.
+Los asuntos se distribuirán entre las Salas, fundamentalmente por materias. Si no hubiere ley aplicable que regule la distribución del trabajo o la competencia entre las Salas, la Corte decidirá el punto, mediante un acuerdo que publicará en el Boletín Judicial.
+La función de las Salas y de la Corte Suprema de Justicia será jurisdiccional, orientada a:
+La interpretación y aplicación uniforme del ordenamiento jurídico,
+La tutela de los derechos fundamentales,
+La unificación jurisprudencial,
+y la dirección estratégica superior del Poder Judicial.
+Las funciones administrativas, operativas, disciplinarias ordinarias y de gestión institucional corresponderán al Consejo Superior del Poder Judicial conforme a la presente ley.
+La Corte Suprema de Justicia no ejercerá administración operativa ordinaria, gestión institucional permanente ni funciones administrativas que correspondan al Consejo Superior del Poder Judicial.
+Artículo 59- Corresponde a la Corte Suprema de Justicia:
+1- Informar a los otros Poderes del Estado en los asuntos en que la Constitución Política o las leyes determinen que deba ser consultada, así como emitir criterio sobre proyectos de ley que afecten la organización, funcionamiento o independencia del Poder Judicial.
+2- Proponer reformas legislativas y reglamentarias orientadas al fortalecimiento de la administración de justicia y la independencia judicial.
+3- Aprobar el proyecto de presupuesto del Poder Judicial y supervisar el cumplimiento de los objetivos estratégicos institucionales. La ejecución administrativa y operativa del presupuesto corresponderá al Consejo Superior del Poder Judicial.
+4- Nombrar a los miembros propietarios y suplentes del Tribunal Supremo de Elecciones conforme a la Constitución Política.
+5- Resolver las competencias que se susciten entre las Salas de la Corte Suprema de Justicia, salvo lo dispuesto respecto de la Sala Constitucional.
+6- Designar, en votación secreta, a la Presidencia y Vicepresidencia de la Corte Suprema de Justicia, conforme a la presente ley.
+7- Promulgar los reglamentos internos de carácter jurisdiccional y estratégico del Poder Judicial, por iniciativa propia o a propuesta del Consejo Superior del Poder Judicial.
+8- Conocer del recurso de apelación de sentencia, de casación y del procedimiento de revisión de las sentencias dictadas por las Salas Segunda y Tercera, cuando actúen como tribunales de juicio o de única instancia.
+9- Nombrar, a partir de ternas remitidas por el Consejo Superior del Poder Judicial, a:
+La persona fiscal general de la República,
+La persona fiscal general adjunta,
+La Dirección y Subdirección del Organismo de Investigación Judicial,
+La Auditoría y Subauditoría Judicial,
+La jefatura y subjefatura de la Defensa Pública,
+y las personas integrantes del Consejo Superior del Poder Judicial.
+La Corte Suprema de Justicia no participará en los nombramientos ordinarios de jueces y juezas de categorías 4 y 5, ni en los procesos ordinarios de administración de personal judicial, los cuales corresponderán al Consejo Superior del Poder Judicial, conforme a criterios técnicos, objetivos y meritocráticos.
+10- Conocer el informe anual de gestión presentado por el Consejo Superior del Poder Judicial y evaluar los indicadores generales de desempeño institucional.
+11- La Corte Suprema de Justicia únicamente podrá avocar asuntos del Consejo Superior del Poder Judicial relacionados con: política judicial estratégica, independencia judicial, planificación institucional general, o situaciones excepcionales que comprometan gravemente el funcionamiento del Poder Judicial.
+No procederá el avocamiento respecto de decisiones administrativas ordinarias, gestión operativa, administración de personal ni régimen disciplinario ordinario.
+12- Ejercer el régimen disciplinario únicamente respecto de:
+magistraturas,
+Integrantes del Consejo Superior del Poder Judicial,
+Integrantes del Tribunal de la Inspección Judicial,
+La persona fiscal general de la República,
+La persona fiscal general adjunta,
+La Dirección y Subdirección del Organismo de Investigación Judicial,
+La Auditoría y Subauditoría Judicial,
+y la jefatura de la Defensa Pública.
+13- Establecer los montos para determinar la competencia en razón de la cuantía y la procedencia del recurso de casación conforme a la ley.
+14- Proponer a la Asamblea Legislativa la creación, reorganización o supresión de despachos judiciales, cuando resulte necesario para el adecuado funcionamiento del servicio judicial.
+15- Las decisiones relacionadas con organización administrativa, operación institucional, distribución de recursos humanos, gestión tecnológica y funcionamiento operativo corresponderán al Consejo Superior del Poder Judicial.
+16- Conocer de las demandas de responsabilidad que se interpongan contra Magistraturas de las Salas de la Corte Suprema de Justicia.
+17- Las magistraturas no integrarán comisiones administrativas, operativas ni técnicas permanentes relacionadas con la gestión ordinaria institucional del Poder Judicial. Únicamente podrán participar en comisiones vinculadas con: función jurisdiccional, unificación jurisprudencial, política judicial superior, relaciones internacionales judiciales, o materias constitucionales y estratégicas propias de Corte Plena.
+18- Incorporar al presupuesto institucional los recursos legalmente percibidos por el Poder Judicial conforme al ordenamiento jurídico vigente.
+19- Fijar los días y horarios generales de funcionamiento de las oficinas judiciales.
+20- Emitir directrices generales para garantizar el principio constitucional de justicia pronta y cumplida.
+21- Las demás funciones establecidas en la Constitución Política y las leyes, siempre que sean compatibles con la naturaleza jurisdiccional y estratégica de la Corte Suprema de Justicia.
+Artículo 81- Corresponde al Consejo Superior del Poder Judicial:
+1- Ejercer la administración integral, operativa, financiera, tecnológica y organizacional del Poder Judicial, conforme a los lineamientos estratégicos aprobados por la Corte Suprema de Justicia.
+2- Realizar los nombramientos ordinarios de jueces, juezas y demás personal judicial, con excepción de los cargos cuyo nombramiento corresponda expresamente a la Corte Suprema de Justicia conforme a la presente ley.
+3- Trasladar, provisional o definitivamente, suspender, conceder licencias con o sin goce de salario, remover y rehabilitar a las personas servidoras judiciales conforme al ordenamiento jurídico vigente.
+4- Ejercer el régimen disciplinario ordinario respecto de las personas servidoras judiciales, conforme a la presente ley y sin perjuicio de las competencias disciplinarias reservadas expresamente a la Corte Suprema de Justicia.
+5- Designar personas funcionarias interinas y suplentes cuando las necesidades del servicio judicial así lo requieran.
+6- Aprobar o improbar la designación del personal administrativo y subalterno realizada por las jefaturas institucionales, verificando el cumplimiento de los procedimientos legales y reglamentarios aplicables.
+7- Resolver los reclamos de carácter económico que se formulen al Poder Judicial y ordenar los reintegros que correspondan conforme a derecho.
+8- Resolver las contrataciones administrativas, licitaciones, adquisiciones, proyectos de infraestructura y demás procesos de gestión administrativa institucional del Poder Judicial.
+9- Administrar el Fondo de Jubilaciones y Pensiones del Poder Judicial conforme a los principios de sostenibilidad financiera, transparencia y control institucional.
+10- Dirigir, planificar, organizar, coordinar y supervisar todas las actividades administrativas y operativas del Poder Judicial.
+11- Ejecutar el presupuesto institucional aprobado por la Corte Suprema de Justicia y administrar los recursos institucionales conforme a criterios de eficiencia, transparencia y evaluación por resultados.
+12- Dirigir los procesos de transformación digital, modernización tecnológica y fortalecimiento de los sistemas institucionales del Poder Judicial.
+13- Aprobar el plan anual de vacaciones del Poder Judicial, con excepción de las Salas de la Corte Suprema de Justicia.
+14- Dictar lineamientos administrativos internos para el adecuado funcionamiento institucional del Poder Judicial.
+15- Regular la distribución de asuntos judiciales entre despachos de igual competencia territorial, conforme a criterios técnicos de equilibrio de cargas y eficiencia institucional.
+16- Elaborar las ternas técnicas para:
+La persona fiscal general de la República,
+La persona fiscal general adjunta,
+La Dirección y Subdirección del Organismo de Investigación Judicial,
+La Auditoría y Subauditoría Judicial,
+La jefatura y subjefatura de la Defensa Pública,
+El representante de la Judicatura al Consejo Superior del Poder Judicial,
+y las personas integrantes del propio Consejo Superior del Poder Judicial.
+Las ternas deberán elaborarse mediante procedimientos objetivos, técnicos, públicos y meritocráticos.
+17- Emitir informes periódicos de gestión institucional, desempeño administrativo, eficiencia operativa y cumplimiento de indicadores estratégicos.
+18- Las demás competencias administrativas y operativas que le atribuyan la presente ley y el ordenamiento jurídico.
+Cuando existiere duda sobre si un asunto corresponde a la competencia administrativa del Consejo Superior del Poder Judicial, prevalecerá la competencia del Consejo, salvo disposición legal expresa en contrario.
+Las competencias administrativas, operativas, disciplinarias ordinarias y de gestión institucional atribuidas al Consejo Superior del Poder Judicial no podrán ser ejercidas ordinariamente por la Corte Suprema de Justicia, salvo los casos expresamente previstos en la presente ley.
+Debido a las competencias asumidas por el Consejo Superior, este no podrá estar conformado por miembros del Colegio de Abogados ni representaciones sindicales, sino que estará integrado por la Dirección Ejecutiva, la Dirección de Planificación en su rol de administración y, a los efectos de conocer aspectos únicamente de orden disciplinario, lo integrarán la Defensa Pública, El Ministerio Público y un representante de la judicatura nombrado por la Corte Plena. No podrá ser un magistrado titular ni suplente.
+En caso de que se requiera consultar a las organizaciones sindicales se les llamará en audiencia.
+El Consejo Superior ejercerá estas competencias bajo la dirección estratégica de la Corte Suprema de Justicia, respetando plenamente su independencia jurisdiccional y las competencias constitucionales que le son propias.
+Artículo 82- Para la ejecución del presupuesto del Poder Judicial aprobado por la Asamblea Legislativa, el Poder Ejecutivo realizará las transferencias correspondientes al Poder Judicial conforme al ordenamiento jurídico vigente y a los principios de autonomía e independencia judicial.
+La administración, ejecución, control y supervisión operativa del presupuesto institucional corresponderán al Consejo Superior del Poder Judicial, conforme a criterios de eficiencia, transparencia, sostenibilidad financiera, evaluación por resultados y control interno.
+El Consejo Superior del Poder Judicial estará facultado para administrar las cuentas institucionales del Poder Judicial, autorizar pagos, gestionar recursos financieros y ejecutar las operaciones presupuestarias necesarias para el adecuado funcionamiento institucional.
+Cuando las necesidades del servicio judicial lo requieran, el Consejo Superior podrá crear subpartidas, realizar modificaciones presupuestarias internas y efectuar traspasos entre partidas autorizadas, siempre que no se altere el monto total del presupuesto aprobado y se respeten las disposiciones legales y los principios de control financiero y responsabilidad fiscal.
+No podrán modificarse los recursos destinados a remuneraciones y servicios personales, salvo en los casos permitidos por ley o cuando existan economías presupuestarias debidamente justificadas.
+El Consejo Superior deberá emitir informes periódicos de ejecución presupuestaria, cumplimiento de metas institucionales y evaluación de resultados, los cuales serán conocidos por la Corte Suprema de Justicia, dentro de sus funciones de dirección estratégica superior.
+La Corte Suprema de Justicia conservará únicamente funciones de aprobación estratégica y supervisión general del presupuesto institucional, sin intervenir en la administración operativa ordinaria de los recursos financieros del Poder Judicial.
+Artículo 83- Las resoluciones dictadas por el Consejo Superior del Poder Judicial en materia administrativa, operativa, presupuestaria, disciplinaria ordinaria y de gestión institucional agotarán la vía administrativa.
+Contra dichas resoluciones únicamente procederá recurso de reconsideración, el cual deberá interponerse dentro del plazo de tres días hábiles, contado a partir del día siguiente a la notificación respectiva.
+El Consejo Superior del Poder Judicial podrá disponer, mediante resolución debidamente motivada, la suspensión provisional de los efectos del acto impugnado cuando su ejecución pueda ocasionar daños graves o de difícil reparación.
+No procederá el avocamiento de la Corte Suprema de Justicia respecto de: decisiones administrativas ordinarias, gestión operativa institucional, administración de personal, contrataciones administrativas, ejecución presupuestaria, ni régimen disciplinario ordinario, salvo en los casos excepcionales expresamente previstos en esta ley relacionados con: independencia judicial, dirección estratégica institucional o afectación grave al funcionamiento general del Poder Judicial.
+Las actuaciones del Consejo Superior del Poder Judicial deberán regirse por los principios de: legalidad, objetividad, transparencia, eficiencia administrativa, debido proceso y evaluación por resultados.
+Artículo 84- Del Consejo Superior del Poder Judicial dependerán administrativamente:
+El Tribunal de la Inspección Judicial, la Dirección Ejecutiva, la Auditoría Judicial, la Escuela Judicial, el Departamento de Planificación, los órganos de gestión tecnológica y transformación digital, el Departamento de Gestión Humana y cualquier otra dependencia administrativa creada por ley, reglamento o acuerdo institucional.
+Corresponderá al Consejo Superior del Poder Judicial la dirección, supervisión, coordinación y administración integral de las dependencias administrativas y operativas del Poder Judicial, conforme a criterios de especialización técnica, eficiencia institucional, control interno, transparencia, modernización administrativa y evaluación por resultados.
+Asimismo, dependerán administrativamente del Consejo Superior del Poder Judicial, sin perjuicio de su independencia técnica y funcional el Ministerio Público, el Organismo de Investigación Judicial y la Defensa Pública.
+La Corte Suprema de Justicia conservará únicamente las funciones de dirección estratégica superior, definición de política judicial institucional, aprobación presupuestaria general, evaluación de desempeño institucional, unificación jurisprudencial, control disciplinario sobre los cargos expresamente establecidos en la presente ley.
+Las funciones administrativas ordinarias, operativas, disciplinarias ordinarias y de gestión institucional corresponderán exclusivamente al Consejo Superior del Poder Judicial conforme a esta ley.
+Artículo 182- Corresponde a la Corte Suprema de Justicia, en votación secreta, ejercer el régimen disciplinario únicamente respecto de:
+Las magistraturas,
+La persona fiscal general de la República,
+La persona fiscal general adjunta,
+La Dirección y Subdirección del Organismo de Investigación Judicial,
+La Auditoría y Subauditoría Judicial,
+La jefatura de la Defensa Pública.
+Las correcciones de advertencia y amonestación se adoptarán por mayoría simple del total de magistrados. Para decretar la suspensión, el acuerdo deberá adoptarse por dos terceras partes del total de integrantes de la Corte Suprema de Justicia. Si igual mayoría considerare procedente la revocatoria del nombramiento, la Corte lo comunicará a la Asamblea Legislativa para lo que corresponda conforme al ordenamiento jurídico.
+Para sustanciar las diligencias disciplinarias seguidas contra las personas indicadas en el presente artículo, la Inspección Judicial actuará como órgano instructor.
+El régimen disciplinario ordinario respecto del resto del personal judicial corresponderá al Consejo Superior del Poder Judicial, conforme a los principios de legalidad, objetividad, debido proceso, transparencia, proporcionalidad y evaluación técnica.
+El presidente de la Corte Suprema de Justicia únicamente podrá adoptar medidas preventivas respecto de las personas funcionarias sometidas a competencia disciplinaria de la Corte Suprema.
+Las medidas preventivas respecto del resto del personal judicial corresponderán al Consejo Superior del Poder Judicial o a los órganos disciplinarios que este determine conforme a la ley.
+Artículo 183- Las faltas atribuidas a las personas integrantes del Consejo Superior del Poder Judicial y del Tribunal de la Inspección Judicial serán conocidas por la Corte Suprema de Justicia en Corte Plena.
+La Corte Suprema de Justicia ejercerá competencia disciplinaria únicamente respecto de:
+Magistraturas,
+Integrantes del Consejo Superior del Poder Judicial,
+Integrantes del Tribunal de la Inspección Judicial,
+La persona fiscal general de la República,
+La persona fiscal general adjunta,
+La Dirección y Subdirección del Organismo de Investigación Judicial,
+La Auditoría y Subauditoría Judicial,
+La jefatura de la Defensa Pública.
+El régimen disciplinario ordinario respecto del resto del personal judicial corresponderá al Consejo Superior del Poder Judicial conforme a la presente ley.
+La Inspección Judicial actuará como órgano instructor en los procedimientos disciplinarios cuya competencia corresponda a la Corte Suprema de Justicia.
+Artículo 184- El Tribunal de la Inspección Judicial es un órgano técnico especializado dependiente del Consejo Superior del Poder Judicial.
+Ejercerá control regular y permanente sobre el personal judicial sometido al régimen disciplinario ordinario del Consejo Superior del Poder Judicial, incluyendo el personal del Organismo de Investigación Judicial:
+Corresponderá al Tribunal de la Inspección Judicial:
+a) Vigilar el correcto cumplimiento de los deberes funcionales del personal judicial.
+b) Tramitar las quejas y denuncias disciplinarias que se presenten contra las personas servidoras judiciales sometidas al régimen disciplinario ordinario.
+c) Instruir las investigaciones disciplinarias y realizar las diligencias necesarias para el esclarecimiento de los hechos.
+d) Emitir recomendaciones técnicas y remitir los expedientes al Consejo Superior del Poder Judicial para su resolución.
+e) Ejercer las demás funciones que le asigne la ley y los reglamentos institucionales.
+Las resoluciones disciplinarias corresponderán al Consejo Superior del Poder Judicial, sin perjuicio de las competencias disciplinarias reservadas a la Corte Suprema de Justicia conforme a esta ley.
+Artículo 185- Los jefes y jefas de oficina podrán ejercer potestad disciplinaria inmediata respecto de las personas servidoras judiciales bajo su dirección, cuando la naturaleza de la falta no amerite una sanción superior a quince días de suspensión.
+Toda decisión disciplinaria deberá ser motivada y comunicada al Departamento de Gestión Humana y al Tribunal de la Inspección Judicial, dentro del plazo establecido reglamentariamente.
+El Tribunal de la Inspección Judicial ejercerá control de legalidad sobre las actuaciones disciplinarias y podrá declarar la nulidad de aquellas actuaciones en las que se determine violación al debido proceso, falta de motivación, incompetencia o cualquier causal de nulidad prevista en la ley.
+En caso de declararse la nulidad, el Tribunal de la Inspección Judicial asumirá la instrucción del procedimiento y ordenará la reposición de las actuaciones que correspondan.
+Las correcciones disciplinarias impuestas por las jefaturas deberán respetar plenamente el debido proceso, el derecho de defensa y los principios de proporcionalidad y razonabilidad.
+Contra las resoluciones disciplinarias dictadas por las jefaturas procederá recurso de apelación ante el Tribunal de la Inspección Judicial, el cual deberá interponerse dentro de los tres días hábiles siguientes a la notificación de la medida disciplinaria.
+Si la sanción impuesta fuere suspendida o revocada por el Tribunal de la Inspección Judicial, la persona servidora judicial tendrá derecho al reconocimiento y pago de los salarios dejados de percibir conforme al ordenamiento jurídico.
+Artículo 186- El Tribunal de la Inspección Judicial estará integrado por tres personas inspectoras generales, quienes deberán reunir los requisitos establecidos en el artículo 101 de esta ley.
+Las personas inspectoras actuarán con independencia técnica y funcional en el ejercicio de sus competencias investigativas e instructoras, sin subordinación entre sí.
+El Tribunal de la Inspección Judicial actuará como órgano técnico especializado encargado de:
+a) Instruir las investigaciones disciplinarias ordinarias del Poder Judicial.
+b) Tramitar denuncias y quejas disciplinarias.
+c) Realizar investigaciones administrativas y disciplinarias.
+d) Emitir informes técnicos y recomendaciones al Consejo Superior del Poder Judicial.
+e) Supervisar el cumplimiento de los deberes funcionales del personal judicial sometido al régimen disciplinario ordinario.
+Las resoluciones disciplinarias corresponderán al Consejo Superior del Poder Judicial, salvo las competencias disciplinarias reservadas expresamente a la Corte Suprema de Justicia conforme a esta ley.
+Una de las personas inspectoras generales ejercerá la coordinación administrativa del Tribunal de la Inspección Judicial y será designada por la Corte Suprema de Justicia.
+La Corte Suprema de Justicia nombrará a las personas inspectoras generales por períodos de seis años, pudiendo reelegirlas.
+La remoción de las personas inspectoras generales únicamente procederá mediante resolución debidamente motivada y fundamentada, conforme a criterios objetivos, legales y disciplinarios establecidos en la presente ley y garantizando el debido proceso.
+Artículo 187- Habrá personas inspectoras auxiliares en el número y en las sedes que resulten necesarias para garantizar el adecuado funcionamiento del régimen disciplinario ordinario del Poder Judicial, conforme lo determine el Consejo Superior del Poder Judicial.
+Las personas inspectoras auxiliares deberán poseer el título de licenciatura en Derecho y actuarán bajo criterios de independencia técnica, objetividad, legalidad y debido proceso.
+Corresponderá a las personas inspectoras auxiliares:
+a) Realizar labores de vigilancia, supervisión e investigación disciplinaria.
+b) Tramitar denuncias y efectuar diligencias de investigación.
+c) Recabar prueba y elaborar informes técnicos disciplinarios.
+d) Colaborar con el Tribunal de la Inspección Judicial en la instrucción de procedimientos disciplinarios.
+Las personas inspectoras auxiliares deberán rendir informes periódicos al Tribunal de la Inspección Judicial, respecto de las actuaciones realizadas en el ejercicio de sus funciones.
+El Consejo Superior del Poder Judicial definirá la organización administrativa, distribución territorial y funcionamiento operativo de las inspecciones auxiliares, conforme a criterios técnicos y necesidades institucionales.
+Artículo 188- En el ejercicio de sus funciones de vigilancia, supervisión e investigación disciplinaria, las personas inspectoras generales y auxiliares tendrán los siguientes deberes y atribuciones:
+1- Establecer mecanismos técnicos de control y supervisión para garantizar el adecuado funcionamiento de las oficinas judiciales, pudiendo realizar visitas ordinarias y extraordinarias cuando resulte necesario para verificar el cumplimiento eficiente, oportuno y correcto de las funciones judiciales y administrativas.
+Del resultado de cada visita se levantará un acta en la que se consignarán las observaciones realizadas, las deficiencias detectadas, las recomendaciones técnicas correspondientes, y las medidas sugeridas para fortalecer la eficiencia institucional.
+Del acta se dejará copia en la oficina inspeccionada y se remitirá copia al Tribunal de la Inspección Judicial y al Consejo Superior del Poder Judicial, para lo que corresponda.
+2- Verificar el cumplimiento de los deberes funcionales, asistencia, puntualidad y desempeño adecuado de las personas servidoras judiciales sometidas al régimen disciplinario ordinario.
+Asimismo, podrán investigar denuncias relacionadas con conductas que eventualmente afecten el correcto desempeño del servicio público judicial, siempre respetando los principios de legalidad, razonabilidad, proporcionalidad, intimidad y debido proceso.
+3- Recibir, tramitar y verificar las denuncias o quejas disciplinarias que se presenten contra personas servidoras judiciales, procurando cuando corresponda la corrección inmediata de irregularidades menores o remitiendo el asunto al Consejo Superior del Poder Judicial, para su resolución.
+4- Realizar investigaciones disciplinarias de oficio, por denuncia o por solicitud del Consejo Superior del Poder Judicial, con el fin de esclarecer hechos que afecten la disciplina judicial, la correcta administración de justicia, la eficiencia institucional, la probidad administrativa, o el adecuado funcionamiento de las oficinas judiciales.
+Para estos efectos, las personas inspectoras estarán facultadas para recibir prueba testimonial, recabar documentación, solicitar informes, requerir peritajes y practicar las diligencias necesarias para el esclarecimiento de los hechos.
+Asimismo, podrán solicitar colaboración técnica de la Auditoría Judicial y demás órganos institucionales competentes.
+5- Presentar al Consejo Superior del Poder Judicial, durante el mes de enero de cada año, un informe anual de labores que incluya resultados de gestión disciplinaria, estadísticas, indicadores institucionales, principales hallazgos, recomendaciones de mejora administrativa y disciplinaria.
+6- Ejercer las demás funciones que les atribuyan la ley, los reglamentos institucionales o el Consejo Superior del Poder Judicial.
+Artículo 189- La persona coordinadora del Tribunal de la Inspección Judicial deberá comunicar al Consejo Superior del Poder Judicial los asuntos, hallazgos o situaciones que puedan afectar el adecuado funcionamiento de los despachos judiciales, la eficiencia institucional, la disciplina judicial o la correcta prestación del servicio público de administración de justicia.
+Asimismo, deberá remitir informes periódicos sobre resultados de supervisión, investigaciones disciplinarias, deficiencias administrativas detectadas, indicadores de gestión y recomendaciones técnicas de mejora institucional.
+El Tribunal de la Inspección Judicial recibirá del Consejo Superior del Poder Judicial las directrices generales relacionadas con las funciones de vigilancia, supervisión e investigación disciplinaria que le correspondan conforme a la ley.
+Las actuaciones del Tribunal de la Inspección Judicial deberán desarrollarse bajo principios de independencia técnica, objetividad, legalidad, transparencia, eficiencia administrativa debido proceso.
+Artículo 197- Las sanciones disciplinarias deberán imponerse mediante el procedimiento establecido en la presente ley, garantizando en todo momento el debido proceso, el derecho de defensa, la motivación de las resoluciones, la proporcionalidad de la sanción, la objetividad, y la tutela efectiva de los derechos de las personas servidoras judiciales.
+En ausencia de regulación expresa, se aplicará supletoriamente la Ley General de la Administración Pública, en cuanto resulte compatible con la naturaleza de los procedimientos disciplinarios judiciales y con los principios de celeridad y eficiencia administrativa.
+La sanción de advertencia podrá imponerse mediante procedimiento simplificado, siempre que previamente se otorgue audiencia a la persona interesada y se garantice su derecho de defensa.
+Las resoluciones disciplinarias deberán quedar debidamente fundamentadas y documentadas conforme a los principios de transparencia y control interno institucional.
+Artículo 198- Recibida la denuncia, queja o noticia de una eventual irregularidad disciplinaria, el asunto será asignado por el Tribunal de la Inspección Judicial a una de las personas inspectoras generales o auxiliares, quien actuará como órgano instructor del procedimiento disciplinario.
+Concluida la investigación, el expediente será remitido al Consejo Superior del Poder Judicial para la resolución que corresponda, salvo los casos cuya competencia disciplinaria se encuentre reservada expresamente a la Corte Suprema de Justicia conforme a esta ley.
+Artículo 199- Será rechazada de plano toda denuncia, queja o gestión disciplinaria que se refiera exclusivamente a criterios de interpretación jurídica, valoración probatoria o independencia en el ejercicio de la función jurisdiccional.
+En casos de retardo grave e injustificado o irregularidades que puedan comprometer el adecuado funcionamiento del servicio judicial, el Tribunal de la Inspección Judicial deberá realizar la investigación correspondiente y remitir el informe técnico al Consejo Superior del Poder Judicial, para lo que proceda conforme a la ley.
+Cuando los hechos investigados involucren a personas funcionarias cuya competencia disciplinaria corresponda a la Corte Suprema de Justicia, el Tribunal de la Inspección Judicial remitirá el expediente a Corte Plena para la resolución correspondiente.
+TRANSITORIO I- El Poder Judicial deberá realizar, en un plazo no mayor a tres meses, un estudio técnico integral sobre la estructura remunerativa aplicable a las magistraturas y órganos superiores judiciales, a efectos de adecuarla progresivamente al nuevo modelo de distribución funcional de competencias establecido en la presente ley, toda vez que el plus se justificó a partir de la intromisión en asuntos gerenciales.
+Dicho estudio deberá valorar la correspondencia entre responsabilidades efectivamente ejercidas, estructura organizacional, sostenibilidad financiera y principios de razonabilidad y proporcionalidad.
+TRANSITORIO II- Los componentes remunerativos asociados al ejercicio de funciones administrativas, operativas, disciplinarias o de gestión institucional que sean trasladadas al Consejo Superior del Poder Judicial deberán ser revisados y adecuados progresivamente, conforme al nuevo modelo funcional establecido en la presente ley.
+La adecuación remunerativa deberá garantizar correspondencia entre las funciones efectivamente ejercidas, la responsabilidad funcional y los principios de razonabilidad, proporcionalidad y sostenibilidad financiera.
+Rige a partir de su publicación.
+Marta Eugenia Esquivel Rodríguez
+Diputada
+NOTA: Este proyecto cumplió el trámite de revisión de errores formales, materiales y ortotipográficos en el Departamento de Servicios Parlamentarios. (Fecha de subido al SIL: 06-08-2026).
