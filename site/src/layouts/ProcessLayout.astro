@@ -49,7 +49,8 @@ const modes: [string, IconName, string][] = [['system', 'monitor', 'Como el sist
         const dark = mode === 'dark' || (mode !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
         root.dataset.theme = dark ? 'dark' : 'light';
         const style = read('process-style');
-        if (style && style !== 'oficial' && styleIds.includes(style)) root.dataset.style = style;
+        const chosen = style && styleIds.includes(style) ? style : 'sitio';   // default: the main site's look
+        if (chosen !== 'oficial') root.dataset.style = chosen;
         if (read('process-side') === '1') root.dataset.side = 'compact';
       })();
     </script>

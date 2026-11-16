@@ -7,7 +7,7 @@ interface StyleChoice { id: string; name: string; description: string; light: st
 type Mode = 'system' | 'light' | 'dark';
 
 const MODE_KEY = 'theme', STYLE_KEY = 'process-style', SIDE_KEY = 'process-side';
-const DEFAULT_STYLE = 'oficial';
+const DEFAULT_STYLE = 'sitio';   // the main site's look, for consistency
 const root = document.documentElement;
 const media = matchMedia('(prefers-color-scheme: dark)');
 const styles = readData<StyleChoice[]>('process-styles');
@@ -30,9 +30,9 @@ function currentStyle(): string {
 function apply(): void {
   const mode = currentMode(), style = currentStyle();
   const theme = mode === 'dark' || (mode === 'system' && media.matches) ? 'dark' : 'light';
-  const changed = root.dataset.theme !== theme || (root.dataset.style ?? DEFAULT_STYLE) !== style;
+  const changed = root.dataset.theme !== theme || (root.dataset.style ?? 'oficial') !== style;
   root.dataset.theme = theme;
-  if (style === DEFAULT_STYLE) delete root.dataset.style; else root.dataset.style = style;
+  if (style === 'oficial') delete root.dataset.style; else root.dataset.style = style;
   document.querySelectorAll<HTMLElement>('[data-theme-choice]').forEach((button) =>
     button.setAttribute('aria-pressed', String(button.dataset.themeChoice === mode)));
   document.querySelectorAll<HTMLElement>('[data-style-choice]').forEach((button) =>
