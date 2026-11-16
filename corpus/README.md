@@ -122,8 +122,9 @@ for substantive links.
   reproducing and redistributing its content. Official votes are in the Asamblea's plenary minutes.
 - **Links are model output, not ground truth.** Jev counts background mentions of laws already in force as
   matches (the main source of false positives), and confuses sibling bills with the same name (e.g. 25400 and
-  25800). Recall of the full pipeline on the hand-labeled sample is ~0.87 (CI ~0.79–0.95, 62 positives), so
-  some coverage is missing.
+  25800). Recall of the published (substantive) links on the hand-labeled sample is ~0.67 (62 positive pairs;
+  the sample also counts passing mentions, which the site leaves out on purpose), so about a third of the
+  coverage is missing. Counting every match at threshold 0.5, recall is ~0.87.
 - **The sample is small and was pre-labeled with signals close to the ranker's** (TF-IDF, SIL activity), so the
   recall may be optimistic. Jev's questions were tuned while looking at that sample.
 - **Republished items are not deduplicated:** 80 Delfino URL pairs (`url` / `url-2`, where the second one is a
