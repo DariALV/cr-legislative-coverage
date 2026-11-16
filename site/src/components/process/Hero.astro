@@ -1,6 +1,5 @@
 ---
 // Chapter 0: the whole pipeline as a funnel. Every stage links to the chapter that explains it.
-import Draft from './Draft.astro';
 import Icon from './Icon.astro';
 import funnel from '../../data/process/funnel.json';
 import cost from '../../data/process/cost.json';
@@ -21,7 +20,7 @@ const stages = [
     <h1>De {int(funnel.news)} noticias a <em>{int(funnel.substantive_pairs)} vínculos</em> con expedientes</h1>
     <p class="lead">
       Scrapers, embeddings, un algoritmo evolutivo y un modelo de lenguaje: el recorrido completo del proyecto,
-      etapa por etapa. Cada paso del embudo lleva a la sección que lo explica. <Draft />
+      etapa por etapa. Cada paso del embudo lleva a la sección que lo explica.
     </p>
   </header>
 

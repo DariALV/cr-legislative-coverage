@@ -4,7 +4,6 @@
 // Plenary's minutes.
 import '../../styles/process/future.css';
 import ChapterHead from './ChapterHead.astro';
-import Draft from './Draft.astro';
 import Icon from './Icon.astro';
 import Tex from './Tex.astro';
 import cost from '../../data/process/cost.json';
@@ -62,7 +61,7 @@ const clientData = { cost, kSweep: ranker.k_sweep };
         </div>
         <dl class="stats cols-2" id="future-k-tiles"></dl>
         <div class="idea-related">
-          <span class="idea-related-title">Caminos ya discutidos <Draft /></span>
+          <span class="idea-related-title">Caminos ya discutidos</span>
           <div class="chips">{related.map((item) => <span class="chip">{item}</span>)}</div>
         </div>
       </div>

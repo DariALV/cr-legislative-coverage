@@ -1,5 +1,5 @@
 ---
-// Chapter 4: Jev. The four stages, the general statistics (filtered by outlet, with live thresholds) and one
+// Chapter 4: Jev. The four stages, the general statistics (all outlets together, with live thresholds) and one
 // folding card per question. The numbers come from jev.json (results/jev/question_stats); the cards' bodies are
 // drawn by the script when they open.
 import '../../styles/process/jev.css';
@@ -24,7 +24,9 @@ const stages = STAGES.map((stage, index) => {
 });
 const general = jev.general.all;
 const clientData = {
-  price: jev.price_per_million_tokens, general: jev.general, questions: jev.questions,
+  // All outlets together only: the page does not compare outlets (no per-outlet answers are shipped).
+  price: jev.price_per_million_tokens, general: { all: jev.general.all },
+  questions: Object.fromEntries(Object.entries(jev.questions).map(([key, question]) => [key, { ...question, by_outlet: { all: question.by_outlet.all } }])),
   labels: { questions: QUESTIONS, options: OPTIONS, outlets: OUTLETS, types: TYPE_LABELS },
 };
 ---
@@ -57,19 +59,6 @@ const clientData = {
     Solo se cobran los tokens de entrada, a {usd(jev.price_per_million_tokens, 3)} por millón.
   </p>
 
-  <div class="jev-filter" id="jev-filter">
-    <div class="field">
-      <span>Medio</span>
-      <div class="segmented" role="group" aria-label="Filtrar por medio">
-        {OUTLETS.map((outlet) => (
-          <button type="button" data-value={outlet.key} aria-pressed={outlet.key === 'all' ? 'true' : 'false'}>
-            {outlet.key !== 'all' && <i style={`--c: var(${outlet.color})`}></i>}{outlet.name}
-          </button>
-        ))}
-      </div>
-    </div>
-    <p class="note">Filtra todo el capítulo. Es descriptivo: no alcanza para decir que un medio cubre mejor que otro.</p>
-  </div>
 
   <h3 class="subhead">Estadísticas generales</h3>
   <dl class="stats cols-4" id="jev-tiles" aria-live="polite"></dl>

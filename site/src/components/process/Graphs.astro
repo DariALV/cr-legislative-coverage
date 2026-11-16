@@ -3,7 +3,6 @@
 // views are local pages and are not linked from the public site) and a small graph to play with the forces.
 import '../../styles/process/graphs.css';
 import ChapterHead from './ChapterHead.astro';
-import Draft from './Draft.astro';
 import Icon from './Icon.astro';
 import { THUMBS, THUMB_BOX, type ThumbName } from '../../lib/process/thumbs';
 
@@ -63,11 +62,11 @@ const arrows = [
   <ChapterHead number={5} kicker="Grafos" title="Ver el corpus como una red">
     <p class="lead">
       Con los datos cruzados armamos siete vistas para explorarlos: mapas de expedientes, diputados y noticias, y
-      otras cuatro sobre la cobertura. Son páginas locales; aquí va cómo están hechas. <Draft />
+      otras cuatro sobre la cobertura. Son páginas locales; aquí va cómo están hechas.
     </p>
   </ChapterHead>
 
-  <h3 class="subhead">Lenguajes y librerías <Draft /></h3>
+  <h3 class="subhead">Lenguajes y librerías</h3>
   <div class="stack-flow">
     <div class="card stack-step">
       <span class="stack-icon"><Icon name="database" /></span>
@@ -88,7 +87,7 @@ const arrows = [
     </div>
   </div>
 
-  <h3 class="subhead">Qué hace cada vista <Draft /></h3>
+  <h3 class="subhead">Qué hace cada vista</h3>
   <div class="views">
     {views.map((view, index) => (
       <article class="card view reveal" style={`--i:${index % 4}`}>
@@ -108,7 +107,7 @@ const arrows = [
     </div>
   </div>
 
-  <h3 class="subhead">Cómo funcionan sus fuerzas <Draft /></h3>
+  <h3 class="subhead">Cómo funcionan sus fuerzas</h3>
   <div class="card lab" id="force-lab">
     <div class="card-head">
       <h4 class="card-title">Un grafo para probar</h4>

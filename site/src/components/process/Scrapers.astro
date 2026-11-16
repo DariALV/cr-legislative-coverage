@@ -3,7 +3,6 @@
 // source of the bills, and the bills by status and legislature.
 import '../../styles/process/scrapers.css';
 import ChapterHead from './ChapterHead.astro';
-import Draft from './Draft.astro';
 import Icon from './Icon.astro';
 import news from '../../data/process/news.json';
 import bills from '../../data/process/bills.json';
@@ -93,7 +92,7 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
     </div>
   </div>
 
-  <h3 class="subhead">La limpieza que no se hizo <Draft /></h3>
+  <h3 class="subhead">La limpieza que no se hizo</h3>
   <div class="grid-wide">
     <div class="card">
       <ul class="issues">
@@ -130,7 +129,7 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
     </div>
   </div>
 
-  <h3 class="subhead">De Delfino al registro de la Asamblea <Draft /></h3>
+  <h3 class="subhead">De Delfino al registro de la Asamblea</h3>
   <div class="prose">
     <p>
       La idea original era sacar los expedientes de Delfino: tiene una página por expediente y sus notas enlazan a

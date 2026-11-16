@@ -4,7 +4,6 @@
 // embeddings-only baseline. The network is a static SVG colored with the theme's tokens.
 import '../../styles/process/ranker.css';
 import ChapterHead from './ChapterHead.astro';
-import Draft from './Draft.astro';
 import Icon from './Icon.astro';
 import Tex from './Tex.astro';
 import ranker from '../../data/process/ranker.json';
@@ -90,7 +89,7 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
   </dl>
 
   <!-- Tournament -->
-  <h3 class="subhead">Una generación, paso a paso <Draft /></h3>
+  <h3 class="subhead">Una generación, paso a paso</h3>
   <div class="grid-wide">
     <div class="card tournament" id="tournament">
       <div class="card-head">
