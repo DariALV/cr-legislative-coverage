@@ -245,3 +245,6 @@ results/jev/corpus/
 
 # Claude project journal: kept local only, shared with the professor on request
 claude_logs/
+
+# Unzipped public corpus (reproduce.ipynb extracts it next to the zip)
+corpus/*.db

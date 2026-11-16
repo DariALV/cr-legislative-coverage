@@ -16,6 +16,8 @@ The site built from the same data: https://darialv.github.io/cr-legislative-cove
 | `schema.sql` | Every `CREATE TABLE` and `CREATE INDEX` of the database |
 | `SHA256SUMS` | SHA-256 of the zip, of the database inside it, of `links.csv` and of `schema.sql` |
 | `LICENSE` | Terms of use (CC BY 4.0, with the exceptions listed there) |
+| `reproduce.ipynb` | Notebook that checks the files and recomputes the main numbers and figures (#46). Needs `pandas` and `matplotlib` |
+| `make_notebook.py` | Writes and runs `reproduce.ipynb` (`python corpus/make_notebook.py`) |
 
 ```bash
 unzip cr_legislative_coverage.zip

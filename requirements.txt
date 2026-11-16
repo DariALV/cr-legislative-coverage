@@ -5,8 +5,13 @@
 --extra-index-url https://download.pytorch.org/whl/cu128
 beautifulsoup4>=4.12
 lxml>=5.0
+matplotlib>=3.8   # corpus/reproduce.ipynb
+nbclient>=0.10   # corpus/make_notebook.py runs the notebook
+nbformat>=5.10
+ipykernel>=6.29
 networkx>=3.0   # Louvain topics for the bills graph (private_visuals/graph)
 numpy>=1.26
+pandas>=2.2   # corpus/reproduce.ipynb
 python-dotenv>=1.0
 requests>=2.32
 rich>=13.0
