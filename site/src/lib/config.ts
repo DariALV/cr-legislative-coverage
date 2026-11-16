@@ -23,7 +23,10 @@ export const REPORT_FORM_URL: string | null = null;
 export const EVALUATION_FORM_URL = 'https://forms.gle/3rLXye8CRz88ZTnKA';
 
 /** License of the public data, shown on /datos. Hidden while null. */
-export const DATA_LICENSE: string | null = null;
+export const DATA_LICENSE: string | null = 'CC BY 4.0 (los títulos y enlaces de las noticias son de cada medio)';
+
+/** Full public corpus (zipped SQLite) in the repository. */
+export const CORPUS_URL = 'https://github.com/DariALV/cr-legislative-coverage/tree/main/corpus';
 
 /** Future /analizar module: endpoint of the embeddings backend (not decided yet). */
 export const ANALYZE_ENDPOINT: string | null = null;

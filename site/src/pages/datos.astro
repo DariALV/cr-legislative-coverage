@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Breadcrumb from '../components/Breadcrumb.astro';
 import { href } from '../lib/paths';
-import { DATA_LICENSE } from '../lib/config';
+import { CORPUS_URL, DATA_LICENSE } from '../lib/config';
 import { getSiteStats, getOutlets } from '../lib/data';
 import { formatInt, formatDate } from '../lib/format';
 
@@ -36,6 +36,11 @@ const dictionary = [
     <p>
       El corpus público incluye metadatos de expedientes, noticias y vínculos. No incluye el texto de las noticias.
       {DATA_LICENSE && ` Licencia: ${DATA_LICENSE}.`}
+    </p>
+    <p>
+      El corpus completo está en <a href={CORPUS_URL}>GitHub</a>: una base SQLite con los expedientes, el trámite y los
+      diputados del SIL, los metadatos de las 29.875 noticias revisadas, todos los vínculos con su nivel de cobertura y
+      las respuestas del modelo, con su documentación. No incluye las votaciones, que provienen de Delfino.cr.
     </p>
   </div>
 
