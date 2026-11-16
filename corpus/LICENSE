@@ -1,0 +1,23 @@
+Public corpus of cr-legislative-coverage
+https://github.com/DariALV/cr-legislative-coverage
+
+This dataset is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0), except for
+the parts listed below. Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may share and adapt it for any purpose, as long as you give appropriate credit, link to the license and say
+whether you made changes. Suggested credit: "cr-legislative-coverage public corpus (2026), CC BY 4.0".
+
+Parts under other terms:
+
+1. Data of the Asamblea Legislativa de Costa Rica (tables bills, bill_steps, bill_subjects, bill_proponents,
+   bill_texts, laws, deputies, deputy_terms, deputy_factions, deputy_replacements, deputy_bills, organs,
+   organ_memberships, organ_bills). Official public information taken from the Sistema de Información Legislativa
+   (SIL), https://www.asamblea.go.cr. Credit the Asamblea Legislativa de Costa Rica as the source when you reuse it.
+
+2. News metadata (tables news_articles and news_bill_links). Titles, URLs, bylines and dates belong to each outlet
+   (CRHoy, La Nación, Delfino, El Mundo CR, Semanario Universidad) and are included only to identify and cite each
+   item. They are not covered by this license. The text of the news items is not part of the corpus: read it at
+   the outlet's URL.
+
+The links between news and bills, the answers of the Jev evaluator and the derived tables are the project's own
+work and fall under CC BY 4.0. They are model output and are provided as is, without warranty of accuracy. See README.md, "Limitations".

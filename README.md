@@ -13,6 +13,8 @@ https://darialv.github.io/cr-legislative-coverage
 | `main.py`, `pipeline.py` | Scraping: news, Delfino's votes and the Asamblea's SIL into the private database |
 | `run_*.py` | One script per later step (embeddings, ranker, sample, Jev, evaluation); each explains its use at the top |
 | `export_public.py` | Writes the site's data (`site/src/data/`, `site/public/textos/`) from the database and Jev's results |
+| `export_corpus.py` | Builds the public dataset in `corpus/` (zipped SQLite, no news text) |
+| `corpus/` | The public dataset: bills, deputies, news metadata, news–bill links and Jev's answers (see `corpus/README.md`) |
 | `download_bill_documents.py` | Original .docx of the published bills |
 | `tools/` | The code behind the scripts, by area: scraping, database, embeddings, retrieval, evolution, LLM (Jev), sample |
 | `results/` | Numbers only (ids, labels, scores; no news text): embeddings, evolution runs, sample, Jev |
@@ -35,6 +37,7 @@ Run everything from the repository root, in this order. Each step reads what the
 6. `python run_jev_eval.py`, `python run_human_eval.py`, `python run_claude_eval.py`: evaluation of Jev against the
    sample and the blind readings.
 7. `python export_public.py`, then `cd site && npm run build`: the public site.
+8. `python export_corpus.py`: the public dataset in `corpus/`.
 
 Local pages: `python private_visuals/server.py` and open http://localhost:8766/.
 
