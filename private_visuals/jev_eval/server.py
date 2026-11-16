@@ -127,7 +127,7 @@ class EvalApp:
     news_id = path.rsplit("/", 1)[1]
     if news_id not in self.ids:
       return 404, {"error": "this news is not in the draw"}
-    if not body or len(body) > MAX_BODY_BYTES:
+    if not body:   # private_visuals/server.py passes an empty body when it is larger than MAX_BODY_BYTES
       return 400, {"error": "empty or too large body"}
     try:
       entry = json.loads(body)
