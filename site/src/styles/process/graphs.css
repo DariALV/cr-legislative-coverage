@@ -1,0 +1,59 @@
+/* Chapter 5: graph views. */
+
+/* Data -> Python -> JavaScript */
+.stack-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.stack-step { position: relative; gap: 8px; }
+.stack-step:not(:last-child)::after {
+  content: ""; position: absolute; right: -19px; top: 50%; width: 9px; height: 9px; margin-top: -5px;
+  border-top: 2.5px solid var(--line-strong); border-right: 2.5px solid var(--line-strong); transform: rotate(45deg);
+}
+.stack-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: var(--accent-soft); color: var(--accent-deep); }
+.stack-icon svg { width: 22px; height: 22px; }
+.stack-step h4 { font-size: 16.5px; font-weight: 700; }
+.stack-step p { font-size: 13.5px; color: var(--ink-2); flex: 1; }
+.stack-step .chip { cursor: default; font: 600 12px var(--mono); }
+
+/* One card per view */
+.views { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--gap); align-items: stretch; }
+.view { gap: 8px; padding: 14px 16px 16px; }
+.view-thumb { border-radius: var(--radius-sm); background: var(--bg); aspect-ratio: 240 / 150; }
+.view-title { font-size: 16.5px; font-weight: 700; margin-top: 4px; }
+.view-text { font-size: 13.5px; color: var(--ink-2); }
+.view-facts { margin: 4px 0 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 5px 10px; font-size: 12.5px; }
+.view-facts dt { font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .05em; font-size: 11px; padding-top: 1px; }
+.view-facts dd { margin: 0; color: var(--ink-2); }
+.view-note { justify-content: center; align-items: flex-start; background: var(--soft); border-style: dashed; color: var(--ink-2); font-size: 13.5px; }
+.view-note svg { width: 22px; height: 22px; color: var(--ink-3); }
+
+/* Force lab */
+.lab-mode { flex-direction: row; align-items: center; gap: 10px; }
+.lab-body { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(250px, 1fr); gap: var(--gap); align-items: stretch; }
+.lab-stage { position: relative; min-height: 400px; border-radius: var(--radius-sm); background: var(--bg); overflow: hidden; }
+.lab-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; display: block; }
+.lab-stage canvas.is-over { cursor: grab; }
+.lab-stage canvas.is-dragging { cursor: grabbing; }
+.lab-hint { position: absolute; left: 12px; right: 12px; bottom: 10px; font-size: 12.5px; font-weight: 600; color: var(--ink-3); pointer-events: none; text-align: center; }
+.lab-controls { display: flex; flex-direction: column; gap: 12px; }
+.lab-controls .range small { grid-column: 1 / -1; font-size: 12px; font-weight: 500; color: var(--ink-3); margin-top: -4px; }
+.lab-arrows { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 14px; padding: 10px 12px; border-radius: var(--radius-sm); background: var(--bg); font-size: 12.5px; font-weight: 600; color: var(--ink-2); }
+.lab-arrows span { display: flex; align-items: center; gap: 7px; }
+.lab-arrows b { margin-left: auto; color: var(--ink); font-variant-numeric: tabular-nums; }
+.lab-arrows .swatch.line { border-top-width: 3px; }
+.lab-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+
+@media (max-width: 1100px) {
+  .views { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lab-body { grid-template-columns: minmax(0, 1fr); }
+  .lab-stage { min-height: 340px; }
+  .lab-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; }
+  .lab-arrows, .lab-buttons { grid-column: 1 / -1; }
+}
+@media (max-width: 900px) {
+  .stack-flow { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .stack-step:not(:last-child)::after { right: auto; left: 50%; top: auto; bottom: -16px; margin: 0 0 0 -5px; transform: rotate(135deg); }
+}
+@media (max-width: 560px) {
+  .views { grid-template-columns: minmax(0, 1fr); }
+  .lab-controls { grid-template-columns: minmax(0, 1fr); }
+  .lab-stage { min-height: 300px; }
+}

@@ -1,0 +1,231 @@
+---
+// Chapter 1: the scrapers. News by outlet and month, the cleaning that was not done, Delfino vs the SIL as the
+// source of the bills, and the bills by status and legislature.
+import '../../styles/process/scrapers.css';
+import ChapterHead from './ChapterHead.astro';
+import Draft from './Draft.astro';
+import Icon from './Icon.astro';
+import news from '../../data/process/news.json';
+import bills from '../../data/process/bills.json';
+import { formatDate, monthShort } from '../../lib/format';
+import { int, jsonForScript, pct } from '../../lib/process/format';
+
+type OutletKey = 'crhoy' | 'delfino' | 'elmundo' | 'nacion' | 'semanario';
+const months = news.monthly.map((row) => monthShort(Number(row.month.slice(5))));
+const outlets = [...news.outlets].sort((a, b) => b.total - a.total).map((outlet) => {
+  const series = news.monthly.map((row) => row[outlet.key as OutletKey]);
+  return { ...outlet, series, peak: Math.max(...series) };
+});
+const total = (key: string) => news.outlets.find((outlet) => outlet.key === key)?.total ?? 0;
+
+// Figures of docs/news.md ("Cleaning: what was done and what was not").
+const issues = [
+  { outlet: 'delfino', title: 'Páginas url y url-2 de Delfino', text: 'La segunda página es un resumen de la primera: el mismo hecho entra dos veces.', count: 80, unit: 'pares', of: total('delfino') },
+  { outlet: 'nacion', title: 'Copias exactas del contenido', text: 'Notas republicadas con otra dirección; 57 de las 64 son de La Nación.', count: 64, unit: 'notas', of: total('nacion') },
+  { outlet: 'elmundo', title: 'Data line de El Mundo', text: 'Cada nota abre con «San José, 24 oct (elmundo.cr) –» y eso queda dentro del texto.', count: 2749, unit: 'notas', of: total('elmundo') },
+  { outlet: 'delfino', title: 'Avisos de opinión de Delfino', text: 'El aviso de que la columna no representa al medio se repite al pie.', count: 1200, unit: 'notas, aprox.', of: total('delfino') },
+  { outlet: 'nacion', title: 'Avisos de IA de La Nación', text: 'Notas con la leyenda de que se usó inteligencia artificial en su edición.', count: 788, unit: 'notas', of: total('nacion') },
+];
+const outletName = (key: string) => news.outlets.find((outlet) => outlet.key === key)?.name ?? key;
+
+const maxBills = bills.rows[0].count;
+const billRows = bills.rows.map((row) => ({ ...row, width: `${((100 * row.count) / maxBills).toFixed(1)}%` }));
+const statuses = [
+  { key: 'in_progress', label: 'En trámite', color: '--progress' },
+  { key: 'archived', label: 'Archivados', color: '--archived' },
+  { key: 'law', label: 'Ley', color: '--law' },
+] as const;
+const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, name: outlet.name, values: outlet.series })) };
+---
+<section id="scrapers" class="chapter">
+  <ChapterHead number={1} kicker="Scrapers" title="Cinco medios y un registro oficial">
+    <p class="lead">
+      Elegimos cinco medios de forma arbitraria: CRHoy, Delfino, Semanario Universidad, La Nación y El Mundo.
+      Con <code>requests</code> y <code>beautifulsoup</code> trajimos el HTML completo de cada noticia y de cada expediente.
+    </p>
+  </ChapterHead>
+
+  <div class="outlets">
+    {outlets.map((outlet, index) => (
+      <article class="card outlet reveal" style={`--c: var(--${outlet.key}); --i:${index}`}>
+        <h3 class="outlet-name">{outlet.name}</h3>
+        <div class="outlet-count">{int(outlet.total)}</div>
+        <div class="outlet-foot">{outlet.with_text === outlet.total ? 'todas con texto' : `${int(outlet.with_text)} con texto`}</div>
+        <div class="outlet-months" role="img" aria-label={`Noticias por mes: ${outlet.series.map((value, i) => `${months[i]} ${int(value)}`).join(', ')}`}>
+          {outlet.series.map((value) => <span style={`--h:${((100 * value) / outlet.peak).toFixed(0)}%`}></span>)}
+        </div>
+        <div class="outlet-axis"><span>{months[0]}</span><span>{months[months.length - 1]}</span></div>
+      </article>
+    ))}
+  </div>
+
+  <div class="grid-wide">
+    <div class="card">
+      <div class="card-head">
+        <h3 class="card-title">Noticias por mes y medio</h3>
+        <span class="card-sub">{int(news.total)} noticias, mayo–octubre de 2026</span>
+      </div>
+      <div class="chart" id="news-monthly" role="img" aria-label="Barras apiladas: noticias por mes, separadas por medio"></div>
+      <div class="legend">
+        {outlets.map((outlet) => <span><i class="swatch" style={`--c: var(--${outlet.key})`}></i>{outlet.name}</span>)}
+      </div>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Seis meses, no un año</h3>
+      <dl class="stats cols-2">
+        <div class="stat sky"><dt>Desde</dt><dd>1 may</dd><span class="stat-foot">2026</span></div>
+        <div class="stat sky"><dt>Hasta</dt><dd>31 oct</dd><span class="stat-foot">2026</span></div>
+      </dl>
+      <div class="prose">
+        <p>
+          Al principio pensamos en un año completo, pero eran demasiadas noticias y el costo de Jev subía con ellas.
+        </p>
+        <p>
+          Recortar el costo de Jev permitiría escalar los medios y el rango:
+          es la primera idea de <a class="inline-link" href="#futuro">Trabajo a futuro</a>.
+        </p>
+      </div>
+      <div class="tools">
+        <span class="chip"><Icon name="code" />requests</span>
+        <span class="chip"><Icon name="code" />beautifulsoup</span>
+        <span class="chip"><Icon name="database" />SQLite</span>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="subhead">La limpieza que no se hizo <Draft /></h3>
+  <div class="grid-wide">
+    <div class="card">
+      <ul class="issues">
+        {issues.map((issue) => (
+          <li class="issue" style={`--c: var(--${issue.outlet}); --w:${Math.max(1, (100 * issue.count) / issue.of).toFixed(1)}%`}>
+            <div>
+              <div class="issue-title"><i></i>{issue.title}</div>
+              <p class="issue-text">{issue.text}</p>
+            </div>
+            <div>
+              <div class="issue-bar"><span></span></div>
+              <div class="issue-share">{pct(issue.count / issue.of, 0)} de las {int(issue.of)} notas de {outletName(issue.outlet)}</div>
+            </div>
+            <div class="issue-count">{int(issue.count)}<small>{issue.unit}</small></div>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Qué pasó con eso</h3>
+      <div class="prose">
+        <p>
+          Los parsers quitan scripts, estilos, anuncios y caracteres invisibles, y descartan las notas repetidas por
+          dirección. Lo de esta lista se encontró después, cuando los embeddings y la corrida de Jev ya habían
+          usado el texto tal como estaba.
+        </p>
+        <p>Quedó documentado en vez de corregido, porque el efecto en los resultados es mínimo:</p>
+      </div>
+      <dl class="stats cols-2">
+        <div class="stat mint"><dt>Pares afectados por duplicados</dt><dd>6 <small>de 6.329</small></dd></div>
+        <div class="stat mint"><dt>Fragmentos repetidos</dt><dd>187</dd><span class="stat-foot">de 128.748 embebidos</span></div>
+      </dl>
+      <p class="note">Sí pueden contar doble en los totales por medio.</p>
+    </div>
+  </div>
+
+  <h3 class="subhead">De Delfino al registro de la Asamblea <Draft /></h3>
+  <div class="prose">
+    <p>
+      La idea original era sacar los expedientes de Delfino: tiene una página por expediente y sus notas enlazan a
+      esas páginas, así que de ahí salían a la vez la lista de proyectos y vínculos noticia–expediente ya hechos.
+      Terminamos cambiando la fuente al SIL, el sistema de consulta de la Asamblea Legislativa.
+    </p>
+  </div>
+  <div class="versus">
+    <article class="card source">
+      <span class="pill st-neutral source-tag">Idea original</span>
+      <div>
+        <h4 class="source-name">Delfino</h4>
+        <div class="source-url">delfino.cr/asamblea</div>
+      </div>
+      <ul class="source-rows">
+        <li class="no"><Icon name="close" /><div><b>Compilación privada</b><span>Sus términos reservan todos los derechos.</span></div></li>
+        <li class="no"><Icon name="close" /><div><b>Incompleta</b><span>Le faltan 624 expedientes entre el 20.000 y el 20.999, y 236 leyes de nuestro rango.</span></div></li>
+        <li class="no"><Icon name="close" /><div><b>Títulos reescritos</b><span>Resume el nombre oficial de algunos proyectos.</span></div></li>
+        <li class="no"><Icon name="close" /><div><b>Es juez y parte</b><span>Es uno de los cinco medios cuya cobertura medimos.</span></div></li>
+        <li class="ok"><Icon name="check" /><div><b>Votos por diputación</b><span>Por eso las {int(bills.votes)} votaciones siguen viniendo de aquí.</span></div></li>
+      </ul>
+    </article>
+    <article class="card source chosen">
+      <span class="pill st-law source-tag">Lo que quedó</span>
+      <div>
+        <h4 class="source-name">SIL de la Asamblea Legislativa</h4>
+        <div class="source-url">produccion.asamblea.go.cr/SILConsulta</div>
+      </div>
+      <ul class="source-rows">
+        <li class="ok"><Icon name="check" /><div><b>Registro oficial</b><span>Con licencia CC BY 4.0.</span></div></li>
+        <li class="ok"><Icon name="check" /><div><b>Completo</b><span>Los {int(maxBills)} expedientes del {int(bills.rows[0].first)} al {int(bills.rows[0].last)}.</span></div></li>
+        <li class="ok"><Icon name="check" /><div><b>Nombres oficiales</b><span>Además del texto base, los proponentes, las materias y cada paso del trámite.</span></div></li>
+        <li class="ok"><Icon name="check" /><div><b>Independiente de los medios</b><span>Ninguna variable del ranker sale de un medio medido.</span></div></li>
+        <li class="no"><Icon name="close" /><div><b>Sin el detalle de los votos</b><span>Lista las votaciones como pasos con fecha, sin resultado ni diputados.</span></div></li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <h3 class="card-title">Expedientes extraídos del SIL</h3>
+      <div class="legend">
+        {statuses.map((status) => <span><i class="swatch" style={`--c: var(${status.color})`}></i>{status.label}</span>)}
+      </div>
+    </div>
+    <div class="bill-rows">
+      {billRows.map((row) => (
+        <div class="bill-row">
+          <div>
+            <div class="bill-label">{row.label}</div>
+            <div class="bill-range">{formatDate(row.from)} – {formatDate(row.to)}</div>
+          </div>
+          <div>
+            <div class="bill-bar" style={`--w:${row.width}`} role="img" aria-label={`${int(row.count)} expedientes: ${statuses.map((status) => `${int(row[status.key])} ${status.label.toLowerCase()}`).join(', ')}`}>
+              {statuses.map((status) => row[status.key] > 0 && <span style={`--c: var(${status.color}); --n:${row[status.key]}`}></span>)}
+            </div>
+            <div class="bill-meta">
+              <b>{int(row.count)}</b>
+              {statuses.map((status) => <span><i class="swatch round" style={`--c: var(${status.color})`}></i>{int(row[status.key])}</span>)}
+              <span>n.º {int(row.first)}–{int(row.last)}</span>
+              <span>{int(row.administrative)} administrativos · {int(row.honorific)} honoríficos</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="data-news-monthly" set:html={jsonForScript(chartData)}></script>
+<script>
+  import { axis, base, mount } from '../../scripts/process/charts';
+  import { color, readData } from '../../scripts/process/core';
+  import { int } from '../../lib/process/format';
+
+  interface Monthly { months: string[]; series: { key: string; name: string; values: number[] }[] }
+  const data = readData<Monthly>('data-news-monthly');
+  const element = document.getElementById('news-monthly');
+  if (element) {
+    mount(element, () => base({
+      grid: { left: 52, right: 12, top: 14, bottom: 28 },
+      tooltip: {
+        ...(base().tooltip as object), axisPointer: { type: 'shadow' },
+        valueFormatter: (value: number) => int(value),
+      },
+      xAxis: axis('category', '', { data: data.months }),
+      yAxis: axis('value', '', { axisLine: { show: false }, axisLabel: { formatter: (value: number) => int(value) } }),
+      series: data.series.map((series, index) => ({
+        type: 'bar', stack: 'news', name: series.name, data: series.values, barMaxWidth: 64,
+        itemStyle: {
+          color: color(`--${series.key}`), borderColor: color('--surface'), borderWidth: 1,
+          borderRadius: index === data.series.length - 1 ? [6, 6, 0, 0] : 0,
+        },
+        emphasis: { focus: 'series' },
+      })),
+    }));
+  }
+</script>

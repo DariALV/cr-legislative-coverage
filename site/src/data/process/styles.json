@@ -1,0 +1,170 @@
+[
+ {
+  "id": "oficial",
+  "name": "Oficial",
+  "description": "Poppins, fondo azulado, acento índigo y mosaicos pastel.",
+  "light": [
+   "#F4F6FB",
+   "#FFFFFF",
+   "#5B61C9",
+   "#CADDF7",
+   "#C3E8D2",
+   "#F8D5B8"
+  ],
+  "dark": [
+   "#0E1224",
+   "#161B31",
+   "#9DA2F5",
+   "#1B2D4E",
+   "#16382A",
+   "#3A2A14"
+  ]
+ },
+ {
+  "id": "sobrio",
+  "name": "Sobrio",
+  "description": "Grises neutros, acento azul petróleo, esquinas cortas y Segoe UI.",
+  "light": [
+   "#F3F4F6",
+   "#FFFFFF",
+   "#1F6F8B",
+   "#CFE1ED",
+   "#CCE3E4",
+   "#E9DCCD"
+  ],
+  "dark": [
+   "#111315",
+   "#1A1D21",
+   "#6CB8D4",
+   "#223039",
+   "#1E3233",
+   "#362C20"
+  ]
+ },
+ {
+  "id": "editorial",
+  "name": "Editorial",
+  "description": "Blanco y negro con acento rojo prensa, títulos en Georgia y tarjetas planas con filete.",
+  "light": [
+   "#F5F3EE",
+   "#FFFFFF",
+   "#B3261E",
+   "#E5F0FC",
+   "#E6F3E8",
+   "#F8ECE0"
+  ],
+  "dark": [
+   "#101010",
+   "#1A1A1A",
+   "#FF7A6E",
+   "#262F38",
+   "#273129",
+   "#342C23"
+  ]
+ },
+ {
+  "id": "calido",
+  "name": "Cálido",
+  "description": "Fondo crema, acento terracota y mosaicos oliva, arena y salvia; esquinas redondas.",
+  "light": [
+   "#F6EFE3",
+   "#FFFCF6",
+   "#B4532A",
+   "#DCE3B6",
+   "#C3EAC9",
+   "#FFD2BE"
+  ],
+  "dark": [
+   "#1C1713",
+   "#27201A",
+   "#F0956A",
+   "#2D3108",
+   "#14361D",
+   "#462312"
+  ]
+ },
+ {
+  "id": "proyector",
+  "name": "Proyector",
+  "description": "Alto contraste para presentar: bordes marcados, mosaicos sólidos con texto blanco, letra más grande.",
+  "light": [
+   "#E6E9F0",
+   "#FFFFFF",
+   "#3138B0",
+   "#1B589E",
+   "#006730",
+   "#8C3F00"
+  ],
+  "dark": [
+   "#000000",
+   "#10141F",
+   "#A9AEFF",
+   "#02468B",
+   "#005A25",
+   "#792D00"
+  ]
+ },
+ {
+  "id": "accesible",
+  "name": "Accesible",
+  "description": "Colores de datos escogidos para distinguirse con daltonismo rojo-verde y azul-amarillo; los estados no dependen del verde y el rojo.",
+  "light": [
+   "#F4F6FB",
+   "#FFFFFF",
+   "#0067A3",
+   "#BDE3FF",
+   "#B9EBD5",
+   "#F5DAB2"
+  ],
+  "dark": [
+   "#0E1224",
+   "#161B31",
+   "#7CC3F2",
+   "#0E304A",
+   "#043726",
+   "#3F2903"
+  ]
+ },
+ {
+  "id": "sitio",
+  "name": "Sitio web",
+  "description": "El del sitio público (Astro): grises cálidos, acento azul, títulos en Palatino, letra del sistema, cifras sin recuadro y bordes finos.",
+  "light": [
+   "#FCFCFB",
+   "#FFFFFF",
+   "#1C5CAB",
+   "#DADEE5",
+   "#D9E0DB",
+   "#E3DDD8"
+  ],
+  "dark": [
+   "#121211",
+   "#1A1A19",
+   "#86B6EF",
+   "#2A2E33",
+   "#2A2F2C",
+   "#322D29"
+  ]
+ },
+ {
+  "id": "original",
+  "name": "Original",
+  "description": "Los colores y la letra de las páginas antes del rediseño, sobre la estructura nueva.",
+  "light": [
+   "#FFFFFF",
+   "#FFFFFF",
+   "#4F46E5",
+   "#F7F8FA",
+   "#F7F8FA",
+   "#F7F8FA"
+  ],
+  "dark": [
+   "#1A1A19",
+   "#242423",
+   "#4C7DF0",
+   "#2E2E2C",
+   "#2E2E2C",
+   "#2E2E2C"
+  ]
+ }
+]

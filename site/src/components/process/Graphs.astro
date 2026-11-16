@@ -1,0 +1,165 @@
+---
+// Chapter 5: the graph views. What they are built with, one card per view (with a schematic thumbnail: the real
+// views are local pages and are not linked from the public site) and a small graph to play with the forces.
+import '../../styles/process/graphs.css';
+import ChapterHead from './ChapterHead.astro';
+import Draft from './Draft.astro';
+import Icon from './Icon.astro';
+import { THUMBS, THUMB_BOX, type ThumbName } from '../../lib/process/thumbs';
+
+const views: { thumb: ThumbName; title: string; text: string; node: string; link: string; color: string }[] = [
+  {
+    thumb: 'bills', title: 'Expedientes', text: 'El mapa de los 5.898 expedientes: los que se parecen quedan juntos.',
+    node: 'Un expediente.', link: 'Los expedientes más parecidos por su exposición de motivos, su nombre, sus materias o sus firmantes.',
+    color: 'Tema (26 comunidades), cobertura, estado o la posición de un partido.',
+  },
+  {
+    thumb: 'deputies', title: 'Diputados', text: 'Quiénes votan igual, firman juntos o comparten comisión.',
+    node: 'Una diputación de la legislatura elegida.', link: 'Co-votación en votaciones disputadas, co-firma de proyectos o comisiones en común.',
+    color: 'La fracción.',
+  },
+  {
+    thumb: 'news', title: 'Noticias', text: 'Las 29.875 noticias ordenadas por contenido.',
+    node: 'Una noticia.', link: 'Sus vecinas más parecidas por contenido, o las que tratan el mismo expediente.',
+    color: 'Medio, tema, género, mes o tono.',
+  },
+  {
+    thumb: 'parties', title: 'Partidos y temas', text: 'Qué posición le atribuye la prensa a cada partido en cada tema.',
+    node: 'Un partido o un tema.', link: 'La posición del partido sobre los expedientes de ese tema, según las noticias.',
+    color: 'El enlace va de rojo (en contra) a verde (a favor).',
+  },
+  {
+    thumb: 'comentions', title: 'Co-menciones', text: 'Expedientes que salen juntos en la misma noticia.',
+    node: 'Un expediente con cobertura.', link: 'Aparecen en la misma noticia; el grosor es cuántas veces.',
+    color: 'El tema del expediente.',
+  },
+  {
+    thumb: 'flow', title: 'Flujo', text: 'De qué medio a qué tema y a qué etapa del trámite va la cobertura.',
+    node: 'Un medio, un tema o una etapa: tres columnas.', link: 'Una banda por cada combinación; el ancho es la cantidad de vínculos.',
+    color: 'La columna elegida.',
+  },
+  {
+    thumb: 'stream', title: 'En el tiempo', text: 'Cuánta cobertura recibe cada tema, semana a semana.',
+    node: 'No hay nodos: cada franja es un tema.', link: 'El alto de la franja es la cantidad de vínculos de esa semana.',
+    color: 'El tema; se puede ver como río, apilado o porcentaje.',
+  },
+];
+
+const forces = [
+  { key: 'repel', label: 'Repulsión', help: 'Separa los nodos que están cerca.' },
+  { key: 'linkStrength', label: 'Fuerza de los enlaces', help: 'Qué tan duro jala cada enlace.' },
+  { key: 'linkDistance', label: 'Largo de los enlaces', help: 'La distancia a la que el enlace descansa.' },
+  { key: 'center', label: 'Atracción al centro', help: 'Evita que el mapa se desarme.' },
+  { key: 'group', label: 'Atracción al grupo', help: 'Junta los nodos del mismo color.' },
+];
+const arrows = [
+  { key: 'link', label: 'Enlaces', color: '--accent' },
+  { key: 'repel', label: 'Repulsión', color: '--div-neg' },
+  { key: 'center', label: 'Centro', color: '--ink-2' },
+  { key: 'group', label: 'Grupo', color: '--warn' },
+];
+---
+<section id="grafos" class="chapter">
+  <ChapterHead number={5} kicker="Grafos" title="Ver el corpus como una red">
+    <p class="lead">
+      Con los datos cruzados armamos siete vistas para explorarlos: mapas de expedientes, diputados y noticias, y
+      otras cuatro sobre la cobertura. Son páginas locales; aquí va cómo están hechas. <Draft />
+    </p>
+  </ChapterHead>
+
+  <h3 class="subhead">Lenguajes y librerías <Draft /></h3>
+  <div class="stack-flow">
+    <div class="card stack-step">
+      <span class="stack-icon"><Icon name="database" /></span>
+      <h4>Datos</h4>
+      <p>La base SQLite del corpus, los embeddings y las respuestas de Jev.</p>
+    </div>
+    <div class="card stack-step">
+      <span class="stack-icon"><Icon name="code" /></span>
+      <h4>Python arma el grafo</h4>
+      <p>Tres scripts calculan nodos, enlaces y comunidades, y los dejan en archivos que el navegador carga.</p>
+      <div class="chips"><span class="chip">build_graph.py</span><span class="chip">build_deputies.py</span><span class="chip">build_news.py</span><span class="chip">networkx</span><span class="chip">numpy</span></div>
+    </div>
+    <div class="card stack-step">
+      <span class="stack-icon"><Icon name="graph" /></span>
+      <h4>JavaScript lo dibuja</h4>
+      <p>Un motor propio mueve los nodos con d3-force y los pinta en un canvas. En el modo «Obsidian» la física corre en un Web Worker.</p>
+      <div class="chips"><span class="chip">engine.js</span><span class="chip">d3-force</span><span class="chip">canvas</span><span class="chip">Web Worker</span></div>
+    </div>
+  </div>
+
+  <h3 class="subhead">Qué hace cada vista <Draft /></h3>
+  <div class="views">
+    {views.map((view, index) => (
+      <article class="card view reveal" style={`--i:${index % 4}`}>
+        <svg class="viz view-thumb" viewBox={THUMB_BOX} role="img" aria-label={`Esquema de la vista ${view.title}`} set:html={THUMBS[view.thumb]} />
+        <h4 class="view-title">{view.title}</h4>
+        <p class="view-text">{view.text}</p>
+        <dl class="view-facts">
+          <dt>Nodo</dt><dd>{view.node}</dd>
+          <dt>Enlace</dt><dd>{view.link}</dd>
+          <dt>Color</dt><dd>{view.color}</dd>
+        </dl>
+      </article>
+    ))}
+    <div class="card view view-note">
+      <Icon name="info" />
+      <p>Las miniaturas son esquemas dibujados con puntos inventados: muestran el tipo de imagen de cada vista, no los datos.</p>
+    </div>
+  </div>
+
+  <h3 class="subhead">Cómo funcionan sus fuerzas <Draft /></h3>
+  <div class="card lab" id="force-lab">
+    <div class="card-head">
+      <h4 class="card-title">Un grafo para probar</h4>
+      <div class="field lab-mode">
+        <span>Modelo</span>
+        <div class="segmented" role="group" aria-label="Modelo de fuerzas">
+          <button type="button" data-value="own" aria-pressed="true">Propio</button>
+          <button type="button" data-value="obsidian" aria-pressed="false">Obsidian</button>
+        </div>
+      </div>
+    </div>
+    <div class="lab-body">
+      <div class="lab-stage">
+        <canvas aria-label="Grafo de catorce nodos en tres grupos que se acomoda según las fuerzas elegidas"></canvas>
+        <p class="lab-hint">Arrastrá un nodo o pasale el puntero: las flechas son las fuerzas que actúan sobre él.</p>
+      </div>
+      <div class="lab-controls">
+        {forces.map((force) => (
+          <label class="range" title={force.help}>
+            <span>{force.label}</span><output data-force-value={force.key}></output>
+            <input type="range" data-force={force.key} aria-describedby={`force-help-${force.key}`} />
+            <small id={`force-help-${force.key}`}>{force.help}</small>
+          </label>
+        ))}
+        <div class="lab-arrows" aria-live="off">
+          {arrows.map((arrow) => (
+            <span><i class="swatch line" style={`--c: var(${arrow.color})`}></i>{arrow.label}<b data-arrow={arrow.key}>—</b></span>
+          ))}
+        </div>
+        <div class="lab-buttons">
+          <button type="button" class="btn" data-lab="shake"><Icon name="expand" />Agitar</button>
+          <button type="button" class="btn" data-lab="reset"><Icon name="reset" />Restablecer</button>
+        </div>
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        Cada nodo recibe cuatro empujes a la vez. Los <strong>enlaces</strong> son resortes: acercan lo que está
+        conectado hasta su largo de reposo. La <strong>repulsión</strong> separa los nodos para que no se encimen.
+        La <strong>atracción al centro</strong> impide que el mapa se disperse, y la <strong>atracción al grupo</strong> junta
+        los nodos que comparten una etiqueta. El mapa se detiene cuando los cuatro se equilibran.
+      </p>
+      <p>
+        El modelo <strong>propio</strong> solo repele entre vecinos cercanos y limita el tirón de los enlaces largos, para
+        aguantar miles de nodos. El modelo <strong>Obsidian</strong> imita la vista de grafo de esa aplicación: todos los
+        nodos se repelen entre sí, lo que abre más los grupos.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script>
+  import '../../scripts/process/minigraph';
+</script>

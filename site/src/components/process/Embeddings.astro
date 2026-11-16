@@ -1,0 +1,164 @@
+---
+// Chapter 2: embeddings. How a news is split, embedded and compared with a bill, and the 78 combinations tried.
+import '../../styles/process/embeddings.css';
+import ChapterHead from './ChapterHead.astro';
+import Icon from './Icon.astro';
+import embeddings from '../../data/process/embeddings.json';
+import { dec, int, jsonForScript } from '../../lib/process/format';
+
+const MODELS = [{ key: 'qwen3-0.6b', label: 'Qwen3 0.6B' }, { key: 'bge-m3', label: 'BGE-M3' }];
+const SIZES = [{ key: '256', label: '256' }, { key: '512', label: '512' }, { key: '1024', label: '1024' }, { key: '2048', label: '2048' }, { key: '8000', label: 'Entera' }];
+const AGGREGATIONS = [{ key: 'max', label: 'Máximo' }, { key: 'top3', label: 'Top 3' }, { key: 'mean', label: 'Promedio' }];
+const VARIANTS = [{ key: 'name', label: 'Título' }, { key: 'subjects', label: 'Título + materias' }, { key: 'exposition', label: 'Título + exposición' }];
+const labelOf = (list: { key: string; label: string }[], key: string | number) => list.find((item) => item.key === String(key))?.label ?? String(key);
+
+const best = embeddings.configs[0];
+const topByModel = MODELS.map((model, index) => ({
+  ...model, tone: index === 0 ? '--cat-1' : '--cat-2',
+  rows: embeddings.configs.filter((config) => config.model === model.key).slice(0, 10),
+}));
+const whole = MODELS.map((model) => embeddings.configs.find((config) => config.model === model.key && config.size === 8000 && config.variant === 'exposition'));
+const labels = { models: MODELS, sizes: SIZES, aggregations: AGGREGATIONS, variants: VARIANTS };
+---
+<section id="embeddings" class="chapter">
+  <ChapterHead number={2} kicker="Embeddings" title="Relacionar por significado, no por palabras">
+    <p class="lead">
+      La idea de usar embeddings es relacionar noticias y expedientes por significado, no por coincidencia de
+      palabras, para reducir la cantidad de pares noticia–expediente que hay que revisar.
+    </p>
+  </ChapterHead>
+
+  <div class="card">
+    <div class="card-head">
+      <h3 class="card-title">De la noticia al puntaje</h3>
+      <span class="card-sub">sigue la combinación elegida abajo · valores ilustrativos</span>
+    </div>
+    <div class="scroll-x"><div id="chunk-diagram" class="chunk-diagram" role="img" aria-label="Diagrama: la noticia se parte en fragmentos, cada uno se convierte en un vector, se compara con el vector del expediente y las similitudes se resumen en un puntaje"></div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="prose">
+      <p>Probamos varias estrategias:</p>
+      <ol>
+        <li><strong>Dos modelos</strong> de embedding semántico: Qwen3-Embedding-0.6B y BGE-M3.</li>
+        <li><strong>Partir la noticia</strong> en fragmentos de 256, 512, 1024 o 2048 tokens, o embeberla entera (hasta 8000 tokens).</li>
+        <li><strong>Tres formas de comparar</strong> cuando hay fragmentos: el más parecido (máximo), el promedio de los 3 mejores, o el promedio de todos. La noticia entera es un solo vector, así que ahí solo hay una forma.</li>
+        <li><strong>Tres textos del expediente</strong>: el título, el título con las materias, o el título con la exposición de motivos.</li>
+      </ol>
+    </div>
+    <div class="card combos">
+      <div class="combo-math" aria-label="2 modelos por, 4 tamaños por 3 formas más la noticia entera, por 3 textos, igual a 78 combinaciones">
+        <span><b>2</b>modelos</span><i>×</i>
+        <span class="combo-group"><span><b>4</b>tamaños</span><i>×</i><span><b>3</b>formas</span><i>+</i><span><b>1</b>entera</span></span><i>×</i>
+        <span><b>3</b>textos</span><i>=</i>
+        <span class="combo-total"><b>{embeddings.configs.length}</b>combinaciones</span>
+      </div>
+      <p class="note">
+        Medidas sobre <strong>{int(embeddings.n_news)} noticias</strong> con <strong>{int(embeddings.n_links)} vínculos conocidos</strong>{' '}
+        (el oro de Delfino), contra los {int(embeddings.n_bills)} expedientes. Métrica: recall@50, con intervalo de
+        confianza al 95 % por bootstrap ({int(embeddings.bootstrap)} remuestreos).
+      </p>
+    </div>
+  </div>
+
+  <div class="card" id="embedding-explorer">
+    <div class="card-head">
+      <h3 class="card-title">Las 78 combinaciones</h3>
+      <span class="card-sub">elegí una con los controles o tocando el mapa</span>
+    </div>
+    <div class="explorer">
+      <div class="explorer-controls">
+        <div class="field"><span>Modelo</span>
+          <div class="segmented" role="group" aria-label="Modelo" data-dimension="model">
+            {MODELS.map((item) => <button type="button" data-value={item.key}>{item.label}</button>)}
+          </div>
+        </div>
+        <div class="field"><span>Tokens por fragmento</span>
+          <div class="segmented" role="group" aria-label="Tokens por fragmento" data-dimension="size">
+            {SIZES.map((item) => <button type="button" data-value={item.key}>{item.label}</button>)}
+          </div>
+        </div>
+        <div class="field"><span>Comparación</span>
+          <div class="segmented" role="group" aria-label="Forma de comparar" data-dimension="aggregation">
+            {AGGREGATIONS.map((item) => <button type="button" data-value={item.key}>{item.label}</button>)}
+          </div>
+        </div>
+        <div class="field"><span>Texto del expediente</span>
+          <div class="segmented" role="group" aria-label="Texto del expediente" data-dimension="variant">
+            {VARIANTS.map((item) => <button type="button" data-value={item.key}>{item.label}</button>)}
+          </div>
+        </div>
+      </div>
+      <div class="explorer-result" aria-live="polite">
+        <div class="result-label">Recall@50</div>
+        <div class="result-value" data-result="value">{dec(best.recall50)}</div>
+        <div class="result-ci" data-result="ci">IC 95 %: {dec(best.low)}–{dec(best.high)}</div>
+        <div class="ci-track" aria-hidden="true">
+          <span class="ci-range" data-result="range"></span><span class="ci-point" data-result="point"></span>
+          <span class="ci-best" data-result="best" title="La mejor combinación"></span>
+        </div>
+        <div class="ci-axis" aria-hidden="true"><span>0,4</span><span>0,6</span><span>0,8</span></div>
+        <div class="chips"><span class="chip" data-result="rank"></span><span class="chip" data-result="gap"></span></div>
+      </div>
+    </div>
+    <div class="scroll-x">
+      <div class="heatmap" id="embedding-heatmap" role="group" aria-label="Mapa de las 78 combinaciones: filas por modelo y texto, columnas por tamaño y forma de comparar"></div>
+    </div>
+    <div class="heat-scale">
+      <span data-scale="min"></span><i></i><span data-scale="max"></span>
+      <span class="heat-scale-label">recall@50</span>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    {topByModel.map((model) => (
+      <div class="card">
+        <div class="card-head">
+          <h3 class="card-title"><i class="swatch round" style={`--c: var(${model.tone})`}></i>{model.label}: sus 10 mejores</h3>
+          <span class="card-sub">recall@50 e IC 95 %</span>
+        </div>
+        <ol class="ranks" style={`--c: var(${model.tone})`}>
+          {model.rows.map((row) => (
+            <li class="rank">
+              <span class="rank-label">{row.size === 8000 ? 'Entera' : row.size} · {labelOf(VARIANTS, row.variant).replace('Título + ', '')} · {labelOf(AGGREGATIONS, row.aggregation)}</span>
+              <span class="rank-track">
+                <span class="rank-bar" style={`--w:${(row.recall50 * 100).toFixed(1)}%`}></span>
+                <span class="rank-whisker" style={`--from:${(row.low * 100).toFixed(1)}%; --to:${(row.high * 100).toFixed(1)}%`}></span>
+              </span>
+              <span class="rank-value">{dec(row.recall50, 3)}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    ))}
+  </div>
+  <p class="note">
+    La noticia entera (8000 tokens, promedio) llega a {dec(whole[0]?.recall50 ?? 0, 3)} con Qwen3 y la exposición, y a{' '}
+    {dec(whole[1]?.recall50 ?? 0, 3)} con BGE-M3. También se midieron dos controles con otros conjuntos de candidatos
+    (sin expedientes administrativos ni honoríficos, y solo con expedientes ya presentados a la fecha de la noticia).
+  </p>
+
+  <div class="card miss">
+    <div class="miss-figure" role="img" aria-label="Cinco expedientes: cuatro dentro del top 50 y uno fuera">
+      <div class="miss-box">
+        <span class="miss-tag">Top 50</span>
+        {[0, 1, 2, 3].map((index) => <span class="miss-bill reveal" style={`--i:${index}`}><Icon name="bill" /></span>)}
+      </div>
+      <span class="miss-bill out reveal" style="--i:5"><Icon name="bill" /></span>
+    </div>
+    <div class="miss-text">
+      <div class="miss-number">1 de cada 5</div>
+      <p>
+        La mejor combinación (Qwen3, fragmentos de 256 tokens, máximo, exposición de motivos) solo llegó a un
+        recall@50 de <strong>{dec(best.recall50)}</strong> (IC 95 % {dec(best.low)}–{dec(best.high)}): uno de cada cinco
+        expedientes vinculados a una noticia quedaba fuera del top 50. Así que probamos otro enfoque.
+      </p>
+      <a class="btn" href="#ranker">El algoritmo evolutivo <Icon name="arrowDown" /></a>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="data-embeddings" set:html={jsonForScript({ configs: embeddings.configs, labels })}></script>
+<script>
+  import '../../scripts/process/embeddings';
+</script>

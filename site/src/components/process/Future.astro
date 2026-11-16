@@ -1,0 +1,216 @@
+---
+// Chapter 6: future work. Five ideas as large cards: a cheaper ranker (recall and Jev's cost by K), distillation
+// (teacher -> student), scaling (cost calculator with the constants of the corpus run), better graphs and the
+// Plenary's minutes.
+import '../../styles/process/future.css';
+import ChapterHead from './ChapterHead.astro';
+import Draft from './Draft.astro';
+import Icon from './Icon.astro';
+import Tex from './Tex.astro';
+import cost from '../../data/process/cost.json';
+import ranker from '../../data/process/ranker.json';
+import { THUMBS, THUMB_BOX } from '../../lib/process/thumbs';
+import { dec, int, jsonForScript, usd } from '../../lib/process/format';
+
+const COST_FORMULA = String.raw`C = P \cdot n \cdot \Big[\, f \;+\; r_f \,(g + K\,c) \;+\; r_f\, r_m\, d \,\Big]`;
+const NEWS_FORMULA = String.raw`n = \text{medios} \times \text{meses} \times \bar{n}`;
+const perOutletMonth = cost.news / (cost.outlets * cost.months);
+const constants = [
+  { symbol: 'P', value: `${usd(cost.price_per_million_tokens, 3)} por millón`, meaning: 'Precio de los tokens de entrada (los de salida son gratis).' },
+  { symbol: String.raw`\bar{n}`, value: int(perOutletMonth), meaning: 'Noticias con texto por medio y por mes en esta corrida.' },
+  { symbol: 'f', value: dec(cost.filter_tokens, 0), meaning: 'Tokens del filtro por noticia.' },
+  { symbol: 'r_f', value: dec(cost.pass_rate, 3), meaning: 'Parte de las noticias que pasa el filtro.' },
+  { symbol: 'g', value: int(cost.gate_base_tokens), meaning: 'Tokens fijos de la puerta: la noticia y la pregunta de género.' },
+  { symbol: 'c', value: dec(cost.candidate_tokens, 0), meaning: 'Tokens por candidato: su tarjeta y las dos preguntas de mención.' },
+  { symbol: 'r_m', value: dec(cost.match_rate, 3), meaning: 'Parte de las noticias que pasan y terminan con match.' },
+  { symbol: 'd', value: int(cost.details_tokens), meaning: 'Tokens del detalle por noticia con match.' },
+];
+const at50 = ranker.k_sweep.find((row) => row.k === 50);
+const related = [
+  'Apodos de prensa como campo del expediente',
+  'Reranker local sobre el top 100',
+  'Afinar el modelo de embeddings con las etiquetas de Jev',
+  'Lazo Jev ↔ algoritmo evolutivo con noticias nuevas',
+];
+const clientData = { cost, kSweep: ranker.k_sweep };
+---
+<section id="futuro" class="chapter">
+  <ChapterHead number={6} kicker="Trabajo a futuro" title="Lo que sigue: más barato, más grande, más fuentes">
+    <p class="lead">Cinco ideas, en el orden en que tendría sentido hacerlas.</p>
+  </ChapterHead>
+
+  <!-- 1 -->
+  <article class="card idea">
+    <header class="idea-head"><span class="idea-number">1</span><h3>Mejorar el ranker</h3></header>
+    <div class="idea-body wide">
+      <div>
+        <div class="chart tall" id="future-k" role="img" aria-label="Cobertura de expedientes y costo de Jev según K, la cantidad de candidatos por noticia"></div>
+        <div class="legend">
+          <span><i class="swatch line" style="--c: var(--accent)"></i>Cobertura de expedientes</span>
+          <span><i class="swatch line dash" style="--c: var(--cat-3)"></i>Vínculos dentro del top K</span>
+          <span><i class="swatch" style="--c: var(--warn)"></i>Costo de Jev en este corpus</span>
+        </div>
+      </div>
+      <div class="idea-text">
+        <div class="prose">
+          <p>
+            Hoy el top 50 tiene un recall de <strong>{dec(at50?.bill_coverage ?? 0, 2)}</strong> en el oro de Delfino. Muy rara vez una
+            noticia cubre más de un expediente, así que bajar a top 10 o top 5 sin perder recall es el mayor ahorro
+            posible.
+          </p>
+          <p>La puerta se paga por candidato: es el {dec((cost.paid.gate / cost.paid_total) * 100, 0)} % del costo.</p>
+        </div>
+        <dl class="stats cols-2" id="future-k-tiles"></dl>
+        <div class="idea-related">
+          <span class="idea-related-title">Caminos ya discutidos <Draft /></span>
+          <div class="chips">{related.map((item) => <span class="chip">{item}</span>)}</div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="card idea">
+    <header class="idea-head"><span class="idea-number">2</span><h3>Cambiar el ranker por destilación</h3></header>
+    <div class="idea-body wide">
+      <div class="distill" role="img" aria-label="Diagrama: Jev califica pares como maestro, una red neuronal aprende de esas etiquetas como alumno y después ordena los candidatos para que Jev revise menos pares">
+        <div class="distill-box">
+          <Icon name="news" /><b>Pares noticia–expediente</b><span>con mucha información de los dos</span>
+        </div>
+        <span class="distill-arrow"><Icon name="arrowRight" /></span>
+        <div class="distill-box teacher">
+          <Icon name="teacher" /><b>Jev</b><span>maestro: califica cada par</span>
+        </div>
+        <span class="distill-arrow labeled"><em>etiquetas</em><Icon name="arrowRight" /></span>
+        <div class="distill-box student">
+          <Icon name="layers" /><b>Red neuronal</b><span>alumno: aprende a imitarlo</span>
+        </div>
+        <span class="distill-arrow"><Icon name="arrowRight" /></span>
+        <div class="distill-box">
+          <Icon name="target" /><b>Top 5 o 10</b><span>solo esos vuelven a Jev</span>
+        </div>
+      </div>
+      <div class="idea-text prose">
+        <p>
+          Jev pasa a ser la fuente de verdad que califica a una red neuronal, y la red recibe mucha información de la
+          noticia y del expediente.
+        </p>
+        <p>
+          Los errores de Jev pasan a ser los de la red. Pero si ya vamos a pagar Jev, un modelo que lo imite bien nos
+          sale gratis.
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="card idea" id="cost-calculator">
+    <header class="idea-head"><span class="idea-number">3</span><h3>Escalar</h3></header>
+    <div class="idea-body wide">
+      <div class="calc">
+        <div class="calc-controls">
+          <label class="range"><span>Medios</span><output data-calc-value="outlets"></output>
+            <input type="range" data-calc="outlets" min="1" max="30" step="1" value={cost.outlets} /></label>
+          <label class="range"><span>Meses de noticias</span><output data-calc-value="months"></output>
+            <input type="range" data-calc="months" min="1" max="120" step="1" value={cost.months} /></label>
+          <label class="range"><span>K con el ranker mejorado</span><output data-calc-value="k"></output>
+            <input type="range" data-calc="k" min="5" max={cost.k} step="1" value="10" /></label>
+          <button type="button" class="btn" data-calc-reset><Icon name="reset" />Volver a este proyecto</button>
+        </div>
+        <div class="calc-result" aria-live="polite">
+          <div class="calc-news"><b data-calc-out="news"></b><span>noticias con texto</span></div>
+          <div class="calc-rows">
+            <div class="calc-row">
+              <div class="calc-name">Ranker actual<small>K = {cost.k}</small></div>
+              <div class="calc-track"><span class="calc-bar now" data-calc-bar="now"></span></div>
+              <div class="calc-value" data-calc-out="now"></div>
+            </div>
+            <div class="calc-row">
+              <div class="calc-name">Ranker mejorado<small data-calc-out="k-label"></small></div>
+              <div class="calc-track"><span class="calc-bar better" data-calc-bar="better"></span></div>
+              <div class="calc-value strong" data-calc-out="better"></div>
+            </div>
+          </div>
+          <div class="chips"><span class="chip" data-calc-out="saving"></span><span class="chip" data-calc-out="scale"></span></div>
+        </div>
+      </div>
+      <div class="idea-text">
+        <div class="prose">
+          <p>
+            Con el costo más bajo, escalar ya no es cuestión de dinero sino de tiempo y cómputo, que como estudiantes
+            sí tenemos.
+          </p>
+        </div>
+        <ol class="steps">
+          <li><b>Más medios</b><span>primero</span></li>
+          <li><b>Todos los expedientes de la Asamblea</b><span>después</span></li>
+          <li><b>Varios años de noticias</b><span>al final</span></li>
+        </ol>
+      </div>
+    </div>
+    <details class="calc-details">
+      <summary>La fórmula y sus constantes</summary>
+      <div class="formula">
+        <Tex tex={COST_FORMULA} block />
+        <Tex tex={NEWS_FORMULA} block />
+      </div>
+      <div class="table-wrap">
+        <table class="data">
+          <thead><tr><th>Símbolo</th><th class="num">Valor</th><th>Qué es</th></tr></thead>
+          <tbody>
+            {constants.map((constant) => (
+              <tr><td><Tex tex={constant.symbol} /></td><td class="num">{constant.value}</td><td>{constant.meaning}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="note">
+        Es la forma del modelo de costo del proyecto, con las constantes medidas en la corrida del corpus: con 5 medios,
+        6 meses y K = {cost.k} da los {usd(cost.paid_total)} que se pagaron. Supone que los medios nuevos se parecen a
+        estos cinco y que un ranker mejor conserva los mismos matches con menos candidatos.
+      </p>
+    </details>
+  </article>
+
+  <div class="grid-2 stretch">
+    <!-- 4 -->
+    <article class="card idea">
+      <header class="idea-head"><span class="idea-number">4</span><h3>Mejorar los grafos</h3></header>
+      <div class="grow" role="img" aria-label="Un grafo pequeño y ordenado frente a uno más grande y denso">
+        <svg class="viz" viewBox={THUMB_BOX} set:html={THUMBS.bills} />
+        <span class="distill-arrow"><Icon name="arrowRight" /></span>
+        <svg class="viz" viewBox={THUMB_BOX} set:html={THUMBS.news} />
+      </div>
+      <div class="prose">
+        <p>
+          Escalar daría más nodos y clusters más grandes, pero hay que lograr que lo que transmiten tenga sentido.
+        </p>
+      </div>
+    </article>
+
+    <!-- 5 -->
+    <article class="card idea">
+      <header class="idea-head"><span class="idea-number">5</span><h3>Actas del Plenario</h3></header>
+      <div class="minutes" role="img" aria-label="Lo que dice cada diputado en el Plenario, conectado con el expediente que se discute">
+        <div class="minutes-voices">
+          {['--party-ppso', '--party-pln', '--party-fa'].map((color, index) => (
+            <div class="minutes-voice" style={`--c: var(${color}); --i:${index}`}><i></i><span></span><span></span></div>
+          ))}
+        </div>
+        <span class="distill-arrow"><Icon name="arrowRight" /></span>
+        <div class="distill-box"><Icon name="bill" /><b>Expediente</b><span>lo que se dijo de él</span></div>
+      </div>
+      <div class="prose">
+        <p>
+          Obtener directamente lo que dicen los diputados sobre los expedientes. Esas discusiones son valiosas y se
+          pierden si las noticias son la única fuente.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script type="application/json" id="data-future" set:html={jsonForScript(clientData)}></script>
+<script>
+  import '../../scripts/process/future';
+</script>

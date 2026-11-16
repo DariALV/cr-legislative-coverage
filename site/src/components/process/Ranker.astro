@@ -1,0 +1,404 @@
+---
+// Chapter 3: the evolved ranker. The tournament loop, the final recipe drawn as a network (one neuron per input,
+// one output), its stability across the five folds, the table with every formula and the jump over the
+// embeddings-only baseline. The network is a static SVG colored with the theme's tokens.
+import '../../styles/process/ranker.css';
+import ChapterHead from './ChapterHead.astro';
+import Draft from './Draft.astro';
+import Icon from './Icon.astro';
+import Tex from './Tex.astro';
+import ranker from '../../data/process/ranker.json';
+import { FEATURES, FITNESS_FORMULA, GROUPS, KNOBS, SCORE_FORMULA, STANDARD_FORMULA } from '../../lib/process/ranker';
+import { dec, int, jsonForScript, signed } from '../../lib/process/format';
+
+const settings = ranker.settings;
+const LIMIT = ranker.weight_range[1];
+const immigrants = Math.round(settings.immigrant_rate * settings.population_size);
+const children = settings.population_size - settings.elites - immigrants;
+
+// ---------- Geometry of the network ----------
+const WIDTH = 980, ROW = 42, GROUP_GAP = 12, TOP = 62, X_KNOB = 62, X_IN = 380, X_OUT = 812, R = 12;
+let cursor = TOP;
+let previousGroup = '';
+const inputs = ranker.features.map((feature, index) => {
+  const info = FEATURES[feature.name];
+  if (previousGroup && previousGroup !== info.group) cursor += GROUP_GAP;
+  previousGroup = info.group;
+  const y = cursor;
+  cursor += ROW;
+  const activeFolds = feature.folds.filter((fold) => fold.active).length;
+  const signs = feature.folds.map((fold) => (fold.weight >= 0 ? '+' : '−')).join('');
+  return { ...feature, info, index, y, activeFolds, signs };
+});
+const HEIGHT = cursor + 4;
+const yOut = (inputs[0].y + inputs[inputs.length - 1].y) / 2;
+const strength = (weight: number) => Math.min(1, Math.abs(weight) / LIMIT);
+const edgeColor = (weight: number) =>
+  `color-mix(in oklab, var(--div-mid), var(${weight < 0 ? '--div-neg' : '--div-pos'}) ${Math.round(100 * strength(weight))}%)`;
+const edgeWidth = (weight: number) => (1.5 + 6.5 * strength(weight)).toFixed(1);
+const edgePath = (y: number, index: number) => {
+  const end = yOut + (index - (inputs.length - 1) / 2) * 3.4;
+  return `M ${X_IN + R + 10} ${y} C ${X_IN + 215} ${y}, ${X_OUT - 250} ${end.toFixed(1)}, ${X_OUT - 31} ${end.toFixed(1)}`;
+};
+const point = (cx: number, cy: number, radius: number, degrees: number) =>
+  `${(cx + radius * Math.cos((degrees * Math.PI) / 180)).toFixed(1)} ${(cy + radius * Math.sin((degrees * Math.PI) / 180)).toFixed(1)}`;
+const arc = (cx: number, cy: number, radius: number, from: number, to: number) =>
+  `M ${point(cx, cy, radius, from)} A ${radius} ${radius} 0 ${to - from > 180 ? 1 : 0} 1 ${point(cx, cy, radius, to)}`;
+const foldArc = (y: number, fold: number) => arc(X_IN, y, 18.5, -90 + fold * 72 + 8, -90 + (fold + 1) * 72 - 8);
+const foldClass = (fold: { active: boolean; weight: number }) => (fold.active ? (fold.weight >= 0 ? 'pos' : 'neg') : 'off');
+
+const knobs = ranker.knobs.map((knob) => {
+  const info = KNOBS[knob.name];
+  const [low, high] = knob.range;
+  const share = info.log ? (Math.log(knob.value) - Math.log(low)) / (Math.log(high) - Math.log(low)) : (knob.value - low) / (high - low);
+  const targets = inputs.filter((input) => info.feeds.includes(input.name));
+  const y = knob.name === 'window_after_days' ? targets[targets.length - 1].y : targets[0].y;
+  const text = Number.isInteger(knob.value) ? int(knob.value) : dec(knob.value, 1);
+  return { ...knob, info, y, share, targets, text, folds: knob.folds.map((value) => (Number.isInteger(value) ? int(value) : dec(value, 1))) };
+});
+const wire = (fromY: number, toY: number) =>
+  fromY === toY ? `M 122 ${fromY} H ${X_IN - R - 12}` : `M 122 ${fromY} C 150 ${fromY}, 150 ${toY}, 178 ${toY} H ${X_IN - R - 12}`;
+
+const groupsUsed = [...new Set(inputs.map((input) => input.info.group))];
+const activeCount = inputs.filter((input) => input.active).length;
+
+// ---------- The jump over the baseline ----------
+const cv = ranker.cross_validation;
+const metrics = [
+  { key: 'news_recall@50', label: 'Recall por noticia', help: 'Promedio, por noticia, de la parte de sus expedientes que entra en el top 50.' },
+  { key: 'bill_coverage@50', label: 'Cobertura de expedientes', help: 'Expedientes del oro que entran en el top 50 de al menos una de sus noticias.' },
+  { key: 'link_recall@50', label: 'Vínculos', help: 'Vínculos noticia–expediente del oro que quedan dentro del top 50.' },
+] as const;
+const jump = metrics.map((metric) => ({ ...metric, baseline: cv.baseline[metric.key], evolved: cv.evolved[metric.key] }));
+const trainedOn = ranker.n_news - ranker.excluded_news;
+const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 50, settings, weightRange: ranker.weight_range };
+---
+<section id="ranker" class="chapter">
+  <ChapterHead number={3} kicker="Algoritmo evolutivo" title="Un ranker que evoluciona para pasar de 0,8">
+    <p class="lead">
+      Usamos un algoritmo evolutivo para subir el ranking por encima de 0,8. Cada individuo es un evaluador: recibe
+      un par noticia–expediente y le da un puntaje; los 50 expedientes con mayor puntaje son los candidatos de esa
+      noticia.
+    </p>
+  </ChapterHead>
+
+  <dl class="stats cols-4">
+    <div class="stat sky"><dt>Población</dt><dd>{settings.population_size}</dd><span class="stat-foot">evaluadores por generación</span></div>
+    <div class="stat lavender"><dt>Genes por evaluador</dt><dd>{ranker.n_genes}</dd><span class="stat-foot">13 pesos, 13 interruptores y 3 perillas</span></div>
+    <div class="stat peach"><dt>Generaciones</dt><dd>{settings.max_generations} <small>máx.</small></dd><span class="stat-foot">se detiene si en {settings.patience} no mejora</span></div>
+    <div class="stat mint"><dt>Validación cruzada</dt><dd>{ranker.n_folds} <small>folds</small></dd><span class="stat-foot">{int(trainedOn)} noticias del oro de Delfino</span></div>
+  </dl>
+
+  <!-- Tournament -->
+  <h3 class="subhead">Una generación, paso a paso <Draft /></h3>
+  <div class="grid-wide">
+    <div class="card tournament" id="tournament">
+      <div class="card-head">
+        <h4 class="card-title">Evolución por torneo</h4>
+        <span class="chip" title="Los individuos y su fitness son simulados; los operadores y sus parámetros son los de la corrida real">Ilustrativo</span>
+      </div>
+      <div class="tour-body">
+        <div class="tour-population">
+          <div class="tour-grid" data-tour="grid" role="img" aria-label="Población de 50 evaluadores; el color indica el fitness"></div>
+          <div class="legend">
+            <span><i class="tour-key elite"></i>Élite</span>
+            <span><i class="tour-key immigrant"></i>Inmigrante</span>
+            <span><i class="tour-key child"></i>Hijo</span>
+            <span><i class="tour-scale"></i>menor a mayor fitness</span>
+          </div>
+        </div>
+        <div class="tour-stage">
+          <div class="tour-step">
+            <span class="tour-count" data-tour="count"></span>
+            <h5 data-tour="title"></h5>
+            <p data-tour="text"></p>
+          </div>
+          <div class="tour-detail" data-tour="detail"></div>
+        </div>
+      </div>
+      <div class="tour-controls">
+        <button type="button" class="btn" data-tour="back"><Icon name="stepBack" />Anterior</button>
+        <button type="button" class="btn primary" data-tour="next">Siguiente<Icon name="stepForward" /></button>
+        <button type="button" class="btn" data-tour="play" aria-pressed="false"><Icon name="play" /><span>Reproducir</span></button>
+        <button type="button" class="btn" data-tour="reset"><Icon name="reset" />Reiniciar</button>
+        <span class="tour-generation">Generación <b data-tour="generation">0</b> · mejor fitness <b data-tour="best">—</b></span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="prose">
+        <p>
+          Cada generación tiene <strong>{settings.population_size} evaluadores</strong>. Para elegir a un padre se sacan{' '}
+          <strong>{settings.tournament_size} al azar</strong> y gana el de mejor fitness.
+        </p>
+        <p>
+          Dos ganadores <strong>se cruzan</strong>: cada gen del hijo cae en un punto al azar del tramo entre sus
+          padres, alargado la mitad hacia cada lado (mezcla tipo blend, α = {dec(settings.blend_alpha, 1)}).
+        </p>
+        <p>
+          El hijo <strong>muta</strong>: algunos genes se corren un poco (escala {dec(settings.mutation_scale, 1)} del
+          rango) y un {dec(settings.reset_rate * 100, 0)} % se reinicia al azar.
+        </p>
+        <p>
+          Los <strong>{settings.elites} mejores pasan intactos</strong> y entran {immigrants} inmigrantes al azar
+          ({dec(settings.immigrant_rate * 100, 0)} %), para no perder variedad. Los otros {children} son hijos.
+        </p>
+      </div>
+      <div class="formula">
+        <div class="formula-name">Fitness de un evaluador</div>
+        <Tex tex={FITNESS_FORMULA} block />
+        <div class="formula-meta">
+          Cobertura@K: parte de los expedientes del oro que quedan entre los K primeros de alguna de sus noticias
+          (se entrenó con K = {ranker.k}). El segundo término solo desempata: <Tex tex="r" /> es el mejor rango de cada expediente.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Network -->
+  <h3 class="subhead">El ranker final</h3>
+  <div class="prose">
+    <p>
+      Es el que generó los candidatos que vio Jev. Se entrenó con validación cruzada de {ranker.n_folds} folds sobre{' '}
+      {int(trainedOn)} noticias del oro de Delfino (se excluyeron {ranker.excluded_news} noticias-agenda con más de{' '}
+      {ranker.max_links_per_news} vínculos), y la receta final se reentrenó con todas.
+    </p>
+  </div>
+  <div class="card">
+    <div class="card-head">
+      <h4 class="card-title">La receta como una red: {inputs.length} entradas, una salida</h4>
+      <span class="card-sub">pasá el puntero o el foco por una neurona, una línea o una perilla</span>
+    </div>
+    <div class="scroll-x">
+      <svg class="viz network" viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="group" aria-label="Diagrama del ranker: cada entrada es una neurona conectada a la salida con una línea cuyo color y grosor indican el peso">
+        <text class="net-head" x={X_KNOB} y="22" text-anchor="middle">Perillas</text>
+        <text class="net-head" x={X_IN} y="22" text-anchor="middle">Entradas</text>
+        <text class="net-head" x={(X_IN + X_OUT) / 2} y="22" text-anchor="middle">Pesos</text>
+        <text class="net-head" x={X_OUT} y="22" text-anchor="middle">Salida</text>
+
+        {knobs.map((knob) => knob.targets.map((target) => (
+          <path class:list={['net-wire', { off: !target.active }]} d={wire(knob.y, target.y)} />
+        )))}
+
+        {inputs.map((input) => input.active && (
+          <g class="net-edge" tabindex="0" data-tip={`tip-edge-${input.name}`} role="img" aria-label={`Peso de ${input.info.label}: ${signed(input.weight)}`}>
+            <path class="net-hit" d={edgePath(input.y, input.index)} />
+            <path class="net-line" d={edgePath(input.y, input.index)} style={`stroke:${edgeColor(input.weight)}; stroke-width:${edgeWidth(input.weight)}`} />
+          </g>
+        ))}
+
+        {inputs.map((input) => (
+          <g class:list={['net-neuron', { off: !input.active }]} tabindex="0" data-tip={`tip-${input.name}`} role="img"
+            aria-label={`${input.info.label}. ${input.info.meaning} Peso ${signed(input.weight)}, ${input.active ? 'activada' : 'desactivada'}; activa en ${input.activeFolds} de ${ranker.n_folds} folds.`}>
+            <rect class="net-hit" x={X_IN - 215} y={input.y - 21} width={215 + 70} height="42" />
+            <text class="net-label" x={X_IN - 25} y={input.y - 7} text-anchor="end">{input.info.label}</text>
+            {input.folds.map((fold, index) => <path class:list={['net-fold', foldClass(fold)]} d={foldArc(input.y, index)} />)}
+            <circle class="net-dot" cx={X_IN} cy={input.y} r={R} style={`--c: var(${GROUPS[input.info.group].color})`} />
+            {input.active
+              ? <text class:list={['net-weight', input.weight < 0 ? 'neg' : 'pos']} x={X_IN + R + 14} y={input.y - 8}>{signed(input.weight)}</text>
+              : <><line class="net-stub" x1={X_IN + R + 10} x2={X_IN + R + 44} y1={input.y} y2={input.y} /><text class="net-weight off" x={X_IN + R + 50} y={input.y + 4}>desactivada</text></>}
+          </g>
+        ))}
+
+        {knobs.map((knob) => (
+          <g class="net-knob" tabindex="0" data-tip={`tip-${knob.name}`} role="img" aria-label={`${knob.info.label}: ${knob.text} ${knob.info.unit}. ${knob.info.meaning}`}>
+            <rect class="net-hit" x={X_KNOB - 44} y={knob.y - 21} width="164" height="42" />
+            <path class="net-knob-track" d={arc(X_KNOB, knob.y, 12, 135, 405)} />
+            <path class="net-knob-value" d={arc(X_KNOB, knob.y, 12, 135, 135 + Math.max(4, 270 * knob.share))} />
+            <line class="net-knob-hand" x1={X_KNOB} y1={knob.y} x2={point(X_KNOB, knob.y, 8, 135 + 270 * knob.share).split(' ')[0]} y2={point(X_KNOB, knob.y, 8, 135 + 270 * knob.share).split(' ')[1]} />
+            <text class="net-knob-number" x={X_KNOB + 20} y={knob.y - 1}>{knob.text}</text>
+            <text class="net-knob-label" x={X_KNOB + 20} y={knob.y + 12}>{knob.info.label.toLowerCase()}</text>
+          </g>
+        ))}
+
+        <g class="net-output" tabindex="0" data-tip="tip-output" role="img" aria-label="Salida: el puntaje del par, la suma de peso por entrada sobre las entradas activadas">
+          <circle cx={X_OUT} cy={yOut} r="31" />
+          <text class="net-sigma" x={X_OUT} y={yOut + 9} text-anchor="middle">Σ</text>
+          <text class="net-label" x={X_OUT} y={yOut - 42} text-anchor="middle">Puntaje del par</text>
+        </g>
+        <path class="net-arrow" d={`M ${X_OUT + 36} ${yOut} H ${X_OUT + 62} m -7 -6 l 7 6 l -7 6`} />
+        <g class="net-top">
+          <rect x={X_OUT + 68} y={yOut - 24} width="92" height="48" rx="12" />
+          <text class="net-top-number" x={X_OUT + 114} y={yOut - 2} text-anchor="middle">Top 50</text>
+          <text class="net-top-label" x={X_OUT + 114} y={yOut + 14} text-anchor="middle">por noticia</text>
+        </g>
+      </svg>
+    </div>
+    <div class="legend net-legend">
+      {groupsUsed.map((group) => <span><i class="swatch round" style={`--c: var(${GROUPS[group].color})`}></i>{GROUPS[group].label}</span>)}
+      <span class="net-scale"><b>−{LIMIT}</b><i></i><b>+{LIMIT}</b> peso: color y grosor</span>
+      <span><svg class="net-ring-key" viewBox="0 0 44 44" aria-hidden="true">
+        {[0, 1, 2, 3, 4].map((index) => <path class:list={['net-fold', ['pos', 'pos', 'neg', 'off', 'pos'][index]]} d={arc(22, 22, 18.5, -90 + index * 72 + 8, -90 + (index + 1) * 72 - 8)} />)}
+      </svg>anillo: los {ranker.n_folds} folds (verde +, rojo −, gris desactivada)</span>
+    </div>
+    <div class="formula">
+      <div class="formula-name">Lo que calcula la salida</div>
+      <Tex tex={SCORE_FORMULA} block />
+      <div class="formula-meta">
+        {activeCount} de las {inputs.length} entradas quedaron activadas. Las entradas continuas fijas se estandarizan antes de pesarse
+        (<Tex tex={STANDARD_FORMULA} />, con media y desviación sobre todos los pares); las de 0 o 1 y las tres que dependen de las perillas entran tal cual.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <h4 class="card-title">Cada neurona, con su fórmula</h4>
+      <span class="card-sub">pesos en [−{LIMIT}, {LIMIT}]</span>
+    </div>
+    <div class="table-wrap">
+      <table class="data net-table">
+        <thead>
+          <tr><th>Tipo</th><th>Nombre</th><th>Qué representa</th><th class="num">Peso</th><th>Estado</th><th>Folds</th><th>Fórmula de la entrada</th></tr>
+        </thead>
+        <tbody>
+          {inputs.map((input) => (
+            <tr class:list={[{ off: !input.active }]}>
+              <td><span class="pill st-neutral">Entrada</span></td>
+              <td><code>{input.name}</code></td>
+              <td>{input.info.meaning}</td>
+              <td class:list={['num', 'net-w', input.active ? (input.weight < 0 ? 'neg' : 'pos') : 'off']}>{signed(input.weight)}</td>
+              <td>{input.active ? <span class="pill st-law dot">Activada</span> : <span class="pill st-archived dot">Desactivada</span>}</td>
+              <td>
+                <span class="fold-dots" title={`Activa en ${input.activeFolds} de ${ranker.n_folds} folds; signos: ${input.signs}`}>
+                  {input.folds.map((fold) => <i class={foldClass(fold)}></i>)}
+                </span>
+                <span class="fold-count">{input.activeFolds}/{ranker.n_folds}</span>
+              </td>
+              <td class="net-formula"><Tex tex={input.info.formula} display /></td>
+            </tr>
+          ))}
+          {knobs.map((knob) => (
+            <tr>
+              <td><span class="pill st-warn">Perilla</span></td>
+              <td><code>{knob.name}</code></td>
+              <td>{knob.info.meaning} Alimenta a {knob.info.feeds.map((name) => <><code>{name}</code>{' '}</>)}</td>
+              <td class="num">{knob.text}</td>
+              <td><span class="muted">no es un peso</span></td>
+              <td><span class="fold-values">{knob.folds.join(' · ')}</span></td>
+              <td class="net-formula"><Tex tex={`${knob.info.symbol} \\in [${knob.range[0]},\\ ${int(knob.range[1])}]`} /></td>
+            </tr>
+          ))}
+          <tr>
+            <td><span class="pill st-progress">Salida</span></td>
+            <td><code>score</code></td>
+            <td>Puntaje del par noticia–expediente. Los 50 más altos de cada noticia son sus candidatos.</td>
+            <td class="num">—</td>
+            <td>—</td>
+            <td>—</td>
+            <td class="net-formula"><Tex tex={SCORE_FORMULA} /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">
+      Notación: <Tex tex={String.raw`\mathbf{n}_f`} /> es el vector del fragmento <Tex tex="f" /> de la noticia y <Tex tex={String.raw`\mathbf{e}`} /> el del{' '}
+      expediente; <Tex tex={String.raw`\mu_b, \sigma_b`} /> son la media y la desviación de esa similitud para el expediente{' '}
+      <Tex tex="b" /> en {int(ranker.background_news)} noticias de fondo; <Tex tex="t" /> es la fecha de la noticia;{' '}
+      <Tex tex="a" />, <Tex tex="p" /> y <Tex tex="h" /> son las tres perillas. En «Folds», cada punto es un fold: verde si
+      la entrada quedó activa con peso positivo, rojo si negativo, gris si quedó desactivada.
+    </p>
+  </div>
+
+  <!-- The jump -->
+  <div class="card jump" id="ranker-jump">
+    <div class="card-head">
+      <h4 class="card-title">El salto, con la misma métrica y las mismas noticias</h4>
+      <div class="segmented" role="group" aria-label="Métrica">
+        {jump.map((metric, index) => <button type="button" data-value={metric.key} aria-pressed={index === 0 ? 'true' : 'false'}>{metric.label}</button>)}
+      </div>
+    </div>
+    <div class="jump-body">
+      <div class="jump-bars">
+        <div class="jump-row">
+          <div class="jump-name">Solo embeddings<small>similitud con la exposición de motivos</small></div>
+          <div class="jump-track"><span class="jump-bar base" data-jump="base-bar"></span></div>
+          <div class="jump-value" data-jump="base">{dec(jump[0].baseline)}</div>
+        </div>
+        <div class="jump-row">
+          <div class="jump-name">Ranker evolucionado<small>{activeCount} entradas activas</small></div>
+          <div class="jump-track"><span class="jump-bar evolved" data-jump="evolved-bar"></span></div>
+          <div class="jump-value strong" data-jump="evolved">{dec(jump[0].evolved)}</div>
+        </div>
+      </div>
+      <div class="jump-delta">
+        <Icon name="evolution" />
+        <b data-jump="delta">+{dec((jump[0].evolved - jump[0].baseline) * 100, 0)}</b>
+        <span>puntos @50</span>
+      </div>
+    </div>
+    <p class="note" data-jump="help">{jump[0].help}</p>
+    <p class="note">
+      Medido en validación cruzada sobre {int(trainedOn)} noticias: cada fold se evalúa con noticias que su receta no
+      vio. El 0,80 del capítulo anterior es sobre las {int(ranker.n_news)} noticias; sin las {ranker.excluded_news}{' '}
+      noticias-agenda, la misma base da 0,82.
+    </p>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-head">
+        <h4 class="card-title">Fitness por generación</h4>
+        <span class="card-sub">mejor individuo de cada corrida</span>
+      </div>
+      <div class="chart" id="ranker-fitness" role="img" aria-label="Líneas: el mejor fitness por generación en la corrida final y en los cinco folds"></div>
+      <div class="legend">
+        <span><i class="swatch line" style="--c: var(--accent)"></i>Receta final (todas las noticias)</span>
+        <span><i class="swatch line" style="--c: var(--data-none)"></i>Cada fold</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">
+        <h4 class="card-title">Cobertura según K</h4>
+        <span class="card-sub">expedientes del oro dentro del top K</span>
+      </div>
+      <div class="chart" id="ranker-ksweep" role="img" aria-label="Líneas: cobertura de expedientes según K, para el ranker evolucionado y para la base de embeddings"></div>
+      <div class="legend">
+        <span><i class="swatch line" style="--c: var(--accent)"></i>Ranker evolucionado</span>
+        <span><i class="swatch line dash" style="--c: var(--data-none)"></i>Solo embeddings</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tooltip contents, rendered at build time (formulas included) -->
+  <div hidden>
+    {inputs.map((input) => (
+      <>
+        <div id={`tip-${input.name}`}>
+          <strong>{input.info.label}</strong>
+          <code>{input.name}</code>
+          <p>{input.info.meaning}</p>
+          <div class="tip-row"><span>Peso</span><b>{signed(input.weight)}</b></div>
+          <div class="tip-row"><span>Estado</span><b>{input.active ? 'Activada' : 'Desactivada'}</b></div>
+          <div class="tip-row"><span>Folds</span><b>activa en {input.activeFolds}/{ranker.n_folds} · {input.signs}</b></div>
+          <div class="tip-formula"><Tex tex={`x = ${input.info.formula}`} /></div>
+        </div>
+        <div id={`tip-edge-${input.name}`}>
+          <strong>{input.info.label} → puntaje</strong>
+          <div class="tip-row"><span>Peso</span><b>{signed(input.weight, 3)}</b></div>
+          <p>{input.weight >= 0 ? 'Sube' : 'Baja'} el puntaje cuando la entrada es alta.</p>
+          <div class="tip-formula"><Tex tex={`${signed(input.weight).replace(',', '{,}').replace('−', '-')} \\cdot ${input.info.standardized ? '\\tilde{x}' : 'x'}`} /></div>
+        </div>
+      </>
+    ))}
+    {knobs.map((knob) => (
+      <div id={`tip-${knob.name}`}>
+        <strong>{knob.info.label}: {knob.text} {knob.info.unit}</strong>
+        <code>{knob.name}</code>
+        <p>{knob.info.meaning}</p>
+        <div class="tip-row"><span>Rango</span><b>{knob.range[0]}–{int(knob.range[1])}{knob.info.log ? ' (escala log)' : ''}</b></div>
+        <div class="tip-row"><span>Por fold</span><b>{knob.folds.join(' · ')}</b></div>
+      </div>
+    ))}
+    <div id="tip-output">
+      <strong>Puntaje del par</strong>
+      <p>Suma de peso × entrada sobre las {activeCount} entradas activadas. Los 50 expedientes con mayor puntaje son los candidatos de la noticia.</p>
+      <div class="tip-formula"><Tex tex={SCORE_FORMULA} /></div>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="data-ranker" set:html={jsonForScript(clientData)}></script>
+<script>
+  import '../../scripts/process/ranker';
+  import '../../scripts/process/tournament';
+</script>

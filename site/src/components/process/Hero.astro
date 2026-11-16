@@ -1,0 +1,101 @@
+---
+// Chapter 0: the whole pipeline as a funnel. Every stage links to the chapter that explains it.
+import Draft from './Draft.astro';
+import Icon from './Icon.astro';
+import funnel from '../../data/process/funnel.json';
+import cost from '../../data/process/cost.json';
+import { int, usd } from '../../lib/process/format';
+
+const width = (value: number) => `${((100 * value) / funnel.news).toFixed(2)}%`;
+const stages = [
+  { value: funnel.news, label: `noticias de ${funnel.outlets} medios`, note: `${int(funnel.news_with_text)} con texto`, target: '#scrapers', tone: 'news' },
+  { value: funnel.pass_filter, label: 'pasan el filtro de Jev', note: '¿Habla de la Asamblea? Umbral 0,2', target: '#jev', tone: 'filter' },
+  { value: funnel.match_news, label: 'noticias con match', note: `${int(funnel.match_pairs)} pares noticia–expediente`, target: '#jev', tone: 'match' },
+  { value: funnel.mention_news, label: 'noticias con mención', note: `${int(funnel.mention_pairs)} menciones`, target: '#jev', tone: 'mention' },
+  { value: funnel.substantive_news, label: 'con cobertura sustantiva', note: `${int(funnel.substantive_pairs)} vínculos publicados`, target: '#jev', tone: 'substantive' },
+];
+---
+<section id="inicio" class="chapter hero">
+  <header class="hero-head">
+    <span class="eyebrow">Cómo se hizo</span>
+    <h1>De {int(funnel.news)} noticias a <em>{int(funnel.substantive_pairs)} vínculos</em> con expedientes</h1>
+    <p class="lead">
+      Scrapers, embeddings, un algoritmo evolutivo y un modelo de lenguaje: el recorrido completo del proyecto,
+      etapa por etapa. Cada paso del embudo lleva a la sección que lo explica. <Draft />
+    </p>
+  </header>
+
+  <div class="hero-grid">
+    <div class="card funnel" data-funnel>
+      <div class="card-head">
+        <h2 class="card-title">El embudo completo</h2>
+        <span class="card-sub">ancho de cada barra = noticias que siguen</span>
+      </div>
+      <ol class="funnel-steps">
+        {stages.map((stage, index) => (
+          <>
+            <li class="funnel-step" style={`--i:${index}`}>
+              <a href={stage.target}>
+                <span class="funnel-meta">
+                  <b class="funnel-num" data-count={stage.value}>{int(stage.value)}</b>
+                  <span class="funnel-label">{stage.label}</span>
+                  <span class="funnel-note">{stage.note}</span>
+                </span>
+                <span class="funnel-track"><span class={`funnel-bar tone-${stage.tone}`} style={`--w:${width(stage.value)}`}></span></span>
+              </a>
+            </li>
+            {index < stages.length - 1 && (
+              <li class:list={['funnel-gap', { tall: index === 1 }]} style={`--i:${index}`}>
+                <span></span>
+                <span class="funnel-flow" style={`--from:${width(stage.value)};--to:${width(stages[index + 1].value)}`}>
+                  {index === 1 && (
+                    <a class="funnel-pill" href="#ranker">
+                      × {funnel.candidates_per_news} candidatos del ranker
+                      <span>{int(funnel.pairs_judged)} pares por juzgar</span>
+                    </a>
+                  )}
+                </span>
+              </li>
+            )}
+          </>
+        ))}
+      </ol>
+    </div>
+
+    <div class="hero-side">
+      <dl class="stats cols-2">
+        <div class="stat lavender"><dt>Expedientes</dt><dd>{int(funnel.bills)}</dd><span class="stat-foot">del SIL de la Asamblea</span></div>
+        <div class="stat peach"><dt>Votaciones</dt><dd>{int(funnel.votes)}</dd><span class="stat-foot">por diputación</span></div>
+        <div class="stat sky"><dt>Período</dt><dd>6 <small>meses</small></dd><span class="stat-foot">1 may – 31 oct 2026</span></div>
+        <div class="stat mint"><dt>Costo de Jev</dt><dd>{usd(cost.paid_total)}</dd><span class="stat-foot">todo el corpus</span></div>
+      </dl>
+      <div class="card">
+        <h2 class="card-title">Capítulos</h2>
+        <div class="chapter-links chips">
+          <a class="chip" href="#scrapers"><Icon name="globe" />Scrapers</a>
+          <a class="chip" href="#embeddings"><Icon name="link" />Embeddings</a>
+          <a class="chip" href="#ranker"><Icon name="evolution" />Algoritmo evolutivo</a>
+          <a class="chip" href="#jev"><Icon name="checklist" />Jev</a>
+          <a class="chip" href="#grafos"><Icon name="graph" />Grafos</a>
+          <a class="chip" href="#futuro"><Icon name="flag" />Trabajo a futuro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { countUp, reducedMotion, whenVisible } from '../../scripts/process/core';
+  import { int } from '../../lib/process/format';
+
+  const funnel = document.querySelector<HTMLElement>('[data-funnel]');
+  if (funnel && !reducedMotion()) {
+    funnel.classList.add('is-armed');
+    whenVisible(funnel, () => {
+      funnel.classList.add('is-in');
+      funnel.querySelectorAll<HTMLElement>('[data-count]').forEach((element, index) => {
+        setTimeout(() => countUp(element, Number(element.dataset.count), int), index * 160);
+      });
+    });
+  }
+</script>

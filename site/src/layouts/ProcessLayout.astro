@@ -1,0 +1,134 @@
+---
+// Layout of the process page. It does not load the site's global.css: it carries a copy of the local pages'
+// theme (private_visuals/theme, copied by export_process.py --sync-theme) with its eight styles, and repeats the
+// site's footer. The mode is shared with the rest of the site (localStorage.theme); the style is this page's own.
+import '../styles/process/variants.css';
+import '../styles/process/theme.css';
+import 'katex/dist/katex.min.css';
+import '../styles/process/process.css';
+import Icon from '../components/process/Icon.astro';
+import { SITE_NAME, COURSE, AUTHORS } from '../lib/config';
+import { href } from '../lib/paths';
+import { jsonForScript } from '../lib/process/format';
+import type { IconName } from '../lib/process/icons';
+import styles from '../data/process/styles.json';
+
+interface Chapter {
+  id: string;
+  label: string;
+  title: string;
+  icon: IconName;
+}
+interface Props {
+  title: string;
+  description: string;
+  chapters: Chapter[];
+}
+const { title, description, chapters } = Astro.props;
+const fontFaces = [500, 600, 700].map((weight) =>
+  `@font-face { font-family: "Poppins"; font-weight: ${weight}; font-display: swap; src: url("${href(`fonts/poppins-latin-${weight}.woff2`)}") format("woff2"); }`).join('\n');
+const styleIds = styles.map((style) => style.id);
+const modes: [string, IconName, string][] = [['system', 'monitor', 'Como el sistema'], ['light', 'sun', 'Claro'], ['dark', 'moon', 'Oscuro']];
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{`${title} · ${SITE_NAME}`}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href={href('favicon.svg')} />
+    <style is:inline set:html={fontFaces}></style>
+    <script is:inline define:vars={{ styleIds }}>
+      // Before the first paint: the mode (the site's own key; no value means "follow the system"), the style and
+      // the folded sidebar. The theme expects html[data-theme] to be always set.
+      (() => {
+        const root = document.documentElement;
+        const read = (key) => { try { return localStorage.getItem(key); } catch { return null; } };
+        const mode = read('theme');
+        const dark = mode === 'dark' || (mode !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        root.dataset.theme = dark ? 'dark' : 'light';
+        const style = read('process-style');
+        if (style && style !== 'oficial' && styleIds.includes(style)) root.dataset.style = style;
+        if (read('process-side') === '1') root.dataset.side = 'compact';
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Saltar al contenido</a>
+    <div class="app">
+      <aside class="side" aria-label="Capítulos de la página">
+        <a class="brand" href={href('')} title="Volver al inicio del sitio">
+          <span class="brand-mark"><Icon name="brand" /></span>
+          <div><div class="brand-name">{SITE_NAME}</div><div class="brand-sub">Cómo se hizo</div></div>
+        </a>
+        <nav class="nav" aria-label="Capítulos">
+          <div class="nav-label">Proceso</div>
+          {chapters.map((chapter) => (
+            <a class="nav-item" href={`#${chapter.id}`} data-spy={chapter.id} title={chapter.title}>
+              <Icon name={chapter.icon} /><span class="label">{chapter.label}</span>
+            </a>
+          ))}
+        </nav>
+        <div class="side-foot">
+          <button type="button" class="nav-item settings-btn" title="Ajustes: estilo y modo">
+            <Icon name="gear" /><span class="label">Ajustes</span>
+          </button>
+          <div class="side-tools">
+            <div class="segmented theme-pick" role="group" aria-label="Modo de la página">
+              {modes.map(([value, icon, label]) => (
+                <button type="button" data-theme-choice={value} title={label}><Icon name={icon} /><span class="sr">{label}</span></button>
+              ))}
+            </div>
+            <button type="button" class="icon-btn collapse-btn" title="Plegar o desplegar la barra" aria-label="Plegar o desplegar la barra">
+              <Icon name="fold" />
+            </button>
+          </div>
+        </div>
+      </aside>
+
+      <div class="main">
+        <main id="main" class="process">
+          <slot />
+        </main>
+        <footer class="process-footer">
+          <p class="disclosure">
+            Este sitio no reproduce el texto de las noticias: de cada nota publica solo título, medio, fecha,
+            sección y el enlace al original. Los vínculos noticia–expediente indican su origen y, cuando aplica,
+            la confianza del modelo; el cruce automático puede equivocarse.
+          </p>
+          <p class="footer-links">
+            <a href={href('')}>Inicio</a>
+            <a href={href('metodologia/')}>Metodología</a>
+            <a href={href('proceso/')} aria-current="page">Proceso</a>
+            <a href={href('datos/')}>Datos y descargas</a>
+            <a href={href('evaluacion/')}>Evaluación de la página</a>
+            <button type="button" class="footer-theme" data-theme-toggle><Icon name="moon" />Cambiar tema</button>
+          </p>
+          <p class="footer-credit">Proyecto del curso {COURSE}. Elaborado por {AUTHORS.join(' y ')}.</p>
+        </footer>
+      </div>
+    </div>
+
+    <dialog class="settings" aria-labelledby="settings-title">
+      <div class="settings-head">
+        <h2 id="settings-title">Ajustes</h2>
+        <button type="button" class="icon-btn settings-close" aria-label="Cerrar"><Icon name="close" /></button>
+      </div>
+      <h3 class="settings-label">Modo</h3>
+      <div class="segmented settings-mode" role="group" aria-label="Modo">
+        {modes.map(([value, icon, label]) => (
+          <button type="button" data-theme-choice={value}><Icon name={icon} /><span>{label}</span></button>
+        ))}
+      </div>
+      <h3 class="settings-label">Estilo</h3>
+      <div class="style-grid"></div>
+    </dialog>
+
+    <div class="tip" role="tooltip" hidden></div>
+    <script type="application/json" id="process-styles" set:html={jsonForScript(styles)}></script>
+    <script>
+      import '../scripts/process/shell';
+    </script>
+  </body>
+</html>

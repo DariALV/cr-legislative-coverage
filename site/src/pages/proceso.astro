@@ -1,0 +1,36 @@
+---
+// "Proceso": how the project was built, chapter by chapter. Static: every figure comes from the JSON files in
+// src/data/process/, written once by export_process.py.
+import ProcessLayout from '../layouts/ProcessLayout.astro';
+import Hero from '../components/process/Hero.astro';
+import Scrapers from '../components/process/Scrapers.astro';
+import Embeddings from '../components/process/Embeddings.astro';
+import Ranker from '../components/process/Ranker.astro';
+import Jev from '../components/process/Jev.astro';
+import Graphs from '../components/process/Graphs.astro';
+import Future from '../components/process/Future.astro';
+import type { IconName } from '../lib/process/icons';
+
+const chapters: { id: string; label: string; title: string; icon: IconName }[] = [
+  { id: 'inicio', label: 'El embudo', title: 'El embudo completo', icon: 'funnel' },
+  { id: 'scrapers', label: 'Scrapers', title: 'Scrapers: noticias y expedientes', icon: 'globe' },
+  { id: 'embeddings', label: 'Embeddings', title: 'Embeddings', icon: 'link' },
+  { id: 'ranker', label: 'Evolutivo', title: 'Algoritmo evolutivo (ranker)', icon: 'evolution' },
+  { id: 'jev', label: 'Jev', title: 'Jev: el evaluador', icon: 'checklist' },
+  { id: 'grafos', label: 'Grafos', title: 'Visualización con grafos', icon: 'graph' },
+  { id: 'futuro', label: 'A futuro', title: 'Trabajo a futuro', icon: 'flag' },
+];
+---
+<ProcessLayout
+  title="Proceso"
+  description="Cómo se desarrolló el proyecto: scrapers, embeddings, algoritmo evolutivo, Jev, grafos y trabajo a futuro."
+  chapters={chapters}
+>
+  <Hero />
+  <Scrapers />
+  <Embeddings />
+  <Ranker />
+  <Jev />
+  <Graphs />
+  <Future />
+</ProcessLayout>

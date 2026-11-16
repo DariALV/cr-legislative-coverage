@@ -1,0 +1,82 @@
+/**
+ * Icons of the process page: inner markup of a 24 x 24 SVG, drawn with the same stroke as the local pages
+ * (private_visuals/theme/nav.js). The stroke itself comes from the theme's `svg` rule.
+ */
+export const ICONS = {
+  // Frame
+  brand: '<path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M9 21v-6h6v6"/>',
+  monitor: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/>',
+  fold: '<path d="m15 6-6 6 6 6"/>',
+  gear: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
+  close: '<path d="M6 6l12 12M18 6 6 18"/>',
+  chevron: '<path d="m9 6 6 6-6 6"/>',
+  check: '<path d="m5 12.500 4.500 4.500L19 7.500"/>',
+  arrowRight: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  arrowDown: '<path d="M12 5v14M6 13l6 6 6-6"/>',
+  pencil: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
+  info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
+  play: '<path d="M7 5v14l12-7z"/>',
+  pause: '<path d="M8 5v14M16 5v14"/>',
+  stepForward: '<path d="M6 5v14l9-7zM18 5v14"/>',
+  stepBack: '<path d="M18 5v14l-9-7zM6 5v14"/>',
+  reset: '<path d="M4 12a8 8 0 1 0 2.6-5.9"/><path d="M4 4v5h5"/>',
+
+  // Chapters
+  funnel: '<path d="M3 5h18l-7 8v6l-4-2v-4z"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.500 5.600 12 3z"/>',
+  link: '<path d="M10 13a5 5 0 0 0 7.070 0l3-3a5 5 0 0 0-7.070-7.070l-1.500 1.500"/><path d="M14 11a5 5 0 0 0-7.070 0l-3 3a5 5 0 0 0 7.070 7.070l1.500-1.500"/>',
+  evolution: '<path d="M4 19h16"/><path d="M5 15l4-5 3 3 6-7"/><path d="M15 6h3v3"/>',
+  checklist: '<path d="M4 6h16M4 12h10M4 18h7"/><path d="m15 17 2 2 4-4"/>',
+  graph: '<circle cx="6" cy="6" r="2.500"/><circle cx="18" cy="8" r="2.500"/><circle cx="9" cy="18" r="2.500"/><path d="m8.300 7 7.400.800M7 8.400l1.400 7.200M16.400 10l-5.600 6.200"/>',
+  flag: '<path d="M5 21V4M5 4h12l-2.500 4L17 12H5"/>',
+
+  // Generic content
+  news: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h6M7 13h10M7 16.500h10M16 8.500v1"/>',
+  bill: '<path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4M10 12h6M10 16h6"/>',
+  vote: '<rect x="4" y="11" width="16" height="9" rx="2"/><path d="m9 8 2.500 2.500L16 5"/>',
+  calendar: '<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M8 3v4M16 3v4"/>',
+  database: '<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.700 3.600 3 8 3s8-1.300 8-3V5"/><path d="M4 12c0 1.700 3.600 3 8 3s8-1.300 8-3"/>',
+  broom: '<path d="M14 4l6 6M12.500 5.500l6 6-2 2-6-6z"/><path d="M10.500 7.500 4 14l1 6 5-1 6.500-5.500"/>',
+  copy: '<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>',
+  scale: '<path d="M12 4v16M6 20h12M5 8h14"/><path d="m5 8-2.500 6a2.700 2.700 0 0 0 5 0zM19 8l-2.500 6a2.700 2.700 0 0 0 5 0z"/>',
+  code: '<path d="m8 8-4 4 4 4M16 8l4 4-4 4M13.500 5l-3 14"/>',
+  sliders: '<path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/>',
+  coins: '<ellipse cx="9" cy="8" rx="6" ry="3"/><path d="M3 8v4c0 1.700 2.700 3 6 3M3 12v4c0 1.700 2.700 3 6 3"/><ellipse cx="15" cy="14" rx="6" ry="3"/><path d="M9 14v4c0 1.700 2.700 3 6 3s6-1.300 6-3v-4"/>',
+  target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+  layers: '<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 12.500 9 5 9-5M3 17l9 5 9-5"/>',
+  teacher: '<path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11.500V16c0 1.500 2.200 3 5 3s5-1.500 5-3v-4.500M21 9v6"/>',
+  expand: '<path d="M4 14v6h6M20 10V4h-6M4 20l7-7M20 4l-7 7"/>',
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8 21h8"/>',
+
+  // Jev questions (one per card)
+  qAssembly: '<path d="M3 21h18M5 21V10M9 21V10M15 21V10M19 21V10M3 10h18L12 4z"/>',
+  qExplicit: '<path d="M9 4 7 20M17 4l-2 16M4 9h17M3 15h17"/>',
+  qImplicit: '<path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/>',
+  qPressRelease: '<path d="M4 10v4h3l7 4V6l-7 4z"/><path d="M17.5 9a4 4 0 0 1 0 6"/>',
+  qFrame: '<rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/>',
+  qGauge: '<path d="M4 16a8 8 0 0 1 16 0"/><path d="m12 16 4-5"/>',
+  qWarning: '<path d="M12 4 2.5 20h19z"/><path d="M12 10v5M12 17.5v.5"/>',
+  qThumb: '<path d="M7 11v9H4v-9z"/><path d="m7 11 4-7c1.5 0 2.5 1 2.5 2.5V10H19a1.5 1.5 0 0 1 1.5 1.8l-1.3 6.5a2 2 0 0 1-2 1.7H7"/>',
+  qBolt: '<path d="M13 3 5 13h6l-1 8 8-10h-6z"/>',
+  qBriefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
+  qHelmet: '<path d="M3 17h18M5 17a7 7 0 0 1 14 0M10 10.3V6h4v4.3"/>',
+  qPeople: '<circle cx="8" cy="9" r="3"/><circle cx="16.5" cy="10" r="2.5"/><path d="M2.5 19a5.5 5.5 0 0 1 11 0M14 19a4.5 4.5 0 0 1 7.5-3"/>',
+  qPerson: '<circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>',
+  qSteps: '<path d="M4 19h4v-4h4v-4h4V7h4"/>',
+  qBook: '<path d="M12 6c-2-1.5-5-2-8-1.5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5v-13c-3-.5-6 0-8 1.5zM12 6v13"/>',
+  qImpact: '<circle cx="12" cy="12" r="2"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.9 2.9M15.500 15.500l2.900 2.900M18.4 5.6l-2.9 2.9M8.500 15.500l-2.900 2.900"/>',
+  qBars: '<path d="M5 20V10M12 20V4M19 20v-7"/>',
+  qConflict: '<path d="m5 5 14 14M19 5 5 19M5 5h3.500M5 5v3.500M19 5h-3.500M19 5v3.500"/>',
+  qHeadline: '<path d="M5 6h14M12 6v13M9 19h6"/>',
+  qIdCard: '<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16a3 3 0 0 1 6 0M15 10h3M15 14h3"/>',
+  qQuote: '<path d="M10 7H6v5h3c0 2-1 3.5-3 4M18 7h-4v5h3c0 2-1 3.5-3 4"/>',
+  qClock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  qFlow: '<rect x="3" y="4" width="7" height="5" rx="1"/><rect x="14" y="15" width="7" height="5" rx="1"/><path d="M6.5 9v4h11v2"/>',
+  qTally: '<path d="M6 5v14M10 5v14M14 5v14M18 5v14M4 15 20 9"/>',
+  qShield: '<path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/>',
+  qHeart: '<path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/>',
+} as const;
+
+export type IconName = keyof typeof ICONS;

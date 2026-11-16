@@ -20,6 +20,19 @@
         "8768"
       ],
       "port": 8768
+    },
+    {
+      "name": "site",
+      "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
+      "runtimeArgs": [
+        "site/node_modules/astro/bin/astro.mjs",
+        "dev",
+        "--root",
+        "site",
+        "--port",
+        "4321"
+      ],
+      "port": 4321
     }
   ]
 }

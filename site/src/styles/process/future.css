@@ -1,0 +1,88 @@
+/* Chapter 6: future work. */
+
+.idea { gap: 18px; padding: 24px 26px; }
+.idea-head { display: flex; align-items: center; gap: 14px; }
+.idea-head h3 { font-size: clamp(19px, 2.2vw, 23px); font-weight: 700; letter-spacing: -.01em; line-height: 1.2; }
+.idea-number { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: var(--accent); color: var(--on-accent); font: 700 22px var(--font-display, var(--font)); flex: none; }
+.idea-body.wide { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 28px; align-items: center; }
+.idea-text { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.idea .prose { font-size: 15.5px; }
+.idea-related { display: flex; flex-direction: column; gap: 8px; }
+.idea-related-title { font-size: 12px; font-weight: 700; color: var(--ink-3); text-transform: uppercase; letter-spacing: .06em; display: flex; align-items: center; gap: 8px; }
+.idea-related .chip { cursor: default; }
+#future-k-tiles .stat dd { font-size: 22px; }
+
+/* Teacher -> student */
+.distill { display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px; }
+.distill-box { flex: 1 1 96px; display: flex; flex-direction: column; gap: 3px; padding: 14px; border-radius: var(--radius-sm); background: var(--soft); min-width: 0; }
+.distill-box svg { width: 24px; height: 24px; color: var(--ink-2); margin-bottom: 4px; }
+.distill-box b { font-size: 14.5px; line-height: 1.25; }
+.distill-box span { font-size: 12.5px; color: var(--ink-2); line-height: 1.35; }
+.distill-box.teacher { background: var(--lavender); }
+.distill-box.teacher b, .distill-box.teacher svg { color: var(--lavender-ink); }
+.distill-box.teacher span { color: var(--lavender-label); }
+.distill-box.student { background: var(--mint); }
+.distill-box.student b, .distill-box.student svg { color: var(--mint-ink); }
+.distill-box.student span { color: var(--mint-label); }
+.distill-arrow { display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--ink-3); flex: none; }
+.distill-arrow svg { width: 20px; height: 20px; }
+.distill-arrow em { font-size: 11px; font-weight: 700; color: var(--ink-3); }
+
+/* Cost calculator */
+.calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 24px; align-items: center; }
+.calc-controls { display: flex; flex-direction: column; gap: 14px; }
+.calc-controls .btn { align-self: flex-start; }
+.calc-controls .range output { font-size: 17px; }
+.calc-result { display: flex; flex-direction: column; gap: 14px; padding: 18px; border-radius: var(--radius-sm); background: var(--bg); }
+.calc-news { display: flex; align-items: baseline; gap: 8px; }
+.calc-news b { font: 700 30px/1.1 var(--font-display, var(--font)); font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.calc-news span { font-size: 13px; font-weight: 600; color: var(--ink-3); }
+.calc-rows { display: flex; flex-direction: column; gap: 10px; }
+.calc-row { display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr) minmax(76px, auto); gap: 12px; align-items: center; }
+.calc-name { font-weight: 700; font-size: 14px; line-height: 1.2; }
+.calc-name small { display: block; font-size: 12px; font-weight: 600; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.calc-track { height: 30px; border-radius: 9px; background: var(--surface); overflow: hidden; }
+.calc-bar { display: block; height: 100%; width: var(--w, 0%); min-width: 4px; border-radius: 9px; transition: width .3s ease; }
+.calc-bar.now { background: var(--data-none); }
+.calc-bar.better { background: var(--accent); }
+.calc-value { text-align: right; font: 700 22px/1 var(--font-display, var(--font)); font-variant-numeric: tabular-nums; color: var(--ink-2); white-space: nowrap; }
+.calc-value.strong { color: var(--ink); }
+.calc-result .chip { cursor: default; background: var(--surface); font-variant-numeric: tabular-nums; }
+.calc-details > summary { cursor: pointer; font-weight: 700; font-size: 14px; color: var(--accent-deep); list-style-position: inside; padding: 4px 0; }
+.calc-details[open] > summary { margin-bottom: 14px; }
+.calc-details { display: block; }
+.calc-details[open] { display: flex; flex-direction: column; gap: 14px; }
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; counter-reset: step; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 10px 14px; border-radius: var(--radius-sm); background: var(--soft); }
+.steps li::before { content: counter(step); display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--surface); font-weight: 700; font-size: 13px; color: var(--ink-2); }
+.steps b { font-size: 14px; line-height: 1.25; }
+.steps span { font-size: 12px; font-weight: 600; color: var(--ink-3); }
+
+/* Bigger graphs, and the Plenary's minutes */
+.grow { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1.5fr); gap: 12px; align-items: center; }
+.grow svg.viz { border-radius: var(--radius-sm); background: var(--bg); }
+.minutes { display: grid; grid-template-columns: minmax(0, 1.4fr) auto minmax(0, 1fr); gap: 12px; align-items: center; }
+.minutes-voices { display: flex; flex-direction: column; gap: 8px; }
+.minutes-voice { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 4px 10px; align-items: center; padding: 9px 12px; border-radius: 14px 14px 14px 4px; background: var(--bg); margin-left: calc(var(--i) * 14px); }
+.minutes-voice i { grid-row: span 2; width: 26px; height: 26px; border-radius: 50%; background: var(--c); }
+.minutes-voice span { height: 6px; border-radius: 999px; background: var(--line-strong); opacity: .5; }
+.minutes-voice span:last-child { width: 62%; }
+.idea .prose { flex: 1; }
+
+@media (max-width: 1100px) {
+  .idea-body.wide { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  .idea { padding: 18px 16px; }
+  .calc { grid-template-columns: minmax(0, 1fr); }
+  .calc-row { grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; }
+  .calc-track { grid-column: 1 / -1; grid-row: 2; height: 22px; }
+  .distill-arrow svg { transform: rotate(90deg); }
+  .distill { flex-direction: column; }
+  .distill-box { flex: 0 0 auto; }
+  .distill-arrow { flex-direction: row; gap: 6px; }
+  .grow .distill-arrow svg, .minutes .distill-arrow svg { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .calc-bar { transition: none; }
+}

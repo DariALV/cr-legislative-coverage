@@ -1,0 +1,15 @@
+---
+// A formula rendered by KaTeX when the site is built: no JavaScript in the browser.
+import katex from 'katex';
+
+interface Props {
+  tex: string;
+  /** On its own line, centered. */
+  block?: boolean;
+  /** Inline, but with full-size fractions and limits. */
+  display?: boolean;
+}
+const { tex, block = false, display = false } = Astro.props;
+const html = katex.renderToString(display ? `\\displaystyle ${tex}` : tex, { displayMode: block, throwOnError: true });
+---
+<span class:list={['tex', { 'tex-block': block }]} set:html={html} />

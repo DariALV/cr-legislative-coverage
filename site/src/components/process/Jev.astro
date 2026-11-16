@@ -1,0 +1,159 @@
+---
+// Chapter 4: Jev. The four stages, the general statistics (filtered by outlet, with live thresholds) and one
+// folding card per question. The numbers come from jev.json (results/jev/question_stats); the cards' bodies are
+// drawn by the script when they open.
+import '../../styles/process/jev.css';
+import ChapterHead from './ChapterHead.astro';
+import Icon from './Icon.astro';
+import jev from '../../data/process/jev.json';
+import { OPTIONS, OUTLETS, QUESTIONS, STAGES, TOPICS, TYPE_LABELS } from '../../lib/process/jev';
+import { int, jsonForScript, usd } from '../../lib/process/format';
+
+type Stats = { answers: number; requests: number; cost_usd: number };
+const questions = Object.entries(jev.questions).map(([key, question]) => ({
+  key, stage: question.stage, type: question.type, label: QUESTIONS[key], all: question.by_outlet.all as Stats,
+}));
+const stages = STAGES.map((stage, index) => {
+  const own = questions.filter((question) => question.stage === stage.key);
+  return {
+    ...stage, index, questions: own,
+    cost: own.reduce((sum, question) => sum + question.all.cost_usd, 0),
+    requests: own[0]?.all.requests ?? 0,
+    topics: TOPICS.map((topic) => ({ ...topic, questions: own.filter((question) => question.label.topic === topic.key) })).filter((topic) => topic.questions.length > 0),
+  };
+});
+const general = jev.general.all;
+const clientData = {
+  price: jev.price_per_million_tokens, general: jev.general, questions: jev.questions,
+  labels: { questions: QUESTIONS, options: OPTIONS, outlets: OUTLETS, types: TYPE_LABELS },
+};
+---
+<section id="jev" class="chapter">
+  <ChapterHead number={4} kicker="Jev" title="Un modelo que lee cada par y contesta preguntas">
+    <p class="lead">
+      Se usó el modelo Jev 1.14 de TypeSafe (<code>jev-1.14.0</code>) para evaluar los pares. Hay cuatro etapas: el
+      filtro por noticia, la puerta por par noticia–candidato, y el detalle por noticia con match y por par con match.
+    </p>
+  </ChapterHead>
+
+  <ol class="pipeline">
+    {stages.map((stage) => (
+      <li class="card stage reveal" style={`--i:${stage.index}`}>
+        <span class="stage-number">{stage.index + 1}</span>
+        <h3 class="stage-name">{stage.label} <small>{stage.unit}</small></h3>
+        <p class="stage-text">{stage.text}</p>
+        <div class="stage-figures">
+          <span><b>{stage.questions.length}</b>{stage.questions.length === 1 ? 'pregunta' : 'preguntas'}</span>
+          <span><b>{int(stage.requests)}</b>requests</span>
+          <span><b>{usd(stage.cost)}</b>costo</span>
+        </div>
+        <a class="stage-link" href={`#jev-stage-${stage.key}`}>Ver sus preguntas <Icon name="arrowDown" /></a>
+      </li>
+    ))}
+  </ol>
+  <p class="note">
+    Las dos etapas de detalle viajan en la misma request, una por noticia con match. Total: {usd(general.cost_usd.filter)} del filtro +
+    {' '}{usd(general.cost_usd.gate)} de la puerta + {usd(general.cost_usd.details)} del detalle = <strong>{usd(general.cost_usd_total)}</strong>.
+    Solo se cobran los tokens de entrada, a {usd(jev.price_per_million_tokens, 3)} por millón.
+  </p>
+
+  <div class="jev-filter" id="jev-filter">
+    <div class="field">
+      <span>Medio</span>
+      <div class="segmented" role="group" aria-label="Filtrar por medio">
+        {OUTLETS.map((outlet) => (
+          <button type="button" data-value={outlet.key} aria-pressed={outlet.key === 'all' ? 'true' : 'false'}>
+            {outlet.key !== 'all' && <i style={`--c: var(${outlet.color})`}></i>}{outlet.name}
+          </button>
+        ))}
+      </div>
+    </div>
+    <p class="note">Filtra todo el capítulo. Es descriptivo: no alcanza para decir que un medio cubre mejor que otro.</p>
+  </div>
+
+  <h3 class="subhead">Estadísticas generales</h3>
+  <dl class="stats cols-4" id="jev-tiles" aria-live="polite"></dl>
+
+  <div class="grid-2 stretch">
+    <div class="card">
+      <div class="card-head">
+        <h4 class="card-title">Costo por etapa</h4>
+        <span class="card-sub" id="jev-cost-total"></span>
+      </div>
+      <div class="cost-bar" id="jev-cost-bar" role="img" aria-label="Costo de Jev repartido entre filtro, puerta y detalle"></div>
+      <div class="cost-rows" id="jev-cost-rows"></div>
+    </div>
+    <div class="card" id="jev-levels">
+      <div class="card-head">
+        <h4 class="card-title">Expedientes por noticia</h4>
+        <div class="segmented" role="group" aria-label="Nivel del vínculo">
+          <button type="button" data-value="match" aria-pressed="true">Match</button>
+          <button type="button" data-value="mention" aria-pressed="false">Mención</button>
+          <button type="button" data-value="substantive" aria-pressed="false">Sustantiva</button>
+        </div>
+      </div>
+      <p class="note" data-level="help"></p>
+      <dl class="stats cols-4" data-level="tiles"></dl>
+      <div class="dist" data-level="dist" role="img" aria-label="Distribución de expedientes por noticia"></div>
+    </div>
+  </div>
+
+  <div class="card" id="jev-threshold">
+    <div class="card-head">
+      <h4 class="card-title"><Icon name="sliders" />¿Y con otro umbral?</h4>
+      <div class="segmented" role="group" aria-label="Qué umbral mover">
+        <button type="button" data-value="gate" aria-pressed="true">Puerta: certeza del match</button>
+        <button type="button" data-value="filter" aria-pressed="false">Filtro: habla de la Asamblea</button>
+      </div>
+    </div>
+    <div class="threshold">
+      <div class="threshold-control">
+        <label class="range" for="jev-threshold-range">
+          <span data-threshold="label">Umbral</span><output data-threshold="value" for="jev-threshold-range"></output>
+          <input type="range" id="jev-threshold-range" min="0.05" max="0.95" step="0.05" value="0.5" />
+        </label>
+        <div class="threshold-scale" aria-hidden="true"><span>0,05</span><i data-threshold="used"><b></b></i><span>0,95</span></div>
+        <p class="note" data-threshold="help"></p>
+        <button type="button" class="btn" data-threshold="reset"><Icon name="reset" />Volver al umbral usado</button>
+      </div>
+      <div class="threshold-result" aria-live="polite">
+        <dl class="stats cols-3" data-threshold="tiles"></dl>
+        <div class="dist" data-threshold="dist"></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="subhead">Las {questions.length} preguntas</h3>
+  <p class="note">Cada tarjeta se abre: adentro están la pregunta exacta (en inglés, como se le hizo a Jev), sus criterios, la certeza y las respuestas.</p>
+
+  {stages.map((stage) => (
+    <div class="q-stage" id={`jev-stage-${stage.key}`}>
+      <h4 class="q-stage-title"><span class="stage-number">{stage.index + 1}</span>{stage.label} {stage.unit}<small>{stage.questions.length} {stage.questions.length === 1 ? 'pregunta' : 'preguntas'}</small></h4>
+      {stage.topics.map((topic) => (
+        <div class="q-topic">
+          {stage.topics.length > 1 && <h5 class="q-topic-title">{topic.label}</h5>}
+          <div class="q-grid">
+            {topic.questions.map((question) => (
+              <details class="q" data-q={question.key}>
+                <summary>
+                  <span class:list={['q-icon', { badge: !!question.label.badge }]}>
+                    {question.label.badge ? question.label.badge : question.label.icon && <Icon name={question.label.icon} />}
+                  </span>
+                  <span class="q-title">{question.label.short}<small>{TYPE_LABELS[question.type]}</small></span>
+                  <span class="q-stat" data-q-stat></span>
+                  <span class="q-open"><span class="q-open-text">Abrir</span><Icon name="chevron" /></span>
+                </summary>
+                <div class="q-body" data-q-body></div>
+              </details>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  ))}
+</section>
+
+<script type="application/json" id="data-jev" set:html={jsonForScript(clientData)}></script>
+<script>
+  import '../../scripts/process/jev';
+</script>
