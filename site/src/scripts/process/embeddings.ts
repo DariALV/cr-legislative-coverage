@@ -46,7 +46,7 @@ function showResult(): void {
   const config = current();
   const set = (name: string, text: string) => { const element = part(name); if (element) element.textContent = text; };
   set('value', dec(config.recall50, 3));
-  set('ci', `IC 95 %: ${dec(config.low, 3)}–${dec(config.high, 3)}`);
+  set('ci', `IC 95 %: ${dec(config.low, 3)}-${dec(config.high, 3)}`);
   set('rank', `n.º ${rankOf.get(config)} de ${data.configs.length}`);
   set('gap', config === best ? 'la mejor combinación' : `${dec(config.recall50 - best.recall50, 3)} frente a la mejor`);
   part('range')?.setAttribute('style', `left:${position(config.low)}; width:calc(${position(config.high)} - ${position(config.low)})`);
@@ -190,7 +190,7 @@ function drawDiagram(): void {
     text(BOX.x + BOX.w / 2, BOX.y + 36, `${taken} de ${count} ${count === 1 ? 'fragmento' : 'fragmentos'}`, 'dg-sub', 'middle'),
     s('line', { x1: BOX.x + BOX.w / 2, x2: BOX.x + BOX.w / 2, y1: BOX.y + BOX.h + 4, y2: BOX.y + BOX.h + 22, class: 'dg-pick' }),
     text(BOX.x + BOX.w / 2, BOX.y + BOX.h + 62, dec(score), 'dg-score', 'middle'),
-    text(BOX.x + BOX.w / 2, BOX.y + BOX.h + 82, 'puntaje del par noticia–expediente', 'dg-sub', 'middle'));
+    text(BOX.x + BOX.w / 2, BOX.y + BOX.h + 82, 'puntaje del par noticia-expediente', 'dg-sub', 'middle'));
   svg.append(summary);
   diagram.replaceChildren(svg);
 }

@@ -3,6 +3,7 @@
 // views are local pages and are not linked from the public site) and a small graph to play with the forces.
 import '../../styles/process/graphs.css';
 import ChapterHead from './ChapterHead.astro';
+import Ext from './Ext.astro';
 import Icon from './Icon.astro';
 import { THUMBS, THUMB_BOX, type ThumbName } from '../../lib/process/thumbs';
 
@@ -32,16 +33,6 @@ const views: { thumb: ThumbName; title: string; text: string; node: string; link
     node: 'Un expediente con cobertura.', link: 'Aparecen en la misma noticia; el grosor es cuántas veces.',
     color: 'El tema del expediente.',
   },
-  {
-    thumb: 'flow', title: 'Flujo', text: 'De qué medio a qué tema y a qué etapa del trámite va la cobertura.',
-    node: 'Un medio, un tema o una etapa: tres columnas.', link: 'Una banda por cada combinación; el ancho es la cantidad de vínculos.',
-    color: 'La columna elegida.',
-  },
-  {
-    thumb: 'stream', title: 'En el tiempo', text: 'Cuánta cobertura recibe cada tema, semana a semana.',
-    node: 'No hay nodos: cada franja es un tema.', link: 'El alto de la franja es la cantidad de vínculos de esa semana.',
-    color: 'El tema; se puede ver como río, apilado o porcentaje.',
-  },
 ];
 
 const forces = [
@@ -61,8 +52,8 @@ const arrows = [
 <section id="grafos" class="chapter">
   <ChapterHead number={5} kicker="Grafos" title="Ver el corpus como una red">
     <p class="lead">
-      Con los datos cruzados armamos siete vistas para explorarlos: mapas de expedientes, diputados y noticias, y
-      otras cuatro sobre la cobertura. Son páginas locales; aquí va cómo están hechas.
+      Con los datos cruzados armamos cinco vistas para explorarlos: mapas de expedientes, diputados y noticias, y
+      otras dos sobre la cobertura. Son páginas locales; aquí va cómo están hechas.
     </p>
   </ChapterHead>
 
@@ -71,19 +62,19 @@ const arrows = [
     <div class="card stack-step">
       <span class="stack-icon"><Icon name="database" /></span>
       <h4>Datos</h4>
-      <p>La base SQLite del corpus, los embeddings y las respuestas de Jev.</p>
+      <p>La base <Ext id="sqlite">SQLite</Ext> del corpus, los embeddings y las respuestas de Jev.</p>
     </div>
     <div class="card stack-step">
       <span class="stack-icon"><Icon name="code" /></span>
-      <h4>Python arma el grafo</h4>
+      <h4><Ext id="python">Python</Ext> arma el grafo</h4>
       <p>Tres scripts calculan nodos, enlaces y comunidades, y los dejan en archivos que el navegador carga.</p>
-      <div class="chips"><span class="chip">build_graph.py</span><span class="chip">build_deputies.py</span><span class="chip">build_news.py</span><span class="chip">networkx</span><span class="chip">numpy</span></div>
+      <div class="chips"><span class="chip">build_graph.py</span><span class="chip">build_deputies.py</span><span class="chip">build_news.py</span><Ext id="networkx" chip>networkx</Ext><Ext id="numpy" chip>numpy</Ext></div>
     </div>
     <div class="card stack-step">
       <span class="stack-icon"><Icon name="graph" /></span>
       <h4>JavaScript lo dibuja</h4>
-      <p>Un motor propio mueve los nodos con d3-force y los pinta en un canvas. En el modo «Obsidian» la física corre en un Web Worker.</p>
-      <div class="chips"><span class="chip">engine.js</span><span class="chip">d3-force</span><span class="chip">canvas</span><span class="chip">Web Worker</span></div>
+      <p>Un motor propio mueve los nodos con <Ext id="d3">d3-force</Ext> y los pinta en un <Ext id="webApis">canvas</Ext>. En el modo «<Ext id="obsidian">Obsidian</Ext>» la física corre en un <Ext id="webApis" href="https://developer.mozilla.org/es/docs/Web/API/Web_Workers_API">Web Worker</Ext>.</p>
+      <div class="chips"><span class="chip">engine.js</span><Ext id="d3" chip>d3-force</Ext><Ext id="webApis" chip>canvas</Ext><Ext id="webApis" href="https://developer.mozilla.org/es/docs/Web/API/Web_Workers_API" chip>Web Worker</Ext></div>
     </div>
   </div>
 
@@ -134,7 +125,7 @@ const arrows = [
         ))}
         <div class="lab-arrows" aria-live="off">
           {arrows.map((arrow) => (
-            <span><i class="swatch line" style={`--c: var(${arrow.color})`}></i>{arrow.label}<b data-arrow={arrow.key}>—</b></span>
+            <span><i class="swatch line" style={`--c: var(${arrow.color})`}></i>{arrow.label}<b data-arrow={arrow.key}>-</b></span>
           ))}
         </div>
         <div class="lab-buttons">
@@ -152,7 +143,7 @@ const arrows = [
       </p>
       <p>
         El modelo <strong>propio</strong> solo repele entre vecinos cercanos y limita el tirón de los enlaces largos, para
-        aguantar miles de nodos. El modelo <strong>Obsidian</strong> imita la vista de grafo de esa aplicación: todos los
+        aguantar miles de nodos. El modelo <strong>Obsidian</strong> imita la vista de grafo de <Ext id="obsidian">esa aplicación</Ext>: todos los
         nodos se repelen entre sí, lo que abre más los grupos.
       </p>
     </div>

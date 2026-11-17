@@ -48,6 +48,10 @@ a.brand { border-radius: var(--radius-sm); }
 .stat dd small { font-size: 13px; font-weight: 700; color: var(--t-label, var(--ink-2)); margin-left: 4px; }
 .stat .stat-foot { display: block; font-size: 12.5px; font-weight: 600; color: var(--t-label, var(--ink-2)); margin-top: 2px; line-height: 1.35; }
 .scroll-x { overflow-x: auto; scrollbar-width: thin; }
+/* Texts that change with a control: all stacked in one cell, only one visible (core.ts stackedText) */
+.stack { display: grid; }
+.stack > [data-key] { grid-area: 1 / 1; visibility: hidden; }
+.stack > .on { visibility: visible; }
 
 /* Draft marker: text written by Claude that the author has not reviewed yet. */
 .draft {
@@ -209,11 +213,18 @@ table.data code { white-space: nowrap; }
 /* Links inside running text */
 .inline-link { color: var(--accent-deep); font-weight: 700; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
 .inline-link:hover { text-decoration-thickness: 2px; }
+/* Links to external works (lib/process/externals.ts): new tab, dotted underline */
+.ext-link { color: inherit; font-weight: inherit; text-decoration: underline dotted; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.ext-link:hover { color: var(--accent-deep); text-decoration-style: solid; }
+code .ext-link, .ext-link code { color: inherit; }
+a.chip.ext-chip { gap: 6px; }
+a.chip.ext-chip:hover { border-color: var(--accent); color: var(--accent-deep); }
+.ext-chip svg.ext-icon { width: 12px; height: 12px; opacity: .6; }
 
-/* Phones: the seven chapter icons fit in one row, without the current one's label */
+/* Phones: the eight chapter icons fit in one row, without the current one's label */
 @media (max-width: 560px) {
-  .nav { gap: 1px; }
-  .nav .nav-item { padding: 8px; }
+  .nav { gap: 0; }
+  .nav .nav-item { padding: 7px 5px; }
   .nav .nav-item[aria-current="page"] .label { display: none; }
   .side, :root[data-side="compact"] .side { padding: 6px 10px; gap: 4px 6px; }
 }

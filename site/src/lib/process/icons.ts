@@ -17,6 +17,8 @@ export const ICONS = {
   arrowDown: '<path d="M12 5v14M6 13l6 6 6-6"/>',
   pencil: '<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="m13.5 6.5 4 4"/>',
   info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/>',
+  external: '<path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+  library: '<path d="M4 4h4v16H4zM10 4h4v16h-4z"/><path d="m16 5 3.8-1 3.2 15.5-3.8 1z"/>',
   play: '<path d="M7 5v14l12-7z"/>',
   pause: '<path d="M8 5v14M16 5v14"/>',
   stepForward: '<path d="M6 5v14l9-7zM18 5v14"/>',

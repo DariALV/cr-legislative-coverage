@@ -4,6 +4,7 @@
 // drawn by the script when they open.
 import '../../styles/process/jev.css';
 import ChapterHead from './ChapterHead.astro';
+import Ext from './Ext.astro';
 import Icon from './Icon.astro';
 import jev from '../../data/process/jev.json';
 import { OPTIONS, OUTLETS, QUESTIONS, STAGES, TOPICS, TYPE_LABELS } from '../../lib/process/jev';
@@ -33,8 +34,8 @@ const clientData = {
 <section id="jev" class="chapter">
   <ChapterHead number={4} kicker="Jev" title="Un modelo que lee cada par y contesta preguntas">
     <p class="lead">
-      Se usó el modelo Jev 1.14 de TypeSafe (<code>jev-1.14.0</code>) para evaluar los pares. Hay cuatro etapas: el
-      filtro por noticia, la puerta por par noticia–candidato, y el detalle por noticia con match y por par con match.
+      Se usó el modelo <Ext id="jev">Jev 1.14 de TypeSafe</Ext> (<code>jev-1.14.0</code>) para evaluar los pares. Hay cuatro etapas: el
+      filtro por noticia, la puerta por par noticia-candidato, y el detalle por noticia con match y por par con match.
     </p>
   </ChapterHead>
 
@@ -91,7 +92,7 @@ const clientData = {
     <div class="card-head">
       <h4 class="card-title"><Icon name="sliders" />¿Y con otro umbral?</h4>
       <div class="segmented" role="group" aria-label="Qué umbral mover">
-        <button type="button" data-value="gate" aria-pressed="true">Puerta: certeza del match</button>
+        <button type="button" data-value="gate" aria-pressed="true">Puerta: probabilidad del match</button>
         <button type="button" data-value="filter" aria-pressed="false">Filtro: habla de la Asamblea</button>
       </div>
     </div>
@@ -106,14 +107,20 @@ const clientData = {
         <button type="button" class="btn" data-threshold="reset"><Icon name="reset" />Volver al umbral usado</button>
       </div>
       <div class="threshold-result" aria-live="polite">
-        <dl class="stats cols-3" data-threshold="tiles"></dl>
-        <div class="dist" data-threshold="dist"></div>
+        <div class="stack">
+          <dl class="stats cols-3" data-key="gate" data-threshold="tiles-gate"></dl>
+          <dl class="stats cols-3" data-key="filter" data-threshold="tiles-filter"></dl>
+        </div>
+        <div class="dist-stack">
+          <div class="dist" data-threshold="dist"></div>
+          <div class="hist" data-threshold="pdist" role="img" aria-label="Noticias según la probabilidad de que hablen de la Asamblea; en color, las que pasan el umbral"></div>
+        </div>
       </div>
     </div>
   </div>
 
   <h3 class="subhead">Las {questions.length} preguntas</h3>
-  <p class="note">Cada tarjeta se abre: adentro están la pregunta exacta (en inglés, como se le hizo a Jev), sus criterios, la certeza y las respuestas.</p>
+  <p class="note">Cada tarjeta se abre: adentro están la pregunta exacta (en inglés, como se le hizo a Jev), sus criterios, las respuestas, cómo se distribuyen y su certeza.</p>
 
   {stages.map((stage) => (
     <div class="q-stage" id={`jev-stage-${stage.key}`}>

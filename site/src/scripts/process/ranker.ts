@@ -1,7 +1,7 @@
 // Chapter 3: the jump over the baseline (metric selector) and the two charts of the evolved ranker.
 import './tips';
 import { axis, base, mount } from './charts';
-import { color, readData, segmented } from './core';
+import { color, readData, segmented, stackedText } from './core';
 import { dec } from '../../lib/process/format';
 
 interface Metric { key: string; label: string; help: string; baseline: number; evolved: number }
@@ -20,8 +20,12 @@ function showJump(key: string): void {
   const set = (name: string, text: string) => { const element = piece(name); if (element) element.textContent = text; };
   set('base', dec(metric.baseline));
   set('evolved', dec(metric.evolved));
-  set('delta', `+${dec((metric.evolved - metric.baseline) * 100, 0)}`);
-  set('help', metric.help);
+  jump?.querySelectorAll<HTMLElement>('[data-jump="compare"] > [data-key]').forEach((element) => {
+    const on = element.dataset.key === metric.key;
+    element.classList.toggle('on', on);
+    element.setAttribute('aria-hidden', String(!on));
+  });
+  stackedText(piece('help'), Object.fromEntries(data.jump.map((item) => [item.key, item.help])), metric.key);
   piece('base-bar')?.style.setProperty('--w', `${metric.baseline * 100}%`);
   piece('evolved-bar')?.style.setProperty('--w', `${metric.evolved * 100}%`);
 }

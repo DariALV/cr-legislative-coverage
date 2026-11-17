@@ -9,6 +9,7 @@ import Ranker from '../components/process/Ranker.astro';
 import Jev from '../components/process/Jev.astro';
 import Graphs from '../components/process/Graphs.astro';
 import Future from '../components/process/Future.astro';
+import Credits from '../components/process/Credits.astro';
 import type { IconName } from '../lib/process/icons';
 
 const chapters: { id: string; label: string; title: string; icon: IconName }[] = [
@@ -19,11 +20,12 @@ const chapters: { id: string; label: string; title: string; icon: IconName }[] =
   { id: 'jev', label: 'Jev', title: 'Jev: el evaluador', icon: 'checklist' },
   { id: 'grafos', label: 'Grafos', title: 'Visualización con grafos', icon: 'graph' },
   { id: 'futuro', label: 'A futuro', title: 'Trabajo a futuro', icon: 'flag' },
+  { id: 'creditos', label: 'Externos', title: 'Herramientas y fuentes externas', icon: 'library' },
 ];
 ---
 <ProcessLayout
   title="Proceso"
-  description="Cómo se desarrolló el proyecto: scrapers, embeddings, algoritmo evolutivo, Jev, grafos y trabajo a futuro."
+  description="Cómo se desarrolló el proyecto: scrapers, embeddings, algoritmo evolutivo, Jev, grafos, trabajo a futuro y las herramientas externas que usó."
   chapters={chapters}
 >
   <Hero />
@@ -33,4 +35,5 @@ const chapters: { id: string; label: string; title: string; icon: IconName }[] =
   <Jev />
   <Graphs />
   <Future />
+  <Credits />
 </ProcessLayout>

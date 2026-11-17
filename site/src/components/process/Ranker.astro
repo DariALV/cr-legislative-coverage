@@ -4,10 +4,11 @@
 // embeddings-only baseline. The network is a static SVG colored with the theme's tokens.
 import '../../styles/process/ranker.css';
 import ChapterHead from './ChapterHead.astro';
+import Ext from './Ext.astro';
 import Icon from './Icon.astro';
 import Tex from './Tex.astro';
 import ranker from '../../data/process/ranker.json';
-import { FEATURES, FITNESS_FORMULA, GROUPS, KNOBS, SCORE_FORMULA, STANDARD_FORMULA } from '../../lib/process/ranker';
+import { FEATURES, FITNESS_FORMULA, FITNESS_NOTATION, GROUPS, KNOBS, NOTATION, SCORE_FORMULA, STANDARD_FORMULA } from '../../lib/process/ranker';
 import { dec, int, jsonForScript, signed } from '../../lib/process/format';
 
 const settings = ranker.settings;
@@ -65,18 +66,36 @@ const activeCount = inputs.filter((input) => input.active).length;
 const cv = ranker.cross_validation;
 const metrics = [
   { key: 'news_recall@50', label: 'Recall por noticia', help: 'Promedio, por noticia, de la parte de sus expedientes que entra en el top 50.' },
-  { key: 'bill_coverage@50', label: 'Cobertura de expedientes', help: 'Expedientes del oro que entran en el top 50 de al menos una de sus noticias.' },
-  { key: 'link_recall@50', label: 'Vínculos', help: 'Vínculos noticia–expediente del oro que quedan dentro del top 50.' },
+  { key: 'bill_coverage@50', label: 'Cobertura de expedientes', help: 'Expedientes del dataset que entran en el top 50 de al menos una de sus noticias.' },
+  { key: 'link_recall@50', label: 'Vínculos', help: 'Vínculos noticia-expediente del dataset que quedan dentro del top 50.' },
 ] as const;
 const jump = metrics.map((metric) => ({ ...metric, baseline: cv.baseline[metric.key], evolved: cv.evolved[metric.key] }));
 const trainedOn = ranker.n_news - ranker.excluded_news;
-const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 50, settings, weightRange: ranker.weight_range };
+const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 50, settings, weightRange: ranker.weight_range, nGenes: ranker.n_genes };
+// The jump told as in the embeddings chapter («1 de cada 5»): how many are left out of the top 50, with the same
+// figure. The row of bills has as many as the evolved ranker needs to lose one, so both rows share it.
+const UNITS: Record<string, string> = {
+  'news_recall@50': 'expedientes de cada noticia', 'bill_coverage@50': 'expedientes del dataset', 'link_recall@50': 'vínculos',
+};
+const compare = jump.map((metric) => {
+  const missBase = 1 - metric.baseline, missEvolved = 1 - metric.evolved;
+  const total = Math.max(2, Math.round(1 / missEvolved));
+  return {
+    key: metric.key, unit: UNITS[metric.key], total, times: missBase / missEvolved,
+    rows: [
+      { name: 'Solo embeddings', every: Math.round(1 / missBase), out: Math.max(1, Math.round(total * missBase)) },
+      { name: 'Ranker evolucionado', every: total, out: 1 },
+    ],
+  };
+});
+// The five folds of the cross-validation, drawn as five runs over five parts of the news.
+const foldRows = Array.from({ length: ranker.n_folds }, (_, run) => run);
 ---
 <section id="ranker" class="chapter">
   <ChapterHead number={3} kicker="Algoritmo evolutivo" title="Un ranker que evoluciona para pasar de 0,8">
     <p class="lead">
       Usamos un algoritmo evolutivo para subir el ranking por encima de 0,8. Cada individuo es un evaluador: recibe
-      un par noticia–expediente y le da un puntaje; los 50 expedientes con mayor puntaje son los candidatos de esa
+      un par noticia-expediente y le da un puntaje; los 50 expedientes con mayor puntaje son los candidatos de esa
       noticia.
     </p>
   </ChapterHead>
@@ -85,45 +104,45 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
     <div class="stat sky"><dt>Población</dt><dd>{settings.population_size}</dd><span class="stat-foot">evaluadores por generación</span></div>
     <div class="stat lavender"><dt>Genes por evaluador</dt><dd>{ranker.n_genes}</dd><span class="stat-foot">13 pesos, 13 interruptores y 3 perillas</span></div>
     <div class="stat peach"><dt>Generaciones</dt><dd>{settings.max_generations} <small>máx.</small></dd><span class="stat-foot">se detiene si en {settings.patience} no mejora</span></div>
-    <div class="stat mint"><dt>Validación cruzada</dt><dd>{ranker.n_folds} <small>folds</small></dd><span class="stat-foot">{int(trainedOn)} noticias del oro de Delfino</span></div>
+    <div class="stat mint"><dt>Validación cruzada</dt><dd>{ranker.n_folds} <small>folds</small></dd><span class="stat-foot">{int(trainedOn)} noticias del dataset · <a class="inline-link" href="#folds">¿qué es un fold?</a></span></div>
   </dl>
 
   <!-- Tournament -->
   <h3 class="subhead">Una generación, paso a paso</h3>
-  <div class="grid-wide">
-    <div class="card tournament" id="tournament">
-      <div class="card-head">
-        <h4 class="card-title">Evolución por torneo</h4>
-        <span class="chip" title="Los individuos y su fitness son simulados; los operadores y sus parámetros son los de la corrida real">Ilustrativo</span>
-      </div>
-      <div class="tour-body">
-        <div class="tour-population">
-          <div class="tour-grid" data-tour="grid" role="img" aria-label="Población de 50 evaluadores; el color indica el fitness"></div>
-          <div class="legend">
-            <span><i class="tour-key elite"></i>Élite</span>
-            <span><i class="tour-key immigrant"></i>Inmigrante</span>
-            <span><i class="tour-key child"></i>Hijo</span>
-            <span><i class="tour-scale"></i>menor a mayor fitness</span>
-          </div>
-        </div>
-        <div class="tour-stage">
-          <div class="tour-step">
-            <span class="tour-count" data-tour="count"></span>
-            <h5 data-tour="title"></h5>
-            <p data-tour="text"></p>
-          </div>
-          <div class="tour-detail" data-tour="detail"></div>
-        </div>
-      </div>
-      <div class="tour-controls">
-        <button type="button" class="btn" data-tour="back"><Icon name="stepBack" />Anterior</button>
-        <button type="button" class="btn primary" data-tour="next">Siguiente<Icon name="stepForward" /></button>
-        <button type="button" class="btn" data-tour="play" aria-pressed="false"><Icon name="play" /><span>Reproducir</span></button>
-        <button type="button" class="btn" data-tour="reset"><Icon name="reset" />Reiniciar</button>
-        <span class="tour-generation">Generación <b data-tour="generation">0</b> · mejor fitness <b data-tour="best">—</b></span>
-      </div>
+  <div class="card tournament" id="tournament">
+    <div class="card-head">
+      <h4 class="card-title">Evolución por torneo</h4>
+      <span class="chip" title="Los individuos y su fitness son simulados; los operadores y sus parámetros son los de la corrida real">Ilustrativo</span>
     </div>
+    <div class="tour-stage-wrap">
+      <svg class="tour-stage" data-tour="stage" viewBox="0 0 1000 712" role="img" aria-label="Población de evaluadores dibujados como robots"></svg>
+    </div>
+    <div class="tour-controls">
+      <button type="button" class="btn" data-tour="back"><Icon name="stepBack" />Anterior</button>
+      <button type="button" class="btn primary" data-tour="next">Siguiente<Icon name="stepForward" /></button>
+      <button type="button" class="btn tour-play" data-tour="play" aria-pressed="false"><Icon name="play" /><span>Reproducir</span></button>
+      <button type="button" class="btn" data-tour="reset"><Icon name="reset" />Reiniciar</button>
+      <label class="tour-speed" title="Desde ×3, cada cuadro es una generación entera">
+        <span>Velocidad</span>
+        <input type="range" min="1" max="10" step="1" value="1" data-tour="speed" aria-label="Velocidad de la reproducción" />
+        <output data-tour="speed-value">×1</output>
+      </label>
+      <span class="tour-generation">
+        <svg class="tour-spark" data-tour="spark" viewBox="-3 -2 126 28" aria-hidden="true"></svg>
+        Generación <b data-tour="generation">0</b> · mejor fitness <b data-tour="best">-</b>
+      </span>
+    </div>
+    <div class="tour-panels" data-tour="panels" aria-live="polite"></div>
+    <div class="legend tour-legend">
+      <span><i class="tour-gene-scale"></i>Color: un gen, de rojo a azul</span>
+      <span><i class="swatch round" style="--c: var(--robot-gold)"></i>Élite: los {settings.elites} mejores, pasan intactos</span>
+      <span><i class="swatch round" style="--c: var(--robot-green)"></i>Inmigrante: genes al azar</span>
+      <span><i class="tour-screen-key">0,6</i>Pantalla: su fitness</span>
+    </div>
+  </div>
+  <div class="grid-2">
     <div class="card">
+      <h4 class="card-title">Los operadores de la corrida real</h4>
       <div class="prose">
         <p>
           Cada generación tiene <strong>{settings.population_size} evaluadores</strong>. Para elegir a un padre se sacan{' '}
@@ -138,18 +157,20 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
           rango) y un {dec(settings.reset_rate * 100, 0)} % se reinicia al azar.
         </p>
         <p>
-          Los <strong>{settings.elites} mejores pasan intactos</strong> y entran {immigrants} inmigrantes al azar
+          Los <strong>{settings.elites} mejores pasan intactos</strong> (los élite) y entran {immigrants} inmigrantes al azar
           ({dec(settings.immigrant_rate * 100, 0)} %), para no perder variedad. Los otros {children} son hijos.
         </p>
       </div>
+    </div>
+    <div class="card">
       <div class="formula">
         <div class="formula-name">Fitness de un evaluador</div>
         <Tex tex={FITNESS_FORMULA} block />
-        <div class="formula-meta">
-          Cobertura@K: parte de los expedientes del oro que quedan entre los K primeros de alguna de sus noticias
-          (se entrenó con K = {ranker.k}). El segundo término solo desempata: <Tex tex="r" /> es el mejor rango de cada expediente.
-        </div>
       </div>
+      <dl class="notation">
+        {FITNESS_NOTATION.map((item) => <><dt><Tex tex={item.tex} /></dt><dd>{item.text.replace('{k}', String(ranker.k))}</dd></>)}
+      </dl>
+      <p class="note">El segundo término solo desempata: entre dos evaluadores con la misma cobertura, gana el que deja a los expedientes que faltan más cerca del top K.</p>
     </div>
   </div>
 
@@ -158,9 +179,35 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
   <div class="prose">
     <p>
       Es el que generó los candidatos que vio Jev. Se entrenó con validación cruzada de {ranker.n_folds} folds sobre{' '}
-      {int(trainedOn)} noticias del oro de Delfino (se excluyeron {ranker.excluded_news} noticias-agenda con más de{' '}
-      {ranker.max_links_per_news} vínculos), y la receta final se reentrenó con todas.
+      {int(trainedOn)} noticias del <a class="inline-link" href="#delfino-dataset">dataset de Delfino</a> (se excluyeron{' '}
+      {ranker.excluded_news} noticias-agenda con más de {ranker.max_links_per_news} vínculos), y la receta final se
+      reentrenó con todas.
     </p>
+  </div>
+  <div class="card folds" id="folds">
+    <h4 class="card-title">¿Qué es un fold?</h4>
+    <div class="folds-body">
+      <div class="fold-grid" role="img" aria-label={`${ranker.n_folds} corridas sobre las mismas noticias partidas en ${ranker.n_folds} partes: en cada corrida una parte distinta queda afuera para medir`}>
+        {foldRows.map((run) => (
+          <div class="fold-row">
+            <span class="fold-run">Corrida {run + 1}</span>
+            {foldRows.map((piece) => <span class:list={['fold-piece', { test: piece === run }]}>{piece === run ? 'mide' : 'entrena'}</span>)}
+          </div>
+        ))}
+      </div>
+      <div class="prose">
+        <p>
+          Un <strong>fold</strong> es una de las {ranker.n_folds} partes iguales en que partimos las {int(trainedOn)} noticias del
+          dataset. En cada corrida el algoritmo evoluciona con {ranker.n_folds - 1} partes y la receta que gana se mide con la parte que
+          quedó afuera: noticias que nunca vio.
+        </p>
+        <p>
+          Así cada noticia se usa una vez para medir, y las cifras de validación cruzada son el promedio de las{' '}
+          {ranker.n_folds} mediciones. Si las {ranker.n_folds} recetas se parecen, el resultado no depende de qué noticias
+          tocaron para entrenar: el anillo de cada entrada en la red de abajo muestra cuánto coinciden.
+        </p>
+      </div>
+    </div>
   </div>
   <div class="card">
     <div class="card-head">
@@ -280,28 +327,29 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
           <tr>
             <td><span class="pill st-progress">Salida</span></td>
             <td><code>score</code></td>
-            <td>Puntaje del par noticia–expediente. Los 50 más altos de cada noticia son sus candidatos.</td>
-            <td class="num">—</td>
-            <td>—</td>
-            <td>—</td>
+            <td>Puntaje del par noticia-expediente. Los 50 más altos de cada noticia son sus candidatos.</td>
+            <td class="num">-</td>
+            <td>-</td>
+            <td>-</td>
             <td class="net-formula"><Tex tex={SCORE_FORMULA} /></td>
           </tr>
         </tbody>
       </table>
     </div>
+    <h5 class="notation-title">Notación</h5>
+    <dl class="notation cols">
+      {NOTATION.map((item) => <><dt><Tex tex={item.tex} /></dt><dd>{item.text.replace('{background}', int(ranker.background_news))}{item.link && <> (<Ext id={item.link} />)</>}</dd></>)}
+    </dl>
     <p class="note">
-      Notación: <Tex tex={String.raw`\mathbf{n}_f`} /> es el vector del fragmento <Tex tex="f" /> de la noticia y <Tex tex={String.raw`\mathbf{e}`} /> el del{' '}
-      expediente; <Tex tex={String.raw`\mu_b, \sigma_b`} /> son la media y la desviación de esa similitud para el expediente{' '}
-      <Tex tex="b" /> en {int(ranker.background_news)} noticias de fondo; <Tex tex="t" /> es la fecha de la noticia;{' '}
-      <Tex tex="a" />, <Tex tex="p" /> y <Tex tex="h" /> son las tres perillas. En «Folds», cada punto es un fold: verde si
-      la entrada quedó activa con peso positivo, rojo si negativo, gris si quedó desactivada.
+      En «Folds», cada punto es un <a class="inline-link" href="#folds">fold</a>: verde si la entrada quedó activa con peso
+      positivo, rojo si negativo, gris si quedó desactivada.
     </p>
   </div>
 
   <!-- The jump -->
   <div class="card jump" id="ranker-jump">
     <div class="card-head">
-      <h4 class="card-title">El salto, con la misma métrica y las mismas noticias</h4>
+      <h4 class="card-title">El salto de ranker con embeddings a ranker evolucionado</h4>
       <div class="segmented" role="group" aria-label="Métrica">
         {jump.map((metric, index) => <button type="button" data-value={metric.key} aria-pressed={index === 0 ? 'true' : 'false'}>{metric.label}</button>)}
       </div>
@@ -319,13 +367,30 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
           <div class="jump-value strong" data-jump="evolved">{dec(jump[0].evolved)}</div>
         </div>
       </div>
-      <div class="jump-delta">
-        <Icon name="evolution" />
-        <b data-jump="delta">+{dec((jump[0].evolved - jump[0].baseline) * 100, 0)}</b>
-        <span>puntos @50</span>
-      </div>
     </div>
     <p class="note" data-jump="help">{jump[0].help}</p>
+    <div class="stack jump-compare" data-jump="compare">
+      {compare.map((item, index) => (
+        <div data-key={item.key} class:list={[{ on: index === 0 }]} aria-hidden={index === 0 ? 'false' : 'true'}>
+          {item.rows.map((row) => (
+            <div class="lose-row">
+              <div class="lose-name">{row.name}<b>1 de cada {row.every}</b><small>queda fuera del top 50</small></div>
+              <div class="lose-figure" role="img" aria-label={`${row.name}: de cada ${item.total} ${item.unit}, ${row.out} quedan fuera del top 50`}>
+                <div class="miss-box lose-box">
+                  <span class="miss-tag">Top 50</span>
+                  {Array.from({ length: item.total - row.out }, () => <span class="lose-bill"><Icon name="bill" /></span>)}
+                </div>
+                <div class="lose-out">{Array.from({ length: row.out }, () => <span class="lose-bill"><Icon name="bill" /></span>)}</div>
+              </div>
+            </div>
+          ))}
+          <p class="lose-times">
+            Se pierden <strong>{dec(item.times, 1)} veces menos</strong> {item.unit}: de 1 de cada {item.rows[0].every} a 1 de
+            cada {item.rows[1].every}. Las figuras muestran {item.total} {item.unit}, redondeado.
+          </p>
+        </div>
+      ))}
+    </div>
     <p class="note">
       Medido en validación cruzada sobre {int(trainedOn)} noticias: cada fold se evalúa con noticias que su receta no
       vio. El 0,80 del capítulo anterior es sobre las {int(ranker.n_news)} noticias; sin las {ranker.excluded_news}{' '}
@@ -348,7 +413,7 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
     <div class="card">
       <div class="card-head">
         <h4 class="card-title">Cobertura según K</h4>
-        <span class="card-sub">expedientes del oro dentro del top K</span>
+        <span class="card-sub">expedientes del dataset dentro del top K</span>
       </div>
       <div class="chart" id="ranker-ksweep" role="img" aria-label="Líneas: cobertura de expedientes según K, para el ranker evolucionado y para la base de embeddings"></div>
       <div class="legend">
@@ -384,7 +449,7 @@ const clientData = { jump, history: ranker.history, kSweep: ranker.k_sweep, k: 5
         <strong>{knob.info.label}: {knob.text} {knob.info.unit}</strong>
         <code>{knob.name}</code>
         <p>{knob.info.meaning}</p>
-        <div class="tip-row"><span>Rango</span><b>{knob.range[0]}–{int(knob.range[1])}{knob.info.log ? ' (escala log)' : ''}</b></div>
+        <div class="tip-row"><span>Rango</span><b>{knob.range[0]}-{int(knob.range[1])}{knob.info.log ? ' (escala log)' : ''}</b></div>
         <div class="tip-row"><span>Por fold</span><b>{knob.folds.join(' · ')}</b></div>
       </div>
     ))}

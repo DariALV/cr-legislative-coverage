@@ -48,6 +48,8 @@
 .calc-value { text-align: right; font: 700 22px/1 var(--font-display, var(--font)); font-variant-numeric: tabular-nums; color: var(--ink-2); white-space: nowrap; }
 .calc-value.strong { color: var(--ink); }
 .calc-result .chip { cursor: default; background: var(--surface); font-variant-numeric: tabular-nums; }
+/* One chip per line, so a longer text never wraps the row and moves the card */
+.calc-result .chips { flex-direction: column; align-items: flex-start; }
 .calc-details > summary { cursor: pointer; font-weight: 700; font-size: 14px; color: var(--accent-deep); list-style-position: inside; padding: 4px 0; }
 .calc-details[open] > summary { margin-bottom: 14px; }
 .calc-details { display: block; }

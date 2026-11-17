@@ -125,4 +125,35 @@ export const SCORE_FORMULA = String.raw`s(n, b) = \sum_{i \,\in\, \text{activas}
 /** Standardization of the continuous fixed features (mean and deviation over all pairs). */
 export const STANDARD_FORMULA = String.raw`\tilde{x}_i = \frac{x_i - \bar{x}_i}{s_i}`;
 /** Fitness of an individual on a training fold (TIE_BREAK = 0.001 in ranking_problem.py). */
-export const FITNESS_FORMULA = String.raw`\text{fitness} = \text{cobertura@}K \;+\; 0{,}001 \cdot \overline{\left(\tfrac{K}{K + r}\right)}`;
+export const FITNESS_FORMULA = String.raw`\begin{aligned} \text{fitness} &= \text{cobertura@}K \\ &\quad +\; 0{,}001 \cdot \frac{1}{|B|} \sum_{b \in B} \frac{K}{K + r_b} \end{aligned}`;
+
+/** What each symbol of the fitness formula is. {k} is replaced by the K of the run. */
+export const FITNESS_NOTATION: { tex: string; text: string }[] = [
+  { tex: String.raw`B`, text: 'Expedientes del dataset que tienen al menos una noticia en el fold de entrenamiento.' },
+  { tex: String.raw`\text{cobertura@}K`, text: 'Parte de los expedientes de B que quedan entre los K primeros de alguna de sus noticias.' },
+  { tex: String.raw`K`, text: 'Candidatos por noticia: se entrenó con K = {k} y el corpus usó 50.' },
+  { tex: String.raw`r_b`, text: 'Mejor rango del expediente b entre sus noticias (1 es el primer lugar).' },
+];
+
+/** What each symbol of the inputs' formulas is. {background} is replaced by the count of background news. */
+export const NOTATION: { tex: string; text: string; link?: 'bm25' }[] = [
+  { tex: String.raw`n,\ b`, text: 'La noticia y el expediente del par.' },
+  { tex: String.raw`f,\ F`, text: 'Un fragmento de la noticia y la cantidad de fragmentos.' },
+  { tex: String.raw`\mathbf{n}_f`, text: 'Vector (embedding) del fragmento f de la noticia.' },
+  { tex: String.raw`\mathbf{e}_{\text{exposición}},\ \mathbf{e}_{\text{materias}},\ \mathbf{e}_{\text{nombre}}`, text: 'Vector del expediente con el nombre más la exposición de motivos, con el nombre más las materias, y con el nombre solo.' },
+  { tex: String.raw`\cos(\cdot,\ \cdot)`, text: 'Similitud coseno entre dos vectores: 1 si apuntan igual, 0 si no tienen nada en común.' },
+  { tex: String.raw`c_{\text{exposición}},\ c_{\text{materias}}`, text: 'La mejor similitud coseno entre un fragmento y ese texto del expediente.' },
+  { tex: String.raw`\mu_b,\ \sigma_b`, text: 'Media y desviación de esa similitud para el expediente b en {background} noticias de fondo.' },
+  { tex: String.raw`\mathrm{BM25}(\cdot,\ \cdot)`, text: 'Puntaje de palabras en común entre la noticia y el nombre más las materias', link: 'bm25' },
+  { tex: String.raw`t`, text: 'Fecha de la noticia.' },
+  { tex: String.raw`t_{\text{presentado}}`, text: 'Fecha en que se presentó el expediente.' },
+  { tex: String.raw`t_{\text{archivo o ley}}`, text: 'Fecha en que el expediente se archivó o se publicó como ley.' },
+  { tex: String.raw`d_{\text{mov}}`, text: 'Días entre la noticia y el movimiento del expediente en el SIL más cercano a ella.' },
+  { tex: String.raw`m`, text: 'Cantidad de movimientos del expediente en el SIL dentro de la ventana [t − a, t + p].' },
+  { tex: String.raw`a,\ p`, text: 'Días antes y después de la noticia que cubre esa ventana (dos perillas).' },
+  { tex: String.raw`h`, text: 'Vida media, en días, del decaimiento por antigüedad (la tercera perilla).' },
+  { tex: String.raw`\mathbf{1}[\,\cdot\,]`, text: 'Vale 1 si la condición se cumple y 0 si no.' },
+  { tex: String.raw`w_i`, text: 'Peso de la entrada i, entre −5 y 5.' },
+  { tex: String.raw`\tilde{x}_i`, text: 'La entrada i estandarizada; las de 0 o 1 y las que dependen de las perillas entran tal cual.' },
+  { tex: String.raw`\bar{x}_i,\ s_i`, text: 'Media y desviación de la entrada i sobre todos los pares.' },
+];

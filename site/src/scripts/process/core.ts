@@ -118,6 +118,22 @@ export function segmented(group: Element, onChange: (value: string) => void): (v
   return set;
 }
 
+/** Shows one of several texts in place while keeping the room of the longest, so nothing below moves when the
+ * text changes. The texts are written once; later calls only switch which one is visible. */
+export function stackedText(element: HTMLElement | null | undefined, texts: Record<string, string>, active: string): void {
+  if (!element) return;
+  if (element.dataset.stacked !== Object.keys(texts).join('|')) {
+    element.classList.add('stack');
+    element.replaceChildren(...Object.entries(texts).map(([key, text]) => h('span', { 'data-key': key }, text)));
+    element.dataset.stacked = Object.keys(texts).join('|');
+  }
+  element.querySelectorAll<HTMLElement>(':scope > [data-key]').forEach((span) => {
+    const on = span.dataset.key === active;
+    span.classList.toggle('on', on);
+    span.setAttribute('aria-hidden', String(!on));
+  });
+}
+
 /** Counts a number up to its final value inside the element (no animation with reduced motion). */
 export function countUp(element: HTMLElement, target: number, format: (n: number) => string, duration = 900): void {
   if (reducedMotion()) { element.textContent = format(target); return; }

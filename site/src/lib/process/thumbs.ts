@@ -80,57 +80,6 @@ function comentions(): string {
   return links.join('') + points.map(dot).join('');
 }
 
-function flow(): string {
-  const random = seededRandom(8);
-  const columns = [
-    { x: 14, colors: ['--crhoy', '--nacion', '--delfino', '--elmundo', '--semanario'], sizes: [30, 30, 22, 20, 16] },
-    { x: 111, colors: ['--cat-1', '--cat-2', '--cat-3', '--cat-4', '--cat-7'], sizes: [34, 26, 24, 18, 16] },
-    { x: 208, colors: ['--data-neutral', '--data-neutral', '--data-neutral', '--data-neutral'], sizes: [40, 30, 28, 20] },
-  ];
-  const blocks = columns.map((column) => {
-    let y = 8;
-    return column.sizes.map((size, index) => {
-      const block = { x: column.x, y, h: size, color: column.colors[index] };
-      y += size + 4;
-      return block;
-    });
-  });
-  const ribbons: string[] = [];
-  for (let c = 0; c < blocks.length - 1; c += 1) {
-    for (const from of blocks[c]) {
-      for (const to of blocks[c + 1]) {
-        if (random() < 0.45) continue;
-        const y1 = from.y + random() * from.h * 0.7, y2 = to.y + random() * to.h * 0.7, thick = 2 + random() * 6;
-        ribbons.push(`<path d="M ${from.x + 18} ${fixed(y1)} C ${from.x + 60} ${fixed(y1)}, ${to.x - 42} ${fixed(y2)}, ${to.x} ${fixed(y2)}" style="fill:none;stroke:var(${from.color});stroke-width:${fixed(thick)};opacity:.32"/>`);
-      }
-    }
-  }
-  const rects = blocks.flat().map((block) => `<rect x="${block.x}" y="${fixed(block.y)}" width="18" height="${block.h}" rx="3" style="fill:var(${block.color})"/>`);
-  return ribbons.join('') + rects.join('');
-}
-
-function stream(): string {
-  const random = seededRandom(17);
-  const steps = 14, layers = 5, colors = ['--cat-1', '--cat-2', '--cat-3', '--cat-4', '--cat-7'];
-  const values = Array.from({ length: layers }, () => {
-    let value = 8 + random() * 10;
-    return Array.from({ length: steps }, () => { value = Math.max(4, value + (random() - 0.5) * 9); return value; });
-  });
-  const totals = Array.from({ length: steps }, (_, i) => values.reduce((sum, layer) => sum + layer[i], 0));
-  const peak = Math.max(...totals), scale = (H - 24) / peak;
-  const x = (i: number) => 8 + (i * (W - 16)) / (steps - 1);
-  const base = totals.map((total) => H / 2 - (total * scale) / 2);
-  const paths = values.map((layer, index) => {
-    const top = layer.map((_, i) => base[i]);
-    layer.forEach((value, i) => { base[i] += value * scale; });
-    const bottom = [...base];
-    const forward = top.map((y, i) => `${i === 0 ? 'M' : 'L'} ${fixed(x(i))} ${fixed(y)}`).join(' ');
-    const back = bottom.map((y, i) => `L ${fixed(x(i))} ${fixed(y)}`).reverse().join(' ');
-    return `<path d="${forward} ${back} Z" style="fill:var(${colors[index]});opacity:.9"/>`;
-  });
-  return paths.join('');
-}
-
-export const THUMBS = { bills: bills(), deputies: deputies(), news: news(), parties: parties(), comentions: comentions(), flow: flow(), stream: stream() };
+export const THUMBS = { bills: bills(), deputies: deputies(), news: news(), parties: parties(), comentions: comentions() };
 export type ThumbName = keyof typeof THUMBS;
 export const THUMB_BOX = `0 0 ${W} ${H}`;

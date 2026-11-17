@@ -59,6 +59,15 @@
 .threshold-scale b { position: absolute; left: var(--at, 50%); top: 0; transform: translateX(-50%); white-space: nowrap; color: var(--accent-deep); font-weight: 700; padding-top: 9px; }
 .threshold-scale b::before { content: ""; position: absolute; left: 50%; top: 0; height: 7px; border-left: 2px solid var(--accent); }
 .threshold-result { display: flex; flex-direction: column; gap: 16px; }
+.dist-stack { display: grid; }
+.dist-stack > * { grid-area: 1 / 1; visibility: hidden; }
+.dist-stack > .on { visibility: visible; }
+.hist { display: flex; flex-direction: column; gap: 4px; justify-content: flex-end; }
+.hist-bars { display: flex; align-items: flex-end; gap: 2px; height: 138px; border-radius: 8px; background: var(--soft); padding: 0 2px; overflow: hidden; }
+.hist-col { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+.hist-col i { display: block; width: 100%; border-radius: 3px 3px 0 0; background: var(--data-none); }
+.hist-col.pass i { background: var(--outlet, var(--accent)); }
+.hist-keys { display: flex; justify-content: space-between; font-size: 12px; font-weight: 700; color: var(--ink-2); }
 .threshold-result .stat dd { font-size: 22px; }
 
 /* Question cards */
@@ -80,6 +89,7 @@
 .q-title { font-weight: 700; font-size: 15px; line-height: 1.25; min-width: 0; }
 .q-title small { display: block; font-size: 12px; font-weight: 600; color: var(--ink-3); }
 .q-stat { font-size: 13.5px; font-weight: 700; color: var(--ink-2); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.q-open-text { display: inline-block; min-width: 3.4em; text-align: right; }
 .q-open { display: inline-flex; align-items: center; gap: 4px; font-size: 12.5px; font-weight: 700; color: var(--accent-deep); padding: 5px 8px 5px 11px; border-radius: 999px; background: var(--accent-soft); }
 .q-open svg { width: 15px; height: 15px; transition: transform .2s ease; }
 .q[open] .q-open svg { transform: rotate(90deg); }
@@ -113,6 +123,25 @@
 .ans-value { text-align: right; color: var(--ink-3); font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .ans-value b { color: var(--ink); }
 .ans-extra { grid-column: 2 / -1; font-size: 11.5px; font-weight: 600; color: var(--ink-3); margin-top: -3px; }
+/* Density curve of each question */
+.q-dist { gap: 6px; }
+.q-pick { display: flex; flex-wrap: wrap; gap: 5px; }
+.q-pick button { border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); border-radius: 999px; padding: 3px 10px; font: 600 12px var(--font); cursor: pointer; }
+.q-pick button:hover { border-color: var(--accent); }
+.q-pick button[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-deep); font-weight: 700; }
+.q-curve-wrap { height: 96px; border-bottom: 1.5px solid var(--line-strong); }
+svg.q-curve { display: block; width: 100%; height: 100%; overflow: visible; stroke: none; }
+.q-curve-area { opacity: .45; }
+.q-curve-line { fill: none; stroke: var(--ink-2); stroke-width: 1.6; vector-effect: non-scaling-stroke; }
+.q-curve-mid { stroke: var(--ink-3); stroke-width: 1.2; stroke-dasharray: 4 4; vector-effect: non-scaling-stroke; }
+.q-curve-axis { position: relative; height: 30px; font-size: 11px; font-weight: 600; color: var(--ink-3); }
+.q-curve-axis span { position: absolute; left: var(--at); top: 2px; transform: translateX(-50%); text-align: center; max-width: 22%; line-height: 1.2; }
+.q-curve-axis span.start { transform: none; text-align: left; max-width: 44%; }
+.q-curve-axis span.end { left: auto; right: 0; transform: none; text-align: right; max-width: 44%; }
+.q-curve-axis.many span, .q-curve-axis.many span.start, .q-curve-axis.many span.end { max-width: 19%; }
+.q-curve-caption { font-size: 12px; min-height: 3em; }
+.q-how { font-size: 12px; }
+.q-block-sub { font-size: 12px; font-weight: 700; color: var(--ink-3); margin-top: 4px; }
 .q-cost { display: flex; flex-direction: column; gap: 3px; padding: 10px 14px; border-radius: var(--radius-sm); background: var(--bg); font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .q-cost b { color: var(--ink); }
 

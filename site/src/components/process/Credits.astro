@@ -1,0 +1,43 @@
+---
+// Chapter 7: every external work the project used (data sources, libraries, models, services and references),
+// one card each with what it gave the project. The list lives in lib/process/externals.ts, shared with the links
+// of the other chapters.
+import '../../styles/process/credits.css';
+import ChapterHead from './ChapterHead.astro';
+import Icon from './Icon.astro';
+import { EXTERNALS, GROUPS, type External } from '../../lib/process/externals';
+
+const all = Object.values(EXTERNALS) as External[];
+const groups = GROUPS.map((group) => ({ ...group, items: all.filter((item) => item.group === group.key) }));
+---
+<section id="creditos" class="chapter">
+  <ChapterHead number={7} kicker="Herramientas externas" title="Lo que usamos de otros">
+    <p class="lead">
+      El proyecto se apoya en fuentes, librerías, modelos y servicios que hicieron otras personas. Cada tarjeta dice
+      qué aportó; el nombre lleva a su sitio o a su documentación.
+    </p>
+  </ChapterHead>
+
+  {groups.map((group) => (
+    <div class="credit-group">
+      <h3 class="subhead">{group.label}<small>{group.text}</small></h3>
+      <div class="credits">
+        {group.items.map((item) => (
+          <article class="card credit">
+            <h4 class="credit-name">
+              {item.url
+                ? <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}<Icon name="external" /></a>
+                : item.name}
+            </h4>
+            <p class="credit-text">{item.text}</p>
+            {item.more && (
+              <div class="credit-more">
+                {item.more.map((link) => <a class="ext-link" href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a>)}
+              </div>
+            )}
+          </article>
+        ))}
+      </div>
+    </div>
+  ))}
+</section>

@@ -1,0 +1,12 @@
+/* Chapter 7: external works, one card each. */
+
+.credit-group { display: flex; flex-direction: column; gap: 12px; }
+.credit-group .subhead small { font-size: 13.5px; font-weight: 600; color: var(--ink-3); }
+.credits { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; align-items: stretch; }
+.credit { gap: 8px; padding: 16px 18px; }
+.credit-name { font-size: 15.5px; font-weight: 700; line-height: 1.3; }
+.credit-name a { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); text-decoration: none; }
+.credit-name a:hover { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
+.credit-name svg { width: 14px; height: 14px; color: var(--ink-3); }
+.credit-text { font-size: 13.5px; line-height: 1.5; color: var(--ink-2); }
+.credit-more { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 13px; font-weight: 600; margin-top: auto; padding-top: 4px; }

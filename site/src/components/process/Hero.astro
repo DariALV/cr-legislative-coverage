@@ -9,7 +9,7 @@ const width = (value: number) => `${((100 * value) / funnel.news).toFixed(2)}%`;
 const stages = [
   { value: funnel.news, label: `noticias de ${funnel.outlets} medios`, note: `${int(funnel.news_with_text)} con texto`, target: '#scrapers', tone: 'news' },
   { value: funnel.pass_filter, label: 'pasan el filtro de Jev', note: '¿Habla de la Asamblea? Umbral 0,2', target: '#jev', tone: 'filter' },
-  { value: funnel.match_news, label: 'noticias con match', note: `${int(funnel.match_pairs)} pares noticia–expediente`, target: '#jev', tone: 'match' },
+  { value: funnel.match_news, label: 'noticias con match', note: `${int(funnel.match_pairs)} pares noticia-expediente`, target: '#jev', tone: 'match' },
   { value: funnel.mention_news, label: 'noticias con mención', note: `${int(funnel.mention_pairs)} menciones`, target: '#jev', tone: 'mention' },
   { value: funnel.substantive_news, label: 'con cobertura sustantiva', note: `${int(funnel.substantive_pairs)} vínculos publicados`, target: '#jev', tone: 'substantive' },
 ];
@@ -65,7 +65,7 @@ const stages = [
       <dl class="stats cols-2">
         <div class="stat lavender"><dt>Expedientes</dt><dd>{int(funnel.bills)}</dd><span class="stat-foot">del SIL de la Asamblea</span></div>
         <div class="stat peach"><dt>Votaciones</dt><dd>{int(funnel.votes)}</dd><span class="stat-foot">por diputación</span></div>
-        <div class="stat sky"><dt>Período</dt><dd>6 <small>meses</small></dd><span class="stat-foot">1 may – 31 oct 2026</span></div>
+        <div class="stat sky"><dt>Período</dt><dd>6 <small>meses</small></dd><span class="stat-foot">1 may - 31 oct 2026</span></div>
         <div class="stat mint"><dt>Costo de Jev</dt><dd>{usd(cost.paid_total)}</dd><span class="stat-foot">todo el corpus</span></div>
       </dl>
       <div class="card">
@@ -77,6 +77,7 @@ const stages = [
           <a class="chip" href="#jev"><Icon name="checklist" />Jev</a>
           <a class="chip" href="#grafos"><Icon name="graph" />Grafos</a>
           <a class="chip" href="#futuro"><Icon name="flag" />Trabajo a futuro</a>
+          <a class="chip" href="#creditos"><Icon name="library" />Herramientas externas</a>
         </div>
       </div>
     </div>

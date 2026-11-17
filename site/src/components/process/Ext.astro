@@ -1,0 +1,19 @@
+---
+// Link to an external work of lib/process/externals.ts, opened in a new tab. The slot replaces the name; chip
+// renders it as a chip (the tools rows of the chapters).
+import Icon from './Icon.astro';
+import { EXTERNALS, type ExternalKey } from '../../lib/process/externals';
+
+interface Props {
+  id: ExternalKey;
+  chip?: boolean;
+  /** A link other than the work's main one (its docs, its terms). */
+  href?: string;
+}
+const { id, chip = false, href } = Astro.props;
+const external = EXTERNALS[id];
+const hasSlot = Astro.slots.has('default');
+---
+{chip
+  ? <a class="chip ext-chip" href={href ?? external.url} target="_blank" rel="noopener noreferrer"><slot name="icon" />{hasSlot ? <slot /> : external.name}<Icon name="external" class="ext-icon" /></a>
+  : <a class="ext-link" href={href ?? external.url} target="_blank" rel="noopener noreferrer">{hasSlot ? <slot /> : external.name}</a>}

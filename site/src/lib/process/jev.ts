@@ -8,7 +8,7 @@ export type StageKey = 'filter' | 'gate' | 'details_news' | 'details_bill';
 
 export const STAGES: { key: StageKey; label: string; unit: string; text: string }[] = [
   { key: 'filter', label: 'Filtro', unit: 'por noticia', text: '¿La noticia habla de la Asamblea? Pasa con una probabilidad de 0,2 o más.' },
-  { key: 'gate', label: 'Puerta', unit: 'por par noticia–candidato', text: 'El género de la noticia y, por cada candidato, si lo menciona de forma explícita o implícita. Hay match si alguna llega a 0,5.' },
+  { key: 'gate', label: 'Puerta', unit: 'por par noticia-candidato', text: 'El género de la noticia y, por cada candidato, si lo menciona de forma explícita o implícita. Hay match si alguna llega a 0,5.' },
   { key: 'details_news', label: 'Detalle', unit: 'por noticia con match', text: 'Cuatro preguntas sobre la noticia.' },
   { key: 'details_bill', label: 'Detalle', unit: 'por par con match', text: 'Treinta y dos preguntas sobre cómo trata la noticia a cada expediente.' },
 ];

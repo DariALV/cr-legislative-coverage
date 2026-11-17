@@ -53,7 +53,7 @@ const clientData = { cost, kSweep: ranker.k_sweep };
       <div class="idea-text">
         <div class="prose">
           <p>
-            Hoy el top 50 tiene un recall de <strong>{dec(at50?.bill_coverage ?? 0, 2)}</strong> en el oro de Delfino. Muy rara vez una
+            Hoy el top 50 tiene un recall de <strong>{dec(at50?.bill_coverage ?? 0, 2)}</strong> en el <a class="inline-link" href="#delfino-dataset">dataset de Delfino</a>. Muy rara vez una
             noticia cubre más de un expediente, así que bajar a top 10 o top 5 sin perder recall es el mayor ahorro
             posible.
           </p>
@@ -74,7 +74,7 @@ const clientData = { cost, kSweep: ranker.k_sweep };
     <div class="idea-body wide">
       <div class="distill" role="img" aria-label="Diagrama: Jev califica pares como maestro, una red neuronal aprende de esas etiquetas como alumno y después ordena los candidatos para que Jev revise menos pares">
         <div class="distill-box">
-          <Icon name="news" /><b>Pares noticia–expediente</b><span>con mucha información de los dos</span>
+          <Icon name="news" /><b>Pares noticia-expediente</b><span>con mucha información de los dos</span>
         </div>
         <span class="distill-arrow"><Icon name="arrowRight" /></span>
         <div class="distill-box teacher">

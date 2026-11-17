@@ -1,8 +1,9 @@
 ---
 // Chapter 1: the scrapers. News by outlet and month, the cleaning that was not done, Delfino vs the SIL as the
-// source of the bills, and the bills by status and legislature.
+// source of the bills, the bills by status and legislature, and the dataset that Delfino's links gave for free.
 import '../../styles/process/scrapers.css';
 import ChapterHead from './ChapterHead.astro';
+import Ext from './Ext.astro';
 import Icon from './Icon.astro';
 import news from '../../data/process/news.json';
 import bills from '../../data/process/bills.json';
@@ -21,7 +22,7 @@ const total = (key: string) => news.outlets.find((outlet) => outlet.key === key)
 const issues = [
   { outlet: 'delfino', title: 'Páginas url y url-2 de Delfino', text: 'La segunda página es un resumen de la primera: el mismo hecho entra dos veces.', count: 80, unit: 'pares', of: total('delfino') },
   { outlet: 'nacion', title: 'Copias exactas del contenido', text: 'Notas republicadas con otra dirección; 57 de las 64 son de La Nación.', count: 64, unit: 'notas', of: total('nacion') },
-  { outlet: 'elmundo', title: 'Data line de El Mundo', text: 'Cada nota abre con «San José, 24 oct (elmundo.cr) –» y eso queda dentro del texto.', count: 2749, unit: 'notas', of: total('elmundo') },
+  { outlet: 'elmundo', title: 'Data line de El Mundo', text: 'Cada nota abre con «San José, 24 oct (elmundo.cr) -» y eso queda dentro del texto.', count: 2749, unit: 'notas', of: total('elmundo') },
   { outlet: 'delfino', title: 'Avisos de opinión de Delfino', text: 'El aviso de que la columna no representa al medio se repite al pie.', count: 1200, unit: 'notas, aprox.', of: total('delfino') },
   { outlet: 'nacion', title: 'Avisos de IA de La Nación', text: 'Notas con la leyenda de que se usó inteligencia artificial en su edición.', count: 788, unit: 'notas', of: total('nacion') },
 ];
@@ -29,18 +30,23 @@ const outletName = (key: string) => news.outlets.find((outlet) => outlet.key ===
 
 const maxBills = bills.rows[0].count;
 const billRows = bills.rows.map((row) => ({ ...row, width: `${((100 * row.count) / maxBills).toFixed(1)}%` }));
+// Archived first and in red: in some styles the archived and in-progress tokens are both gray.
 const statuses = [
+  { key: 'archived', label: 'Archivados', color: '--bad' },
   { key: 'in_progress', label: 'En trámite', color: '--progress' },
-  { key: 'archived', label: 'Archivados', color: '--archived' },
   { key: 'law', label: 'Ley', color: '--law' },
 ] as const;
+const dataset = bills.delfino_dataset;
 const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, name: outlet.name, values: outlet.series })) };
 ---
 <section id="scrapers" class="chapter">
   <ChapterHead number={1} kicker="Scrapers" title="Cinco medios y un registro oficial">
     <p class="lead">
-      Elegimos cinco medios de forma arbitraria: CRHoy, Delfino, Semanario Universidad, La Nación y El Mundo.
-      Con <code>requests</code> y <code>beautifulsoup</code> trajimos el HTML completo de cada noticia y de cada expediente.
+      Elegimos cinco medios de forma arbitraria: <Ext id="outlets" href="https://www.crhoy.com/">CRHoy</Ext>,{' '}
+      <Ext id="delfino">Delfino</Ext>, <Ext id="outlets" href="https://semanariouniversidad.com/">Semanario Universidad</Ext>,{' '}
+      <Ext id="outlets" href="https://www.nacion.com/">La Nación</Ext> y <Ext id="outlets" href="https://www.elmundo.cr/">El Mundo</Ext>.
+      Con <code><Ext id="requests" /></code> y <code><Ext id="beautifulsoup">beautifulsoup</Ext></code> trajimos el HTML
+      completo de cada noticia y de cada expediente.
     </p>
   </ChapterHead>
 
@@ -62,7 +68,7 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
     <div class="card">
       <div class="card-head">
         <h3 class="card-title">Noticias por mes y medio</h3>
-        <span class="card-sub">{int(news.total)} noticias, mayo–octubre de 2026</span>
+        <span class="card-sub">{int(news.total)} noticias, de mayo a octubre de 2026</span>
       </div>
       <div class="chart" id="news-monthly" role="img" aria-label="Barras apiladas: noticias por mes, separadas por medio"></div>
       <div class="legend">
@@ -85,9 +91,9 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
         </p>
       </div>
       <div class="tools">
-        <span class="chip"><Icon name="code" />requests</span>
-        <span class="chip"><Icon name="code" />beautifulsoup</span>
-        <span class="chip"><Icon name="database" />SQLite</span>
+        <Ext id="requests" chip><Icon name="code" slot="icon" />requests</Ext>
+        <Ext id="beautifulsoup" chip><Icon name="code" slot="icon" />beautifulsoup</Ext>
+        <Ext id="sqlite" chip><Icon name="database" slot="icon" />SQLite</Ext>
       </div>
     </div>
   </div>
@@ -129,12 +135,14 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
     </div>
   </div>
 
-  <h3 class="subhead">De Delfino al registro de la Asamblea</h3>
+  <h3 class="subhead">¿Por qué cambiamos de Delfino a la Asamblea para scrapear los datos legislativos?</h3>
   <div class="prose">
     <p>
-      La idea original era sacar los expedientes de Delfino: tiene una página por expediente y sus notas enlazan a
-      esas páginas, así que de ahí salían a la vez la lista de proyectos y vínculos noticia–expediente ya hechos.
-      Terminamos cambiando la fuente al SIL, el sistema de consulta de la Asamblea Legislativa.
+      La idea original era sacar los expedientes de Delfino: fue la primera opción que vimos que tuviera una página
+      por expediente y sus notas enlazan a esas páginas, así que de ahí salían a la vez la lista de proyectos y
+      vínculos noticia-expediente ya hechos. La razón por la que descartamos la página de la Asamblea fue por
+      desconocer la facilidad en extracción de los datos. Creímos que costaría más, hasta que hicimos la prueba y
+      terminamos cambiando la fuente al <Ext id="sil">SIL</Ext>, el sistema de consulta de la Asamblea Legislativa.
     </p>
   </div>
   <div class="versus">
@@ -142,13 +150,13 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
       <span class="pill st-neutral source-tag">Idea original</span>
       <div>
         <h4 class="source-name">Delfino</h4>
-        <div class="source-url">delfino.cr/asamblea</div>
+        <div class="source-url"><Ext id="delfino" href="https://delfino.cr/asamblea">delfino.cr/asamblea</Ext></div>
       </div>
       <ul class="source-rows">
-        <li class="no"><Icon name="close" /><div><b>Compilación privada</b><span>Sus términos reservan todos los derechos.</span></div></li>
-        <li class="no"><Icon name="close" /><div><b>Incompleta</b><span>Le faltan 624 expedientes entre el 20.000 y el 20.999, y 236 leyes de nuestro rango.</span></div></li>
+        <li class="no"><Icon name="close" /><div><b><Ext id="delfino" href="https://delfino.cr/terminos-y-condiciones">Términos y condiciones</Ext></b><span>Sus términos reservan todos los derechos.</span></div></li>
+        <li class="no"><Icon name="close" /><div><b>Incompleta</b><span>Le faltan 624 expedientes entre el 20.000 y el 20.999.</span></div></li>
         <li class="no"><Icon name="close" /><div><b>Títulos reescritos</b><span>Resume el nombre oficial de algunos proyectos.</span></div></li>
-        <li class="no"><Icon name="close" /><div><b>Es juez y parte</b><span>Es uno de los cinco medios cuya cobertura medimos.</span></div></li>
+        <li class="no"><Icon name="close" /><div><b>Provee los expedientes y noticias a la vez</b><span>Es uno de los cinco medios cuya cobertura medimos.</span></div></li>
         <li class="ok"><Icon name="check" /><div><b>Votos por diputación</b><span>Por eso las {int(bills.votes)} votaciones siguen viniendo de aquí.</span></div></li>
       </ul>
     </article>
@@ -156,7 +164,7 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
       <span class="pill st-law source-tag">Lo que quedó</span>
       <div>
         <h4 class="source-name">SIL de la Asamblea Legislativa</h4>
-        <div class="source-url">produccion.asamblea.go.cr/SILConsulta</div>
+        <div class="source-url"><Ext id="sil">produccion.asamblea.go.cr/SILConsulta</Ext></div>
       </div>
       <ul class="source-rows">
         <li class="ok"><Icon name="check" /><div><b>Registro oficial</b><span>Con licencia CC BY 4.0.</span></div></li>
@@ -180,7 +188,7 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
         <div class="bill-row">
           <div>
             <div class="bill-label">{row.label}</div>
-            <div class="bill-range">{formatDate(row.from)} – {formatDate(row.to)}</div>
+            <div class="bill-range">{formatDate(row.from)} - {formatDate(row.to)}</div>
           </div>
           <div>
             <div class="bill-bar" style={`--w:${row.width}`} role="img" aria-label={`${int(row.count)} expedientes: ${statuses.map((status) => `${int(row[status.key])} ${status.label.toLowerCase()}`).join(', ')}`}>
@@ -189,12 +197,58 @@ const chartData = { months, series: outlets.map((outlet) => ({ key: outlet.key, 
             <div class="bill-meta">
               <b>{int(row.count)}</b>
               {statuses.map((status) => <span><i class="swatch round" style={`--c: var(${status.color})`}></i>{int(row[status.key])}</span>)}
-              <span>n.º {int(row.first)}–{int(row.last)}</span>
+              <span>n.º {int(row.first)}-{int(row.last)}</span>
               <span>{int(row.administrative)} administrativos · {int(row.honorific)} honoríficos</span>
             </div>
           </div>
         </div>
       ))}
+    </div>
+  </div>
+
+  <div class="card dataset" id="delfino-dataset">
+    <h3 class="card-title">El dataset de Delfino</h3>
+    <div class="dataset-figure">
+      <svg class="viz dataset-svg" viewBox="0 0 600 176" role="img" aria-label="Una nota de Delfino con dos enlaces; cada enlace lleva a la página de un expediente, que corresponde a un número del SIL">
+        <rect class="ds-note" x="6" y="8" width="236" height="160" rx="14" />
+        <text class="ds-outlet" x="24" y="34">delfino.cr</text>
+        <rect class="ds-title" x="24" y="44" width="176" height="11" rx="5.5" />
+        <rect class="ds-line" x="24" y="68" width="196" height="7" rx="3.5" />
+        <rect class="ds-line" x="24" y="84" width="54" height="7" rx="3.5" />
+        <rect class="ds-link" x="84" y="82" width="78" height="11" rx="3" />
+        <rect class="ds-line" x="168" y="84" width="52" height="7" rx="3.5" />
+        <rect class="ds-line" x="24" y="100" width="184" height="7" rx="3.5" />
+        <rect class="ds-line" x="24" y="116" width="36" height="7" rx="3.5" />
+        <rect class="ds-link" x="66" y="114" width="86" height="11" rx="3" />
+        <rect class="ds-line" x="158" y="116" width="62" height="7" rx="3.5" />
+        <rect class="ds-line" x="24" y="132" width="150" height="7" rx="3.5" />
+        <rect class="ds-line" x="24" y="148" width="104" height="7" rx="3.5" />
+        <path class="ds-arrow" d="M 162 87 C 250 87, 280 46, 360 46" />
+        <path class="ds-arrow" d="M 152 119 C 250 119, 280 128, 360 128" />
+        <path class="ds-head" d="M 352 40 L 362 46 L 352 52" />
+        <path class="ds-head" d="M 352 122 L 362 128 L 352 134" />
+        {[{ y: 22, label: 'Expediente 24.xxx' }, { y: 104, label: 'Expediente 25.xxx' }].map((bill) => (
+          <g>
+            <rect class="ds-bill" x="368" y={bill.y} width="224" height="48" rx="12" />
+            <path class="ds-bill-icon" transform={`translate(382 ${bill.y + 12})`} d="M3 1h10l5 5v17H3z M13 1v5h5 M6.5 12h8 M6.5 16h8" />
+            <text class="ds-bill-name" x="410" y={bill.y + 21}>{bill.label}</text>
+            <text class="ds-bill-sub" x="410" y={bill.y + 37}>su página en Delfino = n.º del SIL</text>
+          </g>
+        ))}
+      </svg>
+      <div class="combo-math dataset-math" aria-label={`${int(dataset.news)} noticias, ${int(dataset.links)} enlaces y ${int(dataset.bills)} expedientes`}>
+        <span><b>{int(dataset.news)}</b>noticias</span><i>→</i>
+        <span><b>{int(dataset.links)}</b>enlaces</span><i>→</i>
+        <span class="combo-total"><b>{int(dataset.bills)}</b>expedientes</span>
+      </div>
+    </div>
+    <div class="prose">
+      <p>
+        Al scrapear las noticias de Delfino, notamos la peculiaridad que Delfino linkea expedientes a su propia página
+        de expedientes. Esta revelación nos permitió formar un dataset de entrenamiento y de muestreo con expedientes
+        mencionados explícitamente. Logramos recolectar {int(dataset.links)} links sobre {int(dataset.news)} noticias.
+        Este dataset fue bastante valioso para los pasos posteriores.
+      </p>
     </div>
   </div>
 </section>

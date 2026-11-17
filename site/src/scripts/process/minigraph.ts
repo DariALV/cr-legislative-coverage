@@ -272,10 +272,10 @@ function draw(): void {
     }
     ARROWS.forEach((item) => {
       const output = lab?.querySelector<HTMLElement>(`[data-arrow="${item.key}"]`);
-      if (output) output.textContent = peak > 1e-9 ? `${int((100 * Math.hypot(...forces[item.key])) / peak)} %` : '—';
+      if (output) output.textContent = peak > 1e-9 ? `${int((100 * Math.hypot(...forces[item.key])) / peak)} %` : '-';
     });
   } else {
-    lab?.querySelectorAll<HTMLElement>('[data-arrow]').forEach((output) => { output.textContent = '—'; });
+    lab?.querySelectorAll<HTMLElement>('[data-arrow]').forEach((output) => { output.textContent = '-'; });
   }
 }
 

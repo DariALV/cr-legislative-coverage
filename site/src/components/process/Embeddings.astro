@@ -2,6 +2,7 @@
 // Chapter 2: embeddings. How a news is split, embedded and compared with a bill, and the 78 combinations tried.
 import '../../styles/process/embeddings.css';
 import ChapterHead from './ChapterHead.astro';
+import Ext from './Ext.astro';
 import Icon from './Icon.astro';
 import embeddings from '../../data/process/embeddings.json';
 import { dec, int, jsonForScript } from '../../lib/process/format';
@@ -24,13 +25,13 @@ const labels = { models: MODELS, sizes: SIZES, aggregations: AGGREGATIONS, varia
   <ChapterHead number={2} kicker="Embeddings" title="Relacionar por significado, no por palabras">
     <p class="lead">
       La idea de usar embeddings es relacionar noticias y expedientes por significado, no por coincidencia de
-      palabras, para reducir la cantidad de pares noticia–expediente que hay que revisar.
+      palabras, para reducir la cantidad de pares noticia-expediente que hay que revisar.
     </p>
   </ChapterHead>
 
   <div class="card">
     <div class="card-head">
-      <h3 class="card-title">De la noticia al puntaje</h3>
+      <h3 class="card-title">¿Cómo calculamos los embeddings?</h3>
       <span class="card-sub">sigue la combinación elegida abajo · valores ilustrativos</span>
     </div>
     <div class="scroll-x"><div id="chunk-diagram" class="chunk-diagram" role="img" aria-label="Diagrama: la noticia se parte en fragmentos, cada uno se convierte en un vector, se compara con el vector del expediente y las similitudes se resumen en un puntaje"></div></div>
@@ -40,7 +41,7 @@ const labels = { models: MODELS, sizes: SIZES, aggregations: AGGREGATIONS, varia
     <div class="prose">
       <p>Probamos varias estrategias:</p>
       <ol>
-        <li><strong>Dos modelos</strong> de embedding semántico: Qwen3-Embedding-0.6B y BGE-M3.</li>
+        <li><strong>Dos modelos</strong> de embedding semántico: <Ext id="qwen" /> y <Ext id="bge" />, cargados con <Ext id="sentenceTransformers" />.</li>
         <li><strong>Partir la noticia</strong> en fragmentos de 256, 512, 1024 o 2048 tokens, o embeberla entera (hasta 8000 tokens).</li>
         <li><strong>Tres formas de comparar</strong> cuando hay fragmentos: el más parecido (máximo), el promedio de los 3 mejores, o el promedio de todos. La noticia entera es un solo vector, así que ahí solo hay una forma.</li>
         <li><strong>Tres textos del expediente</strong>: el título, el título con las materias, o el título con la exposición de motivos.</li>
@@ -55,7 +56,7 @@ const labels = { models: MODELS, sizes: SIZES, aggregations: AGGREGATIONS, varia
       </div>
       <p class="note">
         Medidas sobre <strong>{int(embeddings.n_news)} noticias</strong> con <strong>{int(embeddings.n_links)} vínculos conocidos</strong>{' '}
-        (el oro de Delfino), contra los {int(embeddings.n_bills)} expedientes. Métrica: recall@50, con intervalo de
+        (<a class="inline-link" href="#delfino-dataset">el dataset de Delfino</a>), contra los {int(embeddings.n_bills)} expedientes. Métrica: recall@50, con intervalo de
         confianza al 95 % por bootstrap ({int(embeddings.bootstrap)} remuestreos).
       </p>
     </div>
@@ -92,7 +93,7 @@ const labels = { models: MODELS, sizes: SIZES, aggregations: AGGREGATIONS, varia
       <div class="explorer-result" aria-live="polite">
         <div class="result-label">Recall@50</div>
         <div class="result-value" data-result="value">{dec(best.recall50)}</div>
-        <div class="result-ci" data-result="ci">IC 95 %: {dec(best.low)}–{dec(best.high)}</div>
+        <div class="result-ci" data-result="ci">IC 95 %: {dec(best.low)}-{dec(best.high)}</div>
         <div class="ci-track" aria-hidden="true">
           <span class="ci-range" data-result="range"></span><span class="ci-point" data-result="point"></span>
           <span class="ci-best" data-result="best" title="La mejor combinación"></span>
@@ -150,7 +151,7 @@ const labels = { models: MODELS, sizes: SIZES, aggregations: AGGREGATIONS, varia
       <div class="miss-number">1 de cada 5</div>
       <p>
         La mejor combinación (Qwen3, fragmentos de 256 tokens, máximo, exposición de motivos) solo llegó a un
-        recall@50 de <strong>{dec(best.recall50)}</strong> (IC 95 % {dec(best.low)}–{dec(best.high)}): uno de cada cinco
+        recall@50 de <strong>{dec(best.recall50)}</strong>: uno de cada cinco
         expedientes vinculados a una noticia quedaba fuera del top 50. Así que probamos otro enfoque.
       </p>
       <a class="btn" href="#ranker">El algoritmo evolutivo <Icon name="arrowDown" /></a>
