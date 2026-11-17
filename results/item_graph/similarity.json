@@ -1,0 +1,265 @@
+{
+ "bills": {
+  "items": 1126,
+  "all_pairs": {
+   "p1": 0.16,
+   "p5": 0.214,
+   "p10": 0.245,
+   "p25": 0.3,
+   "p50": 0.366,
+   "p75": 0.435,
+   "p90": 0.501,
+   "p95": 0.541,
+   "p99": 0.619
+  },
+  "nearest": {
+   "p1": 0.516,
+   "p5": 0.584,
+   "p10": 0.615,
+   "p25": 0.666,
+   "p50": 0.729,
+   "p75": 0.801,
+   "p90": 0.878,
+   "p95": 0.92,
+   "p99": 0.999
+  },
+  "neighbor_10": {
+   "p1": 0.439,
+   "p5": 0.484,
+   "p10": 0.504,
+   "p25": 0.541,
+   "p50": 0.587,
+   "p75": 0.631,
+   "p90": 0.669,
+   "p95": 0.692,
+   "p99": 0.722
+  },
+  "top_10_links": {
+   "p1": 0.455,
+   "p5": 0.504,
+   "p10": 0.529,
+   "p25": 0.575,
+   "p50": 0.627,
+   "p75": 0.681,
+   "p90": 0.738,
+   "p95": 0.781,
+   "p99": 0.891
+  },
+  "pairs_at_or_above": {
+   "0.95": 23,
+   "0.97": 19,
+   "0.98": 17,
+   "0.99": 14
+  },
+  "closest_pairs": [
+   [
+    25800,
+    25400,
+    1.0,
+    "COMISIÓN ESPECIAL INVESTIGADORA POR DENUNCIA DE HOSTIGAMIENTO SEXUAL",
+    "COMISIÓN ESPECIAL INVESTIGADORA POR DENUNCIA DE HOSTIGAMIENTO SEXUAL"
+   ],
+   [
+    25839,
+    25400,
+    1.0,
+    "COMISIÓN ESPECIAL INVESTIGADORA POR DENUNCIA DE HOSTIGAMIENTO SEXUAL",
+    "COMISIÓN ESPECIAL INVESTIGADORA POR DENUNCIA DE HOSTIGAMIENTO SEXUAL"
+   ],
+   [
+    25460,
+    24657,
+    1.0,
+    "REFORMA DEL ARTÍCULO 106 TER DEL CÓDIGO DE NORMAS Y PROCEDIMIENTOS TRIBUTARIOS, LEY N.° 47",
+    "REFORMA DEL ARTÍCULO 106 TER DEL CÓDIGO DE NORMAS Y PROCEDIMIENTOS TRIBUTARIOS, LEY N.° 47"
+   ],
+   [
+    24789,
+    24758,
+    1.0,
+    "RATIFICACIÓN O NO DE LA SEÑORA GIANNINA CÓRDOBA CORRALES COMO MIEMBRO TITULAR DEL ÓRGANO S",
+    "RATIFICACIÓN O NO DE LA SEÑORA GIANNINA CÓRDOBA CORRALES COMO MIEMBRO TITULAR DEL ÓRGANO S"
+   ],
+   [
+    25266,
+    23165,
+    1.0,
+    "REFORMA DEL ARTÍCULO 2 DEL BANCO CENTRAL, LEY N°7558 DEL 3 DE NOVIEMBRE DE 1995. LEY PARA ",
+    "REFORMA DEL ARTÍCULO 2 DEL BANCO CENTRAL, LEY N°7558 DEL 3 DE NOVIEMBRE DE 1995. LEY PARA "
+   ],
+   [
+    25839,
+    25800,
+    1.0,
+    "COMISIÓN ESPECIAL INVESTIGADORA POR DENUNCIA DE HOSTIGAMIENTO SEXUAL",
+    "COMISIÓN ESPECIAL INVESTIGADORA POR DENUNCIA DE HOSTIGAMIENTO SEXUAL"
+   ],
+   [
+    24500,
+    23417,
+    0.9999,
+    "REFORMA AL ARTÍCULO 18 DEL CÓDIGO DE TRABAJO, LEY N.° 2 DEL 27 DE AGOSTO DE 1943. LEY PARA",
+    "REFORMA AL ARTÍCULO 18 DEL CÓDIGO DE TRABAJO, LEY N°2 DEL 27 DE AGOSTO DE 1943. LEY PARA G"
+   ],
+   [
+    25320,
+    23759,
+    0.9994,
+    "FORTALECIMIENTO DEL CONTROL TRIBUTARIO",
+    "FORTALECIMIENTO DEL CONTROL TRIBUTARIO"
+   ]
+  ],
+  "floors": {
+   "0.55": {
+    "links": 6824,
+    "isolated": 28,
+    "degree_p50": 11.0
+   },
+   "0.6": {
+    "links": 4804,
+    "isolated": 85,
+    "degree_p50": 7.0
+   }
+  }
+ },
+ "news": {
+  "items": 2620,
+  "all_pairs": {
+   "p1": 0.265,
+   "p5": 0.306,
+   "p10": 0.329,
+   "p25": 0.371,
+   "p50": 0.423,
+   "p75": 0.483,
+   "p90": 0.55,
+   "p95": 0.6,
+   "p99": 0.736
+  },
+  "nearest": {
+   "p1": 0.626,
+   "p5": 0.697,
+   "p10": 0.747,
+   "p25": 0.814,
+   "p50": 0.873,
+   "p75": 0.913,
+   "p90": 0.94,
+   "p95": 0.953,
+   "p99": 0.979
+  },
+  "neighbor_10": {
+   "p1": 0.55,
+   "p5": 0.588,
+   "p10": 0.616,
+   "p25": 0.671,
+   "p50": 0.756,
+   "p75": 0.823,
+   "p90": 0.859,
+   "p95": 0.872,
+   "p99": 0.89
+  },
+  "top_10_links": {
+   "p1": 0.567,
+   "p5": 0.613,
+   "p10": 0.645,
+   "p25": 0.718,
+   "p50": 0.798,
+   "p75": 0.859,
+   "p90": 0.894,
+   "p95": 0.911,
+   "p99": 0.945
+  },
+  "pairs_at_or_above": {
+   "0.95": 93,
+   "0.97": 20,
+   "0.98": 13,
+   "0.99": 9
+  },
+  "closest_pairs": [
+   [
+    "83d0afdacb1eda978c5e258490458803966b9954d447b86e4c7c4a19acf67101",
+    "6a91665239907e194eb9dba2c29db4e39bef8d7fcec3c5ced37fe7cb3c6875f7",
+    1.0,
+    "Diputada acudirá a la Sala IV por normas que congelan recursos al Poder Judicial",
+    "Diputada acudirá a la Sala IV por normas que congelan recursos al Poder Judicial"
+   ],
+   [
+    "dfe55c74373f65d9d01e65c79f547c10e80d2837af8def9fa1d4e6c7f10dd82e",
+    "0b3c375c133420b8cd08a8fe6d5f18ab5c7922fe97b503c0ea9d217e197bf32a",
+    0.9993,
+    "Costa Rica necesita una nueva generación de alianzas público-privadas",
+    "Costa Rica necesita una nueva generación de alianzas público-privadas"
+   ],
+   [
+    "a44f66d66c0b69d5ed866b051f8655b3bdfe026ca0af3b740719f66bbf5ac79a",
+    "f087540401aee18d6c00d86f3827d919059c0fa6e3931999d99dd65e51b7c4ec",
+    0.9991,
+    "Israel y Costa Rica: un tratado que debe juzgarse por sus méritos",
+    "Israel y Costa Rica: un tratado que debe juzgarse por sus méritos"
+   ],
+   [
+    "bc2e00f3e2c1f4cc150a225cb708717a64adad370564f24e4a91930d5356103c",
+    "7fa9206aa76442d37474ca073189a3b1d9e0a3ee252bb473a2206cd71d00658d",
+    0.9985,
+    "Presidenta se desboca insultando a diputados opositores a quienes luego pide «reflexión» p",
+    "Presidenta se desboca insultando a diputados opositores a quienes luego pide «reflexión» p"
+   ],
+   [
+    "5a4ee2892e491beece742d30456a801c41838dc9d2455fdb995fb04503087378",
+    "6ee63a2b89be8665230cdd7cee1412074cfe6d5494e9b0110600da15106a4351",
+    0.9981,
+    "Expertos ven riesgos para la inversión extranjera y el clima de negocios en proyecto sobre",
+    "Expertos ven riesgos para la inversión extranjera y el clima de negocios en proyecto sobre"
+   ],
+   [
+    "c8bb810c9a84f1928a6e7791ea38ab24d4b12f95e080c642b7e1b0a76284ae60",
+    "1bc44619307442729db658fdff0f5471748e376fb4c866a75d1e95916622dbd0",
+    0.9977,
+    "Modernizar el sistema eléctrico es impulsar la competitividad",
+    "Modernizar el sistema eléctrico es impulsar la competitividad"
+   ],
+   [
+    "4f5921b221c66846bcfbc8bdb6f848778d4c552ce0ae9cc62661597e12a1dfb2",
+    "eeb393b56ff097f8fae102d40fd18f9ee43a078cb6691f7382477247b2c43397",
+    0.9967,
+    "APRIMOTEC amplía su representación y denuncia deterioro en ingresos de conductores y repar",
+    "APRIMOTEC amplía su representación y denuncia deterioro en ingresos de conductores y repar"
+   ],
+   [
+    "bcce36ee73d41b562285695288bf5796f4fbaa8025fc42a002304d2f4220ac49",
+    "d73c6d677969837a16cf3b549a04ae8e5212a3ddfb2a24368c04987d26acdc71",
+    0.9962,
+    "Por orden de Hacienda, recorte al TEC que cerraría sede en Limón se aplicó sin estar aprob",
+    "Por orden de Hacienda, recorte al TEC que cerraría sede en Limón se aplicó sin estar aprob"
+   ]
+  ],
+  "floors": {
+   "0.65": {
+    "links": 16954,
+    "isolated": 50,
+    "degree_p50": 11.5
+   },
+   "0.7": {
+    "links": 14596,
+    "isolated": 136,
+    "degree_p50": 11.0
+   }
+  }
+ },
+ "settings": {
+  "k": 10,
+  "cap": 50,
+  "duplicate": 0.97,
+  "a": [
+   0.85,
+   0.9,
+   0.95,
+   1.0
+  ],
+  "w": [
+   0.5,
+   0.7,
+   0.9,
+   1.0
+  ]
+ }
+}

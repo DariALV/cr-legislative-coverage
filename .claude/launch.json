@@ -22,6 +22,20 @@
       "port": 8768
     },
     {
+      "name": "item-graph",
+      "runtimeExecutable": "python",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8772",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "results/item_graph"
+      ],
+      "port": 8772
+    },
+    {
       "name": "site",
       "runtimeExecutable": "C:\\Program Files\\nodejs\\node.exe",
       "runtimeArgs": [

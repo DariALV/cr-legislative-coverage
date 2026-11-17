@@ -248,3 +248,6 @@ claude_logs/
 
 # Unzipped public corpus (reproduce.ipynb extracts it next to the zip)
 corpus/*.db
+
+# Per-item graph analysis: example trees, same data as trees.html (#71)
+results/item_graph/examples.json
