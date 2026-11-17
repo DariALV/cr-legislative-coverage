@@ -14,6 +14,8 @@ Embeddings: expedientes con la exposición de motivos entera (qwen3-0.6b, `bills
 
 **a y w** (tope 50, todas las fichas publicadas: 1.126 expedientes y 2.620 noticias): w decide qué nodos entran y a solo la forma. Con w 0,5 el parecido medio con A es 0,54 en expedientes y 0,69 en noticias, cerca del techo (0,56 y 0,70: los 50 más parecidos sin mirar aristas). Con w 1,0 el nodo más lejano de un expediente se parece a A menos que dos expedientes al azar. Con a 0,9 el árbol tiene unos pocos centros alrededor de A (profundidad media ~3); con a 1,0 se vuelve una cadena de 12 niveles. **Decidido: w = 0,5 y a = 0,9.**
 
+**Cambio posterior (al ver el sitio): a = 1.** Con el grafo ya en las fichas, el usuario prefirió las cadenas: sin descuento, cada nodo cuelga de su nodo más parecido entre los que entraron antes. Medido en 300 grafos por tipo: con a = 0,9 el 45 % de los expedientes y el 62 % de las noticias cuelgan de un nodo que no es el más parecido (pierden 0,05 y 0,04 de coseno en esa arista); con a = 1, ninguno, y la arista media sube de 0,75 a 0,77 (expedientes) y de 0,85 a 0,87 (noticias). A cambio, la profundidad sigue algo peor el parecido con la ficha (Spearman −0,57 contra −0,67 en expedientes). Los nodos que se ven son los mismos: el orden de entrada lo decide w.
+
 **Piso**: un piso alto no sirve dentro de lo publicado (con 0,8 quedan 842 de 1.126 expedientes sin vecinos). Con 0,55 en expedientes y 0,65 en noticias, el 97 % de las fichas llega a 50 nodos; quedan sin grafo 28 expedientes y 50 noticias.
 
 **Calidad de la similitud** (40 pares de expedientes, 8 por franja, calificados a ciegas por dos instancias de Claude con el nombre y el inicio de la exposición):

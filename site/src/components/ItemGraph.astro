@@ -6,7 +6,7 @@
  * settings live in src/scripts/itemGraph.ts.
  */
 import { ITEM_GRAPH_DIRS, getOutlets } from '../lib/data';
-import { ITEM_GRAPH, ITEM_GRAPH_MAX_NODES, similarityLabel } from '../lib/itemGraph';
+import { ITEM_GRAPH, ITEM_GRAPH_BANDS, ITEM_GRAPH_MAX_NODES, similarityLabel } from '../lib/itemGraph';
 import { href } from '../lib/paths';
 
 interface Props { kind: 'bills' | 'news'; id: string | number }
@@ -16,7 +16,13 @@ const indexFile = kind === 'bills' ? 'expedientes.json' : 'noticias.json';
 const outlets = kind === 'news' ? JSON.stringify(Object.fromEntries(getOutlets().map((o) => [o.key, o.name]))) : undefined;
 const noun = kind === 'bills' ? 'expedientes' : 'noticias';
 const self = kind === 'bills' ? 'este expediente' : 'esta noticia';
-const [close, veryClose] = config.bands.map(similarityLabel);
+const [similar, them, same] = kind === 'bills' ? ['parecidos', 'ellos', 'los mismos'] : ['parecidas', 'ellas', 'las mismas'];
+const cuts = config.bands.map(similarityLabel);
+// Legend: each band with its range, closest first.
+const bands = ITEM_GRAPH_BANDS.map((name, i) => ({
+  name,
+  range: i === 0 ? `${cuts[0]} o más` : i === cuts.length ? `menos de ${cuts[i - 1]}` : `${cuts[i]}–${cuts[i - 1]}`,
+}));
 ---
 <section
   class="item-graph"
@@ -30,9 +36,10 @@ const [close, veryClose] = config.bands.map(similarityLabel);
     {kind === 'bills'
       ? 'Los expedientes publicados cuya exposición de motivos más se parece a la de este, según un modelo de lenguaje.'
       : 'Las noticias publicadas cuyo texto más se parece al de esta, según un modelo de lenguaje. La misma nota publicada en otro medio no se repite.'}
-    {' '}Cada línea une un punto con aquel al que más se parece dentro del grafo. Es un cálculo automático: los de
-    «misma área» a veces solo comparten el tema general. Podés arrastrar los puntos; los ajustes se guardan para
-    todas las fichas de {noun}.
+    {' '}Cada punto cuelga de aquel al que más se parece, y la línea es más corta cuanto más se parecen;
+    «Conexiones entre {them}» suma las parejas en que cada uno está entre los dos más parecidos al otro. Es un
+    cálculo automático: los colores más claros a veces solo comparten el tema general, o ni eso. Pasá el puntero por
+    un punto para ver sus vecinos; podés arrastrarlos, y los ajustes se guardan para todas las fichas de {noun}.
   </p>
   <div class="item-graph__controls small">
     <label>
@@ -45,16 +52,18 @@ const [close, veryClose] = config.bands.map(similarityLabel);
       <input type="range" data-setting="minSim" min={config.minSim.min} max={config.minSim.max} step="1" value={config.minSim.value} aria-label="Parecido mínimo con esta ficha" />
       <output data-setting="minSim">{similarityLabel(config.minSim.value)}</output>
     </label>
+    <label class="item-graph__toggle">
+      <input type="checkbox" data-setting="loops" />
+      Conexiones entre {them}
+    </label>
   </div>
   <p class="item-graph__legend small muted" aria-hidden="true">
-    <span class="swatch swatch--root"></span>{self}
-    <span class="swatch swatch--high"></span>muy parecido ({veryClose} o más)
-    <span class="swatch swatch--medium"></span>parecido ({close}–{veryClose})
-    <span class="swatch swatch--low"></span>misma área
-    <span class="item-graph__legend-size">· más grande = más parecido</span>
+    <span class="item-graph__key"><span class="swatch swatch--root"></span>{self}</span>
+    {bands.map((b, i) => <span class="item-graph__key"><span class="swatch" style={`background: var(--sim-${i + 1})`}></span>{b.name} ({b.range})</span>)}
+    <span class="item-graph__key">· más grande = más puntos cuelgan de él</span>
   </p>
   <div class="item-graph__canvas">
-    <canvas role="img" aria-label={`Grafo de ${noun} parecidos. La lista de abajo tiene los mismos enlaces.`}></canvas>
+    <canvas role="img" aria-label={`Grafo de ${noun} ${similar}. La lista de abajo tiene ${same} ${noun}.`}></canvas>
     <p class="item-graph__status small muted" aria-live="polite"></p>
     <div class="item-graph__tip small" hidden></div>
   </div>
@@ -75,14 +84,18 @@ const [close, veryClose] = config.bands.map(similarityLabel);
   .item-graph__controls label { display: inline-flex; align-items: center; gap: 0.5rem; }
   .item-graph__controls input { width: 8.5rem; accent-color: var(--accent); }
   .item-graph__controls output { font-variant-numeric: tabular-nums; min-width: 2.2em; text-align: right; font-weight: 600; }
-  .item-graph__legend { display: flex; align-items: center; gap: 0.3rem; flex-wrap: wrap; margin: 0 0 0.5rem; }
-  .swatch { display: inline-block; width: 0.75rem; height: 0.75rem; border-radius: 50%; margin-left: 0.6rem; }
-  .swatch:first-child { margin-left: 0; }
+  .item-graph__controls .item-graph__toggle input { width: auto; }
+  /* Five similarity colors, closest first: blues that fade, then grays, darker = closer on a light page and
+     lighter = closer on a dark one (the order of the site's --conf-* scale). */
+  .item-graph { --sim-1: #1c5cab; --sim-2: #4f8fdc; --sim-3: #94bdec; --sim-4: #a9a7a0; --sim-5: #cfcdc6; }
+  :global(:root[data-theme='dark']) .item-graph { --sim-1: #86b6ef; --sim-2: #3987e5; --sim-3: #1f5fae; --sim-4: #5a5954; --sim-5: #3d3c38; }
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not([data-theme='light'])) .item-graph { --sim-1: #86b6ef; --sim-2: #3987e5; --sim-3: #1f5fae; --sim-4: #5a5954; --sim-5: #3d3c38; }
+  }
+  .item-graph__legend { display: flex; align-items: center; gap: 0.2rem 0.9rem; flex-wrap: wrap; margin: 0 0 0.5rem; }
+  .item-graph__key { display: inline-flex; align-items: center; gap: 0.3rem; }
+  .swatch { display: inline-block; width: 0.75rem; height: 0.75rem; border-radius: 50%; flex: none; }
   .swatch--root { background: var(--notice-border); }
-  .swatch--high { background: var(--conf-high); }
-  .swatch--medium { background: var(--conf-medium); }
-  .swatch--low { background: var(--conf-low); }
-  .item-graph__legend-size { margin-left: 0.3rem; }
   .item-graph__canvas {
     position: relative;
     height: 440px;

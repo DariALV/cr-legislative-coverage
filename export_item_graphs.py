@@ -24,10 +24,15 @@ Writes, after emptying the output folder:
   expedientes.json      index of the bills: {"fields", "items", "params"}, one item per published bill
                         (number, name cut at NAME_MAX_CHARS, status)
   noticias.json         index of the news items (id, title, outlet, date)
-  expediente/<n>.json   the tree of a bill page, one row per node in order of entry, the page's own bill
-  noticia/<id>.json     first: [position in the index, position of the parent row (-1 for A), cosine to A
-                        x 100, cosine to the parent x 100 (0 for A)]
-Pages whose item has no neighbor above the floor get no tree file. Only public fields and scores go in.
+  expediente/<n>.json   the graph of a page: {"nodes": rows, "links": flat list}. Rows are
+  noticia/<id>.json     the tree, one per node in order of entry, the page's own item first: [position in the
+                        index, position of the parent row (-1 for A), cosine to A x 100, cosine to the parent
+                        x 100 (0 for A)].
+                        Links are the pairs of nodes of the tree that are each among the other's LOOP_RANK most
+                        similar items (tree edges included), as row, row, cosine x 100, row, row, cosine...: the
+                        page shows those that are not tree edges as loops. Asking both sides to agree keeps
+                        them sparse (all the k nearest made a mesh of about ten links per node, too cluttered).
+Pages whose item has no neighbor above the floor get no file. Only public fields and scores go in.
 """
 import argparse
 import json
@@ -37,11 +42,13 @@ from pathlib import Path
 import numpy as np
 
 K = 10                 # neighbors listed per item
-A_DEPTH = 0.9          # discount per level of the parent: lower keeps nodes closer to A
+A_DEPTH = 1.0          # discount per level of the parent: 1 hangs each node from its most similar node (chains);
+                       # lower keeps nodes closer to A (stars). The analysis chose 0.9; the user chose 1 on the site
 W_EDGE = 0.5           # weight of the edge against the similarity to A in the entry score
 FLOORS = {"bills": 0.55, "news": 0.65}
 DUPLICATE = 0.97       # news only
 MAX_NODES = 150        # besides A
+LOOP_RANK = 2          # loops: both nodes among each other's this many most similar items
 NAME_MAX_CHARS = 140
 
 
@@ -152,13 +159,16 @@ def write_json(path, data):
 
 def export_kind(kind, ids, index, unit, out, index_name, page_dir, fields):
   sim = unit @ unit.T
-  links = adjacency(sim, neighbor_lists(sim, K), FLOORS[kind])
+  top = neighbor_lists(sim, K)
+  links = adjacency(sim, top, FLOORS[kind])
+  close = {(i, int(j)) for i, row in enumerate(top) for j in row[:LOOP_RANK] if sim[i, j] >= FLOORS[kind]}
+  mutual = {pair for pair in close if pair[::-1] in close}
   duplicate = DUPLICATE if kind == "news" else None
   params = {"k": K, "a": A_DEPTH, "w": W_EDGE, "floor": FLOORS[kind], "max_nodes": MAX_NODES,
-            "duplicate": duplicate}
+            "duplicate": duplicate, "loop_rank": LOOP_RANK}
   write_json(out / index_name, {"fields": fields, "items": index, "params": params})
   (out / page_dir).mkdir()
-  sizes, skipped_total = [], 0
+  sizes, skipped_total, loops_total = [], 0, 0
   for root, item_id in enumerate(ids):
     nodes, parents, _, skipped = build_tree(root, sim, links, A_DEPTH, W_EDGE, MAX_NODES, duplicate)
     skipped_total += skipped
@@ -169,12 +179,19 @@ def export_kind(kind, ids, index, unit, out, index_name, page_dir, fields):
     rows = [[int(nodes[0]), -1, 100, 0]]
     for node, parent in zip(nodes[1:].tolist(), parents[1:].tolist()):
       rows.append([node, row_of[parent], round(float(sim[root, node]) * 100), round(float(sim[node, parent]) * 100)])
-    write_json(out / page_dir / f"{item_id}.json", rows)
+    tree_edges = {(min(a, b), max(a, b)) for a, b in zip(nodes[1:].tolist(), parents[1:].tolist())}
+    loops = []
+    for a, b in sorted(mutual):
+      if a < b and a in row_of and b in row_of:
+        loops += [row_of[a], row_of[b], round(float(sim[a, b]) * 100)]
+        loops_total += (a, b) not in tree_edges
+    write_json(out / page_dir / f"{item_id}.json", {"nodes": rows, "links": loops})
   sizes = np.array(sizes)
   folder_bytes = sum(p.stat().st_size for p in (out / page_dir).iterdir())
   print(f"{kind}: {len(ids):,} pages, {int((sizes > 0).sum()):,} with a tree, {int((sizes == 0).sum())} without; "
         f"{np.mean(sizes >= 50):.0%} reach 50 nodes, {np.mean(sizes >= MAX_NODES):.0%} reach {MAX_NODES}; "
-        f"{skipped_total:,} copies skipped; index {(out / index_name).stat().st_size / 1e3:.0f} kB, "
+        f"{skipped_total:,} copies skipped; {loops_total / max(1, int((sizes > 0).sum())):.0f} loops per graph; "
+        f"index {(out / index_name).stat().st_size / 1e3:.0f} kB, "
         f"trees {folder_bytes / 1e6:.1f} MB")
 
 
