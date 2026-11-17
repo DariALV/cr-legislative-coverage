@@ -29,12 +29,15 @@ Usage: python results/item_graph/analyze_params.py [--floors-bills 0.55 0.6] [--
 import argparse
 import csv
 import json
+import sys
 import time
 from pathlib import Path
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT))
+from export_item_graphs import adjacency, build_tree, neighbor_lists   # the algorithm the site uses
 DATA_DIR = ROOT / "site" / "src" / "data"
 EMBEDDINGS_DIR = ROOT / "databases" / "embeddings" / "qwen3-0.6b"
 OUT_DIR = Path(__file__).resolve().parent
@@ -67,67 +70,6 @@ def load_news():
 
 def quantiles(values):
   return {f"p{q}": round(float(np.percentile(values, q)), 3) for q in QUANTILES}
-
-
-def neighbor_lists(sim, k):
-  """Each row's k most similar other rows, best first."""
-  s = sim.copy()
-  np.fill_diagonal(s, -np.inf)
-  top = np.argpartition(-s, k, axis=1)[:, :k]
-  order = np.argsort(-np.take_along_axis(s, top, axis=1), axis=1)
-  return np.take_along_axis(top, order, axis=1)
-
-
-def adjacency(sim, top, floor):
-  """Undirected k-nearest links that reach the floor, as one array of neighbors per item."""
-  links = [set() for _ in range(len(sim))]
-  for i, row in enumerate(top):
-    for j in row:
-      if sim[i, j] >= floor:
-        links[i].add(int(j))
-        links[int(j)].add(i)
-  return [np.array(sorted(l), dtype=np.int64) for l in links]
-
-
-def build_tree(root, sim, links, a, w, cap, duplicate):
-  """Best-first tree from root. Returns the nodes in order of entry with their parent and depth,
-  and how many candidates were skipped as copies."""
-  n = len(sim)
-  in_tree = np.zeros(n, dtype=bool)
-  blocked = np.zeros(n, dtype=bool)
-  best_edge = np.full(n, -np.inf)
-  to_root = sim[root]
-  nodes, parents, depths = [root], [-1], [0]
-  depth_of = {root: 0}
-  in_tree[root] = True
-  skipped = 0
-
-  def reach(node):
-    nb = links[node]
-    nb = nb[~in_tree[nb]]
-    best_edge[nb] = np.maximum(best_edge[nb], sim[node, nb])
-
-  reach(root)
-  while len(nodes) <= cap:   # the root plus cap nodes
-    score = w * best_edge + (1 - w) * to_root
-    score[in_tree | blocked] = -np.inf
-    y = int(np.argmax(score))
-    if not np.isfinite(score[y]):
-      break
-    if duplicate is not None and sim[y, nodes].max() >= duplicate:
-      blocked[y] = True
-      skipped += 1
-      continue
-    present = links[y][in_tree[links[y]]]
-    weights = np.array([a ** depth_of[int(p)] for p in present]) * sim[y, present]
-    parent = int(present[np.argmax(weights)])
-    in_tree[y] = True
-    depth_of[y] = depth_of[parent] + 1
-    nodes.append(y)
-    parents.append(parent)
-    depths.append(depth_of[y])
-    reach(y)
-  return np.array(nodes), np.array(parents), np.array(depths), skipped
 
 
 def tree_metrics(nodes, parents, depths, sim, cap):
