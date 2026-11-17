@@ -6,6 +6,7 @@ that need a backend under their own folder:
     /db_explorer/api/...      the corpus explorer API (db_explorer/server.py: api())
     /db_explorer/photos/...   deputy photos (db_explorer/server.py: photo())
     /jev_eval/api/...         the blind evaluation of Jev (jev_eval/server.py: EvalApp.get() and .post())
+    /graph/api/tree/...       the trees of the graph pages' tree tabs (graph/tree_api.py: TreeApi.get())
 
 Everything else (graphs, Jev viewer, ranker replay, embeddings, the shared theme) is plain files. The database and
 the evaluation's corpus load on the first request that needs them, so a missing database only breaks the explorer.
@@ -33,6 +34,7 @@ mimetypes.add_type("font/woff2", ".woff2")
 
 EXPLORER = "/db_explorer/"
 EVAL = "/jev_eval/"
+TREE = "/graph/api/tree/"
 HOME = "/db_explorer/"   # where http://localhost:8766/ goes
 MAX_BODY_BYTES = 2_000_000   # larger evaluation posts are not read
 
@@ -46,6 +48,23 @@ def load(name, path):
 
 
 explorer = load("db_explorer_server", HERE / "db_explorer" / "server.py")
+
+
+class Trees:
+  """The tree tabs' TreeApi, imported on first use: it needs numpy, which the other pages do not."""
+
+  def __init__(self):
+    self.api = None
+    self.lock = threading.Lock()
+
+  def get(self, path, query):
+    with self.lock:
+      if self.api is None:
+        self.api = load("graph_tree_api", HERE / "graph" / "tree_api.py").TreeApi()
+    return self.api.get(path, query)
+
+
+trees = Trees()
 
 
 class Evaluation:
@@ -124,6 +143,12 @@ class Handler(SimpleHTTPRequestHandler):
       return
     if path.startswith(EVAL + "api/"):
       status, data = self.evaluation_call(lambda app: app.get(path.removeprefix(EVAL[:-1])))
+      return self.send_json(data, status)
+    if path.startswith(TREE):
+      try:
+        status, data = trees.get(path.removeprefix(TREE[:-1]), url.query)
+      except Exception as error:   # e.g. missing embeddings; the other pages keep working
+        status, data = 503, {"error": f"el árbol no pudo cargar: {type(error).__name__}: {error}"}
       return self.send_json(data, status)
     if self.blocked(path):
       return self.send_error(404)

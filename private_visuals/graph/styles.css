@@ -253,3 +253,38 @@ div.legend-item:hover { background: none; color: var(--ink-2); }
   .title { max-width: calc(100% - 300px); }
   .chart { right: 24px; }
 }
+
+/* ---------- tree tabs (tree.html, tree_news.html) ---------- */
+.results { margin-top: 6px; max-height: 220px; overflow-y: auto; scrollbar-width: thin; }
+.results:empty { display: none; }
+.results button {
+  display: block; width: 100%; padding: 5px 6px; border: 0; background: none; border-radius: 8px; text-align: left;
+  color: var(--ink-2); font-size: 12px; font-weight: 500; line-height: 1.35;
+}
+.results button:hover, .results button.on { background: var(--bg); color: var(--ink); }
+.results b { color: var(--ink); font-weight: 700; }
+.root-now { margin: 8px 0 0; padding: 8px 10px; border-radius: 10px; background: var(--bg); color: var(--ink-2); font-size: 12px; font-weight: 600; line-height: 1.4; }
+.root-now b { color: var(--ink); }
+.buttons.two { grid-template-columns: repeat(2, 1fr); }
+.buttons button:disabled { opacity: .4; cursor: default; }
+.gradient { height: 8px; border-radius: 4px; margin-top: 8px; }
+.gradient-ends { display: flex; justify-content: space-between; margin-top: 3px; color: var(--ink-3); font-size: 11.5px; font-weight: 600; }
+.node-list { margin: 6px 0 0; padding: 0; list-style: none; max-height: 300px; overflow-y: auto; scrollbar-width: thin; }
+.node-list button {
+  display: flex; align-items: baseline; gap: 6px; width: 100%; padding: 3px 6px; border: 0; background: none; border-radius: 8px;
+  text-align: left; color: var(--ink-2); font-size: 12px; font-weight: 500;
+}
+.node-list button:hover, .node-list button.on { background: var(--bg); color: var(--ink); }
+.node-list .swatch { align-self: center; }
+.node-list span:not(.swatch) { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.node-list i { color: var(--ink-3); font-style: normal; font-variant-numeric: tabular-nums; }
+.card-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.card-actions button {
+  padding: 5px 12px; background: var(--accent-soft); border: 0; border-radius: 999px; color: var(--accent-deep); font-size: 12px; font-weight: 700;
+}
+.card-actions button:hover { filter: brightness(.96); }
+.detail .similar button b { font-weight: 600; color: var(--ink-2); }
+.copied { color: var(--accent-deep); }
+.help { margin: -1px 0 6px; color: var(--ink-3); font-size: 11.5px; font-weight: 500; line-height: 1.4; }
+.help:empty, .no-help .help { display: none; }
+.help-switch { padding: 10px 16px 4px; border-bottom: 1px solid var(--line); }

@@ -380,6 +380,8 @@
     ["comentions.html", "Co-mención", '<circle cx="7" cy="12" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="m9.7 10.6 4.6-2.2M9.7 13.4l4.6 2.2"/>'],
     ["flow.html", "Flujo", '<path d="M3 6h4c5 0 5 12 10 12h4"/><path d="M3 18h4c5 0 5-12 10-12h4"/>'],
     ["stream.html", "En el tiempo", '<path d="M3 17c3-1 4-5 7-5s4 3 7 2 3-4 4-4"/><path d="M3 20h18"/><path d="M3 4v16"/>'],
+    ["tree.html", "Árbol", '<circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="12" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v9M11 7 6 16.8M13 7l5 9.8"/>'],
+    ["tree_news.html", "Árbol de noticias", '<circle cx="12" cy="5" r="2.5"/><circle cx="6" cy="12" r="2"/><circle cx="18" cy="12" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="9" cy="19" r="2"/><path d="M10.6 7 7.2 10.5M13.4 7l3.4 3.5M5.3 13.8 4.5 17M6.8 13.8 8.3 17"/>'],
   ];
   function renderViews() {
     const box = $("views");

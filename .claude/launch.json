@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "pages",
-      "runtimeExecutable": "python",
+      "runtimeExecutable": ".venv/Scripts/python.exe",
       "runtimeArgs": [
         "private_visuals/server.py",
         "--port",
@@ -13,7 +13,7 @@
     },
     {
       "name": "pages-alt",
-      "runtimeExecutable": "python",
+      "runtimeExecutable": ".venv/Scripts/python.exe",
       "runtimeArgs": [
         "private_visuals/server.py",
         "--port",
