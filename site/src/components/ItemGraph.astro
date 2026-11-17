@@ -2,18 +2,21 @@
 /**
  * Similarity graph at the end of a bill or news page (#71): the published items most similar to this one,
  * as a tree precomputed by export_item_graphs.py (public/grafos/). The page renders it only when
- * hasItemGraph() says the file exists. Data is fetched when the section comes into view.
+ * hasItemGraph() says the file exists. Data is fetched when the section comes into view; the layout and the
+ * settings live in src/scripts/itemGraph.ts.
  */
 import { ITEM_GRAPH_DIRS, getOutlets } from '../lib/data';
+import { ITEM_GRAPH, ITEM_GRAPH_MAX_NODES, similarityLabel } from '../lib/itemGraph';
 import { href } from '../lib/paths';
 
 interface Props { kind: 'bills' | 'news'; id: string | number }
 const { kind, id } = Astro.props;
-const DEFAULT_NODES = 15;
+const config = ITEM_GRAPH[kind];
 const indexFile = kind === 'bills' ? 'expedientes.json' : 'noticias.json';
 const outlets = kind === 'news' ? JSON.stringify(Object.fromEntries(getOutlets().map((o) => [o.key, o.name]))) : undefined;
 const noun = kind === 'bills' ? 'expedientes' : 'noticias';
 const self = kind === 'bills' ? 'este expediente' : 'esta noticia';
+const [close, veryClose] = config.bands.map(similarityLabel);
 ---
 <section
   class="item-graph"
@@ -27,26 +30,35 @@ const self = kind === 'bills' ? 'este expediente' : 'esta noticia';
     {kind === 'bills'
       ? 'Los expedientes publicados cuya exposición de motivos más se parece a la de este, según un modelo de lenguaje.'
       : 'Las noticias publicadas cuyo texto más se parece al de esta, según un modelo de lenguaje. La misma nota publicada en otro medio no se repite.'}
-    {' '}Cada línea une un punto con aquel al que más se parece dentro del grafo. Es un cálculo automático: los puntos más
-    claros a veces solo comparten el área temática.
+    {' '}Cada línea une un punto con aquel al que más se parece dentro del grafo. Es un cálculo automático: los de
+    «misma área» a veces solo comparten el tema general. Podés arrastrar los puntos; los ajustes se guardan para
+    todas las fichas de {noun}.
   </p>
   <div class="item-graph__controls small">
     <label>
       Mostrar
-      <input type="range" min="5" max="150" step="1" value={DEFAULT_NODES} aria-label={`Cantidad de ${noun} en el grafo`} />
-      <output>{DEFAULT_NODES}</output> {noun}
+      <input type="range" data-setting="nodes" min="5" max={ITEM_GRAPH_MAX_NODES} step="1" value={config.nodes} aria-label={`Cantidad de ${noun} en el grafo`} />
+      <output data-setting="nodes">{config.nodes}</output> {noun}
     </label>
-    <span class="item-graph__legend muted" aria-hidden="true">
-      <span class="swatch swatch--root"></span>{self}
-      <span class="swatch" style="background: var(--conf-high)"></span>más parecido
-      <span class="swatch" style="background: var(--conf-low)"></span>menos parecido
-    </span>
+    <label>
+      Parecido mínimo
+      <input type="range" data-setting="minSim" min={config.minSim.min} max={config.minSim.max} step="1" value={config.minSim.value} aria-label="Parecido mínimo con esta ficha" />
+      <output data-setting="minSim">{similarityLabel(config.minSim.value)}</output>
+    </label>
   </div>
+  <p class="item-graph__legend small muted" aria-hidden="true">
+    <span class="swatch swatch--root"></span>{self}
+    <span class="swatch swatch--high"></span>muy parecido ({veryClose} o más)
+    <span class="swatch swatch--medium"></span>parecido ({close}–{veryClose})
+    <span class="swatch swatch--low"></span>misma área
+    <span class="item-graph__legend-size">· más grande = más parecido</span>
+  </p>
   <div class="item-graph__canvas">
-    <svg role="img" aria-label={`Grafo de ${noun} parecidos`}></svg>
+    <canvas role="img" aria-label={`Grafo de ${noun} parecidos. La lista de abajo tiene los mismos enlaces.`}></canvas>
     <p class="item-graph__status small muted" aria-live="polite"></p>
     <div class="item-graph__tip small" hidden></div>
   </div>
+  <p class="item-graph__note small muted" aria-live="polite"></p>
   <details class="item-graph__list">
     <summary class="small">Ver como lista</summary>
     <ol class="small"></ol>
@@ -59,23 +71,29 @@ const self = kind === 'bills' ? 'este expediente' : 'esta noticia';
 
 <style>
   .item-graph__intro { margin: 0 0 0.75rem; max-width: 70ch; }
-  .item-graph__controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.25rem; margin-bottom: 0.5rem; }
+  .item-graph__controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.75rem; margin-bottom: 0.4rem; }
   .item-graph__controls label { display: inline-flex; align-items: center; gap: 0.5rem; }
-  .item-graph__controls input { width: 9rem; accent-color: var(--accent); }
-  .item-graph__controls output { font-variant-numeric: tabular-nums; min-width: 2ch; text-align: right; font-weight: 600; }
-  .item-graph__legend { display: inline-flex; align-items: center; gap: 0.35rem; flex-wrap: wrap; }
-  .swatch { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 50%; margin-left: 0.5rem; }
+  .item-graph__controls input { width: 8.5rem; accent-color: var(--accent); }
+  .item-graph__controls output { font-variant-numeric: tabular-nums; min-width: 2.2em; text-align: right; font-weight: 600; }
+  .item-graph__legend { display: flex; align-items: center; gap: 0.3rem; flex-wrap: wrap; margin: 0 0 0.5rem; }
+  .swatch { display: inline-block; width: 0.75rem; height: 0.75rem; border-radius: 50%; margin-left: 0.6rem; }
   .swatch:first-child { margin-left: 0; }
   .swatch--root { background: var(--notice-border); }
+  .swatch--high { background: var(--conf-high); }
+  .swatch--medium { background: var(--conf-medium); }
+  .swatch--low { background: var(--conf-low); }
+  .item-graph__legend-size { margin-left: 0.3rem; }
   .item-graph__canvas {
     position: relative;
-    height: 420px;
+    height: 440px;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
   }
-  .item-graph__canvas svg { display: block; width: 100%; height: 100%; }
+  .item-graph__canvas canvas { display: block; width: 100%; height: 100%; }
+  .item-graph__canvas canvas:global(.is-over) { cursor: pointer; }
+  .item-graph__canvas canvas:global(.is-dragging) { cursor: grabbing; }
   .item-graph__status { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; pointer-events: none; }
   .item-graph__status[hidden] { display: none; }
   .item-graph__tip {
@@ -91,17 +109,12 @@ const self = kind === 'bills' ? 'este expediente' : 'esta noticia';
   }
   .item-graph__tip :global(strong) { display: block; font-weight: 600; }
   .item-graph__tip :global(span) { color: var(--muted); }
-  .item-graph__canvas :global(.item-graph__edges line) { stroke: var(--muted); stroke-opacity: 0.55; }
-  .item-graph__canvas :global(circle) { stroke: var(--surface); stroke-width: 1; }
-  .item-graph__canvas :global(a circle) { cursor: pointer; }
-  .item-graph__canvas :global(a:hover circle), .item-graph__canvas :global(a:focus circle) { stroke: var(--text); stroke-width: 2; }
-  .item-graph__canvas :global(a:focus), .item-graph__canvas :global(g[tabindex]:focus) { outline: none; }
-  .item-graph__canvas :global(.item-graph__root) { fill: var(--notice-border); stroke: var(--surface); stroke-width: 2; }
-  .item-graph__list { margin-top: 0.6rem; }
+  .item-graph__note { margin: 0.4rem 0 0; min-height: 1.2em; }
+  .item-graph__list { margin-top: 0.4rem; }
   .item-graph__list summary { cursor: pointer; color: var(--accent); }
   .item-graph__list ol { margin: 0.5rem 0 0; padding-left: 1.5rem; }
   .item-graph__list li { margin: 0.2rem 0; }
   @media (max-width: 640px) {
-    .item-graph__canvas { height: 340px; }
+    .item-graph__canvas { height: 360px; }
   }
 </style>
