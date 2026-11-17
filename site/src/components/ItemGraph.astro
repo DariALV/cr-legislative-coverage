@@ -1,0 +1,107 @@
+---
+/**
+ * Similarity graph at the end of a bill or news page (#71): the published items most similar to this one,
+ * as a tree precomputed by export_item_graphs.py (public/grafos/). The page renders it only when
+ * hasItemGraph() says the file exists. Data is fetched when the section comes into view.
+ */
+import { ITEM_GRAPH_DIRS, getOutlets } from '../lib/data';
+import { href } from '../lib/paths';
+
+interface Props { kind: 'bills' | 'news'; id: string | number }
+const { kind, id } = Astro.props;
+const DEFAULT_NODES = 15;
+const indexFile = kind === 'bills' ? 'expedientes.json' : 'noticias.json';
+const outlets = kind === 'news' ? JSON.stringify(Object.fromEntries(getOutlets().map((o) => [o.key, o.name]))) : undefined;
+const noun = kind === 'bills' ? 'expedientes' : 'noticias';
+const self = kind === 'bills' ? 'este expediente' : 'esta noticia';
+---
+<section
+  class="item-graph"
+  data-kind={kind}
+  data-base={href('')}
+  data-index={href(`grafos/${indexFile}`)}
+  data-tree={href(`grafos/${ITEM_GRAPH_DIRS[kind]}/${id}.json`)}
+  data-outlets={outlets}
+>
+  <p class="small muted item-graph__intro">
+    {kind === 'bills'
+      ? 'Los expedientes publicados cuya exposición de motivos más se parece a la de este, según un modelo de lenguaje.'
+      : 'Las noticias publicadas cuyo texto más se parece al de esta, según un modelo de lenguaje. La misma nota publicada en otro medio no se repite.'}
+    {' '}Cada línea une un punto con aquel al que más se parece dentro del grafo. Es un cálculo automático: los puntos más
+    claros a veces solo comparten el área temática.
+  </p>
+  <div class="item-graph__controls small">
+    <label>
+      Mostrar
+      <input type="range" min="5" max="150" step="1" value={DEFAULT_NODES} aria-label={`Cantidad de ${noun} en el grafo`} />
+      <output>{DEFAULT_NODES}</output> {noun}
+    </label>
+    <span class="item-graph__legend muted" aria-hidden="true">
+      <span class="swatch swatch--root"></span>{self}
+      <span class="swatch" style="background: var(--conf-high)"></span>más parecido
+      <span class="swatch" style="background: var(--conf-low)"></span>menos parecido
+    </span>
+  </div>
+  <div class="item-graph__canvas">
+    <svg role="img" aria-label={`Grafo de ${noun} parecidos`}></svg>
+    <p class="item-graph__status small muted" aria-live="polite"></p>
+    <div class="item-graph__tip small" hidden></div>
+  </div>
+  <details class="item-graph__list">
+    <summary class="small">Ver como lista</summary>
+    <ol class="small"></ol>
+  </details>
+</section>
+
+<script>
+  import '../scripts/itemGraph';
+</script>
+
+<style>
+  .item-graph__intro { margin: 0 0 0.75rem; max-width: 70ch; }
+  .item-graph__controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.25rem; margin-bottom: 0.5rem; }
+  .item-graph__controls label { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .item-graph__controls input { width: 9rem; accent-color: var(--accent); }
+  .item-graph__controls output { font-variant-numeric: tabular-nums; min-width: 2ch; text-align: right; font-weight: 600; }
+  .item-graph__legend { display: inline-flex; align-items: center; gap: 0.35rem; flex-wrap: wrap; }
+  .swatch { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 50%; margin-left: 0.5rem; }
+  .swatch:first-child { margin-left: 0; }
+  .swatch--root { background: var(--notice-border); }
+  .item-graph__canvas {
+    position: relative;
+    height: 420px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .item-graph__canvas svg { display: block; width: 100%; height: 100%; }
+  .item-graph__status { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; pointer-events: none; }
+  .item-graph__status[hidden] { display: none; }
+  .item-graph__tip {
+    position: absolute;
+    max-width: min(22rem, calc(100% - 8px));
+    padding: 0.4rem 0.6rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+    line-height: 1.35;
+  }
+  .item-graph__tip :global(strong) { display: block; font-weight: 600; }
+  .item-graph__tip :global(span) { color: var(--muted); }
+  .item-graph__canvas :global(.item-graph__edges line) { stroke: var(--muted); stroke-opacity: 0.55; }
+  .item-graph__canvas :global(circle) { stroke: var(--surface); stroke-width: 1; }
+  .item-graph__canvas :global(a circle) { cursor: pointer; }
+  .item-graph__canvas :global(a:hover circle), .item-graph__canvas :global(a:focus circle) { stroke: var(--text); stroke-width: 2; }
+  .item-graph__canvas :global(a:focus), .item-graph__canvas :global(g[tabindex]:focus) { outline: none; }
+  .item-graph__canvas :global(.item-graph__root) { fill: var(--notice-border); stroke: var(--surface); stroke-width: 2; }
+  .item-graph__list { margin-top: 0.6rem; }
+  .item-graph__list summary { cursor: pointer; color: var(--accent); }
+  .item-graph__list ol { margin: 0.5rem 0 0; padding-left: 1.5rem; }
+  .item-graph__list li { margin: 0.2rem 0; }
+  @media (max-width: 640px) {
+    .item-graph__canvas { height: 340px; }
+  }
+</style>

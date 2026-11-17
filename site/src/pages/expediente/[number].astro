@@ -7,8 +7,9 @@ import NewsItem from '../../components/NewsItem.astro';
 import Timeline from '../../components/Timeline.astro';
 import VotesTable from '../../components/VotesTable.astro';
 import BillText from '../../components/BillText.astro';
+import ItemGraph from '../../components/ItemGraph.astro';
 import { REPORT_FORM_URL } from '../../lib/config';
-import { getBills, getBillDetail } from '../../lib/data';
+import { getBills, getBillDetail, hasItemGraph } from '../../lib/data';
 import { formatBillNumber, formatDate, formatDateLong, formatInt, pluralize } from '../../lib/format';
 import { href } from '../../lib/paths';
 import { LINK_SOURCES } from '../../lib/vocab';
@@ -109,6 +110,16 @@ const NEWS_SHOWN = 15;
     </>
   ) : (
     <p class="empty">No encontramos noticias sobre este expediente en los medios revisados entre mayo y octubre de 2026.</p>
+  )}
+
+  {hasItemGraph('bills', bill.number) && (
+    <>
+      <div class="section-head">
+        <h2>Expedientes parecidos</h2>
+        <span class="small muted">por su exposición de motivos · cálculo automático</span>
+      </div>
+      <ItemGraph kind="bills" id={bill.number} />
+    </>
   )}
 </Base>
 

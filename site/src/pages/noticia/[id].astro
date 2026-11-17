@@ -2,7 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import BillCard from '../../components/BillCard.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
-import { getNews, getBillSummary, outletName } from '../../lib/data';
+import { getNews, getBillSummary, hasItemGraph, outletName } from '../../lib/data';
+import ItemGraph from '../../components/ItemGraph.astro';
 import { formatDateLong } from '../../lib/format';
 import { OUTLET_TYPES } from '../../lib/vocab';
 import type { NewsArticle } from '../../lib/types';
@@ -52,6 +53,16 @@ const linked = article.bills
     </ul>
   ) : (
     <p class="empty">Esta noticia no tiene expedientes vinculados.</p>
+  )}
+
+  {hasItemGraph('news', article.id) && (
+    <>
+      <div class="section-head">
+        <h2>Noticias parecidas</h2>
+        <span class="small muted">por su texto · cálculo automático</span>
+      </div>
+      <ItemGraph kind="news" id={article.id} />
+    </>
   )}
 </Base>
 

@@ -41,6 +41,15 @@ export function getOutlets(): Outlet[] {
   return readJson<Outlet[]>('outlets.json');
 }
 
+/**
+ * Whether a page has its own similarity graph: public/grafos/<expediente|noticia>/<id>.json, written by
+ * export_item_graphs.py in the main repo. Items without neighbors above the similarity floor have none.
+ */
+export const ITEM_GRAPH_DIRS = { bills: 'expediente', news: 'noticia' } as const;
+export function hasItemGraph(kind: keyof typeof ITEM_GRAPH_DIRS, id: string | number): boolean {
+  return existsSync(join(process.cwd(), 'public', 'grafos', ITEM_GRAPH_DIRS[kind], `${id}.json`));
+}
+
 export function getFactionStats(): FactionStats | null {
   return existsSync(join(DATA_DIR, 'stats', 'factions.json'))
     ? readJson<FactionStats>('stats/factions.json')
