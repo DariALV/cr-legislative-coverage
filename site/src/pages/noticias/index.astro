@@ -20,7 +20,7 @@ const outletMap = Object.fromEntries(outlets.map((o) => [o.key, o.name]));
   <form class="filters" id="news-filters" data-page-size={PAGE_SIZE} data-outlets={JSON.stringify(outletMap)}>
     <div class="field field--wide">
       <label for="n-q">Buscar en el titular</label>
-      <input id="n-q" name="q" type="search" placeholder="Ej.: comisión, agua potable" autocomplete="off" />
+      <input id="n-q" name="q" type="search" placeholder="Ej.: Crucitas, eurobonos" autocomplete="off" />
     </div>
     <div class="field">
       <label for="n-medio">Medio</label>
