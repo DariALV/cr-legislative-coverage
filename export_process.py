@@ -99,7 +99,13 @@ def export_bills(connection: sqlite3.Connection) -> dict:
   alive = [b for b in bills if b[1] and b[1] <= PERIOD_END and ended.get(b[0], "9999") >= PERIOD_START]
   rows.append(row("alive", "Vivos durante el rango de noticias", alive, PERIOD_START, PERIOD_END))
   votes = connection.execute("SELECT COUNT(*) FROM votes").fetchone()[0]
-  return {"rows": rows, "votes": votes}
+  # Delfino's links from its news to its own bill pages (news_bill_links): the dataset the embeddings and the
+  # ranker were measured and trained on. Only the links whose bill is in the base count, as in the analyzer.
+  dataset = connection.execute(
+    "SELECT COUNT(DISTINCT l.news_id || '-' || l.bill_number), COUNT(DISTINCT l.news_id), COUNT(DISTINCT l.bill_number) "
+    "FROM news_bill_links l JOIN bills b ON b.number = l.bill_number").fetchone()
+  return {"rows": rows, "votes": votes,
+          "delfino_dataset": {"links": dataset[0], "news": dataset[1], "bills": dataset[2]}}
 
 
 def export_embeddings(results: Path) -> dict:

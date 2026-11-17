@@ -9,6 +9,10 @@ Definitions:
   - choice: the chosen option is Jev's `choice`; certainty = Jev's `confidence`.
   - score: the option is the score rounded to the nearest integer of the scale; certainty = Jev's `confidence`.
   - Certainty buckets: [0, .5), [.5, .75), [.75, .9), [.9, 1].
+  - Histograms (for the density curves of the process page), 20 bins of width .05 over [0, 1]: p of the yes/no
+    questions, and the certainty of each option of the choice and score questions. Score questions also get the
+    raw score in bins of width .1 over [0, levels - 1].
+  - The filter question (assembly) is not in questions.json: its wording comes from tools/llm_tools/jev_questions.py.
   - Tokens: each request's input tokens are split evenly among the question instances it carries (genre counts
     once per gate request, explicit/implicit once per candidate, news questions once per details request, bill
     questions once per matched bill). Output tokens are free.
@@ -24,8 +28,11 @@ import json
 import math
 import pathlib
 import statistics
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
+sys.path.insert(0, str(ROOT))
+from tools.llm_tools.jev_questions import filter_questions  # noqa: E402
 JEV = ROOT / "results" / "jev"
 OUT = JEV / "question_stats" / "question_stats.json"
 PRICE_PER_TOKEN = 0.042 / 1e6
@@ -34,6 +41,12 @@ ALL = "all"
 BUCKETS = [0.5, 0.75, 0.9]
 SLIDER = [round(0.05 * i, 2) for i in range(1, 20)]
 SCORE_LEVELS = {"assembly_image": 5, "stance": 5, "centrality": 3}
+HIST_BINS = 20
+
+
+def hist_bin(value, bins = HIST_BINS, top = 1.0):
+  """Bin of value in bins equal parts of [0, top]; top itself falls in the last one."""
+  return min(bins - 1, max(0, int(value / top * bins)))
 
 
 def bucket(certainty):
@@ -50,9 +63,12 @@ class Tally:
     self.yes = 0
     self.yes_certainty_sum = 0.0
     self.yes_low = 0
+    self.p_hist = [0] * HIST_BINS
+    self.score_hist = None
     self.options = collections.Counter()
     self.option_certainty = collections.defaultdict(float)
     self.option_buckets = collections.defaultdict(lambda: [0, 0, 0, 0])
+    self.option_hist = collections.defaultdict(lambda: [0] * HIST_BINS)
     self.tokens = 0.0
     self.requests = 0
 
@@ -61,6 +77,7 @@ class Tally:
     self.n += 1
     self.certainty_sum += c
     self.buckets[bucket(c)] += 1
+    self.p_hist[hist_bin(p)] += 1
     if p >= 0.5:
       self.yes += 1
       self.yes_certainty_sum += c
@@ -73,6 +90,12 @@ class Tally:
     self.options[option] += 1
     self.option_certainty[option] += c
     self.option_buckets[option][bucket(c)] += 1
+    self.option_hist[option][hist_bin(c)] += 1
+
+  def add_score(self, score, levels):
+    if self.score_hist is None:
+      self.score_hist = [0] * (10 * (levels - 1))
+    self.score_hist[hist_bin(score, len(self.score_hist), levels - 1)] += 1
 
   def to_json(self, kind, option_order):
     out = {
@@ -90,6 +113,9 @@ class Tally:
         "yes_share": round(self.yes / self.n, 4) if self.n else None,
         "yes_mean_certainty": round(self.yes_certainty_sum / self.yes, 4) if self.yes else None,
         "yes_low_certainty_share": round(self.yes_low / self.yes, 4) if self.yes else None,
+        "no_mean_certainty": (round((self.certainty_sum - self.yes_certainty_sum) / (self.n - self.yes), 4)
+                              if self.n > self.yes else None),
+        "p_histogram": self.p_hist,
       })
     else:
       out["options"] = {
@@ -99,7 +125,10 @@ class Tally:
           "mean_certainty": round(self.option_certainty[o] / self.options[o], 4) if self.options[o] else None,
           "certainty_buckets": [round(b / self.options[o], 4) if self.options[o] else None
                                 for b in self.option_buckets[o]],
+          "certainty_histogram": self.option_hist[o],
         } for o in option_order}
+      if self.score_hist is not None:
+        out["score_histogram"] = self.score_hist
     return out
 
 
@@ -163,6 +192,7 @@ def main():
             levels = SCORE_LEVELS[q]
             option_order.setdefault(q, [str(i) for i in range(levels)])
             t.add_option(str(min(levels - 1, max(0, round(a["score"])))), a["confidence"])
+            t.add_score(a["score"], levels)
         if stage == "gate" and q in ("explicit", "implicit"):
           (pair_explicit if q == "explicit" else pair_implicit)[(news, bill)] = a["noul"]
         if q == "centrality":
@@ -226,10 +256,12 @@ def main():
   for group, names in questions.items():
     for q in names:
       stage_of[q] = {"gate": "gate", "details_news": "details_news", "details": "details_bill"}[group]
+  filter_spec = {name: {"type": "noul", "instructions": question.instructions, "criteria": question.criteria}
+                 for name, question in filter_questions().items()}
   per_question = {}
   for q, by_outlet in tallies.items():
     group = next((g for g, names in questions.items() if q in names), None)
-    spec = questions[group][q] if group else None
+    spec = questions[group][q] if group else filter_spec.get(q)
     kind = spec["type"] if spec else "noul"
     per_question[q] = {
       "stage": stage_of[q],
